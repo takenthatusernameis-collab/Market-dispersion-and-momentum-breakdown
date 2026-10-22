@@ -1,5 +1,5 @@
 # HARMONY CRYPTO-EDGE-004 — Market Dispersion and Momentum Breakdown
-## Iteratively Improved Research-Agent Prompt v2.0 (Free Data, Point-in-Time Universe, Fail-Closed Validation)
+## Iteratively Improved Research-Agent Prompt v2.1 (Free Data, Point-in-Time Universe, Fail-Closed Validation)
 
 **Experiment ID:** HARMONY-CRYPTO-EDGE-004-DISPERSION-001  
 **Research hypothesis:** CRYPTO-EDGE-004 — extreme cross-sectional dispersion weakens the subsequent cross-sectional cryptocurrency momentum spread  
@@ -37,6 +37,7 @@ These refinement passes are mandatory protections, not suggestions. Preserve the
 - **Pass 4 — research integrity:** preregister definitions, chronology, costs, benchmarks, placebos, uncertainty estimates, and data gates before calculating any outcome statistic.
 - **Pass 5 — free data and reproducibility:** verify access at run time; preserve provenance, checksums, and an auditable data frontier.
 - **Pass 6 — adversarial review:** audit look-ahead, survivorship, ticker mapping, revisions, overlapping observations, multiple testing, missing-data selection, and the distinction between an exact registered-screen replication and an expanded-universe extension.
+- **Pass 7 — parameter-grid discipline:** separate the immutable registered primary configuration from a fully enumerated 72-configuration sensitivity grid; freeze every axis, value, ID rule, multiplicity treatment, holdout boundary, and completion criterion before looking at forward outcomes.
 
 Do not loosen an earlier control to obtain a more favorable result.
 
@@ -153,6 +154,38 @@ If the authoritative plan does not unambiguously specify an essential rule, do n
 
 These defaults make an underspecified test executable; they do not establish exact replication. If instrument identity, return timing, or lawful free-data access still requires guessing, stop with **blocked_specification_gate**.
 
+### 6.4 Frozen parameter grid and execution contract
+
+The machine-readable, version-controlled definition is configs/dispersion_momentum_grid_v1.json. Its contents and SHA-256 must be captured in the preregistration and run manifest before any forward outcome is calculated. If this prompt, the JSON, and the latest authoritative plan conflict, stop before outcome analysis and resolve the conflict with an outcome-blind amendment.
+
+**Two distinct lanes are mandatory:**
+
+1. **Primary confirmatory lane:** run exactly the configuration in the authoritative registered plan. Use the Section 6.3 defaults only for items the plan genuinely leaves unspecified. Never modify this lane to match a sensitivity-grid result.
+2. **Secondary sensitivity lane:** run the complete fixed Cartesian grid below. It is for robustness assessment, not optimization, candidate selection, or rescue of a failed/inconclusive primary result.
+
+| Dimension | Frozen values | Count |
+|---|---|---:|
+| Momentum lookback | 14, 30, 60 calendar days | 3 |
+| Forward outcome horizon | 14, 30, 60 calendar days | 3 |
+| Cross-sectional dispersion estimator | Population standard deviation; scaled median absolute deviation (1.4826 × MAD) | 2 |
+| Dispersion state rule | Prior-only rolling 365-day median split; prior-only rolling 365-day outer-tercile comparison | 2 |
+| Momentum-spread breakpoints | Top-minus-bottom tercile; top-minus-bottom quintile | 2 |
+| **Total** | **3 × 3 × 2 × 2 × 2** | **72** |
+
+#### Definitions that may not be improvised
+
+- Compute each asset's momentum from the trailing lookback of completed UTC daily returns only. Use the same point-in-time eligible cross-section for the dispersion and momentum ranking at a formation timestamp.
+- Compute the two dispersion estimators exactly as specified in configs/dispersion_momentum_grid_v1.json. State thresholds use only dispersion observations strictly earlier than the current formation timestamp, from the preceding 365 calendar days, and require at least 180 valid prior daily observations. If not available, the state is unavailable; do not backfill or substitute a threshold.
+- In median-split states, classify current dispersion at or below the prior median as low and above the median as high. In outer-tercile states, classify at or below the prior 33 1/3 percentile as low and at or above the prior 66 2/3 percentile as high; omit middle-state dates. Use linear/type-7 quantiles.
+- For momentum portfolios, rank trailing returns descending and break equal-return ties by canonical asset ID ascending. For terciles or quintiles, use floor(N/q) names in each tail, require N >= 2q, keep the long and short legs disjoint, and equal-weight each leg. Apply the registered instrument-lifecycle and delisting rules to the forward outcome.
+- All other inputs—including data sources, point-in-time universe rules, registered market-cap screen, membership and exclusions, portfolio accounting, formation schedule, fee/slippage/funding assumptions, benchmark rules, split timestamps, and inference choices—remain frozen under the primary protocol. Market-cap rank is not another grid axis, and acquisition batch size never becomes an investable-universe cutoff.
+- Enumerate the Cartesian product in the axis/value order in the JSON. Assign stable IDs H004G001 through H004G072 and a SHA-256 of each canonical configuration. Re-running the generator must reproduce the exact same 72 rows, IDs, and hashes.
+- Execute all 72 configurations, against each pre-declared universe arm, with gross and registered 1x/2x/3x cost cases on discovery/validation data. Do not run or inspect this grid on the final chronological holdout; that holdout is reserved for the single frozen primary configuration.
+- Reuse the same 72 IDs as ranked-universe data coverage expands. Do not generate a new grid for each asset, cohort, or snapshot; do not stop early because results look favorable or unfavorable. Intermediate frontier results are descriptive/operational only and must not be treated as independent confirmatory tests.
+- Correct the family of 72 exploratory comparisons using Holm step-down family-wise error control at alpha 0.05 within each pre-declared comparison family. Report unadjusted estimates and tests as well as adjusted results. The pre-registered primary test remains separate and retains its pre-declared inferential status.
+- Do not rank the grid into a single “best” strategy, retune neighboring values, or add variants after seeing outcomes. Report every configuration and every expected evaluation cell with a terminal status (COMPLETED, EXCLUDED, INVALID_DATA, FAILED, or NOT_RUN) and an explicit reason where not completed. Grid changes require a new grid version and experiment ID, while retaining prior artifacts and negative results.
+- Validate the grid mechanically before running it: exactly 72 combinations; unique/stable IDs and hashes; coverage of every axis value; no silent parameter changes; and checkpoint/resume without duplicate or missing result keys. If any check fails, stop grid outcome execution and report the precise blocker.
+
 ## 7. Mandatory test sequence
 
 ### Phase A — data construction and integrity
@@ -209,6 +242,12 @@ If the public funding/cost data are missing for material parts of the primary sa
 - Test predefined cost stresses, regimes, coverage strata, and rank bands. A later-regime failure is evidence, not a tuning trigger.
 - The expanding all-rank result cannot replace a failed primary registered screen.
 
+### Phase G — frozen sensitivity grid
+
+- Run the precommitted 72-configuration sensitivity grid only after data and implementation gates pass, using discovery/validation data only.
+- Keep the primary configuration's result and verdict separate from grid results. Do not run the grid on the final holdout and do not promote a grid variant to replace the registered primary.
+- Report complete configuration coverage, gross and net estimates under the fixed cost cases, missing/excluded/failed cells, Holm-adjusted tests, and stability across the predeclared universe arms. Preserve all results; no outcome-driven early stopping.
+
 ## 8. Mandatory red-team checklist
 
 The implementer and an independent reviewer must evaluate:
@@ -230,7 +269,7 @@ An unexplained mismatch in frozen statistic, universe, timestamp, or accounting 
 
 ## 9. Required tests and immutable artifacts
 
-Add only the minimum code/tests needed for this experiment, following Expansion conventions. Run relevant tests before a full evaluation. Do not change unrelated candidates or workflows.
+Add only the minimum code/tests needed for this experiment, following the repository's existing conventions. Run relevant tests before a full evaluation. Do not change unrelated candidates or workflows. Add automated grid tests proving the Cartesian product is exactly 72, IDs and hashes are unique/stable, every axis value is represented, no unregistered values are accepted, expected result-cell keys are complete, and checkpoint/resume is idempotent. Verify these tests on fixtures before using research outcomes.
 
 Save outputs under:
 
@@ -239,7 +278,11 @@ artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
 Required outputs:
 
 - **run_manifest.json:** repository/commit SHAs, run timestamps, sources/access classifications, exact window, environment, code identity, seeds, configuration hash, output hashes.
-- **preregistration.json:** definitions, primary and secondary universes, signal timing, thresholds, portfolio, costs, benchmarks, acceptance gates, and the commit made before outcomes were read.
+- **preregistration.json:** definitions, primary and secondary universes, signal timing, thresholds, portfolio, costs, benchmarks, acceptance gates, frozen grid version/hash, and the commit made before outcomes were read.
+- **parameter_grid_snapshot.json:** exact copy or content-addressed snapshot of configs/dispersion_momentum_grid_v1.json, including its SHA-256.
+- **grid_config_manifest.json:** all 72 configurations with stable ID, canonical parameter JSON, hash, and deterministic enumeration index.
+- **grid_results.jsonl:** one terminal record per configuration × universe arm × evaluation segment × cost case, including incomplete/invalid/failed/not-run records.
+- **grid_run_state.json:** expected and observed cell counts, checkpoint cursor, input hashes, and resume-verification result.
 - **data_gate.json:** each check, pass/fail, counts, dates, rank coverage, exclusions, source-specific reason.
 - **universe_coverage.csv:** date, historical rank, asset/contract IDs, cap fields, eligibility, price/funding coverage, inclusion, exclusion reason.
 - **expanding_rank_frontier.json:** cohorts processed, cumulative coverage, complete/incomplete assets, duplicates, errors, last verified rank, next work item.
@@ -278,7 +321,7 @@ Lead with a plain-language verdict and selected decision state. Then answer:
 6. What are effective independent sample size and power/minimum detectable effect?
 7. What is the strongest adverse or falsifying finding?
 8. What evidence would change the decision?
-9. Which hypotheses, cost settings, data fields, and rank bands were tested, including negative/incomplete results?
+9. Which hypotheses, cost settings, data fields, rank bands, and all 72 grid configurations were tested, including negative/incomplete results and Holm-adjusted comparisons?
 10. What are exact artifact paths, hashes, commit, test commands, and run identifier?
 
 End with exactly these headings:
@@ -295,6 +338,7 @@ No live-trading recommendation is implied.
 - Start with repository/specification review and free-data access checks; do not start by hunting for the best return.
 - Freeze and persist the protocol before computing primary forward outcomes.
 - Cache, checkpoint, hash, and verify the descending market-cap universe incrementally; resume idempotently after interruption.
+- Before outcome computation, commit and hash the grid JSON, generate and validate all 72 stable configurations, and persist the preregistration; the primary config and final holdout boundary must remain frozen.
 - Continue safe processing after isolated source errors, but disclose missing inputs and block confirmatory inference when the data gate remains incomplete.
 - Do not repeat a completed cohort or silently overwrite artifacts. Use stable cohort IDs and content hashes.
 - Do not start live systems or place orders. Stay within Market-dispersion-and-momentum-breakdown. Do not change unrelated workflows, schedules, permissions, secrets, or deployment configuration. If a workflow change is required, first document the gap and make only the minimum isolated change needed for a reproducible research run.
@@ -311,6 +355,7 @@ Before acting, perform three explicit prompt-review passes and record a short ch
 1. **Completeness pass:** identify missing definitions, data fields, chronology, portfolio accounting, deliverables, and acceptance criteria. Resolve only from authoritative source records or an outcome-blind preregistration addendum.
 2. **Adversarial pass:** try to falsify the proposed test design by looking for survivorship, look-ahead, universe drift, cost omissions, source licensing issues, multiple testing, small effective sample size, and hidden workflow side effects.
 3. **Execution-safety pass:** verify repository scope, free-data access, checkpoint/resume behavior, secret handling, output reproducibility, and that no result-dependent decisions occur before the protocol is frozen.
+4. **Grid-integrity pass:** independently calculate the Cartesian-product size, review every axis and value, confirm the 72 stable configuration IDs/hashes, protect the primary holdout, and verify multiplicity control and no-winner-selection rules.
 
 After each research run, improve the *prompt's clarity and execution controls* using observed process failures, but never retroactively alter the frozen hypothesis, primary statistic, sample split, cost assumptions, or decision thresholds for that same run. Any scientific specification change requires a separately versioned, timestamped, outcome-blind preregistration amendment and a new evaluation identifier. Keep prior prompt versions and experiment artifacts in the destination repository's history; do not erase negative results. If an essential gate fails, stop at that gate, persist the evidence, and report the smallest next step that could resolve it without payment or unauthorized scope expansion.
 
