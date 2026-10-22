@@ -77,7 +77,7 @@
       "dispersion_state_rule": "trailing_365d_outer_deciles",
       "momentum_spread_breakpoints": "top_bottom_deciles"
     },
-    "primary_compatible_config_id": "H004G017"
+    "primary_compatible_config_id": "H004G033"
   },
   "fixed_rules": {
     "formation_clock": "Completed UTC daily bars only; no incomplete current bar.",
@@ -100,9 +100,9 @@
   },
   "inference_and_selection": {
     "grid_role": "Sensitivity analysis only; never choose a configuration as a winner, retune thresholds, or use grid ranking for an economic decision.",
-    "multiplicity": "Apply Holm step-down family-wise correction at alpha 0.05 to the 72 exploratory configuration-level tests within each pre-declared comparison family. Report raw and adjusted results, and clearly state the number of valid and unrun tests.",
+    "multiplicity": "The primary exploratory family is the 72 configuration-level tests on the registered primary universe, the predeclared validation sample, and the 1x registered base-cost net difference-of-spreads endpoint. Apply Holm step-down family-wise correction at alpha 0.05 jointly across those 72 tests. Other universe arms and 2x/3x cost cases are predeclared robustness diagnostics and must all be reported, but must not create additional winner-selection opportunities; clearly label their inferences exploratory and disclose any broader multiplicity.",
     "primary_inference": "The latest authoritative registered specification governs the primary test. The primary-compatible anchor is identified explicitly for validation-split parity; if its realized definitions differ from the plan of record, stop and resolve outcome-blind before computing outcomes.",
-    "result_policy": "Report every configuration including negative, null, invalid, excluded, failed, and not-run results with explicit status and reason."
+    "result_policy": "Report every configuration including negative, null, invalid, excluded, failed, and not-run results with explicit status and reason. Never use gross results or 2x/3x stress results to select or rescue a configuration whose registered 1x base-cost net endpoint fails."
   },
   "required_machine_checks": [
     "Cartesian product contains exactly 72 configurations.",
