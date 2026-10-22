@@ -1,0 +1,18 @@
+{
+  "breakpoints": "deciles",
+  "date_first": "2020-08-01",
+  "date_last": "2024-12-01",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "formation_returns_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/formation_returns.csv",
+  "formation_returns_sha256": "561ceced665e6b947fb0f77343458bdbf25a0c1b6f690cede0dc824b732e997f",
+  "formation_schedule": "first eligible date of each month, fixed UTC phase",
+  "forward_horizon_days": 30,
+  "gross_spread_mean": 0.009322961147429417,
+  "gross_spread_median": -0.006444519090194889,
+  "gross_spread_pos_share": 0.4716981132075472,
+  "momentum_lookback_days": 30,
+  "n_formations": 53,
+  "net_1x_spread_mean": 0.008322961147429413,
+  "net_1x_spread_pos_share": 0.4716981132075472,
+  "phase": "B_unconditional_baseline"
+}
