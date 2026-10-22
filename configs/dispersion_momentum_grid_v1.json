@@ -27,7 +27,7 @@
         30,
         60
       ],
-      "definition": "Calendar-day horizon for the subsequent long-short momentum-spread outcome, measured from the formation close under the frozen instrument-lifecycle rules."
+      "definition": "Calendar-day horizon for the subsequent momentum-spread outcome. The 30-day value is primary-compatible with the registered one-month, non-overlapping forward window; deviations remain sensitivity analyses and may not redefine the registered result."
     },
     {
       "name": "dispersion_estimator",
@@ -42,19 +42,19 @@
       "name": "dispersion_state_rule",
       "type": "string",
       "values": [
-        "trailing_365d_median_split",
-        "trailing_365d_outer_terciles"
+        "expanding_prior_history_outer_deciles",
+        "trailing_365d_median_split"
       ],
-      "definition": "Estimate thresholds only from dispersion observations strictly earlier than the formation timestamp and within the preceding 365 calendar days. Require at least 180 valid prior daily observations. Median split: low state when current dispersion is less than or equal to the prior median, high state when above it. Outer terciles: low state at or below the prior 33 1/3 percentile, high state at or above the prior 66 2/3 percentile; omit middle-state dates. Use linear/type-7 quantiles. Missing threshold history means no state, never a fallback threshold."
+      "definition": "Primary-compatible rule: after at least 180 valid prior daily dispersion observations, compute deciles from all valid dispersion observations strictly earlier than formation (expanding history; never include current date), label current value at/above the prior 90th percentile high and at/below the prior 10th percentile low, omit middle deciles from the high-low contrast, use linear/type-7 quantiles. Sensitivity alternative: using only the preceding 365 calendar days, require at least 180 valid prior daily observations and use a prior-only median split (low at or below median, high above median). For both, missing threshold history means no state, never a fallback threshold."
     },
     {
       "name": "momentum_spread_breakpoints",
       "type": "string",
       "values": [
-        "top_bottom_terciles",
+        "top_bottom_deciles",
         "top_bottom_quintiles"
       ],
-      "definition": "Within the same point-in-time eligible universe, sort assets by trailing momentum return descending; break ties with canonical asset ID ascending. For q equal to 3 or 5, take floor(N/q) assets at each tail, require N >= 2q, and equal-weight the top-tail long leg and bottom-tail short leg. Do not overlap the legs."
+      "definition": "Within the same point-in-time eligible universe, sort assets by trailing momentum return descending; break ties with canonical asset ID ascending. For q equal to 10 or 5, take floor(N/q) assets at each tail, require N >= 2q, and equal-weight the top-tail long leg and bottom-tail short leg. Do not overlap the legs. The decile portfolio plus 30-day momentum / 30-day forward horizon / standard-deviation dispersion / expanding prior-history outer-decile state is the grid's primary-compatible anchor, subject to the latest authoritative registered plan."
     }
   ],
   "expected_combinations": 72,
@@ -69,7 +69,15 @@
     ],
     "value_order": "Use each axis's values in the order listed and a deterministic Cartesian product.",
     "config_id_format": "H004G001 through H004G072, assigned 1-based in deterministic product order.",
-    "canonical_config_identity": "Serialize each configuration as canonical UTF-8 JSON with sorted keys and no insignificant whitespace; compute SHA-256. Persist the configuration, ID, and hash."
+    "canonical_config_identity": "Serialize each configuration as canonical UTF-8 JSON with sorted keys and no insignificant whitespace; compute SHA-256. Persist the configuration, ID, and hash.",
+    "primary_compatible_anchor": {
+      "momentum_lookback_days": 30,
+      "forward_horizon_days": 30,
+      "dispersion_estimator": "cross_sectional_population_stddev",
+      "dispersion_state_rule": "expanding_prior_history_outer_deciles",
+      "momentum_spread_breakpoints": "top_bottom_deciles"
+    },
+    "primary_compatible_config_id": "H004G017"
   },
   "fixed_rules": {
     "formation_clock": "Completed UTC daily bars only; no incomplete current bar.",
@@ -86,13 +94,13 @@
       "registered_primary",
       "expanding_all_rank_secondary_when_defined"
     ],
-    "final_holdout": "Do not run or inspect the 72-way grid on the final holdout. Reserve the final chronological holdout for the single frozen primary configuration. Grid results on discovery/validation data are exploratory only.",
+    "final_holdout": "Do not run or inspect sensitivity alternatives on the final holdout. Reserve the final chronological holdout for the single frozen registered primary configuration. The primary-compatible anchor may be run on discovery/validation data as a reproducibility cross-check; do not duplicate accounting, and do not use grid results from the holdout for any comparison or selection.",
     "frontier_expansion": "Reuse the same 72 configuration IDs at every coverage checkpoint; do not generate a new grid per asset/cohort or stop when results look favorable. Intermediate rank-frontier reads are operational/descriptive, not independent chances to declare success."
   },
   "inference_and_selection": {
     "grid_role": "Sensitivity analysis only; never choose a configuration as a winner, retune thresholds, or use grid ranking for an economic decision.",
     "multiplicity": "Apply Holm step-down family-wise correction at alpha 0.05 to the 72 exploratory configuration-level tests within each pre-declared comparison family. Report raw and adjusted results, and clearly state the number of valid and unrun tests.",
-    "primary_inference": "The pre-registered primary test is evaluated and reported separately under its exact registered inferential plan.",
+    "primary_inference": "The latest authoritative registered specification governs the primary test. The primary-compatible anchor is identified explicitly for validation-split parity; if its realized definitions differ from the plan of record, stop and resolve outcome-blind before computing outcomes.",
     "result_policy": "Report every configuration including negative, null, invalid, excluded, failed, and not-run results with explicit status and reason."
   },
   "required_machine_checks": [
