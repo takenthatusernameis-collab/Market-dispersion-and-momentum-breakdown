@@ -1,0 +1,14 @@
+{
+  "commit_sha": "52ed3342a221d7d018b8442ef3a7ea1998854329",
+  "data_gate": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data_gate.json",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "free_data_access": {
+    "binance_archive": "not_yet_verified",
+    "coinmetrics_community_api": "accessible",
+    "funding_source": "not_yet_verified"
+  },
+  "grid_config_manifest": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/grid_config_manifest.json",
+  "run_timestamp_utc": "2026-10-22T16:06:06.449132+00:00",
+  "source_config": "configs/dispersion_momentum_grid_v1.json",
+  "source_config_sha256": "d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb"
+}

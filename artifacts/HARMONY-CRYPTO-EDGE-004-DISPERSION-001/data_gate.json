@@ -1,0 +1,6 @@
+{
+  "checks": [],
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "notes": "CoinMetrics Community API catalog reachable; point-in-time panel, Binance prices/volume, funding, survivorship and identity mapping not yet validated.",
+  "status": "NOT_STARTED"
+}

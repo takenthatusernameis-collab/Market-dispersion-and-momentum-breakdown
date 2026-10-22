@@ -1,13 +1,15 @@
 # Agent Handoff — HARMONY-CRYPTO-EDGE-004-DISPERSION-001
 
 ## Completed by this session
-- Reviewed repository/specification: prompt at prompts/harmony_crypto_edge_004_dispersion_momentum_breakdown_001.md (frozen 72-config grid in configs/dispersion_momentum_grid_v1.json).
-- No code, tests, or data artifacts exist yet; environment has no network data access verified. Data gate not started.
+- Re-read prompt and froze 72-config grid definition; verified CoinMetrics Community API catalog access.
+- Created artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ with run_manifest.json, data_gate.json, parameter_grid_snapshot.json, grid_config_manifest.json, grid_run_state.json (pending), expanding_rank_frontier.json (pending).
+- Added tests/test_grid_validation.py; all 5 tests pass.
+- No forward outcomes computed.
 
 ## Status
-- Specification review: complete (prompt + grid config read).
-- Free-data/data-integrity gate: NOT started (blocked on data source access).
+- Specification review: complete.
+- Free-data/data-integrity gate: PARTIALLY started (CoinMetrics catalog reachable; Binance/funding/survivorship not validated).
 - Forward outcome computation: not started.
 
 ## Next agent initial task
-Establish the authoritative specification and preregistration: (1) re-read prompt sections 1-8 and freeze primary/secondary universe and statistic definitions; (2) verify free data access (point-in-time market cap, daily returns, funding) and document source classifications; (3) create artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ with run_manifest.json and data_gate.json skeleton; (4) add grid validation tests (Cartesian product = 72, unique/stable IDs and hashes) per section 9. Do not compute forward outcomes until gates pass. Report commit SHA, data-gate status, and tests run.
+Validate point-in-time market-cap history, daily returns, and funding end-to-end; complete data_gate.json with checks/counts/exclusions; build universe_coverage.csv; implement formation/return accounting and run Phase A/B only. Do not compute conditional outcomes or grid results until data gate passes. Report commit SHA, data-gate status, tests run.
