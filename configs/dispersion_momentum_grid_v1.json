@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "grid_id": "HARMONY-CRYPTO-EDGE-004-SENSITIVITY-GRID-001",
+  "purpose": "A bounded, pre-registered sensitivity grid. This is not a parameter-optimization or winner-selection exercise and cannot replace the frozen primary hypothesis test.",
+  "primary_test": {
+    "source_of_truth": "The latest authoritative preregistration and its outcome-blind amendments",
+    "evaluation": "Run separately under its exact specification",
+    "priority": "Primary result governs the hypothesis verdict; no grid variant can rescue a failed, blocked, or inconclusive primary result."
+  },
+  "axes": [
+    {
+      "name": "momentum_lookback_days",
+      "type": "integer",
+      "values": [
+        14,
+        30,
+        60
+      ],
+      "definition": "Trailing calendar days of completed UTC daily returns used to calculate each asset's cumulative momentum return at formation."
+    },
+    {
+      "name": "forward_horizon_days",
+      "type": "integer",
+      "values": [
+        14,
+        30,
+        60
+      ],
+      "definition": "Calendar-day horizon for the subsequent long-short momentum-spread outcome, measured from the formation close under the frozen instrument-lifecycle rules."
+    },
+    {
+      "name": "dispersion_estimator",
+      "type": "string",
+      "values": [
+        "cross_sectional_population_stddev",
+        "scaled_median_absolute_deviation_1_4826"
+      ],
+      "definition": "Estimate dispersion across eligible assets' trailing momentum returns at each formation time. The second estimator is 1.4826 multiplied by the median absolute deviation from the cross-sectional median."
+    },
+    {
+      "name": "dispersion_state_rule",
+      "type": "string",
+      "values": [
+        "trailing_365d_median_split",
+        "trailing_365d_outer_terciles"
+      ],
+      "definition": "Estimate thresholds only from dispersion observations strictly earlier than the formation timestamp and within the preceding 365 calendar days. Require at least 180 valid prior daily observations. Median split: low state when current dispersion is less than or equal to the prior median, high state when above it. Outer terciles: low state at or below the prior 33 1/3 percentile, high state at or above the prior 66 2/3 percentile; omit middle-state dates. Use linear/type-7 quantiles. Missing threshold history means no state, never a fallback threshold."
+    },
+    {
+      "name": "momentum_spread_breakpoints",
+      "type": "string",
+      "values": [
+        "top_bottom_terciles",
+        "top_bottom_quintiles"
+      ],
+      "definition": "Within the same point-in-time eligible universe, sort assets by trailing momentum return descending; break ties with canonical asset ID ascending. For q equal to 3 or 5, take floor(N/q) assets at each tail, require N >= 2q, and equal-weight the top-tail long leg and bottom-tail short leg. Do not overlap the legs."
+    }
+  ],
+  "expected_combinations": 72,
+  "combination_count_check": "3 * 3 * 2 * 2 * 2 = 72",
+  "enumeration": {
+    "axis_order": [
+      "momentum_lookback_days",
+      "forward_horizon_days",
+      "dispersion_estimator",
+      "dispersion_state_rule",
+      "momentum_spread_breakpoints"
+    ],
+    "value_order": "Use each axis's values in the order listed and a deterministic Cartesian product.",
+    "config_id_format": "H004G001 through H004G072, assigned 1-based in deterministic product order.",
+    "canonical_config_identity": "Serialize each configuration as canonical UTF-8 JSON with sorted keys and no insignificant whitespace; compute SHA-256. Persist the configuration, ID, and hash."
+  },
+  "fixed_rules": {
+    "formation_clock": "Completed UTC daily bars only; no incomplete current bar.",
+    "point_in_time_universe": "Use the exact pre-registered point-in-time eligible universe for the relevant universe arm. Market-cap ranking determines membership only; it is not an extra grid axis.",
+    "returns_and_missingness": "Use the registered return and instrument-lifecycle accounting. No forward-filling of returns, prices, dispersion, state, membership, or funding. Apply only frozen missingness rules.",
+    "unvaried_inputs": "Keep data source, asset/contract mapping, universe eligibility, registered market-cap screen, portfolio weights, formation schedule, cost model, funding treatment, benchmark, sample boundaries, inference protocol, and all exclusions fixed as specified by the primary protocol. Any required fallback must be documented and frozen before outcome inspection.",
+    "cost_scenarios": [
+      "gross_before_costs",
+      "1x_registered_base_cost",
+      "2x_registered_base_cost",
+      "3x_registered_base_cost"
+    ],
+    "universe_arms": [
+      "registered_primary",
+      "expanding_all_rank_secondary_when_defined"
+    ],
+    "final_holdout": "Do not run or inspect the 72-way grid on the final holdout. Reserve the final chronological holdout for the single frozen primary configuration. Grid results on discovery/validation data are exploratory only.",
+    "frontier_expansion": "Reuse the same 72 configuration IDs at every coverage checkpoint; do not generate a new grid per asset/cohort or stop when results look favorable. Intermediate rank-frontier reads are operational/descriptive, not independent chances to declare success."
+  },
+  "inference_and_selection": {
+    "grid_role": "Sensitivity analysis only; never choose a configuration as a winner, retune thresholds, or use grid ranking for an economic decision.",
+    "multiplicity": "Apply Holm step-down family-wise correction at alpha 0.05 to the 72 exploratory configuration-level tests within each pre-declared comparison family. Report raw and adjusted results, and clearly state the number of valid and unrun tests.",
+    "primary_inference": "The pre-registered primary test is evaluated and reported separately under its exact registered inferential plan.",
+    "result_policy": "Report every configuration including negative, null, invalid, excluded, failed, and not-run results with explicit status and reason."
+  },
+  "required_machine_checks": [
+    "Cartesian product contains exactly 72 configurations.",
+    "All 72 IDs are unique, stable across runs, and have reproducible SHA-256 configuration hashes.",
+    "Every value on every axis appears in at least one configuration.",
+    "No unregistered axis, value, cost case, universe cutoff, or adaptive stopping rule is added.",
+    "Every planned configuration/evaluation-cell combination receives a terminal status and any skipped cell has a reason.",
+    "Checkpoint/resume is idempotent and creates neither duplicate result keys nor missing expected keys."
+  ]
+}
