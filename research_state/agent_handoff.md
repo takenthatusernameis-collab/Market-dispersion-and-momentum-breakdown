@@ -37,3 +37,7 @@ Report: commit SHA, data-gate status (PASS), tests run (11 pass), phases complet
 
 Artifacts root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
 Grid spec: configs/dispersion_momentum_grid_v1.json (SHA d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb)
+
+## This session note
+- Re-verified 11/11 tests pass; no code changes.
+- Phases C-G remain unimplemented; require new scripts beyond current formation_accounting.py.
