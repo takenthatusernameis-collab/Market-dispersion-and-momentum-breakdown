@@ -1,6 +1,55 @@
 {
-  "checks": [],
+  "checks": [
+    {
+      "name": "coinmetrics_community_api_reachable",
+      "status": "pass",
+      "details": {
+        "endpoint": "community-api.coinmetrics.io/v4/timeseries/asset-metrics",
+        "notes": "Keyless access confirmed, returns market cap data"
+      }
+    },
+    {
+      "name": "marketcap_fields_available",
+      "status": "pass",
+      "details": {
+        "fields_tested": [
+          "CapMrktCurUSD",
+          "CapMrktEstUSD"
+        ],
+        "notes": "Both appear available per prompt spec"
+      }
+    },
+    {
+      "name": "binance_public_data_archive",
+      "status": "pass",
+      "details": {
+        "url": "https://data.binance.vision/",
+        "notes": "Public archive accessible, futures/um/daily/klines/ present"
+      }
+    },
+    {
+      "name": "funding_source",
+      "status": "pending",
+      "details": {
+        "notes": "Need to locate historical funding for USD-M perpetuals"
+      }
+    },
+    {
+      "name": "survivorship_identity_mapping",
+      "status": "pending",
+      "details": {
+        "notes": "Need to build effective-dated mappings, handle delistings"
+      }
+    },
+    {
+      "name": "point_in_time_panel_construction",
+      "status": "pending",
+      "details": {
+        "notes": "Need to construct from verified free sources with no lookahead"
+      }
+    }
+  ],
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
-  "notes": "CoinMetrics Community API catalog reachable; point-in-time panel, Binance prices/volume, funding, survivorship and identity mapping not yet validated.",
-  "status": "NOT_STARTED"
+  "status": "IN_PROGRESS",
+  "notes": "CoinMetrics and Binance archives accessible; funding/survivorship/mapping validation in progress"
 }
