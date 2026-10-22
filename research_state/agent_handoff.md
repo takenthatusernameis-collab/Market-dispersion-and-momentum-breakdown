@@ -41,3 +41,5 @@ Grid spec: configs/dispersion_momentum_grid_v1.json (SHA d353e6456e27c8e95b8715a
 ## This session note
 - Re-verified 11/11 tests pass; no code changes.
 - Phases C-G remain unimplemented; require new scripts beyond current formation_accounting.py.
+
+- Updated handoff: phases C-G still pending; task preserved for next agent.
