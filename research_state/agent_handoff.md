@@ -39,7 +39,8 @@ Artifacts root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
 Grid spec: configs/dispersion_momentum_grid_v1.json (SHA d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb)
 
 ## This session note
-- Re-verified 11/11 tests pass; no code changes.
-- Phases C-G remain unimplemented; require new scripts beyond current formation_accounting.py.
+- Implemented Phase C partial: scripts/phase_c.py, phase_c_returns.csv, phase_c_summary.json (54 formations; high n=1, low n=6 due to trailing-365d quantile; needs refinement).
+- Phases D-G remain pending.
 
-- Updated handoff: phases C-G still pending; task preserved for next agent.
+## Next agent initial task
+Continue Phases C (refine state assignment), D, E, F, G per prior spec. Do not recompute A/B.

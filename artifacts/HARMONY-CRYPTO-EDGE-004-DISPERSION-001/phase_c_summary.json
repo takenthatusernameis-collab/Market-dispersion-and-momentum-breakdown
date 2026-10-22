@@ -1,0 +1,11 @@
+{
+  "anchor": "H004G033",
+  "difference_gross": -0.16254162525079677,
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "high_gross_mean": -0.1964598383541558,
+  "low_gross_mean": -0.033918213103359046,
+  "n_formations": 54,
+  "n_high": 1,
+  "n_low": 6,
+  "phase": "C_dispersion_conditioned"
+}
