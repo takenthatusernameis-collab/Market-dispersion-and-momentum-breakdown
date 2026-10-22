@@ -27,7 +27,7 @@
         30,
         60
       ],
-      "definition": "Calendar-day horizon for the subsequent momentum-spread outcome. The 30-day value is primary-compatible with the registered one-month, non-overlapping forward window; deviations remain sensitivity analyses and may not redefine the registered result."
+      "definition": "Calendar-day horizon for the subsequent momentum-spread outcome. For each configuration, formations follow a pre-registered fixed UTC phase with non-overlapping forward windows; the 30-day value is primary-compatible with the registered one-month non-overlapping window."
     },
     {
       "name": "dispersion_estimator",
@@ -42,10 +42,10 @@
       "name": "dispersion_state_rule",
       "type": "string",
       "values": [
-        "expanding_prior_history_outer_deciles",
+        "trailing_365d_outer_deciles",
         "trailing_365d_median_split"
       ],
-      "definition": "Primary-compatible rule: after at least 180 valid prior daily dispersion observations, compute deciles from all valid dispersion observations strictly earlier than formation (expanding history; never include current date), label current value at/above the prior 90th percentile high and at/below the prior 10th percentile low, omit middle deciles from the high-low contrast, use linear/type-7 quantiles. Sensitivity alternative: using only the preceding 365 calendar days, require at least 180 valid prior daily observations and use a prior-only median split (low at or below median, high above median). For both, missing threshold history means no state, never a fallback threshold."
+      "definition": "Use only valid dispersion observations strictly earlier than the formation timestamp within the preceding 365 calendar days; require at least 180 valid prior daily observations. Primary-compatible outer-decile rule: classify current dispersion at or above the prior 90th percentile as high and at or below the prior 10th percentile as low; omit middle-state dates from the high-low contrast. Alternative median split: low state at or below the prior median, high state above it. Use linear/type-7 quantiles. Missing threshold history means no state, never a fallback threshold."
     },
     {
       "name": "momentum_spread_breakpoints",
@@ -74,7 +74,7 @@
       "momentum_lookback_days": 30,
       "forward_horizon_days": 30,
       "dispersion_estimator": "cross_sectional_population_stddev",
-      "dispersion_state_rule": "expanding_prior_history_outer_deciles",
+      "dispersion_state_rule": "trailing_365d_outer_deciles",
       "momentum_spread_breakpoints": "top_bottom_deciles"
     },
     "primary_compatible_config_id": "H004G017"
@@ -95,7 +95,8 @@
       "expanding_all_rank_secondary_when_defined"
     ],
     "final_holdout": "Do not run or inspect sensitivity alternatives on the final holdout. Reserve the final chronological holdout for the single frozen registered primary configuration. The primary-compatible anchor may be run on discovery/validation data as a reproducibility cross-check; do not duplicate accounting, and do not use grid results from the holdout for any comparison or selection.",
-    "frontier_expansion": "Reuse the same 72 configuration IDs at every coverage checkpoint; do not generate a new grid per asset/cohort or stop when results look favorable. Intermediate rank-frontier reads are operational/descriptive, not independent chances to declare success."
+    "frontier_expansion": "Reuse the same 72 configuration IDs at every coverage checkpoint; do not generate a new grid per asset/cohort or stop when results look favorable. Intermediate rank-frontier reads are operational/descriptive, not independent chances to declare success.",
+    "formation_schedule": "For each configuration, use non-overlapping forward outcome windows of its configured horizon. Anchor the first formation date to the first eligible UTC daily formation timestamp fixed in preregistration, then form subsequent observations at exact horizon-day strides; do not choose the phase based on outcomes. Configurations with the same horizon share the same formation schedule and boundary. The registered 30-day primary-compatible configuration must preserve the registered one-month, non-overlapping schedule."
   },
   "inference_and_selection": {
     "grid_role": "Sensitivity analysis only; never choose a configuration as a winner, retune thresholds, or use grid ranking for an economic decision.",
