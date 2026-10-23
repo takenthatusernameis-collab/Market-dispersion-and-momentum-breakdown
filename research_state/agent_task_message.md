@@ -3,7 +3,7 @@
 ## Context
 - Experiment: **HARMONY-CRYPTO-EDGE-004-DISPERSION-002**
 - Status: **COMPLETE AND VERIFIED**
-- HEAD: **4a9a6d0** (main), working tree clean
+- HEAD: **ef7f8a8** (main), working tree clean
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
 
 ## What was accomplished
@@ -11,12 +11,14 @@ Robustness and inference tightening complete. Paired block-bootstrap confidence 
 
 Reproducibility issues in scripts/fix_inference.py fixed (was pointing to DISPERSION-001 and using wrong Phase F split schema). Script now targets DISPERSION-002, derives splits from formation panel correctly, and reproduces committed artifacts byte-for-byte. Regression tests added in tests/test_inference_repro.py (5 tests).
 
+This session confirmed clean state with all tests passing; no further work was required.
+
 ## MANDATORY INSTRUCTIONS FOR NEXT AGENT
 1. **DO NOT** modify the grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
 2. **PRESERVE CONTROLS** on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 3. **AWAIT A NEW EXPERIMENT ID** before starting any new work. If a new experiment ID is provided, follow its specification exactly as written.
 4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green. pytest is not installed in this environment; use unittest.
-5. **CURRENT STATE**: Working tree is clean at 4a9a6d0. No pending changes or authorized work on DISPERSION-002.
+5. **CURRENT STATE**: Working tree is clean at ef7f8a8. No pending changes or authorized work on DISPERSION-002.
 
 ## Ready for handoff
 DISPERSION-002 is closed. No further authorized work on this experiment. Await new experiment ID.
