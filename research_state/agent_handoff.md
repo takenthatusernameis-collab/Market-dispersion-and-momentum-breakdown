@@ -5,8 +5,8 @@
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
 - Working tree clean; HEAD on main (26bcd88).
-- Re-verified this session (2026-10-23 16:45Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
-- Handoff read and updated by current agent.
+- Re-verified this session (2026-10-23 16:46Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
+- Handoff read and updated by current agent (this session).
 
 ## Controls (must preserve)
 - free-data-only
@@ -15,9 +15,9 @@
 - chronological OOS
 
 ## What was done (this session)
-- Read durable handoff — prior task already complete and verified.
+- Read durable handoff and task message — prior task already complete and verified.
 - Confirmed working tree clean at HEAD 26bcd88, all tests passing (15/15).
-- Updated handoff and initial task message to reflect current verification state (HEAD 26bcd88, verified 2026-10-23 16:45Z).
+- Updated handoff and initial task message to reflect current verification state (HEAD 26bcd88, verified 2026-10-23 16:46Z).
 
 ## Artifacts (DISPERSION-002, corrected)
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json` (corrected block-bootstrap CIs)
