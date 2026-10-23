@@ -4,7 +4,7 @@
     "note": "CapMrktCurUSD robustness arm evaluated per spec (data gate noted partial coverage on free tier but arm registered)"
   },
   "discovery": {
-    "diff_gross": 0.2876691537149731,
+    "diff_gross": 0.28766915371497304,
     "diff_gross_ci_95": [
       null,
       null
@@ -23,7 +23,7 @@
   },
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
   "final": {
-    "diff_gross": -0.005012061054662231,
+    "diff_gross": -0.0050120610546623146,
     "diff_gross_ci_95": [
       null,
       null
