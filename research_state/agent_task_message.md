@@ -3,7 +3,7 @@
 ## Context
 - Experiment: **HARMONY-CRYPTO-EDGE-004-DISPERSION-002**
 - Status: **COMPLETE AND VERIFIED**
-- HEAD: **d9eff72** (main; 720612d baseline), working tree clean (only untracked __pycache__). e4b6565 is an ancestor; only handoff-file checkpoint commits since.
+- HEAD: **b5aa636** (main; 720612d baseline), working tree clean (only untracked __pycache__). e4b6565 is an ancestor; only handoff-file checkpoint commits since.
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
 - Verified at: **2026-10-23 22:33Z** (re-verified **22:35Z**, **22:36Z**, **22:37Z**, **23:28Z**, **23:29Z**, **23:30Z**, and **2026-10-24 session resume**)
 
