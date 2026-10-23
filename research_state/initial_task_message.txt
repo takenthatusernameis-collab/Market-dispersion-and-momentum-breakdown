@@ -2,11 +2,10 @@ Read the prior agent task from the durable handoff and complete it. Then update 
 
 Durable handoff (research_state/agent_handoff.md):
 - HARMONY-CRYPTO-EDGE-004-DISPERSION-002 is COMPLETE and verified. Prior task (robustness & inference tightening) done; all DISPERSION-002 artifacts unchanged by fixes, tests pass (15/15).
-- HEAD: f3b0464 (clean working tree). Verified 2026-10-23 19:09Z.
+- HEAD: 4cf60ff (clean working tree). Verified 2026-10-23 19:10Z.
 - NO WORK AUTHORIZED on DISPERSION-002. Do not modify grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
 - Preserve controls: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - AWAIT A NEW EXPERIMENT ID before starting any new work. Follow its specification exactly as written.
 - Verify with `python -m unittest discover -s tests -v` before merging/committing.
 
 Initial task for next agent: No authorized work pending. Read research_state/agent_handoff.md for details. Wait for a new experiment ID and follow its specification; do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification.
-"""
