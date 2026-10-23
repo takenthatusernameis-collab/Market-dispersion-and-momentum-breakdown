@@ -28,12 +28,11 @@
 - Phase D: expanding rank frontier diff positive at 1-20 (+0.104) and 1-28 (+0.175), negative at 1-10 (-0.102) and 1-15 (-0.055).
 
 ## Task for next agent
-DISPERSION-002 validation complete and verified. Tests pass.
+DISPERSION-002 validation complete and verified. Consolidated report produced: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/report.md. Tests pass.
 
 Recommended next steps (pick one or combine):
-1. **Report/Consolidate**: Produce a consolidated experiment report (summary.md/report.md) synthesizing C/D/E/F findings, noting OOS power/robustness caveats (thin high/low tails, especially final fold).
-2. **Robustness checks** (if requested): Test alternative dispersion state rules/lookbacks/horizons across the 108-config grid (H004F001..H004F108), keeping free-data-only/point-in-time/no-lookahead/chronological OOS. Do not modify grid manifest/config without issuing a new experiment ID.
-3. **Tighten inference**: Quantify fold stability / effective sample sizes and explicitly flag regimes with n<5 in any state before drawing strong conclusions.
+1. **Robustness checks** (if requested): Test alternative dispersion state rules/lookbacks/horizons across the 108-config grid (H004F001..H004F108), keeping free-data-only/point-in-time/no-lookahead/chronological OOS. Do not modify grid manifest/config without issuing a new experiment ID.
+2. **Tighten inference**: Quantify fold stability / effective sample sizes and explicitly flag regimes with n<5 in any state before drawing strong conclusions.
 
 Preserve controls. Build on existing artifacts only:
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json
@@ -41,6 +40,7 @@ Preserve controls. Build on existing artifacts only:
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_f_summary.json
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/expanding_rank_frontier.json
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/formation_returns_conditioned.csv
+- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/report.md
 
 Do not re-run/modify grid manifest, config, or data pipeline unless a new experiment ID is issued.
 
