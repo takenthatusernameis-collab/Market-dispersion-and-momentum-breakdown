@@ -5,6 +5,7 @@
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
 - Working tree clean; HEAD on main (6a14c8c).
+- Re-verified this session: 15/15 tests pass; no authorized work pending.
 
 ## Controls (must preserve)
 - free-data-only
