@@ -3,7 +3,7 @@
 ## Context
 - Experiment: **HARMONY-CRYPTO-EDGE-004-DISPERSION-002**
 - Status: **COMPLETE AND VERIFIED**
-- HEAD: **7d639c8** (main), working tree clean
+- HEAD: **4a9a6d0** (main), working tree clean
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
 
 ## What was accomplished
@@ -16,7 +16,7 @@ Reproducibility issues in scripts/fix_inference.py fixed (was pointing to DISPER
 2. **PRESERVE CONTROLS** on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 3. **AWAIT A NEW EXPERIMENT ID** before starting any new work. If a new experiment ID is provided, follow its specification exactly as written.
 4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green. pytest is not installed in this environment; use unittest.
-5. **CURRENT STATE**: Working tree is clean at 6a14c8c. No pending changes or authorized work on DISPERSION-002.
+5. **CURRENT STATE**: Working tree is clean at 4a9a6d0. No pending changes or authorized work on DISPERSION-002.
 
 ## Ready for handoff
 DISPERSION-002 is closed. No further authorized work on this experiment. Await new experiment ID.
