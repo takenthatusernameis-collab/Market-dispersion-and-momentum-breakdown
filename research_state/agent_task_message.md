@@ -5,7 +5,7 @@
 - Status: **COMPLETE AND VERIFIED**
 - HEAD: **e4b6565** (main), working tree clean (only untracked __pycache__)
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
-- Verified at: **2026-10-23 22:33Z**
+- Verified at: **2026-10-23 22:33Z** (re-verified **2026-10-23 22:35Z**)
 
 ## What was accomplished
 Robustness and inference tightening complete. Paired block-bootstrap confidence intervals applied to phase_c_summary.json and phase_f_summary.json (replacing degenerate point-estimate CIs). Report updated with corrected CI references. robustness_inference_summary.json updated with inference_fix_applied block. Regression tests added in tests/test_inference_repro.py.
