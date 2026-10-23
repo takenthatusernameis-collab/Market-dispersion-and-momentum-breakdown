@@ -10,7 +10,7 @@
 - free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 
 ## Commit
-- HEAD: b241595 (main). Working tree has uncommitted changes (inference fix artifacts).
+- HEAD: 8029885 (main). Working tree clean; inference fix artifacts committed.
 
 ## Artifacts
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json (corrected CIs)
