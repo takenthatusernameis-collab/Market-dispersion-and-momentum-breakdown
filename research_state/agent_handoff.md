@@ -33,7 +33,7 @@
 - No recomputation performed; no artifact changes made.
 
 ## Commit
-- HEAD: 93a88bd (branch main)
+- HEAD: 596ca59 (branch main)
 - Working tree clean except __pycache__ dirs (not committed).
 
 ## Read prior task + completion session (this session)
@@ -48,8 +48,11 @@
 ## Final human-readable summary
 Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 complete (no further computation). Primary anchor H004G033: high-dispersion gross momentum-spread mean +11.96%/mo (n=6) vs low-dispersion -5.51%/mo (n=8), high-low diff +17.47%/mo; block-bootstrap CIs recorded. Costs/funding included; 1x/2x/3x net stresses reported. Chronological 60/20/20 OOS: discovery +28.77%, validation +0.79%, final -0.50% (n=11, 1 high/1 low — underpowered). Grid: 72/72 configs on discovery/validation only, Holm-adjusted, no promotion; final holdout excluded. Caveats: CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked); small effective samples in high/low states; final holdout single-observation states.
 
-## Initial task message for the next agent
-See `research_state/agent_task_message.md` for the authoritative initial task message to the next agent.
+## Read prior agent task + completion session (latest, this session)
+- Read durable handoff and prior task message: prior task was final review/interpretation/reporting only and is already complete.
+- Verified: 11/11 tests pass; data_gate PASS; grid_results.jsonl 72/72 unique configs; grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only; summary.json/report.md consistent (commit 596ca59). No recomputation; no artifact changes.
+- Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
+- Updated handoff and rewrote initial task message for next agent: no task; experiment complete.
 
 This handoff delivery is complete: prior agent task verified complete (11/11 tests pass, data_gate PASS, grid_results.jsonl 72/72 unique configs, all manifest-referenced artifacts on disk, commit 86190d6). No recomputation or artifact changes are required. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is archived as complete.
 
