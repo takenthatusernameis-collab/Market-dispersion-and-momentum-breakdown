@@ -1,11 +1,10 @@
 # Agent Handoff — HARMONY-CRYPTO-EDGE-004-DISPERSION-002
-
 ## Status
 - **COMPLETE**: DISPERSION-002 robustness & inference tightening complete and verified.
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; HEAD on main (c61c5ad).
+- Working tree clean; HEAD on main (6a14c8c).
 
 ## Controls (must preserve)
 - free-data-only
@@ -20,6 +19,7 @@
 - **Fixed**: EXP now points to DISPERSION-002; Phase F splits derived from conditioned formation panel using split spec (60/20/20, 31/11/11). Output byte-identical to committed artifacts.
 - **Tests added**: `tests/test_inference_repro.py` (5 tests) pins script to DISPERSION-002 and requires byte-identical reproduction.
 - **Verification**: All tests pass (`python -m unittest discover -s tests -v` → 15/15). pandas/numpy installed.
+- **Checkpoint**: Session checkpoints committed (6a14c8c, 043eb18).
 
 ## Artifacts (DISPERSION-002, corrected)
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json` (corrected block-bootstrap CIs)
@@ -29,6 +29,8 @@
 
 ## Commits
 - `c61c5ad` - scripts/fix_inference.py (corrected), tests/test_inference_repro.py (added)
+- `043eb18` - chore(kilo): checkpoint agent session
+- `6a14c8c` - chore(kilo): checkpoint agent session
 
 ## Handoff Notes
 - **NO WORK AUTHORIZED on DISPERSION-002.** Do not modify grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
@@ -36,5 +38,3 @@
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Working tree is clean; all tests pass (15/15).
-
-(End of file)
