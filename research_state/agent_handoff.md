@@ -4,9 +4,9 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state.
-- Working tree clean at HEAD 215eb5c.
+- Working tree clean at HEAD deffaad.
 - Tests pass: 15/15 (`python -m unittest discover -s tests -v`).
-- Verified at: 2026-10-23 20:24Z (re-verified; 15/15 tests pass, working tree clean).
+- Verified at: 2026-10-23 20:26Z (re-verified; 15/15 tests pass, working tree clean).
 ## Controls (must preserve)
 - free-data-only
 - point-in-time universe
@@ -33,6 +33,6 @@
 - Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Working tree is clean at HEAD 215eb5c. All tests pass (15/15).
+- Working tree is clean at HEAD deffaad. All tests pass (15/15).
 - Stray Python 3.14 bytecode files (from a different interpreter) were removed; they are not tracked and not part of the committed state.
-- Prior task from durable handoff completed and verified. Ready for next agent with new experiment ID.
+- Prior task from durable handoff completed and verified. Handoff finalized; ready for next agent with new experiment ID.
