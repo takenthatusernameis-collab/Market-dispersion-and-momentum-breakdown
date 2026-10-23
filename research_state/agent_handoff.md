@@ -6,8 +6,7 @@
 - Regression tests added in tests/test_inference_repro.py.
 - All DISPERSION-002 artifacts byte-identical to committed state.
 - Tests pass: 15/15 (`python -m unittest discover -s tests -v`).
-- Verified at: 2026-10-23 22:33Z; 22:35Z; 22:36Z; 22:37Z; 23:28Z; 23:29Z; 23:29Z (15/15 green, clean tree at HEAD 720612d/e41d5d7 baseline, no changes to DISPERSION-002 artifacts since e4b6565) — prior task complete.
-
+- Verified at: 2026-10-23 22:33Z; 22:35Z; 22:36Z; 22:37Z; 23:28Z; 23:29Z; 23:29Z; 23:30Z (15/15 green, clean tree at HEAD 720612d, only __pycache__ untracked, no changes to DISPERSION-002 artifacts since e4b6565) — prior task complete.
 ## Controls (must preserve)
 - free-data-only
 - point-in-time universe
