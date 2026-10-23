@@ -4,9 +4,9 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; HEAD on main (ef7f8a8).
-- Re-verified this session (2026-10-23 15:37Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
-- Handoff read and updated by current agent.
+- Working tree clean; HEAD on main (c65c68a).
+- Re-verified this session (2026-10-23 15:40Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
+- Handoff read and updated by current agent (second verification pass).
 
 ## Controls (must preserve)
 - free-data-only
@@ -16,8 +16,8 @@
 
 ## What was done (this session)
 - Reviewed durable handoff — prior task already complete and verified.
-- Confirmed working tree clean at HEAD ef7f8a8, all tests passing (15/15).
-- Updated handoff and initial task message to reflect current verification state.
+- Confirmed working tree clean at HEAD c65c68a, all tests passing (15/15) on second verification pass.
+- Updated handoff and initial task message to reflect current verification state (HEAD c65c68a, verified 2026-10-23 15:40Z).
 
 ## Artifacts (DISPERSION-002, corrected)
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json` (corrected block-bootstrap CIs)
@@ -26,7 +26,8 @@
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/robustness_inference_summary.json` (inference_fix_applied block)
 
 ## Commits
-- `ef7f8a8` - chore(kilo): checkpoint agent session (latest)
+- `c65c68a` - chore(kilo): checkpoint agent session (latest)
+- `ef7f8a8` - chore(kilo): checkpoint agent session (prior)
 - Prior commits from previous sessions remain unchanged.
 
 ## Handoff Notes
