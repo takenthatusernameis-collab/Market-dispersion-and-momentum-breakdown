@@ -19,7 +19,7 @@ Current agent confirmed clean state with all tests passing; verified 2026-10-23 
 2. **PRESERVE CONTROLS** on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 3. **AWAIT A NEW EXPERIMENT ID** before starting any new work. If a new experiment ID is provided, follow its specification exactly as written.
 4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green. pytest is not installed in this environment; use unittest.
-5. **CURRENT STATE**: Working tree is clean at f812672. No pending changes or authorized work on DISPERSION-002.
+5. **CURRENT STATE**: Working tree is clean at 06929b8. No pending changes or authorized work on DISPERSION-002.
 
 ## Ready for handoff
 DISPERSION-002 is closed. No further authorized work on this experiment. Await new experiment ID.
