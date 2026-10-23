@@ -4,8 +4,8 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; HEAD on main (3a753e5).
-- Re-verified this session (2026-10-23 16:35Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
+- Working tree clean; HEAD on main (a49d818).
+- Re-verified this session (2026-10-23 16:36Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
 - Handoff read and updated by current agent.
 
 ## Controls (must preserve)
@@ -16,8 +16,8 @@
 
 ## What was done (this session)
 - Read durable handoff — prior task already complete and verified.
-- Confirmed working tree clean at HEAD 3a753e5, all tests passing (15/15).
-- Updated handoff and initial task message to reflect current verification state (HEAD 3a753e5, verified 2026-10-23 16:34Z).
+- Confirmed working tree clean at HEAD a49d818, all tests passing (15/15).
+- Updated handoff and initial task message to reflect current verification state (HEAD a49d818, verified 2026-10-23 16:36Z).
 
 ## Artifacts (DISPERSION-002, corrected)
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json` (corrected block-bootstrap CIs)
