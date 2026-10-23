@@ -45,21 +45,6 @@
 Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 complete (no further computation). Primary anchor H004G033: high-dispersion gross momentum-spread mean +11.96%/mo (n=6) vs low-dispersion -5.51%/mo (n=8), high-low diff +17.47%/mo; block-bootstrap CIs recorded. Costs/funding included; 1x/2x/3x net stresses reported. Chronological 60/20/20 OOS: discovery +28.77%, validation +0.79%, final -0.50% (n=11, 1 high/1 low — underpowered). Grid: 72/72 configs on discovery/validation only, Holm-adjusted, no promotion; final holdout excluded. Caveats: CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked); small effective samples in high/low states; final holdout single-observation states.
 
 ## Initial task message for the next agent
-Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and verified. No recomputation or artifact changes are needed.
+See `research_state/agent_task_message.md` for the authoritative initial task message to the next agent.
 
-What is done:
-- Full experiment lifecycle (Phases A-G) executed on free data only (CoinMetrics Community API + Binance public archive). Data gate PASS.
-- Primary anchor H004G033: high-dispersion gross momentum-spread mean +11.96%/mo (n=6) vs low-dispersion -5.51%/mo (n=8), high-low diff +17.47%/mo; block-bootstrap CIs recorded. Costs/funding included; 1x/2x/3x net stresses reported.
-- Chronological 60/20/20 OOS: discovery +28.77% (n=31), validation +0.79% (n=11), final -0.50% (n=11; 1 high/1 low — underpowered).
-- Grid: 72/72 configs on discovery/validation only, Holm-adjusted, no promotion; final holdout excluded.
-- Tests: 11/11 pass (5 grid + 6 pipeline) via `python -m unittest discover -s tests -v`.
-
-Verification performed this session: re-ran the full unittest suite (11/11 pass), confirmed data_gate PASS, grid_results.jsonl 72/72 unique configs, grid_run_state flags (holm_adjustment_applied, final_holdout_excluded, run_on discovery_validation_only), and cross-checked summary.json vs report.md. No recomputation; artifacts unchanged.
-
-Caveats to carry forward:
-- CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked); CapMrktEstUSD primary field fully available.
-- Small effective samples in high/low dispersion states (6 and 8 observations); final holdout single-observation states.
-
-How to read the results: start with `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json` and `report.md`. Full grid results are in `grid_results.jsonl`; grid definition is `configs/dispersion_momentum_grid_v1.json` (SHA d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb).
-
-If starting a new follow-up experiment, do not reuse these artifacts as inputs without explicit approval — create a new experiment ID.
+This handoff delivery is complete: prior agent task verified complete (11/11 tests pass, data_gate PASS, grid_results.jsonl 72/72 unique configs, all manifest-referenced artifacts on disk, commit 86190d6). No recomputation or artifact changes are required. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is archived as complete.
