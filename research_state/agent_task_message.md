@@ -1,13 +1,29 @@
-Initial task message for the next agent — HARMONY-CRYPTO-EDGE-004-DISPERSION-001
+Initial task message for the next agent — HARMONY-CRYPTO-EDGE-004-DISPERSION-002
 
-Experiment HARMONY-CRYPTO-EDGE-004-DISPRESSION-001 is complete, verified, and archived. No recomputation, no artifact changes, and no further analysis are required on these artifacts.
+Prior experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete, verified, and archived. No recomputation, no artifact changes, and no further analysis are required on those artifacts.
 
-Verified state (independent re-check, 2026-10-23):
-- 11/11 tests pass (`python3 -m pytest tests/ -q` → 11 passed in 0.36s).
-- data_gate.json status PASS; free-data boundary intact; CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked) recorded as caveat.
-- grid_results.jsonl 72/72 unique configs (H004G001..H004G072, 0 errors, 0 duplicates).
-- grid_run_state.json: holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only, n_error 0.
-- summary.json ↔ report.md consistent (anchor H004G033: high-dispersion gross momentum-spread +11.96%/mo vs low-dispersion -5.51%/mo, diff +17.47%/mo; phases C-G completed; 60/20/20 chronological OOS discovery +28.77%, validation +0.79%, final -0.50%).
-- Working tree clean except untracked tests/__pycache__/; HEAD c049cf9 (main); artifacts/scripts match commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
+New follow-up experiment initialized:
+- Experiment ID: HARMONY-CRYPTO-EDGE-004-DISPERSION-002
+- Based on: HARMONY-CRYPTO-EDGE-004-DISPERSION-001
+- Config: configs/dispersion_momentum_followup_v1.json
+- Artifacts: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/
+- Setup: experiment_setup.json created with free-data, point-in-time, no-lookahead, chronological OOS controls
 
-Task for next agent: prior task completed and experiment is archived as complete. No further work is authorized on these artifacts. The only authorized action is to spin up a new follow-up experiment under a new experiment ID. Do not reuse artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ as inputs without explicit approval. To understand context, read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json and report.md before designing the new experiment.
+Follow-up objectives (from config):
+- Robustness test of dispersion-conditioned momentum spread
+- Vary dispersion estimation windows (30/90/365 days), momentum lookbacks/horizons (14/30/60), dispersion estimators (std dev, MAD-scaled), and state rules (outer deciles vs median split)
+- 108 configurations total (H004F001..H004F108)
+- Primary anchor analogous to prior: 30d/30d/std dev/365d/outer-deciles (H004F033)
+
+Next steps for agent:
+1. Copy/adapt data pipeline from prior experiment or reuse existing data panels if compatible and approved. Do NOT reuse artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ as inputs without explicit approval - only read for context as instructed.
+2. Construct point-in-time universe following same rules as prior experiment.
+3. Run data gate (fail-closed). Verify free-data boundary intact.
+4. Execute phases for follow-up grid with proper controls.
+5. Generate summary/report and update handoff.
+
+Context to read before starting:
+- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json
+- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/report.md
+- configs/dispersion_momentum_followup_v1.json
+- prompts/harmony_crypto_edge_004.md (if exists)

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
+  "grid_id": "HARMONY-CRYPTO-EDGE-004-FOLLOWUP-GRID-001",
+  "purpose": "Follow-up to HARMONY-CRYPTO-EDGE-004-DISPERSION-001. Test robustness to alternative dispersion estimation windows and momentum formation horizons on the expanded universe.",
+  "primary_test": {
+    "source_of_truth": "Follow-up to completed DISPERSION-001; uses same free-data, point-in-time universe construction as prior experiment",
+    "evaluation": "Run under registered-style controls with chronological OOS",
+    "priority": "Follow-up test; build on prior findings (anchor showed stronger momentum spreads in high dispersion states in the specific configuration tested)"
+  },
+  "axes": [
+    {
+      "name": "momentum_lookback_days",
+      "type": "integer",
+      "values": [14, 30, 60]
+    },
+    {
+      "name": "forward_horizon_days",
+      "type": "integer",
+      "values": [14, 30, 60]
+    },
+    {
+      "name": "dispersion_estimator",
+      "type": "string",
+      "values": ["cross_sectional_population_stddev", "scaled_median_absolute_deviation_1_4826"]
+    },
+    {
+      "name": "dispersion_window_days",
+      "type": "integer",
+      "values": [30, 90, 365]
+    },
+    {
+      "name": "dispersion_state_rule",
+      "type": "string",
+      "values": ["trailing_window_outer_deciles", "trailing_window_median_split"]
+    }
+  ],
+  "expected_combinations": 108,
+  "enumeration": {
+    "axis_order": ["momentum_lookback_days", "forward_horizon_days", "dispersion_estimator", "dispersion_window_days", "dispersion_state_rule"],
+    "config_id_format": "H004F001 through H004F108",
+    "primary_compatible_anchor": {
+      "momentum_lookback_days": 30,
+      "forward_horizon_days": 30,
+      "dispersion_estimator": "cross_sectional_population_stddev",
+      "dispersion_window_days": 365,
+      "dispersion_state_rule": "trailing_window_outer_deciles"
+    },
+    "primary_compatible_config_id": "H004F033"
+  }
+}

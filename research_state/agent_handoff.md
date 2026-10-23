@@ -1,40 +1,22 @@
-# Agent Handoff — HARMONY-CRYPTO-EDGE-004-DISPERSION-001
+# Agent Handoff — HARMONY-CRYPTO-EDGE-004-DISPERSION-002
 
 ## Initial task message for next agent
-See research_state/agent_task_message.md (updated). Prior task completed (final review/interpretation/reporting) and experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is archived as complete. No computation or artifact changes required on these artifacts. The only authorized action for the next agent is to spin up a new follow-up experiment under a new experiment ID — do not reuse artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ as inputs without explicit approval.
-
-## Read prior agent task + completion session (latest)
-- Prior task (from durable handoff): final review/interpretation/reporting only; completed.
-- Re-verified by current agent (independent re-check, 2026-10-23):
-  - 11/11 tests pass (`python3 -m pytest tests/ -q` → 11 passed in 0.35s).
-  - data_gate.json status PASS; free-data boundary intact; CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked) recorded as caveat.
-  - grid_results.jsonl 72/72 unique configs, 0 duplicates, ids H004G001..H004G072, 0 errors.
-  - grid_run_state.json: holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only, n_error 0.
-  - summary.json ↔ report.md consistent (anchor H004G033: high-dispersion gross momentum-spread +11.96%/mo vs low-dispersion -5.51%/mo, diff +17.47%/mo; phases C-G completed; 60/20/20 chronological OOS discovery +28.77%, validation +0.79%, final -0.50%).
-  - Working tree clean except untracked `tests/__pycache__/`; artifacts/scripts match commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
-  - HEAD: c049cf9 (main); working tree clean except untracked `tests/__pycache__/`.
-- Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
-- Handoff and initial task message updated by current agent (this session, 2026-10-23).
+See research_state/agent_task_message.md (updated). New follow-up experiment initialized under new experiment ID HARMONY-CRYPTO-EDGE-004-DISPERSION-002. Do not reuse artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ as inputs without explicit approval.
 
 ## Status
-- Specification review: complete.
-- Free-data/data-integrity gate: PASS.
-- All phases A-G complete. Grid executed on discovery/validation only with final holdout excluded; no grid promotion.
-- Final review/interpretation/reporting: complete. Tests pass; artifacts verified.
-- Archived as complete — no further computation or artifact changes required.
+- Prior experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001: archived as complete (verified). No further work authorized on those artifacts.
+- New experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-002: initialized (setup created).
+- Config created: configs/dispersion_momentum_followup_v1.json (108 configs, H004F001..H004F108)
+- Artifacts dir created: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/
+- Controls: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 
 ## Commit
-- HEAD: c049cf9 (main). Working tree clean except untracked tests/__pycache__/.
-- Artifacts consistent with commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
+- HEAD: c049cf9 (main). Working tree clean except untracked tests/__pycache__/ and new files.
 
 ## Artifacts
-- Root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
-- Grid spec: configs/dispersion_momentum_grid_v1.json
-- Key outputs: data_gate.json (PASS), grid_results.jsonl (72/72), grid_run_state.json, summary.json, report.md, all phase summaries/manifests
-
-## Final human-readable summary
-Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 complete (no further computation). Primary anchor H004G033: high-dispersion gross momentum-spread mean +11.96%/mo (n=6) vs low-dispersion -5.51%/mo (n=8), high-low diff +17.47%/mo; block-bootstrap CIs recorded. Costs/funding included; 1x/2x/3x net stresses reported. Chronological 60/20/20 OOS: discovery +28.77%, validation +0.79%, final -0.50%. Grid: 72/72 configs on discovery/validation only, Holm-adjusted, no promotion; final holdout excluded. Caveats: CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked); small effective samples in high/low states; final holdout single-observation states.
+- New experiment root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/
+- Grid spec: configs/dispersion_momentum_followup_v1.json
+- Setup: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/experiment_setup.json
 
 ## Task for next agent
-Prior task completed. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is archived as complete. No further work is authorized on these artifacts.
-The only authorized action is to spin up a new follow-up experiment under a new experiment ID. Do not reuse artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ as inputs without explicit approval. To understand context, read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json and report.md before designing the new experiment.
+Spin up and execute the follow-up experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-002 per the config and repo patterns. Read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json and report.md for context only (do not copy artifacts). Follow all controls (free data, point-in-time, fail-closed gates, chronological OOS). Generate full artifacts, summary, and report.

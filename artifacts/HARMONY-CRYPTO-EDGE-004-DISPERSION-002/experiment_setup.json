@@ -1,0 +1,14 @@
+{
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
+  "status": "initialized",
+  "based_on": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "config": "/home/runner/work/Market-dispersion-and-momentum-breakdown/Market-dispersion-and-momentum-breakdown/configs/dispersion_momentum_followup_v1.json",
+  "objective": "Follow-up robustness test of dispersion-conditioned momentum spread",
+  "created_utc": "2026-10-23T10:30:00Z",
+  "controls": {
+    "free_data_only": true,
+    "point_in_time_universe": true,
+    "no_lookahead": true,
+    "chronological_oos": true
+  }
+}
