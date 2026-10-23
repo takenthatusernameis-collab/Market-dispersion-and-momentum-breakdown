@@ -11,6 +11,7 @@
 - Re-verified 2026-10-23 23:32Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior agent task (read durable handoff and complete) complete. HEAD now b5aa636.
 - Re-verified 2026-10-23 23:33Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Read durable handoff and completed prior task; HEAD now 87745c8.
 - Re-verified 2026-10-23 23:34Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior task complete. HEAD now f5eaeae.
+- Re-verified 2026-10-23 23:35Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Read prior agent task from durable handoff and completed it; HEAD now 8c2d9d1. Handoff updated and initial task message written for next agent.
 
 ## Controls (must preserve)
 - free-data-only
@@ -30,7 +31,7 @@
 - Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Working tree clean at HEAD f5eaeae (720612d baseline). All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects). e4b6565 is an ancestor of 720612d; no DISPERSION-002 artifact, pipeline, config, or test changes since e4b6565.
+- Working tree clean at HEAD 8c2d9d1 (f5eaeae baseline). All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects). e4b6565 is an ancestor of 720612d; no DISPERSION-002 artifact, pipeline, config, or test changes since e4b6565.
 
 ## Initial Task Message for Next Agent
 
@@ -47,6 +48,6 @@
 - Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
 
-**Current baseline:** working tree clean at HEAD f5eaeae (720612d baseline). All tests pass (15/15). No changes to DISPERSION-002 artifacts since e4b6565. Handoff updated 2026-10-23 23:34Z by current agent after completing prior task.
+**Current baseline:** working tree clean at HEAD 8c2d9d1 (f5eaeae baseline). All tests pass (15/15). No changes to DISPERSION-002 artifacts since e4b6565. Handoff updated 2026-10-23 23:35Z by current agent after completing prior task.
 
 (End of file - total 50 lines)
