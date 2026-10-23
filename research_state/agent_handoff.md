@@ -1,30 +1,31 @@
 # Agent Handoff — HARMONY-CRYPTO-EDGE-004-DISPERSION-001
 
 ## Initial task message for next agent
-See research_state/agent_task_message.md. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and archived. No computation or artifact changes required. To start new work, spin up a follow-up experiment under a new experiment ID — do not reuse these artifacts as inputs without explicit approval.
+See research_state/agent_task_message.md. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and archived. No computation or artifact changes required on these artifacts. The only authorized action is to spin up a new follow-up experiment under a new experiment ID — do not reuse these artifacts as inputs without explicit approval.
 
 ## Read prior agent task + completion session (latest)
 - Prior task (from durable handoff): final review/interpretation/reporting only; completed in prior session.
-- Verified by current agent (independent re-check, not trusted from handoff):
-  - 11/11 tests pass (`python3 -m pytest tests/ -q` -> 11 passed).
-  - data_gate.json status PASS; free-data boundary intact; CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked) recorded as caveat, not a gate blocker.
+- Verified by current agent (independent re-check):
+  - 11/11 tests pass (`python3 -m pytest tests/ -q` → 11 passed).
+  - data_gate.json status PASS; free-data boundary intact; CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked) recorded as caveat.
   - grid_results.jsonl 72/72 unique configs, 0 duplicates, ids H004G001..H004G072, 0 errors.
   - grid_run_state.json: holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only, n_error 0.
-  - summary.json <-> report.md consistent (both cite anchor H004G033, diff_gross 0.17471689140306546, phases C-G completed).
-  - Working tree at HEAD is clean; artifacts and scripts match commit 836972d; only research_state/agent_handoff.md and research_state/agent_task_message.md differ from prior commits.
+  - summary.json ↔ report.md consistent (anchor H004G033: diff_gross +0.17471689140306546; phases C-G completed).
+  - Working tree clean except untracked `tests/__pycache__/`; artifacts/scripts match commit 836972d. summary.json/report.md carry commit_sha b41d4d5 (outputs generation commit).
+
 - Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
-- Handoff and initial task message updated by current agent to reflect complete/archived state.
+- Handoff and initial task message updated by current agent.
 
 ## Status
 - Specification review: complete.
 - Free-data/data-integrity gate: PASS.
 - All phases A-G complete. Grid executed on discovery/validation only with final holdout excluded; no grid promotion.
 - Final review/interpretation/reporting: complete. Tests pass; artifacts verified.
-- Experiment archived as complete — no further computation or artifact changes required.
+- Archived as complete — no further computation or artifact changes required.
 
 ## Commit
-- HEAD: 836972d (branch main), up to date with origin/main.
-- Artifacts consistent with commit 836972d; summary.json/report.md carry commit_sha b41d4d5 (the commit at which those outputs were generated).
+- HEAD: 836972d (main), up to date with origin/main.
+- Artifacts consistent with commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
 - Working tree clean except untracked `tests/__pycache__/` (not committed).
 
 ## Artifacts
