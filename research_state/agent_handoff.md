@@ -5,6 +5,7 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - experiment_setup.json, phase_e_summary.json, and supporting artifacts unchanged.
+- Inference script defects fixed and regression tests added; all changes committed.
 
 ## Controls
 - free-data-only, point-in-time universe, no-lookahead, chronological OOS.
@@ -15,7 +16,8 @@
 - New regression test `tests/test_inference_repro.py` (5 tests) pins the script to DISPERSION-002 and requires byte-identical reproduction. 15/15 tests pass.
 
 ## Commit
-- HEAD: 9f08240 (main). Working tree NOT clean: `scripts/fix_inference.py` corrected and `tests/test_inference_repro.py` added, both uncommitted. DISPRESSION-002 artifacts themselves are untouched and byte-identical to 9f08240.
+- HEAD: c61c5ad (main). Working tree clean (pycache untracked). DISPRESSION-002 artifacts themselves are untouched and byte-identical to committed state.
+- Committed: `scripts/fix_inference.py` (corrected), `tests/test_inference_repro.py` (added).
 
 ## Artifacts
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json (corrected CIs)
@@ -25,7 +27,7 @@
 
 ## Verification
 - pandas/numpy installed; fix script ran successfully against DISPERSION-002 artifacts.
-- `python -m unittest discover -s tests -v` passes 15/15 (was 10/10; 5 new inference-repro tests added).
+- `python -m unittest discover -s tests -v` passes 15/15.
 
 ## Initial task message for next agent
 **DISPERSION-002 is complete. NO WORK AUTHORIZED on DISPERSION-002.**
