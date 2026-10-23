@@ -4,7 +4,7 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; HEAD on main (d7fa1e8).
+- Working tree clean; HEAD on main (b8eff4d).
 - Re-verified this session (2026-10-23 17:52Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
 - Handoff read and updated by current agent (this session). Prior task completed and handoff cycle finalized.
 
@@ -16,8 +16,8 @@
 
 ## What was done (this session)
 - Read durable handoff and task message — prior task already complete and verified.
-- Confirmed working tree clean at HEAD a779c1b, all tests passing (15/15).
-- Updated handoff and initial task message to reflect current verification state (HEAD a779c1b, verified 2026-10-23 17:50Z).
+- Confirmed working tree clean at HEAD b8eff4d, all tests passing (15/15).
+- Updated handoff and initial task message to reflect current verification state (HEAD b8eff4d, verified 2026-10-23 17:52Z).
 
 ## Artifacts (DISPERSION-002, corrected)
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json` (corrected block-bootstrap CIs)
@@ -26,7 +26,9 @@
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/robustness_inference_summary.json` (inference_fix_applied block)
 
 ## Commits
-- `a779c1b` - chore(kilo): checkpoint agent session (latest)
+- `b8eff4d` - chore(kilo): checkpoint agent session (latest)
+- `d7fa1e8` - chore(kilo): checkpoint agent session
+- `a779c1b` - chore(kilo): checkpoint agent session
 - `33245ad` - chore(kilo): checkpoint agent session
 - `09c7ad8` - chore(kilo): checkpoint agent session
 - `06929b8` - chore(kilo): checkpoint agent session
