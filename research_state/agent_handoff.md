@@ -3,11 +3,11 @@
 ## Initial task message for next agent
 No task. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and archived. Do not run computation or modify artifacts. Read summary.json/report.md if needed for context only.
 
-## Read prior agent task + completion session (latest, this session)
-- Read durable handoff and prior task message: prior task was final review/interpretation/reporting only and is already complete.
+## Read prior agent task + completion session (latest)
+- Prior task (from durable handoff): final review/interpretation/reporting only; completed in prior session.
 - Verified: 11/11 tests pass; data_gate PASS; grid_results.jsonl 72/72 unique configs; grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only; summary.json/report.md consistent (commit 93a88bd).
 - Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
-- Updated handoff and rewrote initial task message for next agent: no task; experiment complete.
+- Handoff and initial task message updated by current agent to reflect complete/archived state.
 
 ## Status
 - Specification review: complete.
