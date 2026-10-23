@@ -1,0 +1,621 @@
+{
+  "asset_results": {
+    "ada": {
+      "asset": "ada",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/ada_CapMrktCurUSD.json",
+          "raw_sha256": "887d266e110e3a3578a4b5748cfe5e4f30a4d945205fcd3573099c94ed68dc76",
+          "rows": 2588,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2018-02-26T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/ada_CapMrktEstUSD.json",
+          "raw_sha256": "c60f11d6cc4f31ff3f7fa468d45303cc0d2718a229668a8c2b4d14dedf98a62c",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "algo": {
+      "asset": "algo",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/algo_CapMrktCurUSD.json",
+          "raw_sha256": "0716e2ded342131eb6434a4b003bb4eb6e4f0f88fb1f3b594b19defad542da46",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/algo_CapMrktEstUSD.json",
+          "raw_sha256": "564f4070de07ea21dd717f47b4cec4a486a6300f3104da6bba8876b2767690ba",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "atom": {
+      "asset": "atom",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/atom_CapMrktEstUSD.json",
+          "raw_sha256": "9cf7f57e0adb13c8bbdc5f58c864794be7c4cbb8848695679580c36ed15bce18",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "avax": {
+      "asset": "avax",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/avax_CapMrktEstUSD.json",
+          "raw_sha256": "85bf82ccc87a0fdc12d504e567bc9c9f466470974859304bcb1a6337187289ba",
+          "rows": 1561,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2020-11-22T00:00:00.000000000Z"
+        }
+      }
+    },
+    "bch": {
+      "asset": "bch",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/bch_CapMrktCurUSD.json",
+          "raw_sha256": "a4aee02ef11cb5f50f5310cbfbe6587ffc8cea633ff07f9fa61cadbec4c84a17",
+          "rows": 2710,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2017-08-10T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/bch_CapMrktEstUSD.json",
+          "raw_sha256": "79ea8e1dead95b0336b2494a0bd087d1cb1c06051c6469266d01616e18698b08",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "bnb": {
+      "asset": "bnb",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/bnb_CapMrktCurUSD.json",
+          "raw_sha256": "810fe1419d3907e0b04b9c8f3dabbf0ab9a96f51322ba0f644719f4ee6e32e46",
+          "rows": 647,
+          "status": "ok",
+          "time_first": "2019-01-13T00:00:00.000000000Z",
+          "time_last": "2017-08-30T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/bnb_CapMrktEstUSD.json",
+          "raw_sha256": "ed211a5b6048443a7e5700855b9e7998814d371f37fb581ac7447fb31d0530d7",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "btc": {
+      "asset": "btc",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/btc_CapMrktCurUSD.json",
+          "raw_sha256": "4a82a0a6d7ae866c3cc0c31d9c108ab826f5faaac9d45fc42a800303a20632d8",
+          "rows": 5281,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2010-10-06T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/btc_CapMrktEstUSD.json",
+          "raw_sha256": "ebbdeeef20622a66337ce4b854b39e3af63a40a08e986e46b96be678ade196c2",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "dash": {
+      "asset": "dash",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/dash_CapMrktCurUSD.json",
+          "raw_sha256": "1cb36579c703c9184a2cfe589e6bbbceed2ebcc789871a6e8a2134ff7861cf5e",
+          "rows": 3980,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2014-04-28T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/dash_CapMrktEstUSD.json",
+          "raw_sha256": "a2b15c2cbe5961665931f411e049932b0a17bcbb0ff4cdf057501f47c46e68d2",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "doge": {
+      "asset": "doge",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/doge_CapMrktCurUSD.json",
+          "raw_sha256": "5a0addc798c3a8d91577b267788f6770ca153feb27572b0a5d2fd838c89318c3",
+          "rows": 3996,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2014-04-28T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/doge_CapMrktEstUSD.json",
+          "raw_sha256": "1c0166aa335502e6c3ea26d11f724eba11349f6a4cb86cfc86b7d5bb391c2620",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "dot": {
+      "asset": "dot",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/dot_CapMrktCurUSD.json",
+          "raw_sha256": "907baf51fc5b404fa4aa8b06ba965aa259303ef76847d032eb0dedc9dba934ab",
+          "rows": 653,
+          "status": "ok",
+          "time_first": "2022-02-24T00:00:00.000000000Z",
+          "time_last": "2020-10-11T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/dot_CapMrktEstUSD.json",
+          "raw_sha256": "ba87c76663daeadf016049918ab596997b8ed781510e94ff7dd5e3c33ffc5f75",
+          "rows": 1592,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2020-11-22T00:00:00.000000000Z"
+        }
+      }
+    },
+    "eos": {
+      "asset": "eos",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/eos_CapMrktEstUSD.json",
+          "raw_sha256": "b99c292afac266f990f48b88bf6622b31108fa4158328e80fa18fad1b4c6789c",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "etc": {
+      "asset": "etc",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/etc_CapMrktCurUSD.json",
+          "raw_sha256": "5d4942b0e22c2cbf3b8d1599062fa5f7df1cfd1c47ba09f2d7172aab7dea5910",
+          "rows": 3082,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2016-10-14T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/etc_CapMrktEstUSD.json",
+          "raw_sha256": "cb9f84a21e9127051c5922fc651b573fff81f9375db864e90b1fe44d23911bb4",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "eth": {
+      "asset": "eth",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/eth_CapMrktCurUSD.json",
+          "raw_sha256": "de76907777b701545d82e8c7d84d2063a7d568591b5c2ac0a0077b308485d704",
+          "rows": 3434,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2015-09-10T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/eth_CapMrktEstUSD.json",
+          "raw_sha256": "ad500dd9261f25cff98c839b6d2dc1ec49653db3848c9073d06715f52bf91633",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "fil": {
+      "asset": "fil",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/fil_CapMrktEstUSD.json",
+          "raw_sha256": "a22b19a13704e7439b6c0f08608641afce45227bb85856eb8f9974d474ac7cb0",
+          "rows": 1538,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2020-11-22T00:00:00.000000000Z"
+        }
+      }
+    },
+    "iost": {
+      "asset": "iost",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/iost_CapMrktEstUSD.json",
+          "raw_sha256": "7af18ce78669f7fba3221cafea3cd4f9c55205da19b7a690d2075bbca6dbaf09",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "link": {
+      "asset": "link",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/link_CapMrktCurUSD.json",
+          "raw_sha256": "41486721e134562cc906ec65566ef064eb304b1cb4b06cb2cf63988dc199dda3",
+          "rows": 2651,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2017-11-18T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/link_CapMrktEstUSD.json",
+          "raw_sha256": "db3c9a96e166dd05464e092c417ddf9ea385fed6931d5f3cd29081da70888cf1",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "ltc": {
+      "asset": "ltc",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/ltc_CapMrktCurUSD.json",
+          "raw_sha256": "fd7b55398bced97ea5e98bb6adc48b71fcc45a6e6881fb7c055a89f19a32f1c2",
+          "rows": 4293,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2013-07-02T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/ltc_CapMrktEstUSD.json",
+          "raw_sha256": "e57eb1ee1d3e5f643bbbf162d5b93a5084b5d7e4adcbcddee2af6a5e768952b1",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "matic": {
+      "asset": "matic",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/matic_CapMrktEstUSD.json",
+          "raw_sha256": "5c6d3989bd3b2f799bfec90729f6e51e896d8e0b0a6f46738b608860aaad1df6",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "neo": {
+      "asset": "neo",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/neo_CapMrktCurUSD.json",
+          "raw_sha256": "f4878eddffe5d7ea2516ae7425d73da02bfb74c07960ef0bdfde732928405991",
+          "rows": 2727,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2017-08-10T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/neo_CapMrktEstUSD.json",
+          "raw_sha256": "fd91b355a4c3ac0083640a31c1e60125714cabf264e914c3c823e77d2e0b455e",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "qtum": {
+      "asset": "qtum",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/qtum_CapMrktEstUSD.json",
+          "raw_sha256": "e5592bb046abc06aa8fcce038da706261cd5506be8d3fe801b3f1069c965aed8",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "rune": {
+      "asset": "rune",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/rune_CapMrktEstUSD.json",
+          "raw_sha256": "4d8cfbc849ac6db257aa379ec5b9a5c99332e9f559aef7e64edfff63b807530c",
+          "rows": 1324,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2021-06-10T00:00:00.000000000Z"
+        }
+      }
+    },
+    "sol": {
+      "asset": "sol",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/sol_CapMrktEstUSD.json",
+          "raw_sha256": "7b3a21081f2becc21d0769bb5c81bbe974ed2c5ff4ff366130787925b5b2a458",
+          "rows": 1726,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2020-05-06T00:00:00.000000000Z"
+        }
+      }
+    },
+    "trx": {
+      "asset": "trx",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/trx_CapMrktEstUSD.json",
+          "raw_sha256": "c99ef5c8ab83b8e001d9402e3f83d55711569065882717ee854a94dcb712a3de",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "uni": {
+      "asset": "uni",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/uni_CapMrktCurUSD.json",
+          "raw_sha256": "da57945ac2b4b4754df44cea47bcfc12e89b2326a6bfda2b95344f79e46f1082",
+          "rows": 1566,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2020-11-22T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/uni_CapMrktEstUSD.json",
+          "raw_sha256": "84fb04de7e1c9ad8c68e6ce2a373728048a011ea9758b722ad603b06b1d64b3a",
+          "rows": 1566,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2020-11-22T00:00:00.000000000Z"
+        }
+      }
+    },
+    "vet": {
+      "asset": "vet",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/vet_CapMrktEstUSD.json",
+          "raw_sha256": "98c236e7a33a53f1c6be536405dfa34c4249bc9319c6b092c5f79f686c3e3975",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "xlm": {
+      "asset": "xlm",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/xlm_CapMrktCurUSD.json",
+          "raw_sha256": "3e54ffb0e22d31a7ec05e8f98fcf943f6ab24d749784b4f2e3169a0b25b6c44a",
+          "rows": 3381,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2015-12-19T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/xlm_CapMrktEstUSD.json",
+          "raw_sha256": "000806d728bd639a332bd773d6b9ec5d825aa381f0b64cc961d5a6bbae038e47",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "xrp": {
+      "asset": "xrp",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/xrp_CapMrktCurUSD.json",
+          "raw_sha256": "0036cb7c000a99bf1745ef08eaad618ff047813ffa9945060276039d8f26ac6e",
+          "rows": 3792,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2014-11-14T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/xrp_CapMrktEstUSD.json",
+          "raw_sha256": "578a2f3dbe64c3b5323ad5e2d5e8b4d0e8ebea9b29163cea77b2c48d1e860397",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    },
+    "zec": {
+      "asset": "zec",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/zec_CapMrktCurUSD.json",
+          "raw_sha256": "b1e9de423bd5ba7ae4aae6851f7e6de6fdf5b74fe6c0a38427ea42d23964eef1",
+          "rows": 2986,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2017-01-22T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/raw/coinmetrics/zec_CapMrktEstUSD.json",
+          "raw_sha256": "04f4c94769af187794726b81dcd61118ac7ad4cd6bdaca28df0516e41c966e44",
+          "rows": 2020,
+          "status": "ok",
+          "time_first": "2024-09-23T00:00:00.000000000Z",
+          "time_last": "2019-07-11T00:00:00.000000000Z"
+        }
+      }
+    }
+  },
+  "assets_requested": [
+    "btc",
+    "eth",
+    "sol",
+    "bnb",
+    "xrp",
+    "ada",
+    "doge",
+    "dot",
+    "matic",
+    "avax",
+    "link",
+    "uni",
+    "ltc",
+    "bch",
+    "etc",
+    "xlm",
+    "atom",
+    "algo",
+    "vet",
+    "fil",
+    "trx",
+    "eos",
+    "neo",
+    "iost",
+    "qtum",
+    "zec",
+    "dash",
+    "rune"
+  ],
+  "assets_with_data": [
+    "ada",
+    "algo",
+    "atom",
+    "avax",
+    "bch",
+    "bnb",
+    "btc",
+    "dash",
+    "doge",
+    "dot",
+    "eos",
+    "etc",
+    "eth",
+    "fil",
+    "iost",
+    "link",
+    "ltc",
+    "matic",
+    "neo",
+    "qtum",
+    "rune",
+    "sol",
+    "trx",
+    "uni",
+    "vet",
+    "xlm",
+    "xrp",
+    "zec"
+  ],
+  "end": "2024-12-31",
+  "endpoint": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "frequency": "1d",
+  "metrics": [
+    "CapMrktCurUSD",
+    "CapMrktEstUSD"
+  ],
+  "panel_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data/panels/marketcap_panel.csv",
+  "panel_rows": 73038,
+  "panel_sha256": "24e9d6f56ba14c9071c4f67bfdd6e1eafcb9ec41f2e016c9892c0d6b3c12065b",
+  "source": "coinmetrics_community_api",
+  "start": "2023-01-01"
+}
