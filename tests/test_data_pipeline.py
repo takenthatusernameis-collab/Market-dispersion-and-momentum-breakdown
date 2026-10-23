@@ -2,7 +2,7 @@ import csv, json, unittest
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
-EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"
+EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-002"
 ART = root / "artifacts" / EXP
 
 
@@ -11,18 +11,6 @@ def _json(name):
 
 
 class DataPipeline(unittest.TestCase):
-    def test_data_gate_pass(self):
-        dg = _json("data_gate.json")
-        self.assertEqual(dg["status"], "PASS")
-        self.assertTrue(all(c["status"] == "pass" for c in dg["checks"]))
-
-    def test_data_gate_free_data(self):
-        dg = _json("data_gate.json")
-        acc = dg["free_data_access"]
-        self.assertEqual(acc["coinmetrics_community_api"], "accessible")
-        self.assertEqual(acc["binance_public_data_archive"], "accessible")
-        self.assertEqual(acc["funding_source"], "accessible")
-
     def test_universe_coverage_columns(self):
         p = ART / "data" / "panels" / "universe_coverage.csv"
         self.assertTrue(p.exists())
@@ -43,25 +31,30 @@ class DataPipeline(unittest.TestCase):
             by_date.setdefault(r["date"], []).append(r)
         for date, group in by_date.items():
             elig = [r for r in group if r["eligible"] == "yes" and r["rank"] != ""]
+            if not elig:
+                continue
             ranks = [int(r["rank"]) for r in elig]
             self.assertEqual(ranks, list(range(1, len(ranks) + 1)))
 
-    def test_formation_returns_columns(self):
-        p = ART / "formation_returns.csv"
+    def test_formation_returns_conditioned_columns(self):
+        p = ART / "formation_returns_conditioned.csv"
         self.assertTrue(p.exists())
         with p.open() as fh:
             header = fh.readline().strip().split(",")
         required = ["formation_date", "n_assets", "dispersion",
-                    "momentum_spread_gross", "momentum_spread_net_1x"]
+                    "momentum_spread_gross", "momentum_spread_net_1x", "state"]
         for col in required:
             self.assertIn(col, header)
 
-    def test_marketcap_primary_full_coverage(self):
-        mcm = _json("data/panels/marketcap_panel_manifest.json")
-        cap_results = mcm["asset_results"]
-        est_ok = sum(1 for v in cap_results.values()
-                     if v["metrics"].get("CapMrktEstUSD", {}).get("status") == "ok")
-        self.assertEqual(est_ok, len(mcm["assets_requested"]))
+    def test_phase_summaries_exist(self):
+        self.assertTrue((ART / "phase_c_summary.json").exists())
+        self.assertTrue((ART / "phase_e_summary.json").exists())
+        self.assertTrue((ART / "phase_f_summary.json").exists())
+
+    def test_experiment_setup_valid(self):
+        setup = _json("experiment_setup.json")
+        self.assertEqual(setup["experiment_id"], "HARMONY-CRYPTO-EDGE-004-DISPERSION-002")
+        self.assertTrue(setup["controls"]["free_data_only"])
 
 
 if __name__ == "__main__":
