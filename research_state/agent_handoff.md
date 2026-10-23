@@ -24,7 +24,7 @@ See research_state/agent_task_message.md. Experiment HARMONY-CRYPTO-EDGE-004-DIS
 - Archived as complete — no further computation or artifact changes required.
 
 ## Commit
-- HEAD: 03bce8a (main), up to date with origin/main.
+- HEAD: b427b39 (main), up to date with origin/main.
 - Artifacts consistent with commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
 - Working tree clean except untracked `tests/__pycache__/` (not committed).
 
