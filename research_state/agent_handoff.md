@@ -10,6 +10,7 @@
 - Re-verified 2026-10-23 23:31Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior task complete.
 - Re-verified 2026-10-23 23:32Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior agent task (read durable handoff and complete) complete. HEAD now b5aa636.
 - Re-verified 2026-10-23 23:33Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Read durable handoff and completed prior task; HEAD now 87745c8.
+- Re-verified 2026-10-23 23:34Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior task complete. HEAD now f5eaeae.
 
 ## Controls (must preserve)
 - free-data-only
@@ -29,11 +30,11 @@
 - Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Working tree clean at HEAD 87745c8 (720612d baseline). All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects). e4b6565 is an ancestor of 720612d; no DISPERSION-002 artifact, pipeline, config, or test changes since e4b6565. Re-verified 2026-10-24 (session resume).
+- Working tree clean at HEAD f5eaeae (720612d baseline). All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects). e4b6565 is an ancestor of 720612d; no DISPERSION-002 artifact, pipeline, config, or test changes since e4b6565.
 
 ## Initial Task Message for Next Agent
 
-**Status:** DISPERSION-002 is complete and verified. No further work is authorized on it. HEAD is now 87745c8 (720612d baseline; e4b6565 is an ancestor; only handoff-file checkpoint commits in between).
+**Status:** DISPERSION-002 is complete and verified. No further work is authorized on it. HEAD is now f5eaeae (720612d baseline; e4b6565 is an ancestor; only handoff-file checkpoint commits in between).
 
 **Your task:** AWAIT A NEW EXPERIMENT ID before starting any new work. Do not begin any experiment, grid run, or artifact modification until a new experiment ID is provided to you.
 
@@ -46,4 +47,6 @@
 - Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
 
-**Current baseline:** working tree clean at HEAD 87745c8 (720612d baseline). All tests pass (15/15). No changes to DISPERSION-002 artifacts since e4b6565. Handoff updated 2026-10-23 23:33Z by current agent after completing prior task.
+**Current baseline:** working tree clean at HEAD f5eaeae (720612d baseline). All tests pass (15/15). No changes to DISPERSION-002 artifacts since e4b6565. Handoff updated 2026-10-23 23:34Z by current agent after completing prior task.
+
+(End of file - total 50 lines)

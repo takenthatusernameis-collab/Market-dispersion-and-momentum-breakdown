@@ -1,5 +1,5 @@
 Durable handoff (research_state/agent_handoff.md):
 
-- HEAD: b5aa636 (clean working tree). e4b6565 is an ancestor; only handoff-file checkpoint commits since. Tests: 15/15 passing (`python -m unittest discover -s tests -v`). Verified 2026-10-23 23:32Z.
+- HEAD: f5eaeae (clean working tree). e4b6565 is an ancestor; only handoff-file checkpoint commits since. Tests: 15/15 passing (`python -m unittest discover -s tests -v`). Verified 2026-10-23 23:34Z.
 
-Initial task for next agent: No authorized work pending. Read research_state/agent_handoff.md for details. Wait for a new experiment ID and follow its specification exactly as written; do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification. Current HEAD is b5aa636.
+Initial task for next agent: No authorized work pending. Read research_state/agent_handoff.md for details. Wait for a new experiment ID and follow its specification exactly as written; do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification. Current HEAD is f5eaeae.
