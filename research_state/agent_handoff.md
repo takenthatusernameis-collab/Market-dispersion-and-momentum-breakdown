@@ -12,9 +12,9 @@ See research_state/agent_task_message.md (updated). Prior task completed (final 
   - grid_run_state.json: holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only, n_error 0.
   - summary.json ↔ report.md consistent (anchor H004G033: high-dispersion gross momentum-spread +11.96%/mo vs low-dispersion -5.51%/mo, diff +17.47%/mo; phases C-G completed; 60/20/20 chronological OOS discovery +28.77%, validation +0.79%, final -0.50%).
   - Working tree clean except untracked `tests/__pycache__/`; artifacts/scripts match commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
-  - HEAD: 7d6a89d (main); working tree clean except untracked `tests/__pycache__/`.
+  - HEAD: c049cf9 (main); working tree clean except untracked `tests/__pycache__/`.
 - Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
-- Handoff and initial task message updated by current agent (this session).
+- Handoff and initial task message updated by current agent (this session, 2026-10-23).
 
 ## Status
 - Specification review: complete.
@@ -24,7 +24,7 @@ See research_state/agent_task_message.md (updated). Prior task completed (final 
 - Archived as complete — no further computation or artifact changes required.
 
 ## Commit
-- HEAD: 7d6a89d (main). Working tree clean except untracked tests/__pycache__/.
+- HEAD: c049cf9 (main). Working tree clean except untracked tests/__pycache__/.
 - Artifacts consistent with commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
 
 ## Artifacts
