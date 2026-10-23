@@ -24,7 +24,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"
+EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-002"
 OUT_DIR = ROOT / "artifacts" / EXP
 
 SEED = 12345
@@ -36,7 +36,7 @@ ALPHA = 0.05
 def block_bootstrap_ci(series: pd.Series) -> tuple:
     s = series.dropna()
     if len(s) == 0:
-        return (float("nan"), float("nan"))
+        return (None, None)
     rng = np.random.RandomState(SEED)
     n = len(s)
     n_blocks = int(np.ceil(n / BLOCK_SIZE))
@@ -101,14 +101,23 @@ def main() -> None:
 
     # ---- Phase F -----------------------------------------------------------
     phase_f = json.loads((OUT_DIR / "phase_f_summary.json").read_text())
-    for split in ["discovery", "validation", "final"]:
-        dates = phase_f["split"][split]
+    split_spec = phase_f.get("split", {})
+    split_type = split_spec.get("type", "60/20/20")
+    n_total = len(cond["formation_date"].unique())
+    n_disc = int(split_spec.get("discovery_n", round(0.6 * n_total)))
+    n_val = int(split_spec.get("validation_n", round(0.2 * n_total)))
+    n_fin = int(split_spec.get("final_n", n_total - n_disc - n_val))
+    all_dates = sorted(cond["formation_date"].unique())
+    disc_dates, val_dates, fin_dates = (
+        all_dates[:n_disc], all_dates[n_disc:n_disc + n_val], all_dates[n_disc + n_val:]
+    )
+    for split, dates in [("discovery", disc_dates), ("validation", val_dates), ("final", fin_dates)]:
         sub = cond[cond["formation_date"].isin(dates)]
         hi_s = sub.loc[sub["state"] == "high"].set_index("formation_date")["momentum_spread_gross"]
         lo_s = sub.loc[sub["state"] == "low"].set_index("formation_date")["momentum_spread_gross"]
         diff_series = paired_diff_series(hi_s, lo_s)
         diff = float(hi_s.mean() - lo_s.mean()) if len(hi_s) and len(lo_s) else None
-        ci = block_bootstrap_ci(diff_series) if len(diff_series) > 0 else [float("nan"), float("nan")]
+        ci = block_bootstrap_ci(diff_series)
         phase_f[split]["diff_gross"] = diff
         phase_f[split]["diff_gross_ci_95"] = list(ci)
         phase_f[split]["n_diff_observations"] = int(len(diff_series))

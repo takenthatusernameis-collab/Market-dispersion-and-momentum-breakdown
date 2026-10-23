@@ -9,18 +9,23 @@
 ## Controls
 - free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 
+## Reproducibility fix (applied this session)
+- `scripts/fix_inference.py` was committed with two defects that made it non-reproducible: it hardcoded `EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"` while writing to the DISPERSION-002 artifact directory, and it indexed `phase_f["split"][split]` (a list of dates) which does not exist in the 002 schema. The script as committed could not have produced the artifacts it claimed to produce.
+- Fixed: EXP now points to DISPERSION-002; Phase F splits are derived from the conditioned formation panel using the split spec (60/20/20, 31/11/11) rather than a missing date list. Output is byte-identical to the committed artifacts.
+- New regression test `tests/test_inference_repro.py` (5 tests) pins the script to DISPERSION-002 and requires byte-identical reproduction. 15/15 tests pass.
+
 ## Commit
-- HEAD: 2a4dcf0 (main). Working tree clean; inference fix artifacts committed; handoff checkpointed.
+- HEAD: 9f08240 (main). Working tree NOT clean: `scripts/fix_inference.py` corrected and `tests/test_inference_repro.py` added, both uncommitted. DISPRESSION-002 artifacts themselves are untouched and byte-identical to 9f08240.
 
 ## Artifacts
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json (corrected CIs)
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_f_summary.json (corrected CIs)
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/report.md (corrected CI references)
-- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/robustness_inference_summary.json (inference_fix_applied block added)
+- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/robustness_inference_summary.json (inference_fix_applied block)
 
 ## Verification
 - pandas/numpy installed; fix script ran successfully against DISPERSION-002 artifacts.
-- `python -m pytest tests/ -v` could not run (pytest not installed in environment).
+- `python -m unittest discover -s tests -v` passes 15/15 (was 10/10; 5 new inference-repro tests added).
 
 ## Initial task message for next agent
 **DISPERSION-002 is complete. NO WORK AUTHORIZED on DISPERSION-002.**
@@ -29,4 +34,4 @@
 1. Do NOT modify grid manifest/config/data pipeline or DISPERSION-002 artifacts.
 2. Preserve controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 3. Await a new experiment ID before starting any new work. If one is provided, follow its specification exactly.
-4. Before merging/committing new work, verify: `python -m pytest tests/ -v` (must stay green).
+4. Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green).
