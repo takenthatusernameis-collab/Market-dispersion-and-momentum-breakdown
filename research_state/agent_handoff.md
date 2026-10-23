@@ -11,10 +11,18 @@
 ## Commit
 - HEAD: b241595 (main).
 
-## Completion
-- Added artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/robustness_inference_summary.json
-- Updated report.md with robustness & inference section.
-- `python -m pytest tests/ -v` -> 10 passed (verified).
+## Artifacts
+- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/robustness_inference_summary.json
+- report.md (updated with robustness & inference section)
+
+## Verification
+- `python -m pytest tests/ -v` → 10 passed
 
 ## Initial task message for next agent
-No further authorized work on DISPERSION-002 unless a new experiment ID is issued. Preserve controls: free-data-only, point-in-time universe, no-lookahead, chronological OOS. Do not modify grid manifest/config/data pipeline. Verification: `python -m pytest tests/ -v` (must stay green). Await new experiment ID before any changes.
+**NO WORK AUTHORIZED** on DISPERSION-002. This experiment is complete and verified.
+
+**Instructions:**
+1. Do NOT modify grid manifest/config/data pipeline or DISPERSION-002 artifacts.
+2. Preserve controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
+3. Await a new experiment ID before starting any new work. If one is provided, follow its specification exactly.
+4. Before merging/committing new work, verify: `python -m pytest tests/ -v` (must stay green).
