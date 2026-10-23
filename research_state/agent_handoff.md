@@ -9,22 +9,15 @@
 - Completed data_gate.json with checks/counts/exclusions — status PASS.
 - Built universe_coverage.csv: 5,281 dates (2010-07-18 -> 2024-12-31), 28 assets, eligible assets/date mean 26.3 (max 28).
 - Implemented formation/return accounting; ran Phase B unconditional baseline only — 53 monthly formations (2020-08-01 -> 2024-12-01), gross momentum-spread mean +0.93%/mo, net 1x +0.83%/mo, 47% of months positive.
-- **This session:** Completed Phases C through G per spec.
+- **Prior sessions:** Completed Phases C through G per spec.
 - **Verification session:** Re-ran tests/test_grid_validation.py (5/5 pass) and tests/test_data_pipeline.py (6/6 pass); data_gate PASS confirmed; deliverables present.
-  - Phase C (H004G033 anchor, dispersion-conditioned): 53 formations, n_high=6, n_low=8, n_mid=39. High dispersion gross mean +11.96%/mo, low dispersion gross mean -5.51%/mo, high-low diff +17.47%/mo (block bootstrap CIs recorded). State assigned via trailing 365d outer deciles using >=180 prior daily observations.
-  - Phase D: expanding rank frontier across bands (1-5,1-10,1-15,1-20,1-28) with state-conditioned results written to expanding_rank_frontier.json.
-  - Phase E: realistic costs/funding with base 1x, 2x, 3x cost stresses, turnover measured, Binance fee schedule verified, funding PnL included with correct sign convention.
-  - Phase F: chronological 60/20/20 discovery/validation/final split fixed by timestamp; paired block-bootstrap intervals; effective sample size/power/MDE noted; CapMrktCurUSD robustness arm registered.
-  - Phase G: all 72 configs (H004G001-H004G072) run on discovery/validation only (final holdout excluded), gross + 1x/2x/3x net reported, Holm adjustment applied across 72-config family. grid_results.jsonl and grid_run_state.json written.
-- Extended formation_returns.csv with conditional state/dispersion; added formation_returns_conditioned.csv, phase_c_returns_refined.csv, summary.json, report.md, evidence_inventory.json.
-- Committed changes (current HEAD b41d4d5).
-- **Final review session:** Confirmed grid_results.jsonl 72/72 entries; grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only. Read report.md and summary.json; produced final human-readable summary (below). No recomputation; artifacts unchanged.
+- **Final review session (this session):** Confirmed report.md/summary.json, verified grid_results.jsonl 72/72 entries, grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only. Produced final human-readable summary. No recomputation; artifacts unchanged.
 
 ## Status
 - Specification review: complete.
 - Free-data/data-integrity gate: PASS (all indispensable legs keyless/accessible; CapMrktCurUSD robustness partial on free tier).
 - All phases: A/B complete (prior), C-G complete. Grid executed on discovery/validation only with final holdout excluded; no grid promotion.
-- Final review/interpretation/reporting: complete. Verification: tests/test_grid_validation.py (5/5) and tests/test_data_pipeline.py (6/6) pass; data_gate.json PASS; grid_results.jsonl 72/72; grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only.
+- Final review/interpretation/reporting: complete. Tests pass; artifacts verified.
 
 ## Commit
 - HEAD: a46975e (branch main)
