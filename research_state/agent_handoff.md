@@ -4,9 +4,9 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state.
-- Working tree clean at HEAD f4bb574.
+- Working tree clean at HEAD 486cef9.
 - Tests pass: 15/15 (`python -m unittest discover -s tests -v`).
-- Verified at: 2026-10-23 21:35Z (re-verified: 15/15 tests pass, working tree clean at HEAD f4bb574).
+- Verified at: 2026-10-23 21:42Z (re-verified: 15/15 tests pass, working tree clean at HEAD 486cef9).
 
 ## Controls (must preserve)
 - free-data-only
@@ -38,12 +38,12 @@
 - Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Working tree clean at HEAD 38bc565. All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects).
+- Working tree clean at HEAD 486cef9. All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects).
 
 ## Verification (this session)
 - Prior task (DISPERSION-002) from durable handoff: COMPLETE and verified.
 - Ran `python -m unittest discover -s tests -v`: 15/15 pass.
-- `git status`: working tree clean at HEAD 38bc565; no changes to DISPERSION-002 artifacts (only untracked `__pycache__`).
+- `git status`: working tree clean at HEAD 486cef9; no changes to DISPERSION-002 artifacts (only untracked `__pycache__`).
 - Handoff updated and ready for next agent awaiting a new experiment ID.
 
 ## Initial Task Message for Next Agent
@@ -61,4 +61,4 @@
 - Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
 
-**Current baseline:** working tree clean at HEAD 38bc565. All tests pass (15/15).
+**Current baseline:** working tree clean at HEAD 486cef9. All tests pass (15/15).
