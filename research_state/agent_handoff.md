@@ -5,7 +5,7 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; committed at c61c5ad (HEAD on main).
+- Working tree clean; HEAD on main (c61c5ad).
 
 ## Controls (must preserve)
 - free-data-only
@@ -32,6 +32,9 @@
 
 ## Handoff Notes
 - **NO WORK AUTHORIZED on DISPERSION-002.** Do not modify grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
-- Preserve all controls on any future work.
-- Await a new experiment ID before starting any new work. If one is provided, follow its specification exactly.
-- Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green).
+- Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
+- **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
+- Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
+- Working tree is clean; all tests pass (15/15).
+
+(End of file)

@@ -14,9 +14,9 @@ Reproducibility issues in scripts/fix_inference.py fixed (was pointing to DISPER
 ## MANDATORY INSTRUCTIONS FOR NEXT AGENT
 1. **DO NOT** modify the grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
 2. **PRESERVE CONTROLS** on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
-3. **AWAIT NEW EXPERIMENT ID** before starting any new work. If a new experiment ID is provided, follow its specification exactly as written.
-4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green.
-5. **NOTE**: pytest is not installed in this environment; use unittest.
+3. **AWAIT A NEW EXPERIMENT ID** before starting any new work. If a new experiment ID is provided, follow its specification exactly as written.
+4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green. pytest is not installed in this environment; use unittest.
+5. **CURRENT STATE**: Working tree is clean at c61c5ad. No pending changes or authorized work on DISPERSION-002.
 
 ## Ready for handoff
-DISPERSION-002 is closed. No further authorized work on this experiment.
+DISPERSION-002 is closed. No further authorized work on this experiment. Await new experiment ID.
