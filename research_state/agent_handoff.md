@@ -10,7 +10,7 @@
 - free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 
 ## Commit
-- HEAD: 8029885 (main). Working tree clean; inference fix artifacts committed.
+- HEAD: 2a4dcf0 (main). Working tree clean; inference fix artifacts committed; handoff checkpointed.
 
 ## Artifacts
 - artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json (corrected CIs)
