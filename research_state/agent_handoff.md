@@ -13,4 +13,4 @@
 - HEAD: c049cf9 (main).
 
 ## Task for next agent
-Execute the follow-up experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-002 per config and repo patterns: build/populate data panels (point-in-time universe, free data), run data gate (fail-closed), execute phases C-G equivalent for the 108-config grid, generate summary.json and report.md. Read prior experiment artifacts for context only; do not reuse as inputs.
+Blocked: execution environment lacks pandas/numpy required by scripts. Next agent: provision Python environment with pandas/numpy, adapt run_all_phases_c_g.py to DISPERSION-002, run build_universe.py and phases C-G, validate outputs/tests.
