@@ -4,8 +4,9 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; HEAD on main (7d639c8).
-- Re-verified this session: 15/15 tests pass; no authorized work pending.
+- Working tree clean; HEAD on main (c7503a3).
+- Re-verified this session (2026-10-23): 15/15 tests pass; no authorized work pending.
+- Handoff updated for the next agent; no state changes.
 
 ## Controls (must preserve)
 - free-data-only
@@ -32,6 +33,7 @@
 - `c61c5ad` - scripts/fix_inference.py (corrected), tests/test_inference_repro.py (added)
 - `043eb18` - chore(kilo): checkpoint agent session
 - `7d639c8` - chore(kilo): checkpoint agent session
+- `c7503a3` - chore(kilo): checkpoint agent session (latest)
 
 ## Handoff Notes
 - **NO WORK AUTHORIZED on DISPERSION-002.** Do not modify grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
@@ -39,3 +41,4 @@
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Working tree is clean; all tests pass (15/15).
+- **Next agent**: See the durable handoff above. The prior task (DISPERSION-002 robustness & inference tightening) is complete and verified. No further work is authorized until a new experiment ID is provided.
