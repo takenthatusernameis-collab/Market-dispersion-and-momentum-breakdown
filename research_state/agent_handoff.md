@@ -16,7 +16,7 @@
 - report.md (updated with robustness & inference section)
 
 ## Verification
-- `python -m pytest tests/ -v` → 10 passed (re-verified 2026-10-23)
+- `python -m pytest tests/ -v` → 10 passed (re-verified 2026-10-23, final handoff refresh)
 
 ## Initial task message for next agent
 **NO WORK AUTHORIZED** on DISPERSION-002. This experiment is complete and verified.
