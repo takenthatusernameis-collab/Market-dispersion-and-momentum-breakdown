@@ -11,13 +11,15 @@
 - Implemented formation/return accounting; ran Phase B unconditional baseline only — 53 monthly formations (2020-08-01 -> 2024-12-01), gross momentum-spread mean +0.93%/mo, net 1x +0.83%/mo, 47% of months positive.
 - **Prior sessions:** Completed Phases C through G per spec.
 - **Verification session:** Re-ran tests/test_grid_validation.py (5/5 pass) and tests/test_data_pipeline.py (6/6 pass); data_gate PASS confirmed; deliverables present.
-- **Final review session (this session):** Confirmed report.md/summary.json, verified grid_results.jsonl 72/72 entries, grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only. Produced final human-readable summary. No recomputation; artifacts unchanged.
+- **Final review session:** Confirmed report.md/summary.json, verified grid_results.jsonl 72/72 entries, grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only. Produced final human-readable summary. No recomputation; artifacts unchanged.
+- **Handoff verification session (this session):** Read prior handoff task — experiment already complete with all phases done and verified. Confirmed artifacts present (summary.json, report.md, grid_results.jsonl, data_gate.json). Updated handoff with verification status. No recomputation performed.
 
 ## Status
 - Specification review: complete.
 - Free-data/data-integrity gate: PASS (all indispensable legs keyless/accessible; CapMrktCurUSD robustness partial on free tier).
 - All phases: A/B complete (prior), C-G complete. Grid executed on discovery/validation only with final holdout excluded; no grid promotion.
 - Final review/interpretation/reporting: complete. Tests pass; artifacts verified.
+- Handoff verification: complete (this session).
 
 ## Commit
 - HEAD: a46975e (branch main)
@@ -32,4 +34,4 @@
 Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 complete (no further computation). Primary anchor H004G033: high-dispersion gross momentum-spread mean +11.96%/mo (n=6) vs low-dispersion -5.51%/mo (n=8), high-low diff +17.47%/mo; block-bootstrap CIs recorded. Costs/funding included; 1x/2x/3x net stresses reported. Chronological 60/20/20 OOS: discovery +28.77%, validation +0.79%, final -0.50% (n=11, 1 high/1 low — underpowered). Grid: 72/72 configs on discovery/validation only, Holm-adjusted, no promotion; final holdout excluded. Caveats: CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked); small effective samples in high/low states; final holdout single-observation states.
 
 ## Initial task message for the next agent
-Experiment complete. No further agent tasks scheduled. All phases A-G done, verified, and reported. If a new follow-up is needed, start from artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json and report.md; do not recompute phases or alter artifacts.
+Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and verified. No recomputation or artifact changes needed. If starting a new follow-up experiment, do not reuse these artifacts as inputs without explicit approval - create a new experiment ID. To understand results, read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json and report.md first.
