@@ -7,6 +7,7 @@
 - All DISPERSION-002 artifacts byte-identical to committed state.
 - Tests pass: 15/15 (`python -m unittest discover -s tests -v`).
 - Verified at: 2026-10-23 22:33Z; 22:35Z; 22:36Z; 22:37Z; 23:28Z; 23:29Z; 23:29Z; 23:30Z; 2026-10-24 (session resume) — 15/15 green, clean tree at HEAD d9eff72, only __pycache__ untracked, no changes to DISPERSION-002 artifacts since e4b6565 — prior task complete.
+- Re-verified 2026-10-23 23:31Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior task complete.
 
 ## Controls (must preserve)
 - free-data-only
