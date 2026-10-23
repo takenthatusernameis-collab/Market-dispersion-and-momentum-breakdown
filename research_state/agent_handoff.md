@@ -35,3 +35,4 @@
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Working tree is clean at HEAD ea47261. All tests pass (15/15).
 - Stray Python 3.14 bytecode files (from a different interpreter) were removed; they are not tracked and not part of the committed state.
+- Prior task from durable handoff completed and verified. Ready for next agent with new experiment ID.

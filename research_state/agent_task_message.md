@@ -19,5 +19,8 @@ Prior handoff cleanup: removed stray Python 3.14 bytecode files (from a differen
 4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green. pytest is not installed in this environment; use unittest.
 5. **CURRENT STATE**: Working tree is clean at ea47261. No pending changes or authorized work on DISPERSION-002.
 
+## Task for Next Agent
+**NO AUTHORIZED WORK PENDING.** Read `research_state/agent_handoff.md` for full details. Wait for a new experiment ID and follow its specification exactly as written. Do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification.
+
 ## Ready for handoff
 DISPERSION-002 is closed. No further authorized work on this experiment. Await new experiment ID.
