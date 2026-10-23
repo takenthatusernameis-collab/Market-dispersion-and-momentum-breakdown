@@ -64,6 +64,6 @@ This handoff delivery is complete: prior agent task verified complete (11/11 tes
 
 ## Read prior agent task + completion session (latest, this session)
 - Read durable handoff and prior task message: prior task was final review/interpretation/reporting only and is already complete.
-- Verified: 11/11 tests pass; data_gate PASS; grid_results.jsonl 72/72 unique configs; grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only; summary.json/report.md consistent (commit c78e391). No recomputation; no artifact changes.
+- Verified: 11/11 tests pass; data_gate PASS; grid_results.jsonl 72/72 unique configs; grid_run_state.json holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only; summary.json/report.md consistent. No recomputation; no artifact changes.
 - Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
 - Updated handoff and rewrote initial task message for next agent: no task; experiment complete.
