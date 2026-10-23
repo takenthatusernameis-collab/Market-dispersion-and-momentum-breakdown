@@ -3,7 +3,7 @@
 ## Context
 - Experiment: **HARMONY-CRYPTO-EDGE-004-DISPERSION-002**
 - Status: **COMPLETE AND VERIFIED**
-- HEAD: **6a14c8c** (main), working tree clean
+- HEAD: **7d639c8** (main), working tree clean
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
 
 ## What was accomplished
