@@ -1,0 +1,26 @@
+{
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
+  "phase": "robustness_inference_tightening",
+  "controls": ["free-data-only", "point-in-time universe", "no-lookahead", "chronological OOS"],
+  "fold_stability": {
+    "discovery_diff": 0.2876691537149731,
+    "validation_diff": 0.007915389776344844,
+    "final_diff": -0.005012061054662231,
+    "sign_flip_across_folds": true,
+    "note": "Discovery signal does not persist into validation/final folds."
+  },
+  "effective_sample_sizes": {
+    "phase_c": {"high": 6, "low": 8, "mid": 39, "total": 53},
+    "phase_f_discovery": {"n": 31, "n_high": 4, "n_low": 5},
+    "phase_f_validation": {"n": 11, "n_high": 1, "n_low": 2},
+    "phase_f_final": {"n": 11, "n_high": 1, "n_low": 1}
+  },
+  "n_less_than_5_flags": [
+    "phase_c: n_high=6 (>=5, ok)",
+    "phase_f discovery: n_high=4 (<5) FLAG",
+    "phase_f validation: n_high=1, n_low=2 (<5) FLAG",
+    "phase_f final: n_high=1, n_low=1 (<5) FLAG",
+    "expanding frontier 1-10: n_high=6 (ok), n_low=16 (ok)"
+  ],
+  "conclusion": "Insufficient evidence for robust high-low dispersion premium OOS; discovery effect not replicated. Flag all folds with n<5 per state before drawing conclusions."
+}

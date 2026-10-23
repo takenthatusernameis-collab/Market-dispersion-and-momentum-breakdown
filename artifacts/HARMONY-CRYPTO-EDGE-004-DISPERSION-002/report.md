@@ -23,3 +23,8 @@ Follow-up dispersion/momentum experiment on 108-config grid (H004F001..H004F108)
 
 ## Controls
 free-data-only, point-in-time universe, no-lookahead, chronological OOS. Grid manifest/config/data pipeline unchanged.
+## Robustness & Inference (tightened)
+- Fold stability: discovery diff +0.2877 does not persist (validation +0.0079, final -0.0050); sign flip across folds.
+- Effective sample sizes: phase C high=6/low=8; OOS discovery n_high=4,n_low=5; validation n_high=1,n_low=2; final n_high=1,n_low=1.
+- Regimes flagged n<5: discovery high (4), validation high/low (1/2), final high/low (1/1). Do not draw strong conclusions there.
+- Conclusion: insufficient evidence for robust premium OOS; discovery effect not replicated.
