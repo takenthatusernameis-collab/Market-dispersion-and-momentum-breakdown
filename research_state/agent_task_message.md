@@ -5,13 +5,14 @@
 - Status: **COMPLETE AND VERIFIED**
 - HEAD: **ef7f8a8** (main), working tree clean
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
+- Verified at: **2026-10-23 15:37Z**
 
 ## What was accomplished
 Robustness and inference tightening complete. Paired block-bootstrap confidence intervals applied to phase_c_summary.json and phase_f_summary.json (replacing degenerate point-estimate CIs). Report updated with corrected CI references. robustness_inference_summary.json updated with inference_fix_applied block.
 
 Reproducibility issues in scripts/fix_inference.py fixed (was pointing to DISPERSION-001 and using wrong Phase F split schema). Script now targets DISPERSION-002, derives splits from formation panel correctly, and reproduces committed artifacts byte-for-byte. Regression tests added in tests/test_inference_repro.py (5 tests).
 
-This session confirmed clean state with all tests passing; no further work was required.
+Current agent confirmed clean state with all tests passing; no further work required.
 
 ## MANDATORY INSTRUCTIONS FOR NEXT AGENT
 1. **DO NOT** modify the grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
