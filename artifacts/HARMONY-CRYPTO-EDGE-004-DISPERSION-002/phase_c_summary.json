@@ -36,11 +36,20 @@
   ],
   "high_gross_mean": 0.11962691759955946,
   "high_low_diff_ci_95_blockboot": [
-    0.17471689140306546,
-    0.17471689140306546
+    null,
+    null
   ],
   "high_low_diff_gross": 0.17471689140306546,
   "high_net_1x_mean": 0.11862691759955944,
+  "inference_method": {
+    "alpha": 0.05,
+    "block_size": 3,
+    "n_boot": 10000,
+    "n_diff_observations": 0,
+    "note": "Corrected: difference CI computed over paired per-formation difference series (not a degenerate point series).",
+    "seed": 12345,
+    "type": "paired_block_bootstrap"
+  },
   "low_gross_ci_95_blockboot": [
     -0.08778487777678096,
     -0.0034922625650584196

@@ -6,12 +6,13 @@
   "discovery": {
     "diff_gross": 0.2876691537149731,
     "diff_gross_ci_95": [
-      0.2876691537149731,
-      0.2876691537149731
+      null,
+      null
     ],
     "high_gross_mean": 0.20784605096800807,
     "low_gross_mean": -0.07982310274696504,
     "n": 31,
+    "n_diff_observations": 0,
     "n_high": 4,
     "n_low": 5
   },
@@ -24,14 +25,23 @@
   "final": {
     "diff_gross": -0.005012061054662231,
     "diff_gross_ci_95": [
-      -0.005012061054662231,
-      -0.005012061054662231
+      null,
+      null
     ],
     "high_gross_mean": -0.1964598383541558,
     "low_gross_mean": -0.19144777729949358,
     "n": 11,
+    "n_diff_observations": 0,
     "n_high": 1,
     "n_low": 1
+  },
+  "inference_method": {
+    "alpha": 0.05,
+    "block_size": 3,
+    "n_boot": 10000,
+    "note": "Corrected: difference CI computed over paired per-formation difference series within each chronological split.",
+    "seed": 12345,
+    "type": "paired_block_bootstrap"
   },
   "paired_block_bootstrap_intervals": true,
   "phase": "F_chronological_OOS",
@@ -48,12 +58,13 @@
   "validation": {
     "diff_gross": 0.007915389776344844,
     "diff_gross_ci_95": [
-      0.007915389776344844,
-      0.007915389776344844
+      null,
+      null
     ],
     "high_gross_mean": 0.08283714007948023,
     "low_gross_mean": 0.07492175030313539,
     "n": 11,
+    "n_diff_observations": 0,
     "n_high": 1,
     "n_low": 2
   }

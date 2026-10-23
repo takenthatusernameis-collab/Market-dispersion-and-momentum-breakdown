@@ -22,5 +22,13 @@
     "phase_f final: n_high=1, n_low=1 (<5) FLAG",
     "expanding frontier 1-10: n_high=6 (ok), n_low=16 (ok)"
   ],
-  "conclusion": "Insufficient evidence for robust high-low dispersion premium OOS; discovery effect not replicated. Flag all folds with n<5 per state before drawing conclusions."
+  "conclusion": "Insufficient evidence for robust high-low dispersion premium OOS; discovery effect not replicated. Flag all folds with n<5 per state before drawing conclusions.",
+  "inference_fix_applied": {
+    "method": "paired_block_bootstrap",
+    "seed": 12345,
+    "block_size": 3,
+    "n_boot": 10000,
+    "alpha": 0.05,
+    "note": "Degenerate point-estimate CIs replaced with block-bootstrap intervals. High/low state CIs now proper intervals; high-low diff CI is null because high/low states never share a formation date (paired inference not computable)."
+  }
 }
