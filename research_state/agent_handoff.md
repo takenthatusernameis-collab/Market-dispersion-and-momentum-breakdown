@@ -46,3 +46,16 @@ Do not re-run/modify grid manifest, config, or data pipeline unless a new experi
 
 ## Verification command
 - `python -m pytest tests/ -v` (must stay green)
+
+## Completion (this agent)
+- Verified report.md present; full test suite green (10 passed).
+- No code changes required; artifacts intact.
+
+## Initial task message for next agent
+Task: Robustness and inference tightening for HARMONY-CRYPTO-EDGE-004-DISPERSION-002 (build on existing artifacts only; do not modify grid manifest/config/data pipeline; preserve controls: free-data-only, point-in-time universe, no-lookahead, chronological OOS).
+
+Scope:
+1. Robustness: evaluate alternative dispersion state rules / lookbacks / horizons across the existing 108-config grid (H004F001..H004F108), reusing phase_c_summary.json, phase_e_summary.json, phase_f_summary.json, expanding_rank_frontier.json, formation_returns_conditioned.csv, report.md. Do not issue new experiment ID unless manifest/config changes.
+2. Inference tightening: quantify fold stability and effective sample sizes; explicitly flag any state/regime with n<5 in any split before drawing conclusions. Update report.md with a robustness/inference section.
+
+Deliverables: updated report.md section + any new summary JSON under artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/; tests remain green (`python -m pytest tests/ -v`). Report final verification results in handoff.
