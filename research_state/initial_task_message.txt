@@ -1,6 +1,6 @@
 Durable handoff (research_state/agent_handoff.md):
 - HARMONY-CRYPTO-EDGE-004-DISPERSION-002 is COMPLETE and verified. Prior task (robustness & inference tightening) done; all DISPERSION-002 artifacts unchanged.
-- HEAD: 3ab1676 (clean working tree). Tests: 15/15 passing (`python -m unittest discover -s tests -v`). Verified 2026-10-23 20:46Z.
+- HEAD: 23d872a (clean working tree). Tests: 15/15 passing (`python -m unittest discover -s tests -v`). Verified 2026-10-23 21:25Z.
 - NO WORK AUTHORIZED on DISPERSION-002. Do not modify grid manifest/config/data pipeline or any DISPERSION-002 artifacts.
 - Preserve controls: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - AWAIT A NEW EXPERIMENT ID before starting any new work. Follow its specification exactly as written.
