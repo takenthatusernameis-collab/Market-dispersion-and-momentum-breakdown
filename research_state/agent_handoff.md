@@ -2,9 +2,9 @@
 
 ## Status
 - Prior experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001: archived as complete (verified). No further work authorized on those artifacts.
-- New experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-002: initialized; grid manifest generated (108 configs H004F001..H004F108). Data panels not yet populated; phases not yet executed.
+- New experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-002: initialized; grid manifest generated (108 configs H004F001..H004F108). Data panels populated; phases C-G executed; outputs generated.
 - Config: configs/dispersion_momentum_followup_v1.json
-- Artifacts: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/ (experiment_setup.json, grid_config_manifest.json)
+- Artifacts: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/ (experiment_setup.json, grid_config_manifest.json, phase outputs)
 
 ## Controls
 - free-data-only, point-in-time universe, no-lookahead, chronological OOS.
@@ -13,4 +13,4 @@
 - HEAD: c049cf9 (main).
 
 ## Task for next agent
-Blocked: execution environment lacks pandas/numpy required by scripts. Next agent: provision Python environment with pandas/numpy, adapt run_all_phases_c_g.py to DISPERSION-002, run build_universe.py and phases C-G, validate outputs/tests.
+Validate outputs/tests for DISPERSION-002: run test suite (adapt tests to DISPERSION-002 if needed), verify phase artifacts, data gate, universe coverage, formation returns, phase summaries. Report any failures.

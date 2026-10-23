@@ -29,7 +29,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"
+EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-002"
 PANEL_DIR = ROOT / "artifacts" / EXP / "data" / "panels"
 
 # CoinMetrics asset -> Binance USD-M perpetual symbol.

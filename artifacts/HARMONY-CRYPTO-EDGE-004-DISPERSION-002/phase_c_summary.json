@@ -1,0 +1,68 @@
+{
+  "anchor": "H004G033",
+  "coverage_by_state": {
+    "high": 6,
+    "low": 8,
+    "mid": 39
+  },
+  "effective_sample_size": {
+    "high": 6,
+    "low": 8
+  },
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
+  "formation_dates": {
+    "high": [
+      "2021-02-01",
+      "2021-03-01",
+      "2021-05-01",
+      "2022-11-01",
+      "2023-07-01",
+      "2024-12-01"
+    ],
+    "low": [
+      "2021-07-01",
+      "2021-08-01",
+      "2022-02-01",
+      "2022-07-01",
+      "2023-01-01",
+      "2023-05-01",
+      "2023-06-01",
+      "2024-10-01"
+    ]
+  },
+  "high_gross_ci_95_blockboot": [
+    -0.04429957609831255,
+    0.28355341129743145
+  ],
+  "high_gross_mean": 0.11962691759955946,
+  "high_low_diff_ci_95_blockboot": [
+    0.17471689140306546,
+    0.17471689140306546
+  ],
+  "high_low_diff_gross": 0.17471689140306546,
+  "high_net_1x_mean": 0.11862691759955944,
+  "low_gross_ci_95_blockboot": [
+    -0.08778487777678096,
+    -0.0034922625650584196
+  ],
+  "low_gross_mean": -0.055089973803506,
+  "low_net_1x_mean": -0.056089973803506,
+  "n_formations_total": 53,
+  "n_high": 6,
+  "n_low": 8,
+  "n_mid": 39,
+  "phase": "C_dispersion_conditioned",
+  "spec": {
+    "dispersion_estimator": "cross_sectional_population_stddev",
+    "dispersion_state_rule": "trailing_365d_outer_deciles",
+    "forward_horizon_days": 30,
+    "min_prior_daily_observations": 180,
+    "momentum_lookback_days": 30,
+    "momentum_spread_breakpoints": "top_bottom_deciles",
+    "quantile_type": "linear",
+    "quantiles": [
+      0.1,
+      0.9
+    ]
+  }
+}

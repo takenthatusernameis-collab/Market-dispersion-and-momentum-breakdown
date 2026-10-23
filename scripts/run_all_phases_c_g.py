@@ -13,10 +13,10 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"
+EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-002"
 PANEL_DIR = ROOT / "artifacts" / EXP / "data" / "panels"
 OUT_DIR = ROOT / "artifacts" / EXP
-CONFIG_PATH = ROOT / "configs" / "dispersion_momentum_grid_v1.json"
+CONFIG_PATH = ROOT / "configs" / "dispersion_momentum_grid_v2_d002.json"
 
 MOMENTUM_LOOKBACK = 30
 FORWARD_HORIZON = 30
@@ -526,7 +526,7 @@ def phase_g_frozen_sensitivity_grid(prices: pd.DataFrame, returns: pd.DataFrame,
         fwd_h = int(params["forward_horizon_days"])
         disp_est = params["dispersion_estimator"]
         state_rule = params["dispersion_state_rule"]
-        breakpoints = params["momentum_spread_breakpoints"]
+        breakpoints = params.get("momentum_spread_breakpoints", "top_bottom_deciles")
 
         try:
             daily_disp = build_daily_dispersion_series(prices, returns, univ, lookback=mom_lb, estimator=disp_est)
