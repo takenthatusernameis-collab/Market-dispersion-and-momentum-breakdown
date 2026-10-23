@@ -1,0 +1,42 @@
+{
+  "bands": [
+    {
+      "diff_gross": -0.10224329298193771,
+      "high_gross_mean": 0.061266922819779766,
+      "low_gross_mean": 0.16351021580171748,
+      "n_formations": 53,
+      "n_high": 6,
+      "n_low": 16,
+      "rank_band": "1-10"
+    },
+    {
+      "diff_gross": -0.05471333236540789,
+      "high_gross_mean": -0.027548612872788054,
+      "low_gross_mean": 0.027164719492619838,
+      "n_formations": 57,
+      "n_high": 6,
+      "n_low": 14,
+      "rank_band": "1-15"
+    },
+    {
+      "diff_gross": 0.10434570881961738,
+      "high_gross_mean": 0.12297423243638739,
+      "low_gross_mean": 0.018628523616770008,
+      "n_formations": 58,
+      "n_high": 6,
+      "n_low": 13,
+      "rank_band": "1-20"
+    },
+    {
+      "diff_gross": 0.17471689140306546,
+      "high_gross_mean": 0.11962691759955946,
+      "low_gross_mean": -0.055089973803506,
+      "n_formations": 58,
+      "n_high": 6,
+      "n_low": 8,
+      "rank_band": "1-28"
+    }
+  ],
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "phase": "D_expanding_universe_rank_diagnostics"
+}

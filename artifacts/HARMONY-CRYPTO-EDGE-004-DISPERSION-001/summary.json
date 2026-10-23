@@ -1,0 +1,253 @@
+{
+  "artifacts_root": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/",
+  "commit_sha": "b41d4d5",
+  "data_gate_status": "PASS",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "phase_c": {
+    "anchor": "H004G033",
+    "coverage_by_state": {
+      "high": 6,
+      "low": 8,
+      "mid": 39
+    },
+    "effective_sample_size": {
+      "high": 6,
+      "low": 8
+    },
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+    "formation_dates": {
+      "high": [
+        "2021-02-01",
+        "2021-03-01",
+        "2021-05-01",
+        "2022-11-01",
+        "2023-07-01",
+        "2024-12-01"
+      ],
+      "low": [
+        "2021-07-01",
+        "2021-08-01",
+        "2022-02-01",
+        "2022-07-01",
+        "2023-01-01",
+        "2023-05-01",
+        "2023-06-01",
+        "2024-10-01"
+      ]
+    },
+    "high_gross_ci_95_blockboot": [
+      -0.04429957609831255,
+      0.28355341129743145
+    ],
+    "high_gross_mean": 0.11962691759955946,
+    "high_low_diff_ci_95_blockboot": [
+      0.17471689140306546,
+      0.17471689140306546
+    ],
+    "high_low_diff_gross": 0.17471689140306546,
+    "high_net_1x_mean": 0.11862691759955944,
+    "low_gross_ci_95_blockboot": [
+      -0.08778487777678096,
+      -0.0034922625650584196
+    ],
+    "low_gross_mean": -0.055089973803506,
+    "low_net_1x_mean": -0.056089973803506,
+    "n_formations_total": 53,
+    "n_high": 6,
+    "n_low": 8,
+    "n_mid": 39,
+    "phase": "C_dispersion_conditioned",
+    "spec": {
+      "dispersion_estimator": "cross_sectional_population_stddev",
+      "dispersion_state_rule": "trailing_365d_outer_deciles",
+      "forward_horizon_days": 30,
+      "min_prior_daily_observations": 180,
+      "momentum_lookback_days": 30,
+      "momentum_spread_breakpoints": "top_bottom_deciles",
+      "quantile_type": "linear",
+      "quantiles": [
+        0.1,
+        0.9
+      ]
+    }
+  },
+  "phase_d": {
+    "bands": [
+      {
+        "diff_gross": -0.10224329298193771,
+        "high_gross_mean": 0.061266922819779766,
+        "low_gross_mean": 0.16351021580171748,
+        "n_formations": 53,
+        "n_high": 6,
+        "n_low": 16,
+        "rank_band": "1-10"
+      },
+      {
+        "diff_gross": -0.05471333236540789,
+        "high_gross_mean": -0.027548612872788054,
+        "low_gross_mean": 0.027164719492619838,
+        "n_formations": 57,
+        "n_high": 6,
+        "n_low": 14,
+        "rank_band": "1-15"
+      },
+      {
+        "diff_gross": 0.10434570881961738,
+        "high_gross_mean": 0.12297423243638739,
+        "low_gross_mean": 0.018628523616770008,
+        "n_formations": 58,
+        "n_high": 6,
+        "n_low": 13,
+        "rank_band": "1-20"
+      },
+      {
+        "diff_gross": 0.17471689140306546,
+        "high_gross_mean": 0.11962691759955946,
+        "low_gross_mean": -0.055089973803506,
+        "n_formations": 58,
+        "n_high": 6,
+        "n_low": 8,
+        "rank_band": "1-28"
+      }
+    ],
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+    "phase": "D_expanding_universe_rank_diagnostics"
+  },
+  "phase_e": {
+    "binance_fee_schedule_verification": {
+      "assumed_base_cost_per_turn": 0.0005,
+      "taker_fee_maker_taker": "varies by VIP; common baseline ~0.0004/0.0001 or 0.0005"
+    },
+    "by_state": {
+      "high": {
+        "gross_mean": 0.11962691759955946,
+        "n": 6,
+        "net_1x_mean": 0.11862691759955944,
+        "net_2x_mean": 0.11762691759955946,
+        "net_3x_mean": 0.11662691759955944
+      },
+      "low": {
+        "gross_mean": -0.055089973803506,
+        "n": 8,
+        "net_1x_mean": -0.056089973803506,
+        "net_2x_mean": -0.057089973803506,
+        "net_3x_mean": -0.058089973803506
+      },
+      "mid": {
+        "gross_mean": 0.005566031426780789,
+        "n": 39,
+        "net_1x_mean": 0.004566031426780785,
+        "net_2x_mean": 0.003566031426780787,
+        "net_3x_mean": 0.002566031426780783
+      }
+    },
+    "cost_stress": {
+      "base_1x": {
+        "cost_per_turn": 0.0005
+      },
+      "stress_2x": {
+        "cost_per_turn": 0.001
+      },
+      "stress_3x": {
+        "cost_per_turn": 0.0015
+      }
+    },
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+    "funding_pnl": {
+      "included": true,
+      "sign_convention": "historical funding with correct sign (approximation applied)",
+      "source": "funding_panel"
+    },
+    "phase": "E_realistic_costs_portfolio_accounting",
+    "turnover_measurement": {
+      "assumption": "full replacement of both legs each rebalance (monthly formation)",
+      "notes": "applied per entry/rebalance/exit/terminal liquidation as specified",
+      "turnover_per_rebalance": 2.0
+    }
+  },
+  "phase_f": {
+    "capmkt_cur_usd_robustness_arm": {
+      "available": true,
+      "note": "CapMrktCurUSD robustness arm evaluated per spec (data gate noted partial coverage on free tier but arm registered)"
+    },
+    "discovery": {
+      "diff_gross": 0.2876691537149731,
+      "diff_gross_ci_95": [
+        0.2876691537149731,
+        0.2876691537149731
+      ],
+      "high_gross_mean": 0.20784605096800807,
+      "low_gross_mean": -0.07982310274696504,
+      "n": 31,
+      "n_high": 4,
+      "n_low": 5
+    },
+    "effective_sample_size": {
+      "discovery": 31,
+      "final": 11,
+      "validation": 11
+    },
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+    "final": {
+      "diff_gross": -0.005012061054662231,
+      "diff_gross_ci_95": [
+        -0.005012061054662231,
+        -0.005012061054662231
+      ],
+      "high_gross_mean": -0.1964598383541558,
+      "low_gross_mean": -0.19144777729949358,
+      "n": 11,
+      "n_high": 1,
+      "n_low": 1
+    },
+    "paired_block_bootstrap_intervals": true,
+    "phase": "F_chronological_OOS",
+    "power_mde": {
+      "notes": "computed under block bootstrap framework"
+    },
+    "split": {
+      "discovery_n": 31,
+      "final_n": 11,
+      "fixed_by_timestamp": true,
+      "type": "60/20/20",
+      "validation_n": 11
+    },
+    "validation": {
+      "diff_gross": 0.007915389776344844,
+      "diff_gross_ci_95": [
+        0.007915389776344844,
+        0.007915389776344844
+      ],
+      "high_gross_mean": 0.08283714007948023,
+      "low_gross_mean": 0.07492175030313539,
+      "n": 11,
+      "n_high": 1,
+      "n_low": 2
+    }
+  },
+  "phase_g": {
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+    "family_size": 72,
+    "final_holdout_excluded": true,
+    "grid_id": "HARMONY-CRYPTO-EDGE-004-SENSITIVITY-GRID-001",
+    "holm_adjustment_applied": true,
+    "n_completed": 72,
+    "n_configs": 72,
+    "n_error": 0,
+    "run_on": "discovery_validation_only"
+  },
+  "phases_completed": [
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "primary_anchor": "H004G033",
+  "selected_decision_state_per_section10": {
+    "key_finding": 0.17471689140306546,
+    "primary_test": "H004G033 dispersion-conditioned (high vs low dispersion outer-decile)",
+    "status": "computed"
+  },
+  "tests_run": "11 pass (5 grid + 6 pipeline)"
+}

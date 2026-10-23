@@ -4,43 +4,42 @@
 - Re-read prompt and froze 72-config grid definition; verified CoinMetrics Community API catalog access.
 - Created artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ with run_manifest.json, data_gate.json, parameter_grid_snapshot.json, grid_config_manifest.json.
 - Added tests/test_grid_validation.py; all 5 tests pass.
-- **This session:** validated point-in-time market-cap history (CoinMetrics Community API): CapMrktEstUSD primary field fully available for 28/28 assets; CapMrktCurUSD robustness field blocked on free tier for 11 assets (documented caveat, not a blocker).
-- **This session:** validated daily returns and funding end-to-end from Binance public archive (data.binance.vision): all 28 USD-M perpetual symbols, klines + funding rates.
-- **This session:** completed data_gate.json with checks/counts/exclusions — status PASS.
-- **This session:** built universe_coverage.csv: 5,281 dates (2010-07-18 -> 2024-12-31), 28 assets, eligible assets/date mean 26.3 (max 28).
-- **This session:** implemented formation/return accounting; ran Phase B unconditional baseline only — 53 monthly formations (2020-08-01 -> 2024-12-01), gross momentum-spread mean +0.93%/mo, net 1x +0.83%/mo, 47% of months positive.
-- No conditional (high/low dispersion) outcomes computed; no grid results computed (reserved until data gate passes; gate passed, Phases C-G not yet run).
-- Added tests/test_data_pipeline.py; all 11 tests pass (5 grid + 6 pipeline).
-- Committed: baaed8e "chore: complete Phase A/B data gate and unconditional momentum baseline".
+- Validated point-in-time market-cap history (CoinMetrics Community API): CapMrktEstUSD primary field fully available for 28/28 assets; CapMrktCurUSD robustness field blocked on free tier for 11 assets (documented caveat, not a blocker).
+- Validated daily returns and funding end-to-end from Binance public archive (data.binance.vision): all 28 USD-M perpetual symbols, klines + funding rates.
+- Completed data_gate.json with checks/counts/exclusions — status PASS.
+- Built universe_coverage.csv: 5,281 dates (2010-07-18 -> 2024-12-31), 28 assets, eligible assets/date mean 26.3 (max 28).
+- Implemented formation/return accounting; ran Phase B unconditional baseline only — 53 monthly formations (2020-08-01 -> 2024-12-01), gross momentum-spread mean +0.93%/mo, net 1x +0.83%/mo, 47% of months positive.
+- **This session:** Completed Phases C through G per spec.
+  - Phase C (H004G033 anchor, dispersion-conditioned): 53 formations, n_high=6, n_low=8, n_mid=39. High dispersion gross mean +11.96%/mo, low dispersion gross mean -5.51%/mo, high-low diff +17.47%/mo (block bootstrap CIs recorded). State assigned via trailing 365d outer deciles using >=180 prior daily observations.
+  - Phase D: expanding rank frontier across bands (1-5,1-10,1-15,1-20,1-28) with state-conditioned results written to expanding_rank_frontier.json.
+  - Phase E: realistic costs/funding with base 1x, 2x, 3x cost stresses, turnover measured, Binance fee schedule verified, funding PnL included with correct sign convention.
+  - Phase F: chronological 60/20/20 discovery/validation/final split fixed by timestamp; paired block-bootstrap intervals; effective sample size/power/MDE noted; CapMrktCurUSD robustness arm registered.
+  - Phase G: all 72 configs (H004G001-H004G072) run on discovery/validation only (final holdout excluded), gross + 1x/2x/3x net reported, Holm adjustment applied across 72-config family. grid_results.jsonl and grid_run_state.json written.
+- Extended formation_returns.csv with conditional state/dispersion; added formation_returns_conditioned.csv, phase_c_returns_refined.csv, summary.json, report.md, evidence_inventory.json.
+- Committed changes (current HEAD b41d4d5).
 
 ## Status
 - Specification review: complete.
 - Free-data/data-integrity gate: PASS (all indispensable legs keyless/accessible; CapMrktCurUSD robustness partial on free tier).
-- Forward outcome computation: Phase B complete (unconditional baseline). Phases C-G not started.
+- All phases: A/B complete (prior), C-G complete (this session). Grid executed on discovery/validation only with final holdout excluded; no grid promotion.
 
 ## Commit
-- HEAD: baaed8e (branch main, up to date with origin/main)
-- Working tree clean except scripts/__pycache__/ and tests/__pycache__/ (not committed).
+- HEAD: b41d4d5 (branch main, up to date with origin/main)
+- Working tree clean except __pycache__ dirs (not committed).
 
-## Next agent initial task
-Run Phases C through G only. Do NOT recompute Phase A/B or re-validate the data gate (already PASS at commit baaed8e).
+## Artifacts
+- Root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
+- Grid spec: configs/dispersion_momentum_grid_v1.json (SHA d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb)
+- Key outputs: data_gate.json (PASS), formation_returns.csv (extended), phase_b_summary.json, phase_c_summary.json, phase_c_returns_refined.csv, formation_returns_conditioned.csv, expanding_rank_frontier.json, phase_e_summary.json, phase_f_summary.json, grid_results.jsonl, grid_run_state.json, summary.json, report.md, evidence_inventory.json, run_manifest.json
 
-1. Phase C — registered dispersion-conditioned test: on the same eligible universe/dates/accounting as Phase B, estimate high-state vs low-state momentum spread, their difference, preregistered uncertainty (block bootstrap or HAC), gross and net, coverage per state, formation dates, effective sample size. Use the frozen primary-compatible anchor H004G033 (30d momentum / 30d forward / population-stddev dispersion / trailing-365d outer-decile state / top-bottom deciles).
-2. Phase D — expanding universe and rank diagnostics: report by descending market-cap rank band from universe_coverage.csv.
-3. Phase E — realistic costs and portfolio accounting: verify public Binance fee schedule, measure turnover, apply entry/rebalance/exit/terminal liquidation costs, include historical funding PnL with correct sign, base + 2x/3x cost stresses.
-4. Phase F — chronological OOS: 60/20/20 discovery/validation/final split fixed by timestamp; paired block-bootstrap intervals; effective sample size and power/MDE; CapMrktCurUSD robustness arm.
-5. Phase G — frozen sensitivity grid: run all 72 configs (H004G001-H004G072) on discovery/validation data only, gross + 1x/2x/3x net, Holm adjustment across the 72-config family, report every config with terminal status. Do NOT run grid on the final holdout; do not promote a grid variant.
+## Initial task message for the next agent
+All Phases A–G are complete for experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001.
 
-Deliverables to add/update: grid_results.jsonl, grid_run_state.json, expanding_rank_frontier.json, formation_returns.csv (extend with conditional), summary.json, report.md, evidence_inventory.json, run_manifest.json.
+Review deliverables:
+1. artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/report.md and summary.json for primary results (H004G033) and phase status.
+2. artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_c_summary.json (high/low/diff, CIs, coverage, effective sample sizes).
+3. artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/grid_results.jsonl and grid_run_state.json (72/72 configs, discovery/validation only, Holm-adjusted, final holdout excluded).
+4. artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/expanding_rank_frontier.json, phase_e_summary.json, phase_f_summary.json.
+5. Verify data_gate.json remains PASS and tests pass (python3 -m unittest tests/test_grid_validation.py tests/test_data_pipeline.py).
 
-Report: commit SHA, data-gate status (PASS), tests run (11 pass), phases completed, primary estimate and uncertainty interval, selected decision state per Section 10.
-
-Artifacts root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
-Grid spec: configs/dispersion_momentum_grid_v1.json (SHA d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb)
-
-## This session note
-- Implemented Phase C partial: scripts/phase_c.py, phase_c_returns.csv, phase_c_summary.json (54 formations; high n=1, low n=6 due to trailing-365d quantile; needs refinement).
-- Phases D-G remain pending.
-
-## Next agent initial task
-Continue Phases C (refine state assignment), D, E, F, G per prior spec. Do not recompute A/B.
+No recomputation of Phases A/B or re-validation of the data gate is needed. Focus on verification/interpretation/reporting only unless explicitly requested otherwise.

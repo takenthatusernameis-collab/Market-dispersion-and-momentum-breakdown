@@ -1,0 +1,90 @@
+{
+  "artifacts": [
+    {
+      "name": "data_gate.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/data_gate.json",
+      "sha256": "82ea41e9763f62867535d1207e7f323d0d596d6356713d91736a0939b42f0fbf"
+    },
+    {
+      "name": "evidence_inventory.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/evidence_inventory.json",
+      "sha256": "279dc1bbf4d736898d83027eb994346145905b7b4d79bd1cfe4dd9d02f7e7b86"
+    },
+    {
+      "name": "expanding_rank_frontier.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/expanding_rank_frontier.json",
+      "sha256": "c06fb7b04b693c4f9c0b85bff66dfd74abfbd5dfb160057f7daf2b080948901e"
+    },
+    {
+      "name": "formation_returns.csv",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/formation_returns.csv",
+      "sha256": "dec3851777ad7d1a719849bd316460141c4bda26d08ef724f6b6663e6ddb0ab6"
+    },
+    {
+      "name": "formation_returns_conditioned.csv",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/formation_returns_conditioned.csv",
+      "sha256": "b4e63e9a5d52a0c899e8af4e21743b6b5c7eaad5a3c504148e57c260e1a0305a"
+    },
+    {
+      "name": "grid_config_manifest.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/grid_config_manifest.json",
+      "sha256": "9377adeea0540599860ef27099576fd88dfa6a1eff49ee8a6a1a359e44e4251d"
+    },
+    {
+      "name": "grid_results.jsonl",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/grid_results.jsonl",
+      "sha256": "0ee5950632a07c327258c395dd64113aa2cbb1bade3efb92973922d605cfdc62"
+    },
+    {
+      "name": "grid_run_state.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/grid_run_state.json",
+      "sha256": "14ee82be2df00b02e2d57147d380b67f6bebd601187fdf0aea34ef45f26af807"
+    },
+    {
+      "name": "parameter_grid_snapshot.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/parameter_grid_snapshot.json",
+      "sha256": "d353e6456e27c8e95b8715a28e5a42d09f0ba5298655cf8f7a61f103532b4abb"
+    },
+    {
+      "name": "phase_b_summary.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_summary.json",
+      "sha256": "93450b95aedcbf7b3585337f6374400e08a16fd795f7e29f9548e67b346eb8ca"
+    },
+    {
+      "name": "phase_c_returns.csv",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_c_returns.csv",
+      "sha256": "ddc29f78bfbf5e57f28bbb82b01ec8ab4d54ad89cdc44ba72d77b39ee56e2c1b"
+    },
+    {
+      "name": "phase_c_summary.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_c_summary.json",
+      "sha256": "c448a0936d239b1b0d0ed6ef18e7d7ea163519542afd333d66af9cade4a3fcd2"
+    },
+    {
+      "name": "phase_e_summary.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_e_summary.json",
+      "sha256": "637fc98de65d7baadddeae01eb1899533388ad3b2f9c65d81d53514565caf97e"
+    },
+    {
+      "name": "phase_f_summary.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_f_summary.json",
+      "sha256": "6128959723b52e0ad2a72764aa2b74531eb7fa5c3cab643f90fa605504d24392"
+    },
+    {
+      "name": "report.md",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/report.md",
+      "sha256": "e83028047d19be402e9f27e9c22411a512e438255fc4b30e091139121a83ec90"
+    },
+    {
+      "name": "run_manifest.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/run_manifest.json",
+      "sha256": "95c5f7e029ef417a72aa4d5115eee803370240bd55a6dc7b84cebc3696d58989"
+    },
+    {
+      "name": "summary.json",
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json",
+      "sha256": "969f0cf532ac1c95a9d1470da3671d6e1d3414ea3d7e69fd62a479c815bd7168"
+    }
+  ],
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"
+}

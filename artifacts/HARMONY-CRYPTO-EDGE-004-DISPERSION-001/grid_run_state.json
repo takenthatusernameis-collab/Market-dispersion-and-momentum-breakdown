@@ -1,0 +1,11 @@
+{
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "family_size": 72,
+  "final_holdout_excluded": true,
+  "grid_id": "HARMONY-CRYPTO-EDGE-004-SENSITIVITY-GRID-001",
+  "holm_adjustment_applied": true,
+  "n_completed": 72,
+  "n_configs": 72,
+  "n_error": 0,
+  "run_on": "discovery_validation_only"
+}

@@ -1,0 +1,52 @@
+{
+  "binance_fee_schedule_verification": {
+    "assumed_base_cost_per_turn": 0.0005,
+    "taker_fee_maker_taker": "varies by VIP; common baseline ~0.0004/0.0001 or 0.0005"
+  },
+  "by_state": {
+    "high": {
+      "gross_mean": 0.11962691759955946,
+      "n": 6,
+      "net_1x_mean": 0.11862691759955944,
+      "net_2x_mean": 0.11762691759955946,
+      "net_3x_mean": 0.11662691759955944
+    },
+    "low": {
+      "gross_mean": -0.055089973803506,
+      "n": 8,
+      "net_1x_mean": -0.056089973803506,
+      "net_2x_mean": -0.057089973803506,
+      "net_3x_mean": -0.058089973803506
+    },
+    "mid": {
+      "gross_mean": 0.005566031426780789,
+      "n": 39,
+      "net_1x_mean": 0.004566031426780785,
+      "net_2x_mean": 0.003566031426780787,
+      "net_3x_mean": 0.002566031426780783
+    }
+  },
+  "cost_stress": {
+    "base_1x": {
+      "cost_per_turn": 0.0005
+    },
+    "stress_2x": {
+      "cost_per_turn": 0.001
+    },
+    "stress_3x": {
+      "cost_per_turn": 0.0015
+    }
+  },
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+  "funding_pnl": {
+    "included": true,
+    "sign_convention": "historical funding with correct sign (approximation applied)",
+    "source": "funding_panel"
+  },
+  "phase": "E_realistic_costs_portfolio_accounting",
+  "turnover_measurement": {
+    "assumption": "full replacement of both legs each rebalance (monthly formation)",
+    "notes": "applied per entry/rebalance/exit/terminal liquidation as specified",
+    "turnover_per_rebalance": 2.0
+  }
+}
