@@ -40,3 +40,6 @@ See research_state/agent_task_message.md (updated). Experiment HARMONY-CRYPTO-ED
 
 ## Final human-readable summary
 Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 complete (no further computation). Primary anchor H004G033: high-dispersion gross momentum-spread mean +11.96%/mo (n=6) vs low-dispersion -5.51%/mo (n=8), high-low diff +17.47%/mo; block-bootstrap CIs recorded. Costs/funding included; 1x/2x/3x net stresses reported. Chronological 60/20/20 OOS: discovery +28.77%, validation +0.79%, final -0.50%. Grid: 72/72 configs on discovery/validation only, Holm-adjusted, no promotion; final holdout excluded. Caveats: CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked); small effective samples in high/low states; final holdout single-observation states.
+
+## Task for next agent
+None on this experiment — it is archived as complete. The only authorized action is to spin up a new follow-up experiment under a new experiment ID. Do not reuse artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/ as inputs without explicit approval. To understand context, read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/summary.json and report.md.
