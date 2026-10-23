@@ -5,19 +5,16 @@ See research_state/agent_task_message.md (updated). Experiment HARMONY-CRYPTO-ED
 
 ## Read prior agent task + completion session (latest)
 - Prior task (from durable handoff): final review/interpretation/reporting only; completed in prior session.
-- Verified by current agent (independent re-check):
+- Verified by current agent (independent re-check, 2026-10-23):
   - 11/11 tests pass (`python3 -m pytest tests/ -q` → 11 passed).
   - data_gate.json status PASS; free-data boundary intact; CapMrktCurUSD robustness arm partial on free tier (11/28 assets blocked) recorded as caveat.
   - grid_results.jsonl 72/72 unique configs, 0 duplicates, ids H004G001..H004G072, 0 errors.
   - grid_run_state.json: holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only, n_error 0.
   - summary.json ↔ report.md consistent (anchor H004G033: diff_gross +0.17471689140306546; phases C-G completed).
   - Working tree clean except untracked `tests/__pycache__/`; artifacts/scripts match commit 836972d. summary.json/report.md carry commit_sha b41d4d5 (outputs generation commit).
+  - HEAD: 247b3dd (main).
 - Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 archived as complete. No further work authorized on these artifacts.
 - Handoff and initial task message updated by current agent.
-- Re-verified this session: 11/11 tests pass; working tree clean except tests/__pycache__/; no artifact changes.
-- Prior task (final review/interpretation/reporting) confirmed complete by current agent; no further computation authorized.
-- Re-verified again this session (2026-10-23): 11/11 tests pass; git status clean except tests/__pycache__/; HEAD 9268f04. No artifact changes.
-- Completed by current agent per instructions: read prior task, verified complete state, updated handoff and task message for next agent.
 
 ## Status
 - Specification review: complete.
@@ -27,11 +24,9 @@ See research_state/agent_task_message.md (updated). Experiment HARMONY-CRYPTO-ED
 - Archived as complete — no further computation or artifact changes required.
 
 ## Commit
-- HEAD: 9268f04 (main). Working tree clean except untracked tests/__pycache__/.
+- HEAD: 247b3dd (main). Working tree clean except untracked tests/__pycache__/.
 - Artifacts consistent with commit 836972d; summary.json/report.md carry commit_sha b41d4d5.
 - Working tree clean except untracked `tests/__pycache__/` (not committed).
-- Re-verified this session (2026-10-23): 11/11 tests pass; git status clean except tests/__pycache__/; HEAD 9268f04. No artifact changes.
-- Prior task (final review/interpretation/reporting) confirmed complete by current agent; no further computation authorized.
 
 ## Artifacts
 - Root: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/
