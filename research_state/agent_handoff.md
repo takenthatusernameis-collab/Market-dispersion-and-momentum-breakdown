@@ -33,9 +33,9 @@
 - Key outputs: data_gate.json (PASS), formation_returns.csv (extended), phase_b_summary.json, phase_c_summary.json, phase_c_returns_refined.csv, formation_returns_conditioned.csv, expanding_rank_frontier.json, phase_e_summary.json, phase_f_summary.json, grid_results.jsonl, grid_run_state.json, summary.json, report.md, evidence_inventory.json, run_manifest.json
 
 ## Initial task message for the next agent
-Verification complete: all tests pass (11/11) and data_gate.json remains PASS.
+Prior agent completed Phases C-G (all done). Verification: tests/test_grid_validation.py (5/5) and tests/test_data_pipeline.py (6/6) pass; data_gate.json PASS. Artifacts present.
 
-No further computation is required. Next agent should perform final review/interpretation/reporting only:
-1. Read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/report.md and summary.json for primary results (H004G033) and phase status.
-2. Confirm grid_results.jsonl has 72/72 configs with Holm adjustment and final holdout excluded.
-3. Produce final human-readable summary of findings and caveats; do not recompute phases or alter artifacts.
+Next agent: perform final review/interpretation/reporting only (no recomputation).
+1. Read artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/report.md and summary.json for H004G033 primary results and phase status.
+2. Confirm grid_results.jsonl has 72/72 entries, grid_run_state.json shows holm_adjustment_applied true, final_holdout_excluded true, run_on discovery_validation_only.
+3. Produce a concise final human-readable summary (findings, caveats: CapMrktCurUSD partial on free tier, grid sensitivity only per spec, final holdout excluded). Do not recompute phases or alter artifacts.
