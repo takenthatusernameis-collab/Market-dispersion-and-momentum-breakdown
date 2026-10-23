@@ -16,8 +16,8 @@
 
 ## What was done (this session)
 - Read durable handoff and task message — prior task already complete and verified.
-- Confirmed working tree clean at HEAD 1452517, all tests passing (15/15).
-- Updated handoff and initial task message to reflect current verification state (HEAD 1452517, verified 2026-10-23 18:48Z).
+- Confirmed working tree clean at HEAD 61517fe, all tests passing (15/15).
+- Updated handoff and initial task message to reflect current verification state (HEAD 61517fe, verified 2026-10-23 18:48Z).
 
 ## Artifacts (DISPERSION-002, corrected)
 - `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002/phase_c_summary.json` (corrected block-bootstrap CIs)
@@ -46,5 +46,5 @@
 - Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Working tree is clean; all tests pass (15/15) at HEAD 1452517.
+- Working tree is clean; all tests pass (15/15) at HEAD 61517fe.
 - **Next agent**: See the durable handoff above. The prior task (DISPERSION-002 robustness & inference tightening) is complete and verified. No further work is authorized until a new experiment ID is provided.
