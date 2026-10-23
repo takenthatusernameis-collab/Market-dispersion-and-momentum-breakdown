@@ -4,8 +4,8 @@
 - Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json (replaced degenerate point-estimate CIs).
 - Report updated with corrected CI references; robustness_inference_summary.json updated with inference_fix_applied block.
 - All DISPERSION-002 artifacts byte-identical to committed state (untouched by fixes).
-- Working tree clean; HEAD on main (a779c1b).
-- Re-verified this session (2026-10-23 17:50Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
+- Working tree clean; HEAD on main (d7fa1e8).
+- Re-verified this session (2026-10-23 17:52Z): 15/15 tests pass (`python -m unittest discover -s tests -v`); no authorized work pending.
 - Handoff read and updated by current agent (this session). Prior task completed and handoff cycle finalized.
 
 ## Controls (must preserve)
