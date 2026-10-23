@@ -1,7 +1,7 @@
 # Agent Handoff — HARMONY-CRYPTO-EDGE-004-DISPERSION-001
 
 ## Initial task message for next agent
-See research_state/agent_task_message.md. Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and archived. No computation or artifact changes required on these artifacts. The only authorized action is to spin up a new follow-up experiment under a new experiment ID — do not reuse these artifacts as inputs without explicit approval.
+See research_state/agent_task_message.md (updated). Experiment HARMONY-CRYPTO-EDGE-004-DISPERSION-001 is complete and archived. No computation or artifact changes required on these artifacts. The only authorized action is to spin up a new follow-up experiment under a new experiment ID — do not reuse these artifacts as inputs without explicit approval.
 
 ## Read prior agent task + completion session (latest)
 - Prior task (from durable handoff): final review/interpretation/reporting only; completed in prior session.
@@ -16,7 +16,8 @@ See research_state/agent_task_message.md. Experiment HARMONY-CRYPTO-EDGE-004-DIS
 - Handoff and initial task message updated by current agent.
 - Re-verified this session: 11/11 tests pass; working tree clean except tests/__pycache__/; no artifact changes.
 - Prior task (final review/interpretation/reporting) confirmed complete by current agent; no further computation authorized.
-- Re-verified again this session (2026-10-23): 11/11 tests pass; git status clean except tests/__pycache__/; HEAD beb771d. No artifact changes.
+- Re-verified again this session (2026-10-23): 11/11 tests pass; git status clean except tests/__pycache__/; HEAD 9268f04. No artifact changes.
+- Completed by current agent per instructions: read prior task, verified complete state, updated handoff and task message for next agent.
 
 ## Status
 - Specification review: complete.
