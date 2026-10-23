@@ -38,13 +38,13 @@
 - Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - **AWAIT A NEW EXPERIMENT ID** before starting any new work. If one is provided, follow its specification exactly as written.
 - Before merging/committing new work, verify: `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Working tree is clean at HEAD f4bb574. All tests pass (15/15).
+- Working tree clean at HEAD 38bc565. All tests pass (15/15). Only untracked `__pycache__` artifacts present (test run side effects).
 
 ## Verification (this session)
+- Prior task (DISPERSION-002) from durable handoff: COMPLETE and verified.
 - Ran `python -m unittest discover -s tests -v`: 15/15 pass.
-- `git status`: working tree clean at HEAD f4bb574. No changes to DISPERSION-002 artifacts.
-- Confirmed no uncommitted changes; DISPERSION-002 artifacts untouched.
-- Prior task from durable handoff completed and verified. Handoff updated and ready for next agent with new experiment ID.
+- `git status`: working tree clean at HEAD 38bc565; no changes to DISPERSION-002 artifacts (only untracked `__pycache__`).
+- Handoff updated and ready for next agent awaiting a new experiment ID.
 
 ## Initial Task Message for Next Agent
 
@@ -61,6 +61,4 @@
 - Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
 
-**Current baseline:** working tree clean at HEAD f4bb574. All tests pass (15/15).
-
-(End of file - total 63 lines)
+**Current baseline:** working tree clean at HEAD 38bc565. All tests pass (15/15).
