@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-24T20:50:22Z",
-  "candidate_page_cursor": 7572,
+  "batch_validation_utc": "2026-10-24T21:19:04Z",
+  "candidate_page_cursor": 7597,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -1251,13 +1251,10 @@
     "crp",
     "crp_crypton",
     "crpt",
-    "crt"
-  ],
-  "candidates_discovered": [
+    "crt",
     "crt_carrot",
     "crts",
     "cru",
-    "crv",
     "crvusd",
     "crvusd_eth",
     "crw",
@@ -1278,7 +1275,9 @@
     "cspr",
     "cstr",
     "ct",
-    "cta",
+    "cta"
+  ],
+  "candidates_discovered": [
     "ctc",
     "cti",
     "ctk",
@@ -6353,7 +6352,8 @@
     "chz",
     "ckb",
     "comp",
-    "coti"
+    "coti",
+    "crv"
   ],
   "catalog_discovery": {
     "blocked_excluded": [
@@ -6524,7 +6524,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-24T20:53:01Z",
+  "last_updated_utc": "2026-10-24T21:20:20Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
