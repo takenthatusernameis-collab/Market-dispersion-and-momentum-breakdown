@@ -7,7 +7,7 @@ Continue candidate validation for DISPERSION-003 in bounded batches of 25.
 `python3 scripts/validate_candidate_batch.py --limit 25`
 
 ## Starting state
-- verified=75, blocked=1273, remaining_discovered=4999, cursor=7597
+- verified=77, blocked=1296, remaining_discovered=4974, cursor=7622
 - Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json
 - Frontier: research_state/universe_frontier.json
 
