@@ -10,10 +10,10 @@
 - DISPERSION-002: corrected report says discovery high-minus-low difference +28.77 percentage points, validation +0.79 points, final −0.50 points; the effect did not replicate and state sample sizes were very small.
 - A 108-configuration manifest exists for DISPERSION-002, but the committed files inspected for this handoff do not show a matching full grid result ledger. Verify and close this evidence gap; do not claim all 108 configurations were tested solely from the report text.
 - Previously committed historical panels cover 28 mapped assets and end on 2024-12-31. The historical rank frontier is not proven exhausted.
-- Current next config: configs/dispersion_momentum_grid_v3.json, 216 cells (108 parameter combinations × 2 universe arms); deterministic manifest generator and contract tests are included in this task update.
+- Current next config: configs/dispersion_momentum_grid_v3.json, 216 cells (108 parameter combinations × 2 universe arms); deterministic manifest generator and contract tests included. Manifest regenerated and verified: 216 configurations, 216 unique IDs (H004V001..H004V216), 216 unique hashes; anchors H004V105 (legacy28_comparator) and H004V106 (expanding_point_in_time) confirmed present.
 
 ## Immediate next task
-1. Run the unit-test suite and scripts/generate_grid_v3_manifest.py; verify 216 unique IDs/hashes and anchors H004V105/H004V106.
+1. **[DONE]** Run the unit-test suite and scripts/generate_grid_v3_manifest.py; verify 216 unique IDs/hashes and anchors H004V105/H004V106. All tests pass (21/21).
 2. Inspect active workflow/controller state and source-refresh code. Extend free public price, cap and funding data to the latest fully closed UTC daily candle. Record exact cutoffs and provenance before outcome computation.
 3. Discover candidates below the existing 28-asset set using descending historical point-in-time market-cap rank; process batches of 25 as operational checkpoints only, not a fixed universe cutoff. Record missing-history/mapping/data blockers and continue to other candidates/tasks.
 4. Implement a resumable, idempotent DISPERSION-003 data gate and evaluation runner for the full 216-cell grid. Compare legacy28 and expanding point-in-time arms. The complete grid is development/validation only; report every cell and the full Holm correction family.
