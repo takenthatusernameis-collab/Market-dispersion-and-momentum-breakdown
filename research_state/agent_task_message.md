@@ -3,9 +3,9 @@
 ## Context
 - Experiment: HARMONY-CRYPTO-EDGE-004-DISPERSION-002
 - Status: COMPLETE AND VERIFIED
-- HEAD: 11cb714 (main), working tree clean except untracked `tests/__pycache__/*.pyc`
+- HEAD: 0557b4a (main), working tree clean except untracked `tests/__pycache__/*.pyc`
 - Tests: 15/15 passing (`python -m unittest discover -s tests -v`)
-- Verified: 2026-10-23 22:33Z through 23:35Z; re-verified 2026-10-24 00:39Z, 01:13Z, 01:16Z
+- Verified: 2026-10-23 22:33Z through 23:35Z; re-verified 2026-10-24 00:39Z, 01:13Z, 01:16Z, 01:19Z
 
 ## Task for Next Agent
 NO AUTHORIZED WORK PENDING. Read `research_state/agent_handoff.md` for full details.
@@ -19,7 +19,7 @@ When a new experiment ID is provided:
 
 Verification before merging/committing new work:
 - Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Confirm `git status` shows clean working tree except untracked `tests/__pycache__/*.pyc` with no changes to DISPERSION-002 artifacts.
+- Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
 
 ## Ready for handoff
 DISPERSION-002 is closed. Await new experiment ID.

@@ -49,5 +49,5 @@
 
 (End of file - total 48 lines)
 ## Current Session (2026-10-24 01:19Z)
-- Read durable handoff; prior task DISPERSION-002 complete and verified. `python -m unittest discover -s tests -v` → 15/15 OK. Working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD 8d415f9 (checkpoint). No changes to DISPERSION-002 artifacts or pipeline/config. Controls preserved: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
+- Read durable handoff; prior task DISPERSION-002 complete and verified. `python -m unittest discover -s tests -v` → 15/15 OK. Working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD 0557b4a (checkpoint). No changes to DISPERSION-002 artifacts or pipeline/config. Controls preserved: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - AWAIT A NEW EXPERIMENT ID before starting any new work.
