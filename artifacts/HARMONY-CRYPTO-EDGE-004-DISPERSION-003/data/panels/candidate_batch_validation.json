@@ -2,18 +2,18 @@
   "auth": "keyless free public sources; no API keys, payment, or subscription",
   "candidates_processed": [
     {
-      "asset": "ab_abchain",
+      "asset": "00",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "AB_ABCHAINUSDT"
+        "symbol": "00USDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -27,18 +27,18 @@
       "status": "blocked"
     },
     {
-      "asset": "aba",
+      "asset": "0x0",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ABAUSDT"
+        "symbol": "0X0USDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -52,18 +52,18 @@
       "status": "blocked"
     },
     {
-      "asset": "abascbbtc_v3_base.eth",
+      "asset": "1",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ABASCBBTC_V3_BASE.ETHUSDT"
+        "symbol": "1USDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -77,617 +77,17 @@
       "status": "blocked"
     },
     {
-      "asset": "abasusdc_v3_base.eth",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABASUSDC_V3_BASE.ETHUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abasweth_v3_base.eth",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABASWETH_V3_BASE.ETHUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abaswsteth_v3_base.eth",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABASWSTETH_V3_BASE.ETHUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abbc",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABBCUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abbvon",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABBVONUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abbvx",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABBVXUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abbvx_eth",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABBVX_ETHUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "blocked_free_tier"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abl",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABLUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abnb",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABNBUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abnbon",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABNBONUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abt",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABTUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abtc",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABTCUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abton",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABTONUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abtx",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABTXUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abtx_eth",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABTX_ETHUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "blocked_free_tier"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abtx_sol",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABTX_SOLUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "blocked_free_tier"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "aby",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABYUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "abyss",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ABYSSUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "ac",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ACUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "ac3",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "AC3USDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "acat",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ACATUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "acb_tokenizedstock",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ACB_TOKENIZEDSTOCKUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:36:50Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "acc",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ACCUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "acd",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ACDUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "ace",
+      "asset": "1000sats",
       "binance": {
         "error": null,
         "exists": true,
-        "symbol": "ACEUSDT"
+        "symbol": "1000SATSUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -701,18 +101,18 @@
       "status": "blocked"
     },
     {
-      "asset": "achron",
+      "asset": "100x",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACHRONUSDT"
+        "symbol": "100XUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -726,18 +126,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acm",
+      "asset": "10set",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACMUSDT"
+        "symbol": "10SETUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -751,18 +151,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acn",
+      "asset": "18c",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACNUSDT"
+        "symbol": "18CUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -776,18 +176,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acn_acorn",
+      "asset": "1art",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACN_ACORNUSDT"
+        "symbol": "1ARTUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -801,18 +201,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acnon",
+      "asset": "1box",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACNONUSDT"
+        "symbol": "1BOXUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -826,18 +226,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acnx",
+      "asset": "1cat",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACNXUSDT"
+        "symbol": "1CATUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -851,43 +251,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acnx_eth",
+      "asset": "1dollar",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACNX_ETHUSDT"
+        "symbol": "1DOLLARUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "blocked_free_tier"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "aco",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ACOUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -901,18 +276,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acoin",
+      "asset": "1earth",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACOINUSDT"
+        "symbol": "1EARTHUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -926,18 +301,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acu",
+      "asset": "1inchdown",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACUUSDT"
+        "symbol": "1INCHDOWNUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -951,18 +326,18 @@
       "status": "blocked"
     },
     {
-      "asset": "acxt",
+      "asset": "1inchup",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ACXTUSDT"
+        "symbol": "1INCHUPUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -976,18 +351,18 @@
       "status": "blocked"
     },
     {
-      "asset": "ad",
+      "asset": "1mbabydoge",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ADUSDT"
+        "symbol": "1MBABYDOGEUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -1001,18 +376,18 @@
       "status": "blocked"
     },
     {
-      "asset": "ad_artdollar",
+      "asset": "1st",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "AD_ARTDOLLARUSDT"
+        "symbol": "1STUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -1026,18 +401,18 @@
       "status": "blocked"
     },
     {
-      "asset": "ada3l",
+      "asset": "1wo",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ADA3LUSDT"
+        "symbol": "1WOUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -1051,18 +426,18 @@
       "status": "blocked"
     },
     {
-      "asset": "ada3s",
+      "asset": "2crz",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ADA3SUSDT"
+        "symbol": "2CRZUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -1076,18 +451,18 @@
       "status": "blocked"
     },
     {
-      "asset": "adabear",
+      "asset": "2give",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ADABEARUSDT"
+        "symbol": "2GIVEUSDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -1101,143 +476,18 @@
       "status": "blocked"
     },
     {
-      "asset": "adabull",
+      "asset": "4",
       "binance": {
         "error": "404_not_found",
         "exists": false,
-        "symbol": "ADABULLUSDT"
+        "symbol": "4USDT"
       },
       "blocker_reasons": [
         "capmkt_est_usd:asset_not_served",
         "no_binance_perpetual:404_not_found"
       ],
       "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "adadown",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ADADOWNUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "adahalf",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ADAHALFUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "adahedge",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ADAHEDGEUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "adapad",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ADAPADUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
-      "metrics": {
-        "CapMrktCurUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        },
-        "CapMrktEstUSD": {
-          "rows": 0,
-          "status": "asset_not_served"
-        }
-      },
-      "status": "blocked"
-    },
-    {
-      "asset": "adaup",
-      "binance": {
-        "error": "404_not_found",
-        "exists": false,
-        "symbol": "ADAUPUSDT"
-      },
-      "blocker_reasons": [
-        "capmkt_est_usd:asset_not_served",
-        "no_binance_perpetual:404_not_found"
-      ],
-      "eligible": false,
-      "fetch_utc": "2026-10-24T17:42:09Z",
+      "fetch_utc": "2026-10-24T12:55:37Z",
       "metrics": {
         "CapMrktCurUSD": {
           "rows": 0,
@@ -1252,7 +502,7 @@
     }
   ],
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-24T17:42:09Z",
+  "fetch_utc": "2026-10-24T12:55:37Z",
   "point_in_time": "no forward-fill; eligibility uses on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",
