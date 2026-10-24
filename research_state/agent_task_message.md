@@ -7,12 +7,12 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Full test suite runs in the default Python env (pandas+numpy installed): **44/44 tests PASS** (`python3 -m unittest discover -s tests`).
 - Forward-block provenance repaired: committed `forward_block_evaluation.json` carried a stale `candidate_batch_validation.json` hash; re-ran `eval_forward_block.py --data-cutoff 2026-09-30`; outcomes byte-identical (n=608, high=61, low=90, high_low_diff_net_1x = 0.6165223953929935, date_last=2026-08-31). Block diff is only the provenance hash line.
 - Frontier integrity repaired: `btc` and `eth` re-admitted to `candidates_verified` from existing panel evidence; verified=32, consistent with `expanding_universe_assets_with_cap_and_binance=32`.
-- Candidate validation batch #2 run this session: all 25 BLOCKED. verified=32, blocked=216, remaining_discovered=6099, cursor=6497.
-- **Candidate validation batch #3 run this session (cursor 6497):** verified +3 (alpha, alt), blocked +22. verified=35, blocked=238, remaining_discovered=6074, cursor=6522.
+- Candidate validation batch #3 run: verified +3 (alpha, alt), blocked +22. verified=35, blocked=238, remaining_discovered=6074, cursor=6522.
+- **Candidate validation batch #4 run this session (cursor 6522):** verified +4 (ant, ape, api3), blocked +71. verified=39, blocked=309, remaining_discovered=5999, cursor=6597.
 - DISPERSION-001/002 and all configs unchanged.
 
 ## Concrete next action
-1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=36, blocked=287, remaining_discovered=6024, cursor=6547. Record exact counts after each batch.
+1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=39, blocked=309, remaining_discovered=5999, cursor=6597. Record exact counts after each batch.
 2. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29.
 3. When available, evaluate H004V106 on a fresh sealed forward block with completed 30-day outcomes only; compute overlap-aware uncertainty (HAC/Newey-West and/or block bootstrap).
 4. Do not reuse the inspected canonical block as independent confirmation; treat it as development/exploratory evidence.
