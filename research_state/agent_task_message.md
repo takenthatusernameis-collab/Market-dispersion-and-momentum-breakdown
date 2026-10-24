@@ -1,18 +1,32 @@
-# Agent Handoff — HARMONY-CRYPTO-EDGE-004
+# Agent Task Message — HARMONY-CRYPTO-EDGE-004 DISPERSION-003
 
-## Program status
-- ACTIVE CONTINUOUS RESEARCH. Monitoring for fresh sealed forward block after cutoff >= 2026-10-29.
+## Current task
+Continue candidate validation for DISPERSION-003 in bounded batches of 25.
 
-## Completed tasks (this session)
-- Candidate validation batch #11 (cursor 7247 → 7272): 25 BLOCKED, 0 VERIFIED; verified=64, blocked=959, remaining_discovered=5324. All 25 blocked on capmkt_est_usd:asset_not_served + no_binance_perpetual:404_not_found.
-- Full test suite: **45/45 tests PASS** (`python3 -m unittest discover -s tests`). DISPERSION-001/002 unchanged.
-- Cutoff gate confirmed structurally blocked: today 2026-10-24 < 2026-10-29; October 2026 Binance monthly archive still 404.
+## Command
+`python3 scripts/validate_candidate_batch.py --limit 25`
 
-## Blocker record (forward block) — UNRESOLVED
-- Next sealed forward block requires cutoff >= 2026-10-29; current cutoff 2026-09-30. October 2026 Binance monthly archive still 404 (structural; not re-probed).
+## Starting state
+- verified=74, blocked=1224, remaining_discovered=5049, cursor=7547
+- Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json
+- Frontier: research_state/universe_frontier.json
 
-## Concrete next action
-1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=64, blocked=959, remaining_discovered=5324, cursor=7272. Record exact counts after each batch.
-2. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29, then preregister/evaluate a fresh sealed forward block for H004V106 with HAC uncertainty, computing only completed 30-day outcomes.
-3. Run full test suite (`python3 -m unittest discover -s tests`); confirm DISPERSION-001/002 unchanged.
-4. Update handoff + next task with concrete measurable outcomes.
+## Record after each batch
+Log exact verified/blocked/remaining_discovered/cursor counts. Append nothing to the validation record manually — the script handles accumulation.
+
+## Secondary task (time-gated)
+On/after 2026-10-29, re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`. If cutoff >= 2026-10-29, preregister and evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes. Do not reuse the inspected canonical block as independent confirmation.
+
+## Standing constraints
+- Free public data only. No paid services, secrets, or exchange credentials.
+- Historical research only. Never place orders or deploy live/paper trading.
+- Use point-in-time membership/ranks, contract mapping and listing/delisting status.
+- Preserve DISPERSION-001/002 configs, inputs, artifacts and findings unchanged.
+- Run full test suite (`python3 -m unittest discover -s tests`) before finishing.
+- Record every cell, including negative, null, incomplete, invalid, failed and not-run states with reason.
+- Do not re-probe the October 2026 Binance monthly archive (still 404); it is a structural blocker, not a retryable failure.
+
+## Definition of done
+- One or more validation batches completed with exact counts recorded.
+- Test suite 45/45 PASS; DISPERSION-001/002 unchanged.
+- Handoff + task message updated with concrete measurable outcomes.
