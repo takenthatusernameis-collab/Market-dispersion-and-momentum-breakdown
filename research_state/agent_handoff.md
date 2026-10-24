@@ -8,6 +8,7 @@
 - Tests pass: 15/15 (`python -m unittest discover -s tests -v`).
 - Verified at: 2026-10-23 22:33Z; 22:35Z; 22:36Z; 22:37Z; 23:28Z; 23:29Z; 23:30Z; 23:31Z; 23:32Z; 23:33Z; 23:34Z; 23:35Z; 2026-10-24 session resumes — 15/15 green, clean tree except __pycache__ untracked, no changes to DISPERSION-002 artifacts since e4b6565.
 - Current session (2026-10-24): read durable handoff; prior task already complete. `python -m unittest discover -s tests -v` → 15/15 OK. Working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD 8865e1e. No changes to DISPERSION-002 artifacts or pipeline/config.
+- Re-verified at 2026-10-24 00:34Z: `git status` clean except untracked `tests/__pycache__/*.pyc`; `git log --oneline -3` shows 18c4188 (chore checkpoint), 8865e1e, 3c5b5ac. Test suite 15/15 green. No changes to DISPERSION-002 artifacts or pipeline/config since 8865e1e.
 
 ## Controls (must preserve)
 - free-data-only
