@@ -1,4 +1,4 @@
-# Agent Task Message — HARMONY-CRYPTO-EDGE-004 DISPERSION-003
+# Initial Task Message — HARMONY-CRYPTO-EDGE-004 DISPERSION-003
 
 ## Current task
 Continue candidate validation for DISPERSION-003 in bounded batches of 25.
@@ -7,8 +7,8 @@ Continue candidate validation for DISPERSION-003 in bounded batches of 25.
 `python3 scripts/validate_candidate_batch.py --limit 25`
 
 ## Starting state
-- verified=77, blocked=1296, remaining_discovered=4974, cursor=7622
-- Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json
+- verified=79, blocked=1319, remaining_discovered=4949, cursor=7647
+- Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json (1272 entries; 49 verified, 1223 blocked from DISPERSION-003 batches). The 30 seed verified assets (1inch, aave, ada, avax, bnb, link, sol, etc.) originate from DISPERSION-001/002 and are NOT in this record — that is expected.
 - Frontier: research_state/universe_frontier.json
 
 ## Record after each batch
@@ -30,3 +30,5 @@ On/after 2026-10-29, re-check data cutoff via `scripts/refresh_free_data.py --pr
 - One or more validation batches completed with exact counts recorded.
 - Test suite 45/45 PASS; DISPERSION-001/002 unchanged.
 - Handoff + task message updated with concrete measurable outcomes.
+
+(End of file - total 32 lines)
