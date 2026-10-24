@@ -1,0 +1,97 @@
+{
+  "audit_id": "H004V106_FORWARD_BLOCK_INTEGRITY_AUDIT_20261024",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "archived_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/archive_defective_momentum_20261024/forward_block_evaluation.json",
+  "audit_utc": "2026-10-24T14:28:37.751785+00:00",
+  "canonical_summary": {
+    "anchor_id": "H004V106",
+    "data_cutoff_utc": "2026-09-30T00:00:00Z",
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "n_formations": 608,
+    "n_high": 61,
+    "n_low": 90,
+    "n_mid": 457,
+    "high_net_1x_mean": 0.5399613009588847,
+    "low_net_1x_mean": -0.07656109443410873,
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "high_low_diff_gross": 0.6165223953929935,
+    "spread_net_1x_mean": 0.09962482788703451,
+    "spread_net_1x_median": -0.010610790611408072,
+    "spread_gross_mean": 0.10062482788703447,
+    "spread_gross_median": -0.009610790611408071,
+    "status": "OK"
+  },
+  "canonical_recomputed": {
+    "n_formations": 608,
+    "state_counts": {
+      "mid": 457,
+      "low": 90,
+      "high": 61
+    },
+    "n_assets_min": 26,
+    "n_assets_max": 27,
+    "finite_dispersion_count": 608,
+    "non_finite_dispersion_count": 0,
+    "spread_net_mean_recomputed": 0.09962482788703449,
+    "spread_net_median_recomputed": -0.010610790611408072,
+    "spread_gross_mean_recomputed": 0.10062482788703449,
+    "spread_gross_median_recomputed": -0.009610790611408071,
+    "high_net_mean_recomputed": 0.539961300958885,
+    "low_net_mean_recomputed": -0.07656109443410872,
+    "high_low_diff_net_recomputed": 0.6165223953929937,
+    "high_gross_mean_recomputed": 0.5409613009588848,
+    "low_gross_mean_recomputed": -0.07556109443410872,
+    "high_low_diff_gross_recomputed": 0.6165223953929936,
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31"
+  },
+  "archived_summary": {
+    "data_cutoff_utc": "2026-10-23T00:00:00Z",
+    "date_first": "2025-01-01",
+    "date_last": "2026-09-29",
+    "n_formations": 637,
+    "evaluated_utc": "2026-10-24T06:57:37Z"
+  },
+  "archived_recomputed": {
+    "n_formations": 637,
+    "state_counts": {
+      "mid": 361,
+      "high": 113,
+      "low": 163
+    },
+    "n_assets_min": 26,
+    "n_assets_max": 27,
+    "finite_dispersion_count": 637,
+    "non_finite_dispersion_count": 0,
+    "spread_net_mean_recomputed": 0.06568171732920865,
+    "spread_net_median_recomputed": 0.08162127568595967,
+    "spread_gross_mean_recomputed": 0.06668171732920865,
+    "spread_gross_median_recomputed": 0.08262127568595967,
+    "high_net_mean_recomputed": 0.08803995574895151,
+    "low_net_mean_recomputed": 0.09772404346155715,
+    "high_low_diff_net_recomputed": -0.009684087712605635,
+    "high_gross_mean_recomputed": 0.08903995574895152,
+    "low_gross_mean_recomputed": 0.09872404346155715,
+    "high_low_diff_gross_recomputed": -0.009684087712605635,
+    "date_first": "2025-01-01",
+    "date_last": "2026-09-29",
+    "extreme_dispersion_count_gt_1e100": 637,
+    "archived_dispersion_finite_but_extreme": true
+  },
+  "reconciliation": {
+    "canonical_reported_vs_recomputed_match": true,
+    "canonical_finite_dispersion": true,
+    "canonical_state_counts_match": true,
+    "archived_dispersion_all_non_finite": false,
+    "archived_date_range_extended": [
+      "2026-09-29",
+      "2026-10-23T00:00:00Z"
+    ],
+    "outcome_units": "dimensionless log-return (spread_net_1x = gross - 0.001 cost); reported high_low_diff_net_1x 0.6165 is dimensionless return, NOT percentage points",
+    "cost_treatment": "net = gross - 0.001 (1x cost) per formation; high_low_diff identical gross vs net because cost cancels in difference of means",
+    "overlap_dependence_note": "formations are daily overlapping 30-day forward horizons; simple mean difference ignores autocorrelation; uncertainty should use HAC/Newey-West or block bootstrap",
+    "archived_dispersion_all_extreme_gt_1e100": true
+  },
+  "conclusion": "Canonical artifact internally consistent and finite; archived artifact has non-finite dispersion (1.0e149) and extended date range through 2026-09-29 with look-ahead risk. Canonical block preserved; archived treated as defective. No sealed artifact modified."
+}
