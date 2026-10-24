@@ -7,7 +7,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Integrity audit + HAC addendum preserved; canonical artifact internally consistent (n=608, high=61, low=90, high-low net=0.6165, CI [-0.164, 1.397], not significant under overlap-aware HAC).
 - Archived defective artifact preserved unchanged.
 - Forward block BLOCKED for fresh confirmation: need data cutoff >= 2026-10-29 (current 2026-09-30). As of 2026-10-24, October 2026 Binance monthly archive returns HTTP 404. Structural gate; do not loop on it.
-- Sealed-block input provenance RESTORED this session: `candidate_batch_validation.json` restored from git commit ccb9943 to sealed-hash content (sha256 e0ae358af7...); `test_forward_block_hashes_match_files_on_disk` now PASSES. Sealed forward block left immutable.
+- Sealed-block input provenance RESOLVED: `candidate_batch_validation.json` restored from git commit ccb9943 to sealed-hash content (sha256 e0ae358af7...); `test_forward_block_hashes_match_files_on_disk` PASSES. Sealed forward block left immutable.
 - Test suite: 30 pass, 3 fail/error (env-only numpy/pandas). Hash mismatch resolved.
 - DISPERSION-001/002 unchanged.
 
@@ -21,5 +21,3 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Blocker note (do not loop)
 The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 archive is unpublished. If still blocked, preserve the blocker and move to an independent unblocked task (candidates, free-source discovery, validation, design, or red-team) per AGENTS.md rather than re-probing the same endpoint. The sealed-block hash mismatch is RESOLVED; no further provenance action required.
-" filePath">
-research_state/agent_task_message.md
