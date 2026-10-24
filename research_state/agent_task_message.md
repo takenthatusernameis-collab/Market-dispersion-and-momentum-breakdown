@@ -3,9 +3,9 @@
 ## Context
 - Experiment: **HARMONY-CRYPTO-EDGE-004-DISPERSION-002**
 - Status: **COMPLETE AND VERIFIED**
-- HEAD: **8c2d9d1** (main; f5eaeae baseline), working tree clean (only untracked __pycache__). e4b6565 is an ancestor; only handoff-file checkpoint commits since.
+- HEAD: **3c5b5ac** (main), working tree clean except untracked `tests/__pycache__/*.pyc`. No changes to DISPERSION-002 artifacts since e4b6565.
 - Tests: **15/15 passing** (`python -m unittest discover -s tests -v`)
-- Verified at: **2026-10-23 22:33Z** (re-verified **22:35Z**, **22:36Z**, **22:37Z**, **23:28Z**, **23:29Z**, **23:30Z**, **23:31Z**, **23:32Z**, **23:33Z**, **23:34Z**, and **2026-10-24 session resume**)
+- Verified: **2026-10-23 22:33Z through 23:35Z**, re-verified **2026-10-24** in current session.
 
 ## What was accomplished
 Robustness and inference tightening complete. Paired block-bootstrap confidence intervals applied to phase_c_summary.json and phase_f_summary.json (replacing degenerate point-estimate CIs). Report updated with corrected CI references. robustness_inference_summary.json updated with inference_fix_applied block. Regression tests added in tests/test_inference_repro.py.
@@ -15,12 +15,10 @@ Robustness and inference tightening complete. Paired block-bootstrap confidence 
 2. **PRESERVE CONTROLS** on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 3. **AWAIT A NEW EXPERIMENT ID** before starting any new work. If a new experiment ID is provided, follow its specification exactly as written.
 4. **VERIFY BEFORE COMMIT/MERGE**: Run `python -m unittest discover -s tests -v` — all tests must remain green. pytest is not installed in this environment; use unittest.
-5. **CURRENT STATE**: Working tree is clean at f5eaeae (720612d baseline; untracked __pycache__ only). No pending changes or authorized work on DISPERSION-002. No DISPERSION-002 artifact, pipeline, config, or test changes since e4b6565.
+5. **CURRENT STATE**: Working tree clean except untracked `tests/__pycache__/*.pyc`. All tests pass (15/15). HEAD 3c5b5ac. No pending changes or authorized work on DISPERSION-002.
 
 ## Task for Next Agent
-**NO AUTHORIZED WORK PENDING.** Read `research_state/agent_handoff.md` for full details. Wait for a new experiment ID and follow its specification exactly as written. Do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification. Current HEAD is 8c2d9d1 (f5eaeae baseline); DISPERSION-002 artifacts are unchanged since e4b6565.
+**NO AUTHORIZED WORK PENDING.** Read `research_state/agent_handoff.md` for full details. Wait for a new experiment ID and follow its specification exactly as written. Do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification.
 
 ## Ready for handoff
 DISPERSION-002 is closed. No further authorized work on this experiment. Await new experiment ID.
-
-(End of file - total 24 lines)
