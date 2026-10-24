@@ -1,0 +1,1282 @@
+[
+  {
+    "CapMrktEstUSD": "3776776.6412849942",
+    "asset": "fun_sportfun",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3623939.6234075062",
+    "asset": "fun_sportfun",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3847173.8469386214",
+    "asset": "fun_sportfun",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3846896.6725808718",
+    "asset": "fun_sportfun",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3915935.770001447",
+    "asset": "fun_sportfun",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3933210.7119417536",
+    "asset": "fun_sportfun",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3994530.9747375944",
+    "asset": "fun_sportfun",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4099768.669861789",
+    "asset": "fun_sportfun",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3825507.1681000562",
+    "asset": "fun_sportfun",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4010288.989551299",
+    "asset": "fun_sportfun",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3943113.656704549",
+    "asset": "fun_sportfun",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3680676.823044806",
+    "asset": "fun_sportfun",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3587134.8353897974",
+    "asset": "fun_sportfun",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3461491.5976342358",
+    "asset": "fun_sportfun",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3395866.4101135496",
+    "asset": "fun_sportfun",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3626888.0764271166",
+    "asset": "fun_sportfun",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3691774.5512227786",
+    "asset": "fun_sportfun",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3873277.3095774904",
+    "asset": "fun_sportfun",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3823615.1231772966",
+    "asset": "fun_sportfun",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3875651.674948036",
+    "asset": "fun_sportfun",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3879029.584953125",
+    "asset": "fun_sportfun",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3911887.7271615654",
+    "asset": "fun_sportfun",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3796995.6975177486",
+    "asset": "fun_sportfun",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4034320.321285177",
+    "asset": "fun_sportfun",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3995064.1989018994",
+    "asset": "fun_sportfun",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3880386.0254573986",
+    "asset": "fun_sportfun",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3752998.25883758",
+    "asset": "fun_sportfun",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3715906.1838120414",
+    "asset": "fun_sportfun",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3736870.1017324542",
+    "asset": "fun_sportfun",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3691327.8028046066",
+    "asset": "fun_sportfun",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5724337.1360875356",
+    "asset": "fun_sportfun",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4087991.764080004",
+    "asset": "fun_sportfun",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4096594.5006469002",
+    "asset": "fun_sportfun",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4389797.1898915562",
+    "asset": "fun_sportfun",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4356057.3913774552",
+    "asset": "fun_sportfun",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4538424.2495996954",
+    "asset": "fun_sportfun",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4654974.5903468974",
+    "asset": "fun_sportfun",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4328419.6307020416",
+    "asset": "fun_sportfun",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4292162.3591131224",
+    "asset": "fun_sportfun",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4328578.609340054",
+    "asset": "fun_sportfun",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4374912.4510482288",
+    "asset": "fun_sportfun",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4496524.3189815796",
+    "asset": "fun_sportfun",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4475884.4815115596",
+    "asset": "fun_sportfun",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4299413.9804110366",
+    "asset": "fun_sportfun",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4279868.8511159336",
+    "asset": "fun_sportfun",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4020161.1150048974",
+    "asset": "fun_sportfun",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3948507.7868503318",
+    "asset": "fun_sportfun",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3676610.027461918",
+    "asset": "fun_sportfun",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3699358.7614304664",
+    "asset": "fun_sportfun",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3853942.6917868188",
+    "asset": "fun_sportfun",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3766356.9274332012",
+    "asset": "fun_sportfun",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3774239.32086628",
+    "asset": "fun_sportfun",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3726610.2236570612",
+    "asset": "fun_sportfun",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3692936.7073760126",
+    "asset": "fun_sportfun",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3659986.0391405276",
+    "asset": "fun_sportfun",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3124453.5281529254",
+    "asset": "fun_sportfun",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3094458.8232675904",
+    "asset": "fun_sportfun",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3307922.3259158538",
+    "asset": "fun_sportfun",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3335781.1774252712",
+    "asset": "fun_sportfun",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3124766.6900557638",
+    "asset": "fun_sportfun",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3084127.0299341744",
+    "asset": "fun_sportfun",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3127207.4106543316",
+    "asset": "fun_sportfun",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2927550.8977543296",
+    "asset": "fun_sportfun",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2956703.7760885342",
+    "asset": "fun_sportfun",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3263441.2744081836",
+    "asset": "fun_sportfun",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3312650.0363127714",
+    "asset": "fun_sportfun",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3327306.485993195",
+    "asset": "fun_sportfun",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3404163.7860600584",
+    "asset": "fun_sportfun",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3525826.4596217288",
+    "asset": "fun_sportfun",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3458082.8557629932",
+    "asset": "fun_sportfun",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3468996.147363226",
+    "asset": "fun_sportfun",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3501690.9315164212",
+    "asset": "fun_sportfun",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3331508.2743376076",
+    "asset": "fun_sportfun",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3256065.6249264406",
+    "asset": "fun_sportfun",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3133587.2496365794",
+    "asset": "fun_sportfun",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3230188.2470786106",
+    "asset": "fun_sportfun",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3093172.321056401",
+    "asset": "fun_sportfun",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3195992.761655671",
+    "asset": "fun_sportfun",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3112086.2171470868",
+    "asset": "fun_sportfun",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3678522.7967167202",
+    "asset": "fun_sportfun",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3458983.9622837986",
+    "asset": "fun_sportfun",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3663473.3240543142",
+    "asset": "fun_sportfun",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3768976.2449826972",
+    "asset": "fun_sportfun",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3602031.5424930126",
+    "asset": "fun_sportfun",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3765187.5243617486",
+    "asset": "fun_sportfun",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3864033.124023769",
+    "asset": "fun_sportfun",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3772566.4122106636",
+    "asset": "fun_sportfun",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3612384.5041253592",
+    "asset": "fun_sportfun",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3482656.7521513682",
+    "asset": "fun_sportfun",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3465542.481381743",
+    "asset": "fun_sportfun",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3556059.943269206",
+    "asset": "fun_sportfun",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2855701.4795701418",
+    "asset": "fun_sportfun",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2687459.4875851968",
+    "asset": "fun_sportfun",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2704424.500998094",
+    "asset": "fun_sportfun",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2707953.5112574036",
+    "asset": "fun_sportfun",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2774973.359613991",
+    "asset": "fun_sportfun",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2864933.278880139",
+    "asset": "fun_sportfun",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2853781.8893132604",
+    "asset": "fun_sportfun",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2743356.6866750746",
+    "asset": "fun_sportfun",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2798893.0631046864",
+    "asset": "fun_sportfun",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5832389.18752413",
+    "asset": "fun_sportfun",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5661067.4315040514",
+    "asset": "fun_sportfun",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6113566.4534592574",
+    "asset": "fun_sportfun",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6780516.1898333274",
+    "asset": "fun_sportfun",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6910953.3321650714",
+    "asset": "fun_sportfun",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6880820.8996688958",
+    "asset": "fun_sportfun",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6694395.168790938",
+    "asset": "fun_sportfun",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6864711.8809849834",
+    "asset": "fun_sportfun",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6741226.6001534186",
+    "asset": "fun_sportfun",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6882823.9621082228",
+    "asset": "fun_sportfun",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7402648.8331739182",
+    "asset": "fun_sportfun",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7130721.3455026366",
+    "asset": "fun_sportfun",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5930645.6007463952",
+    "asset": "fun_sportfun",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6108072.8856995278",
+    "asset": "fun_sportfun",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6111707.9905235842",
+    "asset": "fun_sportfun",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6115024.9208572012",
+    "asset": "fun_sportfun",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6738365.5225265978",
+    "asset": "fun_sportfun",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8491621.8624848882",
+    "asset": "fun_sportfun",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7546706.228675688",
+    "asset": "fun_sportfun",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8360178.1812537402",
+    "asset": "fun_sportfun",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8017147.3356803106",
+    "asset": "fun_sportfun",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7838610.9605221272",
+    "asset": "fun_sportfun",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8171470.0850200314",
+    "asset": "fun_sportfun",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8081146.1172409312",
+    "asset": "fun_sportfun",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7862178.6917114004",
+    "asset": "fun_sportfun",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8008730.486146511",
+    "asset": "fun_sportfun",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8802591.185949339",
+    "asset": "fun_sportfun",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10048234.9288382002",
+    "asset": "fun_sportfun",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10621615.4603645556",
+    "asset": "fun_sportfun",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10133254.4854182346",
+    "asset": "fun_sportfun",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11425998.9555351144",
+    "asset": "fun_sportfun",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14374918.4890946884",
+    "asset": "fun_sportfun",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14127279.8043385004",
+    "asset": "fun_sportfun",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14065420.8662783374",
+    "asset": "fun_sportfun",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13795252.7609140656",
+    "asset": "fun_sportfun",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11411715.2020783284",
+    "asset": "fun_sportfun",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10361539.7177867682",
+    "asset": "fun_sportfun",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10506670.5365263754",
+    "asset": "fun_sportfun",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10004853.5558171936",
+    "asset": "fun_sportfun",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10930548.8777514168",
+    "asset": "fun_sportfun",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11052741.8051805342",
+    "asset": "fun_sportfun",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10898557.978154724",
+    "asset": "fun_sportfun",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10466324.4071192388",
+    "asset": "fun_sportfun",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10490030.3156003788",
+    "asset": "fun_sportfun",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9305150.2721622994",
+    "asset": "fun_sportfun",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9329060.5830688778",
+    "asset": "fun_sportfun",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9191508.0812812922",
+    "asset": "fun_sportfun",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10631488.7171125332",
+    "asset": "fun_sportfun",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10330400.068609072",
+    "asset": "fun_sportfun",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9885628.1597510342",
+    "asset": "fun_sportfun",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10516128.214540311",
+    "asset": "fun_sportfun",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10691457.5003871696",
+    "asset": "fun_sportfun",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10467072.869723686",
+    "asset": "fun_sportfun",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11458164.902634077",
+    "asset": "fun_sportfun",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12637169.1746586806",
+    "asset": "fun_sportfun",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12197377.1001892314",
+    "asset": "fun_sportfun",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10343434.6668258252",
+    "asset": "fun_sportfun",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9963132.1431320502",
+    "asset": "fun_sportfun",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9650316.6350447452",
+    "asset": "fun_sportfun",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7571166.1906036634",
+    "asset": "fun_sportfun",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7429393.0741277948",
+    "asset": "fun_sportfun",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7592851.9763908526",
+    "asset": "fun_sportfun",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8119254.3467331718",
+    "asset": "fun_sportfun",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9310917.704992209",
+    "asset": "fun_sportfun",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7921783.9022150552",
+    "asset": "fun_sportfun",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8758345.8208746208",
+    "asset": "fun_sportfun",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7708192.532827203",
+    "asset": "fun_sportfun",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6476807.393755975",
+    "asset": "fun_sportfun",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6309852.158599507",
+    "asset": "fun_sportfun",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5990519.5422438198",
+    "asset": "fun_sportfun",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5824520.2005349758",
+    "asset": "fun_sportfun",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6058029.4451295744",
+    "asset": "fun_sportfun",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6140727.463359751",
+    "asset": "fun_sportfun",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5523000.3067805704",
+    "asset": "fun_sportfun",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5460639.4006928032",
+    "asset": "fun_sportfun",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4985129.84840599",
+    "asset": "fun_sportfun",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4536668.0023019504",
+    "asset": "fun_sportfun",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4599962.1913472738",
+    "asset": "fun_sportfun",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4299318.171995818",
+    "asset": "fun_sportfun",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4048440.8469714504",
+    "asset": "fun_sportfun",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3917159.4910753434",
+    "asset": "fun_sportfun",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4028626.2169440946",
+    "asset": "fun_sportfun",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4154753.7301700184",
+    "asset": "fun_sportfun",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4208824.122788958",
+    "asset": "fun_sportfun",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3927686.9710609582",
+    "asset": "fun_sportfun",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4504328.7552777154",
+    "asset": "fun_sportfun",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4315042.0223983728",
+    "asset": "fun_sportfun",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4477911.574152614",
+    "asset": "fun_sportfun",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4573561.8101569048",
+    "asset": "fun_sportfun",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4311089.4281664322",
+    "asset": "fun_sportfun",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4076281.8623138844",
+    "asset": "fun_sportfun",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3631547.3851477052",
+    "asset": "fun_sportfun",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3447600.6402402974",
+    "asset": "fun_sportfun",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3661255.3499963552",
+    "asset": "fun_sportfun",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3730271.151785692",
+    "asset": "fun_sportfun",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3791863.8739500772",
+    "asset": "fun_sportfun",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3611101.4153302264",
+    "asset": "fun_sportfun",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3368340.580833706",
+    "asset": "fun_sportfun",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3471022.2901733896",
+    "asset": "fun_sportfun",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3613027.6649857104",
+    "asset": "fun_sportfun",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5746070.5401482338",
+    "asset": "fun_sportfun",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5813608.0335937628",
+    "asset": "fun_sportfun",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5697179.150559944",
+    "asset": "fun_sportfun",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6057456.0510498912",
+    "asset": "fun_sportfun",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6656817.0748764402",
+    "asset": "fun_sportfun",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6435542.3523635576",
+    "asset": "fun_sportfun",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6608869.0022146426",
+    "asset": "fun_sportfun",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6050424.4192394786",
+    "asset": "fun_sportfun",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6575896.5673106922",
+    "asset": "fun_sportfun",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5948391.8560385728",
+    "asset": "fun_sportfun",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6723316.488398858",
+    "asset": "fun_sportfun",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6835260.3368619944",
+    "asset": "fun_sportfun",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7183288.3175379464",
+    "asset": "fun_sportfun",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8365059.5204456796",
+    "asset": "fun_sportfun",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8021042.1632058382",
+    "asset": "fun_sportfun",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8319720.9311510368",
+    "asset": "fun_sportfun",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8313455.8333574066",
+    "asset": "fun_sportfun",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8475533.452141668",
+    "asset": "fun_sportfun",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8943317.1049602864",
+    "asset": "fun_sportfun",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8739623.618153233",
+    "asset": "fun_sportfun",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7882455.7694877922",
+    "asset": "fun_sportfun",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7605445.7740593804",
+    "asset": "fun_sportfun",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7116996.964039079",
+    "asset": "fun_sportfun",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6923832.8173151484",
+    "asset": "fun_sportfun",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7052819.5251207916",
+    "asset": "fun_sportfun",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6429514.4126848786",
+    "asset": "fun_sportfun",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6310535.7850545252",
+    "asset": "fun_sportfun",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6778867.1371633268",
+    "asset": "fun_sportfun",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6699229.5151870572",
+    "asset": "fun_sportfun",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7095035.6267808382",
+    "asset": "fun_sportfun",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6966953.9560339546",
+    "asset": "fun_sportfun",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6909464.7592342104",
+    "asset": "fun_sportfun",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6583287.4497612344",
+    "asset": "fun_sportfun",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6515464.0141823544",
+    "asset": "fun_sportfun",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6980232.8788437018",
+    "asset": "fun_sportfun",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6968620.821204824",
+    "asset": "fun_sportfun",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6605176.672957631",
+    "asset": "fun_sportfun",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5868875.7001200772",
+    "asset": "fun_sportfun",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5525254.4760570726",
+    "asset": "fun_sportfun",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5593571.769527859",
+    "asset": "fun_sportfun",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5324794.06898161",
+    "asset": "fun_sportfun",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6007766.0118482546",
+    "asset": "fun_sportfun",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6084089.8477720318",
+    "asset": "fun_sportfun",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6185243.8380087132",
+    "asset": "fun_sportfun",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6178466.390330252",
+    "asset": "fun_sportfun",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6017151.2090313282",
+    "asset": "fun_sportfun",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6140515.3190167484",
+    "asset": "fun_sportfun",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5803682.5438394172",
+    "asset": "fun_sportfun",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5624366.445967197",
+    "asset": "fun_sportfun",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5743601.6161971592",
+    "asset": "fun_sportfun",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5988350.169648137",
+    "asset": "fun_sportfun",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5974212.7322171788",
+    "asset": "fun_sportfun",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5789178.1401696138",
+    "asset": "fun_sportfun",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5632984.1951760232",
+    "asset": "fun_sportfun",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5711721.0758623538",
+    "asset": "fun_sportfun",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5916843.7778679112",
+    "asset": "fun_sportfun",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  }
+]

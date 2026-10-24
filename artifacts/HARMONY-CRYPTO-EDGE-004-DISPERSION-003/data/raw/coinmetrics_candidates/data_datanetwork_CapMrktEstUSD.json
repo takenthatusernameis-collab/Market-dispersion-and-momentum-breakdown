@@ -1,0 +1,512 @@
+[
+  {
+    "CapMrktEstUSD": "98711529.816454141852854",
+    "asset": "data_datanetwork",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97952632.625321974742788",
+    "asset": "data_datanetwork",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97216901.82744175316655",
+    "asset": "data_datanetwork",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97478120.351012403379596",
+    "asset": "data_datanetwork",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96014897.000354014000578",
+    "asset": "data_datanetwork",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96440742.13885109956203",
+    "asset": "data_datanetwork",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95392700.696345796469849",
+    "asset": "data_datanetwork",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93780442.126746939767492",
+    "asset": "data_datanetwork",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97368590.222797881282562",
+    "asset": "data_datanetwork",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94792351.247556390943376",
+    "asset": "data_datanetwork",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94814751.008375055809086",
+    "asset": "data_datanetwork",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88709000.57937461187094",
+    "asset": "data_datanetwork",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85826276.60373631019685",
+    "asset": "data_datanetwork",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80296330.942013086032682",
+    "asset": "data_datanetwork",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80293630.106140123812788",
+    "asset": "data_datanetwork",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79367909.820542555432956",
+    "asset": "data_datanetwork",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78150046.387306706839785",
+    "asset": "data_datanetwork",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77979826.13628721739264",
+    "asset": "data_datanetwork",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76156065.519742732944414",
+    "asset": "data_datanetwork",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76583997.71103465995804",
+    "asset": "data_datanetwork",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76866970.349124637094705",
+    "asset": "data_datanetwork",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76595052.644314672236615",
+    "asset": "data_datanetwork",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75679387.811254535616945",
+    "asset": "data_datanetwork",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74968889.6924764442334",
+    "asset": "data_datanetwork",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75154941.56278193847563",
+    "asset": "data_datanetwork",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75064576.84088625334074",
+    "asset": "data_datanetwork",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73030324.032504908432064",
+    "asset": "data_datanetwork",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71146186.907141378851722",
+    "asset": "data_datanetwork",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71469460.067610565952475",
+    "asset": "data_datanetwork",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87707857.57489540535465",
+    "asset": "data_datanetwork",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88190857.53378075991296",
+    "asset": "data_datanetwork",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85454939.35948222949637",
+    "asset": "data_datanetwork",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80434034.231566382494136",
+    "asset": "data_datanetwork",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62419867.840333908801945",
+    "asset": "data_datanetwork",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64664259.67379921129916",
+    "asset": "data_datanetwork",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65961328.059395830495504",
+    "asset": "data_datanetwork",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71675911.342147347147772",
+    "asset": "data_datanetwork",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68770275.798334057871262",
+    "asset": "data_datanetwork",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70493700.930025561592072",
+    "asset": "data_datanetwork",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68184082.530565737402744",
+    "asset": "data_datanetwork",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66851979.58444946774513",
+    "asset": "data_datanetwork",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67261988.97706533498716",
+    "asset": "data_datanetwork",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67702833.90793026780315",
+    "asset": "data_datanetwork",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65677780.18950896464635",
+    "asset": "data_datanetwork",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66007190.23075116271898",
+    "asset": "data_datanetwork",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65547570.682735857471304",
+    "asset": "data_datanetwork",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65287518.271212858577236",
+    "asset": "data_datanetwork",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67607706.206661058652079",
+    "asset": "data_datanetwork",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68635387.59260682051863",
+    "asset": "data_datanetwork",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69655336.67717577106932",
+    "asset": "data_datanetwork",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67878208.626358981795198",
+    "asset": "data_datanetwork",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68626841.323462018600225",
+    "asset": "data_datanetwork",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69715399.753374695364109",
+    "asset": "data_datanetwork",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69511904.186397904203003",
+    "asset": "data_datanetwork",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69738508.093521752562196",
+    "asset": "data_datanetwork",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70616527.317189455037665",
+    "asset": "data_datanetwork",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68867709.206304704008852",
+    "asset": "data_datanetwork",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68705608.97671272866115",
+    "asset": "data_datanetwork",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68579895.998504738513312",
+    "asset": "data_datanetwork",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67866110.217343369307526",
+    "asset": "data_datanetwork",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69398619.349299728113136",
+    "asset": "data_datanetwork",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66417930.43009077934867",
+    "asset": "data_datanetwork",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65464042.579852733065545",
+    "asset": "data_datanetwork",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65623380.96573096357879",
+    "asset": "data_datanetwork",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68502553.374526712900039",
+    "asset": "data_datanetwork",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70106541.329429124341928",
+    "asset": "data_datanetwork",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71136931.013897220814684",
+    "asset": "data_datanetwork",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73082802.254930358531043",
+    "asset": "data_datanetwork",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79801084.710927261816765",
+    "asset": "data_datanetwork",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80623980.338691700958189",
+    "asset": "data_datanetwork",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81054991.790331781166",
+    "asset": "data_datanetwork",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83495081.80226358183888",
+    "asset": "data_datanetwork",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82825820.55857100767704",
+    "asset": "data_datanetwork",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84124790.48072300368628",
+    "asset": "data_datanetwork",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79993382.887163548485835",
+    "asset": "data_datanetwork",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79172055.437941315267726",
+    "asset": "data_datanetwork",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77815663.447456453859928",
+    "asset": "data_datanetwork",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77129633.71889388902366",
+    "asset": "data_datanetwork",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76434110.93813283175425",
+    "asset": "data_datanetwork",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76639146.842915304105366",
+    "asset": "data_datanetwork",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76354862.774179077748296",
+    "asset": "data_datanetwork",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75954821.968610616180966",
+    "asset": "data_datanetwork",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73069439.06596463264696",
+    "asset": "data_datanetwork",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72582326.57236411946506",
+    "asset": "data_datanetwork",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70521035.298593007341943",
+    "asset": "data_datanetwork",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70109166.37847519851695",
+    "asset": "data_datanetwork",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71161270.66685399142804",
+    "asset": "data_datanetwork",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71573612.991970017519606",
+    "asset": "data_datanetwork",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75554754.046205917185605",
+    "asset": "data_datanetwork",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75180489.373885147678735",
+    "asset": "data_datanetwork",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71051408.74929213299712",
+    "asset": "data_datanetwork",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68187847.613316525841864",
+    "asset": "data_datanetwork",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65749691.629968712968915",
+    "asset": "data_datanetwork",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62517646.276618861545138",
+    "asset": "data_datanetwork",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58961831.90512991187366",
+    "asset": "data_datanetwork",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54876558.958345910819106",
+    "asset": "data_datanetwork",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55246468.834181013657073",
+    "asset": "data_datanetwork",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56688993.500258871877582",
+    "asset": "data_datanetwork",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53170855.415516725562901",
+    "asset": "data_datanetwork",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54081591.982240578398062",
+    "asset": "data_datanetwork",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "100446165.426940319189423",
+    "asset": "data_datanetwork",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99856746.639298442389125",
+    "asset": "data_datanetwork",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  }
+]
