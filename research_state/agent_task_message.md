@@ -1,32 +1,9 @@
-# Initial Task Message — HARMONY-CRYPTO-EDGE-004 DISPERSION-003
+# Agent Task Message (for next agent)
 
-## Current task
-Continue candidate validation for DISPERSION-003 in bounded batches of 25.
+Read the full handoff: `research_state/agent_handoff.md`
 
-## Command
-`python3 scripts/validate_candidate_batch.py --limit 25`
+Priority (do first): continue DISPERSION-003 candidate validation in batches of 25 via `python3 scripts/validate_candidate_batch.py --limit 25`. Current: verified=138, blocked=3285, remaining_discovered=2924, cursor=9647. Record exact counts after each batch.
 
-## Starting state
-- verified=137, blocked=3261, remaining_discovered=2949, cursor=9622
-- Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json (3272 entries total). The 30 seed verified assets (1inch, aave, ada, avax, bnb, link, sol, etc.) originate from DISPERSION-001/002 and are NOT in this record — that is expected. Record-level reconcile: verified = record verified (107) + 30 seeds = 137.
-- Frontier: research_state/universe_frontier.json
+Blocker: cutoff gate blocked (needs >= 2026-10-29; today 2026-10-24). October 2026 Binance monthly archive still 404, not re-probed. Do **not** reuse the inspected canonical forward block as independent confirmation (treat as exploratory/dev evidence). If still blocked on cutoff on/after 2026-10-29, re-check via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` and only then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty using completed 30-day outcomes. Preserve blocker and do independent unblocked work if structural.
 
-## Record after each batch
-Log exact verified/blocked/remaining_discovered/cursor counts. Append nothing to the validation record manually — the script handles accumulation.
-
-## Secondary task (time-gated)
-On/after 2026-10-29, re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`. If cutoff >= 2026-10-29, preregister and evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes. Do not reuse the inspected canonical block as independent confirmation.
-
-## Standing constraints
-- Free public data only. No paid services, secrets, or exchange credentials.
-- Historical research only. Never place orders or deploy live/paper trading.
-- Use point-in-time membership/ranks, contract mapping and listing/delisting status.
-- Preserve DISPERSION-001/002 configs, inputs, artifacts and findings unchanged.
-- Run full test suite (`python3 -m unittest discover -s tests`) before finishing.
-- Record every cell, including negative, null, incomplete, invalid, failed and not-run states with reason.
-- Do not re-probe the October 2026 Binance monthly archive (still 404); it is a structural blocker, not a retryable failure.
-
-## Definition of done
-- One or more validation batches completed with exact counts recorded.
-- Test suite 45/45 PASS; DISPERSION-001/002 unchanged.
-- Handoff + task message updated with concrete measurable outcomes.
+Constraints: free public data only, historical-only, no trading, no paid services/secrets. Never change DISPERSION-001/002. Keep artifacts unchanged if not your task. Run tests and confirm DISPERSION-001/002 unchanged when touching related paths. Leave concrete measurable next action.
