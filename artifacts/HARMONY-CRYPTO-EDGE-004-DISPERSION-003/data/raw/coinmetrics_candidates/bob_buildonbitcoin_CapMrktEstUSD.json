@@ -1,0 +1,1597 @@
+[
+  {
+    "CapMrktEstUSD": "15842282.97839849250348837",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12419669.08180336697520609",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12882203.41032535676180499",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12453006.4197700411990215",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12361479.07325636088928137",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12420063.87142557096309963",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12427110.98929358770925157",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12245643.93864066737962095",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11620714.68404927244031518",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11901365.34560871851695539",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11522261.4390760291328172",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17138224.26564324854708091",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12392662.08874059989706279",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11993363.21686493592614838",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12125253.56441229574277079",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12004729.52765770552353114",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11889151.29743683379976036",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12411524.600908505233914",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12522621.731599524828233",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12313074.542227620816911",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12683037.120238455580354",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12735842.289787472347586",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12965528.120367894205424",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12862634.635181310274163",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12754721.286845695987769",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12666314.787515588751252",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12571754.027911642250866",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12564944.851143400875651",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12620617.611688406979544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12283533.782724613138504",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12321406.354750445643399",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12416956.381791094586723",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12201479.723787131646721",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12306911.998063482977321",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12605206.681425117576745",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12585512.996300904345342",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12839341.095851580368429",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12962299.826871430697824",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12886909.249151971295819",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12892137.211408082327965",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13256675.427409579583351",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16772561.875515031180232",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15636415.272698532913441",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14256766.256910828589192",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14751435.876172999765576",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16244940.32190786481463",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15533929.990239637499265",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16037777.391904466405519",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15815976.50752282745713057",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16350006.37994287212682016",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15450678.56964203026674712",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15669628.13419030067807592",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15814894.33348972505124014",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15681459.99602923686036398",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15370237.34071286633583507",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14723317.20773752261014216",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14989647.05174092474621445",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14703146.57607996883237467",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15013355.09706910227283462",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14626883.72032129559229476",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16011101.16796403038903287",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14778940.66715613437001234",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14382618.91795809416490318",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14982818.35719462208883872",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14971976.50944309480325171",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15439702.5903194004347474",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15320028.40768165428138567",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15855533.35750286586173967",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17340764.01023879389079714",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18047924.94486822092605196",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17314716.91486212630007549",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16632539.123244511360731",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16794611.96297065826106961",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17164391.86271273186975799",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15832002.05675613090853653",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16049468.77008895768382217",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15890151.63462941151873616",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15860299.49393646374762198",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16353651.43337060503367341",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16485902.14315770098763301",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16464173.2120404229182912",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16500515.94061447126849741",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16261846.22345559831400514",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15397148.70131176133344567",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15482720.91462777244601409",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15902303.75507795430521453",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15767584.91291349393960557",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15876822.15329790352465839",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16081357.88590069004900229",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15677241.4121190152049399",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15358995.76371342445619084",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15303338.37603008476260973",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15640446.87195621497146314",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15465189.63198318533018431",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15470273.39635080577783123",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15050763.05918703976010009",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14734056.47578817791060364",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15197475.87137171220988937",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14841608.05943065672099775",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14902575.13872058155588629",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19691615.08059984586053024",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20298611.25881913220392582",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21489646.96898429279231057",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19430919.35631191903651102",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19611516.76681225740125479",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20641950.02062654585808457",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23149482.08155910920601306",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21774934.18898944515414901",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22319349.30388733703424013",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23487197.6207129904972127",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22822311.64502935317243425",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20111576.82510079928017187",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19202582.04335614288579678",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19357279.69768173646625162",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19542770.53878849857415449",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18992215.6283334600086908",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16938474.8290856530097201",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16699199.56990840720877587",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16813556.34819068580402991",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16356489.24656687385593739",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16295370.36529828416861388",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16345782.24112526462137457",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15986936.15804805683517254",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15488789.8361168753607641",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15951763.18798531695004923",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16222736.389387557832404",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16282433.63535024840807",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16613110.635622859065512",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16696245.414444071948136",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16981743.59145040658238",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17112516.601152175755972",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17330609.329275163112814",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17395433.202523389871998",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17475435.266221580586876",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17069113.502521981388544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17214127.17396119647284",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16952320.48441288072611",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16850399.928554705629242",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16265091.145358109782238",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18629907.415371567044436",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22699280.333759961195222",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18198614.860808733245244",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17398459.107836165711772",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16931688.732816754452486",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20983926.591442528292838",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28212910.431997561069086",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25131157.973123951042322",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23381142.184964806467036",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23526783.855224449046352",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21201762.906119963460048",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29829044.09752127344764",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24332776.650562720634784",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21619518.261915619993542",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21323960.405298664858794",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21190988.954252798566536",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20048185.883666846321052",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19854680.92377237173529853",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19966604.92938644597883695",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18993342.99790271056456906",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17175421.11586292601706256",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18053075.17349799660167124",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18503193.88658390893409741",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17607351.17345245350633054",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17113099.34539787738561176",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16456372.00213549490250292",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16897686.26433324615534119",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16572766.83576125929027563",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17447596.59519178434774094",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17635559.88201576335024884",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17139326.21754462311501015",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17238460.89312595116899388",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17019795.20631536911310294",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16326778.28889123016587617",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16390293.33975452586524435",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16433340.75224679493555806",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15985173.47940869933720403",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16298660.59505024507636805",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15524047.90408963234210547",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15260211.33500790081254375",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15001143.56111729236563672",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15178447.43754307594748858",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14785777.78147575204014937",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14156167.18584647509914705",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14548783.83246988774562174",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13744758.48912348477041059",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13971623.6631040504538782",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15058979.17373660572095306",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14921361.72700874522946285",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15249657.3227308513968072",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14747418.5723245850157003",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14450152.33335718183616652",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14025047.28507310700456142",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12797161.26936460654430955",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13340106.36312936195239514",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13396715.62615164582751374",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13185660.31299115933757535",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14861315.5882675463296926",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13038653.89141538787454884",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12678951.80932682372817537",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12220462.57751773232695266",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25565505.58742391008544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25239479.30281740193728",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25163716.5864282740952",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23930010.23654589088704",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25174564.69892853640272",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28075941.33241805549232",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27606776.796425096592",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26433282.21274100419008",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27173481.47958561584256",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26630222.01970343018592",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24838009.98923136456912",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25572676.7418375942216",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25728002.386200865488",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25042641.4698836898768",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24634453.95572001909312",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24222713.30221694030352",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25717003.8200760595848",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24719165.81526531989088",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23112666.6269090262072",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23913616.0525172851008",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24445295.32599010969344",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23436059.2160305267416",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21455241.959195015418144",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18874729.345574697429024",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19738368.214164162022512",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17980151.51172458856432",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20120002.169952379514544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19906470.10994301426384",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22131933.3238908561636",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23197858.90112534198688",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21304269.800341133980176",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20941572.660356834300784",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20242292.415909147516144",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19673535.973445613907632",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18342834.787575082158336",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16867293.638423753759856",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18290223.642746821287408",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16867682.066108262285216",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16785419.508406469623488",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14680490.60190792716784",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15301092.289767790298496",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14720849.626770839470176",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15279547.597585562688624",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15450525.813979262436864",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16291893.476378898329856",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15600661.020562373520096",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15143222.380726860977424",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15087693.871317574376352",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14957098.133913995572896",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14239000.413738525058368",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14098396.262359399748448",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13969465.614490100199888",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14312919.24494133535848",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12146023.932755078827872",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11905661.367676751558784",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11793081.52042382234136",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13029047.677084855508352",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12061088.434536843396624",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12799122.29750997010776",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13324676.144784710355504",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13023916.348839451988304",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12316797.25267413074544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12207884.993666136265248",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12565360.787880898237728",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12715951.96458328149648",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12970525.081449536817168",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13144293.972203078135136",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12840934.548206759733648",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12297447.57819429336048",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13198662.280533538422144",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13254240.656290327091904",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13688074.723936847557872",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13941349.924617402264384",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14965762.56809897670168",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14551626.26147433742992",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13702239.565753254676512",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13838973.472096295193072",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13596222.445758763385712",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13839175.885214453928672",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13131110.116159801854432",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12339213.575275964097264",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11864566.129354461901104",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11592523.128772867934448",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14030080.131058813863696",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12415600.375231363465776",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12175856.36716567912512",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12522769.152044987953008",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12036282.505035305392752",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12822455.639296746507072",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13004290.11490467947976",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15477307.66127205033205944",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14893524.58119750516198501",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14658888.9741750083468946",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14520243.01656594912314544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14270719.55201652496455621",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15201673.22761666962263705",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15618531.10524086418571562",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15938837.566759579887451",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17211124.7035187478825194",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21381694.7686719931367754",
+    "asset": "bob_buildonbitcoin",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38901485.87621442162048",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38457359.14531564357776",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36206775.36690179305488",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35048901.85607927952768",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34763900.586931574652",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34924457.64599553508512",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32555374.14210400856064",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28451493.94306528898544",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27461920.7350736233056",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29021341.9514387353872",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29593459.00211229816672",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28140954.09004007852688",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28084731.67568741857152",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27169841.40172292005056",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25610919.50693986996608",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26071128.50588137784448",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25628446.50942950175984",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25475393.41796060674848",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26017178.17951484469984",
+    "asset": "bob_buildonbitcoin",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  }
+]

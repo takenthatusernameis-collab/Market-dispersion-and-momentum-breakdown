@@ -1,0 +1,2877 @@
+[
+  {
+    "CapMrktEstUSD": "74404014.5190939",
+    "asset": "bananas31",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71134001.6502985",
+    "asset": "bananas31",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70632547.7717777",
+    "asset": "bananas31",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70328286.9085467",
+    "asset": "bananas31",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70454756.5495489",
+    "asset": "bananas31",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71994858.9685836",
+    "asset": "bananas31",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71163279.7156641",
+    "asset": "bananas31",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69490807.8597758",
+    "asset": "bananas31",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73221822.7414102",
+    "asset": "bananas31",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70640489.3899771",
+    "asset": "bananas31",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70696886.7941683",
+    "asset": "bananas31",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67530442.8524516",
+    "asset": "bananas31",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68766797.0524863",
+    "asset": "bananas31",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67784449.5695362",
+    "asset": "bananas31",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68983185.2585399",
+    "asset": "bananas31",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71117767.8973743",
+    "asset": "bananas31",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69594398.4660093",
+    "asset": "bananas31",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71552635.5529587",
+    "asset": "bananas31",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70036463.4414897",
+    "asset": "bananas31",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70870053.0296157",
+    "asset": "bananas31",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71311636.4112903",
+    "asset": "bananas31",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70149916.4733544",
+    "asset": "bananas31",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72254792.1307769",
+    "asset": "bananas31",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77824494.7745093",
+    "asset": "bananas31",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105301136.389226",
+    "asset": "bananas31",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91181477.2558723",
+    "asset": "bananas31",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94748713.6845517",
+    "asset": "bananas31",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84758023.2746414",
+    "asset": "bananas31",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82675178.2484836",
+    "asset": "bananas31",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85306377.1564221",
+    "asset": "bananas31",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85525510.1415595",
+    "asset": "bananas31",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87670769.0143088",
+    "asset": "bananas31",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84367996.239587",
+    "asset": "bananas31",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85685397.6617978",
+    "asset": "bananas31",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87889113.7191856",
+    "asset": "bananas31",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88796117.3332227",
+    "asset": "bananas31",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95610586.9556359",
+    "asset": "bananas31",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87898244.3129456",
+    "asset": "bananas31",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90277091.1110454",
+    "asset": "bananas31",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89791281.2046643",
+    "asset": "bananas31",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92444304.3363267",
+    "asset": "bananas31",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90634254.9973482",
+    "asset": "bananas31",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90176593.2026234",
+    "asset": "bananas31",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88163159.5815751",
+    "asset": "bananas31",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87956175.8423263",
+    "asset": "bananas31",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84565646.3473087",
+    "asset": "bananas31",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82957088.4999949",
+    "asset": "bananas31",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81883272.0773865",
+    "asset": "bananas31",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80834841.0721888",
+    "asset": "bananas31",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83638143.0709071",
+    "asset": "bananas31",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82866589.3252636",
+    "asset": "bananas31",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84562843.6424573",
+    "asset": "bananas31",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84143739.3734293",
+    "asset": "bananas31",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82182019.1316745",
+    "asset": "bananas31",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81777356.1570942",
+    "asset": "bananas31",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76474053.9787667",
+    "asset": "bananas31",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74047060.0894167",
+    "asset": "bananas31",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75206048.5722961",
+    "asset": "bananas31",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76464136.8572386",
+    "asset": "bananas31",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74741672.6375902",
+    "asset": "bananas31",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74628181.7433555",
+    "asset": "bananas31",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72699596.791022",
+    "asset": "bananas31",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72544153.5350387",
+    "asset": "bananas31",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74299126.2985857",
+    "asset": "bananas31",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77190397.5291093",
+    "asset": "bananas31",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78898187.5540303",
+    "asset": "bananas31",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76070008.8699179",
+    "asset": "bananas31",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78813645.5431492",
+    "asset": "bananas31",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82677219.5150207",
+    "asset": "bananas31",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77047344.8896574",
+    "asset": "bananas31",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81064925.3025508",
+    "asset": "bananas31",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81973928.982279",
+    "asset": "bananas31",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79700130.3804076",
+    "asset": "bananas31",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80645563.2386734",
+    "asset": "bananas31",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77572910.6632336",
+    "asset": "bananas31",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77445526.1585889",
+    "asset": "bananas31",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77126367.2063344",
+    "asset": "bananas31",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76408357.1330377",
+    "asset": "bananas31",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73137692.972694",
+    "asset": "bananas31",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74411411.6947506",
+    "asset": "bananas31",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75413383.5199586",
+    "asset": "bananas31",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74977858.7358999",
+    "asset": "bananas31",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73197241.546031",
+    "asset": "bananas31",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70697771.9826474",
+    "asset": "bananas31",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67405811.0831835",
+    "asset": "bananas31",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67703821.4552452",
+    "asset": "bananas31",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68436930.3459606",
+    "asset": "bananas31",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68742939.0542319",
+    "asset": "bananas31",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66550743.815554",
+    "asset": "bananas31",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67118415.0339482",
+    "asset": "bananas31",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66154913.3345604",
+    "asset": "bananas31",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66052369.8732897",
+    "asset": "bananas31",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65288570.153827",
+    "asset": "bananas31",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63280939.9351091",
+    "asset": "bananas31",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61478146.3036453",
+    "asset": "bananas31",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61393721.6120781",
+    "asset": "bananas31",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62473807.157999",
+    "asset": "bananas31",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63688774.733905",
+    "asset": "bananas31",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60226215.0411556",
+    "asset": "bananas31",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59923227.8235541",
+    "asset": "bananas31",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97580456.2921328",
+    "asset": "bananas31",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96513385.0142721",
+    "asset": "bananas31",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96599722.7886519",
+    "asset": "bananas31",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97599478.438675",
+    "asset": "bananas31",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97105314.239694",
+    "asset": "bananas31",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102665384.815615",
+    "asset": "bananas31",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109364110.994292",
+    "asset": "bananas31",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103155101.877961",
+    "asset": "bananas31",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99842306.1814485",
+    "asset": "bananas31",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105687484.649211",
+    "asset": "bananas31",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99985769.9782379",
+    "asset": "bananas31",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94775160.9048027",
+    "asset": "bananas31",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93773353.7401758",
+    "asset": "bananas31",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96317480.8130803",
+    "asset": "bananas31",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95787356.0961045",
+    "asset": "bananas31",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91499332.1395613",
+    "asset": "bananas31",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95703338.6404914",
+    "asset": "bananas31",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90717956.263738",
+    "asset": "bananas31",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94254024.0850681",
+    "asset": "bananas31",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95905927.6747981",
+    "asset": "bananas31",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95058895.9034233",
+    "asset": "bananas31",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94545538.4635023",
+    "asset": "bananas31",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96984541.736587",
+    "asset": "bananas31",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96895792.5215499",
+    "asset": "bananas31",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96452433.7016826",
+    "asset": "bananas31",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102188110.085318",
+    "asset": "bananas31",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111826507.210962",
+    "asset": "bananas31",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122975285.906053",
+    "asset": "bananas31",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113222455.176811",
+    "asset": "bananas31",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116444141.413718",
+    "asset": "bananas31",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122975116.35518",
+    "asset": "bananas31",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "124963817.731697",
+    "asset": "bananas31",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "128757843.738157",
+    "asset": "bananas31",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "121767734.618589",
+    "asset": "bananas31",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "140736901.730757",
+    "asset": "bananas31",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "141675301.059224",
+    "asset": "bananas31",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "139046962.015122",
+    "asset": "bananas31",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "128892868.202393",
+    "asset": "bananas31",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117753038.233404",
+    "asset": "bananas31",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102502450.313811",
+    "asset": "bananas31",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93828342.8389504",
+    "asset": "bananas31",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98238265.8955072",
+    "asset": "bananas31",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111626677.27324",
+    "asset": "bananas31",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138399451.039609",
+    "asset": "bananas31",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "126149383.044927",
+    "asset": "bananas31",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107515661.295904",
+    "asset": "bananas31",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111205384.268486",
+    "asset": "bananas31",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115623839.034165",
+    "asset": "bananas31",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118012318.102545",
+    "asset": "bananas31",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116876092.189609",
+    "asset": "bananas31",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109910892.147319",
+    "asset": "bananas31",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106214428.462261",
+    "asset": "bananas31",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103058879.150328",
+    "asset": "bananas31",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109102827.791959",
+    "asset": "bananas31",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107522384.12807",
+    "asset": "bananas31",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "108053111.030665",
+    "asset": "bananas31",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106968180.273643",
+    "asset": "bananas31",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93701182.4215234",
+    "asset": "bananas31",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101628627.47995",
+    "asset": "bananas31",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99195792.7126099",
+    "asset": "bananas31",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102666518.635356",
+    "asset": "bananas31",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105931994.261303",
+    "asset": "bananas31",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117461016.22979",
+    "asset": "bananas31",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "108549591.272322",
+    "asset": "bananas31",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101709460.712638",
+    "asset": "bananas31",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89322664.9717581",
+    "asset": "bananas31",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68440536.1074815",
+    "asset": "bananas31",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77017499.2226651",
+    "asset": "bananas31",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101262998.997517",
+    "asset": "bananas31",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103457381.791263",
+    "asset": "bananas31",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99489320.423433",
+    "asset": "bananas31",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111940437.625023",
+    "asset": "bananas31",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103421599.296146",
+    "asset": "bananas31",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101262862.001528",
+    "asset": "bananas31",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92208924.3107137",
+    "asset": "bananas31",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94805070.4033037",
+    "asset": "bananas31",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97287993.3846578",
+    "asset": "bananas31",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88052317.094462",
+    "asset": "bananas31",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87625634.7049676",
+    "asset": "bananas31",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88147297.7028465",
+    "asset": "bananas31",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86882169.1700324",
+    "asset": "bananas31",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82086775.794258",
+    "asset": "bananas31",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83563142.2004699",
+    "asset": "bananas31",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83683292.3868492",
+    "asset": "bananas31",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85782658.9513384",
+    "asset": "bananas31",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84173379.3169488",
+    "asset": "bananas31",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85475811.6287891",
+    "asset": "bananas31",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87088094.1593661",
+    "asset": "bananas31",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87079798.425784",
+    "asset": "bananas31",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87484997.6532145",
+    "asset": "bananas31",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87051039.6457633",
+    "asset": "bananas31",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83990745.6090104",
+    "asset": "bananas31",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73229554.249028",
+    "asset": "bananas31",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85887010.0059859",
+    "asset": "bananas31",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78931115.2453201",
+    "asset": "bananas31",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77252679.4514051",
+    "asset": "bananas31",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76715424.671564",
+    "asset": "bananas31",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74415408.8496753",
+    "asset": "bananas31",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73899185.9124149",
+    "asset": "bananas31",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73186154.3446467",
+    "asset": "bananas31",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35514650.3351342",
+    "asset": "bananas31",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34781063.5556877",
+    "asset": "bananas31",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37472617.4233223",
+    "asset": "bananas31",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38833416.8780338",
+    "asset": "bananas31",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39090039.585172",
+    "asset": "bananas31",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41239971.5549543",
+    "asset": "bananas31",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40071491.0517069",
+    "asset": "bananas31",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42432764.8177405",
+    "asset": "bananas31",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43953852.5187371",
+    "asset": "bananas31",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43037909.4067191",
+    "asset": "bananas31",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41666475.4219702",
+    "asset": "bananas31",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39080545.3389126",
+    "asset": "bananas31",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39072938.2477163",
+    "asset": "bananas31",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38954888.7426866",
+    "asset": "bananas31",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38502240.1583787",
+    "asset": "bananas31",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36995308.8808154",
+    "asset": "bananas31",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41288632.3225051",
+    "asset": "bananas31",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40142337.9742503",
+    "asset": "bananas31",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37891651.5640193",
+    "asset": "bananas31",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39597201.8906523",
+    "asset": "bananas31",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37924697.9409973",
+    "asset": "bananas31",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39049839.7425254",
+    "asset": "bananas31",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40531402.6806228",
+    "asset": "bananas31",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37966250.1874926",
+    "asset": "bananas31",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39029964.7400144",
+    "asset": "bananas31",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43149897.337786",
+    "asset": "bananas31",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43065324.3741511",
+    "asset": "bananas31",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42406010.1745936",
+    "asset": "bananas31",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41406997.8713601",
+    "asset": "bananas31",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41477666.8971693",
+    "asset": "bananas31",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43334921.1185325",
+    "asset": "bananas31",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43169932.6486043",
+    "asset": "bananas31",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40400259.9978451",
+    "asset": "bananas31",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40622696.2118764",
+    "asset": "bananas31",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34889243.3411793",
+    "asset": "bananas31",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35627372.3395366",
+    "asset": "bananas31",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37280057.4218443",
+    "asset": "bananas31",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34437568.2961992",
+    "asset": "bananas31",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35416255.2756975",
+    "asset": "bananas31",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31185188.9883302",
+    "asset": "bananas31",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32227928.9321289",
+    "asset": "bananas31",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39330821.2194247",
+    "asset": "bananas31",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41142163.0177912",
+    "asset": "bananas31",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44528011.7667472",
+    "asset": "bananas31",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43287419.0721637",
+    "asset": "bananas31",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44139590.8276621",
+    "asset": "bananas31",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43742797.1295527",
+    "asset": "bananas31",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44723007.59646",
+    "asset": "bananas31",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49240751.6690237",
+    "asset": "bananas31",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49255918.4147721",
+    "asset": "bananas31",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47977926.9995275",
+    "asset": "bananas31",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44614241.6136561",
+    "asset": "bananas31",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44911404.6439944",
+    "asset": "bananas31",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44402895.0059184",
+    "asset": "bananas31",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48114664.4546583",
+    "asset": "bananas31",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45162794.2686809",
+    "asset": "bananas31",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46398489.8608618",
+    "asset": "bananas31",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47905160.2412415",
+    "asset": "bananas31",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45265654.5457098",
+    "asset": "bananas31",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46047472.6665974",
+    "asset": "bananas31",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48157017.0182652",
+    "asset": "bananas31",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46872895.2888172",
+    "asset": "bananas31",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46988575.1900502",
+    "asset": "bananas31",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47467771.8973329",
+    "asset": "bananas31",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50482609.542219",
+    "asset": "bananas31",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57847684.1550698",
+    "asset": "bananas31",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50997986.0863887",
+    "asset": "bananas31",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53087548.3947354",
+    "asset": "bananas31",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63205575.7811455",
+    "asset": "bananas31",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70493824.4423857",
+    "asset": "bananas31",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66271167.7015488",
+    "asset": "bananas31",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67644136.7116677",
+    "asset": "bananas31",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73939305.7458943",
+    "asset": "bananas31",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73596778.5674368",
+    "asset": "bananas31",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78856449.0431315",
+    "asset": "bananas31",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109818403.118306",
+    "asset": "bananas31",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97619763.8666417",
+    "asset": "bananas31",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97439752.5604507",
+    "asset": "bananas31",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101718862.136467",
+    "asset": "bananas31",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "104685706.14777",
+    "asset": "bananas31",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99596661.221797",
+    "asset": "bananas31",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92154689.2609983",
+    "asset": "bananas31",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91707033.1799649",
+    "asset": "bananas31",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93209623.3726444",
+    "asset": "bananas31",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "136513853.490004",
+    "asset": "bananas31",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "152616618.184655",
+    "asset": "bananas31",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "136975778.355726",
+    "asset": "bananas31",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "137807116.23958",
+    "asset": "bananas31",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138148065.890767",
+    "asset": "bananas31",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "131819380.813948",
+    "asset": "bananas31",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "131004751.837945",
+    "asset": "bananas31",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133471187.560329",
+    "asset": "bananas31",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "134809602.092014",
+    "asset": "bananas31",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "130664887.936317",
+    "asset": "bananas31",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133267819.991513",
+    "asset": "bananas31",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "129188694.338469",
+    "asset": "bananas31",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "127435686.823878",
+    "asset": "bananas31",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "120794210.380793",
+    "asset": "bananas31",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105547401.121262",
+    "asset": "bananas31",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90795469.7872941",
+    "asset": "bananas31",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65832299.4289904",
+    "asset": "bananas31",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64128917.4690365",
+    "asset": "bananas31",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60710117.0022789",
+    "asset": "bananas31",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53090622.1075751",
+    "asset": "bananas31",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52571979.3100899",
+    "asset": "bananas31",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52894971.5712437",
+    "asset": "bananas31",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48138235.6010346",
+    "asset": "bananas31",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50722311.8817511",
+    "asset": "bananas31",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50722638.3902137",
+    "asset": "bananas31",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51671120.0600372",
+    "asset": "bananas31",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50285453.8041735",
+    "asset": "bananas31",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49754496.4420958",
+    "asset": "bananas31",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52355024.1146743",
+    "asset": "bananas31",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53926654.7275557",
+    "asset": "bananas31",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54887532.1654559",
+    "asset": "bananas31",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52744209.4132986",
+    "asset": "bananas31",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52103532.7794384",
+    "asset": "bananas31",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53893977.8849882",
+    "asset": "bananas31",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56164901.7301633",
+    "asset": "bananas31",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57575217.0997071",
+    "asset": "bananas31",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53125311.8555467",
+    "asset": "bananas31",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31902215.6375431",
+    "asset": "bananas31",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26704686.0910805",
+    "asset": "bananas31",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32161815.8827021",
+    "asset": "bananas31",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38221810.9409699",
+    "asset": "bananas31",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36695180.0981879",
+    "asset": "bananas31",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35394316.5319823",
+    "asset": "bananas31",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33658740.7825161",
+    "asset": "bananas31",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32353403.8905253",
+    "asset": "bananas31",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33526268.8328899",
+    "asset": "bananas31",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34233836.1804093",
+    "asset": "bananas31",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33580332.742774",
+    "asset": "bananas31",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31857904.7067929",
+    "asset": "bananas31",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31070001.1811329",
+    "asset": "bananas31",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32344324.0157833",
+    "asset": "bananas31",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32089710.4818154",
+    "asset": "bananas31",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32394908.4494615",
+    "asset": "bananas31",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32901644.2378773",
+    "asset": "bananas31",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31326979.9964236",
+    "asset": "bananas31",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30450467.8255478",
+    "asset": "bananas31",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30113985.9581191",
+    "asset": "bananas31",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28038593.6979466",
+    "asset": "bananas31",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28882238.6726",
+    "asset": "bananas31",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29487879.8926413",
+    "asset": "bananas31",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28831013.5795737",
+    "asset": "bananas31",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25146166.4768298",
+    "asset": "bananas31",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23961866.6107521",
+    "asset": "bananas31",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25153183.3383512",
+    "asset": "bananas31",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24723251.9864376",
+    "asset": "bananas31",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27715293.88468",
+    "asset": "bananas31",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27253764.160725",
+    "asset": "bananas31",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27405011.6326938",
+    "asset": "bananas31",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27075196.1536514",
+    "asset": "bananas31",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23741685.4506343",
+    "asset": "bananas31",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23057450.7487392",
+    "asset": "bananas31",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23975236.2722281",
+    "asset": "bananas31",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22402348.5308556",
+    "asset": "bananas31",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23824987.0121694",
+    "asset": "bananas31",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36268231.401347",
+    "asset": "bananas31",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35867715.507125",
+    "asset": "bananas31",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30561485.0748749",
+    "asset": "bananas31",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27249807.894396",
+    "asset": "bananas31",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25618068.1936721",
+    "asset": "bananas31",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24285612.4589952",
+    "asset": "bananas31",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24344498.5360777",
+    "asset": "bananas31",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30959401.1073621",
+    "asset": "bananas31",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40324234.370275",
+    "asset": "bananas31",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35454266.167531",
+    "asset": "bananas31",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59635731.0123427",
+    "asset": "bananas31",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51380523.8031709",
+    "asset": "bananas31",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42889154.4055109",
+    "asset": "bananas31",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41388514.6535281",
+    "asset": "bananas31",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39152955.2285353",
+    "asset": "bananas31",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37066323.1684477",
+    "asset": "bananas31",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40262645.6212814",
+    "asset": "bananas31",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39106625.7229106",
+    "asset": "bananas31",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38453288.2111538",
+    "asset": "bananas31",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37484652.070786",
+    "asset": "bananas31",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34497647.6499013",
+    "asset": "bananas31",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33137757.7104668",
+    "asset": "bananas31",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32682512.7303041",
+    "asset": "bananas31",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33533469.9344931",
+    "asset": "bananas31",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34056324.3763108",
+    "asset": "bananas31",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33973105.8175762",
+    "asset": "bananas31",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33112487.7763201",
+    "asset": "bananas31",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33318215.1581114",
+    "asset": "bananas31",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33117615.6656051",
+    "asset": "bananas31",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37418675.6670111",
+    "asset": "bananas31",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35401546.6544122",
+    "asset": "bananas31",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34970683.9856972",
+    "asset": "bananas31",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33581349.489701",
+    "asset": "bananas31",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35040006.3536877",
+    "asset": "bananas31",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36619754.1615788",
+    "asset": "bananas31",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34759717.7009806",
+    "asset": "bananas31",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34188199.8931856",
+    "asset": "bananas31",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33945536.6714593",
+    "asset": "bananas31",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34444938.9177384",
+    "asset": "bananas31",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35792570.6051407",
+    "asset": "bananas31",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35999664.4676997",
+    "asset": "bananas31",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35875841.9752532",
+    "asset": "bananas31",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60614572.1455781",
+    "asset": "bananas31",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57736792.2191443",
+    "asset": "bananas31",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59764068.1030775",
+    "asset": "bananas31",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59054617.2254158",
+    "asset": "bananas31",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59159510.2997408",
+    "asset": "bananas31",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59531306.9109002",
+    "asset": "bananas31",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59125248.2074731",
+    "asset": "bananas31",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55801050.1857301",
+    "asset": "bananas31",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56319989.8980633",
+    "asset": "bananas31",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55184220.947341",
+    "asset": "bananas31",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63765540.0938867",
+    "asset": "bananas31",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78251618.1126064",
+    "asset": "bananas31",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116093351.429494",
+    "asset": "bananas31",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133087639.353397",
+    "asset": "bananas31",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156377485.135883",
+    "asset": "bananas31",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82644330.7293523",
+    "asset": "bananas31",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116194754.251994",
+    "asset": "bananas31",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122584475.830306",
+    "asset": "bananas31",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "124530762.601088",
+    "asset": "bananas31",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "124981926.480574",
+    "asset": "bananas31",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133611794.827329",
+    "asset": "bananas31",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "136730242.348749",
+    "asset": "bananas31",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138995846.388367",
+    "asset": "bananas31",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "145028662.503269",
+    "asset": "bananas31",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "143262381.828689",
+    "asset": "bananas31",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "157625262.392982",
+    "asset": "bananas31",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "150966655.435979",
+    "asset": "bananas31",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "192746250.852396",
+    "asset": "bananas31",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "245405209.29254",
+    "asset": "bananas31",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "361320432.350342",
+    "asset": "bananas31",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "188057888.704961",
+    "asset": "bananas31",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156920711.055046",
+    "asset": "bananas31",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83840142.4662176",
+    "asset": "bananas31",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85102795.2577759",
+    "asset": "bananas31",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78309485.9731828",
+    "asset": "bananas31",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79942206.217109",
+    "asset": "bananas31",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71921875.6752359",
+    "asset": "bananas31",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66871919.6994447",
+    "asset": "bananas31",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73583471.9775911",
+    "asset": "bananas31",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71003188.735681",
+    "asset": "bananas31",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69273046.6175623",
+    "asset": "bananas31",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69680384.2149504",
+    "asset": "bananas31",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67940816.391424",
+    "asset": "bananas31",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66199153.5155542",
+    "asset": "bananas31",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64035111.029202",
+    "asset": "bananas31",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64370178.5854989",
+    "asset": "bananas31",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63768677.7628262",
+    "asset": "bananas31",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78444002.3723784",
+    "asset": "bananas31",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74011844.724521",
+    "asset": "bananas31",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75320254.0219979",
+    "asset": "bananas31",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71975050.9231986",
+    "asset": "bananas31",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75160810.0767817",
+    "asset": "bananas31",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67218526.3999302",
+    "asset": "bananas31",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69865610.6763771",
+    "asset": "bananas31",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71113163.5063245",
+    "asset": "bananas31",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65412932.2358534",
+    "asset": "bananas31",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67360138.1426989",
+    "asset": "bananas31",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69579521.142212",
+    "asset": "bananas31",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68728154.6152414",
+    "asset": "bananas31",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69804105.595157",
+    "asset": "bananas31",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68264493.3876378",
+    "asset": "bananas31",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72287231.223315",
+    "asset": "bananas31",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72747804.4561229",
+    "asset": "bananas31",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73319156.516755",
+    "asset": "bananas31",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68167242.4959024",
+    "asset": "bananas31",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68048107.9367016",
+    "asset": "bananas31",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69121615.0190984",
+    "asset": "bananas31",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69294322.4610485",
+    "asset": "bananas31",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69063493.8497064",
+    "asset": "bananas31",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67600781.9645226",
+    "asset": "bananas31",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73986716.5644936",
+    "asset": "bananas31",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69100410.8241461",
+    "asset": "bananas31",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73332820.7660963",
+    "asset": "bananas31",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71145688.1727793",
+    "asset": "bananas31",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68991876.8038536",
+    "asset": "bananas31",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67320481.1180535",
+    "asset": "bananas31",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68603262.0490172",
+    "asset": "bananas31",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68023699.059844",
+    "asset": "bananas31",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69190667.3688494",
+    "asset": "bananas31",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67270118.5968854",
+    "asset": "bananas31",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69258708.2824789",
+    "asset": "bananas31",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70660390.9688654",
+    "asset": "bananas31",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63834711.7412574",
+    "asset": "bananas31",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65499304.5434992",
+    "asset": "bananas31",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66209868.463172",
+    "asset": "bananas31",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60621696.6474562",
+    "asset": "bananas31",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62948246.2468678",
+    "asset": "bananas31",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61149178.915221",
+    "asset": "bananas31",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62861030.0136162",
+    "asset": "bananas31",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61221700.8479921",
+    "asset": "bananas31",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60497724.8673211",
+    "asset": "bananas31",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61184419.3983333",
+    "asset": "bananas31",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61436108.1133045",
+    "asset": "bananas31",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62207200.161563",
+    "asset": "bananas31",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63463270.6384628",
+    "asset": "bananas31",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60937651.4294978",
+    "asset": "bananas31",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57638638.4586158",
+    "asset": "bananas31",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60740886.9347257",
+    "asset": "bananas31",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61475788.2904",
+    "asset": "bananas31",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62449983.2235754",
+    "asset": "bananas31",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52679664.0106599",
+    "asset": "bananas31",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52165276.2780817",
+    "asset": "bananas31",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55709050.1923731",
+    "asset": "bananas31",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53166379.5051786",
+    "asset": "bananas31",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51790663.2179882",
+    "asset": "bananas31",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54665317.5949233",
+    "asset": "bananas31",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56163180.4466721",
+    "asset": "bananas31",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55836137.6718331",
+    "asset": "bananas31",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57707789.5693577",
+    "asset": "bananas31",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59106017.6765649",
+    "asset": "bananas31",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58648995.6206332",
+    "asset": "bananas31",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51342784.3248652",
+    "asset": "bananas31",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55048850.6072897",
+    "asset": "bananas31",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52628666.8980561",
+    "asset": "bananas31",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55082605.8943643",
+    "asset": "bananas31",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54659599.0374496",
+    "asset": "bananas31",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53273216.0361064",
+    "asset": "bananas31",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50038087.8782828",
+    "asset": "bananas31",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51095242.6337291",
+    "asset": "bananas31",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53094946.3835945",
+    "asset": "bananas31",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50853397.8659348",
+    "asset": "bananas31",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49639560.7609668",
+    "asset": "bananas31",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50350130.9946544",
+    "asset": "bananas31",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52038716.319438",
+    "asset": "bananas31",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52178442.855482",
+    "asset": "bananas31",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53786711.0860484",
+    "asset": "bananas31",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48667332.6989807",
+    "asset": "bananas31",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45952820.9439864",
+    "asset": "bananas31",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47073058.3298356",
+    "asset": "bananas31",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47250058.9165329",
+    "asset": "bananas31",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47872448.8431729",
+    "asset": "bananas31",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49238870.9949461",
+    "asset": "bananas31",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47083458.1775992",
+    "asset": "bananas31",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48424364.847994",
+    "asset": "bananas31",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48220937.5136823",
+    "asset": "bananas31",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47101319.2247377",
+    "asset": "bananas31",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45686511.9684307",
+    "asset": "bananas31",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48001690.0532016",
+    "asset": "bananas31",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47121697.3660988",
+    "asset": "bananas31",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49950672.4270754",
+    "asset": "bananas31",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52675075.387781",
+    "asset": "bananas31",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52833093.9084231",
+    "asset": "bananas31",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58059711.4179367",
+    "asset": "bananas31",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51240023.2069177",
+    "asset": "bananas31",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53470656.5353932",
+    "asset": "bananas31",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50811286.5715039",
+    "asset": "bananas31",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57657616.8481009",
+    "asset": "bananas31",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54704353.3592149",
+    "asset": "bananas31",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57271251.6097111",
+    "asset": "bananas31",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56698223.4979697",
+    "asset": "bananas31",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56015521.4490304",
+    "asset": "bananas31",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55640100.3566564",
+    "asset": "bananas31",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57595133.8237139",
+    "asset": "bananas31",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59058012.6449174",
+    "asset": "bananas31",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59312640.4336642",
+    "asset": "bananas31",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60301454.0790511",
+    "asset": "bananas31",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57954630.9918257",
+    "asset": "bananas31",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57517714.025034",
+    "asset": "bananas31",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55106703.039321",
+    "asset": "bananas31",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63652471.9195855",
+    "asset": "bananas31",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66949117.341069",
+    "asset": "bananas31",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66300179.0239138",
+    "asset": "bananas31",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62346115.3804701",
+    "asset": "bananas31",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59403058.1258217",
+    "asset": "bananas31",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64037449.6987073",
+    "asset": "bananas31",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66314452.3662207",
+    "asset": "bananas31",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62810023.8636291",
+    "asset": "bananas31",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62467791.851687",
+    "asset": "bananas31",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60621699.0612878",
+    "asset": "bananas31",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57809325.5654537",
+    "asset": "bananas31",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58041873.3717156",
+    "asset": "bananas31",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58493620.1894824",
+    "asset": "bananas31",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61342760.8547476",
+    "asset": "bananas31",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61385863.0666936",
+    "asset": "bananas31",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61071194.3308439",
+    "asset": "bananas31",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  }
+]

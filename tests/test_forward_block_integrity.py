@@ -98,6 +98,18 @@ class ForwardBlockIntegrityTests(unittest.TestCase):
                 bad.append((name, stored[:10], actual[:10]))
         self.assertEqual(bad, [], msg=f"stale input hashes: {bad}")
 
+    def test_forward_block_seals_only_evaluation_inputs(self):
+        """The sealed block must not hash discovery artifacts that grow as the
+        universe frontier advances. Candidate validation records and data
+        refresh logs live beside the panels but are not forward-block inputs;
+        sealing them would invalidate the block on every new candidate batch.
+        """
+        fb = _fb()
+        for non_input in ("candidate_batch_validation.json",
+                          "data_refresh_provenance.json"):
+            self.assertNotIn(non_input, fb["input_file_hashes"],
+                             msg=f"{non_input} is not a forward-block input")
+
     def test_forward_block_reproducible_at_frozen_cutoff(self):
         """Re-running the evaluator at the frozen cutoff must reproduce the
         committed high_low_diff_net_1x and formation count."""

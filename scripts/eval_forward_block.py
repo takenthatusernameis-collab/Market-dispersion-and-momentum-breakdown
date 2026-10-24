@@ -263,10 +263,20 @@ def main() -> int:
     last_allowed_date = idx[last_allowed_loc] if last_allowed_loc >= 0 else None
     last_allowed_str = last_allowed_date.strftime("%Y-%m-%d") if last_allowed_date is not None else None
 
-    # Freeze input data hashes before computing outcomes.
+    # Freeze input data hashes before computing outcomes. Only files that are
+    # actual inputs to the forward-block computation are sealed. Discovery and
+    # refresh-log artifacts that live alongside the panels (the candidate
+    # validation record, the data refresh provenance) are NOT inputs: they grow
+    # as universe discovery continues, and sealing them would silently invalid-
+    # ate the block every time a candidate batch is recorded. Excluding them
+    # keeps the seal stable without touching any evaluation input or outcome.
+    NON_INPUT_ARTIFACTS = {
+        "candidate_batch_validation.json",
+        "data_refresh_provenance.json",
+    }
     input_files = {}
     for p in sorted(PANEL_DIR.iterdir()):
-        if p.is_file():
+        if p.is_file() and p.name not in NON_INPUT_ARTIFACTS:
             input_files[p.name] = sha256_file(p)
 
     # Also hash the manifest and config.
