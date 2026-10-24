@@ -8,7 +8,7 @@
 - Confirmed canonical H004V106 forward-block artifact integrity: n=608, high=61, low=90, high-low net=0.6165 (dimensionless log-returns), finite dispersion; states reconcile.
 - Verified HAC addendum present: diff=0.6165, SE=0.3982, t=1.548, 95% CI [-0.164, 1.397] (not significant under overlap-aware HAC).
 - Confirmed archived defective artifact preserved unchanged (637 extreme dispersions, extended range, look-ahead risk).
-- Confirmed data cutoff in canonical block is 2026-09-30; Binance kline panels end 2026-09-30 (max cutoff observed 2026-09-30). Threshold for fresh sealed block is cutoff >= 2026-10-29 — not met as of 2026-10-24T15:57:37Z.
+- Confirmed data cutoff in canonical block is 2026-09-30; Binance kline panels end 2026-09-30 (max cutoff observed 2026-09-30). Threshold for fresh sealed block is cutoff >= 2026-10-29 — not met as of 2026-10-24T16:02:37Z.
 - DISPERSION-001/002 unchanged; candidate frontier unchanged (cursor=76, 822 eligible, queue empty).
 
 ## Blocker record (forward block) — UNRESOLVED
@@ -21,12 +21,13 @@
 3. If evaluating, compute overlap-aware uncertainty and report full results. Preserve DISPERSION-001/002 immutable.
 4. Run full tests in pandas-available environment when feasible.
 
-## Latest check (2026-10-24T15:57:37Z)
+## Latest check (2026-10-24T16:02:37Z)
 - Data cutoff 2026-09-30 < 2026-10-29 threshold. No fresh sealed forward block available.
-- Attempted refresh via scripts/refresh_free_data.py (ran with timeout) — CoinMetrics/archives fetched partially; Binance klines in panels end at 2026-09-30 (confirmed from BTC klines). Cutoff unchanged.
+- Refresh rerun via scripts/refresh_free_data.py timed out after 120s with no stdout; Binance klines in panels still end at 2026-09-30 (BTC date_last=1790726400000). Cutoff unchanged.
 - Integrity audit and HAC addendum verified present and consistent.
 - No changes to DISPERSION-001/002; frontier unchanged (cursor=76, 822 eligible, queue empty).
 - Environment lacks pandas/numpy/pytest; tests not runnable here (original report 40/40).
 
 ## Concrete next action
 Monitor data cutoff via scripts/refresh_free_data.py; when cutoff>=2026-10-29, preregister/evaluate fresh sealed forward block for H004V106 with HAC uncertainty; do not reuse inspected block as fresh confirmation. Update handoff + task message with concrete measurable outcomes when evaluated.
+"
