@@ -89852,10 +89852,712 @@
         }
       },
       "status": "blocked"
+    },
+    {
+      "asset": "mlk",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MLKUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mlmx",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MLMXUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mlmx_sol",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MLMX_SOLUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mln",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MLNUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "b122cba9f29dfe9f811770d2556dbcc4d01e2b15c190196a77b15bef8122df9d",
+            "8010c0a5a62d261ebebea392a018442bf71207e6f464673feadcf55b78b2ae23",
+            "e3bb8e22f4d97a0a76045ca1ec102428b4a9ede740192392e375dbc04ccfcbab",
+            "232cb43000178ca0fabd19b9991ea2b69d83e0a857dbbdc68477beba5c6a2cd1",
+            "fa84d308d40acc811f3a80241b6aff01b03e6ecdec1fc8c6e92b067d8dc7e42f",
+            "d6d44d1a5459d3fb33ed70ed6da50848b7fedeab2807948843d81fed86734562",
+            "a6c930cf2447794e495c35abc576f1fba46226b10b92511dbc6e6b9f7d8c251c",
+            "24ced2b9fd6c731a136978cd2e167bee641604f3da249d9b158c47eddbc364e6",
+            "2616bf1a0ca62870224c123b64466842259df77bf04be6e3a19c586f3fe0af11",
+            "38887300a08a5ab872268c88896f41c5e33d4ff7bbe0497841ae20d2d10c6951",
+            "ce4aaa6ec1ccedcfd1bae345c57465a63395ecfc1c8a586bdcd425bbe54edf42",
+            "29d2f7036d6c368046bee47a935a0a8466754df286ed4641e0f9db0ae0852982",
+            "4b9c3b399f050f00b3bc834d41f976564941e3882a049da86f439d2ad2a81579",
+            "b2da31d451c1a2c548e3685b5601c8f60e5bd13cefe2fa49383d30c009ab5735"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/mln_CapMrktEstUSD.json",
+          "raw_sha256": "8bd901ddb3e6b425f3174b98d30a5be96acc7874dba06451e3bf6dfab49810eb",
+          "rows": 1392,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-04-02T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mls",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MLSUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mm",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MMUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mmaon",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MMAONUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mmk",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MMKUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mmt",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MMTUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "b0878157f7356e3b7afa6f5f13cb6ecba5bd2b248b7608fc51ad7e123d51ac77",
+            "473dbb215009c1121e568162d10008f37a5347278b70376a9ec3040c0bd7f0b8",
+            "e7c50f045a0b9e77a4598cfc0f667fee6db786d9cd7e748e8cce1101bf4905b8"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/mmt_CapMrktEstUSD.json",
+          "raw_sha256": "2a6e829167617625c02281fa9a9866bf51166566794b8f1f7cfb2515d800cdcd",
+          "rows": 269,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2026-04-06T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mmt_metamundo",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MMT_METAMUNDOUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnc",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNCUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnde",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNDEUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "c17d9abb073b75816e750d9738858276c70913d2a5c87bb2ba48dfecd3cd89d4",
+            "c774e5599aa0d54f85bbc639cdfbd7fd4a5d04371e96bc51e8351981d955b83e",
+            "d9816227c21377ef64ea18c266b09599f0ee0ae72636fe50ca5f5fa2b625759a",
+            "1e186a5328979f0f623e063c4e3bd5d652b747e0f653549ebacf9563ca03aa32",
+            "b50721d6b0ef02e93b88c7749f0ba6daf09c1065ff45feab1b59ca79a04ec7d5",
+            "ab20f17723500a0dac9c45fd41a80808ecfa0e085e65534b7c6e7c4a3f0d4cae",
+            "8abc2891956de85b960852e8c8aeb34e09530da61de44539fedd3514bcf62308",
+            "2c55a65882b7f7d990d38226a967a91940d57fea195c6e6b973c73e1bc42de5a",
+            "d51765cb1c42784b139ec67daf9713f8507ed4577563b9549cc9d385238590af",
+            "3cdd384570772f8b620618fb78f07125acfbd8d934dbcdee2d2e2e50707599fe",
+            "d87d6d312b2600512fbb8b8e7f6fc0c3312003a0715f7d8a5d434f0d82fdca23",
+            "bcb5be56a9433bd79d688687bb1d2dde3d9510d31afddb6fe0e01253b3251e4d"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/mnde_CapMrktEstUSD.json",
+          "raw_sha256": "dea62e4bd75afbec16f854595fbc40f3d725d6d023a30e6b8e722dbd4813e91a",
+          "rows": 1164,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-10-19T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnde_sol",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNDE_SOLUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "blocked_free_tier"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mne",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNEUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnet",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNETUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mngo",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNGOUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "bcec7af6db3155af65f751b0a6916a6708cadc99dbde90539acba09b13810b30",
+            "d684368f4d73a5032cdfe6b10dbce86db6361a7b9144f351b3caa4fbd65e7c07",
+            "44b9eac4d170afd5dec3df05f3e30cbed8759ab2bedb9ab4f36a12021aca5fc8",
+            "52fd563101080a0871d9de80bbd682eb699486d864c851098125f7a7c072ded8",
+            "7096953520bd55dc9951c8a8a748c27f348f909c53bd421be094509018381870",
+            "7ce85c739858b60f6d8fed713a1d673d34962773a3da919f7c9623dad7ac901b",
+            "13ac6cc7e8688d4aa1b47877ea2def68384eccefacf9188d685e8eaa0df8c873",
+            "07cf0a645ba59033b44936fd3a82b397d2d5abbf09564783b85d479ad3da2d6d",
+            "d587fcb40e25ff144cad4c1feb43776d7a0c73e40fc39e06724bb66d928257af",
+            "ebb16a8eaabb649a9c25489e64b9bd1529682563f180d77481c05c494e00dc5f",
+            "aea8da09b06896c1d5a28e7976a4ede17ae6ba4cc7ae3774f480f30098f28365"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/mngo_CapMrktEstUSD.json",
+          "raw_sha256": "d61e154592c96674cd8bc8f92b3902ced92dbf0afd1f819f69a38535e7f4b587",
+          "rows": 1098,
+          "status": "ok",
+          "time_first": "2026-05-11T00:00:00.000000000Z",
+          "time_last": "2023-11-22T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnry",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNRYUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnst",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNSTUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnstrs",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNSTRSUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnt",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNTUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "669e13b99b5348dd779a4afc8f908048ca5beff913ced5e876ead617144bc8a7",
+            "ed292c2566a7a7a34d7ccd3d04d5101f5f8ab378411e1e1bcee7ba09f246eac1",
+            "752f4ba7e8f2da085a1b5b8955dbdfbbbaea19a48003c569e24b0a7680376e8b",
+            "6b1d5d4b91b12d4f10d1767aec986814a54d450fa03a4852be0d52d793958ed2",
+            "360ca80b3390d141554f0cc68ce16e0e36b4f522194378a1dcb81b8f11e6c949",
+            "acc676c6d7319032b0f8443c364c786f13f579097b114da7ca17edd7936b35e1",
+            "0f74f7433c04661b797ea3d474eedde837a712e98060966cc68c907a58290803",
+            "939e0087dc56a11c967206f016a7ee9b44fef7e0990a52d317eb0892a82f0f74",
+            "464fe33b1c659e84526881624ecc84e3f565335b1edcf48735a222e4e940166f",
+            "e817ab43aa57c81846942116e209d13b10bd6ef024c18270effb8bfb0b97f91b",
+            "9428ac9116776c0e30a31e0f3d2c2b995cb0df78db796a555477da0902157913",
+            "73afcf712a14ed604c7c22c77f1fc2a8153d24dc188e2b9ee8f3c8df54d0d093"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/mnt_CapMrktEstUSD.json",
+          "raw_sha256": "d94a10062d0f8e255d47f9fed3b8df4fc75cd1131ad8be823fc8e94fb2cd7b02",
+          "rows": 1164,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-10-19T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnt_eth",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNT_ETHUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mntp",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNTPUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnw",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNWUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnx",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNXUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "mnz",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "MNZUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T23:30:17Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
     }
   ],
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-24T23:28:07Z",
+  "fetch_utc": "2026-10-24T23:30:17Z",
   "point_in_time": "no forward-fill; eligibility uses on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",
