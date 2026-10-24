@@ -6,291 +6,6 @@
       {
         "asset": "btc",
         "date_first": "1672531200000",
-        "date_last": "1790726400000",
-        "kind": "klines",
-        "months": [
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-01.zip",
-            "raw_sha256": "3de9bef6b4cc6efcd32e4620aff1f27921432003184ca65f43cb03f943b085a1",
-            "status": "ok",
-            "ym": "2023-01"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-02.zip",
-            "raw_sha256": "c2567987f8ceaa7fbaf9b5889eb7052d858e7e33707aa1e353a8c777111cee4a",
-            "status": "ok",
-            "ym": "2023-02"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-03.zip",
-            "raw_sha256": "73c38a0c2ca448fe651c9242f62835d5fc2b3392d9b3878974cf469c6a9f147b",
-            "status": "ok",
-            "ym": "2023-03"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-04.zip",
-            "raw_sha256": "7af72bedeca7eb147f40c909c5085c30bf5003c033e680b94efca0240f8486bf",
-            "status": "ok",
-            "ym": "2023-04"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-05.zip",
-            "raw_sha256": "14c96d7ddea968e43e220b8e1e3f358265b89253442d98557904149c6f7d7002",
-            "status": "ok",
-            "ym": "2023-05"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-06.zip",
-            "raw_sha256": "cda8a12d152f6c772c809ead7c780e2349239f2561f2758c50081b255784dcdb",
-            "status": "ok",
-            "ym": "2023-06"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-07.zip",
-            "raw_sha256": "3ee0f86ac09a7bf062831a8ec84d70ec509e77ba403a73ffca049b7285223c13",
-            "status": "ok",
-            "ym": "2023-07"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-08.zip",
-            "raw_sha256": "41b24c62e3d1faffb51c0ac9be01d771a6bfb2e3867b8dbe05786d3f700ed8c4",
-            "status": "ok",
-            "ym": "2023-08"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-09.zip",
-            "raw_sha256": "1e96a90b3df6f41b55ab34fdfadc77d1837eae039155e1f0a4e7629fdbe019de",
-            "status": "ok",
-            "ym": "2023-09"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-10.zip",
-            "raw_sha256": "35af8f19a76011935111104919ed535c63a225b1334f36eaa9e488e7a228dd67",
-            "status": "ok",
-            "ym": "2023-10"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-11.zip",
-            "raw_sha256": "eae4a133704d6b3a2c2c796bffce6aff605d72cb9a0e974e0fc16adf23c150f6",
-            "status": "ok",
-            "ym": "2023-11"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-12.zip",
-            "raw_sha256": "417fd4410cdeede8bb0f473bdece4c856a27c737e95ef3370c8333fbe9fa0023",
-            "status": "ok",
-            "ym": "2023-12"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-01.zip",
-            "raw_sha256": "26b06a00b615b9a85c6c7404971a8756c1006ef8192f8b1a02aadb9fef7e61f5",
-            "status": "ok",
-            "ym": "2024-01"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-02.zip",
-            "raw_sha256": "082bc500af56b944e9f68707e7f32aef98d6793ccd542ecfc2ffbaf9dda2377a",
-            "status": "ok",
-            "ym": "2024-02"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-03.zip",
-            "raw_sha256": "44dcb588ee5f82601710d37492246575585ab70d7c938b79e0d7163434d25436",
-            "status": "ok",
-            "ym": "2024-03"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-04.zip",
-            "raw_sha256": "e09120d5e8c029f132670d03e173420bd599ac582c5ab38bc02136bfc7b2fabc",
-            "status": "ok",
-            "ym": "2024-04"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-05.zip",
-            "raw_sha256": "03ea4f510206bdc5ff623acd6fab27ff46a464d700dcb00d637d6cb6c844ccde",
-            "status": "ok",
-            "ym": "2024-05"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-06.zip",
-            "raw_sha256": "a92b43b86ff23ad4e9ea0b931c6a88ecdb4d3265052ab96e81a078344c99328c",
-            "status": "ok",
-            "ym": "2024-06"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-07.zip",
-            "raw_sha256": "f3ea230291b5d2243f06fbf8b0ce213ab8aaa82ea3a94bdbb5661edda43b4cbe",
-            "status": "ok",
-            "ym": "2024-07"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-08.zip",
-            "raw_sha256": "cd84abb28fffe93471c77859b9d8c57059fb88b4522545ab80c6fb3d6c834140",
-            "status": "ok",
-            "ym": "2024-08"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-09.zip",
-            "raw_sha256": "2516eb3105e5a9458350a12dade88224f7a71e67d1a593fdeabb75f8bbdf3ff2",
-            "status": "ok",
-            "ym": "2024-09"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-10.zip",
-            "raw_sha256": "c0d3d077c5e41ec2201e8bc8382e1ad4f7b4dfecac8f4f827a1d20ab1d87baeb",
-            "status": "ok",
-            "ym": "2024-10"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-11.zip",
-            "raw_sha256": "98bcbfe0e6687f237c0c7913e7c39c625129a8e4cf6d1f358235f1ed5cc0e9ef",
-            "status": "ok",
-            "ym": "2024-11"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-12.zip",
-            "raw_sha256": "9374dc7b5f2790965f6b87223746e8537e59e7f9403eb24241615b6745ec1be2",
-            "status": "ok",
-            "ym": "2024-12"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-01.zip",
-            "raw_sha256": "d0e4cddb95124cd770325a418e170692b6325ad57d04980c9f0a56f91aeb8abe",
-            "status": "ok",
-            "ym": "2025-01"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-02.zip",
-            "raw_sha256": "9d7f03443771d9a88f72179995bfa490cbddb291e6570da5303aa3dd1318773d",
-            "status": "ok",
-            "ym": "2025-02"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-03.zip",
-            "raw_sha256": "630d36287b1e90438c4bda4d5966c97c129bdadfc5c20dd666e21d7c72e1ec54",
-            "status": "ok",
-            "ym": "2025-03"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-04.zip",
-            "raw_sha256": "7ecc8db32272da5151d96da48014ab657c492b49468fcd2e13186efc54d54815",
-            "status": "ok",
-            "ym": "2025-04"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-05.zip",
-            "raw_sha256": "4881cc91121ea7faabeaf1d46807044dfa0af6fdef5c8d512bebbe047456b4f6",
-            "status": "ok",
-            "ym": "2025-05"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-06.zip",
-            "raw_sha256": "c11054f2eaacd83b4327c7eef2001221e33beb3caf6dab2b44d2cef0da6ab98b",
-            "status": "ok",
-            "ym": "2025-06"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-07.zip",
-            "raw_sha256": "bce326227436ff4ebf119379859c1ac1c8df5fcb8a4bfe9f07c7f8ade18f9d7d",
-            "status": "ok",
-            "ym": "2025-07"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-08.zip",
-            "raw_sha256": "cb26a985295a658b1c69a253bf617e35e2cfa3b9ad694dfc2b20977baf918f21",
-            "status": "ok",
-            "ym": "2025-08"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-09.zip",
-            "raw_sha256": "a4f711e5efb64e87c66d945db3440d2161a6d68eeaee026732c085bf77c9784b",
-            "status": "ok",
-            "ym": "2025-09"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-10.zip",
-            "raw_sha256": "f3db8b3c74aa33a09f5a7af1521652039e031cdd52e2d9dae542911cb6ce8e68",
-            "status": "ok",
-            "ym": "2025-10"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-11.zip",
-            "raw_sha256": "606b497e9d4ad7b67d2c44482c4a8c136f528a82b4585b1f1a0ecc79a4989165",
-            "status": "ok",
-            "ym": "2025-11"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-12.zip",
-            "raw_sha256": "40484d66317a3c7c73e438f8243faf23e041863debdb9e4f523b00156f9dd8d2",
-            "status": "ok",
-            "ym": "2025-12"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-01.zip",
-            "raw_sha256": "6ea7e8767031806d4ecc17581af562e49f4f223b7db45cbb4e44c078f4f39635",
-            "status": "ok",
-            "ym": "2026-01"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-02.zip",
-            "raw_sha256": "dc4ac6372ec3684e39887b4fd9f9b005da82b285badf56b28ebcc5455590fe37",
-            "status": "ok",
-            "ym": "2026-02"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-03.zip",
-            "raw_sha256": "6e6f14c60e723f9c9d1e87d00df0553e6f2e8813c67154101884e1d93e017e48",
-            "status": "ok",
-            "ym": "2026-03"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-04.zip",
-            "raw_sha256": "3860febfca089675b86fd50df54a2da0a7980de1331e5b42e1df0210240ae12d",
-            "status": "ok",
-            "ym": "2026-04"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-05.zip",
-            "raw_sha256": "91d2e45e3bb4994c849ac56a089da18575b4d01ba1a9f4cff5d3fbbc27b7e9cc",
-            "status": "ok",
-            "ym": "2026-05"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-06.zip",
-            "raw_sha256": "916bc1d543aceb81184584da93d202cccaab5e21eb4e789996af35e6846de668",
-            "status": "ok",
-            "ym": "2026-06"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-07.zip",
-            "raw_sha256": "c8aa635aee3c6fdc48347adc975b60c2342ef4253f4269494f9e08e85be61480",
-            "status": "ok",
-            "ym": "2026-07"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-08.zip",
-            "raw_sha256": "0c7a739c1eae50cb60a31cedb4cb59b14b3a806523f044e9e8abbdf5e2a4512b",
-            "status": "ok",
-            "ym": "2026-08"
-          },
-          {
-            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-09.zip",
-            "raw_sha256": "34ec2bc722aea637ded6df5b2f9a71c17396ca8e010019f4711defb81c14a589",
-            "status": "ok",
-            "ym": "2026-09"
-          }
-        ],
-        "months_error": 0,
-        "months_missing": 0,
-        "months_ok": 45,
-        "months_requested": 45,
-        "raw_dir": "data/raw/binance/klines/BTCUSDT",
-        "rows": 1414,
-        "symbol": "BTCUSDT"
-      },
-      {
-        "asset": "btc",
-        "date_first": "1672531200000",
         "date_last": "1790784000002",
         "kind": "funding",
         "months": [
@@ -571,6 +286,291 @@
         "months_requested": 45,
         "raw_dir": "data/raw/binance/funding/BTCUSDT",
         "rows": 4152,
+        "symbol": "BTCUSDT"
+      },
+      {
+        "asset": "btc",
+        "date_first": "1672531200000",
+        "date_last": "1790726400000",
+        "kind": "klines",
+        "months": [
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-01.zip",
+            "raw_sha256": "3de9bef6b4cc6efcd32e4620aff1f27921432003184ca65f43cb03f943b085a1",
+            "status": "ok",
+            "ym": "2023-01"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-02.zip",
+            "raw_sha256": "c2567987f8ceaa7fbaf9b5889eb7052d858e7e33707aa1e353a8c777111cee4a",
+            "status": "ok",
+            "ym": "2023-02"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-03.zip",
+            "raw_sha256": "73c38a0c2ca448fe651c9242f62835d5fc2b3392d9b3878974cf469c6a9f147b",
+            "status": "ok",
+            "ym": "2023-03"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-04.zip",
+            "raw_sha256": "7af72bedeca7eb147f40c909c5085c30bf5003c033e680b94efca0240f8486bf",
+            "status": "ok",
+            "ym": "2023-04"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-05.zip",
+            "raw_sha256": "14c96d7ddea968e43e220b8e1e3f358265b89253442d98557904149c6f7d7002",
+            "status": "ok",
+            "ym": "2023-05"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-06.zip",
+            "raw_sha256": "cda8a12d152f6c772c809ead7c780e2349239f2561f2758c50081b255784dcdb",
+            "status": "ok",
+            "ym": "2023-06"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-07.zip",
+            "raw_sha256": "3ee0f86ac09a7bf062831a8ec84d70ec509e77ba403a73ffca049b7285223c13",
+            "status": "ok",
+            "ym": "2023-07"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-08.zip",
+            "raw_sha256": "41b24c62e3d1faffb51c0ac9be01d771a6bfb2e3867b8dbe05786d3f700ed8c4",
+            "status": "ok",
+            "ym": "2023-08"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-09.zip",
+            "raw_sha256": "1e96a90b3df6f41b55ab34fdfadc77d1837eae039155e1f0a4e7629fdbe019de",
+            "status": "ok",
+            "ym": "2023-09"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-10.zip",
+            "raw_sha256": "35af8f19a76011935111104919ed535c63a225b1334f36eaa9e488e7a228dd67",
+            "status": "ok",
+            "ym": "2023-10"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-11.zip",
+            "raw_sha256": "eae4a133704d6b3a2c2c796bffce6aff605d72cb9a0e974e0fc16adf23c150f6",
+            "status": "ok",
+            "ym": "2023-11"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-12.zip",
+            "raw_sha256": "417fd4410cdeede8bb0f473bdece4c856a27c737e95ef3370c8333fbe9fa0023",
+            "status": "ok",
+            "ym": "2023-12"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-01.zip",
+            "raw_sha256": "26b06a00b615b9a85c6c7404971a8756c1006ef8192f8b1a02aadb9fef7e61f5",
+            "status": "ok",
+            "ym": "2024-01"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-02.zip",
+            "raw_sha256": "082bc500af56b944e9f68707e7f32aef98d6793ccd542ecfc2ffbaf9dda2377a",
+            "status": "ok",
+            "ym": "2024-02"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-03.zip",
+            "raw_sha256": "44dcb588ee5f82601710d37492246575585ab70d7c938b79e0d7163434d25436",
+            "status": "ok",
+            "ym": "2024-03"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-04.zip",
+            "raw_sha256": "e09120d5e8c029f132670d03e173420bd599ac582c5ab38bc02136bfc7b2fabc",
+            "status": "ok",
+            "ym": "2024-04"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-05.zip",
+            "raw_sha256": "03ea4f510206bdc5ff623acd6fab27ff46a464d700dcb00d637d6cb6c844ccde",
+            "status": "ok",
+            "ym": "2024-05"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-06.zip",
+            "raw_sha256": "a92b43b86ff23ad4e9ea0b931c6a88ecdb4d3265052ab96e81a078344c99328c",
+            "status": "ok",
+            "ym": "2024-06"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-07.zip",
+            "raw_sha256": "f3ea230291b5d2243f06fbf8b0ce213ab8aaa82ea3a94bdbb5661edda43b4cbe",
+            "status": "ok",
+            "ym": "2024-07"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-08.zip",
+            "raw_sha256": "cd84abb28fffe93471c77859b9d8c57059fb88b4522545ab80c6fb3d6c834140",
+            "status": "ok",
+            "ym": "2024-08"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-09.zip",
+            "raw_sha256": "2516eb3105e5a9458350a12dade88224f7a71e67d1a593fdeabb75f8bbdf3ff2",
+            "status": "ok",
+            "ym": "2024-09"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-10.zip",
+            "raw_sha256": "c0d3d077c5e41ec2201e8bc8382e1ad4f7b4dfecac8f4f827a1d20ab1d87baeb",
+            "status": "ok",
+            "ym": "2024-10"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-11.zip",
+            "raw_sha256": "98bcbfe0e6687f237c0c7913e7c39c625129a8e4cf6d1f358235f1ed5cc0e9ef",
+            "status": "ok",
+            "ym": "2024-11"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2024-12.zip",
+            "raw_sha256": "9374dc7b5f2790965f6b87223746e8537e59e7f9403eb24241615b6745ec1be2",
+            "status": "ok",
+            "ym": "2024-12"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-01.zip",
+            "raw_sha256": "d0e4cddb95124cd770325a418e170692b6325ad57d04980c9f0a56f91aeb8abe",
+            "status": "ok",
+            "ym": "2025-01"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-02.zip",
+            "raw_sha256": "9d7f03443771d9a88f72179995bfa490cbddb291e6570da5303aa3dd1318773d",
+            "status": "ok",
+            "ym": "2025-02"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-03.zip",
+            "raw_sha256": "630d36287b1e90438c4bda4d5966c97c129bdadfc5c20dd666e21d7c72e1ec54",
+            "status": "ok",
+            "ym": "2025-03"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-04.zip",
+            "raw_sha256": "7ecc8db32272da5151d96da48014ab657c492b49468fcd2e13186efc54d54815",
+            "status": "ok",
+            "ym": "2025-04"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-05.zip",
+            "raw_sha256": "4881cc91121ea7faabeaf1d46807044dfa0af6fdef5c8d512bebbe047456b4f6",
+            "status": "ok",
+            "ym": "2025-05"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-06.zip",
+            "raw_sha256": "c11054f2eaacd83b4327c7eef2001221e33beb3caf6dab2b44d2cef0da6ab98b",
+            "status": "ok",
+            "ym": "2025-06"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-07.zip",
+            "raw_sha256": "bce326227436ff4ebf119379859c1ac1c8df5fcb8a4bfe9f07c7f8ade18f9d7d",
+            "status": "ok",
+            "ym": "2025-07"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-08.zip",
+            "raw_sha256": "cb26a985295a658b1c69a253bf617e35e2cfa3b9ad694dfc2b20977baf918f21",
+            "status": "ok",
+            "ym": "2025-08"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-09.zip",
+            "raw_sha256": "a4f711e5efb64e87c66d945db3440d2161a6d68eeaee026732c085bf77c9784b",
+            "status": "ok",
+            "ym": "2025-09"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-10.zip",
+            "raw_sha256": "f3db8b3c74aa33a09f5a7af1521652039e031cdd52e2d9dae542911cb6ce8e68",
+            "status": "ok",
+            "ym": "2025-10"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-11.zip",
+            "raw_sha256": "606b497e9d4ad7b67d2c44482c4a8c136f528a82b4585b1f1a0ecc79a4989165",
+            "status": "ok",
+            "ym": "2025-11"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2025-12.zip",
+            "raw_sha256": "40484d66317a3c7c73e438f8243faf23e041863debdb9e4f523b00156f9dd8d2",
+            "status": "ok",
+            "ym": "2025-12"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-01.zip",
+            "raw_sha256": "6ea7e8767031806d4ecc17581af562e49f4f223b7db45cbb4e44c078f4f39635",
+            "status": "ok",
+            "ym": "2026-01"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-02.zip",
+            "raw_sha256": "dc4ac6372ec3684e39887b4fd9f9b005da82b285badf56b28ebcc5455590fe37",
+            "status": "ok",
+            "ym": "2026-02"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-03.zip",
+            "raw_sha256": "6e6f14c60e723f9c9d1e87d00df0553e6f2e8813c67154101884e1d93e017e48",
+            "status": "ok",
+            "ym": "2026-03"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-04.zip",
+            "raw_sha256": "3860febfca089675b86fd50df54a2da0a7980de1331e5b42e1df0210240ae12d",
+            "status": "ok",
+            "ym": "2026-04"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-05.zip",
+            "raw_sha256": "91d2e45e3bb4994c849ac56a089da18575b4d01ba1a9f4cff5d3fbbc27b7e9cc",
+            "status": "ok",
+            "ym": "2026-05"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-06.zip",
+            "raw_sha256": "916bc1d543aceb81184584da93d202cccaab5e21eb4e789996af35e6846de668",
+            "status": "ok",
+            "ym": "2026-06"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-07.zip",
+            "raw_sha256": "c8aa635aee3c6fdc48347adc975b60c2342ef4253f4269494f9e08e85be61480",
+            "status": "ok",
+            "ym": "2026-07"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-08.zip",
+            "raw_sha256": "0c7a739c1eae50cb60a31cedb4cb59b14b3a806523f044e9e8abbdf5e2a4512b",
+            "status": "ok",
+            "ym": "2026-08"
+          },
+          {
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-09.zip",
+            "raw_sha256": "34ec2bc722aea637ded6df5b2f9a71c17396ca8e010019f4711defb81c14a589",
+            "status": "ok",
+            "ym": "2026-09"
+          }
+        ],
+        "months_error": 0,
+        "months_missing": 0,
+        "months_ok": 45,
+        "months_requested": 45,
+        "raw_dir": "data/raw/binance/klines/BTCUSDT",
+        "rows": 1414,
         "symbol": "BTCUSDT"
       },
       {
@@ -1157,7 +1157,7 @@
     "panel_sha256": "9ebcc21467055873e3ae173aa524aa4e24f4f618cfb78144c53264d38c995e95"
   },
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-24T12:03:26Z",
+  "fetch_utc": "2026-10-24T12:46:42Z",
   "point_in_time": "no forward-fill; eligibility and ranking use on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",

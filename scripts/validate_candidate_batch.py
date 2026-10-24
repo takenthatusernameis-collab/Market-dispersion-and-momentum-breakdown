@@ -13,6 +13,7 @@ No API keys, no secrets, no trading.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import time
@@ -31,7 +32,7 @@ CM_BASE = "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
 BINANCE_ARCHIVE = "https://data.binance.vision/data/futures/um"
 
 CM_START = "2023-01-01"
-CM_END = "2024-12-31"
+CM_END = "2026-10-23"
 CM_METRICS = ["CapMrktEstUSD", "CapMrktCurUSD"]
 CM_FREQUENCY = "1d"
 
@@ -62,7 +63,9 @@ def cm_fetch_json(url: str):
         except urllib.error.HTTPError as exc:
             body = exc.read().decode("utf-8", "replace") if hasattr(exc, "read") else str(exc)
             last_err = f"HTTP {exc.code}: {body[:200]}"
-            if exc.code in (400, 403):
+            if exc.code == 400:
+                raise RuntimeError(f"asset_not_served {last_err}") from exc
+            if exc.code == 403:
                 raise RuntimeError(f"free_tier_unavailable {last_err}") from exc
             if exc.code in (429, 502, 503, 504):
                 time.sleep(BACKOFF_BASE ** attempt)
@@ -75,9 +78,16 @@ def cm_fetch_json(url: str):
     raise RuntimeError(f"exhausted retries: {last_err}")
 
 
-def cm_fetch_asset_metric(asset: str, metric: str):
+def cm_fetch_asset_metric(asset: str, metric: str, start_time: str, end_time: str):
+    """Fetch one (asset, metric) series.
+
+    Returns (rows, page_shas) on success, or None on free-tier/invalid-asset
+    failure. The caller records the specific reason: HTTP 400 means the asset
+    id is not served on the community tier (invalid or unsupported), HTTP 403
+    means the free tier is unavailable for this metric/asset combination.
+    """
     params = (f"assets={asset}&metrics={metric}&frequency={CM_FREQUENCY}"
-              f"&start_time={CM_START}&end_time={CM_END}")
+              f"&start_time={start_time}&end_time={end_time}")
     url = f"{CM_BASE}?{params}"
     all_rows = []
     page_shas = []
@@ -92,8 +102,11 @@ def cm_fetch_asset_metric(asset: str, metric: str):
                 break
             url = nxt
     except RuntimeError as exc:
-        if "free_tier_unavailable" in str(exc) or "HTTP 403" in str(exc):
-            return None
+        msg = str(exc)
+        if "asset_not_served" in msg:
+            return None, "asset_not_served"
+        if "free_tier_unavailable" in msg or "HTTP 403" in msg:
+            return None, "blocked_free_tier"
         raise
     return all_rows, page_shas
 
@@ -135,7 +148,17 @@ def save_frontier(frontier):
     )
 
 
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Validate discovered candidate assets.")
+    p.add_argument("--limit", type=int, default=25,
+                   help="max candidates to process this run (bounded batch)")
+    p.add_argument("--cap-start", default=CM_START)
+    p.add_argument("--cap-end", default=CM_END)
+    return p.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     PANEL_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -145,7 +168,7 @@ def main() -> int:
     blocked = list(frontier.get("candidates_blocked", []))
 
     already = set(verified) | set(blocked)
-    to_process = [a for a in discovered if a not in already]
+    to_process = [a for a in discovered if a not in already][: args.limit]
 
     print(f"[candidates] discovered={len(discovered)} already_processed={len(already)} "
           f"to_process={len(to_process)}", flush=True)
@@ -171,13 +194,14 @@ def main() -> int:
 
         has_est = False
         for metric in CM_METRICS:
-            result = cm_fetch_asset_metric(asset, metric)
-            if result is None:
-                entry["metrics"][metric] = {"status": "blocked_free_tier", "rows": 0}
-                print(f"[candidate] {asset}/{metric}: blocked free tier", flush=True)
+            result = cm_fetch_asset_metric(asset, metric, args.cap_start, args.cap_end)
+            rows, payload = result
+            if rows is None:
+                entry["metrics"][metric] = {"status": payload, "rows": 0}
+                print(f"[candidate] {asset}/{metric}: {payload}", flush=True)
                 time.sleep(BETWEEN_ASSET_SLEEP)
                 continue
-            rows, page_shas = result
+            page_shas = payload
             combined_sha = hashlib.sha256("".join(page_shas).encode()).hexdigest()
             raw_path = RAW_DIR / f"{asset}_{metric}.json"
             RAW_DIR.mkdir(parents=True, exist_ok=True)
@@ -217,8 +241,9 @@ def main() -> int:
             print(f"[candidate] {asset}: VERIFIED (cap + perpetual)", flush=True)
         else:
             reasons = []
+            est = entry["metrics"].get("CapMrktEstUSD", {})
             if not est_ok:
-                reasons.append("no_capmkt_est_usd")
+                reasons.append(f"capmkt_est_usd:{est.get('status','missing')}")
             if not exists:
                 reasons.append(f"no_binance_perpetual:{err}")
             entry["status"] = "blocked"
