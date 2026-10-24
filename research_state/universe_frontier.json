@@ -10,10 +10,36 @@
   "last_verified_historical_rank": null,
   "rank_frontier_exhausted": false,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "candidates_discovered": [],
+  "candidates_discovered": [
+    "0g",
+    "1inch",
+    "2z",
+    "a",
+    "a2z",
+    "a8",
+    "aave",
+    "ab",
+    "aca",
+    "ace_fusionist",
+    "ach",
+    "acs",
+    "act",
+    "acx",
+    "adi",
+    "adx",
+    "ae",
+    "aergo",
+    "aero",
+    "aevo",
+    "ageur",
+    "agld",
+    "ai_gensyn",
+    "aion",
+    "aioz"
+  ],
   "candidates_verified": [],
   "candidates_blocked": [],
-  "candidate_page_cursor": null,
+  "candidate_page_cursor": 25,
   "next_candidate_batch_size": 25,
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
   "source_priority": [
@@ -22,5 +48,5 @@
     "other verified free public historical sources"
   ],
   "next_action": "Discover and rank additional historical candidates beyond the mapped 28-asset set; persist point-in-time rank evidence, mapping, eligibility and blockers; extend cap, price and funding panels through the latest fully closed UTC daily candle.",
-  "last_updated_utc": null
+  "last_updated_utc": "2026-10-24T04:35:00Z"
 }
