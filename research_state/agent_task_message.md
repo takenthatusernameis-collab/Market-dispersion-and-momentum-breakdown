@@ -6,8 +6,8 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 ## State on handoff
 - Integrity audit + HAC addendum preserved; canonical artifact internally consistent (n=608, high=61, low=90, high-low net=0.6165, CI [-0.164, 1.397], not significant under overlap-aware HAC).
 - Archived defective artifact preserved unchanged.
-- Forward block BLOCKED for fresh confirmation: need data cutoff >= 2026-10-29 (current 2026-09-30). As of 2026-10-24T17:36:50Z, October 2026 Binance monthly archive returns HTTP 404. Structural gate; do not loop on it.
-- Independent unblocked task completed: ran `scripts/validate_candidate_batch.py` for DISPERSION-003 (free-data only). Frontier updated (candidate_page_cursor 6372); verified=30, blocked expanded, remaining_discovered 6224. Validation record at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json`.
+- Forward block BLOCKED for fresh confirmation: need data cutoff >= 2026-10-29 (current 2026-09-30). As of 2026-10-24T17:42:01Z, October 2026 Binance monthly archive returns HTTP 404. Structural gate; do not loop on it.
+- Independent unblocked task completed: ran `scripts/validate_candidate_batch.py` for DISPERSION-003 (free-data only). Frontier updated (candidate_page_cursor 6397); verified=30, blocked=116, remaining_discovered 6199. Validation record at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json`.
 - Tests unavailable in this env (missing pandas/numpy/pytest).
 
 ## Concrete next action
