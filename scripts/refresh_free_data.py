@@ -31,11 +31,13 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 
-# CoinMetrics Community API asset IDs (canonical lowercase). Legacy 28 mapped set.
+# CoinMetrics Community API asset IDs (canonical lowercase). Legacy 28 mapped set
+# plus verified DISPERSION-003 candidate batch 1 assets.
 ASSETS = [
     "btc", "eth", "sol", "bnb", "xrp", "ada", "doge", "dot", "matic", "avax",
     "link", "uni", "ltc", "bch", "etc", "xlm", "atom", "algo", "vet", "fil",
     "trx", "eos", "neo", "iost", "qtum", "zec", "dash", "rune",
+    "1inch", "aave", "ach", "agld",
 ]
 
 # CoinMetrics asset -> Binance USD-M perpetual symbol (canonical, uppercase).
@@ -47,6 +49,8 @@ SYMBOL_MAP = {
     "atom": "ATOMUSDT", "algo": "ALGOUSDT", "vet": "VETUSDT", "fil": "FILUSDT",
     "trx": "TRXUSDT", "eos": "EOSUSDT", "neo": "NEOUSDT", "iost": "IOSTUSDT",
     "qtum": "QTUMUSDT", "zec": "ZECUSDT", "dash": "DASHUSDT", "rune": "RUNEUSDT",
+    # Verified candidate batch 1 (DISPERSION-003 expanding arm).
+    "1inch": "1INCHUSDT", "aave": "AAVEUSDT", "ach": "ACHUSDT", "agld": "AGLDUSDT",
 }
 
 CM_BASE = "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"

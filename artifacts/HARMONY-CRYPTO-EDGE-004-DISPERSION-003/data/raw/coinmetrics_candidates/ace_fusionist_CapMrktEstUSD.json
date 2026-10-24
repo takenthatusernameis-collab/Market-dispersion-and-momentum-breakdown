@@ -1,0 +1,1037 @@
+[
+  {
+    "CapMrktEstUSD": "91118346.17603159361951",
+    "asset": "ace_fusionist",
+    "time": "2024-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95298497.05969881427248",
+    "asset": "ace_fusionist",
+    "time": "2024-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93201087.3520386823452",
+    "asset": "ace_fusionist",
+    "time": "2024-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97060161.93538995650295",
+    "asset": "ace_fusionist",
+    "time": "2024-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103857632.60658216056298",
+    "asset": "ace_fusionist",
+    "time": "2024-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98294281.06406475458016",
+    "asset": "ace_fusionist",
+    "time": "2024-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99171415.65156975520146",
+    "asset": "ace_fusionist",
+    "time": "2024-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89511900.43449540091104",
+    "asset": "ace_fusionist",
+    "time": "2024-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79111432.7682887968335",
+    "asset": "ace_fusionist",
+    "time": "2024-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75393596.41867770694335",
+    "asset": "ace_fusionist",
+    "time": "2024-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74180041.32766395370365",
+    "asset": "ace_fusionist",
+    "time": "2024-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79098491.56748388624261",
+    "asset": "ace_fusionist",
+    "time": "2024-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78802244.49712463683389",
+    "asset": "ace_fusionist",
+    "time": "2024-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81360176.45178868329735",
+    "asset": "ace_fusionist",
+    "time": "2024-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79984492.9642327877982",
+    "asset": "ace_fusionist",
+    "time": "2024-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80200194.9601698374411",
+    "asset": "ace_fusionist",
+    "time": "2024-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77427465.40454783913905",
+    "asset": "ace_fusionist",
+    "time": "2024-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77750528.1598696424856",
+    "asset": "ace_fusionist",
+    "time": "2024-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82601825.53866765591985",
+    "asset": "ace_fusionist",
+    "time": "2024-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82642320.88977681878945",
+    "asset": "ace_fusionist",
+    "time": "2024-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81269002.15400500026585",
+    "asset": "ace_fusionist",
+    "time": "2024-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90458665.20331192757985",
+    "asset": "ace_fusionist",
+    "time": "2024-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87076248.0811198559744",
+    "asset": "ace_fusionist",
+    "time": "2024-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86533931.2031686118851",
+    "asset": "ace_fusionist",
+    "time": "2024-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81535235.39705323683945",
+    "asset": "ace_fusionist",
+    "time": "2024-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85945242.55785165295815",
+    "asset": "ace_fusionist",
+    "time": "2024-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88843380.2477926595201",
+    "asset": "ace_fusionist",
+    "time": "2024-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93662631.42755695620225",
+    "asset": "ace_fusionist",
+    "time": "2024-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88015720.45338936298115",
+    "asset": "ace_fusionist",
+    "time": "2024-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91185540.2713343765444",
+    "asset": "ace_fusionist",
+    "time": "2024-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84912392.1179228890001",
+    "asset": "ace_fusionist",
+    "time": "2024-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86061260.236870333017",
+    "asset": "ace_fusionist",
+    "time": "2024-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75572984.0806217723091",
+    "asset": "ace_fusionist",
+    "time": "2024-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77287602.027184726441",
+    "asset": "ace_fusionist",
+    "time": "2024-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79198429.78734147628985",
+    "asset": "ace_fusionist",
+    "time": "2024-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78773664.3984637297959",
+    "asset": "ace_fusionist",
+    "time": "2024-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84009431.7523987180489",
+    "asset": "ace_fusionist",
+    "time": "2024-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83452045.1727325857602",
+    "asset": "ace_fusionist",
+    "time": "2024-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78018175.88529809654485",
+    "asset": "ace_fusionist",
+    "time": "2024-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75735143.5469007309757",
+    "asset": "ace_fusionist",
+    "time": "2024-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72876948.39323369695465",
+    "asset": "ace_fusionist",
+    "time": "2024-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69635996.1330540432597",
+    "asset": "ace_fusionist",
+    "time": "2024-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67053818.7772871882976",
+    "asset": "ace_fusionist",
+    "time": "2024-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70565585.2976709986897",
+    "asset": "ace_fusionist",
+    "time": "2024-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81242409.9197099601839",
+    "asset": "ace_fusionist",
+    "time": "2024-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82020020.1289429531164",
+    "asset": "ace_fusionist",
+    "time": "2024-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83728809.8559811483578",
+    "asset": "ace_fusionist",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89907275.44523206137264",
+    "asset": "ace_fusionist",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94029126.18785086998492",
+    "asset": "ace_fusionist",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101528867.13391732242912",
+    "asset": "ace_fusionist",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93690658.05335364731148",
+    "asset": "ace_fusionist",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87045095.0769924613152",
+    "asset": "ace_fusionist",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85558152.37413278043048",
+    "asset": "ace_fusionist",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86891228.4297010651488",
+    "asset": "ace_fusionist",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94734658.88793620300412",
+    "asset": "ace_fusionist",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98394788.27032966854204",
+    "asset": "ace_fusionist",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99047809.97746626025272",
+    "asset": "ace_fusionist",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94126295.74627527224172",
+    "asset": "ace_fusionist",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86815455.21058558375164",
+    "asset": "ace_fusionist",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105808007.87471467913388",
+    "asset": "ace_fusionist",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99340437.28972614493116",
+    "asset": "ace_fusionist",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107522718.60743716373616",
+    "asset": "ace_fusionist",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116102479.22557388736156",
+    "asset": "ace_fusionist",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110945877.78044189095152",
+    "asset": "ace_fusionist",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "104530704.33043258720728",
+    "asset": "ace_fusionist",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118819874.66082583250184",
+    "asset": "ace_fusionist",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117020417.63008272012708",
+    "asset": "ace_fusionist",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117135510.06801657478416",
+    "asset": "ace_fusionist",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "127561537.85311587238812",
+    "asset": "ace_fusionist",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "127255525.33338033684708",
+    "asset": "ace_fusionist",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133413670.72902313842432",
+    "asset": "ace_fusionist",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138755348.2716505106772",
+    "asset": "ace_fusionist",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "139085482.87000322231472",
+    "asset": "ace_fusionist",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "137108942.35483831955688",
+    "asset": "ace_fusionist",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "142860179.2873002012888",
+    "asset": "ace_fusionist",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "143215010.21671397593452",
+    "asset": "ace_fusionist",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "153721135.87285037956568",
+    "asset": "ace_fusionist",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118709789.10690057427035",
+    "asset": "ace_fusionist",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110954975.84939686317189",
+    "asset": "ace_fusionist",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122970379.04805718710674",
+    "asset": "ace_fusionist",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "124141893.08625161069931",
+    "asset": "ace_fusionist",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "121644087.027212082663",
+    "asset": "ace_fusionist",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114896058.33275938612939",
+    "asset": "ace_fusionist",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118281641.04127806682984",
+    "asset": "ace_fusionist",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114061611.8692754472699",
+    "asset": "ace_fusionist",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103451577.0646565142236",
+    "asset": "ace_fusionist",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94980551.06483714931296",
+    "asset": "ace_fusionist",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86990288.22056343778596",
+    "asset": "ace_fusionist",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93134281.5357531056125",
+    "asset": "ace_fusionist",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86222660.57934360099823",
+    "asset": "ace_fusionist",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86774929.56142094465225",
+    "asset": "ace_fusionist",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91804617.1899216501959",
+    "asset": "ace_fusionist",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95825522.1566393210672",
+    "asset": "ace_fusionist",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95053359.10905583238874",
+    "asset": "ace_fusionist",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87489251.25805912315579",
+    "asset": "ace_fusionist",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88543199.98885039505387",
+    "asset": "ace_fusionist",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91819251.4303715477137",
+    "asset": "ace_fusionist",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86515610.25733933000256",
+    "asset": "ace_fusionist",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88798158.28750757407846",
+    "asset": "ace_fusionist",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87790918.66316144180252",
+    "asset": "ace_fusionist",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "140237525.41045643227611",
+    "asset": "ace_fusionist",
+    "time": "2024-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "141182443.25618302360362",
+    "asset": "ace_fusionist",
+    "time": "2024-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "127597713.47561600350573",
+    "asset": "ace_fusionist",
+    "time": "2024-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116588478.94831858118838",
+    "asset": "ace_fusionist",
+    "time": "2024-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117363096.60887345203892",
+    "asset": "ace_fusionist",
+    "time": "2024-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117017689.16691629512028",
+    "asset": "ace_fusionist",
+    "time": "2024-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116242133.86649289824579",
+    "asset": "ace_fusionist",
+    "time": "2024-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115176256.19869031250242",
+    "asset": "ace_fusionist",
+    "time": "2024-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110496510.00569439494467",
+    "asset": "ace_fusionist",
+    "time": "2024-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114760258.29153865684983",
+    "asset": "ace_fusionist",
+    "time": "2024-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118304530.43566307386738",
+    "asset": "ace_fusionist",
+    "time": "2024-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114679362.54506624877256",
+    "asset": "ace_fusionist",
+    "time": "2024-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114559544.44609363669827",
+    "asset": "ace_fusionist",
+    "time": "2024-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110256282.73399149714927",
+    "asset": "ace_fusionist",
+    "time": "2024-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107124795.61421228096438",
+    "asset": "ace_fusionist",
+    "time": "2024-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114337747.30733746413757",
+    "asset": "ace_fusionist",
+    "time": "2024-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111720735.58690335277211",
+    "asset": "ace_fusionist",
+    "time": "2024-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112497050.71900367103684",
+    "asset": "ace_fusionist",
+    "time": "2024-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103383432.06135220742406",
+    "asset": "ace_fusionist",
+    "time": "2024-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88609426.43370829040982",
+    "asset": "ace_fusionist",
+    "time": "2024-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75808717.64218219624631",
+    "asset": "ace_fusionist",
+    "time": "2024-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90226248.12520997067382",
+    "asset": "ace_fusionist",
+    "time": "2024-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87798329.09489916849037",
+    "asset": "ace_fusionist",
+    "time": "2024-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92818591.24649750055",
+    "asset": "ace_fusionist",
+    "time": "2024-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92920981.44025556426475",
+    "asset": "ace_fusionist",
+    "time": "2024-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93887273.3370261859665",
+    "asset": "ace_fusionist",
+    "time": "2024-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94377237.60743911936125",
+    "asset": "ace_fusionist",
+    "time": "2024-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94524742.18088697114675",
+    "asset": "ace_fusionist",
+    "time": "2024-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94916604.2377344184665",
+    "asset": "ace_fusionist",
+    "time": "2024-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97700369.3315172490185",
+    "asset": "ace_fusionist",
+    "time": "2024-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105906494.11079812111875",
+    "asset": "ace_fusionist",
+    "time": "2024-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105867951.53157145163475",
+    "asset": "ace_fusionist",
+    "time": "2024-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105523264.27044359680275",
+    "asset": "ace_fusionist",
+    "time": "2024-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107832531.5340602617395",
+    "asset": "ace_fusionist",
+    "time": "2024-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111594777.88011994662975",
+    "asset": "ace_fusionist",
+    "time": "2024-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107396226.01914667688025",
+    "asset": "ace_fusionist",
+    "time": "2024-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106527440.4978571634745",
+    "asset": "ace_fusionist",
+    "time": "2024-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106773509.5640102299275",
+    "asset": "ace_fusionist",
+    "time": "2024-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99997083.94927834124325",
+    "asset": "ace_fusionist",
+    "time": "2024-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94564205.051035629987",
+    "asset": "ace_fusionist",
+    "time": "2024-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92630152.3612251001005",
+    "asset": "ace_fusionist",
+    "time": "2024-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106104241.46855643911775",
+    "asset": "ace_fusionist",
+    "time": "2024-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111236724.3970830577815",
+    "asset": "ace_fusionist",
+    "time": "2024-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106443601.62276059094825",
+    "asset": "ace_fusionist",
+    "time": "2024-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109346038.2417490946505",
+    "asset": "ace_fusionist",
+    "time": "2024-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101561289.1007114648115",
+    "asset": "ace_fusionist",
+    "time": "2024-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107033133.677701683879",
+    "asset": "ace_fusionist",
+    "time": "2024-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103341276.4224325747545",
+    "asset": "ace_fusionist",
+    "time": "2024-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107098498.54623212421075",
+    "asset": "ace_fusionist",
+    "time": "2024-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92607099.116210280459",
+    "asset": "ace_fusionist",
+    "time": "2024-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79845788.856988713888",
+    "asset": "ace_fusionist",
+    "time": "2024-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70777997.92509373014075",
+    "asset": "ace_fusionist",
+    "time": "2024-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76278063.355551586197",
+    "asset": "ace_fusionist",
+    "time": "2024-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74795508.777033713178",
+    "asset": "ace_fusionist",
+    "time": "2024-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87495014.25282101822784",
+    "asset": "ace_fusionist",
+    "time": "2024-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83666832.2363125257372",
+    "asset": "ace_fusionist",
+    "time": "2024-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83586548.50784383090275",
+    "asset": "ace_fusionist",
+    "time": "2024-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73910906.95998866743665",
+    "asset": "ace_fusionist",
+    "time": "2024-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86386356.78073951148514",
+    "asset": "ace_fusionist",
+    "time": "2024-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85366203.3437195016801",
+    "asset": "ace_fusionist",
+    "time": "2024-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82245602.97281446263162",
+    "asset": "ace_fusionist",
+    "time": "2024-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78171058.17220676036994",
+    "asset": "ace_fusionist",
+    "time": "2024-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79256996.64618913701306",
+    "asset": "ace_fusionist",
+    "time": "2024-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79509174.84501884545626",
+    "asset": "ace_fusionist",
+    "time": "2024-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81582209.41561341701877",
+    "asset": "ace_fusionist",
+    "time": "2024-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81095082.4995895609263",
+    "asset": "ace_fusionist",
+    "time": "2024-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81628034.96948642348103",
+    "asset": "ace_fusionist",
+    "time": "2024-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84939324.18847844113584",
+    "asset": "ace_fusionist",
+    "time": "2024-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85043238.01356871962711",
+    "asset": "ace_fusionist",
+    "time": "2024-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93476103.52872074975055",
+    "asset": "ace_fusionist",
+    "time": "2024-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95073849.99795482918604",
+    "asset": "ace_fusionist",
+    "time": "2024-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91951573.90172284630917",
+    "asset": "ace_fusionist",
+    "time": "2024-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85108229.81477762485167",
+    "asset": "ace_fusionist",
+    "time": "2024-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77810492.81082801385233",
+    "asset": "ace_fusionist",
+    "time": "2024-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77681361.55968929693988",
+    "asset": "ace_fusionist",
+    "time": "2024-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75833579.1693649155642",
+    "asset": "ace_fusionist",
+    "time": "2024-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76946334.52911888982401",
+    "asset": "ace_fusionist",
+    "time": "2024-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75410995.23659259704394",
+    "asset": "ace_fusionist",
+    "time": "2024-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71033739.48337601974599",
+    "asset": "ace_fusionist",
+    "time": "2024-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76012134.47315656039827",
+    "asset": "ace_fusionist",
+    "time": "2024-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70723702.81409976158454",
+    "asset": "ace_fusionist",
+    "time": "2024-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73069514.30224774338885",
+    "asset": "ace_fusionist",
+    "time": "2024-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72332217.65599261619049",
+    "asset": "ace_fusionist",
+    "time": "2024-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68631189.13160580556746",
+    "asset": "ace_fusionist",
+    "time": "2024-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70668439.4864984034708",
+    "asset": "ace_fusionist",
+    "time": "2024-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76476307.66647320366235",
+    "asset": "ace_fusionist",
+    "time": "2024-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80057104.62272783949753",
+    "asset": "ace_fusionist",
+    "time": "2024-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81682928.94893393406888",
+    "asset": "ace_fusionist",
+    "time": "2024-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81727046.28668931294267",
+    "asset": "ace_fusionist",
+    "time": "2024-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85422258.27713938014972",
+    "asset": "ace_fusionist",
+    "time": "2024-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85350655.44274990437036",
+    "asset": "ace_fusionist",
+    "time": "2024-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85342019.18607927698184",
+    "asset": "ace_fusionist",
+    "time": "2024-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80597685.89661785394462",
+    "asset": "ace_fusionist",
+    "time": "2024-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77323359.56877479841336",
+    "asset": "ace_fusionist",
+    "time": "2024-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83467111.14603319774635",
+    "asset": "ace_fusionist",
+    "time": "2024-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86844113.37811489650552",
+    "asset": "ace_fusionist",
+    "time": "2024-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88396060.55440029575985",
+    "asset": "ace_fusionist",
+    "time": "2024-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88424673.42433542269364",
+    "asset": "ace_fusionist",
+    "time": "2024-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88938265.52490136835661",
+    "asset": "ace_fusionist",
+    "time": "2024-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91497809.82492761242473",
+    "asset": "ace_fusionist",
+    "time": "2024-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166120489.52598410833839",
+    "asset": "ace_fusionist",
+    "time": "2024-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166660286.70758306053142",
+    "asset": "ace_fusionist",
+    "time": "2024-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "158293489.82816117058462",
+    "asset": "ace_fusionist",
+    "time": "2024-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "149146329.28764380000801",
+    "asset": "ace_fusionist",
+    "time": "2024-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155635634.33793466456286",
+    "asset": "ace_fusionist",
+    "time": "2024-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "147550568.83657318615527",
+    "asset": "ace_fusionist",
+    "time": "2024-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "142268524.9421842042378",
+    "asset": "ace_fusionist",
+    "time": "2024-06-14T00:00:00.000000000Z"
+  }
+]
