@@ -34,7 +34,7 @@
 - No new candidate discovery needed for the decile gate; 32 assets exceeds the 10-asset minimum.
 
 ## Immediate next task
-1. Evaluate H004V106 anchor on the next sealed forward block beginning after 2026-09-29 (the current forward block end). Freeze input hashes and exact boundaries before computing outcomes. Never search parameters on the forward block.
+1. Next sealed forward block for H004V106 is blocked until data reaches 2026-10-29 (formation 2026-09-30 needs +30d horizon). Current cutoff 2026-10-23. Record blocker; do not compute outcomes prematurely.
 2. Continue candidate frontier expansion beyond the current 32 assets if more cap+Binance assets are discovered; universe_frontier.json cursor=76, 822 total eligible candidates, rank_frontier_exhausted=false.
 3. Red-team inference, cost/funding attribution, holdout integrity, and resume logic. Add regression tests for any failures found.
 4. If no candidate passes multiplicity or economic criteria, update hypothesis_registry.json and preregister a new theory-led experiment (H6 is a candidate; next_sequence_number=6).
