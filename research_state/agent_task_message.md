@@ -3,7 +3,7 @@
 ## Context
 - Experiment: HARMONY-CRYPTO-EDGE-004-DISPERSION-002
 - Status: COMPLETE AND VERIFIED
-- HEAD: 88a013c (main), working tree clean except untracked `tests/__pycache__/*.pyc`
+- HEAD: c6cd637 (main), working tree clean except untracked `tests/__pycache__/*.pyc`
 - Tests: 15/15 passing (`python -m unittest discover -s tests -v`)
 - Verified: 2026-10-23 22:33Z through 23:35Z; re-verified 2026-10-24 01:24Z
 
