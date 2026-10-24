@@ -13,6 +13,7 @@
 - Re-verified 2026-10-23 23:34Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Prior task complete. HEAD now f5eaeae.
 - Re-verified 2026-10-23 23:35Z: `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except __pycache__. Read prior agent task from durable handoff and completed it; HEAD now 8c2d9d1. Handoff updated and initial task message written for next agent.
 - Re-verified 2026-10-24 (session resume): read durable handoff; prior task already complete (DISPERSION-002 verified, no further work authorized). `python -m unittest discover -s tests -v` → 15/15 OK; `git status` clean except untracked `tests/__pycache__/*.pyc`. HEAD now 421ecb2. No changes to DISPERSION-002 artifacts. Handoff updated and initial task message written for next agent.
+- Re-verified 2026-10-24 (current session): read durable handoff; prior task already complete. `python -m unittest discover -s tests -v` → 15/15 OK; working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD 421ecb2. No changes to DISPERSION-002 artifacts or pipeline/config. Handoff updated and initial task message written for next agent.
 
 ## Controls (must preserve)
 - free-data-only
@@ -49,6 +50,6 @@
 - Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
 - Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
 
-**Current baseline:** working tree clean except untracked `tests/__pycache__/*.pyc`. All tests pass (15/15). HEAD 421ecb2. No changes to DISPERSION-002 artifacts. Handoff updated 2026-10-24 by current agent after re-verifying prior task complete.
+**Current baseline:** working tree clean except untracked `tests/__pycache__/*.pyc`. All tests pass (15/15). HEAD 421ecb2. No changes to DISPERSION-002 artifacts or pipeline/config. Handoff updated 2026-10-24 by current agent after re-verifying prior task complete.
 
 (End of file - total 53 lines)
