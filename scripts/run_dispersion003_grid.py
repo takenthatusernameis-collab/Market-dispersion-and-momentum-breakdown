@@ -426,15 +426,78 @@ def evaluate_cell(config_id: str, params: dict, elig_map: dict[str, dict],
 # Holm correction
 # ---------------------------------------------------------------------------
 
+def bootstrap_diff_pvalue(high_series: list[float], low_series: list[float],
+                           block_len: int = 21, n_boot: int = 1000,
+                           seed: int = 20261024) -> float:
+    """Two-sided bootstrap p-value for H0: mean(high) - mean(low) == 0.
+
+    High and low dispersion-state series are block-bootstrapped independently
+    (overlapping moving blocks, fixed length) to preserve within-series
+    autocorrelation. The bootstrap distribution of the mean difference is then
+    used to estimate P*(diff <= 0) and P*(diff >= 0); the two-sided p-value is
+    twice the smaller, which is consistent with inverting a bootstrap
+    confidence interval. Returns 1.0 (no evidence) when either state has too
+    few observations to estimate a block.
+    """
+    if len(high_series) < 2 or len(low_series) < 2:
+        return 1.0
+    rng = __import__("random").Random(seed)
+    h = [float(x) for x in high_series]
+    l = [float(x) for x in low_series]
+    n_h, n_l = len(h), len(l)
+    b = max(2, int(block_len))
+
+    def block_means(series: list[float]) -> list[float]:
+        n = len(series)
+        out = []
+        for _ in range(n_boot):
+            starts = [rng.randrange(n) for _ in range(max(1, n // b))]
+            vals = []
+            for s in starts:
+                for i in range(b):
+                    vals.append(series[(s + i) % n])
+            out.append(sum(vals) / len(vals))
+        return out
+
+    mh = block_means(h)
+    ml = block_means(l)
+    diffs = [a - b for a, b in zip(mh, ml)]
+    p_lo = sum(1 for d in diffs if d <= 0) / len(diffs)
+    p_hi = sum(1 for d in diffs if d >= 0) / len(diffs)
+    return float(2.0 * min(p_lo, p_hi))
+
+
 def holm_step_down(pvals: dict[str, float], alpha: float = HOLM_ALPHA) -> dict[str, bool]:
-    items = sorted(((p, cid) for cid, p in pvals.items() if p is not None and not math.isnan(p)))
+    """Holm-Bonferroni step-down on genuine p-values.
+
+    pvals must map cell id -> two-sided p-value in [0, 1]. Caller is responsible
+    for computing real p-values (e.g. from a dependence-aware bootstrap); this
+    function only orders and thresholds. It refuses to run on degenerate input
+    so a caller mistake cannot silently declare a winner.
+
+    Returns one bool per input cell id: True if the cell is rejected at the
+    family level, False otherwise. Every input id is present in the result so
+    downstream code can count the family size from the returned dict.
+    """
+    reject = {cid: False for cid in pvals}
+    items = []
+    for cid, p in pvals.items():
+        if p is None or math.isnan(p):
+            continue
+        if not (0.0 <= p <= 1.0):
+            raise ValueError(f"holm_step_down received p={p} outside [0,1] for {cid}")
+        items.append((p, cid))
     m = len(items)
-    reject = {cid: False for cid, _ in items}
+    if m == 0:
+        return reject
+    items.sort(key=lambda x: x[0])
     for k, (p, cid) in enumerate(items, start=1):
         threshold = alpha / (m - k + 1)
         if p <= threshold:
             reject[cid] = True
         else:
+            # Holm step-down: once a hypothesis fails to reject, every
+            # hypothesis ranked after it (larger p) also fails to reject.
             break
     return reject
 
@@ -486,15 +549,37 @@ def main() -> int:
     ckpt_path.write_text(json.dumps(checkpoint, indent=2, sort_keys=True) + "\n")
 
     # Holm correction across the 216-cell family for the registered 1x net endpoint.
+    # p-values come from a dependence-aware block bootstrap on the high/low
+    # dispersion-state series, not from the raw mean difference. The old code
+    # used abs(high_low_diff_net_1x) as a p-value proxy, which is not a p-value
+    # and made any nonzero difference look "significant". That defect is
+    # recorded in archive_defective_momentum_20261024/ and the corrected
+    # inference is used here. The raw difference is kept as a separate field.
     pvals: dict[str, float] = {}
+    pval_meta: dict[str, dict] = {}
     for cid, res in checkpoint.items():
-        diff = res.get("high_low_diff_net_1x")
-        if diff is not None and not math.isnan(diff) and res["status"] == "OK":
-            pvals[cid] = abs(diff)
+        if res["status"] != "OK":
+            continue
+        hi = [r["spread_net_1x"] for r in res.get("formations", []) if r.get("state") == "high"]
+        lo = [r["spread_net_1x"] for r in res.get("formations", []) if r.get("state") == "low"]
+        p = bootstrap_diff_pvalue(hi, lo)
+        pvals[cid] = p
+        pval_meta[cid] = {
+            "n_high": len(hi), "n_low": len(lo),
+            "high_low_diff_net_1x": res.get("high_low_diff_net_1x"),
+            "bootstrap_p_two_sided": p,
+        }
     holm_reject = holm_step_down(pvals, HOLM_ALPHA) if pvals else {}
-    for cid, rej in holm_reject.items():
-        if cid in checkpoint:
-            checkpoint[cid]["holm_rejected"] = bool(rej)
+    for cid in checkpoint:
+        meta = pval_meta.get(cid)
+        if meta is None:
+            continue
+        checkpoint[cid]["pvalue_bootstrap_two_sided"] = meta["bootstrap_p_two_sided"]
+        checkpoint[cid]["pvalue_note"] = (
+            "two-sided block-bootstrap p-value on high/low dispersion-state "
+            "net-1x series; Holm step-down across all 216 cells"
+        )
+        checkpoint[cid]["holm_rejected"] = bool(holm_reject.get(cid, False))
     ckpt_path.write_text(json.dumps(checkpoint, indent=2, sort_keys=True) + "\n")
 
     # Write final ledger.
@@ -510,6 +595,7 @@ def main() -> int:
         "cells_failed": sum(1 for r in checkpoint.values() if r["status"] == "FAILED"),
         "holm_alpha": HOLM_ALPHA,
         "holm_rejected_count": sum(1 for v in holm_reject.values() if v),
+        "pvalue_method": "two-sided block bootstrap on high/low dispersion-state net-1x series (block_len=21, n_boot=1000)",
         "cells": checkpoint,
     }
     RESULT_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")

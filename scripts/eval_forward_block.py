@@ -12,6 +12,7 @@ No API keys, no secrets, no trading.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import math
@@ -43,6 +44,29 @@ ANCHOR_PARAMS = {
     "dispersion_state_rule": "trailing_window_outer_deciles",
     "universe_arm": "expanding_point_in_time",
 }
+
+
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Evaluate H004V106 on the sealed forward block.")
+    p.add_argument("--data-cutoff", default=None,
+                   help="latest fully closed UTC daily candle, e.g. 2026-10-29. "
+                        "If omitted, derived from the Binance kline panels.")
+    p.add_argument("--min-horizon-days", type=int, default=30,
+                   help="minimum completed forward-horizon days required after the "
+                        "last formation date (default 30). Formations whose horizon "
+                        "is not fully observed are excluded.")
+    return p.parse_args()
+
+
+def derive_data_cutoff(px: dict[str, pd.DataFrame]) -> str:
+    """Latest fully closed UTC daily candle across all Binance kline panels."""
+    latest = None
+    for df in px.values():
+        dates = pd.to_datetime(df["ts"], unit="ms", utc=True).dt.strftime("%Y-%m-%d")
+        d = dates.max()
+        if d > (latest or ""):
+            latest = d
+    return latest
 
 
 def sha256_file(p: Path) -> str:
@@ -129,8 +153,18 @@ def build_price_wide_all(px: dict[str, pd.DataFrame]) -> pd.DataFrame:
 
 
 class MomentumCache:
+    """Cumulative momentum over DAILY RETURNS, not raw price levels.
+
+    A cumulative product of (1 + price) across the cross-section multiplies
+    dollar magnitudes (1e9-1e12 per asset), so the resulting "momentum" is
+    dominated by price level and the cross-sectional dispersion is ~1e128. The
+    decile split then ranks by price level, not by return dispersion, and the
+    dispersion-state thresholds are meaningless. Daily returns are used here.
+    """
+
     def __init__(self, px_wide: pd.DataFrame):
         self.px_wide = px_wide
+        self.returns_wide = px_wide.pct_change()
         self._cache: dict[tuple, pd.Series] = {}
 
     def get(self, end_date: str, lookback: int, assets: tuple[str, ...]) -> pd.Series:
@@ -146,7 +180,7 @@ class MomentumCache:
         if start_loc < 0:
             self._cache[key] = pd.Series(dtype=float)
             return self._cache[key]
-        window = self.px_wide.iloc[start_loc:end_loc + 1]
+        window = self.returns_wide.iloc[start_loc:end_loc + 1]
         sub = window[list(assets)]
         complete = sub.notna().all(axis=0)
         assets_c = sub.columns[complete].tolist()
@@ -201,6 +235,7 @@ def forward_returns(px_wide: pd.DataFrame, T: str, horizon: int,
 
 
 def main() -> int:
+    args = parse_args()
     mc = load_marketcap()
     px = load_binance_panel("klines")
     fd = load_binance_panel("funding")
@@ -209,6 +244,24 @@ def main() -> int:
     mom_cache = MomentumCache(px_wide)
 
     elig_map = build_eligibility_map(mc, px)
+
+    data_cutoff = args.data_cutoff or derive_data_cutoff(px)
+    horizon = ANCHOR_PARAMS["forward_horizon_days"]
+    min_horizon = args.min_horizon_days
+    if horizon < min_horizon:
+        raise ValueError(f"forward horizon {horizon} below min_horizon_days {min_horizon}")
+
+    # A formation is only evaluable if its full forward horizon is completed by
+    # the data cutoff. This is what makes the block genuinely sealed: the last
+    # formation date is data_cutoff - horizon days, not the raw last panel date.
+    idx = px_wide.index
+    cutoff_ts = pd.Timestamp(data_cutoff, tz="UTC")
+    if cutoff_ts not in idx:
+        raise ValueError(f"data cutoff {data_cutoff} is not a panel observation date")
+    cutoff_loc = idx.get_loc(cutoff_ts)
+    last_allowed_loc = cutoff_loc - horizon
+    last_allowed_date = idx[last_allowed_loc] if last_allowed_loc >= 0 else None
+    last_allowed_str = last_allowed_date.strftime("%Y-%m-%d") if last_allowed_date is not None else None
 
     # Freeze input data hashes before computing outcomes.
     input_files = {}
@@ -230,7 +283,10 @@ def main() -> int:
         "anchor_parameters": ANCHOR_PARAMS,
         "forward_block_start": FORWARD_BLOCK_START,
         "forward_block_end": None,  # set after evaluation
-        "data_cutoff_utc": "2026-10-23T00:00:00Z",
+        "data_cutoff_utc": f"{data_cutoff}T00:00:00Z",
+        "data_cutoff_source": "derived from latest fully closed UTC daily Binance kline candle (or --data-cutoff)",
+        "min_completed_forward_horizon_days": min_horizon,
+        "last_allowed_formation_date": last_allowed_str,
         "input_file_hashes": input_files,
         "evaluated_utc": now_utc(),
         "status": "IN_PROGRESS",
@@ -256,7 +312,6 @@ def main() -> int:
     }
 
     lookback = ANCHOR_PARAMS["momentum_lookback_days"]
-    horizon = ANCHOR_PARAMS["forward_horizon_days"]
     estimator = ANCHOR_PARAMS["dispersion_estimator"]
     window_days = ANCHOR_PARAMS["dispersion_window_days"]
     state_rule = ANCHOR_PARAMS["dispersion_state_rule"]
@@ -266,6 +321,11 @@ def main() -> int:
 
     for T, elig in sorted(elig_map.items()):
         if T < FORWARD_BLOCK_START:
+            continue
+        if last_allowed_str is not None and T > last_allowed_str:
+            # Forward horizon not yet completed at the data cutoff: seal the
+            # block by excluding this formation rather than computing a
+            # truncated outcome.
             continue
         assets = sorted(elig.keys())
         n_elig = len(assets)
@@ -374,6 +434,12 @@ def main() -> int:
         "min": int(min(elig_counts)) if elig_counts else 0,
         "max": int(max(elig_counts)) if elig_counts else 0,
     }
+    freeze_record["block_sealed"] = True
+    freeze_record["block_sealing_rule"] = (
+        f"formations with formation_date > {last_allowed_str} excluded because "
+        f"their {horizon}-day forward horizon is not completed by the data cutoff "
+        f"{data_cutoff}; no truncated outcomes are computed"
+    )
     freeze_record["formations"] = [
         {
             "formation_date": r["formation_date"],
@@ -391,6 +457,7 @@ def main() -> int:
     out_path.write_text(json.dumps(freeze_record, indent=2, sort_keys=True) + "\n")
 
     print(f"[forward-block] anchor={ANCHOR_ID} status=OK")
+    print(f"[forward-block] data_cutoff={data_cutoff} last_allowed_formation={last_allowed_str}")
     print(f"[forward-block] block={FORWARD_BLOCK_START}->{freeze_record['forward_block_end']}")
     print(f"[forward-block] formations={n_formations} high={n_high} low={n_low} mid={n_mid}")
     print(f"[forward-block] high_low_diff_gross={diff_gross} high_low_diff_net_1x={diff_net}")
