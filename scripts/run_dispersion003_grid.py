@@ -162,8 +162,13 @@ def build_price_wide_all(px: dict[str, pd.DataFrame]) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 class MomentumCache:
-    def __init__(self, px_wide: pd.DataFrame):
+    def __init__(self, px_wide: pd.DataFrame, returns_wide: pd.DataFrame | None = None):
         self.px_wide = px_wide
+        # Momentum is a return: (1+r1)(1+r2)...(1+rn) - 1. Computing it from raw
+        # prices (as the pre-fix code did) multiplies dollar magnitudes across the
+        # cross-section, so dispersion is ~1e128 and the high/low decile split is
+        # driven by price level, not by return dispersion. Daily returns are used.
+        self.returns_wide = returns_wide if returns_wide is not None else px_wide.pct_change()
         self._cache: dict[tuple, pd.Series] = {}
 
     def get(self, end_date: str, lookback: int, assets: tuple[str, ...]) -> pd.Series:
@@ -179,7 +184,7 @@ class MomentumCache:
         if start_loc < 0:
             self._cache[key] = pd.Series(dtype=float)
             return self._cache[key]
-        window = self.px_wide.iloc[start_loc:end_loc + 1]
+        window = self.returns_wide.iloc[start_loc:end_loc + 1]
         sub = window[list(assets)]
         complete = sub.notna().all(axis=0)
         assets_c = sub.columns[complete].tolist()
