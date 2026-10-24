@@ -5,10 +5,10 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## State on handoff
 - Full test suite: **45/45 tests PASS** (`python3 -m unittest discover -s tests`).
-- Candidate validation batch #8 run (cursor 7172): 25 BLOCKED + 0 VERIFIED; verified=63, blocked=885, remaining_discovered=5399, cursor=7197.
+- Candidate validation batch #9 run (cursor 7197): 24 BLOCKED + 1 VERIFIED (bts); verified=64, blocked=909, remaining_discovered=5374, cursor=7222.
 
 ## Concrete next action
-1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=63, blocked=885, remaining_discovered=5399, cursor=7197. Record exact counts after each batch.
+1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=64, blocked=909, remaining_discovered=5374, cursor=7222. Record exact counts after each batch.
 2. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29.
 3. When available, evaluate H004V106 on a fresh sealed forward block with completed 30-day outcomes only; compute overlap-aware uncertainty (HAC/Newey-West and/or block bootstrap).
 4. Do not reuse the inspected canonical block as independent confirmation; treat it as development/exploratory evidence.
@@ -17,3 +17,5 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Blocker note (do not loop)
 The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 archive is unpublished (still 404; not re-probed). If still blocked, preserve the blocker and move to an independent unblocked task (candidates, free-source discovery, validation, design, or red-team) per AGENTS.md rather than re-probing the same endpoint.
+
+(End of file - total 19 lines)
