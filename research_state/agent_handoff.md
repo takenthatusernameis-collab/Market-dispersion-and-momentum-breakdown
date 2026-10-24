@@ -23,8 +23,10 @@
 
 ## Latest check (2026-10-24)
 - Data cutoff 2026-09-30 < 2026-10-29 threshold. No fresh sealed forward block available.
+- Refresh attempt via scripts/refresh_free_data.py timed out (network); cutoff unchanged at 2026-09-30.
 - Integrity audit and HAC addendum verified present and consistent.
-- No changes to DISPERSION-001/002; frontier unchanged.
+- No changes to DISPERSION-001/002; frontier unchanged (cursor=76, 822 eligible, queue empty).
+- Environment lacks pandas/numpy/pytest; tests not runnable here (original report 40/40).
 
 ## Concrete next action
 Monitor data cutoff via scripts/refresh_free_data.py; when cutoff>=2026-10-29, preregister/evaluate fresh sealed forward block for H004V106 with HAC uncertainty; do not reuse inspected block as fresh confirmation. Update handoff + task message with concrete measurable outcomes when evaluated.
