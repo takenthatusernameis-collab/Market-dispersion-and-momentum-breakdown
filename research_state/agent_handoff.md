@@ -18,6 +18,7 @@
 3. **[DONE]** Reviewed DISPERSION-003 state: 216 OK/0 BLOCKED/0 FAILED/0 Holm-rejected. Forward block H004V106 (2025-01-01..2026-09-29): high_low_diff_net_1x = -0.0097. Cutoff frozen at 2026-10-23T00:00:00Z in forward_block_evaluation.json.
 4. **[DONE]** Confirmed universe frontier state: 32 cap+Binance assets verified; frontier cursor=76, 822 eligible candidates, rank_frontier_exhausted=false. `candidates_discovered` queue empty per universe_frontier.json.
 5. **[DONE]** Read prior handoff/task and updated handoff + next task message.
+6. **[DONE]** Completed prior task: tests 21/21 OK; data cutoff still 2026-10-23 (< 2026-10-29) so H004V106 sealed block remains blocked; frontier cursor=76, candidates_discovered empty; DISPERSION-001/002 artifacts unchanged.
 
 ## Root cause resolution
 - Previous blocker (only 6 cap+Binance assets, outer_deciles needs 10+) resolved: universe expanded to 32 assets. Both anchors now evaluable with outer_deciles rule.
