@@ -26,3 +26,10 @@ Provide verified test output, explicit forward-block blocker record (dates/cutof
 
 ## Concrete next action
 Run `scripts/refresh_free_data.py` again in next session and check the cutoff; if still < 2026-10-29, record the blocker and run `python -m unittest discover -s tests`; otherwise evaluate sealed block H004V106 only.
+
+## Updated adaptive-policy task — integrity audit first (2026-10-24)
+
+Do not wait idly for 2026-10-29. First independently audit the canonical H004V106 forward-block artifact and reconcile it with the archive and hypothesis registry. Recompute summary statistics from the formation records and source hashes; check finite/extreme dispersion, outcome units, state membership, mean-versus-median gap, outlier influence, costs, and overlap-aware uncertainty. Save new audit evidence only; do not rewrite either sealed or archived artifact.
+
+After the discrepancy is reconciled, register any genuinely revised/positive-direction hypothesis under a new ID. The current block is already inspected and may only be treated as exploratory/development evidence. Do not compute the next sealed forward block until the cutoff supports complete 30-day horizons (currently required through 2026-10-29). Continue candidate-frontier work only when new candidates are evidenced; current ranks are not historical truth. Run the full test suite and keep DISPERSION-001/002 immutable.
+
