@@ -45,3 +45,12 @@
 
 ## Continuation
 The scheduled controller has finite hosted-runner activations and may be interrupted by provider, quota, network or platform failures. Continue through the scheduled recoverable loop and preserve checkpoints; never claim guaranteed uninterrupted uptime for a single process. If any source/phase is blocked, record the blocker and proceed with the next valid source, candidate, test, audit or hypothesis-planning task. Do not stop the research program because an experiment ended.
+
+## Adaptive policy application — immediate next task (2026-10-24)
+
+The adaptive-gate policy now permits bounded exploratory work while preserving confirmatory controls. The previously inspected H004V106 block is development/exploratory evidence, not a new holdout. The next future block still requires the full 30-day horizon and must not be computed before the declared cutoff reaches 2026-10-29.
+
+**Immediate measurable task:** independently audit the canonical sealed artifact at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` against its formation ledger, hashes, grid/config manifest and state-classification code. Independently recalculate finite-value counts, high/low/mid state counts, mean/median spread, outlier influence and the reported high-minus-low difference; inspect whether each value is dimensionless return or percentage points; calculate uncertainty with overlapping-window dependence addressed. Compare to the archived defective artifact without modifying either source artifact. Persist a *new* integrity-audit artifact/report and update the hypothesis registry only after the discrepancy is resolved transparently.
+
+After that audit, a reversed/positive-direction hypothesis requires a new ID and preregistration; historical outcomes already inspected may be used only for exploratory development. Use a fresh sealed future block for confirmation after the maturity date. Do not lower the 30-day outcome maturity rule or run a new parameter search on an inspected holdout. If further rank expansion is infeasible, use a separately versioned exploratory analysis over the already verified point-in-time eligible set and state the narrower population explicitly; never call current ranks historical truth. Preserve DISPERSION-001/002 and all current artifacts unchanged.
+
