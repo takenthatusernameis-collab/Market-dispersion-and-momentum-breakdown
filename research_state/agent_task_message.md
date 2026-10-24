@@ -6,25 +6,27 @@ Continue quantitative research in this repository without waiting for a new manu
 ## State on handoff
 - Tests pass (21/21). DISPERSION-003 grid manifest verified: 216 configs, 216 unique IDs (H004V001..H004V216), 216 unique hashes, anchors H004V105/H004V106 present.
 - DISPERSION-001/002 artifacts unchanged and closed/immutable.
-- DISPERSION-003 grid evaluation complete: 54 OK / 162 BLOCKED / 0 FAILED / 1 Holm-rejected (H004V016).
-- All 54 OK cells: expanding_point_in_time arm, trailing_window_median_split rule (needs 4+ assets, we have 6 max eligible).
-- All 162 blocked: no_formations_passed_data_gate. Root cause: trailing_window_outer_deciles requires 10+ eligible assets per date; only 6 assets have both market cap data AND Binance perpetual funding data (btc, eth, 1inch, aave, ach, agld). Legacy arm has only 2 (btc, eth).
-- Both anchors BLOCKED: H004V105 (legacy, outer_deciles, 2 assets) and H004V106 (expanding, outer_deciles, 6 max eligible).
-- universe_frontier.json: 4 verified candidates (1inch, aave, ach, agld), 21 blocked, candidate_page_cursor=50, 822 total eligible candidates, rank_frontier_exhausted=false.
-- marketcap_panel.csv: 46 assets (28 legacy + 18 candidates with cap data), 47414 rows, through 2026-10-23.
-- Binance panels available for: btc, eth, 1inch, aave, ach, agld (6 assets total).
+- DISPERSION-003 grid evaluation complete: 216 OK / 0 BLOCKED / 0 FAILED / 0 Holm-rejected.
+- All 216 cells evaluated on expanded universe (32 cap+Binance assets in expanding arm; 28 in legacy arm).
+- Anchor H004V106 (expanding, outer_deciles): n_formations=1339, high_low_diff_net_1x = -0.0600, not Holm-significant.
+- Anchor H004V105 (legacy, outer_deciles): n_formations=1339, high_low_diff_net_1x = -0.0698, not Holm-significant.
+- Sealed forward block evaluation of H004V106 complete: 2025-01-01 to 2026-09-29, 637 formations, high_low_diff_net_1x = -0.0097 (-0.97pp), same negative sign but small magnitude. Input hashes frozen in artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json.
+- Universe expanded to 32 assets with both CoinMetrics CapMrktEstUSD and Binance perpetual data (exceeds 10-asset minimum for decile-based dispersion). Both anchors unblocked with outer_deciles rule.
+- universe_frontier.json: candidate_page_cursor=76, 822 total eligible candidates, rank_frontier_exhausted=false, expanding_universe_assets_with_cap_and_binance=32.
+- marketcap_panel.csv: 46 assets, 47414 rows, through 2026-10-23.
+- hypothesis_registry.json: H1 evidence_note extended with DISPERSION-003 results; H6 candidate added (negative spread persists on forward data at small magnitude, not economically meaningful). next_sequence_number=6.
 
 ## First measurable deliverable
-Discover and validate at least 4 additional candidate assets with both CoinMetrics CapMrktEstUSD market cap data AND Binance perpetual futures data, to reach 10+ total assets (minimum for decile-based dispersion). Then re-run the DISPERSION-003 grid so both anchors can be evaluated with the outer_deciles rule.
+Evaluate H004V106 anchor on the next sealed forward block beginning after 2026-09-29 (the current forward block end date). Freeze exact boundaries and input file hashes before computing outcomes. Never search parameters, assets, thresholds, or costs on the forward block.
 
 ## Mandatory sequencing
 1. Validate prior artifacts are intact. Never overwrite or edit DISPERSION-001 or DISPERSION-002 results.
-2. Discover additional candidates from universe_frontier.json (cursor=50 onward). For each candidate: check CoinMetrics CapMrktEstUSD availability (historical point-in-time), check Binance perpetual symbol existence, record blockers per asset.
-3. For newly verified candidates, add to refresh_free_data.py ASSETS/SYMBOL_MAP, fetch Binance klines+funding, regenerate marketcap_panel.csv.
-4. Re-run scripts/run_dispersion003_grid.py with expanded universe. Target: both anchors H004V105/H004V106 unblocked (eligible_assets_per_date max >= 10).
-5. If anchors unblocked, evaluate H004V106 on forward block beginning 2025-01-01 only; never sweep parameters on that block.
-6. Freeze future data cutoff and hashes before outcomes are viewed.
-7. Update hypothesis_registry.json, frontier, manifests, handoff and next task.
+2. Define the next sealed forward block: start date = day after 2026-09-29 (the last formation date in the current forward block), end date = latest fully closed UTC daily candle. Record exact boundaries and input hashes before computing outcomes.
+3. Evaluate only H004V106 (momentum_lookback=30, forward_horizon=30, estimator=cross_sectional_population_stddev, window=365, rule=trailing_window_outer_deciles, arm=expanding_point_in_time) on that block. No parameter/asset/threshold/cost search.
+4. Record the result with exact formation date range, n_formations, high/low/mid counts, high_low_diff_gross, high_low_diff_net_1x, eligible_assets_per_date, and all input file SHA-256 hashes.
+5. If the forward block end extends beyond 2026-09-29, new data may need to be refreshed (refresh_free_data.py) — only free public sources, record cutoff and provenance.
+6. Update hypothesis_registry.json (H6 status, evidence), universe_frontier.json, forward_block artifacts, and this handoff.
+7. Verify tests pass (21/21), confirm DISPERSION-001/002 artifacts unchanged, update handoff and next task message.
 
 ## Continue even when
 - result is negative, null, inconclusive or rejected;
@@ -33,7 +35,5 @@ Discover and validate at least 4 additional candidate assets with both CoinMetri
 - an implementation defect is found;
 - no parameter configuration passes multiplicity or economic criteria.
 
-Preserve evidence and continue with a justified different task. Never bypass a gate, invent data, select a winner by raw return, or mutate a frozen hypothesis. A blocked phase is not permission to stop unrelated research.
-
 ## Definition of done for this activation
-Provide verified test output, candidate validation results (newly verified + blocked with reasons), updated marketcap_panel.csv with 10+ cap+Binance assets, re-run grid ledger showing both anchors unblocked (or documented blocker if infeasible), exact artifacts changed, and one next concrete task. Do not declare the program complete.
+Provide verified test output, forward block evaluation result (newly evaluated block with exact boundaries and frozen hashes), updated hypothesis_registry.json and universe_frontier.json, exact artifacts changed, confirmation DISPERSION-001/002 artifacts unchanged, and one next concrete task. Do not declare the program complete.

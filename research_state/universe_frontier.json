@@ -1,6 +1,6 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-24T05:20:50Z",
+  "batch_validation_utc": "2026-10-24T06:57:37Z",
   "candidate_page_cursor": 76,
   "candidates_blocked": [
     "0g",
@@ -61,11 +61,13 @@
   "current_legacy_asset_count": 28,
   "current_panel_date_end": "2026-10-23",
   "current_panel_date_start": "2010-07-18",
+  "expanding_universe_assets_with_cap_and_binance": 32,
+  "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-24T05:22:15Z",
+  "last_updated_utc": "2026-10-24T06:57:37Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
-  "next_action": "Discover and rank additional historical candidates beyond the mapped 28-asset set; persist point-in-time rank evidence, mapping, eligibility and blockers; extend cap, price and funding panels through the latest fully closed UTC daily candle.",
+  "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
   "next_candidate_batch_size": 25,
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "rank_frontier_exhausted": false,

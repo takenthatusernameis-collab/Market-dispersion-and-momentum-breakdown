@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "program_status": "ACTIVE",
-  "next_sequence_number": 3,
+  "next_sequence_number": 6,
   "hypotheses": [
     {
       "id": "H1",
@@ -10,7 +10,7 @@
       "statement": "Extreme cross-sectional return dispersion weakens the subsequent cross-sectional crypto momentum spread.",
       "predicted_high_minus_low_sign": "negative",
       "status": "NOT_SUPPORTED_AS_ROBUST_EDGE",
-      "evidence_note": "The primary estimate was positive; the later follow-up discovery effect did not replicate in validation/final splits.",
+      "evidence_note": "The primary estimate was positive; the later follow-up discovery effect did not replicate in validation/final splits. DISPERSION-003 full grid (216 cells) on expanding universe (32 cap+Binance assets): all cells OK, 0 Holm-rejected. Anchor H004V106 development high_low_diff_net_1x = -0.0599 (not Holm-significant). Sealed forward block 2025-01-01 to 2026-09-29: 637 formations, high_low_diff_net_1x = -0.0097, same negative sign but small magnitude; not an economically meaningful edge.",
       "immutable": true
     },
     {
@@ -48,8 +48,17 @@
       "status": "CANDIDATE_UNVALIDATED",
       "evidence_note": "Current sample is small and universe-cutoff sensitivity is material.",
       "next_test": "Pre-register outlier-robust and risk-normalized diagnostics as a separate family with multiplicity control."
+    },
+    {
+      "id": "H6",
+      "experiment_id": null,
+      "statement": "The negative high-minus-low dispersion-momentum spread persists on sealed forward data but at a magnitude too small to be an economically meaningful edge after costs.",
+      "predicted_high_minus_low_sign": "negative",
+      "status": "CANDIDATE_UNVALIDATED",
+      "evidence_note": "DISPERSION-003 forward block evaluation (H004V106, 2025-01-01 to 2026-09-29): 637 formations, high_low_diff_net_1x = -0.0097 (-0.97pp), same sign as H1 but small magnitude. Requires confirmation on a new sealed future block with predeclared economic significance threshold.",
+      "next_test": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family."
     }
   ],
   "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block.",
-  "last_updated_utc": null
+  "last_updated_utc": "2026-10-24T06:57:37Z"
 }

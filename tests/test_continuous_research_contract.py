@@ -53,7 +53,7 @@ class ContinuousResearchContractTests(unittest.TestCase):
     def test_registry_keeps_old_hypothesis_and_active_sequence(self):
         registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
         self.assertEqual(registry["program_status"], "ACTIVE")
-        self.assertEqual(registry["next_sequence_number"], 3)
+        self.assertEqual(registry["next_sequence_number"], 6)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
