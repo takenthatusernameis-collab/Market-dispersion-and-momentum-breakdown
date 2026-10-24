@@ -22,9 +22,8 @@
 3. If evaluating, compute overlap-aware uncertainty and report full results. Preserve DISPERSION-001/002 immutable.
 4. Run full tests in pandas-available environment when feasible.
 
-## Latest check (2026-10-24T16:31:40Z)
-- Data cutoff 2026-09-30 < 2026-10-29 threshold. No fresh sealed forward block available.
-- Refresh attempted via scripts/refresh_free_data.py (300s timeout) with no observable stdout; Binance klines in panels still end at 2026-09-30. Cutoff unchanged.
+## Latest check (2026-10-24T16:40:21Z)
+- Verified Binance kline panels max date = 2026-09-30 (epoch 1790726400000); October 2026 monthly archive not yet published by Binance. Data cutoff unchanged at 2026-09-30 < 2026-10-29 threshold. No fresh sealed forward block available.
 - Integrity audit and HAC addendum verified present and consistent.
 - No changes to DISPERSION-001/002; frontier unchanged (cursor=76, 822 eligible, queue empty).
 - Environment lacks pandas/numpy/pytest; tests not runnable here (original report 40/40).
