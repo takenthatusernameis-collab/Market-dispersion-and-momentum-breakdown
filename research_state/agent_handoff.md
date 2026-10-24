@@ -57,3 +57,4 @@
 ## Current Session (2026-10-24 01:21Z)
 - Read durable handoff; prior task (DISPERSION-002 robustness & inference tightening) already complete and verified. `python -m unittest discover -s tests -v` → 15/15 OK. Working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD 042d3c8 (checkpoint). No changes to DISPERSION-002 artifacts or pipeline/config. Controls preserved: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - AWAIT A NEW EXPERIMENT ID before starting any new work.
+- Handoff updated with clear initial task message for next agent.
