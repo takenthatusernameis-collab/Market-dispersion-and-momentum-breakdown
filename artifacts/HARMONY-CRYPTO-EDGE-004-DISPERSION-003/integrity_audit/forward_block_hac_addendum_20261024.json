@@ -1,0 +1,30 @@
+{
+  "addendum_id": "H004V106_FORWARD_BLOCK_HAC_ADDENDUM_20261024",
+  "parent_audit": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/forward_block_integrity_audit.json",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "computed_utc": "2026-10-24T14:29:30Z",
+  "method": "Newey-West HAC on weighted contrast series",
+  "details": {
+    "horizon_days": 30,
+    "lag": 29,
+    "kernel": "Bartlett",
+    "weights": "g_t = +1/n_h if state_t==high else (-1/n_l if state_t==low else 0), diff = sum g_t * spread_net_1x_t"
+  },
+  "results": {
+    "n_formations": 608,
+    "n_high": 61,
+    "n_low": 90,
+    "mean_high_net": 0.5399613009588848,
+    "mean_low_net": -0.07656109443410872,
+    "diff_high_low_net": 0.6165223953929936,
+    "nw_variance": 0.15857787217962968,
+    "nw_se": 0.3982183724787565,
+    "t_stat": 1.548201785757343,
+    "ci_95": [
+      -0.1639856146653692,
+      1.3970304054513565
+    ],
+    "ci_95_coverage_note": "asymptotic normal approx (large T); with 30-day overlapping horizons and moderate T, inference is fragile"
+  },
+  "conclusion": "Canonical high-low difference is positive (0.617) but not statistically significant at 95% under Newey-West HAC with lag 29 (t~1.55, CI includes 0). Overlap-aware uncertainty materially changes inference."
+}
