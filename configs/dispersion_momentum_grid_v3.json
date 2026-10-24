@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "grid_id": "HARMONY-CRYPTO-EDGE-004-SENSITIVITY-GRID-003",
+  "purpose": "Pre-registered sensitivity grid on a refreshed historical candidate universe. Cross 108 dispersion/momentum parameter combinations with two universe arms, for 216 cells. This is not a winner-rescue or guarantee of profitability.",
+  "primary_test": {
+    "hypothesis_id": "H1",
+    "statement": "Extreme cross-sectional return dispersion weakens the subsequent cross-sectional momentum spread.",
+    "predicted_high_minus_low_sign": "negative",
+    "primary_endpoint": "mean formation-level high-minus-low spread, net of registered 1x base costs, with historical funding included where available",
+    "primary_universe_arm": "expanding_point_in_time",
+    "comparator_universe_arm": "legacy28_comparator",
+    "primary_anchor_parameters": {
+      "momentum_lookback_days": 30,
+      "forward_horizon_days": 30,
+      "dispersion_estimator": "cross_sectional_population_stddev",
+      "dispersion_window_days": 365,
+      "dispersion_state_rule": "trailing_window_outer_deciles"
+    },
+    "portfolio_tails": "top_bottom_deciles",
+    "rule": "The registered directional test controls the H1 verdict. The complete grid is exploratory. A positive result is an alternative hypothesis candidate, not a retroactive rewrite of H1."
+  },
+  "axes": [
+    {
+      "name": "momentum_lookback_days",
+      "type": "integer",
+      "values": [
+        14,
+        30,
+        60
+      ],
+      "definition": "Calendar days of completed UTC daily returns for formation-time cross-sectional momentum."
+    },
+    {
+      "name": "forward_horizon_days",
+      "type": "integer",
+      "values": [
+        14,
+        30,
+        60
+      ],
+      "definition": "Calendar-day forward outcome horizon; use the frozen non-overlapping formation phase for each horizon."
+    },
+    {
+      "name": "dispersion_estimator",
+      "type": "string",
+      "values": [
+        "cross_sectional_population_stddev",
+        "scaled_median_absolute_deviation_1_4826"
+      ],
+      "definition": "Cross-sectional standard deviation or 1.4826 times median absolute deviation across eligible assets' trailing momentum returns."
+    },
+    {
+      "name": "dispersion_window_days",
+      "type": "integer",
+      "values": [
+        30,
+        90,
+        365
+      ],
+      "definition": "Prior calendar-day history used to estimate dispersion-state thresholds; never include the current or future state in its own threshold."
+    },
+    {
+      "name": "dispersion_state_rule",
+      "type": "string",
+      "values": [
+        "trailing_window_outer_deciles",
+        "trailing_window_median_split"
+      ],
+      "definition": "Outer-decile high/low classification or a median split using only prior valid dispersion observations."
+    },
+    {
+      "name": "universe_arm",
+      "type": "string",
+      "values": [
+        "legacy28_comparator",
+        "expanding_point_in_time"
+      ],
+      "definition": "Legacy comparator is capped at existing mapped assets. Expanding arm uses verified descending historical point-in-time market-cap ranks without a fixed top-N limit."
+    }
+  ],
+  "expected_combinations": 216,
+  "combination_count_check": "3 * 3 * 2 * 3 * 2 * 2 = 216",
+  "enumeration": {
+    "axis_order": [
+      "momentum_lookback_days",
+      "forward_horizon_days",
+      "dispersion_estimator",
+      "dispersion_window_days",
+      "dispersion_state_rule",
+      "universe_arm"
+    ],
+    "value_order": "Cartesian product in listed axis order and value order; no adaptive ordering.",
+    "config_id_format": "H004V001 through H004V216",
+    "canonical_config_identity": "UTF-8 JSON with sorted keys, separators comma/colon and no insignificant whitespace; SHA-256 the exact canonical string.",
+    "primary_anchor_expanding_config_id": "H004V106",
+    "comparator_anchor_legacy_config_id": "H004V105",
+    "primary_anchor_definition": "30-day lookback, 30-day forward horizon, cross-sectional population standard deviation, 365-day dispersion window, trailing-window outer deciles, expanding_point_in_time universe."
+  },
+  "fixed_rules": {
+    "formation_clock": "Completed UTC daily bars only. Freeze the monthly formation phase before outcome computation.",
+    "point_in_time_universe": "Historical market-cap rank and eligibility must be known by the formation timestamp. Current rank is discovery-only.",
+    "portfolio": "Equal-weight top momentum decile long and bottom decile short, no overlap; deterministic asset-ID tie breaking.",
+    "data_gates": "No price/rank/funding forward-fill. Keep missingness and instrument lifecycle explicit.",
+    "costs": "Run registered 1x baseline cost and 2x/3x stress cases; never select the cheapest case based on results.",
+    "funding": "Use historical funding sign and settlement timing; report funding separately from price/basis PnL.",
+    "dev_sample": "Full grid on discovery/validation only; report actual timestamp boundaries and all expected terminal cells.",
+    "future_sample": "Forward block begins 2025-01-01 and ends at the latest fully closed UTC daily candle frozen in preregistration. Evaluate only the single frozen anchor on that block.",
+    "selection": "Holm correction across all 216 sensitivity cells for the registered 1x net endpoint. Two-sided exploratory estimates; H1 directional verdict remains negative. No grid rescue of a failed primary test.",
+    "continuation": "Blocked cells remain in the ledger; continue other valid candidate cells and non-data tasks. Resume idempotently; do not stop after unfavorable results."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "status": "ACTIVE_INCOMPLETE",
+  "rank_policy": "descending historical point-in-time market capitalization; no fixed top-N cutoff",
+  "current_legacy_asset_count": 28,
+  "current_panel_date_start": "2010-07-18",
+  "current_panel_date_end": "2024-12-31",
+  "latest_verified_data_refresh_utc": null,
+  "last_verified_historical_rank": null,
+  "rank_frontier_exhausted": false,
+  "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+  "candidates_discovered": [],
+  "candidates_verified": [],
+  "candidates_blocked": [],
+  "candidate_page_cursor": null,
+  "next_candidate_batch_size": 25,
+  "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
+  "source_priority": [
+    "Coin Metrics Community API",
+    "Binance Public Data Archive",
+    "other verified free public historical sources"
+  ],
+  "next_action": "Discover and rank additional historical candidates beyond the mapped 28-asset set; persist point-in-time rank evidence, mapping, eligibility and blockers; extend cap, price and funding panels through the latest fully closed UTC daily candle.",
+  "last_updated_utc": null
+}

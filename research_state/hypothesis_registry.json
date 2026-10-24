@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "program_status": "ACTIVE",
+  "next_sequence_number": 3,
+  "hypotheses": [
+    {
+      "id": "H1",
+      "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
+      "statement": "Extreme cross-sectional return dispersion weakens the subsequent cross-sectional crypto momentum spread.",
+      "predicted_high_minus_low_sign": "negative",
+      "status": "NOT_SUPPORTED_AS_ROBUST_EDGE",
+      "evidence_note": "The primary estimate was positive; the later follow-up discovery effect did not replicate in validation/final splits.",
+      "immutable": true
+    },
+    {
+      "id": "H2",
+      "experiment_id": null,
+      "statement": "Extreme dispersion may strengthen cross-sectional momentum continuation in some regimes.",
+      "predicted_high_minus_low_sign": "positive",
+      "status": "CANDIDATE_UNVALIDATED",
+      "evidence_note": "Generated from the sign of the primary estimate; the existing chronological follow-up did not establish replication.",
+      "next_test": "Test on a fresh forward block; do not retroactively relabel H1."
+    },
+    {
+      "id": "H3",
+      "experiment_id": null,
+      "statement": "The dispersion-momentum relationship may depend on historical market-cap rank breadth and asset cohort.",
+      "predicted_high_minus_low_sign": "interaction",
+      "status": "CANDIDATE_UNVALIDATED",
+      "evidence_note": "Rank-frontier diagnostics change sign across observed cutoffs; this is a stability warning, not proof of a usable interaction.",
+      "next_test": "Expand lower historical rank cohorts without a top-N cutoff and report fixed rank bands with adequate sample sizes."
+    },
+    {
+      "id": "H4",
+      "experiment_id": null,
+      "statement": "A continuous dispersion predictor may contain more information than sparse high/low state labels.",
+      "predicted_high_minus_low_sign": "continuous_slope",
+      "status": "CANDIDATE_UNVALIDATED",
+      "evidence_note": "High/low state counts are sparse in existing folds.",
+      "next_test": "Predefine a continuous slope/interaction model and inference method before computing outcomes."
+    },
+    {
+      "id": "H5",
+      "experiment_id": null,
+      "statement": "The apparent state-dependent spread may be driven by outliers, portfolio-tail construction or asset-volatility exposure.",
+      "predicted_high_minus_low_sign": "robustness",
+      "status": "CANDIDATE_UNVALIDATED",
+      "evidence_note": "Current sample is small and universe-cutoff sensitivity is material.",
+      "next_test": "Pre-register outlier-robust and risk-normalized diagnostics as a separate family with multiplicity control."
+    }
+  ],
+  "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block.",
+  "last_updated_utc": null
+}

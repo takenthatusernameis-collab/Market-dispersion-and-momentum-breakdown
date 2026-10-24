@@ -1,8 +1,9 @@
-Durable handoff (research_state/agent_handoff.md):
+Read AGENTS.md, SKILLS.md, HANDOFF.md, research_state/agent_handoff.md, research_state/agent_task_message.md, prompts/continuous_research_operating_contract_v1.md and docs/research_protocol.md.
 
-- Experiment: HARMONY-CRYPTO-EDGE-004-DISPERSION-002 (COMPLETE AND VERIFIED)
-- HEAD: 88a013c (main). Working tree clean except untracked `tests/__pycache__/*.pyc`. No changes to DISPERSION-002 artifacts or pipeline/config.
-- Tests: 15/15 passing (`python -m unittest discover -s tests -v`) — verified through 2026-10-24 01:23Z.
-- What was done: Paired block-bootstrap CIs applied to phase_c_summary.json and phase_f_summary.json; report updated; robustness_inference_summary.json updated with inference_fix_applied block; regression tests added in tests/test_inference_repro.py.
+The program is ACTIVE CONTINUOUS RESEARCH. Do not wait for a new experiment ID. Start with HARMONY-CRYPTO-EDGE-004-DISPERSION-003. Preserve completed DISPERSION-001 and DISPERSION-002 artifacts unchanged.
 
-Initial task for next agent: NO AUTHORIZED WORK PENDING. Read research_state/agent_handoff.md for full details. Wait for a new experiment ID and follow its specification exactly as written. Do not modify DISPERSION-002 artifacts or pipeline/config unless explicitly instructed by a new experiment specification. Preserve controls (free-data-only, point-in-time universe, no-lookahead, chronological OOS). Verify with `python -m unittest discover -s tests -v` before merging/committing new work. Current HEAD is 88a013c.
+First run the unit-test suite and scripts/generate_grid_v3_manifest.py; verify the preregistered 216-cell grid and anchor IDs. Then implement/execute the next resumable task: expand the descending historical point-in-time market-cap universe past the mapped 28 assets, refresh free public price/cap/funding histories through the latest fully closed UTC daily candle, and build the auditable data gate. Continue valid work if individual sources or assets are blocked.
+
+Use the full grid on development/validation only, apply the declared multiplicity correction, and evaluate only the frozen anchor on the new forward block. Preserve all unfavorable and failed outcomes. Record every candidate, exclusion and missing-data reason. Never use paid services, exchange credentials, live/paper orders, synthetic data or current ranks for historical membership.
+
+End this session by updating the durable state, reporting only verified progress, and leaving a concrete next action. The program continues after this activation through the scheduled controller; do not claim the hosting platform guarantees uninterrupted uptime.

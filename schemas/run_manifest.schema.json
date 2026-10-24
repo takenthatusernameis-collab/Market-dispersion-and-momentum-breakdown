@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HARMONY Crypto Edge Research Run Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "run_id",
+    "status",
+    "created_utc",
+    "git_commit",
+    "config_sha256",
+    "source_data_cutoff_utc",
+    "universe_arm",
+    "data_gate_status",
+    "expected_cells",
+    "completed_cells",
+    "next_action"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^HARMONY-CRYPTO-EDGE-004-DISPERSION-[0-9]{3}$"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "NOT_RUN",
+        "RUNNING",
+        "BLOCKED_SPECIFICATION_GATE",
+        "BLOCKED_DATA_GATE",
+        "IMPLEMENTATION_FAILED",
+        "EXPLORATORY_ONLY",
+        "INCONCLUSIVE",
+        "REJECTED",
+        "SUPPORTED_FOR_FURTHER_RESEARCH"
+      ]
+    },
+    "created_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "git_commit": {
+      "type": "string",
+      "minLength": 7
+    },
+    "config_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_data_cutoff_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "universe_arm": {
+      "enum": [
+        "legacy28_comparator",
+        "expanding_point_in_time",
+        "both"
+      ]
+    },
+    "data_gate_status": {
+      "enum": [
+        "NOT_RUN",
+        "PASS",
+        "PARTIAL",
+        "FAIL"
+      ]
+    },
+    "expected_cells": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "completed_cells": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "blocked_cells": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "failed_cells": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "not_run_cells": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "config_path": {
+      "type": "string"
+    },
+    "preregistration_path": {
+      "type": "string"
+    },
+    "grid_manifest_path": {
+      "type": "string"
+    },
+    "result_ledger_path": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

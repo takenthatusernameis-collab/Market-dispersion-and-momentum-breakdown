@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "program_status": "ACTIVE_CONTINUOUS_RESEARCH",
+  "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
+  "next_planned_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "next_experiment_status": "PREREGISTRATION_AND_FRONTIER_REFRESH_PENDING",
+  "completed_experiment_artifacts_are_immutable": true,
+  "latest_verified_panel_end_date": "2024-12-31",
+  "data_refresh_required": true,
+  "latest_verified_test_claim": "DISPERSION-002 handoff reports 15/15 unittest checks passing; no new tests for DISPERSION-003 have yet been run.",
+  "next_required_actions": [
+    "refresh_free_historical_data",
+    "expand_point_in_time_asset_frontier",
+    "freeze_exact_forward_cutoff",
+    "generate_and_verify_216_cell_manifest",
+    "execute_full_development_grid",
+    "test_frozen_anchor_on_new_forward_block",
+    "update_hypothesis_registry_and_handoff"
+  ],
+  "paid_data_allowed": false,
+  "live_or_paper_trading_allowed": false,
+  "last_updated_utc": null
+}

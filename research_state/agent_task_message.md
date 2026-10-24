@@ -1,25 +1,30 @@
-# Initial Task Message for Next Agent
+# Initial Task Message — Continuous Dispersion Research
 
-## Context
-- Experiment: HARMONY-CRYPTO-EDGE-004-DISPERSION-002
-- Status: COMPLETE AND VERIFIED
-- HEAD: c6cd637 (main), working tree clean except untracked `tests/__pycache__/*.pyc`
-- Tests: 15/15 passing (`python -m unittest discover -s tests -v`)
-- Verified: 2026-10-23 22:33Z through 23:35Z; re-verified 2026-10-24 01:24Z
+## Mandate
+Continue quantitative research in this repository without waiting for a new manual experiment ID. Follow prompts/continuous_research_operating_contract_v1.md and docs/research_protocol.md. The work is historical-only, free-data-only and never places live or paper orders.
 
-## Task for Next Agent
-NO AUTHORIZED WORK PENDING. Read `research_state/agent_handoff.md` for full details.
+## First measurable deliverable
+Run the new deterministic 216-cell manifest generator and the current unit-test suite; resolve defects. Then refresh free public historical panels and grow the descending historical point-in-time market-cap candidate frontier beyond the currently mapped 28 assets. Use the current sequence: HARMONY-CRYPTO-EDGE-004-DISPERSION-003.
 
-AWAIT A NEW EXPERIMENT ID before starting any new work. Do not begin any experiment, grid run, or artifact modification until a new experiment ID is provided.
+## Mandatory sequencing
+1. Validate prior artifacts are intact. Never overwrite or edit DISPERSION-001 or DISPERSION-002 results.
+2. Freeze DISPERSION-003 preregistration: exact primary anchor, source cutoffs, forward split, cost assumptions, expected result cells, grid hash and decision rules.
+3. Find candidates by historical market-cap ranks, not current ranks. No fixed top-N cutoff. Keep a durable row for every discovered name, including excluded and blocked candidates.
+4. Extend data to the latest fully closed UTC daily candle where sources allow. For every source and candidate record date range, counts, missingness, mapping, access terms, retrieval time and hash.
+5. Run the registered primary anchor and complete the declared 216-cell development/validation grid; do not stop if early results are negative. Resume safely from checkpoints.
+6. Use the fresh post-2024 forward period only for the pre-frozen anchor; never sweep parameters on it.
+7. Report cost-adjusted net outcomes, historical funding attribution, uncertainty, effective sample size, rank-breadth stability and adverse results. If the sample is inadequate, label exploratory/inconclusive.
+8. Update the hypothesis registry and choose the next theory-led test by evidence and expected information gain. Allocate a new ID automatically; never wait for manual ID approval.
+9. Update the frontier, manifests, handoff and next task. The next task must itself be executable and unblocked where possible.
 
-When a new experiment ID is provided:
-1. Follow its specification exactly as written.
-2. Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
-3. Do NOT modify any DISPERSION-002 artifacts or the DISPERSION-001 grid manifest/config/data pipeline.
+## Continue even when
+- the result is negative, null, inconclusive or rejected;
+- an individual asset has missing data;
+- a public endpoint is down or rate-limited;
+- an implementation or reproducibility defect is found;
+- no parameter configuration passes multiplicity or economic criteria.
 
-Verification before merging/committing new work:
-- Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
-- Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
+In these cases preserve evidence and continue with a justified different task. Never bypass a gate, invent data, select a winner by raw return, or mutate a frozen hypothesis. A blocked phase is not permission to stop unrelated research.
 
-## Ready for handoff
-DISPERSION-002 is closed. Await new experiment ID.
+## Definition of done for this activation
+Provide verified test output, manifest count/hash checks, data-gate/frontier progress, the exact artifacts changed, and one next concrete task. Do not declare the program complete.
