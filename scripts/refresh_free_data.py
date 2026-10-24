@@ -83,6 +83,54 @@ def now_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+_KIND_ORDER = {"funding": 0, "klines": 1}
+
+
+def _series_sig(d):
+    """Return a copy of ``d`` with every ``series`` array sorted.
+
+    The ``series`` array is collected via a thread pool, so its order is not
+    reproducible run to run. Sorting by (asset, kind) makes the signature
+    order-independent while still sensitive to any actual data change. The
+    signature recurses into nested dicts (e.g. ``run_record["binance"]``) so
+    both the flat Binance manifest and the refresh provenance record compare
+    order-independently.
+    """
+    if isinstance(d, dict):
+        out = {k: _series_sig(v) for k, v in d.items() if k != "fetch_utc"}
+        if isinstance(out.get("series"), list):
+            out["series"] = sorted(out["series"], key=lambda r: (r.get("asset", ""), _KIND_ORDER.get(r.get("kind", ""), 99)))
+        return out
+    if isinstance(d, list):
+        return [_series_sig(x) for x in d]
+    return d
+
+
+def preserve_fetch_utc_if_unchanged(path: Path, new_dict: dict, data_sig) -> bool:
+    """Keep a committed manifest byte-stable when a refresh changes no data.
+
+    The sealed forward block records SHA-256 input hashes over the panel
+    manifests. A no-op refresh only rewrites the ``fetch_utc`` timestamp (and,
+    because Binance series are collected via a thread pool, occasionally the
+    ``series`` array order), which would silently invalidate those provenance
+    hashes and fail ``test_forward_block_hashes_match_files_on_disk``. When the
+    data signature is unchanged, leave the existing file untouched so the
+    committed artifact stays byte-identical. Returns True when the caller may
+    skip writing. When data genuinely changes, the new fetch_utc and order are
+    kept and the caller writes normally.
+    """
+    if not path.exists():
+        return False
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return False
+    if existing.get("fetch_utc") and data_sig(existing) == data_sig(new_dict):
+        new_dict["fetch_utc"] = existing["fetch_utc"]
+        return True
+    return False
+
+
 # ---------------------------------------------------------------------------
 # CoinMetrics Community API
 # ---------------------------------------------------------------------------
@@ -377,7 +425,8 @@ def main() -> int:
         "fetch_utc": fetch_utc,
         "asset_results": cm_asset_results,
     }
-    cm_manifest_path.write_text(json.dumps(cm_manifest, indent=2, sort_keys=True) + "\n")
+    if not preserve_fetch_utc_if_unchanged(cm_manifest_path, cm_manifest, _series_sig):
+        cm_manifest_path.write_text(json.dumps(cm_manifest, indent=2, sort_keys=True) + "\n")
     print(f"[coinmetrics] panel -> {cm_panel_path.relative_to(ROOT)} ({cm_panel_rows} rows) sha={cm_panel_sha[:12]}")
     print(f"[coinmetrics] manifest -> {cm_manifest_path.relative_to(ROOT)}")
     run_record["coinmetrics"] = {
@@ -409,6 +458,12 @@ def main() -> int:
                   f"missing={rec['months_missing']} error={rec['months_error']} "
                   f"rows={rec['rows']} {rec['date_first']}->{rec['date_last']}", flush=True)
 
+    # as_completed yields in thread completion order, which is not reproducible.
+    # Sort deterministically by (asset, kind) with kind in a fixed lexical order
+    # (funding before klines) so the manifest hash is stable across runs and
+    # matches the hashes recorded in the sealed forward block.
+    binance_records.sort(key=lambda r: (r.get("asset", ""), _KIND_ORDER.get(r.get("kind", ""), 99)))
+
     binance_manifest = {
         "experiment_id": exp,
         "source": "binance_public_data_archive",
@@ -419,7 +474,8 @@ def main() -> int:
         "series": binance_records,
     }
     binance_manifest_path = panels / "binance_panel_manifest.json"
-    binance_manifest_path.write_text(json.dumps(binance_manifest, indent=2, sort_keys=True) + "\n")
+    if not preserve_fetch_utc_if_unchanged(binance_manifest_path, binance_manifest, _series_sig):
+        binance_manifest_path.write_text(json.dumps(binance_manifest, indent=2, sort_keys=True) + "\n")
     print(f"[binance] manifest -> {binance_manifest_path.relative_to(ROOT)}")
     run_record["binance"] = {
         "manifest_path": str(binance_manifest_path.relative_to(ROOT)),
@@ -428,7 +484,8 @@ def main() -> int:
     }
 
     run_record_path = panels / "data_refresh_provenance.json"
-    run_record_path.write_text(json.dumps(run_record, indent=2, sort_keys=True) + "\n")
+    if not preserve_fetch_utc_if_unchanged(run_record_path, run_record, _series_sig):
+        run_record_path.write_text(json.dumps(run_record, indent=2, sort_keys=True) + "\n")
     print(f"[refresh] provenance -> {run_record_path.relative_to(ROOT)}")
     return 0
 

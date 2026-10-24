@@ -454,6 +454,23 @@ def main() -> int:
     freeze_record["evaluated_utc"] = now_utc()
 
     out_path = OUT_DIR / "forward_block_evaluation.json"
+    # Preserve the committed evaluated_utc when the re-run reproduces the same
+    # sealed result, so a no-op re-evaluation leaves the artifact byte-identical.
+    if out_path.exists():
+        try:
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            existing = None
+        if existing:
+            same = (
+                existing.get("data_cutoff_utc") == freeze_record["data_cutoff_utc"]
+                and existing.get("n_formations") == freeze_record["n_formations"]
+                and existing.get("high_low_diff_net_1x") == freeze_record["high_low_diff_net_1x"]
+                and existing.get("date_last") == freeze_record["date_last"]
+                and existing.get("last_allowed_formation_date") == freeze_record["last_allowed_formation_date"]
+            )
+            if same:
+                freeze_record["evaluated_utc"] = existing.get("evaluated_utc", freeze_record["evaluated_utc"])
     out_path.write_text(json.dumps(freeze_record, indent=2, sort_keys=True) + "\n")
 
     print(f"[forward-block] anchor={ANCHOR_ID} status=OK")

@@ -52,6 +52,55 @@ def now_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+# Binance series are collected via a thread pool, so their order in the
+# manifest is not reproducible run to run. Fixed lexical order keeps the
+# signature and the committed manifest byte-stable.
+_KIND_ORDER = {"funding": 0, "klines": 1}
+
+
+def _series_sig(d):
+    """Return a copy of ``d`` with every ``series`` array sorted.
+
+    The ``series`` array is collected via a thread pool, so its order is not
+    reproducible run to run. Sorting by (asset, kind) makes the signature
+    order-independent while still sensitive to any actual data change. The
+    signature recurses into nested dicts so it also covers the candidate
+    validation record, which is hashed by the sealed forward block.
+    """
+    if isinstance(d, dict):
+        out = {k: _series_sig(v) for k, v in d.items() if k != "fetch_utc"}
+        if isinstance(out.get("series"), list):
+            out["series"] = sorted(out["series"], key=lambda r: (r.get("asset", ""), _KIND_ORDER.get(r.get("kind", ""), 99)))
+        return out
+    if isinstance(d, list):
+        return [_series_sig(x) for x in d]
+    return d
+
+
+def preserve_fetch_utc_if_unchanged(path: Path, new_dict: dict, data_sig) -> bool:
+    """Keep a committed manifest byte-stable when a refresh changes no data.
+
+    The sealed forward block records SHA-256 input hashes over the panel
+    manifests and the candidate validation record. A no-op validation run
+    only rewrites the ``fetch_utc`` timestamp, which would silently invalidate
+    those provenance hashes and fail ``test_forward_block_hashes_match_files_on_disk``.
+    When the data signature is unchanged, leave the existing file untouched so
+    the committed artifact stays byte-identical. Returns True when the caller
+    may skip writing. When data genuinely changes, the new fetch_utc is kept
+    and the caller writes normally.
+    """
+    if not path.exists():
+        return False
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, OSError):
+        return False
+    if existing.get("fetch_utc") and data_sig(existing) == data_sig(new_dict):
+        new_dict["fetch_utc"] = existing["fetch_utc"]
+        return True
+    return False
+
+
 def cm_fetch_json(url: str):
     last_err = None
     for attempt in range(1, MAX_RETRIES + 1):
@@ -186,6 +235,20 @@ def main() -> int:
         "candidates_processed": [],
     }
 
+    # The committed validation record accumulates every batch's entries, so a
+    # fresh run must extend rather than replace it. Loading the existing
+    # record preserves prior batches' provenance and keeps the sealed forward
+    # block's input hash valid.
+    val_path = PANEL_DIR / "candidate_batch_validation.json"
+    if val_path.exists():
+        try:
+            existing = json.loads(val_path.read_text(encoding="utf-8"))
+            if isinstance(existing.get("candidates_processed"), list):
+                run_record["candidates_processed"] = list(existing["candidates_processed"])
+                run_record.setdefault("fetch_utc", existing.get("fetch_utc"))
+        except (ValueError, OSError):
+            pass
+
     for asset in to_process:
         entry = {"asset": asset, "fetch_utc": fetch_utc, "metrics": {},
                  "binance": {"symbol": None, "exists": None, "error": None},
@@ -262,9 +325,22 @@ def main() -> int:
     frontier["batch_validation_utc"] = fetch_utc
     save_frontier(frontier)
 
+    # A batch that processes nothing must not rewrite the validation record at
+    # all: the committed record accumulates every prior batch's entries, so a
+    # fresh ``run_record`` with an empty ``candidates_processed`` list would
+    # silently drop 96 validated/blocked candidates and invalidate the sealed
+    # forward block's input hash. Skip the write entirely when there is nothing
+    # new to record.
+    if not to_process:
+        print(f"[candidates] nothing to process; validation record left untouched")
+        print(f"[candidates] verified={len(verified)} blocked={len(blocked)} "
+              f"remaining_discovered={len(frontier['candidates_discovered'])}")
+        return 0
+
     # Write validation run record
     val_path = PANEL_DIR / "candidate_batch_validation.json"
-    val_path.write_text(json.dumps(run_record, indent=2, sort_keys=True) + "\n")
+    if not preserve_fetch_utc_if_unchanged(val_path, run_record, _series_sig):
+        val_path.write_text(json.dumps(run_record, indent=2, sort_keys=True) + "\n")
     print(f"[candidates] validation record -> {val_path.relative_to(ROOT)}")
     print(f"[candidates] verified={len(verified)} blocked={len(blocked)} "
           f"remaining_discovered={len(frontier['candidates_discovered'])}")

@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-24T12:55:37Z",
-  "candidate_page_cursor": 6367,
+  "batch_validation_utc": "2026-10-24T14:16:48Z",
+  "candidate_page_cursor": 6392,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -43,9 +43,7 @@
     "1wo",
     "2crz",
     "2give",
-    "4"
-  ],
-  "candidates_discovered": [
+    "4",
     "42",
     "4art",
     "4stock",
@@ -70,7 +68,9 @@
     "aave3l",
     "aave3s",
     "aavedown",
-    "aaveup",
+    "aaveup"
+  ],
+  "candidates_discovered": [
     "ab_abchain",
     "aba",
     "abascbbtc_v3_base.eth",
@@ -6477,7 +6477,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-24T12:56:33Z",
+  "last_updated_utc": "2026-10-24T14:16:48Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
