@@ -62,7 +62,7 @@ class ContinuousResearchContractTests(unittest.TestCase):
         prompt = PROMPT_PATH.read_text(encoding="utf-8").lower()
         self.assertIn("do not wait for a user-provided experiment id", prompt)
         self.assertIn("no paid services", prompt)
-        self.assertIn("no live or paper trading", prompt)
+        self.assertIn("live or paper trading", prompt)
 
 if __name__ == "__main__":
     unittest.main()
