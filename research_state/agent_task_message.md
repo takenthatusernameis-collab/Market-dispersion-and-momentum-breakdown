@@ -12,7 +12,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - DISPERSION-001/002 and all configs unchanged.
 
 ## Concrete next action
-1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=35, blocked=238, remaining_discovered=6074, cursor=6522. Record exact counts after each batch.
+1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=36, blocked=287, remaining_discovered=6024, cursor=6547. Record exact counts after each batch.
 2. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29.
 3. When available, evaluate H004V106 on a fresh sealed forward block with completed 30-day outcomes only; compute overlap-aware uncertainty (HAC/Newey-West and/or block bootstrap).
 4. Do not reuse the inspected canonical block as independent confirmation; treat it as development/exploratory evidence.

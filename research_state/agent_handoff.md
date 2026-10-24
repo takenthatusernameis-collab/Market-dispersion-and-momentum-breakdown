@@ -17,7 +17,7 @@
 - Note: the forward block is a strict subset of the dev window (2025-01-01..2026-08-31 inside ledger 2023-01-31..2026-09-29) and is development/exploratory evidence, never independent confirmation.
 
 ## Concrete next action
-1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=35, blocked=238, remaining_discovered=6074, cursor=6522. Record exact counts after each batch.
+1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=36, blocked=287, remaining_discovered=6024, cursor=6547. Record exact counts after each batch.
 2. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29, then preregister/evaluate a fresh sealed forward block for H004V106 with HAC uncertainty, computing only completed 30-day outcomes.
 3. Run full test suite (`python3 -m unittest discover -s tests`); confirm DISPERSION-001/002 unchanged.
 4. Update handoff + next task with concrete measurable outcomes.
