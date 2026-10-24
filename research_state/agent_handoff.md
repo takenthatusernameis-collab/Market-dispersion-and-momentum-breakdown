@@ -21,6 +21,10 @@
 3. Candidate frontier unchanged (cursor=76, 822 eligible, queue empty).
 4. Run full tests in pandas-available environment; keep DISPERSION-001/002 immutable.
 
+## Latest check (2026-10-24)
+- Data cutoff still below 2026-10-29 threshold; no fresh sealed forward block available. HAC addendum and integrity audit artifacts verified present and internally consistent.
+- No changes to DISPERSION-001/002; candidate frontier unchanged (cursor=76, 822 eligible, queue empty).
+
 ## Concrete next action
 Monitor data cutoff via scripts/refresh_free_data.py; when cutoff>=2026-10-29, preregister/evaluate fresh sealed forward block for H004V106 with HAC uncertainty; do not reuse inspected block as fresh confirmation.
 
