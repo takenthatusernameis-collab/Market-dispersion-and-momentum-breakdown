@@ -19,7 +19,7 @@
     "mean": 26.231907894736842,
     "min": 26
   },
-  "evaluated_utc": "2026-10-24T10:44:22Z",
+  "evaluated_utc": "2026-10-24T11:48:41Z",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "formations": [
     {
@@ -4962,7 +4962,7 @@
     "candidate_batch_validation.json": "6a408fbdafc154f4d5fe56cedc48138790520fe9aed41340112dfc26565ca263",
     "data_refresh_provenance.json": "1f6a90cfacd1973514bd21b3320669481c917736f769518c82ba46a81cde34dd",
     "grid_config_manifest.json": "64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4",
-    "grid_result_ledger.json": "71cd961150f1f293280b19760c5cb493553e7cf3d22add5e8d30188ecbc07c84",
+    "grid_result_ledger.json": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
     "marketcap_panel.csv": "9ebcc21467055873e3ae173aa524aa4e24f4f618cfb78144c53264d38c995e95",
     "marketcap_panel_manifest.json": "0625f3d9d3f444a36aba9e52ff7dc2f7526c2ebde71aeac90a389a4faadf5fb5"
   },
