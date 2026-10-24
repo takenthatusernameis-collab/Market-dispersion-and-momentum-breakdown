@@ -1,7 +1,7 @@
 {
   "archive": "https://data.binance.vision/data/futures/um",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-24T03:50:49Z",
+  "fetch_utc": "2026-10-24T04:29:04Z",
   "series": [
     {
       "asset": "btc",
@@ -576,291 +576,6 @@
     {
       "asset": "eth",
       "date_first": "1672531200000",
-      "date_last": "1790726400000",
-      "kind": "klines",
-      "months": [
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-01.zip",
-          "raw_sha256": "3d3fcbf5ffbca73de14355c7214252d0a7b5e36a504f51635c2cfd6c276c13ee",
-          "status": "ok",
-          "ym": "2023-01"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-02.zip",
-          "raw_sha256": "11d6ed63254c4134a4951e765bd8b136c3c5424fe8868bb50fb0f398ca96b998",
-          "status": "ok",
-          "ym": "2023-02"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-03.zip",
-          "raw_sha256": "e52713b6f21b7da1f9208b44b4917a4bf06baff3501b18e6e95ce3ca0abc60e7",
-          "status": "ok",
-          "ym": "2023-03"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-04.zip",
-          "raw_sha256": "62dba6202277441943d2e7e0dd5c80c0366d6f20a528fbe870e1900d6dc583ea",
-          "status": "ok",
-          "ym": "2023-04"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-05.zip",
-          "raw_sha256": "74fff9b141ccabc48377e9247607f7e2fc6427ed9ccbfc31a82f61ab7ad983ff",
-          "status": "ok",
-          "ym": "2023-05"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-06.zip",
-          "raw_sha256": "92de632c4c78c77201b0eb9325ad8deb0cfb22fda6c6fa8e51c8414662fa10ae",
-          "status": "ok",
-          "ym": "2023-06"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-07.zip",
-          "raw_sha256": "94d6cba75f179498ae673a748186ce36533c1dedfa04ae5ac53e5a8bf2a30051",
-          "status": "ok",
-          "ym": "2023-07"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-08.zip",
-          "raw_sha256": "a280e5e94456ab8798b0a0e5525dba985221fd3624a17a96b2d2e19591e6426f",
-          "status": "ok",
-          "ym": "2023-08"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-09.zip",
-          "raw_sha256": "4b5e61f95fe3af03d3cc765f0e2187e8bd49596dfc23be9f961100ab1af14695",
-          "status": "ok",
-          "ym": "2023-09"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-10.zip",
-          "raw_sha256": "bbc7261b0100b34f6d0ceb8cbe8938b46ea35cafad5270168e97565283e1e77d",
-          "status": "ok",
-          "ym": "2023-10"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-11.zip",
-          "raw_sha256": "ee9dfe21148fa778f8144bec8633109ef597e70c3ff304318eef3a575845d0fc",
-          "status": "ok",
-          "ym": "2023-11"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-12.zip",
-          "raw_sha256": "3b6125b2a9ca673ab1f121112bd3951726c496287d52320d19ae6ad153f2ec11",
-          "status": "ok",
-          "ym": "2023-12"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-01.zip",
-          "raw_sha256": "8aad2a309ca1e4d2f8220ba7cf6f4eca7b8bf9a05524f4dd9ce51ee75a22f315",
-          "status": "ok",
-          "ym": "2024-01"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-02.zip",
-          "raw_sha256": "7941d26996140a7e2788f5c56eb0e8c2d1a5e9afddb2dae37a2f3a438b42314d",
-          "status": "ok",
-          "ym": "2024-02"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-03.zip",
-          "raw_sha256": "43c489e116da4f928638fe7daf47754daf41ab97037c0bf5b7362870a8224b19",
-          "status": "ok",
-          "ym": "2024-03"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-04.zip",
-          "raw_sha256": "42be54149c2cdf2786d609fdf2121deb19a5868dd4778ccaf6c73f69231eb741",
-          "status": "ok",
-          "ym": "2024-04"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-05.zip",
-          "raw_sha256": "5d62f1f430ac7df56f6658d3e75b02e189f609ef6de54667fc89eff5cac679c7",
-          "status": "ok",
-          "ym": "2024-05"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-06.zip",
-          "raw_sha256": "b14d786dbc20dd9182fd792cfbc3ecb52a1bcdf5463db03af4a34aa5dcfcabb1",
-          "status": "ok",
-          "ym": "2024-06"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-07.zip",
-          "raw_sha256": "f859af807b50b6a370b62b9472101cb57864eea4a946a9ee91556baad9cc342d",
-          "status": "ok",
-          "ym": "2024-07"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-08.zip",
-          "raw_sha256": "f6d8434f1a502d71fea21fda8d6a3e9d8980437a16411092b9a4b0ca36e26ddf",
-          "status": "ok",
-          "ym": "2024-08"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-09.zip",
-          "raw_sha256": "af56726f6d7969ddcfe04e5766370fc2561062717c06688feece19fae9a6a11d",
-          "status": "ok",
-          "ym": "2024-09"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-10.zip",
-          "raw_sha256": "253269eac2be0291effbf44d12bd3877e8b9787e5d3fdaccca0c91f0909cb5db",
-          "status": "ok",
-          "ym": "2024-10"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-11.zip",
-          "raw_sha256": "e07192147089623e71b0447d3c13169e6902fcfcf3b5a6c79c1ff3efa77171e5",
-          "status": "ok",
-          "ym": "2024-11"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-12.zip",
-          "raw_sha256": "e8744526d254035c4c31c7074466b414da6bfcad0a37da328ff4c9607cab08fe",
-          "status": "ok",
-          "ym": "2024-12"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-01.zip",
-          "raw_sha256": "09f4b9efc9bb54315f094d57d137847f2c7bde665fbccf2d90aa5e588053e66a",
-          "status": "ok",
-          "ym": "2025-01"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-02.zip",
-          "raw_sha256": "679a3b93c38856b6bffe74f6c6fd1438e4c9b3f81c602bcf5bbd7b93b64e02de",
-          "status": "ok",
-          "ym": "2025-02"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-03.zip",
-          "raw_sha256": "a2622a2d96ad1a6b953e7857ac05e531cbb0be44feb6d7dfe21063accc1a7c18",
-          "status": "ok",
-          "ym": "2025-03"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-04.zip",
-          "raw_sha256": "724d206e1232ed89ebd4ebe2e0ab1897d152002a508e7c33d7f3e4a27b1235ce",
-          "status": "ok",
-          "ym": "2025-04"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-05.zip",
-          "raw_sha256": "80bf183cac6a633141fed3ca00efb6a3640342a65eee290e78266cdd57ffe9bb",
-          "status": "ok",
-          "ym": "2025-05"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-06.zip",
-          "raw_sha256": "9f00b661b8b62239a1376ad2c3f8116ecb0bb2174d9f9adbb308acea356fe651",
-          "status": "ok",
-          "ym": "2025-06"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-07.zip",
-          "raw_sha256": "a6a1cd065ea434b535a546672921c2615d714df2e22b236507a14a60cd4278f8",
-          "status": "ok",
-          "ym": "2025-07"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-08.zip",
-          "raw_sha256": "0f95ef11fa3a632d372c8caf58c8c3780721a4f9b1aadd5c40d80d8185a0b31a",
-          "status": "ok",
-          "ym": "2025-08"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-09.zip",
-          "raw_sha256": "b6022feb2a41a512022fd009bbc7ba6f48706ff7e025c84b0fe91be3f4966a3c",
-          "status": "ok",
-          "ym": "2025-09"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-10.zip",
-          "raw_sha256": "8299e253e94c33fb9b45952be8afcd6c36446e33e5f9f4192851791b67c5cd60",
-          "status": "ok",
-          "ym": "2025-10"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-11.zip",
-          "raw_sha256": "15660f70140bbad8eb741f69a1e97d1c825ccbfe9af2549a936948a5d250e9ba",
-          "status": "ok",
-          "ym": "2025-11"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-12.zip",
-          "raw_sha256": "630c6ea5bf8efc68de1ea50a09dcb6c12de035f00736e69868ae0717c8217ef9",
-          "status": "ok",
-          "ym": "2025-12"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-01.zip",
-          "raw_sha256": "936d63a1c93143de22a1b6a47ccbb01c8fa84fb4fa3071d8aa76fbf179f4553d",
-          "status": "ok",
-          "ym": "2026-01"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-02.zip",
-          "raw_sha256": "a47616d0592c4847b2e21b5a59a55292f11eca4989efe7e6acca438bde3d3ce4",
-          "status": "ok",
-          "ym": "2026-02"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-03.zip",
-          "raw_sha256": "0cc00d4e8bc3bd466cb3640b179409098a3a435947b283e57c0dd9e311331fa6",
-          "status": "ok",
-          "ym": "2026-03"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-04.zip",
-          "raw_sha256": "b01214ecc10d42fef261ae34096918c95910fe67e01e3345a67379f891d07e00",
-          "status": "ok",
-          "ym": "2026-04"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-05.zip",
-          "raw_sha256": "59386141efa6f41ec83fea5293513c80e82eb9fdc539d96eeac6fe25e6be27d3",
-          "status": "ok",
-          "ym": "2026-05"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-06.zip",
-          "raw_sha256": "34adb4f2892b81194ad60e414d01176e598fb98757920ea073d27320c36dd098",
-          "status": "ok",
-          "ym": "2026-06"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-07.zip",
-          "raw_sha256": "f3c34fd95aefc44250c04af7808a2949f7a7520a20cc4a79a8b07491176b2bda",
-          "status": "ok",
-          "ym": "2026-07"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-08.zip",
-          "raw_sha256": "aee0f70d0b75739b4412150a731a0d19020d75e0472384fba9c541eecc889915",
-          "status": "ok",
-          "ym": "2026-08"
-        },
-        {
-          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-09.zip",
-          "raw_sha256": "eb0edbe8f19c6b27c7ab98e6ad6041297e1c3f50b47b4f200b3e421d190b537a",
-          "status": "ok",
-          "ym": "2026-09"
-        }
-      ],
-      "months_error": 0,
-      "months_missing": 0,
-      "months_ok": 45,
-      "months_requested": 45,
-      "raw_dir": "data/raw/binance/klines/ETHUSDT",
-      "rows": 1414,
-      "symbol": "ETHUSDT"
-    },
-    {
-      "asset": "eth",
-      "date_first": "1672531200000",
       "date_last": "1790784000002",
       "kind": "funding",
       "months": [
@@ -1141,6 +856,291 @@
       "months_requested": 45,
       "raw_dir": "data/raw/binance/funding/ETHUSDT",
       "rows": 4152,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "asset": "eth",
+      "date_first": "1672531200000",
+      "date_last": "1790726400000",
+      "kind": "klines",
+      "months": [
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-01.zip",
+          "raw_sha256": "3d3fcbf5ffbca73de14355c7214252d0a7b5e36a504f51635c2cfd6c276c13ee",
+          "status": "ok",
+          "ym": "2023-01"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-02.zip",
+          "raw_sha256": "11d6ed63254c4134a4951e765bd8b136c3c5424fe8868bb50fb0f398ca96b998",
+          "status": "ok",
+          "ym": "2023-02"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-03.zip",
+          "raw_sha256": "e52713b6f21b7da1f9208b44b4917a4bf06baff3501b18e6e95ce3ca0abc60e7",
+          "status": "ok",
+          "ym": "2023-03"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-04.zip",
+          "raw_sha256": "62dba6202277441943d2e7e0dd5c80c0366d6f20a528fbe870e1900d6dc583ea",
+          "status": "ok",
+          "ym": "2023-04"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-05.zip",
+          "raw_sha256": "74fff9b141ccabc48377e9247607f7e2fc6427ed9ccbfc31a82f61ab7ad983ff",
+          "status": "ok",
+          "ym": "2023-05"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-06.zip",
+          "raw_sha256": "92de632c4c78c77201b0eb9325ad8deb0cfb22fda6c6fa8e51c8414662fa10ae",
+          "status": "ok",
+          "ym": "2023-06"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-07.zip",
+          "raw_sha256": "94d6cba75f179498ae673a748186ce36533c1dedfa04ae5ac53e5a8bf2a30051",
+          "status": "ok",
+          "ym": "2023-07"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-08.zip",
+          "raw_sha256": "a280e5e94456ab8798b0a0e5525dba985221fd3624a17a96b2d2e19591e6426f",
+          "status": "ok",
+          "ym": "2023-08"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-09.zip",
+          "raw_sha256": "4b5e61f95fe3af03d3cc765f0e2187e8bd49596dfc23be9f961100ab1af14695",
+          "status": "ok",
+          "ym": "2023-09"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-10.zip",
+          "raw_sha256": "bbc7261b0100b34f6d0ceb8cbe8938b46ea35cafad5270168e97565283e1e77d",
+          "status": "ok",
+          "ym": "2023-10"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-11.zip",
+          "raw_sha256": "ee9dfe21148fa778f8144bec8633109ef597e70c3ff304318eef3a575845d0fc",
+          "status": "ok",
+          "ym": "2023-11"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-12.zip",
+          "raw_sha256": "3b6125b2a9ca673ab1f121112bd3951726c496287d52320d19ae6ad153f2ec11",
+          "status": "ok",
+          "ym": "2023-12"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-01.zip",
+          "raw_sha256": "8aad2a309ca1e4d2f8220ba7cf6f4eca7b8bf9a05524f4dd9ce51ee75a22f315",
+          "status": "ok",
+          "ym": "2024-01"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-02.zip",
+          "raw_sha256": "7941d26996140a7e2788f5c56eb0e8c2d1a5e9afddb2dae37a2f3a438b42314d",
+          "status": "ok",
+          "ym": "2024-02"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-03.zip",
+          "raw_sha256": "43c489e116da4f928638fe7daf47754daf41ab97037c0bf5b7362870a8224b19",
+          "status": "ok",
+          "ym": "2024-03"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-04.zip",
+          "raw_sha256": "42be54149c2cdf2786d609fdf2121deb19a5868dd4778ccaf6c73f69231eb741",
+          "status": "ok",
+          "ym": "2024-04"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-05.zip",
+          "raw_sha256": "5d62f1f430ac7df56f6658d3e75b02e189f609ef6de54667fc89eff5cac679c7",
+          "status": "ok",
+          "ym": "2024-05"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-06.zip",
+          "raw_sha256": "b14d786dbc20dd9182fd792cfbc3ecb52a1bcdf5463db03af4a34aa5dcfcabb1",
+          "status": "ok",
+          "ym": "2024-06"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-07.zip",
+          "raw_sha256": "f859af807b50b6a370b62b9472101cb57864eea4a946a9ee91556baad9cc342d",
+          "status": "ok",
+          "ym": "2024-07"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-08.zip",
+          "raw_sha256": "f6d8434f1a502d71fea21fda8d6a3e9d8980437a16411092b9a4b0ca36e26ddf",
+          "status": "ok",
+          "ym": "2024-08"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-09.zip",
+          "raw_sha256": "af56726f6d7969ddcfe04e5766370fc2561062717c06688feece19fae9a6a11d",
+          "status": "ok",
+          "ym": "2024-09"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-10.zip",
+          "raw_sha256": "253269eac2be0291effbf44d12bd3877e8b9787e5d3fdaccca0c91f0909cb5db",
+          "status": "ok",
+          "ym": "2024-10"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-11.zip",
+          "raw_sha256": "e07192147089623e71b0447d3c13169e6902fcfcf3b5a6c79c1ff3efa77171e5",
+          "status": "ok",
+          "ym": "2024-11"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2024-12.zip",
+          "raw_sha256": "e8744526d254035c4c31c7074466b414da6bfcad0a37da328ff4c9607cab08fe",
+          "status": "ok",
+          "ym": "2024-12"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-01.zip",
+          "raw_sha256": "09f4b9efc9bb54315f094d57d137847f2c7bde665fbccf2d90aa5e588053e66a",
+          "status": "ok",
+          "ym": "2025-01"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-02.zip",
+          "raw_sha256": "679a3b93c38856b6bffe74f6c6fd1438e4c9b3f81c602bcf5bbd7b93b64e02de",
+          "status": "ok",
+          "ym": "2025-02"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-03.zip",
+          "raw_sha256": "a2622a2d96ad1a6b953e7857ac05e531cbb0be44feb6d7dfe21063accc1a7c18",
+          "status": "ok",
+          "ym": "2025-03"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-04.zip",
+          "raw_sha256": "724d206e1232ed89ebd4ebe2e0ab1897d152002a508e7c33d7f3e4a27b1235ce",
+          "status": "ok",
+          "ym": "2025-04"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-05.zip",
+          "raw_sha256": "80bf183cac6a633141fed3ca00efb6a3640342a65eee290e78266cdd57ffe9bb",
+          "status": "ok",
+          "ym": "2025-05"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-06.zip",
+          "raw_sha256": "9f00b661b8b62239a1376ad2c3f8116ecb0bb2174d9f9adbb308acea356fe651",
+          "status": "ok",
+          "ym": "2025-06"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-07.zip",
+          "raw_sha256": "a6a1cd065ea434b535a546672921c2615d714df2e22b236507a14a60cd4278f8",
+          "status": "ok",
+          "ym": "2025-07"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-08.zip",
+          "raw_sha256": "0f95ef11fa3a632d372c8caf58c8c3780721a4f9b1aadd5c40d80d8185a0b31a",
+          "status": "ok",
+          "ym": "2025-08"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-09.zip",
+          "raw_sha256": "b6022feb2a41a512022fd009bbc7ba6f48706ff7e025c84b0fe91be3f4966a3c",
+          "status": "ok",
+          "ym": "2025-09"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-10.zip",
+          "raw_sha256": "8299e253e94c33fb9b45952be8afcd6c36446e33e5f9f4192851791b67c5cd60",
+          "status": "ok",
+          "ym": "2025-10"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-11.zip",
+          "raw_sha256": "15660f70140bbad8eb741f69a1e97d1c825ccbfe9af2549a936948a5d250e9ba",
+          "status": "ok",
+          "ym": "2025-11"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2025-12.zip",
+          "raw_sha256": "630c6ea5bf8efc68de1ea50a09dcb6c12de035f00736e69868ae0717c8217ef9",
+          "status": "ok",
+          "ym": "2025-12"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-01.zip",
+          "raw_sha256": "936d63a1c93143de22a1b6a47ccbb01c8fa84fb4fa3071d8aa76fbf179f4553d",
+          "status": "ok",
+          "ym": "2026-01"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-02.zip",
+          "raw_sha256": "a47616d0592c4847b2e21b5a59a55292f11eca4989efe7e6acca438bde3d3ce4",
+          "status": "ok",
+          "ym": "2026-02"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-03.zip",
+          "raw_sha256": "0cc00d4e8bc3bd466cb3640b179409098a3a435947b283e57c0dd9e311331fa6",
+          "status": "ok",
+          "ym": "2026-03"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-04.zip",
+          "raw_sha256": "b01214ecc10d42fef261ae34096918c95910fe67e01e3345a67379f891d07e00",
+          "status": "ok",
+          "ym": "2026-04"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-05.zip",
+          "raw_sha256": "59386141efa6f41ec83fea5293513c80e82eb9fdc539d96eeac6fe25e6be27d3",
+          "status": "ok",
+          "ym": "2026-05"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-06.zip",
+          "raw_sha256": "34adb4f2892b81194ad60e414d01176e598fb98757920ea073d27320c36dd098",
+          "status": "ok",
+          "ym": "2026-06"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-07.zip",
+          "raw_sha256": "f3c34fd95aefc44250c04af7808a2949f7a7520a20cc4a79a8b07491176b2bda",
+          "status": "ok",
+          "ym": "2026-07"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-08.zip",
+          "raw_sha256": "aee0f70d0b75739b4412150a731a0d19020d75e0472384fba9c541eecc889915",
+          "status": "ok",
+          "ym": "2026-08"
+        },
+        {
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-09.zip",
+          "raw_sha256": "eb0edbe8f19c6b27c7ab98e6ad6041297e1c3f50b47b4f200b3e421d190b537a",
+          "status": "ok",
+          "ym": "2026-09"
+        }
+      ],
+      "months_error": 0,
+      "months_missing": 0,
+      "months_ok": 45,
+      "months_requested": 45,
+      "raw_dir": "data/raw/binance/klines/ETHUSDT",
+      "rows": 1414,
       "symbol": "ETHUSDT"
     }
   ],

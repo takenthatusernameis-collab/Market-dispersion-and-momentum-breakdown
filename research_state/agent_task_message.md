@@ -9,7 +9,7 @@ Continue quantitative research in this repository without waiting for a new manu
 - Historical panels cover 28 mapped assets through 2024-12-31; rank frontier not proven exhausted.
 
 ## First measurable deliverable
-Extend free public data (CoinMetrics Community API for market caps, Binance Public Data Archive for klines/funding) to the latest fully closed UTC daily candle for all known and discovered candidates. Build the expanding point-in-time universe for DISPERSION-003 (legacy28_comparator + expanding_point_in_time). Begin discovering candidates below the existing 28-asset set by descending historical point-in-time market-cap rank in batches of 25 (checkpoints only, no fixed top-N cutoff). Create artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels structure as needed and record cutoffs/provenance/hashes.
+Extend free public data (CoinMetrics Community API for market caps, Binance Public Data Archive for klines/funding) completed to latest fully closed UTC daily candle (2026-10-23) for the legacy 28-asset set; provenance recorded. Next: discover candidates beyond the 28-asset set by descending historical point-in-time market-cap rank in batches of 25, validate mapping/eligibility and persist blockers.
 
 ## Mandatory sequencing
 1. Validate prior artifacts are intact. Never overwrite or edit DISPERSION-001 or DISPERSION-002 results.

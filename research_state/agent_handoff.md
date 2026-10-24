@@ -14,7 +14,7 @@
 
 ## Immediate next task
 1. **[DONE]** Run the unit-test suite and scripts/generate_grid_v3_manifest.py; verify 216 unique IDs/hashes and anchors H004V105/H004V106. All tests pass (21/21).
-2. Inspect active workflow/controller state and source-refresh code. Extend free public price, cap and funding data to the latest fully closed UTC daily candle. Record exact cutoffs and provenance before outcome computation.
+2. [DONE] Extended free public price, cap and funding data to latest fully closed UTC daily candle (2026-10-23); provenance recorded in data/panels/data_refresh_provenance.json; 21/21 tests pass.
 3. Discover candidates below the existing 28-asset set using descending historical point-in-time market-cap rank; process batches of 25 as operational checkpoints only, not a fixed universe cutoff. Record missing-history/mapping/data blockers and continue to other candidates/tasks.
 4. Implement a resumable, idempotent DISPERSION-003 data gate and evaluation runner for the full 216-cell grid. Compare legacy28 and expanding point-in-time arms. The complete grid is development/validation only; report every cell and the full Holm correction family.
 5. Freeze the exact future data cutoff and hashes before outcomes are viewed. Evaluate only the single primary anchor on the forward block beginning 2025-01-01; never search parameters on that block.
