@@ -8,8 +8,9 @@
 - Confirmed canonical H004V106 forward-block artifact integrity: n=608, high=61, low=90, high-low net=0.6165 (dimensionless log-returns), finite dispersion; states reconcile.
 - Verified HAC addendum present: diff=0.6165, SE=0.3982, t=1.548, 95% CI [-0.164, 1.397] (not significant under overlap-aware HAC).
 - Confirmed archived defective artifact preserved unchanged (637 extreme dispersions, extended range, look-ahead risk).
-- Confirmed data cutoff in canonical block is 2026-09-30; Binance kline panels end 2026-09-30 (max cutoff observed 2026-09-30). Threshold for fresh sealed block is cutoff >= 2026-10-29 — not met as of 2026-10-24T16:02:37Z.
+- Confirmed data cutoff in canonical block is 2026-09-30; Binance kline panels end 2026-09-30 (max cutoff observed 2026-09-30). Threshold for fresh sealed block is cutoff >= 2026-10-29 — not met as of 2026-10-24T16:31:40Z.
 - DISPERSION-001/002 unchanged; candidate frontier unchanged (cursor=76, 822 eligible, queue empty).
+- Attempted to monitor via `scripts/refresh_free_data.py` (timeout 300s) — script produced no stdout within timeout window; data cutoff unchanged (still 2026-09-30).
 
 ## Blocker record (forward block) — UNRESOLVED
 - Next sealed forward block requires cutoff >= 2026-10-29; current cutoff 2026-09-30. No fresh block available.
@@ -21,13 +22,12 @@
 3. If evaluating, compute overlap-aware uncertainty and report full results. Preserve DISPERSION-001/002 immutable.
 4. Run full tests in pandas-available environment when feasible.
 
-## Latest check (2026-10-24T16:02:37Z)
+## Latest check (2026-10-24T16:31:40Z)
 - Data cutoff 2026-09-30 < 2026-10-29 threshold. No fresh sealed forward block available.
-- Refresh rerun via scripts/refresh_free_data.py timed out after 120s with no stdout; Binance klines in panels still end at 2026-09-30 (BTC date_last=1790726400000). Cutoff unchanged.
+- Refresh attempted via scripts/refresh_free_data.py (300s timeout) with no observable stdout; Binance klines in panels still end at 2026-09-30. Cutoff unchanged.
 - Integrity audit and HAC addendum verified present and consistent.
 - No changes to DISPERSION-001/002; frontier unchanged (cursor=76, 822 eligible, queue empty).
 - Environment lacks pandas/numpy/pytest; tests not runnable here (original report 40/40).
 
 ## Concrete next action
 Monitor data cutoff via scripts/refresh_free_data.py; when cutoff>=2026-10-29, preregister/evaluate fresh sealed forward block for H004V106 with HAC uncertainty; do not reuse inspected block as fresh confirmation. Update handoff + task message with concrete measurable outcomes when evaluated.
-"
