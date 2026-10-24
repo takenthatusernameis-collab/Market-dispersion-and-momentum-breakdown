@@ -7,8 +7,8 @@ Continue candidate validation for DISPERSION-003 in bounded batches of 25.
 `python3 scripts/validate_candidate_batch.py --limit 25`
 
 ## Starting state
-- verified=131, blocked=3117, remaining_discovered=3099, cursor=7722
-- Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json (1347 entries; 50 verified, 1297 blocked from DISPERSION-003 batches). The 30 seed verified assets (1inch, aave, ada, avax, bnb, link, sol, etc.) originate from DISPERSION-001/002 and are NOT in this record — that is expected. Record-level reconcile: verified = record verified (50) + 30 seeds = 80.
+- verified=133, blocked=3140, remaining_discovered=3074, cursor=9522
+- Validation record: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json (3147 entries; 103 verified, 3044 blocked from DISPERSION-003 batches). The 30 seed verified assets (1inch, aave, ada, avax, bnb, link, sol, etc.) originate from DISPERSION-001/002 and are NOT in this record — that is expected. Record-level reconcile: verified = record verified (103) + 30 seeds = 133.
 - Frontier: research_state/universe_frontier.json
 
 ## Record after each batch
