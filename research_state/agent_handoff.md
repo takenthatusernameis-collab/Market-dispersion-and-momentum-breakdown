@@ -12,24 +12,12 @@
 - Previously committed historical panels cover 28 mapped assets and end on 2024-12-31. The historical rank frontier is not proven exhausted.
 - Current next config: configs/dispersion_momentum_grid_v3.json, 216 cells (108 parameter combinations × 2 universe arms); deterministic manifest generator and contract tests included. Manifest regenerated and verified: 216 configurations, 216 unique IDs (H004V001..H004V216), 216 unique hashes; anchors H004V105 (legacy28_comparator) and H004V106 (expanding_point_in_time) confirmed present.
 
-## Completed tasks
-1. **[DONE]** Run unit-test suite and generate_grid_v3_manifest.py; verify 216 unique IDs/hashes and anchors H004V105/H004V106. All tests pass (21/21).
-2. **[DONE]** Extended free public price, cap and funding data to latest fully closed UTC daily candle (2026-10-23); provenance recorded in data/panels/data_refresh_provenance.json; 21/21 tests pass.
-3. **[DONE]** Validated first candidate batch of 25 non-legacy assets: 4 verified (1inch, aave, ach, agld with CapMrktEstUSD + Binance perpetual), 21 blocked (no cap data and/or no Binance perpetual). Persisted in universe_frontier.json (candidate_page_cursor=76; 822 total eligible candidates). Added 4 verified candidates to refresh_free_data.py ASSETS/SYMBOL_MAP. Regenerated marketcap_panel.csv (46 assets, 47414 rows).
-4. **[DONE]** DISPERSION-003 grid evaluation complete: 216 cells evaluated — 216 OK, 0 BLOCKED, 0 FAILED, 0 Holm-rejected. All cells evaluated on expanding universe with 32 cap+Binance assets (legacy arm: 28, expanding arm: 32). Anchor H004V106: 1339 formations, high_low_diff_net_1x = -0.0599, not Holm-significant. Grid results in artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json and grid_summary.json.
-5. **[DONE]** Forward block evaluation of H004V106: sealed block 2025-01-01 to 2026-09-29 (latest fully closed UTC candle frozen at 2026-10-23T00:00:00Z). 637 formations (113 high, 163 low, 361 mid). high_low_diff_gross = -0.0097, high_low_diff_net_1x = -0.0097. Same negative sign as H1 but small magnitude; not an economically meaningful edge. Input file hashes frozen in forward_block_evaluation.json before outcomes were computed. Output at artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json.
-6. **[DONE]** Expanded universe to 32 assets with both CoinMetrics CapMrktEstUSD and Binance perpetual data (well past the 10-asset minimum for decile-based dispersion). Both anchors H004V105 and H004V106 now unblocked with outer_deciles rule.
-7. **[DONE]** hypothesis_registry.json updated: H1 evidence_note extended with DISPERSION-003 grid and forward block results; new H6 candidate added (negative spread persists on forward data at small magnitude, not economically meaningful). last_updated_utc set.
-8. **[DONE]** All 21 tests pass. DISPERSION-001/002 artifacts verified unchanged (git status confirms only DISPERSION-003 artifacts and research state modified).
-9. **[DONE]** Candidate batch validation executed (validate_candidate_batch.py): discovered=0, to_process=0, verified=30, blocked=21, remaining_discovered=0. Validation artifact written to artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json. Universe frontier updated (candidate_page_cursor advanced; verified/blocked reconciled). No DISPERSION-001/002 artifacts modified.
-10. **[DONE]** Session verification: unittest suite 21/21 pass; git diff confirms no DISPERSION-001/002 artifact changes (only pycache). Forward-block blocker re-verified: cutoff 2026-10-23T00:00:00Z, next sealed block requires formation dates >= 2026-09-30 with 30-day horizon, need cutoff >= 2026-10-29; do not compute prematurely. candidates_discovered queue empty; red-team/regression tests remain as next measurable work.
-11. **[DONE]** Red-team/regression pass: unittest suite 21/21 pass; inference repro, grid validation, data pipeline, and continuous-research contract tests green; no new accounting/cost/funding/holdout/resume defects surfaced by existing regression coverage. DISPERSION-001/002 artifacts unchanged. Forward-block blocker remains sealed until cutoff >= 2026-10-29.
-## Grid results summary
-- Status: 216 OK / 0 BLOCKED / 0 FAILED / 0 Holm-rejected
-- All cells evaluated on expanded universe (32 cap+Binance assets in expanding arm)
-- Anchor H004V106 (expanding, outer_deciles): n_formations=1339, high=516, low=110, high_low_diff_gross=-0.0600, high_low_diff_net_1x=-0.0600, eligible_assets_per_date mean=29.0 max=32
-- Anchor H004V105 (legacy, outer_deciles): n_formations=1339, high=516, low=110, high_low_diff_gross=-0.0698, high_low_diff_net_1x=-0.0698, eligible_assets_per_date mean=27.1 max=28
-- Neither anchor Holm-rejected. Forward block H004V106: high_low_diff_net_1x = -0.0097.
+## Completed tasks (this session)
+1. **[DONE]** Verified test suite: `python -m unittest discover -s tests` → 21/21 OK.
+2. **[DONE]** Verified git status: only `tests/__pycache__/*.pyc` modified; no changes to DISPERSION-001/002 artifacts.
+3. **[DONE]** Reviewed DISPERSION-003 state: 216 OK/0 BLOCKED/0 FAILED/0 Holm-rejected. Forward block H004V106 (2025-01-01..2026-09-29): high_low_diff_net_1x = -0.0097. Cutoff frozen at 2026-10-23T00:00:00Z in forward_block_evaluation.json.
+4. **[DONE]** Confirmed universe frontier state: 32 cap+Binance assets verified; frontier cursor=76, 822 eligible candidates, rank_frontier_exhausted=false. `candidates_discovered` queue empty (validation 2026-10-23: discovered=0, to_process=0, verified=30, blocked=21).
+5. **[DONE]** Confirmed red-team/regression pass complete per prior handoff; no new defects observed. Updated handoff and prepared next task message.
 
 ## Root cause resolution
 - Previous blocker (only 6 cap+Binance assets, outer_deciles needs 10+) resolved: universe expanded to 32 assets. Both anchors now evaluable with outer_deciles rule.
