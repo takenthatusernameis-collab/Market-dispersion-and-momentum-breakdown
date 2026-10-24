@@ -1,0 +1,6962 @@
+[
+  {
+    "CapMrktCurUSD": "554213.033313851",
+    "asset": "alpha",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "529000",
+    "asset": "alpha",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "538096.434833431",
+    "asset": "alpha",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "529000",
+    "asset": "alpha",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "542174.400935126",
+    "asset": "alpha",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "553391.350087668",
+    "asset": "alpha",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "543000",
+    "asset": "alpha",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "567876.91408533",
+    "asset": "alpha",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "536000",
+    "asset": "alpha",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "512000",
+    "asset": "alpha",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "548000",
+    "asset": "alpha",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "514000",
+    "asset": "alpha",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "503896.902396259",
+    "asset": "alpha",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "503000",
+    "asset": "alpha",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "495000",
+    "asset": "alpha",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "508000",
+    "asset": "alpha",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "507160.958503799",
+    "asset": "alpha",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "504000",
+    "asset": "alpha",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "482353.945061368",
+    "asset": "alpha",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "502000",
+    "asset": "alpha",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "489000",
+    "asset": "alpha",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "505872.35534775",
+    "asset": "alpha",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "472900.64289889",
+    "asset": "alpha",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "478629.631794272",
+    "asset": "alpha",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "479000",
+    "asset": "alpha",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "452000",
+    "asset": "alpha",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "410000",
+    "asset": "alpha",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "397426.358854471",
+    "asset": "alpha",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "395000",
+    "asset": "alpha",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "398000",
+    "asset": "alpha",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "427706.604324956",
+    "asset": "alpha",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "416482.875511397",
+    "asset": "alpha",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "398069.43308007",
+    "asset": "alpha",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "392000",
+    "asset": "alpha",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "417741.752670798",
+    "asset": "alpha",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "416000",
+    "asset": "alpha",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "430240.132163741",
+    "asset": "alpha",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "463250.408777313",
+    "asset": "alpha",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "462440.851475085",
+    "asset": "alpha",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "452757.880085038",
+    "asset": "alpha",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "434433.777899894",
+    "asset": "alpha",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "479976.329631794",
+    "asset": "alpha",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "446785.330216248",
+    "asset": "alpha",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "453000",
+    "asset": "alpha",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "446000",
+    "asset": "alpha",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "454746.04928581",
+    "asset": "alpha",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "426719.579193454",
+    "asset": "alpha",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "498339.684395091",
+    "asset": "alpha",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "433777.55698422",
+    "asset": "alpha",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "463062.818546547",
+    "asset": "alpha",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "463000",
+    "asset": "alpha",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "434055.348111761",
+    "asset": "alpha",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "459646.781119886",
+    "asset": "alpha",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "472000",
+    "asset": "alpha",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "440094.681472823",
+    "asset": "alpha",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "426000",
+    "asset": "alpha",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "418770.543541788",
+    "asset": "alpha",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "457128.10054259",
+    "asset": "alpha",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "433000",
+    "asset": "alpha",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "449491.869251992",
+    "asset": "alpha",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "432000",
+    "asset": "alpha",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "414748.100526008",
+    "asset": "alpha",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "436135.809429071",
+    "asset": "alpha",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "425001.052016365",
+    "asset": "alpha",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "456000",
+    "asset": "alpha",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "436877.966101695",
+    "asset": "alpha",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "446722.375457379",
+    "asset": "alpha",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "438000",
+    "asset": "alpha",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "435999.473991818",
+    "asset": "alpha",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "435000",
+    "asset": "alpha",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "431887.96025716",
+    "asset": "alpha",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "433853.185271771",
+    "asset": "alpha",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "421694.330800701",
+    "asset": "alpha",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "422574.400935126",
+    "asset": "alpha",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "424000",
+    "asset": "alpha",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "420035.943892461",
+    "asset": "alpha",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "434625.201286656",
+    "asset": "alpha",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "442603.717760064",
+    "asset": "alpha",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "478645.470485096",
+    "asset": "alpha",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "470000",
+    "asset": "alpha",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "482000",
+    "asset": "alpha",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "449142.022209234",
+    "asset": "alpha",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "508794.512482702",
+    "asset": "alpha",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "486813.692265168",
+    "asset": "alpha",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "503693.395675044",
+    "asset": "alpha",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "506266.399991313",
+    "asset": "alpha",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "539712.799532437",
+    "asset": "alpha",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "531890.882310992",
+    "asset": "alpha",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "522579.369754934",
+    "asset": "alpha",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "530212.567522141",
+    "asset": "alpha",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "492973.933372297",
+    "asset": "alpha",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "450996.843950906",
+    "asset": "alpha",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "445000",
+    "asset": "alpha",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "441410.286382232",
+    "asset": "alpha",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "445810.052600818",
+    "asset": "alpha",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "443163.708795633",
+    "asset": "alpha",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "443000",
+    "asset": "alpha",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "431992.109877265",
+    "asset": "alpha",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "527471.770894214",
+    "asset": "alpha",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "443693.029444479",
+    "asset": "alpha",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "422220.718135702",
+    "asset": "alpha",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "370128.324180401",
+    "asset": "alpha",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "379094.574225142",
+    "asset": "alpha",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "384626.542804301",
+    "asset": "alpha",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "434967.126537087",
+    "asset": "alpha",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "383637.53996906",
+    "asset": "alpha",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "399991.024229435",
+    "asset": "alpha",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "374340.040009966",
+    "asset": "alpha",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "380280.214580328",
+    "asset": "alpha",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "389150.692370151",
+    "asset": "alpha",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "409677.676898075",
+    "asset": "alpha",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "361291.976204463",
+    "asset": "alpha",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "337279.801917513",
+    "asset": "alpha",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "344141.082230937",
+    "asset": "alpha",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "355188.720046756",
+    "asset": "alpha",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "363949.242111276",
+    "asset": "alpha",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "358185.924330202",
+    "asset": "alpha",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "345098.947983635",
+    "asset": "alpha",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "356352.857758292",
+    "asset": "alpha",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "350000",
+    "asset": "alpha",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "381578.097636911",
+    "asset": "alpha",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "431626.775409347",
+    "asset": "alpha",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "350212.867675752",
+    "asset": "alpha",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "330275.385284543",
+    "asset": "alpha",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "317280.477244061",
+    "asset": "alpha",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "302391.918829487",
+    "asset": "alpha",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314000",
+    "asset": "alpha",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307231.781317775",
+    "asset": "alpha",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313516.130917592",
+    "asset": "alpha",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "324118.910821518",
+    "asset": "alpha",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321208.203235293",
+    "asset": "alpha",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "327000",
+    "asset": "alpha",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "333343.822353873",
+    "asset": "alpha",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "434877.676177669",
+    "asset": "alpha",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1822941.11165254",
+    "asset": "alpha",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1224360.93228089",
+    "asset": "alpha",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "826632.23198344",
+    "asset": "alpha",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1241698.74442293",
+    "asset": "alpha",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1202427.61911391",
+    "asset": "alpha",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1032565.79045766",
+    "asset": "alpha",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1034605.98830527",
+    "asset": "alpha",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "929639.95767053",
+    "asset": "alpha",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "647003.566090631",
+    "asset": "alpha",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "995794.856808884",
+    "asset": "alpha",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "832798.188194039",
+    "asset": "alpha",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "813307.714786675",
+    "asset": "alpha",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "842086.265341905",
+    "asset": "alpha",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "826237.22969024",
+    "asset": "alpha",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "782393.33722969",
+    "asset": "alpha",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "766604.909409702",
+    "asset": "alpha",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "683406.487434249",
+    "asset": "alpha",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "756234.891876095",
+    "asset": "alpha",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "763673.115137347",
+    "asset": "alpha",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "709017.8842782",
+    "asset": "alpha",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "836603.565166569",
+    "asset": "alpha",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "732128.872004676",
+    "asset": "alpha",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "719977.907656341",
+    "asset": "alpha",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "704829.74868498",
+    "asset": "alpha",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "707296.551724138",
+    "asset": "alpha",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "649362.945645821",
+    "asset": "alpha",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "647150.321449445",
+    "asset": "alpha",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "586000",
+    "asset": "alpha",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "651173.582700175",
+    "asset": "alpha",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "601275.160724722",
+    "asset": "alpha",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "581227.235534775",
+    "asset": "alpha",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "659244.243132671",
+    "asset": "alpha",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "570192.752776154",
+    "asset": "alpha",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "548154.646405611",
+    "asset": "alpha",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "568000",
+    "asset": "alpha",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "541504.967855056",
+    "asset": "alpha",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "580000",
+    "asset": "alpha",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "601000",
+    "asset": "alpha",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "683464.348334307",
+    "asset": "alpha",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "683000",
+    "asset": "alpha",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "615351.957919345",
+    "asset": "alpha",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "599000",
+    "asset": "alpha",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "590000",
+    "asset": "alpha",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "543784.921098773",
+    "asset": "alpha",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "677699.473991818",
+    "asset": "alpha",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "629177.790765634",
+    "asset": "alpha",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "627977.907656341",
+    "asset": "alpha",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "573403.74050263",
+    "asset": "alpha",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "568000",
+    "asset": "alpha",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "553336.879018118",
+    "asset": "alpha",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "592823.261250731",
+    "asset": "alpha",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "585001.578024547",
+    "asset": "alpha",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "610022.092343659",
+    "asset": "alpha",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "562794.447691408",
+    "asset": "alpha",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "641000",
+    "asset": "alpha",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "557734.599649328",
+    "asset": "alpha",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "582000",
+    "asset": "alpha",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "557000",
+    "asset": "alpha",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "561017.358270017",
+    "asset": "alpha",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "531917.416715371",
+    "asset": "alpha",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "539386.616014027",
+    "asset": "alpha",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "556033.138515488",
+    "asset": "alpha",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "533424.313267095",
+    "asset": "alpha",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "530066.277030976",
+    "asset": "alpha",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "512306.078316774",
+    "asset": "alpha",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "561876.91408533",
+    "asset": "alpha",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4809415.6423319",
+    "asset": "alpha",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4881253.96047532",
+    "asset": "alpha",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4763706.73049343",
+    "asset": "alpha",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4699595.30579823",
+    "asset": "alpha",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4734683.75912757",
+    "asset": "alpha",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4812459.452561",
+    "asset": "alpha",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5113810.89931385",
+    "asset": "alpha",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5649774.82422633",
+    "asset": "alpha",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7625891.48325528",
+    "asset": "alpha",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8137789.83180619",
+    "asset": "alpha",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7039386.468507",
+    "asset": "alpha",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7910933.73413018",
+    "asset": "alpha",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7427573.32285865",
+    "asset": "alpha",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7212308.55883968",
+    "asset": "alpha",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7017522.59056725",
+    "asset": "alpha",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7024128.77920798",
+    "asset": "alpha",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6602824.30692401",
+    "asset": "alpha",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6694478.31190678",
+    "asset": "alpha",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6507857.33620638",
+    "asset": "alpha",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6326546.38464382",
+    "asset": "alpha",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6405118.64723938",
+    "asset": "alpha",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6414788.67830424",
+    "asset": "alpha",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6002157.07669598",
+    "asset": "alpha",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5713903.32950118",
+    "asset": "alpha",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5805899.56498479",
+    "asset": "alpha",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5786524.73673197",
+    "asset": "alpha",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5931325.25384768",
+    "asset": "alpha",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5830978.01220129",
+    "asset": "alpha",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5670681.65142097",
+    "asset": "alpha",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5735686.24080785",
+    "asset": "alpha",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5751263.67073491",
+    "asset": "alpha",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5702055.63330254",
+    "asset": "alpha",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5399558.90515914",
+    "asset": "alpha",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5223956.49729778",
+    "asset": "alpha",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4942447.03644726",
+    "asset": "alpha",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4848645.32311043",
+    "asset": "alpha",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5069211.91428364",
+    "asset": "alpha",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4955054.28793006",
+    "asset": "alpha",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4684797.02836159",
+    "asset": "alpha",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4151396.76975108",
+    "asset": "alpha",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4205193.93137338",
+    "asset": "alpha",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4207117.70717688",
+    "asset": "alpha",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3983634.29400333",
+    "asset": "alpha",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3956721.33707401",
+    "asset": "alpha",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3632608.40683345",
+    "asset": "alpha",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3636550.38022745",
+    "asset": "alpha",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3517636.27136057",
+    "asset": "alpha",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3551740.19731823",
+    "asset": "alpha",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3543687.33094367",
+    "asset": "alpha",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3513370.37068394",
+    "asset": "alpha",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3550564.78176295",
+    "asset": "alpha",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3563865.72602657",
+    "asset": "alpha",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3494778.51848742",
+    "asset": "alpha",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3490405.24469026",
+    "asset": "alpha",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3266617.2435648",
+    "asset": "alpha",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3239649.62762202",
+    "asset": "alpha",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3243565.09409884",
+    "asset": "alpha",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3040437.52746149",
+    "asset": "alpha",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2854580.982787",
+    "asset": "alpha",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2972334.9927142",
+    "asset": "alpha",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2875781.32273273",
+    "asset": "alpha",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2881693.67451416",
+    "asset": "alpha",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2850302.74201581",
+    "asset": "alpha",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2875117.56840182",
+    "asset": "alpha",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2925193.43059248",
+    "asset": "alpha",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3407693.56559587",
+    "asset": "alpha",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3175383.4221244",
+    "asset": "alpha",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3056080.93879637",
+    "asset": "alpha",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "3041490.21804244",
+    "asset": "alpha",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2876037.59924436",
+    "asset": "alpha",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2749424.48856227",
+    "asset": "alpha",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2877761.70439802",
+    "asset": "alpha",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2860381.34182839",
+    "asset": "alpha",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2553263.46013777",
+    "asset": "alpha",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2516966.63727984",
+    "asset": "alpha",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2597955.41224536",
+    "asset": "alpha",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2540288.69994289",
+    "asset": "alpha",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2531497.69409593",
+    "asset": "alpha",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2619825.27563035",
+    "asset": "alpha",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2542073.27352079",
+    "asset": "alpha",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2476945.84645771",
+    "asset": "alpha",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2488823.04861884",
+    "asset": "alpha",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2480056.61923582",
+    "asset": "alpha",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2435846.75338114",
+    "asset": "alpha",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2417938.40611334",
+    "asset": "alpha",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2494102.74158126",
+    "asset": "alpha",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2469030.16512543",
+    "asset": "alpha",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2437031.67745662",
+    "asset": "alpha",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2180646.66334681",
+    "asset": "alpha",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "2040794.5002576",
+    "asset": "alpha",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1789235.95470523",
+    "asset": "alpha",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1469711.16031721",
+    "asset": "alpha",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "1484586.03128486",
+    "asset": "alpha",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "713931.879948937",
+    "asset": "alpha",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "585353.966167674",
+    "asset": "alpha",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "446543.539938425",
+    "asset": "alpha",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "433588.164533393",
+    "asset": "alpha",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "467867.613210823",
+    "asset": "alpha",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "499741.592065078",
+    "asset": "alpha",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "454921.268713086",
+    "asset": "alpha",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19688958.1536882",
+    "asset": "alpha",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19375745.5903404",
+    "asset": "alpha",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17985098.72334",
+    "asset": "alpha",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23126264.5954498",
+    "asset": "alpha",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19130053.9370458",
+    "asset": "alpha",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17729292.5091621",
+    "asset": "alpha",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15647591.1408115",
+    "asset": "alpha",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16316298.6561718",
+    "asset": "alpha",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15482354.3503683",
+    "asset": "alpha",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15792363.7171086",
+    "asset": "alpha",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15377386.5484421",
+    "asset": "alpha",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14762577.2809354",
+    "asset": "alpha",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15479295.1155139",
+    "asset": "alpha",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15368627.6534576",
+    "asset": "alpha",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15443153.778262",
+    "asset": "alpha",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15218933.8356417",
+    "asset": "alpha",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15176406.6695917",
+    "asset": "alpha",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15207941.8529616",
+    "asset": "alpha",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15531121.2164798",
+    "asset": "alpha",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14887438.5644829",
+    "asset": "alpha",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14039507.3658719",
+    "asset": "alpha",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10346221.7184131",
+    "asset": "alpha",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10909279.5473987",
+    "asset": "alpha",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11575046.9431067",
+    "asset": "alpha",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11638792.4119816",
+    "asset": "alpha",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11483284.1821221",
+    "asset": "alpha",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11018812.083946",
+    "asset": "alpha",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9693972.1459798",
+    "asset": "alpha",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9577661.83121881",
+    "asset": "alpha",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10513385.2336416",
+    "asset": "alpha",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10394190.9582556",
+    "asset": "alpha",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10062719.8190315",
+    "asset": "alpha",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9994233.01076985",
+    "asset": "alpha",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9699372.62414167",
+    "asset": "alpha",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9947384.27336905",
+    "asset": "alpha",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9493041.76900387",
+    "asset": "alpha",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9472049.64403113",
+    "asset": "alpha",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9804888.93143888",
+    "asset": "alpha",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9778770.35764736",
+    "asset": "alpha",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9604746.42135577",
+    "asset": "alpha",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9740724.37320929",
+    "asset": "alpha",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8943423.78245425",
+    "asset": "alpha",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9285031.3656462",
+    "asset": "alpha",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8929442.9767581",
+    "asset": "alpha",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8984353.61064294",
+    "asset": "alpha",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8534406.22978175",
+    "asset": "alpha",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7944944.79448213",
+    "asset": "alpha",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7953365.38519096",
+    "asset": "alpha",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7544635.93345495",
+    "asset": "alpha",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7979847.88035279",
+    "asset": "alpha",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8086930.51280149",
+    "asset": "alpha",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8036167.7373169",
+    "asset": "alpha",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8382160.77131032",
+    "asset": "alpha",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8046623.69224749",
+    "asset": "alpha",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7689360.23430151",
+    "asset": "alpha",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7657063.64411477",
+    "asset": "alpha",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8572983.23626902",
+    "asset": "alpha",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8583023.74974005",
+    "asset": "alpha",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7978829.37172941",
+    "asset": "alpha",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7937782.40046606",
+    "asset": "alpha",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7994035.61746731",
+    "asset": "alpha",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7641148.7550366",
+    "asset": "alpha",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7440364.01168914",
+    "asset": "alpha",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7043577.62258608",
+    "asset": "alpha",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7021758.76689405",
+    "asset": "alpha",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7034266.75381854",
+    "asset": "alpha",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7053809.24311898",
+    "asset": "alpha",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7087007.86757798",
+    "asset": "alpha",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6792561.01258068",
+    "asset": "alpha",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7124725.04341418",
+    "asset": "alpha",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7090617.75811269",
+    "asset": "alpha",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6871742.68473317",
+    "asset": "alpha",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6909486.43785367",
+    "asset": "alpha",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6219679.72100395",
+    "asset": "alpha",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6534993.21265857",
+    "asset": "alpha",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6650784.31476578",
+    "asset": "alpha",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6576328.30181947",
+    "asset": "alpha",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6308707.54115323",
+    "asset": "alpha",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6473512.06011978",
+    "asset": "alpha",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6572860.85959775",
+    "asset": "alpha",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6566776.31876511",
+    "asset": "alpha",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6284718.76662078",
+    "asset": "alpha",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6093862.11822133",
+    "asset": "alpha",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5985617.97163536",
+    "asset": "alpha",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6039685.42619926",
+    "asset": "alpha",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6034281.21403416",
+    "asset": "alpha",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5982628.83557352",
+    "asset": "alpha",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5708121.47827588",
+    "asset": "alpha",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5686187.9389642",
+    "asset": "alpha",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5679009.63170326",
+    "asset": "alpha",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5376541.42669825",
+    "asset": "alpha",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5231399.57372007",
+    "asset": "alpha",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5164091.45452879",
+    "asset": "alpha",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5126391.65102134",
+    "asset": "alpha",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5133364.006629",
+    "asset": "alpha",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5086891.06479357",
+    "asset": "alpha",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4888145.46689218",
+    "asset": "alpha",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4798709.69926435",
+    "asset": "alpha",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4895520.05571741",
+    "asset": "alpha",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4852120.5530292",
+    "asset": "alpha",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24435425.0781465",
+    "asset": "alpha",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22530775.1105864",
+    "asset": "alpha",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21865977.1067371",
+    "asset": "alpha",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21802957.610958",
+    "asset": "alpha",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21954463.0622476",
+    "asset": "alpha",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21875655.9735225",
+    "asset": "alpha",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20806936.0074554",
+    "asset": "alpha",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20594091.2115432",
+    "asset": "alpha",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20175660.7913036",
+    "asset": "alpha",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19615039.7227117",
+    "asset": "alpha",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18081308.9993766",
+    "asset": "alpha",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17766544.8465095",
+    "asset": "alpha",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19730723.13927",
+    "asset": "alpha",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19749735.4437961",
+    "asset": "alpha",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17502536.4211053",
+    "asset": "alpha",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15409171.9623283",
+    "asset": "alpha",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15174290.5333906",
+    "asset": "alpha",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14476822.1542515",
+    "asset": "alpha",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14379197.1612997",
+    "asset": "alpha",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13724306.572316",
+    "asset": "alpha",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12826610.5940529",
+    "asset": "alpha",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12654138.1935561",
+    "asset": "alpha",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10879458.1535679",
+    "asset": "alpha",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10045059.6462094",
+    "asset": "alpha",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13781188.3391765",
+    "asset": "alpha",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11981134.922499",
+    "asset": "alpha",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12174937.5527536",
+    "asset": "alpha",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12484636.6720288",
+    "asset": "alpha",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12492708.1269911",
+    "asset": "alpha",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13698367.2807375",
+    "asset": "alpha",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17325271.6776231",
+    "asset": "alpha",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16466009.3518746",
+    "asset": "alpha",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16192034.4032153",
+    "asset": "alpha",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15792224.9093587",
+    "asset": "alpha",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15773820.3114356",
+    "asset": "alpha",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15710443.6852009",
+    "asset": "alpha",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15527491.4856567",
+    "asset": "alpha",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15801846.5551599",
+    "asset": "alpha",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16433659.5845484",
+    "asset": "alpha",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16870260.6391828",
+    "asset": "alpha",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16746849.9884902",
+    "asset": "alpha",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16576441.1545971",
+    "asset": "alpha",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15199129.4394742",
+    "asset": "alpha",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14507583.5227115",
+    "asset": "alpha",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15084735.6014275",
+    "asset": "alpha",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15555045.4334604",
+    "asset": "alpha",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15672118.6763207",
+    "asset": "alpha",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14274242.3817139",
+    "asset": "alpha",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14701499.3485336",
+    "asset": "alpha",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14582606.8154273",
+    "asset": "alpha",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14231603.4294565",
+    "asset": "alpha",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14464820.6145818",
+    "asset": "alpha",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13796154.8957132",
+    "asset": "alpha",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14454453.3309299",
+    "asset": "alpha",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14455896.3735802",
+    "asset": "alpha",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14029564.795042",
+    "asset": "alpha",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14512996.0744434",
+    "asset": "alpha",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14602971.0752779",
+    "asset": "alpha",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15184506.1898044",
+    "asset": "alpha",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17538339.0035279",
+    "asset": "alpha",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16502730.5009412",
+    "asset": "alpha",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15416950.7525932",
+    "asset": "alpha",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16055753.6480806",
+    "asset": "alpha",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16298978.8663975",
+    "asset": "alpha",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14567797.6233143",
+    "asset": "alpha",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14714385.4429904",
+    "asset": "alpha",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15260038.1522909",
+    "asset": "alpha",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16378961.765854",
+    "asset": "alpha",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15376363.3259579",
+    "asset": "alpha",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14375424.8438265",
+    "asset": "alpha",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14808970.4647638",
+    "asset": "alpha",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14313512.2291873",
+    "asset": "alpha",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15297230.2850929",
+    "asset": "alpha",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15111954.9942911",
+    "asset": "alpha",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14699983.3742719",
+    "asset": "alpha",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14136890.385914",
+    "asset": "alpha",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14750552.4973945",
+    "asset": "alpha",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14485582.1259799",
+    "asset": "alpha",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15099654.4760882",
+    "asset": "alpha",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14288314.4822585",
+    "asset": "alpha",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15208743.3490566",
+    "asset": "alpha",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14547829.79682",
+    "asset": "alpha",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14037517.6098236",
+    "asset": "alpha",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14736820.9712484",
+    "asset": "alpha",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14894316.3117192",
+    "asset": "alpha",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14069891.7913715",
+    "asset": "alpha",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14346906.4572722",
+    "asset": "alpha",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14519644.2048053",
+    "asset": "alpha",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15368013.5977125",
+    "asset": "alpha",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14916914.8719603",
+    "asset": "alpha",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14760383.2762363",
+    "asset": "alpha",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16363717.6164572",
+    "asset": "alpha",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15843027.0764989",
+    "asset": "alpha",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17662006.6341499",
+    "asset": "alpha",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17649551.5642766",
+    "asset": "alpha",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16669155.0345386",
+    "asset": "alpha",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16024557.9041377",
+    "asset": "alpha",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16712489.8995101",
+    "asset": "alpha",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21684757.0948881",
+    "asset": "alpha",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21286250.9502297",
+    "asset": "alpha",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41336324.9593166",
+    "asset": "alpha",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39834497.0532247",
+    "asset": "alpha",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41609308.5606286",
+    "asset": "alpha",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41314514.2418834",
+    "asset": "alpha",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42748398.661254",
+    "asset": "alpha",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39449401.5845265",
+    "asset": "alpha",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36491090.322632",
+    "asset": "alpha",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36087690.3853722",
+    "asset": "alpha",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37415134.207012",
+    "asset": "alpha",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "38391223.9584235",
+    "asset": "alpha",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37088683.3730778",
+    "asset": "alpha",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "38588983.6319314",
+    "asset": "alpha",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39506102.5060815",
+    "asset": "alpha",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37451015.8775845",
+    "asset": "alpha",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39768686.2830874",
+    "asset": "alpha",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39467645.5422346",
+    "asset": "alpha",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40642304.1587313",
+    "asset": "alpha",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39347414.4345281",
+    "asset": "alpha",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "38326667.9536558",
+    "asset": "alpha",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39918684.7403169",
+    "asset": "alpha",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39114798.0121579",
+    "asset": "alpha",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40940712.6137621",
+    "asset": "alpha",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41554940.4407401",
+    "asset": "alpha",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40528791.5042903",
+    "asset": "alpha",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39670511.780756",
+    "asset": "alpha",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36362089.6032105",
+    "asset": "alpha",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34255994.506831",
+    "asset": "alpha",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34303487.9802947",
+    "asset": "alpha",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34398334.1583218",
+    "asset": "alpha",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34909823.5888559",
+    "asset": "alpha",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32207211.9904252",
+    "asset": "alpha",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31962523.5675781",
+    "asset": "alpha",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32070321.1908458",
+    "asset": "alpha",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31585549.4641138",
+    "asset": "alpha",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27422896.5249839",
+    "asset": "alpha",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28372969.4910686",
+    "asset": "alpha",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25906258.4383141",
+    "asset": "alpha",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28846413.6080827",
+    "asset": "alpha",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27807462.0780706",
+    "asset": "alpha",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28504147.3624108",
+    "asset": "alpha",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29253494.4795791",
+    "asset": "alpha",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26754559.796463",
+    "asset": "alpha",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27282752.8764282",
+    "asset": "alpha",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26634416.9503536",
+    "asset": "alpha",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26233885.4244431",
+    "asset": "alpha",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26372699.7231974",
+    "asset": "alpha",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28561069.3536472",
+    "asset": "alpha",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30291593.0516853",
+    "asset": "alpha",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30510590.6481443",
+    "asset": "alpha",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30050336.275805",
+    "asset": "alpha",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32208327.0640674",
+    "asset": "alpha",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32748860.950383",
+    "asset": "alpha",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32389801.8290136",
+    "asset": "alpha",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34028589.4095891",
+    "asset": "alpha",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33277659.2825516",
+    "asset": "alpha",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30618963.4593533",
+    "asset": "alpha",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31002299.6097354",
+    "asset": "alpha",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29410405.4711501",
+    "asset": "alpha",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31194520.8606228",
+    "asset": "alpha",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37859469.1975711",
+    "asset": "alpha",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36548619.0237131",
+    "asset": "alpha",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31863935.6926506",
+    "asset": "alpha",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32323199.0610809",
+    "asset": "alpha",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30280769.7864261",
+    "asset": "alpha",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29734533.4476108",
+    "asset": "alpha",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26531992.4537419",
+    "asset": "alpha",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28707499.5808038",
+    "asset": "alpha",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30926599.9823757",
+    "asset": "alpha",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31390905.5531278",
+    "asset": "alpha",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30543369.6903393",
+    "asset": "alpha",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30474031.4659615",
+    "asset": "alpha",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31434197.6990914",
+    "asset": "alpha",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29143146.7131619",
+    "asset": "alpha",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27178485.2357263",
+    "asset": "alpha",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27080825.5199223",
+    "asset": "alpha",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26964649.9357615",
+    "asset": "alpha",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28647258.9184045",
+    "asset": "alpha",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34017860.5696206",
+    "asset": "alpha",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30984924.2551503",
+    "asset": "alpha",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31448823.3851795",
+    "asset": "alpha",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31777875.4256413",
+    "asset": "alpha",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28653323.9587304",
+    "asset": "alpha",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29661162.8752347",
+    "asset": "alpha",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28692578.3806813",
+    "asset": "alpha",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28687911.5541431",
+    "asset": "alpha",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29311365.7518826",
+    "asset": "alpha",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29069201.6429519",
+    "asset": "alpha",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27713984.8243258",
+    "asset": "alpha",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24892369.6726976",
+    "asset": "alpha",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24988994.6387381",
+    "asset": "alpha",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25167068.3133945",
+    "asset": "alpha",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26364173.4786006",
+    "asset": "alpha",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26171411.2079494",
+    "asset": "alpha",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25083310.9029209",
+    "asset": "alpha",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23386932.1215487",
+    "asset": "alpha",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24078084.3358219",
+    "asset": "alpha",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25158044.9793858",
+    "asset": "alpha",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25073072.1160892",
+    "asset": "alpha",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25770355.4271752",
+    "asset": "alpha",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25937760.5060781",
+    "asset": "alpha",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90245949.2514341",
+    "asset": "alpha",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96166162.4067891",
+    "asset": "alpha",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92288399.1308182",
+    "asset": "alpha",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90465866.8708597",
+    "asset": "alpha",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98115533.2289852",
+    "asset": "alpha",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99507470.9917179",
+    "asset": "alpha",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101996451.995972",
+    "asset": "alpha",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116839180.272853",
+    "asset": "alpha",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116271658.980437",
+    "asset": "alpha",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117582572.318078",
+    "asset": "alpha",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124890736.210078",
+    "asset": "alpha",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126574971.018974",
+    "asset": "alpha",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126574012.415494",
+    "asset": "alpha",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131288983.223013",
+    "asset": "alpha",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128822844.400393",
+    "asset": "alpha",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "132881656.032655",
+    "asset": "alpha",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102652958.866682",
+    "asset": "alpha",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97865159.4531795",
+    "asset": "alpha",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109526966.836496",
+    "asset": "alpha",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112899734.186796",
+    "asset": "alpha",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113813941.944647",
+    "asset": "alpha",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107961966.670918",
+    "asset": "alpha",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111384065.593164",
+    "asset": "alpha",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110177152.187407",
+    "asset": "alpha",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102745997.894534",
+    "asset": "alpha",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91459704.1653525",
+    "asset": "alpha",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83899046.9973904",
+    "asset": "alpha",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85618441.4792882",
+    "asset": "alpha",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80125504.4077862",
+    "asset": "alpha",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79215451.1575891",
+    "asset": "alpha",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84743165.4516665",
+    "asset": "alpha",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88659228.1553133",
+    "asset": "alpha",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86414495.694857",
+    "asset": "alpha",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79633789.5867433",
+    "asset": "alpha",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81321116.3725711",
+    "asset": "alpha",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89297251.6579544",
+    "asset": "alpha",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83205654.3983787",
+    "asset": "alpha",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82717408.0819742",
+    "asset": "alpha",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79814257.9136638",
+    "asset": "alpha",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83015080.0913096",
+    "asset": "alpha",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84806103.5042854",
+    "asset": "alpha",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89167655.5727475",
+    "asset": "alpha",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89210931.712867",
+    "asset": "alpha",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89827649.6660638",
+    "asset": "alpha",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90316905.2859988",
+    "asset": "alpha",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78665682.5404896",
+    "asset": "alpha",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75541360.5836331",
+    "asset": "alpha",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73049903.517828",
+    "asset": "alpha",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74830417.0241032",
+    "asset": "alpha",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73945240.4391683",
+    "asset": "alpha",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72679132.546439",
+    "asset": "alpha",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70114175.0125021",
+    "asset": "alpha",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73808519.7157859",
+    "asset": "alpha",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78805509.4422032",
+    "asset": "alpha",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76363181.0344902",
+    "asset": "alpha",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80919495.4052233",
+    "asset": "alpha",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75338048.895066",
+    "asset": "alpha",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67319147.4550356",
+    "asset": "alpha",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65776971.8715187",
+    "asset": "alpha",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68078949.9439039",
+    "asset": "alpha",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65339810.8034405",
+    "asset": "alpha",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65233031.1277062",
+    "asset": "alpha",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61775040.6564191",
+    "asset": "alpha",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "62873593.7879811",
+    "asset": "alpha",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63651590.3143781",
+    "asset": "alpha",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61860957.8924998",
+    "asset": "alpha",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58776166.4388706",
+    "asset": "alpha",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61860022.210957",
+    "asset": "alpha",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63448820.1315268",
+    "asset": "alpha",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63665856.4481062",
+    "asset": "alpha",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "57964074.4485966",
+    "asset": "alpha",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49388889.0818586",
+    "asset": "alpha",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49989456.8027823",
+    "asset": "alpha",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47095576.2211358",
+    "asset": "alpha",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47155737.6093102",
+    "asset": "alpha",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45365164.1352862",
+    "asset": "alpha",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46167008.320382",
+    "asset": "alpha",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49868665.79918",
+    "asset": "alpha",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49390410.0524604",
+    "asset": "alpha",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50580038.7792908",
+    "asset": "alpha",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49380572.2557636",
+    "asset": "alpha",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55084348.6817166",
+    "asset": "alpha",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51966361.6289012",
+    "asset": "alpha",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "52253286.633027",
+    "asset": "alpha",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50296637.4328008",
+    "asset": "alpha",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49758961.2192737",
+    "asset": "alpha",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48709471.0638801",
+    "asset": "alpha",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47302275.7483992",
+    "asset": "alpha",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46809530.8139615",
+    "asset": "alpha",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49643157.5618127",
+    "asset": "alpha",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48157539.0624899",
+    "asset": "alpha",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50618319.8402208",
+    "asset": "alpha",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49923234.4904103",
+    "asset": "alpha",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42530098.031353",
+    "asset": "alpha",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43944176.3336433",
+    "asset": "alpha",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44284230.7543053",
+    "asset": "alpha",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45243834.9812954",
+    "asset": "alpha",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45625448.8161948",
+    "asset": "alpha",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44213568.8845874",
+    "asset": "alpha",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48917166.6634503",
+    "asset": "alpha",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51794551.4357309",
+    "asset": "alpha",
+    "time": "2024-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51653972.7362293",
+    "asset": "alpha",
+    "time": "2024-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54467057.1230373",
+    "asset": "alpha",
+    "time": "2024-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56074553.8100119",
+    "asset": "alpha",
+    "time": "2024-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59118952.8503193",
+    "asset": "alpha",
+    "time": "2024-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59282485.3659627",
+    "asset": "alpha",
+    "time": "2024-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61722324.7764682",
+    "asset": "alpha",
+    "time": "2024-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61346550.0732629",
+    "asset": "alpha",
+    "time": "2024-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66383101.4545829",
+    "asset": "alpha",
+    "time": "2024-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65634904.6828033",
+    "asset": "alpha",
+    "time": "2024-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64386065.3543229",
+    "asset": "alpha",
+    "time": "2024-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "60954916.1620418",
+    "asset": "alpha",
+    "time": "2024-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "57199317.5439268",
+    "asset": "alpha",
+    "time": "2024-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55942451.4298822",
+    "asset": "alpha",
+    "time": "2024-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56424956.2422182",
+    "asset": "alpha",
+    "time": "2024-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56968111.8365132",
+    "asset": "alpha",
+    "time": "2024-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55785343.5248141",
+    "asset": "alpha",
+    "time": "2024-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "53617637.3310465",
+    "asset": "alpha",
+    "time": "2024-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55859995.9062739",
+    "asset": "alpha",
+    "time": "2024-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54453032.1735913",
+    "asset": "alpha",
+    "time": "2024-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54403532.4897811",
+    "asset": "alpha",
+    "time": "2024-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "52543034.7029125",
+    "asset": "alpha",
+    "time": "2024-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50557535.5207696",
+    "asset": "alpha",
+    "time": "2024-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51613663.0054785",
+    "asset": "alpha",
+    "time": "2024-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "53756045.116953",
+    "asset": "alpha",
+    "time": "2024-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56100567.517792",
+    "asset": "alpha",
+    "time": "2024-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58732306.0290027",
+    "asset": "alpha",
+    "time": "2024-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55696931.7588431",
+    "asset": "alpha",
+    "time": "2024-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "57785093.8309205",
+    "asset": "alpha",
+    "time": "2024-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58858736.9681679",
+    "asset": "alpha",
+    "time": "2024-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59357434.029832",
+    "asset": "alpha",
+    "time": "2024-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56307463.0231768",
+    "asset": "alpha",
+    "time": "2024-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "53439498.3557938",
+    "asset": "alpha",
+    "time": "2024-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55811051.9564433",
+    "asset": "alpha",
+    "time": "2024-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58573700.7070646",
+    "asset": "alpha",
+    "time": "2024-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "60572372.8231161",
+    "asset": "alpha",
+    "time": "2024-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61997738.5497965",
+    "asset": "alpha",
+    "time": "2024-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "62103479.5348451",
+    "asset": "alpha",
+    "time": "2024-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61042181.1330338",
+    "asset": "alpha",
+    "time": "2024-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "62737214.7617366",
+    "asset": "alpha",
+    "time": "2024-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64046671.9313258",
+    "asset": "alpha",
+    "time": "2024-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63148171.7752826",
+    "asset": "alpha",
+    "time": "2024-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65978947.8715725",
+    "asset": "alpha",
+    "time": "2024-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68001448.1679218",
+    "asset": "alpha",
+    "time": "2024-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66637573.2161477",
+    "asset": "alpha",
+    "time": "2024-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68700610.7526634",
+    "asset": "alpha",
+    "time": "2024-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63194483.7380727",
+    "asset": "alpha",
+    "time": "2024-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56150032.9048996",
+    "asset": "alpha",
+    "time": "2024-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "53734010.2118234",
+    "asset": "alpha",
+    "time": "2024-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54292587.0791769",
+    "asset": "alpha",
+    "time": "2024-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56503638.134826",
+    "asset": "alpha",
+    "time": "2024-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55895983.8916035",
+    "asset": "alpha",
+    "time": "2024-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58441640.2991122",
+    "asset": "alpha",
+    "time": "2024-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58394688.9711344",
+    "asset": "alpha",
+    "time": "2024-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "57711093.9975118",
+    "asset": "alpha",
+    "time": "2024-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55175868.4256432",
+    "asset": "alpha",
+    "time": "2024-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55571455.9131514",
+    "asset": "alpha",
+    "time": "2024-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58721069.0048666",
+    "asset": "alpha",
+    "time": "2024-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59908056.0674224",
+    "asset": "alpha",
+    "time": "2024-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58732875.2992746",
+    "asset": "alpha",
+    "time": "2024-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61177731.6577101",
+    "asset": "alpha",
+    "time": "2024-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58927832.2339296",
+    "asset": "alpha",
+    "time": "2024-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "57795687.5594513",
+    "asset": "alpha",
+    "time": "2024-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55518993.2015961",
+    "asset": "alpha",
+    "time": "2024-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58136454.8867609",
+    "asset": "alpha",
+    "time": "2024-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "60232317.6427904",
+    "asset": "alpha",
+    "time": "2024-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64833234.0547055",
+    "asset": "alpha",
+    "time": "2024-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80220710.8805949",
+    "asset": "alpha",
+    "time": "2024-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94561780.5011593",
+    "asset": "alpha",
+    "time": "2024-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82897560.0784241",
+    "asset": "alpha",
+    "time": "2024-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82075190.6549551",
+    "asset": "alpha",
+    "time": "2024-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71582750.4712823",
+    "asset": "alpha",
+    "time": "2024-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73399326.7270091",
+    "asset": "alpha",
+    "time": "2024-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77482483.0384558",
+    "asset": "alpha",
+    "time": "2024-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71491780.4471012",
+    "asset": "alpha",
+    "time": "2024-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74978069.8862782",
+    "asset": "alpha",
+    "time": "2024-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71877937.4656003",
+    "asset": "alpha",
+    "time": "2024-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68165038.1792179",
+    "asset": "alpha",
+    "time": "2024-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69381518.11904",
+    "asset": "alpha",
+    "time": "2024-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66231139.5986134",
+    "asset": "alpha",
+    "time": "2024-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63811928.3128016",
+    "asset": "alpha",
+    "time": "2024-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "62248030.0911338",
+    "asset": "alpha",
+    "time": "2024-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65898435.0958231",
+    "asset": "alpha",
+    "time": "2024-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72436850.8144415",
+    "asset": "alpha",
+    "time": "2024-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71324008.3318417",
+    "asset": "alpha",
+    "time": "2024-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70817369.0269342",
+    "asset": "alpha",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73969340.9313918",
+    "asset": "alpha",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76440044.9353296",
+    "asset": "alpha",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79492929.2342691",
+    "asset": "alpha",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76956622.3821808",
+    "asset": "alpha",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74831806.4561464",
+    "asset": "alpha",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72169309.6156388",
+    "asset": "alpha",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76398114.7008828",
+    "asset": "alpha",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79954780.9155005",
+    "asset": "alpha",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77670923.423768",
+    "asset": "alpha",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80709893.8312249",
+    "asset": "alpha",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77421151.9948853",
+    "asset": "alpha",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73471121.0648752",
+    "asset": "alpha",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80388052.0826517",
+    "asset": "alpha",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82323858.6794752",
+    "asset": "alpha",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107409641.230781",
+    "asset": "alpha",
+    "time": "2024-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106799762.681676",
+    "asset": "alpha",
+    "time": "2024-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111331241.915443",
+    "asset": "alpha",
+    "time": "2024-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106875504.814829",
+    "asset": "alpha",
+    "time": "2024-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105592268.040295",
+    "asset": "alpha",
+    "time": "2024-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104930523.342787",
+    "asset": "alpha",
+    "time": "2024-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105018341.917639",
+    "asset": "alpha",
+    "time": "2024-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101264988.389538",
+    "asset": "alpha",
+    "time": "2024-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109317266.886269",
+    "asset": "alpha",
+    "time": "2024-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108679366.945009",
+    "asset": "alpha",
+    "time": "2024-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113212893.722713",
+    "asset": "alpha",
+    "time": "2024-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114532850.308289",
+    "asset": "alpha",
+    "time": "2024-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109385660.239978",
+    "asset": "alpha",
+    "time": "2024-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120235661.041084",
+    "asset": "alpha",
+    "time": "2024-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119926502.442684",
+    "asset": "alpha",
+    "time": "2024-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118971618.244567",
+    "asset": "alpha",
+    "time": "2024-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117338089.946159",
+    "asset": "alpha",
+    "time": "2024-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118009091.76074",
+    "asset": "alpha",
+    "time": "2024-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120009397.825488",
+    "asset": "alpha",
+    "time": "2024-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119871771.82091",
+    "asset": "alpha",
+    "time": "2024-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125695664.924178",
+    "asset": "alpha",
+    "time": "2024-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124819520.750147",
+    "asset": "alpha",
+    "time": "2024-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "123668305.133253",
+    "asset": "alpha",
+    "time": "2024-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "123922498.770635",
+    "asset": "alpha",
+    "time": "2024-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "127729280.422033",
+    "asset": "alpha",
+    "time": "2024-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128305000.549094",
+    "asset": "alpha",
+    "time": "2024-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125784589.776949",
+    "asset": "alpha",
+    "time": "2024-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128920486.863779",
+    "asset": "alpha",
+    "time": "2024-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "130756256.135124",
+    "asset": "alpha",
+    "time": "2024-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131453616.995813",
+    "asset": "alpha",
+    "time": "2024-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "130389222.327696",
+    "asset": "alpha",
+    "time": "2024-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116058364.913627",
+    "asset": "alpha",
+    "time": "2024-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107128927.858385",
+    "asset": "alpha",
+    "time": "2024-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108218802.665944",
+    "asset": "alpha",
+    "time": "2024-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105753365.705037",
+    "asset": "alpha",
+    "time": "2024-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100545809.245995",
+    "asset": "alpha",
+    "time": "2024-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103102126.711801",
+    "asset": "alpha",
+    "time": "2024-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98866254.4271786",
+    "asset": "alpha",
+    "time": "2024-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96226282.7247386",
+    "asset": "alpha",
+    "time": "2024-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97288257.4122256",
+    "asset": "alpha",
+    "time": "2024-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98488558.3482981",
+    "asset": "alpha",
+    "time": "2024-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91102833.2746413",
+    "asset": "alpha",
+    "time": "2024-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80619082.8991963",
+    "asset": "alpha",
+    "time": "2024-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81094309.7832178",
+    "asset": "alpha",
+    "time": "2024-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84522774.7430211",
+    "asset": "alpha",
+    "time": "2024-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82641066.6112643",
+    "asset": "alpha",
+    "time": "2024-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81442254.1719292",
+    "asset": "alpha",
+    "time": "2024-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78696854.3795243",
+    "asset": "alpha",
+    "time": "2024-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80190536.4837171",
+    "asset": "alpha",
+    "time": "2024-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81637868.7238573",
+    "asset": "alpha",
+    "time": "2024-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80168398.9091191",
+    "asset": "alpha",
+    "time": "2024-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81679989.9556141",
+    "asset": "alpha",
+    "time": "2024-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78667405.8213435",
+    "asset": "alpha",
+    "time": "2024-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75625874.354056",
+    "asset": "alpha",
+    "time": "2024-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81957262.8486721",
+    "asset": "alpha",
+    "time": "2024-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79182482.1333826",
+    "asset": "alpha",
+    "time": "2024-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79853868.8090902",
+    "asset": "alpha",
+    "time": "2024-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75158504.1794002",
+    "asset": "alpha",
+    "time": "2024-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67139030.4486741",
+    "asset": "alpha",
+    "time": "2024-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "61123016.8915547",
+    "asset": "alpha",
+    "time": "2024-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66566779.8438926",
+    "asset": "alpha",
+    "time": "2024-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63383730.3009385",
+    "asset": "alpha",
+    "time": "2024-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65129620.2758931",
+    "asset": "alpha",
+    "time": "2024-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67036344.6767615",
+    "asset": "alpha",
+    "time": "2024-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67796274.0956525",
+    "asset": "alpha",
+    "time": "2024-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66935838.3452786",
+    "asset": "alpha",
+    "time": "2024-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68782763.826399",
+    "asset": "alpha",
+    "time": "2024-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69778512.3588036",
+    "asset": "alpha",
+    "time": "2024-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72335427.9484637",
+    "asset": "alpha",
+    "time": "2024-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74864150.1049162",
+    "asset": "alpha",
+    "time": "2024-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75511118.7183778",
+    "asset": "alpha",
+    "time": "2024-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75451710.1809195",
+    "asset": "alpha",
+    "time": "2024-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73328092.4369359",
+    "asset": "alpha",
+    "time": "2024-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77232058.8791317",
+    "asset": "alpha",
+    "time": "2024-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76927356.72735",
+    "asset": "alpha",
+    "time": "2024-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80373354.0864146",
+    "asset": "alpha",
+    "time": "2024-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75029548.2573014",
+    "asset": "alpha",
+    "time": "2024-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72089843.5880342",
+    "asset": "alpha",
+    "time": "2024-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69528854.2016537",
+    "asset": "alpha",
+    "time": "2024-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68515409.9324405",
+    "asset": "alpha",
+    "time": "2024-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71014715.8921119",
+    "asset": "alpha",
+    "time": "2024-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71831013.154273",
+    "asset": "alpha",
+    "time": "2024-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70185344.6806675",
+    "asset": "alpha",
+    "time": "2024-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71505131.0977305",
+    "asset": "alpha",
+    "time": "2024-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68786165.8061503",
+    "asset": "alpha",
+    "time": "2024-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65004631.0543795",
+    "asset": "alpha",
+    "time": "2024-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63223471.7573373",
+    "asset": "alpha",
+    "time": "2024-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58665874.2071886",
+    "asset": "alpha",
+    "time": "2024-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55135581.1600907",
+    "asset": "alpha",
+    "time": "2024-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "53861613.4682582",
+    "asset": "alpha",
+    "time": "2024-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47732518.7859611",
+    "asset": "alpha",
+    "time": "2024-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50358543.7525044",
+    "asset": "alpha",
+    "time": "2024-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49188917.3672616",
+    "asset": "alpha",
+    "time": "2024-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55107599.3813276",
+    "asset": "alpha",
+    "time": "2024-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54102096.310455",
+    "asset": "alpha",
+    "time": "2024-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55256126.0052414",
+    "asset": "alpha",
+    "time": "2024-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51845690.8719565",
+    "asset": "alpha",
+    "time": "2024-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54638713.043046",
+    "asset": "alpha",
+    "time": "2024-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55583976.9894503",
+    "asset": "alpha",
+    "time": "2024-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "54436536.9057873",
+    "asset": "alpha",
+    "time": "2024-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96489489.5022137",
+    "asset": "alpha",
+    "time": "2024-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98814077.5832623",
+    "asset": "alpha",
+    "time": "2024-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97131486.3215234",
+    "asset": "alpha",
+    "time": "2024-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93473021.3508668",
+    "asset": "alpha",
+    "time": "2024-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94844720.130019",
+    "asset": "alpha",
+    "time": "2024-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96428176.6377705",
+    "asset": "alpha",
+    "time": "2024-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95696242.445768",
+    "asset": "alpha",
+    "time": "2024-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93258491.861556",
+    "asset": "alpha",
+    "time": "2024-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92286275.986813",
+    "asset": "alpha",
+    "time": "2024-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90869611.5961388",
+    "asset": "alpha",
+    "time": "2024-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94734363.50855",
+    "asset": "alpha",
+    "time": "2024-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95188769.9988521",
+    "asset": "alpha",
+    "time": "2024-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98645786.1867815",
+    "asset": "alpha",
+    "time": "2024-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98655647.0255223",
+    "asset": "alpha",
+    "time": "2024-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98108327.137047",
+    "asset": "alpha",
+    "time": "2024-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101741966.920524",
+    "asset": "alpha",
+    "time": "2024-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102194677.615039",
+    "asset": "alpha",
+    "time": "2024-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105737345.621039",
+    "asset": "alpha",
+    "time": "2024-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113613244.921943",
+    "asset": "alpha",
+    "time": "2024-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115917450.369822",
+    "asset": "alpha",
+    "time": "2024-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "122373608.479627",
+    "asset": "alpha",
+    "time": "2024-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125382564.401029",
+    "asset": "alpha",
+    "time": "2024-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131702307.097477",
+    "asset": "alpha",
+    "time": "2024-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126096048.800474",
+    "asset": "alpha",
+    "time": "2024-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121634434.159554",
+    "asset": "alpha",
+    "time": "2024-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126218805.526911",
+    "asset": "alpha",
+    "time": "2024-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "127409037.673342",
+    "asset": "alpha",
+    "time": "2024-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "137188155.044402",
+    "asset": "alpha",
+    "time": "2024-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "138303481.362441",
+    "asset": "alpha",
+    "time": "2024-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "141730875.877872",
+    "asset": "alpha",
+    "time": "2024-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "143536372.446706",
+    "asset": "alpha",
+    "time": "2024-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "148351268.239077",
+    "asset": "alpha",
+    "time": "2024-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153932533.265675",
+    "asset": "alpha",
+    "time": "2024-02-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "166386193.647527",
+    "asset": "alpha",
+    "time": "2024-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "167636436.389243",
+    "asset": "alpha",
+    "time": "2024-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "167717059.981226",
+    "asset": "alpha",
+    "time": "2024-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "169389106.253385",
+    "asset": "alpha",
+    "time": "2024-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "150188763.871235",
+    "asset": "alpha",
+    "time": "2024-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "162707883.531738",
+    "asset": "alpha",
+    "time": "2024-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "170730378.065739",
+    "asset": "alpha",
+    "time": "2024-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "173261714.275456",
+    "asset": "alpha",
+    "time": "2024-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "187211072.99887",
+    "asset": "alpha",
+    "time": "2024-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "192540506.442211",
+    "asset": "alpha",
+    "time": "2024-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199675199.696689",
+    "asset": "alpha",
+    "time": "2024-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "198789732.536267",
+    "asset": "alpha",
+    "time": "2024-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196048335.095758",
+    "asset": "alpha",
+    "time": "2024-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "192320067.663387",
+    "asset": "alpha",
+    "time": "2024-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "178465023.390316",
+    "asset": "alpha",
+    "time": "2024-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "159496737.94483",
+    "asset": "alpha",
+    "time": "2024-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "166854941.685278",
+    "asset": "alpha",
+    "time": "2024-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "157081506.659884",
+    "asset": "alpha",
+    "time": "2024-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "138680365.264094",
+    "asset": "alpha",
+    "time": "2024-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "155129245.147667",
+    "asset": "alpha",
+    "time": "2024-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "156817772.118259",
+    "asset": "alpha",
+    "time": "2024-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153554794.917131",
+    "asset": "alpha",
+    "time": "2024-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "154594446.890616",
+    "asset": "alpha",
+    "time": "2024-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "158575517.190646",
+    "asset": "alpha",
+    "time": "2024-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "166648195.467566",
+    "asset": "alpha",
+    "time": "2024-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "170910061.87151",
+    "asset": "alpha",
+    "time": "2024-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "162570586.060875",
+    "asset": "alpha",
+    "time": "2024-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "163654488.670476",
+    "asset": "alpha",
+    "time": "2024-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "163892236.750599",
+    "asset": "alpha",
+    "time": "2024-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "159006605.785719",
+    "asset": "alpha",
+    "time": "2024-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "163130923.84409",
+    "asset": "alpha",
+    "time": "2024-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153813490.162169",
+    "asset": "alpha",
+    "time": "2024-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "142437466.830313",
+    "asset": "alpha",
+    "time": "2024-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "144639357.346704",
+    "asset": "alpha",
+    "time": "2024-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "155732962.424551",
+    "asset": "alpha",
+    "time": "2024-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "151968182.007533",
+    "asset": "alpha",
+    "time": "2024-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "169452879.063664",
+    "asset": "alpha",
+    "time": "2024-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "173469002.75183",
+    "asset": "alpha",
+    "time": "2024-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "175254319.511575",
+    "asset": "alpha",
+    "time": "2024-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "176387838.58755",
+    "asset": "alpha",
+    "time": "2024-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "183240775.736208",
+    "asset": "alpha",
+    "time": "2024-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "170524841.856593",
+    "asset": "alpha",
+    "time": "2024-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "139363533.018354",
+    "asset": "alpha",
+    "time": "2024-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117427455.63513",
+    "asset": "alpha",
+    "time": "2024-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "123332136.844748",
+    "asset": "alpha",
+    "time": "2024-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113048699.407372",
+    "asset": "alpha",
+    "time": "2024-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114166454.159823",
+    "asset": "alpha",
+    "time": "2024-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111150590.600865",
+    "asset": "alpha",
+    "time": "2024-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114982468.715132",
+    "asset": "alpha",
+    "time": "2024-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117152949.15832",
+    "asset": "alpha",
+    "time": "2024-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125561213.501279",
+    "asset": "alpha",
+    "time": "2024-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "122619945.121858",
+    "asset": "alpha",
+    "time": "2024-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124191900.159245",
+    "asset": "alpha",
+    "time": "2024-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124922227.458327",
+    "asset": "alpha",
+    "time": "2024-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119226743.342709",
+    "asset": "alpha",
+    "time": "2024-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120535057.439289",
+    "asset": "alpha",
+    "time": "2024-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116559055.128878",
+    "asset": "alpha",
+    "time": "2024-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116643244.307947",
+    "asset": "alpha",
+    "time": "2024-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112300236.919153",
+    "asset": "alpha",
+    "time": "2024-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111462135.795477",
+    "asset": "alpha",
+    "time": "2024-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105440325.023549",
+    "asset": "alpha",
+    "time": "2024-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105804484.092002",
+    "asset": "alpha",
+    "time": "2024-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108459980.353993",
+    "asset": "alpha",
+    "time": "2024-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112675732.412499",
+    "asset": "alpha",
+    "time": "2024-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111055071.940769",
+    "asset": "alpha",
+    "time": "2024-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112307411.685189",
+    "asset": "alpha",
+    "time": "2024-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109552008.522699",
+    "asset": "alpha",
+    "time": "2024-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68803528.3738841",
+    "asset": "alpha",
+    "time": "2023-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71527562.8336753",
+    "asset": "alpha",
+    "time": "2023-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72157017.7113315",
+    "asset": "alpha",
+    "time": "2023-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75578782.9893771",
+    "asset": "alpha",
+    "time": "2023-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75759222.233468",
+    "asset": "alpha",
+    "time": "2023-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76531869.3511267",
+    "asset": "alpha",
+    "time": "2023-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77252911.9696869",
+    "asset": "alpha",
+    "time": "2023-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75184551.9588488",
+    "asset": "alpha",
+    "time": "2023-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77903771.190297",
+    "asset": "alpha",
+    "time": "2023-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79403502.7207314",
+    "asset": "alpha",
+    "time": "2023-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81006701.580754",
+    "asset": "alpha",
+    "time": "2023-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77449912.0455863",
+    "asset": "alpha",
+    "time": "2023-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80856659.6223251",
+    "asset": "alpha",
+    "time": "2023-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80226387.3455392",
+    "asset": "alpha",
+    "time": "2023-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83560690.3708918",
+    "asset": "alpha",
+    "time": "2023-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84383629.3917419",
+    "asset": "alpha",
+    "time": "2023-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87138382.4329184",
+    "asset": "alpha",
+    "time": "2023-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88495437.5551978",
+    "asset": "alpha",
+    "time": "2023-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85388004.8401988",
+    "asset": "alpha",
+    "time": "2023-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90336317.9397049",
+    "asset": "alpha",
+    "time": "2023-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83571391.7709308",
+    "asset": "alpha",
+    "time": "2023-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92564872.7571549",
+    "asset": "alpha",
+    "time": "2023-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89454655.505961",
+    "asset": "alpha",
+    "time": "2023-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90367329.6050299",
+    "asset": "alpha",
+    "time": "2023-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87115833.3827557",
+    "asset": "alpha",
+    "time": "2023-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84729597.5895696",
+    "asset": "alpha",
+    "time": "2023-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91120300.2979055",
+    "asset": "alpha",
+    "time": "2023-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87119389.6197667",
+    "asset": "alpha",
+    "time": "2023-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89955889.3469162",
+    "asset": "alpha",
+    "time": "2023-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87528436.4882228",
+    "asset": "alpha",
+    "time": "2023-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90273767.848919",
+    "asset": "alpha",
+    "time": "2023-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92120447.9847674",
+    "asset": "alpha",
+    "time": "2023-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86216884.71699",
+    "asset": "alpha",
+    "time": "2023-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92921321.8087394",
+    "asset": "alpha",
+    "time": "2023-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91762977.62211",
+    "asset": "alpha",
+    "time": "2023-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91586675.0753429",
+    "asset": "alpha",
+    "time": "2023-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94591502.0021937",
+    "asset": "alpha",
+    "time": "2023-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100928732.757973",
+    "asset": "alpha",
+    "time": "2023-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99545892.5268621",
+    "asset": "alpha",
+    "time": "2023-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94580411.0131604",
+    "asset": "alpha",
+    "time": "2023-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94129688.2769903",
+    "asset": "alpha",
+    "time": "2023-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95971240.4043878",
+    "asset": "alpha",
+    "time": "2023-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95033696.5070086",
+    "asset": "alpha",
+    "time": "2023-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96762857.5098128",
+    "asset": "alpha",
+    "time": "2023-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97245678.6509904",
+    "asset": "alpha",
+    "time": "2023-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98685418.3364113",
+    "asset": "alpha",
+    "time": "2023-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100319163.422829",
+    "asset": "alpha",
+    "time": "2023-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97396290.3574203",
+    "asset": "alpha",
+    "time": "2023-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102969337.258284",
+    "asset": "alpha",
+    "time": "2023-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109226976.376922",
+    "asset": "alpha",
+    "time": "2023-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106427500.210798",
+    "asset": "alpha",
+    "time": "2023-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109563894.995252",
+    "asset": "alpha",
+    "time": "2023-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97568765.033484",
+    "asset": "alpha",
+    "time": "2023-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111034365.261953",
+    "asset": "alpha",
+    "time": "2023-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107804065.848549",
+    "asset": "alpha",
+    "time": "2023-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118007536.438106",
+    "asset": "alpha",
+    "time": "2023-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116831821.40548",
+    "asset": "alpha",
+    "time": "2023-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120364683.976993",
+    "asset": "alpha",
+    "time": "2023-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "150475765.510791",
+    "asset": "alpha",
+    "time": "2023-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "142916470.434546",
+    "asset": "alpha",
+    "time": "2023-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "135010417.318484",
+    "asset": "alpha",
+    "time": "2023-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "133682465.923421",
+    "asset": "alpha",
+    "time": "2023-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "142936492.291021",
+    "asset": "alpha",
+    "time": "2023-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "144951908.650607",
+    "asset": "alpha",
+    "time": "2023-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "141553685.865108",
+    "asset": "alpha",
+    "time": "2023-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "133420740.540152",
+    "asset": "alpha",
+    "time": "2023-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "139466811.623301",
+    "asset": "alpha",
+    "time": "2023-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "134800723.908769",
+    "asset": "alpha",
+    "time": "2023-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "136107685.705227",
+    "asset": "alpha",
+    "time": "2023-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "132143500.578661",
+    "asset": "alpha",
+    "time": "2023-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128086508.706153",
+    "asset": "alpha",
+    "time": "2023-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "129287934.581489",
+    "asset": "alpha",
+    "time": "2023-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125634869.340081",
+    "asset": "alpha",
+    "time": "2023-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "127911493.004598",
+    "asset": "alpha",
+    "time": "2024-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126064419.593626",
+    "asset": "alpha",
+    "time": "2024-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110128259.108577",
+    "asset": "alpha",
+    "time": "2024-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111787669.27846",
+    "asset": "alpha",
+    "time": "2024-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109017277.349439",
+    "asset": "alpha",
+    "time": "2024-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105680189.5688",
+    "asset": "alpha",
+    "time": "2024-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99632402.6840534",
+    "asset": "alpha",
+    "time": "2024-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105870067.151299",
+    "asset": "alpha",
+    "time": "2024-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100660050.828394",
+    "asset": "alpha",
+    "time": "2024-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110036401.85964",
+    "asset": "alpha",
+    "time": "2024-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112181861.970669",
+    "asset": "alpha",
+    "time": "2024-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109085600.271359",
+    "asset": "alpha",
+    "time": "2024-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110608406.456203",
+    "asset": "alpha",
+    "time": "2024-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105961991.510862",
+    "asset": "alpha",
+    "time": "2024-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107042075.687162",
+    "asset": "alpha",
+    "time": "2024-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108083573.056005",
+    "asset": "alpha",
+    "time": "2024-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106460694.94917",
+    "asset": "alpha",
+    "time": "2024-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100493715.094332",
+    "asset": "alpha",
+    "time": "2024-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100370482.261217",
+    "asset": "alpha",
+    "time": "2024-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102516899.816893",
+    "asset": "alpha",
+    "time": "2024-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102303987.837556",
+    "asset": "alpha",
+    "time": "2024-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94563726.623328",
+    "asset": "alpha",
+    "time": "2024-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91687231.9491401",
+    "asset": "alpha",
+    "time": "2024-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94222971.4092716",
+    "asset": "alpha",
+    "time": "2024-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93434867.389844",
+    "asset": "alpha",
+    "time": "2024-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97164426.4300377",
+    "asset": "alpha",
+    "time": "2024-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100019250.093261",
+    "asset": "alpha",
+    "time": "2024-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101492573.577576",
+    "asset": "alpha",
+    "time": "2023-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108121533.680035",
+    "asset": "alpha",
+    "time": "2023-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103143177.373314",
+    "asset": "alpha",
+    "time": "2023-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105039661.156569",
+    "asset": "alpha",
+    "time": "2023-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102927276.277736",
+    "asset": "alpha",
+    "time": "2023-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105935030.107629",
+    "asset": "alpha",
+    "time": "2023-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103719187.549911",
+    "asset": "alpha",
+    "time": "2023-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103636421.807892",
+    "asset": "alpha",
+    "time": "2023-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104079801.637438",
+    "asset": "alpha",
+    "time": "2023-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106148328.475113",
+    "asset": "alpha",
+    "time": "2023-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102401695.711784",
+    "asset": "alpha",
+    "time": "2023-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105550622.416146",
+    "asset": "alpha",
+    "time": "2023-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100916381.989595",
+    "asset": "alpha",
+    "time": "2023-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100700928.302013",
+    "asset": "alpha",
+    "time": "2023-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101711415.749923",
+    "asset": "alpha",
+    "time": "2023-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101391100.046387",
+    "asset": "alpha",
+    "time": "2023-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102660983.119973",
+    "asset": "alpha",
+    "time": "2023-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104622919.748826",
+    "asset": "alpha",
+    "time": "2023-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102579607.609759",
+    "asset": "alpha",
+    "time": "2023-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102333020.041828",
+    "asset": "alpha",
+    "time": "2023-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104743083.253259",
+    "asset": "alpha",
+    "time": "2023-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101454403.904861",
+    "asset": "alpha",
+    "time": "2023-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99802534.3029835",
+    "asset": "alpha",
+    "time": "2023-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99961354.3471805",
+    "asset": "alpha",
+    "time": "2023-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101393575.949859",
+    "asset": "alpha",
+    "time": "2023-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102984891.987641",
+    "asset": "alpha",
+    "time": "2023-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102094840.61391",
+    "asset": "alpha",
+    "time": "2023-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102613036.896545",
+    "asset": "alpha",
+    "time": "2023-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103206955.45724",
+    "asset": "alpha",
+    "time": "2023-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102062900.159186",
+    "asset": "alpha",
+    "time": "2023-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103469724.302261",
+    "asset": "alpha",
+    "time": "2023-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103348431.53013",
+    "asset": "alpha",
+    "time": "2023-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100408309.856606",
+    "asset": "alpha",
+    "time": "2023-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100888701.684751",
+    "asset": "alpha",
+    "time": "2023-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96335641.6845381",
+    "asset": "alpha",
+    "time": "2023-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92386763.299397",
+    "asset": "alpha",
+    "time": "2023-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82418834.5373387",
+    "asset": "alpha",
+    "time": "2023-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81432895.3626775",
+    "asset": "alpha",
+    "time": "2023-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83888516.2269335",
+    "asset": "alpha",
+    "time": "2023-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83463735.4986864",
+    "asset": "alpha",
+    "time": "2023-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82886357.9336727",
+    "asset": "alpha",
+    "time": "2023-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82937665.2359289",
+    "asset": "alpha",
+    "time": "2023-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84078356.0583497",
+    "asset": "alpha",
+    "time": "2023-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82221060.3382552",
+    "asset": "alpha",
+    "time": "2023-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82344887.0104019",
+    "asset": "alpha",
+    "time": "2023-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82075886.8292049",
+    "asset": "alpha",
+    "time": "2023-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80603808.7488619",
+    "asset": "alpha",
+    "time": "2023-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80368867.7353716",
+    "asset": "alpha",
+    "time": "2023-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84602941.1213167",
+    "asset": "alpha",
+    "time": "2023-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81386440.2902586",
+    "asset": "alpha",
+    "time": "2023-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76889458.7344805",
+    "asset": "alpha",
+    "time": "2023-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75307433.3899228",
+    "asset": "alpha",
+    "time": "2023-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76496789.4786771",
+    "asset": "alpha",
+    "time": "2023-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76025986.7212064",
+    "asset": "alpha",
+    "time": "2023-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74620031.1010522",
+    "asset": "alpha",
+    "time": "2023-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81310879.0751462",
+    "asset": "alpha",
+    "time": "2023-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80293399.78455",
+    "asset": "alpha",
+    "time": "2023-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80300037.8913694",
+    "asset": "alpha",
+    "time": "2023-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82593779.9135358",
+    "asset": "alpha",
+    "time": "2023-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81389787.4870613",
+    "asset": "alpha",
+    "time": "2023-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76122175.5493466",
+    "asset": "alpha",
+    "time": "2023-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73538531.4914892",
+    "asset": "alpha",
+    "time": "2023-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73091067.4864311",
+    "asset": "alpha",
+    "time": "2023-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76510432.1417958",
+    "asset": "alpha",
+    "time": "2023-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76568693.1862198",
+    "asset": "alpha",
+    "time": "2023-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78408667.117445",
+    "asset": "alpha",
+    "time": "2023-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78327031.7670543",
+    "asset": "alpha",
+    "time": "2023-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75590745.8622754",
+    "asset": "alpha",
+    "time": "2023-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76763223.4583155",
+    "asset": "alpha",
+    "time": "2023-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78165392.5827103",
+    "asset": "alpha",
+    "time": "2023-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78628167.3695773",
+    "asset": "alpha",
+    "time": "2023-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77103674.9591138",
+    "asset": "alpha",
+    "time": "2023-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77270087.9595896",
+    "asset": "alpha",
+    "time": "2023-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77396939.3473113",
+    "asset": "alpha",
+    "time": "2023-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75647685.1675464",
+    "asset": "alpha",
+    "time": "2023-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77055453.1978055",
+    "asset": "alpha",
+    "time": "2023-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75906048.693512",
+    "asset": "alpha",
+    "time": "2023-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74951808.7068929",
+    "asset": "alpha",
+    "time": "2023-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76593417.0832097",
+    "asset": "alpha",
+    "time": "2023-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77805089.3627607",
+    "asset": "alpha",
+    "time": "2023-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78788334.6890752",
+    "asset": "alpha",
+    "time": "2023-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82928233.3356701",
+    "asset": "alpha",
+    "time": "2023-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "77137942.8443091",
+    "asset": "alpha",
+    "time": "2023-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76298218.8084284",
+    "asset": "alpha",
+    "time": "2023-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75321713.3681774",
+    "asset": "alpha",
+    "time": "2023-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74269761.1845138",
+    "asset": "alpha",
+    "time": "2023-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74699800.273336",
+    "asset": "alpha",
+    "time": "2023-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73703517.3590797",
+    "asset": "alpha",
+    "time": "2023-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73775169.9218402",
+    "asset": "alpha",
+    "time": "2023-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69947647.8278168",
+    "asset": "alpha",
+    "time": "2023-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70346865.5165168",
+    "asset": "alpha",
+    "time": "2023-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69780716.7061122",
+    "asset": "alpha",
+    "time": "2023-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69080580.5092019",
+    "asset": "alpha",
+    "time": "2023-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71012003.4909558",
+    "asset": "alpha",
+    "time": "2023-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71636933.9384893",
+    "asset": "alpha",
+    "time": "2023-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73144710.0753915",
+    "asset": "alpha",
+    "time": "2023-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72396073.1499006",
+    "asset": "alpha",
+    "time": "2023-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70157609.4342501",
+    "asset": "alpha",
+    "time": "2023-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68810914.0945119",
+    "asset": "alpha",
+    "time": "2023-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67801078.6232026",
+    "asset": "alpha",
+    "time": "2023-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110682552.130697",
+    "asset": "alpha",
+    "time": "2023-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110753391.980334",
+    "asset": "alpha",
+    "time": "2023-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112277248.354089",
+    "asset": "alpha",
+    "time": "2023-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112372823.853586",
+    "asset": "alpha",
+    "time": "2023-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111777440.880705",
+    "asset": "alpha",
+    "time": "2023-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112962994.25489",
+    "asset": "alpha",
+    "time": "2023-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115135213.690394",
+    "asset": "alpha",
+    "time": "2023-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119244612.675826",
+    "asset": "alpha",
+    "time": "2023-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118362224.015395",
+    "asset": "alpha",
+    "time": "2023-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117279057.401392",
+    "asset": "alpha",
+    "time": "2023-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120627400.343775",
+    "asset": "alpha",
+    "time": "2023-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "122473699.493769",
+    "asset": "alpha",
+    "time": "2023-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "123573994.791976",
+    "asset": "alpha",
+    "time": "2023-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126904001.899823",
+    "asset": "alpha",
+    "time": "2023-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124100419.79063",
+    "asset": "alpha",
+    "time": "2023-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128374563.722208",
+    "asset": "alpha",
+    "time": "2023-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "123132591.823367",
+    "asset": "alpha",
+    "time": "2023-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111138585.213317",
+    "asset": "alpha",
+    "time": "2023-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102251816.53266",
+    "asset": "alpha",
+    "time": "2023-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105340954.927312",
+    "asset": "alpha",
+    "time": "2023-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103499947.442797",
+    "asset": "alpha",
+    "time": "2023-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103937940.196341",
+    "asset": "alpha",
+    "time": "2023-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105035171.844466",
+    "asset": "alpha",
+    "time": "2023-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105928930.271048",
+    "asset": "alpha",
+    "time": "2023-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115889493.823559",
+    "asset": "alpha",
+    "time": "2023-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "122275971.57551",
+    "asset": "alpha",
+    "time": "2023-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "149251490.313786",
+    "asset": "alpha",
+    "time": "2023-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "134227490.888166",
+    "asset": "alpha",
+    "time": "2023-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "132541392.755453",
+    "asset": "alpha",
+    "time": "2023-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126281246.325594",
+    "asset": "alpha",
+    "time": "2023-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131549243.637112",
+    "asset": "alpha",
+    "time": "2023-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124711119.453188",
+    "asset": "alpha",
+    "time": "2023-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125210869.837639",
+    "asset": "alpha",
+    "time": "2023-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115074944.542025",
+    "asset": "alpha",
+    "time": "2023-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111063251.13197",
+    "asset": "alpha",
+    "time": "2023-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100587503.298358",
+    "asset": "alpha",
+    "time": "2023-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103090464.27565",
+    "asset": "alpha",
+    "time": "2023-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107191066.785706",
+    "asset": "alpha",
+    "time": "2023-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99386696.2292194",
+    "asset": "alpha",
+    "time": "2023-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102650156.785205",
+    "asset": "alpha",
+    "time": "2023-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101032900.042565",
+    "asset": "alpha",
+    "time": "2023-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102115443.735469",
+    "asset": "alpha",
+    "time": "2023-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101630765.331907",
+    "asset": "alpha",
+    "time": "2023-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100802143.769186",
+    "asset": "alpha",
+    "time": "2023-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104795777.406337",
+    "asset": "alpha",
+    "time": "2023-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102711500.898641",
+    "asset": "alpha",
+    "time": "2023-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103172915.008068",
+    "asset": "alpha",
+    "time": "2023-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103267875.30385",
+    "asset": "alpha",
+    "time": "2023-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101071513.985202",
+    "asset": "alpha",
+    "time": "2023-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102326276.977827",
+    "asset": "alpha",
+    "time": "2023-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108114475.287074",
+    "asset": "alpha",
+    "time": "2023-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107280061.640061",
+    "asset": "alpha",
+    "time": "2023-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105766531.451989",
+    "asset": "alpha",
+    "time": "2023-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108796381.849066",
+    "asset": "alpha",
+    "time": "2023-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110559010.218719",
+    "asset": "alpha",
+    "time": "2023-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118743478.238635",
+    "asset": "alpha",
+    "time": "2023-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118653862.612208",
+    "asset": "alpha",
+    "time": "2023-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117530003.480879",
+    "asset": "alpha",
+    "time": "2023-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108746210.497375",
+    "asset": "alpha",
+    "time": "2023-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111801471.469622",
+    "asset": "alpha",
+    "time": "2023-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121398906.951534",
+    "asset": "alpha",
+    "time": "2023-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118842962.555421",
+    "asset": "alpha",
+    "time": "2023-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119185541.270675",
+    "asset": "alpha",
+    "time": "2023-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107532578.731064",
+    "asset": "alpha",
+    "time": "2023-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116749428.674487",
+    "asset": "alpha",
+    "time": "2023-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "136827021.846779",
+    "asset": "alpha",
+    "time": "2023-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111504142.08877",
+    "asset": "alpha",
+    "time": "2023-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112673744.663256",
+    "asset": "alpha",
+    "time": "2023-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100307148.056115",
+    "asset": "alpha",
+    "time": "2023-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99415184.2411882",
+    "asset": "alpha",
+    "time": "2023-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109408048.846103",
+    "asset": "alpha",
+    "time": "2023-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109314057.73305",
+    "asset": "alpha",
+    "time": "2023-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115169545.082739",
+    "asset": "alpha",
+    "time": "2023-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112874767.561762",
+    "asset": "alpha",
+    "time": "2023-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112805316.512843",
+    "asset": "alpha",
+    "time": "2023-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111633853.684234",
+    "asset": "alpha",
+    "time": "2023-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109343475.269883",
+    "asset": "alpha",
+    "time": "2023-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113312683.718575",
+    "asset": "alpha",
+    "time": "2023-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116994745.668109",
+    "asset": "alpha",
+    "time": "2023-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117707030.106741",
+    "asset": "alpha",
+    "time": "2023-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116485032.738676",
+    "asset": "alpha",
+    "time": "2023-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121458438.157999",
+    "asset": "alpha",
+    "time": "2023-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121729286.355562",
+    "asset": "alpha",
+    "time": "2023-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120495797.853145",
+    "asset": "alpha",
+    "time": "2023-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114568263.135177",
+    "asset": "alpha",
+    "time": "2023-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114452257.079983",
+    "asset": "alpha",
+    "time": "2023-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105569141.393409",
+    "asset": "alpha",
+    "time": "2023-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106420337.366345",
+    "asset": "alpha",
+    "time": "2023-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107508703.073989",
+    "asset": "alpha",
+    "time": "2023-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108793083.107044",
+    "asset": "alpha",
+    "time": "2023-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107244615.936901",
+    "asset": "alpha",
+    "time": "2023-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110335825.818895",
+    "asset": "alpha",
+    "time": "2023-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108668204.169828",
+    "asset": "alpha",
+    "time": "2023-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106173057.682469",
+    "asset": "alpha",
+    "time": "2023-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101040687.565701",
+    "asset": "alpha",
+    "time": "2023-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99482523.828713",
+    "asset": "alpha",
+    "time": "2023-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97451867.3558848",
+    "asset": "alpha",
+    "time": "2023-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98855378.0191262",
+    "asset": "alpha",
+    "time": "2023-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98790904.8030067",
+    "asset": "alpha",
+    "time": "2023-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99333104.0712547",
+    "asset": "alpha",
+    "time": "2023-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64544443.7350119",
+    "asset": "alpha",
+    "time": "2023-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70578964.5743664",
+    "asset": "alpha",
+    "time": "2023-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78137368.5393521",
+    "asset": "alpha",
+    "time": "2023-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79853965.1328961",
+    "asset": "alpha",
+    "time": "2023-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76922560.5188554",
+    "asset": "alpha",
+    "time": "2023-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78456381.6454941",
+    "asset": "alpha",
+    "time": "2023-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76008610.8387491",
+    "asset": "alpha",
+    "time": "2023-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "78007159.021253",
+    "asset": "alpha",
+    "time": "2023-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "83160393.5649161",
+    "asset": "alpha",
+    "time": "2023-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84037114.56943",
+    "asset": "alpha",
+    "time": "2023-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85593403.8748165",
+    "asset": "alpha",
+    "time": "2023-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91160862.0183924",
+    "asset": "alpha",
+    "time": "2023-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95272065.6414642",
+    "asset": "alpha",
+    "time": "2023-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105171648.98711",
+    "asset": "alpha",
+    "time": "2023-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108120983.902763",
+    "asset": "alpha",
+    "time": "2023-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114973827.89934",
+    "asset": "alpha",
+    "time": "2023-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121882475.713472",
+    "asset": "alpha",
+    "time": "2023-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115834006.100505",
+    "asset": "alpha",
+    "time": "2023-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111957225.296655",
+    "asset": "alpha",
+    "time": "2023-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "117941178.741744",
+    "asset": "alpha",
+    "time": "2023-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120725563.108284",
+    "asset": "alpha",
+    "time": "2023-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126033357.771431",
+    "asset": "alpha",
+    "time": "2023-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "136285210.595489",
+    "asset": "alpha",
+    "time": "2023-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "152652221.081509",
+    "asset": "alpha",
+    "time": "2023-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "152774896.954169",
+    "asset": "alpha",
+    "time": "2023-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "146739814.854839",
+    "asset": "alpha",
+    "time": "2023-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "152057814.859256",
+    "asset": "alpha",
+    "time": "2023-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153058383.092419",
+    "asset": "alpha",
+    "time": "2023-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153101355.791256",
+    "asset": "alpha",
+    "time": "2023-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "135814700.838563",
+    "asset": "alpha",
+    "time": "2023-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "134850553.730222",
+    "asset": "alpha",
+    "time": "2023-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "134405991.424855",
+    "asset": "alpha",
+    "time": "2023-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131902614.869076",
+    "asset": "alpha",
+    "time": "2023-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "138333493.176668",
+    "asset": "alpha",
+    "time": "2023-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "135818657.709758",
+    "asset": "alpha",
+    "time": "2023-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "130114613.055064",
+    "asset": "alpha",
+    "time": "2023-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "130569542.135238",
+    "asset": "alpha",
+    "time": "2023-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "142455871.231108",
+    "asset": "alpha",
+    "time": "2023-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "134817796.68848",
+    "asset": "alpha",
+    "time": "2023-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "122112851.250588",
+    "asset": "alpha",
+    "time": "2023-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120595714.743291",
+    "asset": "alpha",
+    "time": "2023-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "124022639.767036",
+    "asset": "alpha",
+    "time": "2023-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121391675.320765",
+    "asset": "alpha",
+    "time": "2023-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119832961.846894",
+    "asset": "alpha",
+    "time": "2023-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125311256.738432",
+    "asset": "alpha",
+    "time": "2023-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "132074533.791342",
+    "asset": "alpha",
+    "time": "2023-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126821276.719182",
+    "asset": "alpha",
+    "time": "2023-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "136353229.243102",
+    "asset": "alpha",
+    "time": "2023-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "137319687.026731",
+    "asset": "alpha",
+    "time": "2023-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131231423.50781",
+    "asset": "alpha",
+    "time": "2023-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "149883265.773159",
+    "asset": "alpha",
+    "time": "2023-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153098399.64317",
+    "asset": "alpha",
+    "time": "2023-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "151802899.400338",
+    "asset": "alpha",
+    "time": "2023-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "147808733.213901",
+    "asset": "alpha",
+    "time": "2023-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "138202811.705789",
+    "asset": "alpha",
+    "time": "2023-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "135977581.716965",
+    "asset": "alpha",
+    "time": "2023-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "141437533.368484",
+    "asset": "alpha",
+    "time": "2023-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "137026867.151073",
+    "asset": "alpha",
+    "time": "2023-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "133895443.761626",
+    "asset": "alpha",
+    "time": "2023-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "139667128.355415",
+    "asset": "alpha",
+    "time": "2023-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "133965117.651461",
+    "asset": "alpha",
+    "time": "2023-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "119378689.943953",
+    "asset": "alpha",
+    "time": "2023-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104901110.039604",
+    "asset": "alpha",
+    "time": "2023-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105096152.491069",
+    "asset": "alpha",
+    "time": "2023-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109506501.229573",
+    "asset": "alpha",
+    "time": "2023-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105792016.618769",
+    "asset": "alpha",
+    "time": "2023-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98222925.1113508",
+    "asset": "alpha",
+    "time": "2023-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93730647.800946",
+    "asset": "alpha",
+    "time": "2023-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94801386.7301856",
+    "asset": "alpha",
+    "time": "2023-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92303965.3978942",
+    "asset": "alpha",
+    "time": "2023-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104653892.31128",
+    "asset": "alpha",
+    "time": "2023-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107879959.810695",
+    "asset": "alpha",
+    "time": "2023-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113703635.482226",
+    "asset": "alpha",
+    "time": "2023-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104164958.188303",
+    "asset": "alpha",
+    "time": "2023-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105822512.773007",
+    "asset": "alpha",
+    "time": "2023-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "115735365.784454",
+    "asset": "alpha",
+    "time": "2023-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "113010696.470675",
+    "asset": "alpha",
+    "time": "2023-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "118549245.092254",
+    "asset": "alpha",
+    "time": "2023-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108771461.492028",
+    "asset": "alpha",
+    "time": "2023-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "112404365.555391",
+    "asset": "alpha",
+    "time": "2023-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104187626.117237",
+    "asset": "alpha",
+    "time": "2023-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "111127563.941551",
+    "asset": "alpha",
+    "time": "2023-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105226317.702302",
+    "asset": "alpha",
+    "time": "2023-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103366891.241438",
+    "asset": "alpha",
+    "time": "2023-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105912231.441659",
+    "asset": "alpha",
+    "time": "2023-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99496915.6578641",
+    "asset": "alpha",
+    "time": "2023-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102783158.216258",
+    "asset": "alpha",
+    "time": "2023-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108010555.124732",
+    "asset": "alpha",
+    "time": "2023-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107506743.035849",
+    "asset": "alpha",
+    "time": "2023-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "109827731.860979",
+    "asset": "alpha",
+    "time": "2023-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110200323.783881",
+    "asset": "alpha",
+    "time": "2023-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "108375188.434363",
+    "asset": "alpha",
+    "time": "2023-04-02T00:00:00.000000000Z"
+  }
+]

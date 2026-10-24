@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-24T18:45:45Z",
-  "candidate_page_cursor": 6497,
+  "batch_validation_utc": "2026-10-24T18:48:21Z",
+  "candidate_page_cursor": 6522,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -218,10 +218,7 @@
     "algobull",
     "algohalf",
     "algohedge",
-    "ali"
-  ],
-  "candidates_discovered": [
-    "alice",
+    "ali",
     "align",
     "alix",
     "alkimi",
@@ -234,9 +231,7 @@
     "alpa",
     "alpaca",
     "alph",
-    "alpha",
     "alpine",
-    "alt",
     "alt_aptoslaunchtoken",
     "altbear",
     "altbull",
@@ -245,7 +240,9 @@
     "alu",
     "alusd",
     "alv",
-    "alx",
+    "alx"
+  ],
+  "candidates_discovered": [
     "aly",
     "amatb",
     "amaton",
@@ -6353,7 +6350,10 @@
     "qtum",
     "iost",
     "btc",
-    "eth"
+    "eth",
+    "alice",
+    "alpha",
+    "alt"
   ],
   "catalog_discovery": {
     "blocked_excluded": [
@@ -6524,7 +6524,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-24T18:46:55Z",
+  "last_updated_utc": "2026-10-24T18:49:31Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",

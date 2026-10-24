@@ -3218,10 +3218,751 @@
         }
       },
       "status": "blocked"
+    },
+    {
+      "asset": "alice",
+      "binance": {
+        "error": null,
+        "exists": true,
+        "symbol": "ALICEUSDT"
+      },
+      "eligible": true,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "e7ca2b8a8d970f92f06484494359be8864f1a5f80eb97bc955e1245227eff595",
+            "9d432f95892c8eac41fcbe771816bb13278a0afa3f5f277bb41d3d48aca0ede7",
+            "c4cf5cb66562e4e7d0d86f3108ede5daddf47bc2d1030b042a703fb6943ede05",
+            "e230246bc29031a9154ac407143c09c0b62aa6e7b7ce83d86eee6f76427a003f",
+            "2246db5541399f38966b114a8927438850af2f3aa682566746524495fab518e6",
+            "ffb75490eb9724f3fb4662e36211ed2814872e24773e00987cec93d7bbb432c6",
+            "ea1767a3ceaf3500bba7b74230e8b586ff8e5f16da713d942a521b0f53f62adc",
+            "3687f5441dff56c9f2fc744b97b230c53505a4e9f952c42cff2b20c28ae45f24",
+            "f1922bdc4c2bb5855c0cb03f9133406f462da42e33ae9933dc995c73be08325a",
+            "6d4283e87568069f9d6c1112e732169c907bbb156917a65d436cb6e6302d97ca",
+            "f93a9e37b06db154f30081047ac896d5a87204b53dee6d406c3a6176f616908d",
+            "d834c3142811e566ce4fc14090b960e67fedbf5d3a4f367d0dd8ff3e94e6af0a",
+            "80e671147b72342b015ae61530a0849544cce4f94d5442e93dc2bbeaa5ed150f",
+            "cbe7a2825b0a1f535823c8c187b38a04cdcaad9200b3611cd06126dc7d7ba251"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/alice_CapMrktEstUSD.json",
+          "raw_sha256": "262c9f1bb7b512c06491af096f13d278ab12619079acfb3b199f08a91a885091",
+          "rows": 1392,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-04-02T00:00:00.000000000Z"
+        }
+      },
+      "status": "verified"
+    },
+    {
+      "asset": "align",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALIGNUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "216c65fc820fc92e9da07beccb04f9bf05ed3a9cb7c00b67e5fad31fa019a9c9"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/align_CapMrktEstUSD.json",
+          "raw_sha256": "f694f86af8b5423590ac4110f6786ebb8c9c3317ac7fe0716e0121731860e3ab",
+          "rows": 16,
+          "status": "ok",
+          "time_first": "2026-10-08T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alix",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALIXUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alkimi",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALKIMIUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "all",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALLUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "allianceblock_nexera",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALLIANCEBLOCK_NEXERAUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "allo",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALLOUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "61be7a2486a6ad11175ef52755f2dd588e5698d7384f6a7dffb207a6d769febb",
+            "85567b5619a0c1ba55fcdc04c5cb86bdf9ed7d4754e5d6107c2d02399596c54e",
+            "5e448af6f0690cefd81ec66c36d6ee3dfeb1cf5c4ffdff5b8dec585e24f3321f",
+            "41725f45e63d3184e27c80b31e5a9201c65def99f7229599a62904828808b130"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/allo_CapMrktEstUSD.json",
+          "raw_sha256": "eb9a171cf6f805dd790eda8a672a3cbcb13b273f1faffa3f607683e0897f6b86",
+          "rows": 319,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2025-12-27T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "almanak",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALMANAKUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "almanak_eth",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALMANAK_ETHUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alot",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALOTUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alpa",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALPAUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alpaca",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALPACAUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "96387e9fec4a5a0aa8f8b91a885af1a9e598351d17d1c5bd96abc7eac0e2d5b8",
+            "9e451267893c4a09cba4d759927df8bb36fa6bd81046aa0e40519014da4a8b82",
+            "51c69124818aacad7386560cf9b1ca750fb5514ccb5182580e7926bdddafb233",
+            "3c88dd32feefaccd4a719fdf4e7ad43b22cd6054a8ca7b42942128c82fe70233",
+            "6067aa66478bf1029cde42658d0adc1666935b460316cdef66f1f902eba73888",
+            "b8e724453d43ede63fdc35ddaed6655220a1d50a66eebe87fd03daff16c89058",
+            "aaf9423430a02366213c63b19fc9d33a424e86f1c4f4d3708673060bc7127faf",
+            "d4f86078cf4dfa5887fbce4453769939f993ff298fdfb5aa147abc44314a4dc5",
+            "eb62ae6a5838da9fdbaefc8e8ecb772475ac880086eb5d4157658688ad24fe42",
+            "109e659e274b1ffe300b9a4fb6146dc32d795b943c4cd9e30f598327a2b25a34",
+            "da27370eec855e4c73011db3c69f46ab0b743561d91f6f17b92d46d0a0c1fc6d",
+            "730d1d20f10a48b2a291d0680d831dc80083cd42eb0b880c45ee5d6bb5428a0a",
+            "3d33ca5a5eaacb36f4f6b1c0529b1252f118cd78ac587e791739b826857a87a4",
+            "c933c1972a18ed130b05e5d8d32402bace0302b7be096e93e1275abac29e841e"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/alpaca_CapMrktEstUSD.json",
+          "raw_sha256": "abe8f484312f046684288f117f0c7b2a469dd9fa4863126d90561fbb073c026b",
+          "rows": 1326,
+          "status": "ok",
+          "time_first": "2026-05-11T00:00:00.000000000Z",
+          "time_last": "2023-01-26T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alph",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALPHUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alpha",
+      "binance": {
+        "error": null,
+        "exists": true,
+        "symbol": "ALPHAUSDT"
+      },
+      "eligible": true,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "page_shas": [
+            "5d28c3dc1567745a20eebeddefa73c7d173081ab81c9c73dfd85c6e5eea52fc5",
+            "7e0fd37a066b93ac6ef9b8a956dc04a2b4d350bcad41a4613956db60f857079e",
+            "029157cc2be4eb1c63e0febec6e5000814efe129ae1c6aef34cb73ca1c670efe",
+            "25a5a2def991543ecef3cb68b9f248b1d3e989fbc468d36f96433f3acccd22d4",
+            "22aceb8e70d6235ce059055396344c8a61ddfdd1368b766c6cbda54abbe5f24f",
+            "cd27e44a321cc60f2b141c19c791eaaeeeb667e4e3b8d4d21385722c5adf474b",
+            "fb79eecaddcac8a1207df9d685a13b4f5f37095ec4e58a9478c48b1b069b98b5",
+            "d2ec522276fcb13feef14073a9fda0e51e381ae8f13dded16c54f68624db20a3",
+            "673a733d14f8e10abb4dce044642e26ad4acc231e876e650f1725444ea56620e",
+            "f0925a802003dd751bdc512cea0f841c930ab071da2eaaf03353007c1f794e7b",
+            "469e729928c293b9d277e1c147cdebe061f17a2f4bda725afd01c1b9b84797bd",
+            "6a541f0da7d32c0b45fb32f85710e0ad8d20442b18f1a446198e3aaaadf5b4d4",
+            "5687e54fcca22f7c77083aac4468f9268bba7f1cee23602d87f5d6698cf0a3dd",
+            "7e6e1f37fffc5ff4861fdf1089442f5a068d9ff94091ce190b8c08f76f956b30"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/alpha_CapMrktCurUSD.json",
+          "raw_sha256": "1132184e7ec5bb808f0897f2600a7f0141d45fbb72592c1af605ed559670621b",
+          "rows": 1392,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-04-02T00:00:00.000000000Z"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "75b14fd9a966117ae7595b597e6775fdbfc180d8142991082182fd5261dbd230",
+            "3f20ef25159f87e7ac6a45414c6deab48b63c797e1076cf0a93179cb439dffe5",
+            "91d9cf484e85eecc01756ed5709cc27417efdf794ebc709e1d6ebfc6ff89581e",
+            "711ab394d688b0ba8cc4b4d5a589aad4fd3a8c4e15da61d50fe6cb0ec2c954c5",
+            "da7334a80bd08170342d11f08750d2731d522384d639d156ca307ed76a5e38f3",
+            "a94784b2e2f89fa0fdd1c6cef11dc0d3ed491e3c67671c66f647b6cc1f3de753",
+            "ce8181b508bea90a6cf90cbce77768ef6a7efc5535ac270eab992287cd42ea5f",
+            "4ed778469500f64a2c8133eda7f876b0e917820084b539ccefe8e56567005fca",
+            "91a22cd4e5fb78c301fc0b4988dc8cbfd7f66e27012664d5058e84e9c6b2ec07",
+            "19aebabbe1e1ed5f15656b3c4d19891178ebbf489d77404de249848182842a12",
+            "b0844191d21d545bd8296b0589e87333da6ec8edb2ad2c5e1d630850cb8bc08f",
+            "a436126c910243f7384a6ddf63b1dce7c9cc2b6df41f7252ab82444dbbb98233",
+            "3f5e9ca5ddd6138a8080d8cfd816a832dcf5e35b95d72b08576470d353f78cca",
+            "e6e1de33577e5dd1ee4c84b98d7d84d43cf6653b41f7844d63cc9135d9c2be91"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/alpha_CapMrktEstUSD.json",
+          "raw_sha256": "7472fd8ecfa875acc887ac99d45e69eabaec6aedcd584de730845564acb4dfe2",
+          "rows": 1392,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-04-02T00:00:00.000000000Z"
+        }
+      },
+      "status": "verified"
+    },
+    {
+      "asset": "alpine",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALPINEUSDT"
+      },
+      "blocker_reasons": [
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "13922f8dc17b6b18ecd8bd8616beadb1c282e4228f470fb295cd1bc4ba5ab891",
+            "6c2c2daad113c784143fdc8bbfcbca8cdcc9563d2e8780c9335fe8aa7f8692f6",
+            "80f2dc1ab90b7bcae08f228aff160575337220189cdb590131626f4d6b609b9a",
+            "6d9e52f5af5365a0dff0b73963f61c429ee43693b4d708b75fb8898751a359ad",
+            "beda9179da6fc389cdce984dbaac9a33229d0a8e40a275b680d1443e7d7c9aeb",
+            "6e225d8dc8ee067fc9d3f9e20dd8981a065f8acdabe4c7f20917bd53900133db",
+            "81bc122bfffbe3f2c680ea516cf7a70b1bf429fab569dbb588dfa202d5ae5a93",
+            "62dfa15b63a167552134c6b9ae19592f08f51583ac3fc0f0c4562d83c09ff741",
+            "e239086a7681f449a6a1802bae01a140cb5fbfcf82a46fd620a57ef7262f9036",
+            "86975beb2473cdfef15764351a0da0bb80aa72b0072ba986d52c579a905d868f",
+            "d8acca5ef6a7f9eb08b652bd62d2145748b2895f2bbf72938519cf000a28b59b",
+            "c717cb83cfecc6cad3db8f7376ec2c09263b55a45af0de5ee430062e8510068b",
+            "03f61bc7e29d7ee2a2e84e1d4c3d3b3fd025ccce1712825fd385584ff9565f80",
+            "0ae13d01199e521628059c45242a4936462ac7d16db4219fb41e2fe0d5847f9b"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/alpine_CapMrktEstUSD.json",
+          "raw_sha256": "3023fb257ff33e880d15cb652b1d88bfcb18bb841c2e3c53fd38d2bfd1f52280",
+          "rows": 1392,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2023-04-02T00:00:00.000000000Z"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alt",
+      "binance": {
+        "error": null,
+        "exists": true,
+        "symbol": "ALTUSDT"
+      },
+      "eligible": true,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "page_shas": [
+            "cd9100a6ecccf6bf576465b03be8e3c88a68f4a4fcb1d22003691a824d6c5637",
+            "32c345c73829f3bdbf371617c006f744395aa20fce45fe96d7e7bd1c04f861d6",
+            "1e13367adac8067f621f2ca70bbb0a03a05fd4508b49388c0dea0f1b79f21922",
+            "4f520407c77a97d98d722318885e3d62cbccc2f3128a9b9d987a5781f6adfdd3",
+            "779d9c277b4c4a9917eec92f05d19f23ef087e6abd79464fd04bb51aed8283e6",
+            "ead498ca8c9ae642c31c636f47aaae31fb898572ec2382b383a57118396b1eb4",
+            "3c51e0afd31621715594f707737e9a8bd85ddff79cfb4799ffd56c0a669f6156",
+            "df70f56f142dff8aa977fbc16949f3e15bbbdaa2d8372d269a9c7a3cd6faa490",
+            "64a1a47f77466d3b777fbd66e4a080e302a6da0aaffd13f60ae4d7960b7cd346"
+          ],
+          "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics_candidates/alt_CapMrktEstUSD.json",
+          "raw_sha256": "2d4bb28bcc5f15bb6d38ade81b7036a5485e7acf71baf2a1eb94db5848703334",
+          "rows": 859,
+          "status": "ok",
+          "time_first": "2026-07-16T00:00:00.000000000Z",
+          "time_last": "2024-08-14T00:00:00.000000000Z"
+        }
+      },
+      "status": "verified"
+    },
+    {
+      "asset": "alt_aptoslaunchtoken",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALT_APTOSLAUNCHTOKENUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "altbear",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALTBEARUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "altbull",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALTBULLUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "althalf",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALTHALFUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "althedge",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALTHEDGEUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alu",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALUUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alusd",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALUSDUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alv",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALVUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
+    },
+    {
+      "asset": "alx",
+      "binance": {
+        "error": "404_not_found",
+        "exists": false,
+        "symbol": "ALXUSDT"
+      },
+      "blocker_reasons": [
+        "capmkt_est_usd:asset_not_served",
+        "no_binance_perpetual:404_not_found"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-24T18:48:21Z",
+      "metrics": {
+        "CapMrktCurUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        },
+        "CapMrktEstUSD": {
+          "rows": 0,
+          "status": "asset_not_served"
+        }
+      },
+      "status": "blocked"
     }
   ],
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-24T18:45:45Z",
+  "fetch_utc": "2026-10-24T18:48:21Z",
   "point_in_time": "no forward-fill; eligibility uses on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",
