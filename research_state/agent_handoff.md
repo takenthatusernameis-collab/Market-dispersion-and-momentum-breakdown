@@ -35,11 +35,11 @@
 - No new candidate discovery needed for the decile gate; 32 assets exceeds the 10-asset minimum.
 
 ## Immediate next task
-1. Next sealed forward block for H004V106 is blocked until data reaches 2026-10-29 (formation 2026-09-30 needs +30d horizon). Current cutoff 2026-10-23. Record blocker; do not compute outcomes prematurely.
-2. Continue candidate frontier expansion beyond the current 32 assets if more cap+Binance assets are discovered; universe_frontier.json cursor=76, 822 total eligible candidates, rank_frontier_exhausted=false. Note: candidates_discovered queue is currently empty; if frontier expansion requires discovering new candidates, populate queue via documented discovery process and validate in bounded batches.
-3. Red-team inference, cost/funding attribution, holdout integrity, and resume logic. Add regression tests for any failures found.
+1. **BLOCKER (forward block):** Next sealed forward block for H004V106 requires formation dates >= 2026-09-30 with 30-day horizon; need completed UTC observations through at least 2026-10-29. Current data cutoff is 2026-10-23T00:00:00Z (frozen in artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json). **Do not compute outcomes prematurely.** When cutoff >= 2026-10-29, evaluate only the preselected anchor H004V106 on the sealed block without parameter/asset/threshold/cost search.
+2. Continue candidate frontier expansion beyond the current 32 assets if more cap+Binance assets are discovered; universe_frontier.json cursor=76, 822 total eligible candidates, rank_frontier_exhausted=false. **candidates_discovered queue is currently empty** (validation: discovered=0, to_process=0, verified=30, blocked=21). If frontier expansion requires discovering new candidates, populate `candidates_discovered` via documented discovery process and validate in bounded batches using `scripts/validate_candidate_batch.py`.
+3. Red-team inference, cost/funding attribution, holdout integrity, and resume logic. Add regression tests for any failures found (focus: dispersion accounting, bootstrap validity with overlapping horizons, cost/funding sign/convention, holdout separation, checkpoint/resume idempotency).
 4. If no candidate passes multiplicity or economic criteria, update hypothesis_registry.json and preregister a new theory-led experiment (H6 is a candidate; next_sequence_number=6).
-5. Verify tests, evidence hashes, terminal cell counts and no modifications to DISPERSION-001/002 artifacts; update this handoff and the next task with a measurable action.
+5. Verify tests (21/21), evidence hashes, terminal cell counts and confirm no modifications to DISPERSION-001/002 artifacts; update this handoff and the next task with a measurable action.
 
 ## Controls
 - Point-in-time universe, no look-ahead, delisting/symbol-migration controls, historical funding/cost accounting, chronological evaluation and free-data-only.
