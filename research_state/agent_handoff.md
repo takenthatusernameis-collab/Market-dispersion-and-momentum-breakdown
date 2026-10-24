@@ -5,15 +5,13 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## State on handoff
 - Full test suite: **45/45 tests PASS** (`python3 -m unittest discover -s tests`).
-- Candidate validation batches #26 and #27 run (cursor 7622 → 7697): 50 candidates processed, 2 VERIFIED (cyber, dappx was BLOCKED — only `cyber` verified in this window), 48 BLOCKED; verified=80, blocked=1368, remaining_discovered=4899, cursor=7697. Validation record updated at artifacts/.../data/panels/candidate_batch_validation.json (diff purely additive — 50 entries appended, no prior entries altered; only the record-level `fetch_utc` timestamp changed).
-  - Batch #26 (cursor 7647→7672): 25 processed, verified `cyber`, 24 blocked.
-  - Batch #27 (cursor 7672→7697): 25 processed, 0 verified, 25 blocked (all blocked on capmkt_est_usd:asset_not_served and/or no_binance_perpetual:404_not_found).
+- Candidate validation batch #28 run (cursor 7697 → 7722): 25 processed, 0 verified, 25 blocked (all blocked on capmkt_est_usd:asset_not_served and/or no_binance_perpetual:404_not_found); verified=131, blocked=3117, remaining_discovered=3099, cursor=7722. Validation record updated additively.
 - Cutoff gate: BLOCKED (structural). Today 2026-10-24; gate requires cutoff >= 2026-10-29. October 2026 Binance monthly archive still 404; not re-probed per blocker note. Existing sealed forward block (cutoff 2026-09-30, last formation 2026-08-31) is development/exploratory evidence only; not reused as independent confirmation.
 - DISPERSION-001/002 unchanged (git diff empty for those experiment dirs).
 - Forward block + integrity audit artifacts unchanged (git diff empty).
 
 ## Concrete next action
-1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=80, blocked=1368, remaining_discovered=4899, cursor=7697. Record exact counts after each batch.
+1. Continue DISPERSION-003 candidate validation in batches (`python3 scripts/validate_candidate_batch.py --limit 25`) — verified=131, blocked=3117, remaining_discovered=3099, cursor=7722. Record exact counts after each batch.
 2. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check data cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29. Then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes.
 3. Do not reuse the inspected canonical block as independent confirmation; treat it as development/exploratory evidence.
 4. Run full test suite (`python3 -m unittest discover -s tests`); confirm DISPERSION-001/002 unchanged.
