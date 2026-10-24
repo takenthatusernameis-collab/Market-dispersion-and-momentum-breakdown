@@ -25,4 +25,4 @@ Continue quantitative research in this repository without waiting for a new manu
 Provide verified test output, explicit forward-block blocker record (dates/cutoff/horizon), confirmation DISPERSION-001/002 unchanged, updated handoff + next task with one concrete next action. Do not declare program complete.
 
 ## Concrete next action
-Run `scripts/refresh_free_data.py` and check the cutoff; if still < 2026-10-29, record the blocker and run `python -m unittest discover -s tests`; otherwise evaluate sealed block H004V106 only.
+Run `scripts/refresh_free_data.py` again in next session and check the cutoff; if still < 2026-10-29, record the blocker and run `python -m unittest discover -s tests`; otherwise evaluate sealed block H004V106 only.

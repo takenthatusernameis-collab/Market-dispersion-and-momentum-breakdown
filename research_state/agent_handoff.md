@@ -18,7 +18,8 @@
 3. **[DONE]** Verified git status: only `__pycache__` bytecode changed; no changes to DISPERSION-001/002 artifacts. Restored `forward_block_evaluation.json` `evaluated_utc` (reproducibility-test side effect) to the committed value.
 4. **[DONE]** Reviewed DISPERSION-003 state: forward block H004V106 sealed per committed artifact (data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, date range 2025-01-01..2026-08-31, n_formations 608, high_low_diff_net_1x 0.6165, status OK). Committed artifact is the source of truth; handoff text previously recorded a different (-0.0097 / 637 formations / 2026-09-29) figure that does not match the committed file.
 5. **[DONE]** Read prior handoff/task and updated handoff + next task message.
-
+6. **[DONE]** Re-ran `scripts/refresh_free_data.py` this session: CoinMetrics Community API reachable; cutoff unchanged at 2026-10-23 (latest fully closed UTC daily candle); `universe_frontier.json` current_panel_date_end = 2026-10-23, latest_verified_data_refresh_utc = 2026-10-24T04:31:40Z. Forward block still BLOCKED (2026-10-23 < 2026-10-29).
+7. **[DONE]** Verified test suite: `python -m unittest discover -s tests` → 40/40 OK. Git status: only __pycache__ bytecode; DISPERSION-001/002 artifacts unchanged.
 ## Blocker record (forward block) — UNRESOLVED
 - Next sealed forward block for H004V106 requires formation dates >= 2026-09-30 with a 30-day horizon; need completed UTC observations through at least 2026-10-29.
 - Verified data cutoff: 2026-10-23T00:00:00Z. 2026-10-23 < 2026-10-29 → **BLOCKED** (6 days short). Do not compute outcomes prematurely.
