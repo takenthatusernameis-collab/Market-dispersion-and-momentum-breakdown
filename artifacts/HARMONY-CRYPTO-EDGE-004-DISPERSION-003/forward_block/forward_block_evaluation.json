@@ -19,7 +19,7 @@
     "mean": 26.231907894736842,
     "min": 26
   },
-  "evaluated_utc": "2026-10-24T12:00:56Z",
+  "evaluated_utc": "2026-10-24T12:09:44Z",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "formations": [
     {
@@ -4958,13 +4958,13 @@
     "binance_klines_XLMUSDT.csv": "4472dfb3e9386d5bb844903a70e5ed2cf2810f5bc6fe59feb0b13215b7ca1c7a",
     "binance_klines_XRPUSDT.csv": "74c56315ed5839e62bca5ba6c629b6b3c3a2211fd44bc7ea0c0be60e0a8be242",
     "binance_klines_ZECUSDT.csv": "207d1ac49f5499340df84602f4ab26781fcbf0ee09e00c98f7134e9245cb2bcc",
-    "binance_panel_manifest.json": "84a48b92b53c545d358934172ba86c0d88afd3c2a22954c89383832b11a7e77f",
+    "binance_panel_manifest.json": "66c56836f9876df7c465961b56b2627f6c33cc396cf23784eb1124fd05f630a5",
     "candidate_batch_validation.json": "6a408fbdafc154f4d5fe56cedc48138790520fe9aed41340112dfc26565ca263",
-    "data_refresh_provenance.json": "1f6a90cfacd1973514bd21b3320669481c917736f769518c82ba46a81cde34dd",
+    "data_refresh_provenance.json": "3d88013832e7286594a003a9631d17384aec0aadcfe28bf33f842766553fb32b",
     "grid_config_manifest.json": "64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4",
     "grid_result_ledger.json": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
     "marketcap_panel.csv": "9ebcc21467055873e3ae173aa524aa4e24f4f618cfb78144c53264d38c995e95",
-    "marketcap_panel_manifest.json": "0625f3d9d3f444a36aba9e52ff7dc2f7526c2ebde71aeac90a389a4faadf5fb5"
+    "marketcap_panel_manifest.json": "dc2c3f8d3efc856d63cb7b6586da5f4d8b4165330470a506f9b5c62d110c9b70"
   },
   "last_allowed_formation_date": "2026-08-31",
   "low_gross_mean": -0.07556109443410872,

@@ -1471,7 +1471,7 @@
   "end": "2026-10-23",
   "endpoint": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-24T05:20:48Z",
+  "fetch_utc": "2026-10-24T12:03:26Z",
   "frequency": "1d",
   "metrics": [
     "CapMrktEstUSD",
