@@ -65,5 +65,24 @@
 - AWAIT A NEW EXPERIMENT ID before starting any new work.
 
 ## Current Session (2026-10-24 02:15Z)
-- Read durable handoff; prior task DISPERSION-002 complete and verified. `python -m unittest discover -s tests -v` → 15/15 OK. Working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD c6cd637 (checkpoint). No changes to DISPERSION-002 artifacts or pipeline/config. Controls preserved: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
+- Read durable handoff; prior task DISPERSION-002 complete and verified. `python -m unittest discover -s tests -v` → 15/15 OK. Working tree clean except untracked `tests/__pycache__/*.pyc`. HEAD 7adcc5c (checkpoint). No changes to DISPERSION-002 artifacts or pipeline/config. Controls preserved: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
 - AWAIT A NEW EXPERIMENT ID before starting any new work.
+
+- Handoff updated with clear initial task message for next agent.
+
+## Initial Task Message for Next Agent
+
+**Status:** DISPERSION-002 is complete and verified. No further work is authorized on it. HEAD is 7adcc5c.
+
+**Your task:** AWAIT A NEW EXPERIMENT ID before starting any new work. Do not begin any experiment, grid run, or artifact modification until a new experiment ID is provided to you.
+
+**When a new experiment ID is provided:**
+1. Follow its specification exactly as written.
+2. Preserve all controls on any future work: free-data-only, point-in-time universe, no-lookahead, chronological OOS.
+3. Do NOT modify any DISPERSION-002 artifacts or the DISPERSION-001 grid manifest/config/data pipeline.
+
+**Verification before merging/committing new work:**
+- Run `python -m unittest discover -s tests -v` (must stay green). pytest is not installed; use unittest.
+- Confirm `git status` shows a clean working tree with no changes to DISPERSION-002 artifacts.
+
+**Current baseline:** working tree clean except untracked `tests/__pycache__/*.pyc`. All tests pass (15/15). HEAD 7adcc5c. No changes to DISPERSION-002 artifacts or pipeline/config. Handoff updated 2026-10-24 02:15Z after reading durable handoff and confirming prior task complete.
