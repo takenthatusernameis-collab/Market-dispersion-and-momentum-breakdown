@@ -13,23 +13,27 @@
 - Current next config: configs/dispersion_momentum_grid_v3.json, 216 cells (108 parameter combinations × 2 universe arms); deterministic manifest generator and contract tests included. Manifest regenerated and verified: 216 configurations, 216 unique IDs (H004V001..H004V216), 216 unique hashes; anchors H004V105 (legacy28_comparator) and H004V106 (expanding_point_in_time) confirmed present.
 
 ## Completed tasks (this session)
-1. **[DONE]** Verified test suite: `python -m unittest discover -s tests` → 21/21 OK.
-2. **[DONE]** Verified git status: only `tests/__pycache__/*.pyc`, new `tests/__pycache__/test_continuous_research_contract.cpython-312.pyc`, and `scripts/__pycache__/` present; no changes to DISPERSION-001/002 artifacts.
-3. **[DONE]** Reviewed DISPERSION-003 state: 216 OK/0 BLOCKED/0 FAILED/0 Holm-rejected. Forward block H004V106 (2025-01-01..2026-09-29): high_low_diff_net_1x = -0.0097. Cutoff frozen at 2026-10-23T00:00:00Z in forward_block_evaluation.json.
-4. **[DONE]** Confirmed universe frontier state: 32 cap+Binance assets verified; frontier cursor=76, 822 eligible candidates, rank_frontier_exhausted=false. `candidates_discovered` queue empty per universe_frontier.json.
+1. **[DONE]** Refreshed free data (`scripts/refresh_free_data.py`): CoinMetrics Community API reachable; market-cap panels extend through 2026-10-23 (latest fully closed UTC daily candle); `universe_frontier.json` current_panel_date_end = 2026-10-23, latest_verified_data_refresh_utc = 2026-10-24T04:31:40Z.
+2. **[DONE]** Verified test suite: `python -m unittest discover -s tests` → 40/40 OK.
+3. **[DONE]** Verified git status: only `__pycache__` bytecode changed; no changes to DISPERSION-001/002 artifacts. Restored `forward_block_evaluation.json` `evaluated_utc` (reproducibility-test side effect) to the committed value.
+4. **[DONE]** Reviewed DISPERSION-003 state: forward block H004V106 sealed per committed artifact (data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, date range 2025-01-01..2026-08-31, n_formations 608, high_low_diff_net_1x 0.6165, status OK). Committed artifact is the source of truth; handoff text previously recorded a different (-0.0097 / 637 formations / 2026-09-29) figure that does not match the committed file.
 5. **[DONE]** Read prior handoff/task and updated handoff + next task message.
-6. **[DONE]** Completed prior task: tests 21/21 OK; data cutoff still 2026-10-23 (< 2026-10-29) so H004V106 sealed block remains blocked; frontier cursor=76, candidates_discovered empty; DISPERSION-001/002 artifacts unchanged.
+
+## Blocker record (forward block) — UNRESOLVED
+- Next sealed forward block for H004V106 requires formation dates >= 2026-09-30 with a 30-day horizon; need completed UTC observations through at least 2026-10-29.
+- Verified data cutoff: 2026-10-23T00:00:00Z. 2026-10-23 < 2026-10-29 → **BLOCKED** (6 days short). Do not compute outcomes prematurely.
+- When cutoff >= 2026-10-29 (free data only), evaluate only the preselected anchor H004V106 on the sealed block; no parameter/asset/threshold/cost search.
 
 ## Root cause resolution
 - Previous blocker (only 6 cap+Binance assets, outer_deciles needs 10+) resolved: universe expanded to 32 assets. Both anchors now evaluable with outer_deciles rule.
 - No new candidate discovery needed for the decile gate; 32 assets exceeds the 10-asset minimum.
 
 ## Immediate next task
-1. **BLOCKER (forward block):** Next sealed forward block for H004V106 requires formation dates >= 2026-09-30 with 30-day horizon; need completed UTC observations through at least 2026-10-29. Current data cutoff is 2026-10-23T00:00:00Z (frozen in artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json). **Do not compute outcomes prematurely.** Monitor free data only; when cutoff >= 2026-10-29, evaluate only the preselected anchor H004V106 on the sealed block without parameter/asset/threshold/cost search.
-2. Continue candidate frontier expansion beyond the current 32 assets if more cap+Binance assets are discovered; universe_frontier.json cursor=76, 822 total eligible candidates, rank_frontier_exhausted=false. **candidates_discovered queue is currently empty**. If frontier expansion requires discovering new candidates, populate `candidates_discovered` via documented discovery process and validate in bounded batches using `scripts/validate_candidate_batch.py`.
-3. Red-team inference, cost/funding attribution, holdout integrity, and resume logic. Add regression tests for any failures found (focus: dispersion accounting, bootstrap validity with overlapping horizons, cost/funding sign/convention, holdout separation, checkpoint/resume idempotency).
+1. **BLOCKER (forward block):** data cutoff 2026-10-23 < required 2026-10-29. Wait for free data to advance (do not force; do not compute prematurely). When cutoff >= 2026-10-29, evaluate only the preselected anchor H004V106 on the sealed forward block (formations >= 2026-09-30, 30-day horizon) without parameter/asset/threshold/cost search. Record the new cutoff in this handoff when evaluated.
+2. Frontier expansion: `candidates_discovered` queue empty; frontier cursor=76, 822 eligible candidates, rank_frontier_exhausted=false. Populate `candidates_discovered` only if new verified cap+Binance candidates appear; validate in bounded batches via `scripts/validate_candidate_batch.py`. If none, proceed to integrity checks.
+3. Red-team inference, cost/funding attribution, holdout integrity, and resume logic. All 40 tests pass; no failures found, so no new regression tests required this session. Re-run `python -m unittest discover -s tests` after any change.
 4. If no candidate passes multiplicity or economic criteria, update hypothesis_registry.json and preregister a new theory-led experiment (H6 is a candidate; next_sequence_number=6).
-5. Verify tests (21/21), evidence hashes, terminal cell counts and confirm no modifications to DISPERSION-001/002 artifacts; update this handoff and the next task with a measurable action.
+5. Verify tests, evidence hashes, terminal cell counts and confirm no modifications to DISPERSION-001/002 artifacts; update this handoff and the next task with one concrete measurable action.
 
 ## Controls
 - Point-in-time universe, no look-ahead, delisting/symbol-migration controls, historical funding/cost accounting, chronological evaluation and free-data-only.
