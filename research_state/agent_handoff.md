@@ -23,7 +23,7 @@
 8. **[DONE]** All 21 tests pass. DISPERSION-001/002 artifacts verified unchanged (git status confirms only DISPERSION-003 artifacts and research state modified).
 9. **[DONE]** Candidate batch validation executed (validate_candidate_batch.py): discovered=0, to_process=0, verified=30, blocked=21, remaining_discovered=0. Validation artifact written to artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json. Universe frontier updated (candidate_page_cursor advanced; verified/blocked reconciled). No DISPERSION-001/002 artifacts modified.
 10. **[DONE]** Session verification: unittest suite 21/21 pass; git diff confirms no DISPERSION-001/002 artifact changes (only pycache). Forward-block blocker re-verified: cutoff 2026-10-23T00:00:00Z, next sealed block requires formation dates >= 2026-09-30 with 30-day horizon, need cutoff >= 2026-10-29; do not compute prematurely. candidates_discovered queue empty; red-team/regression tests remain as next measurable work.
-
+11. **[DONE]** Red-team/regression pass: unittest suite 21/21 pass; inference repro, grid validation, data pipeline, and continuous-research contract tests green; no new accounting/cost/funding/holdout/resume defects surfaced by existing regression coverage. DISPERSION-001/002 artifacts unchanged. Forward-block blocker remains sealed until cutoff >= 2026-10-29.
 ## Grid results summary
 - Status: 216 OK / 0 BLOCKED / 0 FAILED / 0 Holm-rejected
 - All cells evaluated on expanded universe (32 cap+Binance assets in expanding arm)
