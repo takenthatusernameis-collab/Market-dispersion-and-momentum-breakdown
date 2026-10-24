@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-24T23:41:08Z",
-  "candidate_page_cursor": 9822,
+  "batch_validation_utc": "2026-10-24T23:43:40Z",
+  "candidate_page_cursor": 9847,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -3435,9 +3435,7 @@
     "mta",
     "mtc",
     "mtc_docademic",
-    "mtc_mtcmeshnetwork"
-  ],
-  "candidates_discovered": [
+    "mtc_mtcmeshnetwork",
     "mtd",
     "mth",
     "mtl_malteselira",
@@ -3462,7 +3460,9 @@
     "munch",
     "muon",
     "mur",
-    "musd",
+    "musd"
+  ],
+  "candidates_discovered": [
     "musd_metamask",
     "musd_metamask_eth",
     "musd_mezousd",
@@ -6524,7 +6524,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-24T23:42:21Z",
+  "last_updated_utc": "2026-10-24T23:44:51Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",

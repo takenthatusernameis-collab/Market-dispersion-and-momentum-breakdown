@@ -1,0 +1,2642 @@
+[
+  {
+    "CapMrktEstUSD": "13070595.0509471",
+    "asset": "mubarak",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12069179.5378348",
+    "asset": "mubarak",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11718830.9646034",
+    "asset": "mubarak",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11556875.7769512",
+    "asset": "mubarak",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11305626.8604012",
+    "asset": "mubarak",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10915470.9929878",
+    "asset": "mubarak",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10892266.6289792",
+    "asset": "mubarak",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10357670.202962",
+    "asset": "mubarak",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10245879.8581724",
+    "asset": "mubarak",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10642204.7877762",
+    "asset": "mubarak",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10903647.47718",
+    "asset": "mubarak",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10590347.0107926",
+    "asset": "mubarak",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10753604.006636",
+    "asset": "mubarak",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11118476.7931114",
+    "asset": "mubarak",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11890647.1768449",
+    "asset": "mubarak",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13002731.7801286",
+    "asset": "mubarak",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12062944.8248329",
+    "asset": "mubarak",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12797918.4758677",
+    "asset": "mubarak",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12694103.1832406",
+    "asset": "mubarak",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13453474.9581469",
+    "asset": "mubarak",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13468188.4347872",
+    "asset": "mubarak",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12562213.1177938",
+    "asset": "mubarak",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13777585.7255525",
+    "asset": "mubarak",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15556938.0363033",
+    "asset": "mubarak",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25402201.0614136",
+    "asset": "mubarak",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21279943.6464892",
+    "asset": "mubarak",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17784254.649769",
+    "asset": "mubarak",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18594483.7977037",
+    "asset": "mubarak",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15737591.0620082",
+    "asset": "mubarak",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16875126.5022022",
+    "asset": "mubarak",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15861545.6690833",
+    "asset": "mubarak",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17137242.3876998",
+    "asset": "mubarak",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16639510.8252908",
+    "asset": "mubarak",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17180132.7959739",
+    "asset": "mubarak",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20384595.3036546",
+    "asset": "mubarak",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19211511.2764453",
+    "asset": "mubarak",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20764374.9200963",
+    "asset": "mubarak",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23291240.7993933",
+    "asset": "mubarak",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24157453.5858078",
+    "asset": "mubarak",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23951026.1371952",
+    "asset": "mubarak",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19755481.2319827",
+    "asset": "mubarak",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19633537.9837064",
+    "asset": "mubarak",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21663217.7195126",
+    "asset": "mubarak",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22165184.5401528",
+    "asset": "mubarak",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22324276.8882346",
+    "asset": "mubarak",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20614284.7259636",
+    "asset": "mubarak",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20983766.3666387",
+    "asset": "mubarak",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21522398.6182546",
+    "asset": "mubarak",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28283039.2557834",
+    "asset": "mubarak",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30057969.8717072",
+    "asset": "mubarak",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29487191.1641217",
+    "asset": "mubarak",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31655396.5207894",
+    "asset": "mubarak",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31538297.6641892",
+    "asset": "mubarak",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29715923.4843365",
+    "asset": "mubarak",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29199582.9862665",
+    "asset": "mubarak",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28582773.7433711",
+    "asset": "mubarak",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28579458.0052288",
+    "asset": "mubarak",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28639729.0969037",
+    "asset": "mubarak",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29981328.7405744",
+    "asset": "mubarak",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29885323.431307",
+    "asset": "mubarak",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29793145.0972284",
+    "asset": "mubarak",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30028567.3633522",
+    "asset": "mubarak",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28844588.439611",
+    "asset": "mubarak",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31158352.2430845",
+    "asset": "mubarak",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32734513.4269878",
+    "asset": "mubarak",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32459816.7901165",
+    "asset": "mubarak",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33431916.1327551",
+    "asset": "mubarak",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43779469.5190366",
+    "asset": "mubarak",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78098448.0621649",
+    "asset": "mubarak",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52910753.0687737",
+    "asset": "mubarak",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44196407.8029765",
+    "asset": "mubarak",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55730674.2424068",
+    "asset": "mubarak",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57798434.1579062",
+    "asset": "mubarak",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53323349.7482966",
+    "asset": "mubarak",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59742356.6570632",
+    "asset": "mubarak",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62061300.8250363",
+    "asset": "mubarak",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60560882.8012332",
+    "asset": "mubarak",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62332102.4910038",
+    "asset": "mubarak",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61701548.3420585",
+    "asset": "mubarak",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63631426.9867208",
+    "asset": "mubarak",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65720105.1209015",
+    "asset": "mubarak",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75309348.8423486",
+    "asset": "mubarak",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76372835.954238",
+    "asset": "mubarak",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73203096.2545619",
+    "asset": "mubarak",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75527679.7836395",
+    "asset": "mubarak",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75990862.1054544",
+    "asset": "mubarak",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74052709.3336652",
+    "asset": "mubarak",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72199616.1526175",
+    "asset": "mubarak",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71417500.9022652",
+    "asset": "mubarak",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66247784.7683408",
+    "asset": "mubarak",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60065423.0537973",
+    "asset": "mubarak",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58291110.1322155",
+    "asset": "mubarak",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55793002.997665",
+    "asset": "mubarak",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56562168.1011953",
+    "asset": "mubarak",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54246344.0187655",
+    "asset": "mubarak",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53062717.5453183",
+    "asset": "mubarak",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53266554.2527501",
+    "asset": "mubarak",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56898946.6487906",
+    "asset": "mubarak",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52497204.7572703",
+    "asset": "mubarak",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52284437.0460091",
+    "asset": "mubarak",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11973386.523784",
+    "asset": "mubarak",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11646695.840561",
+    "asset": "mubarak",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11558621.6557022",
+    "asset": "mubarak",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12144617.4015014",
+    "asset": "mubarak",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11939301.7044297",
+    "asset": "mubarak",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11169073.0901597",
+    "asset": "mubarak",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13253123.7866056",
+    "asset": "mubarak",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13430298.0448156",
+    "asset": "mubarak",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13290353.2742991",
+    "asset": "mubarak",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15012284.0692082",
+    "asset": "mubarak",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15555079.1036597",
+    "asset": "mubarak",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14259039.5254372",
+    "asset": "mubarak",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13329673.2396409",
+    "asset": "mubarak",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13944246.6800504",
+    "asset": "mubarak",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13495904.5155744",
+    "asset": "mubarak",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13504096.156321",
+    "asset": "mubarak",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13593320.5780254",
+    "asset": "mubarak",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13997332.0224895",
+    "asset": "mubarak",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13603410.1198955",
+    "asset": "mubarak",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13560710.5851997",
+    "asset": "mubarak",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13353209.5329868",
+    "asset": "mubarak",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14807362.4341093",
+    "asset": "mubarak",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13605734.602616",
+    "asset": "mubarak",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13333477.783281",
+    "asset": "mubarak",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13434357.7859876",
+    "asset": "mubarak",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13931828.0515326",
+    "asset": "mubarak",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15202331.6422437",
+    "asset": "mubarak",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17260604.4226866",
+    "asset": "mubarak",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16332647.1513315",
+    "asset": "mubarak",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16278071.4633091",
+    "asset": "mubarak",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15878273.2451801",
+    "asset": "mubarak",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15946044.7903114",
+    "asset": "mubarak",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15953759.21476",
+    "asset": "mubarak",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16161614.2709111",
+    "asset": "mubarak",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17104296.4898586",
+    "asset": "mubarak",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16839050.9041707",
+    "asset": "mubarak",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15443149.5741345",
+    "asset": "mubarak",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15543551.7067143",
+    "asset": "mubarak",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14733245.500243",
+    "asset": "mubarak",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14056469.8629221",
+    "asset": "mubarak",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13607920.2847908",
+    "asset": "mubarak",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14078686.1646952",
+    "asset": "mubarak",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13633411.9118098",
+    "asset": "mubarak",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14266086.1984892",
+    "asset": "mubarak",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14339231.7768502",
+    "asset": "mubarak",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13138923.504897",
+    "asset": "mubarak",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13282548.5112435",
+    "asset": "mubarak",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12664901.5243217",
+    "asset": "mubarak",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13212883.4819501",
+    "asset": "mubarak",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14323113.7121751",
+    "asset": "mubarak",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12658961.3308447",
+    "asset": "mubarak",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11970360.6956399",
+    "asset": "mubarak",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12017531.1089953",
+    "asset": "mubarak",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12740215.5345617",
+    "asset": "mubarak",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12693519.2439948",
+    "asset": "mubarak",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12415041.564242",
+    "asset": "mubarak",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11223254.8513828",
+    "asset": "mubarak",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11543810.2512715",
+    "asset": "mubarak",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10583856.3257431",
+    "asset": "mubarak",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10093388.8602523",
+    "asset": "mubarak",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9953632.47827325",
+    "asset": "mubarak",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10266418.3912747",
+    "asset": "mubarak",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10559536.5273098",
+    "asset": "mubarak",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10444899.8620468",
+    "asset": "mubarak",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10220520.7057929",
+    "asset": "mubarak",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10832569.2335891",
+    "asset": "mubarak",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10826224.6556473",
+    "asset": "mubarak",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10758372.1336668",
+    "asset": "mubarak",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11076843.8529571",
+    "asset": "mubarak",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10854267.970214",
+    "asset": "mubarak",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10927562.1940566",
+    "asset": "mubarak",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11132039.3295696",
+    "asset": "mubarak",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10348817.385625",
+    "asset": "mubarak",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10512469.8548619",
+    "asset": "mubarak",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10535908.0717513",
+    "asset": "mubarak",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10674661.6519943",
+    "asset": "mubarak",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10371696.9091043",
+    "asset": "mubarak",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10428174.7352903",
+    "asset": "mubarak",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9948622.11150084",
+    "asset": "mubarak",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9779332.71402141",
+    "asset": "mubarak",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10061877.1842842",
+    "asset": "mubarak",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9774680.92193439",
+    "asset": "mubarak",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9903657.57879281",
+    "asset": "mubarak",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9955095.59732154",
+    "asset": "mubarak",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10107008.67751",
+    "asset": "mubarak",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10754673.3330959",
+    "asset": "mubarak",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10952696.4491778",
+    "asset": "mubarak",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11041814.9222434",
+    "asset": "mubarak",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11479777.0085567",
+    "asset": "mubarak",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11474585.7183494",
+    "asset": "mubarak",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11895744.0816222",
+    "asset": "mubarak",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12054490.1534438",
+    "asset": "mubarak",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12554394.8738365",
+    "asset": "mubarak",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12407672.2265185",
+    "asset": "mubarak",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12698659.8326543",
+    "asset": "mubarak",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13313645.0033272",
+    "asset": "mubarak",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12649431.7714159",
+    "asset": "mubarak",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13280485.6964547",
+    "asset": "mubarak",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12538391.1609368",
+    "asset": "mubarak",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12384897.1084282",
+    "asset": "mubarak",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15792541.0954416",
+    "asset": "mubarak",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16030905.7249402",
+    "asset": "mubarak",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15459769.9101479",
+    "asset": "mubarak",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18234985.0092856",
+    "asset": "mubarak",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17717755.0386484",
+    "asset": "mubarak",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19033136.276805",
+    "asset": "mubarak",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18170500.3430209",
+    "asset": "mubarak",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20456409.6515956",
+    "asset": "mubarak",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20169758.2960877",
+    "asset": "mubarak",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20621062.1737949",
+    "asset": "mubarak",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19198564.4130144",
+    "asset": "mubarak",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19328426.1474916",
+    "asset": "mubarak",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20041250.0316709",
+    "asset": "mubarak",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21775404.269569",
+    "asset": "mubarak",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22395968.6352383",
+    "asset": "mubarak",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21345708.0349853",
+    "asset": "mubarak",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22502989.1651147",
+    "asset": "mubarak",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21720419.5915461",
+    "asset": "mubarak",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21267450.607536",
+    "asset": "mubarak",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21748624.6907622",
+    "asset": "mubarak",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21204396.406634",
+    "asset": "mubarak",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21529416.8510034",
+    "asset": "mubarak",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20521136.2388191",
+    "asset": "mubarak",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19217760.0316706",
+    "asset": "mubarak",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20545344.8188643",
+    "asset": "mubarak",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19863196.8830055",
+    "asset": "mubarak",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19808757.1941742",
+    "asset": "mubarak",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19645681.8499306",
+    "asset": "mubarak",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17997750.7581713",
+    "asset": "mubarak",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18199199.4439572",
+    "asset": "mubarak",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18190673.1548532",
+    "asset": "mubarak",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18158394.9832676",
+    "asset": "mubarak",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17181302.9450431",
+    "asset": "mubarak",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18296605.1466141",
+    "asset": "mubarak",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16358289.8325781",
+    "asset": "mubarak",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15948658.5699361",
+    "asset": "mubarak",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16408428.8763934",
+    "asset": "mubarak",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15599087.2920453",
+    "asset": "mubarak",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14755938.0331738",
+    "asset": "mubarak",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12504619.7290413",
+    "asset": "mubarak",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13771307.3738337",
+    "asset": "mubarak",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14333938.7931642",
+    "asset": "mubarak",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14018575.8050367",
+    "asset": "mubarak",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13870969.969866",
+    "asset": "mubarak",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14029220.0128887",
+    "asset": "mubarak",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14173423.1102857",
+    "asset": "mubarak",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14768767.8076568",
+    "asset": "mubarak",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16986118.4776196",
+    "asset": "mubarak",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18572124.4915077",
+    "asset": "mubarak",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18038511.4923064",
+    "asset": "mubarak",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20133854.6451809",
+    "asset": "mubarak",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20497352.53053",
+    "asset": "mubarak",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16630336.3441203",
+    "asset": "mubarak",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16411124.0910897",
+    "asset": "mubarak",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16362752.4218106",
+    "asset": "mubarak",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15229793.112388",
+    "asset": "mubarak",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14655411.0334675",
+    "asset": "mubarak",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13925566.038259",
+    "asset": "mubarak",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13617049.3189501",
+    "asset": "mubarak",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14427592.9032551",
+    "asset": "mubarak",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13399485.4544735",
+    "asset": "mubarak",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13592000.3449557",
+    "asset": "mubarak",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13569634.9964163",
+    "asset": "mubarak",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13203137.2173045",
+    "asset": "mubarak",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13651753.1822605",
+    "asset": "mubarak",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15239696.2730376",
+    "asset": "mubarak",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14557561.163695",
+    "asset": "mubarak",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14350148.0008309",
+    "asset": "mubarak",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14124889.6262416",
+    "asset": "mubarak",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14120629.1434208",
+    "asset": "mubarak",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14218453.396573",
+    "asset": "mubarak",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14699847.9488096",
+    "asset": "mubarak",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14959144.5661495",
+    "asset": "mubarak",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14893542.8552207",
+    "asset": "mubarak",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15657821.6990786",
+    "asset": "mubarak",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15819642.1931004",
+    "asset": "mubarak",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15455655.2861028",
+    "asset": "mubarak",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15429655.4327292",
+    "asset": "mubarak",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15753133.5725526",
+    "asset": "mubarak",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15000252.0131235",
+    "asset": "mubarak",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14758138.4614012",
+    "asset": "mubarak",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14230037.0742771",
+    "asset": "mubarak",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13453905.7141173",
+    "asset": "mubarak",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13158145.6784391",
+    "asset": "mubarak",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12717833.1943827",
+    "asset": "mubarak",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12737975.2061765",
+    "asset": "mubarak",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12587844.9384255",
+    "asset": "mubarak",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12527433.1982527",
+    "asset": "mubarak",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11670372.5564459",
+    "asset": "mubarak",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11350682.4406936",
+    "asset": "mubarak",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11142070.3958735",
+    "asset": "mubarak",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11078264.9820427",
+    "asset": "mubarak",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11167960.3873773",
+    "asset": "mubarak",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11390132.9610838",
+    "asset": "mubarak",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11593323.3048323",
+    "asset": "mubarak",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10889849.3682158",
+    "asset": "mubarak",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11082752.7740379",
+    "asset": "mubarak",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11129685.0494641",
+    "asset": "mubarak",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11246676.3921252",
+    "asset": "mubarak",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11864632.2304252",
+    "asset": "mubarak",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37050920.7074489",
+    "asset": "mubarak",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42498363.9202739",
+    "asset": "mubarak",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40598416.5951996",
+    "asset": "mubarak",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33814730.2367835",
+    "asset": "mubarak",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32840348.085545",
+    "asset": "mubarak",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32078763.0001346",
+    "asset": "mubarak",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28772518.124491",
+    "asset": "mubarak",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30092275.4827991",
+    "asset": "mubarak",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30313189.7960305",
+    "asset": "mubarak",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30462926.3962005",
+    "asset": "mubarak",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29550634.1027044",
+    "asset": "mubarak",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28597734.3893889",
+    "asset": "mubarak",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30104085.8664323",
+    "asset": "mubarak",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33958522.4803236",
+    "asset": "mubarak",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34412759.9114857",
+    "asset": "mubarak",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33098116.3289058",
+    "asset": "mubarak",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32605209.1682067",
+    "asset": "mubarak",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33744198.5127874",
+    "asset": "mubarak",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37930410.1237955",
+    "asset": "mubarak",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40224534.3685813",
+    "asset": "mubarak",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34713414.1822509",
+    "asset": "mubarak",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23849651.0501199",
+    "asset": "mubarak",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23162411.1968095",
+    "asset": "mubarak",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28819859.1322094",
+    "asset": "mubarak",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28831589.5979831",
+    "asset": "mubarak",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27956265.5414115",
+    "asset": "mubarak",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26185246.6310241",
+    "asset": "mubarak",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24882934.8613385",
+    "asset": "mubarak",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24278137.0965057",
+    "asset": "mubarak",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24736195.8297904",
+    "asset": "mubarak",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24812028.1736376",
+    "asset": "mubarak",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24887856.5032392",
+    "asset": "mubarak",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23308598.8257939",
+    "asset": "mubarak",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22683407.9154441",
+    "asset": "mubarak",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24276750.6363655",
+    "asset": "mubarak",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24542555.2529944",
+    "asset": "mubarak",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24306068.0658047",
+    "asset": "mubarak",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24573506.2673995",
+    "asset": "mubarak",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23315669.1528175",
+    "asset": "mubarak",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22399350.2497149",
+    "asset": "mubarak",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22022552.3301449",
+    "asset": "mubarak",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19649362.3699879",
+    "asset": "mubarak",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19978632.6497371",
+    "asset": "mubarak",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20364272.6992031",
+    "asset": "mubarak",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19977066.9076028",
+    "asset": "mubarak",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16632207.9404435",
+    "asset": "mubarak",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17166512.3703329",
+    "asset": "mubarak",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18440024.5622658",
+    "asset": "mubarak",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17457330.5186071",
+    "asset": "mubarak",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19847044.7151734",
+    "asset": "mubarak",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19333030.5440682",
+    "asset": "mubarak",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20277114.4259939",
+    "asset": "mubarak",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20284546.1041501",
+    "asset": "mubarak",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19021834.427063",
+    "asset": "mubarak",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18621683.4006183",
+    "asset": "mubarak",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17884340.8693457",
+    "asset": "mubarak",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16665266.0630379",
+    "asset": "mubarak",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19304337.5843227",
+    "asset": "mubarak",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18740135.0457135",
+    "asset": "mubarak",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19477273.9075876",
+    "asset": "mubarak",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19014978.148697",
+    "asset": "mubarak",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18096319.5602585",
+    "asset": "mubarak",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17706875.3100162",
+    "asset": "mubarak",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15844929.8089622",
+    "asset": "mubarak",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15803405.7926288",
+    "asset": "mubarak",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16166795.4423618",
+    "asset": "mubarak",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16926371.0378143",
+    "asset": "mubarak",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17435319.5880899",
+    "asset": "mubarak",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17210653.5583261",
+    "asset": "mubarak",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17462595.2925784",
+    "asset": "mubarak",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17528226.9580082",
+    "asset": "mubarak",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16728959.2002664",
+    "asset": "mubarak",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16966125.5113418",
+    "asset": "mubarak",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15478375.4784501",
+    "asset": "mubarak",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16656696.9910022",
+    "asset": "mubarak",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17093237.0638052",
+    "asset": "mubarak",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16591122.7747302",
+    "asset": "mubarak",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15426249.3802792",
+    "asset": "mubarak",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17796366.8884547",
+    "asset": "mubarak",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16690418.935735",
+    "asset": "mubarak",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18655972.9967851",
+    "asset": "mubarak",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17934698.022673",
+    "asset": "mubarak",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17101313.8603543",
+    "asset": "mubarak",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16844087.8496842",
+    "asset": "mubarak",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16463799.4405024",
+    "asset": "mubarak",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16537496.0932571",
+    "asset": "mubarak",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15668534.3068627",
+    "asset": "mubarak",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15518529.796346",
+    "asset": "mubarak",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15690738.3743417",
+    "asset": "mubarak",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14512800.8187656",
+    "asset": "mubarak",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14204676.0756747",
+    "asset": "mubarak",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15442520.5005993",
+    "asset": "mubarak",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15865228.5752565",
+    "asset": "mubarak",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15174428.9171153",
+    "asset": "mubarak",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16781077.1822671",
+    "asset": "mubarak",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16523764.746045",
+    "asset": "mubarak",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15944607.5875761",
+    "asset": "mubarak",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15358810.9792513",
+    "asset": "mubarak",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15855691.6211366",
+    "asset": "mubarak",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16328984.8319952",
+    "asset": "mubarak",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38724120.1619877",
+    "asset": "mubarak",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34505753.447159",
+    "asset": "mubarak",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33812501.4261397",
+    "asset": "mubarak",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33458658.4021618",
+    "asset": "mubarak",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34027794.658425",
+    "asset": "mubarak",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35367908.2915322",
+    "asset": "mubarak",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33044381.4935583",
+    "asset": "mubarak",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33021976.3258833",
+    "asset": "mubarak",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32865971.2382856",
+    "asset": "mubarak",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32405509.3746415",
+    "asset": "mubarak",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29372298.0814949",
+    "asset": "mubarak",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30172197.0100639",
+    "asset": "mubarak",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35512512.4833158",
+    "asset": "mubarak",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35914027.0899483",
+    "asset": "mubarak",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34194621.1581937",
+    "asset": "mubarak",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31815096.6803018",
+    "asset": "mubarak",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34001026.4075526",
+    "asset": "mubarak",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36804895.3978248",
+    "asset": "mubarak",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38859492.8676639",
+    "asset": "mubarak",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37884906.397315",
+    "asset": "mubarak",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35234518.3319873",
+    "asset": "mubarak",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40139046.224508",
+    "asset": "mubarak",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39065845.5912895",
+    "asset": "mubarak",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37122172.149459",
+    "asset": "mubarak",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37217070.4597987",
+    "asset": "mubarak",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38587520.1718128",
+    "asset": "mubarak",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36404738.3189099",
+    "asset": "mubarak",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37085506.7348775",
+    "asset": "mubarak",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39885859.648196",
+    "asset": "mubarak",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47623232.8321421",
+    "asset": "mubarak",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44647760.0360204",
+    "asset": "mubarak",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42599018.3033085",
+    "asset": "mubarak",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44236095.337701",
+    "asset": "mubarak",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43365319.640873",
+    "asset": "mubarak",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46742306.6300163",
+    "asset": "mubarak",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47461747.7310415",
+    "asset": "mubarak",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46562501.1256227",
+    "asset": "mubarak",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43700338.2472438",
+    "asset": "mubarak",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44429982.1658913",
+    "asset": "mubarak",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46588812.2722841",
+    "asset": "mubarak",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49728511.6657417",
+    "asset": "mubarak",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48385795.7030227",
+    "asset": "mubarak",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42263317.6505496",
+    "asset": "mubarak",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42124947.6676313",
+    "asset": "mubarak",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43104980.1117151",
+    "asset": "mubarak",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42310194.632416",
+    "asset": "mubarak",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45761750.1791207",
+    "asset": "mubarak",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43264953.2292821",
+    "asset": "mubarak",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41722800.0122728",
+    "asset": "mubarak",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40652521.8865158",
+    "asset": "mubarak",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37111890.6955492",
+    "asset": "mubarak",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36382080.7184272",
+    "asset": "mubarak",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34684160.5659256",
+    "asset": "mubarak",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36533228.8354237",
+    "asset": "mubarak",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38469937.2347569",
+    "asset": "mubarak",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34640705.9850992",
+    "asset": "mubarak",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34519427.9993272",
+    "asset": "mubarak",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35339099.1508147",
+    "asset": "mubarak",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35654061.6892192",
+    "asset": "mubarak",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37722703.9420222",
+    "asset": "mubarak",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37791906.9848079",
+    "asset": "mubarak",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35204727.6855641",
+    "asset": "mubarak",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38054572.1564176",
+    "asset": "mubarak",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38664683.1048325",
+    "asset": "mubarak",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33320465.4250902",
+    "asset": "mubarak",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33016836.338388",
+    "asset": "mubarak",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34267043.703455",
+    "asset": "mubarak",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35119708.8711268",
+    "asset": "mubarak",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33512532.5030758",
+    "asset": "mubarak",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31119661.4677659",
+    "asset": "mubarak",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33168781.991359",
+    "asset": "mubarak",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31847176.6534692",
+    "asset": "mubarak",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34795351.1695234",
+    "asset": "mubarak",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35703891.8744722",
+    "asset": "mubarak",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34457462.8213853",
+    "asset": "mubarak",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30049847.9244532",
+    "asset": "mubarak",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32247055.9063531",
+    "asset": "mubarak",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31708433.5040638",
+    "asset": "mubarak",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32422411.8254004",
+    "asset": "mubarak",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29698233.5353494",
+    "asset": "mubarak",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30163125.0254528",
+    "asset": "mubarak",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29370622.9417781",
+    "asset": "mubarak",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26736719.4748868",
+    "asset": "mubarak",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28240173.6331667",
+    "asset": "mubarak",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28651837.4656461",
+    "asset": "mubarak",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26798220.9449303",
+    "asset": "mubarak",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27563287.6021289",
+    "asset": "mubarak",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28173770.1022472",
+    "asset": "mubarak",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28350066.7740144",
+    "asset": "mubarak",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30221685.2147664",
+    "asset": "mubarak",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29711949.9668198",
+    "asset": "mubarak",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31670416.3274096",
+    "asset": "mubarak",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31668116.5003194",
+    "asset": "mubarak",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32974294.2147562",
+    "asset": "mubarak",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33899020.6696914",
+    "asset": "mubarak",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31854043.4956206",
+    "asset": "mubarak",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30512272.4870938",
+    "asset": "mubarak",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36872912.7329121",
+    "asset": "mubarak",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35905524.3942357",
+    "asset": "mubarak",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39659310.9084437",
+    "asset": "mubarak",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57951747.3844852",
+    "asset": "mubarak",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47354680.3025475",
+    "asset": "mubarak",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47120870.4258612",
+    "asset": "mubarak",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43461971.4798572",
+    "asset": "mubarak",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49563929.4891806",
+    "asset": "mubarak",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50812558.0079924",
+    "asset": "mubarak",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61230088.0513164",
+    "asset": "mubarak",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60794133.304524",
+    "asset": "mubarak",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59201071.5188564",
+    "asset": "mubarak",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57698475.6804738",
+    "asset": "mubarak",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53586748.7674739",
+    "asset": "mubarak",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54673914.332901",
+    "asset": "mubarak",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50876343.6503388",
+    "asset": "mubarak",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53056606.5987702",
+    "asset": "mubarak",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50357394.8227028",
+    "asset": "mubarak",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47373143.4169267",
+    "asset": "mubarak",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37309831.9947155",
+    "asset": "mubarak",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39353846.410488",
+    "asset": "mubarak",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40236211.9227334",
+    "asset": "mubarak",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41717167.2999852",
+    "asset": "mubarak",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42292655.0831683",
+    "asset": "mubarak",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41070213.2572793",
+    "asset": "mubarak",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38608153.4167786",
+    "asset": "mubarak",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37301748.4157686",
+    "asset": "mubarak",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40421287.8473348",
+    "asset": "mubarak",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39263277.9656526",
+    "asset": "mubarak",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43068342.3104825",
+    "asset": "mubarak",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42743855.8740497",
+    "asset": "mubarak",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  }
+]
