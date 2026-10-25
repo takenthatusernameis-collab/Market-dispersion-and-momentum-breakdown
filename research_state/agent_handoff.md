@@ -20,3 +20,9 @@ The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 
 
 ## Concrete next action (unchanged)
 On/after 2026-10-29 re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; only then preregister/evaluate H004V106 on a fresh sealed forward block. Until then, do independent unblocked work (free-source discovery, validation, design, red-team).
+
+## 2026-10-25 session outcome (follow-up)
+- Re-verified full test suite: 45 tests OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 artifacts unchanged.
+- Cutoff gate remains BLOCKED (today 2026-10-25 < 2026-10-29); no data refresh attempted (structural).
+- Integrity audit artifact present and verified: `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/forward_block_integrity_audit.json` (recomputed canonical matches committed summary; 608 formations, 0 non-finite dispersion).
+- Forward block remains development/exploratory evidence only; not reused as independent confirmation.
