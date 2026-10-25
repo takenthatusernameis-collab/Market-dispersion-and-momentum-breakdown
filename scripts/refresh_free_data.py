@@ -306,9 +306,19 @@ def fetch_binance_series(symbol: str, kind: str, start_ym: str, end_ym: str, raw
                 ls = ls[1:]
             elif kind == "funding" and first.startswith("calc_time,"):
                 ls = ls[1:]
+            # The Binance fundingRate archive ships 3 columns
+            # (calc_time,funding_interval_hours,last_funding_rate) with no symbol
+            # column, but the panel header is 4 columns and every downstream reader
+            # (pandas, build_universe, eval_forward_block) expects the symbol in
+            # column 0. Prefix every funding row with the symbol so the header and
+            # the data agree; without this the symbol int lands in calc_time and
+            # last_funding_rate parses as NaN across all 32 panels.
+            if kind == "funding":
+                ls = [f"{symbol},{l}" for l in ls]
             bodies.extend(ls)
         panel_path.write_text(header + "\n" + "\n".join(bodies) + "\n")
-        dates = [l.split(",")[0] for l in bodies if l.strip()]
+        dates = [l.split(",")[1] for l in bodies if l.strip()] if kind == "funding" \
+            else [l.split(",")[0] for l in bodies if l.strip()]
         if dates:
             result["date_first"] = min(dates)
             result["date_last"] = max(dates)

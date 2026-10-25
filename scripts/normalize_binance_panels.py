@@ -39,6 +39,13 @@ def main() -> None:
 
         for symbol, lines in by_symbol.items():
             panel_path = PANEL_DIR / f"binance_{kind}_{symbol}.csv"
+            # The Binance fundingRate archive ships 3 columns
+            # (calc_time,funding_interval_hours,last_funding_rate) with no symbol
+            # column, but the panel header is 4 columns and every downstream reader
+            # (pandas, build_universe, eval_forward_block) expects the symbol in
+            # column 0. Prefix every funding row with the symbol so the header and
+            # the data agree; without this the symbol int lands in calc_time and
+            # last_funding_rate parses as NaN.
             prefixed = (
                 [f"{symbol},{l}" for l in lines] if kind == "funding" else lines
             )

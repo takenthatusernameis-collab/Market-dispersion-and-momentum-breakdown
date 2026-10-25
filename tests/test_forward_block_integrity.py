@@ -135,6 +135,35 @@ class ForwardBlockIntegrityTests(unittest.TestCase):
         self.assertEqual(len(fb["anchor_parameters"]), 6)
         self.assertTrue(fb.get("block_sealed"))
 
+    def test_funding_panels_have_aligned_header_and_data(self):
+        """Regression for the 2026-10-25 panel-schema defect.
+
+        Every committed binance_funding_*.csv carried a 4-column header
+        (symbol,calc_time,funding_interval_hours,last_funding_rate) but 3-column
+        data rows from the Binance fundingRate archive, so pandas read the symbol
+        integer into calc_time and left last_funding_rate NaN for all 32 symbols.
+        The manifest then claimed ``funding_source: verified`` over an entirely
+        missing field. Each panel must now have four columns, a single symbol, a
+        finite non-null funding rate, and a plausible UTC date range.
+        """
+        import pandas as pd
+        panels = sorted((ART / "data" / "panels").glob("binance_funding_*.csv"))
+        self.assertGreater(len(panels), 0)
+        for p in panels:
+            df = pd.read_csv(p)
+            self.assertEqual(
+                list(df.columns),
+                ["symbol", "calc_time", "funding_interval_hours", "last_funding_rate"],
+                msg=f"{p.name} column layout",
+)
+            self.assertEqual(df["symbol"].nunique(), 1,
+                             msg=f"{p.name} must carry exactly one symbol")
+            self.assertEqual(df["last_funding_rate"].isna().sum(), 0,
+                             msg=f"{p.name} last_funding_rate must not be NaN")
+            dates = pd.to_datetime(df["calc_time"], unit="ms", utc=True)
+            self.assertGreater(dates.max(), dates.min(),
+                               msg=f"{p.name} must span more than one day")
+
 
 if __name__ == "__main__":
     unittest.main()
