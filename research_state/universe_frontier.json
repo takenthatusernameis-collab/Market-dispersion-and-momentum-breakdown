@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
   "batch_validation_utc": "2026-10-25T04:24:12Z",
-  "candidate_page_cursor": 6351,
+  "candidate_page_cursor": 6347,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -6126,10 +6126,10 @@
     "zyn",
     "zyro",
     "zzz",
-    "我踏马来了",
-    "牛来",
-    "老子",
-    "龙虾"
+    "\u6211\u8e0f\u9a6c\u6765\u4e86",
+    "\u725b\u6765",
+    "\u8001\u5b50",
+    "\u9f99\u867e"
   ],
   "candidates_discovered": [],
   "candidates_verified": [
@@ -12478,17 +12478,16 @@
       "zwl",
       "zyn",
       "zyro",
-      "zzz"
-    ],
-    "catalog_entries_walked": 6347,
-    "endpoint": "https://community-api.coinmetrics.io/v4/reference-data/assets",
-    "fetch_utc": "2026-10-25T04:23:25Z",
-    "first_20": [
+      "zzz",
       "\u6211\u8e0f\u9a6c\u6765\u4e86",
       "\u725b\u6765",
       "\u8001\u5b50",
       "\u9f99\u867e"
     ],
+    "catalog_entries_walked": 6347,
+    "endpoint": "https://community-api.coinmetrics.io/v4/reference-data/assets",
+    "fetch_utc": "2026-10-25T06:18:10Z",
+    "first_20": [],
     "legacy_excluded": [
       "1inch",
       "aave",
@@ -12523,7 +12522,7 @@
       "xrp",
       "zec"
     ],
-    "newly_discovered": 4,
+    "newly_discovered": 0,
     "status": "ok",
     "verified_excluded": [
       "1inch",
@@ -12754,7 +12753,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-25T04:24:12Z",
+  "last_updated_utc": "2026-10-25T06:18:10Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
