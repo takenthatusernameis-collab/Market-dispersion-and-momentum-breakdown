@@ -24,4 +24,3 @@ Continue quantitative research for HARMONY-CRYPTO-EDGE-004-DISPERSION-003. Histo
 
 Constraints: free public data only (Coin Metrics Community API, Binance Public Data Archive; keyless), historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All grid cells carry one of OK/BLOCKED/INVALID/FAILED/NOT_RUN with a reason.
 EOF
-echo done
