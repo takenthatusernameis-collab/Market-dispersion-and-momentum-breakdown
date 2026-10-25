@@ -68,6 +68,14 @@ The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 
 - DISPERSION-001/002 artifacts and DISPERSION-003 sealed forward block / integrity audits / defective archive byte-unchanged (git diff: only __pycache__).
 - Hypothesis registry state confirmed: H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H6 CANDIDATE_UNVALIDATED awaiting fresh sealed block after 2026-09-29 with predeclared economic threshold + Holm significance; H7 CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY positive-direction candidate; H2–H5 CANDIDATE_UNVALIDATED.
 
+## 2026-10-25 session outcome (read-prior-task + verify, this session)
+- Read prior agent task from durable handoff and task message; mandate confirmed: HARMONY-CRYPTO-EDGE-004-DISPERSION-003, historical-only, free-data-only, no live/paper trading, no paid services or secrets.
+- Cutoff gate STILL BLOCKED (today 2026-10-25 < required 2026-10-29); October 2026 Binance monthly archive not re-probed (404, structural); no refresh_free_data.py run.
+- Full test suite: `python3 -m unittest discover -s tests` -> 46 OK (1 pre-existing RuntimeWarning).
+- DISPERSION-001/002 artifacts unchanged; DISPERSION-003 sealed forward block / integrity audits / defective archive byte-unchanged (git diff: only __pycache__).
+- Candidate frontier unchanged: verified=220, blocked=6127, remaining_discovered=0, candidate_page_cursor=6351.
+- Completed required reading/checks; no new code changes this session.
+
 ## 2026-10-25 session outcome (funding-panel schema red-team + repair, this session)
 - Read prior agent task from durable handoff and task message; mandate confirmed.
 - Cutoff gate STILL BLOCKED (today 2026-10-25 < required 2026-10-29); October 2026 Binance monthly archive not re-probed (404, structural); no refresh_free_data.py run.
