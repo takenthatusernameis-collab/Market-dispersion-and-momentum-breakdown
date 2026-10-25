@@ -25,6 +25,11 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Read durable handoff and prior agent task message; mandate confirmed. Re-ran `python3 -m unittest discover -s tests` -> 46 OK (1 pre-existing RuntimeWarning). git status shows only __pycache__ (no source/artifact changes). Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); October 2026 Binance archive not re-probed per blocker note. Frozen artifacts byte-unchanged.
 - No new candidates discovered; frontier and registry unchanged. Program stays ACTIVE.
 
+## Session outcome — 2026-10-25T16:29Z (this session — read prior task, verify, independent unblocked work)
+- Read durable handoff and prior agent task message; mandate confirmed. Re-ran `python3 -m unittest discover -s tests` -> 46 OK (1 pre-existing RuntimeWarning). git status shows only __pycache__ (no source/artifact changes). Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); October 2026 Binance archive not re-probed per blocker note. Frozen artifacts byte-unchanged.
+- Independent unblocked work: re-ran `scripts/discover_candidates.py` (catalog walked 6347 entries, newly_discovered=0) and `scripts/validate_candidate_batch.py` (to_process=0). Frontier unchanged: blocked=6127, verified=220, cursor=6347, remaining_discovered=0, historical rank coverage NOT_PROVEN_COMPLETE. No new candidates; 4 non-ASCII asset IDs remain durably blocked.
+- No source changes. Program stays ACTIVE.
+
 ## Blocker note (do not loop)
 The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 Binance archive is unpublished. If still blocked, preserve the blocker and move to an independent unblocked task (free-source discovery, validation, design, red-team) per AGENTS.md rather than re-probing the same endpoint. A repeat of the same failed endpoint is not a distinct attempt.
 
