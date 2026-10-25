@@ -1,0 +1,782 @@
+[
+  {
+    "CapMrktEstUSD": "53246157.1179284472",
+    "asset": "pros_pharos",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53634932.0345531016",
+    "asset": "pros_pharos",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49783647.4800832776",
+    "asset": "pros_pharos",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47705763.1188503112",
+    "asset": "pros_pharos",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44153935.6127426052",
+    "asset": "pros_pharos",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46244573.4991082172",
+    "asset": "pros_pharos",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49170403.7326683972",
+    "asset": "pros_pharos",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51488816.222048718",
+    "asset": "pros_pharos",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52389738.789343194",
+    "asset": "pros_pharos",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52414826.1436567368",
+    "asset": "pros_pharos",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51167003.43245034",
+    "asset": "pros_pharos",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53699744.1602547204",
+    "asset": "pros_pharos",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57624752.2205140428",
+    "asset": "pros_pharos",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58859097.3853043364",
+    "asset": "pros_pharos",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61407040.3364602536",
+    "asset": "pros_pharos",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59428912.8990112152",
+    "asset": "pros_pharos",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60071939.5751660112",
+    "asset": "pros_pharos",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59581698.4539323724",
+    "asset": "pros_pharos",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56423922.2309172336",
+    "asset": "pros_pharos",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54524408.8490730264",
+    "asset": "pros_pharos",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53424730.0760251284",
+    "asset": "pros_pharos",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53547793.6075272804",
+    "asset": "pros_pharos",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53338442.2712816508",
+    "asset": "pros_pharos",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53187638.5745773992",
+    "asset": "pros_pharos",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55280378.4400041672",
+    "asset": "pros_pharos",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54249239.5528832244",
+    "asset": "pros_pharos",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53026914.0319176168",
+    "asset": "pros_pharos",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51297740.94364992",
+    "asset": "pros_pharos",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51434603.7266078772",
+    "asset": "pros_pharos",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49980767.638169796",
+    "asset": "pros_pharos",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51101539.3242149532",
+    "asset": "pros_pharos",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49809133.1509489404",
+    "asset": "pros_pharos",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49928017.4631704064",
+    "asset": "pros_pharos",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52470326.000334828",
+    "asset": "pros_pharos",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53818320.72132411",
+    "asset": "pros_pharos",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53829240.9614842764",
+    "asset": "pros_pharos",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56861375.5444822824",
+    "asset": "pros_pharos",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53122125.0902060748",
+    "asset": "pros_pharos",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55172755.5806509212",
+    "asset": "pros_pharos",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60656592.2115803412",
+    "asset": "pros_pharos",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56887279.9365705528",
+    "asset": "pros_pharos",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55157692.3892221584",
+    "asset": "pros_pharos",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56411318.696263398",
+    "asset": "pros_pharos",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57027010.8322362636",
+    "asset": "pros_pharos",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57644698.1759570712",
+    "asset": "pros_pharos",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56786055.7383220272",
+    "asset": "pros_pharos",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55795519.4484425976",
+    "asset": "pros_pharos",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56055937.3334983128",
+    "asset": "pros_pharos",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55056971.0908467252",
+    "asset": "pros_pharos",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55389725.1905661048",
+    "asset": "pros_pharos",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55833253.5805331088",
+    "asset": "pros_pharos",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56426121.1070887656",
+    "asset": "pros_pharos",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57436601.4102124236",
+    "asset": "pros_pharos",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60887967.7037113176",
+    "asset": "pros_pharos",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59379360.0497510688",
+    "asset": "pros_pharos",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64606216.426723362",
+    "asset": "pros_pharos",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66278373.3544972284",
+    "asset": "pros_pharos",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66074706.7242992664",
+    "asset": "pros_pharos",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64576146.965945832",
+    "asset": "pros_pharos",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63883796.5356631752",
+    "asset": "pros_pharos",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67266599.9605376976",
+    "asset": "pros_pharos",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65931265.7187763884",
+    "asset": "pros_pharos",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69749972.5209946164",
+    "asset": "pros_pharos",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69763823.9396332944",
+    "asset": "pros_pharos",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72973020.5202820416",
+    "asset": "pros_pharos",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73119689.3121945768",
+    "asset": "pros_pharos",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69405575.7342377868",
+    "asset": "pros_pharos",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77795504.2575944532",
+    "asset": "pros_pharos",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78463965.2173784244",
+    "asset": "pros_pharos",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78222445.5120936072",
+    "asset": "pros_pharos",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83546891.4216185664",
+    "asset": "pros_pharos",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89589738.904803108",
+    "asset": "pros_pharos",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83687427.7991468652",
+    "asset": "pros_pharos",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89048164.2586146336",
+    "asset": "pros_pharos",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91268285.1024112056",
+    "asset": "pros_pharos",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92539505.4057461076",
+    "asset": "pros_pharos",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97747500.5889554904",
+    "asset": "pros_pharos",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95146725.137675862",
+    "asset": "pros_pharos",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101739477.9544398456",
+    "asset": "pros_pharos",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97319351.5878007008",
+    "asset": "pros_pharos",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110184216.273688272",
+    "asset": "pros_pharos",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "100600748.7693903924",
+    "asset": "pros_pharos",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89547308.8180451112",
+    "asset": "pros_pharos",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89286635.8220424864",
+    "asset": "pros_pharos",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87077524.7824017516",
+    "asset": "pros_pharos",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89795667.1537314036",
+    "asset": "pros_pharos",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92449381.6676299236",
+    "asset": "pros_pharos",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91924824.920050854",
+    "asset": "pros_pharos",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83774147.1002269284",
+    "asset": "pros_pharos",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84352859.3225021136",
+    "asset": "pros_pharos",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78842886.1881088584",
+    "asset": "pros_pharos",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80216708.1047891568",
+    "asset": "pros_pharos",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88455511.3679110464",
+    "asset": "pros_pharos",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83404241.63173056",
+    "asset": "pros_pharos",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85343828.9283620556",
+    "asset": "pros_pharos",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85765547.5142487672",
+    "asset": "pros_pharos",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83928512.3191341156",
+    "asset": "pros_pharos",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80673025.2869202732",
+    "asset": "pros_pharos",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82141119.5674723164",
+    "asset": "pros_pharos",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90395731.9116349068",
+    "asset": "pros_pharos",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88712396.6757104672",
+    "asset": "pros_pharos",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86711962.3800562404",
+    "asset": "pros_pharos",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88603946.9996296296",
+    "asset": "pros_pharos",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83277574.0182886428",
+    "asset": "pros_pharos",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83492073.8859863472",
+    "asset": "pros_pharos",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82445322.2586876288",
+    "asset": "pros_pharos",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86670633.7262969028",
+    "asset": "pros_pharos",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84811246.7185281732",
+    "asset": "pros_pharos",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82575869.0430238848",
+    "asset": "pros_pharos",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83882534.0340252408",
+    "asset": "pros_pharos",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84522710.4187683204",
+    "asset": "pros_pharos",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85710625.8932948472",
+    "asset": "pros_pharos",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81491769.8514049248",
+    "asset": "pros_pharos",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82848155.9315537976",
+    "asset": "pros_pharos",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83018114.2365316296",
+    "asset": "pros_pharos",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87168772.781898228",
+    "asset": "pros_pharos",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87463392.1561306992",
+    "asset": "pros_pharos",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86406251.4890539632",
+    "asset": "pros_pharos",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82043227.5141214176",
+    "asset": "pros_pharos",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78939186.165981048",
+    "asset": "pros_pharos",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79453634.6135089608",
+    "asset": "pros_pharos",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75191428.3355939124",
+    "asset": "pros_pharos",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83177258.9289030504",
+    "asset": "pros_pharos",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80418383.2058171304",
+    "asset": "pros_pharos",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78949326.240933006",
+    "asset": "pros_pharos",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79007299.210657584",
+    "asset": "pros_pharos",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75588613.719751698",
+    "asset": "pros_pharos",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74858587.0901756352",
+    "asset": "pros_pharos",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82042889.9341079388",
+    "asset": "pros_pharos",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76362720.8402318052",
+    "asset": "pros_pharos",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75735382.9058822016",
+    "asset": "pros_pharos",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74705961.7111359564",
+    "asset": "pros_pharos",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73543373.3323731744",
+    "asset": "pros_pharos",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67969572.2556904344",
+    "asset": "pros_pharos",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61893215.3334816432",
+    "asset": "pros_pharos",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58939903.161009558",
+    "asset": "pros_pharos",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57839783.6484696516",
+    "asset": "pros_pharos",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62210577.1936941024",
+    "asset": "pros_pharos",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62188847.8132753344",
+    "asset": "pros_pharos",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61602253.3006139448",
+    "asset": "pros_pharos",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56268471.72236604",
+    "asset": "pros_pharos",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56201889.3361181244",
+    "asset": "pros_pharos",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56290040.6168236908",
+    "asset": "pros_pharos",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57223524.2528325768",
+    "asset": "pros_pharos",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56697395.9842762344",
+    "asset": "pros_pharos",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52870179.2498523648",
+    "asset": "pros_pharos",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55276391.9415081912",
+    "asset": "pros_pharos",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56124036.208018512",
+    "asset": "pros_pharos",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53492974.0002656544",
+    "asset": "pros_pharos",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52914760.012439658",
+    "asset": "pros_pharos",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55731098.08600386",
+    "asset": "pros_pharos",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56601234.1737493548",
+    "asset": "pros_pharos",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56105648.8831882704",
+    "asset": "pros_pharos",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52721497.7259604656",
+    "asset": "pros_pharos",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51951192.129590586",
+    "asset": "pros_pharos",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52396963.4905172088",
+    "asset": "pros_pharos",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  }
+]

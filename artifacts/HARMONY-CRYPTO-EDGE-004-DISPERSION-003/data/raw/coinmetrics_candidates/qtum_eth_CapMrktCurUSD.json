@@ -1,0 +1,6962 @@
+[
+  {
+    "CapMrktCurUSD": "67021319.8668748",
+    "asset": "qtum_eth",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67658452.8669679",
+    "asset": "qtum_eth",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70191307.47288",
+    "asset": "qtum_eth",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71394645.921127",
+    "asset": "qtum_eth",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71118731.4133556",
+    "asset": "qtum_eth",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70986666.7117813",
+    "asset": "qtum_eth",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71166361.4988706",
+    "asset": "qtum_eth",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71624922.1333525",
+    "asset": "qtum_eth",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68006297.6013721",
+    "asset": "qtum_eth",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68195970.168768",
+    "asset": "qtum_eth",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68218210.414867",
+    "asset": "qtum_eth",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64834283.1812874",
+    "asset": "qtum_eth",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65618533.3248647",
+    "asset": "qtum_eth",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64391319.4375783",
+    "asset": "qtum_eth",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64373808.8929347",
+    "asset": "qtum_eth",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64102239.1671828",
+    "asset": "qtum_eth",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64597948.2826665",
+    "asset": "qtum_eth",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65046359.9856903",
+    "asset": "qtum_eth",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64783782.2615797",
+    "asset": "qtum_eth",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65077213.8279598",
+    "asset": "qtum_eth",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64364407.1388234",
+    "asset": "qtum_eth",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64710503.3461469",
+    "asset": "qtum_eth",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65398821.7975394",
+    "asset": "qtum_eth",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66528902.4015617",
+    "asset": "qtum_eth",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66837925.735151",
+    "asset": "qtum_eth",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "64598430.0149673",
+    "asset": "qtum_eth",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "63343939.4426073",
+    "asset": "qtum_eth",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65155920.2111205",
+    "asset": "qtum_eth",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66610721.8717903",
+    "asset": "qtum_eth",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68422849.0157442",
+    "asset": "qtum_eth",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67487583.1227305",
+    "asset": "qtum_eth",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67659702.6280577",
+    "asset": "qtum_eth",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68215635.2449541",
+    "asset": "qtum_eth",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68266273.6205472",
+    "asset": "qtum_eth",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71691865.0988692",
+    "asset": "qtum_eth",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79581408.8359041",
+    "asset": "qtum_eth",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86500889.5905799",
+    "asset": "qtum_eth",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84019790.989515",
+    "asset": "qtum_eth",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88196162.6471864",
+    "asset": "qtum_eth",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87305004.292506",
+    "asset": "qtum_eth",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84834911.2006659",
+    "asset": "qtum_eth",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89114132.0523206",
+    "asset": "qtum_eth",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85372234.9747503",
+    "asset": "qtum_eth",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81682390.7404388",
+    "asset": "qtum_eth",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82291554.7762088",
+    "asset": "qtum_eth",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79767691.7556712",
+    "asset": "qtum_eth",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82206141.4532042",
+    "asset": "qtum_eth",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "82385046.6201971",
+    "asset": "qtum_eth",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81436108.9766",
+    "asset": "qtum_eth",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85663448.8139444",
+    "asset": "qtum_eth",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85919114.769274",
+    "asset": "qtum_eth",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87077549.3913537",
+    "asset": "qtum_eth",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88306066.8556059",
+    "asset": "qtum_eth",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87713787.4658555",
+    "asset": "qtum_eth",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88756582.3793922",
+    "asset": "qtum_eth",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88671247.5250776",
+    "asset": "qtum_eth",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85588024.431701",
+    "asset": "qtum_eth",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87291620.5095711",
+    "asset": "qtum_eth",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92656062.8422657",
+    "asset": "qtum_eth",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96207666.9064847",
+    "asset": "qtum_eth",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92313718.4814577",
+    "asset": "qtum_eth",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86124849.4410526",
+    "asset": "qtum_eth",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87239233.9165931",
+    "asset": "qtum_eth",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87101649.2719974",
+    "asset": "qtum_eth",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95228494.3640996",
+    "asset": "qtum_eth",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95365509.9589584",
+    "asset": "qtum_eth",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95033839.9021818",
+    "asset": "qtum_eth",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99113114.4296084",
+    "asset": "qtum_eth",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101231955.148758",
+    "asset": "qtum_eth",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95738036.393652",
+    "asset": "qtum_eth",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100061304.877139",
+    "asset": "qtum_eth",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "105206152.671493",
+    "asset": "qtum_eth",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "103220661.061984",
+    "asset": "qtum_eth",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102369426.510278",
+    "asset": "qtum_eth",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98164920.5068792",
+    "asset": "qtum_eth",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97283137.1509169",
+    "asset": "qtum_eth",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "100118647.612456",
+    "asset": "qtum_eth",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98499075.8065035",
+    "asset": "qtum_eth",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98951505.3082502",
+    "asset": "qtum_eth",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99222563.3211031",
+    "asset": "qtum_eth",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99323509.7068278",
+    "asset": "qtum_eth",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99555385.9543593",
+    "asset": "qtum_eth",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97386283.5699314",
+    "asset": "qtum_eth",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93577419.9623726",
+    "asset": "qtum_eth",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93247984.0164104",
+    "asset": "qtum_eth",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95524761.3273709",
+    "asset": "qtum_eth",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "101297259.653859",
+    "asset": "qtum_eth",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99804262.7132198",
+    "asset": "qtum_eth",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93002529.1052805",
+    "asset": "qtum_eth",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94677896.9657842",
+    "asset": "qtum_eth",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92247676.81827",
+    "asset": "qtum_eth",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91408749.8126584",
+    "asset": "qtum_eth",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90079163.3728225",
+    "asset": "qtum_eth",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87657558.3167013",
+    "asset": "qtum_eth",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85655598.6545906",
+    "asset": "qtum_eth",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86069242.9204981",
+    "asset": "qtum_eth",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87673554.5196123",
+    "asset": "qtum_eth",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88899156.6818475",
+    "asset": "qtum_eth",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85076162.5965138",
+    "asset": "qtum_eth",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85555517.3589617",
+    "asset": "qtum_eth",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94908774.7054439",
+    "asset": "qtum_eth",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91216993.4953431",
+    "asset": "qtum_eth",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91966470.9384042",
+    "asset": "qtum_eth",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91597014.3691205",
+    "asset": "qtum_eth",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91894556.5782543",
+    "asset": "qtum_eth",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88199219.0853785",
+    "asset": "qtum_eth",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91869358.3788916",
+    "asset": "qtum_eth",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90062668.4850873",
+    "asset": "qtum_eth",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90831626.4911339",
+    "asset": "qtum_eth",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94094290.1741552",
+    "asset": "qtum_eth",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95528163.6996253",
+    "asset": "qtum_eth",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92271139.0780051",
+    "asset": "qtum_eth",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88628848.1666539",
+    "asset": "qtum_eth",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91498675.8489725",
+    "asset": "qtum_eth",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90939425.6963146",
+    "asset": "qtum_eth",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90701666.5804361",
+    "asset": "qtum_eth",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90721112.2484724",
+    "asset": "qtum_eth",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90521794.1186395",
+    "asset": "qtum_eth",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89556016.952765",
+    "asset": "qtum_eth",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90910948.1065025",
+    "asset": "qtum_eth",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88760227.231208",
+    "asset": "qtum_eth",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88687353.904599",
+    "asset": "qtum_eth",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87409756.0307564",
+    "asset": "qtum_eth",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86126216.9903137",
+    "asset": "qtum_eth",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87256901.9220411",
+    "asset": "qtum_eth",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88030622.5911053",
+    "asset": "qtum_eth",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87265860.715607",
+    "asset": "qtum_eth",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87485899.7399071",
+    "asset": "qtum_eth",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89566271.9756815",
+    "asset": "qtum_eth",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92011181.9486376",
+    "asset": "qtum_eth",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92088352.6109758",
+    "asset": "qtum_eth",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96557665.3463152",
+    "asset": "qtum_eth",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96025266.2713687",
+    "asset": "qtum_eth",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104640319.395755",
+    "asset": "qtum_eth",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102857995.793384",
+    "asset": "qtum_eth",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102894683.05088",
+    "asset": "qtum_eth",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98495578.3436104",
+    "asset": "qtum_eth",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98477167.5802215",
+    "asset": "qtum_eth",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92966687.7189533",
+    "asset": "qtum_eth",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90937724.7473429",
+    "asset": "qtum_eth",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88673620.056097",
+    "asset": "qtum_eth",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89706545.205536",
+    "asset": "qtum_eth",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88303403.8011259",
+    "asset": "qtum_eth",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89420974.6540601",
+    "asset": "qtum_eth",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92395010.4840014",
+    "asset": "qtum_eth",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90672479.4162421",
+    "asset": "qtum_eth",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92943984.4104609",
+    "asset": "qtum_eth",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89590769.7532409",
+    "asset": "qtum_eth",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90365627.2588371",
+    "asset": "qtum_eth",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88412846.0956208",
+    "asset": "qtum_eth",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86854266.8211517",
+    "asset": "qtum_eth",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86793777.1224877",
+    "asset": "qtum_eth",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86183516.4905426",
+    "asset": "qtum_eth",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86027428.1544456",
+    "asset": "qtum_eth",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87030397.926135",
+    "asset": "qtum_eth",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85967022.8153296",
+    "asset": "qtum_eth",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "80137464.1944975",
+    "asset": "qtum_eth",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81234107.9357513",
+    "asset": "qtum_eth",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "76556524.693927",
+    "asset": "qtum_eth",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69072215.3081952",
+    "asset": "qtum_eth",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68449110.272997",
+    "asset": "qtum_eth",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71119408.6512373",
+    "asset": "qtum_eth",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70885076.4842876",
+    "asset": "qtum_eth",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69917965.7047479",
+    "asset": "qtum_eth",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68130471.4694857",
+    "asset": "qtum_eth",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71312305.6918293",
+    "asset": "qtum_eth",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71270125.3598996",
+    "asset": "qtum_eth",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73134434.5974267",
+    "asset": "qtum_eth",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74167515.8341355",
+    "asset": "qtum_eth",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74908389.6471519",
+    "asset": "qtum_eth",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "74696743.4054362",
+    "asset": "qtum_eth",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75314780.2871835",
+    "asset": "qtum_eth",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72355909.6583909",
+    "asset": "qtum_eth",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "72349034.6484777",
+    "asset": "qtum_eth",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "73571144.9465254",
+    "asset": "qtum_eth",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70853697.1490914",
+    "asset": "qtum_eth",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70522813.7086752",
+    "asset": "qtum_eth",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68865747.5977635",
+    "asset": "qtum_eth",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67852562.1406984",
+    "asset": "qtum_eth",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66721116.5873814",
+    "asset": "qtum_eth",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67837048.1431914",
+    "asset": "qtum_eth",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67310812.0088228",
+    "asset": "qtum_eth",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68624677.4437108",
+    "asset": "qtum_eth",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68945682.3874186",
+    "asset": "qtum_eth",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67166163.3016402",
+    "asset": "qtum_eth",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68248650.4221325",
+    "asset": "qtum_eth",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69445661.5601059",
+    "asset": "qtum_eth",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71345244.7996167",
+    "asset": "qtum_eth",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71519007.920982",
+    "asset": "qtum_eth",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "71359684.8761428",
+    "asset": "qtum_eth",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70989594.2261756",
+    "asset": "qtum_eth",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68696121.7937774",
+    "asset": "qtum_eth",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "70223452.1672541",
+    "asset": "qtum_eth",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69229920.4309782",
+    "asset": "qtum_eth",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "69310168.970189",
+    "asset": "qtum_eth",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68926087.5030768",
+    "asset": "qtum_eth",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68260691.822795",
+    "asset": "qtum_eth",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67008125.1034728",
+    "asset": "qtum_eth",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68580191.1721922",
+    "asset": "qtum_eth",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "68772265.951442",
+    "asset": "qtum_eth",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126679954.837904",
+    "asset": "qtum_eth",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "129340923.246386",
+    "asset": "qtum_eth",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "127899457.141597",
+    "asset": "qtum_eth",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "134217642.693532",
+    "asset": "qtum_eth",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "133570526.902603",
+    "asset": "qtum_eth",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "138423380.459958",
+    "asset": "qtum_eth",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "137562158.22238",
+    "asset": "qtum_eth",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "139117465.040758",
+    "asset": "qtum_eth",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "145255390.907556",
+    "asset": "qtum_eth",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "151328522.042369",
+    "asset": "qtum_eth",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "147450687.063586",
+    "asset": "qtum_eth",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "147663728.754797",
+    "asset": "qtum_eth",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "149103644.975931",
+    "asset": "qtum_eth",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "148568892.137557",
+    "asset": "qtum_eth",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "143507870.679293",
+    "asset": "qtum_eth",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "138956555.034792",
+    "asset": "qtum_eth",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "147146313.231624",
+    "asset": "qtum_eth",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "156708460.930774",
+    "asset": "qtum_eth",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "143553224.388225",
+    "asset": "qtum_eth",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "145226943.207587",
+    "asset": "qtum_eth",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "147520159.100762",
+    "asset": "qtum_eth",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "140576487.100627",
+    "asset": "qtum_eth",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "137593800.157194",
+    "asset": "qtum_eth",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "130663055.641088",
+    "asset": "qtum_eth",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "133018710.781018",
+    "asset": "qtum_eth",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "129361197.403885",
+    "asset": "qtum_eth",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128266332.105384",
+    "asset": "qtum_eth",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "127984498.782418",
+    "asset": "qtum_eth",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "122217103.33218",
+    "asset": "qtum_eth",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126048878.0792",
+    "asset": "qtum_eth",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "128202554.879598",
+    "asset": "qtum_eth",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125933194.500958",
+    "asset": "qtum_eth",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "116867511.911024",
+    "asset": "qtum_eth",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "114696114.843936",
+    "asset": "qtum_eth",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106102353.81739",
+    "asset": "qtum_eth",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "106544991.880715",
+    "asset": "qtum_eth",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "110542928.981176",
+    "asset": "qtum_eth",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "107366509.316952",
+    "asset": "qtum_eth",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "104062247.533921",
+    "asset": "qtum_eth",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87539807.3635372",
+    "asset": "qtum_eth",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95351392.482825",
+    "asset": "qtum_eth",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94182715.4200352",
+    "asset": "qtum_eth",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92667195.7050392",
+    "asset": "qtum_eth",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92848132.2158618",
+    "asset": "qtum_eth",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89868872.760706",
+    "asset": "qtum_eth",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91486341.8057832",
+    "asset": "qtum_eth",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95002116.2653964",
+    "asset": "qtum_eth",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "99245997.8410329",
+    "asset": "qtum_eth",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "102587655.495611",
+    "asset": "qtum_eth",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98115011.421016",
+    "asset": "qtum_eth",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "98537352.4416947",
+    "asset": "qtum_eth",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96303128.6639157",
+    "asset": "qtum_eth",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94732583.7424",
+    "asset": "qtum_eth",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93235609.8341991",
+    "asset": "qtum_eth",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95928627.1775554",
+    "asset": "qtum_eth",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94355599.5939902",
+    "asset": "qtum_eth",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91282404.867428",
+    "asset": "qtum_eth",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88192776.6335288",
+    "asset": "qtum_eth",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87061706.5371076",
+    "asset": "qtum_eth",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95037843.8446547",
+    "asset": "qtum_eth",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92684532.229667",
+    "asset": "qtum_eth",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91094092.8067047",
+    "asset": "qtum_eth",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90917624.7052514",
+    "asset": "qtum_eth",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89161890.5308085",
+    "asset": "qtum_eth",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92802238.6536724",
+    "asset": "qtum_eth",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "91408375.7763338",
+    "asset": "qtum_eth",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94068794.4247808",
+    "asset": "qtum_eth",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "93213295.2663556",
+    "asset": "qtum_eth",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89065944.180441",
+    "asset": "qtum_eth",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86942567.328265",
+    "asset": "qtum_eth",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "85838285.1873082",
+    "asset": "qtum_eth",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86935810.2828997",
+    "asset": "qtum_eth",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "87929498.5868182",
+    "asset": "qtum_eth",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89489492.7485337",
+    "asset": "qtum_eth",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88395939.3358897",
+    "asset": "qtum_eth",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90513205.1821746",
+    "asset": "qtum_eth",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88194140.0077564",
+    "asset": "qtum_eth",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94724767.5415341",
+    "asset": "qtum_eth",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "95244667.378121",
+    "asset": "qtum_eth",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "94900185.2760411",
+    "asset": "qtum_eth",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "89730297.5724424",
+    "asset": "qtum_eth",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88308713.798904",
+    "asset": "qtum_eth",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88544487.0819918",
+    "asset": "qtum_eth",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "86507024.6966518",
+    "asset": "qtum_eth",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84304043.9332791",
+    "asset": "qtum_eth",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88020337.0294308",
+    "asset": "qtum_eth",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92642198.3662517",
+    "asset": "qtum_eth",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "90591515.7020496",
+    "asset": "qtum_eth",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "84979868.4519464",
+    "asset": "qtum_eth",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81804710.2250348",
+    "asset": "qtum_eth",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81709688.9991578",
+    "asset": "qtum_eth",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "79923709.7294951",
+    "asset": "qtum_eth",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "81028069.2393559",
+    "asset": "qtum_eth",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88865009.1709517",
+    "asset": "qtum_eth",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92993585.4608223",
+    "asset": "qtum_eth",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "88159166.5752759",
+    "asset": "qtum_eth",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "97097926.4733396",
+    "asset": "qtum_eth",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96133750.3862696",
+    "asset": "qtum_eth",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "96796000.2009787",
+    "asset": "qtum_eth",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "92897787.2527558",
+    "asset": "qtum_eth",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "239199387.372205",
+    "asset": "qtum_eth",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "238985214.312264",
+    "asset": "qtum_eth",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "234784537.468217",
+    "asset": "qtum_eth",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217160550.438813",
+    "asset": "qtum_eth",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215913826.643805",
+    "asset": "qtum_eth",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223457551.849924",
+    "asset": "qtum_eth",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205311661.363724",
+    "asset": "qtum_eth",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219270489.717738",
+    "asset": "qtum_eth",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214670060.014093",
+    "asset": "qtum_eth",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217925169.704109",
+    "asset": "qtum_eth",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217358748.110696",
+    "asset": "qtum_eth",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212202200.515206",
+    "asset": "qtum_eth",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224797798.002009",
+    "asset": "qtum_eth",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227246364.910513",
+    "asset": "qtum_eth",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "228758553.35801",
+    "asset": "qtum_eth",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222035962.628399",
+    "asset": "qtum_eth",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220531275.23407",
+    "asset": "qtum_eth",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224799461.278191",
+    "asset": "qtum_eth",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211620162.127223",
+    "asset": "qtum_eth",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "235762942.75361",
+    "asset": "qtum_eth",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240306476.897831",
+    "asset": "qtum_eth",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "185281219.676714",
+    "asset": "qtum_eth",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "186575146.856558",
+    "asset": "qtum_eth",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "207259613.012251",
+    "asset": "qtum_eth",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214464264.343455",
+    "asset": "qtum_eth",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208570973.334906",
+    "asset": "qtum_eth",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199626552.802769",
+    "asset": "qtum_eth",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "194321605.79122",
+    "asset": "qtum_eth",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "190573831.083201",
+    "asset": "qtum_eth",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "194899210.224787",
+    "asset": "qtum_eth",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "198057222.097661",
+    "asset": "qtum_eth",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "200624914.47936",
+    "asset": "qtum_eth",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196210941.241229",
+    "asset": "qtum_eth",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "190657971.026793",
+    "asset": "qtum_eth",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197434870.155983",
+    "asset": "qtum_eth",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "200153808.965978",
+    "asset": "qtum_eth",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "200707508.109035",
+    "asset": "qtum_eth",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206249713.375074",
+    "asset": "qtum_eth",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "201278429.227078",
+    "asset": "qtum_eth",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196968571.272959",
+    "asset": "qtum_eth",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196804594.44839",
+    "asset": "qtum_eth",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "181719052.175558",
+    "asset": "qtum_eth",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "185425301.548712",
+    "asset": "qtum_eth",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "191866951.049481",
+    "asset": "qtum_eth",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "190021601.93335",
+    "asset": "qtum_eth",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "170883089.969366",
+    "asset": "qtum_eth",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "168334683.667165",
+    "asset": "qtum_eth",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "177146294.796356",
+    "asset": "qtum_eth",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "172771412.001639",
+    "asset": "qtum_eth",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197707531.582454",
+    "asset": "qtum_eth",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "193826025.168343",
+    "asset": "qtum_eth",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "192375724.171687",
+    "asset": "qtum_eth",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "195439815.105811",
+    "asset": "qtum_eth",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "186672193.125541",
+    "asset": "qtum_eth",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "184134068.960961",
+    "asset": "qtum_eth",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "177758820.748279",
+    "asset": "qtum_eth",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "172410307.960054",
+    "asset": "qtum_eth",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "175584907.669037",
+    "asset": "qtum_eth",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "171561470.013701",
+    "asset": "qtum_eth",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "169987742.784075",
+    "asset": "qtum_eth",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "173980007.142765",
+    "asset": "qtum_eth",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "168952715.784765",
+    "asset": "qtum_eth",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "161463286.497575",
+    "asset": "qtum_eth",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153462448.17233",
+    "asset": "qtum_eth",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "154072480.357085",
+    "asset": "qtum_eth",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "153569003.055718",
+    "asset": "qtum_eth",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "157721938.307161",
+    "asset": "qtum_eth",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "160838595.365868",
+    "asset": "qtum_eth",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "159915298.304778",
+    "asset": "qtum_eth",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "160767098.99049",
+    "asset": "qtum_eth",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "161574507.655201",
+    "asset": "qtum_eth",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "159693415.512199",
+    "asset": "qtum_eth",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "154548554.769291",
+    "asset": "qtum_eth",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "144050890.727211",
+    "asset": "qtum_eth",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "151951428.670165",
+    "asset": "qtum_eth",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "155786818.426816",
+    "asset": "qtum_eth",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "149321568.895382",
+    "asset": "qtum_eth",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "143665516.984308",
+    "asset": "qtum_eth",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "143747806.861771",
+    "asset": "qtum_eth",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "140795874.631963",
+    "asset": "qtum_eth",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "145484656.996852",
+    "asset": "qtum_eth",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "150516045.194302",
+    "asset": "qtum_eth",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "147545179.095575",
+    "asset": "qtum_eth",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "144782949.463384",
+    "asset": "qtum_eth",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "141484807.120488",
+    "asset": "qtum_eth",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "151723553.542958",
+    "asset": "qtum_eth",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "142441527.691693",
+    "asset": "qtum_eth",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "137427898.398148",
+    "asset": "qtum_eth",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "136379290.10331",
+    "asset": "qtum_eth",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "127897743.021804",
+    "asset": "qtum_eth",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "123266576.36464",
+    "asset": "qtum_eth",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "131094189.318621",
+    "asset": "qtum_eth",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "129497123.546659",
+    "asset": "qtum_eth",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125118481.613403",
+    "asset": "qtum_eth",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "126886953.691445",
+    "asset": "qtum_eth",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125967786.271345",
+    "asset": "qtum_eth",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "125211769.284528",
+    "asset": "qtum_eth",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "121540641.494318",
+    "asset": "qtum_eth",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "120626185.113238",
+    "asset": "qtum_eth",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "130279482.495514",
+    "asset": "qtum_eth",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220003096.948325",
+    "asset": "qtum_eth",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209901458.712447",
+    "asset": "qtum_eth",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "203444344.117365",
+    "asset": "qtum_eth",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "202419154.516156",
+    "asset": "qtum_eth",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "202633828.470073",
+    "asset": "qtum_eth",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209131098.551015",
+    "asset": "qtum_eth",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199934184.868158",
+    "asset": "qtum_eth",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196924687.356603",
+    "asset": "qtum_eth",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197375313.657685",
+    "asset": "qtum_eth",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "191418827.000292",
+    "asset": "qtum_eth",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "183170452.211868",
+    "asset": "qtum_eth",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "179722947.350879",
+    "asset": "qtum_eth",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "198559631.762311",
+    "asset": "qtum_eth",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "200870157.499564",
+    "asset": "qtum_eth",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197834802.288334",
+    "asset": "qtum_eth",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "193456635.539878",
+    "asset": "qtum_eth",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "192858349.006087",
+    "asset": "qtum_eth",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196580355.604732",
+    "asset": "qtum_eth",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "202772208.846292",
+    "asset": "qtum_eth",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197005220.382941",
+    "asset": "qtum_eth",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "187591106.44769",
+    "asset": "qtum_eth",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "203490450.746787",
+    "asset": "qtum_eth",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "204425060.87724",
+    "asset": "qtum_eth",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "194699709.683537",
+    "asset": "qtum_eth",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "195223142.314817",
+    "asset": "qtum_eth",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "198253523.914774",
+    "asset": "qtum_eth",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197023739.099718",
+    "asset": "qtum_eth",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "201235745.79043",
+    "asset": "qtum_eth",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211739580.709306",
+    "asset": "qtum_eth",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222102846.641554",
+    "asset": "qtum_eth",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222231471.22801",
+    "asset": "qtum_eth",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225356021.304619",
+    "asset": "qtum_eth",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227768644.317864",
+    "asset": "qtum_eth",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "226048896.010768",
+    "asset": "qtum_eth",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231668202.367342",
+    "asset": "qtum_eth",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "234435467.538857",
+    "asset": "qtum_eth",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236737816.363564",
+    "asset": "qtum_eth",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237503055.99666",
+    "asset": "qtum_eth",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "248150555.99964",
+    "asset": "qtum_eth",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256146828.881227",
+    "asset": "qtum_eth",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255383300.797281",
+    "asset": "qtum_eth",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "253368624.546458",
+    "asset": "qtum_eth",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "233353279.187701",
+    "asset": "qtum_eth",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "228563953.450566",
+    "asset": "qtum_eth",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "230596313.515696",
+    "asset": "qtum_eth",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "233074414.595442",
+    "asset": "qtum_eth",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236528199.84645",
+    "asset": "qtum_eth",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221909870.17464",
+    "asset": "qtum_eth",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221560382.134219",
+    "asset": "qtum_eth",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217758255.62898",
+    "asset": "qtum_eth",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "210976762.807656",
+    "asset": "qtum_eth",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "203178369.398352",
+    "asset": "qtum_eth",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199623607.941902",
+    "asset": "qtum_eth",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205574784.132836",
+    "asset": "qtum_eth",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "213017657.205289",
+    "asset": "qtum_eth",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205103050.737629",
+    "asset": "qtum_eth",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209809522.598033",
+    "asset": "qtum_eth",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215106508.072092",
+    "asset": "qtum_eth",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217905748.553172",
+    "asset": "qtum_eth",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221936468.254937",
+    "asset": "qtum_eth",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219527261.855853",
+    "asset": "qtum_eth",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209221203.844369",
+    "asset": "qtum_eth",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222161698.197842",
+    "asset": "qtum_eth",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229076413.861607",
+    "asset": "qtum_eth",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211289095.076449",
+    "asset": "qtum_eth",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "207526244.007491",
+    "asset": "qtum_eth",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216423029.18609",
+    "asset": "qtum_eth",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216580851.190732",
+    "asset": "qtum_eth",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208058653.228417",
+    "asset": "qtum_eth",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199450357.795422",
+    "asset": "qtum_eth",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211946234.134629",
+    "asset": "qtum_eth",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231646577.675989",
+    "asset": "qtum_eth",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "238563355.914697",
+    "asset": "qtum_eth",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254885797.322109",
+    "asset": "qtum_eth",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311700720.53333",
+    "asset": "qtum_eth",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "306711022.335086",
+    "asset": "qtum_eth",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "294156849.644021",
+    "asset": "qtum_eth",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296652244.559692",
+    "asset": "qtum_eth",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "280907247.524001",
+    "asset": "qtum_eth",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "266689206.108539",
+    "asset": "qtum_eth",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "297070702.512748",
+    "asset": "qtum_eth",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272273015.511226",
+    "asset": "qtum_eth",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "258032544.746384",
+    "asset": "qtum_eth",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263085701.194371",
+    "asset": "qtum_eth",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "266348191.739289",
+    "asset": "qtum_eth",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "275031727.965003",
+    "asset": "qtum_eth",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "271553002.008371",
+    "asset": "qtum_eth",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "269596922.244175",
+    "asset": "qtum_eth",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "269582433.632461",
+    "asset": "qtum_eth",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270573034.483944",
+    "asset": "qtum_eth",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "261732796.419327",
+    "asset": "qtum_eth",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259254757.78728",
+    "asset": "qtum_eth",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259949091.011737",
+    "asset": "qtum_eth",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262925926.879668",
+    "asset": "qtum_eth",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262468587.781776",
+    "asset": "qtum_eth",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251199953.260864",
+    "asset": "qtum_eth",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "243055766.783549",
+    "asset": "qtum_eth",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "243809898.62888",
+    "asset": "qtum_eth",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "247985512.385938",
+    "asset": "qtum_eth",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "248469766.617517",
+    "asset": "qtum_eth",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229753026.682567",
+    "asset": "qtum_eth",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "233764761.631649",
+    "asset": "qtum_eth",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236969606.957084",
+    "asset": "qtum_eth",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "232001544.843439",
+    "asset": "qtum_eth",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "230387833.214149",
+    "asset": "qtum_eth",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224164137.188395",
+    "asset": "qtum_eth",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "204329791.894543",
+    "asset": "qtum_eth",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199709139.189157",
+    "asset": "qtum_eth",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211431432.121748",
+    "asset": "qtum_eth",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "213665090.77127",
+    "asset": "qtum_eth",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209549912.244039",
+    "asset": "qtum_eth",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215317965.021533",
+    "asset": "qtum_eth",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220579299.844917",
+    "asset": "qtum_eth",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "210871223.75501",
+    "asset": "qtum_eth",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221009790.699542",
+    "asset": "qtum_eth",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222266516.390725",
+    "asset": "qtum_eth",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229184394.812307",
+    "asset": "qtum_eth",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221633698.676983",
+    "asset": "qtum_eth",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214908090.768803",
+    "asset": "qtum_eth",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214209650.582759",
+    "asset": "qtum_eth",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215330758.318115",
+    "asset": "qtum_eth",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223006220.55747",
+    "asset": "qtum_eth",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224281504.373141",
+    "asset": "qtum_eth",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220616666.98622",
+    "asset": "qtum_eth",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220745391.421292",
+    "asset": "qtum_eth",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205540836.307114",
+    "asset": "qtum_eth",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "192568381.688963",
+    "asset": "qtum_eth",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "193757482.805237",
+    "asset": "qtum_eth",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "191604306.541859",
+    "asset": "qtum_eth",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197715745.361768",
+    "asset": "qtum_eth",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "183463519.89605",
+    "asset": "qtum_eth",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "185397038.75652",
+    "asset": "qtum_eth",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "188096295.049661",
+    "asset": "qtum_eth",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "187359470.489373",
+    "asset": "qtum_eth",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "171901627.511333",
+    "asset": "qtum_eth",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "173532916.136795",
+    "asset": "qtum_eth",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "170252396.702894",
+    "asset": "qtum_eth",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "190198566.823183",
+    "asset": "qtum_eth",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "187667065.272646",
+    "asset": "qtum_eth",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "193315653.227767",
+    "asset": "qtum_eth",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "201315011.664575",
+    "asset": "qtum_eth",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "197240963.10502",
+    "asset": "qtum_eth",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "195192703.159202",
+    "asset": "qtum_eth",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "194106145.928743",
+    "asset": "qtum_eth",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196391530.938441",
+    "asset": "qtum_eth",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "198830465.661001",
+    "asset": "qtum_eth",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212348699.438831",
+    "asset": "qtum_eth",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "213302790.680061",
+    "asset": "qtum_eth",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "207966771.891583",
+    "asset": "qtum_eth",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208348289.302598",
+    "asset": "qtum_eth",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222119631.416598",
+    "asset": "qtum_eth",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223355899.072952",
+    "asset": "qtum_eth",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224115846.764451",
+    "asset": "qtum_eth",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229554492.155427",
+    "asset": "qtum_eth",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227711581.384311",
+    "asset": "qtum_eth",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218622822.923939",
+    "asset": "qtum_eth",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222149866.66481",
+    "asset": "qtum_eth",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217180793.928784",
+    "asset": "qtum_eth",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214481515.881466",
+    "asset": "qtum_eth",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220369971.850379",
+    "asset": "qtum_eth",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221633790.545754",
+    "asset": "qtum_eth",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214136945.477698",
+    "asset": "qtum_eth",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "207181698.091888",
+    "asset": "qtum_eth",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "210505060.931992",
+    "asset": "qtum_eth",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "204413679.869203",
+    "asset": "qtum_eth",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211121371.140514",
+    "asset": "qtum_eth",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237304246.481792",
+    "asset": "qtum_eth",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "247927557.589176",
+    "asset": "qtum_eth",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259401736.329056",
+    "asset": "qtum_eth",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251938187.133292",
+    "asset": "qtum_eth",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255834338.732914",
+    "asset": "qtum_eth",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259788281.314975",
+    "asset": "qtum_eth",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "249364591.502278",
+    "asset": "qtum_eth",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237677374.71505",
+    "asset": "qtum_eth",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236826956.196565",
+    "asset": "qtum_eth",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "228927298.108681",
+    "asset": "qtum_eth",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "232882209.273535",
+    "asset": "qtum_eth",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225600610.007271",
+    "asset": "qtum_eth",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "228441455.897922",
+    "asset": "qtum_eth",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231696320.237032",
+    "asset": "qtum_eth",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240225476.803127",
+    "asset": "qtum_eth",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224352641.112182",
+    "asset": "qtum_eth",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222754778.220341",
+    "asset": "qtum_eth",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222220736.160888",
+    "asset": "qtum_eth",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219467196.711465",
+    "asset": "qtum_eth",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223634942.769497",
+    "asset": "qtum_eth",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219287221.062565",
+    "asset": "qtum_eth",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214442244.365026",
+    "asset": "qtum_eth",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "198481409.938101",
+    "asset": "qtum_eth",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199691192.947319",
+    "asset": "qtum_eth",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "201431072.097864",
+    "asset": "qtum_eth",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206547844.956597",
+    "asset": "qtum_eth",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208393505.797548",
+    "asset": "qtum_eth",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "204331926.18134",
+    "asset": "qtum_eth",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "195778269.74964",
+    "asset": "qtum_eth",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199535013.658399",
+    "asset": "qtum_eth",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206629401.832364",
+    "asset": "qtum_eth",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "207707501.019074",
+    "asset": "qtum_eth",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217813634.664242",
+    "asset": "qtum_eth",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223635044.447695",
+    "asset": "qtum_eth",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "368558376.658904",
+    "asset": "qtum_eth",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "375978768.200082",
+    "asset": "qtum_eth",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "357892539.463531",
+    "asset": "qtum_eth",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "353198051.992611",
+    "asset": "qtum_eth",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "373031501.448445",
+    "asset": "qtum_eth",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "369960545.9171",
+    "asset": "qtum_eth",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "391587508.044791",
+    "asset": "qtum_eth",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "393058340.634191",
+    "asset": "qtum_eth",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "402647771.830118",
+    "asset": "qtum_eth",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "425814993.051338",
+    "asset": "qtum_eth",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "549622711.630151",
+    "asset": "qtum_eth",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "499392756.755648",
+    "asset": "qtum_eth",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "478100903.384442",
+    "asset": "qtum_eth",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "480879192.714598",
+    "asset": "qtum_eth",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "485827957.550819",
+    "asset": "qtum_eth",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "498913373.014125",
+    "asset": "qtum_eth",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "403333010.259672",
+    "asset": "qtum_eth",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "391493445.449692",
+    "asset": "qtum_eth",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "415736186.959729",
+    "asset": "qtum_eth",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "417245212.954147",
+    "asset": "qtum_eth",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "414299703.801686",
+    "asset": "qtum_eth",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "393290507.57211",
+    "asset": "qtum_eth",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "403286916.350824",
+    "asset": "qtum_eth",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "388858242.604733",
+    "asset": "qtum_eth",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "370749519.139145",
+    "asset": "qtum_eth",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "333495019.104186",
+    "asset": "qtum_eth",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303535897.504794",
+    "asset": "qtum_eth",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "315725395.584099",
+    "asset": "qtum_eth",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "300355042.497535",
+    "asset": "qtum_eth",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "305207749.188996",
+    "asset": "qtum_eth",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "325393063.259933",
+    "asset": "qtum_eth",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "338942723.607157",
+    "asset": "qtum_eth",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "330197696.229292",
+    "asset": "qtum_eth",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310241524.363324",
+    "asset": "qtum_eth",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310154431.946142",
+    "asset": "qtum_eth",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "327131870.500985",
+    "asset": "qtum_eth",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310413606.180644",
+    "asset": "qtum_eth",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307129094.755376",
+    "asset": "qtum_eth",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "300370011.605478",
+    "asset": "qtum_eth",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313155651.667846",
+    "asset": "qtum_eth",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320867092.977713",
+    "asset": "qtum_eth",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "345079677.695571",
+    "asset": "qtum_eth",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "343052439.230963",
+    "asset": "qtum_eth",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "346372119.755847",
+    "asset": "qtum_eth",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "355784979.78924",
+    "asset": "qtum_eth",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320469323.048599",
+    "asset": "qtum_eth",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "309190359.698253",
+    "asset": "qtum_eth",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "317972713.96978",
+    "asset": "qtum_eth",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "329168376.718903",
+    "asset": "qtum_eth",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "328083870.926273",
+    "asset": "qtum_eth",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "316355181.103269",
+    "asset": "qtum_eth",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "309485012.623914",
+    "asset": "qtum_eth",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320245293.900031",
+    "asset": "qtum_eth",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "336730853.379948",
+    "asset": "qtum_eth",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "334797982.133152",
+    "asset": "qtum_eth",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "351022531.334263",
+    "asset": "qtum_eth",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "330332243.567769",
+    "asset": "qtum_eth",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "298756784.963437",
+    "asset": "qtum_eth",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303180417.668222",
+    "asset": "qtum_eth",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "308031897.721757",
+    "asset": "qtum_eth",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "293736064.750756",
+    "asset": "qtum_eth",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "293467973.740257",
+    "asset": "qtum_eth",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "286543918.089596",
+    "asset": "qtum_eth",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "294541263.227977",
+    "asset": "qtum_eth",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "287358037.270674",
+    "asset": "qtum_eth",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "283220591.414301",
+    "asset": "qtum_eth",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270838161.562524",
+    "asset": "qtum_eth",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "277477253.237577",
+    "asset": "qtum_eth",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "289028527.484279",
+    "asset": "qtum_eth",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "354725219.97564",
+    "asset": "qtum_eth",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "378575888.996944",
+    "asset": "qtum_eth",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "300300402.172664",
+    "asset": "qtum_eth",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "309246307.864142",
+    "asset": "qtum_eth",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "346584890.231597",
+    "asset": "qtum_eth",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321678930.831115",
+    "asset": "qtum_eth",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "327544133.452269",
+    "asset": "qtum_eth",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313762932.237029",
+    "asset": "qtum_eth",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "299855031.221176",
+    "asset": "qtum_eth",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "278766161.893459",
+    "asset": "qtum_eth",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "298365467.280364",
+    "asset": "qtum_eth",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "326773926.17519",
+    "asset": "qtum_eth",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "336758838.531904",
+    "asset": "qtum_eth",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "327536194.807059",
+    "asset": "qtum_eth",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "336793134.31895",
+    "asset": "qtum_eth",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "327687783.61761",
+    "asset": "qtum_eth",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "319706116.640799",
+    "asset": "qtum_eth",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "330147330.131142",
+    "asset": "qtum_eth",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310556962.911802",
+    "asset": "qtum_eth",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "325076908.467896",
+    "asset": "qtum_eth",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "328926865.280706",
+    "asset": "qtum_eth",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307517367.178374",
+    "asset": "qtum_eth",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307391372.618645",
+    "asset": "qtum_eth",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "299529962.971078",
+    "asset": "qtum_eth",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "264734886.114216",
+    "asset": "qtum_eth",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "264174874.584482",
+    "asset": "qtum_eth",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255988518.848724",
+    "asset": "qtum_eth",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "258307936.814387",
+    "asset": "qtum_eth",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254521174.988554",
+    "asset": "qtum_eth",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251840585.674187",
+    "asset": "qtum_eth",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "271901288.420375",
+    "asset": "qtum_eth",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222628869.304507",
+    "asset": "qtum_eth",
+    "time": "2024-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222321783.935509",
+    "asset": "qtum_eth",
+    "time": "2024-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222217926.804633",
+    "asset": "qtum_eth",
+    "time": "2024-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221991260.514093",
+    "asset": "qtum_eth",
+    "time": "2024-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "232776827.129027",
+    "asset": "qtum_eth",
+    "time": "2024-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "239899693.879374",
+    "asset": "qtum_eth",
+    "time": "2024-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "250647636.739014",
+    "asset": "qtum_eth",
+    "time": "2024-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251467198.524851",
+    "asset": "qtum_eth",
+    "time": "2024-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262677585.220894",
+    "asset": "qtum_eth",
+    "time": "2024-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "264712052.470583",
+    "asset": "qtum_eth",
+    "time": "2024-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "265495598.958751",
+    "asset": "qtum_eth",
+    "time": "2024-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "250306798.577905",
+    "asset": "qtum_eth",
+    "time": "2024-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "235111945.797882",
+    "asset": "qtum_eth",
+    "time": "2024-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229367307.406538",
+    "asset": "qtum_eth",
+    "time": "2024-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "230004661.793083",
+    "asset": "qtum_eth",
+    "time": "2024-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "233721559.147983",
+    "asset": "qtum_eth",
+    "time": "2024-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227305458.663234",
+    "asset": "qtum_eth",
+    "time": "2024-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215543120.360225",
+    "asset": "qtum_eth",
+    "time": "2024-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224200399.170148",
+    "asset": "qtum_eth",
+    "time": "2024-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216344477.891948",
+    "asset": "qtum_eth",
+    "time": "2024-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217876880.8922",
+    "asset": "qtum_eth",
+    "time": "2024-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214436089.545034",
+    "asset": "qtum_eth",
+    "time": "2024-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206768412.203208",
+    "asset": "qtum_eth",
+    "time": "2024-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209835281.698623",
+    "asset": "qtum_eth",
+    "time": "2024-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218379946.209681",
+    "asset": "qtum_eth",
+    "time": "2024-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225627966.468166",
+    "asset": "qtum_eth",
+    "time": "2024-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "226297708.197174",
+    "asset": "qtum_eth",
+    "time": "2024-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222069727.867793",
+    "asset": "qtum_eth",
+    "time": "2024-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227115287.848936",
+    "asset": "qtum_eth",
+    "time": "2024-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "230723246.819203",
+    "asset": "qtum_eth",
+    "time": "2024-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229866489.114453",
+    "asset": "qtum_eth",
+    "time": "2024-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220124380.848236",
+    "asset": "qtum_eth",
+    "time": "2024-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219190533.701501",
+    "asset": "qtum_eth",
+    "time": "2024-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225105120.220745",
+    "asset": "qtum_eth",
+    "time": "2024-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "228922543.887599",
+    "asset": "qtum_eth",
+    "time": "2024-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240036067.280369",
+    "asset": "qtum_eth",
+    "time": "2024-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "244766950.489784",
+    "asset": "qtum_eth",
+    "time": "2024-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "253698174.651783",
+    "asset": "qtum_eth",
+    "time": "2024-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "247416939.768633",
+    "asset": "qtum_eth",
+    "time": "2024-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "252112615.694691",
+    "asset": "qtum_eth",
+    "time": "2024-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "257918332.666236",
+    "asset": "qtum_eth",
+    "time": "2024-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "253200151.862977",
+    "asset": "qtum_eth",
+    "time": "2024-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263750046.132138",
+    "asset": "qtum_eth",
+    "time": "2024-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270818663.015034",
+    "asset": "qtum_eth",
+    "time": "2024-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "265457012.455272",
+    "asset": "qtum_eth",
+    "time": "2024-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "265519266.443222",
+    "asset": "qtum_eth",
+    "time": "2024-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260664270.23377",
+    "asset": "qtum_eth",
+    "time": "2024-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "239584479.006848",
+    "asset": "qtum_eth",
+    "time": "2024-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236816538.246153",
+    "asset": "qtum_eth",
+    "time": "2024-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231233467.337265",
+    "asset": "qtum_eth",
+    "time": "2024-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237615078.22308",
+    "asset": "qtum_eth",
+    "time": "2024-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237310781.608498",
+    "asset": "qtum_eth",
+    "time": "2024-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "243567132.405385",
+    "asset": "qtum_eth",
+    "time": "2024-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "246871523.824541",
+    "asset": "qtum_eth",
+    "time": "2024-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "242660751.968038",
+    "asset": "qtum_eth",
+    "time": "2024-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "232891930.933599",
+    "asset": "qtum_eth",
+    "time": "2024-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237435458.427748",
+    "asset": "qtum_eth",
+    "time": "2024-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "250121161.902354",
+    "asset": "qtum_eth",
+    "time": "2024-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "252093262.452981",
+    "asset": "qtum_eth",
+    "time": "2024-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "245934493.636528",
+    "asset": "qtum_eth",
+    "time": "2024-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260293777.930508",
+    "asset": "qtum_eth",
+    "time": "2024-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255792194.217916",
+    "asset": "qtum_eth",
+    "time": "2024-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "252970666.369812",
+    "asset": "qtum_eth",
+    "time": "2024-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "247839044.714763",
+    "asset": "qtum_eth",
+    "time": "2024-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254832065.173702",
+    "asset": "qtum_eth",
+    "time": "2024-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256201809.942495",
+    "asset": "qtum_eth",
+    "time": "2024-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "264784212.286895",
+    "asset": "qtum_eth",
+    "time": "2024-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254769346.437424",
+    "asset": "qtum_eth",
+    "time": "2024-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "247375290.518101",
+    "asset": "qtum_eth",
+    "time": "2024-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "239779312.435242",
+    "asset": "qtum_eth",
+    "time": "2024-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240153143.588859",
+    "asset": "qtum_eth",
+    "time": "2024-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220211534.66708",
+    "asset": "qtum_eth",
+    "time": "2024-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221859516.161299",
+    "asset": "qtum_eth",
+    "time": "2024-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "226181319.264209",
+    "asset": "qtum_eth",
+    "time": "2024-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "228732875.238852",
+    "asset": "qtum_eth",
+    "time": "2024-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240717721.092506",
+    "asset": "qtum_eth",
+    "time": "2024-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236571752.288595",
+    "asset": "qtum_eth",
+    "time": "2024-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222914258.395668",
+    "asset": "qtum_eth",
+    "time": "2024-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221244687.169817",
+    "asset": "qtum_eth",
+    "time": "2024-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218498925.380608",
+    "asset": "qtum_eth",
+    "time": "2024-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "213735785.835857",
+    "asset": "qtum_eth",
+    "time": "2024-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209364980.179039",
+    "asset": "qtum_eth",
+    "time": "2024-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219881497.666659",
+    "asset": "qtum_eth",
+    "time": "2024-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236211136.235882",
+    "asset": "qtum_eth",
+    "time": "2024-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240620301.741114",
+    "asset": "qtum_eth",
+    "time": "2024-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "245157346.627596",
+    "asset": "qtum_eth",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "250819591.101712",
+    "asset": "qtum_eth",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263321105.209149",
+    "asset": "qtum_eth",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "283584372.963085",
+    "asset": "qtum_eth",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272638954.631424",
+    "asset": "qtum_eth",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259375209.956566",
+    "asset": "qtum_eth",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "268361107.448569",
+    "asset": "qtum_eth",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "286538172.082494",
+    "asset": "qtum_eth",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321320842.977002",
+    "asset": "qtum_eth",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "292307900.393542",
+    "asset": "qtum_eth",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "322073848.190816",
+    "asset": "qtum_eth",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312118234.499347",
+    "asset": "qtum_eth",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "299118204.211761",
+    "asset": "qtum_eth",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "327028541.278661",
+    "asset": "qtum_eth",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "349863751.202428",
+    "asset": "qtum_eth",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "360422804.912936",
+    "asset": "qtum_eth",
+    "time": "2024-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "351168035.276915",
+    "asset": "qtum_eth",
+    "time": "2024-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "361431749.178884",
+    "asset": "qtum_eth",
+    "time": "2024-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "358471219.708159",
+    "asset": "qtum_eth",
+    "time": "2024-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "349901545.750842",
+    "asset": "qtum_eth",
+    "time": "2024-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "346799544.337413",
+    "asset": "qtum_eth",
+    "time": "2024-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "360645856.227125",
+    "asset": "qtum_eth",
+    "time": "2024-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "343316119.110699",
+    "asset": "qtum_eth",
+    "time": "2024-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "363698148.756551",
+    "asset": "qtum_eth",
+    "time": "2024-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "359878301.432545",
+    "asset": "qtum_eth",
+    "time": "2024-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "369068003.613437",
+    "asset": "qtum_eth",
+    "time": "2024-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "370690968.026455",
+    "asset": "qtum_eth",
+    "time": "2024-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "356641235.130432",
+    "asset": "qtum_eth",
+    "time": "2024-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "387245016.358824",
+    "asset": "qtum_eth",
+    "time": "2024-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "389833626.30639",
+    "asset": "qtum_eth",
+    "time": "2024-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "381163421.015289",
+    "asset": "qtum_eth",
+    "time": "2024-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "369743998.261138",
+    "asset": "qtum_eth",
+    "time": "2024-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "375863458.179815",
+    "asset": "qtum_eth",
+    "time": "2024-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "376526728.616175",
+    "asset": "qtum_eth",
+    "time": "2024-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "369085558.16337",
+    "asset": "qtum_eth",
+    "time": "2024-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "380152609.104151",
+    "asset": "qtum_eth",
+    "time": "2024-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "372772380.643913",
+    "asset": "qtum_eth",
+    "time": "2024-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "365947775.715251",
+    "asset": "qtum_eth",
+    "time": "2024-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "357983815.830169",
+    "asset": "qtum_eth",
+    "time": "2024-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "349319507.378546",
+    "asset": "qtum_eth",
+    "time": "2024-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "348296482.980482",
+    "asset": "qtum_eth",
+    "time": "2024-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "343110570.793834",
+    "asset": "qtum_eth",
+    "time": "2024-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "346553504.918934",
+    "asset": "qtum_eth",
+    "time": "2024-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "352263780.212198",
+    "asset": "qtum_eth",
+    "time": "2024-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "358250197.302331",
+    "asset": "qtum_eth",
+    "time": "2024-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "355130436.47976",
+    "asset": "qtum_eth",
+    "time": "2024-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "329137453.137281",
+    "asset": "qtum_eth",
+    "time": "2024-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310689299.698764",
+    "asset": "qtum_eth",
+    "time": "2024-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "315677901.010429",
+    "asset": "qtum_eth",
+    "time": "2024-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310944275.268609",
+    "asset": "qtum_eth",
+    "time": "2024-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296372789.7206",
+    "asset": "qtum_eth",
+    "time": "2024-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "306685297.873144",
+    "asset": "qtum_eth",
+    "time": "2024-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296490441.564413",
+    "asset": "qtum_eth",
+    "time": "2024-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "287770002.089757",
+    "asset": "qtum_eth",
+    "time": "2024-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "294479970.083144",
+    "asset": "qtum_eth",
+    "time": "2024-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296614938.062658",
+    "asset": "qtum_eth",
+    "time": "2024-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273736634.431894",
+    "asset": "qtum_eth",
+    "time": "2024-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251364953.384832",
+    "asset": "qtum_eth",
+    "time": "2024-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251109720.129872",
+    "asset": "qtum_eth",
+    "time": "2024-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "252977313.993135",
+    "asset": "qtum_eth",
+    "time": "2024-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "253824160.264746",
+    "asset": "qtum_eth",
+    "time": "2024-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254645961.13425",
+    "asset": "qtum_eth",
+    "time": "2024-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "250087070.910927",
+    "asset": "qtum_eth",
+    "time": "2024-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "248661325.744528",
+    "asset": "qtum_eth",
+    "time": "2024-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256940870.034777",
+    "asset": "qtum_eth",
+    "time": "2024-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255878909.81297",
+    "asset": "qtum_eth",
+    "time": "2024-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260022953.441229",
+    "asset": "qtum_eth",
+    "time": "2024-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255974625.954728",
+    "asset": "qtum_eth",
+    "time": "2024-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "250497538.946199",
+    "asset": "qtum_eth",
+    "time": "2024-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260802248.316213",
+    "asset": "qtum_eth",
+    "time": "2024-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255719396.199128",
+    "asset": "qtum_eth",
+    "time": "2024-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "257182884.356573",
+    "asset": "qtum_eth",
+    "time": "2024-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "244927779.052267",
+    "asset": "qtum_eth",
+    "time": "2024-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217601073.514156",
+    "asset": "qtum_eth",
+    "time": "2024-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216304279.487998",
+    "asset": "qtum_eth",
+    "time": "2024-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227587185.52445",
+    "asset": "qtum_eth",
+    "time": "2024-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211637274.996949",
+    "asset": "qtum_eth",
+    "time": "2024-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218206029.842928",
+    "asset": "qtum_eth",
+    "time": "2024-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224598151.943435",
+    "asset": "qtum_eth",
+    "time": "2024-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "226517468.897438",
+    "asset": "qtum_eth",
+    "time": "2024-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224129417.439267",
+    "asset": "qtum_eth",
+    "time": "2024-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231596661.92309",
+    "asset": "qtum_eth",
+    "time": "2024-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "235775209.937343",
+    "asset": "qtum_eth",
+    "time": "2024-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "244565035.27245",
+    "asset": "qtum_eth",
+    "time": "2024-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256250350.661313",
+    "asset": "qtum_eth",
+    "time": "2024-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256240551.475756",
+    "asset": "qtum_eth",
+    "time": "2024-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "265603660.334672",
+    "asset": "qtum_eth",
+    "time": "2024-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "266713856.037996",
+    "asset": "qtum_eth",
+    "time": "2024-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274111495.739335",
+    "asset": "qtum_eth",
+    "time": "2024-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272775608.688813",
+    "asset": "qtum_eth",
+    "time": "2024-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "278976437.634651",
+    "asset": "qtum_eth",
+    "time": "2024-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "267385414.663633",
+    "asset": "qtum_eth",
+    "time": "2024-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259648682.686671",
+    "asset": "qtum_eth",
+    "time": "2024-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259323640.112743",
+    "asset": "qtum_eth",
+    "time": "2024-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "245984071.634273",
+    "asset": "qtum_eth",
+    "time": "2024-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "258911345.927642",
+    "asset": "qtum_eth",
+    "time": "2024-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272585765.802227",
+    "asset": "qtum_eth",
+    "time": "2024-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "268054716.894706",
+    "asset": "qtum_eth",
+    "time": "2024-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273193868.048943",
+    "asset": "qtum_eth",
+    "time": "2024-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "267047877.419819",
+    "asset": "qtum_eth",
+    "time": "2024-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256545671.103993",
+    "asset": "qtum_eth",
+    "time": "2024-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "252404584.623826",
+    "asset": "qtum_eth",
+    "time": "2024-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "233121238.604036",
+    "asset": "qtum_eth",
+    "time": "2024-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218602897.626853",
+    "asset": "qtum_eth",
+    "time": "2024-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "213497198.651712",
+    "asset": "qtum_eth",
+    "time": "2024-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "199606474.332544",
+    "asset": "qtum_eth",
+    "time": "2024-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205619871.212901",
+    "asset": "qtum_eth",
+    "time": "2024-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "204628022.353893",
+    "asset": "qtum_eth",
+    "time": "2024-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224960088.689992",
+    "asset": "qtum_eth",
+    "time": "2024-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221716143.475124",
+    "asset": "qtum_eth",
+    "time": "2024-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223744096.895358",
+    "asset": "qtum_eth",
+    "time": "2024-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211136511.966465",
+    "asset": "qtum_eth",
+    "time": "2024-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220112606.427462",
+    "asset": "qtum_eth",
+    "time": "2024-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222838635.344859",
+    "asset": "qtum_eth",
+    "time": "2024-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "234171648.152526",
+    "asset": "qtum_eth",
+    "time": "2024-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "288484366.866676",
+    "asset": "qtum_eth",
+    "time": "2024-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "295058677.263493",
+    "asset": "qtum_eth",
+    "time": "2024-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "290181703.128599",
+    "asset": "qtum_eth",
+    "time": "2024-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "282795645.285367",
+    "asset": "qtum_eth",
+    "time": "2024-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "285147807.399661",
+    "asset": "qtum_eth",
+    "time": "2024-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "289181273.533531",
+    "asset": "qtum_eth",
+    "time": "2024-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "290029463.303204",
+    "asset": "qtum_eth",
+    "time": "2024-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "282715594.656524",
+    "asset": "qtum_eth",
+    "time": "2024-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "282118524.390481",
+    "asset": "qtum_eth",
+    "time": "2024-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "284491632.3149",
+    "asset": "qtum_eth",
+    "time": "2024-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "290354619.66707",
+    "asset": "qtum_eth",
+    "time": "2024-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "293798279.100481",
+    "asset": "qtum_eth",
+    "time": "2024-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "301232508.241355",
+    "asset": "qtum_eth",
+    "time": "2024-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "299921957.705851",
+    "asset": "qtum_eth",
+    "time": "2024-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "299141174.06202",
+    "asset": "qtum_eth",
+    "time": "2024-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "305918708.152023",
+    "asset": "qtum_eth",
+    "time": "2024-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303487636.040365",
+    "asset": "qtum_eth",
+    "time": "2024-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310141751.157263",
+    "asset": "qtum_eth",
+    "time": "2024-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "331768557.169373",
+    "asset": "qtum_eth",
+    "time": "2024-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "334471511.214479",
+    "asset": "qtum_eth",
+    "time": "2024-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "330419090.308464",
+    "asset": "qtum_eth",
+    "time": "2024-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "331434463.842755",
+    "asset": "qtum_eth",
+    "time": "2024-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "336785188.117427",
+    "asset": "qtum_eth",
+    "time": "2024-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "336684735.304112",
+    "asset": "qtum_eth",
+    "time": "2024-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "329058794.026285",
+    "asset": "qtum_eth",
+    "time": "2024-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "325456446.367251",
+    "asset": "qtum_eth",
+    "time": "2024-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320679136.462983",
+    "asset": "qtum_eth",
+    "time": "2024-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "328434657.216594",
+    "asset": "qtum_eth",
+    "time": "2024-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "342151550.605503",
+    "asset": "qtum_eth",
+    "time": "2024-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "343270741.846222",
+    "asset": "qtum_eth",
+    "time": "2024-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "346188069.212027",
+    "asset": "qtum_eth",
+    "time": "2024-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "356752702.484838",
+    "asset": "qtum_eth",
+    "time": "2024-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "365008133.08514",
+    "asset": "qtum_eth",
+    "time": "2024-02-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "392620978.78978",
+    "asset": "qtum_eth",
+    "time": "2024-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "430754430.667541",
+    "asset": "qtum_eth",
+    "time": "2024-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "418853946.274281",
+    "asset": "qtum_eth",
+    "time": "2024-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "527461820.007729",
+    "asset": "qtum_eth",
+    "time": "2024-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "488784863.833211",
+    "asset": "qtum_eth",
+    "time": "2024-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "500870141.590228",
+    "asset": "qtum_eth",
+    "time": "2024-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "502827994.522685",
+    "asset": "qtum_eth",
+    "time": "2024-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "506423575.903895",
+    "asset": "qtum_eth",
+    "time": "2024-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "521737755.34496",
+    "asset": "qtum_eth",
+    "time": "2024-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "498702512.44236",
+    "asset": "qtum_eth",
+    "time": "2024-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "525734592.285383",
+    "asset": "qtum_eth",
+    "time": "2024-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "534617331.225488",
+    "asset": "qtum_eth",
+    "time": "2024-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "547890940.089514",
+    "asset": "qtum_eth",
+    "time": "2024-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "517189887.776205",
+    "asset": "qtum_eth",
+    "time": "2024-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "496216882.570477",
+    "asset": "qtum_eth",
+    "time": "2024-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "442378697.038449",
+    "asset": "qtum_eth",
+    "time": "2024-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "458322989.845279",
+    "asset": "qtum_eth",
+    "time": "2024-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "434301318.127025",
+    "asset": "qtum_eth",
+    "time": "2024-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "384688993.139785",
+    "asset": "qtum_eth",
+    "time": "2024-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "425889267.824541",
+    "asset": "qtum_eth",
+    "time": "2024-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "424193057.778722",
+    "asset": "qtum_eth",
+    "time": "2024-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "410832847.427648",
+    "asset": "qtum_eth",
+    "time": "2024-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "427981815.272087",
+    "asset": "qtum_eth",
+    "time": "2024-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "441943989.800319",
+    "asset": "qtum_eth",
+    "time": "2024-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "453811768.781334",
+    "asset": "qtum_eth",
+    "time": "2024-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "476533866.935276",
+    "asset": "qtum_eth",
+    "time": "2024-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "455914808.97336",
+    "asset": "qtum_eth",
+    "time": "2024-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "482485974.633372",
+    "asset": "qtum_eth",
+    "time": "2024-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "490379925.252943",
+    "asset": "qtum_eth",
+    "time": "2024-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "469622872.717017",
+    "asset": "qtum_eth",
+    "time": "2024-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "488257278.163471",
+    "asset": "qtum_eth",
+    "time": "2024-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "451175556.984628",
+    "asset": "qtum_eth",
+    "time": "2024-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "418107350.428272",
+    "asset": "qtum_eth",
+    "time": "2024-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "411103295.660471",
+    "asset": "qtum_eth",
+    "time": "2024-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "424387975.927128",
+    "asset": "qtum_eth",
+    "time": "2024-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "423770754.285197",
+    "asset": "qtum_eth",
+    "time": "2024-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "432975962.587345",
+    "asset": "qtum_eth",
+    "time": "2024-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "435166819.745603",
+    "asset": "qtum_eth",
+    "time": "2024-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "503781795.2863",
+    "asset": "qtum_eth",
+    "time": "2024-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "455078022.721079",
+    "asset": "qtum_eth",
+    "time": "2024-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "505908876.233484",
+    "asset": "qtum_eth",
+    "time": "2024-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "517591416.528577",
+    "asset": "qtum_eth",
+    "time": "2024-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "457486787.161162",
+    "asset": "qtum_eth",
+    "time": "2024-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "380790458.572696",
+    "asset": "qtum_eth",
+    "time": "2024-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "425934629.643993",
+    "asset": "qtum_eth",
+    "time": "2024-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "417739126.174182",
+    "asset": "qtum_eth",
+    "time": "2024-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "402266103.644738",
+    "asset": "qtum_eth",
+    "time": "2024-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "376252332.737599",
+    "asset": "qtum_eth",
+    "time": "2024-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "401182447.911034",
+    "asset": "qtum_eth",
+    "time": "2024-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "402195273.573641",
+    "asset": "qtum_eth",
+    "time": "2024-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "421411448.881053",
+    "asset": "qtum_eth",
+    "time": "2024-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "420453463.736131",
+    "asset": "qtum_eth",
+    "time": "2024-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "433323752.42641",
+    "asset": "qtum_eth",
+    "time": "2024-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "421590523.210225",
+    "asset": "qtum_eth",
+    "time": "2024-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "401306291.168504",
+    "asset": "qtum_eth",
+    "time": "2024-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "400562720.311359",
+    "asset": "qtum_eth",
+    "time": "2024-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "397720536.092127",
+    "asset": "qtum_eth",
+    "time": "2024-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "396878158.183056",
+    "asset": "qtum_eth",
+    "time": "2024-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "394640160.72397",
+    "asset": "qtum_eth",
+    "time": "2024-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "403008813.824144",
+    "asset": "qtum_eth",
+    "time": "2024-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "367882688.870683",
+    "asset": "qtum_eth",
+    "time": "2024-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "357069446.732375",
+    "asset": "qtum_eth",
+    "time": "2024-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "358174768.985933",
+    "asset": "qtum_eth",
+    "time": "2024-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "375655039.989205",
+    "asset": "qtum_eth",
+    "time": "2024-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "373253119.514781",
+    "asset": "qtum_eth",
+    "time": "2024-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "376071631.051923",
+    "asset": "qtum_eth",
+    "time": "2024-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "368748547.327022",
+    "asset": "qtum_eth",
+    "time": "2024-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224859405.199772",
+    "asset": "qtum_eth",
+    "time": "2023-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "230565598.074231",
+    "asset": "qtum_eth",
+    "time": "2023-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231002118.162237",
+    "asset": "qtum_eth",
+    "time": "2023-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "245481666.725925",
+    "asset": "qtum_eth",
+    "time": "2023-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "246425600.137665",
+    "asset": "qtum_eth",
+    "time": "2023-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "245009175.735012",
+    "asset": "qtum_eth",
+    "time": "2023-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251431903.672897",
+    "asset": "qtum_eth",
+    "time": "2023-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274947664.316517",
+    "asset": "qtum_eth",
+    "time": "2023-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "309767008.726179",
+    "asset": "qtum_eth",
+    "time": "2023-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "300521089.447838",
+    "asset": "qtum_eth",
+    "time": "2023-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "305248916.872106",
+    "asset": "qtum_eth",
+    "time": "2023-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313752147.386722",
+    "asset": "qtum_eth",
+    "time": "2023-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "349202489.180074",
+    "asset": "qtum_eth",
+    "time": "2023-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "319148947.616321",
+    "asset": "qtum_eth",
+    "time": "2023-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "308116861.32879",
+    "asset": "qtum_eth",
+    "time": "2023-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307150192.317402",
+    "asset": "qtum_eth",
+    "time": "2023-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314042600.4184",
+    "asset": "qtum_eth",
+    "time": "2023-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "318910651.858912",
+    "asset": "qtum_eth",
+    "time": "2023-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "308480164.467287",
+    "asset": "qtum_eth",
+    "time": "2023-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "315006266.160974",
+    "asset": "qtum_eth",
+    "time": "2023-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307575477.542764",
+    "asset": "qtum_eth",
+    "time": "2023-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "326858197.684262",
+    "asset": "qtum_eth",
+    "time": "2023-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "316401482.016921",
+    "asset": "qtum_eth",
+    "time": "2023-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321145496.865593",
+    "asset": "qtum_eth",
+    "time": "2023-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311040268.864973",
+    "asset": "qtum_eth",
+    "time": "2023-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "309220774.322735",
+    "asset": "qtum_eth",
+    "time": "2023-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "322778541.547699",
+    "asset": "qtum_eth",
+    "time": "2023-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307682327.402511",
+    "asset": "qtum_eth",
+    "time": "2023-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313179319.324626",
+    "asset": "qtum_eth",
+    "time": "2023-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "304447979.763722",
+    "asset": "qtum_eth",
+    "time": "2023-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311355546.746638",
+    "asset": "qtum_eth",
+    "time": "2023-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "319079666.893918",
+    "asset": "qtum_eth",
+    "time": "2023-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "291428442.659262",
+    "asset": "qtum_eth",
+    "time": "2023-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "306190685.638668",
+    "asset": "qtum_eth",
+    "time": "2023-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307044023.856123",
+    "asset": "qtum_eth",
+    "time": "2023-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313774440.638879",
+    "asset": "qtum_eth",
+    "time": "2023-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "334653380.043566",
+    "asset": "qtum_eth",
+    "time": "2023-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321177902.943944",
+    "asset": "qtum_eth",
+    "time": "2023-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "304525001.553557",
+    "asset": "qtum_eth",
+    "time": "2023-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "305644910.654193",
+    "asset": "qtum_eth",
+    "time": "2023-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303882448.316219",
+    "asset": "qtum_eth",
+    "time": "2023-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "302600168.053582",
+    "asset": "qtum_eth",
+    "time": "2023-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303880513.09722",
+    "asset": "qtum_eth",
+    "time": "2023-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312251231.664728",
+    "asset": "qtum_eth",
+    "time": "2023-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313095993.38494",
+    "asset": "qtum_eth",
+    "time": "2023-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314479467.495965",
+    "asset": "qtum_eth",
+    "time": "2023-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320377834.419062",
+    "asset": "qtum_eth",
+    "time": "2023-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320676278.492198",
+    "asset": "qtum_eth",
+    "time": "2023-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "329699245.876318",
+    "asset": "qtum_eth",
+    "time": "2023-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "343781029.763704",
+    "asset": "qtum_eth",
+    "time": "2023-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "348332361.102309",
+    "asset": "qtum_eth",
+    "time": "2023-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "343570813.500348",
+    "asset": "qtum_eth",
+    "time": "2023-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311448317.154898",
+    "asset": "qtum_eth",
+    "time": "2023-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313370307.7679",
+    "asset": "qtum_eth",
+    "time": "2023-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "318177511.663463",
+    "asset": "qtum_eth",
+    "time": "2023-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "324139637.891636",
+    "asset": "qtum_eth",
+    "time": "2023-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311031570.2067",
+    "asset": "qtum_eth",
+    "time": "2023-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "318263160.578481",
+    "asset": "qtum_eth",
+    "time": "2023-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312702751.938113",
+    "asset": "qtum_eth",
+    "time": "2023-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307543912.837631",
+    "asset": "qtum_eth",
+    "time": "2023-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "304338854.877947",
+    "asset": "qtum_eth",
+    "time": "2023-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314514580.274028",
+    "asset": "qtum_eth",
+    "time": "2023-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "331730915.338792",
+    "asset": "qtum_eth",
+    "time": "2023-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "332780503.632053",
+    "asset": "qtum_eth",
+    "time": "2023-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "331309089.830995",
+    "asset": "qtum_eth",
+    "time": "2023-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320953596.155085",
+    "asset": "qtum_eth",
+    "time": "2023-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "338815535.664521",
+    "asset": "qtum_eth",
+    "time": "2023-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "335700855.625091",
+    "asset": "qtum_eth",
+    "time": "2023-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "361266570.555665",
+    "asset": "qtum_eth",
+    "time": "2023-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "351415270.645295",
+    "asset": "qtum_eth",
+    "time": "2023-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "336575803.257629",
+    "asset": "qtum_eth",
+    "time": "2023-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "352028578.311163",
+    "asset": "qtum_eth",
+    "time": "2023-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "370882275.930738",
+    "asset": "qtum_eth",
+    "time": "2023-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "369210196.215979",
+    "asset": "qtum_eth",
+    "time": "2024-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "370429877.086109",
+    "asset": "qtum_eth",
+    "time": "2024-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "324822422.384011",
+    "asset": "qtum_eth",
+    "time": "2024-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "326018230.010151",
+    "asset": "qtum_eth",
+    "time": "2024-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313882791.637624",
+    "asset": "qtum_eth",
+    "time": "2024-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "316764391.352286",
+    "asset": "qtum_eth",
+    "time": "2024-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296055921.245553",
+    "asset": "qtum_eth",
+    "time": "2024-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310946018.434932",
+    "asset": "qtum_eth",
+    "time": "2024-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "298879235.615997",
+    "asset": "qtum_eth",
+    "time": "2024-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "317290650.263004",
+    "asset": "qtum_eth",
+    "time": "2024-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "331220689.559856",
+    "asset": "qtum_eth",
+    "time": "2024-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312343460.603125",
+    "asset": "qtum_eth",
+    "time": "2024-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312442832.435049",
+    "asset": "qtum_eth",
+    "time": "2024-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "304263151.754508",
+    "asset": "qtum_eth",
+    "time": "2024-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "309874527.283373",
+    "asset": "qtum_eth",
+    "time": "2024-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314441768.592959",
+    "asset": "qtum_eth",
+    "time": "2024-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311809622.233525",
+    "asset": "qtum_eth",
+    "time": "2024-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "298969820.262685",
+    "asset": "qtum_eth",
+    "time": "2024-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "304073212.543928",
+    "asset": "qtum_eth",
+    "time": "2024-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "306213613.328298",
+    "asset": "qtum_eth",
+    "time": "2024-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "302270132.908701",
+    "asset": "qtum_eth",
+    "time": "2024-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "284331610.537355",
+    "asset": "qtum_eth",
+    "time": "2024-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "282310033.509551",
+    "asset": "qtum_eth",
+    "time": "2024-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "287361947.888873",
+    "asset": "qtum_eth",
+    "time": "2024-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "280581074.257041",
+    "asset": "qtum_eth",
+    "time": "2024-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "290318869.509299",
+    "asset": "qtum_eth",
+    "time": "2024-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "292570901.805487",
+    "asset": "qtum_eth",
+    "time": "2024-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274367187.7014",
+    "asset": "qtum_eth",
+    "time": "2023-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "292021003.540636",
+    "asset": "qtum_eth",
+    "time": "2023-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "279113962.977655",
+    "asset": "qtum_eth",
+    "time": "2023-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "278741360.500107",
+    "asset": "qtum_eth",
+    "time": "2023-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270384526.918941",
+    "asset": "qtum_eth",
+    "time": "2023-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "276835272.333566",
+    "asset": "qtum_eth",
+    "time": "2023-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "271205719.347965",
+    "asset": "qtum_eth",
+    "time": "2023-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270512548.309356",
+    "asset": "qtum_eth",
+    "time": "2023-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272035018.003436",
+    "asset": "qtum_eth",
+    "time": "2023-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "275769233.525057",
+    "asset": "qtum_eth",
+    "time": "2023-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270622992.573961",
+    "asset": "qtum_eth",
+    "time": "2023-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "275691491.034942",
+    "asset": "qtum_eth",
+    "time": "2023-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259269132.73649",
+    "asset": "qtum_eth",
+    "time": "2023-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259962805.151741",
+    "asset": "qtum_eth",
+    "time": "2023-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256878557.457992",
+    "asset": "qtum_eth",
+    "time": "2023-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254937314.706884",
+    "asset": "qtum_eth",
+    "time": "2023-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256534240.917094",
+    "asset": "qtum_eth",
+    "time": "2023-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "261863747.594113",
+    "asset": "qtum_eth",
+    "time": "2023-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260296117.219748",
+    "asset": "qtum_eth",
+    "time": "2023-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "258559516.621543",
+    "asset": "qtum_eth",
+    "time": "2023-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273431586.182759",
+    "asset": "qtum_eth",
+    "time": "2023-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270762313.9266",
+    "asset": "qtum_eth",
+    "time": "2023-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262478490.162757",
+    "asset": "qtum_eth",
+    "time": "2023-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254825895.778977",
+    "asset": "qtum_eth",
+    "time": "2023-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "253597359.702272",
+    "asset": "qtum_eth",
+    "time": "2023-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "257605550.95679",
+    "asset": "qtum_eth",
+    "time": "2023-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "253130371.405697",
+    "asset": "qtum_eth",
+    "time": "2023-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260302082.436755",
+    "asset": "qtum_eth",
+    "time": "2023-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260930122.563101",
+    "asset": "qtum_eth",
+    "time": "2023-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260744715.006016",
+    "asset": "qtum_eth",
+    "time": "2023-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262953032.153058",
+    "asset": "qtum_eth",
+    "time": "2023-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260351254.97511",
+    "asset": "qtum_eth",
+    "time": "2023-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256422580.685898",
+    "asset": "qtum_eth",
+    "time": "2023-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255659930.98979",
+    "asset": "qtum_eth",
+    "time": "2023-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "242766630.272018",
+    "asset": "qtum_eth",
+    "time": "2023-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231612838.975573",
+    "asset": "qtum_eth",
+    "time": "2023-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209850191.109039",
+    "asset": "qtum_eth",
+    "time": "2023-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218325494.112746",
+    "asset": "qtum_eth",
+    "time": "2023-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222951399.547922",
+    "asset": "qtum_eth",
+    "time": "2023-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225074314.450565",
+    "asset": "qtum_eth",
+    "time": "2023-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220106821.97827",
+    "asset": "qtum_eth",
+    "time": "2023-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221264078.122878",
+    "asset": "qtum_eth",
+    "time": "2023-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224287948.876705",
+    "asset": "qtum_eth",
+    "time": "2023-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221468633.197894",
+    "asset": "qtum_eth",
+    "time": "2023-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219936766.46364",
+    "asset": "qtum_eth",
+    "time": "2023-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216693342.28503",
+    "asset": "qtum_eth",
+    "time": "2023-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216670263.698422",
+    "asset": "qtum_eth",
+    "time": "2023-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216170569.161921",
+    "asset": "qtum_eth",
+    "time": "2023-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "226600668.440974",
+    "asset": "qtum_eth",
+    "time": "2023-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222919814.541178",
+    "asset": "qtum_eth",
+    "time": "2023-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216042668.460137",
+    "asset": "qtum_eth",
+    "time": "2023-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206716380.535441",
+    "asset": "qtum_eth",
+    "time": "2023-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208741624.885833",
+    "asset": "qtum_eth",
+    "time": "2023-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "210596247.898062",
+    "asset": "qtum_eth",
+    "time": "2023-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211108015.085855",
+    "asset": "qtum_eth",
+    "time": "2023-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218389201.053757",
+    "asset": "qtum_eth",
+    "time": "2023-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215999896.854517",
+    "asset": "qtum_eth",
+    "time": "2023-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218842328.758423",
+    "asset": "qtum_eth",
+    "time": "2023-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214394083.921523",
+    "asset": "qtum_eth",
+    "time": "2023-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "213591387.970742",
+    "asset": "qtum_eth",
+    "time": "2023-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208092668.623867",
+    "asset": "qtum_eth",
+    "time": "2023-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "201007722.560728",
+    "asset": "qtum_eth",
+    "time": "2023-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205888593.668579",
+    "asset": "qtum_eth",
+    "time": "2023-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209717977.635163",
+    "asset": "qtum_eth",
+    "time": "2023-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215758959.256068",
+    "asset": "qtum_eth",
+    "time": "2023-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219771935.288982",
+    "asset": "qtum_eth",
+    "time": "2023-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220928775.856958",
+    "asset": "qtum_eth",
+    "time": "2023-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211675935.937972",
+    "asset": "qtum_eth",
+    "time": "2023-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219444684.380903",
+    "asset": "qtum_eth",
+    "time": "2023-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223080175.487717",
+    "asset": "qtum_eth",
+    "time": "2023-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222730883.43079",
+    "asset": "qtum_eth",
+    "time": "2023-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217524673.153881",
+    "asset": "qtum_eth",
+    "time": "2023-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222252985.981177",
+    "asset": "qtum_eth",
+    "time": "2023-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "220376099.577823",
+    "asset": "qtum_eth",
+    "time": "2023-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "217022764.463348",
+    "asset": "qtum_eth",
+    "time": "2023-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215978355.615669",
+    "asset": "qtum_eth",
+    "time": "2023-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212950782.933453",
+    "asset": "qtum_eth",
+    "time": "2023-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215685042.015683",
+    "asset": "qtum_eth",
+    "time": "2023-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223181274.777815",
+    "asset": "qtum_eth",
+    "time": "2023-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222736631.354303",
+    "asset": "qtum_eth",
+    "time": "2023-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "223177773.260141",
+    "asset": "qtum_eth",
+    "time": "2023-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "238106426.441177",
+    "asset": "qtum_eth",
+    "time": "2023-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227694216.891608",
+    "asset": "qtum_eth",
+    "time": "2023-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222071202.442791",
+    "asset": "qtum_eth",
+    "time": "2023-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224203866.703605",
+    "asset": "qtum_eth",
+    "time": "2023-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "224059950.025574",
+    "asset": "qtum_eth",
+    "time": "2023-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "226780353.958324",
+    "asset": "qtum_eth",
+    "time": "2023-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227440919.135999",
+    "asset": "qtum_eth",
+    "time": "2023-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225739559.111896",
+    "asset": "qtum_eth",
+    "time": "2023-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212798651.072035",
+    "asset": "qtum_eth",
+    "time": "2023-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212911054.452339",
+    "asset": "qtum_eth",
+    "time": "2023-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "210035786.363671",
+    "asset": "qtum_eth",
+    "time": "2023-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212194749.118668",
+    "asset": "qtum_eth",
+    "time": "2023-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214223415.441914",
+    "asset": "qtum_eth",
+    "time": "2023-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "215336607.622473",
+    "asset": "qtum_eth",
+    "time": "2023-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216315420.956266",
+    "asset": "qtum_eth",
+    "time": "2023-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "221034181.453539",
+    "asset": "qtum_eth",
+    "time": "2023-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "218956597.543663",
+    "asset": "qtum_eth",
+    "time": "2023-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "216010822.71594",
+    "asset": "qtum_eth",
+    "time": "2023-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214435464.251472",
+    "asset": "qtum_eth",
+    "time": "2023-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310960677.265129",
+    "asset": "qtum_eth",
+    "time": "2023-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312411590.01251",
+    "asset": "qtum_eth",
+    "time": "2023-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314621827.501716",
+    "asset": "qtum_eth",
+    "time": "2023-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321152897.489172",
+    "asset": "qtum_eth",
+    "time": "2023-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "311296573.730519",
+    "asset": "qtum_eth",
+    "time": "2023-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313086076.19241",
+    "asset": "qtum_eth",
+    "time": "2023-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "313776384.975805",
+    "asset": "qtum_eth",
+    "time": "2023-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321746603.424899",
+    "asset": "qtum_eth",
+    "time": "2023-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "322726895.441302",
+    "asset": "qtum_eth",
+    "time": "2023-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320450715.27138",
+    "asset": "qtum_eth",
+    "time": "2023-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "323966582.421206",
+    "asset": "qtum_eth",
+    "time": "2023-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "333244555.901259",
+    "asset": "qtum_eth",
+    "time": "2023-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "334560199.273569",
+    "asset": "qtum_eth",
+    "time": "2023-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "341570057.938993",
+    "asset": "qtum_eth",
+    "time": "2023-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "328411760.172483",
+    "asset": "qtum_eth",
+    "time": "2023-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "332632509.0522",
+    "asset": "qtum_eth",
+    "time": "2023-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "306438726.065408",
+    "asset": "qtum_eth",
+    "time": "2023-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "300778839.281417",
+    "asset": "qtum_eth",
+    "time": "2023-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "287685648.986229",
+    "asset": "qtum_eth",
+    "time": "2023-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296893768.093773",
+    "asset": "qtum_eth",
+    "time": "2023-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "291507226.039129",
+    "asset": "qtum_eth",
+    "time": "2023-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "286703436.992563",
+    "asset": "qtum_eth",
+    "time": "2023-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "291819804.452042",
+    "asset": "qtum_eth",
+    "time": "2023-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "287382471.913253",
+    "asset": "qtum_eth",
+    "time": "2023-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "290204284.947735",
+    "asset": "qtum_eth",
+    "time": "2023-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "287206306.962001",
+    "asset": "qtum_eth",
+    "time": "2023-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "289537671.039249",
+    "asset": "qtum_eth",
+    "time": "2023-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "285032000.206149",
+    "asset": "qtum_eth",
+    "time": "2023-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "280047772.562259",
+    "asset": "qtum_eth",
+    "time": "2023-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "277605019.25064",
+    "asset": "qtum_eth",
+    "time": "2023-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "284063173.286668",
+    "asset": "qtum_eth",
+    "time": "2023-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "281106388.883854",
+    "asset": "qtum_eth",
+    "time": "2023-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "286859441.14",
+    "asset": "qtum_eth",
+    "time": "2023-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "277841034.649488",
+    "asset": "qtum_eth",
+    "time": "2023-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273657472.161946",
+    "asset": "qtum_eth",
+    "time": "2023-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "257398810.941167",
+    "asset": "qtum_eth",
+    "time": "2023-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "261241526.224043",
+    "asset": "qtum_eth",
+    "time": "2023-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "265010545.080158",
+    "asset": "qtum_eth",
+    "time": "2023-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254600393.22156",
+    "asset": "qtum_eth",
+    "time": "2023-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "259735037.106789",
+    "asset": "qtum_eth",
+    "time": "2023-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254314276.39756",
+    "asset": "qtum_eth",
+    "time": "2023-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256189790.576666",
+    "asset": "qtum_eth",
+    "time": "2023-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262141218.520281",
+    "asset": "qtum_eth",
+    "time": "2023-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260900506.605445",
+    "asset": "qtum_eth",
+    "time": "2023-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "267709151.74615",
+    "asset": "qtum_eth",
+    "time": "2023-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262919569.395936",
+    "asset": "qtum_eth",
+    "time": "2023-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "265077704.31374",
+    "asset": "qtum_eth",
+    "time": "2023-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "264375654.841635",
+    "asset": "qtum_eth",
+    "time": "2023-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256281712.366385",
+    "asset": "qtum_eth",
+    "time": "2023-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263725254.506857",
+    "asset": "qtum_eth",
+    "time": "2023-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270781978.115646",
+    "asset": "qtum_eth",
+    "time": "2023-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273876512.035213",
+    "asset": "qtum_eth",
+    "time": "2023-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "258494267.608456",
+    "asset": "qtum_eth",
+    "time": "2023-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260661465.318093",
+    "asset": "qtum_eth",
+    "time": "2023-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "271231455.384692",
+    "asset": "qtum_eth",
+    "time": "2023-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "278019314.157275",
+    "asset": "qtum_eth",
+    "time": "2023-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273919655.295349",
+    "asset": "qtum_eth",
+    "time": "2023-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "270552586.173346",
+    "asset": "qtum_eth",
+    "time": "2023-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "262718194.902429",
+    "asset": "qtum_eth",
+    "time": "2023-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "258427208.35454",
+    "asset": "qtum_eth",
+    "time": "2023-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "264968059.879214",
+    "asset": "qtum_eth",
+    "time": "2023-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "267225816.271346",
+    "asset": "qtum_eth",
+    "time": "2023-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "268352569.168187",
+    "asset": "qtum_eth",
+    "time": "2023-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "246862358.871371",
+    "asset": "qtum_eth",
+    "time": "2023-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251362526.373744",
+    "asset": "qtum_eth",
+    "time": "2023-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237184802.856148",
+    "asset": "qtum_eth",
+    "time": "2023-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "236188047.969233",
+    "asset": "qtum_eth",
+    "time": "2023-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "233709860.222773",
+    "asset": "qtum_eth",
+    "time": "2023-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209077430.465227",
+    "asset": "qtum_eth",
+    "time": "2023-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "210932908.831113",
+    "asset": "qtum_eth",
+    "time": "2023-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212819418.023865",
+    "asset": "qtum_eth",
+    "time": "2023-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "212063038.52114",
+    "asset": "qtum_eth",
+    "time": "2023-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "200588012.742313",
+    "asset": "qtum_eth",
+    "time": "2023-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205170341.220661",
+    "asset": "qtum_eth",
+    "time": "2023-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206994454.689326",
+    "asset": "qtum_eth",
+    "time": "2023-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "208595112.38308",
+    "asset": "qtum_eth",
+    "time": "2023-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "204677729.771475",
+    "asset": "qtum_eth",
+    "time": "2023-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "205223101.146015",
+    "asset": "qtum_eth",
+    "time": "2023-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "211933554.574502",
+    "asset": "qtum_eth",
+    "time": "2023-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225390176.930163",
+    "asset": "qtum_eth",
+    "time": "2023-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "225409418.762484",
+    "asset": "qtum_eth",
+    "time": "2023-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "239832556.677911",
+    "asset": "qtum_eth",
+    "time": "2023-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "241588355.551009",
+    "asset": "qtum_eth",
+    "time": "2023-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "241265356.54924",
+    "asset": "qtum_eth",
+    "time": "2023-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240732360.426681",
+    "asset": "qtum_eth",
+    "time": "2023-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "247922629.671604",
+    "asset": "qtum_eth",
+    "time": "2023-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "227892627.253773",
+    "asset": "qtum_eth",
+    "time": "2023-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231753562.0597",
+    "asset": "qtum_eth",
+    "time": "2023-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "267621672.344275",
+    "asset": "qtum_eth",
+    "time": "2023-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "299632768.683392",
+    "asset": "qtum_eth",
+    "time": "2023-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "284923588.562238",
+    "asset": "qtum_eth",
+    "time": "2023-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272999505.335675",
+    "asset": "qtum_eth",
+    "time": "2023-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "283226955.93961",
+    "asset": "qtum_eth",
+    "time": "2023-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272088459.019882",
+    "asset": "qtum_eth",
+    "time": "2023-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274882670.730256",
+    "asset": "qtum_eth",
+    "time": "2023-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "276266436.695872",
+    "asset": "qtum_eth",
+    "time": "2023-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "283549595.779048",
+    "asset": "qtum_eth",
+    "time": "2023-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274917794.530185",
+    "asset": "qtum_eth",
+    "time": "2023-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "278967140.677412",
+    "asset": "qtum_eth",
+    "time": "2023-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "279319330.822747",
+    "asset": "qtum_eth",
+    "time": "2023-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "187788154.518438",
+    "asset": "qtum_eth",
+    "time": "2023-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "190832817.568135",
+    "asset": "qtum_eth",
+    "time": "2023-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "188935231.878342",
+    "asset": "qtum_eth",
+    "time": "2023-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "194397443.103258",
+    "asset": "qtum_eth",
+    "time": "2023-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "192872147.242153",
+    "asset": "qtum_eth",
+    "time": "2023-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196127562.889488",
+    "asset": "qtum_eth",
+    "time": "2023-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "196217211.268867",
+    "asset": "qtum_eth",
+    "time": "2023-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "201228451.789748",
+    "asset": "qtum_eth",
+    "time": "2023-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "206397879.580047",
+    "asset": "qtum_eth",
+    "time": "2023-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "209736792.476674",
+    "asset": "qtum_eth",
+    "time": "2023-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "214278683.540773",
+    "asset": "qtum_eth",
+    "time": "2023-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "219217921.672559",
+    "asset": "qtum_eth",
+    "time": "2023-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "229966472.475892",
+    "asset": "qtum_eth",
+    "time": "2023-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "240294739.436059",
+    "asset": "qtum_eth",
+    "time": "2023-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "241977141.809006",
+    "asset": "qtum_eth",
+    "time": "2023-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237527759.402932",
+    "asset": "qtum_eth",
+    "time": "2023-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "237164258.792652",
+    "asset": "qtum_eth",
+    "time": "2023-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "222640038.79989",
+    "asset": "qtum_eth",
+    "time": "2023-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "231224117.361381",
+    "asset": "qtum_eth",
+    "time": "2023-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "251587478.085291",
+    "asset": "qtum_eth",
+    "time": "2023-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "249610463.891381",
+    "asset": "qtum_eth",
+    "time": "2023-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "254771124.770735",
+    "asset": "qtum_eth",
+    "time": "2023-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "260568322.4764",
+    "asset": "qtum_eth",
+    "time": "2023-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "248319984.168226",
+    "asset": "qtum_eth",
+    "time": "2023-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "256455988.735041",
+    "asset": "qtum_eth",
+    "time": "2023-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263837676.907107",
+    "asset": "qtum_eth",
+    "time": "2023-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "271829164.514196",
+    "asset": "qtum_eth",
+    "time": "2023-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263685716.832728",
+    "asset": "qtum_eth",
+    "time": "2023-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "272592003.099883",
+    "asset": "qtum_eth",
+    "time": "2023-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "275099723.859323",
+    "asset": "qtum_eth",
+    "time": "2023-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "268535201.530541",
+    "asset": "qtum_eth",
+    "time": "2023-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274886905.652677",
+    "asset": "qtum_eth",
+    "time": "2023-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "273616933.971159",
+    "asset": "qtum_eth",
+    "time": "2023-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "279010168.366382",
+    "asset": "qtum_eth",
+    "time": "2023-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "283155374.16128",
+    "asset": "qtum_eth",
+    "time": "2023-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "282153523.554048",
+    "asset": "qtum_eth",
+    "time": "2023-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "282993072.201664",
+    "asset": "qtum_eth",
+    "time": "2023-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296715703.187854",
+    "asset": "qtum_eth",
+    "time": "2023-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "292779872.763893",
+    "asset": "qtum_eth",
+    "time": "2023-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "266185249.037321",
+    "asset": "qtum_eth",
+    "time": "2023-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "275237371.654909",
+    "asset": "qtum_eth",
+    "time": "2023-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "274868228.042273",
+    "asset": "qtum_eth",
+    "time": "2023-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "268266060.569084",
+    "asset": "qtum_eth",
+    "time": "2023-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "263090591.866806",
+    "asset": "qtum_eth",
+    "time": "2023-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "268380873.996405",
+    "asset": "qtum_eth",
+    "time": "2023-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "286970825.608355",
+    "asset": "qtum_eth",
+    "time": "2023-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "281768213.345474",
+    "asset": "qtum_eth",
+    "time": "2023-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307660438.560823",
+    "asset": "qtum_eth",
+    "time": "2023-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307608910.495729",
+    "asset": "qtum_eth",
+    "time": "2023-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320702459.700213",
+    "asset": "qtum_eth",
+    "time": "2023-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "370683396.805019",
+    "asset": "qtum_eth",
+    "time": "2023-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "362449794.368682",
+    "asset": "qtum_eth",
+    "time": "2023-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "366577406.13343",
+    "asset": "qtum_eth",
+    "time": "2023-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "347837036.295363",
+    "asset": "qtum_eth",
+    "time": "2023-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "320905698.348411",
+    "asset": "qtum_eth",
+    "time": "2023-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "326672131.956011",
+    "asset": "qtum_eth",
+    "time": "2023-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "341888608.608922",
+    "asset": "qtum_eth",
+    "time": "2023-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "347349296.079739",
+    "asset": "qtum_eth",
+    "time": "2023-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "322414439.303236",
+    "asset": "qtum_eth",
+    "time": "2023-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "337921612.660583",
+    "asset": "qtum_eth",
+    "time": "2023-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "324815593.345646",
+    "asset": "qtum_eth",
+    "time": "2023-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "304861569.455447",
+    "asset": "qtum_eth",
+    "time": "2023-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "297965436.092775",
+    "asset": "qtum_eth",
+    "time": "2023-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "294719099.651899",
+    "asset": "qtum_eth",
+    "time": "2023-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303158073.142887",
+    "asset": "qtum_eth",
+    "time": "2023-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "293090906.874926",
+    "asset": "qtum_eth",
+    "time": "2023-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "277025678.884121",
+    "asset": "qtum_eth",
+    "time": "2023-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "255669547.86752",
+    "asset": "qtum_eth",
+    "time": "2023-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "252109786.817023",
+    "asset": "qtum_eth",
+    "time": "2023-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "249462039.250198",
+    "asset": "qtum_eth",
+    "time": "2023-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "271587343.042197",
+    "asset": "qtum_eth",
+    "time": "2023-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "285900062.598098",
+    "asset": "qtum_eth",
+    "time": "2023-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "295196501.391526",
+    "asset": "qtum_eth",
+    "time": "2023-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "276110558.713069",
+    "asset": "qtum_eth",
+    "time": "2023-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "281376336.651358",
+    "asset": "qtum_eth",
+    "time": "2023-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "308339984.06854",
+    "asset": "qtum_eth",
+    "time": "2023-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "296504722.344029",
+    "asset": "qtum_eth",
+    "time": "2023-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "358182690.47539",
+    "asset": "qtum_eth",
+    "time": "2023-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "326054544.698737",
+    "asset": "qtum_eth",
+    "time": "2023-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "322699644.116769",
+    "asset": "qtum_eth",
+    "time": "2023-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "302512620.50324",
+    "asset": "qtum_eth",
+    "time": "2023-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "325962718.831238",
+    "asset": "qtum_eth",
+    "time": "2023-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "321035031.722084",
+    "asset": "qtum_eth",
+    "time": "2023-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "308487268.940257",
+    "asset": "qtum_eth",
+    "time": "2023-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "312764430.763866",
+    "asset": "qtum_eth",
+    "time": "2023-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "303176292.884821",
+    "asset": "qtum_eth",
+    "time": "2023-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307048620.669704",
+    "asset": "qtum_eth",
+    "time": "2023-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "317033303.158805",
+    "asset": "qtum_eth",
+    "time": "2023-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "307824340.329948",
+    "asset": "qtum_eth",
+    "time": "2023-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310972736.606331",
+    "asset": "qtum_eth",
+    "time": "2023-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "314141419.407657",
+    "asset": "qtum_eth",
+    "time": "2023-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "310110235.845568",
+    "asset": "qtum_eth",
+    "time": "2023-04-02T00:00:00.000000000Z"
+  }
+]
