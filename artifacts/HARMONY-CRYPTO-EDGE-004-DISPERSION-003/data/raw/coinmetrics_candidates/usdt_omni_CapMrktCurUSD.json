@@ -1,0 +1,6962 @@
+[
+  {
+    "CapMrktCurUSD": "887204889.668169624",
+    "asset": "usdt_omni",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887433728.18297124",
+    "asset": "usdt_omni",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887432628.016689456",
+    "asset": "usdt_omni",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887383624.061701008",
+    "asset": "usdt_omni",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887391900.227243904",
+    "asset": "usdt_omni",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887441372.024147016",
+    "asset": "usdt_omni",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887603792.790711768",
+    "asset": "usdt_omni",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887333299.85273256",
+    "asset": "usdt_omni",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887170805.798466648",
+    "asset": "usdt_omni",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887222751.040865232",
+    "asset": "usdt_omni",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887188208.632888416",
+    "asset": "usdt_omni",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887196475.010706168",
+    "asset": "usdt_omni",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886812697.132670688",
+    "asset": "usdt_omni",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886786365.0507324",
+    "asset": "usdt_omni",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887303297.824695768",
+    "asset": "usdt_omni",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887131998.58855284",
+    "asset": "usdt_omni",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887160721.692242184",
+    "asset": "usdt_omni",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886997380.71874416",
+    "asset": "usdt_omni",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887184857.864606376",
+    "asset": "usdt_omni",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887399006.838674304",
+    "asset": "usdt_omni",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887152276.75098972",
+    "asset": "usdt_omni",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887198903.901123096",
+    "asset": "usdt_omni",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887554369.211215872",
+    "asset": "usdt_omni",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887238343.019721456",
+    "asset": "usdt_omni",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887364156.104261448",
+    "asset": "usdt_omni",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887135085.032843904",
+    "asset": "usdt_omni",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887192877.503997096",
+    "asset": "usdt_omni",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887001460.788740232",
+    "asset": "usdt_omni",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887165118.0581928",
+    "asset": "usdt_omni",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887100031.012613688",
+    "asset": "usdt_omni",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887082226.60657884",
+    "asset": "usdt_omni",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887045508.9476322",
+    "asset": "usdt_omni",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887173663.646773632",
+    "asset": "usdt_omni",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887444571.410256096",
+    "asset": "usdt_omni",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887480784.13489404",
+    "asset": "usdt_omni",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887769157.896828792",
+    "asset": "usdt_omni",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887890034.605120128",
+    "asset": "usdt_omni",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887772508.844750568",
+    "asset": "usdt_omni",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888026304.80532576",
+    "asset": "usdt_omni",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887907793.980889872",
+    "asset": "usdt_omni",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887977604.207124864",
+    "asset": "usdt_omni",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888089861.01443016",
+    "asset": "usdt_omni",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888214600.70609616",
+    "asset": "usdt_omni",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887900126.041388544",
+    "asset": "usdt_omni",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888021133.10415048",
+    "asset": "usdt_omni",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888151113.96611976",
+    "asset": "usdt_omni",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887789845.693455216",
+    "asset": "usdt_omni",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887455771.584063792",
+    "asset": "usdt_omni",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887622354.873890592",
+    "asset": "usdt_omni",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887830751.033810352",
+    "asset": "usdt_omni",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888156124.93714608",
+    "asset": "usdt_omni",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888063063.35491416",
+    "asset": "usdt_omni",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887874925.391038992",
+    "asset": "usdt_omni",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887797805.007965424",
+    "asset": "usdt_omni",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887924315.4884052",
+    "asset": "usdt_omni",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887823059.886709632",
+    "asset": "usdt_omni",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887669381.654997408",
+    "asset": "usdt_omni",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887853282.973753248",
+    "asset": "usdt_omni",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887817605.079398544",
+    "asset": "usdt_omni",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887570900.190162288",
+    "asset": "usdt_omni",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887760867.08878128",
+    "asset": "usdt_omni",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887301416.684416848",
+    "asset": "usdt_omni",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887315822.673132168",
+    "asset": "usdt_omni",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887237224.905048696",
+    "asset": "usdt_omni",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887824191.972955056",
+    "asset": "usdt_omni",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887726632.375144344",
+    "asset": "usdt_omni",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887715443.551504008",
+    "asset": "usdt_omni",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887681225.768865792",
+    "asset": "usdt_omni",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887845557.516504576",
+    "asset": "usdt_omni",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887691883.297306488",
+    "asset": "usdt_omni",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887680589.529700056",
+    "asset": "usdt_omni",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887886014.378178432",
+    "asset": "usdt_omni",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887795680.425812064",
+    "asset": "usdt_omni",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887764469.244258264",
+    "asset": "usdt_omni",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887551857.70398024",
+    "asset": "usdt_omni",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887646366.426532584",
+    "asset": "usdt_omni",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887373383.034835152",
+    "asset": "usdt_omni",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887667388.5517038",
+    "asset": "usdt_omni",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887813216.084169384",
+    "asset": "usdt_omni",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887831732.827320288",
+    "asset": "usdt_omni",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887870515.703125008",
+    "asset": "usdt_omni",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887898591.223346496",
+    "asset": "usdt_omni",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887895507.2747892",
+    "asset": "usdt_omni",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887503111.420092096",
+    "asset": "usdt_omni",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887316728.094449856",
+    "asset": "usdt_omni",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887175570.38252568",
+    "asset": "usdt_omni",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887102842.179779208",
+    "asset": "usdt_omni",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887048616.391776168",
+    "asset": "usdt_omni",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886891871.81303772",
+    "asset": "usdt_omni",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887163336.494705856",
+    "asset": "usdt_omni",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886840907.086128816",
+    "asset": "usdt_omni",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886899378.530310216",
+    "asset": "usdt_omni",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886747539.5025228",
+    "asset": "usdt_omni",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886836858.130818912",
+    "asset": "usdt_omni",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886914381.264737592",
+    "asset": "usdt_omni",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886950415.825212264",
+    "asset": "usdt_omni",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887102255.628847944",
+    "asset": "usdt_omni",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887294050.483269792",
+    "asset": "usdt_omni",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886856760.638609136",
+    "asset": "usdt_omni",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886854967.67580936",
+    "asset": "usdt_omni",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887950734.08623344",
+    "asset": "usdt_omni",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888102750.31050744",
+    "asset": "usdt_omni",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888141402.48624528",
+    "asset": "usdt_omni",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888369712.57563504",
+    "asset": "usdt_omni",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888429074.59611312",
+    "asset": "usdt_omni",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888049674.46398072",
+    "asset": "usdt_omni",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888201446.290506",
+    "asset": "usdt_omni",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888461013.9875148",
+    "asset": "usdt_omni",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888257206.75663248",
+    "asset": "usdt_omni",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888150675.77926968",
+    "asset": "usdt_omni",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888303001.47880752",
+    "asset": "usdt_omni",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888383026.88105976",
+    "asset": "usdt_omni",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888318131.387274",
+    "asset": "usdt_omni",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888298648.80184152",
+    "asset": "usdt_omni",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888128345.44576032",
+    "asset": "usdt_omni",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888324452.11584504",
+    "asset": "usdt_omni",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888286002.4263072",
+    "asset": "usdt_omni",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888441625.60238328",
+    "asset": "usdt_omni",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888245112.7225416",
+    "asset": "usdt_omni",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888213037.26488904",
+    "asset": "usdt_omni",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887949521.614857168",
+    "asset": "usdt_omni",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887778654.79496292",
+    "asset": "usdt_omni",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887624273.52035556",
+    "asset": "usdt_omni",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887547568.851011688",
+    "asset": "usdt_omni",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887948546.794884936",
+    "asset": "usdt_omni",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888027813.2667588",
+    "asset": "usdt_omni",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887898837.07646328",
+    "asset": "usdt_omni",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887830583.93403384",
+    "asset": "usdt_omni",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887900964.234202032",
+    "asset": "usdt_omni",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887966026.082782032",
+    "asset": "usdt_omni",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887925175.0306248",
+    "asset": "usdt_omni",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887956391.239490256",
+    "asset": "usdt_omni",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887824631.98841292",
+    "asset": "usdt_omni",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887844658.1489262",
+    "asset": "usdt_omni",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887781258.0203628",
+    "asset": "usdt_omni",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887863618.349482464",
+    "asset": "usdt_omni",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887674410.635141472",
+    "asset": "usdt_omni",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887962492.62448932",
+    "asset": "usdt_omni",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887425228.181197968",
+    "asset": "usdt_omni",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887574458.001879864",
+    "asset": "usdt_omni",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887868239.987392512",
+    "asset": "usdt_omni",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887371277.878448136",
+    "asset": "usdt_omni",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887179803.267161256",
+    "asset": "usdt_omni",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887138760.010606152",
+    "asset": "usdt_omni",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887152419.46411596",
+    "asset": "usdt_omni",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886939099.968702624",
+    "asset": "usdt_omni",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886872293.156512056",
+    "asset": "usdt_omni",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886900471.306503264",
+    "asset": "usdt_omni",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887138303.11266456",
+    "asset": "usdt_omni",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886698322.383970848",
+    "asset": "usdt_omni",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886527745.317815928",
+    "asset": "usdt_omni",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886732960.740697536",
+    "asset": "usdt_omni",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886774031.627710968",
+    "asset": "usdt_omni",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886682203.77445644",
+    "asset": "usdt_omni",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886655961.496418136",
+    "asset": "usdt_omni",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886766744.336217936",
+    "asset": "usdt_omni",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886724043.20856768",
+    "asset": "usdt_omni",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886667017.31037552",
+    "asset": "usdt_omni",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886990842.311111856",
+    "asset": "usdt_omni",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887702526.100557336",
+    "asset": "usdt_omni",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887473652.322817512",
+    "asset": "usdt_omni",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887504432.205328752",
+    "asset": "usdt_omni",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887859103.122792456",
+    "asset": "usdt_omni",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887347254.924218256",
+    "asset": "usdt_omni",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887148369.02498292",
+    "asset": "usdt_omni",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886992036.122821584",
+    "asset": "usdt_omni",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887459808.70348632",
+    "asset": "usdt_omni",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887596677.935353104",
+    "asset": "usdt_omni",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887466462.557816808",
+    "asset": "usdt_omni",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887336990.436697872",
+    "asset": "usdt_omni",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887094398.683427064",
+    "asset": "usdt_omni",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887167435.78322328",
+    "asset": "usdt_omni",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886966790.864593008",
+    "asset": "usdt_omni",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887190482.85053916",
+    "asset": "usdt_omni",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886942842.093533256",
+    "asset": "usdt_omni",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886907086.846082856",
+    "asset": "usdt_omni",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886924618.872037104",
+    "asset": "usdt_omni",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886816823.013850608",
+    "asset": "usdt_omni",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886551268.502503176",
+    "asset": "usdt_omni",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886598411.91843708",
+    "asset": "usdt_omni",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886629394.329113424",
+    "asset": "usdt_omni",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886628544.510173256",
+    "asset": "usdt_omni",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886532496.912966648",
+    "asset": "usdt_omni",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886778876.183738424",
+    "asset": "usdt_omni",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886519091.97307068",
+    "asset": "usdt_omni",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886969951.291898112",
+    "asset": "usdt_omni",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886897434.549113784",
+    "asset": "usdt_omni",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887112472.111154928",
+    "asset": "usdt_omni",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887196798.431548248",
+    "asset": "usdt_omni",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887131461.082936944",
+    "asset": "usdt_omni",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887451071.545699344",
+    "asset": "usdt_omni",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887411216.58252804",
+    "asset": "usdt_omni",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887255276.33009016",
+    "asset": "usdt_omni",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887283989.698512072",
+    "asset": "usdt_omni",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887418624.239008488",
+    "asset": "usdt_omni",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887442108.412523736",
+    "asset": "usdt_omni",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887385132.400224192",
+    "asset": "usdt_omni",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886834951.5265104",
+    "asset": "usdt_omni",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887373611.210404512",
+    "asset": "usdt_omni",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887430051.582477792",
+    "asset": "usdt_omni",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887271887.546244384",
+    "asset": "usdt_omni",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886788351.938166312",
+    "asset": "usdt_omni",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887083903.1979492",
+    "asset": "usdt_omni",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886467966.097777248",
+    "asset": "usdt_omni",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886850555.718595392",
+    "asset": "usdt_omni",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887691212.441913408",
+    "asset": "usdt_omni",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887576998.07376048",
+    "asset": "usdt_omni",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887627638.401650016",
+    "asset": "usdt_omni",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888049495.5497052",
+    "asset": "usdt_omni",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887611674.944175816",
+    "asset": "usdt_omni",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887107768.757924664",
+    "asset": "usdt_omni",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887360475.384684984",
+    "asset": "usdt_omni",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886709209.63956732",
+    "asset": "usdt_omni",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886699157.190491352",
+    "asset": "usdt_omni",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886607959.874879568",
+    "asset": "usdt_omni",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886991474.655005208",
+    "asset": "usdt_omni",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887749470.166603344",
+    "asset": "usdt_omni",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888064269.01165056",
+    "asset": "usdt_omni",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887592163.9002552",
+    "asset": "usdt_omni",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887584203.358693272",
+    "asset": "usdt_omni",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887606568.567676248",
+    "asset": "usdt_omni",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887691101.562474504",
+    "asset": "usdt_omni",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887350573.595335368",
+    "asset": "usdt_omni",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886945303.344011064",
+    "asset": "usdt_omni",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887250233.026254792",
+    "asset": "usdt_omni",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887045357.758950888",
+    "asset": "usdt_omni",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886871196.193364376",
+    "asset": "usdt_omni",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886606983.754916184",
+    "asset": "usdt_omni",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886923008.971280928",
+    "asset": "usdt_omni",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886999002.2145852",
+    "asset": "usdt_omni",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886916865.752296392",
+    "asset": "usdt_omni",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886638127.306437936",
+    "asset": "usdt_omni",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886605193.575071112",
+    "asset": "usdt_omni",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886435220.822421768",
+    "asset": "usdt_omni",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886876796.760192264",
+    "asset": "usdt_omni",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887311914.336619152",
+    "asset": "usdt_omni",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887271230.778388776",
+    "asset": "usdt_omni",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887011830.914494416",
+    "asset": "usdt_omni",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "885968643.833944056",
+    "asset": "usdt_omni",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886476770.267666376",
+    "asset": "usdt_omni",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887546168.590217256",
+    "asset": "usdt_omni",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887452435.24560948",
+    "asset": "usdt_omni",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887501124.027452784",
+    "asset": "usdt_omni",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887547263.364732648",
+    "asset": "usdt_omni",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887415361.477917384",
+    "asset": "usdt_omni",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887321610.51950016",
+    "asset": "usdt_omni",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887146635.140641992",
+    "asset": "usdt_omni",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887479818.47181264",
+    "asset": "usdt_omni",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887548035.603765936",
+    "asset": "usdt_omni",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887426223.46110756",
+    "asset": "usdt_omni",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887528915.76147432",
+    "asset": "usdt_omni",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887532842.825267088",
+    "asset": "usdt_omni",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887477996.704289976",
+    "asset": "usdt_omni",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887595768.144220272",
+    "asset": "usdt_omni",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887683354.016029584",
+    "asset": "usdt_omni",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887810912.68445436",
+    "asset": "usdt_omni",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887604997.106018496",
+    "asset": "usdt_omni",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887740733.92865028",
+    "asset": "usdt_omni",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888097635.06410088",
+    "asset": "usdt_omni",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888075523.05762816",
+    "asset": "usdt_omni",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888069503.54133888",
+    "asset": "usdt_omni",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887931281.673027864",
+    "asset": "usdt_omni",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888012869.4171672",
+    "asset": "usdt_omni",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887948457.05784336",
+    "asset": "usdt_omni",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888144447.02754528",
+    "asset": "usdt_omni",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888018482.71965912",
+    "asset": "usdt_omni",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888201735.69127776",
+    "asset": "usdt_omni",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888102124.20011568",
+    "asset": "usdt_omni",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887983356.775490616",
+    "asset": "usdt_omni",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887983395.277724064",
+    "asset": "usdt_omni",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887995330.042814928",
+    "asset": "usdt_omni",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888087393.61341216",
+    "asset": "usdt_omni",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888156871.29760296",
+    "asset": "usdt_omni",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888103671.42878712",
+    "asset": "usdt_omni",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887981359.649302152",
+    "asset": "usdt_omni",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888152792.8220544",
+    "asset": "usdt_omni",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888119207.42626032",
+    "asset": "usdt_omni",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888133403.67304752",
+    "asset": "usdt_omni",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888123246.28107816",
+    "asset": "usdt_omni",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888337589.66947848",
+    "asset": "usdt_omni",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887950228.436120376",
+    "asset": "usdt_omni",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888035730.20498016",
+    "asset": "usdt_omni",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887886860.248496064",
+    "asset": "usdt_omni",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887972963.639372496",
+    "asset": "usdt_omni",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887770479.421907088",
+    "asset": "usdt_omni",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887688404.681891112",
+    "asset": "usdt_omni",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887633112.034759128",
+    "asset": "usdt_omni",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887683889.201680656",
+    "asset": "usdt_omni",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887329855.378504488",
+    "asset": "usdt_omni",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887307695.047717344",
+    "asset": "usdt_omni",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887277731.125431768",
+    "asset": "usdt_omni",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887243651.709088752",
+    "asset": "usdt_omni",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887216160.144399192",
+    "asset": "usdt_omni",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887104393.425776856",
+    "asset": "usdt_omni",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887948556.023408952",
+    "asset": "usdt_omni",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887927514.231964584",
+    "asset": "usdt_omni",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887892615.293060472",
+    "asset": "usdt_omni",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887797095.23217348",
+    "asset": "usdt_omni",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887675069.242255536",
+    "asset": "usdt_omni",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887974340.732710464",
+    "asset": "usdt_omni",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888435353.7709284",
+    "asset": "usdt_omni",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888487187.48558592",
+    "asset": "usdt_omni",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888518814.81538824",
+    "asset": "usdt_omni",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888619486.87024056",
+    "asset": "usdt_omni",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888185975.43880848",
+    "asset": "usdt_omni",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888301376.61337944",
+    "asset": "usdt_omni",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888336134.04893832",
+    "asset": "usdt_omni",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888456403.96053864",
+    "asset": "usdt_omni",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888419455.96521672",
+    "asset": "usdt_omni",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888209407.92008904",
+    "asset": "usdt_omni",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888490049.42361864",
+    "asset": "usdt_omni",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888092801.69814504",
+    "asset": "usdt_omni",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888389182.99783848",
+    "asset": "usdt_omni",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888573141.77465208",
+    "asset": "usdt_omni",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888603715.81948704",
+    "asset": "usdt_omni",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888397782.6731016",
+    "asset": "usdt_omni",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888262701.78123624",
+    "asset": "usdt_omni",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888384822.60854808",
+    "asset": "usdt_omni",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888521080.53802872",
+    "asset": "usdt_omni",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888254589.98127168",
+    "asset": "usdt_omni",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888419824.63074216",
+    "asset": "usdt_omni",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889924629.36772968",
+    "asset": "usdt_omni",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889033727.44527696",
+    "asset": "usdt_omni",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888778968.10877448",
+    "asset": "usdt_omni",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888763359.6935604",
+    "asset": "usdt_omni",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888386549.85854688",
+    "asset": "usdt_omni",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888471352.23708552",
+    "asset": "usdt_omni",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888113714.67613536",
+    "asset": "usdt_omni",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888324596.32236528",
+    "asset": "usdt_omni",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888250586.37113832",
+    "asset": "usdt_omni",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888409396.38024912",
+    "asset": "usdt_omni",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888243730.63533672",
+    "asset": "usdt_omni",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888496982.82366048",
+    "asset": "usdt_omni",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887845155.614456928",
+    "asset": "usdt_omni",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888368909.80792632",
+    "asset": "usdt_omni",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888211419.01470576",
+    "asset": "usdt_omni",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888138305.73788016",
+    "asset": "usdt_omni",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888167663.38218216",
+    "asset": "usdt_omni",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887868312.338004144",
+    "asset": "usdt_omni",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888161232.25786848",
+    "asset": "usdt_omni",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888161867.49777048",
+    "asset": "usdt_omni",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887836823.03622852",
+    "asset": "usdt_omni",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887719204.706488992",
+    "asset": "usdt_omni",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887601972.804420312",
+    "asset": "usdt_omni",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887446908.690002952",
+    "asset": "usdt_omni",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887667639.39624372",
+    "asset": "usdt_omni",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887938886.385161184",
+    "asset": "usdt_omni",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887917467.313900512",
+    "asset": "usdt_omni",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887423446.234524816",
+    "asset": "usdt_omni",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887600544.465491232",
+    "asset": "usdt_omni",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887789340.436357632",
+    "asset": "usdt_omni",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887794485.033477432",
+    "asset": "usdt_omni",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887761071.516789528",
+    "asset": "usdt_omni",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887699699.775361464",
+    "asset": "usdt_omni",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887916701.5959192",
+    "asset": "usdt_omni",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887384717.542802664",
+    "asset": "usdt_omni",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887131473.4986528",
+    "asset": "usdt_omni",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887372128.986192432",
+    "asset": "usdt_omni",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887325739.95445164",
+    "asset": "usdt_omni",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886883900.294971728",
+    "asset": "usdt_omni",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887505495.898379832",
+    "asset": "usdt_omni",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887125424.201142552",
+    "asset": "usdt_omni",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886892325.306826872",
+    "asset": "usdt_omni",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887363979.555888768",
+    "asset": "usdt_omni",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887457486.159836616",
+    "asset": "usdt_omni",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887586611.232474984",
+    "asset": "usdt_omni",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887700424.591120608",
+    "asset": "usdt_omni",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887716969.934799024",
+    "asset": "usdt_omni",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887861604.706967304",
+    "asset": "usdt_omni",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887933439.363089952",
+    "asset": "usdt_omni",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888154404.01519512",
+    "asset": "usdt_omni",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888247056.1401564",
+    "asset": "usdt_omni",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887978367.51643992",
+    "asset": "usdt_omni",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888074588.70109776",
+    "asset": "usdt_omni",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888309722.06006784",
+    "asset": "usdt_omni",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888174270.09113544",
+    "asset": "usdt_omni",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888225739.66309128",
+    "asset": "usdt_omni",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888187464.413934",
+    "asset": "usdt_omni",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888225213.34833288",
+    "asset": "usdt_omni",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888113506.50462192",
+    "asset": "usdt_omni",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888105081.9339012",
+    "asset": "usdt_omni",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888071004.5771028",
+    "asset": "usdt_omni",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888224798.19102576",
+    "asset": "usdt_omni",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888208353.63039408",
+    "asset": "usdt_omni",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888140344.02913968",
+    "asset": "usdt_omni",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888166777.45776672",
+    "asset": "usdt_omni",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888119461.41810312",
+    "asset": "usdt_omni",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887811453.780818136",
+    "asset": "usdt_omni",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887802848.673149304",
+    "asset": "usdt_omni",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887620930.801264272",
+    "asset": "usdt_omni",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887441148.313334208",
+    "asset": "usdt_omni",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887540243.180119584",
+    "asset": "usdt_omni",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887618883.579517512",
+    "asset": "usdt_omni",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887715876.961089912",
+    "asset": "usdt_omni",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887361214.591898712",
+    "asset": "usdt_omni",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887279497.690025952",
+    "asset": "usdt_omni",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887319520.139529048",
+    "asset": "usdt_omni",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887533353.8653368",
+    "asset": "usdt_omni",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887300150.0861088",
+    "asset": "usdt_omni",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887350311.47048172",
+    "asset": "usdt_omni",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888280923.2732112",
+    "asset": "usdt_omni",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888410930.77621056",
+    "asset": "usdt_omni",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888410889.13311312",
+    "asset": "usdt_omni",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888288703.1792508",
+    "asset": "usdt_omni",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888087352.17685464",
+    "asset": "usdt_omni",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888671452.40332992",
+    "asset": "usdt_omni",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888163047.43083408",
+    "asset": "usdt_omni",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888234257.63621832",
+    "asset": "usdt_omni",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888142226.89410552",
+    "asset": "usdt_omni",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888232396.5526404",
+    "asset": "usdt_omni",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888786169.16109168",
+    "asset": "usdt_omni",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888270386.91248328",
+    "asset": "usdt_omni",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888722070.53482296",
+    "asset": "usdt_omni",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888390561.99832872",
+    "asset": "usdt_omni",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888484573.851756",
+    "asset": "usdt_omni",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888469363.15942536",
+    "asset": "usdt_omni",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888516381.22931256",
+    "asset": "usdt_omni",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888408599.0300952",
+    "asset": "usdt_omni",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888155548.22280216",
+    "asset": "usdt_omni",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888209190.9013428",
+    "asset": "usdt_omni",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888305341.81606536",
+    "asset": "usdt_omni",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888355114.61503488",
+    "asset": "usdt_omni",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888317340.88478112",
+    "asset": "usdt_omni",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888290438.61575712",
+    "asset": "usdt_omni",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888268151.69620368",
+    "asset": "usdt_omni",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888192647.37024288",
+    "asset": "usdt_omni",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888008084.61491016",
+    "asset": "usdt_omni",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888236697.71891976",
+    "asset": "usdt_omni",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888554191.37633088",
+    "asset": "usdt_omni",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888236514.7539168",
+    "asset": "usdt_omni",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888378559.92421248",
+    "asset": "usdt_omni",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888243899.20596624",
+    "asset": "usdt_omni",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888430877.65668768",
+    "asset": "usdt_omni",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888190843.1261508",
+    "asset": "usdt_omni",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888157631.66388",
+    "asset": "usdt_omni",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888409877.6403828",
+    "asset": "usdt_omni",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888732291.34626936",
+    "asset": "usdt_omni",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888837075.44310576",
+    "asset": "usdt_omni",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888385080.172362",
+    "asset": "usdt_omni",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888244561.87688976",
+    "asset": "usdt_omni",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888324243.65913264",
+    "asset": "usdt_omni",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888457083.50581536",
+    "asset": "usdt_omni",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888379415.98533",
+    "asset": "usdt_omni",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888619809.83873544",
+    "asset": "usdt_omni",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888148429.07734944",
+    "asset": "usdt_omni",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888302074.25575872",
+    "asset": "usdt_omni",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888301555.66503744",
+    "asset": "usdt_omni",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888004003.67461104",
+    "asset": "usdt_omni",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887880030.697874184",
+    "asset": "usdt_omni",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887903426.804330424",
+    "asset": "usdt_omni",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887935590.48825684",
+    "asset": "usdt_omni",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887672228.950289304",
+    "asset": "usdt_omni",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887538321.836217864",
+    "asset": "usdt_omni",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888113244.28127664",
+    "asset": "usdt_omni",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888017631.6208632",
+    "asset": "usdt_omni",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887887828.084958352",
+    "asset": "usdt_omni",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888152702.34575904",
+    "asset": "usdt_omni",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888275217.70509504",
+    "asset": "usdt_omni",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888047979.03061344",
+    "asset": "usdt_omni",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888241480.58034624",
+    "asset": "usdt_omni",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888085714.31551104",
+    "asset": "usdt_omni",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888109865.35159752",
+    "asset": "usdt_omni",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887711527.856225568",
+    "asset": "usdt_omni",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888503114.15075592",
+    "asset": "usdt_omni",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888717231.81093264",
+    "asset": "usdt_omni",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888559351.76879064",
+    "asset": "usdt_omni",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888587370.47615208",
+    "asset": "usdt_omni",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888550590.6809772",
+    "asset": "usdt_omni",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888506487.36178608",
+    "asset": "usdt_omni",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888051243.76075752",
+    "asset": "usdt_omni",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888049747.57020576",
+    "asset": "usdt_omni",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887925721.305300192",
+    "asset": "usdt_omni",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887737783.798220904",
+    "asset": "usdt_omni",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887330221.263521664",
+    "asset": "usdt_omni",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887809864.357736232",
+    "asset": "usdt_omni",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888188112.19878072",
+    "asset": "usdt_omni",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888145997.24602392",
+    "asset": "usdt_omni",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887988679.009481952",
+    "asset": "usdt_omni",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888027692.39580408",
+    "asset": "usdt_omni",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888043306.41871152",
+    "asset": "usdt_omni",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888044793.40568496",
+    "asset": "usdt_omni",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887999317.977483888",
+    "asset": "usdt_omni",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887874040.6884858",
+    "asset": "usdt_omni",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887971772.210923344",
+    "asset": "usdt_omni",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888317163.43480872",
+    "asset": "usdt_omni",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888053882.31057984",
+    "asset": "usdt_omni",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888050488.19467104",
+    "asset": "usdt_omni",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888206456.55526152",
+    "asset": "usdt_omni",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887976570.858822216",
+    "asset": "usdt_omni",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888087300.42346872",
+    "asset": "usdt_omni",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887939798.585612952",
+    "asset": "usdt_omni",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888145481.97198264",
+    "asset": "usdt_omni",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888280009.33482",
+    "asset": "usdt_omni",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888354973.75909848",
+    "asset": "usdt_omni",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888482449.0489968",
+    "asset": "usdt_omni",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888339824.57359944",
+    "asset": "usdt_omni",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888241923.50241192",
+    "asset": "usdt_omni",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888332197.77614688",
+    "asset": "usdt_omni",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888276962.18620992",
+    "asset": "usdt_omni",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888326246.25520752",
+    "asset": "usdt_omni",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887375380.922870784",
+    "asset": "usdt_omni",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887745991.456975608",
+    "asset": "usdt_omni",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887974480.227095112",
+    "asset": "usdt_omni",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887973051.808670496",
+    "asset": "usdt_omni",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887757872.88877404",
+    "asset": "usdt_omni",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887837068.488763176",
+    "asset": "usdt_omni",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887714042.566753368",
+    "asset": "usdt_omni",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887502804.830472168",
+    "asset": "usdt_omni",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887944541.042608752",
+    "asset": "usdt_omni",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887800932.114038448",
+    "asset": "usdt_omni",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887591564.80071444",
+    "asset": "usdt_omni",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888151720.15186056",
+    "asset": "usdt_omni",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888102354.72805032",
+    "asset": "usdt_omni",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887928473.272031184",
+    "asset": "usdt_omni",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888000368.415882",
+    "asset": "usdt_omni",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887776442.91245952",
+    "asset": "usdt_omni",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888278717.37290184",
+    "asset": "usdt_omni",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887507493.967783248",
+    "asset": "usdt_omni",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887729443.304004408",
+    "asset": "usdt_omni",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888013997.29755336",
+    "asset": "usdt_omni",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888064534.70196096",
+    "asset": "usdt_omni",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888204735.74019024",
+    "asset": "usdt_omni",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888297172.58278272",
+    "asset": "usdt_omni",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888068761.86946872",
+    "asset": "usdt_omni",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887883863.087644632",
+    "asset": "usdt_omni",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887590388.172753096",
+    "asset": "usdt_omni",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887620530.62299956",
+    "asset": "usdt_omni",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887815238.13630828",
+    "asset": "usdt_omni",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887825721.158065896",
+    "asset": "usdt_omni",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888009952.13640816",
+    "asset": "usdt_omni",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887646946.02388572",
+    "asset": "usdt_omni",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887601348.20936592",
+    "asset": "usdt_omni",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887641942.245986184",
+    "asset": "usdt_omni",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887577439.916733",
+    "asset": "usdt_omni",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887262173.675770896",
+    "asset": "usdt_omni",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887699379.749032584",
+    "asset": "usdt_omni",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887084283.173315256",
+    "asset": "usdt_omni",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887574125.645110656",
+    "asset": "usdt_omni",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887508975.551146152",
+    "asset": "usdt_omni",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887637908.168036472",
+    "asset": "usdt_omni",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887923258.778391648",
+    "asset": "usdt_omni",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887708670.306650664",
+    "asset": "usdt_omni",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887926581.271423464",
+    "asset": "usdt_omni",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887871906.730586016",
+    "asset": "usdt_omni",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888077329.27955376",
+    "asset": "usdt_omni",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888094661.8595616",
+    "asset": "usdt_omni",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887935871.64156432",
+    "asset": "usdt_omni",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887904521.48091984",
+    "asset": "usdt_omni",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887897874.996989352",
+    "asset": "usdt_omni",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887966355.384691824",
+    "asset": "usdt_omni",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888345299.06066352",
+    "asset": "usdt_omni",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888471293.11026264",
+    "asset": "usdt_omni",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888406538.31856728",
+    "asset": "usdt_omni",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888629243.4443268",
+    "asset": "usdt_omni",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888201857.20792392",
+    "asset": "usdt_omni",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888290093.77990704",
+    "asset": "usdt_omni",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888239196.64278336",
+    "asset": "usdt_omni",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888196031.42074272",
+    "asset": "usdt_omni",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888162846.34982304",
+    "asset": "usdt_omni",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888331275.84700776",
+    "asset": "usdt_omni",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888416957.10566208",
+    "asset": "usdt_omni",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888170606.7068712",
+    "asset": "usdt_omni",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887986474.176727968",
+    "asset": "usdt_omni",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887948817.873718752",
+    "asset": "usdt_omni",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888040630.67992872",
+    "asset": "usdt_omni",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888240991.29944136",
+    "asset": "usdt_omni",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887909810.517994656",
+    "asset": "usdt_omni",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888088205.10629808",
+    "asset": "usdt_omni",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887833481.57031924",
+    "asset": "usdt_omni",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888109324.0556664",
+    "asset": "usdt_omni",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887922854.78009124",
+    "asset": "usdt_omni",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888196489.90036416",
+    "asset": "usdt_omni",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888001051.16768232",
+    "asset": "usdt_omni",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887989177.36808316",
+    "asset": "usdt_omni",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888288990.96617136",
+    "asset": "usdt_omni",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888369585.8054832",
+    "asset": "usdt_omni",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887749969.091693496",
+    "asset": "usdt_omni",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888173820.2301756",
+    "asset": "usdt_omni",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888318209.89213056",
+    "asset": "usdt_omni",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888281459.4158652",
+    "asset": "usdt_omni",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888228605.778498",
+    "asset": "usdt_omni",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888088912.32004752",
+    "asset": "usdt_omni",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888316426.02291432",
+    "asset": "usdt_omni",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888290637.46414968",
+    "asset": "usdt_omni",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888278213.11426968",
+    "asset": "usdt_omni",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888373906.50243456",
+    "asset": "usdt_omni",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887843967.846123552",
+    "asset": "usdt_omni",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888024392.9946324",
+    "asset": "usdt_omni",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888374814.35931336",
+    "asset": "usdt_omni",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888466857.32500368",
+    "asset": "usdt_omni",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888432785.36713872",
+    "asset": "usdt_omni",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888369688.53862944",
+    "asset": "usdt_omni",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888620229.85592448",
+    "asset": "usdt_omni",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888549297.6273252",
+    "asset": "usdt_omni",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888542359.12877808",
+    "asset": "usdt_omni",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888735801.70694592",
+    "asset": "usdt_omni",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888534776.56013688",
+    "asset": "usdt_omni",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888483423.54638616",
+    "asset": "usdt_omni",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887910241.25772864",
+    "asset": "usdt_omni",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888086923.13915736",
+    "asset": "usdt_omni",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888911180.47231512",
+    "asset": "usdt_omni",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888830493.05969592",
+    "asset": "usdt_omni",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887990535.060898848",
+    "asset": "usdt_omni",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887704522.3978644",
+    "asset": "usdt_omni",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889198909.95721272",
+    "asset": "usdt_omni",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888128437.26706488",
+    "asset": "usdt_omni",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888486817.64585808",
+    "asset": "usdt_omni",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888492063.66597336",
+    "asset": "usdt_omni",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888613757.03112192",
+    "asset": "usdt_omni",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888232511.99692944",
+    "asset": "usdt_omni",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888668179.66873608",
+    "asset": "usdt_omni",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889576025.65943952",
+    "asset": "usdt_omni",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889343295.8634516",
+    "asset": "usdt_omni",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889676765.32963104",
+    "asset": "usdt_omni",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888791555.26033872",
+    "asset": "usdt_omni",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888481148.7041988",
+    "asset": "usdt_omni",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888400893.05874912",
+    "asset": "usdt_omni",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888583592.22891912",
+    "asset": "usdt_omni",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888722755.21026216",
+    "asset": "usdt_omni",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888188253.82602504",
+    "asset": "usdt_omni",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888089872.04558352",
+    "asset": "usdt_omni",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887749283.877292464",
+    "asset": "usdt_omni",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887385212.386320696",
+    "asset": "usdt_omni",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888226721.16158808",
+    "asset": "usdt_omni",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888022114.37072832",
+    "asset": "usdt_omni",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887559535.96347924",
+    "asset": "usdt_omni",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887187110.256191256",
+    "asset": "usdt_omni",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887658401.395013976",
+    "asset": "usdt_omni",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887488125.215437512",
+    "asset": "usdt_omni",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887072353.343874912",
+    "asset": "usdt_omni",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886931282.871952296",
+    "asset": "usdt_omni",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887408308.488110352",
+    "asset": "usdt_omni",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887230552.651293384",
+    "asset": "usdt_omni",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886919024.030075952",
+    "asset": "usdt_omni",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886596698.48122056",
+    "asset": "usdt_omni",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886326260.92274508",
+    "asset": "usdt_omni",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886382448.98336016",
+    "asset": "usdt_omni",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886284818.335733496",
+    "asset": "usdt_omni",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886196854.42383336",
+    "asset": "usdt_omni",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886083914.080930992",
+    "asset": "usdt_omni",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887011765.636710432",
+    "asset": "usdt_omni",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887692773.77066088",
+    "asset": "usdt_omni",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887860336.181705472",
+    "asset": "usdt_omni",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887767264.599179856",
+    "asset": "usdt_omni",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888343219.5614976",
+    "asset": "usdt_omni",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887900658.621452256",
+    "asset": "usdt_omni",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887788210.213611288",
+    "asset": "usdt_omni",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887976682.368516456",
+    "asset": "usdt_omni",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887877086.956019616",
+    "asset": "usdt_omni",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887715916.098490224",
+    "asset": "usdt_omni",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887543965.055697072",
+    "asset": "usdt_omni",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887644813.238540208",
+    "asset": "usdt_omni",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887709436.990553976",
+    "asset": "usdt_omni",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888145705.39214328",
+    "asset": "usdt_omni",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888049771.12920096",
+    "asset": "usdt_omni",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888391946.08818672",
+    "asset": "usdt_omni",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886744056.283694112",
+    "asset": "usdt_omni",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887167751.978374728",
+    "asset": "usdt_omni",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887055724.332293928",
+    "asset": "usdt_omni",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888158178.81287664",
+    "asset": "usdt_omni",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887630333.726417448",
+    "asset": "usdt_omni",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888113238.50141784",
+    "asset": "usdt_omni",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888055745.40804408",
+    "asset": "usdt_omni",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887862408.103521216",
+    "asset": "usdt_omni",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887718341.41636416",
+    "asset": "usdt_omni",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887830770.012807912",
+    "asset": "usdt_omni",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887469523.195196616",
+    "asset": "usdt_omni",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888123960.2062428",
+    "asset": "usdt_omni",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888087116.58250704",
+    "asset": "usdt_omni",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888022665.85127352",
+    "asset": "usdt_omni",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887863372.595909592",
+    "asset": "usdt_omni",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887926393.933360608",
+    "asset": "usdt_omni",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889383365.93911464",
+    "asset": "usdt_omni",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888095718.34750944",
+    "asset": "usdt_omni",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887964120.627276456",
+    "asset": "usdt_omni",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888103364.95687248",
+    "asset": "usdt_omni",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888114399.03827928",
+    "asset": "usdt_omni",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888272338.56647568",
+    "asset": "usdt_omni",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888121562.34847416",
+    "asset": "usdt_omni",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888209949.4014612",
+    "asset": "usdt_omni",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887885340.470777304",
+    "asset": "usdt_omni",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888258559.03417464",
+    "asset": "usdt_omni",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888114425.48633808",
+    "asset": "usdt_omni",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888103779.01145232",
+    "asset": "usdt_omni",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888167118.13949064",
+    "asset": "usdt_omni",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888093077.30666952",
+    "asset": "usdt_omni",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888003025.8996936",
+    "asset": "usdt_omni",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887485495.683520704",
+    "asset": "usdt_omni",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888007148.33863032",
+    "asset": "usdt_omni",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888132481.98730032",
+    "asset": "usdt_omni",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887526748.700256768",
+    "asset": "usdt_omni",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888148481.99974296",
+    "asset": "usdt_omni",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887870052.246815016",
+    "asset": "usdt_omni",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887689517.63263164",
+    "asset": "usdt_omni",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887121340.551301464",
+    "asset": "usdt_omni",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886666294.512884088",
+    "asset": "usdt_omni",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886902815.822249544",
+    "asset": "usdt_omni",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887462350.162808328",
+    "asset": "usdt_omni",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887772127.280800464",
+    "asset": "usdt_omni",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888096220.57504584",
+    "asset": "usdt_omni",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888177318.87100152",
+    "asset": "usdt_omni",
+    "time": "2024-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888197250.17178504",
+    "asset": "usdt_omni",
+    "time": "2024-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888080997.97691736",
+    "asset": "usdt_omni",
+    "time": "2024-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888142108.28295984",
+    "asset": "usdt_omni",
+    "time": "2024-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888355054.97644872",
+    "asset": "usdt_omni",
+    "time": "2024-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888122121.3048516",
+    "asset": "usdt_omni",
+    "time": "2024-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888153925.62968616",
+    "asset": "usdt_omni",
+    "time": "2024-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888035721.24177456",
+    "asset": "usdt_omni",
+    "time": "2024-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888738818.74420416",
+    "asset": "usdt_omni",
+    "time": "2024-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888346355.7192228",
+    "asset": "usdt_omni",
+    "time": "2024-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888482151.16253256",
+    "asset": "usdt_omni",
+    "time": "2024-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888165649.26418296",
+    "asset": "usdt_omni",
+    "time": "2024-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888288319.85234808",
+    "asset": "usdt_omni",
+    "time": "2024-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888110268.7680084",
+    "asset": "usdt_omni",
+    "time": "2024-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888055744.36326768",
+    "asset": "usdt_omni",
+    "time": "2024-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887847723.677152488",
+    "asset": "usdt_omni",
+    "time": "2024-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887960162.392055208",
+    "asset": "usdt_omni",
+    "time": "2024-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887948870.450326848",
+    "asset": "usdt_omni",
+    "time": "2024-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887986184.470218696",
+    "asset": "usdt_omni",
+    "time": "2024-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887748200.030231568",
+    "asset": "usdt_omni",
+    "time": "2024-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888055993.03528008",
+    "asset": "usdt_omni",
+    "time": "2024-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887693304.115187256",
+    "asset": "usdt_omni",
+    "time": "2024-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887789775.586962552",
+    "asset": "usdt_omni",
+    "time": "2024-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887945316.228728448",
+    "asset": "usdt_omni",
+    "time": "2024-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888080528.80220616",
+    "asset": "usdt_omni",
+    "time": "2024-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888109908.2194512",
+    "asset": "usdt_omni",
+    "time": "2024-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888037220.7752556",
+    "asset": "usdt_omni",
+    "time": "2024-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888154974.00665088",
+    "asset": "usdt_omni",
+    "time": "2024-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888016017.4074924",
+    "asset": "usdt_omni",
+    "time": "2024-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888658329.26012496",
+    "asset": "usdt_omni",
+    "time": "2024-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888250850.08798416",
+    "asset": "usdt_omni",
+    "time": "2024-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888041863.83751896",
+    "asset": "usdt_omni",
+    "time": "2024-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887840770.156899888",
+    "asset": "usdt_omni",
+    "time": "2024-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888052186.53039528",
+    "asset": "usdt_omni",
+    "time": "2024-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888145034.51656152",
+    "asset": "usdt_omni",
+    "time": "2024-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888234863.53793232",
+    "asset": "usdt_omni",
+    "time": "2024-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887852146.761982368",
+    "asset": "usdt_omni",
+    "time": "2024-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888687559.15520184",
+    "asset": "usdt_omni",
+    "time": "2024-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888042624.12798744",
+    "asset": "usdt_omni",
+    "time": "2024-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887940748.576495128",
+    "asset": "usdt_omni",
+    "time": "2024-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888051302.84659032",
+    "asset": "usdt_omni",
+    "time": "2024-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887775135.526654464",
+    "asset": "usdt_omni",
+    "time": "2024-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888170063.93160312",
+    "asset": "usdt_omni",
+    "time": "2024-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888092623.94255856",
+    "asset": "usdt_omni",
+    "time": "2024-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888030194.22849816",
+    "asset": "usdt_omni",
+    "time": "2024-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888122738.846958",
+    "asset": "usdt_omni",
+    "time": "2024-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887616024.11359332",
+    "asset": "usdt_omni",
+    "time": "2024-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887895439.321000344",
+    "asset": "usdt_omni",
+    "time": "2024-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887870064.486555912",
+    "asset": "usdt_omni",
+    "time": "2024-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887880874.582592736",
+    "asset": "usdt_omni",
+    "time": "2024-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887944918.645502544",
+    "asset": "usdt_omni",
+    "time": "2024-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887929220.801566704",
+    "asset": "usdt_omni",
+    "time": "2024-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887818381.23169332",
+    "asset": "usdt_omni",
+    "time": "2024-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887732800.443083496",
+    "asset": "usdt_omni",
+    "time": "2024-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887447198.078237928",
+    "asset": "usdt_omni",
+    "time": "2024-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887116066.642692816",
+    "asset": "usdt_omni",
+    "time": "2024-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887247975.417259656",
+    "asset": "usdt_omni",
+    "time": "2024-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887727148.750099608",
+    "asset": "usdt_omni",
+    "time": "2024-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887833619.410904232",
+    "asset": "usdt_omni",
+    "time": "2024-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887592382.604251392",
+    "asset": "usdt_omni",
+    "time": "2024-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887685130.654575288",
+    "asset": "usdt_omni",
+    "time": "2024-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887821987.017667728",
+    "asset": "usdt_omni",
+    "time": "2024-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887843701.587948696",
+    "asset": "usdt_omni",
+    "time": "2024-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887703600.718220424",
+    "asset": "usdt_omni",
+    "time": "2024-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887901290.891864496",
+    "asset": "usdt_omni",
+    "time": "2024-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887797867.258349616",
+    "asset": "usdt_omni",
+    "time": "2024-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887680256.230395216",
+    "asset": "usdt_omni",
+    "time": "2024-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887568257.254522176",
+    "asset": "usdt_omni",
+    "time": "2024-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887406794.952937464",
+    "asset": "usdt_omni",
+    "time": "2024-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887047754.81236824",
+    "asset": "usdt_omni",
+    "time": "2024-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887408272.175789688",
+    "asset": "usdt_omni",
+    "time": "2024-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886419755.910024336",
+    "asset": "usdt_omni",
+    "time": "2024-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886836098.09890584",
+    "asset": "usdt_omni",
+    "time": "2024-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886950860.457818136",
+    "asset": "usdt_omni",
+    "time": "2024-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887421554.260480728",
+    "asset": "usdt_omni",
+    "time": "2024-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887758548.838626672",
+    "asset": "usdt_omni",
+    "time": "2024-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887713489.22311668",
+    "asset": "usdt_omni",
+    "time": "2024-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886765127.320414152",
+    "asset": "usdt_omni",
+    "time": "2024-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887582667.5338608",
+    "asset": "usdt_omni",
+    "time": "2024-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887683744.104518616",
+    "asset": "usdt_omni",
+    "time": "2024-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887509784.03375736",
+    "asset": "usdt_omni",
+    "time": "2024-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887409884.073294672",
+    "asset": "usdt_omni",
+    "time": "2024-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887974869.026315592",
+    "asset": "usdt_omni",
+    "time": "2024-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888779422.58189976",
+    "asset": "usdt_omni",
+    "time": "2024-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888632652.33121872",
+    "asset": "usdt_omni",
+    "time": "2024-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888620530.52720112",
+    "asset": "usdt_omni",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888334570.8342156",
+    "asset": "usdt_omni",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888700470.72167088",
+    "asset": "usdt_omni",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888986030.38682688",
+    "asset": "usdt_omni",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888830299.25553408",
+    "asset": "usdt_omni",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889123927.63780728",
+    "asset": "usdt_omni",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888154660.74296592",
+    "asset": "usdt_omni",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888260866.03767072",
+    "asset": "usdt_omni",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888427888.36956264",
+    "asset": "usdt_omni",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888110172.46950552",
+    "asset": "usdt_omni",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886212318.582081696",
+    "asset": "usdt_omni",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889233314.41437",
+    "asset": "usdt_omni",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888808804.50007248",
+    "asset": "usdt_omni",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888959893.38972048",
+    "asset": "usdt_omni",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889018588.62081984",
+    "asset": "usdt_omni",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888080788.0842468",
+    "asset": "usdt_omni",
+    "time": "2024-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887615199.674612232",
+    "asset": "usdt_omni",
+    "time": "2024-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887944272.2856756",
+    "asset": "usdt_omni",
+    "time": "2024-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887863009.69861992",
+    "asset": "usdt_omni",
+    "time": "2024-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887798515.619039472",
+    "asset": "usdt_omni",
+    "time": "2024-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887487278.172504336",
+    "asset": "usdt_omni",
+    "time": "2024-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887875905.472642104",
+    "asset": "usdt_omni",
+    "time": "2024-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887540490.126486024",
+    "asset": "usdt_omni",
+    "time": "2024-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887985598.449892296",
+    "asset": "usdt_omni",
+    "time": "2024-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888046814.14169064",
+    "asset": "usdt_omni",
+    "time": "2024-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888250471.52583192",
+    "asset": "usdt_omni",
+    "time": "2024-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888222057.557496",
+    "asset": "usdt_omni",
+    "time": "2024-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887864113.985802456",
+    "asset": "usdt_omni",
+    "time": "2024-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887955296.652865896",
+    "asset": "usdt_omni",
+    "time": "2024-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887802041.389397592",
+    "asset": "usdt_omni",
+    "time": "2024-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887229351.612805224",
+    "asset": "usdt_omni",
+    "time": "2024-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887239498.34244492",
+    "asset": "usdt_omni",
+    "time": "2024-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887871775.1341524",
+    "asset": "usdt_omni",
+    "time": "2024-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887894714.26168056",
+    "asset": "usdt_omni",
+    "time": "2024-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887700885.868055712",
+    "asset": "usdt_omni",
+    "time": "2024-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887150078.157502224",
+    "asset": "usdt_omni",
+    "time": "2024-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886977769.342410168",
+    "asset": "usdt_omni",
+    "time": "2024-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887030333.418639024",
+    "asset": "usdt_omni",
+    "time": "2024-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887756022.136341744",
+    "asset": "usdt_omni",
+    "time": "2024-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887131351.638281376",
+    "asset": "usdt_omni",
+    "time": "2024-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887390738.290455792",
+    "asset": "usdt_omni",
+    "time": "2024-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887526840.974215776",
+    "asset": "usdt_omni",
+    "time": "2024-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887820503.866783248",
+    "asset": "usdt_omni",
+    "time": "2024-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888089121.92025528",
+    "asset": "usdt_omni",
+    "time": "2024-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888119502.1604844",
+    "asset": "usdt_omni",
+    "time": "2024-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887696908.69750608",
+    "asset": "usdt_omni",
+    "time": "2024-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887619471.169018056",
+    "asset": "usdt_omni",
+    "time": "2024-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887946357.094208616",
+    "asset": "usdt_omni",
+    "time": "2024-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887944492.50699828",
+    "asset": "usdt_omni",
+    "time": "2024-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887611629.320236536",
+    "asset": "usdt_omni",
+    "time": "2024-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888022132.27634256",
+    "asset": "usdt_omni",
+    "time": "2024-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887740853.654867328",
+    "asset": "usdt_omni",
+    "time": "2024-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887595637.602976632",
+    "asset": "usdt_omni",
+    "time": "2024-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887454319.577446536",
+    "asset": "usdt_omni",
+    "time": "2024-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887503062.691647984",
+    "asset": "usdt_omni",
+    "time": "2024-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887462065.124998128",
+    "asset": "usdt_omni",
+    "time": "2024-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887665824.589448472",
+    "asset": "usdt_omni",
+    "time": "2024-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887558347.599160224",
+    "asset": "usdt_omni",
+    "time": "2024-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887646344.277858096",
+    "asset": "usdt_omni",
+    "time": "2024-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887500389.6025302",
+    "asset": "usdt_omni",
+    "time": "2024-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887591305.494179208",
+    "asset": "usdt_omni",
+    "time": "2024-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887581817.064824712",
+    "asset": "usdt_omni",
+    "time": "2024-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887536823.166756384",
+    "asset": "usdt_omni",
+    "time": "2024-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887253157.421248032",
+    "asset": "usdt_omni",
+    "time": "2024-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887783808.200319888",
+    "asset": "usdt_omni",
+    "time": "2024-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887416734.270967056",
+    "asset": "usdt_omni",
+    "time": "2024-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886696049.123642712",
+    "asset": "usdt_omni",
+    "time": "2024-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886336165.479601752",
+    "asset": "usdt_omni",
+    "time": "2024-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886568502.598463424",
+    "asset": "usdt_omni",
+    "time": "2024-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886537967.088392904",
+    "asset": "usdt_omni",
+    "time": "2024-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887034601.937710272",
+    "asset": "usdt_omni",
+    "time": "2024-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886580381.099382336",
+    "asset": "usdt_omni",
+    "time": "2024-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886994966.736526776",
+    "asset": "usdt_omni",
+    "time": "2024-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887746555.130003232",
+    "asset": "usdt_omni",
+    "time": "2024-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888042488.15252568",
+    "asset": "usdt_omni",
+    "time": "2024-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888067413.0861",
+    "asset": "usdt_omni",
+    "time": "2024-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888079508.99363112",
+    "asset": "usdt_omni",
+    "time": "2024-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887823512.918107416",
+    "asset": "usdt_omni",
+    "time": "2024-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887924601.288693048",
+    "asset": "usdt_omni",
+    "time": "2024-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887803526.404005816",
+    "asset": "usdt_omni",
+    "time": "2024-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888010579.22675232",
+    "asset": "usdt_omni",
+    "time": "2024-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888207584.54933832",
+    "asset": "usdt_omni",
+    "time": "2024-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888299802.46097424",
+    "asset": "usdt_omni",
+    "time": "2024-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888254537.2052472",
+    "asset": "usdt_omni",
+    "time": "2024-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888532184.89685664",
+    "asset": "usdt_omni",
+    "time": "2024-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888601559.03956368",
+    "asset": "usdt_omni",
+    "time": "2024-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888042312.504252",
+    "asset": "usdt_omni",
+    "time": "2024-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887838948.814249704",
+    "asset": "usdt_omni",
+    "time": "2024-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888541908.82980336",
+    "asset": "usdt_omni",
+    "time": "2024-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888334575.47739",
+    "asset": "usdt_omni",
+    "time": "2024-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888066410.80302192",
+    "asset": "usdt_omni",
+    "time": "2024-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888462012.55564488",
+    "asset": "usdt_omni",
+    "time": "2024-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888022688.23036536",
+    "asset": "usdt_omni",
+    "time": "2024-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887802829.547336928",
+    "asset": "usdt_omni",
+    "time": "2024-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887679671.641040856",
+    "asset": "usdt_omni",
+    "time": "2024-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888056488.4207676",
+    "asset": "usdt_omni",
+    "time": "2024-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888027951.68652048",
+    "asset": "usdt_omni",
+    "time": "2024-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887939514.178147776",
+    "asset": "usdt_omni",
+    "time": "2024-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887905081.413367344",
+    "asset": "usdt_omni",
+    "time": "2024-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887740095.732797856",
+    "asset": "usdt_omni",
+    "time": "2024-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887802590.318245488",
+    "asset": "usdt_omni",
+    "time": "2024-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887037209.283366216",
+    "asset": "usdt_omni",
+    "time": "2024-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886940823.304880496",
+    "asset": "usdt_omni",
+    "time": "2024-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887522218.198162344",
+    "asset": "usdt_omni",
+    "time": "2024-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887609401.984381512",
+    "asset": "usdt_omni",
+    "time": "2024-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888432664.34290632",
+    "asset": "usdt_omni",
+    "time": "2024-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888370999.15497672",
+    "asset": "usdt_omni",
+    "time": "2024-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888089720.58650976",
+    "asset": "usdt_omni",
+    "time": "2024-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888112428.91598256",
+    "asset": "usdt_omni",
+    "time": "2024-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888355779.11601096",
+    "asset": "usdt_omni",
+    "time": "2024-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888163146.206928",
+    "asset": "usdt_omni",
+    "time": "2024-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888040114.19943288",
+    "asset": "usdt_omni",
+    "time": "2024-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888158209.5808068",
+    "asset": "usdt_omni",
+    "time": "2024-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888361864.2978756",
+    "asset": "usdt_omni",
+    "time": "2024-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888181140.31210848",
+    "asset": "usdt_omni",
+    "time": "2024-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887882218.0850592",
+    "asset": "usdt_omni",
+    "time": "2024-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888017620.25795304",
+    "asset": "usdt_omni",
+    "time": "2024-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887969845.730491296",
+    "asset": "usdt_omni",
+    "time": "2024-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887390052.585569736",
+    "asset": "usdt_omni",
+    "time": "2024-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887778585.853797096",
+    "asset": "usdt_omni",
+    "time": "2024-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887596703.2349766",
+    "asset": "usdt_omni",
+    "time": "2024-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887842821.3956958",
+    "asset": "usdt_omni",
+    "time": "2024-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887629832.196482304",
+    "asset": "usdt_omni",
+    "time": "2024-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886887099.79947696",
+    "asset": "usdt_omni",
+    "time": "2024-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887835743.84045568",
+    "asset": "usdt_omni",
+    "time": "2024-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887890570.865576208",
+    "asset": "usdt_omni",
+    "time": "2024-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888242236.57458192",
+    "asset": "usdt_omni",
+    "time": "2024-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888484237.57479624",
+    "asset": "usdt_omni",
+    "time": "2024-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888375070.79714328",
+    "asset": "usdt_omni",
+    "time": "2024-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888306422.72766288",
+    "asset": "usdt_omni",
+    "time": "2024-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888252730.84922472",
+    "asset": "usdt_omni",
+    "time": "2024-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888448700.01245616",
+    "asset": "usdt_omni",
+    "time": "2024-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888898697.23015968",
+    "asset": "usdt_omni",
+    "time": "2024-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889060539.88359936",
+    "asset": "usdt_omni",
+    "time": "2024-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888593191.39296408",
+    "asset": "usdt_omni",
+    "time": "2024-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888233146.48933968",
+    "asset": "usdt_omni",
+    "time": "2024-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888143846.12776656",
+    "asset": "usdt_omni",
+    "time": "2024-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888199984.3229148",
+    "asset": "usdt_omni",
+    "time": "2024-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888176578.15429968",
+    "asset": "usdt_omni",
+    "time": "2024-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887937460.402714152",
+    "asset": "usdt_omni",
+    "time": "2024-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887438270.825022",
+    "asset": "usdt_omni",
+    "time": "2024-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887862674.51232396",
+    "asset": "usdt_omni",
+    "time": "2024-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887957882.168887992",
+    "asset": "usdt_omni",
+    "time": "2024-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888035130.23898672",
+    "asset": "usdt_omni",
+    "time": "2024-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888794528.28622128",
+    "asset": "usdt_omni",
+    "time": "2024-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888533872.59416328",
+    "asset": "usdt_omni",
+    "time": "2024-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889203573.39429864",
+    "asset": "usdt_omni",
+    "time": "2024-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888575828.49708024",
+    "asset": "usdt_omni",
+    "time": "2024-02-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888750925.86426264",
+    "asset": "usdt_omni",
+    "time": "2024-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888688105.45186056",
+    "asset": "usdt_omni",
+    "time": "2024-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888453419.3755956",
+    "asset": "usdt_omni",
+    "time": "2024-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889288040.5513188",
+    "asset": "usdt_omni",
+    "time": "2024-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889014711.11648112",
+    "asset": "usdt_omni",
+    "time": "2024-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888621382.18094376",
+    "asset": "usdt_omni",
+    "time": "2024-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889541972.01426576",
+    "asset": "usdt_omni",
+    "time": "2024-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890065506.5525844",
+    "asset": "usdt_omni",
+    "time": "2024-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889944302.56943952",
+    "asset": "usdt_omni",
+    "time": "2024-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888900172.66101192",
+    "asset": "usdt_omni",
+    "time": "2024-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888271242.99493944",
+    "asset": "usdt_omni",
+    "time": "2024-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888200634.00002736",
+    "asset": "usdt_omni",
+    "time": "2024-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888584326.59212304",
+    "asset": "usdt_omni",
+    "time": "2024-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887741761.910880816",
+    "asset": "usdt_omni",
+    "time": "2024-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888100954.71343968",
+    "asset": "usdt_omni",
+    "time": "2024-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887499006.772139472",
+    "asset": "usdt_omni",
+    "time": "2024-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887405516.722361328",
+    "asset": "usdt_omni",
+    "time": "2024-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887929333.065735936",
+    "asset": "usdt_omni",
+    "time": "2024-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887510971.754796744",
+    "asset": "usdt_omni",
+    "time": "2024-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888230133.13726368",
+    "asset": "usdt_omni",
+    "time": "2024-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887784272.040026544",
+    "asset": "usdt_omni",
+    "time": "2024-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888159535.0549836",
+    "asset": "usdt_omni",
+    "time": "2024-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888110244.03616944",
+    "asset": "usdt_omni",
+    "time": "2024-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888007021.1395656",
+    "asset": "usdt_omni",
+    "time": "2024-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888320368.02001128",
+    "asset": "usdt_omni",
+    "time": "2024-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888078939.86656344",
+    "asset": "usdt_omni",
+    "time": "2024-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887627076.053863824",
+    "asset": "usdt_omni",
+    "time": "2024-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888126230.47952808",
+    "asset": "usdt_omni",
+    "time": "2024-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888638428.35566136",
+    "asset": "usdt_omni",
+    "time": "2024-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888383332.44075864",
+    "asset": "usdt_omni",
+    "time": "2024-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888066324.734874",
+    "asset": "usdt_omni",
+    "time": "2024-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888364181.94185832",
+    "asset": "usdt_omni",
+    "time": "2024-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888244103.05657824",
+    "asset": "usdt_omni",
+    "time": "2024-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888335664.53088192",
+    "asset": "usdt_omni",
+    "time": "2024-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888449774.04232008",
+    "asset": "usdt_omni",
+    "time": "2024-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888324568.4955444",
+    "asset": "usdt_omni",
+    "time": "2024-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888206772.9179244",
+    "asset": "usdt_omni",
+    "time": "2024-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887800223.825037336",
+    "asset": "usdt_omni",
+    "time": "2024-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887821096.654915512",
+    "asset": "usdt_omni",
+    "time": "2024-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887663583.054051648",
+    "asset": "usdt_omni",
+    "time": "2024-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887963145.481678176",
+    "asset": "usdt_omni",
+    "time": "2024-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888129613.00886616",
+    "asset": "usdt_omni",
+    "time": "2024-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888401110.73807856",
+    "asset": "usdt_omni",
+    "time": "2024-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889353734.47651392",
+    "asset": "usdt_omni",
+    "time": "2024-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889011429.79351536",
+    "asset": "usdt_omni",
+    "time": "2024-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888373151.76536712",
+    "asset": "usdt_omni",
+    "time": "2024-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888307462.80230712",
+    "asset": "usdt_omni",
+    "time": "2024-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887881102.3128816",
+    "asset": "usdt_omni",
+    "time": "2024-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888498986.38760208",
+    "asset": "usdt_omni",
+    "time": "2024-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888422137.37738712",
+    "asset": "usdt_omni",
+    "time": "2024-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888373763.75040504",
+    "asset": "usdt_omni",
+    "time": "2024-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888173369.79653568",
+    "asset": "usdt_omni",
+    "time": "2024-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888466865.29447512",
+    "asset": "usdt_omni",
+    "time": "2024-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888046642.09994016",
+    "asset": "usdt_omni",
+    "time": "2024-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887548074.053030184",
+    "asset": "usdt_omni",
+    "time": "2024-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887868492.700505544",
+    "asset": "usdt_omni",
+    "time": "2024-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887628224.24549796",
+    "asset": "usdt_omni",
+    "time": "2024-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887348065.075644312",
+    "asset": "usdt_omni",
+    "time": "2024-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887772934.470749184",
+    "asset": "usdt_omni",
+    "time": "2024-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887745605.034422304",
+    "asset": "usdt_omni",
+    "time": "2024-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887154027.434644296",
+    "asset": "usdt_omni",
+    "time": "2024-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886520296.2712914",
+    "asset": "usdt_omni",
+    "time": "2024-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888064332.96318168",
+    "asset": "usdt_omni",
+    "time": "2024-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888477442.33847016",
+    "asset": "usdt_omni",
+    "time": "2024-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888126800.7450384",
+    "asset": "usdt_omni",
+    "time": "2024-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888102142.03198152",
+    "asset": "usdt_omni",
+    "time": "2024-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887927990.219987208",
+    "asset": "usdt_omni",
+    "time": "2024-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888485522.52255336",
+    "asset": "usdt_omni",
+    "time": "2023-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888440773.43263272",
+    "asset": "usdt_omni",
+    "time": "2023-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888280591.464108",
+    "asset": "usdt_omni",
+    "time": "2023-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888487251.21409584",
+    "asset": "usdt_omni",
+    "time": "2023-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888053124.24245568",
+    "asset": "usdt_omni",
+    "time": "2023-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888310386.32187888",
+    "asset": "usdt_omni",
+    "time": "2023-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888174425.61668976",
+    "asset": "usdt_omni",
+    "time": "2023-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888278554.87862544",
+    "asset": "usdt_omni",
+    "time": "2023-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888159566.90028864",
+    "asset": "usdt_omni",
+    "time": "2023-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888327226.69351224",
+    "asset": "usdt_omni",
+    "time": "2023-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888435980.4667164",
+    "asset": "usdt_omni",
+    "time": "2023-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888429943.18025064",
+    "asset": "usdt_omni",
+    "time": "2023-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888354797.84869608",
+    "asset": "usdt_omni",
+    "time": "2023-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888235375.3653792",
+    "asset": "usdt_omni",
+    "time": "2023-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888487941.05138136",
+    "asset": "usdt_omni",
+    "time": "2023-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888675626.09522016",
+    "asset": "usdt_omni",
+    "time": "2023-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888626860.42161936",
+    "asset": "usdt_omni",
+    "time": "2023-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888376062.5782716",
+    "asset": "usdt_omni",
+    "time": "2023-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888481768.76589864",
+    "asset": "usdt_omni",
+    "time": "2023-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888478210.9219884",
+    "asset": "usdt_omni",
+    "time": "2023-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888073205.1003324",
+    "asset": "usdt_omni",
+    "time": "2023-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888555478.69614912",
+    "asset": "usdt_omni",
+    "time": "2023-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888694814.55159168",
+    "asset": "usdt_omni",
+    "time": "2023-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888585334.62201744",
+    "asset": "usdt_omni",
+    "time": "2023-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888242304.5262156",
+    "asset": "usdt_omni",
+    "time": "2023-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888227622.50126616",
+    "asset": "usdt_omni",
+    "time": "2023-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888528355.08739752",
+    "asset": "usdt_omni",
+    "time": "2023-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887946957.384807792",
+    "asset": "usdt_omni",
+    "time": "2023-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888310895.62269048",
+    "asset": "usdt_omni",
+    "time": "2023-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888538790.93926824",
+    "asset": "usdt_omni",
+    "time": "2023-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888502508.88396192",
+    "asset": "usdt_omni",
+    "time": "2023-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888593087.56690296",
+    "asset": "usdt_omni",
+    "time": "2023-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888148510.56475824",
+    "asset": "usdt_omni",
+    "time": "2023-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888360636.89107104",
+    "asset": "usdt_omni",
+    "time": "2023-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888235305.37656696",
+    "asset": "usdt_omni",
+    "time": "2023-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888719608.70128968",
+    "asset": "usdt_omni",
+    "time": "2023-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888551368.72418184",
+    "asset": "usdt_omni",
+    "time": "2023-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888341225.4118212",
+    "asset": "usdt_omni",
+    "time": "2023-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887962109.597497056",
+    "asset": "usdt_omni",
+    "time": "2023-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888464153.19111552",
+    "asset": "usdt_omni",
+    "time": "2023-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888254502.74539488",
+    "asset": "usdt_omni",
+    "time": "2023-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888201661.75030608",
+    "asset": "usdt_omni",
+    "time": "2023-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888426360.587292",
+    "asset": "usdt_omni",
+    "time": "2023-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888420337.57560384",
+    "asset": "usdt_omni",
+    "time": "2023-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888390731.81477784",
+    "asset": "usdt_omni",
+    "time": "2023-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887767607.989502688",
+    "asset": "usdt_omni",
+    "time": "2023-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888095388.44628312",
+    "asset": "usdt_omni",
+    "time": "2023-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888034244.63281272",
+    "asset": "usdt_omni",
+    "time": "2023-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888327013.28771832",
+    "asset": "usdt_omni",
+    "time": "2023-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888343388.54720496",
+    "asset": "usdt_omni",
+    "time": "2023-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888291825.1051332",
+    "asset": "usdt_omni",
+    "time": "2023-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888119808.85745376",
+    "asset": "usdt_omni",
+    "time": "2023-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887480576.445734208",
+    "asset": "usdt_omni",
+    "time": "2023-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887615746.308737592",
+    "asset": "usdt_omni",
+    "time": "2023-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888323321.2743252",
+    "asset": "usdt_omni",
+    "time": "2023-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888197168.23934616",
+    "asset": "usdt_omni",
+    "time": "2023-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888069683.85559968",
+    "asset": "usdt_omni",
+    "time": "2023-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887262351.766782504",
+    "asset": "usdt_omni",
+    "time": "2023-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887326818.928203168",
+    "asset": "usdt_omni",
+    "time": "2023-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887868219.2153196",
+    "asset": "usdt_omni",
+    "time": "2023-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887672237.880610488",
+    "asset": "usdt_omni",
+    "time": "2023-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887902721.107609104",
+    "asset": "usdt_omni",
+    "time": "2023-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888181759.9258656",
+    "asset": "usdt_omni",
+    "time": "2023-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888807309.95657424",
+    "asset": "usdt_omni",
+    "time": "2023-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888508552.85551368",
+    "asset": "usdt_omni",
+    "time": "2023-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888656487.51137952",
+    "asset": "usdt_omni",
+    "time": "2023-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888265304.70500472",
+    "asset": "usdt_omni",
+    "time": "2023-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888063089.70908472",
+    "asset": "usdt_omni",
+    "time": "2023-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888514464.81258984",
+    "asset": "usdt_omni",
+    "time": "2023-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888450215.67075624",
+    "asset": "usdt_omni",
+    "time": "2023-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888031724.05122408",
+    "asset": "usdt_omni",
+    "time": "2023-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887951245.812182808",
+    "asset": "usdt_omni",
+    "time": "2023-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887792493.520292568",
+    "asset": "usdt_omni",
+    "time": "2023-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888522654.41030544",
+    "asset": "usdt_omni",
+    "time": "2024-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888363578.65461168",
+    "asset": "usdt_omni",
+    "time": "2024-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888469298.4354852",
+    "asset": "usdt_omni",
+    "time": "2024-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888955875.19728624",
+    "asset": "usdt_omni",
+    "time": "2024-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888773094.03306792",
+    "asset": "usdt_omni",
+    "time": "2024-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888346738.276638",
+    "asset": "usdt_omni",
+    "time": "2024-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888649559.3598084",
+    "asset": "usdt_omni",
+    "time": "2024-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888757207.89899736",
+    "asset": "usdt_omni",
+    "time": "2024-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888287980.37318928",
+    "asset": "usdt_omni",
+    "time": "2024-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888506223.9638388",
+    "asset": "usdt_omni",
+    "time": "2024-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888144744.9010092",
+    "asset": "usdt_omni",
+    "time": "2024-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887681649.428621952",
+    "asset": "usdt_omni",
+    "time": "2024-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887966972.848712832",
+    "asset": "usdt_omni",
+    "time": "2024-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887462187.445905",
+    "asset": "usdt_omni",
+    "time": "2024-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887370098.790650424",
+    "asset": "usdt_omni",
+    "time": "2024-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887953813.256912952",
+    "asset": "usdt_omni",
+    "time": "2024-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887154864.66905448",
+    "asset": "usdt_omni",
+    "time": "2024-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887156904.807409944",
+    "asset": "usdt_omni",
+    "time": "2024-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887176636.83795828",
+    "asset": "usdt_omni",
+    "time": "2024-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887262840.31960464",
+    "asset": "usdt_omni",
+    "time": "2024-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887400631.534983672",
+    "asset": "usdt_omni",
+    "time": "2024-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887016117.146855088",
+    "asset": "usdt_omni",
+    "time": "2024-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887380421.957336904",
+    "asset": "usdt_omni",
+    "time": "2024-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887680830.347530056",
+    "asset": "usdt_omni",
+    "time": "2024-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887557504.453492104",
+    "asset": "usdt_omni",
+    "time": "2024-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887916722.224509072",
+    "asset": "usdt_omni",
+    "time": "2024-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888036727.89176136",
+    "asset": "usdt_omni",
+    "time": "2024-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887956451.410871088",
+    "asset": "usdt_omni",
+    "time": "2023-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888276640.02571512",
+    "asset": "usdt_omni",
+    "time": "2023-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888449194.09935912",
+    "asset": "usdt_omni",
+    "time": "2023-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888253582.1274144",
+    "asset": "usdt_omni",
+    "time": "2023-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888344423.3337204",
+    "asset": "usdt_omni",
+    "time": "2023-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888131790.4102896",
+    "asset": "usdt_omni",
+    "time": "2023-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888135924.72238128",
+    "asset": "usdt_omni",
+    "time": "2023-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888065192.48626488",
+    "asset": "usdt_omni",
+    "time": "2023-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887935756.49561664",
+    "asset": "usdt_omni",
+    "time": "2023-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888056671.1116272",
+    "asset": "usdt_omni",
+    "time": "2023-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888134132.37405264",
+    "asset": "usdt_omni",
+    "time": "2023-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887934239.473991472",
+    "asset": "usdt_omni",
+    "time": "2023-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887929420.86732912",
+    "asset": "usdt_omni",
+    "time": "2023-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887885721.76972512",
+    "asset": "usdt_omni",
+    "time": "2023-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887992664.268848448",
+    "asset": "usdt_omni",
+    "time": "2023-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887791266.803038656",
+    "asset": "usdt_omni",
+    "time": "2023-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887974228.797194472",
+    "asset": "usdt_omni",
+    "time": "2023-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887995734.901226808",
+    "asset": "usdt_omni",
+    "time": "2023-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887925979.67270616",
+    "asset": "usdt_omni",
+    "time": "2023-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887903465.161893576",
+    "asset": "usdt_omni",
+    "time": "2023-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887542551.808298688",
+    "asset": "usdt_omni",
+    "time": "2023-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887480564.893045128",
+    "asset": "usdt_omni",
+    "time": "2023-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887290418.195207112",
+    "asset": "usdt_omni",
+    "time": "2023-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886747638.18585624",
+    "asset": "usdt_omni",
+    "time": "2023-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887159952.518994264",
+    "asset": "usdt_omni",
+    "time": "2023-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886571632.018701744",
+    "asset": "usdt_omni",
+    "time": "2023-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886969369.087083936",
+    "asset": "usdt_omni",
+    "time": "2023-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887678623.92519036",
+    "asset": "usdt_omni",
+    "time": "2023-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887412188.633547552",
+    "asset": "usdt_omni",
+    "time": "2023-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887064890.328463032",
+    "asset": "usdt_omni",
+    "time": "2023-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887155839.646298616",
+    "asset": "usdt_omni",
+    "time": "2023-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887527186.186670208",
+    "asset": "usdt_omni",
+    "time": "2023-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887222915.400199152",
+    "asset": "usdt_omni",
+    "time": "2023-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887294318.836418688",
+    "asset": "usdt_omni",
+    "time": "2023-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887049491.86795164",
+    "asset": "usdt_omni",
+    "time": "2023-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "886943735.346865776",
+    "asset": "usdt_omni",
+    "time": "2023-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888034766.65042368",
+    "asset": "usdt_omni",
+    "time": "2023-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887800554.51166236",
+    "asset": "usdt_omni",
+    "time": "2023-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887874677.755093488",
+    "asset": "usdt_omni",
+    "time": "2023-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887997468.206580192",
+    "asset": "usdt_omni",
+    "time": "2023-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887895654.136470288",
+    "asset": "usdt_omni",
+    "time": "2023-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887439263.639752128",
+    "asset": "usdt_omni",
+    "time": "2023-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887880833.85356964",
+    "asset": "usdt_omni",
+    "time": "2023-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887747075.160739056",
+    "asset": "usdt_omni",
+    "time": "2023-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887682014.822465016",
+    "asset": "usdt_omni",
+    "time": "2023-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887673337.998949152",
+    "asset": "usdt_omni",
+    "time": "2023-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887634082.192964904",
+    "asset": "usdt_omni",
+    "time": "2023-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887429010.503068656",
+    "asset": "usdt_omni",
+    "time": "2023-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888110961.97423272",
+    "asset": "usdt_omni",
+    "time": "2023-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888030273.45315864",
+    "asset": "usdt_omni",
+    "time": "2023-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887750979.321302424",
+    "asset": "usdt_omni",
+    "time": "2023-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887626491.84518352",
+    "asset": "usdt_omni",
+    "time": "2023-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887949877.353541056",
+    "asset": "usdt_omni",
+    "time": "2023-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887884163.746273488",
+    "asset": "usdt_omni",
+    "time": "2023-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887520984.259578768",
+    "asset": "usdt_omni",
+    "time": "2023-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887644012.552570776",
+    "asset": "usdt_omni",
+    "time": "2023-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887547503.56148568",
+    "asset": "usdt_omni",
+    "time": "2023-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887973193.234983504",
+    "asset": "usdt_omni",
+    "time": "2023-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887780768.203579224",
+    "asset": "usdt_omni",
+    "time": "2023-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887823761.173834296",
+    "asset": "usdt_omni",
+    "time": "2023-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887674341.392624856",
+    "asset": "usdt_omni",
+    "time": "2023-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887638310.385433344",
+    "asset": "usdt_omni",
+    "time": "2023-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887993568.113752128",
+    "asset": "usdt_omni",
+    "time": "2023-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888219091.46911344",
+    "asset": "usdt_omni",
+    "time": "2023-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888392432.4441528",
+    "asset": "usdt_omni",
+    "time": "2023-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888124829.62303128",
+    "asset": "usdt_omni",
+    "time": "2023-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888270860.29884528",
+    "asset": "usdt_omni",
+    "time": "2023-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888083852.01474264",
+    "asset": "usdt_omni",
+    "time": "2023-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888209946.57801192",
+    "asset": "usdt_omni",
+    "time": "2023-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888119575.24134816",
+    "asset": "usdt_omni",
+    "time": "2023-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888046512.85031472",
+    "asset": "usdt_omni",
+    "time": "2023-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887956975.735903872",
+    "asset": "usdt_omni",
+    "time": "2023-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887983452.703919496",
+    "asset": "usdt_omni",
+    "time": "2023-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888162126.92089656",
+    "asset": "usdt_omni",
+    "time": "2023-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888160912.31298696",
+    "asset": "usdt_omni",
+    "time": "2023-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887744268.262366248",
+    "asset": "usdt_omni",
+    "time": "2023-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887498066.692100088",
+    "asset": "usdt_omni",
+    "time": "2023-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887456178.817739808",
+    "asset": "usdt_omni",
+    "time": "2023-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888059677.47175104",
+    "asset": "usdt_omni",
+    "time": "2023-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887972537.949062256",
+    "asset": "usdt_omni",
+    "time": "2023-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888073685.80911576",
+    "asset": "usdt_omni",
+    "time": "2023-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887869652.37820656",
+    "asset": "usdt_omni",
+    "time": "2023-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888264942.96776184",
+    "asset": "usdt_omni",
+    "time": "2023-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888069386.74450152",
+    "asset": "usdt_omni",
+    "time": "2023-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888158793.43491936",
+    "asset": "usdt_omni",
+    "time": "2023-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888034182.171168",
+    "asset": "usdt_omni",
+    "time": "2023-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888479399.02084248",
+    "asset": "usdt_omni",
+    "time": "2023-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888581182.7280852",
+    "asset": "usdt_omni",
+    "time": "2023-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888480239.7535704",
+    "asset": "usdt_omni",
+    "time": "2023-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888118104.39748656",
+    "asset": "usdt_omni",
+    "time": "2023-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888023875.0323576",
+    "asset": "usdt_omni",
+    "time": "2023-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887770658.81853888",
+    "asset": "usdt_omni",
+    "time": "2023-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887782272.457624752",
+    "asset": "usdt_omni",
+    "time": "2023-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888044788.85290008",
+    "asset": "usdt_omni",
+    "time": "2023-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888068862.66028368",
+    "asset": "usdt_omni",
+    "time": "2023-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888718988.17226208",
+    "asset": "usdt_omni",
+    "time": "2023-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888437754.54955992",
+    "asset": "usdt_omni",
+    "time": "2023-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888366711.81251304",
+    "asset": "usdt_omni",
+    "time": "2023-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888214321.93513728",
+    "asset": "usdt_omni",
+    "time": "2023-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888492472.12574472",
+    "asset": "usdt_omni",
+    "time": "2023-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888213263.5020432",
+    "asset": "usdt_omni",
+    "time": "2023-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888299509.26943704",
+    "asset": "usdt_omni",
+    "time": "2023-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888099171.33138912",
+    "asset": "usdt_omni",
+    "time": "2023-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888388219.22384832",
+    "asset": "usdt_omni",
+    "time": "2023-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888511722.06662352",
+    "asset": "usdt_omni",
+    "time": "2023-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888451020.96083784",
+    "asset": "usdt_omni",
+    "time": "2023-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888513733.171248",
+    "asset": "usdt_omni",
+    "time": "2023-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888638196.93279144",
+    "asset": "usdt_omni",
+    "time": "2023-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888822759.50672352",
+    "asset": "usdt_omni",
+    "time": "2023-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888410330.99474352",
+    "asset": "usdt_omni",
+    "time": "2023-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888923286.19286784",
+    "asset": "usdt_omni",
+    "time": "2023-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888785709.57229608",
+    "asset": "usdt_omni",
+    "time": "2023-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888745215.2051448",
+    "asset": "usdt_omni",
+    "time": "2023-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888626230.4710716",
+    "asset": "usdt_omni",
+    "time": "2023-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888561076.9094076",
+    "asset": "usdt_omni",
+    "time": "2023-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888261964.93045128",
+    "asset": "usdt_omni",
+    "time": "2023-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888422248.41145968",
+    "asset": "usdt_omni",
+    "time": "2023-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888077298.55756872",
+    "asset": "usdt_omni",
+    "time": "2023-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887891308.488603264",
+    "asset": "usdt_omni",
+    "time": "2023-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888067620.08415696",
+    "asset": "usdt_omni",
+    "time": "2023-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888009979.23085992",
+    "asset": "usdt_omni",
+    "time": "2023-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888036956.31794208",
+    "asset": "usdt_omni",
+    "time": "2023-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888151844.6265324",
+    "asset": "usdt_omni",
+    "time": "2023-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888357348.11923272",
+    "asset": "usdt_omni",
+    "time": "2023-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888253273.8445392",
+    "asset": "usdt_omni",
+    "time": "2023-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888609028.64991624",
+    "asset": "usdt_omni",
+    "time": "2023-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888522948.182346",
+    "asset": "usdt_omni",
+    "time": "2023-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888383771.69842128",
+    "asset": "usdt_omni",
+    "time": "2023-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888186780.61360104",
+    "asset": "usdt_omni",
+    "time": "2023-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888462874.54120536",
+    "asset": "usdt_omni",
+    "time": "2023-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888203960.52133176",
+    "asset": "usdt_omni",
+    "time": "2023-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888395714.80537704",
+    "asset": "usdt_omni",
+    "time": "2023-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888914766.63471408",
+    "asset": "usdt_omni",
+    "time": "2023-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889556593.93570776",
+    "asset": "usdt_omni",
+    "time": "2023-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889080500.33898576",
+    "asset": "usdt_omni",
+    "time": "2023-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888737320.51666032",
+    "asset": "usdt_omni",
+    "time": "2023-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888419078.65107744",
+    "asset": "usdt_omni",
+    "time": "2023-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888691209.6504924",
+    "asset": "usdt_omni",
+    "time": "2023-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888353183.70543288",
+    "asset": "usdt_omni",
+    "time": "2023-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888430794.69783624",
+    "asset": "usdt_omni",
+    "time": "2023-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888439225.76738496",
+    "asset": "usdt_omni",
+    "time": "2023-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888390151.70076144",
+    "asset": "usdt_omni",
+    "time": "2023-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888207150.2630016",
+    "asset": "usdt_omni",
+    "time": "2023-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888062859.08591208",
+    "asset": "usdt_omni",
+    "time": "2023-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888053415.97662504",
+    "asset": "usdt_omni",
+    "time": "2023-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887996045.519579304",
+    "asset": "usdt_omni",
+    "time": "2023-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888166296.81355872",
+    "asset": "usdt_omni",
+    "time": "2023-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888275216.16365136",
+    "asset": "usdt_omni",
+    "time": "2023-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888252101.95441128",
+    "asset": "usdt_omni",
+    "time": "2023-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888170205.88193736",
+    "asset": "usdt_omni",
+    "time": "2023-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888027656.451198",
+    "asset": "usdt_omni",
+    "time": "2023-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887945139.14202264",
+    "asset": "usdt_omni",
+    "time": "2023-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888032473.76037336",
+    "asset": "usdt_omni",
+    "time": "2023-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888263826.82408056",
+    "asset": "usdt_omni",
+    "time": "2023-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888337912.28521536",
+    "asset": "usdt_omni",
+    "time": "2023-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888189035.78959872",
+    "asset": "usdt_omni",
+    "time": "2023-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888227327.74049976",
+    "asset": "usdt_omni",
+    "time": "2023-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888123930.23494632",
+    "asset": "usdt_omni",
+    "time": "2023-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888211868.4441864",
+    "asset": "usdt_omni",
+    "time": "2023-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888049662.6066588",
+    "asset": "usdt_omni",
+    "time": "2023-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888276877.98480672",
+    "asset": "usdt_omni",
+    "time": "2023-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888271469.02162872",
+    "asset": "usdt_omni",
+    "time": "2023-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888208003.23085992",
+    "asset": "usdt_omni",
+    "time": "2023-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888213943.90415112",
+    "asset": "usdt_omni",
+    "time": "2023-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888187623.08591208",
+    "asset": "usdt_omni",
+    "time": "2023-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888082848.6873144",
+    "asset": "usdt_omni",
+    "time": "2023-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888166019.92986624",
+    "asset": "usdt_omni",
+    "time": "2023-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887990452.053769512",
+    "asset": "usdt_omni",
+    "time": "2023-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888424010.91758928",
+    "asset": "usdt_omni",
+    "time": "2023-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888360584.57043072",
+    "asset": "usdt_omni",
+    "time": "2023-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888020263.37112744",
+    "asset": "usdt_omni",
+    "time": "2023-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887804425.65517272",
+    "asset": "usdt_omni",
+    "time": "2023-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887851232.493279144",
+    "asset": "usdt_omni",
+    "time": "2023-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887158721.463471408",
+    "asset": "usdt_omni",
+    "time": "2023-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887367732.582115536",
+    "asset": "usdt_omni",
+    "time": "2023-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887599281.56633544",
+    "asset": "usdt_omni",
+    "time": "2023-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887768652.126241656",
+    "asset": "usdt_omni",
+    "time": "2023-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887765449.669199472",
+    "asset": "usdt_omni",
+    "time": "2023-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888165339.52775832",
+    "asset": "usdt_omni",
+    "time": "2023-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887988926.46873144",
+    "asset": "usdt_omni",
+    "time": "2023-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888077533.14319272",
+    "asset": "usdt_omni",
+    "time": "2023-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888497392.10286048",
+    "asset": "usdt_omni",
+    "time": "2023-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888459875.53009848",
+    "asset": "usdt_omni",
+    "time": "2023-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888287898.31911216",
+    "asset": "usdt_omni",
+    "time": "2023-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888066678.62770248",
+    "asset": "usdt_omni",
+    "time": "2023-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888121711.01343816",
+    "asset": "usdt_omni",
+    "time": "2023-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887947548.57510216",
+    "asset": "usdt_omni",
+    "time": "2023-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887893220.984219904",
+    "asset": "usdt_omni",
+    "time": "2023-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887829410.580947232",
+    "asset": "usdt_omni",
+    "time": "2023-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887980394.714202264",
+    "asset": "usdt_omni",
+    "time": "2023-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887953776.251209032",
+    "asset": "usdt_omni",
+    "time": "2023-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888018764.7738204",
+    "asset": "usdt_omni",
+    "time": "2023-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888071681.7369984",
+    "asset": "usdt_omni",
+    "time": "2023-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887994063.219169776",
+    "asset": "usdt_omni",
+    "time": "2023-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887973632.21274144",
+    "asset": "usdt_omni",
+    "time": "2023-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888101072.66861088",
+    "asset": "usdt_omni",
+    "time": "2023-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888132761.96844336",
+    "asset": "usdt_omni",
+    "time": "2023-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888151001.00058504",
+    "asset": "usdt_omni",
+    "time": "2023-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888116959.35710424",
+    "asset": "usdt_omni",
+    "time": "2023-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888040107.65400264",
+    "asset": "usdt_omni",
+    "time": "2023-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887621579.9158386",
+    "asset": "usdt_omni",
+    "time": "2023-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887716620.308591208",
+    "asset": "usdt_omni",
+    "time": "2023-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887640960.217416432",
+    "asset": "usdt_omni",
+    "time": "2023-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887713607.54412612",
+    "asset": "usdt_omni",
+    "time": "2023-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887672545.97779068",
+    "asset": "usdt_omni",
+    "time": "2023-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887748679.13267088",
+    "asset": "usdt_omni",
+    "time": "2023-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887851903.55347788",
+    "asset": "usdt_omni",
+    "time": "2023-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887825356.453536384",
+    "asset": "usdt_omni",
+    "time": "2023-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888001994.49678672",
+    "asset": "usdt_omni",
+    "time": "2023-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888127268.92811112",
+    "asset": "usdt_omni",
+    "time": "2023-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887893146.767971776",
+    "asset": "usdt_omni",
+    "time": "2023-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888094744.0467588",
+    "asset": "usdt_omni",
+    "time": "2023-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888090025.3465824",
+    "asset": "usdt_omni",
+    "time": "2023-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888110103.69608112",
+    "asset": "usdt_omni",
+    "time": "2023-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888263069.61075408",
+    "asset": "usdt_omni",
+    "time": "2023-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888045749.9053212",
+    "asset": "usdt_omni",
+    "time": "2023-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888107130.89421432",
+    "asset": "usdt_omni",
+    "time": "2023-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887987271.135008376",
+    "asset": "usdt_omni",
+    "time": "2023-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888021081.04734384",
+    "asset": "usdt_omni",
+    "time": "2023-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888140832.8556372",
+    "asset": "usdt_omni",
+    "time": "2023-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888146652.3436572",
+    "asset": "usdt_omni",
+    "time": "2023-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888200306.79836544",
+    "asset": "usdt_omni",
+    "time": "2023-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888108813.475158",
+    "asset": "usdt_omni",
+    "time": "2023-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888092673.51724536",
+    "asset": "usdt_omni",
+    "time": "2023-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888155084.19169776",
+    "asset": "usdt_omni",
+    "time": "2023-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888047371.7638836",
+    "asset": "usdt_omni",
+    "time": "2023-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888331612.20806112",
+    "asset": "usdt_omni",
+    "time": "2023-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888201741.04032336",
+    "asset": "usdt_omni",
+    "time": "2023-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888027710.68614432",
+    "asset": "usdt_omni",
+    "time": "2023-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888065663.21449656",
+    "asset": "usdt_omni",
+    "time": "2023-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888024449.0637072",
+    "asset": "usdt_omni",
+    "time": "2023-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888054008.40911952",
+    "asset": "usdt_omni",
+    "time": "2023-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888138399.28930176",
+    "asset": "usdt_omni",
+    "time": "2023-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888071259.27527856",
+    "asset": "usdt_omni",
+    "time": "2023-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888076449.22267824",
+    "asset": "usdt_omni",
+    "time": "2023-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888221238.11572248",
+    "asset": "usdt_omni",
+    "time": "2023-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888039833.88427752",
+    "asset": "usdt_omni",
+    "time": "2023-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888031386.72589152",
+    "asset": "usdt_omni",
+    "time": "2023-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888006998.12507424",
+    "asset": "usdt_omni",
+    "time": "2023-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888072378.7469352",
+    "asset": "usdt_omni",
+    "time": "2023-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888115676.92109952",
+    "asset": "usdt_omni",
+    "time": "2023-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888085236.841614",
+    "asset": "usdt_omni",
+    "time": "2023-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888139512.27352344",
+    "asset": "usdt_omni",
+    "time": "2023-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888583625.93337648",
+    "asset": "usdt_omni",
+    "time": "2023-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888215706.66978096",
+    "asset": "usdt_omni",
+    "time": "2023-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888141894.45937968",
+    "asset": "usdt_omni",
+    "time": "2023-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888083857.61309424",
+    "asset": "usdt_omni",
+    "time": "2023-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888117572.54938704",
+    "asset": "usdt_omni",
+    "time": "2023-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888133830.83810376",
+    "asset": "usdt_omni",
+    "time": "2023-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888198450.61367928",
+    "asset": "usdt_omni",
+    "time": "2023-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888085288.48159344",
+    "asset": "usdt_omni",
+    "time": "2023-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888123586.6604292",
+    "asset": "usdt_omni",
+    "time": "2023-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888040448.37405264",
+    "asset": "usdt_omni",
+    "time": "2023-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888158131.46931648",
+    "asset": "usdt_omni",
+    "time": "2023-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888023361.76972512",
+    "asset": "usdt_omni",
+    "time": "2023-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888103569.8118036",
+    "asset": "usdt_omni",
+    "time": "2023-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888056951.67164856",
+    "asset": "usdt_omni",
+    "time": "2023-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888047906.58796416",
+    "asset": "usdt_omni",
+    "time": "2023-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888133832.65458768",
+    "asset": "usdt_omni",
+    "time": "2023-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888116690.77732176",
+    "asset": "usdt_omni",
+    "time": "2023-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888064860.329634",
+    "asset": "usdt_omni",
+    "time": "2023-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888084343.65166248",
+    "asset": "usdt_omni",
+    "time": "2023-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888067033.50648624",
+    "asset": "usdt_omni",
+    "time": "2023-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888057480.48392472",
+    "asset": "usdt_omni",
+    "time": "2023-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887944996.418468616",
+    "asset": "usdt_omni",
+    "time": "2023-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887973968.261835072",
+    "asset": "usdt_omni",
+    "time": "2023-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887876556.582115536",
+    "asset": "usdt_omni",
+    "time": "2023-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "887990827.286966928",
+    "asset": "usdt_omni",
+    "time": "2023-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "891319304.03740704",
+    "asset": "usdt_omni",
+    "time": "2023-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "894961079.22851976",
+    "asset": "usdt_omni",
+    "time": "2023-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "894550130.11104216",
+    "asset": "usdt_omni",
+    "time": "2023-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "891705729.35593416",
+    "asset": "usdt_omni",
+    "time": "2023-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "891144739.11864768",
+    "asset": "usdt_omni",
+    "time": "2023-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "891462642.0806556",
+    "asset": "usdt_omni",
+    "time": "2023-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889965064.7678892",
+    "asset": "usdt_omni",
+    "time": "2023-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890122673.43541968",
+    "asset": "usdt_omni",
+    "time": "2023-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890463636.89070408",
+    "asset": "usdt_omni",
+    "time": "2023-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890646692.56341024",
+    "asset": "usdt_omni",
+    "time": "2023-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890599380.74342496",
+    "asset": "usdt_omni",
+    "time": "2023-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890284314.0876672",
+    "asset": "usdt_omni",
+    "time": "2023-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "890189839.65868296",
+    "asset": "usdt_omni",
+    "time": "2023-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889431241.39567248",
+    "asset": "usdt_omni",
+    "time": "2023-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "889026360.36470088",
+    "asset": "usdt_omni",
+    "time": "2023-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888755564.21975304",
+    "asset": "usdt_omni",
+    "time": "2023-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888799300.16598264",
+    "asset": "usdt_omni",
+    "time": "2023-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888346147.69374984",
+    "asset": "usdt_omni",
+    "time": "2023-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888226209.04734384",
+    "asset": "usdt_omni",
+    "time": "2023-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888167229.44710272",
+    "asset": "usdt_omni",
+    "time": "2023-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888060528.79953552",
+    "asset": "usdt_omni",
+    "time": "2023-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888215368.80420696",
+    "asset": "usdt_omni",
+    "time": "2023-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888351940.19403792",
+    "asset": "usdt_omni",
+    "time": "2023-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "888263980.70601792",
+    "asset": "usdt_omni",
+    "time": "2023-04-02T00:00:00.000000000Z"
+  }
+]

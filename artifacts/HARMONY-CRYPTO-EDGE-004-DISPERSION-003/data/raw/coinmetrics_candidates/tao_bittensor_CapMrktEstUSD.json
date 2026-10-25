@@ -1,0 +1,5362 @@
+[
+  {
+    "CapMrktEstUSD": "1836615156.699608182494",
+    "asset": "tao_bittensor",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1867313068.592924750715",
+    "asset": "tao_bittensor",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1880211922.941464051495",
+    "asset": "tao_bittensor",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1907580464.462739155031",
+    "asset": "tao_bittensor",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1871404604.957765385277",
+    "asset": "tao_bittensor",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1922768824.976282730741",
+    "asset": "tao_bittensor",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1890051750.331991695204",
+    "asset": "tao_bittensor",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1851953705.822724195467",
+    "asset": "tao_bittensor",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1833238418.859333033267",
+    "asset": "tao_bittensor",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1838263889.05402748299",
+    "asset": "tao_bittensor",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1911167692.661614127839",
+    "asset": "tao_bittensor",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1797555512.430336830077",
+    "asset": "tao_bittensor",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1857306156.487622571828",
+    "asset": "tao_bittensor",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1829184767.577334088529",
+    "asset": "tao_bittensor",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1850387254.43176890351",
+    "asset": "tao_bittensor",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1852608963.7558481827",
+    "asset": "tao_bittensor",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1841651481.166450974374",
+    "asset": "tao_bittensor",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1844584073.149798997329",
+    "asset": "tao_bittensor",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1831871703.50440575551",
+    "asset": "tao_bittensor",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1878761528.139163911609",
+    "asset": "tao_bittensor",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1894774453.038318603613",
+    "asset": "tao_bittensor",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1840621270.433816863958",
+    "asset": "tao_bittensor",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1858420459.892969546842",
+    "asset": "tao_bittensor",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1931099355.641495245785",
+    "asset": "tao_bittensor",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1943740895.646485484664",
+    "asset": "tao_bittensor",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1913297189.655708768618",
+    "asset": "tao_bittensor",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1928609093.819747543468",
+    "asset": "tao_bittensor",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1917046834.098377587314",
+    "asset": "tao_bittensor",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1947890378.796173306626",
+    "asset": "tao_bittensor",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1905643714.510328836037",
+    "asset": "tao_bittensor",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1890711248.603990933004",
+    "asset": "tao_bittensor",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1877972190.178653013365",
+    "asset": "tao_bittensor",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1880537579.238387055117",
+    "asset": "tao_bittensor",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1830034607.47161797833",
+    "asset": "tao_bittensor",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1967137985.848330707692",
+    "asset": "tao_bittensor",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2069730848.256163683848",
+    "asset": "tao_bittensor",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2219666845.906158847673",
+    "asset": "tao_bittensor",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2136460124.092299749833",
+    "asset": "tao_bittensor",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2294157706.578311070357",
+    "asset": "tao_bittensor",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2309467749.240578674341",
+    "asset": "tao_bittensor",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2212944084.050602325833",
+    "asset": "tao_bittensor",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2243269217.829212453388",
+    "asset": "tao_bittensor",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2441488057.138721819497",
+    "asset": "tao_bittensor",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2273398513.826799034778",
+    "asset": "tao_bittensor",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2261477045.04108689769",
+    "asset": "tao_bittensor",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2187234118.462439265269",
+    "asset": "tao_bittensor",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2211063613.526494894641",
+    "asset": "tao_bittensor",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2108514812.892108967061",
+    "asset": "tao_bittensor",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2078473154.769194924561",
+    "asset": "tao_bittensor",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2167139309.203768668163",
+    "asset": "tao_bittensor",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2156949021.527348992041",
+    "asset": "tao_bittensor",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2267227573.900736179041",
+    "asset": "tao_bittensor",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2542916012.78120982019",
+    "asset": "tao_bittensor",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2487978170.683060722991",
+    "asset": "tao_bittensor",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2492859800.978880573207",
+    "asset": "tao_bittensor",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2435543776.49399313704",
+    "asset": "tao_bittensor",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2265414922.721078816019",
+    "asset": "tao_bittensor",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2254215859.716776134061",
+    "asset": "tao_bittensor",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2233778863.203351500266",
+    "asset": "tao_bittensor",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2225400832.457187647604",
+    "asset": "tao_bittensor",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2233668402.428522361291",
+    "asset": "tao_bittensor",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2478712712.0574497267096648",
+    "asset": "tao_bittensor",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2510852386.0897859190397838",
+    "asset": "tao_bittensor",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2633666023.6877863009082562",
+    "asset": "tao_bittensor",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2816019466.8351117024326233",
+    "asset": "tao_bittensor",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2989556093.6359023576205867",
+    "asset": "tao_bittensor",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2977261809.5307807612760761",
+    "asset": "tao_bittensor",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3556279511.4831616123396048",
+    "asset": "tao_bittensor",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3575027491.0734733285565614",
+    "asset": "tao_bittensor",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3256498761.1921358381065709",
+    "asset": "tao_bittensor",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3360373209.5433016652986635",
+    "asset": "tao_bittensor",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3605212163.4395269401850234",
+    "asset": "tao_bittensor",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3639551535.8444237731633056",
+    "asset": "tao_bittensor",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3625093901.4056826109788591",
+    "asset": "tao_bittensor",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3481098353.2566431802324908",
+    "asset": "tao_bittensor",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3407530145.1466642387921263",
+    "asset": "tao_bittensor",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3418133801.1187553922178718",
+    "asset": "tao_bittensor",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3432593760.2921842503537643",
+    "asset": "tao_bittensor",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3303043251.6132983581954321",
+    "asset": "tao_bittensor",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3471070146.8235691912367205",
+    "asset": "tao_bittensor",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3453261159.331282832246837",
+    "asset": "tao_bittensor",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3456868392.2315698755119684",
+    "asset": "tao_bittensor",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3492426568.0764708536346958",
+    "asset": "tao_bittensor",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3298140327.7822420382371839",
+    "asset": "tao_bittensor",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3055893351.8900685782176104",
+    "asset": "tao_bittensor",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3119668950.9961144305331162",
+    "asset": "tao_bittensor",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3231656733.0155685360060051",
+    "asset": "tao_bittensor",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3343715412.0042690186538727",
+    "asset": "tao_bittensor",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3092086020.0022595167459498",
+    "asset": "tao_bittensor",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3148896683.3990041590813475",
+    "asset": "tao_bittensor",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3067157033.1811097172050341",
+    "asset": "tao_bittensor",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3155411176.1014671736800477",
+    "asset": "tao_bittensor",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3121503666.6067325908846827",
+    "asset": "tao_bittensor",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3040278123.2346957565871471",
+    "asset": "tao_bittensor",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3061566686.760760603472835",
+    "asset": "tao_bittensor",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3037703666.1108384036967764",
+    "asset": "tao_bittensor",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3104339627.4886485260072686",
+    "asset": "tao_bittensor",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3078738855.1935018926421906",
+    "asset": "tao_bittensor",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2915092650.3176821684129231",
+    "asset": "tao_bittensor",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2883683552.1818772092104654",
+    "asset": "tao_bittensor",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3232564450.712656715493",
+    "asset": "tao_bittensor",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3118016595.774447623991",
+    "asset": "tao_bittensor",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3054167292.026061339357",
+    "asset": "tao_bittensor",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2472849542.392669806188",
+    "asset": "tao_bittensor",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2625554828.595372142184",
+    "asset": "tao_bittensor",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2487404443.513587047984",
+    "asset": "tao_bittensor",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2503889480.026464675316",
+    "asset": "tao_bittensor",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2300358249.645603818447",
+    "asset": "tao_bittensor",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2316678862.255058180338",
+    "asset": "tao_bittensor",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2409961564.678104754616",
+    "asset": "tao_bittensor",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2478216875.262631470418",
+    "asset": "tao_bittensor",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2350660004.217181998257",
+    "asset": "tao_bittensor",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2298799959.775043538365",
+    "asset": "tao_bittensor",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2345020149.414246774342",
+    "asset": "tao_bittensor",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2343527466.681922620431",
+    "asset": "tao_bittensor",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2365803176.428556069662",
+    "asset": "tao_bittensor",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2414984414.832194344535",
+    "asset": "tao_bittensor",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2384547788.16855589677",
+    "asset": "tao_bittensor",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2375624103.427213627925",
+    "asset": "tao_bittensor",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2415845845.580896205091",
+    "asset": "tao_bittensor",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2376169635.919538022812",
+    "asset": "tao_bittensor",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2472344353.321693326277",
+    "asset": "tao_bittensor",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2437237432.048608759913",
+    "asset": "tao_bittensor",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2385218864.751532242875",
+    "asset": "tao_bittensor",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2596213460.722081753517",
+    "asset": "tao_bittensor",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2754710992.273508900829",
+    "asset": "tao_bittensor",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2779048919.76965826917",
+    "asset": "tao_bittensor",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2741699211.437776328221",
+    "asset": "tao_bittensor",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2801234531.165626941276",
+    "asset": "tao_bittensor",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2954282932.457041849728",
+    "asset": "tao_bittensor",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2896892966.206831657964",
+    "asset": "tao_bittensor",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3019482545.776121185627",
+    "asset": "tao_bittensor",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2955614889.792215617124",
+    "asset": "tao_bittensor",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3077011906.818994313394",
+    "asset": "tao_bittensor",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3074125647.249717611933",
+    "asset": "tao_bittensor",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2975551713.010300812064",
+    "asset": "tao_bittensor",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2833116190.722626717673",
+    "asset": "tao_bittensor",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2927200101.479196913762",
+    "asset": "tao_bittensor",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2734578352.935217534899",
+    "asset": "tao_bittensor",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2625470616.485367671819",
+    "asset": "tao_bittensor",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2526423957.808520236541",
+    "asset": "tao_bittensor",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2505053590.525862677756",
+    "asset": "tao_bittensor",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2467898528.963571058088",
+    "asset": "tao_bittensor",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2610300975.509322381853",
+    "asset": "tao_bittensor",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2683206657.862952956836",
+    "asset": "tao_bittensor",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2562749270.122003789887",
+    "asset": "tao_bittensor",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2684686212.995542927857",
+    "asset": "tao_bittensor",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2638155540.767528923076",
+    "asset": "tao_bittensor",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2681631282.651521838657",
+    "asset": "tao_bittensor",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2674738998.403731294192",
+    "asset": "tao_bittensor",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2555363479.982168631907",
+    "asset": "tao_bittensor",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2502720608.932294014719",
+    "asset": "tao_bittensor",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2402301927.45849361435",
+    "asset": "tao_bittensor",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2434786423.532367370843",
+    "asset": "tao_bittensor",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2450597654.405164756952",
+    "asset": "tao_bittensor",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2424602859.706828251615",
+    "asset": "tao_bittensor",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2163253817.987029856472",
+    "asset": "tao_bittensor",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2170874987.30220358",
+    "asset": "tao_bittensor",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2017907917.317989385579",
+    "asset": "tao_bittensor",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1864559444.788332113014",
+    "asset": "tao_bittensor",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1854431355.288268667806",
+    "asset": "tao_bittensor",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2048209911.853964351653",
+    "asset": "tao_bittensor",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2070473179.535364681386",
+    "asset": "tao_bittensor",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1976565836.043279658604",
+    "asset": "tao_bittensor",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1928106717.531670352722",
+    "asset": "tao_bittensor",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2052290983.148708874247",
+    "asset": "tao_bittensor",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2031399550.573404920783",
+    "asset": "tao_bittensor",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2536295777.463368064171",
+    "asset": "tao_bittensor",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2605707946.253778215001",
+    "asset": "tao_bittensor",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2547918889.682350539865",
+    "asset": "tao_bittensor",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2461598086.735941606458",
+    "asset": "tao_bittensor",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2363929981.051729517375",
+    "asset": "tao_bittensor",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2258024891.182584658779",
+    "asset": "tao_bittensor",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2185765626.44661695589",
+    "asset": "tao_bittensor",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2229451772.005592342188",
+    "asset": "tao_bittensor",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2194826354.423656839221",
+    "asset": "tao_bittensor",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2188034055.014617533784",
+    "asset": "tao_bittensor",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2114107604.488869561184",
+    "asset": "tao_bittensor",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2101880942.63453591374",
+    "asset": "tao_bittensor",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2040145235.069016342439",
+    "asset": "tao_bittensor",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2053837074.723368448838",
+    "asset": "tao_bittensor",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2009106375.117091194936",
+    "asset": "tao_bittensor",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1964287342.508516197157",
+    "asset": "tao_bittensor",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1997275330.887998261943",
+    "asset": "tao_bittensor",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1933173160.492560619884",
+    "asset": "tao_bittensor",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1947452427.982634508874",
+    "asset": "tao_bittensor",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2007644617.239143390873",
+    "asset": "tao_bittensor",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2065362486.470545989131",
+    "asset": "tao_bittensor",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2079288446.157395318587",
+    "asset": "tao_bittensor",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2067737718.67052309873",
+    "asset": "tao_bittensor",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2062592776.180148134406",
+    "asset": "tao_bittensor",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2031874053.561434429112",
+    "asset": "tao_bittensor",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1959442715.488411052063",
+    "asset": "tao_bittensor",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2049263858.533158597378",
+    "asset": "tao_bittensor",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2044730806.18713976849",
+    "asset": "tao_bittensor",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2005236108.806932986951",
+    "asset": "tao_bittensor",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2011644305.307888741034",
+    "asset": "tao_bittensor",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1916490959.362362695601",
+    "asset": "tao_bittensor",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1923973570.952048497498",
+    "asset": "tao_bittensor",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1910353158.884112458105",
+    "asset": "tao_bittensor",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2143393922.08847400085",
+    "asset": "tao_bittensor",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2094967122.718762128548",
+    "asset": "tao_bittensor",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2120888507.412060980195",
+    "asset": "tao_bittensor",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2101426165.578225807422",
+    "asset": "tao_bittensor",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2202919951.607694891373",
+    "asset": "tao_bittensor",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2390770580.497404076723",
+    "asset": "tao_bittensor",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2446666783.703823028843",
+    "asset": "tao_bittensor",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2558900450.020713047475",
+    "asset": "tao_bittensor",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2575765917.716585743311",
+    "asset": "tao_bittensor",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2818416827.887410613227",
+    "asset": "tao_bittensor",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2599932212.422494591882",
+    "asset": "tao_bittensor",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2740113608.072972938081",
+    "asset": "tao_bittensor",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2698939464.047231734035",
+    "asset": "tao_bittensor",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2676922344.810173645788",
+    "asset": "tao_bittensor",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2739285677.720619630551",
+    "asset": "tao_bittensor",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2689883257.624354300518",
+    "asset": "tao_bittensor",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2820092988.501142853401",
+    "asset": "tao_bittensor",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2798684451.751236084872",
+    "asset": "tao_bittensor",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2670868554.783353165494",
+    "asset": "tao_bittensor",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2665998816.10051343367",
+    "asset": "tao_bittensor",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2631103343.542695904134",
+    "asset": "tao_bittensor",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2552770681.642400040252",
+    "asset": "tao_bittensor",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2430032603.685931927586",
+    "asset": "tao_bittensor",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2246747071.145925521711",
+    "asset": "tao_bittensor",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2327535412.75228789687",
+    "asset": "tao_bittensor",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2291428621.599607054322",
+    "asset": "tao_bittensor",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2272628848.808157877016",
+    "asset": "tao_bittensor",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2283807384.234287169484",
+    "asset": "tao_bittensor",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2145699388.940947607075",
+    "asset": "tao_bittensor",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2248445198.014084022292",
+    "asset": "tao_bittensor",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2281387829.822761788358",
+    "asset": "tao_bittensor",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2286990353.528175100439",
+    "asset": "tao_bittensor",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2114175192.540475980581",
+    "asset": "tao_bittensor",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2059075027.309292590837",
+    "asset": "tao_bittensor",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1898147310.597328945019",
+    "asset": "tao_bittensor",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1811830641.630572755017",
+    "asset": "tao_bittensor",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1920227849.007128148323",
+    "asset": "tao_bittensor",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1853928059.876128778631",
+    "asset": "tao_bittensor",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1803257544.496839358271",
+    "asset": "tao_bittensor",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1556703379.575494918134",
+    "asset": "tao_bittensor",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1670191740.794288433607",
+    "asset": "tao_bittensor",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1605339444.963636670492",
+    "asset": "tao_bittensor",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1569350203.987447927864",
+    "asset": "tao_bittensor",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1534787783.914722670357",
+    "asset": "tao_bittensor",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1480345387.182565677014",
+    "asset": "tao_bittensor",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1395107467.055746700938",
+    "asset": "tao_bittensor",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1491855558.344269428906",
+    "asset": "tao_bittensor",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1691785059.330115723353",
+    "asset": "tao_bittensor",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1827684892.404645207709",
+    "asset": "tao_bittensor",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1763293147.097968454994",
+    "asset": "tao_bittensor",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1905618182.763340121251",
+    "asset": "tao_bittensor",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1837792710.813435819097",
+    "asset": "tao_bittensor",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1751602679.820274776961",
+    "asset": "tao_bittensor",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1698908286.327311149974",
+    "asset": "tao_bittensor",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1734925349.908333244207",
+    "asset": "tao_bittensor",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1745691314.242388144897",
+    "asset": "tao_bittensor",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1663305022.134916703465",
+    "asset": "tao_bittensor",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1636929976.416035413172",
+    "asset": "tao_bittensor",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1607940484.422089091118",
+    "asset": "tao_bittensor",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1721784625.164414287559",
+    "asset": "tao_bittensor",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1764595599.147872981091",
+    "asset": "tao_bittensor",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1689199992.409730621182",
+    "asset": "tao_bittensor",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1761982986.653118933359",
+    "asset": "tao_bittensor",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1699939421.795392216771",
+    "asset": "tao_bittensor",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1793525016.487529844853",
+    "asset": "tao_bittensor",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1764895434.954507262537",
+    "asset": "tao_bittensor",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1790134227.0270386484",
+    "asset": "tao_bittensor",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1785681190.492587878105",
+    "asset": "tao_bittensor",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1699659302.728077237464",
+    "asset": "tao_bittensor",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1679974572.295460222344",
+    "asset": "tao_bittensor",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1753349724.67602393018",
+    "asset": "tao_bittensor",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1862072881.685835212404",
+    "asset": "tao_bittensor",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1917641247.893409288408",
+    "asset": "tao_bittensor",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1953895249.731106222331",
+    "asset": "tao_bittensor",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2073378916.763079404407",
+    "asset": "tao_bittensor",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2274741430.255336121252",
+    "asset": "tao_bittensor",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2386295427.293135412315",
+    "asset": "tao_bittensor",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2737441042.774078262679",
+    "asset": "tao_bittensor",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2702471181.081832723225",
+    "asset": "tao_bittensor",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2656659214.065840239324",
+    "asset": "tao_bittensor",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2604271160.842285235795",
+    "asset": "tao_bittensor",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2684051673.720035066306",
+    "asset": "tao_bittensor",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2598182153.072849940493",
+    "asset": "tao_bittensor",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2606284955.677769539471",
+    "asset": "tao_bittensor",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2524028052.980321082422",
+    "asset": "tao_bittensor",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2802433948.998058808249",
+    "asset": "tao_bittensor",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3206799051.207305545736",
+    "asset": "tao_bittensor",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3320499398.887769493991",
+    "asset": "tao_bittensor",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3240259519.15622264719",
+    "asset": "tao_bittensor",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3023033151.093591425419",
+    "asset": "tao_bittensor",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3024581611.075348917898",
+    "asset": "tao_bittensor",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3020570587.270896628165",
+    "asset": "tao_bittensor",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2976217756.923003954975",
+    "asset": "tao_bittensor",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2937885047.490501925791",
+    "asset": "tao_bittensor",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2948693175.657467416964",
+    "asset": "tao_bittensor",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2878897780.470051605826",
+    "asset": "tao_bittensor",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2957874602.457405215028",
+    "asset": "tao_bittensor",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2895357458.449077908604",
+    "asset": "tao_bittensor",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2962631483.034963905222",
+    "asset": "tao_bittensor",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3001701255.516841493562",
+    "asset": "tao_bittensor",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3315646081.921814835394",
+    "asset": "tao_bittensor",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3315425566.099351143762",
+    "asset": "tao_bittensor",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3221587748.91654919127",
+    "asset": "tao_bittensor",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3057012187.671140522372",
+    "asset": "tao_bittensor",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2969316561.587335396857",
+    "asset": "tao_bittensor",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2989522799.706123865718",
+    "asset": "tao_bittensor",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2856227945.633275199694",
+    "asset": "tao_bittensor",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2886388689.631919022704",
+    "asset": "tao_bittensor",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2868862631.604224087798",
+    "asset": "tao_bittensor",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2946217187.635644988943",
+    "asset": "tao_bittensor",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2977446969.431634165826",
+    "asset": "tao_bittensor",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2904320864.709688083043",
+    "asset": "tao_bittensor",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3059673926.923138540026",
+    "asset": "tao_bittensor",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3118537141.161657668852",
+    "asset": "tao_bittensor",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3091253654.051016307407",
+    "asset": "tao_bittensor",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3062951856.907462275391",
+    "asset": "tao_bittensor",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3032888167.279247218671",
+    "asset": "tao_bittensor",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3324246377.77389554273",
+    "asset": "tao_bittensor",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3180429525.859799821826",
+    "asset": "tao_bittensor",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3241811351.410264320414",
+    "asset": "tao_bittensor",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3317266607.999883547864",
+    "asset": "tao_bittensor",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2845433394.366212322387",
+    "asset": "tao_bittensor",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2856003679.670516923686",
+    "asset": "tao_bittensor",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3663026456.464877088768",
+    "asset": "tao_bittensor",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4290477239.718348241352",
+    "asset": "tao_bittensor",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4351077143.385630036642",
+    "asset": "tao_bittensor",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3948383232.007056603959",
+    "asset": "tao_bittensor",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3638848548.803553567043",
+    "asset": "tao_bittensor",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3681641186.951023370627",
+    "asset": "tao_bittensor",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3839474647.492159112991",
+    "asset": "tao_bittensor",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4231908409.096844382982",
+    "asset": "tao_bittensor",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4068916158.715102460894",
+    "asset": "tao_bittensor",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3680332033.480841623448",
+    "asset": "tao_bittensor",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3659652014.528672979286",
+    "asset": "tao_bittensor",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3702835722.225955902693",
+    "asset": "tao_bittensor",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3700219336.310686043998",
+    "asset": "tao_bittensor",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3808744633.470641650163",
+    "asset": "tao_bittensor",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3894387019.516441554237",
+    "asset": "tao_bittensor",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3971142299.879689739423",
+    "asset": "tao_bittensor",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4146761921.544847581887",
+    "asset": "tao_bittensor",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4246581225.708208440833",
+    "asset": "tao_bittensor",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3965655558.962963448987",
+    "asset": "tao_bittensor",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4636403527.395047737263",
+    "asset": "tao_bittensor",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4784152051.024771636567",
+    "asset": "tao_bittensor",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4690256533.083026592093",
+    "asset": "tao_bittensor",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4455153501.855072704506",
+    "asset": "tao_bittensor",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3850264283.458864051543",
+    "asset": "tao_bittensor",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3694479647.296255828586",
+    "asset": "tao_bittensor",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3753353968.931189323533",
+    "asset": "tao_bittensor",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3841604624.29688446371",
+    "asset": "tao_bittensor",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3536895282.213273837495",
+    "asset": "tao_bittensor",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3664555255.497079380031",
+    "asset": "tao_bittensor",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3718530942.154258526644",
+    "asset": "tao_bittensor",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3494943478.528153568234",
+    "asset": "tao_bittensor",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3356356846.544825558685",
+    "asset": "tao_bittensor",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3277248689.821978394496",
+    "asset": "tao_bittensor",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3207615036.86675662031",
+    "asset": "tao_bittensor",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3222365000.728715090704",
+    "asset": "tao_bittensor",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3078205751.641737852803",
+    "asset": "tao_bittensor",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2989086799.927017587519",
+    "asset": "tao_bittensor",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3190622895.814727373931",
+    "asset": "tao_bittensor",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3126899118.21261210527",
+    "asset": "tao_bittensor",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2954114031.893428640371",
+    "asset": "tao_bittensor",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2677569311.014001356403",
+    "asset": "tao_bittensor",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2613004083.984081554251",
+    "asset": "tao_bittensor",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2850755318.666643324447",
+    "asset": "tao_bittensor",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2809029753.636546406221",
+    "asset": "tao_bittensor",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2978819970.210539853149",
+    "asset": "tao_bittensor",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2969496288.123877400825",
+    "asset": "tao_bittensor",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2851366045.212745413425",
+    "asset": "tao_bittensor",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2871699484.503867413304",
+    "asset": "tao_bittensor",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2844380692.855662988387",
+    "asset": "tao_bittensor",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2805714000.537213196002",
+    "asset": "tao_bittensor",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2556542754.101832858993",
+    "asset": "tao_bittensor",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2659414399.923133169785",
+    "asset": "tao_bittensor",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2845202447.999753019606",
+    "asset": "tao_bittensor",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2790270953.604517217708",
+    "asset": "tao_bittensor",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2639335048.827600666195",
+    "asset": "tao_bittensor",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2707548207.015798211916",
+    "asset": "tao_bittensor",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2650482501.719227540078",
+    "asset": "tao_bittensor",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2825926894.347746952651",
+    "asset": "tao_bittensor",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2903154686.87163809976",
+    "asset": "tao_bittensor",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2827183943.824604400905",
+    "asset": "tao_bittensor",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2860346567.618870999057",
+    "asset": "tao_bittensor",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2801940017.001417119725",
+    "asset": "tao_bittensor",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2833786141.301537051055",
+    "asset": "tao_bittensor",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2692263699.015757213968",
+    "asset": "tao_bittensor",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2583534944.963113208643",
+    "asset": "tao_bittensor",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2507302701.874014178592",
+    "asset": "tao_bittensor",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2282650611.94873262809",
+    "asset": "tao_bittensor",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2096232912.592081765491",
+    "asset": "tao_bittensor",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2209827100.223688480135",
+    "asset": "tao_bittensor",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2175963553.042991229078",
+    "asset": "tao_bittensor",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2125881436.640390301142",
+    "asset": "tao_bittensor",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2134268497.493762637665",
+    "asset": "tao_bittensor",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2052668346.8607042511",
+    "asset": "tao_bittensor",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2095746943.94259882982",
+    "asset": "tao_bittensor",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2101189202.262924256336",
+    "asset": "tao_bittensor",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2070009257.67945806093",
+    "asset": "tao_bittensor",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2141157059.086495738608",
+    "asset": "tao_bittensor",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3589735625.290761502475",
+    "asset": "tao_bittensor",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3409670331.145993810896",
+    "asset": "tao_bittensor",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3293664590.18374850518",
+    "asset": "tao_bittensor",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3212090156.954608300168",
+    "asset": "tao_bittensor",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3243565862.6082523512",
+    "asset": "tao_bittensor",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3299461804.31617212192",
+    "asset": "tao_bittensor",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3105969451.620010092612",
+    "asset": "tao_bittensor",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3212972783.437957197522",
+    "asset": "tao_bittensor",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3111872629.3508242944",
+    "asset": "tao_bittensor",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3018736149.650306518749",
+    "asset": "tao_bittensor",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2757915472.861737874433",
+    "asset": "tao_bittensor",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2702440946.76724711125",
+    "asset": "tao_bittensor",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3100428508.130828186202",
+    "asset": "tao_bittensor",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3059244316.141739436144",
+    "asset": "tao_bittensor",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2880116378.825960331288",
+    "asset": "tao_bittensor",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2837690757.33938604108",
+    "asset": "tao_bittensor",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2907476971.543977616959",
+    "asset": "tao_bittensor",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2946162442.918584129492",
+    "asset": "tao_bittensor",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3092464127.255463083886",
+    "asset": "tao_bittensor",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2982781289.016124662087",
+    "asset": "tao_bittensor",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2830928247.606691018857",
+    "asset": "tao_bittensor",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2990629679.171838890844",
+    "asset": "tao_bittensor",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3012584055.025398859572",
+    "asset": "tao_bittensor",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2917524050.36476976394",
+    "asset": "tao_bittensor",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2889241592.866060627728",
+    "asset": "tao_bittensor",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2928903642.836691040612",
+    "asset": "tao_bittensor",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2870429687.478697806592",
+    "asset": "tao_bittensor",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2882813316.29224342722",
+    "asset": "tao_bittensor",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3275953418.864974963344",
+    "asset": "tao_bittensor",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3526424017.819983211287",
+    "asset": "tao_bittensor",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3699889751.676943708308",
+    "asset": "tao_bittensor",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3602884547.28078505937",
+    "asset": "tao_bittensor",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3667117924.579560449345",
+    "asset": "tao_bittensor",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3832492308.690819332772",
+    "asset": "tao_bittensor",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4087705132.23549014583",
+    "asset": "tao_bittensor",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4067753213.99679989173",
+    "asset": "tao_bittensor",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4007497833.774726333933",
+    "asset": "tao_bittensor",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3880997758.387652516876",
+    "asset": "tao_bittensor",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3908545046.15609885292",
+    "asset": "tao_bittensor",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3885751161.24011823942",
+    "asset": "tao_bittensor",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4217365722.840587026515",
+    "asset": "tao_bittensor",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4274637262.388275893748",
+    "asset": "tao_bittensor",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4034393891.020734268704",
+    "asset": "tao_bittensor",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3944088794.750013897888",
+    "asset": "tao_bittensor",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4035737977.469723640048",
+    "asset": "tao_bittensor",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4056021950.97409766272",
+    "asset": "tao_bittensor",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4075675984.381308104688",
+    "asset": "tao_bittensor",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3824438168.302018413912",
+    "asset": "tao_bittensor",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3643417231.41122430321",
+    "asset": "tao_bittensor",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3541966447.331315212686",
+    "asset": "tao_bittensor",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3364991302.167228051522",
+    "asset": "tao_bittensor",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3284984696.706266274648",
+    "asset": "tao_bittensor",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3184311041.2300215546",
+    "asset": "tao_bittensor",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3349060223.7574070694",
+    "asset": "tao_bittensor",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3424021745.037773454216",
+    "asset": "tao_bittensor",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3268878247.163366535456",
+    "asset": "tao_bittensor",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3327144772.687843416888",
+    "asset": "tao_bittensor",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3548962755.170547818018",
+    "asset": "tao_bittensor",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3593333525.301265785563",
+    "asset": "tao_bittensor",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3744042679.017241417171",
+    "asset": "tao_bittensor",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3721711730.287474112796",
+    "asset": "tao_bittensor",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3462034315.91011982819",
+    "asset": "tao_bittensor",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3761483209.289645549111",
+    "asset": "tao_bittensor",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3766835131.536613856788",
+    "asset": "tao_bittensor",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3514831821.030146706338",
+    "asset": "tao_bittensor",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3543665196.978012205573",
+    "asset": "tao_bittensor",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3585184934.467510205562",
+    "asset": "tao_bittensor",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3592105071.505961247521",
+    "asset": "tao_bittensor",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3407929709.195421596691",
+    "asset": "tao_bittensor",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3289634919.989946882833",
+    "asset": "tao_bittensor",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3392741069.949125831249",
+    "asset": "tao_bittensor",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3228541525.605463028894",
+    "asset": "tao_bittensor",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3556587672.140189176994",
+    "asset": "tao_bittensor",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3497365187.471392702838",
+    "asset": "tao_bittensor",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3475877246.297984884562",
+    "asset": "tao_bittensor",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3081539905.130062746209",
+    "asset": "tao_bittensor",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3218160142.619149592621",
+    "asset": "tao_bittensor",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3178458920.90835646673",
+    "asset": "tao_bittensor",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3222528102.312200127666",
+    "asset": "tao_bittensor",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3071127416.716764301164",
+    "asset": "tao_bittensor",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3098926301.342375689354",
+    "asset": "tao_bittensor",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3037183053.071087800314",
+    "asset": "tao_bittensor",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2965573350.853249657068",
+    "asset": "tao_bittensor",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3084642432.268721640243",
+    "asset": "tao_bittensor",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3113090568.64660617223",
+    "asset": "tao_bittensor",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3028193247.029529310667",
+    "asset": "tao_bittensor",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3060802349.037879742219",
+    "asset": "tao_bittensor",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3047956893.987758056881",
+    "asset": "tao_bittensor",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3138906999.363554911702",
+    "asset": "tao_bittensor",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3297716195.585653243865",
+    "asset": "tao_bittensor",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3221109841.527050793681",
+    "asset": "tao_bittensor",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3334195230.72263582774",
+    "asset": "tao_bittensor",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3436933708.117848945384",
+    "asset": "tao_bittensor",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3462936735.693071870897",
+    "asset": "tao_bittensor",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3447182626.257548490317",
+    "asset": "tao_bittensor",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3366184754.357933217518",
+    "asset": "tao_bittensor",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3290909478.129623691108",
+    "asset": "tao_bittensor",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3309786725.976141418923",
+    "asset": "tao_bittensor",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3444487993.849924337635",
+    "asset": "tao_bittensor",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3477598685.441415923619",
+    "asset": "tao_bittensor",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2509274724.850131496362",
+    "asset": "tao_bittensor",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2422699973.262094187484",
+    "asset": "tao_bittensor",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2535044560.824853109842",
+    "asset": "tao_bittensor",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2436813990.614048885026",
+    "asset": "tao_bittensor",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2317384082.692133386206",
+    "asset": "tao_bittensor",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2327090102.967099097287",
+    "asset": "tao_bittensor",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2052317106.413205085674",
+    "asset": "tao_bittensor",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1911025897.566689668479",
+    "asset": "tao_bittensor",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2195942560.39805349483",
+    "asset": "tao_bittensor",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2188502214.623101830576",
+    "asset": "tao_bittensor",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2016374103.21988401696",
+    "asset": "tao_bittensor",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2176896888.317199620118",
+    "asset": "tao_bittensor",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2185901562.330028633356",
+    "asset": "tao_bittensor",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2037762202.346320279536",
+    "asset": "tao_bittensor",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2155559434.878184791624",
+    "asset": "tao_bittensor",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2093079351.97340971425",
+    "asset": "tao_bittensor",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2227354485.706527345521",
+    "asset": "tao_bittensor",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2129304302.159683096216",
+    "asset": "tao_bittensor",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2094888585.194807130204",
+    "asset": "tao_bittensor",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2099930679.556250342536",
+    "asset": "tao_bittensor",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2173026021.03727718762",
+    "asset": "tao_bittensor",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2272294189.877772391564",
+    "asset": "tao_bittensor",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2284893472.525998180832",
+    "asset": "tao_bittensor",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2218203823.08821613923",
+    "asset": "tao_bittensor",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2299882979.304612967048",
+    "asset": "tao_bittensor",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2086933034.7567611448",
+    "asset": "tao_bittensor",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1969559112.4695271935",
+    "asset": "tao_bittensor",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1931110772.46944342418",
+    "asset": "tao_bittensor",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1910136002.157386806932",
+    "asset": "tao_bittensor",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1977459415.39992551994",
+    "asset": "tao_bittensor",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1811165265.56436105525",
+    "asset": "tao_bittensor",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1832302363.829922355328",
+    "asset": "tao_bittensor",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1885239367.60786382281",
+    "asset": "tao_bittensor",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1876042601.886835068236",
+    "asset": "tao_bittensor",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1562592584.04710378056",
+    "asset": "tao_bittensor",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1760064995.31212420047",
+    "asset": "tao_bittensor",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1671428981.888410851654",
+    "asset": "tao_bittensor",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1977887052.383607627028",
+    "asset": "tao_bittensor",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1974110258.348418412824",
+    "asset": "tao_bittensor",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2144662138.561608573102",
+    "asset": "tao_bittensor",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2184770497.51195731242",
+    "asset": "tao_bittensor",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2048648184.486486321273",
+    "asset": "tao_bittensor",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2030462646.090531152184",
+    "asset": "tao_bittensor",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1985247853.7941653761",
+    "asset": "tao_bittensor",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1982951594.880312594693",
+    "asset": "tao_bittensor",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2134082851.359676159544",
+    "asset": "tao_bittensor",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2343531624.41751514389",
+    "asset": "tao_bittensor",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2517623842.65520637403",
+    "asset": "tao_bittensor",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2726401429.1302012358",
+    "asset": "tao_bittensor",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2705894147.69438545462",
+    "asset": "tao_bittensor",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2908582701.028392036888",
+    "asset": "tao_bittensor",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2934574022.565128524822",
+    "asset": "tao_bittensor",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3092481320.595446914235",
+    "asset": "tao_bittensor",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3069101623.007488484808",
+    "asset": "tao_bittensor",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3028398466.51351007941",
+    "asset": "tao_bittensor",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3137928714.75077248297",
+    "asset": "tao_bittensor",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3288081240.90877032657",
+    "asset": "tao_bittensor",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3170126014.341210897534",
+    "asset": "tao_bittensor",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3087223636.165713194971",
+    "asset": "tao_bittensor",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3111169105.270472021544",
+    "asset": "tao_bittensor",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3252806324.979507452058",
+    "asset": "tao_bittensor",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3089113680.149359705923",
+    "asset": "tao_bittensor",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2981331206.345482211325",
+    "asset": "tao_bittensor",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3266319184.162016040501",
+    "asset": "tao_bittensor",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3259052094.729092533356",
+    "asset": "tao_bittensor",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3222934960.227406875317",
+    "asset": "tao_bittensor",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3686192431.834347469188",
+    "asset": "tao_bittensor",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3764266915.51122771468",
+    "asset": "tao_bittensor",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4073090177.1691659801",
+    "asset": "tao_bittensor",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4007174892.86272878888",
+    "asset": "tao_bittensor",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4010390174.5159183197",
+    "asset": "tao_bittensor",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4072022537.96506325231",
+    "asset": "tao_bittensor",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4008760443.61022346475",
+    "asset": "tao_bittensor",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3816395057.150585895592",
+    "asset": "tao_bittensor",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3768998532.515273556672",
+    "asset": "tao_bittensor",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3729086400.273981129344",
+    "asset": "tao_bittensor",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3698752400.15042912384",
+    "asset": "tao_bittensor",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3612696512.187332560896",
+    "asset": "tao_bittensor",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3680518258.279215337968",
+    "asset": "tao_bittensor",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3985347245.289430598448",
+    "asset": "tao_bittensor",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4118271491.630252282172",
+    "asset": "tao_bittensor",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3652716757.241315954792",
+    "asset": "tao_bittensor",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3771360127.10406541642",
+    "asset": "tao_bittensor",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3762826171.143325897683",
+    "asset": "tao_bittensor",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3784346355.909348906468",
+    "asset": "tao_bittensor",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3916332841.996756723081",
+    "asset": "tao_bittensor",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3783291852.066139394924",
+    "asset": "tao_bittensor",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3639579611.67453910722",
+    "asset": "tao_bittensor",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3307913344.866668674564",
+    "asset": "tao_bittensor",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3772279103.734110309664",
+    "asset": "tao_bittensor",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3629704424.341022117294",
+    "asset": "tao_bittensor",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3536241764.902935927572",
+    "asset": "tao_bittensor",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3394347313.231925781859",
+    "asset": "tao_bittensor",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3335188180.979883848664",
+    "asset": "tao_bittensor",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3111101626.251096885996",
+    "asset": "tao_bittensor",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3233136466.75462023666",
+    "asset": "tao_bittensor",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3388684040.912939868745",
+    "asset": "tao_bittensor",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3364290789.38670591448",
+    "asset": "tao_bittensor",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3690007838.77016815015",
+    "asset": "tao_bittensor",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3764908272.253943792195",
+    "asset": "tao_bittensor",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3864642290.531296275456",
+    "asset": "tao_bittensor",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3879395593.012201103439",
+    "asset": "tao_bittensor",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4042323930.608498895945",
+    "asset": "tao_bittensor",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4146886354.508457333306",
+    "asset": "tao_bittensor",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4154373935.679612471138",
+    "asset": "tao_bittensor",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4409199611.20657892835",
+    "asset": "tao_bittensor",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4559021411.153981373498",
+    "asset": "tao_bittensor",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4967134821.121564321581",
+    "asset": "tao_bittensor",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4722756359.091975158175",
+    "asset": "tao_bittensor",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4456621409.56809530949",
+    "asset": "tao_bittensor",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4583644049.612174840709",
+    "asset": "tao_bittensor",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4817585495.107892930319",
+    "asset": "tao_bittensor",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5050303590.079683039702",
+    "asset": "tao_bittensor",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5217076327.014755159307",
+    "asset": "tao_bittensor",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5170626215.250155240178",
+    "asset": "tao_bittensor",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5236573219.758380617533",
+    "asset": "tao_bittensor",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4432325270.468370462954",
+    "asset": "tao_bittensor",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4272293734.4214771579",
+    "asset": "tao_bittensor",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4448465518.868066339202",
+    "asset": "tao_bittensor",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4253876575.401151959741",
+    "asset": "tao_bittensor",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4243347230.678226337212",
+    "asset": "tao_bittensor",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4130058343.368714672474",
+    "asset": "tao_bittensor",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4221419682.813431259135",
+    "asset": "tao_bittensor",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3995901432.880738284423",
+    "asset": "tao_bittensor",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3805779402.09733185192",
+    "asset": "tao_bittensor",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3716284658.816762887101",
+    "asset": "tao_bittensor",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3323117848.276455467472",
+    "asset": "tao_bittensor",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3497219249.4051318324",
+    "asset": "tao_bittensor",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3354949310.7491209095",
+    "asset": "tao_bittensor",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3326107178.183777982696",
+    "asset": "tao_bittensor",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3589546503.078342592344",
+    "asset": "tao_bittensor",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3706980371.152583487612",
+    "asset": "tao_bittensor",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3685429553.557130967315",
+    "asset": "tao_bittensor",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3474857441.534945509017",
+    "asset": "tao_bittensor",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3434570551.10969124117",
+    "asset": "tao_bittensor",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3477242568.89773431057",
+    "asset": "tao_bittensor",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3377383442.979346186659",
+    "asset": "tao_bittensor",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3323414754.649783990287",
+    "asset": "tao_bittensor",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3249760492.093862634849",
+    "asset": "tao_bittensor",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3596279933.627086325256",
+    "asset": "tao_bittensor",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3855067214.779624695228",
+    "asset": "tao_bittensor",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4466450558.05177940701",
+    "asset": "tao_bittensor",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4545112674.81026216734",
+    "asset": "tao_bittensor",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4582899289.855909307544",
+    "asset": "tao_bittensor",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4497134252.09898972864",
+    "asset": "tao_bittensor",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4062843395.900253414262",
+    "asset": "tao_bittensor",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3799820134.55063819117",
+    "asset": "tao_bittensor",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3512671622.672270905236",
+    "asset": "tao_bittensor",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3579787522.95961173043",
+    "asset": "tao_bittensor",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3639881201.626639024871",
+    "asset": "tao_bittensor",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3602002907.345443118933",
+    "asset": "tao_bittensor",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3427695757.980387707753",
+    "asset": "tao_bittensor",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3406199313.097823393922",
+    "asset": "tao_bittensor",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3735390663.386236403835",
+    "asset": "tao_bittensor",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3626475134.616692872982",
+    "asset": "tao_bittensor",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3988284348.92541861592",
+    "asset": "tao_bittensor",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3749929430.968198203968",
+    "asset": "tao_bittensor",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3491861982.262866728092",
+    "asset": "tao_bittensor",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3350688729.162688554282",
+    "asset": "tao_bittensor",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3482900107.819685182738",
+    "asset": "tao_bittensor",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3283345982.322052071616",
+    "asset": "tao_bittensor",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3119465491.125602421824",
+    "asset": "tao_bittensor",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3048344496.228367538112",
+    "asset": "tao_bittensor",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3392280221.044333761088",
+    "asset": "tao_bittensor",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3565285139.679341567872",
+    "asset": "tao_bittensor",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3648653525.349440880384",
+    "asset": "tao_bittensor",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3676427939.516700044544",
+    "asset": "tao_bittensor",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3702391378.52433157504",
+    "asset": "tao_bittensor",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3733532919.117710977344",
+    "asset": "tao_bittensor",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3694101500.547215526912",
+    "asset": "tao_bittensor",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3236777127.110668387392",
+    "asset": "tao_bittensor",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2856503706.321772766464",
+    "asset": "tao_bittensor",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3242323670.155245421056",
+    "asset": "tao_bittensor",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2944611735.496058865152",
+    "asset": "tao_bittensor",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2878065488.92951807392",
+    "asset": "tao_bittensor",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2685038437.67005548896",
+    "asset": "tao_bittensor",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2625826568.427787779392",
+    "asset": "tao_bittensor",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2881207757.045650832832",
+    "asset": "tao_bittensor",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2991443582.4257187232",
+    "asset": "tao_bittensor",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3159345652.844820788544",
+    "asset": "tao_bittensor",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3387613716.746092621184",
+    "asset": "tao_bittensor",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3304494508.131306837312",
+    "asset": "tao_bittensor",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3144535921.256850112896",
+    "asset": "tao_bittensor",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3263591868.236025799788",
+    "asset": "tao_bittensor",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3144437021.99543909806",
+    "asset": "tao_bittensor",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3019042173.061190600419",
+    "asset": "tao_bittensor",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3024131125.100688028084",
+    "asset": "tao_bittensor",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3147656244.222976576344",
+    "asset": "tao_bittensor",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3509502858.490511255275",
+    "asset": "tao_bittensor",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3881178442.287246501373",
+    "asset": "tao_bittensor",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3703263134.554334529792",
+    "asset": "tao_bittensor",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3643185191.619271852974",
+    "asset": "tao_bittensor",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3622318187.1625877394",
+    "asset": "tao_bittensor",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3367343742.056141060052",
+    "asset": "tao_bittensor",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3220384525.30812246957",
+    "asset": "tao_bittensor",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2961438690.734070361968",
+    "asset": "tao_bittensor",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2757790223.74982059525",
+    "asset": "tao_bittensor",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2754749991.358150349576",
+    "asset": "tao_bittensor",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2818296754.51214613844",
+    "asset": "tao_bittensor",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2978032380.566281498931",
+    "asset": "tao_bittensor",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1939774178.490589346166",
+    "asset": "tao_bittensor",
+    "time": "2024-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1984957587.951147583692",
+    "asset": "tao_bittensor",
+    "time": "2024-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1995737010.770785853131",
+    "asset": "tao_bittensor",
+    "time": "2024-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2041470895.318535016313",
+    "asset": "tao_bittensor",
+    "time": "2024-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2073763808.362819762113",
+    "asset": "tao_bittensor",
+    "time": "2024-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2140319506.891302420992",
+    "asset": "tao_bittensor",
+    "time": "2024-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2154828431.654799715009",
+    "asset": "tao_bittensor",
+    "time": "2024-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2321342541.860095035168",
+    "asset": "tao_bittensor",
+    "time": "2024-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2527509775.824254614296",
+    "asset": "tao_bittensor",
+    "time": "2024-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2436051901.437700182155",
+    "asset": "tao_bittensor",
+    "time": "2024-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2551714669.17288577323",
+    "asset": "tao_bittensor",
+    "time": "2024-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2461817278.079401632693",
+    "asset": "tao_bittensor",
+    "time": "2024-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2284753118.142300567124",
+    "asset": "tao_bittensor",
+    "time": "2024-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2170465209.300726259194",
+    "asset": "tao_bittensor",
+    "time": "2024-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2070542645.29124577336",
+    "asset": "tao_bittensor",
+    "time": "2024-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2062127986.39348195266",
+    "asset": "tao_bittensor",
+    "time": "2024-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2053815686.002646052654",
+    "asset": "tao_bittensor",
+    "time": "2024-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1930378596.299165338956",
+    "asset": "tao_bittensor",
+    "time": "2024-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2051643270.716882221396",
+    "asset": "tao_bittensor",
+    "time": "2024-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1834602491.396696473059",
+    "asset": "tao_bittensor",
+    "time": "2024-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1876288231.70828867599",
+    "asset": "tao_bittensor",
+    "time": "2024-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1744317001.283474739741",
+    "asset": "tao_bittensor",
+    "time": "2024-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1698095105.459921882",
+    "asset": "tao_bittensor",
+    "time": "2024-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1723429343.19776505183",
+    "asset": "tao_bittensor",
+    "time": "2024-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1814754424.70278266114",
+    "asset": "tao_bittensor",
+    "time": "2024-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2046870927.84396368105",
+    "asset": "tao_bittensor",
+    "time": "2024-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2127166120.84654984088",
+    "asset": "tao_bittensor",
+    "time": "2024-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2093045242.46010321612",
+    "asset": "tao_bittensor",
+    "time": "2024-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2164741423.111705833962",
+    "asset": "tao_bittensor",
+    "time": "2024-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2353777216.582220189739",
+    "asset": "tao_bittensor",
+    "time": "2024-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2417350361.217919952838",
+    "asset": "tao_bittensor",
+    "time": "2024-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2249301215.554042736268",
+    "asset": "tao_bittensor",
+    "time": "2024-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2130927217.351296874536",
+    "asset": "tao_bittensor",
+    "time": "2024-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2374434125.994387935634",
+    "asset": "tao_bittensor",
+    "time": "2024-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2484207304.008747651243",
+    "asset": "tao_bittensor",
+    "time": "2024-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2756734147.479903433011",
+    "asset": "tao_bittensor",
+    "time": "2024-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3019271145.117285351969",
+    "asset": "tao_bittensor",
+    "time": "2024-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3461105616.687773320578",
+    "asset": "tao_bittensor",
+    "time": "2024-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3476918816.386753709205",
+    "asset": "tao_bittensor",
+    "time": "2024-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4014391183.490154428598",
+    "asset": "tao_bittensor",
+    "time": "2024-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4070484599.776702091673",
+    "asset": "tao_bittensor",
+    "time": "2024-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4073501490.282309061665",
+    "asset": "tao_bittensor",
+    "time": "2024-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3880683783.766336547325",
+    "asset": "tao_bittensor",
+    "time": "2024-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4043700744.521709266541",
+    "asset": "tao_bittensor",
+    "time": "2024-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3926210634.549411981708",
+    "asset": "tao_bittensor",
+    "time": "2024-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4133505463.047857297778",
+    "asset": "tao_bittensor",
+    "time": "2024-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4243970228.263521096705",
+    "asset": "tao_bittensor",
+    "time": "2024-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3978047461.134834891804",
+    "asset": "tao_bittensor",
+    "time": "2024-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3838666669.36685038002",
+    "asset": "tao_bittensor",
+    "time": "2024-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3658981485.379265312709",
+    "asset": "tao_bittensor",
+    "time": "2024-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4289171760.241482079797",
+    "asset": "tao_bittensor",
+    "time": "2024-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4178620978.961786889987",
+    "asset": "tao_bittensor",
+    "time": "2024-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4608447002.414741487456",
+    "asset": "tao_bittensor",
+    "time": "2024-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4521022744.301087175606",
+    "asset": "tao_bittensor",
+    "time": "2024-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4486146990.804053798496",
+    "asset": "tao_bittensor",
+    "time": "2024-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4207480750.546540216386",
+    "asset": "tao_bittensor",
+    "time": "2024-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4154211622.347962164275",
+    "asset": "tao_bittensor",
+    "time": "2024-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4593473703.03249488619",
+    "asset": "tao_bittensor",
+    "time": "2024-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4858895745.808949830557",
+    "asset": "tao_bittensor",
+    "time": "2024-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4728529469.99494982466",
+    "asset": "tao_bittensor",
+    "time": "2024-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4676782520.149775429589",
+    "asset": "tao_bittensor",
+    "time": "2024-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4399223667.475050281478",
+    "asset": "tao_bittensor",
+    "time": "2024-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4288621352.160515700993",
+    "asset": "tao_bittensor",
+    "time": "2024-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4262956223.865211551354",
+    "asset": "tao_bittensor",
+    "time": "2024-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4247667894.087714502731",
+    "asset": "tao_bittensor",
+    "time": "2024-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4124076298.054598604771",
+    "asset": "tao_bittensor",
+    "time": "2024-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4437752440.78278675888",
+    "asset": "tao_bittensor",
+    "time": "2024-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4055795079.432074111679",
+    "asset": "tao_bittensor",
+    "time": "2024-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4026080890.126047879984",
+    "asset": "tao_bittensor",
+    "time": "2024-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3888994094.205202688082",
+    "asset": "tao_bittensor",
+    "time": "2024-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3998333722.156931023464",
+    "asset": "tao_bittensor",
+    "time": "2024-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3573001337.139795122835",
+    "asset": "tao_bittensor",
+    "time": "2024-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3772119248.681047448106",
+    "asset": "tao_bittensor",
+    "time": "2024-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3757621616.604962669706",
+    "asset": "tao_bittensor",
+    "time": "2024-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3800130144.762688636887",
+    "asset": "tao_bittensor",
+    "time": "2024-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3840799824.157969182978",
+    "asset": "tao_bittensor",
+    "time": "2024-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3658431592.441668121755",
+    "asset": "tao_bittensor",
+    "time": "2024-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3575627092.67240489025",
+    "asset": "tao_bittensor",
+    "time": "2024-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3414918714.317093863074",
+    "asset": "tao_bittensor",
+    "time": "2024-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3230884865.481841230624",
+    "asset": "tao_bittensor",
+    "time": "2024-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3210692063.996128507224",
+    "asset": "tao_bittensor",
+    "time": "2024-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3085753798.535053420593",
+    "asset": "tao_bittensor",
+    "time": "2024-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3376539691.70895924963",
+    "asset": "tao_bittensor",
+    "time": "2024-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3877078450.110380999562",
+    "asset": "tao_bittensor",
+    "time": "2024-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3748865726.933614018953",
+    "asset": "tao_bittensor",
+    "time": "2024-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3677439463.608127284678",
+    "asset": "tao_bittensor",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3837057591.170270594595",
+    "asset": "tao_bittensor",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4133120032.905600730812",
+    "asset": "tao_bittensor",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4456413937.112835914853",
+    "asset": "tao_bittensor",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4216534554.474462131145",
+    "asset": "tao_bittensor",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3972091365.703776804411",
+    "asset": "tao_bittensor",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3635837999.392167950316",
+    "asset": "tao_bittensor",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3830093368.882382663763",
+    "asset": "tao_bittensor",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3819548513.967437375007",
+    "asset": "tao_bittensor",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3618607739.427404874306",
+    "asset": "tao_bittensor",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3754479847.947757346145",
+    "asset": "tao_bittensor",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3573990233.744847830745",
+    "asset": "tao_bittensor",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3571534572.352175280813",
+    "asset": "tao_bittensor",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3854302336.563084229629",
+    "asset": "tao_bittensor",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3749961453.793099586184",
+    "asset": "tao_bittensor",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2821292977.514774583516",
+    "asset": "tao_bittensor",
+    "time": "2024-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2622486942.787157810078",
+    "asset": "tao_bittensor",
+    "time": "2024-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2643938859.173142499353",
+    "asset": "tao_bittensor",
+    "time": "2024-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2538509838.10260894736",
+    "asset": "tao_bittensor",
+    "time": "2024-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2523680038.58091356872",
+    "asset": "tao_bittensor",
+    "time": "2024-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2452355943.62001417152",
+    "asset": "tao_bittensor",
+    "time": "2024-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2412829283.154986639272",
+    "asset": "tao_bittensor",
+    "time": "2024-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2316192878.4342645306",
+    "asset": "tao_bittensor",
+    "time": "2024-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2643708913.7447166702",
+    "asset": "tao_bittensor",
+    "time": "2024-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2591504003.637101799036",
+    "asset": "tao_bittensor",
+    "time": "2024-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2586252056.488172277044",
+    "asset": "tao_bittensor",
+    "time": "2024-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2594419309.736805132606",
+    "asset": "tao_bittensor",
+    "time": "2024-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2475404779.46792720252",
+    "asset": "tao_bittensor",
+    "time": "2024-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2764397549.74047118995",
+    "asset": "tao_bittensor",
+    "time": "2024-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2878515031.030040076276",
+    "asset": "tao_bittensor",
+    "time": "2024-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3044826486.504612972392",
+    "asset": "tao_bittensor",
+    "time": "2024-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3052258034.882880732306",
+    "asset": "tao_bittensor",
+    "time": "2024-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2965234726.978853203368",
+    "asset": "tao_bittensor",
+    "time": "2024-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2894495280.73643985094",
+    "asset": "tao_bittensor",
+    "time": "2024-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2952367894.41475845589",
+    "asset": "tao_bittensor",
+    "time": "2024-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2980827526.5110433861",
+    "asset": "tao_bittensor",
+    "time": "2024-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2858103064.50348365872",
+    "asset": "tao_bittensor",
+    "time": "2024-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2702521306.29192187797",
+    "asset": "tao_bittensor",
+    "time": "2024-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2668316000.2170146255",
+    "asset": "tao_bittensor",
+    "time": "2024-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2667258013.637236907366",
+    "asset": "tao_bittensor",
+    "time": "2024-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2651635245.436301390712",
+    "asset": "tao_bittensor",
+    "time": "2024-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2619330613.42389969679",
+    "asset": "tao_bittensor",
+    "time": "2024-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2605113235.264449446719",
+    "asset": "tao_bittensor",
+    "time": "2024-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2739409077.817093443552",
+    "asset": "tao_bittensor",
+    "time": "2024-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2883711024.406248867312",
+    "asset": "tao_bittensor",
+    "time": "2024-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2920093161.349372230128",
+    "asset": "tao_bittensor",
+    "time": "2024-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2701353116.405466519792",
+    "asset": "tao_bittensor",
+    "time": "2024-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2499174158.376915474824",
+    "asset": "tao_bittensor",
+    "time": "2024-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2495096422.13878164064",
+    "asset": "tao_bittensor",
+    "time": "2024-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2366797090.826537760215",
+    "asset": "tao_bittensor",
+    "time": "2024-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2251454344.637123899776",
+    "asset": "tao_bittensor",
+    "time": "2024-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2450774923.055642752744",
+    "asset": "tao_bittensor",
+    "time": "2024-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2185863007.148413483667",
+    "asset": "tao_bittensor",
+    "time": "2024-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2099018678.695237683279",
+    "asset": "tao_bittensor",
+    "time": "2024-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2095114465.531048071872",
+    "asset": "tao_bittensor",
+    "time": "2024-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2120431468.697517098589",
+    "asset": "tao_bittensor",
+    "time": "2024-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2004506150.76291468892",
+    "asset": "tao_bittensor",
+    "time": "2024-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2027534706.615641335315",
+    "asset": "tao_bittensor",
+    "time": "2024-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2071193224.460783932269",
+    "asset": "tao_bittensor",
+    "time": "2024-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2080642542.97564895369",
+    "asset": "tao_bittensor",
+    "time": "2024-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1989150113.226245878984",
+    "asset": "tao_bittensor",
+    "time": "2024-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1944908360.26994325588",
+    "asset": "tao_bittensor",
+    "time": "2024-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1890198837.854430871545",
+    "asset": "tao_bittensor",
+    "time": "2024-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1923544929.326282959106",
+    "asset": "tao_bittensor",
+    "time": "2024-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2015655577.911834411059",
+    "asset": "tao_bittensor",
+    "time": "2024-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1946189291.965497211805",
+    "asset": "tao_bittensor",
+    "time": "2024-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1985153331.769023472812",
+    "asset": "tao_bittensor",
+    "time": "2024-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1869169200.687139889412",
+    "asset": "tao_bittensor",
+    "time": "2024-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1813775910.247694170564",
+    "asset": "tao_bittensor",
+    "time": "2024-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1907321939.030688869808",
+    "asset": "tao_bittensor",
+    "time": "2024-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1930065640.83417859542",
+    "asset": "tao_bittensor",
+    "time": "2024-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1686649180.262178488688",
+    "asset": "tao_bittensor",
+    "time": "2024-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1661587883.303503453857",
+    "asset": "tao_bittensor",
+    "time": "2024-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1561393965.009677231532",
+    "asset": "tao_bittensor",
+    "time": "2024-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1571516344.895223741942",
+    "asset": "tao_bittensor",
+    "time": "2024-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1616652347.32571446882",
+    "asset": "tao_bittensor",
+    "time": "2024-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1517668578.793127171498",
+    "asset": "tao_bittensor",
+    "time": "2024-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1622643158.43800406627",
+    "asset": "tao_bittensor",
+    "time": "2024-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1779645296.499400677373",
+    "asset": "tao_bittensor",
+    "time": "2024-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1823106541.801066444848",
+    "asset": "tao_bittensor",
+    "time": "2024-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1733125749.217864904046",
+    "asset": "tao_bittensor",
+    "time": "2024-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1701981598.74680417222",
+    "asset": "tao_bittensor",
+    "time": "2024-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1818677833.37638153119",
+    "asset": "tao_bittensor",
+    "time": "2024-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1965630322.081806148458",
+    "asset": "tao_bittensor",
+    "time": "2024-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2123729563.353302717236",
+    "asset": "tao_bittensor",
+    "time": "2024-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2163239252.02927677376",
+    "asset": "tao_bittensor",
+    "time": "2024-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2270378578.983079371183",
+    "asset": "tao_bittensor",
+    "time": "2024-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2379314860.616528050155",
+    "asset": "tao_bittensor",
+    "time": "2024-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2518552083.138032289867",
+    "asset": "tao_bittensor",
+    "time": "2024-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2394650892.22881164613",
+    "asset": "tao_bittensor",
+    "time": "2024-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2496524415.139593682415",
+    "asset": "tao_bittensor",
+    "time": "2024-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2309649741.052540857456",
+    "asset": "tao_bittensor",
+    "time": "2024-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2318729390.304401431836",
+    "asset": "tao_bittensor",
+    "time": "2024-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2367492459.319751624974",
+    "asset": "tao_bittensor",
+    "time": "2024-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2332446798.847059207538",
+    "asset": "tao_bittensor",
+    "time": "2024-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2505695774.597002362552",
+    "asset": "tao_bittensor",
+    "time": "2024-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2416715012.661470577",
+    "asset": "tao_bittensor",
+    "time": "2024-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2390915822.822403553332",
+    "asset": "tao_bittensor",
+    "time": "2024-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2288808904.595204508304",
+    "asset": "tao_bittensor",
+    "time": "2024-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2292004758.82133434536",
+    "asset": "tao_bittensor",
+    "time": "2024-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2158784690.354495285121",
+    "asset": "tao_bittensor",
+    "time": "2024-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2125330391.876536873822",
+    "asset": "tao_bittensor",
+    "time": "2024-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1886582393.243481608736",
+    "asset": "tao_bittensor",
+    "time": "2024-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1789718238.015192929194",
+    "asset": "tao_bittensor",
+    "time": "2024-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1563954889.245609536045",
+    "asset": "tao_bittensor",
+    "time": "2024-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1660472279.65622352922",
+    "asset": "tao_bittensor",
+    "time": "2024-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1863771149.19858096663",
+    "asset": "tao_bittensor",
+    "time": "2024-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1781907618.01397994056",
+    "asset": "tao_bittensor",
+    "time": "2024-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2198650148.932097174052",
+    "asset": "tao_bittensor",
+    "time": "2024-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2142450265.95495829186",
+    "asset": "tao_bittensor",
+    "time": "2024-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2130440995.169766091596",
+    "asset": "tao_bittensor",
+    "time": "2024-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2056990965.416757260528",
+    "asset": "tao_bittensor",
+    "time": "2024-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2040277928.481597900489",
+    "asset": "tao_bittensor",
+    "time": "2024-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2055550861.812651067102",
+    "asset": "tao_bittensor",
+    "time": "2024-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1991793685.984902734532",
+    "asset": "tao_bittensor",
+    "time": "2024-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2170936085.980338509166",
+    "asset": "tao_bittensor",
+    "time": "2024-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2414655100.355044003408",
+    "asset": "tao_bittensor",
+    "time": "2024-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2615951663.845143159902",
+    "asset": "tao_bittensor",
+    "time": "2024-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2908653726.682690944624",
+    "asset": "tao_bittensor",
+    "time": "2024-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2759182992.114862035968",
+    "asset": "tao_bittensor",
+    "time": "2024-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2658636580.805497646432",
+    "asset": "tao_bittensor",
+    "time": "2024-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2659237946.449640270704",
+    "asset": "tao_bittensor",
+    "time": "2024-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2583454800.039067057201",
+    "asset": "tao_bittensor",
+    "time": "2024-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2773303409.79648574327",
+    "asset": "tao_bittensor",
+    "time": "2024-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3032775485.26199674229",
+    "asset": "tao_bittensor",
+    "time": "2024-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2731221649.887575583732",
+    "asset": "tao_bittensor",
+    "time": "2024-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2800584510.34993998664",
+    "asset": "tao_bittensor",
+    "time": "2024-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3363365846.29663552761",
+    "asset": "tao_bittensor",
+    "time": "2024-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3598533622.986843460311",
+    "asset": "tao_bittensor",
+    "time": "2024-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3331651982.880527267156",
+    "asset": "tao_bittensor",
+    "time": "2024-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3362109542.83558303768",
+    "asset": "tao_bittensor",
+    "time": "2024-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3623523827.42880027938",
+    "asset": "tao_bittensor",
+    "time": "2024-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3862878485.804068248168",
+    "asset": "tao_bittensor",
+    "time": "2024-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4199872798.133524361608",
+    "asset": "tao_bittensor",
+    "time": "2024-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4175491694.276162726352",
+    "asset": "tao_bittensor",
+    "time": "2024-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4094107772.647226022418",
+    "asset": "tao_bittensor",
+    "time": "2024-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4004203441.365406155226",
+    "asset": "tao_bittensor",
+    "time": "2024-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4003202772.394849658284",
+    "asset": "tao_bittensor",
+    "time": "2024-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3937582076.181998574776",
+    "asset": "tao_bittensor",
+    "time": "2024-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3918014488.995328027748",
+    "asset": "tao_bittensor",
+    "time": "2024-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3731997785.762272016844",
+    "asset": "tao_bittensor",
+    "time": "2024-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3672274410.218332272256",
+    "asset": "tao_bittensor",
+    "time": "2024-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3577500620.701055644992",
+    "asset": "tao_bittensor",
+    "time": "2024-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3574805061.850204415514",
+    "asset": "tao_bittensor",
+    "time": "2024-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3790438134.607424765391",
+    "asset": "tao_bittensor",
+    "time": "2024-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3840093894.444163185148",
+    "asset": "tao_bittensor",
+    "time": "2024-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3846416524.568205571476",
+    "asset": "tao_bittensor",
+    "time": "2024-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3907147813.807273684497",
+    "asset": "tao_bittensor",
+    "time": "2024-02-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4229879877.215662945535",
+    "asset": "tao_bittensor",
+    "time": "2024-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4096415745.010390764306",
+    "asset": "tao_bittensor",
+    "time": "2024-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4007869505.532045811602",
+    "asset": "tao_bittensor",
+    "time": "2024-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4115850116.440400974944",
+    "asset": "tao_bittensor",
+    "time": "2024-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4320692523.078565786922",
+    "asset": "tao_bittensor",
+    "time": "2024-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4538222892.0597927335",
+    "asset": "tao_bittensor",
+    "time": "2024-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4654563240.978579056484",
+    "asset": "tao_bittensor",
+    "time": "2024-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4473542673.74967028632",
+    "asset": "tao_bittensor",
+    "time": "2024-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4577944345.00656440208",
+    "asset": "tao_bittensor",
+    "time": "2024-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4387436905.778184933081",
+    "asset": "tao_bittensor",
+    "time": "2024-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4383135232.4352901761",
+    "asset": "tao_bittensor",
+    "time": "2024-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4357955994.72420909696",
+    "asset": "tao_bittensor",
+    "time": "2024-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4115569010.856341655306",
+    "asset": "tao_bittensor",
+    "time": "2024-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4051969538.73446830364",
+    "asset": "tao_bittensor",
+    "time": "2024-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3959238334.06750894999",
+    "asset": "tao_bittensor",
+    "time": "2024-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3885898038.685167889024",
+    "asset": "tao_bittensor",
+    "time": "2024-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4468874740.739049243363",
+    "asset": "tao_bittensor",
+    "time": "2024-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4646789716.17138418899",
+    "asset": "tao_bittensor",
+    "time": "2024-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3941151306.655926516726",
+    "asset": "tao_bittensor",
+    "time": "2024-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4398453721.663708865067",
+    "asset": "tao_bittensor",
+    "time": "2024-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3987318289.429781542546",
+    "asset": "tao_bittensor",
+    "time": "2024-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3721920778.21753875126",
+    "asset": "tao_bittensor",
+    "time": "2024-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3687711345.6078312945",
+    "asset": "tao_bittensor",
+    "time": "2024-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3877857464.16577053102",
+    "asset": "tao_bittensor",
+    "time": "2024-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4048031487.322489984205",
+    "asset": "tao_bittensor",
+    "time": "2024-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3788924970.22570335692",
+    "asset": "tao_bittensor",
+    "time": "2024-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3472694408.888148564973",
+    "asset": "tao_bittensor",
+    "time": "2024-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3460341568.296772828304",
+    "asset": "tao_bittensor",
+    "time": "2024-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3387406377.487505228345",
+    "asset": "tao_bittensor",
+    "time": "2024-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3211704802.618135648725",
+    "asset": "tao_bittensor",
+    "time": "2024-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3391691730.50250262284",
+    "asset": "tao_bittensor",
+    "time": "2024-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3767706793.620920855122",
+    "asset": "tao_bittensor",
+    "time": "2024-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3409184701.29512398599",
+    "asset": "tao_bittensor",
+    "time": "2024-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3651177309.54506551464",
+    "asset": "tao_bittensor",
+    "time": "2024-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3942121915.883946860396",
+    "asset": "tao_bittensor",
+    "time": "2024-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3712757301.457470231075",
+    "asset": "tao_bittensor",
+    "time": "2024-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3627499115.318637932661",
+    "asset": "tao_bittensor",
+    "time": "2024-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3699762018.9796758456",
+    "asset": "tao_bittensor",
+    "time": "2024-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3714340560.75536730889",
+    "asset": "tao_bittensor",
+    "time": "2024-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3889539021.17603545576",
+    "asset": "tao_bittensor",
+    "time": "2024-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3739450311.908983164564",
+    "asset": "tao_bittensor",
+    "time": "2024-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4144343342.323166762208",
+    "asset": "tao_bittensor",
+    "time": "2024-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3558274506.473750852056",
+    "asset": "tao_bittensor",
+    "time": "2024-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3392735848.05849828204",
+    "asset": "tao_bittensor",
+    "time": "2024-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3876739970.187265711395",
+    "asset": "tao_bittensor",
+    "time": "2024-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3475066728.61826381475",
+    "asset": "tao_bittensor",
+    "time": "2024-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3308815288.52866373627",
+    "asset": "tao_bittensor",
+    "time": "2024-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2997908962.332884439277",
+    "asset": "tao_bittensor",
+    "time": "2024-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3085954858.944339958368",
+    "asset": "tao_bittensor",
+    "time": "2024-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2904118282.223195306912",
+    "asset": "tao_bittensor",
+    "time": "2024-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3219878014.425865571842",
+    "asset": "tao_bittensor",
+    "time": "2024-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3147660082.868895960273",
+    "asset": "tao_bittensor",
+    "time": "2024-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3474239143.513605252786",
+    "asset": "tao_bittensor",
+    "time": "2024-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3315388339.557850442362",
+    "asset": "tao_bittensor",
+    "time": "2024-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2990400581.311342971075",
+    "asset": "tao_bittensor",
+    "time": "2024-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3066339514.07910220488",
+    "asset": "tao_bittensor",
+    "time": "2024-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2841562687.1851187228",
+    "asset": "tao_bittensor",
+    "time": "2024-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2812756459.036245160032",
+    "asset": "tao_bittensor",
+    "time": "2024-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2812758794.19182629826",
+    "asset": "tao_bittensor",
+    "time": "2024-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2709775553.587054888632",
+    "asset": "tao_bittensor",
+    "time": "2024-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2589678917.060211766425",
+    "asset": "tao_bittensor",
+    "time": "2024-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2540432475.34600621748",
+    "asset": "tao_bittensor",
+    "time": "2024-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2712868835.27509750383",
+    "asset": "tao_bittensor",
+    "time": "2024-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2862212842.80714822357",
+    "asset": "tao_bittensor",
+    "time": "2024-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2996937604.62321793971",
+    "asset": "tao_bittensor",
+    "time": "2024-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3054149177.1317736698",
+    "asset": "tao_bittensor",
+    "time": "2024-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2962910314.629813468696",
+    "asset": "tao_bittensor",
+    "time": "2024-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1090905904.246201957827",
+    "asset": "tao_bittensor",
+    "time": "2023-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1328201435.967449463333",
+    "asset": "tao_bittensor",
+    "time": "2023-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1443619926.697686867666",
+    "asset": "tao_bittensor",
+    "time": "2023-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1622138084.949543559974",
+    "asset": "tao_bittensor",
+    "time": "2023-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1276475360.885160789483",
+    "asset": "tao_bittensor",
+    "time": "2023-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1342942756.043489217315",
+    "asset": "tao_bittensor",
+    "time": "2023-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1345554661.673326998816",
+    "asset": "tao_bittensor",
+    "time": "2023-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1590707914.994763268407",
+    "asset": "tao_bittensor",
+    "time": "2023-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1565236454.403084412779",
+    "asset": "tao_bittensor",
+    "time": "2023-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1513814788.792723532742",
+    "asset": "tao_bittensor",
+    "time": "2023-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1381746849.732554803749",
+    "asset": "tao_bittensor",
+    "time": "2023-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1398100761.823381042059",
+    "asset": "tao_bittensor",
+    "time": "2023-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1416846133.0684913572",
+    "asset": "tao_bittensor",
+    "time": "2023-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1672778723.43815891565",
+    "asset": "tao_bittensor",
+    "time": "2023-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1720829473.494858543446",
+    "asset": "tao_bittensor",
+    "time": "2023-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1717414541.695633717626",
+    "asset": "tao_bittensor",
+    "time": "2023-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1968499583.056534809805",
+    "asset": "tao_bittensor",
+    "time": "2023-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2003041060.844704142587",
+    "asset": "tao_bittensor",
+    "time": "2023-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1950336608.697608801659",
+    "asset": "tao_bittensor",
+    "time": "2023-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1909546518.319974536224",
+    "asset": "tao_bittensor",
+    "time": "2023-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1839857984.975632852136",
+    "asset": "tao_bittensor",
+    "time": "2023-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2027629664.73145393272",
+    "asset": "tao_bittensor",
+    "time": "2023-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1931235707.062975608932",
+    "asset": "tao_bittensor",
+    "time": "2023-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1987473601.243975053636",
+    "asset": "tao_bittensor",
+    "time": "2023-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1868538270.254687635214",
+    "asset": "tao_bittensor",
+    "time": "2023-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1887758710.122826096751",
+    "asset": "tao_bittensor",
+    "time": "2023-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1922648174.341110700172",
+    "asset": "tao_bittensor",
+    "time": "2023-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2182079270.651597961059",
+    "asset": "tao_bittensor",
+    "time": "2023-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2048992108.90117193476",
+    "asset": "tao_bittensor",
+    "time": "2023-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1944015972.070783928897",
+    "asset": "tao_bittensor",
+    "time": "2023-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1841212684.506992417464",
+    "asset": "tao_bittensor",
+    "time": "2023-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1920279502.59280212653",
+    "asset": "tao_bittensor",
+    "time": "2023-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1828019450.745802148544",
+    "asset": "tao_bittensor",
+    "time": "2023-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1821525237.690453638775",
+    "asset": "tao_bittensor",
+    "time": "2023-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1787092708.212613961676",
+    "asset": "tao_bittensor",
+    "time": "2023-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1598504162.724011631658",
+    "asset": "tao_bittensor",
+    "time": "2023-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1653653975.369778148197",
+    "asset": "tao_bittensor",
+    "time": "2023-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1609420883.714793629535",
+    "asset": "tao_bittensor",
+    "time": "2023-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1609959232.116182360865",
+    "asset": "tao_bittensor",
+    "time": "2023-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1531017638.507917597632",
+    "asset": "tao_bittensor",
+    "time": "2023-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1887972079.087739138824",
+    "asset": "tao_bittensor",
+    "time": "2023-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1800560158.504620639456",
+    "asset": "tao_bittensor",
+    "time": "2023-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1626226481.66184405306",
+    "asset": "tao_bittensor",
+    "time": "2023-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1640817821.541908063824",
+    "asset": "tao_bittensor",
+    "time": "2023-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1575730642.74237979",
+    "asset": "tao_bittensor",
+    "time": "2023-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1617779334.424465550481",
+    "asset": "tao_bittensor",
+    "time": "2024-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1578310509.157729945845",
+    "asset": "tao_bittensor",
+    "time": "2024-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1465784963.913797577589",
+    "asset": "tao_bittensor",
+    "time": "2024-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1536598564.759431345984",
+    "asset": "tao_bittensor",
+    "time": "2024-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1449932780.871694773984",
+    "asset": "tao_bittensor",
+    "time": "2024-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1419983167.265071482614",
+    "asset": "tao_bittensor",
+    "time": "2024-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1309841460.222911251328",
+    "asset": "tao_bittensor",
+    "time": "2024-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1494871168.059706152952",
+    "asset": "tao_bittensor",
+    "time": "2024-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1452309929.22652961576",
+    "asset": "tao_bittensor",
+    "time": "2024-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1415072623.461407866641",
+    "asset": "tao_bittensor",
+    "time": "2024-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1406539424.15924826965",
+    "asset": "tao_bittensor",
+    "time": "2024-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1320279505.873764425424",
+    "asset": "tao_bittensor",
+    "time": "2024-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1399894796.643446334938",
+    "asset": "tao_bittensor",
+    "time": "2024-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1323170393.139983346648",
+    "asset": "tao_bittensor",
+    "time": "2024-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1338076727.999232767229",
+    "asset": "tao_bittensor",
+    "time": "2024-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1554543242.095774214844",
+    "asset": "tao_bittensor",
+    "time": "2024-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1615469949.269883018134",
+    "asset": "tao_bittensor",
+    "time": "2024-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1533780475.272947358984",
+    "asset": "tao_bittensor",
+    "time": "2024-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1493908450.034988986512",
+    "asset": "tao_bittensor",
+    "time": "2024-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1525506826.854227356806",
+    "asset": "tao_bittensor",
+    "time": "2024-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1549069144.241046346457",
+    "asset": "tao_bittensor",
+    "time": "2024-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1516026933.435402712775",
+    "asset": "tao_bittensor",
+    "time": "2024-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1633076161.698545315975",
+    "asset": "tao_bittensor",
+    "time": "2024-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1960521846.885116900742",
+    "asset": "tao_bittensor",
+    "time": "2024-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1986110551.175975976426",
+    "asset": "tao_bittensor",
+    "time": "2024-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2081289085.240282167366",
+    "asset": "tao_bittensor",
+    "time": "2024-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "2204309181.2460995788",
+    "asset": "tao_bittensor",
+    "time": "2024-01-27T00:00:00.000000000Z"
+  }
+]
