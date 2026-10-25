@@ -120,7 +120,7 @@ def cm_fetch_json(url: str):
                 time.sleep(BACKOFF_BASE ** attempt)
                 continue
             raise RuntimeError(f"non-retryable {last_err}") from exc
-        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        except (urllib.error.URLError, TimeoutError, OSError, UnicodeError) as exc:
             last_err = f"{type(exc).__name__}: {exc}"
             time.sleep(BACKOFF_BASE ** attempt)
             continue
@@ -179,7 +179,7 @@ def binance_symbol_exists(symbol: str):
                 time.sleep(BINANCE_BACKOFF_BASE ** attempt)
                 continue
             return False, last_err
-        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        except (urllib.error.URLError, TimeoutError, OSError, UnicodeError) as exc:
             last_err = f"{type(exc).__name__}: {exc}"
             time.sleep(BINANCE_BACKOFF_BASE ** attempt)
             continue
@@ -254,6 +254,16 @@ def main() -> int:
                  "binance": {"symbol": None, "exists": None, "error": None},
                  "eligible": False, "status": None}
         print(f"[candidate] {asset}: fetching caps...", flush=True)
+
+        if not asset.isascii():
+            entry["metrics"] = {}
+            entry["binance"] = {"symbol": None, "exists": False, "error": "non_ascii_asset_id"}
+            entry["eligible"] = False
+            entry["status"] = "blocked"
+            entry["blocker_reasons"] = ["non_ascii_asset_id"]
+            run_record["candidates_processed"].append(entry)
+            print(f"[candidate] {asset}: BLOCKED (non_ascii_asset_id)", flush=True)
+            continue
 
         has_est = False
         for metric in CM_METRICS:
