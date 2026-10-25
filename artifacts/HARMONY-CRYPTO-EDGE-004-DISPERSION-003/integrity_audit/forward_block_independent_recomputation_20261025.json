@@ -1,0 +1,61 @@
+{
+  "audit_id": "H004V106_INDEPENDENT_RECOMPUTATION_AUDIT_20261025",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "computed_utc": "2026-10-25T04:18:24.632617+00:00",
+  "block_sealing": "formations with formation_date > 2026-08-31 excluded because their 30-day forward horizon is not completed by the data cutoff 2026-09-30; no truncated outcomes are computed",
+  "data_cutoff_utc": "2026-09-30T00:00:00Z",
+  "date_first": "2025-01-01",
+  "date_last": "2026-08-31",
+  "n_formations": 608,
+  "state_counts": {
+    "high": 61,
+    "mid": 457,
+    "low": 90
+  },
+  "finite_checks": {
+    "all_spread_net_finite": true,
+    "all_spread_gross_finite": true,
+    "any_non_finite": false
+  },
+  "metrics": {
+    "spread_net_mean": 0.09962482788703449,
+    "spread_net_median": -0.010610790611408072,
+    "spread_gross_mean": 0.10062482788703449,
+    "spread_gross_median": -0.009610790611408071,
+    "high_net_mean": 0.5399613009588848,
+    "low_net_mean": -0.07656109443410872,
+    "high_low_diff_net": 0.6165223953929936,
+    "high_low_diff_gross": 0.6165223953929936
+  },
+  "tail_influence": {
+    "n_high": 61,
+    "n_low": 90,
+    "high_net_top10": [
+      2.845867092700667,
+      2.4840091890615903,
+      2.2781849815549946,
+      2.003911456111789,
+      1.8200084068571196,
+      1.5944679660532248,
+      1.4995223591782711,
+      1.4751638636874653,
+      1.2881249327174291,
+      1.2749182369745362
+    ],
+    "high_net_bottom10": [
+      -0.36373323602179936,
+      -0.3547907034712725,
+      -0.33995296357552535,
+      -0.30416654515773844,
+      -0.28649660183719344,
+      -0.2591677502473145,
+      -0.2476883357717392,
+      -0.19449754939237973,
+      -0.13556281236038548,
+      -0.11577251993642174
+    ]
+  },
+  "cost_treatment": "net = gross - 0.001 (1x) as per formation records; difference of means cancels cost",
+  "overlap_note": "daily overlapping 30-day horizons; inference requires HAC/Newey-West or block bootstrap (see hac_addendum)",
+  "conclusion": "Independent recomputation matches canonical values; finite, sealed by rule (last formation 2026-08-31, cutoff 2026-09-30). Positive mean driven by minority of high-state formations; not Holm-significant across grid and not significant under HAC in prior addendum."
+}

@@ -4,7 +4,7 @@ Read the full handoff: `research_state/agent_handoff.md`
 
 Priority: cutoff gate still BLOCKED (needs >= 2026-10-29; today 2026-10-25). October 2026 Binance monthly archive still 404, not re-probed. Do NOT reuse the inspected canonical forward block as independent confirmation (treat as exploratory/dev evidence).
 
-Last session: grid manifest determinism verified (216 cells, byte-identical regeneration via `scripts/generate_grid_v3_manifest.py`, anchors H004V105/H004V106 correct; grid executed 216/216 OK, 0 Holm-rejected); full suite 45 tests OK; integrity audit verified (608 formations, 0 non-finite dispersion). DISPERSION-001/002 unchanged.
+Last session: grid manifest determinism verified (216 cells, byte-identical regeneration via `scripts/generate_grid_v3_manifest.py`, anchors H004V105/H004V106 correct; grid executed 216/216 OK, 0 Holm-rejected); full suite 45 tests OK; integrity audits verified including independent recomputation (608 formations, 0 non-finite dispersion, +0.6165 diff not significant under HAC). DISPERSION-001/002 unchanged.
 
 Next priority: independent unblocked work per AGENTS.md blocker note — free-source discovery, validation, design, or red-team. On/after 2026-10-29, re-check via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` and only then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty using completed 30-day outcomes.
 
