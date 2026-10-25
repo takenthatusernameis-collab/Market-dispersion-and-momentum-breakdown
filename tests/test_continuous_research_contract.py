@@ -50,13 +50,18 @@ class ContinuousResearchContractTests(unittest.TestCase):
         self.assertIn("no fixed top-N cutoff", frontier["rank_policy"])
         self.assertGreater(frontier["next_candidate_batch_size"], 0)
 
-    def test_registry_keeps_old_hypothesis_and_active_sequence(self):
-        registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+def test_registry_keeps_old_hypothesis_and_active_sequence(self):
+        registry = json.loads(REGISTRY_PATH.read_text())
         self.assertEqual(registry["program_status"], "ACTIVE")
-        self.assertEqual(registry["next_sequence_number"], 6)
+        # next_sequence_number tracks the highest registered hypothesis id;
+        # H1..H7 are present after the 2026-10-25 reconciliation that added
+        # H7 (canonical-block positive-direction candidate).
+        self.assertEqual(registry["next_sequence_number"], 7)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
+        h7 = next(h for h in registry["hypotheses"] if h["id"] == "H7")
+        self.assertEqual(h7["predicted_high_minus_low_sign"], "positive")
 
     def test_loop_policy_forbids_manual_id_pause_and_trading(self):
         prompt = PROMPT_PATH.read_text(encoding="utf-8").lower()
