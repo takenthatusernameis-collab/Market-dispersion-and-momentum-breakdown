@@ -1,0 +1,3402 @@
+[
+  {
+    "CapMrktEstUSD": "25068930.4338090720145737306012",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24648703.4639770570882950324519",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23327733.665631343492295951292",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23030775.8952330841724455935758",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22654849.8551915814116976668001",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23422983.5265060245738043679699",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22761806.0403717434970722442915",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21917583.0308104250903310626919",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21593691.3346360992357728590161",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21548037.8503607017660879575126",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21868376.171299204365950665974",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22711084.7940883167855845922016",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22464352.7097364575137743818216",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21839035.4623321848589622878726",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22384861.105490270747859165641",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21852326.409633943052122369395",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21125218.077479537409956975673",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20871440.725200110588245231591",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20685947.9447420282636621289003",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21374865.5094596233492215999888",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21841481.6501706933364566465805",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22543380.2098004227787911825974",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23099794.984310326395088394925",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22704942.08685447156548501701",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22163863.1318066611559640818217",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22305597.9344063417837771325168",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21751101.915861691416435862437",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21532676.4180739193682695542572",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21776636.5954781319616762877544",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21719117.0723332463091907970211",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21565452.2782698558249618597608",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21458273.6249073526794497924988",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21825424.2479324148650953589952",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21249075.0506228782580428972284",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22972312.0216087007618842238622",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25456442.9456027823233606152242",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26071592.1911369687483650259872",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24770196.7759465291639704527298",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25775526.998929882201618511836",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28020640.1477351449033890259968",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27341933.3006261138902887685042",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29388334.6532643704999292622062",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28989264.39018626982658584892",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28875939.579601356770769461269",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28892722.2657506025023768694291",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28307443.421631701882589647281",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27998424.6600251711117523266238",
+    "asset": "velo_velodromefinance",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28346151.4864631867849736924378",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27830295.6645526639604086102554",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32050366.76996265216969936349",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29962580.1139832273683573902626",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33173092.5999574872019590541824",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32980688.9738186578479183864126",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36329786.704575321513238269702",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34934087.5481825623066486894706",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32233670.6057710836716111161215",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30616856.168213217210455131926",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32601049.7688862265742773361886",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32181776.8642860439702011689174",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31391356.8855642015443934982338",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32002118.257720218415007109345",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29989626.1697471425808989219824",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30276394.5206473127572407379402",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32714710.0491821317472547227478",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36398598.6708165530540848197352",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37252739.3429869396128157808844",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37127802.4898818369550356673464",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39565534.7075192739727241269675",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38876074.8800227012303622201344",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38304838.8340340043718606426452",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39952379.1040621214129541613107",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47314214.2184046370359838204054",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49302273.251698979496328434132",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47759608.6816490967124520064534",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46821326.0198406358206471275",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46364329.35889977034604742216",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47075749.6618191517890197760883",
+    "asset": "velo_velodromefinance",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45031640.9949220460968980433534",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46465880.7860608517991711057628",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50258870.5620008505822062073923",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51571370.093354515118670985566",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49278114.927348252344762335328",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46942721.2188678197880813271984",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46083910.0981164353243019477018",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48629568.0114854801540216937872",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46987771.739623090176257817412",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55041569.7545260091834555131584",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55151192.642381953268670961796",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51699852.0006568339799869312464",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52909276.3112745459123365640628",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53007710.554622135047026040728",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54590510.8397709271326405014166",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52147663.8314843091771648797256",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50025584.2137462216585555089301",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47075499.9307704314045010701796",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46964418.3843657095600920685193",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51884241.6803640968735891319664",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47534356.48388568146666656999",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45890699.7398550493928095753779",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35706445.9700588371982960386248",
+    "asset": "velo_velodromefinance",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16127294.513965674607035435311",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15888610.3226021021468467925622",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16835054.5829372226432409419405",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17761981.7478895240283741797272",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18290851.2146533973688431153698",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17182058.4394837497414547759125",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18313414.117450015964243408199",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16799271.1955707643061709447446",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17015209.708193114448585802913",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18292714.2703050951906952531992",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19419681.6694387207808527335132",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18608772.94443675148153815341",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17311081.321288859233977724287",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17944844.6854175973477758512758",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17846561.0309991311003195809881",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18265033.469850175043939378761",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18797250.7466006226899299047012",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18969387.5967269942177471358576",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18559751.7851824279898203778496",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19095054.3216875535964978999232",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19371863.38235125458111793812",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20707858.4440503434875937861232",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20320118.4239664714077828649228",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20100394.766042649867749173596",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20118081.2335816339060327298469",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20206722.72494573812663540857",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19647205.2473669635320768587798",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19963843.8082679931087427551525",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20253503.287998133143655105488",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20503792.4260123531438982254284",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20125016.0635640390963140070616",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20323773.7777933586407705527746",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21575682.2890352222466701885024",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22561275.7701896998899370836312",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21896852.8355676211670401386728",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20696438.0032365650060320262101",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19388718.6573570439139880125505",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20416836.9225464809443010359577",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19384581.249620150032731978598",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18372596.365886102040375473136",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17655546.3273846626294959662506",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17711774.674612989220993428252",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17401048.563441999667989068776",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17773812.8974201376422491848856",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19981755.6936168536537426853687",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19552918.0148993272434569655757",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20198688.5996205370451614684384",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19185585.2465115976959987150832",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20085253.934194818559850370205",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18906060.4550338921504693396164",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18848278.1979701460710683365228",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18295266.668532732121588850778",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18876274.3559242360405043193",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19087834.567097973448203835882",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18972198.2107143828529098724404",
+    "asset": "velo_velodromefinance",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18991665.4881695527128708200888",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17351966.175584172387731064056",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17523365.8193917285445246336346",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16715005.9776706775951726097561",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15129043.6643553256115616576368",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15013833.9778457447920900457457",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15561466.2223178484764963564192",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16565488.7617226008395010257152",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16747691.870786757008488401492",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16038095.2031292032853778618324",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16691131.2700271304004557396132",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16731895.5447755766526193403666",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16848741.888383195414639224209",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17126441.7716792720518081433844",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19565713.2287946814542238702563",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22521919.0570411174750192376556",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21826239.99557140129686731244",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20847719.291700523238580201368",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22459984.5142875862724429728023",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25302035.079546484436974859392",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25055231.8411277898841962055048",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26092828.1276293689695440103615",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24182477.8905750439125715237208",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24258813.07018911155684590968",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22728846.6669903979750417688122",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22284031.1967203619941269310247",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22041413.2044309015273580772513",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23257714.6660169069551993997268",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22318930.318198317034017635772",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23077881.3039944853651966120822",
+    "asset": "velo_velodromefinance",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23989429.3500217728240824251008",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26420766.5265641425269430173014",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30472814.243164904187451499444",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29805993.6003857876944219835176",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28904227.4295568385207529362556",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29282299.7971139734716364721597",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29519662.7992884766225315892258",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26700003.1055094502311234243155",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26591815.078647390729411725547",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26582650.68123088871532592905",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26575890.5814682990038132212141",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26398824.3037490898392675979908",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25196536.289630046371881396083",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26453931.5464001235186714428256",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26336624.5650277206587103306626",
+    "asset": "velo_velodromefinance",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20965959.6884428899856584647376",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20417223.2147475212445941189817",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20265778.7137714299229731526039",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18731317.966150256280510635301",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20865198.1094612120892555676962",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23617877.9985656074780527311622",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24212714.23063334778576892948",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24359361.537649227617662126056",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26033050.8284855343241474391385",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26189917.7143611535416107618",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25247321.4192596284861992908702",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24478757.0122965870981423374951",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24998120.6807823747374188376992",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24586355.8733687464769484760752",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24315318.8583417360815906004",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24238607.796018142563557473545",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25664118.99387165301994356472",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26455324.6886577588660014357826",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24878965.3949060351782799814657",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25597820.0206447475610072537024",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25416036.009774609519671181156",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24197741.7423604056268919293572",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23113257.6754763020907872482699",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21700004.355826220980167415044",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22659943.6136000472624759755697",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21695487.5340815667155429821704",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21803179.3062172165156584080425",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21383800.2128001329422592357333",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19819379.440873790273650875693",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20588639.9125084371396668260272",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20649578.6781890069735006363845",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20512684.8129450698626824529236",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19406946.8023683650812485945408",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19277341.0463727958795228817338",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17416522.5137887780623129320344",
+    "asset": "velo_velodromefinance",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17082943.7894022301918032164904",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17816144.1434229524672477836848",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17300099.5115161574496630415005",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16688749.7817646111900660451325",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13965969.97193625850577151379",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16080788.4892916581392973822272",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15653490.4487891954032007106654",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15176450.049139831732899359804",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15158051.127659408181248269668",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14429611.244329264956444320511",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14383384.9908271378840497305219",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15474628.9588177389540466098822",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16124706.7268785969846687061904",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16533167.3966243090874685979863",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15542919.4555419230335793460682",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15897535.8623559268710049823684",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15549346.1905756630635893872544",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "14959591.7309450755389294384146",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15215255.9675872829168923977528",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15600835.6219857747707145069709",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16053495.7192769671160999993604",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15617402.3740902480834015211968",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15026650.4101051908189988311014",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16793202.98908062714767130516",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17631331.037094764073919970655",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17469243.8665926378209628048594",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17160463.9421684854669975441514",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17302926.805206651896508723709",
+    "asset": "velo_velodromefinance",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16548770.8996432845998028047272",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17075252.8578405750051233497628",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17112701.8172425371903380798209",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18200142.7127466783894056843635",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18876041.4558093990505128621834",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17671895.1976932211358072012864",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17586875.1260091208227603501648",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17280619.2733567489948360590846",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17265517.2782030235154432004921",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17794680.1318933408034004369506",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18222020.3002902535171908246658",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17969658.6412294076240391813927",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18053093.5607482601582303471859",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17477749.6544541768279909273456",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17671240.2443331982697681509128",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18731386.7107716874394501045146",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18418852.9926188348599000314597",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17030234.039850356515839037515",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16636120.7581185676476644864",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16491186.4494932194266883291658",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15901464.0984775722595750822904",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15309509.516868683311553053",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16746666.5752563882426067751067",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16484213.621744076551092330227",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17012627.8021124094416345508077",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16176714.7578833347911695920032",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15698790.5699270694736252804785",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15864950.053631691849382990496",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15608227.17928182588276608267",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15727937.1753336618155114913504",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16010895.9840143897940200261028",
+    "asset": "velo_velodromefinance",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16089372.7372749126125180535982",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15654081.8044539044067912680664",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15781335.6000534802589972348555",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15482143.2258280453818082341884",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15169041.3398010041088264639358",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15266671.5957845721705337859322",
+    "asset": "velo_velodromefinance",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52546932.2645019727798338220599",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52506380.2039608280917561598183",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51445239.905346515616471854072",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49309245.193328638184827492151",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48487815.7946087843143466794101",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48012681.8207144884373325093488",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43044639.9922968364248083442441",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45553096.662445834700615088894",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45296708.5460122003033363643868",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45401163.4869606687862606338308",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45364405.1334091199479057437795",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45786841.4700310237047350894275",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48677546.5045713092534243826504",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50006365.1958703965413326333008",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49925476.6875681067293966179964",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47996383.970453080312690617264",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47747038.1269278780270189043924",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50311011.2430349491836881759328",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47552886.0527759480678230201513",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49043053.7487972231049895914852",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47615160.5108454930845620797381",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31862455.0710476956975807000146",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34670333.4976961642839736077067",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38488804.910708921290823630979",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40414407.9762213168700980679123",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38569988.142732825280221805432",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36644551.6244337418954934511042",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34839315.5090197928072977557526",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33736953.758137632051003445274",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34612459.8280262944314626050552",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35427389.3888655310430817640456",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35622892.483697473643395698046",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34848928.279647151039810745591",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32966087.5511748430361102796096",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33836732.0092722069752803631484",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34604510.0261558336696247485421",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35075630.8392967564789760100162",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36862800.243554929699612953033",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35548492.7961600201852530423924",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34253169.4588989123290965403824",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34594511.8917262860599601844234",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34951256.75975317608993492351",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43252210.7572542759858510117096",
+    "asset": "velo_velodromefinance",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38540780.3874144415044504964734",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40927924.4943901754983822383276",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36073572.06926725678092861595",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34228081.1224591741390438399068",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35512536.5609820285330571610078",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35180087.906399260516709205507",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38627230.5949808192695891658583",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39011111.4306278973682508680254",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39926876.327428630294338950907",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49731352.508164685992318971312",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52163522.448813697361314555524",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43651406.828562658322237795307",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38900414.0871378664129810255116",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36960040.4095141870769113435271",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38303215.8697572802643564052192",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37024239.331446196888276704495",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34893652.2866916039431214939162",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36532104.1815749756011516762521",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35759288.2075538056138471148687",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32530671.4386097537571724990236",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30622756.7713513087280580277446",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29906666.145301346670432184878",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30374303.3992777848625069631568",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32292776.635979008894560108139",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32064100.1033883837191539522384",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32945764.085808140275486844976",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32942042.58021365564823987199",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32384990.9169288139198979318072",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31010789.4497789213745496368288",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30904670.7427405374459402939912",
+    "asset": "velo_velodromefinance",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27600334.3477588009889368820704",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30864707.394685981380443814837",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31274170.0906024295313684628637",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30928675.8280501370305979939826",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29569593.217436381373769724108",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30301016.1445723982504291453205",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29425960.6061669565950652568578",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29716265.0681951248256473995636",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30877146.85897699602828785143",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29355495.4171734405623338798344",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29098989.0123260110910911631003",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28068534.7961010581778286834224",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27951011.8998755676404056791051",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26436277.4021775957738605316768",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24677073.460492869843299146896",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24181472.6077215351030286462129",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22626763.1868121929043755355918",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20627083.6050512262464788260044",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22499632.8146307268613895599311",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22285057.8179038753683917524392",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21083700.41092320626277206468",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20945437.6465693611623001338408",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21113801.9542582091481846120996",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20980231.39698883115448962538",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20552698.311616441238857852473",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21062148.2778773124748840363268",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21558527.5295729935726970950964",
+    "asset": "velo_velodromefinance",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49145343.25363461289235343482712",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47672764.47567191245658310793602",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45819109.338797296772558115416",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45604440.4652292300440773463628",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47877952.28070627180285209130257",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48047976.67169566077281269150382",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44814994.1655022735619434815852",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46460186.34037512436285644368919",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46848081.1235352331495766951616",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44473865.86359227856061352366664",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41389540.3437323829463776194669",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38776884.9827063175444324884358",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43720236.11316696111302306924345",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43923515.8257810917152771918635",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42808246.51679325125988837402816",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41946808.9686940807943198939874",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42286347.42737655286800223456845",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43216921.87748109940995930689549",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45003081.98676383158546053134561",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44081447.89113482031879513730392",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41839012.64830210841418342036501",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45643571.07153702262922804976773",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45651566.79190368854183591723187",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43611599.75612218385804185366968",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43367602.12965430130990503592514",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43741599.83527127797173447312795",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43481152.405135167519967668226",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44560786.41372381389629085265",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47165096.74133875417155066633664",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51558338.88480855232218152756428",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51235882.0190593382110246228844",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50738555.53022655138950395162352",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53377470.5671178047412723928241",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52926506.43158047440000857066838",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55389040.1738075215228802112344",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58189316.23746996646956037014811",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58890009.1589805191044682272598",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57196703.03373663970812370882725",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57157218.53630192092433309675416",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60177528.38021987642852483063264",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60138547.32530069506041662060961",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58729994.25773563407091332869424",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53674185.92383499123814436978696",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53073328.5376650140308825039401",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53949884.66368504851433119268648",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53665742.7097974124434906633045",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55038464.29638545609571037521329",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53547521.56959463226363619231348",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52616207.5139645727571782939322",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50990475.28118214640079547133271",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48806642.18529891454471550956275",
+    "asset": "velo_velodromefinance",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47164671.64632268071409274270238",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44908680.41432273566642857046398",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46607728.17230826316650034866234",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48835357.88112186937937814984144",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46338470.96112155531349163307026",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46337142.66317365410915606117315",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48380794.8121794679196903554176",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55510767.46024886697646000602258",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61430022.3558563984969662642188",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58418431.1046153933574487385435",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58669198.07227681130967874871139",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60188937.7336373999841980495276",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62014221.7931836826319792802152",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55511231.5619255925867782084863",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56187326.55185142237067285430775",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55271936.7821928359192183826475",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55505394.2212049343105414735509",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52522733.52672640753407484576806",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49616201.97805376486631275443165",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51692036.32419100960141801342131",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49573603.0549688883778584542311",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55984878.462162714528567849168",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55809662.989468028273629589655",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54135198.964745468355111111086",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49598882.0188537252617553077394",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52918554.852394275487736002412",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51769606.060295993182535520606",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53066085.1149717376139978699343",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51447264.2378509791833735921092",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51877674.2955505188461147702981",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50432698.0986810536107891868988",
+    "asset": "velo_velodromefinance",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49064328.2918198892801222922502",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50381622.742170329218135113",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50735581.359392920508072661063",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48936110.4754599858821246945845",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49415186.4371339083821659234112",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49825508.5625011356694639771548",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50150948.906817433119601504696",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50345246.5137387532044746949888",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50588088.2746797551856748025864",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51959950.4988927309959931052992",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52660144.7936499715906393908927",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53816238.4120475885108364548412",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55303121.1830507589580255953802",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53650585.7295241425026117376067",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52284537.8690047172830933709498",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53426147.0100391063398236633651",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54566870.7639137886516180543049",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53543206.235325474143328544713",
+    "asset": "velo_velodromefinance",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53507896.8659513462222181147537",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56566464.2733475153629267870648",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54251250.2754236032464758281424",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50306713.7810239077875864539222",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48388526.10507387270791834284392",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48186176.666843800274754427264",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42319893.43467202727342759745534",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41941343.30157013902583260344832",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43921562.3216466217712651898312",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49223911.37784858242361694338688",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46741989.34912654432219672213366",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46883433.80673104361864152049276",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50069525.7789335690084658601167",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49705681.55525971740441669967475",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52552366.58146989580308282540591",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49667287.42246066840335532189728",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51401149.50689248468249325359386",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50544169.83749522277774474967027",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52538796.35003207031067431893484",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53118426.43189180344144406276323",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51896881.76499819991168409703664",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53536526.14883157422570681367484",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55313572.26124877615386570017264",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53249176.783470026035842613249",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53285864.42171738482787136160272",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51410463.37621181104857765059325",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50060634.5601484825921414030351",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48875087.88693980427797629623618",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48338216.16965303549819328775308",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48553069.53658866542386731326175",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43800390.37311162777948914588969",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43831887.6216363257763712448545",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44301447.16898056922420237714196",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44014482.90772304314608760557715",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37376245.28703315712716502359444",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37214237.51615946379416616407608",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34356070.70659939580274252219917",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40466911.56217387616675170034702",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38272475.68584487400106345514624",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40719019.87299784710947986421472",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42419398.33692487524071407633812",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39646188.00927499451272825522704",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39724959.82839557514534899968256",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38515198.40485935029431207263048",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39929557.78999880531113351914752",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40367203.56222530701399606068472",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41637579.8727578980689799686234",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41784412.69951978780666566817728",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42037099.850688424071525176122",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41168061.039493669019002555711",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44865787.17898342807268711116608",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48017298.14227159177911158544699",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48785014.1415015366922322451441",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49964398.31645893242080509272675",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51143862.13137948668037042404244",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48113176.59079395060790842196912",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50399557.06618457137368272320508",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48016486.95206896869623434424384",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46878170.74285647259586350433075",
+    "asset": "velo_velodromefinance",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48542357.8326113798481240980072",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47605333.3945205555619808089018",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45278896.3569838425232333388292",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44198228.90789571925894457961408",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44357295.28426095621241750835904",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44533990.48446038225511842561556",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45844606.4054806380180959100739",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48737803.68805762690854378322942",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67005527.0939744131663104263744",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68661975.3928655228127915479072",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64231188.01529601921517161028506",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60700962.16556591701571965061838",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64767162.34559547204060752475822",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61045477.28976671631706456557796",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58638649.92501465564079720853624",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56972823.03848374187451017951772",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54775896.02085927280158308757368",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57814029.83408829569353280235314",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58660023.01675613589812714739072",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57177017.778194628479417238936",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58346711.37302654317508660270908",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60595012.60521923773161819444228",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54833383.0128692200239611181",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55062210.79472833488766635387456",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53632444.55052145001143154929134",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54583144.29957448751315900501995",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55556428.67354477002386333554416",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54728006.69141481079515539066275",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52799863.85424122008289089757946",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48298497.47040634885309542428344",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48167806.00149640765281118666965",
+    "asset": "velo_velodromefinance",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50520963.09535103923743177229758",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50077489.0315113210168010085775",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49617692.05781166540356021167936",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48403891.78517768808413020777146",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44221667.3259552837562681989693",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45292221.65688136411843405399206",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46871619.81575095245208328203067",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46618595.74578919612695705868244",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48728855.58962005485266357188272",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50603959.9139166184715357973155",
+    "asset": "velo_velodromefinance",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "242879021.702548163162785734036",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "209255969.6068347290039954696965",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "221311547.665412185117563393231",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "183074002.994584343010290782815",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "163716085.4733380539890934504902",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175974278.512157313586651342012",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "193743890.9955424292513515236132",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176520511.0598358742305820798378",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "159003653.0269987710070147998047",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154756876.181526275788184125221",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "163724321.0258176175862573289716",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "169122290.09062379925918678777",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166311235.26310892522921923332",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "171734054.0426932374080952303732",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "184111119.101167435500119792685",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "169589849.8403140200220960503672",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "159606996.6543172240626139625256",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160243061.7610663954200885776696",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "153698028.836548464763964318304",
+    "asset": "velo_velodromefinance",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "153678367.979083775172488184669",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154093382.9808084977599382887383",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160797902.0651807968451741034356",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160749609.8516626715186590876308",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "169569164.9560864304126661630184",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "161636525.744377808345355247945",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144662080.689076747206107222581",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "128936222.9849079010987713238731",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122945082.0675720291668900459376",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "125624262.5058309630173044835364",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122704855.0431669337606986230892",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117274594.5576272974645136574924",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110819252.26007324876481724224",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "121819842.6186720180091008768704",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "125993944.5858247873491952353538",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118607783.3875366088786497341996",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "130678452.4004648663561411314567",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114166909.9043843900136613874751",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101650159.9649971146918511390456",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "100255527.3079521678891174660867",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99971558.08063821870294897056",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97569416.07413508954373275186",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98461109.6676659786648166648036",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97780103.1594104787690511441496",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97314829.84843057888050711585",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92768097.1258220823468304782575",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85907277.65754097843720483113933",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84205919.9753839900633561427727",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85456590.161298838711929949403",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88970162.9925400382542947089913",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87004009.79515749530813708723316",
+    "asset": "velo_velodromefinance",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78138942.98470963700415384390195",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68115914.95840064236616159967284",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73644880.00713469213920090847264",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67866410.45165743115256197966576",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65793772.426244625523832738952",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62204156.27427269021857148375352",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61368658.47447011319926121164395",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68830578.25707089537552982740426",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64972051.25162515723987471482402",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67613848.4805548511854902689063",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66263015.1191442057360001358616",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71332059.50174460781527622842628",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68739177.08099414913991203890418",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69445738.33745404051458115038368",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65900002.58456438927615533208292",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64479942.66986141294662817753618",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65510665.8663292979603912334084",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63455551.0354071243323967807967",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63440783.33317405418913359946606",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65107254.1940975733652605397176",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63011611.520698450792354204832",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65675800.8844235826835723264631",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67487187.43741055823342826051698",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58003123.69656972327844248361779",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56798837.79750501054704185510458",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55553702.49238283850255864309328",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55280174.474247998586321106661",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55435348.9764589238725867677812",
+    "asset": "velo_velodromefinance",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54302261.2574177892615865881125",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61192019.65121432545774069577315",
+    "asset": "velo_velodromefinance",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  }
+]

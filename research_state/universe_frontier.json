@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-25T01:55:16Z",
-  "candidate_page_cursor": 11997,
+  "batch_validation_utc": "2026-10-25T02:06:33Z",
+  "candidate_page_cursor": 12197,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -5546,9 +5546,7 @@
     "vbascbbtc_v3_base.eth",
     "vbasusdc_v3_base.eth",
     "vbasweth_v3_base.eth",
-    "vbaswsteth_v3_base.eth"
-  ],
-  "candidates_discovered": [
+    "vbaswsteth_v3_base.eth",
     "vbill",
     "vbill_avaxc",
     "vbill_eth",
@@ -5713,10 +5711,8 @@
     "ward",
     "wat",
     "wavax_avaxc",
-    "waves",
     "waxe",
     "waxl",
-    "waxp",
     "wbdx",
     "wbdx_sol",
     "wbeth",
@@ -5748,7 +5744,9 @@
     "wet",
     "wet_humidifi_sol",
     "weth",
-    "weth.e_arb.eth",
+    "weth.e_arb.eth"
+  ],
+  "candidates_discovered": [
     "weth.e_avaxc",
     "weth.e_sol_wh",
     "weth_base.eth",
@@ -6353,7 +6351,9 @@
     "twt",
     "uma",
     "unfi",
-    "usdc"
+    "usdc",
+    "waves",
+    "waxp"
   ],
   "catalog_discovery": {
     "blocked_excluded": [
@@ -6524,7 +6524,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-25T01:56:31Z",
+  "last_updated_utc": "2026-10-25T02:08:45Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",

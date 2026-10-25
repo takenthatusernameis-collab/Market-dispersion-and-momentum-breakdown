@@ -1,0 +1,6962 @@
+[
+  {
+    "CapMrktCurUSD": "4730074.00092104",
+    "asset": "vet_eth",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4715200.97740782",
+    "asset": "vet_eth",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4745538.01614775",
+    "asset": "vet_eth",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4649620.32280152",
+    "asset": "vet_eth",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4714562.43549155",
+    "asset": "vet_eth",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4949339.6776029",
+    "asset": "vet_eth",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4865973.13426776",
+    "asset": "vet_eth",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4777197.99674609",
+    "asset": "vet_eth",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4692438.3792731",
+    "asset": "vet_eth",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4677496.86200121",
+    "asset": "vet_eth",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4732264.09335329",
+    "asset": "vet_eth",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4528524.83987932",
+    "asset": "vet_eth",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4546988.80732844",
+    "asset": "vet_eth",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4485242.66714891",
+    "asset": "vet_eth",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4716572.55930506",
+    "asset": "vet_eth",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4738757.24198805",
+    "asset": "vet_eth",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4637747.44607653",
+    "asset": "vet_eth",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4692417.8452544",
+    "asset": "vet_eth",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4734356.2243049",
+    "asset": "vet_eth",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4663509.63194346",
+    "asset": "vet_eth",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4637427.94381066",
+    "asset": "vet_eth",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4628851.14763535",
+    "asset": "vet_eth",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4683672.59823602",
+    "asset": "vet_eth",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4736978.38294568",
+    "asset": "vet_eth",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4714865.6061603",
+    "asset": "vet_eth",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4628404.47711209",
+    "asset": "vet_eth",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4625680.27348088",
+    "asset": "vet_eth",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4413910.33710195",
+    "asset": "vet_eth",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4529640.88724211",
+    "asset": "vet_eth",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4481513.73990682",
+    "asset": "vet_eth",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4491028.04227503",
+    "asset": "vet_eth",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4399059.28958334",
+    "asset": "vet_eth",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4439788.77758524",
+    "asset": "vet_eth",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4425196.55033694",
+    "asset": "vet_eth",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4830722.99800279",
+    "asset": "vet_eth",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5147501.49028581",
+    "asset": "vet_eth",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5722560.58408984",
+    "asset": "vet_eth",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5667635.62794657",
+    "asset": "vet_eth",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5758220.99466406",
+    "asset": "vet_eth",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5641197.66375906",
+    "asset": "vet_eth",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5686710.77419304",
+    "asset": "vet_eth",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6563299.84550781",
+    "asset": "vet_eth",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7125486.56120064",
+    "asset": "vet_eth",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6850359.71495919",
+    "asset": "vet_eth",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7009029.14050242",
+    "asset": "vet_eth",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6718271.79424682",
+    "asset": "vet_eth",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6723084.60033566",
+    "asset": "vet_eth",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6625455.89247168",
+    "asset": "vet_eth",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6515131.57197798",
+    "asset": "vet_eth",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6749736.67691701",
+    "asset": "vet_eth",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6822641.25622464",
+    "asset": "vet_eth",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6946776.54119398",
+    "asset": "vet_eth",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7068799.2089598",
+    "asset": "vet_eth",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7154298.28936156",
+    "asset": "vet_eth",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7990240.34467975",
+    "asset": "vet_eth",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7477221.64552833",
+    "asset": "vet_eth",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7619425.94646544",
+    "asset": "vet_eth",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7306533.86663684",
+    "asset": "vet_eth",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7525622.42254653",
+    "asset": "vet_eth",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7683226.39268124",
+    "asset": "vet_eth",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7665842.93608535",
+    "asset": "vet_eth",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7089167.79571359",
+    "asset": "vet_eth",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7140741.31701796",
+    "asset": "vet_eth",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7375378.14317439",
+    "asset": "vet_eth",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7873320.94810885",
+    "asset": "vet_eth",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8767306.05796978",
+    "asset": "vet_eth",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8425041.66056496",
+    "asset": "vet_eth",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9298791.10135056",
+    "asset": "vet_eth",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9297895.25959185",
+    "asset": "vet_eth",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8788723.37369322",
+    "asset": "vet_eth",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9287008.35802524",
+    "asset": "vet_eth",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9512031.96893816",
+    "asset": "vet_eth",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9307085.43293312",
+    "asset": "vet_eth",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9147455.06810622",
+    "asset": "vet_eth",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8860634.29970103",
+    "asset": "vet_eth",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8751224.21525569",
+    "asset": "vet_eth",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8866300.48989878",
+    "asset": "vet_eth",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8787135.41280001",
+    "asset": "vet_eth",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8535170.0135706",
+    "asset": "vet_eth",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8731984.20958178",
+    "asset": "vet_eth",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8855277.70039778",
+    "asset": "vet_eth",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8759051.21421926",
+    "asset": "vet_eth",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8607901.50323949",
+    "asset": "vet_eth",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8070647.96959561",
+    "asset": "vet_eth",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7575808.21260158",
+    "asset": "vet_eth",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7843305.36996398",
+    "asset": "vet_eth",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7861285.16717654",
+    "asset": "vet_eth",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7987151.12617786",
+    "asset": "vet_eth",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7303837.77755993",
+    "asset": "vet_eth",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7302717.81549729",
+    "asset": "vet_eth",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7056906.19240959",
+    "asset": "vet_eth",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7091605.42880332",
+    "asset": "vet_eth",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6956204.00984426",
+    "asset": "vet_eth",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6747095.21028751",
+    "asset": "vet_eth",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6748134.58324096",
+    "asset": "vet_eth",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6736381.34655445",
+    "asset": "vet_eth",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7151809.18995281",
+    "asset": "vet_eth",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7612966.09231975",
+    "asset": "vet_eth",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7073905.76578495",
+    "asset": "vet_eth",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7021827.88463336",
+    "asset": "vet_eth",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7436109.90109822",
+    "asset": "vet_eth",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7196217.51639056",
+    "asset": "vet_eth",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7146386.28156156",
+    "asset": "vet_eth",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7087708.25436106",
+    "asset": "vet_eth",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7010174.44714574",
+    "asset": "vet_eth",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6735754.36246613",
+    "asset": "vet_eth",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7073941.39183844",
+    "asset": "vet_eth",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6889688.28804716",
+    "asset": "vet_eth",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7050295.9116039",
+    "asset": "vet_eth",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7436507.21958726",
+    "asset": "vet_eth",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7341904.34538971",
+    "asset": "vet_eth",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7086169.056818",
+    "asset": "vet_eth",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6947486.7735841",
+    "asset": "vet_eth",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7092430.37247615",
+    "asset": "vet_eth",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7137216.84035786",
+    "asset": "vet_eth",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7157969.37113296",
+    "asset": "vet_eth",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7238537.10982144",
+    "asset": "vet_eth",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7269354.68959463",
+    "asset": "vet_eth",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7373349.24828451",
+    "asset": "vet_eth",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7377506.22418803",
+    "asset": "vet_eth",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7216989.3139535",
+    "asset": "vet_eth",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7137574.49233869",
+    "asset": "vet_eth",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6989632.68493198",
+    "asset": "vet_eth",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6985606.736781",
+    "asset": "vet_eth",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7162585.96411023",
+    "asset": "vet_eth",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7219977.48639855",
+    "asset": "vet_eth",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7220789.87310805",
+    "asset": "vet_eth",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7154755.0054757",
+    "asset": "vet_eth",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7513094.99742857",
+    "asset": "vet_eth",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7692338.16140689",
+    "asset": "vet_eth",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7621786.96396511",
+    "asset": "vet_eth",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7958196.54847416",
+    "asset": "vet_eth",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7583009.5313469",
+    "asset": "vet_eth",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7939636.7998955",
+    "asset": "vet_eth",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7749672.72109231",
+    "asset": "vet_eth",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7481343.62915228",
+    "asset": "vet_eth",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7291165.9775339",
+    "asset": "vet_eth",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7361979.58310519",
+    "asset": "vet_eth",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7027001.97911711",
+    "asset": "vet_eth",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6835130.37137427",
+    "asset": "vet_eth",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6663164.97373516",
+    "asset": "vet_eth",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6764404.6090645",
+    "asset": "vet_eth",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6539805.47344248",
+    "asset": "vet_eth",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6614417.34991451",
+    "asset": "vet_eth",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6695220.41507244",
+    "asset": "vet_eth",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6530806.37830249",
+    "asset": "vet_eth",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6757574.4950776",
+    "asset": "vet_eth",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6618010.55377733",
+    "asset": "vet_eth",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6646967.95096966",
+    "asset": "vet_eth",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6309807.56278249",
+    "asset": "vet_eth",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6086207.24765537",
+    "asset": "vet_eth",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5968281.58143924",
+    "asset": "vet_eth",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5830015.54599392",
+    "asset": "vet_eth",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6095453.67125263",
+    "asset": "vet_eth",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6067856.21101795",
+    "asset": "vet_eth",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5952475.75359349",
+    "asset": "vet_eth",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5495910.61299968",
+    "asset": "vet_eth",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5596767.44820898",
+    "asset": "vet_eth",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5303807.19712309",
+    "asset": "vet_eth",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4738932.81908963",
+    "asset": "vet_eth",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4742740.88640899",
+    "asset": "vet_eth",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4935941.18495546",
+    "asset": "vet_eth",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4938784.76038856",
+    "asset": "vet_eth",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4820415.11092673",
+    "asset": "vet_eth",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4681612.9547158",
+    "asset": "vet_eth",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4962577.99669781",
+    "asset": "vet_eth",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4992429.27089133",
+    "asset": "vet_eth",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5110950.94077678",
+    "asset": "vet_eth",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5084205.29397391",
+    "asset": "vet_eth",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5257682.03412962",
+    "asset": "vet_eth",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5197676.72231774",
+    "asset": "vet_eth",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5036814.19472896",
+    "asset": "vet_eth",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4813978.34608298",
+    "asset": "vet_eth",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4898686.75172228",
+    "asset": "vet_eth",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "5047001.37730406",
+    "asset": "vet_eth",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4859350.23854792",
+    "asset": "vet_eth",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4841241.43223705",
+    "asset": "vet_eth",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4689747.52388369",
+    "asset": "vet_eth",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4573304.11925889",
+    "asset": "vet_eth",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4449731.93507466",
+    "asset": "vet_eth",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4484690.4960015",
+    "asset": "vet_eth",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4519862.82083104",
+    "asset": "vet_eth",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4510545.32437789",
+    "asset": "vet_eth",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4480202.47159384",
+    "asset": "vet_eth",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4351929.51804307",
+    "asset": "vet_eth",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4477451.40025548",
+    "asset": "vet_eth",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4631132.79105122",
+    "asset": "vet_eth",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4762596.49348006",
+    "asset": "vet_eth",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4797929.3818951",
+    "asset": "vet_eth",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4778088.98117914",
+    "asset": "vet_eth",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4959405.50182425",
+    "asset": "vet_eth",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4746452.96137504",
+    "asset": "vet_eth",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4677733.12851401",
+    "asset": "vet_eth",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4724657.97517104",
+    "asset": "vet_eth",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4767876.10031718",
+    "asset": "vet_eth",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4928469.7593202",
+    "asset": "vet_eth",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4853082.57123628",
+    "asset": "vet_eth",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4746358.96731368",
+    "asset": "vet_eth",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4834322.84767238",
+    "asset": "vet_eth",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "4855546.28695994",
+    "asset": "vet_eth",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11077287.7940019",
+    "asset": "vet_eth",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10881317.4255444",
+    "asset": "vet_eth",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10819832.6882457",
+    "asset": "vet_eth",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10416548.2251106",
+    "asset": "vet_eth",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11069110.285602",
+    "asset": "vet_eth",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11700471.4540999",
+    "asset": "vet_eth",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11717174.6215696",
+    "asset": "vet_eth",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12129969.7889659",
+    "asset": "vet_eth",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12618483.7930927",
+    "asset": "vet_eth",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12833390.9697879",
+    "asset": "vet_eth",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12125410.56343",
+    "asset": "vet_eth",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11793084.6972982",
+    "asset": "vet_eth",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11745965.1153727",
+    "asset": "vet_eth",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11674910.1186143",
+    "asset": "vet_eth",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11464391.4288979",
+    "asset": "vet_eth",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11291757.307087",
+    "asset": "vet_eth",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12209661.4856377",
+    "asset": "vet_eth",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12105933.030949",
+    "asset": "vet_eth",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11519442.076946",
+    "asset": "vet_eth",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11790665.646213",
+    "asset": "vet_eth",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11781620.8258858",
+    "asset": "vet_eth",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11243555.8480579",
+    "asset": "vet_eth",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10813790.7169904",
+    "asset": "vet_eth",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10069057.1693338",
+    "asset": "vet_eth",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10453319.3737173",
+    "asset": "vet_eth",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10198582.8939018",
+    "asset": "vet_eth",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10229199.459477",
+    "asset": "vet_eth",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10297884.1793134",
+    "asset": "vet_eth",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9872262.46037537",
+    "asset": "vet_eth",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10132121.2185733",
+    "asset": "vet_eth",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10276728.081096",
+    "asset": "vet_eth",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10220857.0386761",
+    "asset": "vet_eth",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9334567.93424095",
+    "asset": "vet_eth",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9203771.36714084",
+    "asset": "vet_eth",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8400172.61156562",
+    "asset": "vet_eth",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8187569.50338804",
+    "asset": "vet_eth",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8616448.61663404",
+    "asset": "vet_eth",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8435503.78684524",
+    "asset": "vet_eth",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8339974.66735026",
+    "asset": "vet_eth",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7370086.84598346",
+    "asset": "vet_eth",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8285794.43700903",
+    "asset": "vet_eth",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8072046.13941829",
+    "asset": "vet_eth",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8027195.24314512",
+    "asset": "vet_eth",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7923510.51893928",
+    "asset": "vet_eth",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7691602.44829572",
+    "asset": "vet_eth",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7553422.72487405",
+    "asset": "vet_eth",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7880152.14423676",
+    "asset": "vet_eth",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8201205.44620016",
+    "asset": "vet_eth",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8856727.04178007",
+    "asset": "vet_eth",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8337874.62622079",
+    "asset": "vet_eth",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8312564.40662702",
+    "asset": "vet_eth",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "8114528.04866135",
+    "asset": "vet_eth",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7816960.98695741",
+    "asset": "vet_eth",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7718480.9316455",
+    "asset": "vet_eth",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7812659.98649561",
+    "asset": "vet_eth",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7665161.84936795",
+    "asset": "vet_eth",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7452903.05733348",
+    "asset": "vet_eth",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7325463.95725273",
+    "asset": "vet_eth",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7104872.96591419",
+    "asset": "vet_eth",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7838642.81724621",
+    "asset": "vet_eth",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7606682.34694702",
+    "asset": "vet_eth",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7347127.68386399",
+    "asset": "vet_eth",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7291067.73056337",
+    "asset": "vet_eth",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7135403.07081754",
+    "asset": "vet_eth",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7265793.88696664",
+    "asset": "vet_eth",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7137767.45163917",
+    "asset": "vet_eth",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7445797.82256998",
+    "asset": "vet_eth",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7302527.69026577",
+    "asset": "vet_eth",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7108150.19687266",
+    "asset": "vet_eth",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6933648.37938838",
+    "asset": "vet_eth",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6794298.21079588",
+    "asset": "vet_eth",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6967911.29432006",
+    "asset": "vet_eth",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7017799.304817",
+    "asset": "vet_eth",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7110053.34927567",
+    "asset": "vet_eth",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7184960.26061076",
+    "asset": "vet_eth",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7225752.17818455",
+    "asset": "vet_eth",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7133469.83477726",
+    "asset": "vet_eth",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7369712.26005263",
+    "asset": "vet_eth",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7799152.53521968",
+    "asset": "vet_eth",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7600009.02376521",
+    "asset": "vet_eth",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7291623.53847284",
+    "asset": "vet_eth",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7238918.74059594",
+    "asset": "vet_eth",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7246310.73710553",
+    "asset": "vet_eth",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7129091.09171319",
+    "asset": "vet_eth",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6884824.04532823",
+    "asset": "vet_eth",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7042633.69234923",
+    "asset": "vet_eth",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7199808.66838882",
+    "asset": "vet_eth",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7098424.17557883",
+    "asset": "vet_eth",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6791846.73625049",
+    "asset": "vet_eth",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6648470.6373397",
+    "asset": "vet_eth",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6668969.90353861",
+    "asset": "vet_eth",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6533856.48194223",
+    "asset": "vet_eth",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6662874.39520746",
+    "asset": "vet_eth",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6756048.66100195",
+    "asset": "vet_eth",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6885005.76118629",
+    "asset": "vet_eth",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6735737.29519576",
+    "asset": "vet_eth",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "6992585.29001873",
+    "asset": "vet_eth",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7444220.85220546",
+    "asset": "vet_eth",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7433092.08351677",
+    "asset": "vet_eth",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "7150450.3466393",
+    "asset": "vet_eth",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24908107.2937364",
+    "asset": "vet_eth",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24668534.2238647",
+    "asset": "vet_eth",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24363538.611735",
+    "asset": "vet_eth",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22918191.723817",
+    "asset": "vet_eth",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22542618.8757015",
+    "asset": "vet_eth",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22629680.7014914",
+    "asset": "vet_eth",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21441842.3884053",
+    "asset": "vet_eth",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22255440.3631663",
+    "asset": "vet_eth",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21835201.1637767",
+    "asset": "vet_eth",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22130576.4586504",
+    "asset": "vet_eth",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22106045.6689377",
+    "asset": "vet_eth",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21700606.6599667",
+    "asset": "vet_eth",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23136776.9205988",
+    "asset": "vet_eth",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23676750.4217711",
+    "asset": "vet_eth",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23719273.098931",
+    "asset": "vet_eth",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22982712.161569",
+    "asset": "vet_eth",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22875268.9464409",
+    "asset": "vet_eth",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23681376.052326",
+    "asset": "vet_eth",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22556161.1751467",
+    "asset": "vet_eth",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22782648.8568996",
+    "asset": "vet_eth",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22058454.0321199",
+    "asset": "vet_eth",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16073046.6783416",
+    "asset": "vet_eth",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16758889.0839192",
+    "asset": "vet_eth",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19164040.2348149",
+    "asset": "vet_eth",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19926903.5204058",
+    "asset": "vet_eth",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19163251.0400174",
+    "asset": "vet_eth",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18273938.0045058",
+    "asset": "vet_eth",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17303958.6323285",
+    "asset": "vet_eth",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17152443.1626541",
+    "asset": "vet_eth",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17118623.8143868",
+    "asset": "vet_eth",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17676299.9420747",
+    "asset": "vet_eth",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17845300.7843596",
+    "asset": "vet_eth",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17268635.4229758",
+    "asset": "vet_eth",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16925039.4782398",
+    "asset": "vet_eth",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17159088.5602223",
+    "asset": "vet_eth",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17363862.8905938",
+    "asset": "vet_eth",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17347778.272127",
+    "asset": "vet_eth",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17958958.8164362",
+    "asset": "vet_eth",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17275777.5672185",
+    "asset": "vet_eth",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16778105.8675922",
+    "asset": "vet_eth",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16870260.8246388",
+    "asset": "vet_eth",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15537068.589429",
+    "asset": "vet_eth",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15592744.3562138",
+    "asset": "vet_eth",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16196063.7146301",
+    "asset": "vet_eth",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16246670.1293464",
+    "asset": "vet_eth",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14597192.8268882",
+    "asset": "vet_eth",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14024327.2302996",
+    "asset": "vet_eth",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15174722.939425",
+    "asset": "vet_eth",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14594879.1234565",
+    "asset": "vet_eth",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16939385.3663289",
+    "asset": "vet_eth",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17345084.9334383",
+    "asset": "vet_eth",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17111686.5060477",
+    "asset": "vet_eth",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17372116.299101",
+    "asset": "vet_eth",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16963856.0772732",
+    "asset": "vet_eth",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16438769.7253519",
+    "asset": "vet_eth",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16067224.9910408",
+    "asset": "vet_eth",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15464562.8498619",
+    "asset": "vet_eth",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15670136.7232288",
+    "asset": "vet_eth",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15084760.737055",
+    "asset": "vet_eth",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14393323.4502339",
+    "asset": "vet_eth",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14884556.2746274",
+    "asset": "vet_eth",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14315505.4908258",
+    "asset": "vet_eth",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13416914.1399295",
+    "asset": "vet_eth",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12791340.8332729",
+    "asset": "vet_eth",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12818387.1945783",
+    "asset": "vet_eth",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12976337.5575556",
+    "asset": "vet_eth",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13741164.2935106",
+    "asset": "vet_eth",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13639785.6896123",
+    "asset": "vet_eth",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13891787.1036623",
+    "asset": "vet_eth",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13800940.6871883",
+    "asset": "vet_eth",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13640968.9178912",
+    "asset": "vet_eth",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13396578.4516003",
+    "asset": "vet_eth",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13148397.1656865",
+    "asset": "vet_eth",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12439677.1138687",
+    "asset": "vet_eth",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13317955.4506042",
+    "asset": "vet_eth",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13693777.7151719",
+    "asset": "vet_eth",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "13022972.4216374",
+    "asset": "vet_eth",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12614552.4282339",
+    "asset": "vet_eth",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12603820.976463",
+    "asset": "vet_eth",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12285680.8859491",
+    "asset": "vet_eth",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12548249.7272912",
+    "asset": "vet_eth",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12796279.6332069",
+    "asset": "vet_eth",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12343670.8628587",
+    "asset": "vet_eth",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "12054131.2807536",
+    "asset": "vet_eth",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11579537.0277006",
+    "asset": "vet_eth",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11645896.7224613",
+    "asset": "vet_eth",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11231684.6483044",
+    "asset": "vet_eth",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10730672.4481703",
+    "asset": "vet_eth",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10838710.3977639",
+    "asset": "vet_eth",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10248542.1500145",
+    "asset": "vet_eth",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "9791379.13745877",
+    "asset": "vet_eth",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10739061.6588186",
+    "asset": "vet_eth",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10631697.2564019",
+    "asset": "vet_eth",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10501543.6917915",
+    "asset": "vet_eth",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10598368.0809698",
+    "asset": "vet_eth",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10510402.8729901",
+    "asset": "vet_eth",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10577200.9355383",
+    "asset": "vet_eth",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10400807.6123533",
+    "asset": "vet_eth",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "10541419.2768924",
+    "asset": "vet_eth",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "11376106.9506351",
+    "asset": "vet_eth",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24992741.4791895",
+    "asset": "vet_eth",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23484039.4624839",
+    "asset": "vet_eth",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22629418.3074566",
+    "asset": "vet_eth",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22071820.7385877",
+    "asset": "vet_eth",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22269990.1661746",
+    "asset": "vet_eth",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22415770.6677247",
+    "asset": "vet_eth",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21467189.1959111",
+    "asset": "vet_eth",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21752392.9745691",
+    "asset": "vet_eth",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21714987.8534943",
+    "asset": "vet_eth",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20821553.8635775",
+    "asset": "vet_eth",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19846771.8876967",
+    "asset": "vet_eth",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19287766.3075001",
+    "asset": "vet_eth",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21487721.7087579",
+    "asset": "vet_eth",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21505893.3725232",
+    "asset": "vet_eth",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21003563.0340449",
+    "asset": "vet_eth",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20383564.7920561",
+    "asset": "vet_eth",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20404833.3485217",
+    "asset": "vet_eth",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21239139.068639",
+    "asset": "vet_eth",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21852844.0236227",
+    "asset": "vet_eth",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21217562.8515061",
+    "asset": "vet_eth",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20302717.4695919",
+    "asset": "vet_eth",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21818413.4262263",
+    "asset": "vet_eth",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21982422.3107002",
+    "asset": "vet_eth",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20834523.2796144",
+    "asset": "vet_eth",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20699925.0445143",
+    "asset": "vet_eth",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20847237.9214353",
+    "asset": "vet_eth",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20396731.8944053",
+    "asset": "vet_eth",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20911799.0710336",
+    "asset": "vet_eth",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22465462.5753127",
+    "asset": "vet_eth",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24065377.2699359",
+    "asset": "vet_eth",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24083080.831702",
+    "asset": "vet_eth",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23608665.2732707",
+    "asset": "vet_eth",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24606304.0507081",
+    "asset": "vet_eth",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24293144.4363824",
+    "asset": "vet_eth",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25166144.7213602",
+    "asset": "vet_eth",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25588080.3962351",
+    "asset": "vet_eth",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26566871.2717143",
+    "asset": "vet_eth",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26986864.3349079",
+    "asset": "vet_eth",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27779303.3581151",
+    "asset": "vet_eth",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28365634.4697954",
+    "asset": "vet_eth",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28451403.7674615",
+    "asset": "vet_eth",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28086968.3010032",
+    "asset": "vet_eth",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25410496.0757617",
+    "asset": "vet_eth",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24801202.2266656",
+    "asset": "vet_eth",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25735067.7306297",
+    "asset": "vet_eth",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25839851.6120829",
+    "asset": "vet_eth",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26257257.4912427",
+    "asset": "vet_eth",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24694161.2047436",
+    "asset": "vet_eth",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25210628.1869751",
+    "asset": "vet_eth",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24437323.3343599",
+    "asset": "vet_eth",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23148835.21269",
+    "asset": "vet_eth",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22652686.6423646",
+    "asset": "vet_eth",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22169150.8567017",
+    "asset": "vet_eth",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23091908.4183502",
+    "asset": "vet_eth",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23717207.159018",
+    "asset": "vet_eth",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22954452.8021494",
+    "asset": "vet_eth",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23485822.8243712",
+    "asset": "vet_eth",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24397056.3790624",
+    "asset": "vet_eth",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24567065.0610008",
+    "asset": "vet_eth",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25191199.551737",
+    "asset": "vet_eth",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25088560.9442134",
+    "asset": "vet_eth",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24731754.121831",
+    "asset": "vet_eth",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25686568.5168283",
+    "asset": "vet_eth",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26571222.745976",
+    "asset": "vet_eth",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24672004.6537857",
+    "asset": "vet_eth",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24292928.128948",
+    "asset": "vet_eth",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24606573.8209733",
+    "asset": "vet_eth",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24875223.1638378",
+    "asset": "vet_eth",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23871799.0555668",
+    "asset": "vet_eth",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23024039.0774204",
+    "asset": "vet_eth",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23885241.2989711",
+    "asset": "vet_eth",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23635830.769159",
+    "asset": "vet_eth",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25377901.8098818",
+    "asset": "vet_eth",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25517657.8498135",
+    "asset": "vet_eth",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26013597.381308",
+    "asset": "vet_eth",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24189721.3638475",
+    "asset": "vet_eth",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25178464.8386672",
+    "asset": "vet_eth",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24892329.9391495",
+    "asset": "vet_eth",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25600866.2234775",
+    "asset": "vet_eth",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24288197.4794249",
+    "asset": "vet_eth",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24709920.5900546",
+    "asset": "vet_eth",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24205053.0409694",
+    "asset": "vet_eth",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23436917.650695",
+    "asset": "vet_eth",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23889943.776605",
+    "asset": "vet_eth",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23935956.7159628",
+    "asset": "vet_eth",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23212501.2848072",
+    "asset": "vet_eth",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23610898.2650773",
+    "asset": "vet_eth",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23332863.3267794",
+    "asset": "vet_eth",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23586615.5171661",
+    "asset": "vet_eth",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24334241.601278",
+    "asset": "vet_eth",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24207789.3630749",
+    "asset": "vet_eth",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24408882.3900817",
+    "asset": "vet_eth",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25011651.1864393",
+    "asset": "vet_eth",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25343365.382414",
+    "asset": "vet_eth",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25619285.7699956",
+    "asset": "vet_eth",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24638905.0946883",
+    "asset": "vet_eth",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24100518.6350636",
+    "asset": "vet_eth",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24502264.5412217",
+    "asset": "vet_eth",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25274127.0621644",
+    "asset": "vet_eth",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25920240.2522907",
+    "asset": "vet_eth",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27112813.3026054",
+    "asset": "vet_eth",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27199589.2287567",
+    "asset": "vet_eth",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29062425.1297839",
+    "asset": "vet_eth",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28101465.3862871",
+    "asset": "vet_eth",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27771909.4734402",
+    "asset": "vet_eth",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27146526.0362606",
+    "asset": "vet_eth",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24669344.4936652",
+    "asset": "vet_eth",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22817364.987811",
+    "asset": "vet_eth",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23891523.8736699",
+    "asset": "vet_eth",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24300673.7636012",
+    "asset": "vet_eth",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23729549.1853317",
+    "asset": "vet_eth",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24795078.1457189",
+    "asset": "vet_eth",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25335314.0644476",
+    "asset": "vet_eth",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24227958.8154281",
+    "asset": "vet_eth",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25339018.6363076",
+    "asset": "vet_eth",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25247058.6969828",
+    "asset": "vet_eth",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27029227.0772036",
+    "asset": "vet_eth",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26036034.6906297",
+    "asset": "vet_eth",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25237169.3986418",
+    "asset": "vet_eth",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25296414.2169725",
+    "asset": "vet_eth",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25025880.4808442",
+    "asset": "vet_eth",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26186104.4342249",
+    "asset": "vet_eth",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26554347.3754017",
+    "asset": "vet_eth",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26277588.6973334",
+    "asset": "vet_eth",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26205692.4667567",
+    "asset": "vet_eth",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24145657.6382578",
+    "asset": "vet_eth",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22756364.0083513",
+    "asset": "vet_eth",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22717082.9255324",
+    "asset": "vet_eth",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22471123.6014657",
+    "asset": "vet_eth",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23450383.3688262",
+    "asset": "vet_eth",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21563702.3008964",
+    "asset": "vet_eth",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21719210.9983189",
+    "asset": "vet_eth",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22039530.771113",
+    "asset": "vet_eth",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21709414.327245",
+    "asset": "vet_eth",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19622546.314947",
+    "asset": "vet_eth",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20314221.8157223",
+    "asset": "vet_eth",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19708820.9336307",
+    "asset": "vet_eth",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22175088.2122471",
+    "asset": "vet_eth",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21183673.3675566",
+    "asset": "vet_eth",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22074875.5747008",
+    "asset": "vet_eth",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23377670.4961124",
+    "asset": "vet_eth",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22683130.8722819",
+    "asset": "vet_eth",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23444514.831975",
+    "asset": "vet_eth",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22545561.1156011",
+    "asset": "vet_eth",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22156076.235759",
+    "asset": "vet_eth",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22775040.7169341",
+    "asset": "vet_eth",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23137325.2359868",
+    "asset": "vet_eth",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23510438.3433306",
+    "asset": "vet_eth",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23607530.2101651",
+    "asset": "vet_eth",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23499275.2090764",
+    "asset": "vet_eth",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25478595.8881856",
+    "asset": "vet_eth",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26104955.6067814",
+    "asset": "vet_eth",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26705892.9536096",
+    "asset": "vet_eth",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27031468.1642893",
+    "asset": "vet_eth",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27148368.6184699",
+    "asset": "vet_eth",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26497686.6256584",
+    "asset": "vet_eth",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27285733.0806275",
+    "asset": "vet_eth",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26728808.3671163",
+    "asset": "vet_eth",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26258145.6457829",
+    "asset": "vet_eth",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27171953.5070308",
+    "asset": "vet_eth",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27386934.0454947",
+    "asset": "vet_eth",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26187813.2643289",
+    "asset": "vet_eth",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25030247.6868183",
+    "asset": "vet_eth",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25055791.5426718",
+    "asset": "vet_eth",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24868096.8666144",
+    "asset": "vet_eth",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24897545.3829867",
+    "asset": "vet_eth",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28502922.2748526",
+    "asset": "vet_eth",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29948998.5549083",
+    "asset": "vet_eth",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32159051.0244817",
+    "asset": "vet_eth",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31217902.2692662",
+    "asset": "vet_eth",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30961408.0944622",
+    "asset": "vet_eth",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31979464.7070161",
+    "asset": "vet_eth",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30292160.0777172",
+    "asset": "vet_eth",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28638173.4039152",
+    "asset": "vet_eth",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28633367.9596457",
+    "asset": "vet_eth",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27701871.1149237",
+    "asset": "vet_eth",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28689332.4096723",
+    "asset": "vet_eth",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27993257.1211617",
+    "asset": "vet_eth",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28562438.888909",
+    "asset": "vet_eth",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29223253.418327",
+    "asset": "vet_eth",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30589952.1902503",
+    "asset": "vet_eth",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28029815.245433",
+    "asset": "vet_eth",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27448153.1633831",
+    "asset": "vet_eth",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27341338.3655783",
+    "asset": "vet_eth",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27397739.2754764",
+    "asset": "vet_eth",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27557649.1611292",
+    "asset": "vet_eth",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27130016.4858096",
+    "asset": "vet_eth",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26050073.3715718",
+    "asset": "vet_eth",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23938177.4885957",
+    "asset": "vet_eth",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24173033.1658807",
+    "asset": "vet_eth",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24358526.0994466",
+    "asset": "vet_eth",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24848219.3750208",
+    "asset": "vet_eth",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24666734.6163455",
+    "asset": "vet_eth",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23763550.3700935",
+    "asset": "vet_eth",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22702142.7707804",
+    "asset": "vet_eth",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23532714.8153763",
+    "asset": "vet_eth",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24112795.1138593",
+    "asset": "vet_eth",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24096042.6332555",
+    "asset": "vet_eth",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25184718.8440199",
+    "asset": "vet_eth",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26169661.1403825",
+    "asset": "vet_eth",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42192669.7383378",
+    "asset": "vet_eth",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44485558.5855147",
+    "asset": "vet_eth",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40701973.4360098",
+    "asset": "vet_eth",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41352913.4766115",
+    "asset": "vet_eth",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43134595.2545351",
+    "asset": "vet_eth",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41865344.1324697",
+    "asset": "vet_eth",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45281949.3322875",
+    "asset": "vet_eth",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45996457.172807",
+    "asset": "vet_eth",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46223609.5712651",
+    "asset": "vet_eth",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56888421.1215837",
+    "asset": "vet_eth",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "75936409.654118",
+    "asset": "vet_eth",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67758788.7194347",
+    "asset": "vet_eth",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "65078251.210656",
+    "asset": "vet_eth",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67609676.5113461",
+    "asset": "vet_eth",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "66798698.0928859",
+    "asset": "vet_eth",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "67767726.9472122",
+    "asset": "vet_eth",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56860071.2792978",
+    "asset": "vet_eth",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55968287.1829316",
+    "asset": "vet_eth",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59580399.3734646",
+    "asset": "vet_eth",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59742732.8828475",
+    "asset": "vet_eth",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "59783591.4283116",
+    "asset": "vet_eth",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56973394.5557899",
+    "asset": "vet_eth",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "58435077.8711303",
+    "asset": "vet_eth",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "55600572.5771839",
+    "asset": "vet_eth",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56563741.7941419",
+    "asset": "vet_eth",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50609291.0534811",
+    "asset": "vet_eth",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45412451.2158466",
+    "asset": "vet_eth",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48006558.1257998",
+    "asset": "vet_eth",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44946868.9391752",
+    "asset": "vet_eth",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45826470.4679651",
+    "asset": "vet_eth",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48722510.7202401",
+    "asset": "vet_eth",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "52923486.3173395",
+    "asset": "vet_eth",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51281762.7957026",
+    "asset": "vet_eth",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46624692.4843971",
+    "asset": "vet_eth",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45534600.5405578",
+    "asset": "vet_eth",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47474482.6843959",
+    "asset": "vet_eth",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44969222.7101055",
+    "asset": "vet_eth",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43775538.8292599",
+    "asset": "vet_eth",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43000852.7342584",
+    "asset": "vet_eth",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46650177.8858045",
+    "asset": "vet_eth",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48308489.1874834",
+    "asset": "vet_eth",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "52796786.5127223",
+    "asset": "vet_eth",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50963837.323243",
+    "asset": "vet_eth",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51034634.0513999",
+    "asset": "vet_eth",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "52630931.6161368",
+    "asset": "vet_eth",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47018073.8851025",
+    "asset": "vet_eth",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45048533.508983",
+    "asset": "vet_eth",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44272807.1162315",
+    "asset": "vet_eth",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45323888.8275662",
+    "asset": "vet_eth",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45374344.9181814",
+    "asset": "vet_eth",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44513783.4425458",
+    "asset": "vet_eth",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43201927.1308192",
+    "asset": "vet_eth",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45050069.1416885",
+    "asset": "vet_eth",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48872415.9251897",
+    "asset": "vet_eth",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50903651.5854919",
+    "asset": "vet_eth",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "56175085.5803057",
+    "asset": "vet_eth",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51659402.5568821",
+    "asset": "vet_eth",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45315544.1084118",
+    "asset": "vet_eth",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46271960.6758638",
+    "asset": "vet_eth",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49250610.4859845",
+    "asset": "vet_eth",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47816773.2558319",
+    "asset": "vet_eth",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49080325.6365496",
+    "asset": "vet_eth",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47608730.0980363",
+    "asset": "vet_eth",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47794425.8313149",
+    "asset": "vet_eth",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45450980.3054617",
+    "asset": "vet_eth",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44527066.8613826",
+    "asset": "vet_eth",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42276913.8958661",
+    "asset": "vet_eth",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43546431.1724428",
+    "asset": "vet_eth",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46604324.4089985",
+    "asset": "vet_eth",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46448853.2054325",
+    "asset": "vet_eth",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43532429.2296732",
+    "asset": "vet_eth",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37324923.9109036",
+    "asset": "vet_eth",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39030321.2000971",
+    "asset": "vet_eth",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35971762.4679622",
+    "asset": "vet_eth",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34507132.5763904",
+    "asset": "vet_eth",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32492943.2575205",
+    "asset": "vet_eth",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32366651.9738405",
+    "asset": "vet_eth",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33077149.9716206",
+    "asset": "vet_eth",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31876892.7794285",
+    "asset": "vet_eth",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33508266.5175346",
+    "asset": "vet_eth",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33197792.5034874",
+    "asset": "vet_eth",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35446335.4096833",
+    "asset": "vet_eth",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34439964.1464282",
+    "asset": "vet_eth",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35198082.9547075",
+    "asset": "vet_eth",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34054966.5631892",
+    "asset": "vet_eth",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33101549.6056332",
+    "asset": "vet_eth",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32855989.64763",
+    "asset": "vet_eth",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31593394.4463189",
+    "asset": "vet_eth",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31849176.4832074",
+    "asset": "vet_eth",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32801926.8151673",
+    "asset": "vet_eth",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31132959.0099643",
+    "asset": "vet_eth",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32475061.4109637",
+    "asset": "vet_eth",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32167702.658331",
+    "asset": "vet_eth",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28156719.4575127",
+    "asset": "vet_eth",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28742241.2933629",
+    "asset": "vet_eth",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27956235.7394117",
+    "asset": "vet_eth",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28157846.4325335",
+    "asset": "vet_eth",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28051201.9535686",
+    "asset": "vet_eth",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28426529.9853104",
+    "asset": "vet_eth",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32136508.3685469",
+    "asset": "vet_eth",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21976003.866105",
+    "asset": "vet_eth",
+    "time": "2024-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21990562.4797704",
+    "asset": "vet_eth",
+    "time": "2024-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22392528.2613494",
+    "asset": "vet_eth",
+    "time": "2024-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22368151.6021318",
+    "asset": "vet_eth",
+    "time": "2024-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22864708.3497549",
+    "asset": "vet_eth",
+    "time": "2024-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23288679.1232768",
+    "asset": "vet_eth",
+    "time": "2024-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24111927.6161121",
+    "asset": "vet_eth",
+    "time": "2024-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24118050.695032",
+    "asset": "vet_eth",
+    "time": "2024-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25861001.8238438",
+    "asset": "vet_eth",
+    "time": "2024-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25915186.1480636",
+    "asset": "vet_eth",
+    "time": "2024-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25189204.1908241",
+    "asset": "vet_eth",
+    "time": "2024-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23960844.0619109",
+    "asset": "vet_eth",
+    "time": "2024-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22965291.1663044",
+    "asset": "vet_eth",
+    "time": "2024-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22712393.5845286",
+    "asset": "vet_eth",
+    "time": "2024-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22314238.3384305",
+    "asset": "vet_eth",
+    "time": "2024-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22398368.1088581",
+    "asset": "vet_eth",
+    "time": "2024-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21795196.8730306",
+    "asset": "vet_eth",
+    "time": "2024-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20904337.4219512",
+    "asset": "vet_eth",
+    "time": "2024-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21785131.1314336",
+    "asset": "vet_eth",
+    "time": "2024-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20910745.838949",
+    "asset": "vet_eth",
+    "time": "2024-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21448894.4646482",
+    "asset": "vet_eth",
+    "time": "2024-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20631256.4568426",
+    "asset": "vet_eth",
+    "time": "2024-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19938578.2489922",
+    "asset": "vet_eth",
+    "time": "2024-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20089305.97408",
+    "asset": "vet_eth",
+    "time": "2024-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20702797.3578539",
+    "asset": "vet_eth",
+    "time": "2024-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21606806.6687336",
+    "asset": "vet_eth",
+    "time": "2024-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21924189.8097681",
+    "asset": "vet_eth",
+    "time": "2024-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21667293.5589727",
+    "asset": "vet_eth",
+    "time": "2024-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22305511.2938514",
+    "asset": "vet_eth",
+    "time": "2024-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22739921.8511814",
+    "asset": "vet_eth",
+    "time": "2024-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22328885.5848631",
+    "asset": "vet_eth",
+    "time": "2024-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21423592.0608246",
+    "asset": "vet_eth",
+    "time": "2024-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20935558.56319",
+    "asset": "vet_eth",
+    "time": "2024-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21171210.4883264",
+    "asset": "vet_eth",
+    "time": "2024-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21811332.1100673",
+    "asset": "vet_eth",
+    "time": "2024-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22649798.0721525",
+    "asset": "vet_eth",
+    "time": "2024-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23830210.9271567",
+    "asset": "vet_eth",
+    "time": "2024-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24245454.5525071",
+    "asset": "vet_eth",
+    "time": "2024-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23725174.1644546",
+    "asset": "vet_eth",
+    "time": "2024-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23964836.3489128",
+    "asset": "vet_eth",
+    "time": "2024-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24712298.6550242",
+    "asset": "vet_eth",
+    "time": "2024-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24582830.548066",
+    "asset": "vet_eth",
+    "time": "2024-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25440474.7455538",
+    "asset": "vet_eth",
+    "time": "2024-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26640039.3465331",
+    "asset": "vet_eth",
+    "time": "2024-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25783655.2065591",
+    "asset": "vet_eth",
+    "time": "2024-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25736640.8285138",
+    "asset": "vet_eth",
+    "time": "2024-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24276054.5255711",
+    "asset": "vet_eth",
+    "time": "2024-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22715079.2305237",
+    "asset": "vet_eth",
+    "time": "2024-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22353362.1972626",
+    "asset": "vet_eth",
+    "time": "2024-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22095189.9100428",
+    "asset": "vet_eth",
+    "time": "2024-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22761720.8197028",
+    "asset": "vet_eth",
+    "time": "2024-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22628831.2034062",
+    "asset": "vet_eth",
+    "time": "2024-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23247710.8148674",
+    "asset": "vet_eth",
+    "time": "2024-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23012933.9362074",
+    "asset": "vet_eth",
+    "time": "2024-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22372299.9978322",
+    "asset": "vet_eth",
+    "time": "2024-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21982606.559369",
+    "asset": "vet_eth",
+    "time": "2024-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21924298.7039348",
+    "asset": "vet_eth",
+    "time": "2024-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22567693.2350303",
+    "asset": "vet_eth",
+    "time": "2024-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22683566.0948846",
+    "asset": "vet_eth",
+    "time": "2024-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22232741.1806046",
+    "asset": "vet_eth",
+    "time": "2024-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23319187.0891798",
+    "asset": "vet_eth",
+    "time": "2024-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23425749.7554232",
+    "asset": "vet_eth",
+    "time": "2024-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23178868.9542346",
+    "asset": "vet_eth",
+    "time": "2024-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22486134.7485478",
+    "asset": "vet_eth",
+    "time": "2024-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23128804.1679572",
+    "asset": "vet_eth",
+    "time": "2024-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23228148.963756",
+    "asset": "vet_eth",
+    "time": "2024-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24334464.5679052",
+    "asset": "vet_eth",
+    "time": "2024-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23517191.1398272",
+    "asset": "vet_eth",
+    "time": "2024-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23368426.6737835",
+    "asset": "vet_eth",
+    "time": "2024-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22453259.3771848",
+    "asset": "vet_eth",
+    "time": "2024-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23156258.8526898",
+    "asset": "vet_eth",
+    "time": "2024-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21424211.2937878",
+    "asset": "vet_eth",
+    "time": "2024-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21817527.1135388",
+    "asset": "vet_eth",
+    "time": "2024-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22049883.812065",
+    "asset": "vet_eth",
+    "time": "2024-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21923760.1638884",
+    "asset": "vet_eth",
+    "time": "2024-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22638078.0858099",
+    "asset": "vet_eth",
+    "time": "2024-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22258809.6138743",
+    "asset": "vet_eth",
+    "time": "2024-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21173189.0181462",
+    "asset": "vet_eth",
+    "time": "2024-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20645397.0477704",
+    "asset": "vet_eth",
+    "time": "2024-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20318804.3170279",
+    "asset": "vet_eth",
+    "time": "2024-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19762007.2576797",
+    "asset": "vet_eth",
+    "time": "2024-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19372703.6017617",
+    "asset": "vet_eth",
+    "time": "2024-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20156499.6143695",
+    "asset": "vet_eth",
+    "time": "2024-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21804368.8679388",
+    "asset": "vet_eth",
+    "time": "2024-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21727782.637505",
+    "asset": "vet_eth",
+    "time": "2024-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22340717.1343215",
+    "asset": "vet_eth",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23117715.3038899",
+    "asset": "vet_eth",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25256462.2030618",
+    "asset": "vet_eth",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28216743.5321768",
+    "asset": "vet_eth",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27244636.4148726",
+    "asset": "vet_eth",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25825942.6398488",
+    "asset": "vet_eth",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24231987.0384977",
+    "asset": "vet_eth",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26276587.8872416",
+    "asset": "vet_eth",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31304374.7583476",
+    "asset": "vet_eth",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28593334.7681573",
+    "asset": "vet_eth",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32304340.7088968",
+    "asset": "vet_eth",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33660844.291994",
+    "asset": "vet_eth",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31673457.9786203",
+    "asset": "vet_eth",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32198313.1646945",
+    "asset": "vet_eth",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35670212.3098401",
+    "asset": "vet_eth",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35599008.9919161",
+    "asset": "vet_eth",
+    "time": "2024-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35080761.0301111",
+    "asset": "vet_eth",
+    "time": "2024-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35661603.3352242",
+    "asset": "vet_eth",
+    "time": "2024-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34678534.8819985",
+    "asset": "vet_eth",
+    "time": "2024-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34363384.3462769",
+    "asset": "vet_eth",
+    "time": "2024-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34348860.4363528",
+    "asset": "vet_eth",
+    "time": "2024-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33687193.6931329",
+    "asset": "vet_eth",
+    "time": "2024-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33306513.5626353",
+    "asset": "vet_eth",
+    "time": "2024-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35438366.260387",
+    "asset": "vet_eth",
+    "time": "2024-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35235329.9956448",
+    "asset": "vet_eth",
+    "time": "2024-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36002643.7703124",
+    "asset": "vet_eth",
+    "time": "2024-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35286838.0354101",
+    "asset": "vet_eth",
+    "time": "2024-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34281474.8394244",
+    "asset": "vet_eth",
+    "time": "2024-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36741795.6403748",
+    "asset": "vet_eth",
+    "time": "2024-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36553322.2973929",
+    "asset": "vet_eth",
+    "time": "2024-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35818036.6237365",
+    "asset": "vet_eth",
+    "time": "2024-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35014213.5681747",
+    "asset": "vet_eth",
+    "time": "2024-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35285429.8791612",
+    "asset": "vet_eth",
+    "time": "2024-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35536373.3168637",
+    "asset": "vet_eth",
+    "time": "2024-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35609258.0634895",
+    "asset": "vet_eth",
+    "time": "2024-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36561318.0821148",
+    "asset": "vet_eth",
+    "time": "2024-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35781054.3265987",
+    "asset": "vet_eth",
+    "time": "2024-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35163581.1821399",
+    "asset": "vet_eth",
+    "time": "2024-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34316477.0398633",
+    "asset": "vet_eth",
+    "time": "2024-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33943146.2974672",
+    "asset": "vet_eth",
+    "time": "2024-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33670350.741684",
+    "asset": "vet_eth",
+    "time": "2024-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33297304.9363276",
+    "asset": "vet_eth",
+    "time": "2024-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33659703.6314786",
+    "asset": "vet_eth",
+    "time": "2024-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34264050.9258992",
+    "asset": "vet_eth",
+    "time": "2024-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35536774.5564577",
+    "asset": "vet_eth",
+    "time": "2024-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35851760.7469129",
+    "asset": "vet_eth",
+    "time": "2024-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32883303.9560655",
+    "asset": "vet_eth",
+    "time": "2024-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31571453.8059789",
+    "asset": "vet_eth",
+    "time": "2024-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31920503.2099019",
+    "asset": "vet_eth",
+    "time": "2024-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31075656.658566",
+    "asset": "vet_eth",
+    "time": "2024-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29814673.556195",
+    "asset": "vet_eth",
+    "time": "2024-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31250836.879779",
+    "asset": "vet_eth",
+    "time": "2024-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29539033.4781607",
+    "asset": "vet_eth",
+    "time": "2024-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28509027.4275534",
+    "asset": "vet_eth",
+    "time": "2024-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28584667.3497097",
+    "asset": "vet_eth",
+    "time": "2024-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29496901.2894183",
+    "asset": "vet_eth",
+    "time": "2024-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27384080.9764935",
+    "asset": "vet_eth",
+    "time": "2024-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25602403.5906558",
+    "asset": "vet_eth",
+    "time": "2024-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25974139.3285057",
+    "asset": "vet_eth",
+    "time": "2024-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26731646.423229",
+    "asset": "vet_eth",
+    "time": "2024-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26158925.7280426",
+    "asset": "vet_eth",
+    "time": "2024-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25732520.8407234",
+    "asset": "vet_eth",
+    "time": "2024-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25015226.1909704",
+    "asset": "vet_eth",
+    "time": "2024-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25282024.1683323",
+    "asset": "vet_eth",
+    "time": "2024-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26376151.7484437",
+    "asset": "vet_eth",
+    "time": "2024-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25941908.0925944",
+    "asset": "vet_eth",
+    "time": "2024-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26654793.1440814",
+    "asset": "vet_eth",
+    "time": "2024-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26606981.2885381",
+    "asset": "vet_eth",
+    "time": "2024-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25909730.1936422",
+    "asset": "vet_eth",
+    "time": "2024-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26715890.5564008",
+    "asset": "vet_eth",
+    "time": "2024-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26765699.34021",
+    "asset": "vet_eth",
+    "time": "2024-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26437759.6461287",
+    "asset": "vet_eth",
+    "time": "2024-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24871331.8794342",
+    "asset": "vet_eth",
+    "time": "2024-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22797763.2442449",
+    "asset": "vet_eth",
+    "time": "2024-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23537628.4996284",
+    "asset": "vet_eth",
+    "time": "2024-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24366305.1177424",
+    "asset": "vet_eth",
+    "time": "2024-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22704185.2438654",
+    "asset": "vet_eth",
+    "time": "2024-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24594678.99594",
+    "asset": "vet_eth",
+    "time": "2024-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25600814.0468815",
+    "asset": "vet_eth",
+    "time": "2024-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26059335.2997218",
+    "asset": "vet_eth",
+    "time": "2024-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26557611.6846199",
+    "asset": "vet_eth",
+    "time": "2024-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27051006.2304935",
+    "asset": "vet_eth",
+    "time": "2024-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29342846.9614679",
+    "asset": "vet_eth",
+    "time": "2024-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31254178.0284281",
+    "asset": "vet_eth",
+    "time": "2024-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32385887.5246479",
+    "asset": "vet_eth",
+    "time": "2024-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31644990.3444851",
+    "asset": "vet_eth",
+    "time": "2024-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31247209.1371879",
+    "asset": "vet_eth",
+    "time": "2024-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30455369.0883132",
+    "asset": "vet_eth",
+    "time": "2024-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31408482.544847",
+    "asset": "vet_eth",
+    "time": "2024-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30578769.4832131",
+    "asset": "vet_eth",
+    "time": "2024-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30688989.2590364",
+    "asset": "vet_eth",
+    "time": "2024-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29410776.2035107",
+    "asset": "vet_eth",
+    "time": "2024-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28750321.9066398",
+    "asset": "vet_eth",
+    "time": "2024-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27687434.7867187",
+    "asset": "vet_eth",
+    "time": "2024-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27357924.7940313",
+    "asset": "vet_eth",
+    "time": "2024-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28477391.8525483",
+    "asset": "vet_eth",
+    "time": "2024-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28203980.6289116",
+    "asset": "vet_eth",
+    "time": "2024-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27342983.8978768",
+    "asset": "vet_eth",
+    "time": "2024-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27224271.4629125",
+    "asset": "vet_eth",
+    "time": "2024-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26624306.2117717",
+    "asset": "vet_eth",
+    "time": "2024-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26325993.14757",
+    "asset": "vet_eth",
+    "time": "2024-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26337676.6537213",
+    "asset": "vet_eth",
+    "time": "2024-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24472375.0829784",
+    "asset": "vet_eth",
+    "time": "2024-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23640088.0785284",
+    "asset": "vet_eth",
+    "time": "2024-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22414870.0422951",
+    "asset": "vet_eth",
+    "time": "2024-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21667817.8126407",
+    "asset": "vet_eth",
+    "time": "2024-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22650500.4761591",
+    "asset": "vet_eth",
+    "time": "2024-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21987942.4092949",
+    "asset": "vet_eth",
+    "time": "2024-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24073465.6274826",
+    "asset": "vet_eth",
+    "time": "2024-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23390158.4250817",
+    "asset": "vet_eth",
+    "time": "2024-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23748628.1167325",
+    "asset": "vet_eth",
+    "time": "2024-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22467802.2322523",
+    "asset": "vet_eth",
+    "time": "2024-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23255883.8695524",
+    "asset": "vet_eth",
+    "time": "2024-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23583802.7772522",
+    "asset": "vet_eth",
+    "time": "2024-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22849916.4708725",
+    "asset": "vet_eth",
+    "time": "2024-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28014736.7363557",
+    "asset": "vet_eth",
+    "time": "2024-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29040521.1085478",
+    "asset": "vet_eth",
+    "time": "2024-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28601307.4679965",
+    "asset": "vet_eth",
+    "time": "2024-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28206530.2262242",
+    "asset": "vet_eth",
+    "time": "2024-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28421618.6856904",
+    "asset": "vet_eth",
+    "time": "2024-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29311203.4890111",
+    "asset": "vet_eth",
+    "time": "2024-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28545922.2647236",
+    "asset": "vet_eth",
+    "time": "2024-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27658388.0586754",
+    "asset": "vet_eth",
+    "time": "2024-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27746493.8142535",
+    "asset": "vet_eth",
+    "time": "2024-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28005621.4668304",
+    "asset": "vet_eth",
+    "time": "2024-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28720051.9488889",
+    "asset": "vet_eth",
+    "time": "2024-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28900935.9402612",
+    "asset": "vet_eth",
+    "time": "2024-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29798738.658085",
+    "asset": "vet_eth",
+    "time": "2024-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29722197.6708584",
+    "asset": "vet_eth",
+    "time": "2024-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30226048.9540407",
+    "asset": "vet_eth",
+    "time": "2024-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31493370.8100795",
+    "asset": "vet_eth",
+    "time": "2024-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32532914.1272779",
+    "asset": "vet_eth",
+    "time": "2024-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35927106.7721704",
+    "asset": "vet_eth",
+    "time": "2024-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45517977.6938867",
+    "asset": "vet_eth",
+    "time": "2024-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46373289.4063422",
+    "asset": "vet_eth",
+    "time": "2024-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45441416.1543925",
+    "asset": "vet_eth",
+    "time": "2024-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45538478.3392769",
+    "asset": "vet_eth",
+    "time": "2024-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44915001.6508407",
+    "asset": "vet_eth",
+    "time": "2024-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44420081.2309782",
+    "asset": "vet_eth",
+    "time": "2024-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43258715.2447893",
+    "asset": "vet_eth",
+    "time": "2024-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "45085048.2107906",
+    "asset": "vet_eth",
+    "time": "2024-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43563292.3776751",
+    "asset": "vet_eth",
+    "time": "2024-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44472568.5828854",
+    "asset": "vet_eth",
+    "time": "2024-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44967243.7639608",
+    "asset": "vet_eth",
+    "time": "2024-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50673235.0759393",
+    "asset": "vet_eth",
+    "time": "2024-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48944505.5779878",
+    "asset": "vet_eth",
+    "time": "2024-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48915330.3738822",
+    "asset": "vet_eth",
+    "time": "2024-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47754744.8947008",
+    "asset": "vet_eth",
+    "time": "2024-02-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48907575.7699539",
+    "asset": "vet_eth",
+    "time": "2024-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "51113266.2844539",
+    "asset": "vet_eth",
+    "time": "2024-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48913723.6751919",
+    "asset": "vet_eth",
+    "time": "2024-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49506051.812854",
+    "asset": "vet_eth",
+    "time": "2024-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44255219.8484218",
+    "asset": "vet_eth",
+    "time": "2024-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47037018.3669397",
+    "asset": "vet_eth",
+    "time": "2024-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48450730.900127",
+    "asset": "vet_eth",
+    "time": "2024-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47435366.6320436",
+    "asset": "vet_eth",
+    "time": "2024-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49384335.7614442",
+    "asset": "vet_eth",
+    "time": "2024-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47847148.7820046",
+    "asset": "vet_eth",
+    "time": "2024-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "50436053.8969204",
+    "asset": "vet_eth",
+    "time": "2024-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48642243.1431128",
+    "asset": "vet_eth",
+    "time": "2024-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "49200652.9452955",
+    "asset": "vet_eth",
+    "time": "2024-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47284313.2016976",
+    "asset": "vet_eth",
+    "time": "2024-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44562086.028994",
+    "asset": "vet_eth",
+    "time": "2024-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40313931.4072511",
+    "asset": "vet_eth",
+    "time": "2024-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41971569.7287033",
+    "asset": "vet_eth",
+    "time": "2024-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40908743.2495918",
+    "asset": "vet_eth",
+    "time": "2024-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37805454.8288913",
+    "asset": "vet_eth",
+    "time": "2024-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42360882.6308962",
+    "asset": "vet_eth",
+    "time": "2024-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41462121.2526376",
+    "asset": "vet_eth",
+    "time": "2024-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40151849.5532839",
+    "asset": "vet_eth",
+    "time": "2024-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41233537.5036157",
+    "asset": "vet_eth",
+    "time": "2024-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42563016.685876",
+    "asset": "vet_eth",
+    "time": "2024-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44424399.7316606",
+    "asset": "vet_eth",
+    "time": "2024-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44994482.2280292",
+    "asset": "vet_eth",
+    "time": "2024-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44351924.2397975",
+    "asset": "vet_eth",
+    "time": "2024-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46960006.7639826",
+    "asset": "vet_eth",
+    "time": "2024-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "47081374.2380173",
+    "asset": "vet_eth",
+    "time": "2024-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44855028.2635728",
+    "asset": "vet_eth",
+    "time": "2024-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46033899.9406916",
+    "asset": "vet_eth",
+    "time": "2024-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "44478692.7507288",
+    "asset": "vet_eth",
+    "time": "2024-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41143567.1670332",
+    "asset": "vet_eth",
+    "time": "2024-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41002490.9768217",
+    "asset": "vet_eth",
+    "time": "2024-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41673797.3167812",
+    "asset": "vet_eth",
+    "time": "2024-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40427339.3299517",
+    "asset": "vet_eth",
+    "time": "2024-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41670469.1828102",
+    "asset": "vet_eth",
+    "time": "2024-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42520842.9830571",
+    "asset": "vet_eth",
+    "time": "2024-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46578940.2189311",
+    "asset": "vet_eth",
+    "time": "2024-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43531632.8149917",
+    "asset": "vet_eth",
+    "time": "2024-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "46071966.2323371",
+    "asset": "vet_eth",
+    "time": "2024-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "48040059.6829781",
+    "asset": "vet_eth",
+    "time": "2024-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42662535.6769419",
+    "asset": "vet_eth",
+    "time": "2024-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40539920.3074101",
+    "asset": "vet_eth",
+    "time": "2024-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "43051226.4373277",
+    "asset": "vet_eth",
+    "time": "2024-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41425374.4857609",
+    "asset": "vet_eth",
+    "time": "2024-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40037421.0173762",
+    "asset": "vet_eth",
+    "time": "2024-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "38072025.709272",
+    "asset": "vet_eth",
+    "time": "2024-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39675837.3051775",
+    "asset": "vet_eth",
+    "time": "2024-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "40469225.2747668",
+    "asset": "vet_eth",
+    "time": "2024-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42404544.9439671",
+    "asset": "vet_eth",
+    "time": "2024-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41268836.408242",
+    "asset": "vet_eth",
+    "time": "2024-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "42785445.4570026",
+    "asset": "vet_eth",
+    "time": "2024-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "41662475.9640586",
+    "asset": "vet_eth",
+    "time": "2024-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39671358.3421277",
+    "asset": "vet_eth",
+    "time": "2024-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39808851.5311903",
+    "asset": "vet_eth",
+    "time": "2024-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39308202.7891964",
+    "asset": "vet_eth",
+    "time": "2024-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39360922.1671618",
+    "asset": "vet_eth",
+    "time": "2024-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39324300.7807705",
+    "asset": "vet_eth",
+    "time": "2024-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "39595761.1705429",
+    "asset": "vet_eth",
+    "time": "2024-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36027030.938",
+    "asset": "vet_eth",
+    "time": "2024-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35235193.6291398",
+    "asset": "vet_eth",
+    "time": "2024-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35242960.4512676",
+    "asset": "vet_eth",
+    "time": "2024-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37341758.5178106",
+    "asset": "vet_eth",
+    "time": "2024-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37127419.6462842",
+    "asset": "vet_eth",
+    "time": "2024-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37341966.3289373",
+    "asset": "vet_eth",
+    "time": "2024-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35960815.4542456",
+    "asset": "vet_eth",
+    "time": "2024-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16536342.9697065",
+    "asset": "vet_eth",
+    "time": "2023-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17065911.2220703",
+    "asset": "vet_eth",
+    "time": "2023-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17543135.3925467",
+    "asset": "vet_eth",
+    "time": "2023-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18573038.8571272",
+    "asset": "vet_eth",
+    "time": "2023-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18485007.8960338",
+    "asset": "vet_eth",
+    "time": "2023-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19056121.9096054",
+    "asset": "vet_eth",
+    "time": "2023-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18775199.2216283",
+    "asset": "vet_eth",
+    "time": "2023-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18556772.9127182",
+    "asset": "vet_eth",
+    "time": "2023-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18957885.6810294",
+    "asset": "vet_eth",
+    "time": "2023-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19087641.3462662",
+    "asset": "vet_eth",
+    "time": "2023-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19041793.8113214",
+    "asset": "vet_eth",
+    "time": "2023-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18833381.5307676",
+    "asset": "vet_eth",
+    "time": "2023-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19433131.7858663",
+    "asset": "vet_eth",
+    "time": "2023-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19185322.4006677",
+    "asset": "vet_eth",
+    "time": "2023-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19265380.8043868",
+    "asset": "vet_eth",
+    "time": "2023-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20297722.0367814",
+    "asset": "vet_eth",
+    "time": "2023-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20569064.0128816",
+    "asset": "vet_eth",
+    "time": "2023-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21802608.0623127",
+    "asset": "vet_eth",
+    "time": "2023-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21571013.5216598",
+    "asset": "vet_eth",
+    "time": "2023-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22699666.0627319",
+    "asset": "vet_eth",
+    "time": "2023-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21817505.6936085",
+    "asset": "vet_eth",
+    "time": "2023-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22830383.0800263",
+    "asset": "vet_eth",
+    "time": "2023-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22235819.0838538",
+    "asset": "vet_eth",
+    "time": "2023-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22259980.3934059",
+    "asset": "vet_eth",
+    "time": "2023-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21367957.0328942",
+    "asset": "vet_eth",
+    "time": "2023-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20800506.1126521",
+    "asset": "vet_eth",
+    "time": "2023-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21900068.339413",
+    "asset": "vet_eth",
+    "time": "2023-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20929125.7920523",
+    "asset": "vet_eth",
+    "time": "2023-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21020163.4054782",
+    "asset": "vet_eth",
+    "time": "2023-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21012442.8217807",
+    "asset": "vet_eth",
+    "time": "2023-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21473589.4351286",
+    "asset": "vet_eth",
+    "time": "2023-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21383425.6512228",
+    "asset": "vet_eth",
+    "time": "2023-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19435972.7752017",
+    "asset": "vet_eth",
+    "time": "2023-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20997584.8935053",
+    "asset": "vet_eth",
+    "time": "2023-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21198021.9921604",
+    "asset": "vet_eth",
+    "time": "2023-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21287926.8929734",
+    "asset": "vet_eth",
+    "time": "2023-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22015971.237714",
+    "asset": "vet_eth",
+    "time": "2023-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22409282.0358029",
+    "asset": "vet_eth",
+    "time": "2023-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21490635.0479175",
+    "asset": "vet_eth",
+    "time": "2023-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21638849.1757121",
+    "asset": "vet_eth",
+    "time": "2023-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21764203.7809823",
+    "asset": "vet_eth",
+    "time": "2023-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21368458.0504195",
+    "asset": "vet_eth",
+    "time": "2023-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22522151.3454228",
+    "asset": "vet_eth",
+    "time": "2023-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22944879.3949935",
+    "asset": "vet_eth",
+    "time": "2023-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22666113.6289937",
+    "asset": "vet_eth",
+    "time": "2023-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23968835.4350413",
+    "asset": "vet_eth",
+    "time": "2023-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24823532.9069983",
+    "asset": "vet_eth",
+    "time": "2023-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25377363.034491",
+    "asset": "vet_eth",
+    "time": "2023-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25227058.1251704",
+    "asset": "vet_eth",
+    "time": "2023-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26912097.8215426",
+    "asset": "vet_eth",
+    "time": "2023-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27196856.8219002",
+    "asset": "vet_eth",
+    "time": "2023-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27646165.3303587",
+    "asset": "vet_eth",
+    "time": "2023-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27133111.0559552",
+    "asset": "vet_eth",
+    "time": "2023-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29251563.7560491",
+    "asset": "vet_eth",
+    "time": "2023-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31169424.728095",
+    "asset": "vet_eth",
+    "time": "2023-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30888596.3231463",
+    "asset": "vet_eth",
+    "time": "2023-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28909669.7175906",
+    "asset": "vet_eth",
+    "time": "2023-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29803522.1566859",
+    "asset": "vet_eth",
+    "time": "2023-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29225472.226519",
+    "asset": "vet_eth",
+    "time": "2023-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31849227.9391028",
+    "asset": "vet_eth",
+    "time": "2023-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32909065.6800579",
+    "asset": "vet_eth",
+    "time": "2023-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34754602.506769",
+    "asset": "vet_eth",
+    "time": "2023-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34863113.1661908",
+    "asset": "vet_eth",
+    "time": "2023-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36059295.7013423",
+    "asset": "vet_eth",
+    "time": "2023-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35554029.19913",
+    "asset": "vet_eth",
+    "time": "2023-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34644775.4028266",
+    "asset": "vet_eth",
+    "time": "2023-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "38227996.9120805",
+    "asset": "vet_eth",
+    "time": "2023-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37318004.1941402",
+    "asset": "vet_eth",
+    "time": "2023-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "37009104.9047182",
+    "asset": "vet_eth",
+    "time": "2023-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35667090.7765963",
+    "asset": "vet_eth",
+    "time": "2023-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35039618.7895428",
+    "asset": "vet_eth",
+    "time": "2023-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35745365.7768741",
+    "asset": "vet_eth",
+    "time": "2023-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "34192190.6428508",
+    "asset": "vet_eth",
+    "time": "2023-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "36476291.4787009",
+    "asset": "vet_eth",
+    "time": "2024-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "35000586.6881962",
+    "asset": "vet_eth",
+    "time": "2024-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32072096.8353409",
+    "asset": "vet_eth",
+    "time": "2024-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32823348.1149935",
+    "asset": "vet_eth",
+    "time": "2024-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31064093.7575984",
+    "asset": "vet_eth",
+    "time": "2024-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29629265.7671231",
+    "asset": "vet_eth",
+    "time": "2024-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28510104.4898202",
+    "asset": "vet_eth",
+    "time": "2024-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31134527.7265486",
+    "asset": "vet_eth",
+    "time": "2024-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29932419.8037416",
+    "asset": "vet_eth",
+    "time": "2024-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "32893437.2025976",
+    "asset": "vet_eth",
+    "time": "2024-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "33138581.8206451",
+    "asset": "vet_eth",
+    "time": "2024-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30801294.2113718",
+    "asset": "vet_eth",
+    "time": "2024-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31053600.5768832",
+    "asset": "vet_eth",
+    "time": "2024-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29479084.7222533",
+    "asset": "vet_eth",
+    "time": "2024-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30243182.3288458",
+    "asset": "vet_eth",
+    "time": "2024-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30537961.1545714",
+    "asset": "vet_eth",
+    "time": "2024-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29997798.1297877",
+    "asset": "vet_eth",
+    "time": "2024-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28511917.236988",
+    "asset": "vet_eth",
+    "time": "2024-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28466509.0459759",
+    "asset": "vet_eth",
+    "time": "2024-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28468920.6333574",
+    "asset": "vet_eth",
+    "time": "2024-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28005559.9290059",
+    "asset": "vet_eth",
+    "time": "2024-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26122048.2241584",
+    "asset": "vet_eth",
+    "time": "2024-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26531683.2387642",
+    "asset": "vet_eth",
+    "time": "2024-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27212822.7703069",
+    "asset": "vet_eth",
+    "time": "2024-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27078087.4156978",
+    "asset": "vet_eth",
+    "time": "2024-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28005425.6151182",
+    "asset": "vet_eth",
+    "time": "2024-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28318374.0843265",
+    "asset": "vet_eth",
+    "time": "2024-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18971379.3068561",
+    "asset": "vet_eth",
+    "time": "2023-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20182876.0335403",
+    "asset": "vet_eth",
+    "time": "2023-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19481541.0618512",
+    "asset": "vet_eth",
+    "time": "2023-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19627805.6665103",
+    "asset": "vet_eth",
+    "time": "2023-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19413627.2618654",
+    "asset": "vet_eth",
+    "time": "2023-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19434879.8259376",
+    "asset": "vet_eth",
+    "time": "2023-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19060591.2940783",
+    "asset": "vet_eth",
+    "time": "2023-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19103127.0891354",
+    "asset": "vet_eth",
+    "time": "2023-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19092268.6883968",
+    "asset": "vet_eth",
+    "time": "2023-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19280446.8180774",
+    "asset": "vet_eth",
+    "time": "2023-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19197301.4464894",
+    "asset": "vet_eth",
+    "time": "2023-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19633397.3963104",
+    "asset": "vet_eth",
+    "time": "2023-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18690935.4178232",
+    "asset": "vet_eth",
+    "time": "2023-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18566405.990035",
+    "asset": "vet_eth",
+    "time": "2023-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18629590.1443868",
+    "asset": "vet_eth",
+    "time": "2023-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18545286.9379049",
+    "asset": "vet_eth",
+    "time": "2023-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18664906.6199302",
+    "asset": "vet_eth",
+    "time": "2023-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18871296.0594619",
+    "asset": "vet_eth",
+    "time": "2023-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18682741.9453998",
+    "asset": "vet_eth",
+    "time": "2023-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18635138.453021",
+    "asset": "vet_eth",
+    "time": "2023-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18823989.7926632",
+    "asset": "vet_eth",
+    "time": "2023-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18253763.960026",
+    "asset": "vet_eth",
+    "time": "2023-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17937698.6648871",
+    "asset": "vet_eth",
+    "time": "2023-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17863881.8426123",
+    "asset": "vet_eth",
+    "time": "2023-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17847331.218907",
+    "asset": "vet_eth",
+    "time": "2023-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17664086.3635753",
+    "asset": "vet_eth",
+    "time": "2023-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17658775.8991089",
+    "asset": "vet_eth",
+    "time": "2023-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17942231.0220692",
+    "asset": "vet_eth",
+    "time": "2023-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17785583.7587424",
+    "asset": "vet_eth",
+    "time": "2023-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18060094.0040444",
+    "asset": "vet_eth",
+    "time": "2023-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18086818.0690844",
+    "asset": "vet_eth",
+    "time": "2023-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17913454.7708318",
+    "asset": "vet_eth",
+    "time": "2023-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18093723.5523535",
+    "asset": "vet_eth",
+    "time": "2023-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18582692.8917797",
+    "asset": "vet_eth",
+    "time": "2023-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17604650.2293806",
+    "asset": "vet_eth",
+    "time": "2023-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16842769.7880521",
+    "asset": "vet_eth",
+    "time": "2023-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15781221.5769145",
+    "asset": "vet_eth",
+    "time": "2023-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16000591.7327247",
+    "asset": "vet_eth",
+    "time": "2023-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16045243.4623048",
+    "asset": "vet_eth",
+    "time": "2023-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16387642.5490411",
+    "asset": "vet_eth",
+    "time": "2023-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16144269.9702051",
+    "asset": "vet_eth",
+    "time": "2023-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15959655.3584999",
+    "asset": "vet_eth",
+    "time": "2023-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16314884.9203197",
+    "asset": "vet_eth",
+    "time": "2023-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15864433.6380481",
+    "asset": "vet_eth",
+    "time": "2023-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16036405.3179244",
+    "asset": "vet_eth",
+    "time": "2023-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15853126.5024496",
+    "asset": "vet_eth",
+    "time": "2023-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15973351.687763",
+    "asset": "vet_eth",
+    "time": "2023-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15970188.4230478",
+    "asset": "vet_eth",
+    "time": "2023-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16586027.0908151",
+    "asset": "vet_eth",
+    "time": "2023-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16251944.5492364",
+    "asset": "vet_eth",
+    "time": "2023-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15745963.7836696",
+    "asset": "vet_eth",
+    "time": "2023-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15531016.2526987",
+    "asset": "vet_eth",
+    "time": "2023-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15498090.1396327",
+    "asset": "vet_eth",
+    "time": "2023-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15539927.9502569",
+    "asset": "vet_eth",
+    "time": "2023-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15452767.9088414",
+    "asset": "vet_eth",
+    "time": "2023-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15644214.4785636",
+    "asset": "vet_eth",
+    "time": "2023-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15616713.160049",
+    "asset": "vet_eth",
+    "time": "2023-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15768769.8022046",
+    "asset": "vet_eth",
+    "time": "2023-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15683958.5572534",
+    "asset": "vet_eth",
+    "time": "2023-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15578670.4355626",
+    "asset": "vet_eth",
+    "time": "2023-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15230448.532838",
+    "asset": "vet_eth",
+    "time": "2023-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14739091.3853543",
+    "asset": "vet_eth",
+    "time": "2023-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16432336.748305",
+    "asset": "vet_eth",
+    "time": "2023-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16593528.5970464",
+    "asset": "vet_eth",
+    "time": "2023-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17003278.7544753",
+    "asset": "vet_eth",
+    "time": "2023-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17816208.6526603",
+    "asset": "vet_eth",
+    "time": "2023-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17683711.7455253",
+    "asset": "vet_eth",
+    "time": "2023-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17088688.1140867",
+    "asset": "vet_eth",
+    "time": "2023-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17344322.0545836",
+    "asset": "vet_eth",
+    "time": "2023-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17707870.8961734",
+    "asset": "vet_eth",
+    "time": "2023-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17724306.818849",
+    "asset": "vet_eth",
+    "time": "2023-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17128978.7510042",
+    "asset": "vet_eth",
+    "time": "2023-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17046105.3704257",
+    "asset": "vet_eth",
+    "time": "2023-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16974620.3386767",
+    "asset": "vet_eth",
+    "time": "2023-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16522319.5061445",
+    "asset": "vet_eth",
+    "time": "2023-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16748504.435358",
+    "asset": "vet_eth",
+    "time": "2023-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16512886.8020907",
+    "asset": "vet_eth",
+    "time": "2023-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16368652.5997385",
+    "asset": "vet_eth",
+    "time": "2023-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16933866.4491137",
+    "asset": "vet_eth",
+    "time": "2023-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17049013.4981502",
+    "asset": "vet_eth",
+    "time": "2023-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17400876.3545709",
+    "asset": "vet_eth",
+    "time": "2023-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17469803.3474082",
+    "asset": "vet_eth",
+    "time": "2023-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16920325.5488494",
+    "asset": "vet_eth",
+    "time": "2023-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16878032.5302832",
+    "asset": "vet_eth",
+    "time": "2023-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16782823.0795894",
+    "asset": "vet_eth",
+    "time": "2023-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16643041.3468081",
+    "asset": "vet_eth",
+    "time": "2023-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16860052.7250464",
+    "asset": "vet_eth",
+    "time": "2023-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17015592.5643073",
+    "asset": "vet_eth",
+    "time": "2023-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17157817.8335823",
+    "asset": "vet_eth",
+    "time": "2023-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16507092.3470124",
+    "asset": "vet_eth",
+    "time": "2023-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16644226.1293",
+    "asset": "vet_eth",
+    "time": "2023-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16197301.8819456",
+    "asset": "vet_eth",
+    "time": "2023-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16370228.4969338",
+    "asset": "vet_eth",
+    "time": "2023-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16393941.9242457",
+    "asset": "vet_eth",
+    "time": "2023-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16380618.7833401",
+    "asset": "vet_eth",
+    "time": "2023-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16480867.3609722",
+    "asset": "vet_eth",
+    "time": "2023-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16729598.0012101",
+    "asset": "vet_eth",
+    "time": "2023-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16568920.6472586",
+    "asset": "vet_eth",
+    "time": "2023-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16196429.8444322",
+    "asset": "vet_eth",
+    "time": "2023-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16284544.8728882",
+    "asset": "vet_eth",
+    "time": "2023-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23125145.0685855",
+    "asset": "vet_eth",
+    "time": "2023-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24088974.2424095",
+    "asset": "vet_eth",
+    "time": "2023-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24373900.0683872",
+    "asset": "vet_eth",
+    "time": "2023-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24520622.8905654",
+    "asset": "vet_eth",
+    "time": "2023-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24148147.9650466",
+    "asset": "vet_eth",
+    "time": "2023-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23985443.292469",
+    "asset": "vet_eth",
+    "time": "2023-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24360571.1528357",
+    "asset": "vet_eth",
+    "time": "2023-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24991734.5989101",
+    "asset": "vet_eth",
+    "time": "2023-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24905589.0568664",
+    "asset": "vet_eth",
+    "time": "2023-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24490321.7432744",
+    "asset": "vet_eth",
+    "time": "2023-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25339240.980148",
+    "asset": "vet_eth",
+    "time": "2023-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25845029.4657967",
+    "asset": "vet_eth",
+    "time": "2023-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25746867.1917934",
+    "asset": "vet_eth",
+    "time": "2023-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26200303.2920641",
+    "asset": "vet_eth",
+    "time": "2023-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25492188.7597142",
+    "asset": "vet_eth",
+    "time": "2023-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26446693.801999",
+    "asset": "vet_eth",
+    "time": "2023-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23849776.9433019",
+    "asset": "vet_eth",
+    "time": "2023-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23100892.6064886",
+    "asset": "vet_eth",
+    "time": "2023-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22154592.249321",
+    "asset": "vet_eth",
+    "time": "2023-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22661193.8659807",
+    "asset": "vet_eth",
+    "time": "2023-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22127791.6720131",
+    "asset": "vet_eth",
+    "time": "2023-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22122264.445355",
+    "asset": "vet_eth",
+    "time": "2023-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22679311.4731907",
+    "asset": "vet_eth",
+    "time": "2023-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22013130.6597612",
+    "asset": "vet_eth",
+    "time": "2023-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22581631.61791",
+    "asset": "vet_eth",
+    "time": "2023-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22420246.0308715",
+    "asset": "vet_eth",
+    "time": "2023-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22669503.0802267",
+    "asset": "vet_eth",
+    "time": "2023-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22310503.3279834",
+    "asset": "vet_eth",
+    "time": "2023-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21492087.5440882",
+    "asset": "vet_eth",
+    "time": "2023-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21178991.4639388",
+    "asset": "vet_eth",
+    "time": "2023-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20971661.7370115",
+    "asset": "vet_eth",
+    "time": "2023-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20738393.278113",
+    "asset": "vet_eth",
+    "time": "2023-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21207293.7165293",
+    "asset": "vet_eth",
+    "time": "2023-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20292824.3722135",
+    "asset": "vet_eth",
+    "time": "2023-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20262221.9019061",
+    "asset": "vet_eth",
+    "time": "2023-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19335237.620849",
+    "asset": "vet_eth",
+    "time": "2023-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19374542.4166712",
+    "asset": "vet_eth",
+    "time": "2023-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19612193.808026",
+    "asset": "vet_eth",
+    "time": "2023-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18990936.7821763",
+    "asset": "vet_eth",
+    "time": "2023-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19182471.2828561",
+    "asset": "vet_eth",
+    "time": "2023-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19176704.6095325",
+    "asset": "vet_eth",
+    "time": "2023-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19208647.7224773",
+    "asset": "vet_eth",
+    "time": "2023-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19492872.9787952",
+    "asset": "vet_eth",
+    "time": "2023-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19463690.9265649",
+    "asset": "vet_eth",
+    "time": "2023-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19947911.4186602",
+    "asset": "vet_eth",
+    "time": "2023-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19516494.7770535",
+    "asset": "vet_eth",
+    "time": "2023-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19592179.1844438",
+    "asset": "vet_eth",
+    "time": "2023-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19401840.6967638",
+    "asset": "vet_eth",
+    "time": "2023-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18979833.125377",
+    "asset": "vet_eth",
+    "time": "2023-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19291479.3166355",
+    "asset": "vet_eth",
+    "time": "2023-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19395513.6511946",
+    "asset": "vet_eth",
+    "time": "2023-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19454206.2218438",
+    "asset": "vet_eth",
+    "time": "2023-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19285201.7074433",
+    "asset": "vet_eth",
+    "time": "2023-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19262081.8040248",
+    "asset": "vet_eth",
+    "time": "2023-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20123228.8391471",
+    "asset": "vet_eth",
+    "time": "2023-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20438754.8965416",
+    "asset": "vet_eth",
+    "time": "2023-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20458448.513527",
+    "asset": "vet_eth",
+    "time": "2023-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20907316.0856855",
+    "asset": "vet_eth",
+    "time": "2023-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20342102.6369974",
+    "asset": "vet_eth",
+    "time": "2023-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19753614.5314993",
+    "asset": "vet_eth",
+    "time": "2023-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19781680.0944179",
+    "asset": "vet_eth",
+    "time": "2023-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19968366.2142131",
+    "asset": "vet_eth",
+    "time": "2023-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19785643.0159553",
+    "asset": "vet_eth",
+    "time": "2023-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18552146.0205018",
+    "asset": "vet_eth",
+    "time": "2023-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18866966.6648133",
+    "asset": "vet_eth",
+    "time": "2023-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17709342.1921906",
+    "asset": "vet_eth",
+    "time": "2023-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17835536.9701842",
+    "asset": "vet_eth",
+    "time": "2023-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17052526.5850586",
+    "asset": "vet_eth",
+    "time": "2023-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15587364.7141488",
+    "asset": "vet_eth",
+    "time": "2023-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15801077.6455072",
+    "asset": "vet_eth",
+    "time": "2023-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15906645.8051632",
+    "asset": "vet_eth",
+    "time": "2023-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16009319.5418644",
+    "asset": "vet_eth",
+    "time": "2023-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15370947.1417814",
+    "asset": "vet_eth",
+    "time": "2023-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14952690.5476044",
+    "asset": "vet_eth",
+    "time": "2023-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14706498.7904314",
+    "asset": "vet_eth",
+    "time": "2023-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15015727.3797041",
+    "asset": "vet_eth",
+    "time": "2023-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "14835531.3315552",
+    "asset": "vet_eth",
+    "time": "2023-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15128698.0936001",
+    "asset": "vet_eth",
+    "time": "2023-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "15551846.4192697",
+    "asset": "vet_eth",
+    "time": "2023-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16432661.0547754",
+    "asset": "vet_eth",
+    "time": "2023-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16947856.264521",
+    "asset": "vet_eth",
+    "time": "2023-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18711268.2920925",
+    "asset": "vet_eth",
+    "time": "2023-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18132279.020916",
+    "asset": "vet_eth",
+    "time": "2023-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18440138.7257645",
+    "asset": "vet_eth",
+    "time": "2023-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18295698.2688763",
+    "asset": "vet_eth",
+    "time": "2023-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18907969.0441329",
+    "asset": "vet_eth",
+    "time": "2023-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18044928.2877726",
+    "asset": "vet_eth",
+    "time": "2023-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18860785.6750879",
+    "asset": "vet_eth",
+    "time": "2023-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19666101.4538249",
+    "asset": "vet_eth",
+    "time": "2023-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20540698.6873719",
+    "asset": "vet_eth",
+    "time": "2023-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20412356.6846322",
+    "asset": "vet_eth",
+    "time": "2023-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20421032.4168385",
+    "asset": "vet_eth",
+    "time": "2023-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19924131.3622606",
+    "asset": "vet_eth",
+    "time": "2023-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19227758.6993023",
+    "asset": "vet_eth",
+    "time": "2023-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18434753.3628694",
+    "asset": "vet_eth",
+    "time": "2023-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18643103.9151856",
+    "asset": "vet_eth",
+    "time": "2023-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18785591.5998754",
+    "asset": "vet_eth",
+    "time": "2023-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18556119.3659447",
+    "asset": "vet_eth",
+    "time": "2023-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18607148.6874453",
+    "asset": "vet_eth",
+    "time": "2023-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18787076.280486",
+    "asset": "vet_eth",
+    "time": "2023-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16025553.2837887",
+    "asset": "vet_eth",
+    "time": "2023-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16172730.852632",
+    "asset": "vet_eth",
+    "time": "2023-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16063223.672716",
+    "asset": "vet_eth",
+    "time": "2023-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16578444.013953",
+    "asset": "vet_eth",
+    "time": "2023-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16201771.5326845",
+    "asset": "vet_eth",
+    "time": "2023-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16409651.7634108",
+    "asset": "vet_eth",
+    "time": "2023-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "16351759.6370908",
+    "asset": "vet_eth",
+    "time": "2023-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17050349.1005638",
+    "asset": "vet_eth",
+    "time": "2023-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "17483660.1244794",
+    "asset": "vet_eth",
+    "time": "2023-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18134054.828515",
+    "asset": "vet_eth",
+    "time": "2023-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18283519.450198",
+    "asset": "vet_eth",
+    "time": "2023-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "18824129.397822",
+    "asset": "vet_eth",
+    "time": "2023-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20022729.1094041",
+    "asset": "vet_eth",
+    "time": "2023-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20701802.64973",
+    "asset": "vet_eth",
+    "time": "2023-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21107234.5209018",
+    "asset": "vet_eth",
+    "time": "2023-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21327143.7371201",
+    "asset": "vet_eth",
+    "time": "2023-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21357940.2880923",
+    "asset": "vet_eth",
+    "time": "2023-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "19776136.8731181",
+    "asset": "vet_eth",
+    "time": "2023-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20305838.0079651",
+    "asset": "vet_eth",
+    "time": "2023-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22362862.7541788",
+    "asset": "vet_eth",
+    "time": "2023-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21817703.5175742",
+    "asset": "vet_eth",
+    "time": "2023-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22201672.5074339",
+    "asset": "vet_eth",
+    "time": "2023-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22875568.4228147",
+    "asset": "vet_eth",
+    "time": "2023-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21793000.6797707",
+    "asset": "vet_eth",
+    "time": "2023-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23013121.0216307",
+    "asset": "vet_eth",
+    "time": "2023-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23852559.4202963",
+    "asset": "vet_eth",
+    "time": "2023-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24838974.9592195",
+    "asset": "vet_eth",
+    "time": "2023-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24112367.5258509",
+    "asset": "vet_eth",
+    "time": "2023-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24592597.1066519",
+    "asset": "vet_eth",
+    "time": "2023-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23000215.0568035",
+    "asset": "vet_eth",
+    "time": "2023-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23138851.444131",
+    "asset": "vet_eth",
+    "time": "2023-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24811351.1827952",
+    "asset": "vet_eth",
+    "time": "2023-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24095012.6483008",
+    "asset": "vet_eth",
+    "time": "2023-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24809416.2727462",
+    "asset": "vet_eth",
+    "time": "2023-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24980614.8574749",
+    "asset": "vet_eth",
+    "time": "2023-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24258433.9510206",
+    "asset": "vet_eth",
+    "time": "2023-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23898634.496573",
+    "asset": "vet_eth",
+    "time": "2023-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25961100.6338409",
+    "asset": "vet_eth",
+    "time": "2023-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25758812.10094",
+    "asset": "vet_eth",
+    "time": "2023-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23242846.0553971",
+    "asset": "vet_eth",
+    "time": "2023-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23591100.0376458",
+    "asset": "vet_eth",
+    "time": "2023-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23928405.5294159",
+    "asset": "vet_eth",
+    "time": "2023-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23569047.9930857",
+    "asset": "vet_eth",
+    "time": "2023-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22980805.2282877",
+    "asset": "vet_eth",
+    "time": "2023-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23855092.2115919",
+    "asset": "vet_eth",
+    "time": "2023-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25592482.5799783",
+    "asset": "vet_eth",
+    "time": "2023-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24474468.7069544",
+    "asset": "vet_eth",
+    "time": "2023-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27653728.2213052",
+    "asset": "vet_eth",
+    "time": "2023-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27171539.5971391",
+    "asset": "vet_eth",
+    "time": "2023-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28856719.0196395",
+    "asset": "vet_eth",
+    "time": "2023-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "31782073.6760212",
+    "asset": "vet_eth",
+    "time": "2023-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "30119668.3492583",
+    "asset": "vet_eth",
+    "time": "2023-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29467337.6171825",
+    "asset": "vet_eth",
+    "time": "2023-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "29647963.1143479",
+    "asset": "vet_eth",
+    "time": "2023-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27693287.3473876",
+    "asset": "vet_eth",
+    "time": "2023-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26891996.9063432",
+    "asset": "vet_eth",
+    "time": "2023-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28201904.4355048",
+    "asset": "vet_eth",
+    "time": "2023-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28088334.4656756",
+    "asset": "vet_eth",
+    "time": "2023-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "26944270.9832655",
+    "asset": "vet_eth",
+    "time": "2023-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "28078208.3953254",
+    "asset": "vet_eth",
+    "time": "2023-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "27265455.6252075",
+    "asset": "vet_eth",
+    "time": "2023-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "25412118.1579097",
+    "asset": "vet_eth",
+    "time": "2023-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24396152.1969711",
+    "asset": "vet_eth",
+    "time": "2023-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24333626.2366995",
+    "asset": "vet_eth",
+    "time": "2023-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24626708.6175068",
+    "asset": "vet_eth",
+    "time": "2023-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23489649.0148617",
+    "asset": "vet_eth",
+    "time": "2023-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22148680.843508",
+    "asset": "vet_eth",
+    "time": "2023-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20257836.2056362",
+    "asset": "vet_eth",
+    "time": "2023-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20727897.3231633",
+    "asset": "vet_eth",
+    "time": "2023-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "20439454.4409757",
+    "asset": "vet_eth",
+    "time": "2023-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21999918.5152101",
+    "asset": "vet_eth",
+    "time": "2023-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23451103.5575577",
+    "asset": "vet_eth",
+    "time": "2023-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23940692.7522518",
+    "asset": "vet_eth",
+    "time": "2023-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "21913275.3337037",
+    "asset": "vet_eth",
+    "time": "2023-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22337610.3517023",
+    "asset": "vet_eth",
+    "time": "2023-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24270240.6973502",
+    "asset": "vet_eth",
+    "time": "2023-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23045832.2011976",
+    "asset": "vet_eth",
+    "time": "2023-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "24590128.7849086",
+    "asset": "vet_eth",
+    "time": "2023-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23003354.0437467",
+    "asset": "vet_eth",
+    "time": "2023-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23778922.3205413",
+    "asset": "vet_eth",
+    "time": "2023-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22498755.4175619",
+    "asset": "vet_eth",
+    "time": "2023-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23642322.9215176",
+    "asset": "vet_eth",
+    "time": "2023-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22869504.8540381",
+    "asset": "vet_eth",
+    "time": "2023-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22708054.1700062",
+    "asset": "vet_eth",
+    "time": "2023-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22929459.449268",
+    "asset": "vet_eth",
+    "time": "2023-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22007061.022573",
+    "asset": "vet_eth",
+    "time": "2023-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22434255.6991324",
+    "asset": "vet_eth",
+    "time": "2023-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23224280.1944261",
+    "asset": "vet_eth",
+    "time": "2023-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "22869277.8260367",
+    "asset": "vet_eth",
+    "time": "2023-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23508909.8544548",
+    "asset": "vet_eth",
+    "time": "2023-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23549197.9175726",
+    "asset": "vet_eth",
+    "time": "2023-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktCurUSD": "23229974.7890617",
+    "asset": "vet_eth",
+    "time": "2023-04-02T00:00:00.000000000Z"
+  }
+]
