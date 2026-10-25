@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "program_status": "ACTIVE",
-  "next_sequence_number": 7,
+  "next_sequence_number": 8,
   "hypotheses": [
     {
       "id": "H1",
@@ -66,10 +66,20 @@
       "predicted_high_minus_low_sign": "positive",
       "status": "CANDIDATE_UNVALIDATED",
       "evidence_note": "Canonical sealed forward block: 608 formations (2025-01-01..2026-08-31), high_low_diff_net_1x = +0.6165, spread_net_1x_mean = +0.0996, median -0.0106, n_high=61, n_low=90, n_mid=457. HAC t~1.55, CI [-0.164, 1.397]. This is development/exploratory evidence: the block is a strict subset of the grid ledger's development window (2023-01-31..2026-09-29) and was already inspected, so it cannot serve as independent confirmation. The positive sign contradicts H1's registered negative prediction and contradicts the defective archived block's -0.0097; the discrepancy between the two blocks is a stability red flag, not a resolved finding.",
-      "next_test": "Preregister H7 as a positive-direction candidate only after a fresh, mature sealed forward block (formations after 2026-09-29) is available; compute HAC/overlap-aware uncertainty on completed 30-day outcomes only. Until then H7 is EXPLORATORY_ONLY."
+      "next_test": "Preregister H7 as a positive-direction candidate only after a fresh, mature sealed forward block (formations after 2026-09-29) is available; compute HAC/overlap-aware uncertainty on completed 30-day outcomes only. Until then H7 is EXPLORATORY_ONLY.",
+      "evidence_note_addendum_20261025T19Z": "STATE-REPRESENTATIVENESS AUDIT (DISP-003-STATEAUDIT-001, preregistered 2026-10-25T07:45Z, artifact integrity_audit/H004V106_state_representativeness_audit_20261025.json): the +0.617 estimate is CLUSTER_DOMINATED. Leave-one-out by calendar month: dropping 2025-10 moves high_low_diff_net_1x from +0.617 to +0.093 (delta fraction -0.849, far beyond the predeclared 50% threshold); dropping 2025-07 moves it to +0.847 (+0.373). The largest high-state cluster is 2025-10 with 31 of 61 high formations; high states are observed in only 7 calendar months (2025-04:1, 2025-07:18, 2025-08:1, 2025-09:2, 2025-10:31, 2025-11:8, none in 2025-12..2026-08). The positive mean is therefore not a stable property of the dispersion-momentum mechanism across the block; it is concentrated in one month. This is a measurement-feasibility diagnostic on already-inspected development evidence, NOT a fresh holdout and NOT independent confirmation. It further weakens any inclination to treat +0.617 as a reliable positive-direction signal."
+    },
+    {
+      "id": "H8",
+      "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-STATEAUDIT-001",
+      "statement": "The canonical H004V106 positive high-minus-low estimate (+0.617) is dominated by a single calendar-month cluster (2025-10) rather than being representative across the forward block.",
+      "predicted_high_minus_low_sign": "cluster_robustness_negative",
+      "status": "EXPLORATORY_ONLY",
+      "evidence_note": "DISP-003-STATEAUDIT-001, preregistered before computation (preregistrations/H004V106_STATE_REPRESENTATIVENESS_AUDIT_v1.md), executed 2026-10-25T19Z. Decision rule predeclared: if removing any single calendar month moves high_low_diff_net_1x by >50% of full-block magnitude, or the largest single-month high-state cluster contributes >50% of the high-state mean, label CLUSTER_DOMINATED. Result: CLUSTER_DOMINATED on both criteria. Baseline high_low_diff_net_1x = +0.6165 (608 formations, n_high=61, n_low=90). Dropping 2025-10 -> +0.0933 (delta frac -0.849). Largest high-state month 2025-10: 31/61 high formations, mean +1.046, share of high-state mean 1.94 (the high-state mean is itself negative once 2025-10 is removed, since the remaining 30 high formations average below the low-state mean). High states occur in only 7 of 24 calendar months in the block and none after 2025-11. No frozen artifact was modified; the canonical block is read-only. This is exploratory diagnostic evidence only; it cannot validate or refute H1/H6/H7 and does not unlock the confirmatory track.",
+      "next_test": "If the mechanism is cluster-driven, test whether it survives (a) a rolling/adaptive shorter dispersion reference window and (b) conditioning on the 2025-10 dispersion regime, each under a NEW preregistered experiment ID on development data only. A genuinely fresh sealed forward block (formations after 2026-09-29) remains required for any confirmatory claim."
     }
   ],
   "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block.",
-  "last_updated_utc": "2026-10-25T02:40:00Z",
-  "registry_reconciliation_20261025": "H1 and H6 evidence notes previously quoted the defective archived forward block (637 formations, -0.0097). That block used price-level momentum (dispersion ~1e149), had no sealing rule, and ran formations through 2026-09-29 on a 2026-10-23 cutoff (look-ahead). It is quarantined in archive_defective_momentum_20261024 and is NOT canonical evidence. The canonical sealed block (forward_block/forward_block_evaluation.json) has 608 formations and high_low_diff_net_1x = +0.6165 (positive, opposite to H1's registered negative sign), not significant under Newey-West HAC (t~1.55, CI [-0.164, 1.397]). H1 evidence_note now carries an in-line correction and remains immutable in substance; H6 evidence_note was rewritten to cite the canonical block; H7 was added as a positive-direction EXPLORATORY_ONLY candidate. No frozen experiment result was altered."
+  "last_updated_utc": "2026-10-25T19:28:00Z",
+  "registry_reconciliation_20261025T19Z": "Added H8 (DISP-003-STATEAUDIT-001) recording the executed state-representativeness audit result: the canonical H004V106 +0.617 estimate is CLUSTER_DOMINATED by the 2025-10 calendar-month cluster. H7 received an in-line evidence_note_addendum describing the same audit. H1 remains immutable and unchanged in substance; H2..H6 unchanged; no frozen experiment result was altered. The canonical forward block, grid ledger, summaries, DISPERSION-001/002 and the defective archive are byte-unchanged. New artifact: integrity_audit/H004V106_state_representativeness_audit_20261025.json; new script: scripts/state_representativeness_audit.py; new test: tests/test_state_representativeness_audit.py.",
 }
