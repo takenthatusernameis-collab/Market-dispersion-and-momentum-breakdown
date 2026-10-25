@@ -87,3 +87,15 @@ The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 
 - Full test suite: `python3 -m unittest discover -s tests` -> 46 OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 artifacts unchanged (git diff: none).
 - Hypothesis registry unchanged (H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H6/H7 CANDIDATE_UNVALIDATED awaiting fresh sealed block after 2026-09-29). Candidate frontier unchanged (verified=220, blocked=6127, remaining_discovered=0, candidate_page_cursor=6351).
 - Next priority unchanged: on/after 2026-10-29 re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; until then continue free-source discovery, validation, design, or red-team per AGENTS.md; do not re-probe the same 404 endpoint.
+
+## 2026-10-25 session outcome (final independent verification, this session)
+- Re-read durable handoff and agent_task_message; mandate confirmed: HARMONY-CRYPTO-EDGE-004-DISPERSION-003, historical-only, free-data-only, no live/paper trading, no paid services or secrets.
+- Independently re-verified every handoff claim against committed artifacts (no changes made this session):
+  - `python3 -m unittest discover -s tests` -> 46 OK (1 pre-existing RuntimeWarning from the quarantined defective archive).
+  - Grid manifest regeneration byte-identical; 216 cells H004V001-H004V216, anchors H004V105/H004V106; grid executed 216/216 OK, 0 Holm-rejected (grid_summary.json).
+  - Canonical forward block forward_block/forward_block_evaluation.json: H004V106, cutoff 2026-09-30, last formation 2026-08-31, 608 formations, state counts high=61/low=90/mid=457, high_low_diff_net_1x=+0.6165223953929935, spread_net_1x mean=+0.0996, median=-0.0106, all finite; matches forward_block_integrity_audit.json, forward_block_independent_recomputation_20261025.json and forward_block_hac_addendum_20261024.json exactly.
+  - universe_frontier.json: verified=220, blocked=6127, remaining_discovered=0, candidate_page_cursor=6351; 4 non-ASCII asset IDs durably blocked (我踏马来了, 牛来, 老子, 龙虾).
+  - hypothesis_registry.json: H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H6 CANDIDATE_UNVALIDATED; H7 CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY positive-direction; H2-H5 CANDIDATE_UNVALIDATED.
+  - git diff clean apart from __pycache__: DISPERSION-001/002 artifacts, DISPERSION-003 sealed block, integrity audits and defective archive all byte-unchanged.
+- Cutoff gate STILL BLOCKED (today 2026-10-25 < required 2026-10-29); October 2026 Binance monthly archive not re-probed (404, structural).
+- No new code changes, no new blockers this session. Next agent: on/after 2026-10-29 re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; until then continue free-source discovery, validation, design, or red-team per AGENTS.md; do not re-probe the same 404 endpoint.
