@@ -261,6 +261,7 @@ def main() -> int:
             entry["eligible"] = False
             entry["status"] = "blocked"
             entry["blocker_reasons"] = ["non_ascii_asset_id"]
+            blocked.append(asset)
             run_record["candidates_processed"].append(entry)
             print(f"[candidate] {asset}: BLOCKED (non_ascii_asset_id)", flush=True)
             continue

@@ -169534,10 +169534,70 @@
       "fetch_utc": "2026-10-25T03:33:44Z",
       "metrics": {},
       "status": "blocked"
+    },
+    {
+      "asset": "\u6211\u8e0f\u9a6c\u6765\u4e86",
+      "binance": {
+        "error": "non_ascii_asset_id",
+        "exists": false,
+        "symbol": null
+      },
+      "blocker_reasons": [
+        "non_ascii_asset_id"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-25T04:24:12Z",
+      "metrics": {},
+      "status": "blocked"
+    },
+    {
+      "asset": "\u725b\u6765",
+      "binance": {
+        "error": "non_ascii_asset_id",
+        "exists": false,
+        "symbol": null
+      },
+      "blocker_reasons": [
+        "non_ascii_asset_id"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-25T04:24:12Z",
+      "metrics": {},
+      "status": "blocked"
+    },
+    {
+      "asset": "\u8001\u5b50",
+      "binance": {
+        "error": "non_ascii_asset_id",
+        "exists": false,
+        "symbol": null
+      },
+      "blocker_reasons": [
+        "non_ascii_asset_id"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-25T04:24:12Z",
+      "metrics": {},
+      "status": "blocked"
+    },
+    {
+      "asset": "\u9f99\u867e",
+      "binance": {
+        "error": "non_ascii_asset_id",
+        "exists": false,
+        "symbol": null
+      },
+      "blocker_reasons": [
+        "non_ascii_asset_id"
+      ],
+      "eligible": false,
+      "fetch_utc": "2026-10-25T04:24:12Z",
+      "metrics": {},
+      "status": "blocked"
     }
   ],
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-10-25T03:33:44Z",
+  "fetch_utc": "2026-10-25T04:24:12Z",
   "point_in_time": "no forward-fill; eligibility uses on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",

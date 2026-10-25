@@ -3,7 +3,7 @@
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
 ## State on handoff
-- Candidate validation COMPLETE: verified=220, blocked=6123, remaining_discovered=0. Validation record updated additively.
+- Candidate validation COMPLETE: verified=220, blocked=6127, remaining_discovered=0. Validation record updated additively. Catalog re-walk on 2026-10-25 found 4 newly listed non-ASCII asset IDs (我踏马来了, 牛来, 老子, 龙虾); all blocked with reason non_ascii_asset_id (no Binance USD-M perpetual symbol can map from them — durable blocker, no retry helps). Validation script fixed (scripts/validate_candidate_batch.py) so non-ASCII blockers are now appended to candidates_blocked. Frontier queue drained; catalog cursor at 6351/6347 entries walked.
 - Cutoff gate: BLOCKED (structural). Today 2026-10-25; gate requires cutoff >= 2026-10-29. October 2026 Binance monthly archive still 404; not re-probed per blocker note. Existing sealed forward block (cutoff 2026-09-30, last formation 2026-08-31) is development/exploratory evidence only; not reused as independent confirmation.
 - DISPERSION-001/002 unchanged.
 - DISPERSION-003 grid manifest regenerated and verified deterministic: 216 cells (H004V001–H004V216), anchors H004V105 (legacy) and H004V106 (expanding) match preregistration; `scripts/generate_grid_v3_manifest.py` regeneration byte-identical. Grid executed 216/216 OK, 0 Holm-rejected.
@@ -43,3 +43,8 @@ The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 
 - Verified integrity audits present: forward_block_integrity_audit.json, forward_block_hac_addendum_20261024.json, forward_block_independent_recomputation_20261025.json (608 formations, 0 non-finite dispersion, high_low_diff_net=+0.6165, HAC t~1.55 not significant).
 - Ran full test suite: `python3 -m unittest discover -s tests` -> 45 tests OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 artifacts unchanged.
 - Completed required reading/checks; updated handoff and agent task message for next agent.
+
+## 2026-10-25 session outcome (catalog re-walk + validation batch)
+- Catalog re-walk via scripts/discover_candidates.py: 6347 entries walked, 4 newly discovered non-ASCII asset IDs; all processed by scripts/validate_candidate_batch.py --limit 25 and blocked (non_ascii_asset_id). Frontier: verified=220, blocked=6127, remaining_discovered=0, candidate_page_cursor=6351. scripts/validate_candidate_batch.py fixed so the non_ascii_asset_id branch appends to candidates_blocked (previously the blocker was recorded only in the run record and the asset dropped out of the frontier).
+- Full test suite: 45 tests OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 artifacts unchanged; DISPERSION-003 sealed forward block, integrity audits and defective archive unchanged (verified via git diff).
+- Cutoff gate still BLOCKED (today 2026-10-25 < 2026-10-29); October 2026 Binance monthly archive 404, not re-probed. Canonical forward block remains development/exploratory evidence only.
