@@ -1,7 +1,7 @@
 {
   "batch_size_semantics": "operational checkpoint only; not a research-universe cutoff",
-  "batch_validation_utc": "2026-10-25T02:15:55Z",
-  "candidate_page_cursor": 12297,
+  "batch_validation_utc": "2026-10-25T02:28:37Z",
+  "candidate_page_cursor": 12372,
   "candidates_blocked": [
     "0g",
     "2z",
@@ -5841,9 +5841,7 @@
     "wstx",
     "wtc",
     "wtgxx",
-    "wtgxx_eth"
-  ],
-  "candidates_discovered": [
+    "wtgxx_eth",
     "wtgxx_xlm",
     "wuf",
     "wulfx",
@@ -5863,7 +5861,6 @@
     "x_aix",
     "x_talex",
     "xaf",
-    "xai",
     "xai_sideshifttoken",
     "xai_silofinance_eth",
     "xai_xai",
@@ -5908,7 +5905,6 @@
     "xed",
     "xel",
     "xels",
-    "xem",
     "xen",
     "xend",
     "xep",
@@ -5918,7 +5914,9 @@
     "xgold",
     "xhdx",
     "xhv",
-    "xiasi",
+    "xiasi"
+  ],
+  "candidates_discovered": [
     "xidr_eth",
     "xion",
     "xiuxian",
@@ -6353,7 +6351,9 @@
     "waxp",
     "wif",
     "wld",
-    "woo"
+    "woo",
+    "xai",
+    "xem"
   ],
   "catalog_discovery": {
     "blocked_excluded": [
@@ -6524,7 +6524,7 @@
   "expanding_universe_assets_with_cap_and_binance": 32,
   "expanding_universe_target_met": true,
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-25T02:17:13Z",
+  "last_updated_utc": "2026-10-25T02:30:37Z",
   "last_verified_historical_rank": null,
   "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
