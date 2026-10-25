@@ -28,3 +28,10 @@ The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 
 - Completed unblocked independent task: created independent recomputation audit artifact with finite-value checks, state counts, mean/median, tail influence, cost treatment, overlap note.
 
 (End of file)
+
+## 2026-10-25 session outcome (follow-up)
+- Re-read durable handoff; cutoff gate still BLOCKED (today 2026-10-25 < 2026-10-29); no data refresh attempted (structural).
+- Independent recomputation audit already present and verified (608 formations, 0 non-finite dispersion, high_low_diff_net_1x=+0.6165, HAC t~1.55 not significant); DISPERSION-001/002 artifacts unchanged.
+- Full test suite: 45 tests OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 unchanged.
+- Forward block remains development/exploratory evidence only; not reused as independent confirmation.
+- Next priority: on/after 2026-10-29 re-check via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; until then continue independent unblocked work (free-source discovery, validation, design, red-team); do not re-probe the same 404 endpoint.
