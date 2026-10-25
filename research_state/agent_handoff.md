@@ -91,6 +91,6 @@ Constraints: free public data only (Coin Metrics Community API, Binance Public D
 
 ## Session outcome — 2026-10-25 (this session — handoff/task update)
 - Re-read durable handoff + agent_task_message; mandate confirmed. Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); October 2026 Binance monthly archive 404, not re-probed.
-- Ran `python3 -m unittest discover -s tests`: 46 OK (1 pre-existing RuntimeWarning). git diff: clean apart from __pycache__ (restored).
-- Independent unblocked verification: frontier blocked=6127/cursor=6347/4 non-ASCII blockers; registry states unchanged; grid 216/216 OK, 0 Holm-rejected; canonical forward block figures match integrity audits.
+- Ran `python3 -m unittest discover -s tests`: 46 OK (1 pre-existing RuntimeWarning). git diff: only __pycache__; DISPERSION-001/002 artifacts, DISPERSION-003 sealed forward block, integrity audits and defective archive all byte-unchanged.
+- Independent unblocked verification: frontier blocked=6127/cursor=6347/4 non-ASCII blockers; registry states unchanged; grid 216/216 OK, 0 Holm-rejected; canonical forward block figures match integrity audits (608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t=1.5482 not significant).
 - Updated handoff and wrote clear initial task message for next agent. Blocker preserved; no frozen experiments altered. Program stays ACTIVE.
