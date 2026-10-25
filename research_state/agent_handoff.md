@@ -48,3 +48,12 @@ The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 
 - Catalog re-walk via scripts/discover_candidates.py: 6347 entries walked, 4 newly discovered non-ASCII asset IDs; all processed by scripts/validate_candidate_batch.py --limit 25 and blocked (non_ascii_asset_id). Frontier: verified=220, blocked=6127, remaining_discovered=0, candidate_page_cursor=6351. scripts/validate_candidate_batch.py fixed so the non_ascii_asset_id branch appends to candidates_blocked (previously the blocker was recorded only in the run record and the asset dropped out of the frontier).
 - Full test suite: 45 tests OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 artifacts unchanged; DISPERSION-003 sealed forward block, integrity audits and defective archive unchanged (verified via git diff).
 - Cutoff gate still BLOCKED (today 2026-10-25 < 2026-10-29); October 2026 Binance monthly archive 404, not re-probed. Canonical forward block remains development/exploratory evidence only.
+
+## 2026-10-25 session outcome (read-prior-task + verify)
+- Read prior agent task from durable handoff and task message; confirmed mandate and state.
+- Cutoff gate still BLOCKED (today 2026-10-25 < 2026-10-29); October 2026 Binance monthly archive not re-probed per blocker note. Canonical forward block remains development/exploratory evidence only.
+- Verified grid manifest/determinism: 216 cells (H004V001-H004V216), anchors H004V105/H004V106 correct; grid executed 216/216 OK, 0 Holm-rejected.
+- Verified integrity audits present: forward_block_integrity_audit.json, forward_block_hac_addendum_20261024.json, forward_block_independent_recomputation_20261025.json (608 formations, 0 non-finite dispersion, high_low_diff_net=+0.6165, HAC t~1.55 not significant).
+- Ran full test suite: `python3 -m unittest discover -s tests` -> 45 tests OK (1 pre-existing RuntimeWarning). DISPERSION-001/002 and DISPERSION-003 sealed forward block / integrity audits / defective archive byte-unchanged (git diff: only pycache).
+- Candidate frontier unchanged: verified=220, blocked=6127, remaining_discovered=0, candidate_page_cursor=6351.
+- Next agent: on/after 2026-10-29 re-check cutoff via scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31; until then continue free-source discovery, validation, design, or red-team per AGENTS.md.
