@@ -1,0 +1,1597 @@
+[
+  {
+    "CapMrktEstUSD": "171916164.15198218525",
+    "asset": "pieverse",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "178418505.97693824625",
+    "asset": "pieverse",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "179232825.7112219575",
+    "asset": "pieverse",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "173087083.54453897675",
+    "asset": "pieverse",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186129309.0637485155",
+    "asset": "pieverse",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "185218325.283412414",
+    "asset": "pieverse",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "183472498.92912303125",
+    "asset": "pieverse",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181902198.75998763425",
+    "asset": "pieverse",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180793268.0366686265",
+    "asset": "pieverse",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176684909.0604684485",
+    "asset": "pieverse",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "197952003.8627999455",
+    "asset": "pieverse",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181706605.3288099705",
+    "asset": "pieverse",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181688527.570840038",
+    "asset": "pieverse",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180574212.33112245075",
+    "asset": "pieverse",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "182381776.981168856",
+    "asset": "pieverse",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181996670.6267550505",
+    "asset": "pieverse",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "193592922.79445780025",
+    "asset": "pieverse",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "211557613.901954649",
+    "asset": "pieverse",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "206721155.0770997855",
+    "asset": "pieverse",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "218273566.98954232825",
+    "asset": "pieverse",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "214736658.75358703125",
+    "asset": "pieverse",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "208831415.5241561415",
+    "asset": "pieverse",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "205871296.2970615",
+    "asset": "pieverse",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "219376482.2099153415",
+    "asset": "pieverse",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "217623152.274962",
+    "asset": "pieverse",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "213413421.87977190575",
+    "asset": "pieverse",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "204726795.4784909675",
+    "asset": "pieverse",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "207151304.3918663065",
+    "asset": "pieverse",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "203062203.3051465805",
+    "asset": "pieverse",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "219125232.81829047175",
+    "asset": "pieverse",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "223301342.4604339965",
+    "asset": "pieverse",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "233307284.50914869775",
+    "asset": "pieverse",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "257073270.4032192",
+    "asset": "pieverse",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "238404351.14190213225",
+    "asset": "pieverse",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "251118840.86747955525",
+    "asset": "pieverse",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "262958353.29804424825",
+    "asset": "pieverse",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "303501997.621712435",
+    "asset": "pieverse",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "258298256.761430382",
+    "asset": "pieverse",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "261100287.4755502465",
+    "asset": "pieverse",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "280699792.516945235",
+    "asset": "pieverse",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "286874556.49198311",
+    "asset": "pieverse",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "285708879.4334477675",
+    "asset": "pieverse",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "278670506.984254455",
+    "asset": "pieverse",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "279628345.03179457",
+    "asset": "pieverse",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "301275012.031914445",
+    "asset": "pieverse",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "275625691.354014015",
+    "asset": "pieverse",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "280777500.030398665",
+    "asset": "pieverse",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "287387692.8699005425",
+    "asset": "pieverse",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "305256927.14993105",
+    "asset": "pieverse",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "312949017.654638785",
+    "asset": "pieverse",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "280184204.5782808175",
+    "asset": "pieverse",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "284267920.65894691",
+    "asset": "pieverse",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "285888089.774446215",
+    "asset": "pieverse",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "347655370.916896665",
+    "asset": "pieverse",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "355847020.6816966875",
+    "asset": "pieverse",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "351756644.8745140925",
+    "asset": "pieverse",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "329013821.6892266075",
+    "asset": "pieverse",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "337217263.4889917425",
+    "asset": "pieverse",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "330750719.223236515",
+    "asset": "pieverse",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "321080021.3078953425",
+    "asset": "pieverse",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "312584140.9840810325",
+    "asset": "pieverse",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "307513683.6676159325",
+    "asset": "pieverse",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "322983806.26646575",
+    "asset": "pieverse",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "339766059.8297058275",
+    "asset": "pieverse",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "441172163.8784634825",
+    "asset": "pieverse",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "468882270.5847672525",
+    "asset": "pieverse",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "447970266.8999614525",
+    "asset": "pieverse",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "507354527.21488486",
+    "asset": "pieverse",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "490732846.9898073275",
+    "asset": "pieverse",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "464178907.6282197",
+    "asset": "pieverse",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "442377302.9405644775",
+    "asset": "pieverse",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "437999054.6294628125",
+    "asset": "pieverse",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "420841798.8090266125",
+    "asset": "pieverse",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "422730580.4700728575",
+    "asset": "pieverse",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "402742693.8349322375",
+    "asset": "pieverse",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "392360285.6852996975",
+    "asset": "pieverse",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "392756581.309753885",
+    "asset": "pieverse",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "383863452.6218454375",
+    "asset": "pieverse",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "376012273.8322278125",
+    "asset": "pieverse",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "372482533.322178475",
+    "asset": "pieverse",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "371032786.92421158",
+    "asset": "pieverse",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "364319544.7898990025",
+    "asset": "pieverse",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "362434645.8217032275",
+    "asset": "pieverse",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "353332315.9088212175",
+    "asset": "pieverse",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "361954996.69544964",
+    "asset": "pieverse",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "356724249.1459612525",
+    "asset": "pieverse",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "361868587.1483094825",
+    "asset": "pieverse",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "358177352.2796884975",
+    "asset": "pieverse",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "338634478.6783638925",
+    "asset": "pieverse",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "336108553.62877912",
+    "asset": "pieverse",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "324166977.5823315725",
+    "asset": "pieverse",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "323368775.7048252525",
+    "asset": "pieverse",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "308695345.8282112125",
+    "asset": "pieverse",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "298940557.2248699625",
+    "asset": "pieverse",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "292434512.4130476025",
+    "asset": "pieverse",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "294381577.80141824",
+    "asset": "pieverse",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "289144826.946832115",
+    "asset": "pieverse",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "295464081.85568596",
+    "asset": "pieverse",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "279308958.60431718",
+    "asset": "pieverse",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "284854171.4750935875",
+    "asset": "pieverse",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114443405.99496965",
+    "asset": "pieverse",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111145274.05792107",
+    "asset": "pieverse",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110408493.32773683",
+    "asset": "pieverse",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107692911.559373825",
+    "asset": "pieverse",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110362983.848893315",
+    "asset": "pieverse",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88846777.2076526",
+    "asset": "pieverse",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91721259.330274575",
+    "asset": "pieverse",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94040376.18815454",
+    "asset": "pieverse",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "100971557.68278021",
+    "asset": "pieverse",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110192835.28167027",
+    "asset": "pieverse",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111448335.56170357",
+    "asset": "pieverse",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144388322.45824711",
+    "asset": "pieverse",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "277473032.0183973",
+    "asset": "pieverse",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "221497097.24397983",
+    "asset": "pieverse",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "207084707.55001951",
+    "asset": "pieverse",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "229837788.95124536",
+    "asset": "pieverse",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "202076905.99906968",
+    "asset": "pieverse",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180964009.41395405",
+    "asset": "pieverse",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "173098280.02660379",
+    "asset": "pieverse",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "174365667.03930426",
+    "asset": "pieverse",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "165401464.22217931",
+    "asset": "pieverse",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166054042.94546171",
+    "asset": "pieverse",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175456741.63870726",
+    "asset": "pieverse",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156221825.51700998",
+    "asset": "pieverse",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155230429.83255442",
+    "asset": "pieverse",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167188448.98156159",
+    "asset": "pieverse",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "161620833.79996726",
+    "asset": "pieverse",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "165825229.27839841",
+    "asset": "pieverse",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167423249.3561441",
+    "asset": "pieverse",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175172949.7159246",
+    "asset": "pieverse",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167706691.26523657",
+    "asset": "pieverse",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176177117.86290795",
+    "asset": "pieverse",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "177303944.0500484",
+    "asset": "pieverse",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186077495.32413929",
+    "asset": "pieverse",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "182833734.20984359",
+    "asset": "pieverse",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "210919680.87438071",
+    "asset": "pieverse",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "210747811.7022791",
+    "asset": "pieverse",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "228783986.87778565",
+    "asset": "pieverse",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "268831526.41362092725",
+    "asset": "pieverse",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "254467281.838756272",
+    "asset": "pieverse",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "243821226.93613361625",
+    "asset": "pieverse",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "220833510.398278843",
+    "asset": "pieverse",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "194393178.525818376",
+    "asset": "pieverse",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "199503268.35085335",
+    "asset": "pieverse",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "202228255.63029210225",
+    "asset": "pieverse",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "194637993.38912606925",
+    "asset": "pieverse",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "200190918.369366405",
+    "asset": "pieverse",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "191300322.7782954385",
+    "asset": "pieverse",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "201153181.77257188275",
+    "asset": "pieverse",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "188865247.3920808505",
+    "asset": "pieverse",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "182733667.60893653175",
+    "asset": "pieverse",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "184195411.12522445025",
+    "asset": "pieverse",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "189346369.267103672",
+    "asset": "pieverse",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "189998537.5376615085",
+    "asset": "pieverse",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "187501536.500099432",
+    "asset": "pieverse",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "243830397.34418345825",
+    "asset": "pieverse",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "288069547.9679877275",
+    "asset": "pieverse",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "264200673.68003546575",
+    "asset": "pieverse",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "217083362.235406979",
+    "asset": "pieverse",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "172685159.11524171125",
+    "asset": "pieverse",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "164732215.83627844425",
+    "asset": "pieverse",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167078296.72055583425",
+    "asset": "pieverse",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "162760509.42680886825",
+    "asset": "pieverse",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "164552122.59885481875",
+    "asset": "pieverse",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156419048.72538441575",
+    "asset": "pieverse",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "163841562.62061855475",
+    "asset": "pieverse",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "185957985.0084789365",
+    "asset": "pieverse",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "178778609.52920358",
+    "asset": "pieverse",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "179184595.2841257495",
+    "asset": "pieverse",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "193149656.74501721875",
+    "asset": "pieverse",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "190492661.90218075525",
+    "asset": "pieverse",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "200452165.07395424625",
+    "asset": "pieverse",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186561136.2972679805",
+    "asset": "pieverse",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180717478.96305951925",
+    "asset": "pieverse",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "197682954.487966633",
+    "asset": "pieverse",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "188397630.70194370675",
+    "asset": "pieverse",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186127887.95081727925",
+    "asset": "pieverse",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "185308432.64987773475",
+    "asset": "pieverse",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "179817880.1370597905",
+    "asset": "pieverse",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176837943.92946141775",
+    "asset": "pieverse",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180094405.66035761675",
+    "asset": "pieverse",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "220718051.7152633295",
+    "asset": "pieverse",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "207479938.1666014815",
+    "asset": "pieverse",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "208258849.68043433075",
+    "asset": "pieverse",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "198349620.17778772725",
+    "asset": "pieverse",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "184318155.9604030695",
+    "asset": "pieverse",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186822128.593355836",
+    "asset": "pieverse",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "200065728.99457871125",
+    "asset": "pieverse",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "192471399.789156831",
+    "asset": "pieverse",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "190148979.77050654525",
+    "asset": "pieverse",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "188471042.56319410925",
+    "asset": "pieverse",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "184786218.707499451",
+    "asset": "pieverse",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "187670925.2333057205",
+    "asset": "pieverse",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "187295966.45160473275",
+    "asset": "pieverse",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "188572787.34710884475",
+    "asset": "pieverse",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "189119871.39014228525",
+    "asset": "pieverse",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181713190.859063696",
+    "asset": "pieverse",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180409049.048504003",
+    "asset": "pieverse",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "182037969.899313878",
+    "asset": "pieverse",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186467497.71742315475",
+    "asset": "pieverse",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93950540.033830995",
+    "asset": "pieverse",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "124267016.68641993",
+    "asset": "pieverse",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110338950.65506821",
+    "asset": "pieverse",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97120798.28448107",
+    "asset": "pieverse",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94246250.35880099",
+    "asset": "pieverse",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154345052.28892701",
+    "asset": "pieverse",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133775049.44140168",
+    "asset": "pieverse",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133431746.496309105",
+    "asset": "pieverse",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "145654041.485727945",
+    "asset": "pieverse",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "146421561.188494225",
+    "asset": "pieverse",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "150504475.47652102",
+    "asset": "pieverse",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "135857645.359883525",
+    "asset": "pieverse",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103097053.813656905",
+    "asset": "pieverse",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94323787.038254835",
+    "asset": "pieverse",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88636588.45302839",
+    "asset": "pieverse",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84694645.23613698",
+    "asset": "pieverse",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92976142.15176206",
+    "asset": "pieverse",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93425496.48318687",
+    "asset": "pieverse",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98822789.704378935",
+    "asset": "pieverse",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95263865.70155247",
+    "asset": "pieverse",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97741937.086715025",
+    "asset": "pieverse",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97913563.28014443",
+    "asset": "pieverse",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99929484.792224685",
+    "asset": "pieverse",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96863137.973698005",
+    "asset": "pieverse",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111065088.82805895",
+    "asset": "pieverse",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "119539464.114961995",
+    "asset": "pieverse",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112850349.895257585",
+    "asset": "pieverse",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112532275.375453245",
+    "asset": "pieverse",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115053646.416196995",
+    "asset": "pieverse",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115225357.658157045",
+    "asset": "pieverse",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117246907.95281568",
+    "asset": "pieverse",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111313603.08029286",
+    "asset": "pieverse",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "104632086.50681709",
+    "asset": "pieverse",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99889257.632854755",
+    "asset": "pieverse",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92152768.34916477",
+    "asset": "pieverse",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82371098.31577224",
+    "asset": "pieverse",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87687022.82183688",
+    "asset": "pieverse",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81779166.87159609",
+    "asset": "pieverse",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81004677.18354336",
+    "asset": "pieverse",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79708745.721726615",
+    "asset": "pieverse",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96537796.818855795",
+    "asset": "pieverse",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86407924.39958445",
+    "asset": "pieverse",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84415258.2845403",
+    "asset": "pieverse",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83027106.067744995",
+    "asset": "pieverse",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80512542.635058105",
+    "asset": "pieverse",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74275220.14254381",
+    "asset": "pieverse",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79229653.564554675",
+    "asset": "pieverse",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84008046.790769985",
+    "asset": "pieverse",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83568528.186966615",
+    "asset": "pieverse",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85407938.43944332",
+    "asset": "pieverse",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84731861.932322535",
+    "asset": "pieverse",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82324376.764727795",
+    "asset": "pieverse",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81583905.748961775",
+    "asset": "pieverse",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84363738.46925183",
+    "asset": "pieverse",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84932164.435323395",
+    "asset": "pieverse",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84366371.30595518",
+    "asset": "pieverse",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83278792.131424975",
+    "asset": "pieverse",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85220405.86129257",
+    "asset": "pieverse",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101956289.495599145",
+    "asset": "pieverse",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107358142.72047648",
+    "asset": "pieverse",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102776989.08286622",
+    "asset": "pieverse",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "100699553.119840525",
+    "asset": "pieverse",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "108582804.809369655",
+    "asset": "pieverse",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105454146.49377921",
+    "asset": "pieverse",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107369105.28016631",
+    "asset": "pieverse",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110387034.97113177",
+    "asset": "pieverse",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "108824421.014352365",
+    "asset": "pieverse",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112845794.330842315",
+    "asset": "pieverse",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110173747.52809108",
+    "asset": "pieverse",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105581470.83128407",
+    "asset": "pieverse",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99929449.97772899",
+    "asset": "pieverse",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103338906.226635925",
+    "asset": "pieverse",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98754559.27872928",
+    "asset": "pieverse",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96169167.75973614",
+    "asset": "pieverse",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "104572518.05509846",
+    "asset": "pieverse",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109572354.46482847",
+    "asset": "pieverse",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102198794.57726557",
+    "asset": "pieverse",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109174825.364142225",
+    "asset": "pieverse",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114233793.171526255",
+    "asset": "pieverse",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118698882.45387103",
+    "asset": "pieverse",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "121508304.0957908",
+    "asset": "pieverse",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "123282302.385443295",
+    "asset": "pieverse",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113809130.92613348",
+    "asset": "pieverse",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118802094.970705555",
+    "asset": "pieverse",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114928060.197604185",
+    "asset": "pieverse",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "117529807.247796515",
+    "asset": "pieverse",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112153068.46197092",
+    "asset": "pieverse",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113440845.07359787",
+    "asset": "pieverse",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114346095.40419282",
+    "asset": "pieverse",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114150531.54330212",
+    "asset": "pieverse",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110268881.692104185",
+    "asset": "pieverse",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110107767.912521425",
+    "asset": "pieverse",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "108673591.44011324",
+    "asset": "pieverse",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115358441.347141575",
+    "asset": "pieverse",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113853841.40047807",
+    "asset": "pieverse",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113575465.15619878",
+    "asset": "pieverse",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113710439.047879925",
+    "asset": "pieverse",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116270595.71943922",
+    "asset": "pieverse",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "119804818.458364955",
+    "asset": "pieverse",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109214486.758930415",
+    "asset": "pieverse",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110201388.8670912",
+    "asset": "pieverse",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133098608.078941225",
+    "asset": "pieverse",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88236859.129342175",
+    "asset": "pieverse",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65680662.0327543",
+    "asset": "pieverse",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64260816.95643575",
+    "asset": "pieverse",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76748666.4902468",
+    "asset": "pieverse",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71010143.22711066",
+    "asset": "pieverse",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67399116.70585826",
+    "asset": "pieverse",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70375530.43781799",
+    "asset": "pieverse",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68905168.59773138",
+    "asset": "pieverse",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70572816.68656477",
+    "asset": "pieverse",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77194593.68281349",
+    "asset": "pieverse",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76248207.354868985",
+    "asset": "pieverse",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91296989.81614936",
+    "asset": "pieverse",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82662275.687699555",
+    "asset": "pieverse",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88084351.972660435",
+    "asset": "pieverse",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85266674.14667937",
+    "asset": "pieverse",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83915990.88369765",
+    "asset": "pieverse",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91026558.547708475",
+    "asset": "pieverse",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  }
+]

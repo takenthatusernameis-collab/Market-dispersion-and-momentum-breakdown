@@ -1,0 +1,1832 @@
+[
+  {
+    "CapMrktEstUSD": "4361490.651498899",
+    "asset": "nom_nomina",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4370899.401919039",
+    "asset": "nom_nomina",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4304413.327656656",
+    "asset": "nom_nomina",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4367165.278478934",
+    "asset": "nom_nomina",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4464546.335558405",
+    "asset": "nom_nomina",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4472357.67000812",
+    "asset": "nom_nomina",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4501265.880897341",
+    "asset": "nom_nomina",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4263817.437342037",
+    "asset": "nom_nomina",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4494069.489681062",
+    "asset": "nom_nomina",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4401095.608565286",
+    "asset": "nom_nomina",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4577401.498773365",
+    "asset": "nom_nomina",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4210405.562591943",
+    "asset": "nom_nomina",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4231472.858276028",
+    "asset": "nom_nomina",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4123945.959763497",
+    "asset": "nom_nomina",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4090425.223094724",
+    "asset": "nom_nomina",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4147522.531482536",
+    "asset": "nom_nomina",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4133928.133485395",
+    "asset": "nom_nomina",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4149976.059714533",
+    "asset": "nom_nomina",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4237311.307211236",
+    "asset": "nom_nomina",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4209911.867597866",
+    "asset": "nom_nomina",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4797126.447924532",
+    "asset": "nom_nomina",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4728569.434680279",
+    "asset": "nom_nomina",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4664737.419943084",
+    "asset": "nom_nomina",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4920208.973444038",
+    "asset": "nom_nomina",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4881860.299321847",
+    "asset": "nom_nomina",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4834452.121714411",
+    "asset": "nom_nomina",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4620006.604893283",
+    "asset": "nom_nomina",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4549064.816188442",
+    "asset": "nom_nomina",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4387538.141175844",
+    "asset": "nom_nomina",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4464728.574115277",
+    "asset": "nom_nomina",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4789266.634888478",
+    "asset": "nom_nomina",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4745251.917761486",
+    "asset": "nom_nomina",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4732093.338022806",
+    "asset": "nom_nomina",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4840380.352923916",
+    "asset": "nom_nomina",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4907110.840980703",
+    "asset": "nom_nomina",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5119240.208857614",
+    "asset": "nom_nomina",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5342731.155499802",
+    "asset": "nom_nomina",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4879087.543353749",
+    "asset": "nom_nomina",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4859427.182738394",
+    "asset": "nom_nomina",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4404084.277753376",
+    "asset": "nom_nomina",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4588440.560435404",
+    "asset": "nom_nomina",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4623662.116617492",
+    "asset": "nom_nomina",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4682516.935439015",
+    "asset": "nom_nomina",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4518250.17905612",
+    "asset": "nom_nomina",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4596275.814661929",
+    "asset": "nom_nomina",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4378315.351028562",
+    "asset": "nom_nomina",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4604767.001689185",
+    "asset": "nom_nomina",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4572890.010078326",
+    "asset": "nom_nomina",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4531197.228559698",
+    "asset": "nom_nomina",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4573140.472098897",
+    "asset": "nom_nomina",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4512945.393823008",
+    "asset": "nom_nomina",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5393221.167036651",
+    "asset": "nom_nomina",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5249881.721264196",
+    "asset": "nom_nomina",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5057768.758765533",
+    "asset": "nom_nomina",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4974938.91576268",
+    "asset": "nom_nomina",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4786448.586893278",
+    "asset": "nom_nomina",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4481899.286935444",
+    "asset": "nom_nomina",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4627617.381823802",
+    "asset": "nom_nomina",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4656214.219450544",
+    "asset": "nom_nomina",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4561586.797683563",
+    "asset": "nom_nomina",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4554735.770073688",
+    "asset": "nom_nomina",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4509124.690818494",
+    "asset": "nom_nomina",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4532631.624884571",
+    "asset": "nom_nomina",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4671337.792840322",
+    "asset": "nom_nomina",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4785699.641842504",
+    "asset": "nom_nomina",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4955510.714839537",
+    "asset": "nom_nomina",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4905862.006277665",
+    "asset": "nom_nomina",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5163891.189077253",
+    "asset": "nom_nomina",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5064338.973714927",
+    "asset": "nom_nomina",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5752148.949225397",
+    "asset": "nom_nomina",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6166726.871974725",
+    "asset": "nom_nomina",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6304942.80229259",
+    "asset": "nom_nomina",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6049605.489749209",
+    "asset": "nom_nomina",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6769599.872789102",
+    "asset": "nom_nomina",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5930771.709520345",
+    "asset": "nom_nomina",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6142534.410832435",
+    "asset": "nom_nomina",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6771964.738225479",
+    "asset": "nom_nomina",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7992747.765819606",
+    "asset": "nom_nomina",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7313850.360602761",
+    "asset": "nom_nomina",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6928433.476792431",
+    "asset": "nom_nomina",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7291178.494515953",
+    "asset": "nom_nomina",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7086465.740909878",
+    "asset": "nom_nomina",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6784460.951081357",
+    "asset": "nom_nomina",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6544235.477139118",
+    "asset": "nom_nomina",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6578971.014535605",
+    "asset": "nom_nomina",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6647817.776316798",
+    "asset": "nom_nomina",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6429041.151142164",
+    "asset": "nom_nomina",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6418788.650638974",
+    "asset": "nom_nomina",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5783632.120702102",
+    "asset": "nom_nomina",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5659209.855164137",
+    "asset": "nom_nomina",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5357184.055982682",
+    "asset": "nom_nomina",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5437114.871262706",
+    "asset": "nom_nomina",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5329884.36082856",
+    "asset": "nom_nomina",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5100356.898114102",
+    "asset": "nom_nomina",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4941640.007892761",
+    "asset": "nom_nomina",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4907813.370419443",
+    "asset": "nom_nomina",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4967964.151106708",
+    "asset": "nom_nomina",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4845516.108864937",
+    "asset": "nom_nomina",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4611975.034379872",
+    "asset": "nom_nomina",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4651188.708172887",
+    "asset": "nom_nomina",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17858723.41412932",
+    "asset": "nom_nomina",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17188010.904622752",
+    "asset": "nom_nomina",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21594937.65505519",
+    "asset": "nom_nomina",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17150219.291956644",
+    "asset": "nom_nomina",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12080301.797994512",
+    "asset": "nom_nomina",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10980117.722439937",
+    "asset": "nom_nomina",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10386231.319742802",
+    "asset": "nom_nomina",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9552444.311892704",
+    "asset": "nom_nomina",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9116047.565787881",
+    "asset": "nom_nomina",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8871445.625671777",
+    "asset": "nom_nomina",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8773351.296871457",
+    "asset": "nom_nomina",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9303278.416931422",
+    "asset": "nom_nomina",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7960843.795275268",
+    "asset": "nom_nomina",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8282689.440330102",
+    "asset": "nom_nomina",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8230940.225902335",
+    "asset": "nom_nomina",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7730485.95960414",
+    "asset": "nom_nomina",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8162357.867877619",
+    "asset": "nom_nomina",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8271665.946972847",
+    "asset": "nom_nomina",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7874860.353530789",
+    "asset": "nom_nomina",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7918502.529000679",
+    "asset": "nom_nomina",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7470677.403036376",
+    "asset": "nom_nomina",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7764570.209448113",
+    "asset": "nom_nomina",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8712038.460376251",
+    "asset": "nom_nomina",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7531319.115640899",
+    "asset": "nom_nomina",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7976752.355493442",
+    "asset": "nom_nomina",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7577604.340115932",
+    "asset": "nom_nomina",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7268430.33056319",
+    "asset": "nom_nomina",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7234698.004894179",
+    "asset": "nom_nomina",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7144474.159342382",
+    "asset": "nom_nomina",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7516509.307475592",
+    "asset": "nom_nomina",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7710240.840359616",
+    "asset": "nom_nomina",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7747515.829580194",
+    "asset": "nom_nomina",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7600358.260872499",
+    "asset": "nom_nomina",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7643703.502819447",
+    "asset": "nom_nomina",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7621601.246849946",
+    "asset": "nom_nomina",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7403918.295312327",
+    "asset": "nom_nomina",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6868136.077054335",
+    "asset": "nom_nomina",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7070260.902934713",
+    "asset": "nom_nomina",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6684335.368929399",
+    "asset": "nom_nomina",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6689842.873353249",
+    "asset": "nom_nomina",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6424155.195126658",
+    "asset": "nom_nomina",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6522456.365081523",
+    "asset": "nom_nomina",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6339234.977595221",
+    "asset": "nom_nomina",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6349061.612065489",
+    "asset": "nom_nomina",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6400942.919035013",
+    "asset": "nom_nomina",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5885949.372484333",
+    "asset": "nom_nomina",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6659019.729326794",
+    "asset": "nom_nomina",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6356059.757550874",
+    "asset": "nom_nomina",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6308200.987693267",
+    "asset": "nom_nomina",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6077283.479493114",
+    "asset": "nom_nomina",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5871600.547368754",
+    "asset": "nom_nomina",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5511611.744421215",
+    "asset": "nom_nomina",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6355542.254496803",
+    "asset": "nom_nomina",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6231018.617686764",
+    "asset": "nom_nomina",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6664339.630457672",
+    "asset": "nom_nomina",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7466641.946582683",
+    "asset": "nom_nomina",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6319838.607859341",
+    "asset": "nom_nomina",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6435217.575865423",
+    "asset": "nom_nomina",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5668259.999841157",
+    "asset": "nom_nomina",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5204944.36844103",
+    "asset": "nom_nomina",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4949670.078368673",
+    "asset": "nom_nomina",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5176405.440708562",
+    "asset": "nom_nomina",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5113555.581715736",
+    "asset": "nom_nomina",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4860430.096498236",
+    "asset": "nom_nomina",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4620192.570350732",
+    "asset": "nom_nomina",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4916992.666204644",
+    "asset": "nom_nomina",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4814500.660937743",
+    "asset": "nom_nomina",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4767519.370513172",
+    "asset": "nom_nomina",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4862735.066660812",
+    "asset": "nom_nomina",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4926346.419003803",
+    "asset": "nom_nomina",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4847506.509707311",
+    "asset": "nom_nomina",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4854590.484006758",
+    "asset": "nom_nomina",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4551791.933386733",
+    "asset": "nom_nomina",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4590620.619212804",
+    "asset": "nom_nomina",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4619182.291577876",
+    "asset": "nom_nomina",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4621985.14333429",
+    "asset": "nom_nomina",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4827877.210364077",
+    "asset": "nom_nomina",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4473082.065856224",
+    "asset": "nom_nomina",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4232033.161326272",
+    "asset": "nom_nomina",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4121178.577097113",
+    "asset": "nom_nomina",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4117275.383405752",
+    "asset": "nom_nomina",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4011314.422576078",
+    "asset": "nom_nomina",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3987578.715242358",
+    "asset": "nom_nomina",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3978466.246915086",
+    "asset": "nom_nomina",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "3873650.629984067",
+    "asset": "nom_nomina",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5579037.110550333",
+    "asset": "nom_nomina",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5025354.36836475",
+    "asset": "nom_nomina",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6410337.045543199",
+    "asset": "nom_nomina",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5536440.02360481",
+    "asset": "nom_nomina",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5025370.121953028",
+    "asset": "nom_nomina",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4924278.063053934",
+    "asset": "nom_nomina",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4563195.388524805",
+    "asset": "nom_nomina",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4622482.309569004",
+    "asset": "nom_nomina",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4623844.87520567",
+    "asset": "nom_nomina",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4693898.211294524",
+    "asset": "nom_nomina",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4513277.290575785",
+    "asset": "nom_nomina",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4548761.423899673",
+    "asset": "nom_nomina",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4397172.20404182",
+    "asset": "nom_nomina",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4455198.560718848",
+    "asset": "nom_nomina",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "4607178.038817581",
+    "asset": "nom_nomina",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22433242.187055271",
+    "asset": "nom_nomina",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23016932.950661395",
+    "asset": "nom_nomina",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22952532.265822637",
+    "asset": "nom_nomina",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21737492.032076424",
+    "asset": "nom_nomina",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21874940.362035247",
+    "asset": "nom_nomina",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22652943.552289851",
+    "asset": "nom_nomina",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24512946.282034106",
+    "asset": "nom_nomina",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24148809.997818488",
+    "asset": "nom_nomina",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24820063.681423227",
+    "asset": "nom_nomina",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25416473.936059278",
+    "asset": "nom_nomina",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24067739.683548484",
+    "asset": "nom_nomina",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23397833.57560891",
+    "asset": "nom_nomina",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23339104.087574391",
+    "asset": "nom_nomina",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23619691.488323899",
+    "asset": "nom_nomina",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23193510.294384663",
+    "asset": "nom_nomina",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22699158.275667285",
+    "asset": "nom_nomina",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23713907.301846072",
+    "asset": "nom_nomina",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24225968.208906554",
+    "asset": "nom_nomina",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23028290.987525157",
+    "asset": "nom_nomina",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23413188.386768082",
+    "asset": "nom_nomina",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23365421.990444624",
+    "asset": "nom_nomina",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22753810.796495281",
+    "asset": "nom_nomina",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21484285.413745452",
+    "asset": "nom_nomina",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19235089.911092833",
+    "asset": "nom_nomina",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19785321.713892621",
+    "asset": "nom_nomina",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19506579.420687491",
+    "asset": "nom_nomina",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20714960.226943462",
+    "asset": "nom_nomina",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25015307.440021864",
+    "asset": "nom_nomina",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44534843.95456428",
+    "asset": "nom_nomina",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34086969.0991733",
+    "asset": "nom_nomina",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30311741.56435096",
+    "asset": "nom_nomina",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30012238.40303476",
+    "asset": "nom_nomina",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27115885.383385037",
+    "asset": "nom_nomina",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28821681.736662749",
+    "asset": "nom_nomina",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24119506.924463367",
+    "asset": "nom_nomina",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21053684.195267792",
+    "asset": "nom_nomina",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21507107.461594658",
+    "asset": "nom_nomina",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19981921.291438787",
+    "asset": "nom_nomina",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19840548.072876307",
+    "asset": "nom_nomina",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16886969.62367548",
+    "asset": "nom_nomina",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17928533.224815802",
+    "asset": "nom_nomina",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17614779.338438842",
+    "asset": "nom_nomina",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17852023.75661783",
+    "asset": "nom_nomina",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17659255.281345388",
+    "asset": "nom_nomina",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17925280.818515985",
+    "asset": "nom_nomina",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18409793.453422683",
+    "asset": "nom_nomina",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16836943.377792473",
+    "asset": "nom_nomina",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15970517.052208825",
+    "asset": "nom_nomina",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16492272.425730451",
+    "asset": "nom_nomina",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15748170.896512084",
+    "asset": "nom_nomina",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16123446.123752363",
+    "asset": "nom_nomina",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15951767.940536707",
+    "asset": "nom_nomina",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15385942.641410544",
+    "asset": "nom_nomina",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15181030.659014378",
+    "asset": "nom_nomina",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "16914864.691122052",
+    "asset": "nom_nomina",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15257738.263421467",
+    "asset": "nom_nomina",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13859956.643150652",
+    "asset": "nom_nomina",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13683528.461053882",
+    "asset": "nom_nomina",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12749859.499019107",
+    "asset": "nom_nomina",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12930622.068219591",
+    "asset": "nom_nomina",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "11718389.989909118",
+    "asset": "nom_nomina",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10916936.853922045",
+    "asset": "nom_nomina",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10598968.293010264",
+    "asset": "nom_nomina",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10041155.243564416",
+    "asset": "nom_nomina",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10437225.220596226",
+    "asset": "nom_nomina",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10215911.520448057",
+    "asset": "nom_nomina",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10481213.657187923",
+    "asset": "nom_nomina",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10406865.935685335",
+    "asset": "nom_nomina",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10257343.723390538",
+    "asset": "nom_nomina",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9501069.493850621",
+    "asset": "nom_nomina",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9596243.937734524",
+    "asset": "nom_nomina",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9790502.008813381",
+    "asset": "nom_nomina",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9921584.053847242",
+    "asset": "nom_nomina",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9870454.500935482",
+    "asset": "nom_nomina",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10119260.242809953",
+    "asset": "nom_nomina",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9922884.793642668",
+    "asset": "nom_nomina",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9499862.470574936",
+    "asset": "nom_nomina",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9324835.354686715",
+    "asset": "nom_nomina",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9442106.218254449",
+    "asset": "nom_nomina",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8953223.876303849",
+    "asset": "nom_nomina",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "8365645.012540548",
+    "asset": "nom_nomina",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7629408.030895654",
+    "asset": "nom_nomina",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7470201.06926608",
+    "asset": "nom_nomina",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7359931.350006538",
+    "asset": "nom_nomina",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6683233.931550598",
+    "asset": "nom_nomina",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6733421.182880329",
+    "asset": "nom_nomina",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6761206.303218153",
+    "asset": "nom_nomina",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "6686207.38193013",
+    "asset": "nom_nomina",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5663305.186122179",
+    "asset": "nom_nomina",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "5385937.707696936",
+    "asset": "nom_nomina",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "9151815.008780565",
+    "asset": "nom_nomina",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "7986321.077902096",
+    "asset": "nom_nomina",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "10122408.797834111",
+    "asset": "nom_nomina",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "12900768.556231767",
+    "asset": "nom_nomina",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17404944.981876731",
+    "asset": "nom_nomina",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23992731.265433841",
+    "asset": "nom_nomina",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "17595592.899474413",
+    "asset": "nom_nomina",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19619782.007445062",
+    "asset": "nom_nomina",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "15637601.723285022",
+    "asset": "nom_nomina",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "13033754.156341718",
+    "asset": "nom_nomina",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59992545.94272875",
+    "asset": "nom_nomina",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59486816.04168984",
+    "asset": "nom_nomina",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61547056.13796724",
+    "asset": "nom_nomina",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68981584.33507941",
+    "asset": "nom_nomina",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62613189.12737581",
+    "asset": "nom_nomina",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60322717.45796503",
+    "asset": "nom_nomina",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58208044.0938329",
+    "asset": "nom_nomina",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52679941.59725696",
+    "asset": "nom_nomina",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53711567.90125185",
+    "asset": "nom_nomina",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54405838.13861522",
+    "asset": "nom_nomina",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52727048.96791336",
+    "asset": "nom_nomina",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44836763.5705614",
+    "asset": "nom_nomina",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42400835.85671018",
+    "asset": "nom_nomina",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41884254.70414827",
+    "asset": "nom_nomina",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38279955.70432874",
+    "asset": "nom_nomina",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42593752.30444788",
+    "asset": "nom_nomina",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44770380.7485465",
+    "asset": "nom_nomina",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42441792.61226693",
+    "asset": "nom_nomina",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42697626.962525",
+    "asset": "nom_nomina",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40813239.03859705",
+    "asset": "nom_nomina",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41171577.79366249",
+    "asset": "nom_nomina",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39262807.42946059",
+    "asset": "nom_nomina",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38957154.04778955",
+    "asset": "nom_nomina",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38416017.61177703",
+    "asset": "nom_nomina",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37200130.71326382",
+    "asset": "nom_nomina",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35024221.75549409",
+    "asset": "nom_nomina",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34792373.53033721",
+    "asset": "nom_nomina",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33677724.11794889",
+    "asset": "nom_nomina",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33651190.53658858",
+    "asset": "nom_nomina",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33300822.01886242",
+    "asset": "nom_nomina",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34073494.89353126",
+    "asset": "nom_nomina",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35551007.36973758",
+    "asset": "nom_nomina",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35256633.17496189",
+    "asset": "nom_nomina",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34988169.37974582",
+    "asset": "nom_nomina",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34620123.36276343",
+    "asset": "nom_nomina",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35417269.11074681",
+    "asset": "nom_nomina",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34416379.40569021",
+    "asset": "nom_nomina",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32588304.82070449",
+    "asset": "nom_nomina",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31404451.04221165",
+    "asset": "nom_nomina",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28868730.403639253",
+    "asset": "nom_nomina",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30263738.8244876",
+    "asset": "nom_nomina",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30617467.5395615",
+    "asset": "nom_nomina",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30466428.51746641",
+    "asset": "nom_nomina",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29335181.10427613",
+    "asset": "nom_nomina",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29466615.78751173",
+    "asset": "nom_nomina",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27964219.102550338",
+    "asset": "nom_nomina",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28218615.204327376",
+    "asset": "nom_nomina",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28758380.864846875",
+    "asset": "nom_nomina",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26972116.91461675",
+    "asset": "nom_nomina",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26016245.196744522",
+    "asset": "nom_nomina",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25299045.933605105",
+    "asset": "nom_nomina",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25267510.151522214",
+    "asset": "nom_nomina",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23292414.261392416",
+    "asset": "nom_nomina",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21362494.053672242",
+    "asset": "nom_nomina",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21620729.013264924",
+    "asset": "nom_nomina",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "19765933.781245322",
+    "asset": "nom_nomina",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "18552759.073408292",
+    "asset": "nom_nomina",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20073438.009528811",
+    "asset": "nom_nomina",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22734529.974376366",
+    "asset": "nom_nomina",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20843712.897465946",
+    "asset": "nom_nomina",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20591513.173821763",
+    "asset": "nom_nomina",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "20432592.788012172",
+    "asset": "nom_nomina",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "21118243.009545206",
+    "asset": "nom_nomina",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22751678.945715254",
+    "asset": "nom_nomina",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22379022.647968157",
+    "asset": "nom_nomina",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22859832.448287822",
+    "asset": "nom_nomina",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  }
+]

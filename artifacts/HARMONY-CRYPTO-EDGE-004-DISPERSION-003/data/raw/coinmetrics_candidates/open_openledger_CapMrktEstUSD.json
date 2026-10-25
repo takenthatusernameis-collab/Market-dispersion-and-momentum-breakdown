@@ -1,0 +1,1967 @@
+[
+  {
+    "CapMrktEstUSD": "31443464.9529423765",
+    "asset": "open_openledger",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32291133.723164598",
+    "asset": "open_openledger",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33252602.193692979",
+    "asset": "open_openledger",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33402511.658735761",
+    "asset": "open_openledger",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34038314.720878652",
+    "asset": "open_openledger",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34809146.6304760015",
+    "asset": "open_openledger",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34970135.106053969",
+    "asset": "open_openledger",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36197547.36143342",
+    "asset": "open_openledger",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35303398.148778359",
+    "asset": "open_openledger",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34944607.894100778",
+    "asset": "open_openledger",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35168970.560771667",
+    "asset": "open_openledger",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33395744.509794524",
+    "asset": "open_openledger",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36935373.826370913",
+    "asset": "open_openledger",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38794846.4781832685",
+    "asset": "open_openledger",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38280713.9732161875",
+    "asset": "open_openledger",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37530523.460340933",
+    "asset": "open_openledger",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38673388.0406184285",
+    "asset": "open_openledger",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38729360.8184732905",
+    "asset": "open_openledger",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40220205.6918653865",
+    "asset": "open_openledger",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41556597.704849246",
+    "asset": "open_openledger",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44714278.7432948345",
+    "asset": "open_openledger",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44934903.8697178655",
+    "asset": "open_openledger",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44965808.27319774",
+    "asset": "open_openledger",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45544849.1296982775",
+    "asset": "open_openledger",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44686193.1197581005",
+    "asset": "open_openledger",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40439283.7072085855",
+    "asset": "open_openledger",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45492911.284040471",
+    "asset": "open_openledger",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42834689.5864447845",
+    "asset": "open_openledger",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40461150.6395446425",
+    "asset": "open_openledger",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39623849.2852763655",
+    "asset": "open_openledger",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38081815.6206867515",
+    "asset": "open_openledger",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36425116.316781124",
+    "asset": "open_openledger",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35684125.595413019",
+    "asset": "open_openledger",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32619791.129329305",
+    "asset": "open_openledger",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34124966.7753318765",
+    "asset": "open_openledger",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34716770.9305021305",
+    "asset": "open_openledger",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37726342.662915177",
+    "asset": "open_openledger",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34959393.9157272115",
+    "asset": "open_openledger",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36029599.537206724",
+    "asset": "open_openledger",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34953543.6706946035",
+    "asset": "open_openledger",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33552782.629644984",
+    "asset": "open_openledger",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34521186.9137067775",
+    "asset": "open_openledger",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34650311.8894913005",
+    "asset": "open_openledger",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32896107.6230074075",
+    "asset": "open_openledger",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32534890.8983732985",
+    "asset": "open_openledger",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30002568.1798985075",
+    "asset": "open_openledger",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28695780.8218266925",
+    "asset": "open_openledger",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26863987.915489862",
+    "asset": "open_openledger",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25003936.8307317065",
+    "asset": "open_openledger",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25861402.925753081",
+    "asset": "open_openledger",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26264547.215336912",
+    "asset": "open_openledger",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27299826.365591937",
+    "asset": "open_openledger",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27426349.8913545865",
+    "asset": "open_openledger",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27782565.9193971195",
+    "asset": "open_openledger",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28128732.9854717905",
+    "asset": "open_openledger",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27256529.335278899",
+    "asset": "open_openledger",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25966553.7799645265",
+    "asset": "open_openledger",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26722402.0565900115",
+    "asset": "open_openledger",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29054086.042447387",
+    "asset": "open_openledger",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28807971.0004370015",
+    "asset": "open_openledger",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28836836.4796738225",
+    "asset": "open_openledger",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29573281.0422326955",
+    "asset": "open_openledger",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29345460.4932248705",
+    "asset": "open_openledger",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29421719.9343301895",
+    "asset": "open_openledger",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32179653.546540965",
+    "asset": "open_openledger",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31903495.2807027605",
+    "asset": "open_openledger",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30349492.1042519995",
+    "asset": "open_openledger",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31099449.3856620485",
+    "asset": "open_openledger",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31170134.664813372",
+    "asset": "open_openledger",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28538444.499811254",
+    "asset": "open_openledger",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29636385.7888107045",
+    "asset": "open_openledger",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29861968.5875196865",
+    "asset": "open_openledger",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30286075.4728978895",
+    "asset": "open_openledger",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29701111.785597501",
+    "asset": "open_openledger",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27877068.0520651785",
+    "asset": "open_openledger",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27754904.1987402695",
+    "asset": "open_openledger",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27753244.1654746765",
+    "asset": "open_openledger",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27766693.550784536",
+    "asset": "open_openledger",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27273323.9082006145",
+    "asset": "open_openledger",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24843160.622868808",
+    "asset": "open_openledger",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25771803.93757708",
+    "asset": "open_openledger",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26166877.12490032",
+    "asset": "open_openledger",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25711794.469077703",
+    "asset": "open_openledger",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24344500.8765727325",
+    "asset": "open_openledger",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22598467.122693596",
+    "asset": "open_openledger",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23496564.650043124",
+    "asset": "open_openledger",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110166723.877458",
+    "asset": "open_openledger",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110655409.623614",
+    "asset": "open_openledger",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102395488.768511",
+    "asset": "open_openledger",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102449824.952777",
+    "asset": "open_openledger",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101400800.836095",
+    "asset": "open_openledger",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98571374.1486716",
+    "asset": "open_openledger",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33171769.5049748804952972",
+    "asset": "open_openledger",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31737703.4581859040529896",
+    "asset": "open_openledger",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30458503.5938192030282772",
+    "asset": "open_openledger",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31129929.392250161114844",
+    "asset": "open_openledger",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32540931.6097432011312192",
+    "asset": "open_openledger",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33162157.2441998566590396",
+    "asset": "open_openledger",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30823626.9970444896262572",
+    "asset": "open_openledger",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31680814.1810885048890044",
+    "asset": "open_openledger",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37759521.6203554005",
+    "asset": "open_openledger",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38277087.282252479",
+    "asset": "open_openledger",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40317893.7198560835",
+    "asset": "open_openledger",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40835708.8771451665",
+    "asset": "open_openledger",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40609662.0011890415",
+    "asset": "open_openledger",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37468459.541271527",
+    "asset": "open_openledger",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42043185.059727051",
+    "asset": "open_openledger",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44489391.3453984745",
+    "asset": "open_openledger",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45641162.657131739",
+    "asset": "open_openledger",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44075860.741129184",
+    "asset": "open_openledger",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49925471.3925811765",
+    "asset": "open_openledger",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48388105.1928735495",
+    "asset": "open_openledger",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46139468.9400696455",
+    "asset": "open_openledger",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44535759.046937945",
+    "asset": "open_openledger",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48984913.243773609",
+    "asset": "open_openledger",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47902239.647740095",
+    "asset": "open_openledger",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49321047.011884525",
+    "asset": "open_openledger",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49207546.0845142735",
+    "asset": "open_openledger",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49101164.9686512465",
+    "asset": "open_openledger",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53716132.8337360375",
+    "asset": "open_openledger",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55854820.3208177725",
+    "asset": "open_openledger",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56802394.1184059045",
+    "asset": "open_openledger",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59412154.7554153635",
+    "asset": "open_openledger",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58059609.310395233",
+    "asset": "open_openledger",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53457173.030103019",
+    "asset": "open_openledger",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53960249.7114168845",
+    "asset": "open_openledger",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47075246.423131761",
+    "asset": "open_openledger",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42870715.09759163",
+    "asset": "open_openledger",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44928279.918956711",
+    "asset": "open_openledger",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48044731.4358330875",
+    "asset": "open_openledger",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45792059.0049393505",
+    "asset": "open_openledger",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50109976.1576177555",
+    "asset": "open_openledger",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42402718.20262313",
+    "asset": "open_openledger",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42191230.5002444585",
+    "asset": "open_openledger",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41647404.6613436275",
+    "asset": "open_openledger",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42617175.9448472765",
+    "asset": "open_openledger",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38177169.1781280515",
+    "asset": "open_openledger",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39260676.2377821585",
+    "asset": "open_openledger",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38694430.7362758505",
+    "asset": "open_openledger",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34345390.407158739",
+    "asset": "open_openledger",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39777801.831722404",
+    "asset": "open_openledger",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46107565.734963656",
+    "asset": "open_openledger",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46773938.9164907715",
+    "asset": "open_openledger",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46800566.630771086",
+    "asset": "open_openledger",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42936725.272814165",
+    "asset": "open_openledger",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41495328.490386316",
+    "asset": "open_openledger",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40346750.2788458055",
+    "asset": "open_openledger",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38511678.280761613",
+    "asset": "open_openledger",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40283240.44242262",
+    "asset": "open_openledger",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39442898.603320349",
+    "asset": "open_openledger",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38601375.3741792995",
+    "asset": "open_openledger",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37862473.7443459315",
+    "asset": "open_openledger",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38152794.0453972695",
+    "asset": "open_openledger",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39345833.1290655495",
+    "asset": "open_openledger",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42018608.816073068",
+    "asset": "open_openledger",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42092594.6743780545",
+    "asset": "open_openledger",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45895932.166083471",
+    "asset": "open_openledger",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45917616.487580426",
+    "asset": "open_openledger",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39307884.1384220905",
+    "asset": "open_openledger",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37824370.3337264555",
+    "asset": "open_openledger",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38460538.210399737",
+    "asset": "open_openledger",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44145828.0875559275",
+    "asset": "open_openledger",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42644827.536011318",
+    "asset": "open_openledger",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45593511.9845196315",
+    "asset": "open_openledger",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43648490.8427919975",
+    "asset": "open_openledger",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47269553.8859688685",
+    "asset": "open_openledger",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45636414.2935391925",
+    "asset": "open_openledger",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51759939.929708608",
+    "asset": "open_openledger",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53597867.188903852",
+    "asset": "open_openledger",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50737053.508744282",
+    "asset": "open_openledger",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52603893.8389921885",
+    "asset": "open_openledger",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49363043.525643332",
+    "asset": "open_openledger",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47164112.6905182615",
+    "asset": "open_openledger",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48293572.610491016",
+    "asset": "open_openledger",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48257395.609780038",
+    "asset": "open_openledger",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47185673.902619713",
+    "asset": "open_openledger",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44029968.3705856225",
+    "asset": "open_openledger",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38800244.4591430005",
+    "asset": "open_openledger",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37640844.812045649",
+    "asset": "open_openledger",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35481211.205369875",
+    "asset": "open_openledger",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35063408.8553287945",
+    "asset": "open_openledger",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35468550.5870898115",
+    "asset": "open_openledger",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33835324.027863079",
+    "asset": "open_openledger",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34062199.911636376",
+    "asset": "open_openledger",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34761118.9163160535",
+    "asset": "open_openledger",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34581881.444400458",
+    "asset": "open_openledger",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33743176.7103259875",
+    "asset": "open_openledger",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34585274.2353699045",
+    "asset": "open_openledger",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36731017.18308838",
+    "asset": "open_openledger",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35103218.080125882",
+    "asset": "open_openledger",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34248912.4050709405",
+    "asset": "open_openledger",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32444158.463063297",
+    "asset": "open_openledger",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31633906.427690172",
+    "asset": "open_openledger",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32387990.123377478",
+    "asset": "open_openledger",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32789336.587455322",
+    "asset": "open_openledger",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31942198.6100124015",
+    "asset": "open_openledger",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31202082.6294154705",
+    "asset": "open_openledger",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32399709.9108976965",
+    "asset": "open_openledger",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31579516.6335237675",
+    "asset": "open_openledger",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32129139.7297944035",
+    "asset": "open_openledger",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34249392.4590294995",
+    "asset": "open_openledger",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34974450.0522817305",
+    "asset": "open_openledger",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36455020.5975927305",
+    "asset": "open_openledger",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33850765.0814909495",
+    "asset": "open_openledger",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34901250.5568978065",
+    "asset": "open_openledger",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36589552.9294610535",
+    "asset": "open_openledger",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37022604.0311533245",
+    "asset": "open_openledger",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37493570.8894523005",
+    "asset": "open_openledger",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38550565.3930504135",
+    "asset": "open_openledger",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39106195.5652285975",
+    "asset": "open_openledger",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37577086.567450802",
+    "asset": "open_openledger",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35998909.851356039",
+    "asset": "open_openledger",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35781783.23662537",
+    "asset": "open_openledger",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36420770.3241411535",
+    "asset": "open_openledger",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36152043.26487567",
+    "asset": "open_openledger",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34979001.3496380355",
+    "asset": "open_openledger",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36649499.5254979575",
+    "asset": "open_openledger",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38229679.421816214",
+    "asset": "open_openledger",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37003295.1618127515",
+    "asset": "open_openledger",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38405590.5349928335",
+    "asset": "open_openledger",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37942650.2178398815",
+    "asset": "open_openledger",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38201403.7421138535",
+    "asset": "open_openledger",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34817992.971636441",
+    "asset": "open_openledger",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31733840.516856168",
+    "asset": "open_openledger",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32729257.135761514",
+    "asset": "open_openledger",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31829084.6556975615",
+    "asset": "open_openledger",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33800600.7167137955",
+    "asset": "open_openledger",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39912786.223074368",
+    "asset": "open_openledger",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33176952.3517350075",
+    "asset": "open_openledger",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36649906.9577257715",
+    "asset": "open_openledger",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35332128.387382279",
+    "asset": "open_openledger",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34656827.651323779",
+    "asset": "open_openledger",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32036664.790146764",
+    "asset": "open_openledger",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34526292.4988346165",
+    "asset": "open_openledger",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31839403.06199242",
+    "asset": "open_openledger",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32820763.704186989",
+    "asset": "open_openledger",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35540387.839090589",
+    "asset": "open_openledger",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34696242.5092136915",
+    "asset": "open_openledger",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35466040.857759868",
+    "asset": "open_openledger",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32339728.927010532",
+    "asset": "open_openledger",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35278473.6541683625",
+    "asset": "open_openledger",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34250685.246952717",
+    "asset": "open_openledger",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33913363.3044802945",
+    "asset": "open_openledger",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35133443.6140886285",
+    "asset": "open_openledger",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37054200.0832414955",
+    "asset": "open_openledger",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40357125.243632433",
+    "asset": "open_openledger",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38181473.263169174",
+    "asset": "open_openledger",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38014196.6651355605",
+    "asset": "open_openledger",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38023221.7445455805",
+    "asset": "open_openledger",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34992845.281663529",
+    "asset": "open_openledger",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34411818.5190796545",
+    "asset": "open_openledger",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34776373.0800930755",
+    "asset": "open_openledger",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34133226.382740806",
+    "asset": "open_openledger",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33240814.8108114255",
+    "asset": "open_openledger",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33851726.2352765465",
+    "asset": "open_openledger",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32810118.5982926895",
+    "asset": "open_openledger",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32239888.6952536615",
+    "asset": "open_openledger",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31111244.7752989155",
+    "asset": "open_openledger",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31708105.6881543785",
+    "asset": "open_openledger",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32992712.403939156",
+    "asset": "open_openledger",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32441342.499939836",
+    "asset": "open_openledger",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32536952.0822153985",
+    "asset": "open_openledger",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31958363.7607085185",
+    "asset": "open_openledger",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30952049.1333118805",
+    "asset": "open_openledger",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30890567.8764012035",
+    "asset": "open_openledger",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31350081.1669606315",
+    "asset": "open_openledger",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31469873.981571098",
+    "asset": "open_openledger",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31512710.5310990375",
+    "asset": "open_openledger",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30576467.796162205",
+    "asset": "open_openledger",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31684030.361573177",
+    "asset": "open_openledger",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30992774.0059407205",
+    "asset": "open_openledger",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31641753.366191333",
+    "asset": "open_openledger",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32470494.452622465",
+    "asset": "open_openledger",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33030616.6112360435",
+    "asset": "open_openledger",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32985409.5491537205",
+    "asset": "open_openledger",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32873493.3660707225",
+    "asset": "open_openledger",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32994101.3080168625",
+    "asset": "open_openledger",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33121691.1806311025",
+    "asset": "open_openledger",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34175321.8703071525",
+    "asset": "open_openledger",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33912253.882789191",
+    "asset": "open_openledger",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33052355.054897922",
+    "asset": "open_openledger",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32326699.994680493",
+    "asset": "open_openledger",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33068520.910825978",
+    "asset": "open_openledger",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33141994.338810351",
+    "asset": "open_openledger",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34306069.9868317515",
+    "asset": "open_openledger",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35876105.6402140695",
+    "asset": "open_openledger",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37808259.3814290335",
+    "asset": "open_openledger",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36941066.7712749605",
+    "asset": "open_openledger",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37827287.5949997265",
+    "asset": "open_openledger",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35439139.225509184",
+    "asset": "open_openledger",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35930375.014707922",
+    "asset": "open_openledger",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33759748.2552252085",
+    "asset": "open_openledger",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33563245.203138949",
+    "asset": "open_openledger",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34795190.081523945",
+    "asset": "open_openledger",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34863578.435397656",
+    "asset": "open_openledger",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33637414.5592491435",
+    "asset": "open_openledger",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35123241.234966888",
+    "asset": "open_openledger",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35619876.230455772",
+    "asset": "open_openledger",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37046946.370552826",
+    "asset": "open_openledger",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37792076.1839836685",
+    "asset": "open_openledger",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "125792898.0830081505",
+    "asset": "open_openledger",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118786638.233860207",
+    "asset": "open_openledger",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118560353.5362944795",
+    "asset": "open_openledger",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101098032.938545222",
+    "asset": "open_openledger",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92167946.185148656",
+    "asset": "open_openledger",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98537759.508243776",
+    "asset": "open_openledger",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95723335.1883964395",
+    "asset": "open_openledger",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "132798213.801704211",
+    "asset": "open_openledger",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115862369.3739743935",
+    "asset": "open_openledger",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "129656509.505464616",
+    "asset": "open_openledger",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133304143.5666725195",
+    "asset": "open_openledger",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "134384147.876599843",
+    "asset": "open_openledger",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "139684523.5600482815",
+    "asset": "open_openledger",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "120092545.667387652",
+    "asset": "open_openledger",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78806298.1701334445",
+    "asset": "open_openledger",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83540086.114189555",
+    "asset": "open_openledger",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94293888.979155944",
+    "asset": "open_openledger",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98011863.8287764195",
+    "asset": "open_openledger",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91555737.391935649",
+    "asset": "open_openledger",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84543167.87544609",
+    "asset": "open_openledger",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78745599.109816387",
+    "asset": "open_openledger",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73751246.592847089",
+    "asset": "open_openledger",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72727892.934503106",
+    "asset": "open_openledger",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74253243.8934463375",
+    "asset": "open_openledger",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79944105.722569759",
+    "asset": "open_openledger",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81632842.076044514",
+    "asset": "open_openledger",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75551134.57866776",
+    "asset": "open_openledger",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77574310.265708264",
+    "asset": "open_openledger",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80897301.0708816885",
+    "asset": "open_openledger",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83563620.2322269385",
+    "asset": "open_openledger",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86649525.260679971",
+    "asset": "open_openledger",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81822453.928830092",
+    "asset": "open_openledger",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80533743.530082381",
+    "asset": "open_openledger",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "81152245.5969718775",
+    "asset": "open_openledger",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71611285.1032525455",
+    "asset": "open_openledger",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74433935.103592794",
+    "asset": "open_openledger",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76803440.7377620025",
+    "asset": "open_openledger",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74869163.5351237505",
+    "asset": "open_openledger",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63779984.1454397135",
+    "asset": "open_openledger",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61852472.1426081245",
+    "asset": "open_openledger",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62773876.4726379695",
+    "asset": "open_openledger",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56868850.467232342",
+    "asset": "open_openledger",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61737786.173987982",
+    "asset": "open_openledger",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64542678.981650705",
+    "asset": "open_openledger",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63372675.3472212455",
+    "asset": "open_openledger",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63327164.0466213305",
+    "asset": "open_openledger",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59534738.526477571",
+    "asset": "open_openledger",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58409042.009421642",
+    "asset": "open_openledger",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56448175.8565284295",
+    "asset": "open_openledger",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54440380.473517963",
+    "asset": "open_openledger",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54796426.5915080515",
+    "asset": "open_openledger",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52815723.022497598",
+    "asset": "open_openledger",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52022101.742323129",
+    "asset": "open_openledger",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53325800.5406962555",
+    "asset": "open_openledger",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52479989.727419552",
+    "asset": "open_openledger",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51480155.1981582855",
+    "asset": "open_openledger",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52491495.0427842605",
+    "asset": "open_openledger",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52930680.8699083695",
+    "asset": "open_openledger",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50959419.0902751525",
+    "asset": "open_openledger",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54097794.241329093",
+    "asset": "open_openledger",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53436729.063525335",
+    "asset": "open_openledger",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52330637.18494871",
+    "asset": "open_openledger",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55172118.056854094",
+    "asset": "open_openledger",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51870980.595941575",
+    "asset": "open_openledger",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50986406.630184786",
+    "asset": "open_openledger",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50206675.8131401795",
+    "asset": "open_openledger",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46673732.6131808045",
+    "asset": "open_openledger",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48240908.586086683",
+    "asset": "open_openledger",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50421308.1162313135",
+    "asset": "open_openledger",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48480089.282904369",
+    "asset": "open_openledger",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47213656.1775157325",
+    "asset": "open_openledger",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47322133.5087366485",
+    "asset": "open_openledger",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46238999.495275898",
+    "asset": "open_openledger",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46262143.4701000805",
+    "asset": "open_openledger",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48440423.10573734",
+    "asset": "open_openledger",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45875226.742381789",
+    "asset": "open_openledger",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44661069.2799666065",
+    "asset": "open_openledger",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43327087.584030318",
+    "asset": "open_openledger",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43912498.4924492925",
+    "asset": "open_openledger",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41262148.2568683755",
+    "asset": "open_openledger",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38960617.416646526",
+    "asset": "open_openledger",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39495931.0212704525",
+    "asset": "open_openledger",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37061507.9679574785",
+    "asset": "open_openledger",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34459460.6765659145",
+    "asset": "open_openledger",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36601935.375402288",
+    "asset": "open_openledger",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38223948.4707020445",
+    "asset": "open_openledger",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37857812.409236239",
+    "asset": "open_openledger",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36300752.038587478",
+    "asset": "open_openledger",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34686777.919324004",
+    "asset": "open_openledger",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35955851.714349835",
+    "asset": "open_openledger",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36911892.11093215",
+    "asset": "open_openledger",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35521246.5927660415",
+    "asset": "open_openledger",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35280656.5520488535",
+    "asset": "open_openledger",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  }
+]

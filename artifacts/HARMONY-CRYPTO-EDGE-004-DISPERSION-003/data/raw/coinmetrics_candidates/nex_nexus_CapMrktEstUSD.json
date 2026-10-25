@@ -1,0 +1,782 @@
+[
+  {
+    "CapMrktEstUSD": "105774507.9891132",
+    "asset": "nex_nexus",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102029655.1864842",
+    "asset": "nex_nexus",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102460718.1043614",
+    "asset": "nex_nexus",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102702362.1513696",
+    "asset": "nex_nexus",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "101884570.1270124",
+    "asset": "nex_nexus",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98095720.8636654",
+    "asset": "nex_nexus",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98307827.9521572",
+    "asset": "nex_nexus",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "95347054.3087056",
+    "asset": "nex_nexus",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94568967.3685404",
+    "asset": "nex_nexus",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93863857.9937688",
+    "asset": "nex_nexus",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94621442.1869724",
+    "asset": "nex_nexus",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90044860.8175344",
+    "asset": "nex_nexus",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90223977.324258",
+    "asset": "nex_nexus",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90239611.3673952",
+    "asset": "nex_nexus",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89988779.4240444",
+    "asset": "nex_nexus",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87150661.4629554",
+    "asset": "nex_nexus",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88410554.6596182",
+    "asset": "nex_nexus",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88858642.8288516",
+    "asset": "nex_nexus",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87807992.668578",
+    "asset": "nex_nexus",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86715218.1653094",
+    "asset": "nex_nexus",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87116772.4379136",
+    "asset": "nex_nexus",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88625483.7510108",
+    "asset": "nex_nexus",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88292305.043139",
+    "asset": "nex_nexus",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86534821.9850742",
+    "asset": "nex_nexus",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85865439.2898342",
+    "asset": "nex_nexus",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98154553.9295226",
+    "asset": "nex_nexus",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "97517438.085234",
+    "asset": "nex_nexus",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "93259645.9288878",
+    "asset": "nex_nexus",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92697153.1669344",
+    "asset": "nex_nexus",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92825683.1367384",
+    "asset": "nex_nexus",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89954908.8010218",
+    "asset": "nex_nexus",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89366454.6982626",
+    "asset": "nex_nexus",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91498560.499728",
+    "asset": "nex_nexus",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86504988.257607",
+    "asset": "nex_nexus",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89436056.7689718",
+    "asset": "nex_nexus",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90635382.1970376",
+    "asset": "nex_nexus",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "92311077.4316664",
+    "asset": "nex_nexus",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90180264.0502206",
+    "asset": "nex_nexus",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89048167.9985832",
+    "asset": "nex_nexus",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87924400.2743046",
+    "asset": "nex_nexus",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88416209.8864428",
+    "asset": "nex_nexus",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88012707.7325712",
+    "asset": "nex_nexus",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89180475.1442268",
+    "asset": "nex_nexus",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87335602.079595",
+    "asset": "nex_nexus",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87043515.4838304",
+    "asset": "nex_nexus",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86388396.6695598",
+    "asset": "nex_nexus",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85992358.3914798",
+    "asset": "nex_nexus",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86219662.2252036",
+    "asset": "nex_nexus",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85755226.6484232",
+    "asset": "nex_nexus",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86748397.4594574",
+    "asset": "nex_nexus",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86780360.4611826",
+    "asset": "nex_nexus",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87626877.0644136",
+    "asset": "nex_nexus",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86926538.8620288",
+    "asset": "nex_nexus",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86317939.4868132",
+    "asset": "nex_nexus",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85736521.9481706",
+    "asset": "nex_nexus",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64149395.1093144",
+    "asset": "nex_nexus",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62819320.9714872",
+    "asset": "nex_nexus",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61801791.2926224",
+    "asset": "nex_nexus",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60795237.2197368",
+    "asset": "nex_nexus",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60509682.3933816",
+    "asset": "nex_nexus",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61572560.6028732",
+    "asset": "nex_nexus",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59982773.63982342",
+    "asset": "nex_nexus",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61149694.0779204",
+    "asset": "nex_nexus",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62697017.3049822",
+    "asset": "nex_nexus",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63905615.5692582",
+    "asset": "nex_nexus",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65060740.5027492",
+    "asset": "nex_nexus",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62918928.0184374",
+    "asset": "nex_nexus",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64372080.3705108",
+    "asset": "nex_nexus",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63791524.1083602",
+    "asset": "nex_nexus",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51087189.85990404",
+    "asset": "nex_nexus",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49561282.02892344",
+    "asset": "nex_nexus",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49886592.60317856",
+    "asset": "nex_nexus",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49972624.12424538",
+    "asset": "nex_nexus",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49812186.7951851",
+    "asset": "nex_nexus",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49701023.04291258",
+    "asset": "nex_nexus",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49830118.38694626",
+    "asset": "nex_nexus",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49140498.38666058",
+    "asset": "nex_nexus",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48825394.84443024",
+    "asset": "nex_nexus",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50075094.50406168",
+    "asset": "nex_nexus",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49785056.0760123",
+    "asset": "nex_nexus",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49314772.12478154",
+    "asset": "nex_nexus",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49504668.49876992",
+    "asset": "nex_nexus",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48780997.04982798",
+    "asset": "nex_nexus",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48621436.64747736",
+    "asset": "nex_nexus",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47854894.09304634",
+    "asset": "nex_nexus",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47586819.69168702",
+    "asset": "nex_nexus",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49016943.42423984",
+    "asset": "nex_nexus",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48707244.2456613",
+    "asset": "nex_nexus",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48456485.20975074",
+    "asset": "nex_nexus",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46426289.22292854",
+    "asset": "nex_nexus",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46240063.1418903",
+    "asset": "nex_nexus",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44798858.29368018",
+    "asset": "nex_nexus",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44090666.80199772",
+    "asset": "nex_nexus",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42744557.2837728",
+    "asset": "nex_nexus",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42963450.29165382",
+    "asset": "nex_nexus",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40283563.61797938",
+    "asset": "nex_nexus",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41231200.8027735",
+    "asset": "nex_nexus",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40255133.54630478",
+    "asset": "nex_nexus",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36075416.06608242",
+    "asset": "nex_nexus",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37503421.73220708",
+    "asset": "nex_nexus",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "346847761.5885942",
+    "asset": "nex_nexus",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "259983743.197269",
+    "asset": "nex_nexus",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "271093363.8740226",
+    "asset": "nex_nexus",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "270261000.7418394",
+    "asset": "nex_nexus",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "221845130.4478458",
+    "asset": "nex_nexus",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "205248664.8782352",
+    "asset": "nex_nexus",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "212364131.0715078",
+    "asset": "nex_nexus",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "210077550.4441392",
+    "asset": "nex_nexus",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "209773379.4465414",
+    "asset": "nex_nexus",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "203898099.5527236",
+    "asset": "nex_nexus",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "208654235.6442426",
+    "asset": "nex_nexus",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "206716761.4047678",
+    "asset": "nex_nexus",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "201504820.7729766",
+    "asset": "nex_nexus",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "183142130.441136",
+    "asset": "nex_nexus",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175551658.5207756",
+    "asset": "nex_nexus",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181485969.871995",
+    "asset": "nex_nexus",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "177353539.7149644",
+    "asset": "nex_nexus",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176116164.6193854",
+    "asset": "nex_nexus",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "173657342.7959202",
+    "asset": "nex_nexus",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "169028006.1586974",
+    "asset": "nex_nexus",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "185305652.0172528",
+    "asset": "nex_nexus",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "190327387.1209752",
+    "asset": "nex_nexus",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "179323615.839171",
+    "asset": "nex_nexus",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "178734549.1575942",
+    "asset": "nex_nexus",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "184745115.9856524",
+    "asset": "nex_nexus",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186403253.0198382",
+    "asset": "nex_nexus",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181758773.0208444",
+    "asset": "nex_nexus",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "196326548.6489742",
+    "asset": "nex_nexus",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "170303990.2053198",
+    "asset": "nex_nexus",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154163242.556799",
+    "asset": "nex_nexus",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154823266.524891",
+    "asset": "nex_nexus",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "152989394.323704",
+    "asset": "nex_nexus",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "147329166.1210626",
+    "asset": "nex_nexus",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "141040220.7500022",
+    "asset": "nex_nexus",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "128901953.871723",
+    "asset": "nex_nexus",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118920074.2158054",
+    "asset": "nex_nexus",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "120626654.5226718",
+    "asset": "nex_nexus",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "114422727.2955558",
+    "asset": "nex_nexus",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113229079.3690914",
+    "asset": "nex_nexus",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113020373.614566",
+    "asset": "nex_nexus",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110717429.1914292",
+    "asset": "nex_nexus",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110624650.0967796",
+    "asset": "nex_nexus",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110438393.547768",
+    "asset": "nex_nexus",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "169916707.9686072",
+    "asset": "nex_nexus",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "177987827.1863928",
+    "asset": "nex_nexus",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "171590409.7013634",
+    "asset": "nex_nexus",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167612317.4577378",
+    "asset": "nex_nexus",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "162407132.0451414",
+    "asset": "nex_nexus",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "157105655.031681",
+    "asset": "nex_nexus",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "142017580.7048316",
+    "asset": "nex_nexus",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "132092460.181188",
+    "asset": "nex_nexus",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "134051925.685206",
+    "asset": "nex_nexus",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "109215357.244995",
+    "asset": "nex_nexus",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105048935.5011774",
+    "asset": "nex_nexus",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107213098.7427612",
+    "asset": "nex_nexus",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106182361.1219208",
+    "asset": "nex_nexus",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  }
+]

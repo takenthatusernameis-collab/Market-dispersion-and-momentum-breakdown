@@ -1,0 +1,3577 @@
+[
+  {
+    "CapMrktEstUSD": "25690699.198009341702",
+    "asset": "neirocto",
+    "time": "2026-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25306007.652382701813",
+    "asset": "neirocto",
+    "time": "2026-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25286881.84987611219",
+    "asset": "neirocto",
+    "time": "2026-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24785490.797844189312",
+    "asset": "neirocto",
+    "time": "2026-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25356715.02873025167",
+    "asset": "neirocto",
+    "time": "2026-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25490354.658355775007",
+    "asset": "neirocto",
+    "time": "2026-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25440297.205766596002",
+    "asset": "neirocto",
+    "time": "2026-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24640332.07338213408",
+    "asset": "neirocto",
+    "time": "2026-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24124337.395119975579",
+    "asset": "neirocto",
+    "time": "2026-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25532408.95724179182",
+    "asset": "neirocto",
+    "time": "2026-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26135862.654211010433",
+    "asset": "neirocto",
+    "time": "2026-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24928869.39587974227",
+    "asset": "neirocto",
+    "time": "2026-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25045949.055639599907",
+    "asset": "neirocto",
+    "time": "2026-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24234471.112576825311",
+    "asset": "neirocto",
+    "time": "2026-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24743894.638204912026",
+    "asset": "neirocto",
+    "time": "2026-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26697053.018079988026",
+    "asset": "neirocto",
+    "time": "2026-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25596090.751063233795",
+    "asset": "neirocto",
+    "time": "2026-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25993756.52502961905",
+    "asset": "neirocto",
+    "time": "2026-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26207070.359784271614",
+    "asset": "neirocto",
+    "time": "2026-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26289985.48225177863",
+    "asset": "neirocto",
+    "time": "2026-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27134556.205573564161",
+    "asset": "neirocto",
+    "time": "2026-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26207889.797708489769",
+    "asset": "neirocto",
+    "time": "2026-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25900835.48737955859",
+    "asset": "neirocto",
+    "time": "2026-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27628440.014545481751",
+    "asset": "neirocto",
+    "time": "2026-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32210921.091396610404",
+    "asset": "neirocto",
+    "time": "2026-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30924967.882279793121",
+    "asset": "neirocto",
+    "time": "2026-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28548164.767052529021",
+    "asset": "neirocto",
+    "time": "2026-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27976210.149561110298",
+    "asset": "neirocto",
+    "time": "2026-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27996613.158264623871",
+    "asset": "neirocto",
+    "time": "2026-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27406063.289668523022",
+    "asset": "neirocto",
+    "time": "2026-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27351280.861685402058",
+    "asset": "neirocto",
+    "time": "2026-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26541392.858298345981",
+    "asset": "neirocto",
+    "time": "2026-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26504295.610536862497",
+    "asset": "neirocto",
+    "time": "2026-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26705491.755475847808",
+    "asset": "neirocto",
+    "time": "2026-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28853618.350004952414",
+    "asset": "neirocto",
+    "time": "2026-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37843211.890467917076",
+    "asset": "neirocto",
+    "time": "2026-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44155448.26803600693",
+    "asset": "neirocto",
+    "time": "2026-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38341382.613997284453",
+    "asset": "neirocto",
+    "time": "2026-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39044432.318775371574",
+    "asset": "neirocto",
+    "time": "2026-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38067476.086122711387",
+    "asset": "neirocto",
+    "time": "2026-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35911672.323879612897",
+    "asset": "neirocto",
+    "time": "2026-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37512272.280311334918",
+    "asset": "neirocto",
+    "time": "2026-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37248627.644587390242",
+    "asset": "neirocto",
+    "time": "2026-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37526597.092588655391",
+    "asset": "neirocto",
+    "time": "2026-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36577403.419485037041",
+    "asset": "neirocto",
+    "time": "2026-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34398153.740244199896",
+    "asset": "neirocto",
+    "time": "2026-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36245259.538783196274",
+    "asset": "neirocto",
+    "time": "2026-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36062661.189816331458",
+    "asset": "neirocto",
+    "time": "2026-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35937279.459852218994",
+    "asset": "neirocto",
+    "time": "2026-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37452737.555201902668",
+    "asset": "neirocto",
+    "time": "2026-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35389152.772763238204",
+    "asset": "neirocto",
+    "time": "2026-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37595106.85894991487",
+    "asset": "neirocto",
+    "time": "2026-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37912823.414966130048",
+    "asset": "neirocto",
+    "time": "2026-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37710744.956109386166",
+    "asset": "neirocto",
+    "time": "2026-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37195370.766150652494",
+    "asset": "neirocto",
+    "time": "2026-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35819362.609967836368",
+    "asset": "neirocto",
+    "time": "2026-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34384483.669615675914",
+    "asset": "neirocto",
+    "time": "2026-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34789362.793730425308",
+    "asset": "neirocto",
+    "time": "2026-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36736678.741765923228",
+    "asset": "neirocto",
+    "time": "2026-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35079274.168862759709",
+    "asset": "neirocto",
+    "time": "2026-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34961067.122142010329",
+    "asset": "neirocto",
+    "time": "2026-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33122978.798655375369",
+    "asset": "neirocto",
+    "time": "2026-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33612742.495126097781",
+    "asset": "neirocto",
+    "time": "2026-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35219384.8700387295",
+    "asset": "neirocto",
+    "time": "2026-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38884868.147195499033",
+    "asset": "neirocto",
+    "time": "2026-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39333409.406455202043",
+    "asset": "neirocto",
+    "time": "2026-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37652726.125796153064",
+    "asset": "neirocto",
+    "time": "2026-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40760132.045173814145",
+    "asset": "neirocto",
+    "time": "2026-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41985456.78356593401",
+    "asset": "neirocto",
+    "time": "2026-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36357891.249775699323",
+    "asset": "neirocto",
+    "time": "2026-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38242994.972835371322",
+    "asset": "neirocto",
+    "time": "2026-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39744171.360709281471",
+    "asset": "neirocto",
+    "time": "2026-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38995323.653350497363",
+    "asset": "neirocto",
+    "time": "2026-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38318981.700663433752",
+    "asset": "neirocto",
+    "time": "2026-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37762106.600238707547",
+    "asset": "neirocto",
+    "time": "2026-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38482730.710938930168",
+    "asset": "neirocto",
+    "time": "2026-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38756637.002010467754",
+    "asset": "neirocto",
+    "time": "2026-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38322290.45818602579",
+    "asset": "neirocto",
+    "time": "2026-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38549828.335309777161",
+    "asset": "neirocto",
+    "time": "2026-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37907789.652200552859",
+    "asset": "neirocto",
+    "time": "2026-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38622657.228625518975",
+    "asset": "neirocto",
+    "time": "2026-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39035427.878235906588",
+    "asset": "neirocto",
+    "time": "2026-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37878166.848756393918",
+    "asset": "neirocto",
+    "time": "2026-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36002859.953351344008",
+    "asset": "neirocto",
+    "time": "2026-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34061960.911032660561",
+    "asset": "neirocto",
+    "time": "2026-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35436103.357847807967",
+    "asset": "neirocto",
+    "time": "2026-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35737577.547244502244",
+    "asset": "neirocto",
+    "time": "2026-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36921971.618893006218",
+    "asset": "neirocto",
+    "time": "2026-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34035720.60939073836",
+    "asset": "neirocto",
+    "time": "2026-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34398153.354421449855",
+    "asset": "neirocto",
+    "time": "2026-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33440233.752061696338",
+    "asset": "neirocto",
+    "time": "2026-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33012276.662137662549",
+    "asset": "neirocto",
+    "time": "2026-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32297491.431421385274",
+    "asset": "neirocto",
+    "time": "2026-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31007618.587579791828",
+    "asset": "neirocto",
+    "time": "2026-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29786913.093775501122",
+    "asset": "neirocto",
+    "time": "2026-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29774816.943253547634",
+    "asset": "neirocto",
+    "time": "2026-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30750423.321597214218",
+    "asset": "neirocto",
+    "time": "2026-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30872310.581727565356",
+    "asset": "neirocto",
+    "time": "2026-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28994739.764682879354",
+    "asset": "neirocto",
+    "time": "2026-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29043540.651105564177",
+    "asset": "neirocto",
+    "time": "2026-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25015222.690765123158",
+    "asset": "neirocto",
+    "time": "2026-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24141847.513134429909",
+    "asset": "neirocto",
+    "time": "2026-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24703394.35916321403",
+    "asset": "neirocto",
+    "time": "2026-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25119298.676969145543",
+    "asset": "neirocto",
+    "time": "2026-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24924852.354129859521",
+    "asset": "neirocto",
+    "time": "2026-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23314069.846019573265",
+    "asset": "neirocto",
+    "time": "2026-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27947254.53896209029",
+    "asset": "neirocto",
+    "time": "2026-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27044170.331047717662",
+    "asset": "neirocto",
+    "time": "2026-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32862480.091244825241",
+    "asset": "neirocto",
+    "time": "2026-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49697856.66641834541",
+    "asset": "neirocto",
+    "time": "2026-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43256216.80657916682",
+    "asset": "neirocto",
+    "time": "2026-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36913847.056287394131",
+    "asset": "neirocto",
+    "time": "2026-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37476181.463024966184",
+    "asset": "neirocto",
+    "time": "2026-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35593008.834868139631",
+    "asset": "neirocto",
+    "time": "2026-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34775555.331132270567",
+    "asset": "neirocto",
+    "time": "2026-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38827441.284552785625",
+    "asset": "neirocto",
+    "time": "2026-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "38571632.646617781933",
+    "asset": "neirocto",
+    "time": "2026-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36750962.388207333654",
+    "asset": "neirocto",
+    "time": "2026-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37192035.802202978418",
+    "asset": "neirocto",
+    "time": "2026-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37061425.712619601209",
+    "asset": "neirocto",
+    "time": "2026-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37616040.319041547065",
+    "asset": "neirocto",
+    "time": "2026-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37228529.16692691897",
+    "asset": "neirocto",
+    "time": "2026-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36716480.156333547507",
+    "asset": "neirocto",
+    "time": "2026-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37226597.716844635497",
+    "asset": "neirocto",
+    "time": "2026-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37759056.436327695243",
+    "asset": "neirocto",
+    "time": "2026-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40437374.133145847466",
+    "asset": "neirocto",
+    "time": "2026-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39653849.036851537365",
+    "asset": "neirocto",
+    "time": "2026-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39237797.341769549043",
+    "asset": "neirocto",
+    "time": "2026-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41352188.330042382108",
+    "asset": "neirocto",
+    "time": "2026-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41309988.018447135948",
+    "asset": "neirocto",
+    "time": "2026-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40899837.384843812403",
+    "asset": "neirocto",
+    "time": "2026-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42544545.55585709214",
+    "asset": "neirocto",
+    "time": "2026-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41648588.852234737563",
+    "asset": "neirocto",
+    "time": "2026-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43626116.76746073858",
+    "asset": "neirocto",
+    "time": "2026-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42652583.22314342937",
+    "asset": "neirocto",
+    "time": "2026-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "40220649.84034984461",
+    "asset": "neirocto",
+    "time": "2026-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39269547.293863420677",
+    "asset": "neirocto",
+    "time": "2026-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41552756.31617869668",
+    "asset": "neirocto",
+    "time": "2026-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39239907.345399569832",
+    "asset": "neirocto",
+    "time": "2026-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37256922.444868074396",
+    "asset": "neirocto",
+    "time": "2026-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36477226.305803619531",
+    "asset": "neirocto",
+    "time": "2026-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37730912.390717703618",
+    "asset": "neirocto",
+    "time": "2026-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37184621.358720001743",
+    "asset": "neirocto",
+    "time": "2026-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41462997.471446696883",
+    "asset": "neirocto",
+    "time": "2026-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43071795.26799310206",
+    "asset": "neirocto",
+    "time": "2026-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39238667.792636325189",
+    "asset": "neirocto",
+    "time": "2026-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "41251659.963643860357",
+    "asset": "neirocto",
+    "time": "2026-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39274976.65170088758",
+    "asset": "neirocto",
+    "time": "2026-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "39412486.712745241362",
+    "asset": "neirocto",
+    "time": "2026-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36553767.919244253447",
+    "asset": "neirocto",
+    "time": "2026-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34637312.729235967749",
+    "asset": "neirocto",
+    "time": "2026-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33359077.182366827598",
+    "asset": "neirocto",
+    "time": "2026-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32941257.66292066341",
+    "asset": "neirocto",
+    "time": "2026-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33246651.872384203497",
+    "asset": "neirocto",
+    "time": "2026-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33418018.015207508133",
+    "asset": "neirocto",
+    "time": "2026-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33545155.344200931567",
+    "asset": "neirocto",
+    "time": "2026-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30450722.728549078662",
+    "asset": "neirocto",
+    "time": "2026-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32069179.81020622692",
+    "asset": "neirocto",
+    "time": "2026-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29753459.007872721711",
+    "asset": "neirocto",
+    "time": "2026-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26819464.610711291964",
+    "asset": "neirocto",
+    "time": "2026-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26228562.755827850415",
+    "asset": "neirocto",
+    "time": "2026-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27267951.190693884207",
+    "asset": "neirocto",
+    "time": "2026-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28940125.371123784515",
+    "asset": "neirocto",
+    "time": "2026-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29154452.005245257745",
+    "asset": "neirocto",
+    "time": "2026-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27307323.040747268064",
+    "asset": "neirocto",
+    "time": "2026-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29068047.687619406697",
+    "asset": "neirocto",
+    "time": "2026-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28505421.059543541567",
+    "asset": "neirocto",
+    "time": "2026-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29455261.541026037871",
+    "asset": "neirocto",
+    "time": "2026-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29889839.329444830636",
+    "asset": "neirocto",
+    "time": "2026-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29258344.68332937942",
+    "asset": "neirocto",
+    "time": "2026-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29338103.183689755456",
+    "asset": "neirocto",
+    "time": "2026-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28411857.52459398027",
+    "asset": "neirocto",
+    "time": "2026-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28175889.48548777538",
+    "asset": "neirocto",
+    "time": "2026-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28022019.121310172882",
+    "asset": "neirocto",
+    "time": "2026-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27944996.288336188773",
+    "asset": "neirocto",
+    "time": "2026-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28193991.31570260483",
+    "asset": "neirocto",
+    "time": "2026-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27799599.313459714752",
+    "asset": "neirocto",
+    "time": "2026-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26826189.628581606141",
+    "asset": "neirocto",
+    "time": "2026-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25535715.959709312186",
+    "asset": "neirocto",
+    "time": "2026-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25713973.900941186591",
+    "asset": "neirocto",
+    "time": "2026-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25942579.331263298781",
+    "asset": "neirocto",
+    "time": "2026-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25215036.887924663247",
+    "asset": "neirocto",
+    "time": "2026-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25326240.639600705351",
+    "asset": "neirocto",
+    "time": "2026-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26787744.660134488269",
+    "asset": "neirocto",
+    "time": "2026-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25766740.104747133038",
+    "asset": "neirocto",
+    "time": "2026-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26286316.554396851457",
+    "asset": "neirocto",
+    "time": "2026-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26899327.690600446786",
+    "asset": "neirocto",
+    "time": "2026-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28117336.956366601149",
+    "asset": "neirocto",
+    "time": "2026-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27432131.561512295928",
+    "asset": "neirocto",
+    "time": "2026-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29567629.377796449372",
+    "asset": "neirocto",
+    "time": "2026-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28110854.852294567514",
+    "asset": "neirocto",
+    "time": "2026-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26892712.754614449105",
+    "asset": "neirocto",
+    "time": "2026-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25993312.00721953635",
+    "asset": "neirocto",
+    "time": "2026-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26284932.205195161306",
+    "asset": "neirocto",
+    "time": "2026-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26596146.517509445314",
+    "asset": "neirocto",
+    "time": "2026-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25900532.815434030483",
+    "asset": "neirocto",
+    "time": "2026-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25605086.47507379616",
+    "asset": "neirocto",
+    "time": "2026-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25453263.052076892237",
+    "asset": "neirocto",
+    "time": "2026-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26004909.469860164787",
+    "asset": "neirocto",
+    "time": "2026-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26141229.424590179631",
+    "asset": "neirocto",
+    "time": "2026-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45746817.18939986538",
+    "asset": "neirocto",
+    "time": "2025-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44863659.25496882283",
+    "asset": "neirocto",
+    "time": "2025-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44086062.71806138986",
+    "asset": "neirocto",
+    "time": "2025-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43301481.95979267963",
+    "asset": "neirocto",
+    "time": "2025-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52623047.04100285671",
+    "asset": "neirocto",
+    "time": "2026-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55665057.92155716813",
+    "asset": "neirocto",
+    "time": "2026-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58307585.83124531055",
+    "asset": "neirocto",
+    "time": "2026-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63556766.10305251572",
+    "asset": "neirocto",
+    "time": "2026-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61746988.83188073198",
+    "asset": "neirocto",
+    "time": "2026-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61777667.48187324234",
+    "asset": "neirocto",
+    "time": "2026-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58243485.07975356093",
+    "asset": "neirocto",
+    "time": "2026-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56526002.29840813635",
+    "asset": "neirocto",
+    "time": "2026-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55865674.36028653722",
+    "asset": "neirocto",
+    "time": "2026-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54987139.16103441876",
+    "asset": "neirocto",
+    "time": "2026-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54819022.48391488704",
+    "asset": "neirocto",
+    "time": "2026-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53959851.08547696483",
+    "asset": "neirocto",
+    "time": "2026-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "60148477.64768424729",
+    "asset": "neirocto",
+    "time": "2026-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57074845.6448722941",
+    "asset": "neirocto",
+    "time": "2026-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54496788.63386783832",
+    "asset": "neirocto",
+    "time": "2026-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55838059.3513728336",
+    "asset": "neirocto",
+    "time": "2026-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54619114.33795327842",
+    "asset": "neirocto",
+    "time": "2026-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51461885.31785244987",
+    "asset": "neirocto",
+    "time": "2026-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50018012.58587333235",
+    "asset": "neirocto",
+    "time": "2026-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46924357.17630669516",
+    "asset": "neirocto",
+    "time": "2026-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53133666.44869559796",
+    "asset": "neirocto",
+    "time": "2026-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49756093.92043651212",
+    "asset": "neirocto",
+    "time": "2026-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49924663.6373356221",
+    "asset": "neirocto",
+    "time": "2026-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50575889.03295854073",
+    "asset": "neirocto",
+    "time": "2026-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46440994.18177930614",
+    "asset": "neirocto",
+    "time": "2026-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48347621.22618139518",
+    "asset": "neirocto",
+    "time": "2026-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48609403.24859924751",
+    "asset": "neirocto",
+    "time": "2026-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "48303084.43690560495",
+    "asset": "neirocto",
+    "time": "2026-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43626289.3801806243",
+    "asset": "neirocto",
+    "time": "2026-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "42754599.81576000147",
+    "asset": "neirocto",
+    "time": "2026-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37162137.309238351542",
+    "asset": "neirocto",
+    "time": "2026-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35762617.590257703255",
+    "asset": "neirocto",
+    "time": "2026-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "37019471.780168333967",
+    "asset": "neirocto",
+    "time": "2026-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36521246.52608599359",
+    "asset": "neirocto",
+    "time": "2026-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "36112017.918853985298",
+    "asset": "neirocto",
+    "time": "2026-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30411775.279937302485",
+    "asset": "neirocto",
+    "time": "2026-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "34141209.821415509202",
+    "asset": "neirocto",
+    "time": "2026-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "33262102.043604867198",
+    "asset": "neirocto",
+    "time": "2026-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32306514.044144187549",
+    "asset": "neirocto",
+    "time": "2026-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32113440.636164339274",
+    "asset": "neirocto",
+    "time": "2026-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30468915.71600651124",
+    "asset": "neirocto",
+    "time": "2026-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29677400.951777672157",
+    "asset": "neirocto",
+    "time": "2026-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30907474.85222705634",
+    "asset": "neirocto",
+    "time": "2026-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31270686.154987686627",
+    "asset": "neirocto",
+    "time": "2026-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "35027176.48510296765",
+    "asset": "neirocto",
+    "time": "2026-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31842507.147899192268",
+    "asset": "neirocto",
+    "time": "2026-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32828133.442857210939",
+    "asset": "neirocto",
+    "time": "2026-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32014066.549559776002",
+    "asset": "neirocto",
+    "time": "2026-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30522123.733820902089",
+    "asset": "neirocto",
+    "time": "2026-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30427063.440908011008",
+    "asset": "neirocto",
+    "time": "2026-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31569515.030343313863",
+    "asset": "neirocto",
+    "time": "2026-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30757275.05133233877",
+    "asset": "neirocto",
+    "time": "2026-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29320383.549807374535",
+    "asset": "neirocto",
+    "time": "2026-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28348536.651221815176",
+    "asset": "neirocto",
+    "time": "2026-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27953447.986830501363",
+    "asset": "neirocto",
+    "time": "2026-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30505755.829700783061",
+    "asset": "neirocto",
+    "time": "2026-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29881090.354430384829",
+    "asset": "neirocto",
+    "time": "2026-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28596729.377236838748",
+    "asset": "neirocto",
+    "time": "2026-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27560101.862962347249",
+    "asset": "neirocto",
+    "time": "2026-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28131911.438412207426",
+    "asset": "neirocto",
+    "time": "2026-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28702931.753181926253",
+    "asset": "neirocto",
+    "time": "2026-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28786732.838403312342",
+    "asset": "neirocto",
+    "time": "2026-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29755920.588708476853",
+    "asset": "neirocto",
+    "time": "2026-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28533368.77164213663",
+    "asset": "neirocto",
+    "time": "2026-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27970460.306201156766",
+    "asset": "neirocto",
+    "time": "2026-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26582794.774053657444",
+    "asset": "neirocto",
+    "time": "2026-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26443584.925129101567",
+    "asset": "neirocto",
+    "time": "2026-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27091879.346074269423",
+    "asset": "neirocto",
+    "time": "2026-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27426300.583610205624",
+    "asset": "neirocto",
+    "time": "2026-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28248384.546450023652",
+    "asset": "neirocto",
+    "time": "2026-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "30752678.717360743272",
+    "asset": "neirocto",
+    "time": "2026-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29530526.305229461806",
+    "asset": "neirocto",
+    "time": "2026-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29174524.271843507316",
+    "asset": "neirocto",
+    "time": "2026-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "29566412.419935223746",
+    "asset": "neirocto",
+    "time": "2026-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "32077958.96415011781",
+    "asset": "neirocto",
+    "time": "2026-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "31037308.762642044396",
+    "asset": "neirocto",
+    "time": "2026-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "28948062.891604811097",
+    "asset": "neirocto",
+    "time": "2026-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27566680.881264778023",
+    "asset": "neirocto",
+    "time": "2026-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26969822.419758836721",
+    "asset": "neirocto",
+    "time": "2026-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "27356767.951006727052",
+    "asset": "neirocto",
+    "time": "2026-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25492080.46230556518",
+    "asset": "neirocto",
+    "time": "2026-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26518836.501092393409",
+    "asset": "neirocto",
+    "time": "2026-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "26007657.97080787188",
+    "asset": "neirocto",
+    "time": "2026-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "25843409.642070227337",
+    "asset": "neirocto",
+    "time": "2026-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24545337.880516978494",
+    "asset": "neirocto",
+    "time": "2026-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23424845.059328469183",
+    "asset": "neirocto",
+    "time": "2026-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23213275.865016840321",
+    "asset": "neirocto",
+    "time": "2026-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22686756.569801444718",
+    "asset": "neirocto",
+    "time": "2026-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23414369.920637262483",
+    "asset": "neirocto",
+    "time": "2026-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23955168.966858893466",
+    "asset": "neirocto",
+    "time": "2026-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "24170586.488230342047",
+    "asset": "neirocto",
+    "time": "2026-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "22747152.785484347238",
+    "asset": "neirocto",
+    "time": "2026-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23342812.352693986344",
+    "asset": "neirocto",
+    "time": "2026-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23121469.390558421016",
+    "asset": "neirocto",
+    "time": "2026-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23198006.781821739651",
+    "asset": "neirocto",
+    "time": "2026-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "23169157.503283145274",
+    "asset": "neirocto",
+    "time": "2026-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "146356054.3231244844",
+    "asset": "neirocto",
+    "time": "2025-09-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "146971393.58768521389",
+    "asset": "neirocto",
+    "time": "2025-09-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144543092.43353480811",
+    "asset": "neirocto",
+    "time": "2025-09-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122537688.29239049736",
+    "asset": "neirocto",
+    "time": "2025-09-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "119311326.97046339064",
+    "asset": "neirocto",
+    "time": "2025-09-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "120839588.27512444716",
+    "asset": "neirocto",
+    "time": "2025-09-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "110637169.78608304428",
+    "asset": "neirocto",
+    "time": "2025-09-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115739278.51500661362",
+    "asset": "neirocto",
+    "time": "2025-09-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113272438.79513966613",
+    "asset": "neirocto",
+    "time": "2025-09-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115293768.7682487273",
+    "asset": "neirocto",
+    "time": "2025-09-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112668171.34153056339",
+    "asset": "neirocto",
+    "time": "2025-09-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112497154.84979884674",
+    "asset": "neirocto",
+    "time": "2025-09-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118350402.86648634876",
+    "asset": "neirocto",
+    "time": "2025-10-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "121695780.73330325844",
+    "asset": "neirocto",
+    "time": "2025-10-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "123736206.72501611208",
+    "asset": "neirocto",
+    "time": "2025-10-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "119070564.82864566555",
+    "asset": "neirocto",
+    "time": "2025-10-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "119396205.69419380281",
+    "asset": "neirocto",
+    "time": "2025-10-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "124616354.85144338367",
+    "asset": "neirocto",
+    "time": "2025-10-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112439423.96981222313",
+    "asset": "neirocto",
+    "time": "2025-10-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122019587.92955932035",
+    "asset": "neirocto",
+    "time": "2025-10-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112242528.72828928215",
+    "asset": "neirocto",
+    "time": "2025-10-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71219322.17091902283",
+    "asset": "neirocto",
+    "time": "2025-10-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72904356.73273436106",
+    "asset": "neirocto",
+    "time": "2025-10-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83213296.77406085394",
+    "asset": "neirocto",
+    "time": "2025-10-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "90523322.31696461328",
+    "asset": "neirocto",
+    "time": "2025-10-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "86182995.18268016493",
+    "asset": "neirocto",
+    "time": "2025-10-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80142306.04563195384",
+    "asset": "neirocto",
+    "time": "2025-10-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "77268794.14921017477",
+    "asset": "neirocto",
+    "time": "2025-10-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74484119.62660771071",
+    "asset": "neirocto",
+    "time": "2025-10-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75932026.84065482631",
+    "asset": "neirocto",
+    "time": "2025-10-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80031962.17337107242",
+    "asset": "neirocto",
+    "time": "2025-10-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82189782.57281919225",
+    "asset": "neirocto",
+    "time": "2025-10-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78734179.88133507072",
+    "asset": "neirocto",
+    "time": "2025-10-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74211799.61378245806",
+    "asset": "neirocto",
+    "time": "2025-10-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78360665.23784324679",
+    "asset": "neirocto",
+    "time": "2025-10-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "83151525.2413778985",
+    "asset": "neirocto",
+    "time": "2025-10-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82781312.73854048295",
+    "asset": "neirocto",
+    "time": "2025-10-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "85682325.41651087466",
+    "asset": "neirocto",
+    "time": "2025-10-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82204226.85737349798",
+    "asset": "neirocto",
+    "time": "2025-10-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80159712.83393940831",
+    "asset": "neirocto",
+    "time": "2025-10-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80328382.69833403392",
+    "asset": "neirocto",
+    "time": "2025-10-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71996502.23206707561",
+    "asset": "neirocto",
+    "time": "2025-10-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74620689.87153911853",
+    "asset": "neirocto",
+    "time": "2025-10-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78756224.14014245154",
+    "asset": "neirocto",
+    "time": "2025-11-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "79081430.69687074998",
+    "asset": "neirocto",
+    "time": "2025-11-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64219518.42895471632",
+    "asset": "neirocto",
+    "time": "2025-11-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "61487556.17071114953",
+    "asset": "neirocto",
+    "time": "2025-11-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66527887.08269337792",
+    "asset": "neirocto",
+    "time": "2025-11-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62929975.78832442516",
+    "asset": "neirocto",
+    "time": "2025-11-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75055315.16695271694",
+    "asset": "neirocto",
+    "time": "2025-11-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71365826.44592009916",
+    "asset": "neirocto",
+    "time": "2025-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72341220.20870913498",
+    "asset": "neirocto",
+    "time": "2025-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74947978.3034992293",
+    "asset": "neirocto",
+    "time": "2025-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "67987138.00085239023",
+    "asset": "neirocto",
+    "time": "2025-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66845721.94713486231",
+    "asset": "neirocto",
+    "time": "2025-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "63351789.37239340185",
+    "asset": "neirocto",
+    "time": "2025-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59040842.06326974387",
+    "asset": "neirocto",
+    "time": "2025-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59823850.6200147309",
+    "asset": "neirocto",
+    "time": "2025-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55985651.03100065895",
+    "asset": "neirocto",
+    "time": "2025-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53631909.29491457673",
+    "asset": "neirocto",
+    "time": "2025-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57142318.71299676645",
+    "asset": "neirocto",
+    "time": "2025-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55140943.61011740495",
+    "asset": "neirocto",
+    "time": "2025-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "53556331.35180561795",
+    "asset": "neirocto",
+    "time": "2025-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49091321.67395153682",
+    "asset": "neirocto",
+    "time": "2025-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49091317.67717062629",
+    "asset": "neirocto",
+    "time": "2025-11-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49437935.45446213941",
+    "asset": "neirocto",
+    "time": "2025-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54150956.54861597592",
+    "asset": "neirocto",
+    "time": "2025-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54860698.58237113341",
+    "asset": "neirocto",
+    "time": "2025-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55941265.19566940136",
+    "asset": "neirocto",
+    "time": "2025-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56834096.06773717137",
+    "asset": "neirocto",
+    "time": "2025-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56671656.97803185808",
+    "asset": "neirocto",
+    "time": "2025-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55568846.40445009902",
+    "asset": "neirocto",
+    "time": "2025-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55762895.41916142084",
+    "asset": "neirocto",
+    "time": "2025-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "51171164.85950491167",
+    "asset": "neirocto",
+    "time": "2025-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57142090.24102670829",
+    "asset": "neirocto",
+    "time": "2025-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59415920.74526533104",
+    "asset": "neirocto",
+    "time": "2025-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "57918938.63001637473",
+    "asset": "neirocto",
+    "time": "2025-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54990483.63841594314",
+    "asset": "neirocto",
+    "time": "2025-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58551091.21296353592",
+    "asset": "neirocto",
+    "time": "2025-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55911567.3058017576",
+    "asset": "neirocto",
+    "time": "2025-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "59312585.50919822178",
+    "asset": "neirocto",
+    "time": "2025-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "62124367.36204028043",
+    "asset": "neirocto",
+    "time": "2025-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "58136218.30856318109",
+    "asset": "neirocto",
+    "time": "2025-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "56774358.81660699639",
+    "asset": "neirocto",
+    "time": "2025-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "54355184.92217216559",
+    "asset": "neirocto",
+    "time": "2025-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "55260738.72443659974",
+    "asset": "neirocto",
+    "time": "2025-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "52158715.90814499669",
+    "asset": "neirocto",
+    "time": "2025-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "50504651.76567352383",
+    "asset": "neirocto",
+    "time": "2025-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "49986581.26930357923",
+    "asset": "neirocto",
+    "time": "2025-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46477709.40125190987",
+    "asset": "neirocto",
+    "time": "2025-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44064720.91828703604",
+    "asset": "neirocto",
+    "time": "2025-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "47011344.76240999887",
+    "asset": "neirocto",
+    "time": "2025-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46306558.32825621873",
+    "asset": "neirocto",
+    "time": "2025-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44316021.49087614999",
+    "asset": "neirocto",
+    "time": "2025-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "44501310.84593060121",
+    "asset": "neirocto",
+    "time": "2025-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43489793.06314540617",
+    "asset": "neirocto",
+    "time": "2025-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43806377.72005837251",
+    "asset": "neirocto",
+    "time": "2025-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "43689969.60185261556",
+    "asset": "neirocto",
+    "time": "2025-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "45540190.29268838508",
+    "asset": "neirocto",
+    "time": "2025-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "46327882.54953383982",
+    "asset": "neirocto",
+    "time": "2025-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "205222464.20291060106",
+    "asset": "neirocto",
+    "time": "2025-06-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176822883.97897098063",
+    "asset": "neirocto",
+    "time": "2025-06-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "172708511.7196354185",
+    "asset": "neirocto",
+    "time": "2025-06-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166260003.80603032674",
+    "asset": "neirocto",
+    "time": "2025-06-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167062168.66904065335",
+    "asset": "neirocto",
+    "time": "2025-06-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "171761064.08462656395",
+    "asset": "neirocto",
+    "time": "2025-06-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155154652.55797357371",
+    "asset": "neirocto",
+    "time": "2025-06-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160097094.50238731955",
+    "asset": "neirocto",
+    "time": "2025-06-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "161897115.14147224974",
+    "asset": "neirocto",
+    "time": "2025-06-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156041530.64341559373",
+    "asset": "neirocto",
+    "time": "2025-06-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "137105093.32298418162",
+    "asset": "neirocto",
+    "time": "2025-06-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "142239504.06452560947",
+    "asset": "neirocto",
+    "time": "2025-06-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160234045.06353998586",
+    "asset": "neirocto",
+    "time": "2025-06-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "170547250.10756092455",
+    "asset": "neirocto",
+    "time": "2025-06-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156501040.91766615423",
+    "asset": "neirocto",
+    "time": "2025-06-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "146585424.93515631144",
+    "asset": "neirocto",
+    "time": "2025-06-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "149173417.16089179297",
+    "asset": "neirocto",
+    "time": "2025-06-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154228392.04088039502",
+    "asset": "neirocto",
+    "time": "2025-06-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167085923.85888271137",
+    "asset": "neirocto",
+    "time": "2025-06-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "163770279.96057961119",
+    "asset": "neirocto",
+    "time": "2025-06-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "149734756.25611854555",
+    "asset": "neirocto",
+    "time": "2025-07-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "198615363.79289425599",
+    "asset": "neirocto",
+    "time": "2025-07-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "190661338.44855152928",
+    "asset": "neirocto",
+    "time": "2025-07-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181822990.44341228775",
+    "asset": "neirocto",
+    "time": "2025-07-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176933130.46189609686",
+    "asset": "neirocto",
+    "time": "2025-07-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181723058.88094548639",
+    "asset": "neirocto",
+    "time": "2025-07-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175856125.46805716604",
+    "asset": "neirocto",
+    "time": "2025-07-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175172073.72084185838",
+    "asset": "neirocto",
+    "time": "2025-07-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "199487198.11841317674",
+    "asset": "neirocto",
+    "time": "2025-07-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "216817291.96395992316",
+    "asset": "neirocto",
+    "time": "2025-07-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "211700972.11320282009",
+    "asset": "neirocto",
+    "time": "2025-07-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "200660613.44754656985",
+    "asset": "neirocto",
+    "time": "2025-07-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "203154467.76123625026",
+    "asset": "neirocto",
+    "time": "2025-07-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "201751762.34406795747",
+    "asset": "neirocto",
+    "time": "2025-07-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "212761265.2863907278",
+    "asset": "neirocto",
+    "time": "2025-07-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "230089837.40043949917",
+    "asset": "neirocto",
+    "time": "2025-07-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "219514445.57386802058",
+    "asset": "neirocto",
+    "time": "2025-07-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "227199997.09190471775",
+    "asset": "neirocto",
+    "time": "2025-07-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "231812456.66188006023",
+    "asset": "neirocto",
+    "time": "2025-07-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "238203353.45862278445",
+    "asset": "neirocto",
+    "time": "2025-07-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "238059889.05442862415",
+    "asset": "neirocto",
+    "time": "2025-07-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "229469643.00476148141",
+    "asset": "neirocto",
+    "time": "2025-07-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "201626007.13941622605",
+    "asset": "neirocto",
+    "time": "2025-07-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "189155176.87668180678",
+    "asset": "neirocto",
+    "time": "2025-07-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "196032867.91193371623",
+    "asset": "neirocto",
+    "time": "2025-07-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "191707366.51065853947",
+    "asset": "neirocto",
+    "time": "2025-07-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "198927204.15946392501",
+    "asset": "neirocto",
+    "time": "2025-07-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181521223.21794363672",
+    "asset": "neirocto",
+    "time": "2025-07-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "177656878.52255968452",
+    "asset": "neirocto",
+    "time": "2025-07-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176999159.57109459729",
+    "asset": "neirocto",
+    "time": "2025-07-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "167295831.52493030328",
+    "asset": "neirocto",
+    "time": "2025-07-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160460490.75568607748",
+    "asset": "neirocto",
+    "time": "2025-08-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155665119.33149054991",
+    "asset": "neirocto",
+    "time": "2025-08-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "164709602.62646939148",
+    "asset": "neirocto",
+    "time": "2025-08-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "169648003.20632589786",
+    "asset": "neirocto",
+    "time": "2025-08-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "157113216.46990346523",
+    "asset": "neirocto",
+    "time": "2025-08-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "163454821.55165954991",
+    "asset": "neirocto",
+    "time": "2025-08-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "172657447.97620087023",
+    "asset": "neirocto",
+    "time": "2025-08-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "171704805.90849957711",
+    "asset": "neirocto",
+    "time": "2025-08-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "179483748.73609005837",
+    "asset": "neirocto",
+    "time": "2025-08-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "183187744.25698967907",
+    "asset": "neirocto",
+    "time": "2025-08-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166581817.25971899546",
+    "asset": "neirocto",
+    "time": "2025-08-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "180758228.02228588575",
+    "asset": "neirocto",
+    "time": "2025-08-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "187977346.49255748462",
+    "asset": "neirocto",
+    "time": "2025-08-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "162766951.78671321174",
+    "asset": "neirocto",
+    "time": "2025-08-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "157820986.43566559556",
+    "asset": "neirocto",
+    "time": "2025-08-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "163689944.30344625553",
+    "asset": "neirocto",
+    "time": "2025-08-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166779859.28154288504",
+    "asset": "neirocto",
+    "time": "2025-08-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156433718.06777386665",
+    "asset": "neirocto",
+    "time": "2025-08-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "147898288.54174697418",
+    "asset": "neirocto",
+    "time": "2025-08-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "157934187.97458861099",
+    "asset": "neirocto",
+    "time": "2025-08-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "152056643.67855408705",
+    "asset": "neirocto",
+    "time": "2025-08-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "172235074.64212477209",
+    "asset": "neirocto",
+    "time": "2025-08-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "168974950.46275840095",
+    "asset": "neirocto",
+    "time": "2025-08-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "161997491.97550277232",
+    "asset": "neirocto",
+    "time": "2025-08-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "142279104.8795126259",
+    "asset": "neirocto",
+    "time": "2025-08-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "150693098.18068974522",
+    "asset": "neirocto",
+    "time": "2025-08-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "149278511.13991227984",
+    "asset": "neirocto",
+    "time": "2025-08-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154775840.61939401853",
+    "asset": "neirocto",
+    "time": "2025-08-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "145731163.26818322495",
+    "asset": "neirocto",
+    "time": "2025-08-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "149349067.06135096872",
+    "asset": "neirocto",
+    "time": "2025-08-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "145303550.19771581616",
+    "asset": "neirocto",
+    "time": "2025-08-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "134580775.15427625216",
+    "asset": "neirocto",
+    "time": "2025-09-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "141278173.92508278639",
+    "asset": "neirocto",
+    "time": "2025-09-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144963336.49416862227",
+    "asset": "neirocto",
+    "time": "2025-09-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138398761.7049528321",
+    "asset": "neirocto",
+    "time": "2025-09-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "145970015.61516809055",
+    "asset": "neirocto",
+    "time": "2025-09-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144446493.77534335533",
+    "asset": "neirocto",
+    "time": "2025-09-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "148148816.94880805574",
+    "asset": "neirocto",
+    "time": "2025-09-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "157202440.38567098316",
+    "asset": "neirocto",
+    "time": "2025-09-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154477132.33884296631",
+    "asset": "neirocto",
+    "time": "2025-09-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "153604203.28955918001",
+    "asset": "neirocto",
+    "time": "2025-09-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "159509102.88292881216",
+    "asset": "neirocto",
+    "time": "2025-09-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166305701.51987712819",
+    "asset": "neirocto",
+    "time": "2025-09-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "166841399.46910336521",
+    "asset": "neirocto",
+    "time": "2025-09-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "158052279.98944952721",
+    "asset": "neirocto",
+    "time": "2025-09-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "148208707.87540335963",
+    "asset": "neirocto",
+    "time": "2025-09-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "152577006.91550520153",
+    "asset": "neirocto",
+    "time": "2025-09-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "158335310.06225088966",
+    "asset": "neirocto",
+    "time": "2025-09-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "156959368.02812837121",
+    "asset": "neirocto",
+    "time": "2025-09-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133783450.26687661887",
+    "asset": "neirocto",
+    "time": "2025-03-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "129613585.7001000375",
+    "asset": "neirocto",
+    "time": "2025-03-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133818948.60261416394",
+    "asset": "neirocto",
+    "time": "2025-03-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "126674771.78652941736",
+    "asset": "neirocto",
+    "time": "2025-03-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "119907987.32210072073",
+    "asset": "neirocto",
+    "time": "2025-03-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107843034.26400066897",
+    "asset": "neirocto",
+    "time": "2025-03-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103430525.0000288787",
+    "asset": "neirocto",
+    "time": "2025-03-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99958078.83309664107",
+    "asset": "neirocto",
+    "time": "2025-03-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "102621021.75461718603",
+    "asset": "neirocto",
+    "time": "2025-03-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106476517.58827366848",
+    "asset": "neirocto",
+    "time": "2025-03-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "108418492.0526989737",
+    "asset": "neirocto",
+    "time": "2025-03-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112833940.47626724024",
+    "asset": "neirocto",
+    "time": "2025-03-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115457030.83590530868",
+    "asset": "neirocto",
+    "time": "2025-03-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "107496252.75096685668",
+    "asset": "neirocto",
+    "time": "2025-03-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112600369.09645180512",
+    "asset": "neirocto",
+    "time": "2025-03-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105742262.96389626765",
+    "asset": "neirocto",
+    "time": "2025-03-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111165217.07075927751",
+    "asset": "neirocto",
+    "time": "2025-03-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111967243.89471064365",
+    "asset": "neirocto",
+    "time": "2025-03-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113288921.77589188812",
+    "asset": "neirocto",
+    "time": "2025-03-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "116009970.24543595449",
+    "asset": "neirocto",
+    "time": "2025-03-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "115100247.82800270822",
+    "asset": "neirocto",
+    "time": "2025-03-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "120237209.65307733126",
+    "asset": "neirocto",
+    "time": "2025-03-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "122378612.28334787427",
+    "asset": "neirocto",
+    "time": "2025-03-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "118541481.28050528501",
+    "asset": "neirocto",
+    "time": "2025-03-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "112431256.48828336473",
+    "asset": "neirocto",
+    "time": "2025-03-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94236881.56842778545",
+    "asset": "neirocto",
+    "time": "2025-03-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82815836.51544643065",
+    "asset": "neirocto",
+    "time": "2025-03-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "84466309.06010767674",
+    "asset": "neirocto",
+    "time": "2025-03-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "82480562.79777931254",
+    "asset": "neirocto",
+    "time": "2025-03-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80940230.47511592501",
+    "asset": "neirocto",
+    "time": "2025-04-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71665017.07227799923",
+    "asset": "neirocto",
+    "time": "2025-04-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75519957.67277955222",
+    "asset": "neirocto",
+    "time": "2025-04-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74599628.9345814696",
+    "asset": "neirocto",
+    "time": "2025-04-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76157668.68630626928",
+    "asset": "neirocto",
+    "time": "2025-04-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "64999501.09223389932",
+    "asset": "neirocto",
+    "time": "2025-04-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "69338176.42475258532",
+    "asset": "neirocto",
+    "time": "2025-04-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "65718465.4972135506",
+    "asset": "neirocto",
+    "time": "2025-04-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73236106.51852730934",
+    "asset": "neirocto",
+    "time": "2025-04-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "70154880.71611661811",
+    "asset": "neirocto",
+    "time": "2025-04-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "72517349.19610133565",
+    "asset": "neirocto",
+    "time": "2025-04-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78165770.46302123127",
+    "asset": "neirocto",
+    "time": "2025-04-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "73654556.61379361991",
+    "asset": "neirocto",
+    "time": "2025-04-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "74187130.63697907081",
+    "asset": "neirocto",
+    "time": "2025-04-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "68989331.36999435367",
+    "asset": "neirocto",
+    "time": "2025-04-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "66627298.46160244794",
+    "asset": "neirocto",
+    "time": "2025-04-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "71214467.08008911241",
+    "asset": "neirocto",
+    "time": "2025-04-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "75891837.85200082485",
+    "asset": "neirocto",
+    "time": "2025-04-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "76764991.99506138306",
+    "asset": "neirocto",
+    "time": "2025-04-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "78628625.4809521896",
+    "asset": "neirocto",
+    "time": "2025-04-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "80372498.3946960801",
+    "asset": "neirocto",
+    "time": "2025-04-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "91413171.31054684329",
+    "asset": "neirocto",
+    "time": "2025-04-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98631768.90174992004",
+    "asset": "neirocto",
+    "time": "2025-04-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "94020971.87157013467",
+    "asset": "neirocto",
+    "time": "2025-04-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "103210217.7207430827",
+    "asset": "neirocto",
+    "time": "2025-04-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "111216249.44928739962",
+    "asset": "neirocto",
+    "time": "2025-04-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "98340374.53237803069",
+    "asset": "neirocto",
+    "time": "2025-04-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "105638814.76952761797",
+    "asset": "neirocto",
+    "time": "2025-04-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96688910.71979524299",
+    "asset": "neirocto",
+    "time": "2025-04-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "99071641.39534724187",
+    "asset": "neirocto",
+    "time": "2025-04-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "104340635.19590826555",
+    "asset": "neirocto",
+    "time": "2025-05-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "106748076.18145412442",
+    "asset": "neirocto",
+    "time": "2025-05-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "96383239.73082776085",
+    "asset": "neirocto",
+    "time": "2025-05-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "89225543.95738854525",
+    "asset": "neirocto",
+    "time": "2025-05-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "88922604.20027325177",
+    "asset": "neirocto",
+    "time": "2025-05-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87465529.25055252903",
+    "asset": "neirocto",
+    "time": "2025-05-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "87850806.14468306514",
+    "asset": "neirocto",
+    "time": "2025-05-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "113444280.99276592137",
+    "asset": "neirocto",
+    "time": "2025-05-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144149744.72671224339",
+    "asset": "neirocto",
+    "time": "2025-05-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "162730821.96078530046",
+    "asset": "neirocto",
+    "time": "2025-05-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "176245208.84222203416",
+    "asset": "neirocto",
+    "time": "2025-05-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "184536658.29030639252",
+    "asset": "neirocto",
+    "time": "2025-05-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "258460981.7480775951",
+    "asset": "neirocto",
+    "time": "2025-05-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "259950546.14506956291",
+    "asset": "neirocto",
+    "time": "2025-05-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "217606540.63818375639",
+    "asset": "neirocto",
+    "time": "2025-05-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "199870791.17415075306",
+    "asset": "neirocto",
+    "time": "2025-05-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "189620341.21248254361",
+    "asset": "neirocto",
+    "time": "2025-05-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "262943135.92172233701",
+    "asset": "neirocto",
+    "time": "2025-05-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "243989169.03136723674",
+    "asset": "neirocto",
+    "time": "2025-05-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "223184955.9091420179",
+    "asset": "neirocto",
+    "time": "2025-05-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "235172098.4406149052",
+    "asset": "neirocto",
+    "time": "2025-05-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "257561028.37547782503",
+    "asset": "neirocto",
+    "time": "2025-05-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "224375611.01307481755",
+    "asset": "neirocto",
+    "time": "2025-05-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "215444919.39411393753",
+    "asset": "neirocto",
+    "time": "2025-05-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "236719626.08776417761",
+    "asset": "neirocto",
+    "time": "2025-05-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "216626273.1769307649",
+    "asset": "neirocto",
+    "time": "2025-05-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "223716333.81821883441",
+    "asset": "neirocto",
+    "time": "2025-05-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "229968109.60142296548",
+    "asset": "neirocto",
+    "time": "2025-05-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "217201282.21160909394",
+    "asset": "neirocto",
+    "time": "2025-05-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "171410276.43952474299",
+    "asset": "neirocto",
+    "time": "2025-05-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "190347942.58332439344",
+    "asset": "neirocto",
+    "time": "2025-05-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "191724062.27670177549",
+    "asset": "neirocto",
+    "time": "2025-06-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "192943382.657318505",
+    "asset": "neirocto",
+    "time": "2025-06-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "195939316.28918005902",
+    "asset": "neirocto",
+    "time": "2025-06-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "181470511.45995546984",
+    "asset": "neirocto",
+    "time": "2025-06-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "170238093.91897068237",
+    "asset": "neirocto",
+    "time": "2025-06-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "165566574.64653326325",
+    "asset": "neirocto",
+    "time": "2025-06-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "177881572.38583882443",
+    "asset": "neirocto",
+    "time": "2025-06-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "175989145.16914424613",
+    "asset": "neirocto",
+    "time": "2025-06-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "194123589.66718383807",
+    "asset": "neirocto",
+    "time": "2025-06-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "221441136.89972206296",
+    "asset": "neirocto",
+    "time": "2025-06-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "763913709.7116592077",
+    "asset": "neirocto",
+    "time": "2024-11-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "755827802.1092611098",
+    "asset": "neirocto",
+    "time": "2024-11-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "776593124.5907475666",
+    "asset": "neirocto",
+    "time": "2024-11-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "708296241.0373906701",
+    "asset": "neirocto",
+    "time": "2024-11-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "724914213.8661771918",
+    "asset": "neirocto",
+    "time": "2024-11-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "744112704.9688490307",
+    "asset": "neirocto",
+    "time": "2024-11-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "816028982.0609325453",
+    "asset": "neirocto",
+    "time": "2024-11-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "792104985.1419177684",
+    "asset": "neirocto",
+    "time": "2024-11-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "869977835.7355100256",
+    "asset": "neirocto",
+    "time": "2024-12-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "769312221.1406891556",
+    "asset": "neirocto",
+    "time": "2024-12-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "713587339.9770260109",
+    "asset": "neirocto",
+    "time": "2024-12-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "723784149.8766532338",
+    "asset": "neirocto",
+    "time": "2024-12-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "742464768.0283356711",
+    "asset": "neirocto",
+    "time": "2024-12-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "754409966.6565487518",
+    "asset": "neirocto",
+    "time": "2024-12-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "816747441.9926834391",
+    "asset": "neirocto",
+    "time": "2024-12-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "797504785.4215178055",
+    "asset": "neirocto",
+    "time": "2024-12-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "738889214.0573804748",
+    "asset": "neirocto",
+    "time": "2024-12-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "653869950.9789853158",
+    "asset": "neirocto",
+    "time": "2024-12-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "731937106.7615347494",
+    "asset": "neirocto",
+    "time": "2024-12-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "701891668.6996551711",
+    "asset": "neirocto",
+    "time": "2024-12-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "718951154.3838966276",
+    "asset": "neirocto",
+    "time": "2024-12-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "681632368.2798524181",
+    "asset": "neirocto",
+    "time": "2024-12-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "694011716.7238992981",
+    "asset": "neirocto",
+    "time": "2024-12-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "657491459.2746854088",
+    "asset": "neirocto",
+    "time": "2024-12-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "600912141.404544951",
+    "asset": "neirocto",
+    "time": "2024-12-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "502350845.154438597",
+    "asset": "neirocto",
+    "time": "2024-12-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "411983781.58299863838",
+    "asset": "neirocto",
+    "time": "2024-12-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "448137034.019710428",
+    "asset": "neirocto",
+    "time": "2024-12-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "400082423.24913698883",
+    "asset": "neirocto",
+    "time": "2024-12-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "418572644.25336400119",
+    "asset": "neirocto",
+    "time": "2024-12-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "438229865.4289399194",
+    "asset": "neirocto",
+    "time": "2024-12-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "450595587.6257776845",
+    "asset": "neirocto",
+    "time": "2024-12-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "423452569.9463667738",
+    "asset": "neirocto",
+    "time": "2024-12-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "386959347.79136992977",
+    "asset": "neirocto",
+    "time": "2024-12-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "386828418.99154019142",
+    "asset": "neirocto",
+    "time": "2024-12-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "407547299.8729207734",
+    "asset": "neirocto",
+    "time": "2024-12-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "385684741.22342936628",
+    "asset": "neirocto",
+    "time": "2024-12-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "401764519.62714714717",
+    "asset": "neirocto",
+    "time": "2024-12-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "406236016.33601343489",
+    "asset": "neirocto",
+    "time": "2024-12-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "411916350.73922488647",
+    "asset": "neirocto",
+    "time": "2025-01-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "420169918.22472706059",
+    "asset": "neirocto",
+    "time": "2025-01-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "479680363.3280299515",
+    "asset": "neirocto",
+    "time": "2025-01-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "458547433.3021149099",
+    "asset": "neirocto",
+    "time": "2025-01-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "459661663.0323046671",
+    "asset": "neirocto",
+    "time": "2025-01-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "447941603.8466578239",
+    "asset": "neirocto",
+    "time": "2025-01-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "378348060.5552824305",
+    "asset": "neirocto",
+    "time": "2025-01-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "334777517.10371278044",
+    "asset": "neirocto",
+    "time": "2025-01-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "331808602.94039367225",
+    "asset": "neirocto",
+    "time": "2025-01-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "336746099.93088764946",
+    "asset": "neirocto",
+    "time": "2025-01-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "342542719.14352955772",
+    "asset": "neirocto",
+    "time": "2025-01-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "339975019.63534385139",
+    "asset": "neirocto",
+    "time": "2025-01-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "305362417.38541899345",
+    "asset": "neirocto",
+    "time": "2025-01-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "327940568.13441192447",
+    "asset": "neirocto",
+    "time": "2025-01-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "354822667.34190302433",
+    "asset": "neirocto",
+    "time": "2025-01-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "335500599.38641043511",
+    "asset": "neirocto",
+    "time": "2025-01-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "366287335.43157215796",
+    "asset": "neirocto",
+    "time": "2025-01-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "294514671.38410620549",
+    "asset": "neirocto",
+    "time": "2025-01-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "246779816.02060027848",
+    "asset": "neirocto",
+    "time": "2025-01-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "234658443.7952844387",
+    "asset": "neirocto",
+    "time": "2025-01-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "236157390.92237382465",
+    "asset": "neirocto",
+    "time": "2025-01-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "243743123.90834395446",
+    "asset": "neirocto",
+    "time": "2025-01-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "245563311.5804398812",
+    "asset": "neirocto",
+    "time": "2025-01-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "232452973.5289840278",
+    "asset": "neirocto",
+    "time": "2025-01-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "233688561.01327064481",
+    "asset": "neirocto",
+    "time": "2025-01-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "227385926.85598788018",
+    "asset": "neirocto",
+    "time": "2025-01-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "216007672.2193145256",
+    "asset": "neirocto",
+    "time": "2025-01-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "186660088.04096472045",
+    "asset": "neirocto",
+    "time": "2025-01-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "209952536.16372606357",
+    "asset": "neirocto",
+    "time": "2025-01-29T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "217697039.45504507436",
+    "asset": "neirocto",
+    "time": "2025-01-30T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "256350859.20583739232",
+    "asset": "neirocto",
+    "time": "2025-01-31T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "213301449.24327039657",
+    "asset": "neirocto",
+    "time": "2025-02-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "174697789.32144717606",
+    "asset": "neirocto",
+    "time": "2025-02-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "170014884.56378486172",
+    "asset": "neirocto",
+    "time": "2025-02-03T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155030126.82817355946",
+    "asset": "neirocto",
+    "time": "2025-02-04T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "147062460.52986682866",
+    "asset": "neirocto",
+    "time": "2025-02-05T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133875538.12791058272",
+    "asset": "neirocto",
+    "time": "2025-02-06T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "125634245.85908945337",
+    "asset": "neirocto",
+    "time": "2025-02-07T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138339938.88382169274",
+    "asset": "neirocto",
+    "time": "2025-02-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "133784011.17717031896",
+    "asset": "neirocto",
+    "time": "2025-02-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138455060.2223287062",
+    "asset": "neirocto",
+    "time": "2025-02-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "134707429.55948163261",
+    "asset": "neirocto",
+    "time": "2025-02-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "150631247.29540644327",
+    "asset": "neirocto",
+    "time": "2025-02-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "141719262.84394552212",
+    "asset": "neirocto",
+    "time": "2025-02-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155719228.78124163879",
+    "asset": "neirocto",
+    "time": "2025-02-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "151412754.74240902728",
+    "asset": "neirocto",
+    "time": "2025-02-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "144389287.61404395279",
+    "asset": "neirocto",
+    "time": "2025-02-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "142060488.69021654741",
+    "asset": "neirocto",
+    "time": "2025-02-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "137055662.43887773809",
+    "asset": "neirocto",
+    "time": "2025-02-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "138304449.80166636705",
+    "asset": "neirocto",
+    "time": "2025-02-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154206829.10981973792",
+    "asset": "neirocto",
+    "time": "2025-02-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "155382056.54350837176",
+    "asset": "neirocto",
+    "time": "2025-02-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "173947288.62484988523",
+    "asset": "neirocto",
+    "time": "2025-02-22T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "164706906.47557599906",
+    "asset": "neirocto",
+    "time": "2025-02-23T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "135356608.85791444446",
+    "asset": "neirocto",
+    "time": "2025-02-24T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "154660583.81742011436",
+    "asset": "neirocto",
+    "time": "2025-02-25T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "168377101.29063233898",
+    "asset": "neirocto",
+    "time": "2025-02-26T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "168020557.70640645624",
+    "asset": "neirocto",
+    "time": "2025-02-27T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "178085246.99529250947",
+    "asset": "neirocto",
+    "time": "2025-02-28T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "153004109.59043620539",
+    "asset": "neirocto",
+    "time": "2025-03-01T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "160872741.11979641778",
+    "asset": "neirocto",
+    "time": "2025-03-02T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "952426361.215106049",
+    "asset": "neirocto",
+    "time": "2024-11-08T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1092681430.6861103421",
+    "asset": "neirocto",
+    "time": "2024-11-09T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1138993418.5053584286",
+    "asset": "neirocto",
+    "time": "2024-11-10T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1002816259.8314970915",
+    "asset": "neirocto",
+    "time": "2024-11-11T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1152113592.5578688472",
+    "asset": "neirocto",
+    "time": "2024-11-12T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "1044114198.9077210796",
+    "asset": "neirocto",
+    "time": "2024-11-13T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "866967452.6653997691",
+    "asset": "neirocto",
+    "time": "2024-11-14T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "920349462.6444706848",
+    "asset": "neirocto",
+    "time": "2024-11-15T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "854671629.495416931",
+    "asset": "neirocto",
+    "time": "2024-11-16T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "927902706.8036679678",
+    "asset": "neirocto",
+    "time": "2024-11-17T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "876503323.5047394183",
+    "asset": "neirocto",
+    "time": "2024-11-18T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "847235771.4116842155",
+    "asset": "neirocto",
+    "time": "2024-11-19T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "731226652.460006256",
+    "asset": "neirocto",
+    "time": "2024-11-20T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "824882387.667583542",
+    "asset": "neirocto",
+    "time": "2024-11-21T00:00:00.000000000Z"
+  },
+  {
+    "CapMrktEstUSD": "758648228.7069062949",
+    "asset": "neirocto",
+    "time": "2024-11-22T00:00:00.000000000Z"
+  }
+]
