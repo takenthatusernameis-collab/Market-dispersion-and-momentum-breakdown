@@ -22,6 +22,15 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Re-verified locally (no network, no 404 re-probe): frontier blocked=6127/cursor=6347/4 non-ASCII blockers; hypothesis registry states; grid_summary 216/216 OK, 0 Holm-rejected; canonical forward-block figures match integrity audits exactly.
 - No new code changes; blocker preserved.
 
+
+## Session outcome — 2026-10-25 (this session)
+- Re-read durable handoff + agent_task_message; mandate confirmed: HARMONY-CRYPTO-EDGE-004-DISPERSION-003, historical-only, free-data-only, no live/paper trading, no paid services or secrets.
+- Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); no data refresh attempted (structural); October 2026 Binance monthly archive 404, not re-probed.
+- Ran `python3 -m unittest discover -s tests`: 46 OK (1 pre-existing RuntimeWarning).
+- git diff: only __pycache__; DISPERSION-001/002 artifacts, DISPERSION-003 sealed forward block, integrity audits and defective archive all byte-unchanged.
+- Re-verified locally (no network, no 404 re-probe): frontier blocked=6127/cursor=6347/4 non-ASCII blockers; hypothesis registry states; grid_summary 216/216 OK, 0 Holm-rejected; canonical forward-block figures match integrity audits exactly.
+- No new code changes; blocker preserved. Focused on independent unblocked verification work per AGENTS.md.
+
 ## Blocker note (do not loop)
 The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 Binance archive is unpublished. If still blocked, preserve the blocker and move to an independent unblocked task (free-source discovery, validation, design, red-team) per AGENTS.md rather than re-probing the same endpoint. A repeat of the same failed endpoint is not a distinct attempt.
 
