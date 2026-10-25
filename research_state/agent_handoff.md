@@ -89,10 +89,13 @@ Constraints: free public data only (Coin Metrics Community API, Binance Public D
 - Confirmed frontier blocked=6127/cursor=6347/4 non-ASCII blockers; registry states unchanged; grid_summary 216/216 OK, 0 Holm-rejected; canonical forward block figures match integrity audits.
 - Updated handoff and wrote clear initial task message for next agent; blocker preserved. No frozen experiments altered.
 
-## Session outcome — 2026-10-25 (this session — handoff/task update)
-- Re-read durable handoff + agent_task_message; mandate confirmed. Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); October 2026 Binance monthly archive 404, not re-probed.
-- Ran `python3 -m unittest discover -s tests`: 46 OK (1 pre-existing RuntimeWarning). git diff: only __pycache__; DISPERSION-001/002 artifacts, DISPERSION-003 sealed forward block, integrity audits and defective archive all byte-unchanged.
-- Independent unblocked verification: frontier blocked=6127/cursor=6347/4 non-ASCII blockers; registry states unchanged; grid 216/216 OK, 0 Holm-rejected; canonical forward block figures match integrity audits (608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t=1.5482 not significant).
+## Session outcome — 2026-10-25 (this session — final verification + handoff refresh)
+- Re-read durable handoff + agent_task_message; mandate confirmed: HARMONY-CRYPTO-EDGE-004-DISPERSION-003, historical-only, free-data-only, no live/paper trading, no paid services or secrets.
+- Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); October 2026 Binance monthly archive 404, not re-probed per blocker note; no data refresh attempted.
+- Ran `python3 -m unittest discover -s tests`: 46 OK (1 pre-existing RuntimeWarning from the quarantined defective archive).
+- git diff: only __pycache__ (.pyc files); DISPERSION-001/002 artifacts, DISPERSION-003 sealed forward block, integrity audits, and defective archive all byte-unchanged; run_manifest.json untouched.
+- Re-verified locally (no network, no 404 re-probe): frontier blocked=6127/cursor=6347/4 non-ASCII blockers; hypothesis registry states unchanged (H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H6/H7 CANDIDATE_UNVALIDATED/H7 EXPLORATORY_ONLY; H2-H5 CANDIDATE_UNVALIDATED); grid_summary 216/216 OK, 0 Holm-rejected; canonical forward block figures match integrity audits exactly (608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t=1.5482 not significant).
+- Prior agent task concrete actions: item 1 (cutoff refresh via refresh_free_data.py) remains blocked until on/after 2026-10-29 — not re-probed; items 2-4 (independent unblocked work, full test suite, frontier/registry/manifest/handoff update) complete this session.
 - Updated handoff and wrote clear initial task message for next agent. Blocker preserved; no frozen experiments altered. Program stays ACTIVE.
 
 ## Session outcome — 2026-10-25 (this session — handoff/task update)
