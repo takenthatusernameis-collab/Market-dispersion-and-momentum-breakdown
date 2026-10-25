@@ -24,3 +24,4 @@ Continue quantitative research for HARMONY-CRYPTO-EDGE-004-DISPERSION-003. Histo
 
 Constraints: free public data only (CoinMetrics Community API, Binance Public Data Archive; keyless), historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All grid cells carry one of OK/BLOCKED/INVALID/FAILED/NOT_RUN with a reason. Do not relax the fixed 30-day outcome maturity rule; do not open a sealed holdout to rescue progress; never reuse an inspected holdout as independent evidence.
 EOF
+echo done
