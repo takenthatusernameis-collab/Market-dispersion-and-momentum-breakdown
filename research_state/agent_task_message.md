@@ -5,7 +5,7 @@ Read the full handoff: `research_state/agent_handoff.md`
 ## Mandate
 Continue quantitative research for HARMONY-CRYPTO-EDGE-004-DISPERSION-003. Historical-only, free-data-only. No live/paper trading. No paid services or secrets. Do not wait for a user-provided experiment ID; the program stays ACTIVE and the next task must be executable without one.
 
-## Verified state on handoff (2026-10-25T09:05Z, re-verified this session)
+## Verified state on handoff (2026-10-25T09:09Z, re-verified this session)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-25; gate requires data cutoff >= 2026-10-29. October 2026 Binance monthly archive still 404; NOT re-probed per blocker note. Do not re-probe the same 404 endpoint.
 - Grid manifest: deterministic, byte-identical regeneration (scripts/generate_grid_v3_manifest.py); 216 cells H004V001-H004V216; anchors H004V105 (legacy) and H004V106 (expanding) match preregistration; grid executed 216/216 OK, 0 Holm-rejected (grid_summary.json).
 - Canonical sealed forward block (forward_block/forward_block_evaluation.json, H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 completed 30-day formations; state counts high=61/low=90/mid=457; high_low_diff_net_1x = +0.6165223953929935; spread_net_1x mean=+0.0996, median=-0.0106; all 608 spreads finite; Newey-West HAC lag 29: t=1.5482, 95% CI [-0.164, 1.397], NOT significant. Development/exploratory evidence only — already inspected; NOT independent confirmation; NOT reused as a fresh test. Byte-unchanged.
