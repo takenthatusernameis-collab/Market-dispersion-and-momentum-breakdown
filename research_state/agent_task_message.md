@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (2026-10-25T17:10Z)
+## Current state (2026-10-25T17:11Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-25 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note. Do not re-probe the same 404 endpoint.
 - DISPERSION-001/002 unchanged; artifacts immutable.
 - DISPERSION-003: grid 216/216 OK, 0 Holm-rejected (grid_summary.json). Canonical sealed forward block (H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t~1.55 not significant. Integrity audits present and byte-consistent. Defective archive quarantined.
@@ -16,4 +16,3 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 4. Update frontier/registry/manifests/handoff; leave a concrete executable next action. Never wait for user-provided experiment ID.
 
 Constraints: free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells must carry states with reasons. Do not relax fixed-30-day outcome maturity; do not open sealed holdout to rescue progress.
-EOF
