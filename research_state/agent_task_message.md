@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (2026-10-25T10:11Z)
+## Current state (2026-10-25T10:16Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-25 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note. Do not re-probe the same 404 endpoint.
 - DISPERSION-001/002 unchanged; artifacts immutable.
 - DISPERSION-003: grid 216/216 OK, 0 Holm-rejected (grid_summary.json). Canonical sealed forward block (H004V106, cutoff 2026-09-30): 608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t=1.5482 not significant. Integrity audits present and byte-consistent. Defective archive quarantined.
@@ -11,7 +11,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Concrete next action (priority order)
 1. On/after 2026-10-29 (or once October 2026 Binance monthly archive publishes), re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`. Only proceed when cutoff >= 2026-10-29. Preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes. Require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family before any promotion claim.
-2. Until unblocked, continue independent unblocked work per AGENTS.md: free-source discovery, validation, design, or red-team. Record every blocker with reason; do not loop on the 404 endpoint.
+2. Until unblocked, continue independent unblocked work per AGENTS.md: free-source discovery (re-walk catalog when it may gain new listings), validation, design, or red-team. Record every blocker with reason; do not loop on the 404 endpoint.
 3. Run full test suite; confirm DISPERSION-001/002 and DISPERSION-003 sealed forward block/integrity audits/defective archive byte-unchanged apart from recorded changes.
 4. Update frontier/registry/manifests/handoff; leave a concrete executable next action. Never wait for user-provided experiment ID.
 
