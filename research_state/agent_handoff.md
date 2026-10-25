@@ -43,5 +43,12 @@ Multiple prior sessions re-confirmed the same blocked state; test count moved 45
 3. Run the full test suite (`python3 -m unittest discover -s tests`); confirm DISPERSION-001/002 and the DISPERSION-003 sealed forward block / integrity audits / defective archive are byte-unchanged apart from the recorded funding-panel reseal.
 4. Update the candidate frontier, hypothesis registry, manifests and handoff; leave a concrete, executable next action for the following agent. Never wait for a user-provided experiment ID; the program stays ACTIVE.
 
+## Session outcome — 2026-10-25 (current work)
+- Cutoff gate still BLOCKED (2026-10-25 < 2026-10-29); October 2026 Binance monthly archive 404, not re-probed.
+- Free-source discovery: re-walked CoinMetrics community catalog via scripts/discover_candidates.py; walked 6347 entries, 0 newly discovered at cursor 6347 (catalog not grown); candidates_discovered empty, nothing to validate. Recorded in universe_frontier.json catalog_discovery (newly_discovered=0).
+- Ran `python3 -m unittest discover -s tests`: 46 OK (1 pre-existing RuntimeWarning); test_forward_block_reproducible_at_frozen_cutoff OK.
+- git diff: only universe_frontier.json (catalog_discovery timestamps) and __pycache__; DISPERSION-001/002 artifacts, DISPERSION-003 sealed forward block, integrity audits and defective archive all byte-unchanged.
+- Canonical forward block re-verified (608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t=1.5482 not significant). Blocker preserved; no frozen experiment altered.
+
 Constraints: free public data only (Coin Metrics Community API, Binance Public Data Archive; keyless), historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All grid cells carry one of OK/BLOCKED/INVALID/FAILED/NOT_RUN with a reason. Do not relax the fixed 30-day outcome maturity rule; do not open a sealed holdout to rescue progress.
 EOF
