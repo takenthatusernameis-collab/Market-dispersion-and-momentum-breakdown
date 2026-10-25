@@ -50,7 +50,7 @@ class ContinuousResearchContractTests(unittest.TestCase):
         self.assertIn("no fixed top-N cutoff", frontier["rank_policy"])
         self.assertGreater(frontier["next_candidate_batch_size"], 0)
 
-def test_registry_keeps_old_hypothesis_and_active_sequence(self):
+    def test_registry_keeps_old_hypothesis_and_active_sequence(self):
         registry = json.loads(REGISTRY_PATH.read_text())
         self.assertEqual(registry["program_status"], "ACTIVE")
         # next_sequence_number tracks the highest registered hypothesis id;
