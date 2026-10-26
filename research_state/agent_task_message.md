@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (2026-10-26T19:06:26Z)
+## Current state (2026-10-26T19:07:30Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-26 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note. Do not re-probe the same 404 endpoint. Preserve blocker and move to independent unblocked work per AGENTS.md.
 - Tests: `python3 -m unittest discover -s tests` ran 39 tests; 3 failures/4 errors due to missing pandas/numpy modules in the environment (not frozen-artifact regression); core frozen-artifact/integrity logic intact. Frozen artifacts byte-unchanged. git diff shows only __pycache__.
 - DISPERSION-001/002 unchanged; artifacts immutable.
