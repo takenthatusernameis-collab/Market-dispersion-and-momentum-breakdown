@@ -2,9 +2,9 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (2026-10-26T12:46:20Z)
+## Current state (2026-10-26T12:44:24Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-26 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note. Do not re-probe the same 404 endpoint. Preserve blocker and move to independent unblocked work per AGENTS.md.
-- Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts unchanged.
+- Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning from quarantined defective archive). git status shows only __pycache__; frozen artifacts byte-unchanged.
 - DISPERSION-001/002 unchanged; artifacts immutable.
 - DISPERSION-003: grid 216/216 OK, 0 Holm-rejected (grid_summary.json). Canonical sealed forward block (H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t~1.55 not significant. Integrity audits present and byte-consistent. Defective archive quarantined. Byte-unchanged.
 - H8 (EXPLORATORY_ONLY, DISP-003-STATEAUDIT-001): state-representativeness audit shows canonical H004V106 +0.617 is CLUSTER_DOMINATED by 2025-10 (dropping 2025-10 moves estimate to +0.093; high states in only 7 months). Exploratory only; cannot validate/refute H1/H6/H7 or unlock confirmatory track.
