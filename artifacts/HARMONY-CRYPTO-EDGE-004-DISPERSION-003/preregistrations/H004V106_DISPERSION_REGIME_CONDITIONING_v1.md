@@ -1,57 +1,43 @@
-# Preregistration — H9: Dispersion Regime Conditioning (DISP-003-REGIME-001)
-Experiment ID: HARMONY-CRYPTO-EDGE-004-DISPRESSION-003-REGIME-001
-Status: EXPLORATORY_ONLY
-Date: 2026-10-25T21:15Z
+# Preregistration — H004V106 Dispersion-Regime Conditioning (DISP-003-REGIME-001)
 
-## 1. Motivation (evidence that motivates this test)
-The canonical H004V106 sealed forward block (608 formations, 2025-01-01..2026-08-31,
-cutoff 2026-09-30) shows high_low_diff_net_1x = +0.6165, but the state-representativeness
-audit (DISP-003-STATEAUDIT-001, H8) labels it CLUSTER_DOMINATED: the entire positive
-estimate is carried by the 31 formations in calendar month 2025-10 (mean +1.046),
-which are the ONLY high-state formations in that month, and dropping 2025-10 moves the
-estimate to +0.093. High states occur in only 7 of 20 calendar months and none after
-2025-11.
+- **Program**: HARMONY-CRYPTO-EDGE-004 DISPERSION-003
+- **Experiment ID**: HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-001
+- **Preregistered**: 2026-10-26T01:15Z
+- **Status**: EXPLORATORY_ONLY (development data only; no fresh holdout; cannot validate/refute H1/H6/H7/H8)
+- **Trigger**: H8 (DISP-003-STATEAUDIT-001) `next_test`: "If the mechanism is cluster-driven, test whether it survives (a) a rolling/adaptive shorter dispersion reference window and (b) conditioning on the 2025-10 dispersion regime, each under a NEW preregistered experiment ID on development data only."
 
-This is a measurement-feasibility finding on already-inspected development evidence.
-It does NOT validate or refute H1/H6/H7 and does NOT unlock the confirmatory track.
+## Motivation
+The canonical H004V106 forward block's +0.617 high-minus-low estimate is CLUSTER_DOMINATED by the 2025-10 calendar month (31 of 61 high formations; dispersion ~5x the rest of the block). Before concluding the dispersion-state mechanism is non-representative, we test whether the *level* of dispersion itself predicts the spread, i.e. whether the high/low state label is merely a coarse proxy for a continuous dispersion-spread relationship.
 
-## 2. Question
-Is the positive high-minus-low spread concentrated in a *dispersion regime* (i.e. a
-range of absolute dispersion levels) rather than in a calendar month? If the effect is
-genuinely regime-driven, conditioning on dispersion level should show a consistent
-pattern; if it is calendar-cluster noise, the pattern should collapse once 2025-10 is
-removed.
+## Data
+Read-only canonical sealed forward block:
+`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`
+608 formations, 2025-01-01..2026-08-31, cutoff 2026-09-30. No frozen artifact modified.
 
-## 3. Estimand and population
-- Population: the 608 completed formations in the canonical sealed forward block
-  (read-only; no frozen artifact modified).
-- Sub-populations: terciles of the formation-level `dispersion` field, computed from
-  the FULL 608-formation distribution (fixed, precomputed thresholds), NOT split
-  within each month.
-- Outcome: spread_net_1x per formation; contrast high vs low state within each
-  dispersion tercile.
+## Predeclared analyses (all descriptive/exploratory; no inference claims)
 
-## 4. Predeclared decision rule (fixed before computation)
-- Compute n_high, n_low, high_mean, low_mean, high_minus_low diff, and the
-  spread_net_1x mean for each dispersion tercile, BOTH on the full block AND on the
-  block with 2025-10 removed.
-- Label REGIME_CONSISTENT if: (a) high states appear in >=2 terciles, and (b) the
-  high-minus-low diff has the same sign in >=2 terciles that contain both high and
-  low states, and (c) the sign is preserved after removing 2025-10.
-- Otherwise label REGIME_INCONSISTENT.
-- In ALL branches the status is EXPLORATORY_ONLY. No statistical significance test is
-  performed; this is a descriptive/feasibility diagnostic.
+### A. Continuous dispersion-spread association
+- Compute Pearson and Spearman correlation between `dispersion` and `spread_net_1x` over all 608 formations.
+- Repeat with 2025-10 excluded (n=577).
+- Predeclared interpretation rule: if |r| >= 0.30 after excluding 2025-10, label CONTINUOUS_ASSOCIATION_PRESENT; else WEAK_CONTINUOUS_ASSOCIATION.
 
-## 5. Hard safeguards
-- No look-ahead: dispersion tercile thresholds are computed from the formation-level
-  dispersion field only; the outcome field is never used to define the regime.
-- No forward-fill, no invented observations, no truncation.
-- The canonical forward block is read-only; byte-identical after this run.
-- No new market data fetched; no paid sources.
-- This is exploratory diagnostic evidence on development data. It cannot serve as
-  independent confirmation and cannot promote any hypothesis.
+### B. Dispersion-regime split (H8 next_test (b))
+- Split formations into two regimes by the full-block median of `dispersion`.
+- Within each regime compute: n, n_high, n_low, mean spread_net_1x, and high-minus-low diff (where high/low states exist).
+- Predeclared interpretation rule: if the high-minus-low diff has the same sign in both regimes and both regimes contain >= 10 high AND >= 10 low formations, label REGIME_ROBUST; else REGIME_SPARSE / SIGN_FLIP.
 
-## 6. Output
-New artifact: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/
-             H004V106_dispersion_regime_conditioning_20261025.json
-New test: tests/test_dispersion_regime_conditioning.py
+### C. 2025-10 conditioning
+- Compute the high-minus-low diff with 2025-10 formations *included* vs *excluded*.
+- Predeclared interpretation rule: report the delta fraction vs baseline (+0.6165) descriptively; no label change (this reproduces H8's leave-one-out finding and is recorded only to anchor the conditioning analysis).
+
+### D. Dispersion quantile-bucket profile
+- Bucket formations by decile of `dispersion` (full block).
+- Per bucket: n, n_high, n_low, mean spread_net_1x.
+- Predeclared interpretation rule: report descriptively; look for monotonicity of mean spread across dispersion deciles.
+
+## Decision rules (predeclared, no post-hoc tuning)
+- All four analyses are EXPLORATORY_ONLY. No result here can promote a hypothesis, unlock the confirmatory track, or be cited as independent confirmation.
+- A genuinely fresh sealed forward block with formations after 2026-09-29 remains required for any confirmatory claim.
+
+## Exclusions
+- None. All 608 formations are used; no outcome-informed exclusions.
