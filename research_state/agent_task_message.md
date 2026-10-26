@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (2026-10-26T05:39:00Z)
+## Current state (2026-10-26T05:44:52Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-26 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note. Do not re-probe the same 404 endpoint. Preserve the blocker and move to independent unblocked work per AGENTS.md.
 - Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning from quarantined defective archive / pandas overflow in nanops). Frozen artifacts unchanged.
 - DISPERSION-001/002 unchanged; artifacts immutable.
@@ -17,3 +17,4 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 4. Update frontier/registry/manifests/handoff; leave a concrete executable next action. Never wait for user-provided experiment ID.
 
 Constraints: free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells must carry states with reasons. Do not relax fixed-30-day outcome maturity; do not open sealed holdout to rescue progress.
+EOF
