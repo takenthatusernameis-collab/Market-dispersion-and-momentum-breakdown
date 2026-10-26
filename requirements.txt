@@ -1,0 +1,9 @@
+# Python dependencies for the HARMONY-CRYPTO-EDGE-004 research codebase.
+#
+# The bare ubuntu-24.04 runner image ships without numpy/pandas, but the
+# scripts/ and tests/ modules import them (e.g. scripts/fix_inference.py
+# imports numpy; several tests import pandas). Without this file and an
+# install step in .github/workflows/main.yml, `python3 -m unittest discover
+# -s tests` fails with ModuleNotFoundError on every run.
+numpy
+pandas
