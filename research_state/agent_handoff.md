@@ -10,14 +10,14 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program status ACTIVE.
 - All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier.
 
-## Session outcome — 2026-10-27T21:38Z (this session)
-- Read prior agent task from durable handoff and agent_task_message; mandate confirmed.
-- Verified tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning). Frozen artifacts byte-unchanged; working tree clean apart from __pycache__ bytecode.
-- Validated JSON state files parse cleanly (universe_frontier.json, hypothesis_registry.json, run_manifest.json). Confirmed canonical forward block values and integrity audits present.
-- Cutoff gate still BLOCKED (today 2026-10-27 < 2026-10-29; October 2026 Binance monthly archive still 404; not re-probed per blocker note). Preserve blocker.
-- Catalog exhausted (cursor 6347); no new candidates. Rank coverage NOT_PROVEN_COMPLETE.
-- H8 (DISP-003-STATEAUDIT-001) EXPLORATORY_ONLY — canonical H004V106 +0.617 is cluster-dominated (2025-10); development/exploratory evidence only, already inspected, not independent confirmation.
-- No new independent unblocked work available while catalog exhausted and cutoff blocked. Blockers preserved with reasons.
+## Session outcome — 2026-10-27T21:40Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; mandate confirmed; prior session's outcome already complete (tests 50 OK, state verified, blockers preserved, handoff/task message written).
+- Re-verified this session: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree clean apart from __pycache__ bytecode (git diff shows only bytecode; no source or frozen-artifact changes).
+- Re-validated JSON state files parse cleanly (universe_frontier.json, hypothesis_registry.json, run_manifest.json). Confirmed canonical forward block values (608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC t=1.5482 not significant) and all four integrity audits present in artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/. Defective archive remains quarantined and byte-unchanged.
+- Cutoff gate still BLOCKED (today 2026-10-27 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note). Preserve blocker; do not re-probe the same endpoint.
+- Catalog exhausted (cursor 6347); candidates_discovered=[]; nothing to validate. Rank coverage NOT_PROVEN_COMPLETE.
+- H8 (DISP-003-STATEAUDIT-001) EXPLORATORY_ONLY — canonical H004V106 +0.617 is CLUSTER_DOMINATED by 2025-10 (drop-2025-10 -> +0.093, -84.9%); development/exploratory evidence only, already inspected, not independent confirmation; not reused as a fresh test.
+- No new independent unblocked work available while catalog exhausted and cutoff blocked. Blockers preserved with reasons. universe_frontier.json, hypothesis_registry.json, run_manifest.json unchanged this session (no new candidates, no status changes).
 - Updated handoff and wrote clear initial task message for next agent.
 
 ## Blocker note (do not loop)
