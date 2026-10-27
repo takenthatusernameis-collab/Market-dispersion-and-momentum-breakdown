@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-27T07:45Z)
+## State on handoff (verified 2026-10-27T07:47Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-27 < 2026-10-29. October 2026 Binance monthly archive still 404; NOT re-probed per blocker note. Do not re-probe the same 404 endpoint. Preserve blocker and move to independent unblocked work per AGENTS.md.
 - Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; git diff shows only __pycache__.
 - DISPERSION-001/002 unchanged; artifacts immutable.
@@ -11,7 +11,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (state-representativeness audit CLUSTER_DOMINATED). Program status ACTIVE.
 - All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier.
 
-## Session outcome — 2026-10-27T07:45Z (this session)
+## Session outcome — 2026-10-27T07:47Z (this session)
 - Read prior agent task from durable handoff and agent_task_message; mandate confirmed.
 - Verified tests: `python3 -m unittest discover -s tests` -> 50 OK. Frozen artifacts unchanged; git diff limited to __pycache__ only.
 - Validated JSON state files parse cleanly; frontier re-checked (catalog exhausted, no new candidates).
