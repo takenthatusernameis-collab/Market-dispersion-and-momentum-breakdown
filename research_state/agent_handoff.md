@@ -20,12 +20,13 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - No new independent unblocked work available while catalog exhausted and cutoff blocked. Blockers preserved with reasons.
 - Updated handoff and wrote clear initial task message for next agent.
 
-## Session outcome — 2026-10-27T21:34Z (this session)
+## Session outcome — 2026-10-27T21:35Z (this session)
 - Read prior agent task from durable handoff and agent_task_message; mandate confirmed.
 - Verified tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning). Frozen artifacts byte-unchanged; working tree clean apart from __pycache__ bytecode.
 - Validated JSON state files parse cleanly (universe_frontier.json, hypothesis_registry.json, run_manifest.json). Confirmed canonical forward block values and integrity audits present.
 - Cutoff gate still BLOCKED (today 2026-10-27 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note). Preserve blocker.
-- Catalog exhausted; no new candidates. Rank coverage NOT_PROVEN_COMPLETE.
+- Catalog exhausted (cursor 6347); no new candidates. Rank coverage NOT_PROVEN_COMPLETE.
+- H8 (DISP-003-STATEAUDIT-001) EXPLORATORY_ONLY — canonical H004V106 +0.617 is cluster-dominated (2025-10); development/exploratory evidence only, already inspected, not independent confirmation.
 - No new independent unblocked work available while catalog exhausted and cutoff blocked. Blockers preserved with reasons.
 - Updated handoff and wrote clear initial task message for next agent.
 
