@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-27T20:29Z)
+## State on handoff (verified 2026-10-27T20:31Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-27 < 2026-10-29. October 2026 Binance monthly archive still 404; NOT re-probed per blocker note. Do not re-probe the same 404 endpoint. Preserve blocker and move to independent unblocked work per AGENTS.md.
 - Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree clean apart from __pycache__ bytecode.
 - DISPERSION-001/002 unchanged (immutable). DISPERSION-003 grid 216/216 OK, 0 Holm-rejected (grid_summary.json). Canonical sealed forward block (H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165223953929935, spread_net_1x mean=+0.0996 median=-0.0106; all 608 spreads finite; HAC lag 29 t=1.5482, 95% CI [-0.164,1.397] not significant. Integrity audits present in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/` (forward_block_integrity_audit.json, forward_block_independent_recomputation_20261025.json, forward_block_hac_addendum_20261024.json, H004V106_state_representativeness_audit_20261025.json). Defective archive quarantined at `artifacts/quarantine/defective_forward_block_20261024/` and byte-unchanged. Development/exploratory evidence only — already inspected; NOT independent confirmation; NOT reused as a fresh test.
@@ -19,6 +19,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - H004V106 canonical sealed forward block audited (integrity/recomputation/HAC/representativeness); development/exploratory only, already inspected, NOT independent confirmation. Defective archive quarantined byte-unchanged.
 - No new independent unblocked work available while catalog exhausted and cutoff blocked. Blockers preserved with reasons.
 - Updated handoff and wrote clear initial task message for next agent.
+- Independently re-verified 2026-10-27T20:31Z: tests 50 OK (1 pre-existing RuntimeWarning), JSON state files parse cleanly, git working tree clean apart from __pycache__ bytecode, all frozen artifacts byte-unchanged. No change to prior outcome.
 
 ## Blocker note (do not loop)
 The cutoff gate is structural: 2026-10-29 has not occurred and the October 2026 Binance archive is unpublished. If still blocked, preserve the blocker and move to an independent unblocked task (free-source discovery, validation, design, red-team) per AGENTS.md rather than re-probing the same endpoint. A repeat of the same failed endpoint is not a distinct attempt.
