@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-27T22:30Z)
+## Current state (verified 2026-10-27T22:31Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-27 < 2026-10-29; October 2026 Binance monthly archive 404; NOT re-probed. Do not re-probe same 404 endpoint. Preserve blocker, move to independent unblocked work per AGENTS.md.
 - Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning). Frozen artifacts byte-unchanged; working tree clean apart from __pycache__ bytecode.
 - DISPERSION-001/002 unchanged (immutable). DISPERSION-003 grid 216/216 OK, 0 Holm-rejected (grid_summary.json). Canonical sealed forward block (H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165223953929935, spread_net_1x mean=+0.0996 median=-0.0106; all 608 spreads finite; HAC lag 29 t=1.5482, 95% CI [-0.164,1.397] not significant. Integrity audits present. Defective archive quarantined, byte-unchanged. Development/exploratory evidence only — already inspected; NOT independent confirmation; NOT reused as a fresh test. H8 (DISP-003-STATEAUDIT-001): EXPLORATORY_ONLY, CLUSTER_DOMINATED by 2025-10 (dropping 2025-10 moves estimate to +0.093, -84.9%).
