@@ -5,7 +5,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 ## Current state (verified 2026-10-27T19:36Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-27 < 2026-10-29; October 2026 Binance monthly archive 404; NOT re-probed. Do not re-probe same 404 endpoint. Preserve blocker, move to independent unblocked work per AGENTS.md.
 - Tests: `python3 -m unittest discover -s tests` -> 50 OK (1 pre-existing RuntimeWarning). Frozen artifacts byte-unchanged.
-- DISPERSION-001/002 unchanged (immutable). DISPERSION-003 grid 216/216 OK, 0 Holm-rejected. Canonical sealed forward block (H004V106, cutoff 2026-09-30): present, inspected, development/exploratory only — not independent confirmation. Integrity audits present (4 files). Defective archive quarantined, byte-unchanged.
+- DISPERSION-001/002 unchanged (immutable). DISPERSION-003 grid 216/216 OK, 0 Holm-rejected. Canonical sealed forward block (H004V106, cutoff 2026-09-30): present under artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/, inspected, development/exploratory only — not independent confirmation. Integrity audits under artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/ (4 files). Defective archive quarantined, byte-unchanged.
 - Frontier: catalog exhausted (cursor 6347), candidates_discovered=[], candidates_verified=220, candidates_blocked=6127, to_process=None/0. 4 non-ASCII IDs blocked (我踏马来了, 牛来, 老子, 龙虾). Rank coverage NOT_PROVEN_COMPLETE.
 - H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program ACTIVE.
 
