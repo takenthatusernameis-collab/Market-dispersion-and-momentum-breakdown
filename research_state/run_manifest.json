@@ -30,5 +30,5 @@
     "canonical_block_impact": "None on outcomes: eval_forward_block.py loads funding into fd but never uses it. Re-sealing at the frozen cutoff 2026-09-30 reproduced 608 formations and high_low_diff_net_1x = 0.6165223953929935 byte-identically. Only the 32 stored input_file_hashes for funding panels changed; evaluated_utc preserved.",
     "regression_test": "tests/test_forward_block_integrity.py::test_funding_panels_have_aligned_header_and_data"
   },
-  "last_updated_utc": "2026-10-28T07:32:43Z"
+  "last_updated_utc": "2026-10-28T07:33:45Z"
 }
