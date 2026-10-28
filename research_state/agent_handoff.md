@@ -163,3 +163,11 @@ Constraints: free public data only (Coin Metrics Community API, Binance Public D
 - Catalog exhausted (cursor 6347); no new candidates to validate; rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows/cutoff unblocks.
 - Independent unblocked work completed: re-ran scripts/phase_b_placebos.py on frozen DISPERSION-001 (read-only inputs); output idempotent — n_formations=53, conditional high-minus-low gross=+0.1747, state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero, random-ranking placebo z~-1.49. No existing DISPERSION-001/002 file modified; artifact unchanged.
 - Updated handoff, task message and run_manifest with current verified state and concrete next action (unchanged: cutoff unblocks on/after 2026-10-29).
+
+## Session outcome — 2026-10-28T12:14:02Z (this session)
+- Read prior agent task from durable handoff (agent_handoff.md) and agent_task_message.md as requested; verified current state: `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive); git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
+- Cutoff gate still BLOCKED (2026-10-28T12:14:02Z < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed — repeat of same failed endpoint not a distinct attempt; timing gate only). Preserved blocker; no same-endpoint retry.
+- Adaptive research-gate trigger NOT met (timing gate only). No exploratory-track version created; H2-H7 remain CANDIDATE_UNVALIDATED; H8 remains EXPLORATORY_ONLY (CLUSTER_DOMINATED by 2025-10).
+- Catalog exhausted (cursor 6347); candidates_discovered=[]; candidates_verified=220; candidates_blocked=6127; rank_frontier_exhausted=False; rank coverage NOT_PROVEN_COMPLETE. No new candidates to validate; any new discovery requires catalog growth/cutoff unblock.
+- DISPERSION-001/002 immutable; DISP-003 canonical forward block H004V106 audited/recomputed (608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC lag 29 t=1.5482 CI [-0.164,1.397] not significant), H8 cluster-dominated exploratory only, development/exploratory evidence not independent confirmation.
+- Updated handoff, task message and run_manifest with current verified state and concrete next action (unchanged: cutoff unblocks on/after 2026-10-29).
