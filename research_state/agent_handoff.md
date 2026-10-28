@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-28T10:19:34Z)
+## State on handoff (verified 2026-10-28T10:24:03Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed per blocker note. Do NOT re-probe the same 404 endpoint (repeat of same failed endpoint is not a distinct attempt). Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 59 OK (50 pre-existing + 9 state-consistency checks in tests/test_state_consistency.py; 1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree has __pycache__ bytecode changes only.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team (scripts/phase_b_placebos.py) on frozen DISPERSION-001: artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json` present (n_formations=53, conditional high-minus-low gross=+0.1747; state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero; random-ranking placebo z~-1.49). No DISPERSION-001/002 files modified. EXPLORATORY_ONLY.
@@ -40,6 +40,13 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Read prior agent task from durable handoff and agent_task_message; verified current state: tests `python3 -m unittest discover -s tests` -> 59 OK; git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
 - Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available.
+- Updated timestamps in handoff, task message and run_manifest; left concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
+
+## Session outcome — 2026-10-28T10:24:03Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; verified current state: tests `python3 -m unittest discover -s tests` -> 59 OK; git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
+- Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
+- Bounded read-only unblocked work completed: independent in-memory recomputation of canonical H004V106 sealed forward block (608 formations, n_high=61/n_low=90/n_mid=457, high_low_diff_net_1x=0.6165223953929935 within 2e-16 floating-point of stored value, all finite, sealed last formation 2026-08-31 / cutoff 2026-09-30); matches stored forward_block_independent_recomputation_20261025 artifact. No artifact modified.
+- Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows.
 - Updated timestamps in handoff, task message and run_manifest; left concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
 
 ## Concrete next action (next agent, priority order)
