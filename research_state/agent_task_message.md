@@ -2,10 +2,10 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-28T16:32:23Z this session)
-- Cutoff gate: BLOCKED (timing). Today 2026-10-28T16:32:23Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — a repeat of the same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
-- Tests: `python3 -m unittest discover -s tests` -> 64 OK (59 pre-existing + 5 new regime-conditioning tests; 1 pre-existing RuntimeWarning from quarantined defective archive panel handling). git status shows __pycache__ bytecode changes plus tracked research files from prior session. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/` empty).
-- DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json`: n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
+## Current state (verified 2026-10-28T17:09:44Z this session)
+- Cutoff gate: BLOCKED (timing). Today 2026-10-28T17:09:44Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — a repeat of the same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
+- Tests: `python3 -m unittest discover -s tests` -> 64 OK (59 pre-existing + 5 new regime-conditioning tests; 1 pre-existing RuntimeWarning from quarantined defective archive panel handling). git status shows only __pycache__ bytecode changes. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/` empty).
+- DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
 - DISPERSION-003 grid 216/216 OK, 0 Holm-rejected. Canonical sealed forward block H004V106 (cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant. Integrity audits under `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/`; defective archive quarantined at `artifacts/quarantine/defective_forward_block_20261024/` byte-unchanged. Development/exploratory evidence only — NOT independent confirmation; NOT reused as fresh test. H8: EXPLORATORY_ONLY, CLUSTER_DOMINATED by 2025-10.
 - REGIME-001 (DISP-003-REGIME-001, preregistered 2026-10-26) executed 2026-10-28T16:21:40Z on frozen canonical H004V106 block (read-only): continuous dispersion-spread association WEAK_CONTINUOUS_ASSOCIATION (spearman -0.153 excl 2025-10, |r|<0.30); dispersion-regime split REGIME_SPARSE_OR_SIGN_FLIP; 2025-10 conditioning reproduces H8 delta frac -0.849; dispersion decile profile descriptive. All EXPLORATORY_ONLY, does not unlock confirmatory track. Artifact `integrity_audit/H004V106_dispersion_regime_conditioning_20261028.json`, script `scripts/dispersion_regime_conditioning.py`, tests `tests/test_dispersion_regime_conditioning.py`.
 - Frontier: catalog discovery exhausted (cursor 6347), candidates_discovered=[], candidates_verified=220, candidates_blocked=6127, rank_frontier_exhausted=False, rank coverage NOT_PROVEN_COMPLETE; no fixed top-N cutoff. No new candidates to validate; any new discovery requires catalog growth.
@@ -22,3 +22,5 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells OK/BLOCKED/INVALID/FAILED/NOT_RUN with reason. No relaxation of the 30-day maturity rule; do not open sealed holdout.
+EOF
+echo done
