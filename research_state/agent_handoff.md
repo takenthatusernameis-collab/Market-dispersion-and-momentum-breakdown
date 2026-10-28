@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-28T08:34:03Z)
+## State on handoff (verified 2026-10-28T09:12:50Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed per blocker note. Do NOT re-probe the same 404 endpoint (repeat of same failed endpoint is not a distinct attempt). Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 59 OK (50 pre-existing + 9 state-consistency checks in tests/test_state_consistency.py; 1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree has __pycache__ bytecode changes only.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team (scripts/phase_b_placebos.py) on frozen DISPERSION-001: artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json` present (n_formations=53, conditional high-minus-low gross=+0.1747; state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero; random-ranking placebo z~-1.49). No DISPERSION-001/002 files modified. EXPLORATORY_ONLY.
@@ -11,7 +11,13 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program status ACTIVE.
 - All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier (enforced by tests/test_state_consistency.py). research_state/run_manifest.json updated (last_updated_utc 2026-10-28T08:33:18Z).
 
-## Session outcome — 2026-10-28T08:34:03Z (this session)
+## Session outcome — 2026-10-28T09:12:50Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; verified current state (tests 59 OK, git shows only __pycache__ changes, frozen artifacts byte-unchanged).
+- Confirmed cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
+- Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
+- Reviewed canonical forward block integrity audits and H8 cluster-dominance. Evidence remains exploratory; no independent confirmation. Phase B placebo artifact (DISP-001) present and idempotent.
+- Updated research_state/agent_handoff.md, research_state/agent_task_message.md and research_state/run_manifest.json (last_updated_utc 2026-10-28T09:12:50Z).
+- Left concrete next action for following agent.
 - Read prior agent task from durable handoff and agent_task_message; verified current state (tests 59 OK, git shows only __pycache__ changes, frozen artifacts byte-unchanged).
 - Confirmed cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
