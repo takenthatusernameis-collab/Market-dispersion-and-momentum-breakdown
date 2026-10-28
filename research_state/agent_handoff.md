@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (re-verified 2026-10-28T18:45:34Z this session)
+## State on handoff (re-verified 2026-10-28T19:29:19Z this session)
 - Cutoff gate: BLOCKED (timing). Today 2026-10-28T18:45:34Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — repeat of same failed endpoint is not a distinct attempt; timing gate only (archive not yet published). Preserve blocker and do independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 71 OK (59 pre-existing + 5 regime-conditioning + 7 rolling-window REGIME-002 tests; 1 pre-existing RuntimeWarning from quarantined defective archive panel handling). `git diff --stat -- artifacts/` shows no changes. Frozen artifacts byte-unchanged.
 - JSON state files parse cleanly (hypothesis_registry.json, run_manifest.json, universe_frontier.json); state consistent across handoff/task message/registry/manifest/frontier (enforced by tests/test_state_consistency.py).

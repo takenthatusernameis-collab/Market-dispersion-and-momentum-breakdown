@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-28T18:42:32Z this session)
+## Current state (verified 2026-10-28T19:29:19Z this session)
 - Cutoff gate: BLOCKED (timing). Today 2026-10-28T18:42:32Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 71 OK (59 pre-existing + 5 regime-conditioning + 7 rolling-window REGIME-002 tests; 1 pre-existing RuntimeWarning from quarantined defective archive panel handling). `git diff --stat -- artifacts/` empty. Frozen artifacts byte-unchanged.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
