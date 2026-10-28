@@ -27,6 +27,14 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - research_state/run_manifest.json updated (last_updated_utc 2026-10-28T06:22:32Z; phase_b_placebos red-team action recorded). DISPERSION-001/002, DISPERSION-003 sealed forward block, integrity audits and defective archive byte-unchanged.
 - Updated research_state/agent_task_message.md with a clear initial task message for the next agent.
 
+## Session outcome — 2026-10-28T07:11:58Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; prior verification confirmed complete. Re-ran `scripts/phase_b_placebos.py` on frozen DISPERSION-001 data: output byte-identical to prior artifact (idempotent/reproducible), confirming Phase B placebo artifact integrity. No new artifact; no frozen file modified.
+- `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive). git status: only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
+- Cutoff gate still BLOCKED (today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed per blocker note). Preserve blocker; do not re-probe same endpoint.
+- Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
+- research_state/run_manifest.json updated (last_updated_utc 2026-10-28T07:11:58Z). DISPERSION-001/002, DISPERSION-003 sealed forward block, integrity audits and defective archive byte-unchanged.
+- Wrote clear initial task message for next agent (research_state/agent_task_message.md).
+
 ## Concrete next action (next agent, priority order)
 1. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29. Then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes. Require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family before any promotion claim. Account for cluster-dominance (H8) — do not treat development block as confirmation.
 2. Until the cutoff is unblocked, continue independent unblocked work per AGENTS.md: free-source discovery (re-walk catalog when it may gain new listings), validation, design, or red-team. Record every blocker with reason; do not loop on the 404 endpoint. Catalog is currently exhausted; any new discovery would require catalog growth.
