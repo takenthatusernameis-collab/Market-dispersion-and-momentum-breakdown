@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-28T07:26:24Z)
+## State on handoff (verified 2026-10-28T07:31:24Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed per blocker note. Do NOT re-probe the same 404 endpoint (repeat of same failed endpoint is not a distinct attempt). Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 59 OK (50 pre-existing + 9 state-consistency checks in tests/test_state_consistency.py; 1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree clean apart from __pycache__ bytecode.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team (scripts/phase_b_placebos.py) on frozen DISPERSION-001: artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json` present (n_formations=53, conditional high-minus-low gross=+0.1747; state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero; random-ranking placebo z~-1.49). No DISPERSION-001/002 files modified. EXPLORATORY_ONLY.
@@ -11,14 +11,14 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program status ACTIVE.
 - All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier (enforced by tests/test_state_consistency.py). research_state/run_manifest.json last_updated_utc 2026-10-28T07:26:24Z.
 
-## Session outcome — 2026-10-28T07:26:24Z (this session)
+## Session outcome — 2026-10-28T07:31:24Z (this session)
 - Re-read prior agent task from durable handoff and agent_task_message; prior verification confirmed complete.
-- Re-verified: `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive). git status: only __pycache__ bytecode changes; frozen artifacts byte-unchanged. Canonical forward block spot-checked: H004V106 high_low_diff_net_1x = +0.6165223953929935, mean +0.0996, median -0.0106, 608 formations — matches handoff. All research_state JSON files and DISPERSION-003 artifacts parse cleanly and pass state consistency.
+- Verified: `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive). git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged. Canonical forward block spot-checked: H004V106 high_low_diff_net_1x = +0.6165223953929935 (608 formations, cutoff 2026-09-30, last formation 2026-08-31). All research_state JSON files and DISPERSION-003 artifacts parse cleanly and pass state consistency.
 - Cutoff gate still BLOCKED (today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed). Preserve blocker; do not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
 - Reviewed canonical forward block integrity audits and H8 cluster-dominance. Evidence remains exploratory; no independent confirmation. Phase B placebo artifact (DISP-001) present and idempotent.
-- Updated research_state/run_manifest.json (last_updated_utc 2026-10-28T07:26:24Z). DISPERSION-001/002, DISPERSION-003 sealed forward block, integrity audits and defective archive byte-unchanged.
-- Wrote/refreshed clear initial task message for next agent (research_state/agent_task_message.md).
+- Updated research_state/run_manifest.json (last_updated_utc 2026-10-28T07:31:24Z). DISPERSION-001/002, DISPERSION-003 sealed forward block, integrity audits and defective archive byte-unchanged.
+- Refreshed clear initial task message for next agent (research_state/agent_task_message.md).
 
 ## Concrete next action (next agent, priority order)
 1. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29. Then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes. Require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family before any promotion claim. Account for cluster-dominance (H8) — do not treat development block as confirmation.
