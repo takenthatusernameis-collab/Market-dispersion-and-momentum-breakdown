@@ -1,0 +1,38 @@
+{
+  "audit_id": "H004V106_INDEPENDENT_RECOMPUTATION_AUDIT_20261028",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "computed_utc": "2026-10-28T13:30:27.393794+00:00",
+  "block_sealing": "formations with formation_date > 2026-08-31 excluded because their 30-day forward horizon is not completed by the data cutoff 2026-09-30; no truncated outcomes are computed",
+  "data_cutoff_utc": "2026-09-30T00:00:00Z",
+  "date_first": "2025-01-01",
+  "date_last": "2026-08-31",
+  "n_formations": 608,
+  "state_counts": {
+    "high": 61,
+    "mid": 457,
+    "low": 90
+  },
+  "finite_checks": {
+    "all_spread_net_finite": true,
+    "all_spread_gross_finite": true,
+    "any_non_finite": false
+  },
+  "metrics": {
+    "spread_net_mean": 0.09962482788703449,
+    "spread_net_median": -0.010610790611408072,
+    "spread_gross_mean": 0.10062482788703449,
+    "spread_gross_median": -0.009610790611408071,
+    "high_net_mean": 0.539961300958885,
+    "low_net_mean": -0.07656109443410872,
+    "high_low_diff_net": 0.6165223953929937,
+    "high_low_diff_gross": 0.6165223953929936
+  },
+  "reference_values": {
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "spread_net_mean": 0.0996,
+    "spread_net_median": -0.0106
+  },
+  "cost_treatment": "net = gross - 0.001 (1x) as per formation records; difference of means cancels cost",
+  "overlap_note": "daily overlapping 30-day horizons; inference requires HAC/Newey-West or block bootstrap",
+  "conclusion": "Independent recomputation matches canonical values within tolerance; finite, sealed by rule (last formation 2026-08-31, cutoff 2026-09-30). MATCH=True. All checks OK."
+}
