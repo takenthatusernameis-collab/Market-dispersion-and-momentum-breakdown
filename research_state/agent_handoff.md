@@ -64,6 +64,13 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Confirmed DISPERSION-001/002 immutable, DISP-003 canonical forward block audited/recomputed (H004V106), H8 cluster-dominated exploratory only.
 - Updated timestamps in handoff, task message and run_manifest; left concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
 
+## Session outcome — 2026-10-28T10:32:10Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; verified current state: tests `python3 -m unittest discover -s tests` -> 59 OK; git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
+- Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
+- Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows/cutoff unblocks.
+- Confirmed DISPERSION-001/002 immutable, DISP-003 canonical forward block audited/recomputed (H004V106), H8 cluster-dominated exploratory only.
+- Updated timestamps in handoff, task message and run_manifest; left concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
+
 ## Concrete next action (next agent, priority order)
 1. On/after 2026-10-29 (or once the October 2026 Binance monthly archive publishes), re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29. Then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, computing only completed 30-day outcomes. Require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family before any promotion claim. Account for cluster-dominance (H8) — do not treat development block as confirmation.
 2. Until the cutoff is unblocked, continue independent unblocked work per AGENTS.md: free-source discovery (re-walk catalog when it may gain new listings), validation, design, or red-team. Record every blocker with reason; do not loop on the 404 endpoint. Catalog is currently exhausted; any new discovery would require catalog growth.
