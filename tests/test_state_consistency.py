@@ -27,6 +27,7 @@ ARTIFACT_FILES = [
     ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
     ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
     ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
+    ART / "integrity_audit" / "H004V106_rolling_dispersion_window_20261028.json",
 ]
 
 
