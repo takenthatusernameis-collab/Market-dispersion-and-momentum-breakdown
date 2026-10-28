@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (independently re-verified 2026-10-28T19:42:19Z)
+## Current state (independently re-verified 2026-10-28T20:22:58Z)
 - Cutoff gate: BLOCKED (timing). Today 2026-10-28T19:39:29Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 74 OK (59 pre-existing + 5 regime-conditioning + 7 rolling-window REGIME-002 + 3 grid-v3 determinism; 1 pre-existing RuntimeWarning from quarantined defective archive). `git diff --stat -- artifacts/` empty. Frozen artifacts byte-unchanged. tests/test_grid_validation.py GridV3ManifestValidation (3 tests) verifying DISPERSION-003 v3 manifest regenerates byte-identically, anchors H004V105/H004V106. Current session re-ran all checks: 74 OK, artifacts unchanged, JSON state files parse cleanly and are consistent.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
