@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-28T12:07:09Z)
+## Current state (verified 2026-10-28T12:08:00Z)
 - Cutoff gate: BLOCKED (timing). Today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; NOT re-probed. Do NOT re-probe the same 404 endpoint — a repeat of the same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 59 OK (numpy/pandas installed from requirements.txt for this run; 50 pre-existing + 9 state-consistency checks in tests/test_state_consistency.py; 1 pre-existing RuntimeWarning from overflow in quarantined defective archive panel handling). Frozen artifacts byte-unchanged; working tree has __pycache__ bytecode changes only.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json` present (n_formations=53, conditional high-minus-low gross=+0.1747; state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero; random-ranking placebo z~-1.49). No DISPERSION-001/002 files modified. EXPLORATORY_ONLY development evidence.
