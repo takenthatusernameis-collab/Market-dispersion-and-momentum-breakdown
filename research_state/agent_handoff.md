@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (re-verified 2026-10-28T19:39:29Z this session)
+## State on handoff (re-verified 2026-10-28T19:42:19Z this session)
 - Cutoff gate: BLOCKED (timing). Today 2026-10-28T19:39:29Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — repeat of same failed endpoint is not a distinct attempt; timing gate only (archive not yet published). Preserve blocker and do independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 74 OK (59 pre-existing + 5 regime-conditioning + 7 rolling-window REGIME-002 + 3 grid-v3 determinism; 1 pre-existing RuntimeWarning from quarantined defective archive panel handling). `git diff --stat -- artifacts/` empty. Frozen artifacts byte-unchanged. Only change: tests/test_grid_validation.py (+3 tests verifying DISPERSION-003 v3 manifest regenerates byte-identically, anchors H004V105/H004V106).
 - JSON state files parse cleanly (hypothesis_registry.json, run_manifest.json, universe_frontier.json); state consistent across handoff/task message/registry/manifest/frontier (enforced by tests/test_state_consistency.py).
@@ -16,7 +16,8 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Read prior agent task from durable handoff and agent_task_message.md; independently re-verified state (tests 74 OK, artifacts unchanged, JSON state files parse cleanly, consistent).
 - Added read-only regression test GridV3ManifestValidation in tests/test_grid_validation.py: 3 tests verifying the DISPERSION-003 v3 grid manifest regenerates byte-identically from configs/dispersion_momentum_grid_v3.json, IDs H004V001-H004V216 unique, anchors H004V105 (legacy28_comparator) and H004V106 (expanding_point_in_time). No frozen artifact modified.
 - Prior task already completed. Preserved cutoff blocker (timing only, 404 Oct 2026 Binance archive; not re-probed). No exploratory-track version created (adaptive research-gate trigger not met).
-- Updated handoff and wrote fresh initial task message for next agent.
+- Current session independent verification (2026-10-28T19:42:19Z): `python3 -m unittest discover -s tests` -> 74 OK; `git diff --stat -- artifacts/` empty (frozen artifacts byte-unchanged); `git diff --stat -- research_state/ configs/` empty; hypothesis_registry.json, run_manifest.json, universe_frontier.json parse cleanly and are mutually consistent (enforced by tests/test_state_consistency.py). No source changes made; only __pycache__ churn. No new unblocked work exists: cutoff BLOCKED until 2026-10-29, catalog exhausted (cursor 6347, candidates_discovered=[]), REGIME-001/002 already executed on frozen H004V106 block.
+- Updated handoff and re-issued clear initial task message for next agent (agent_task_message.md).
 
 ## Concrete next action (next agent, priority order)
 1. Verify state quickly: run tests (expect 74 OK), spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/` empty).
