@@ -11,7 +11,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program status ACTIVE.
 - All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier (enforced by tests/test_state_consistency.py). research_state/run_manifest.json updated (last_updated_utc 2026-10-28T09:17:XXZ).
 
-## Session outcome — 2026-10-28T09:17:XXZ (this session)
+## Session outcome — 2026-10-28T09:22:XXZ (this session)
 - Read prior agent task from durable handoff and agent_task_message as requested; verified current state (tests 59 OK, git shows only __pycache__ changes, frozen artifacts byte-unchanged).
 - Confirmed cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
