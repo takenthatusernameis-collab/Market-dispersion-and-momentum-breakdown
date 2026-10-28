@@ -140,3 +140,10 @@ Constraints: free public data only (Coin Metrics Community API, Binance Public D
 - Adaptive research-gate trigger NOT met (timing gate only). No exploratory-track version created; H2-H7 remain CANDIDATE_UNVALIDATED; H8 remains EXPLORATORY_ONLY (CLUSTER_DOMINATED by 2025-10).
 - Catalog exhausted (cursor 6347); no new candidates to validate; rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows/cutoff unblocks.
 - Updated handoff, task message and run_manifest with current verified state and concrete next action (unchanged: cutoff unblocks on/after 2026-10-29).
+
+## Session outcome — 2026-10-28T12:09:00Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; verified state: `python3 -m unittest discover -s tests` -> 59 OK; git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
+- Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed — repeat of same failed endpoint not a distinct attempt; timing gate only). Preserved blocker; no same-endpoint retry.
+- Adaptive research-gate trigger NOT met (timing gate only). No exploratory-track version created; H2-H7 remain CANDIDATE_UNVALIDATED; H8 remains EXPLORATORY_ONLY (CLUSTER_DOMINATED by 2025-10).
+- Catalog exhausted (cursor 6347); no new candidates to validate; rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows/cutoff unblocks.
+- Updated handoff, task message and run_manifest with current verified state and concrete next action (unchanged: cutoff unblocks on/after 2026-10-29).
