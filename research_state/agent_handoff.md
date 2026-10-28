@@ -11,13 +11,13 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program status ACTIVE.
 - All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier (enforced by tests/test_state_consistency.py). research_state/run_manifest.json updated (last_updated_utc 2026-10-28T07:33:45Z).
 
-## Session outcome — 2026-10-28T07:32:43Z (this session)
-- Re-read prior agent task from durable handoff and agent_task_message; prior verification confirmed complete.
+## Session outcome — 2026-10-28T08:17:21Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; verified current state.
 - Verified: `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive). git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged. Canonical forward block spot-checked: H004V106 high_low_diff_net_1x = +0.6165223953929935 (608 formations, cutoff 2026-09-30, last formation 2026-08-31). All research_state JSON files and DISPERSION-003 artifacts parse cleanly and pass state consistency.
 - Cutoff gate still BLOCKED (today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed). Preserve blocker; do not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
 - Reviewed canonical forward block integrity audits and H8 cluster-dominance. Evidence remains exploratory; no independent confirmation. Phase B placebo artifact (DISP-001) present and idempotent.
-- Updated research_state/run_manifest.json (last_updated_utc 2026-10-28T07:32:43Z). DISPERSION-001/002, DISPERSION-003 sealed forward block, integrity audits and defective archive byte-unchanged.
+- Updated research_state/run_manifest.json (last_updated_utc 2026-10-28T08:17:21Z). DISPERSION-001/002, DISPERSION-003 sealed forward block, integrity audits and defective archive byte-unchanged.
 - Refreshed clear initial task message for next agent (research_state/agent_task_message.md).
 
 ## Concrete next action (next agent, priority order)
