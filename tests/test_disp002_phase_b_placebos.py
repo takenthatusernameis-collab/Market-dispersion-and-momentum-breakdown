@@ -5,7 +5,9 @@ phase_b_placebos.json exists, is EXPLORATORY_ONLY, reproduces the predeclared
 placebo values on the frozen conditioned panel, and that no existing
 DISPENSITY-002 file was modified (timestamps/contents unchanged).
 """
+import hashlib
 import json
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -25,6 +27,24 @@ FROZEN_FILES = [
     ART / "grid_config_manifest.json",
     ART / "experiment_setup.json",
 ]
+
+
+def _git_blob_sha(path: Path) -> str:
+    """Blob SHA recorded in the git index for this path.
+
+    Compared against the on-disk bytes directly: `git hash-object` applies
+    clean filters (eol/text) and would disagree with the committed blob on
+    repos with text=auto, producing a false positive even for untouched
+    files. `git ls-files -s` reads the stored blob id verbatim.
+    """
+    rel = path.relative_to(ROOT).as_posix()
+    out = subprocess.run(
+        ["git", "ls-files", "-s", "--", rel], cwd=ROOT,
+        capture_output=True, text=True,
+    )
+    if out.returncode != 0 or not out.stdout.strip():
+        raise RuntimeError(f"git ls-files failed for {rel}: {out.stderr}")
+    return out.stdout.strip().split()[2]
 
 
 class Disp002PhaseBPlaceboTests(unittest.TestCase):
@@ -56,11 +76,21 @@ class Disp002PhaseBPlaceboTests(unittest.TestCase):
         self.assertNotIn("phase_f_summary.json", src)
 
     def test_frozen_files_unchanged(self):
-        # timestamps preserved from the original 2026-10-28T18:18:38Z freeze
+        # timestamps preserved from the original 2026-10-28T18:18:38Z freeze.
+        # Compare at second resolution: the fs records sub-second offsets
+        # (e.g. 1793211518.5272346) so a raw == against the integer epoch
+        # second is a false positive even when nothing was modified. Content
+        # identity is asserted separately against the git blob, which is
+        # immune to checkout/restore mtime churn.
         for f in FROZEN_FILES:
             self.assertTrue(f.exists(), f"missing frozen file {f}")
-            self.assertEqual(f.stat().st_mtime, 1793211518,
+            self.assertEqual(int(f.stat().st_mtime), 1793211518,
                              f"{f.name} modified after the freeze")
+            self.assertEqual(
+                hashlib.sha256(f.read_bytes()).hexdigest(),
+                _git_blob_sha(f),
+                msg=f"{f.name} content differs from the committed blob",
+            )
 
     def test_placebo_values_match_predeclared_decision_rule(self):
         p = json.loads(PLACEBO_PATH.read_text(encoding="utf-8"))
