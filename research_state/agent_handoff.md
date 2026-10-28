@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-28T10:24:03Z)
+## State on handoff (verified 2026-10-28T11:27:22Z)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed per blocker note. Do NOT re-probe the same 404 endpoint (repeat of same failed endpoint is not a distinct attempt). Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 59 OK (50 pre-existing + 9 state-consistency checks in tests/test_state_consistency.py; 1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree has __pycache__ bytecode changes only.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team (scripts/phase_b_placebos.py) on frozen DISPERSION-001: artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json` present (n_formations=53, conditional high-minus-low gross=+0.1747; state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero; random-ranking placebo z~-1.49). No DISPERSION-001/002 files modified. EXPLORATORY_ONLY.
@@ -69,6 +69,14 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows/cutoff unblocks.
 - Confirmed DISPERSION-001/002 immutable, DISP-003 canonical forward block audited/recomputed (H004V106), H8 cluster-dominated exploratory only.
+- Updated timestamps in handoff, task message and run_manifest; left concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
+
+## Session outcome — 2026-10-28T11:27:22Z (this session)
+- Read prior agent task from durable handoff and agent_task_message; verified current state: tests `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive); git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
+- Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed — a repeat of the same failed endpoint is not a distinct attempt). Preserved blocker; moved to independent unblocked verification work only.
+- Catalog exhausted (cursor 6347); candidates_discovered=[]; no new candidates to validate; historical rank coverage NOT_PROVEN_COMPLETE. No unblocked candidate work available beyond re-walk when catalog grows or cutoff unblocks.
+- Adaptive research-gate trigger NOT met: only repeated observation of the same 404 endpoint (not a distinct attempt); blocker is a timing gate (October archive not yet published; cutoff requires >= 2026-10-29), not a durable structural impossibility evidenced by source coverage, terms, schema or sample counts. No exploratory-track version created; H2-H7 remain CANDIDATE_UNVALIDATED; H8 remains EXPLORATORY_ONLY.
+- DISPERSION-001/002 immutable; DISP-003 canonical forward block H004V106 audited (CLUSTER_DOMINATED by 2025-10, drop-2025-10 -> +0.093, -84.9%); development/exploratory evidence only, not independent confirmation.
 - Updated timestamps in handoff, task message and run_manifest; left concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
 
 ## Concrete next action (next agent, priority order)
