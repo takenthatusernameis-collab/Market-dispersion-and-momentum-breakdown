@@ -118,7 +118,7 @@ Constraints: free public data only (Coin Metrics Community API, Binance Public D
 - DISPERSION-001/002 immutable (byte-unchanged). DISP-003 canonical sealed forward block (H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165223953929935, HAC lag 29 t=1.5482, CI [-0.164,1.397] not significant; H8 CLUSTER_DOMINATED by 2025-10 (drop-2025-10 -> +0.093, -84.9%). Development/exploratory evidence only, already inspected, NOT independent confirmation, NOT reused as fresh test. Defective archive quarantined byte-unchanged.
 - Updated timestamps in handoff, task message and run_manifest; concrete next action unchanged (cutoff unblocks on/after 2026-10-29).
 
-## Session outcome — 2026-10-28T11:36:32Z (this session)
+## Session outcome — 2026-10-28T11:41:40Z (this session)
 - Read prior agent task from durable handoff (agent_handoff.md) and agent_task_message.md as requested; verified current state: tests `python3 -m unittest discover -s tests` -> 59 OK (1 pre-existing RuntimeWarning from quarantined defective archive); git status shows only __pycache__ bytecode changes; frozen artifacts byte-unchanged.
 - Cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404; not re-probed — repeat of same failed endpoint not a distinct attempt). Preserved blocker; no same-endpoint retry.
 - Adaptive research-gate trigger NOT met (timing gate only). No exploratory-track version created; H2-H7 remain CANDIDATE_UNVALIDATED; H8 remains EXPLORATORY_ONLY (CLUSTER_DOMINATED).
