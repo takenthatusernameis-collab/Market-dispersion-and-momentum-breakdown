@@ -1,0 +1,174 @@
+{
+  "A_continuous_dispersion_spread_association": {
+    "all_formations": {
+      "n": 608,
+      "pearson_r": 0.27775124538596097,
+      "spearman_rho": -0.003727363628636439
+    },
+    "excluding_2025_10": {
+      "n": 577,
+      "pearson_r": -0.12545274071999168,
+      "spearman_rho": -0.1528563204260193
+    },
+    "label": "WEAK_CONTINUOUS_ASSOCIATION",
+    "threshold_abs_rho": 0.3
+  },
+  "B_dispersion_regime_split": {
+    "label": "REGIME_SPARSE_OR_SIGN_FLIP",
+    "median_dispersion": 0.12242231649895832,
+    "min_per_state": 10,
+    "regime_high_dispersion": {
+      "high_low_diff_net_1x": null,
+      "n": 304,
+      "n_high": 61,
+      "n_low": 0
+    },
+    "regime_low_dispersion": {
+      "high_low_diff_net_1x": null,
+      "n": 304,
+      "n_high": 0,
+      "n_low": 90
+    },
+    "same_sign_in_both_regimes": true
+  },
+  "C_2025_10_conditioning": {
+    "baseline_high_low_diff_net_1x": 0.6165223953929935,
+    "delta_fraction_vs_baseline": -0.8487210159492462,
+    "note": "Reproduces H8 leave-one-out finding descriptively; no label change.",
+    "with_2025_10": {
+      "high_low_diff_net_1x": 0.6165223953929937,
+      "n": 608,
+      "n_high": 61,
+      "n_low": 90
+    },
+    "without_2025_10": {
+      "high_low_diff_net_1x": 0.09326688161958913,
+      "n": 577,
+      "n_high": 30,
+      "n_low": 90
+    }
+  },
+  "D_dispersion_decile_buckets": {
+    "buckets": [
+      {
+        "bucket": 1,
+        "dispersion_max": 0.08388830583888339,
+        "dispersion_min": 0.05718487879338143,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": -0.07049697295868308,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 54
+      },
+      {
+        "bucket": 2,
+        "dispersion_max": 0.09516300936358595,
+        "dispersion_min": 0.08388860641779282,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": -0.0012613170510143378,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 33
+      },
+      {
+        "bucket": 3,
+        "dispersion_max": 0.10209138520444073,
+        "dispersion_min": 0.09519094058935186,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.14258615050008297,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 3
+      },
+      {
+        "bucket": 4,
+        "dispersion_max": 0.11177691230462965,
+        "dispersion_min": 0.1022350967950915,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.1461798116465486,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 0
+      },
+      {
+        "bucket": 5,
+        "dispersion_max": 0.12134229350260753,
+        "dispersion_min": 0.111857956811845,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.14730052656001724,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 0
+      },
+      {
+        "bucket": 6,
+        "dispersion_max": 0.132156387902845,
+        "dispersion_min": 0.12148026134415991,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.12689420399738852,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 0
+      },
+      {
+        "bucket": 7,
+        "dispersion_max": 0.14759126180213752,
+        "dispersion_min": 0.13226063636173246,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.07392405440605396,
+        "n": 60,
+        "n_high": 0,
+        "n_low": 0
+      },
+      {
+        "bucket": 8,
+        "dispersion_max": 0.16276735140725565,
+        "dispersion_min": 0.1476343258778077,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": -0.0014855219835484,
+        "n": 60,
+        "n_high": 2,
+        "n_low": 0
+      },
+      {
+        "bucket": 9,
+        "dispersion_max": 0.19476516688538004,
+        "dispersion_min": 0.1628373511634295,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.0015402848722537452,
+        "n": 60,
+        "n_high": 15,
+        "n_low": 0
+      },
+      {
+        "bucket": 10,
+        "dispersion_max": 1.0411802893587268,
+        "dispersion_min": 0.19536096829405378,
+        "high_low_diff_net_1x": null,
+        "mean_spread_net_1x": 0.3920738552348679,
+        "n": 68,
+        "n_high": 44,
+        "n_low": 0
+      }
+    ],
+    "n_buckets": 10,
+    "note": "Descriptive profile; inspect monotonicity of mean spread across dispersion deciles."
+  },
+  "audit_id": "H004V106_DISPERSION_REGIME_CONDITIONING_20261028",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "baseline": {
+    "data_cutoff_utc": "2026-09-30T00:00:00Z",
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "n_formations": 608,
+    "n_high": 61,
+    "n_low": 90,
+    "n_mid": 457
+  },
+  "computed_utc": "2026-10-28T16:21:40Z",
+  "conclusion": "All four analyses are EXPLORATORY_ONLY descriptive diagnostics on the already-inspected sealed forward block. No result promotes a hypothesis, unlocks the confirmatory track, or serves as independent confirmation. A genuinely fresh sealed forward block with formations after 2026-09-29 remains required for any confirmatory claim.",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-001",
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_DISPERSION_REGIME_CONDITIONING_v1.md",
+  "status": "EXPLORATORY_ONLY"
+}
