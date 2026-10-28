@@ -2,8 +2,8 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-28T17:09:44Z this session)
-- Cutoff gate: BLOCKED (timing). Today 2026-10-28T17:09:44Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — a repeat of the same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
+## Current state (verified 2026-10-28T17:10:20Z this session)
+- Cutoff gate: BLOCKED (timing). Today 2026-10-28T17:10:20Z < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed — a repeat of the same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 64 OK (59 pre-existing + 5 new regime-conditioning tests; 1 pre-existing RuntimeWarning from quarantined defective archive panel handling). git status shows only __pycache__ bytecode changes. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/` empty).
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
 - DISPERSION-003 grid 216/216 OK, 0 Holm-rejected. Canonical sealed forward block H004V106 (cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant. Integrity audits under `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/`; defective archive quarantined at `artifacts/quarantine/defective_forward_block_20261024/` byte-unchanged. Development/exploratory evidence only — NOT independent confirmation; NOT reused as fresh test. H8: EXPLORATORY_ONLY, CLUSTER_DOMINATED by 2025-10.
