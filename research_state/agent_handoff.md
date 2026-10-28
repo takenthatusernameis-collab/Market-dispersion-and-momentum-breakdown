@@ -2,16 +2,16 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (verified 2026-10-28T09:14:XXZ)
+## State on handoff (verified 2026-10-28T09:17:XXZ)
 - Cutoff gate: BLOCKED (structural). Today 2026-10-28 < 2026-10-29; October 2026 Binance monthly archive 404. NOT re-probed per blocker note. Do NOT re-probe the same 404 endpoint (repeat of same failed endpoint is not a distinct attempt). Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 59 OK (50 pre-existing + 9 state-consistency checks in tests/test_state_consistency.py; 1 pre-existing RuntimeWarning from quarantined defective archive). Frozen artifacts byte-unchanged; working tree has __pycache__ bytecode changes only.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team (scripts/phase_b_placebos.py) on frozen DISPERSION-001: artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001/phase_b_placebos.json` present (n_formations=53, conditional high-minus-low gross=+0.1747; state/time permutation placebo empirical p two-sided=0.149, 95% CI [-0.241,0.239] includes zero; random-ranking placebo z~-1.49). No DISPERSION-001/002 files modified. EXPLORATORY_ONLY.
 - DISPERSION-003 grid 216/216 OK, 0 Holm-rejected (grid_summary.json). Canonical sealed forward block (H004V106, cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165223953929935, spread_net_1x mean=+0.0996 median=-0.0106; all finite; HAC lag 29 t=1.5482, 95% CI [-0.164,1.397] not significant. Integrity audits in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/` (forward_block_integrity_audit.json, forward_block_independent_recomputation_20261025.json, forward_block_hac_addendum_20261024.json, H004V106_state_representativeness_audit_20261025.json). Defective archive quarantined at `artifacts/quarantine/defective_forward_block_20261024/` byte-unchanged. Development/exploratory evidence only — already inspected; NOT independent confirmation; NOT reused as fresh test. H8 (DISP-003-STATEAUDIT-001): EXPLORATORY_ONLY, CLUSTER_DOMINATED by 2025-10 (drop-2025-10 -> +0.093, -84.9%).
 - Frontier: catalog discovery exhausted (cursor 6347), candidates_discovered=[], candidates_verified=220, candidates_blocked=6127, rank_frontier_exhausted=False, next_candidate_batch_size=25 (operational checkpoint only). Historical rank coverage NOT_PROVEN_COMPLETE; rank policy no fixed top-N cutoff. 4 non-ASCII IDs durably blocked (我踏马来了, 牛来, 老子, 龙虾). No new candidates to validate; any new discovery requires catalog growth.
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED). Program status ACTIVE.
-- All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier (enforced by tests/test_state_consistency.py). research_state/run_manifest.json updated (last_updated_utc 2026-10-28T09:14:XXZ).
+- All JSON state files parse cleanly; state consistent across handoff, task message, registry, manifest, frontier (enforced by tests/test_state_consistency.py). research_state/run_manifest.json updated (last_updated_utc 2026-10-28T09:17:XXZ).
 
-## Session outcome — 2026-10-28T09:14:XXZ (this session)
+## Session outcome — 2026-10-28T09:17:XXZ (this session)
 - Read prior agent task from durable handoff and agent_task_message as requested; verified current state (tests 59 OK, git shows only __pycache__ changes, frozen artifacts byte-unchanged).
 - Confirmed cutoff gate still BLOCKED (2026-10-28 < 2026-10-29; October 2026 Binance archive 404; not re-probed). Preserved blocker; did not re-probe same endpoint.
 - Catalog exhausted; no new candidates to validate. Rank coverage NOT_PROVEN_COMPLETE.
