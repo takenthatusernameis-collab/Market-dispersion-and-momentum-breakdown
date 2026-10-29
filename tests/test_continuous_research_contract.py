@@ -56,8 +56,9 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # next_sequence_number tracks the highest registered hypothesis id;
         # H1..H7 are present after the 2026-10-25 reconciliation that added
         # H7 (canonical-block positive-direction candidate); H8 was added
-        # after the 2026-10-25T19Z state-representativeness audit.
-        self.assertEqual(registry["next_sequence_number"], 8)
+        # after the 2026-10-25T19Z state-representativeness audit; H9 was
+        # added after the 2026-10-29 tail-influence audit (DISP-003-TAILAUDIT-001).
+        self.assertEqual(registry["next_sequence_number"], 9)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
