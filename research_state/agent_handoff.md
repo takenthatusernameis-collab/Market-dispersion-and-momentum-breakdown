@@ -27,3 +27,17 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells carry OK/BLOCKED/INVALID/FAILED/NOT_RUN with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
+
+## Session outcome — 2026-10-29T01:27:00Z (this session)
+- Read prior agent task from durable handoff and agent_task_message.md; re-verified state: tests 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty). JSON state files parse cleanly and mutually consistent. `git diff --stat -- artifacts/ research_state/ configs/` empty.
+- Cutoff gate remains BLOCKED (archive): October 2026 Binance monthly archive still unpublished (date_last = 2026-09-30). No re-probe this session. Blocker preserved.
+- No frozen artifacts modified. Program stays ACTIVE.
+- Prior task complete: state re-verified, blocker preserved. No new unblocked work available; catalog exhausted, no new candidates.
+
+## Concrete next action (next agent, priority order)
+1. Verify state quickly: run tests (expect 78 OK + 1 pre-existing mtime-guard failure); spot-check JSON; confirm `git diff --stat -- artifacts/ research_state/ configs/` empty.
+2. Respect blocker: do NOT re-probe October 2026 Binance archive. Keep cutoff BLOCKED.
+3. REGIME-001/002 already executed (read-only, EXPLORATORY_ONLY). H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED).
+4. Once October 2026 Binance monthly archive publishes, re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29 with October data present. Then preregister/evaluate H004V106 on fresh sealed forward block.
+5. Until unblocked, do independent unblocked work (validation/red-team/design on frozen data); record blockers. Follow adaptive research-gate policy if trigger conditions arise. Catalog exhausted.
+6. Leave clean state: update frontier/registry/manifest/handoff with concrete next action. Never wait for user-provided experiment ID. Program stays ACTIVE.
