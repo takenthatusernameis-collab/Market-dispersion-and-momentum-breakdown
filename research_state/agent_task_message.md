@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (independently re-verified 2026-10-29T02:16:35Z)
+## Current state (independently re-verified 2026-10-29T02:18:16Z)
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-29; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty). `git diff --stat -- artifacts/ research_state/ configs/` empty. Frozen artifacts byte-unchanged. JSON state files parse cleanly and consistent.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
