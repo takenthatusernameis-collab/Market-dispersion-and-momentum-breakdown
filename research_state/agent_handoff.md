@@ -2,8 +2,8 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (re-verified 2026-10-29T01:11:33Z)
-- Cutoff gate: BLOCKED (archive). Today is 2026-10-29 so the date timing gate has passed, but the October 2026 Binance monthly archive is still unpublished: re-checked once this session (2026-10-29T00:16:45Z) via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` (CoinMetrics reachable; Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and do independent unblocked work per AGENTS.md / adaptive research-gate policy v1. Incidental CoinMetrics data writes from the re-check were reverted (`git checkout -- artifacts/`); frozen artifacts byte-unchanged.
+## State on handoff (re-verified 2026-10-29T01:20:27Z)
+- Cutoff gate: BLOCKED (archive). Today is 2026-10-29 so the date timing gate has passed, but the October 2026 Binance monthly archive is still unpublished: re-checked 2026-10-29T00:16:45Z via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` (CoinMetrics reachable; Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and do independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty). `git diff --stat -- artifacts/ research_state/ configs/` empty. Frozen artifacts byte-unchanged. JSON state files parse cleanly (hypothesis_registry.json, run_manifest.json, universe_frontier.json); state consistent across handoff/task message/registry/manifest/frontier (enforced by tests/test_state_consistency.py).
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
 - DISPERSION-003 grid 216/216 OK, 0 Holm-rejected. Canonical sealed forward block H004V106 (cutoff 2026-09-30, last formation 2026-08-31): 608 formations, high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106, n_high=61, n_low=90, n_mid=457; block 2025-01-01..2026-08-31, 26-27 eligible assets/date. Integrity audits under `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/` (state_representativeness_audit_20261025 CLUSTER_DOMINATED by 2025-10, delta frac -0.849; rolling_dispersion_window_20261028 ROLLING_FRAGILE; dispersion_regime_conditioning_20261028 WEAK_CONTINUOUS_ASSOCIATION spearman -0.153 excl 2025-10; independent recomputation matches stored value). Defective archive at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/archive_defective_momentum_20261024/` byte-unchanged. Development/exploratory evidence only — already inspected; NOT independent confirmation; NOT reused as fresh test. H8: EXPLORATORY_ONLY, CLUSTER_DOMINATED by 2025-10. REGIME-001 and REGIME-002 executed on frozen H004V106 block (read-only); both EXPLORATORY_ONLY, do not unlock confirmatory track.
@@ -11,29 +11,11 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED; next_test branches (a) and (b) both executed via REGIME-002/REGIME-001). Program status ACTIVE.
 - run_manifest.json last_updated_utc 2026-10-28T18:37:04Z.
 
-## Session outcome — 2026-10-29T01:17:39Z (this session)
-- Read prior agent task from durable handoff and agent_task_message.md; independently re-verified state: ran `python3 -m unittest discover -s tests` -> 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty); `git diff --stat -- artifacts/ research_state/ configs/` empty. JSON state files parse cleanly and mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Today is 2026-10-29.
+## Session outcome — 2026-10-29T01:20:27Z (this session)
+- Read prior agent task from durable handoff and agent_task_message.md; independently re-verified state: ran `python3 -m unittest discover -s tests` -> 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty). `git diff --stat -- artifacts/ research_state/ configs/` empty. JSON state files parse cleanly and mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Today is 2026-10-29.
 - Cutoff gate remains BLOCKED (archive): October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Blocker preserved; no re-probe this session (repeat of same failed endpoint is not a distinct attempt).
 - No frozen artifacts modified. Only __pycache__ churn from test run.
 - Prior task complete: state re-verified, blocker preserved, no new unblocked work available this session. Handoff/task message refreshed with concrete next action. Program stays ACTIVE.
-
-## Session outcome — 2026-10-29T01:15:39Z (this session)
-- Read prior agent task from durable handoff and agent_task_message.md; independently re-verified state: tests 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; mtime test failure expected per history, content unchanged, git diff empty for artifacts/research_state/configs); JSON state files parse cleanly and mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Today is 2026-10-29.
-- Cutoff gate remains BLOCKED (archive): October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30). Blocker preserved; no re-probe this session (repeat of same failed endpoint is not a distinct attempt).
-- No frozen artifacts modified. Only __pycache__ churn from test run.
-- Handoff/task message refreshed with concrete next action.
-
-## Session outcome — 2026-10-29T00:40:18Z (this session)
-- Read prior agent task from durable handoff and agent_task_message.md; re-verified state: tests 79 run (78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty); `git diff --stat -- artifacts/ research_state/ configs/` empty. JSON state files parse cleanly and mutually consistent. Today 2026-10-29.
-- Cutoff gate remains BLOCKED (archive): October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30). Blocker preserved; no re-probe. No new unblocked work available; program stays ACTIVE.
-- No frozen artifacts modified. Handoff/task message refreshed with concrete next action.
-
-## Session outcome — 2026-10-29T00:35:10Z (this session)
-- Read prior agent task from durable handoff and agent_task_message.md; independently re-verified state: tests 79 run (78 OK + 1 pre-existing mtime-guard failure), `git diff --stat -- artifacts/ research_state/ configs/` empty, JSON state files parse cleanly and mutually consistent. Today is 2026-10-29.
-- Prior task already completed by previous sessions (grid-v3 determinism tests; cutoff blocker preserved; adaptive research-gate trigger not met). No frozen artifacts modified; only __pycache__ churn.
-- Cutoff gate remains BLOCKED (archive): October 2026 Binance monthly archive still unpublished (Binance date_last = 2026-09-30). Do NOT re-probe again this session.
-- Catalog exhausted (cursor 6347, candidates_discovered=[]); REGIME-001/002 already executed on frozen canonical H004V106 block (EXPLORATORY_ONLY). H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED).
-- Consolidated handoff (removed repetitive session-outcome history) and refreshed initial task message for next agent. No new unblocked work available this session; program stays ACTIVE.
 
 ## Concrete next action (next agent, priority order)
 1. Verify state quickly: run tests (expect 78 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged, git diff empty). Spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
