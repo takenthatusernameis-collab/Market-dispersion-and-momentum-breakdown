@@ -2,14 +2,13 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-29T12:59:51Z)
+## Current state (verified 2026-10-29T13:02:00Z)
 - Tests: 93 run (92 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from __pycache__.
-- JSON state files parse cleanly and consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json).
+- JSON state files parse cleanly and consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Hypothesis statuses: H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY; H9 CANDIDATE_UNVALIDATED; program status ACTIVE. Frontier cursor 6347, candidates_discovered=[], candidates_verified=220, candidates_blocked=6127, rank_frontier_exhausted=False.
 - Cutoff gate: BLOCKED (archive). October 2026 Binance monthly archive still unpublished (series date_last = 2026-09-30). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
 - DISPERSION-001/002 unchanged (immutable). Prior audits recorded (DISP-003-TAILAUDIT-001 TAIL_ROBUST, cluster bootstrap EXPLORATORY_ONLY). REGIME-001/002 executed on frozen H004V106 block (EXPLORATORY_ONLY).
 - H004V106 canonical forward block remains development/exploratory evidence only (already inspected), not independent confirmation. Do not reuse as fresh test.
 - Frontier/catalog exhausted (cursor 6347, candidates_discovered=[]). H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY.
-- Program status ACTIVE.
 
 ## Concrete next action (priority order)
 1. Verify state quickly: run tests (expect 93 run, 92 OK + 1 pre-existing mtime-guard failure). Spot-check JSON state files, confirm frozen artifacts unchanged.
