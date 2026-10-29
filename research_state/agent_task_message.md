@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-29T07:20:42Z)
+## Current state (verified 2026-10-29T07:23:42Z)
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-29; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 88 run (87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged; 9 new tail-influence audit tests all OK). Working tree clean apart from __pycache__. JSON state files parse cleanly and consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json).
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
@@ -14,7 +14,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 ## Your first actions (in order)
 1. Verify state quickly: run tests (expect 88 run, 87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). Spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
 2. Respect the blocker: October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months). Keep cutoff BLOCKED; do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt.
-3. DISP-003-TAILAUDIT-001 tail-influence audit already executed this session (EXPLORATORY_ONLY, TAIL_ROBUST). Do not re-run as a fresh test; it is recorded in integrity_audit/H004V106_forward_block_tail_influence_20261029.json with script scripts/forward_block_tail_influence.py and test tests/test_forward_block_tail_influence.py. H9 added (CANDIDATE_UNVALIDATED); H8 addendum recorded. Does not unlock the confirmatory track.
+3. DISP-003-TAILAUDIT-001 tail-influence audit already executed (EXPLORATORY_ONLY, TAIL_ROBUST). Do not re-run as a fresh test; recorded in integrity_audit/H004V106_forward_block_tail_influence_20261029.json with script scripts/forward_block_tail_influence.py and test tests/test_forward_block_tail_influence.py. H9 added (CANDIDATE_UNVALIDATED); H8 addendum recorded. Does not unlock the confirmatory track.
 4. REGIME-001 and REGIME-002 already executed on frozen canonical H004V106 block (read-only); results recorded; both EXPLORATORY_ONLY, do not unlock confirmatory track. H2-H7 remain CANDIDATE_UNVALIDATED; H9 remains CANDIDATE_UNVALIDATED.
 5. Once the October 2026 Binance monthly archive publishes, re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29 with October data present. Then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, only completed 30-day outcomes; require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family before promotion. Account for cluster-dominance (H8).
 6. Until the cutoff unblocks, do further independent unblocked work (validation/red-team/design or strengthening checks on frozen data; do not modify DISPERSION-001/002 or any sealed artifact). Record blockers with exact reason. Follow adaptive research-gate policy if trigger conditions arise. Catalog exhausted — no new candidates available; any new discovery requires catalog growth.
@@ -22,3 +22,5 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells OK/BLOCKED/INVALID/FAILED/NOT_RUN with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
+EOF
+echo done
