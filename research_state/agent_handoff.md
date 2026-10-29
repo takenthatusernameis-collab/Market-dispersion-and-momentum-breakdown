@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (re-verified 2026-10-29T09:22:23Z)
+## State on handoff (re-verified 2026-10-29T09:22:57Z)
 - Tests: `python3 -m unittest discover -s tests` -> 88 run (87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). Working tree clean apart from __pycache__. JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json).
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-29; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt. Preserve blocker; move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
@@ -11,8 +11,8 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Hypothesis registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable); H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY (CLUSTER_DOMINATED) with addendum recording DISP-003-TAILAUDIT-001 TAIL_ROBUST; H9 CANDIDATE_UNVALIDATED added (tail/outlier-robustness candidate, H5 domain). Program status ACTIVE.
 - run_manifest.json last_updated_utc 2026-10-29T06:10:00Z.
 
-## Session outcome — 2026-10-29T09:20:41Z (this session)
-- Read prior agent task from durable handoff and agent_task_message.md; completed it: re-verified state via `python3 -m unittest discover -s tests` -> 88 run (87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). JSON state files parse cleanly and consistent. `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from __pycache__. Cutoff BLOCKED preserved; no re-probe of October 2026 Binance archive (Binance series date_last = 2026-09-30).
+## Session outcome — 2026-10-29T09:22:57Z (this session)
+- Read prior agent task from durable handoff and agent_task_message.md; verified state via `python3 -m unittest discover -s tests` -> 88 run (87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). JSON state files parse cleanly and consistent. `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from __pycache__. Cutoff BLOCKED preserved; no re-probe of October 2026 Binance archive (Binance series date_last = 2026-09-30).
 - No new unblocked empirical work available: catalog exhausted (cursor 6347), candidates_discovered=[], REGIME-001/002 and DISP-003-TAILAUDIT-001 already executed (EXPLORATORY_ONLY, TAIL_ROBUST). Independent unblocked work (validation/red-team/design on frozen data) remains available for next agent.
 - Handoff deduplicated and agent_task_message.md refreshed as clear initial task message for next agent. Program stays ACTIVE.
 
