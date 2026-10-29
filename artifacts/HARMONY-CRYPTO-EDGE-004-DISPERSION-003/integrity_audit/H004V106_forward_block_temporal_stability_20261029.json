@@ -1,0 +1,80 @@
+{
+  "audit_id": "H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_20261029",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "computed_utc": "2026-10-29T16:12:12Z",
+  "status": "EXPLORATORY_ONLY",
+  "data_cutoff_utc": "2026-09-30T00:00:00Z",
+  "date_first": "2025-01-01",
+  "date_last": "2026-08-31",
+  "n_formations": 608,
+  "split_date": "2025-11-01",
+  "n_first_half": 304,
+  "n_second_half": 304,
+  "baseline_high_low_diff_net_1x": 0.6165223953929937,
+  "first_half": {
+    "n_formations": 304,
+    "n_high": 53,
+    "n_low": 21,
+    "n_mid": 230,
+    "high_low_diff_net_1x": 0.6456322213084524,
+    "spread_net_1x_median": 0.014148751746255073,
+    "date_first": "2025-01-01",
+    "date_last": "2025-10-31",
+    "n_months": 10,
+    "n_months_with_both_states": 2,
+    "bootstrap": {
+      "mean": 0.5588278674271157,
+      "se": 0.3901976969368783,
+      "ci_lo": -0.10686024430574041,
+      "ci_hi": 1.1096853085126939,
+      "ci_includes_zero": true,
+      "n_boot": 1991
+    },
+    "month_level_diffs": {
+      "2025-01": null,
+      "2025-02": null,
+      "2025-03": null,
+      "2025-04": -0.2055094442090552,
+      "2025-05": null,
+      "2025-06": null,
+      "2025-07": -0.17949880231698745,
+      "2025-08": null,
+      "2025-09": null,
+      "2025-10": null
+    }
+  },
+  "second_half": {
+    "n_formations": 304,
+    "n_high": 8,
+    "n_low": 69,
+    "n_mid": 227,
+    "high_low_diff_net_1x": -0.16288800752983412,
+    "spread_net_1x_median": -0.039511021566963206,
+    "date_first": "2025-11-01",
+    "date_last": "2026-08-31",
+    "n_months": 10,
+    "n_months_with_both_states": 0,
+    "bootstrap": {
+      "mean": -0.16520622561154077,
+      "se": 0.04211368358992394,
+      "ci_lo": -0.2532351758559232,
+      "ci_hi": -0.08886730184075321,
+      "ci_includes_zero": false,
+      "n_boot": 1295
+    },
+    "month_level_diffs": {
+      "2025-11": null,
+      "2025-12": null,
+      "2026-01": null,
+      "2026-02": null,
+      "2026-03": null,
+      "2026-04": null,
+      "2026-05": null,
+      "2026-06": null,
+      "2026-07": null,
+      "2026-08": null
+    }
+  },
+  "conclusion": "Anchor estimate not temporally stable across the frozen block; EXPLORATORY_ONLY, does not unlock confirmatory track."
+}
