@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-29T10:25:00Z)
+## Current state (verified 2026-10-29T10:25:09Z)
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-29; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt. Preserve blocker and move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - Tests: `python3 -m unittest discover -s tests` -> 93 run (92 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). Working tree clean apart from __pycache__. JSON state files parse cleanly and consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json).
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
@@ -13,9 +13,9 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Your first actions (in order)
 1. Verify state quickly: run tests (expect 93 run, 92 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). Spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
-2. Respect the blocker: October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months). Keep cutoff BLOCKED; do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt.
-3. All prior audits recorded (TAIL_ROBUST, cluster bootstrap EXPLORATORY_ONLY). Do not re-run as fresh tests; recorded under integrity_audit/ with scripts and tests. H9 added (CANDIDATE_UNVALIDATED); H8 addendum recorded. Does not unlock the confirmatory track.
-4. REGIME-001 and REGIME-002 already executed on frozen canonical H004V106 block (read-only); results recorded; both EXPLORATORY_ONLY, do not unlock confirmatory track. H2-H7 remain CANDIDATE_UNVALIDATED; H9 remains CANDIDATE_UNVALIDATED.
+2. Respect the blocker: October 2026 Binance monthly archive still unpublished (series date_last = 2026-09-30). Keep cutoff BLOCKED; do NOT re-probe again this session — repeat of same failed endpoint is not a distinct attempt.
+3. All prior audits recorded (TAIL_ROBUST, cluster bootstrap EXPLORATORY_ONLY). Do not re-run as fresh tests; recorded under integrity_audit/ with scripts and tests. H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY.
+4. REGIME-001 and REGIME-002 already executed on frozen canonical H004V106 block (read-only); both EXPLORATORY_ONLY, do not unlock confirmatory track.
 5. Until the cutoff unblocks, do further independent unblocked work (validation/red-team/design or strengthening checks on frozen data; do not modify DISPERSION-001/002 or any sealed artifact). Record blockers with exact reason. Follow adaptive research-gate policy if trigger conditions arise. Catalog exhausted — no new candidates available; any new discovery requires catalog growth.
 6. Once the October 2026 Binance monthly archive publishes, re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29 with October data present. Then preregister/evaluate H004V106 on a fresh sealed forward block with HAC/overlap-aware uncertainty, only completed 30-day outcomes; require |high_low_diff_net_1x| above a predeclared economic significance threshold and Holm-significance across the cell family before promotion. Account for cluster-dominance (H8).
 7. Leave clean state: update frontier/registry/manifest/handoff with a concrete next action. Never wait for a user-provided experiment ID. Program stays ACTIVE.
