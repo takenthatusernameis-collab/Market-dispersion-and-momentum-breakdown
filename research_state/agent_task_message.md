@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-29T15:08:15Z)
+## Current state (verified 2026-10-29T15:10:00Z)
 - Tests: `python3 -m unittest discover -s tests` -> 93 run (92 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts unchanged). `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from __pycache__.
 - JSON state files parse cleanly and consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Hypothesis statuses: H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY; H9 CANDIDATE_UNVALIDATED; program status ACTIVE. Frontier cursor 6347, candidates_discovered=[], candidates_verified=220, candidates_blocked=6127, rank_frontier_exhausted=False.
 - Cutoff gate: BLOCKED (archive). October 2026 Binance monthly archive still unpublished (series date_last = 2026-09-30). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
@@ -11,7 +11,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - Frontier/catalog exhausted (cursor 6347, candidates_discovered=[]). H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY.
 
 ## Concrete next action (priority order)
-1. Verify state quickly: run tests (expect 93 run, 92 OK + 1 pre-existing mtime-guard failure). Spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
+1. Verify state quickly: run tests (expect 93 run, 92 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv). Spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
 2. Respect blocker: keep cutoff BLOCKED until October 2026 Binance monthly archive publishes (date_last=2026-09-30). No re-probe.
 3. Do independent unblocked work (validation/red-team/design or strengthening checks on frozen data). Do not modify DISPERSION-001/002 or sealed artifacts. Record blockers with exact reasons.
 4. Follow adaptive research-gate policy if trigger conditions arise. Catalog exhausted — no new candidates available without catalog growth.
