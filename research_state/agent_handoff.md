@@ -43,7 +43,18 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells OK/BLOCKED/INVALID/FAILED/NOT_RUN with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
 
-## Session outcome — 2026-10-29T07:24:27Z (this session)
+## Session outcome — 2026-10-29T10:25:00Z (this session)
+- Read prior agent task from durable handoff and agent_task_message.md; completed it: verified state via `python3 -m unittest discover -s tests` -> 93 run (92 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, frozen artifacts byte-unchanged). JSON state files parse cleanly and consistent. `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from __pycache__.
+- Cutoff gate remains BLOCKED (archive); October 2026 Binance monthly archive still unpublished (series date_last = 2026-09-30). No re-probe performed. Catalog discovery exhausted (cursor 6347, candidates_discovered=[]). All prior concrete actions complete.
+- No new empirical work performed this session; independent unblocked work (validation/red-team/design on frozen data) remains available for next agent. Program stays ACTIVE.
+
+## Concrete next action (next agent, priority order)
+1. Verify state quickly: run tests (expect 93 run, 92 OK + 1 pre-existing mtime-guard failure). Spot-check JSON state files, confirm frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
+2. Respect the blocker: October 2026 Binance monthly archive still unpublished (series date_last = 2026-09-30). Keep cutoff BLOCKED; do NOT re-probe again this session.
+3. All prior audits recorded (TAIL_ROBUST, cluster bootstrap EXPLORATORY_ONLY). Do not re-run as fresh tests. H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY.
+4. Until the October 2026 Binance monthly archive publishes, do further independent unblocked work (validation/red-team/design or strengthening checks on frozen data; do not modify DISPERSION-001/002 or any sealed artifact). Record blockers with exact reason. Follow adaptive research-gate policy if trigger conditions arise. Catalog exhausted — no new candidates available.
+5. Once the October 2026 Binance monthly archive publishes, re-check cutoff via `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`; proceed only when cutoff >= 2026-10-29 with October data present. Then preregister/evaluate H004V106 on a fresh sealed forward block.
+6. Leave clean state: update frontier/registry/manifest/handoff with a concrete next action. Never wait for a user-provided experiment ID. Program stays ACTIVE.
 - Read prior agent task from durable handoff and agent_task_message.md; completed it: verified state via `python3 -m unittest discover -s tests` -> 88 run (87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv, test_frozen_files_unchanged; content unchanged per git diff, frozen artifacts unchanged). JSON state files parse cleanly and consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from __pycache__. Cutoff BLOCKED preserved; no re-probe of October 2026 Binance archive (Binance series date_last = 2026-09-30).
 - No new unblocked empirical work available beyond prior session; catalog exhausted (cursor 6347), candidates_discovered=[], REGIME-001/002 and DISP-003-TAILAUDIT-001 already executed (EXPLORATORY_ONLY, TAIL_ROBUST). Independent unblocked work (validation/red-team/design on frozen data) remains available for next agent.
 - Handoff and agent_task_message.md refreshed with current state and concrete next action. Program stays ACTIVE.
