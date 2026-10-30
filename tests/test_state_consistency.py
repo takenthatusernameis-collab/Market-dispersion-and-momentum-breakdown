@@ -149,6 +149,64 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                 self.assertIn("audited_artifact", audit)
                 self.assertIn("conclusion", audit)
 
+    def test_every_diagnostic_audit_has_a_preregistration(self):
+        """Every DISP-003 diagnostic audit must carry a preregistration document
+        naming its experiment ID and pre-declared method, and that document must
+        be dated no earlier than the audit it describes.
+
+        This is the durable-state gate that was missing when the temporal-stability
+        audit (and later the cluster-bootstrap audit) were committed without a
+        preregistration, leaving the durable state internally inconsistent. A
+        preregistration written after the fact is allowed only if it says so
+        explicitly (correction note), and even then its declared creation time may
+        not be backdated before the artifact's computed_utc.
+        """
+        import re
+
+        prereg_dir = ART / "preregistrations"
+        # audit file -> preregistration file (the six diagnostic audits; the
+        # integrity audit, HAC addendum and the two independent recomputations
+        # are addenda to the 2026-10-24 integrity audit and have no separate
+        # preregistration).
+        pairs = {
+            "H004V106_state_representativeness_audit_20261025.json": "H004V106_STATE_REPRESENTATIVENESS_AUDIT_v1.md",
+            "H004V106_dispersion_regime_conditioning_20261028.json": "H004V106_DISPERSION_REGIME_CONDITIONING_v1.md",
+            "H004V106_rolling_dispersion_window_20261028.json": "H004V106_ROLLING_DISPERSION_WINDOW_v1.md",
+            "H004V106_forward_block_cluster_bootstrap_20261029.json": "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md",
+            "H004V106_forward_block_tail_influence_20261029.json": "H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_v1.md",
+            "H004V106_forward_block_temporal_stability_20261029.json": "H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_AUDIT_v1.md",
+        }
+
+        def _parse_ts(text):
+            m = re.search(r"\*\*(?:Created|Preregistered):\*\*\s*([0-9TZ:\.\-]+)", text)
+            if not m:
+                return None
+            return m.group(1).replace("T", " ").rstrip("Z").split(".")[0]
+
+        for audit_name, prereg_name in pairs.items():
+            audit_path = ART / "integrity_audit" / audit_name
+            prereg_path = prereg_dir / prereg_name
+            with self.subTest(audit=audit_name):
+                self.assertTrue(audit_path.exists(), f"missing audit: {audit_name}")
+                self.assertTrue(prereg_path.exists(),
+                                f"missing preregistration for {audit_name}: {prereg_name}")
+                audit = _load(audit_path)
+                prereg_text = prereg_path.read_text(encoding="utf-8")
+                # the preregistration must name the experiment it covers
+                exp_id = audit.get("experiment_id")
+                if exp_id:
+                    self.assertIn(exp_id, prereg_text,
+                                  f"{prereg_name} does not name experiment {exp_id}")
+                declared = _parse_ts(prereg_text)
+                self.assertIsNotNone(declared, f"{prereg_name} has no Created/Preregistered timestamp")
+                computed = (audit.get("computed_utc") or audit.get("audit_utc") or "")
+                computed = computed.replace("T", " ").rstrip("Z").split(".")[0]
+                # declared creation must not be backdated before the audit ran
+                if declared < computed:
+                    self.assertIn("correction note", prereg_text.lower(),
+                                  f"{prereg_name} is dated {declared}, before its audit "
+                                  f"{computed}, and carries no correction note")
+
     def test_frontier_records_no_new_discovery_and_incomplete_rank_coverage(self):
         frontier = _load(STATE / "universe_frontier.json")
         self.assertEqual(frontier["candidates_discovered"], [])

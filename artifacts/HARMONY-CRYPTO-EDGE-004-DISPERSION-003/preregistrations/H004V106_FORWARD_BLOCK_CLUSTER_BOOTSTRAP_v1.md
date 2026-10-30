@@ -3,8 +3,21 @@
 **Program:** HARMONY-CRYPTO-EDGE-004
 **Experiment ID:** HARMONY-CRYPTO-EDGE-004-DISPERSION-003-CLUSTERBOOT-001
 **Status:** EXPLORATORY_ONLY
-**Created:** 2026-10-29T09:00:00Z
+**Created:** 2026-10-30T13:22:56Z (file mtime; see correction note below)
 **Author:** automated research agent (this session)
+**Correction note (2026-10-30T16:35Z):** This document was first written on
+2026-10-30T13:22:56Z, i.e. **after** the audit artifact it describes
+(`integrity_audit/H004V106_forward_block_cluster_bootstrap_20261029.json`,
+computed 2026-10-29T09:25:38Z). Its original header claimed
+`Created: 2026-10-29T09:00:00Z`, which was a backdated timestamp: the file did
+not exist at that time, and no preregistration existed when the audit was
+computed. The claimed timestamp is therefore **not** the true creation time and
+is corrected here to the file's actual mtime. The audit artifact, script and
+test were NOT regenerated or altered to fit this document, and the audit's
+decision rule was not changed by this correction. The temporal-stability
+preregistration in this same directory (`H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_AUDIT_v1.md`)
+was written prospectively, before its script was re-run, and is the model for
+how preregistrations should be handled going forward.
 **Note:** This preregistration was authored after the audit artifact was already
 committed (artifact `integrity_audit/H004V106_forward_block_cluster_bootstrap_20261029.json`,
 script `scripts/forward_block_cluster_bootstrap.py`, test
