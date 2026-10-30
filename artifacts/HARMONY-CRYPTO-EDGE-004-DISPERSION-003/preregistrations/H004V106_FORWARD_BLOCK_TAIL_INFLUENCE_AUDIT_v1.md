@@ -3,8 +3,19 @@
 **Program:** HARMONY-CRYPTO-EDGE-004
 **Experiment ID:** HARMONY-CRYPTO-EDGE-004-DISPERSION-003-TAILAUDIT-001
 **Status:** EXPLORATORY_ONLY
-**Created:** 2026-10-28T23:30:00Z
+**Created:** 2026-10-28T23:30:00Z (see correction note below)
 **Author:** automated research agent (this session)
+**Correction note (2026-10-30T17:15Z):** The declared `Created` time
+(2026-10-28T23:30:00Z) precedes both the audit artifact it describes
+(computed 2026-10-29T06:07:05Z) and the document's commit time
+(commit 3d58d80, 2026-10-28T23:33:54Z). This is a **prospective**
+preregistration authored before the audit ran, not a backdating: the
+declared time is retained as written and is not claimed to be a
+retroactive correction. The commit time is the earliest verifiable
+repository timestamp. The audit artifact, script
+(`scripts/forward_block_tail_influence.py`) and test
+(`tests/test_forward_block_tail_influence.py`) were NOT regenerated or
+altered to fit this document, and the audit's decision rule is unchanged.
 
 ---
 

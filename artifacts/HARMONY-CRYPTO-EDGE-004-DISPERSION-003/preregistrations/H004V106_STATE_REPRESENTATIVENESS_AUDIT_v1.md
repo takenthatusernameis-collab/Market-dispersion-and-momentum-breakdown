@@ -3,8 +3,21 @@
 **Program:** HARMONY-CRYPTO-EDGE-004
 **Experiment ID:** HARMONY-CRYPTO-EDGE-004-DISPERSION-003-STATEAUDIT-001
 **Status:** EXPLORATORY_ONLY
-**Created:** 2026-10-25T07:45:00Z
+**Created:** 2026-10-25T07:40:51Z (commit bbaeac9; see correction note below)
 **Author:** automated research agent (this session)
+**Correction note (2026-10-30T17:15Z):** The declared `Created` time
+(2026-10-25T07:45:00Z) is 4 minutes 9 seconds **after** the document's
+commit time (commit bbaeac9, 2026-10-25T07:40:51Z), so it cannot be the
+file's true creation time. It is corrected above to the commit time, the
+earliest verifiable repository timestamp. This is a **prospective**
+preregistration: it was authored before the audit artifact it describes
+(`integrity_audit/H004V106_state_representativeness_audit_20261025.json`,
+computed 2026-10-25T19:29:55Z, committed 2026-10-25T19:31:45Z) was run,
+so the pre-declared decision rule predates the computation. The only
+defect was the backdated header timestamp; the audit artifact, script
+(`scripts/state_representativeness_audit.py`) and test
+(`tests/test_state_representativeness_audit.py`) were NOT regenerated or
+altered to fit this document, and the audit's decision rule is unchanged.
 
 ---
 

@@ -2,8 +2,21 @@
 
 - **Program**: HARMONY-CRYPTO-EDGE-004 DISPERSION-003
 - **Experiment ID**: HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-001
-- **Preregistered**: 2026-10-26T01:15Z
+- **Preregistered:** 2026-10-26T01:05:19Z (commit 1a6b8fd; see correction note below)
 - **Status**: EXPLORATORY_ONLY (development data only; no fresh holdout; cannot validate/refute H1/H6/H7/H8)
+- **Correction note (2026-10-30T17:15Z):** The declared `Preregistered` time
+(2026-10-26T01:15:00Z) is 9 minutes 41 seconds **after** the document's
+commit time (commit 1a6b8fd, 2026-10-26T01:05:19Z), so it cannot be the
+file's true creation time. It is corrected above to the commit time, the
+earliest verifiable repository timestamp. This is a **prospective**
+preregistration: it was authored before the audit artifact it describes
+(`integrity_audit/H004V106_dispersion_regime_conditioning_20261028.json`,
+computed 2026-10-28T16:21:40Z) was run, so the pre-declared decision rule
+predates the computation. The only defect was the backdated header
+timestamp; the audit artifact, script (`scripts/dispersion_regime_conditioning.py`)
+and test (`tests/test_dispersion_regime_conditioning.py`) were NOT
+regenerated or altered to fit this document, and the audit's decision rule
+is unchanged.
 - **Trigger**: H8 (DISP-003-STATEAUDIT-001) `next_test`: "If the mechanism is cluster-driven, test whether it survives (a) a rolling/adaptive shorter dispersion reference window and (b) conditioning on the 2025-10 dispersion regime, each under a NEW preregistered experiment ID on development data only."
 
 ## Motivation

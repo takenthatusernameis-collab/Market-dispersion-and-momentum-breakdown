@@ -2,8 +2,19 @@
 
 - **Program**: HARMONY-CRYPTO-EDGE-004 DISPERSION-003
 - **Experiment ID**: HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-002
-- **Preregistered**: 2026-10-28T17:00Z
+- **Preregistered:** 2026-10-28T17:00Z (see correction note below)
 - **Status**: EXPLORATORY_ONLY (development data only; no fresh holdout; cannot validate/refute H1/H6/H7/H8)
+- **Correction note (2026-10-30T17:15Z):** The declared `Preregistered` time
+(2026-10-28T17:00:00Z) precedes both the audit artifact it describes
+(computed 2026-10-28T18:34:06Z) and the document's commit time
+(commit ec10a40, 2026-10-28T18:40:28Z). This is a **prospective**
+preregistration authored before the audit ran, not a backdating: the
+declared time is retained as written and is not claimed to be a
+retroactive correction. The commit time is the earliest verifiable
+repository timestamp. The audit artifact, script
+(`scripts/dispersion_rolling_window.py`) and test
+(`tests/test_dispersion_rolling_window.py`) were NOT regenerated or
+altered to fit this document, and the audit's decision rule is unchanged.
 - **Trigger**: H8 (DISP-003-STATEAUDIT-001) `next_test`: "If the mechanism is cluster-driven, test whether it survives (a) a rolling/adaptive shorter dispersion reference window and (b) conditioning on the 2025-10 dispersion regime, each under a NEW preregistered experiment ID on development data only." Branch (b) was executed as REGIME-001 (2026-10-28T16:21:40Z). This preregistration covers branch (a), the only remaining unexecuted branch of H8's next_test.
 
 ## Motivation
