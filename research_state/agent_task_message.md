@@ -16,7 +16,7 @@ The 30-day maturity and sealed-forward-block rules remain mandatory. This overri
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T20:22:00Z)
+## Current state (verified 2026-10-30T20:50:22Z)
 - Tests: `python3 -m unittest discover -s tests` -> **109 run, 109 OK, 0 failures** (108 prior + 1 new holdout-integrity regression test). All `test_state_consistency` pass.
 - Frozen artifacts byte-unchanged: `git diff --stat -- artifacts/ research_state/ configs/` empty. Working tree only `__pycache__` bytecode caches; no source/configs/artifacts changed.
 - JSON state files parse cleanly and mutually consistent (hypothesis_registry.program_status=ACTIVE, run_manifest.program_status=ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
@@ -35,5 +35,5 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells recorded with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
 
-## Session outcome — 2026-10-30T20:22:00Z (this session)
-- Read prior durable handoff/task message; completed verification: `python3 -m unittest discover -s tests` -> 109 run, 109 OK, 0 failures; frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty); working tree only `__pycache__` bytecode caches. JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]). Cutoff gate remains BLOCKED (October 2026 Binance archive unpublished; date_last 2026-09-30; did NOT re-probe). Adaptive-gate trigger not met. No source/configs/artifacts changed; no frozen artifacts/state/configs modified. Grid/audits/placebo/registry/frontier complete; catalog exhausted. No new experiments run. Left state clean. Wrote clear initial task message for next agent.
+## Session outcome — 2026-10-30T20:50:22Z (this session)
+- Read prior durable handoff/task message; completed verification: `python3 -m unittest discover -s tests` -> 109 run, 109 OK, 0 failures; frozen artifacts unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty). JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]). Cutoff gate remains BLOCKED (October 2026 Binance archive unpublished; date_last 2026-09-30; did NOT re-probe). Adaptive-gate trigger not met. No source/configs/artifacts changed; no frozen artifacts/state/configs modified. Grid/audits/placebo/registry/frontier complete; catalog exhausted. No new experiments run. Left state clean. Updated handoff and task message for next agent.
