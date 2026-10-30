@@ -21,13 +21,38 @@ STATE_FILES = [
     STATE / "run_manifest.json",
 ]
 ARTIFACT_FILES = [
-    ART / "grid_summary.json",
-    ART / "forward_block" / "forward_block_evaluation.json",
+        ART / "grid_summary.json",
+        ART / "forward_block" / "forward_block_evaluation.json",
+        ART / "integrity_audit" / "forward_block_integrity_audit.json",
+        ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
+        ART / "integrity_audit" / "forward_block_independent_recomputation_20261028.json",
+        ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
+        ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
+        ART / "integrity_audit" / "H004V106_dispersion_regime_conditioning_20261028.json",
+        ART / "integrity_audit" / "H004V106_rolling_dispersion_window_20261028.json",
+        ART / "integrity_audit" / "H004V106_forward_block_cluster_bootstrap_20261029.json",
+        ART / "integrity_audit" / "H004V106_forward_block_tail_influence_20261029.json",
+        ART / "integrity_audit" / "H004V106_forward_block_temporal_stability_20261029.json",
+]
+
+# Every integrity audit committed under DISPERSION-003's integrity_audit/
+# directory. The original list only asserted on the first five; the later
+# audits (tail influence, temporal stability, cluster bootstrap, regime
+# conditioning, the 2028-10-28 independent recomputation) were therefore
+# outside the durable state-consistency gate. All ten now assert here so a
+# future audit drift (missing file, unparseable JSON, missing identifier or
+# audited_artifact field) fails the build.
+INTEGRITY_AUDITS = [
     ART / "integrity_audit" / "forward_block_integrity_audit.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
     ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
+    ART / "integrity_audit" / "forward_block_independent_recomputation_20261028.json",
+    ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
     ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
+    ART / "integrity_audit" / "H004V106_dispersion_regime_conditioning_20261028.json",
     ART / "integrity_audit" / "H004V106_rolling_dispersion_window_20261028.json",
+    ART / "integrity_audit" / "H004V106_forward_block_cluster_bootstrap_20261029.json",
+    ART / "integrity_audit" / "H004V106_forward_block_tail_influence_20261029.json",
+    ART / "integrity_audit" / "H004V106_forward_block_temporal_stability_20261029.json",
 ]
 
 
@@ -94,12 +119,14 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         self.assertTrue(block.get("block_sealed"))
 
     def test_all_integrity_audits_present_and_parse(self):
-        audits = [
-            ART / "integrity_audit" / "forward_block_integrity_audit.json",
-            ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
-            ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
-            ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
-        ]
+        # Every committed integrity audit must be present, parse, carry an
+        # audit identifier, name the artifact it audited and declare a
+        # conclusion. The full set of ten is asserted here (the earlier
+        # version only covered five, leaving tail-influence, temporal
+        # stability, cluster bootstrap, regime conditioning and the 2028
+        # recomputation outside the gate).
+        audits = INTEGRITY_AUDITS
+        self.assertEqual(len(audits), 10)
         for path in audits:
             with self.subTest(path=str(path)):
                 self.assertTrue(path.exists(), f"missing integrity audit: {path}")
@@ -125,6 +152,83 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         block = _load(archive)
         self.assertIsNone(block.get("block_sealing_rule"))
         self.assertIsNone(block.get("last_allowed_formation_date"))
+
+    def test_audit_conclusions_match_registry_evidence_notes(self):
+        """Each integrity audit's declared operative label must agree with
+        the label recorded in the H8/H9 evidence notes of the hypothesis
+        registry, so the two cannot drift apart (for example an audit
+        relabelled after the fact while the registry keeps the old label).
+
+        Labels are substring assertions, not equality: audit conclusions are
+        free-form prose and the operative label sometimes lives in a JSON
+        key rather than the conclusion string, so the serialized audit is
+        searched rather than the conclusion alone.
+        """
+        registry = _load(STATE / "hypothesis_registry.json")
+        manifest = _load(STATE / "run_manifest.json")
+        grid = _load(ART / "grid_summary.json")
+        # Collect every evidence note and every dated addendum across the
+        # registry, manifest and grid summary: the operative labels for
+        # REGIME-001/002 live in addenda dated 20261028, not in the base
+        # evidence_note or the 20261029 addendum, and the manifest records
+        # them under next_required_actions rather than the registry notes.
+        notes = " ".join(
+            str(h.get(field, ""))
+            for h in registry["hypotheses"]
+            for field in ("evidence_note",) + tuple(
+                k for k in h.keys() if k.startswith("evidence_note_addendum_")
+            )
+        ) + " " + json.dumps(manifest) + " " + json.dumps(grid)
+
+        expected = {
+            "H004V106_state_representativeness_audit_20261025.json": "CLUSTER_DOMINATED",
+            "H004V106_forward_block_tail_influence_20261029.json": "TAIL_ROBUST",
+            "H004V106_forward_block_temporal_stability_20261029.json": "not temporally stable",
+            "H004V106_rolling_dispersion_window_20261028.json": "ROLLING_FRAGILE",
+            "H004V106_dispersion_regime_conditioning_20261028.json": "WEAK_CONTINUOUS_ASSOCIATION",
+        }
+        for filename, needle in expected.items():
+            audit = _load(ART / "integrity_audit" / filename)
+            with self.subTest(audit=filename):
+                self.assertIn(needle, json.dumps(audit))
+                self.assertIn(needle, notes)
+
+        # Cluster bootstrap: the operative finding is the CI spanning zero,
+        # recorded in the audit both as ci_includes_zero=true and in prose, and
+        # in the registry as "cluster bootstrap CI includes zero".
+        bootstrap = _load(ART / "integrity_audit" / "H004V106_forward_block_cluster_bootstrap_20261029.json")
+        with self.subTest(audit="cluster_bootstrap"):
+            self.assertTrue(bootstrap["ci_includes_zero"])
+            self.assertIn("EXPLORATORY_ONLY", bootstrap["conclusion"])
+            self.assertIn("includes zero", notes)
+            self.assertIn("EXPLORATORY_ONLY", notes)
+
+    def test_all_audits_target_the_canonical_forward_block(self):
+        """Every integrity audit must audit the canonical sealed block and
+        carry the canonical anchor estimate, so no audit silently drifted
+        onto a different artifact or a different block vintage.
+
+        The baseline is recorded under different key names across audits
+        (baseline_high_low_diff_net_1x, high_low_diff_net_recomputed,
+        diff_high_low_net, high_low_diff_net, the 'baseline' sub-object),
+        so the canonical value is matched as a float anywhere in the
+        serialized audit rather than under one fixed key.
+        """
+        block = _load(ART / "forward_block" / "forward_block_evaluation.json")
+        canonical = block["high_low_diff_net_1x"]
+        for path in INTEGRITY_AUDITS:
+            audit = _load(path)
+            with self.subTest(path=str(path)):
+                self.assertEqual(
+                    audit["audited_artifact"],
+                    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+                )
+                # The canonical anchor value must appear in the serialized
+                # audit. Key names differ across audits (baseline_high_low_diff_
+                # net_1x, high_low_diff_net_recomputed, diff_high_low_net,
+                # high_low_diff_net, the 'baseline' sub-object), so the check is
+                # on the serialized text rather than one fixed key.
+                self.assertIn(f"{canonical:.16f}", json.dumps(audit))
 
 
 if __name__ == "__main__":
