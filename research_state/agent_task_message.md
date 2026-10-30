@@ -15,8 +15,8 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T23:56:37Z)
-- HEAD `a5f88347efc195f0892a6b77e535497c46a631ee`, `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
+## Current state (verified 2026-10-30T23:58:30Z)
+- HEAD `31fd72bc48e9b281a03edc46b5882313c0984060`, `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
 - JSON state files parse cleanly and mutually consistent (hypothesis_registry.program_status=ACTIVE, run_manifest.program_status=ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
 - Binance panel manifest (re-inspected, not re-probed): 4 series btc/eth × funding/klines, each 2023-01..2026-09 (45 months); `fetch_utc` 2026-10-24T12:46:42Z. October 2026 still unpublished.
 - Cutoff gate: BLOCKED (archive). Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True. Do NOT re-probe.
