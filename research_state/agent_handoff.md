@@ -1,3 +1,18 @@
+# DELAY-ELIMINATION OVERRIDE — 2026-10-30
+
+**Observed state:** the grid and audits are complete, the free-data catalogue is exhausted at cursor 6347, the October 2026 Binance monthly archive was unpublished (last available date 2026-09-30), and a single HEAD probe returned 404. The sealed forward-block and 30-day maturity rules are integrity gates, not removable engineering delays.
+
+**Replace repeated-session work with a state-delta workflow:**
+- Do not re-probe the same failed archive endpoint or repeat the same source audit unless a genuinely new endpoint/source, published archive, provider status change, or network environment change is observed.
+- Do not run the full 109-test suite on every agent activation when no code/test file changed and the last verified HEAD is unchanged. Use a cheap HEAD/diff/state-fingerprint check; run targeted tests after test/code changes and the full suite at a material milestone.
+- Do not append another session note, refresh handoffs, or rewrite manifests/frontier merely to record an unchanged activation. Update only changed artifacts.
+- Do not create a new regression test or run another audit solely to avoid idle time; require a concrete untested invariant or new evidence.
+- When the next archive is actually published and the registered 30-day maturity cutoff is met, run the preregistered refresh/evaluation path. Until then, preserve the block and do not inspect immature outcomes.
+
+Never shorten the 30-day maturity rule, inspect sealed holdout outcomes, change DISPERSION-001/002, relax costs, or call paid services. The program remains active, but activation frequency must follow meaningful data/state changes rather than repeated no-op sessions.
+
+---
+
 # Next Agent Task — HARMONY-CRYPTO-EDGE-004 DISPERSION-003
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
