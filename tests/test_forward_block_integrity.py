@@ -135,6 +135,51 @@ class ForwardBlockIntegrityTests(unittest.TestCase):
         self.assertEqual(len(fb["anchor_parameters"]), 6)
         self.assertTrue(fb.get("block_sealed"))
 
+    def test_canonical_block_formation_set_is_strict_subset_of_ledger_and_defective_archive(self):
+        """Formation-set containment, not just date-range containment.
+
+        The existing date-range test (test_forward_block_is_contained_within_development_window)
+        only checks first/last dates. It cannot detect a future drift in which the
+        canonical block silently swaps formations with the ledger or the defective
+        archive while keeping the same endpoints. Formation-set containment is the
+        stronger, exact statement that matters for the holdout-integrity claim:
+        the canonical block must be a strict subset of both the grid ledger's
+        H004V106 development formations and the already-inspected defective archive,
+        so it can never contain a formation that was not already inspected.
+
+        Observed state (2026-10-30): canonical 608 formations is a strict subset of
+        the ledger's 1338 H004V106 formations and a strict subset of the defective
+        archive's 637 formations. The 29 formations in the defective archive but not
+        in the canonical block are exactly 2026-09-01..2026-09-29, i.e. the
+        formations whose 30-day forward outcome was not complete by the frozen
+        2026-09-30 cutoff and were therefore excluded by the sealing rule.
+        """
+        fb = _fb()
+        ledger = json.loads(LEDGER.read_text())
+        archive = json.loads(ARCHIVE.read_text())
+        canonical = {f["formation_date"] for f in fb["formations"]}
+        ledger_forms = {f["formation_date"] for f in ledger["cells"]["H004V106"]["formations"]}
+        archive_forms = {f["formation_date"] for f in archive["formations"]}
+
+        # Strict subset of the development ledger (no leak, no equality).
+        self.assertLess(len(canonical), len(ledger_forms))
+        self.assertTrue(canonical <= ledger_forms,
+                        msg="canonical block must be a subset of the ledger formations")
+        self.assertFalse(canonical == ledger_forms,
+                         msg="canonical block must be a strict subset of the ledger formations")
+
+        # Strict subset of the already-inspected defective archive.
+        self.assertLess(len(canonical), len(archive_forms))
+        self.assertTrue(canonical <= archive_forms,
+                        msg="canonical block must be a subset of the defective archive formations")
+
+        # The defective-minus-canonical difference is exactly the excluded
+        # September 2026 cohort; this pins the sealing rule's exclusion set.
+        diff = sorted(archive_forms - canonical)
+        self.assertEqual(len(diff), 29)
+        self.assertEqual(diff[0], "2026-09-01")
+        self.assertEqual(diff[-1], "2026-09-29")
+
     def test_funding_panels_have_aligned_header_and_data(self):
         """Regression for the 2026-10-25 panel-schema defect.
 
