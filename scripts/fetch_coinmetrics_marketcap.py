@@ -132,13 +132,23 @@ def main() -> None:
                 t = r.get("time")
                 if t:
                     frames.setdefault(asset, {}).setdefault(t, {})[metric] = r.get(metric, "")
+            # CoinMetrics paginates TIMESERIES endpoints in DESCENDING time order,
+            # so rows[0]/rows[-1] are NOT the earliest/latest observation. Sort by
+            # time before taking boundaries; the raw file is left in API order
+            # (it is hashed and must stay byte-identical).
+            ordered = sorted(rows, key=lambda r: r.get("time") or "")
             asset_entry["metrics"][metric] = {
                 "status": "ok",
                 "rows": len(rows),
                 "raw_path": str(raw_path.relative_to(ROOT)),
                 "raw_sha256": combined_sha,
-                "time_first": rows[0].get("time") if rows else None,
-                "time_last": rows[-1].get("time") if rows else None,
+                "time_first": ordered[0].get("time") if ordered else None,
+                "time_last": ordered[-1].get("time") if ordered else None,
+                "time_order_note": (
+                    "boundaries computed after sorting rows by time ascending; "
+                    "the CoinMetrics timeseries endpoint paginates descending, "
+                    "so the raw file's first/last rows are not the earliest/latest"
+                ),
             }
             print(f"[coinmetrics] {asset}/{metric}: {len(rows)} rows", flush=True)
             time.sleep(BETWEEN_ASSET_SLEEP)

@@ -24,8 +24,9 @@
           "raw_sha256": "9706636ebde4245f864b2d307c7a485c49b8aa72e9462e4ec169f32348bbf91b",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -48,8 +49,9 @@
           "raw_sha256": "57bb42f249081afe79aac9c165b7bbd55e0de2c789ec13f920ef22e6f641a04a",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -77,8 +79,9 @@
           "raw_sha256": "58c67a4d668b79e6e8fb586050a3f6fac1f21ec0038bdbc332da0739f57e3e5f",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -101,8 +104,9 @@
           "raw_sha256": "cf26f4fce1b5d037e50a535f51ef3516afafe6960987644216d097712fc1fcfa",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -133,8 +137,9 @@
           "raw_sha256": "0f0d36e1a56b7d2125c2df1c775caed73ffd501577a7759e2d6d184df6728e9d",
           "rows": 1244,
           "status": "ok",
-          "time_first": "2026-02-18T00:00:00.000000000Z",
-          "time_last": "2023-02-13T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-05-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -160,10 +165,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/ada_CapMrktCurUSD.json",
           "raw_sha256": "3290e709120f55ce880800aaa7a2b516e95000c2337c556e3bd590b364414909",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -184,10 +190,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/ada_CapMrktEstUSD.json",
           "raw_sha256": "5be0bea54a85cf8ff7b2217a3d78d2fa1f6f729092ded9d73b5c7db5d4b95c14",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -219,8 +226,9 @@
           "raw_sha256": "35fc7c4c5cc00ec6469f6f7f8baf91768797ea5348e8460391ce6b9b55934bcc",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -246,10 +254,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/algo_CapMrktCurUSD.json",
           "raw_sha256": "6002aedd8c1a3017eccd0e46e03afc82a5a0430bd04d42f93760c6248426fb40",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -270,10 +279,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/algo_CapMrktEstUSD.json",
           "raw_sha256": "f521c02cc26014e1ed5e7db5a562e6574db28b89006a6db3f40bf47646664305",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -303,10 +313,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/atom_CapMrktEstUSD.json",
           "raw_sha256": "26b7fb1ddfad3094f8bc062343c7fb1e792d0e9a5b8c046cf7a3eef15b19cefc",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -336,10 +347,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/avax_CapMrktEstUSD.json",
           "raw_sha256": "b977a0501ca1a67dfde63f4fb29f7d97dbcb11fddd87d454fad05136174aed19",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -365,10 +377,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/bch_CapMrktCurUSD.json",
           "raw_sha256": "0f0b56b6621ad4c2f4760bd40ba798eadbe45f455b4df28e2939dc300157cf0b",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -389,10 +402,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/bch_CapMrktEstUSD.json",
           "raw_sha256": "4c1abe81ae0aa273340939dd0f6df198a62c24658f29b1d9c65776ae577da124",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -429,10 +443,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/bnb_CapMrktEstUSD.json",
           "raw_sha256": "2b2e1249792fca7acaa74ad414e96df3a3ade43b29537db6daaee7f55e013b46",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -458,10 +473,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/btc_CapMrktCurUSD.json",
           "raw_sha256": "b8d524bea1a3d0eb9374ed52ebef5dd7855ce9e24e3937a581f59e82df4f7e72",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -482,10 +498,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/btc_CapMrktEstUSD.json",
           "raw_sha256": "0e7779a185db2ed535c338ab8679467c6769f09f0b7f662c1a4fc02c67b9a493",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -513,8 +530,9 @@
           "raw_sha256": "7253798aa18520147d243155076a94d4184e6299c51b954054a612730b016af8",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -537,8 +555,9 @@
           "raw_sha256": "15423459c768979677cff3b9671520dc245789129cc4cb2221d01bf2da192918",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -564,10 +583,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/doge_CapMrktCurUSD.json",
           "raw_sha256": "d085fe04bd0f24959332f26f7fce285cbec49adedaf7a0e654c7b9bafa3498a7",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -588,10 +608,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/doge_CapMrktEstUSD.json",
           "raw_sha256": "20589166fafe883f1173c30ec854c2dc15951faf6bb62a514733958431011f56",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -628,10 +649,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/dot_CapMrktEstUSD.json",
           "raw_sha256": "3c0b0367732f9dc39280221a9b2de76df18476a9861cd8535effecda8930ef6a",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -660,8 +682,9 @@
           "raw_sha256": "cdbb8c36d5c521c6cd9e746102243ae03977f3546de7818d89f3e494adcc3ddd",
           "rows": 1094,
           "status": "ok",
-          "time_first": "2025-09-22T00:00:00.000000000Z",
-          "time_last": "2023-04-04T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2025-12-30T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -687,10 +710,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/etc_CapMrktCurUSD.json",
           "raw_sha256": "f29ed31e7d2a42db784acca0349757342caa51e9b2a370bc46fe812210a690b2",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -711,10 +735,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/etc_CapMrktEstUSD.json",
           "raw_sha256": "84d49bd67bfaf9d70eab685f85c22987c41eacc4215c7a5cd723b0f12809b4ce",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -740,10 +765,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/eth_CapMrktCurUSD.json",
           "raw_sha256": "00710cbf046ea151f47182e21402eee64d267f95ea6ae860c2da9b15bed28b61",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -764,10 +790,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/eth_CapMrktEstUSD.json",
           "raw_sha256": "daaac64a2792c8dc4a96f4a6bd21fb050818ecda7762ed97546bb9d15e3bf188",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -797,10 +824,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/fil_CapMrktEstUSD.json",
           "raw_sha256": "c6ad053c4d0990cc17c0eb24a3213d670426c0c734425b9001f8e075086baf2b",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -830,10 +858,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/iost_CapMrktEstUSD.json",
           "raw_sha256": "15ed998fa6d941d65ea432640d6cb66e0d4b81baa061bb57073055d2c05cff73",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -859,10 +888,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/link_CapMrktCurUSD.json",
           "raw_sha256": "767d74b3538e787e88f89ef7e65aa16577ecdcb43767b5ad55ad03011c45b935",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -883,10 +913,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/link_CapMrktEstUSD.json",
           "raw_sha256": "e690b7cf8a4c48fc3e3268c96c35161983a178e9954e4dfac32ce8d918357d90",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -912,10 +943,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/ltc_CapMrktCurUSD.json",
           "raw_sha256": "a555b266ead083943e8a30029ef2901e1633215be75ca5a271c5577bb11ef0f7",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -936,10 +968,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/ltc_CapMrktEstUSD.json",
           "raw_sha256": "2117c8034d1a3b6789e39519addffc8bb9b2741042630db6a8f795984c8ef7db",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -967,8 +1000,9 @@
           "raw_sha256": "af4c047bac77b4a503ebee5bb462bf1fd3275ec2fa71c08036cf66327a4cbf15",
           "rows": 971,
           "status": "ok",
-          "time_first": "2025-05-21T00:00:00.000000000Z",
-          "time_last": "2023-03-12T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2025-08-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -993,8 +1027,9 @@
           "raw_sha256": "7137fac3e5842a18fa23a1ee092003aa78eb6072dc0b626467807ba45b4cd317",
           "rows": 1034,
           "status": "ok",
-          "time_first": "2025-07-23T00:00:00.000000000Z",
-          "time_last": "2023-02-03T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2025-10-30T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -1015,10 +1050,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/neo_CapMrktEstUSD.json",
           "raw_sha256": "76d960010d6c3b431127a3d9247188094b8055a2118af826ac4363b5fafd8727",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1048,10 +1084,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/qtum_CapMrktEstUSD.json",
           "raw_sha256": "7b150603b35a375945acaea5e1f33e3a5da59b7e97426dd353b830bead889df0",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1083,8 +1120,9 @@
           "raw_sha256": "f44ccbaf359e8d20641d9ff25a8b67026ecdcaa78236c750e51422298e0ea137",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1114,10 +1152,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/sol_CapMrktEstUSD.json",
           "raw_sha256": "dac429c4d044d761a869549b5e3b7a21ef83a4907308cccea2bd3394755e81cc",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1147,10 +1186,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/trx_CapMrktEstUSD.json",
           "raw_sha256": "08cadd970c0cc87905221ad9924246a539529b79c9822ac18bbc542f973530a1",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1176,10 +1216,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/uni_CapMrktCurUSD.json",
           "raw_sha256": "43b99ef1965cfa1e35eca8013d4ea9705b300c8786f46c88b968a80cddd8ff91",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -1200,10 +1241,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/uni_CapMrktEstUSD.json",
           "raw_sha256": "afd6fed5881949fe789a5f33c3c370f3a35d160e1d79ffe1e1e4598046d1c2a1",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1233,10 +1275,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/vet_CapMrktEstUSD.json",
           "raw_sha256": "8e7710b93789d922a56e0c473d03e3a68bb1c2feafa7f47fe20556c499205abe",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1262,10 +1305,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/xlm_CapMrktCurUSD.json",
           "raw_sha256": "afddc396152eb3638931753fd059d8e4f48a94282e5645668460f79fc2f65545",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -1286,10 +1330,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/xlm_CapMrktEstUSD.json",
           "raw_sha256": "78a916b98860a62f0e41bec6bf26f76f860ba47a4a596071f268daab061ba8f5",
-          "rows": 1392,
+          "rows": 1397,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-28T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1315,10 +1360,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/xrp_CapMrktCurUSD.json",
           "raw_sha256": "7487b61aaf4b130ad3772b776539f2e8d38ac5890f748d349b8ee1b08f5a4fcb",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -1339,10 +1385,11 @@
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/xrp_CapMrktEstUSD.json",
           "raw_sha256": "3c19b6aff0b00ec9bc05ee9c7e0c470cb04ba35667ab083e246a4f59cf166c53",
-          "rows": 1392,
+          "rows": 1396,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-27T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     },
@@ -1370,8 +1417,9 @@
           "raw_sha256": "bea484ac8c236a53d408adda3d13a43e5ab387cbc0fa9503bd3c7368ae90215a",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
           "page_shas": [
@@ -1394,8 +1442,9 @@
           "raw_sha256": "8dda76462df4c9415ad98e94d00b548a264bb984337352b8abc7340d234e447f",
           "rows": 1392,
           "status": "ok",
-          "time_first": "2026-07-16T00:00:00.000000000Z",
-          "time_last": "2023-04-02T00:00:00.000000000Z"
+          "time_first": "2023-01-01T00:00:00.000000000Z",
+          "time_last": "2026-10-23T00:00:00.000000000Z",
+          "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         }
       }
     }
@@ -1468,7 +1517,7 @@
     "xrp",
     "zec"
   ],
-  "end": "2026-10-23",
+  "end": "2026-10-23T00:00:00.000000000Z",
   "endpoint": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "fetch_utc": "2026-10-24T12:46:42Z",
@@ -1478,8 +1527,10 @@
     "CapMrktCurUSD"
   ],
   "panel_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/marketcap_panel.csv",
+  "panel_raw_divergence_note": "The archived raw files contain rows beyond the normalized panel: the CoinMetrics timeseries request was truncated at the panel end date, but the API returned additional observations (e.g. btc_CapMrktEstUSD raw 1397 rows through 2026-10-28 vs 1392 panel rows through 2026-10-23). Raw files are left byte-identical (they carry raw_sha256 provenance); panel boundaries and panel_sha256 describe the panel CSV only.",
   "panel_rows": 43677,
   "panel_sha256": "9ebcc21467055873e3ae173aa524aa4e24f4f618cfb78144c53264d38c995e95",
   "source": "coinmetrics_community_api",
-  "start": "2023-01-01"
+  "start": "2023-01-01T00:00:00.000000000Z",
+  "timestamp_boundary_correction_utc": "2026-10-30T22:15:00Z: time_first/time_last recomputed from the raw payloads after sorting by time ascending (the CoinMetrics timeseries endpoint paginates descending); `rows` corrected to the actual record count in each archived raw file; top-level start/end recomputed from the panel CSV. Raw files and panel CSV untouched."
 }
