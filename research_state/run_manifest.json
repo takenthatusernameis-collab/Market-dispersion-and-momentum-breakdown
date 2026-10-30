@@ -8,7 +8,7 @@
   "completed_experiment_artifacts_are_immutable": true,
   "latest_verified_panel_end_date": "2024-12-31",
   "data_refresh_required": true,
-  "latest_verified_test_claim": "python3 -m unittest discover -s tests -> 88 run (87 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff; 9 new tail-influence audit tests all OK; re-verified 2026-10-29T06:10:00Z; state consistent across handoff/task message/registry/manifest/frontier; cutoff still BLOCKED until on/after 2026-10-29; frozen artifacts byte-unchanged; only __pycache__ and new tail-influence files in working tree)",
+  "latest_verified_test_claim": "python3 -m unittest discover -s tests -> 100 run, 100 OK, 0 failures (one benign pandas nanops overflow RuntimeWarning); re-verified 2026-10-30T14:22:41Z; state consistent across handoff/task message/registry/manifest/frontier (cursor 6347, verified=220, blocked=6127, discovered=[]); cutoff still BLOCKED (October 2026 Binance archive unpublished, date_last 2026-09-30; do NOT re-probe); frozen artifacts byte-unchanged (git diff --stat empty); only __pycache__ bytecode caches in working tree",
   "next_required_actions": [
     "refresh_free_historical_data -- BLOCKED until on/after 2026-10-29 (data cutoff gate requires cutoff >= 2026-10-29; October 2026 Binance monthly archive 404, not re-probed)",
     "expand_point_in_time_asset_frontier -- DONE this session: re-walked CoinMetrics community catalog, walked 6347 entries, 0 newly discovered at cursor 6347 (catalog not grown); candidates_discovered empty, nothing to validate; recorded in universe_frontier.json catalog_discovery. Re-walk again when catalog may gain new listings.",
@@ -38,5 +38,5 @@
     "canonical_block_impact": "None on outcomes: eval_forward_block.py loads funding into fd but never uses it. Re-sealing at the frozen cutoff 2026-09-30 reproduced 608 formations and high_low_diff_net_1x = 0.6165223953929935 byte-identically. Only the 32 stored input_file_hashes for funding panels changed; evaluated_utc preserved.",
     "regression_test": "tests/test_forward_block_integrity.py::test_funding_panels_have_aligned_header_and_data"
   },
-  "last_updated_utc": "2026-10-30T13:22:00Z"
+  "last_updated_utc": "2026-10-30T14:22:41Z"
 }
