@@ -8,6 +8,7 @@ when state drifts (for example after a handoff rewrite or an artifact touch).
 It only reads local files: no network, no secrets, no trading endpoints.
 """
 import json
+import math
 import unittest
 from pathlib import Path
 
@@ -58,6 +59,18 @@ INTEGRITY_AUDITS = [
 
 def _load(path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _float_values(obj):
+    """Recursively yield every JSON float in a nested dict/list/scalar structure."""
+    if isinstance(obj, float):
+        yield obj
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            yield from _float_values(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from _float_values(v)
 
 
 class ResearchStateConsistencyTests(unittest.TestCase):
@@ -223,12 +236,21 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                     audit["audited_artifact"],
                     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
                 )
-                # The canonical anchor value must appear in the serialized
-                # audit. Key names differ across audits (baseline_high_low_diff_
-                # net_1x, high_low_diff_net_recomputed, diff_high_low_net,
-                # high_low_diff_net, the 'baseline' sub-object), so the check is
-                # on the serialized text rather than one fixed key.
-                self.assertIn(f"{canonical:.16f}", json.dumps(audit))
+                # The canonical anchor value must appear in the audit. Key names
+                # differ across audits (baseline_high_low_diff_net_1x,
+                # high_low_diff_net_recomputed, diff_high_low_net,
+                # high_low_diff_net, the 'baseline' sub-object), so the check
+                # scans all serialized floats rather than one fixed key. A tight
+                # absolute tolerance accepts 1-ULP float-repr differences between
+                # computation paths while still flagging any real drift onto a
+                # different anchor value or block vintage.
+                audit_floats = list(_float_values(audit))
+                self.assertTrue(
+                    any(math.isclose(v, canonical, rel_tol=0.0, abs_tol=1e-9)
+                        for v in audit_floats),
+                    f"canonical anchor {canonical:.16f} not found among audit floats "
+                    f"in {path}",
+                )
 
 
 if __name__ == "__main__":
