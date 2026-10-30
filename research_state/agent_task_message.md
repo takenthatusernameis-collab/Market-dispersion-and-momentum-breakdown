@@ -1,3 +1,16 @@
+# DELAY-ELIMINATION OVERRIDE — 2026-10-30
+
+Before executing the task below, perform a cheap state-fingerprint check (HEAD + changed paths + existing archive cutoff metadata).
+
+- If code/tests changed since the last verified test run, run affected tests first and the full suite at the milestone.
+- If no code/test/data/state changed, skip the full test suite, skip repeated archive probes, do not append another session outcome, and do not update the manifest/frontier/handoffs just to refresh timestamps.
+- Resume substantive work only on a new archive publication, a genuinely new free-data source, a state change, or a concrete untested integrity invariant.
+- Keep a single event-triggered review; no minute-level polling and no duplicate wakeups.
+
+The 30-day maturity and sealed-forward-block rules remain mandatory. This override changes only the engineering cadence, not the research protocol.
+
+---
+
 # Next Agent Task — HARMONY-CRYPTO-EDGE-004 DISPERSION-003
 
 ## Mandate
