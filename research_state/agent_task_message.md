@@ -6,8 +6,7 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 - If no code/test/data/state changed, skip the full test suite, skip repeated archive probes, do not append another session outcome, and do not update the manifest/frontier/handoffs just to refresh timestamps.
 - Resume substantive work only on a new archive publication, a genuinely new free-data source, a state change, or a concrete untested integrity invariant.
 - Keep a single event-triggered review; no minute-level polling and no duplicate wakeups.
-
-The 30-day maturity and sealed-forward-block rules remain mandatory. This override changes only the engineering cadence, not the research protocol.
+- The 30-day maturity and sealed-forward-block rules remain mandatory. This override changes only the engineering cadence, not the research protocol.
 
 ---
 
@@ -16,11 +15,10 @@ The 30-day maturity and sealed-forward-block rules remain mandatory. This overri
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T23:26:33Z)
-- HEAD `a374f30c1e07326a0e2dcc853ea59f927f0a7aff` (checkpoint commit only), `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
+## Current state (verified 2026-10-30T23:28:11Z)
+- HEAD `d25b0e4750a14ec4e7b417903ad77a2450cec1f4`, `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
 - JSON state files parse cleanly and mutually consistent (hypothesis_registry.program_status=ACTIVE, run_manifest.program_status=ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
 - Binance panel manifest (re-inspected, not re-probed): 4 series btc/eth × funding/klines, each 2023-01..2026-09 (45 months); `fetch_utc` 2026-10-24T12:46:42Z. October 2026 still unpublished.
-- Core state-consistency tests pass (script-executing tests may have env deps).
 - Cutoff gate: BLOCKED (archive). Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True. Do NOT re-probe.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical sealed forward block H004V106: high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106. Integrity audits done (TAIL_ROBUST, cluster bootstrap includes zero EXPLORATORY_ONLY, temporal stability not stable EXPLORATORY_ONLY, state representativeness CLUSTER_DOMINATED H8 EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only.
 - Frontier/catalog exhausted (cursor 6347). Registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
@@ -35,3 +33,5 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells recorded with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
+" filePath">
+/home/runner/work/Market-dispersion-and-momentum-breakdown/Market-dispersion-and-momentum-breakdown/research_state/agent_task_message.md
