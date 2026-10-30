@@ -2,8 +2,8 @@ Read AGENTS.md, research_state/agent_handoff.md, research_state/agent_task_messa
 
 The program is ACTIVE CONTINUOUS RESEARCH. Do not wait for a new experiment ID. Work on HARMONY-CRYPTO-EDGE-004-DISPERSION-003. Preserve completed DISPERSION-001 and DISPERSION-002 artifacts unchanged.
 
-Current state (verified 2026-10-30T18:22:41Z):
-- Tests: `python3 -m unittest discover -s tests` -> 108 run, 108 OK, 0 failures.
+Current state (verified 2026-10-30T20:17:00Z):
+- Tests: `python3 -m unittest discover -s tests` -> 109 run, 109 OK, 0 failures.
 - Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty).
 - JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
 - Cutoff gate: BLOCKED (archive). Today 2026-10-30; October 2026 Binance monthly archive still unpublished (date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe this endpoint.
@@ -11,7 +11,7 @@ Current state (verified 2026-10-30T18:22:41Z):
 - H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
 
 Immediate next steps for this session:
-1. Verify state quickly: run tests (expect 108 run, 108 OK); spot-check JSON state files parse; confirm `git diff --stat -- artifacts/ research_state/ configs/` empty.
+1. Verify state quickly: run tests (expect 109 run, 109 OK); spot-check JSON state files parse; confirm `git diff --stat -- artifacts/ research_state/ configs/` empty.
 2. Respect blocker: keep cutoff BLOCKED; do NOT re-probe October archive — repeat of same failed endpoint not a distinct attempt; adaptive-gate trigger not met.
 3. Do not re-run recorded audits (TAIL_ROBUST, cluster bootstrap, temporal stability, REGIME-001/002, state representativeness, forward-block integrity, phase B placebo).
 4. Until October publishes: no independent work available on frozen data (grid/audits/placebo/registry/frontier complete). Catalog exhausted. Follow adaptive research-gate policy if triggers arise; complete any bounded, no-cost local task (tests, consistency checks) rather than another blocker memo.
