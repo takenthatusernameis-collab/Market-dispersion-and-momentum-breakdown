@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T10:31:33Z)
+## Current state (verified 2026-10-30T10:43:59Z)
 - Tests: `python3 -m unittest discover -s tests` -> **98 run, 98 OK, 0 failures**. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty; only `tests/__pycache__` bytecode caches in working tree). JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json ACTIVE_INCOMPLETE, cursor 6347).
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-30; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical sealed forward block H004V106 (608 formations, block 2025-01-01..2026-08-31): high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106. Integrity audits all done: TAIL_ROBUST, cluster bootstrap CI includes zero (EXPLORATORY_ONLY), temporal stability sign not stable (EXPLORATORY_ONLY), state representativeness CLUSTER_DOMINATED (H8 EXPLORATORY_ONLY), REGIME-001/002 read-only (EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only.
@@ -19,8 +19,3 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells recorded with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
-
-## Test defect fixed in prior session (2026-10-30)
-`tests/test_disp002_phase_b_placebos.py::test_frozen_files_unchanged` had two defects that produced a false failure on byte-untouched frozen files:
-- `int(f.stat().st_mtime) == 1793211518` — the fs rewrites mtime on checkout/restore. Now a bounded sanity check (mtime not in the future); content identity is the authoritative assertion.
-- `sha256(file_bytes) == git blob SHA` — mismatched hash domains. Now `file_bytes == git cat-file blob <sha>` (blob bytes from index), immune to eol/text filters and mtime churn. Helper `_git_blob_bytes` added; `_git_blob_sha` and unused `hashlib` import removed.
