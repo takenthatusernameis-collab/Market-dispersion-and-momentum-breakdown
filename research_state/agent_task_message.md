@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T08:47:26Z)
+## Current state (verified 2026-10-30T09:27:06Z)
 - Tests: `python3 -m unittest discover -s tests` -> **98 run, 98 OK, 0 failures**. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty; only `tests/__pycache__` bytecode caches in working tree).
 - Cutoff gate: BLOCKED. Binance monthly series date_last = 2026-09-30; October 2026 archive still unpublished. Do NOT re-probe. Canonical forward block: data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, 608 formations.
 - DISPERSION-003: grid 216/216 OK, 0 Holm-rejected. Canonical H004V106 forward block (608 formations) not significant (HAC t=1.548, CI [-0.164,1.397]). All integrity audits done (TAIL_ROBUST, cluster bootstrap includes zero, temporal stability not stable, CLUSTER_DOMINATED per H8, REGIME-001/002). Defective archive unchanged.
