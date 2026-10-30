@@ -71,7 +71,7 @@ class CandidateValidationTests(unittest.TestCase):
             if est.get("time_first") != lo or est.get("time_last") != hi:
                 mismatches.append((e["asset"], est.get("time_first"), lo,
                                    est.get("time_last"), hi))
-        self.assertEqual(mismatches, f"boundary mismatch: {mismatches[:5]}")
+        self.assertFalse(mismatches, msg=f"boundary mismatch: {mismatches[:5]}")
 
     def test_time_order_note_records_the_sort(self):
         """The correction must be documented on every verified metric entry so a
