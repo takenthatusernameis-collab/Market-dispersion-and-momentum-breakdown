@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## State on handoff (re-verified 2026-10-30T05:33:57Z)
+## State on handoff (re-verified 2026-10-30T05:38:25Z)
 - Tests: `python3 -m unittest discover -s tests` -> 98 run (97 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff). Frozen artifacts byte-unchanged. JSON state files parse cleanly and mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree clean apart from `tests/__pycache__`/`scripts/__pycache__`.
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-30; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30, no 2026-10 months for any symbol). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt. Preserve blocker; move to independent unblocked work per AGENTS.md / adaptive research-gate policy v1.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team artifact present (n_formations=53, gross=+0.1747, permutation placebo p two-sided=0.149, CI [-0.241,0.239], random-ranking z~-1.49). EXPLORATORY_ONLY.
@@ -21,7 +21,7 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 - No new empirical work: cutoff BLOCKED (October 2026 Binance archive unpublished, date_last 2026-09-30), catalog exhausted (cursor 6347), all audits/grid/placebo/registry complete on frozen data. Program stays ACTIVE.
 - Handoff updated with this session's verification; agent_task_message.md refreshed as clear initial task message for next agent.
 
-## Session outcome — 2026-10-30T05:37:46Z (this session)
+## Session outcome — 2026-10-30T05:38:25Z (this session)
 - Independently re-verified state: `python3 -m unittest discover -s tests` -> 98 run (97 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff, file not in modified list). `git diff --stat -- artifacts/ research_state/ configs/` empty; only __pycache__ untracked/modified. hypothesis_registry.json, run_manifest.json, universe_frontier.json parse cleanly and are mutually consistent. Confirms prior session's state is accurate; no drift.
 - No new empirical work: cutoff BLOCKED (October 2026 Binance archive unpublished, date_last 2026-09-30), catalog exhausted (cursor 6347), all audits/grid/placebo/registry complete on frozen data. Program stays ACTIVE.
 - Handoff updated with this session's verification; agent_task_message.md refreshed as clear initial task message for next agent.
