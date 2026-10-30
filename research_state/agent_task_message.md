@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T06:39:22Z)
+## Current state (verified 2026-10-30T06:39:37Z)
 - Tests: `python3 -m unittest discover -s tests` -> 98 run (97 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff). Frozen artifacts byte-unchanged. JSON state files parse cleanly and mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Working tree clean apart from `__pycache__`.
 - Cutoff gate: BLOCKED (archive). Binance monthly series date_last = 2026-09-30; October 2026 archive still unpublished. Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
 - DISPERSION-001/002 unchanged. Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical forward block H004V106 (608 formations, block 2025-01-01..2026-08-31): high_low_diff_net_1x=+0.6165, HAC t=1.5482, 95% CI [-0.164,1.397] not significant, median -0.0106. Integrity audits all done: TAIL_ROBUST (LOO/trim/winsorize below thresholds), cluster bootstrap CI [-0.118,1.143] includes zero (EXPLORATORY_ONLY), temporal stability sign not temporally stable (EXPLORATORY_ONLY), forward-block integrity (independent recomputation matches), state representativeness CLUSTER_DOMINATED by 2025-10 (H8 EXPLORATORY_ONLY), REGIME-001/002 read-only EXPLORATORY_ONLY. Defective archive byte-unchanged; development/exploratory evidence only, not fresh confirmation.
