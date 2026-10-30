@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T14:26:34Z)
+## Current state (verified 2026-10-30T14:26:59Z)
 - Tests: `python3 -m unittest discover -s tests` -> **100 run, 100 OK, 0 failures**.
 - Frozen artifacts byte-unchanged: `git diff --stat -- artifacts/ research_state/ configs/` empty except bytecode caches. Only preregistration file and state records present.
 - JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json ACTIVE_INCOMPLETE, cursor 6347; candidates_discovered=[], candidates_verified=220, candidates_blocked=6127).
