@@ -2,8 +2,8 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T12:25:25Z)
-- Tests: `python3 -m unittest discover -s tests` -> **100 run, 100 OK, 0 failures** (this session; numpy/pandas installed per requirements.txt — the runner image ships without them).
+## Current state (verified 2026-10-30T12:26:54Z)
+- Tests: `python3 -m unittest discover -s tests` -> **100 run, 100 OK, 0 failures** (numpy/pandas installed per requirements.txt).
 - Frozen artifacts byte-unchanged: `git diff --stat -- artifacts/ research_state/ configs/` empty (only `tests/__pycache__` bytecode caches in working tree).
 - JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json ACTIVE_INCOMPLETE, cursor 6347).
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-30; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
