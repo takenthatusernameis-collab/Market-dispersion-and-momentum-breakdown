@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T12:15:48Z)
+## Current state (verified 2026-10-30T12:20:22Z)
 - Tests: `python3 -m unittest discover -s tests` -> **100 run, 100 OK, 0 failures** (this session; numpy/pandas installed per requirements.txt — the runner image ships without them). Prior handoffs reported 98/98, which was stale; the suite is 100 tests. Just fixed: 4 float-repr failures in `test_all_audits_target_the_canonical_forward_block` (tests/test_state_consistency.py) — 4 integrity audits stored the canonical anchor `0.6165223953929935` as `...9936`/`...9937` (1 ULP off from different float computation paths). Replaced the strict `f"{canonical:.16f}"` substring check with a tight float comparison (`math.isclose`, rel_tol=0, abs_tol=1e-9) across all serialized floats, keeping the exact `audited_artifact` match so the integrity gate still flags real drift onto a different anchor/block vintage. All 100 tests now pass.
 - Frozen artifacts byte-unchanged: `git diff --stat -- artifacts/ research_state/ configs/` empty (only `tests/test_state_consistency.py` source + `tests/__pycache__` bytecode caches in working tree).
 - JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json ACTIVE_INCOMPLETE, cursor 6347).
