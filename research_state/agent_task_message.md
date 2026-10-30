@@ -2,8 +2,8 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T15:20:48Z)
-- Tests: `python3 -m unittest discover -s tests` -> **107 run, 107 OK, 0 failures**. State was re-verified this session; a test assertion bug at tests/test_candidate_validation.py:74 (compared a list to a string) was fixed, and the suite had drifted from the previously claimed 100/100 (actual count 107); claim corrected. Zero real data mismatches (190 eligible candidates all consistent).
+## Current state (verified 2026-10-30T15:22:43Z)
+- Tests: `python3 -m unittest discover -s tests` -> **107 run, 107 OK, 0 failures**. State re-verified this session; no changes.
 - Frozen artifacts byte-unchanged: `git diff --stat -- artifacts/ research_state/ configs/` empty. Only `tests/test_candidate_validation.py` (1 line) plus `__pycache__` bytecode caches in working tree.
 - JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json ACTIVE_INCOMPLETE, cursor 6347; candidates_discovered=[], candidates_verified=220, candidates_blocked=6127).
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-30; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe. Adaptive-gate trigger not met (single route; not a durable structural impossibility).
@@ -24,3 +24,4 @@ Free public data only, historical-only, point-in-time ranks, no forward-fill, no
 
 ## End-of-session requirement
 End this session by updating durable state (handoff, task message, registry, manifest, frontier as appropriate), reporting only verified progress, and leaving a concrete next action.
+"
