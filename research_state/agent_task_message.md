@@ -2,8 +2,8 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T13:17:55Z)
-- Tests: `python3 -m unittest discover -s tests` -> **Ran 100 tests OK** (0 failures). numpy/pandas installed per requirements.txt.
+## Current state (verified 2026-10-30T13:18:48Z)
+- Tests: `python3 -m unittest discover -s tests` -> **Ran 100 tests OK** (0 failures). numpy/pandas installed per requirements.txt. One benign pandas nanops overflow RuntimeWarning in test output; unrelated to state.
 - Frozen artifacts byte-unchanged: `git diff --stat -- artifacts/ research_state/ configs/` empty; working tree contains only `__pycache__` bytecode caches.
 - JSON state files parse cleanly and are mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json ACTIVE_INCOMPLETE, cursor 6347; candidates_discovered=[], candidates_verified=220, candidates_blocked=6127).
 - Cutoff gate: BLOCKED (archive). Today is 2026-10-30; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt; adaptive-gate trigger not met (one route only).
