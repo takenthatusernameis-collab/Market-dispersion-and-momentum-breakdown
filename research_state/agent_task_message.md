@@ -2,12 +2,12 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T09:28:07Z)
-- Tests: `python3 -m unittest discover -s tests` -> **98 run, 98 OK, 0 failures**. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty; only `tests/__pycache__` bytecode caches in working tree).
-- Cutoff gate: BLOCKED. Binance monthly series date_last = 2026-09-30; October 2026 archive still unpublished. Do NOT re-probe. Canonical forward block: data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, 608 formations.
-- DISPERSION-003: grid 216/216 OK, 0 Holm-rejected. Canonical H004V106 forward block (608 formations) not significant (HAC t=1.548, CI [-0.164,1.397]). All integrity audits done (TAIL_ROBUST, cluster bootstrap includes zero, temporal stability not stable, CLUSTER_DOMINATED per H8, REGIME-001/002). Defective archive unchanged.
-- Frontier: exhausted (cursor 6347, CoinMetrics community catalog fully walked), candidates_discovered=[], candidates_verified=220, candidates_blocked=6127. Catalog growth required for new discovery.
-- Registry: H1 immutable NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY. Program ACTIVE.
+## Current state (verified 2026-10-30T09:29:20Z)
+- Tests: `python3 -m unittest discover -s tests` -> **98 run, 98 OK, 0 failures**. Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty; only `tests/__pycache__` bytecode caches in working tree). JSON state files parse cleanly and mutually consistent (hypothesis_registry.json ACTIVE, run_manifest.json ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.json cursor 6347).
+- Cutoff gate: BLOCKED (archive). Today is 2026-10-30; October 2026 Binance monthly archive still unpublished (Binance series date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
+- DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical sealed forward block H004V106 (608 formations, block 2025-01-01..2026-08-31): high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106. Integrity audits all done: TAIL_ROBUST, cluster bootstrap CI includes zero (EXPLORATORY_ONLY), temporal stability sign not stable (EXPLORATORY_ONLY), state representativeness CLUSTER_DOMINATED (H8 EXPLORATORY_ONLY), REGIME-001/002 read-only (EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only.
+- Frontier/catalog: exhausted (cursor 6347), candidates_discovered=[], candidates_verified=220, candidates_blocked=6127. Catalog growth required for new discovery. CoinMetrics community catalog fully walked (6347 entries); no new asset ids remain outside legacy28 ∪ verified ∪ blocked.
+- Registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
 
 ## Priority next actions
 1. Verify: run tests (expect 98 run, 98 OK). Spot-check JSON; confirm `git diff --stat -- artifacts/ research_state/ configs/` empty.
