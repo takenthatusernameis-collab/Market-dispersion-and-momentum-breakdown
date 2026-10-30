@@ -68,7 +68,8 @@ def _series_sig(d):
     validation record, which is hashed by the sealed forward block.
     """
     if isinstance(d, dict):
-        out = {k: _series_sig(v) for k, v in d.items() if k != "fetch_utc"}
+        out = {k: _series_sig(v) for k, v in d.items()
+               if k not in ("fetch_utc", "time_order_note")}
         if isinstance(out.get("series"), list):
             out["series"] = sorted(out["series"], key=lambda r: (r.get("asset", ""), _KIND_ORDER.get(r.get("kind", ""), 99)))
         return out
@@ -282,14 +283,30 @@ def main() -> int:
             raw_path.write_text(json.dumps(rows, indent=2, sort_keys=True) + "\n")
             if rows:
                 has_est = True if metric == "CapMrktEstUSD" else has_est
+            # CoinMetrics paginates TIMESERIES endpoints in DESCENDING time
+            # order: page 1 opens at the request end_time and walks backwards,
+            # only the final page is ascending. rows[0]/rows[-1] are therefore
+            # NOT the earliest/latest observation. Recording them as
+            # time_first/time_last produced inverted boundaries for 189 of 190
+            # verified candidates (e.g. alice time_first 2026-07-16 >
+            # time_last 2023-04-02), which would mislead any downstream
+            # point-in-time eligibility check. Sort by time before taking
+            # boundaries; the raw file is left in API order (it is hashed and
+            # must stay byte-identical).
+            ordered = sorted(rows, key=lambda r: r.get("time") or "")
             entry["metrics"][metric] = {
                 "status": "ok",
                 "rows": len(rows),
                 "raw_path": str(raw_path.relative_to(ROOT)),
                 "raw_sha256": combined_sha,
                 "page_shas": page_shas,
-                "time_first": rows[0].get("time") if rows else None,
-                "time_last": rows[-1].get("time") if rows else None,
+                "time_first": ordered[0].get("time") if ordered else None,
+                "time_last": ordered[-1].get("time") if ordered else None,
+                "time_order_note": (
+                    "boundaries computed after sorting rows by time ascending; "
+                    "the CoinMetrics timeseries endpoint paginates descending, "
+                    "so the raw file's first/last rows are not the earliest/latest"
+                ),
             }
             print(f"[candidate] {asset}/{metric}: {len(rows)} rows", flush=True)
             time.sleep(BETWEEN_ASSET_SLEEP)
