@@ -2,7 +2,7 @@
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-30T04:54:30Z)
+## Current state (verified 2026-10-30T04:56:21Z)
 - Tests: `python3 -m unittest discover -s tests` -> 98 run (97 OK + 1 pre-existing mtime-guard failure on frozen formation_returns_conditioned.csv; content unchanged per git diff). Frozen artifacts byte-unchanged. JSON state files parse cleanly and mutually consistent (hypothesis_registry.json, run_manifest.json, universe_frontier.json). Working tree clean apart from `tests/__pycache__/*.pyc`.
 - Cutoff gate: BLOCKED (archive). Binance monthly series date_last = 2026-09-30; October 2026 archive still unpublished. Do NOT re-probe — repeat of same failed endpoint is not a distinct attempt.
 - DISPERSION-001/002 unchanged. Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical forward block H004V106 (608 formations, block 2025-01-01..2026-08-31) has integrity audits: TAIL_ROBUST (LOO/trim/winsorize), cluster bootstrap (formation-month) mean 0.524 SE 0.375 95% CI [-0.118, 1.143] including zero (EXPLORATORY_ONLY), temporal stability sign not temporally stable (EXPLORATORY_ONLY), forward-block integrity (independent recomputation matches). H8 CLUSTER_DOMINATED by 2025-10. REGIME-001/002 executed on frozen block (read-only, EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only, not fresh confirmation.
@@ -19,4 +19,3 @@ Continue quantitative research. Historical-only, free-data-only. No live/paper t
 
 ## Constraints
 Free public data only, historical-only, point-in-time ranks, no forward-fill, no trading, no secrets. Never change DISPERSION-001/002. All cells OK/BLOCKED/INVALID/FAILED/NOT_RUN with reason. No relaxation of 30-day maturity rule; do not open sealed holdout.
-"
