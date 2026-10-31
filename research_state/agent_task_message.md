@@ -15,8 +15,8 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-31T02:59:55Z)
-- Tests: `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures** (last verified 2026-10-31T01:05Z). HEAD `25a3e3ac`; `git diff --stat -- artifacts/ research_state/ configs/` empty. JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
+## Current state (verified 2026-10-31T03:00:30Z)
+- Tests: `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures** (last verified 2026-10-31T01:05Z; skipped this session per override — no code/test/data/state changed). HEAD `8f347e9001d0c9740d100c7283641b853112740a`; `git diff --stat -- artifacts/ research_state/ configs/` empty; working-tree deltas only `__pycache__` bytecode caches. JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
 - Forward block H004V106 **outcome** byte-unchanged: n_formations 608, high_low_diff_net_1x=+0.6165223953929935, date_first 2025-01-01, date_last 2026-08-31, last_allowed_formation_date 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z, status OK (n_high=61/n_low=90/n_mid=457; HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106).
 - Binance monthly/daily archives: October 2026 unpublished (404). September 2026 available.
 - Cutoff gate: BLOCKED. Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True.
