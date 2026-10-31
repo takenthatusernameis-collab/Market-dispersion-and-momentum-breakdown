@@ -15,20 +15,20 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-31T00:10:01Z)
-- HEAD `b38489841f1eb6366b8e59db4c41d709fcebdcc1` (checkpoint commit only; handoff edit itself vs prior verified `709f1d28d89737957626faa7ba1742772053c557`), `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches (no source/test/config/data/state/artifact changes).
+## Current state (verified 2026-10-31T00:12:00Z)
+- HEAD `4d7d041ef17dd621631b8a70c653a6cb550be72a` (checkpoint commit only; handoff edit itself vs prior verified `b38489841f1eb6366b8e59db4c41d709fcebdcc1`), `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
 - JSON state files parse cleanly and mutually consistent (hypothesis_registry.program_status=ACTIVE, run_manifest.program_status=ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
-- Binance panel manifest (re-inspected, not re-probed): 4 series btc/eth × funding/klines, each 2023-01..2026-09 (45 months); `fetch_utc` 2026-10-24T12:46:42Z. October 2026 still unpublished.
-- Cutoff gate: BLOCKED (archive). Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True. Do NOT re-probe.
+- **Archive probe 2026-10-31T00:12Z (post-month-close, distinct attempt):** October 2026 Binance monthly archive genuinely UNPUBLISHED despite the month having closed. Monthly klines BTCUSDT/ETHUSDT 2026-10 -> 404; monthly fundingRate BTCUSDT 2026-10 -> 404; **daily** klines BTCUSDT 2026-10-30 and 2026-10-31 -> 404 (new endpoint family, never probed before). Control BTCUSDT monthly 2026-09 -> HTTP 200 (2066 bytes, Last-Modified 2026-10-02T09:36:21Z), so the archive is alive, only the new month is missing. Recorded in `universe_frontier.latest_archive_probe`.
+- Cutoff gate: BLOCKED (archive). Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True. Do NOT re-probe the same endpoints.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical sealed forward block H004V106: high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106. Integrity audits done (TAIL_ROBUST, cluster bootstrap includes zero EXPLORATORY_ONLY, temporal stability not stable EXPLORATORY_ONLY, state representativeness CLUSTER_DOMINATED H8 EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only.
 - Frontier/catalog exhausted (cursor 6347). Registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
 
 ## Priority next actions
 1. Verify state quickly each session per override: `git rev-parse HEAD`, `git diff --stat -- artifacts/ research_state/ configs/`, spot-check JSON files. Skip full suite if no code/test/data/state changed.
-2. Respect blocker: October 2026 Binance archive unpublished. Keep cutoff BLOCKED; do NOT re-probe.
+2. Respect blocker: October 2026 Binance archive unpublished (verified post-close 2026-10-31). Keep cutoff BLOCKED; do NOT re-probe the monthly/daily endpoints already recorded as 404.
 3. Do not re-run recorded audits. H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY. Do not modify frozen artifacts/state/configs.
-4. Until October publishes, no further independent work on frozen data (grid complete, audits complete, catalog exhausted). Follow adaptive research-gate policy if trigger conditions arise. Complete any bounded, no-cost local task (tests, consistency checks) only if concrete untested invariant found.
-5. When October publishes: `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` only if cutoff >= 2026-10-29 with October present. Preregister/evaluate fresh sealed forward block with HAC/overlap-aware uncertainty, only completed 30-day outcomes; require economic significance + Holm across family before promotion; account for H8 cluster-dominance.
+4. Until the next month publishes, no further independent work on frozen data (grid complete, audits complete, catalog exhausted). Adaptive-gate trigger not met as of 2026-10-31T00:12Z (negative availability result on the same source family is not a durable structural impossibility). Complete any bounded, no-cost local task (tests, consistency checks) only if a concrete untested invariant is found.
+5. When the next month publishes: `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` only if cutoff >= month-end with that month present. Preregister/evaluate a fresh sealed forward block with HAC/overlap-aware uncertainty, only completed 30-day outcomes; require economic significance + Holm across family before promotion; account for H8 cluster-dominance.
 6. Leave clean state; update handoff/registry/manifest/frontier as appropriate. Never wait for user-provided experiment ID. Program ACTIVE.
 
 ## Constraints
