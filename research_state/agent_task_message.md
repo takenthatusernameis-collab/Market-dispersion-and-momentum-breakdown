@@ -1,13 +1,13 @@
-# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T13:47:29Z)
+# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T13:55:00Z)
 
 ## Situation
-Program active and verified. HEAD `a725ec9` (chore(kilo): checkpoint agent session; branch tracks origin/main). Working tree has uncommitted `__pycache__` bytecode caches. New files `scripts/alpha_spending.py`, `tests/test_alpha_spending.py` added. Tests `python3 -m unittest discover -s tests` -> 136 run, 135 OK, 1 ERROR (`tests.test_alpha_spending` - dataclass/exec_module issue in `scripts/alpha_spending.py`). DISPERSION-003 tests pass. Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9 (H1..H9 present; tests pin it at 9). Universe frontier exhausted at cursor 6347 (catalog walked, 0 newly discovered). All DISP-003 exploratory audits complete EXPLORATORY_ONLY.
+Program active and verified. HEAD `9f4ee18` (chore(kilo): checkpoint agent session; branch tracks origin/main). Working tree: `scripts/alpha_spending.py` modified (dead-code cleanup); untracked `__pycache__` bytecode caches only. Tests `python3 -m unittest discover -s tests` -> 145 run, 145 OK, 0 failures — the alpha_spending regression is FIXED. Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9 (H1..H9 present; tests pin it at 9). Universe frontier exhausted at cursor 6347 (catalog walked, 0 newly discovered). All DISP-003 exploratory audits complete EXPLORATORY_ONLY.
 
 ## Blocker (respect it — do not re-probe)
 October 2026 Binance public archive is unpublished; data-cutoff gate BLOCKED (requires cutoff >= 2026-10-29 on a published archive). Price/funding panels end 2026-09-30. Today is 2026-10-31; October month not yet closed; archive expected early November. Last direct probe 2026-10-31T09:59:46Z: BTCUSDT/ETHUSDT/BNBUSDT October 2026 klines and BTCUSDT October 2026 funding all HTTP 404; September 2026 BTCUSDT klines HTTP 200 (endpoint live, miss genuine). Do not re-probe while unpublished. Adaptive-gate trigger not met (single route, temporary timing). Preserve blocker.
 
 ## Your task
-1. **Fix test regression first**: Resolve import/runtime error in `scripts/alpha_spending.py` / `tests/test_alpha_spending.py` so `python3 -m unittest discover -s tests` passes cleanly (136/136). Do not change DISPERSION-001/002 artifacts, frozen forward block, or DISP-003 logic. Inspect the failing code and fix minimally.
+1. **DONE — test regression fixed**: `scripts/alpha_spending.py` is now the single clean implementation (145/145 OK). No further action needed on it unless a future edit reintroduces duplicates.
 2. **Respect cutoff**: Do not re-probe October archive before publication.
 3. **When unblocked**: Confirm October 2026 Binance archive published (cutoff >= 2026-10-29). Run `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` (free public data only; no paid services/secrets). Re-run tests and confirm all pass.
 4. **Verify integrity**: Confirm H004V106 canonical forward block unchanged.
@@ -21,6 +21,6 @@ October 2026 Binance public archive is unpublished; data-cutoff gate BLOCKED (re
 - Historical research only.
 
 ## Concrete next action for this session
-Fix the alpha_spending regression (1 error blocking clean test suite). After fixing and verifying tests pass, if October archive still unpublished, document state and leave handoff ready for H10 preregistration when unblocked. Do not re-probe October archive.
+Nothing bounded and unblocked remains. Preserve the BLOCKED cutoff and the H10 preregistration plan. When the October 2026 Binance archive publishes, execute the unblocked priority list (steps 3-6) and update durable state.
 
 (End of file)
