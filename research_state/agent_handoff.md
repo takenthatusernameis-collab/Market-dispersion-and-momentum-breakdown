@@ -33,4 +33,9 @@ Advance the program with verifiable artifacts. Historical-only, free-data-only. 
 - **Cutoff:** still BLOCKED (October 2026 Binance archive unpublished). Did NOT re-probe. Adaptive-gate trigger not met.
 - **Next action:** nothing bounded and unblocked remains. When the October 2026 Binance archive publishes, execute the unblocked priority list above (steps 3-6), starting with H10 preregistration.
 
+## Session record 2026-10-31T13:56Z (verification pass)
+- **Verified:** `python3 -m unittest discover -s tests` -> 145 run, 145 OK, 0 failures. Working tree contains only bytecode caches plus the previously recorded `scripts/alpha_spending.py` modification; no frozen artifacts touched.
+- **Blocker preserved:** October 2026 Binance archive still unpublished; cutoff gate BLOCKED. No re-probe performed.
+- **Next action:** nothing bounded and unblocked remains. When October 2026 Binance archive publishes, execute priority steps 3-6 (data refresh, H10 preregistration, state updates).
+
 (End of file)
