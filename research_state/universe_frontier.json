@@ -12765,7 +12765,7 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-10-31T00:12:00Z",
+  "last_updated_utc": "2026-10-31T04:06:00Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12807,7 +12807,8 @@
     "probe_utc": "2026-10-31T00:12:00Z",
     "rationale": "Prior sessions probed 2026-10-30 and earlier, i.e. BEFORE the October 2026 monthly window closed; a 404 then is not informative. Today 2026-10-31 the month is closed, so a 404 is a genuine availability signal. Also probed the daily-kline path (never probed before) and the fundingRate monthly path for the new month."
   },
-  "latest_verified_data_refresh_utc": "2026-10-24T04:31:40Z",
+  "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
+  "data_refresh_provenance_repair_20261031": "data_refresh_provenance.json carried an inverted coinmetrics boundary (date_first 2026-07-16 > date_last 2023-04-04, contradicting the panel CSV 2023-01-01..2026-10-23) and stale binance funding/klines rows (4152 raw-archive newlines vs 4107/1369 data rows written to the panel CSVs after the 2026-10-31 funding-panel rebuild). Repaired by scripts/fix_refresh_provenance_boundaries.py recomputing every boundary/rows field from the panel CSVs; root cause fixed in scripts/refresh_free_data.py. New regression test tests/test_refresh_provenance_boundaries.py (4 tests). Full suite 135/135 OK. No panel CSV, no grid ledger, no hypothesis conclusion and no forward block changed; the canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True) and data_refresh_provenance.json is not a forward-block input, so no re-sealing was required. Catalog discovery unchanged: 6347 entries walked, 0 newly discovered, cursor 6347. Cutoff gate remains BLOCKED (October 2026 Binance archive unpublished; did NOT re-probe).",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
   "next_candidate_batch_size": 25,
   "program_id": "HARMONY-CRYPTO-EDGE-004",

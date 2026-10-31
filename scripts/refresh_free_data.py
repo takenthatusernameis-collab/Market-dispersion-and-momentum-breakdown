@@ -15,6 +15,7 @@ cutoff is reproducible and auditable.
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import io
 import json
@@ -440,6 +441,22 @@ def main() -> int:
     cm_panel_sha = sha256_bytes(cm_panel_bytes)
     cm_panel_rows = sum(len(v) for v in frames.values())
 
+    # The provenance summary's date_first/date_last must describe the panel CSV
+    # actually written, not a copy of the manifest's per-metric boundaries. The
+    # manifest is computed after sorting each metric's rows by time ascending,
+    # so its time_first/time_last are correct -- but the previous code reached
+    # into the manifest for the alphabetically-first asset's CapMrktEstUSD
+    # time_first (which is that asset's LATEST observation, since CoinMetrics
+    # paginates descending) and for the max CapMrktEstUSD time_last across assets
+    # (some other asset's EARLIEST observation). The committed summary read
+    # date_first 2026-07-16 / date_last 2023-04-04: an inverted boundary that
+    # contradicted the panel CSV on disk (2023-01-01..2026-10-23). Derive the
+    # summary from the panel CSV itself, the single source of truth.
+    with cm_panel_path.open(newline="", encoding="utf-8") as fh:
+        _cm_dates = [r["date"] for r in csv.DictReader(fh) if r.get("date")]
+    cm_date_first = min(_cm_dates) if _cm_dates else None
+    cm_date_last = max(_cm_dates) if _cm_dates else None
+
     cm_manifest_path = panels / "marketcap_panel_manifest.json"
     cm_manifest = {
         "experiment_id": exp,
@@ -465,8 +482,17 @@ def main() -> int:
         "panel_path": str(cm_panel_path.relative_to(ROOT)),
         "panel_sha256": cm_panel_sha,
         "panel_rows": cm_panel_rows,
-        "date_first": cm_manifest["asset_results"][sorted(frames.keys())[0]]["metrics"]["CapMrktEstUSD"]["time_first"] if frames else None,
-        "date_last": max((v["metrics"]["CapMrktEstUSD"]["time_last"] for v in cm_asset_results.values() if v["metrics"].get("CapMrktEstUSD", {}).get("status") == "ok"), default=None),
+        # date_first/date_last describe the panel CSV written above, derived from
+        # the CSV itself. Previously these copied the manifest's per-metric
+        # boundaries, which are correct in the manifest but describe a different
+        # asset set: date_first came from the alphabetically-first asset's
+        # CapMrktEstUSD time_first (that asset's LATEST observation, since
+        # CoinMetrics paginates descending) and date_last from the max
+        # CapMrktEstUSD time_last across assets (some other asset's EARLIEST).
+        # The committed summary read date_first 2026-07-16 / date_last 2023-04-04,
+        # an inverted boundary contradicting the panel CSV (2023-01-01..2026-10-23).
+        "date_first": cm_date_first,
+        "date_last": cm_date_last,
     }
 
     # ---------------- Binance price + funding ----------------

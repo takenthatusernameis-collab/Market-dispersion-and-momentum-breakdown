@@ -285,7 +285,7 @@
         "months_ok": 45,
         "months_requested": 45,
         "raw_dir": "data/raw/binance/funding/BTCUSDT",
-        "rows": 4152,
+        "rows": 4107,
         "symbol": "BTCUSDT"
       },
       {
@@ -570,7 +570,7 @@
         "months_ok": 45,
         "months_requested": 45,
         "raw_dir": "data/raw/binance/klines/BTCUSDT",
-        "rows": 1414,
+        "rows": 1369,
         "symbol": "BTCUSDT"
       },
       {
@@ -855,7 +855,7 @@
         "months_ok": 45,
         "months_requested": 45,
         "raw_dir": "data/raw/binance/klines/ETHUSDT",
-        "rows": 1414,
+        "rows": 1369,
         "symbol": "ETHUSDT"
       },
       {
@@ -1140,7 +1140,7 @@
         "months_ok": 45,
         "months_requested": 45,
         "raw_dir": "data/raw/binance/funding/ETHUSDT",
-        "rows": 4152,
+        "rows": 4107,
         "symbol": "ETHUSDT"
       }
     ],
@@ -1150,8 +1150,8 @@
     }
   },
   "coinmetrics": {
-    "date_first": "2026-07-16T00:00:00.000000000Z",
-    "date_last": "2023-04-04T00:00:00.000000000Z",
+    "date_first": "2023-01-01T00:00:00.000000000Z",
+    "date_last": "2026-10-23T00:00:00.000000000Z",
     "panel_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/marketcap_panel.csv",
     "panel_rows": 43677,
     "panel_sha256": "9ebcc21467055873e3ae173aa524aa4e24f4f618cfb78144c53264d38c995e95"
