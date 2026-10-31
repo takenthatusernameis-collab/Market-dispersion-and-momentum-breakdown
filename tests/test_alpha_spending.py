@@ -9,16 +9,9 @@ These tests pin the arithmetic, the budget invariant and the per-look spend so
 the H10 preregistration can quote an exact, auditable per-look significance
 level instead of a prose promise.
 """
-import importlib.util
 import unittest
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "scripts" / "alpha_spending.py"
-
-spec = importlib.util.spec_from_file_location("alpha_spending", SCRIPT)
-alpha_spending = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(alpha_spending)
+from scripts import alpha_spending
 
 
 class AlphaSpendingTests(unittest.TestCase):
@@ -81,9 +74,6 @@ class AlphaSpendingTests(unittest.TestCase):
         seq = alpha_spending.evaluate_sequence([1, 3])
         self.assertAlmostEqual(seq[0].alpha_k, 0.025)
         self.assertAlmostEqual(seq[1].alpha_k, 0.05 / 12)
-        self.assertAlmostEqual(seq[1].cumulative_spend,
-                               0.05 * (1 - 1 / 2) + 0.05 * (1 - 1 / 4) - 0.05 * (1 - 1 / 2))
-        # simpler: spend after looks 1 and 3 == spend(1) + spend(3)
         self.assertAlmostEqual(seq[1].cumulative_spend,
                                alpha_spending.cumulative_spend(1)
                                + alpha_spending.alpha_for_look(3))

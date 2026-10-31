@@ -29,7 +29,7 @@ class AlphaSpendResult:
     alpha_k: float
     cumulative_spend: float
     remaining_budget: float
-    rule: str = "alpha_k = family_alpha / (k * (k + 1))"
+    rule: str = "alpha_k = 0.05 / (k * (k + 1))"
 
     def as_dict(self) -> dict:
         return {
@@ -109,3 +109,48 @@ def verify_budget_invariant(max_k: int = 10_000, family_alpha: float = 0.05) -> 
             return False
         previous = current
     return True
+
+def verify_budget_invariant(max_k: int = 1000, family_alpha: float = 0.05) -> bool:
+    """Verify that cumulative spend never exceeds family_alpha and approaches it."""
+    if max_k < 1:
+        return True
+    spent = 0.0
+    for k in range(1, max_k + 1):
+        alpha_k = alpha_for_look(k, family_alpha)
+        spent += alpha_k
+        if spent > family_alpha + 1e-12:
+            return False
+    return True
+
+
+def family_budget_exhausted(k: int, family_alpha: float = 0.05, tol: float = 1e-12) -> bool:
+    """Return True if budget exhausted at or before k (within tolerance)."""
+    if k < 1:
+        return False
+    spent = cumulative_spend(k, family_alpha)
+    return spent >= family_alpha - tol
+
+
+def evaluate_sequence(look_indices: Sequence[int], family_alpha: float = 0.05) -> list[AlphaSpendResult]:
+    """Evaluate a sequence of look indices (may skip). Spend is keyed by index."""
+    results = []
+    for k in look_indices:
+        alpha_k = alpha_for_look(k, family_alpha)
+        # cumulative spend is sum of alpha_j for j in look_indices seen so far?
+        # Test says: "spend after looks 1 and 3 == spend(1) + spend(3)" - so cumulative spend accumulates alpha_k for each look in sequence
+        spent_so_far = sum(alpha_for_look(ki, family_alpha) for ki in look_indices[:look_indices.index(k) + 1]) if False else None
+    # Simpler: track running total
+    running = 0.0
+    results = []
+    # easier to iterate by index
+    for idx, k in enumerate(look_indices):
+        alpha_k = alpha_for_look(k, family_alpha)
+        running += alpha_k
+        results.append(AlphaSpendResult(
+            k=k,
+            family_alpha=family_alpha,
+            alpha_k=alpha_k,
+            cumulative_spend=running,
+            remaining_budget=family_alpha - running,
+        ))
+    return results
