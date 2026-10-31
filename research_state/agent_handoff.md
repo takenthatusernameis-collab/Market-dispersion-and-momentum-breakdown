@@ -1,6 +1,10 @@
-# DELAY-ELIMINATION OVERRIDE — 2026-10-31 (eighth session)
+# DELAY-ELIMINATION OVERRIDE — 2026-10-31 (ninth session)
 
-**Session 2026-10-31T04:01:41Z — verification only (no artifacts/state changed).** HEAD `059ac3ebeb5c0556a991bf3b5f1e794f6dcae67a`; vs prior checkpoint only `__pycache__` bytecode caches changed. `git diff --stat -- artifacts/ research_state/ configs/ scripts/ tests/` empty apart from `__pycache__`. JSON state mutually consistent. Tests: `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures**. Canonical forward block H004V106 outcome byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last/last_allowed_formation_date 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. Cutoff gate remains BLOCKED (October 2026 Binance archive unpublished; did NOT re-probe). No new untested integrity invariant found → no code/test/data/state change. Updated handoff and wrote clear initial task message for next agent.
+**Session 2026-10-31T04:02:26Z — verification only (no artifacts/state changed).** HEAD `9433309aa3a600f4704911e2d3f2b4f18f184686`; vs prior checkpoint only `__pycache__` bytecode caches changed/modified (3 tracked pyc, 13 untracked). `git diff --stat -- artifacts/ research_state/ configs/ scripts/ tests/` empty apart from `__pycache__`. JSON state mutually consistent (hypothesis_registry program_status=ACTIVE, run_manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, universe_frontier cursor 6347, candidates_discovered []). Tests: `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures**. Canonical forward block H004V106 outcome byte-unchanged, recomputed from the sealed input JSON: anchor_id H004V106, n_formations 608, high_low_diff_net_1x 0.616522395393 (+0.6165223953929935), date_first 2025-01-01, date_last/last_allowed_formation_date 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z, status OK (n_high=61/n_low=90/n_mid=457; all spread_net_1x finite; last formation date 2026-08-31). Cutoff gate remains BLOCKED (October 2026 Binance archive unpublished; did NOT re-probe). Recurring-class invariant check complete: tests/test_binance_manifest_provenance.py (4 tests) passes — manifest date_first/date_last/rows == panel CSV min/max/data-row count for all 4 binance_panel_manifest series. No new untested integrity invariant found → no code/test/data/state change. Updated handoff and wrote clear initial task message for next agent.
+
+---
+
+# DELAY-ELIMINATION OVERRIDE — 2026-10-31 (eighth session)
 
 ---
 
