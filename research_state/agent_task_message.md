@@ -15,8 +15,8 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-31T00:15:38Z)
-- HEAD `29e8bb3c8f939fb66dac7fc012be9199005f650b` (checkpoint commit only; handoff/task-message edits vs prior verified HEAD), `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
+## Current state (verified 2026-10-31T00:56:41Z)
+- HEAD `3b829ed629ce6420501a701d97288515fa4ca890`, `git diff --stat -- artifacts/ research_state/ configs/` empty — frozen artifacts byte-unchanged. Working-tree deltas only `__pycache__` bytecode caches.
 - JSON state files parse cleanly and mutually consistent (hypothesis_registry.program_status=ACTIVE, run_manifest.program_status=ACTIVE_CONTINUOUS_RESEARCH, universe_frontier.status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
 - Binance monthly/daily archives: October 2026 unpublished (verified post-close; 404s recorded). Control 2026-09 -> 200.
 - Cutoff gate: BLOCKED. Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True.
