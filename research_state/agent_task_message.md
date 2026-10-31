@@ -1,13 +1,13 @@
-# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T08:55:48Z)
+# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T08:58:08Z)
 
 ## Situation
-Program active and verified. HEAD `e3e2cfe` (local checkpoint commit; branch tracks origin/main); only `__pycache__` bytecode caches uncommitted. Tests `python3 -m unittest discover -s tests` -> 135 run, 135 OK, 0 failures (re-verified 2026-10-31T08:55Z). Canonical H004V106 sealed forward block verified from disk: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9 (H1..H9 present; tests pin it at 9). Universe frontier exhausted at cursor 6347 (catalog walked, 0 newly discovered).
+Program active and verified. HEAD `e3e2cfe` (local checkpoint commit; branch tracks origin/main); only `__pycache__` bytecode caches uncommitted. Tests `python3 -m unittest discover -s tests` -> 135 run, 135 OK, 0 failures (re-verified 2026-10-31T08:58Z). Canonical H004V106 sealed forward block verified from disk: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9 (H1..H9 present; tests pin it at 9). Universe frontier exhausted at cursor 6347 (catalog walked, 0 newly discovered).
 
 ## Blocker (respect it — do not re-probe)
 The October 2026 Binance public archive is unpublished, so the data-cutoff gate is BLOCKED (requires cutoff >= 2026-10-29 on a published archive). The price/funding panels end 2026-09-30. Re-probed once this session (2026-10-31T08:08Z) by direct curl to data.binance.vision: BTCUSDT/ETHUSDT/BNBUSDT October 2026 klines and BTCUSDT October 2026 funding all HTTP 404; September 2026 BTCUSDT klines returns HTTP 200, so the endpoint is live and the miss is a genuine absence of the October file. Do not re-probe the October archive while it is unpublished; wait for publication, then act once. No bounded no-cost untested task is currently available; all DISP-003 exploratory audits are complete and EXPLORATORY_ONLY. Preserve the blocker.
 
 ## Your task (once the archive publishes / cutoff unblocks)
-1. Confirm the October 2026 Binance archive is published (cutoff >= 2026-10-29). Do not re-probe before then.
+1. Confirm the October 2026 Binance archive is published (cutoff >= 2026-10-29). Do not re-probe before then; the last re-probe this session (2026-10-31T08:08Z) returned HTTP 404 for all October 2026 endpoints, and re-probing while unpublished is forbidden.
 2. Run `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` using the published October month-end dates (free public data only; no paid services, no secrets).
 3. Re-run `python3 -m unittest discover -s tests` and confirm 135 run, 135 OK, 0 failures.
 4. Confirm H004V106 canonical forward block remains byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z.
