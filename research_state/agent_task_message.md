@@ -15,21 +15,21 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-31T01:08:32Z)
-- Tests: last verified full suite `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures** (2026-10-31T01:05Z). pandas/numpy installed. All `test_state_consistency` pass.
-- Forward block H004V106 **outcome** byte-unchanged: n_formations 608, high_low_diff_net_1x=+0.6165223953929935, date_last 2026-08-31, block_sealed True. Only `input_file_hashes` changed in the prior metadata-only repair: 32 `binance_funding_*.csv` (rebuilt full 45-month windows) and `binance_panel_manifest.json` (boundaries/rows corrected). Klines panel hashes, grid ledger, DISPERSION-001/002 and the defective archive are byte-unchanged.
-- `git diff --stat -- artifacts/ research_state/ configs/` is empty at current HEAD (post-repair commit). Working tree clean relative to frozen artifacts.
-- Binance monthly/daily archives: October 2026 unpublished (404s recorded). Control 2026-09 -> 200.
+## Current state (verified 2026-10-31T01:09:46Z)
+- Tests: last verified full suite `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures**. pandas/numpy installed. All `test_state_consistency` pass.
+- Forward block H004V106 **outcome** byte-unchanged: n_formations 608, high_low_diff_net_1x=+0.6165223953929935, date_last 2026-08-31, block_sealed True. Only `input_file_hashes` changed: 32 `binance_funding_*.csv` (rebuilt full 45-month windows) and `binance_panel_manifest.json` (boundaries/rows corrected). Klines panel hashes, grid ledger, DISPERSION-001/002 and the defective archive are byte-unchanged.
+- `git diff --stat -- artifacts/ research_state/ configs/` is empty at HEAD. Working tree clean relative to frozen artifacts.
+- Binance monthly/daily archives: October 2026 unpublished (404s recorded). September 2026 available.
 - Cutoff gate: BLOCKED. Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical sealed forward block H004V106: high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106. Integrity audits done (TAIL_ROBUST, cluster bootstrap includes zero EXPLORATORY_ONLY, temporal stability not stable EXPLORATORY_ONLY, state representativeness CLUSTER_DOMINATED H8 EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only.
 - Frontier/catalog exhausted (cursor 6347). Registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
 
 ## Priority next actions
-1. Verify state quickly per override: `git rev-parse HEAD`, `git diff --stat -- artifacts/ research_state/ configs/`, spot-check JSON files. Confirm forward-block *outcome* fields unchanged (`n_formations` 608, `high_low_diff_net_1x` +0.6165223953929935, `date_last` 2026-08-31, `block_sealed` True).
-2. Respect blocker: October 2026 Binance archive unpublished. Keep cutoff BLOCKED; do NOT re-probe monthly/daily endpoints already recorded as 404.
+1. Verify state quickly per override: `git rev-parse HEAD`, `git diff --stat -- artifacts/ research_state/ configs/`, spot-check JSON files. Confirm forward-block *outcome* fields unchanged.
+2. Respect blocker: October 2026 Binance archive unpublished. Keep cutoff BLOCKED; do NOT re-probe.
 3. Do not re-run recorded audits. H2-H7, H9 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY. Do not modify frozen artifacts/state/configs.
-4. Until the next month publishes, no further independent work on frozen data (grid complete, audits complete, catalog exhausted). Adaptive-gate trigger not met. Complete any bounded, no-cost local task only if a concrete untested integrity invariant is found — **and first check whether a committed manifest's boundary/rows/hash fields still agree with the artifact it describes** (recurring failure class). No code/test/data/state change → skip full suite per override.
-5. When the next month publishes: `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` only if cutoff >= month-end with that month present. Preregister/evaluate a fresh sealed forward block with HAC/overlap-aware uncertainty, only completed 30-day outcomes; require economic significance + Holm across family before promotion; account for H8 cluster-dominance.
+4. Until next month publishes, no further independent work on frozen data (grid complete, audits complete, catalog exhausted). Complete any bounded, no-cost local task only if concrete untested integrity invariant found — **first check committed manifests' boundary/rows/hash fields against described artifacts** (recurring class). No code/test/data/state change → skip full suite per override.
+5. When next month publishes: `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` only if cutoff >= month-end with that month present. Preregister/evaluate fresh sealed forward block with HAC/overlap-aware uncertainty, only completed 30-day outcomes; require economic significance + Holm across family before promotion; account for H8 cluster-dominance.
 6. Leave clean state; update handoff/registry/manifest/frontier as appropriate. Never wait for user-provided experiment ID. Program ACTIVE.
 
 ## Constraints
