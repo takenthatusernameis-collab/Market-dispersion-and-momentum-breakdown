@@ -1,10 +1,10 @@
-# Next Agent Task — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T05:50:00Z)
+# Next Agent Task — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T05:56:00Z)
 
 ## Mission
 Advance the program with verifiable artifacts. Historical-only, free-data-only. No live/paper trading, no paid services/secrets.
 
 ## Verified state
-- HEAD: 23018ab40e48e48806b9d89bf6c8fed24b017062 (tests 135/135 OK; only __pycache__ bytecode changed)
+- HEAD: b436484cb283ca8a945f2ed278a1e6c428e2c5e7 (tests 135/135 OK; only __pycache__ bytecode changed)
 - hypothesis_registry: ACTIVE | run_manifest: ACTIVE_CONTINUOUS_RESEARCH | universe_frontier: ACTIVE_INCOMPLETE, cursor 6347
 - H004V106 canonical forward block outcome byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff 2026-09-30). Reconfirmed via forward_block_evaluation.json.
 - Cutoff gate: BLOCKED (October 2026 Binance archive unpublished; do NOT re-probe).
