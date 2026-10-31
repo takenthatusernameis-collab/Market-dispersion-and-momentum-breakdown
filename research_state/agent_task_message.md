@@ -1,10 +1,10 @@
 # NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31)
 
 ## Situation
-Program is active and verified. HEAD `24878df21a306f98eb7ae69c880ba0a25ac09e15`; tests 135/135 OK; canonical H004V106 sealed forward block byte-unchanged (608 formations, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). hypothesis_registry.json `next_sequence_number`: 9.
+Program is active and verified. HEAD `fb02056b7b2d9496eeec8cb97d10ef4db9fe000a` (branch up to date with origin/main); only `__pycache__` bytecode caches uncommitted. Tests `python3 -m unittest discover -s tests` -> 135 run, 135 OK, 0 failures (re-verified this session). Canonical H004V106 sealed forward block verified from disk: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9.
 
 ## Blocker (respect it — do not re-probe)
-The October 2026 Binance public archive is unpublished, so the data-cutoff gate is BLOCKED (requires cutoff >= 2026-10-29 on a published archive). The price/funding panels end 2026-09-30. Do not re-probe the October archive while it is unpublished; wait for publication, then act once.
+The October 2026 Binance public archive is unpublished, so the data-cutoff gate is BLOCKED (requires cutoff >= 2026-10-29 on a published archive). The price/funding panels end 2026-09-30. No local October 2026 data exists anywhere under the repo. Do not re-probe the October archive while it is unpublished; wait for publication, then act once.
 
 ## Your task (once the archive publishes / cutoff unblocks)
 1. Confirm the October 2026 Binance archive is published (cutoff >= 2026-10-29). Do not re-probe before then.
