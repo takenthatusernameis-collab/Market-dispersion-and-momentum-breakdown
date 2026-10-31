@@ -27,7 +27,6 @@ EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 ART = ROOT / "artifacts" / EXP
 PANEL_DIR = ART / "data" / "panels"
 OUT_DIR = ART / "forward_block"
-OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_COST_TURN = 0.0005
 COST_1X = BASE_COST_TURN * 2.0
@@ -55,6 +54,14 @@ def parse_args() -> argparse.Namespace:
                    help="minimum completed forward-horizon days required after the "
                         "last formation date (default 30). Formations whose horizon "
                         "is not fully observed are excluded.")
+    p.add_argument("--output-dir", default=None,
+                   help="directory for the sealed block artifact. Defaults to "
+                        "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block "
+                        "(the canonical H004V106 block). Pass a different directory to "
+                        "seal a fresh forward block WITHOUT overwriting the canonical "
+                        "artifact. The canonical block is read-only input to every "
+                        "future block: it is development/exploratory evidence only and "
+                        "must never be re-sealed or overwritten.")
     return p.parse_args()
 
 
@@ -236,6 +243,14 @@ def forward_returns(px_wide: pd.DataFrame, T: str, horizon: int,
 
 def main() -> int:
     args = parse_args()
+    # The canonical H004V106 block lives at the default OUT_DIR and is
+    # read-only input to every future block. A --output-dir override seals a
+    # fresh forward block into a separate directory without touching the
+    # canonical artifact; the default path is preserved exactly.
+    global OUT_DIR
+    if args.output_dir:
+        OUT_DIR = Path(args.output_dir)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     mc = load_marketcap()
     px = load_binance_panel("klines")
     fd = load_binance_panel("funding")
@@ -488,7 +503,11 @@ def main() -> int:
     print(f"[forward-block] block={FORWARD_BLOCK_START}->{freeze_record['forward_block_end']}")
     print(f"[forward-block] formations={n_formations} high={n_high} low={n_low} mid={n_mid}")
     print(f"[forward-block] high_low_diff_gross={diff_gross} high_low_diff_net_1x={diff_net}")
-    print(f"[forward-block] output -> {out_path.relative_to(ROOT)}")
+    try:
+        shown = out_path.relative_to(ROOT)
+    except ValueError:
+        shown = out_path
+    print(f"[forward-block] output -> {shown}")
     return 0
 
 
