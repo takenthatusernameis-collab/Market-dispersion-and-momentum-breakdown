@@ -8,6 +8,7 @@
       "date_first": "1672531200000",
       "date_last": "1790784000002",
       "kind": "funding",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
       "months": [
         {
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/funding/BTCUSDT/BTCUSDT-funding-2023-01.zip",
@@ -285,7 +286,7 @@
       "months_ok": 45,
       "months_requested": 45,
       "raw_dir": "data/raw/binance/funding/BTCUSDT",
-      "rows": 4152,
+      "rows": 4107,
       "symbol": "BTCUSDT"
     },
     {
@@ -293,6 +294,7 @@
       "date_first": "1672531200000",
       "date_last": "1790726400000",
       "kind": "klines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
       "months": [
         {
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2023-01.zip",
@@ -570,7 +572,7 @@
       "months_ok": 45,
       "months_requested": 45,
       "raw_dir": "data/raw/binance/klines/BTCUSDT",
-      "rows": 1414,
+      "rows": 1369,
       "symbol": "BTCUSDT"
     },
     {
@@ -578,6 +580,7 @@
       "date_first": "1672531200000",
       "date_last": "1790726400000",
       "kind": "klines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
       "months": [
         {
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2023-01.zip",
@@ -855,7 +858,7 @@
       "months_ok": 45,
       "months_requested": 45,
       "raw_dir": "data/raw/binance/klines/ETHUSDT",
-      "rows": 1414,
+      "rows": 1369,
       "symbol": "ETHUSDT"
     },
     {
@@ -863,6 +866,7 @@
       "date_first": "1672531200000",
       "date_last": "1790784000002",
       "kind": "funding",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
       "months": [
         {
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/funding/ETHUSDT/ETHUSDT-funding-2023-01.zip",
@@ -1140,7 +1144,7 @@
       "months_ok": 45,
       "months_requested": 45,
       "raw_dir": "data/raw/binance/funding/ETHUSDT",
-      "rows": 4152,
+      "rows": 4107,
       "symbol": "ETHUSDT"
     }
   ],

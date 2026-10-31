@@ -157,7 +157,16 @@ def fetch_series(symbol: str, kind: str) -> dict:
         csv_text = extract_csv(data)
         if csv_text:
             all_csv_text.append(csv_text)
-            result["rows"] += csv_text.count("\n")
+            # Count DATA rows only: the monthly archive ships its own header row
+            # (calc_time,... / open_time,...), and the panel is written with a
+            # single canonical header, so counting raw newlines overstates the
+            # panel row count by one per month. The manifest `rows` must equal
+            # the number of data rows actually written to the panel CSV.
+            body_lines = [ln for ln in csv_text.splitlines() if ln.strip()]
+            if body_lines and body_lines[0].startswith(
+                    ("open_time,", "calc_time,", "symbol,")):
+                body_lines = body_lines[1:]
+            result["rows"] += len(body_lines)
         time.sleep(SLEEP_BETWEEN)
 
     # Normalize panel with an explicit header; concat monthly bodies.

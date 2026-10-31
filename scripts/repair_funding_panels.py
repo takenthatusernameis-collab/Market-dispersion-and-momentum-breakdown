@@ -41,7 +41,12 @@ def rebuild() -> int:
 
     total_rows = 0
     written = 0
-    for z in zips:
+    # Group rows by symbol and write ONE panel per symbol. Writing per-zip would
+    # overwrite each panel with the last zip in iteration order, leaving only the
+    # final month's rows (see fix_funding_panel_rows.py). Month order is ascending
+    # so the concatenated panel is chronological.
+    by_symbol: dict[str, list[str]] = {}
+    for z in sorted(zips, key=lambda p: p.stem.split("-")[-1]):
         symbol = z.parent.name
         with zipfile.ZipFile(z) as zf:
             csv_names = [n for n in zf.namelist() if n.endswith(".csv")]
@@ -53,13 +58,16 @@ def rebuild() -> int:
             lines = lines[1:]
         # Prefix the 3-column archive row with the symbol so it lines up with the
         # 4-column header. See module docstring for why this was previously missed.
+        by_symbol.setdefault(symbol, []).extend(lines)
+
+    for symbol, lines in by_symbol.items():
         prefixed = [f"{symbol},{ln}" for ln in lines]
         out = PANEL_DIR / f"binance_funding_{symbol}.csv"
         out.write_text(FUNDING_HEADER + "\n" + "\n".join(prefixed) + "\n")
         total_rows += len(prefixed)
         written += 1
 
-    print(f"[repair] rebuilt {written} funding panels, {total_rows} data rows")
+    print(f"[repair] rebuilt {written} funding panels, {total_rows} total data rows")
     print(f"[repair] panels -> {PANEL_DIR.relative_to(ROOT)}")
     return 0
 
