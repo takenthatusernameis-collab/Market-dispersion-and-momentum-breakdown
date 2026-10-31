@@ -15,8 +15,8 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-31T02:02:20Z)
-- Tests: `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures**. HEAD `3f8b8cc95a9f4655c3ff7e6320e4bab856ad651a`; `git diff --stat -- artifacts/ research_state/ configs/` empty; working-tree deltas only `__pycache__` bytecode caches. JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
+## Current state (verified 2026-10-31T02:03:13Z)
+- Tests: `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures**. HEAD `2bbf5e89`; `git diff --stat -- artifacts/ research_state/ configs/` empty; working-tree deltas only `__pycache__` bytecode caches. JSON state files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
 - Forward block H004V106 **outcome** byte-unchanged: n_formations 608, high_low_diff_net_1x=+0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31. Only `input_file_hashes` changed in prior sessions (funding panels rebuilt + manifests corrected). Klines panel hashes, grid ledger, DISPERSION-001/002 and the defective archive are byte-unchanged.
 - Binance monthly/daily archives: October 2026 unpublished (404). September 2026 available.
 - Cutoff gate: BLOCKED. Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True.
