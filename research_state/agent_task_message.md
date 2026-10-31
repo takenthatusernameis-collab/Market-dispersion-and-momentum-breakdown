@@ -1,4 +1,4 @@
-# DELAY-ELIMINATION OVERRIDE — 2026-10-30
+# DELAY-ELIMINATION OVERRIDE — 2026-10-31
 
 Before executing the task below, perform a cheap state-fingerprint check (HEAD + changed paths + existing archive cutoff metadata).
 
@@ -15,11 +15,10 @@ Before executing the task below, perform a cheap state-fingerprint check (HEAD +
 ## Mandate
 Continue quantitative research. Historical-only, free-data-only. No live/paper trading. No paid services or secrets.
 
-## Current state (verified 2026-10-31T01:09:46Z)
-- Tests: last verified full suite `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures**. pandas/numpy installed. All `test_state_consistency` pass.
-- Forward block H004V106 **outcome** byte-unchanged: n_formations 608, high_low_diff_net_1x=+0.6165223953929935, date_last 2026-08-31, block_sealed True. Only `input_file_hashes` changed: 32 `binance_funding_*.csv` (rebuilt full 45-month windows) and `binance_panel_manifest.json` (boundaries/rows corrected). Klines panel hashes, grid ledger, DISPERSION-001/002 and the defective archive are byte-unchanged.
-- `git diff --stat -- artifacts/ research_state/ configs/` is empty at HEAD. Working tree clean relative to frozen artifacts.
-- Binance monthly/daily archives: October 2026 unpublished (404s recorded). September 2026 available.
+## Current state (verified 2026-10-31T01:57:22Z)
+- Tests: last verified full suite `python3 -m unittest discover -s tests` -> **131 run, 131 OK, 0 failures** (pandas/numpy installed). All `test_state_consistency` pass. HEAD `3a6ba25e247088aa756abaae449d93f940800d1c`; `git diff --stat -- artifacts/ research_state/ configs/` empty; working-tree deltas only `__pycache__` bytecode caches. All JSON state/config files parse cleanly and mutually consistent (registry program_status=ACTIVE, manifest program_status=ACTIVE_CONTINUOUS_RESEARCH, frontier status=ACTIVE_INCOMPLETE, candidate_page_cursor=6347; candidates_verified=220, candidates_blocked=6127, candidates_discovered=[]).
+- Forward block H004V106 **outcome** byte-unchanged: n_formations 608, high_low_diff_net_1x=+0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31. Only `input_file_hashes` changed: 32 `binance_funding_*.csv` (rebuilt full 45-month windows) and `binance_panel_manifest.json` (boundaries/rows corrected). Klines panel hashes, grid ledger, DISPERSION-001/002 and the defective archive are byte-unchanged.
+- Binance monthly/daily archives: October 2026 unpublished (404s recorded post-close; daily-kline endpoint family also probed). September 2026 available.
 - Cutoff gate: BLOCKED. Canonical forward block H004V106 data_cutoff_utc 2026-09-30T00:00:00Z, last_allowed_formation_date 2026-08-31, n_formations 608, block_sealed=True.
 - DISPERSION-001/002 unchanged (immutable). Phase B placebo red-team present (EXPLORATORY_ONLY). Canonical sealed forward block H004V106: high_low_diff_net_1x=+0.6165, HAC t=1.5482, CI [-0.164,1.397] not significant, median -0.0106. Integrity audits done (TAIL_ROBUST, cluster bootstrap includes zero EXPLORATORY_ONLY, temporal stability not stable EXPLORATORY_ONLY, state representativeness CLUSTER_DOMINATED H8 EXPLORATORY_ONLY). Defective archive byte-unchanged; development/exploratory evidence only.
 - Frontier/catalog exhausted (cursor 6347). Registry: H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
