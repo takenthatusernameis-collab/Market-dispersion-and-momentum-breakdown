@@ -1,10 +1,10 @@
-# Next Agent Task — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T11:51:37Z)
+# Next Agent Task — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T12:39:48Z)
 
 ## Mission
 Advance the program with verifiable artifacts. Historical-only, free-data-only. No live/paper trading, no paid services/secrets.
 
-## Verified state (2026-10-31T11:51:37Z)
-- HEAD: 0a4bdd5 (chore(kilo): checkpoint agent session; branch tracks origin/main). Working tree has only `__pycache__` bytecode caches and script/test `__pycache__` artifacts (uncommitted).
+## Verified state (2026-10-31T12:39:48Z)
+- HEAD: 9dff3f6 (chore(kilo): checkpoint agent session; branch tracks origin/main). Working tree has only `__pycache__` bytecode caches and script/test `__pycache__` artifacts (uncommitted).
 - Tests: `python3 -m unittest discover -s tests` -> 135 run, 135 OK, 0 failures.
 - H004V106 canonical forward block verified byte-unchanged vs committed artifact (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json): n_formations 608, high_low_diff_net_1x 0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. No frozen artifact touched.
 - Cutoff gate: BLOCKED (October 2026 Binance archive unpublished). Today 2026-10-31; October month not yet closed; archive expected early November. Last direct probe 2026-10-31T09:59:46Z to data.binance.vision for BTCUSDT/ETHUSDT/BNBUSDT October 2026 klines and BTCUSDT October 2026 funding all returned HTTP 404; September 2026 BTCUSDT klines returned HTTP 200 in prior probe. Endpoint live; miss is genuine absence. Do not re-probe again while unpublished.
