@@ -1,7 +1,7 @@
-# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T08:00:00Z)
+# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-10-31T08:00:21Z)
 
 ## Situation
-Program active and verified. HEAD `fb02056b7b2d9496eeec8cb97d10ef4db9fe000a` (branch up to date with origin/main); only `__pycache__` bytecode caches uncommitted. Tests `python3 -m unittest discover -s tests` -> 135 run, 135 OK, 0 failures (re-verified 2026-10-31T08:00:00Z). Canonical H004V106 sealed forward block verified from disk: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9. Universe frontier exhausted at cursor 6347 (catalog walked, 0 newly discovered).
+Program active and verified. HEAD `8221b94` (branch up to date with origin/main); only `__pycache__` bytecode caches uncommitted. Tests `python3 -m unittest discover -s tests` -> 135 run, 135 OK, 0 failures (re-verified 2026-10-31T08:00:21Z). Canonical H004V106 sealed forward block verified from disk: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json `next_sequence_number`: 9. Universe frontier exhausted at cursor 6347 (catalog walked, 0 newly discovered).
 
 ## Blocker (respect it — do not re-probe)
 The October 2026 Binance public archive is unpublished, so the data-cutoff gate is BLOCKED (requires cutoff >= 2026-10-29 on a published archive). The price/funding panels end 2026-09-30. No local October 2026 data exists anywhere under the repo. Do not re-probe the October archive while it is unpublished; wait for publication, then act once. No bounded no-cost untested task is currently available; all DISP-003 exploratory audits are complete and EXPLORATORY_ONLY. Preserve the blocker.
@@ -10,7 +10,7 @@ The October 2026 Binance public archive is unpublished, so the data-cutoff gate 
 1. Confirm the October 2026 Binance archive is published (cutoff >= 2026-10-29). Do not re-probe before then.
 2. Run `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` using the published October month-end dates (free public data only; no paid services, no secrets).
 3. Re-run `python3 -m unittest discover -s tests` and confirm 135 run, 135 OK, 0 failures.
-4. Confirm H004V106 canonical forward block remains byte-unchanged (not a forward-block input; no re-sealing expected): n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z.
+4. Confirm H004V106 canonical forward block remains byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z.
 5. Preregister a fresh sealed forward block (strict 30-day maturity) for the new data under a new registry experiment ID: allocate `next_sequence_number` 9 from `research_state/hypothesis_registry.json`, increment it, write the preregistration before computing outcomes, evaluate HAC/overlap-aware on completed 30-day formations only.
 6. Update `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/hypothesis_registry.json`, `research_state/run_manifest.json`, and `research_state/universe_frontier.json` as appropriate.
 
