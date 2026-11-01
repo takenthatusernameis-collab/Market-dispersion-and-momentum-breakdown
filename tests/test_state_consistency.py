@@ -103,6 +103,30 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         ids = [h["id"] for h in registry["hypotheses"]]
         self.assertEqual(ids, [f"H{i}" for i in range(1, registry["next_sequence_number"] + 1)])
 
+    def test_manifest_narrative_next_sequence_number_agrees_with_registry(self):
+        """The run manifest's prose next_required_actions entries once
+        mis-stated the registry's next_sequence_number (claiming 10 while the
+        registry held 9 with H1..H9 present). A stale narrative is a
+        single-source-of-truth hazard for the H10 preregistration, so the
+        manifest may not assert a next_sequence_number that disagrees with
+        the registry.
+
+        The check is scoped to the next_required_actions entries: the
+        manifest's own reconciliation notes legitimately quote the old wrong
+        value to record what was repaired, and scanning the whole serialized
+        document would flag those historical quotes as errors.
+        """
+        registry = _load(STATE / "hypothesis_registry.json")
+        manifest = _load(STATE / "run_manifest.json")
+        n = registry["next_sequence_number"]
+        import re
+        for entry in manifest.get("next_required_actions", []):
+            with self.subTest(entry=entry[:60]):
+                for claimed in re.findall(r"next_sequence_number\s+(\d+)", entry):
+                    self.assertEqual(int(claimed), n,
+                                     f"manifest narrative claims next_sequence_number "
+                                     f"{claimed}; registry holds {n}")
+
     def test_h1_immutable_and_grid_complete_unrejected(self):
         registry = _load(STATE / "hypothesis_registry.json")
         grid = _load(ART / "grid_summary.json")
