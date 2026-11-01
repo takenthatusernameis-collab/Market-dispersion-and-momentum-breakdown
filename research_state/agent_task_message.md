@@ -1,10 +1,10 @@
-# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T01:20Z)
+# NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T01:30Z)
 
 ## Situation
-Program active and verified. HEAD `ccc49e3` (branch `main` tracks origin/main). Working tree contains only `__pycache__` bytecode caches/timestamp drift — no source changes. `scripts/alpha_spending.py` committed clean — single implementation, no duplicate defs, no scratch code. Full suite `python3 -m unittest discover -s tests` -> 147 run, 147 OK, 0 failures. Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number: 9 (H1..H9 present). All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frontier exhausted at cursor 6347. Frozen artifacts untouched.
+Program active and verified. HEAD `298824e` (branch `main` tracks origin/main). Working tree contains only `__pycache__` bytecode caches/timestamp drift — no source changes. `scripts/alpha_spending.py` committed clean — single implementation, no duplicate defs, no scratch code. Full suite `python3 -m unittest discover -s tests` -> 147 run, 147 OK, 0 failures. Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number: 9 (H1..H9 present). All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frontier exhausted at cursor 6347. Frozen artifacts untouched.
 
 ## Blocker (respect it — do not re-probe)
-October 2026 Binance public archive is unpublished; data-cutoff gate BLOCKED (requires cutoff >= 2026-10-29 on a published archive). Price/funding panels end 2026-09-30. Fresh probe at 2026-11-01T01:20Z confirmed October 2026 klines return HTTP 404 (endpoint live; miss genuine). Do not re-probe while unpublished. Adaptive-gate trigger not met (single route — temporary timing; not three distinct failed routes, not a structural impossibility).
+October 2026 Binance public archive is unpublished; data-cutoff gate BLOCKED (requires cutoff >= 2026-10-29 on a published archive). Price/funding panels end 2026-09-30. Fresh probe at 2026-11-01T01:30Z confirmed October 2026 klines return HTTP 404 (endpoint live; miss genuine). Do not re-probe while unpublished. Adaptive-gate trigger not met.
 
 ## Prior task status
 **DONE**: Prior agent task (alpha_spending regression fix) complete. `scripts/alpha_spending.py` is the single clean implementation; full test suite passes (147/147 OK). No source changes outstanding.
@@ -27,5 +27,3 @@ October 2026 Binance public archive is unpublished; data-cutoff gate BLOCKED (re
 
 ## Concrete next action for this session
 Nothing bounded and unblocked remains. Preserve the BLOCKED cutoff and the H10 preregistration plan (allocate next_sequence_number 9->10 when unblocked). When the October 2026 Binance archive publishes, execute steps 2a-2f and update durable state.
-EOF
-echo done
