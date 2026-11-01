@@ -12486,7 +12486,7 @@
     ],
     "catalog_entries_walked": 6347,
     "endpoint": "https://community-api.coinmetrics.io/v4/reference-data/assets",
-    "fetch_utc": "2026-11-01T03:35:29Z",
+    "fetch_utc": "2026-11-01T22:37:59Z",
     "first_20": [],
     "legacy_excluded": [
       "1inch",
@@ -12766,26 +12766,26 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-01T19:59:00Z",
+  "last_updated_utc": "2026-11-01T22:37:59Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
       "data_cutoff_utc": "2026-09-30T00:00:00Z",
+      "high_low_diff_net_1x": 0.6165223953929935,
       "last_allowed_formation_date": "2026-08-31",
       "n_formations": 608,
-      "sha256": "60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59",
-      "high_low_diff_net_1x": 0.6165223953929935
+      "sha256": "60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59"
     },
     "cutoff_gate": "BLOCKED",
-    "probe_utc": "2026-11-01T19:58:44Z",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261101T195844Z.json",
-    "probe_exit": 1,
-    "target_published": false,
-    "october_2026_monthly_klines": "HTTP 404 (0 bytes)",
+    "note": "Re-verified this session. Gate stays BLOCKED: probe requires BOTH monthly endpoints HTTP 200 and refresh_free_data.py consumes the monthly klines zip; partial publication unusable. Adaptive-gate trigger NOT met. Do not loop on known failure.",
     "october_2026_monthly_fundingRate": "HTTP 200",
+    "october_2026_monthly_klines": "HTTP 404 (0 bytes)",
+    "probe_exit": 1,
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261101T195844Z.json",
+    "probe_utc": "2026-11-01T19:58:44Z",
     "september_2026_control": "HTTP 200",
-    "note": "Re-verified this session. Gate stays BLOCKED: probe requires BOTH monthly endpoints HTTP 200 and refresh_free_data.py consumes the monthly klines zip; partial publication unusable. Adaptive-gate trigger NOT met. Do not loop on known failure."
+    "target_published": false
   },
   "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
