@@ -1,10 +1,10 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T20:43Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T20:47Z)
 
 ## Situation
 Working tree clean of source changes (only __pycache__ bytecode plus append-only probe records in research_state/cutoff_probe/). Canonical H004V106 sealed forward block verified byte-unchanged: sha256 60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. research_state/hypothesis_registry.json next_sequence_number 9 (H1..H9 present). Universe frontier exhausted at cursor 6347 (6127 blocked / 220 verified / 32 legacy). All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched. Test suite verified this session: python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures (EXIT=0).
 
 ## Status: cutoff gate BLOCKED (preserved)
-Latest real probe 2026-11-01T20:43:31Z (record research_state/cutoff_probe/cutoff_probe_20261101T204331Z.json, EXIT=1): target_published false, cutoff_gate BLOCKED. October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200; September 2026 control HTTP 200. Probe requires BOTH monthly endpoints HTTP 200 and refresh_free_data.py consumes the monthly klines zip; partial publication unusable. Gate stays BLOCKED. Do NOT repeatedly re-probe known-failed endpoints.
+Latest real probe 2026-11-01T20:48:04Z (record research_state/cutoff_probe/cutoff_probe_20261101T204804Z.json, EXIT=1): target_published false, cutoff_gate BLOCKED. October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200; September 2026 control HTTP 200. Probe requires BOTH monthly endpoints HTTP 200 and refresh_free_data.py consumes the monthly klines zip; partial publication unusable. Gate stays BLOCKED. Do NOT repeatedly re-probe known-failed endpoints.
 
 Warning: test-suite tail may print "cutoff_gate": "UNBLOCKED" from tests/test_cutoff_probe.py:138 mocks (synthetic, not a network result). Only python3 scripts/probe_cutoff_gate.py --probe-month 2026-10 (EXIT=1 BLOCKED, EXIT=0 UNBLOCKED) is authoritative.
 
