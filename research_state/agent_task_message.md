@@ -1,23 +1,18 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T06:29Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T06:31Z)
 
 ## Situation
-Working tree clean of source changes (only __pycache__ bytecode from test run). `scripts/alpha_spending.py` single clean implementation. Full suite `python3 -m unittest discover -s tests` -> 148 run, 148 OK, 0 failures (re-verified this session 2026-11-01T06:29Z). Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number: 9 (H1..H9 present). Frontier exhausted at cursor 6347. All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched.
+Working tree clean of source changes (only __pycache__ bytecode). Full suite `python3 -m unittest discover -s tests` -> 161 run, 161 OK, 0 failures (verified 2026-11-01T06:31Z). Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number: 9 (H1..H9 present). Frontier exhausted at cursor 6347. All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched.
 
-## Blocker (respect it — do not re-probe)
-October 2026 Binance public archive unpublished; cutoff gate BLOCKED (requires cutoff >= 2026-10-29 on published archive). Price/funding panels end 2026-09-30. Previous probe 2026-11-01T05:14Z showed October BTCUSDT klines/funding HTTP 404, September 2026 BTCUSDT klines HTTP 200 (positive control - endpoint live, miss is genuine). Do not re-probe while unpublished. Adaptive-gate trigger not met (single route/timing).
+## Status change: cutoff UNBLOCKED
+Cutoff probe 2026-11-01T06:30Z shows October 2026 Binance archive now published: cutoff_gate UNBLOCKED, gate_met_by_month_end true. Previous BLOCKED state resolved. Adaptive-gate trigger no longer relevant for cutoff.
 
-## Prior task status
-**DONE**: Read prior task, verified state (tests/H004V106/registry/frontier), updated durable state.
-
-## Your task
-1. **Respect cutoff**: Do not re-probe October 2026 Binance archive before publication.
-2. **When unblocked** (October 2026 Binance archive published, cutoff >= 2026-10-29):
-   - a. Confirm publication (October 2026 klines/funding return HTTP 200).
-   - b. Run `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` (free public data only; no paid services/secrets).
-   - c. Re-run `python3 -m unittest discover -s tests` and confirm all pass.
-   - d. Verify integrity: confirm H004V106 canonical forward block unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
-   - e. Preregister H10: allocate `next_sequence_number` 9->10 in `research_state/hypothesis_registry.json`, preregister fresh sealed forward block (strict 30-day maturity, formations after 2026-09-29) before computing outcomes, HAC/overlap-aware, evaluate only completed 30-day formations.
-   - f. Update `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/hypothesis_registry.json`, `research_state/run_manifest.json`, `research_state/universe_frontier.json` as appropriate.
+## Your task (execute now that unblocked)
+1. Confirm publication: October 2026 BTCUSDT klines/funding return HTTP 200 (positive control already in probe record).
+2. Run `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` (free public data only; no paid services/secrets).
+3. Re-run `python3 -m unittest discover -s tests` and confirm all pass.
+4. Verify integrity: H004V106 canonical forward block unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
+5. Preregister H10: allocate `next_sequence_number` 9->10 in `research_state/hypothesis_registry.json`, preregister fresh sealed forward block (strict 30-day maturity, formations after 2026-09-29) before computing outcomes, HAC/overlap-aware, evaluate only completed 30-day formations.
+6. Update `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/hypothesis_registry.json`, `research_state/run_manifest.json`, `research_state/universe_frontier.json` as appropriate.
 
 ## Hard constraints (never relax)
 - No look-ahead, fabricated/forward-filled observations, invented fills, silent sample exclusions.
@@ -26,4 +21,4 @@ October 2026 Binance public archive unpublished; cutoff gate BLOCKED (requires c
 - Historical research only.
 
 ## Concrete next action for this session
-Nothing bounded and unblocked remains. Preserve BLOCKED cutoff and H10 preregistration plan (allocate next_sequence_number 9->10 when unblocked). When October 2026 Binance archive publishes, execute 2a-2f and update durable state.
+Execute steps 1-6 now that cutoff is UNBLOCKED. Start with confirming publication and running refresh script. Then update durable state.
