@@ -37,13 +37,13 @@
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
   "session_record_20261101T1300Z": "DONE (read prior task, verified state, re-probed cutoff, refreshed durable task/handoff): python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures (EXIT=0; the tail \"cutoff_gate\": \"UNBLOCKED\" line is synthetic mock data at tests/test_cutoff_probe.py:138, not a network result). Canonical H004V106 forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json next_sequence_number 9 (H1..H9 present). Frontier exhausted at cursor 6347. DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched. Cutoff probe 2026-11-01T13:00:51Z (record research_state/cutoff_probe/cutoff_probe_20261101T130051Z.json, EXIT=1): October 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine); target_published false; cutoff_gate BLOCKED. Adaptive-gate trigger NOT met (single route/timing). Do not loop on known failure.",
   "session_record_20261101T1218Z": "DONE (read prior task, verified state, re-probed cutoff, refreshed durable task/handoff): python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures (EXIT=0). Canonical H004V106 forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json next_sequence_number 9 (H1..H9 present). Frontier exhausted at cursor 6347. DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched. Cutoff probe 2026-11-01T12:17:45Z (record research_state/cutoff_probe/cutoff_probe_20261101T121745Z.json, EXIT=1): October 2026 monthly BTCUSDT klines HTTP 404 AND monthly fundingRate HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine); target_published false; cutoff_gate BLOCKED. Adaptive-gate trigger NOT met (single route/timing). Do not loop on known failure.",
-  "last_updated_utc": "2026-11-01T15:14:00Z",
+  "last_updated_utc": "2026-11-01T15:22:00Z",
   "latest_verified_panel_end_date": "2026-09-30",
   "latest_verified_test_claim": {
     "tests_run": 161,
     "tests_ok": 161,
     "failures": 0,
-    "verified_at_utc": "2026-11-01T15:14:00Z",
+    "verified_at_utc": "2026-11-01T15:22:00Z",
     "note": "python3 -m unittest discover -s tests"
   },
   "live_or_paper_trading_allowed": false,
@@ -59,7 +59,7 @@
   "next_experiment_status": "PREREGISTRATION_AND_FRONTIER_REFRESH_PENDING",
   "next_planned_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "next_required_actions": [
-    "refresh_free_historical_data -- BLOCKED until on/after 2026-10-29 (data cutoff gate requires cutoff >= 2026-10-29; October 2026 Binance monthly klines AND monthly fundingRate HTTP 404 as of probe 2026-11-01T09:24:17Z record research_state/cutoff_probe/cutoff_probe_20261101T092417Z.json; September 2026 control HTTP 200 so archive alive and miss is genuine; probe requires both monthly endpoints consumed by refresh_free_data.py; daily partials not consumed)",
+    "refresh_free_historical_data -- BLOCKED until October 2026 Binance MONTHLY klines publishes (data cutoff gate requires cutoff >= 2026-10-29; probe 2026-11-01T15:21:33Z record research_state/cutoff_probe/cutoff_probe_20261101T152133Z.json, PROBE_EXIT=1: October 2026 monthly BTCUSDT klines HTTP 404, October 2026 monthly BTCUSDT fundingRate HTTP 200 -- partial publication, September 2026 control HTTP 200 so archive alive and miss genuine; probe requires BOTH monthly endpoints HTTP 200 per scripts/probe_cutoff_gate.py:105, and refresh_free_data.py consumes the monthly klines zip per scripts/refresh_free_data.py:242-243, so daily partials are not consumed). NOTE: October fundingRate monthly and daily klines 2026-10-29/30/31 are now published (HTTP 200); only the monthly klines zip is missing.",
     "expand_point_in_time_asset_frontier -- DONE this session: re-walked CoinMetrics community catalog, walked 6347 entries, 0 newly discovered at cursor 6347 (catalog not grown); candidates_discovered empty, nothing to validate; recorded in universe_frontier.json catalog_discovery. Re-walk again when catalog may gain new listings.",
     "freeze_exact_forward_cutoff -- pending refresh cutoff >= 2026-10-29",
     "generate_and_verify_216_cell_manifest -- DONE (byte-identical regeneration, 216 cells H004V001-H004V216, anchors H004V105/H004V106)",
@@ -149,7 +149,8 @@
   "session_records": [
     "session_record_20261101T1404Z",
     "session_record_20261101T1406Z",
-    "session_record_20261101T1412Z"
+    "session_record_20261101T1412Z",
+    "session_record_20261101T1522Z"
   ],
   "session_history": [
     {
@@ -158,5 +159,26 @@
       "action": "read_prior_task_verified_state_refreshed_durable_task_handoff",
       "outcome": "cutoff_blocked_h004v106_unchanged_tests_161ok"
     }
-  ]
+  ],
+  "session_record_20261101T1522Z": "DONE (read prior task from durable handoff, verified state, re-probed cutoff, refreshed durable task/handoff): python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures (EXIT=0; the tail \"cutoff_gate\": \"UNBLOCKED\" line is synthetic mock data at tests/test_cutoff_probe.py:138, not a network result). Canonical H004V106 forward block verified byte-unchanged: sha256 60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json next_sequence_number 9 (H1..H9 present). Frontier exhausted at cursor 6347 (catalog_discovery walked 6347 entries, 0 newly discovered; 6127 blocked / 220 verified / 28 legacy). DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched. git status clean of source changes (only __pycache__ bytecode plus append-only probe records). Cutoff probe 2026-11-01T15:21:33Z (record research_state/cutoff_probe/cutoff_probe_20261101T152133Z.json, PROBE_EXIT=1): target_published false, cutoff_gate BLOCKED. Delta vs 15:01:12Z probe: October 2026 monthly BTCUSDT fundingRate now HTTP 200 (was 404); October 2026 monthly BTCUSDT klines STILL HTTP 404; daily klines 2026-10-29/30/31 now HTTP 200; September 2026 control HTTP 200 so archive alive. Gate stays BLOCKED because refresh_free_data.py consumes the monthly klines zip (scripts/refresh_free_data.py:242-243) and the probe requires BOTH monthly endpoints HTTP 200 (scripts/probe_cutoff_gate.py:105). Adaptive-gate trigger not met (single route/timing; partial publication is not a third distinct failed methodological route). Rewrote agent_task_message.md as clear cutoff-gated initial task for next agent; appended this session record to agent_handoff.md.",
+  "latest_archive_probe": {
+    "canonical_forward_block": {
+      "block_sealed": true,
+      "data_cutoff_utc": "2026-09-30T00:00:00Z",
+      "last_allowed_formation_date": "2026-08-31",
+      "n_formations": 608,
+      "sha256": "60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59",
+      "high_low_diff_net_1x": 0.6165223953929935
+    },
+    "cutoff_gate": "BLOCKED",
+    "probe_utc": "2026-11-01T15:21:33Z",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261101T152133Z.json",
+    "probe_exit": 1,
+    "target_published": false,
+    "october_2026_monthly_klines": "HTTP_404",
+    "october_2026_monthly_fundingRate": "HTTP_200",
+    "october_2026_daily_klines_29_30_31": "HTTP_200",
+    "september_2026_control": "HTTP_200",
+    "conclusion": "October 2026 Binance monthly klines still unpublished as of 2026-11-01T15:21:33Z despite the month having closed and the fundingRate monthly + daily klines partials publishing. Cutoff gate remains BLOCKED: refresh_free_data.py consumes the monthly klines zip, which is still 404. Partial publication is a delta from the 15:01:12Z probe but is NOT a third distinct failed methodological route, so the adaptive-gate trigger is not met. Do not loop on known failure; preserve BLOCKED cutoff and the H10 preregistration plan."
+  }
 }
