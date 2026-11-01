@@ -1,3 +1,11 @@
+## Session record 2026-11-01T19:57Z (read prior task, re-probed cutoff, refreshed durable task/handoff)
+
+- **Completed:** Read prior agent task from durable handoff (`research_state/agent_handoff.md`, `research_state/agent_task_message.md`). Re-verified state: `python3 -m unittest discover -s tests` -> 161 run, 161 OK, 0 failures (EXIT=0; `"cutoff_gate": "UNBLOCKED"` tail line is synthetic mock from `tests/test_cutoff_probe.py:138`, not network). Canonical H004V106 unchanged (sha256 `60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59`, n_formations 608, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). Registry next_sequence_number 9 (H1..H9). Frontier exhausted at cursor 6347. DISP-003 exploratory audits EXPLORATORY_ONLY. Frozen artifacts untouched.
+- **Blocker (re-verified this session):** `python3 scripts/probe_cutoff_gate.py --probe-month 2026-10` (2026-11-01T19:57:38Z, record `research_state/cutoff_probe/cutoff_probe_20261101T195738Z.json`, EXIT=1): target_published false, cutoff_gate BLOCKED. October 2026 monthly BTCUSDT klines HTTP 404; October 2026 monthly BTCUSDT fundingRate HTTP 200; September 2026 control HTTP 200. Probe requires both monthly endpoints; partial publication unusable. Adaptive-gate trigger NOT met. Do not loop on known failure.
+- **Prior task status:** DONE.
+- **State updated:** Prepended this session record; `research_state/agent_task_message.md` already current (cutoff-gated, H10 plan when unblocked). No changes to manifest/frontier needed.
+- **Next action:** Preserve BLOCKED cutoff and H10 preregistration plan (allocate next_sequence_number 9->10 when unblocked). When October 2026 Binance monthly klines publishes (both endpoints HTTP 200, cutoff >= 2026-10-29): confirm with probe, run `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`, re-run tests, verify H004V106 unchanged, preregister H10 (next_sequence_number 9->10) with fresh sealed forward block (formations after 2026-09-29, strict 30-day maturity, HAC/overlap-aware), update durable state/registry/manifest/frontier.
+
 
 ## Session record 2026-11-01T19:56Z (read prior task, verified state, refreshed durable task/handoff)
 
