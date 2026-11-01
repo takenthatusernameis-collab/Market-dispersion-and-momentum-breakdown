@@ -51,7 +51,7 @@
   "next_experiment_status": "PREREGISTRATION_AND_FRONTIER_REFRESH_PENDING",
   "next_planned_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "next_required_actions": [
-    "refresh_free_historical_data -- BLOCKED until on/after 2026-10-29 (data cutoff gate requires cutoff >= 2026-10-29; October 2026 Binance monthly archive 404, not re-probed)",
+    "refresh_free_historical_data -- BLOCKED until on/after 2026-10-29 (data cutoff gate requires cutoff >= 2026-10-29; October 2026 Binance monthly klines AND monthly fundingRate HTTP 404 as of probe 2026-11-01T09:24:17Z record research_state/cutoff_probe/cutoff_probe_20261101T092417Z.json; September 2026 control HTTP 200 so archive alive and miss is genuine; probe requires both monthly endpoints consumed by refresh_free_data.py; daily partials not consumed)",
     "expand_point_in_time_asset_frontier -- DONE this session: re-walked CoinMetrics community catalog, walked 6347 entries, 0 newly discovered at cursor 6347 (catalog not grown); candidates_discovered empty, nothing to validate; recorded in universe_frontier.json catalog_discovery. Re-walk again when catalog may gain new listings.",
     "freeze_exact_forward_cutoff -- pending refresh cutoff >= 2026-10-29",
     "generate_and_verify_216_cell_manifest -- DONE (byte-identical regeneration, 216 cells H004V001-H004V216, anchors H004V105/H004V106)",
