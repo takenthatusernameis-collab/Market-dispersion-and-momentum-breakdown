@@ -1,16 +1,18 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T07:22Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T07:27Z)
 
 ## Situation
-Working tree clean of source changes (only __pycache__ bytecode plus append-only probe records). Full suite `python3 -m unittest discover -s tests` -> 161 run, 161 OK, 0 failures (verified 2026-11-01T07:22Z). Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number: 9 (H1..H9 present). Frontier exhausted at cursor 6347. All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched.
+Working tree clean of source changes (only __pycache__ bytecode plus append-only probe records). Full suite `python3 -m unittest discover -s tests` -> 161 run, 161 OK, 0 failures (verified 2026-11-01T07:27Z, EXIT=0). Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number: 9 (H1..H9 present). Frontier exhausted at cursor 6347. All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched.
 
-## Status: cutoff gate BLOCKED (verified)
-Latest probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, 2026-11-01T07:22:18Z, record `research_state/cutoff_probe/cutoff_probe_20261101T072218Z.json`): October 2026 monthly BTCUSDT/ETHUSDT klines and monthly fundingRate endpoints return HTTP 404; September 2026 control returns HTTP 200 (archive alive, miss is genuine). `target_published: false`, `cutoff_gate: BLOCKED`. Probe script requires both monthly klines and monthly funding endpoints HTTP 200 (the exact endpoints `refresh_free_data.py` consumes). Daily partial endpoints (10-29, 10-30) are not consumed by the pipeline.
+## Status: cutoff gate BLOCKED (re-verified this session)
+Latest probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, 2026-11-01T07:27:51Z, record `research_state/cutoff_probe/cutoff_probe_20261101T072751Z.json`, EXIT=1): October 2026 monthly BTCUSDT klines AND monthly fundingRate endpoints both return HTTP 404; September 2026 control returns HTTP 200 (archive alive, miss is genuine). `target_published: false`, `cutoff_gate: BLOCKED`. Probe requires both monthly klines and monthly funding endpoints HTTP 200 (the exact endpoints `refresh_free_data.py` consumes). Daily partial endpoints (10-29, 10-30) are not consumed by the pipeline.
+
+Note: the test suite's own output contains a `"cutoff_gate": "UNBLOCKED"` line — that is mock data hardcoded at `tests/test_cutoff_probe.py:138`, NOT a network result. Do not be misled by it. The real probe exits 1 with BLOCKED.
 
 Adaptive-gate trigger NOT met (single route/timing). Do not loop on known failure.
 
 ## Your task (gated; do not execute refresh while BLOCKED)
 1. Preserve the BLOCKED cutoff. Do NOT run `scripts/refresh_free_data.py` or preregister H10 while October 2026 monthly archives are unpublished.
-2. Monitor for October 2026 Binance archive publication (monthly klines + monthly fundingRate for BTCUSDT/ETHUSDT return HTTP 200; cutoff >= 2026-10-29). Re-confirm with `python3 scripts/probe_cutoff_gate.py --probe-month 2026-10` (expect exit 0 / cutoff_gate UNBLOCKED only when monthly endpoints are 200 and control is 200).
+2. Monitor for October 2026 Binance archive publication (monthly klines + monthly fundingRate for BTCUSDT/ETHUSDT return HTTP 200; cutoff >= 2026-10-29). Re-confirm with `python3 scripts/probe_cutoff_gate.py --probe-month 2026-10` (expect EXIT=0 / cutoff_gate UNBLOCKED only when monthly endpoints are 200 and control is 200).
 3. Once UNBLOCKED: run `scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>` (free public data only; no paid services/secrets).
 4. Re-run `python3 -m unittest discover -s tests` and confirm all pass.
 5. Verify integrity: H004V106 canonical forward block unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
