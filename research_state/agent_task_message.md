@@ -1,12 +1,10 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T09:35Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-01T09:37Z)
 
 ## Situation
-Working tree clean of source changes (only __pycache__ bytecode plus append-only probe records in `research_state/cutoff_probe/`). Full suite `python3 -m unittest discover -s tests` -> 161 run, 161 OK, 0 failures (verified 2026-11-01T09:35Z). Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 9 (H1..H9 present). Universe frontier exhausted at cursor 6347. All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched.
+Working tree clean of source changes (only __pycache__ bytecode plus append-only probe records in `research_state/cutoff_probe/`). Full suite `python3 -m unittest discover -s tests` -> 161 run, 161 OK, 0 failures (verified 2026-11-01T09:37Z). Canonical H004V106 sealed forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 9 (H1..H9 present). Universe frontier exhausted at cursor 6347. All DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched.
 
 ## Status: cutoff gate BLOCKED (re-verified)
-Latest probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, record `research_state/cutoff_probe/cutoff_probe_20261101T093521Z.json`, EXIT=1): October 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine). `target_published: false`, `cutoff_gate: BLOCKED`. Probe requires both monthly endpoints — consumed by `refresh_free_data.py`. Daily partials not consumed.
-
-Note: test suite mock `"cutoff_gate": "UNBLOCKED"` at `tests/test_cutoff_probe.py:138` is not a network result. Adaptive-gate not met.
+Latest probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, record `research_state/cutoff_probe/cutoff_probe_20261101T093728Z.json`, EXIT=1): October 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine). `target_published: false`, `cutoff_gate: BLOCKED`. Probe requires both monthly endpoints — consumed by `refresh_free_data.py`. Daily partials not consumed. Note: test suite mock `"cutoff_gate": "UNBLOCKED"` at `tests/test_cutoff_probe.py:138` is not a network result. Adaptive-gate not met.
 
 ## Your task (gated)
 1. Preserve BLOCKED cutoff. Do NOT run `scripts/refresh_free_data.py` or preregister H10 while October 2026 monthly archives unpublished.
