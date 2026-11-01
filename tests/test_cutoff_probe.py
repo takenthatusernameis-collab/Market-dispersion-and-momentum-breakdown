@@ -20,6 +20,32 @@ spec = importlib.util.spec_from_file_location("probe_cutoff_gate", SPEC)
 probe = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(probe)
 
+ARCHIVE = probe.ARCHIVE
+
+
+def _monthly_results(published: bool) -> list[dict]:
+    """Realistic probe_month results for target month 2026-10.
+
+    Both monthly endpoints (the ones refresh_free_data.py consumes) are HTTP 200
+    when published, otherwise HTTP 404. Daily endpoints are included as 404 to
+    mirror a genuinely unpublished month.
+    """
+    k_status = 200 if published else 404
+    f_status = 200 if published else 404
+    return [
+        {"url": f"{ARCHIVE}/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10.zip", "status": k_status, "bytes": 0, "error": None},
+        {"url": f"{ARCHIVE}/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-10.zip", "status": f_status, "bytes": 0, "error": None},
+        {"url": f"{ARCHIVE}/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-29.zip", "status": 404, "bytes": 0, "error": None},
+        {"url": f"{ARCHIVE}/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-30.zip", "status": 404, "bytes": 0, "error": None},
+    ]
+
+
+def _control_results() -> list[dict]:
+    return [
+        {"url": f"{ARCHIVE}/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09.zip", "status": 200, "bytes": 2066, "error": None},
+        {"url": f"{ARCHIVE}/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-09.zip", "status": 200, "bytes": 924, "error": None},
+    ]
+
 
 class ProbeUrlConstructionTests(unittest.TestCase):
     def test_monthly_klines_url_shape(self):
@@ -77,8 +103,8 @@ class ProbeGateLogicTests(unittest.TestCase):
     def test_main_returns_nonzero_when_blocked(self):
         with mock.patch.object(probe, "probe_month") as pm:
             pm.side_effect = (
-                [{"status": 404}],   # target unpublished
-                [{"status": 200}],   # control alive
+                _monthly_results(False),   # target unpublished (monthly 404)
+                _control_results(),        # control alive
             )
             with mock.patch.object(Path, "mkdir"), \
                  mock.patch.object(Path, "write_text"), \
@@ -89,8 +115,8 @@ class ProbeGateLogicTests(unittest.TestCase):
     def test_main_returns_zero_when_unblocked(self):
         with mock.patch.object(probe, "probe_month") as pm:
             pm.side_effect = (
-                [{"status": 200}],  # target published
-                [{"status": 200}],  # control alive
+                _monthly_results(True),  # target published (monthly 200)
+                _control_results(),      # control alive
             )
             with mock.patch.object(Path, "mkdir"), \
                  mock.patch.object(Path, "write_text"), \

@@ -75,8 +75,9 @@ def probe_month(ym: str, symbol: str = "BTCUSDT") -> list[dict]:
     Covers the monthly klines and fundingRate paths (the two series the
     refresh pipeline consumes) plus the daily-kline path for the last three
     days of the month, which is a different endpoint family and was never
-    probed before 2026-10-31. A month is treated as published only if at
-    least one of these returns HTTP 200.
+    probed before 2026-10-31. Daily-kline 200s for a couple of days do NOT
+    constitute a published month for the pipeline's purposes: refresh_free_data
+    fetches the monthly zips, so the gate requires the monthly endpoints.
     """
     urls = [
         monthly_kline_url(symbol, ym),
@@ -90,6 +91,20 @@ def probe_month(ym: str, symbol: str = "BTCUSDT") -> list[dict]:
             for u in urls for s, b, e in [http_probe(u)]]
 
 
+def monthly_published(results: list[dict], symbol: str, ym: str) -> bool:
+    """True only if both monthly endpoints the refresh pipeline consumes are HTTP 200.
+
+    refresh_free_data.py fetches monthly klines and monthly fundingRate zips via
+    monthly_kline_url / monthly_funding_url. A month is treated as published
+    only when both are available; daily-kline 200s for a partial set of days do
+    not give the pipeline a complete cutoff.
+    """
+    want_klines = monthly_kline_url(symbol, ym)
+    want_funding = monthly_funding_url(symbol, ym)
+    got = {r.get("url"): r.get("status") for r in results if isinstance(r, dict)}
+    return got.get(want_klines) == 200 and got.get(want_funding) == 200
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--probe-month", default="2026-10",
@@ -100,28 +115,32 @@ def main() -> int:
     target = args.probe_month
     target_end = f"{target}-31"
     # The gate requires a published archive whose cutoff is on/after GATE_DATE.
-    # A month-end on/after 2026-10-29 satisfies this; 2026-09 does not.
-    gate_met = target >= "2026-10"
+    # A month-end on/after 2026-10-29 satisfies the structural date requirement;
+    # the month is usable only when its monthly archives (consumed by
+    # refresh_free_data.py) are actually published.
+    gate_met_by_month_end = target >= "2026-10"
 
     target_results = probe_month(target, args.symbol)
     control_results = probe_month(CONTROL_MONTH, args.symbol)
 
-    target_ok = any(r["status"] == 200 for r in target_results)
+    # target_published requires the monthly klines AND monthly funding endpoints
+    # to be HTTP 200. Daily-kline 200s for a partial set of days do not count.
+    target_published = monthly_published(target_results, args.symbol, target)
     control_ok = any(r["status"] == 200 for r in control_results)
     archive_alive = control_ok
-    gate = "UNBLOCKED" if (target_ok and archive_alive and gate_met) else "BLOCKED"
+    gate = "UNBLOCKED" if (target_published and archive_alive and gate_met_by_month_end) else "BLOCKED"
 
     record = {
         "probe_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "probe_month": target,
         "symbol": args.symbol,
         "gate_date_required": GATE_DATE,
-        "gate_met_by_month_end": gate_met,
+        "gate_met_by_month_end": gate_met_by_month_end,
         "target_endpoints": target_results,
         "control_month": CONTROL_MONTH,
         "control_endpoints": control_results,
         "archive_alive": archive_alive,
-        "target_published": target_ok,
+        "target_published": target_published,
         "cutoff_gate": gate,
         "rationale": (
             "The forward block may only advance when a published Binance archive "
@@ -140,11 +159,11 @@ def main() -> int:
 
     print(json.dumps({
         "probe_month": target,
-        "target_published": target_ok,
+        "target_published": target_published,
         "control_month": CONTROL_MONTH,
         "control_ok": control_ok,
         "archive_alive": archive_alive,
-        "gate_met_by_month_end": gate_met,
+        "gate_met_by_month_end": gate_met_by_month_end,
         "cutoff_gate": gate,
         "record": str(out_path.relative_to(ROOT)),
     }, indent=2))
