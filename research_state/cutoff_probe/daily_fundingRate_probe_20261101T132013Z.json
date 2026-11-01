@@ -1,0 +1,50 @@
+{
+  "archive_alive": false,
+  "control_sep30_daily_fundingRate": {
+    "bytes": 0,
+    "status": 404,
+    "url": "https://data.binance.vision/data/futures/um/daily/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-09-30.zip"
+  },
+  "day_results": [
+    {
+      "daily_fundingRate_bytes": 0,
+      "daily_fundingRate_status": 404,
+      "daily_fundingRate_url": "https://data.binance.vision/data/futures/um/daily/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-10-28.zip",
+      "daily_klines_bytes": 0,
+      "daily_klines_status": 404,
+      "daily_klines_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-28.zip",
+      "day": 28
+    },
+    {
+      "daily_fundingRate_bytes": 0,
+      "daily_fundingRate_status": 404,
+      "daily_fundingRate_url": "https://data.binance.vision/data/futures/um/daily/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-10-29.zip",
+      "daily_klines_bytes": 356,
+      "daily_klines_status": 200,
+      "daily_klines_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-29.zip",
+      "day": 29
+    },
+    {
+      "daily_fundingRate_bytes": 0,
+      "daily_fundingRate_status": 404,
+      "daily_fundingRate_url": "https://data.binance.vision/data/futures/um/daily/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-10-30.zip",
+      "daily_klines_bytes": 353,
+      "daily_klines_status": 200,
+      "daily_klines_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-30.zip",
+      "day": 30
+    },
+    {
+      "daily_fundingRate_bytes": 0,
+      "daily_fundingRate_status": 404,
+      "daily_fundingRate_url": "https://data.binance.vision/data/futures/um/daily/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-10-31.zip",
+      "daily_klines_bytes": 354,
+      "daily_klines_status": 200,
+      "daily_klines_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-31.zip",
+      "day": 31
+    }
+  ],
+  "month": "2026-10",
+  "probe_utc": "2026-11-01T13:20:13Z",
+  "route": "daily_fundingRate_vs_monthly_fundingRate",
+  "symbol": "BTCUSDT"
+}
