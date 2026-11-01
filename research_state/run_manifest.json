@@ -37,9 +37,15 @@
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
   "session_record_20261101T1300Z": "DONE (read prior task, verified state, re-probed cutoff, refreshed durable task/handoff): python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures (EXIT=0; the tail \"cutoff_gate\": \"UNBLOCKED\" line is synthetic mock data at tests/test_cutoff_probe.py:138, not a network result). Canonical H004V106 forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json next_sequence_number 9 (H1..H9 present). Frontier exhausted at cursor 6347. DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched. Cutoff probe 2026-11-01T13:00:51Z (record research_state/cutoff_probe/cutoff_probe_20261101T130051Z.json, EXIT=1): October 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine); target_published false; cutoff_gate BLOCKED. Adaptive-gate trigger NOT met (single route/timing). Do not loop on known failure.",
   "session_record_20261101T1218Z": "DONE (read prior task, verified state, re-probed cutoff, refreshed durable task/handoff): python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures (EXIT=0). Canonical H004V106 forward block verified byte-unchanged: n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. hypothesis_registry.json next_sequence_number 9 (H1..H9 present). Frontier exhausted at cursor 6347. DISP-003 exploratory audits complete EXPLORATORY_ONLY; none unlock confirmatory track. Frozen artifacts untouched. Cutoff probe 2026-11-01T12:17:45Z (record research_state/cutoff_probe/cutoff_probe_20261101T121745Z.json, EXIT=1): October 2026 monthly BTCUSDT klines HTTP 404 AND monthly fundingRate HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine); target_published false; cutoff_gate BLOCKED. Adaptive-gate trigger NOT met (single route/timing). Do not loop on known failure.",
-  "last_updated_utc": "2026-11-01T14:12:00Z",
+  "last_updated_utc": "2026-11-01T14:16:51Z",
   "latest_verified_panel_end_date": "2026-09-30",
-  "latest_verified_test_claim": "python3 -m unittest discover -s tests -> 161 run, 161 OK, 0 failures",
+  "latest_verified_test_claim": {
+    "tests_run": 161,
+    "tests_ok": 161,
+    "failures": 0,
+    "verified_at_utc": "2026-11-01T14:16:51Z",
+    "note": "python3 -m unittest discover -s tests"
+  },
   "live_or_paper_trading_allowed": false,
   "manifest_reconciliation_20261101T0225Z": {
     "canonical_block_impact": "None on outcomes: run_manifest.json is not a forward-block input. The canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
@@ -120,5 +126,13 @@
     "session_record_20261101T1404Z",
     "session_record_20261101T1406Z",
     "session_record_20261101T1412Z"
+  ],
+  "session_history": [
+    {
+      "session_id": "session_20261101T1415Z",
+      "timestamp_utc": "2026-11-01T14:16:51Z",
+      "action": "read_prior_task_verified_state_refreshed_durable_task_handoff",
+      "outcome": "cutoff_blocked_h004v106_unchanged_tests_161ok"
+    }
   ]
 }
