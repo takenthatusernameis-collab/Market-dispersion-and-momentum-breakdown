@@ -74,8 +74,12 @@ def derive_data_cutoff(px: dict[str, pd.DataFrame]) -> str:
     """Latest fully closed UTC daily candle across all Binance kline panels."""
     latest = None
     for df in px.values():
-        dates = pd.to_datetime(df["ts"], unit="ms", utc=True).dt.strftime("%Y-%m-%d")
-        d = dates.max()
+        if "date" in df.columns:
+            d = str(df["date"].astype(str).str.slice(0,10).max())
+        else:
+            continue
+        if d > (latest or ""):
+            latest = d
         if d > (latest or ""):
             latest = d
     return latest
