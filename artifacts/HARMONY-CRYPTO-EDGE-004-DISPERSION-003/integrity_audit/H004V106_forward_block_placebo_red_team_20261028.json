@@ -1,0 +1,71 @@
+{
+  "alpha": 0.05,
+  "audit_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "block": {
+    "anchor_id": "H004V106",
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "n_formations": 608,
+    "n_high": 61,
+    "n_low": 90,
+    "n_mid": 457
+  },
+  "computed_utc": "2026-11-02T13:29:40Z",
+  "decision_rule": "Any family with two-sided empirical p < 0.05 and observed outside the 95% permutation CI => PLACEBO_SENSITIVE; all families p >= 0.05 => PLACEBO_INCONCLUSIVE. Outcome is EXPLORATORY_ONLY; it never promotes, refutes, or unlocks the confirmatory track.",
+  "label": "PLACEBO_SENSITIVE",
+  "modified_frozen_artifacts": [],
+  "n_draws": 10000,
+  "placebo_family": {
+    "dispersion_shuffle": {
+      "ci_95": [
+        -0.1780379626826912,
+        0.17445335475087204
+      ],
+      "empirical_p_two_sided": 9.999000099990002e-05,
+      "n_draws": 10000,
+      "null_mean": -2.3456847458867337e-05,
+      "null_std": 0.08940641355567762,
+      "observed": 0.6165223953929935,
+      "observed_inside_ci_95": false,
+      "p_below_alpha": true
+    },
+    "random_ranking": {
+      "ci_95": [
+        -0.14982086288769234,
+        0.15781005767630601
+      ],
+      "empirical_p_two_sided": 9.999000099990002e-05,
+      "n_draws": 10000,
+      "null_mean": -0.001316366957707538,
+      "null_std": 0.07937671726119089,
+      "observed": 0.6165223953929935,
+      "observed_inside_ci_95": false,
+      "p_below_alpha": true
+    },
+    "state_permutation": {
+      "ci_95": [
+        -0.15449813646474245,
+        0.16032202198251308
+      ],
+      "empirical_p_two_sided": 9.999000099990002e-05,
+      "n_draws": 10000,
+      "null_mean": 0.0005551664237136104,
+      "null_std": 0.08058517125624566,
+      "observed": 0.6165223953929935,
+      "observed_inside_ci_95": false,
+      "p_below_alpha": true
+    }
+  },
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106 Forward Block Placebo Red Team v1.md",
+  "read_only_inputs": [
+    "/home/runner/work/Market-dispersion-and-momentum-breakdown/Market-dispersion-and-momentum-breakdown/artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+  ],
+  "seed": 20261028,
+  "self_consistency": {
+    "derived_spread_matches_stored": true,
+    "re_derived_states_match_stored": true
+  },
+  "status": "EXPLORATORY_ONLY"
+}
