@@ -1,14 +1,14 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T18:16:00Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T18:20:00Z)
 
 ## Situation
 
-- **Prior task DONE** (session 2026-11-02T18:11:58Z): re-verified state; suite green 180/180; canonical block byte-unchanged; cutoff UNBLOCKED.
-- **This session:** removed dead duplicate in `scripts/eval_forward_block.py::derive_data_cutoff` (design-review gap #3); no behavior change; suite green 180/180.
+- **Prior task DONE** (session 2026-11-02T18:16:00Z): re-verified state; suite green 180/180; canonical block byte-unchanged; cutoff UNBLOCKED.
+- **This session:** independent bounded state re-verification + frontier re-walk; suite green 180/180/0; canonical H004V106 sha256 `7234fc4e...` pinned to `git show HEAD:`; latest real cutoff probe UNBLOCKED October 2026 (record research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json, EXIT=0); frontier re-walked: 6347 entries walked, 0 newly discovered, cursor 6347 unchanged; durable state refreshed.
 - **Canonical H004V106 forward block** byte-unchanged (sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` vs `git show HEAD:`; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). Development/exploratory evidence only; NOT independent confirmation; never re-seal or overwrite.
-- **Cutoff gate UNBLOCKED** (real probe record research_state/cutoff_probe/cutoff_probe_20261102T181547Z.json, EXIT=0). Trust only real records under research_state/cutoff_probe/.
+- **Cutoff gate UNBLOCKED** (real probe record research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json, EXIT=0). Trust only real records under research_state/cutoff_probe/.
 - **Fresh H10 block** (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json, cutoff 2026-10-31): BUILDS (26 eligible assets >= MIN_ASSETS_DECILES=20, data gate PASSED) but IMMATURE — n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null, last_allowed_formation_date 2026-09-30. Label CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (registry H10). Its overlap_aware_uncertainty section reports status IMMATURE.
 - **Test suite GREEN:** `python3 -m unittest discover -s tests` -> 180 run, 180 OK, 0 failures (EXIT=0).
-- **Frontier:** cursor 6347, 0 newly discovered (nothing to validate).
+- **Frontier:** cursor 6347, 0 newly discovered (nothing to validate); catalog re-walked 2026-11-02T18:19:52Z.
 
 ## Blocker (preserved, exact)
 
