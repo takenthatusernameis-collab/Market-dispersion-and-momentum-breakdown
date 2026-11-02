@@ -1,9 +1,9 @@
-## Session record 2026-11-02T23:11:19Z (H10 fresh block verified; canonical unchanged)
+## Session record 2026-11-02T23:16:47Z (verification only; canonical unchanged; H10 immature)
 - **Prior task status:** DONE (read handoff, completed verification).
 - **Completed:**
-  1. Verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
-  2. Full test suite: `python3 -m unittest discover -s tests -v` → Ran 206 tests OK (skipped=1). Confirmed tests including `test_latest_probe_record_pinned.py` pass.
-  3. Confirmed cutoff gate UNBLOCKED: `research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json` (probe_utc 2026-11-02T22:14:12Z, probe_month 2026-10). October 2026 monthly BTCUSDT klines/fundingRate HTTP 200; panel end 2026-10-31 across all non-delisted panels.
+  1. Verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs committed blob (`git show HEAD:` match; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
+  2. Full test suite: `python3 -m unittest discover -s tests -v` → Ran 206 tests OK (skipped=1). Confirmed tests including `test_latest_probe_record_pinned.py`, `test_forward_block_final_integrity_audit.py`, `test_state_consistency.py` pass.
+  3. Confirmed cutoff gate UNBLOCKED: `research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json` (probe_utc 2026-11-02T22:14:12Z, probe_month 2026-10, target_published true). October 2026 monthly BTCUSDT klines/fundingRate HTTP 200; panel end 2026-10-31 across all non-delisted panels.
   4. Confirmed H10 fresh block at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` remains IMMATURE: n_formations=1 (2026-09-30), n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null, data_cutoff 2026-10-31T00:00:00Z. Root cause: merged price index omits 2026-10-28 (genuine HTTP 404) → last_allowed_formation = cutoff_loc - 30 lands 2026-09-30; trailing-decile state rule needs >=30 prior in-block dispersions. Artifact byte-identical to last recorded state except evaluated_utc/overlap_aware_uncertainty; no re-run performed.
 - **State updated:** `research_state/agent_handoff.md`, `research_state/agent_task_message.md`.
 - **Diff scope (tracked, non-pycache):** only handoff/task message updated this session. Canonical forward block, DISPERSION-001/002, grids, frozen panels and all prior audit artifacts byte-unchanged.
