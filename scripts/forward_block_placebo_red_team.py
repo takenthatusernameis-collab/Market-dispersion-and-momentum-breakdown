@@ -39,6 +39,7 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -66,23 +67,170 @@ def derive_states(disp_by_date: pd.Series) -> pd.Series:
     """Recompute high/low/mid states from a dispersion series.
 
     For each formation date T, the reference window is the trailing
-    WINDOW_DAYS dispersions strictly before T (dser.loc[:T].iloc[:-1].
-    tail(WINDOW_DAYS)). If fewer than MIN_PAST observations are available the
-    state is 'mid'. Otherwise the state is 'high' when the formation's own
-    dispersion is >= the UPPER_DECILE quantile of the reference window, 'low'
-    when <= the LOWER_DECILE quantile, and 'mid' otherwise.
+    WINDOW_DAYS dispersions strictly before T. If fewer than MIN_PAST
+    observations are available the state is 'mid'. Otherwise the state is
+    'high' when the formation's own dispersion is >= the UPPER_DECILE
+    quantile of the reference window, 'low' when <= the LOWER_DECILE
+    quantile, and 'mid' otherwise. Matches the state-derivation rule in
+    scripts/eval_forward_block.py.
     """
-    states = {}
-    for T in disp_by_date.index:
-        past = disp_by_date.loc[:T].iloc[:-1].tail(WINDOW_DAYS)
-        if len(past) < MIN_PAST:
-            states[T] = "mid"
+    values = disp_by_date.to_numpy(dtype=float)
+    dates = disp_by_date.index
+    n = len(values)
+    states = ["mid"] * n
+    for i in range(n):
+        if i < MIN_PAST:
             continue
-        thr_hi = float(past.quantile(UPPER_DECILE))
-        thr_lo = float(past.quantile(LOWER_DECILE))
-        d = float(disp_by_date.loc[T])
+        win = values[max(0, i - WINDOW_DAYS):i]
+        thr_hi = float(np.percentile(win, UPPER_DECILE * 100.0))
+        thr_lo = float(np.percentile(win, LOWER_DECILE * 100.0))
+        d = float(values[i])
         if d >= thr_hi:
-            states[T] = "high"
+            states[i] = "high"
         elif d <= thr_lo:
-            states[T] = "low"
-        else
+            states[i] = "low"
+    return pd.Series(states, index=dates)
+
+
+def high_minus_low(spread: pd.Series, states: pd.Series) -> float:
+    """Conditional high-minus-low net-1x spread for a given state assignment."""
+    hi = spread[states == "high"]
+    lo = spread[states == "low"]
+    if len(hi) == 0 or len(lo) == 0:
+        return float("nan")
+    return float(hi.mean() - lo.mean())
+
+
+def two_sided_empirical_p(null: np.ndarray, observed: float) -> float:
+    """Two-sided empirical p from a permutation null (includes the observed draw)."""
+    if observed != observed:
+        return float("nan")
+    finite = null[np.isfinite(null)]
+    n = len(finite)
+    if n == 0:
+        return float("nan")
+    return float((1.0 + int(np.sum(np.abs(finite) >= abs(observed)))) / (n + 1.0))
+
+
+def percentile_ci(null: np.ndarray) -> list[float]:
+    finite = null[np.isfinite(null)]
+    return [float(np.percentile(finite, 2.5)), float(np.percentile(finite, 97.5))]
+
+
+def now_utc() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def main() -> int:
+    block = json.loads(BLOCK_PATH.read_text())
+    formations = block.get("formations", [])
+    dates = [f["formation_date"] for f in formations]
+    disp = pd.Series([f["dispersion"] for f in formations], index=dates)
+    spread = pd.Series([f["spread_net_1x"] for f in formations], index=dates)
+    stored_states = pd.Series([f["state"] for f in formations], index=dates)
+
+    observed = high_minus_low(spread, stored_states)
+    canonical = block.get("high_low_diff_net_1x")
+    if canonical is None or abs(observed - canonical) > 1e-12:
+        print(f"[placebo] self-consistency FAILED: derived {observed} vs stored {canonical}")
+        return 1
+
+    derived_states = derive_states(disp)
+    if not derived_states.equals(stored_states):
+        print("[placebo] self-consistency FAILED: re-derived states do not match stored states")
+        return 1
+
+    n_hi = int((stored_states == "high").sum())
+    n_lo = int((stored_states == "low").sum())
+    n_mid = int((stored_states == "mid").sum())
+
+    rng = np.random.default_rng(SEED)
+    states_arr = stored_states.to_numpy()
+    spread_arr = spread.to_numpy()
+    disp_arr = disp.to_numpy()
+
+    null_state = np.empty(N_PERM)
+    null_rank = np.empty(N_PERM)
+    null_disp = np.empty(N_PERM)
+
+    for i in range(N_PERM):
+        # 1. State/time permutation: shuffle state labels, spreads fixed.
+        null_state[i] = high_minus_low(
+            spread, pd.Series(rng.permutation(states_arr), index=dates)
+        )
+        # 2. Random-ranking placebo: shuffle spreads, states fixed.
+        null_rank[i] = high_minus_low(
+            pd.Series(rng.permutation(spread_arr), index=dates), stored_states
+        )
+        # 3. Dispersion-label shuffle: permute dispersion, re-derive states,
+        #    spreads fixed. Same trailing-window outer-decile rule as the block.
+        perm_disp = pd.Series(rng.permutation(disp_arr), index=dates)
+        null_disp[i] = high_minus_low(spread, derive_states(perm_disp))
+
+    families = {
+        "state_permutation": null_state,
+        "random_ranking": null_rank,
+        "dispersion_shuffle": null_disp,
+    }
+    results = {}
+    for name, null in families.items():
+        p = two_sided_empirical_p(null, observed)
+        ci = percentile_ci(null)
+        results[name] = {
+            "n_draws": int(N_PERM),
+            "observed": float(observed),
+            "null_mean": float(np.mean(null)),
+            "null_std": float(np.std(null, ddof=1)),
+            "empirical_p_two_sided": p,
+            "ci_95": ci,
+            "observed_inside_ci_95": bool(ci[0] <= observed <= ci[1]),
+            "p_below_alpha": bool(p < ALPHA),
+        }
+
+    sensitive = any(
+        r["p_below_alpha"] and not r["observed_inside_ci_95"] for r in results.values()
+    )
+    label = "PLACEBO_SENSITIVE" if sensitive else "PLACEBO_INCONCLUSIVE"
+
+    artifact = {
+        "audit_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001",
+        "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106 Forward Block Placebo Red Team v1.md",
+        "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+        "computed_utc": now_utc(),
+        "seed": SEED,
+        "n_draws": N_PERM,
+        "alpha": ALPHA,
+        "block": {
+            "anchor_id": block.get("anchor_id"),
+            "n_formations": int(block.get("n_formations", 0)),
+            "n_high": n_hi,
+            "n_low": n_lo,
+            "n_mid": n_mid,
+            "date_first": block.get("date_first"),
+            "date_last": block.get("date_last"),
+            "high_low_diff_net_1x": float(canonical),
+        },
+        "self_consistency": {
+            "derived_spread_matches_stored": True,
+            "re_derived_states_match_stored": True,
+        },
+        "placebo_family": results,
+        "decision_rule": "Any family with two-sided empirical p < 0.05 and observed outside the 95% permutation CI => PLACEBO_SENSITIVE; all families p >= 0.05 => PLACEBO_INCONCLUSIVE. Outcome is EXPLORATORY_ONLY; it never promotes, refutes, or unlocks the confirmatory track.",
+        "label": label,
+        "status": "EXPLORATORY_ONLY",
+        "read_only_inputs": [str(BLOCK_PATH)],
+        "modified_frozen_artifacts": [],
+    }
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUT_PATH.write_text(json.dumps(artifact, indent=2, sort_keys=True) + "\n")
+    print(f"[placebo] anchor={block.get('anchor_id')} label={label} observed={observed:.6f}")
+    for name, r in results.items():
+        print(
+            f"[placebo] {name}: p={r['empirical_p_two_sided']:.4f} "
+            f"ci95=[{r['ci_95'][0]:.4f},{r['ci_95'][1]:.4f}] inside={r['observed_inside_ci_95']}"
+        )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
