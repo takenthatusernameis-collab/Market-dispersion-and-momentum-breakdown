@@ -1,5 +1,5 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T13:08:XXZ)
-- **Situation:** Cutoff gate UNBLOCKED (latest probes show target_published true). Only BTCUSDT/ETHUSDT have October 2026 coverage (2/32). Canonical H004V106 forward block unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390). H10 preregistered; fresh block attempted at forward_block_h10/ (BLOCKED, 0 formations). Suite: 167 run, 1 expected failure, 0 errors.
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T13:26:10Z)
+- **Situation:** Cutoff gate UNBLOCKED (latest probes show target_published true). Only BTCUSDT/ETHUSDT have October 2026 coverage (2/32 kline panels). Canonical H004V106 forward block unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390). H10 preregistered; fresh block attempted at forward_block_h10/ (BLOCKED, 0 formations, reason no_formations_passed_data_gate). Suite: 167 run, 1 expected failure, 0 errors.
 - **Status:** H10 fresh sealed forward block — BLOCKED by data availability (need >=20 assets with complete October 2026 forward horizons; currently 2). Blocker preserved; do NOT relax 30-day maturity or >=20 asset minimum.
 - **Your task:**
   1. Do NOT modify canonical forward block or DISPERSION-001/002 grids. Do not reuse inspected H004V106 as confirmation.
@@ -8,4 +8,3 @@
   4. Maintain read-only state verification + durable-state refresh.
 - **Hard constraints:** Free public data only; historical research only (no trading). No look-ahead/fabrication/forward-fill/invented fills/silent exclusions/outcome-informed params/costs/hidden multiplicity/reuse of inspected holdout. Never shorten 30-day maturity; never relax costs; never change DISPERSION-001/002 grids. October 2026 ranks not backfilled as historical ranks.
 - **Concrete next action:** Check publication of remaining assets' October 2026 Binance monthly zips for >=20 assets with complete 30-day horizons. If yes run H10 fresh-block sequence; if no preserve blocker and proceed to another bounded independent task.
-"
