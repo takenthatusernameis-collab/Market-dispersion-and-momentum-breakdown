@@ -46,7 +46,16 @@ def rebuild() -> int:
     # final month's rows (see fix_funding_panel_rows.py). Month order is ascending
     # so the concatenated panel is chronological.
     by_symbol: dict[str, list[str]] = {}
-    for z in sorted(zips, key=lambda p: p.stem.split("-")[-1]):
+    # Sort by (year, month) from the filename, not by the month suffix alone:
+    # splitting "MATICUSDT-funding-2026-10.zip" on "-" and taking the last
+    # element ("10.zip") groups every year's October together, so the
+    # concatenated panel would read 2023-01, 2024-01, 2025-01, 2026-01,
+    # 2023-02, ... instead of chronological order.
+    def _ym_key(p: Path) -> tuple[int, int]:
+        parts = p.stem.split("-")
+        return int(parts[-2]), int(parts[-1].split(".")[0])
+
+    for z in sorted(zips, key=_ym_key):
         symbol = z.parent.name
         with zipfile.ZipFile(z) as zf:
             csv_names = [n for n in zf.namelist() if n.endswith(".csv")]

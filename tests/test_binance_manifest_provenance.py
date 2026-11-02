@@ -97,11 +97,27 @@ class BinancePanelManifestProvenanceTests(unittest.TestCase):
             )
 
     def test_manifest_series_covers_both_kinds_and_assets(self):
+        """The manifest describes the full 32-symbol DISP-003 panel set.
+
+        It previously covered only BTCUSDT/ETHUSDT because the last data
+        refresh ran with ``--binance-assets btc,eth``; after the panels were
+        rebuilt from all saved raw zips (scripts/rebuild_binance_panels.py)
+        and the manifest regenerated (scripts/regenerate_binance_manifest.py)
+        it covers every symbol in the panel directory, so the invariant is
+        derived from the panel CSVs on disk rather than pinned to a fixed set.
+        """
         kinds = {s["kind"] for s in self.manifest["series"]}
-        symbols = {s["symbol"] for s in self.manifest["series"]}
         self.assertEqual(kinds, {"klines", "funding"})
-        self.assertEqual(symbols, {"BTCUSDT", "ETHUSDT"})
-        self.assertEqual(len(self.manifest["series"]), 4)
+        on_disk = {
+            p.stem.replace("binance_klines_", "").replace("binance_funding_", "")
+            for p in PANELS.glob("binance_*_*.csv")
+            if p.stem not in ("binance_panel_manifest",)
+        }
+        manifest_symbols = {s["symbol"] for s in self.manifest["series"]}
+        self.assertEqual(manifest_symbols, on_disk,
+                         msg="manifest symbol set must equal the panel CSVs on disk")
+        # Every symbol appears once per kind.
+        self.assertEqual(len(self.manifest["series"]), 2 * len(on_disk))
 
 
 if __name__ == "__main__":

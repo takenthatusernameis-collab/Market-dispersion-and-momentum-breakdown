@@ -24,7 +24,16 @@ def main() -> None:
     total_rows = 0
     for kind, header in (("klines", KLINES_HEADER), ("funding", FUNDING_HEADER)):
         by_symbol: dict[str, list[str]] = {}
-        for z in sorted(RAW_DIR.glob(f"{kind}/*/*.zip")):
+        # Sort by (year, month) from the filename, not by the month suffix
+        # alone: splitting "MATICUSDT-klines-2026-10.zip" on "-" and taking
+        # the last element ("10.zip") groups every year's October together, so
+        # the concatenated panel would read 2023-01, 2024-01, 2025-01, 2026-01,
+        # 2023-02, ... instead of chronological order.
+        def _ym_key(p: Path) -> tuple[int, int]:
+            parts = p.stem.split("-")
+            return int(parts[-2]), int(parts[-1].split(".")[0])
+
+        for z in sorted(RAW_DIR.glob(f"{kind}/*/*.zip"), key=_ym_key):
             symbol = z.parent.name
             with zipfile.ZipFile(z) as zf:
                 csv_names = [n for n in zf.namelist() if n.endswith(".csv")]
