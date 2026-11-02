@@ -1,0 +1,77 @@
+{
+  "addendum_id": null,
+  "audit_id": "H004V106_FORWARD_BLOCK_OVERLAP_AWARE_AUDIT_20261102",
+  "audit_utc": "2026-11-02T18:08:34Z",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "audited_artifact_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "canonical_recomputed": {
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "finite_dispersion_count": 608,
+    "high_gross_mean_recomputed": 0.5409613009588848,
+    "high_low_diff_gross_recomputed": 0.6165223953929936,
+    "high_low_diff_net_recomputed": 0.6165223953929936,
+    "high_net_mean_recomputed": 0.5399613009588848,
+    "low_gross_mean_recomputed": -0.07556109443410872,
+    "low_net_mean_recomputed": -0.07656109443410872,
+    "n_assets_max": 27,
+    "n_assets_min": 26,
+    "n_formations": 608,
+    "non_finite_dispersion_count": 0,
+    "spread_gross_mean_recomputed": 0.10062482788703449,
+    "spread_gross_median_recomputed": -0.009610790611408071,
+    "spread_net_mean_recomputed": 0.09962482788703449,
+    "spread_net_median_recomputed": -0.010610790611408072,
+    "state_counts": {
+      "high": 61,
+      "low": 90,
+      "mid": 457
+    }
+  },
+  "canonical_summary": {
+    "anchor_id": "H004V106",
+    "block_sealed": true,
+    "data_cutoff_utc": "2026-09-30T00:00:00Z",
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "high_low_diff_gross": 0.6165223953929935,
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "n_formations": 608,
+    "n_high": 61,
+    "n_low": 90,
+    "n_mid": 457,
+    "overlap_aware_uncertainty": null,
+    "spread_gross_mean": 0.10062482788703447,
+    "spread_gross_median": -0.009610790611408071,
+    "spread_net_1x_mean": 0.09962482788703451,
+    "spread_net_1x_median": -0.010610790611408072,
+    "status": "OK"
+  },
+  "conclusion": "Canonical H004V106 sealed forward block is internally consistent and finite (608 formations, n_high=61, n_low=90, n_mid=457, high_low_diff_net_1x=+0.6165223953929935, all spreads finite, block sealed). The sealed block's overlap_aware_uncertainty was null; this audit computes it as a formation-month cluster-bootstrap interval (n_boot=2000, fixed seed) and reports it here. The block is a strict subset of the grid ledger's development window and was already inspected, so it is development/exploratory evidence only -- NOT independent confirmation and NOT a confirmatory claim for H1/H6/H7. Label EXPLORATORY_ONLY. No sealed artifact was modified.",
+  "overlap_aware": {
+    "baseline_high_low_diff_net_1x": 0.6165223953929937,
+    "bootstrap_mean": 0.5072637631930254,
+    "bootstrap_median": 0.5581271852945703,
+    "bootstrap_se": 0.36383080163032394,
+    "ci_95_percentile": [
+      -0.13659217460791728,
+      1.117509422581644
+    ],
+    "ci_includes_zero": true,
+    "n_boot": 1999,
+    "n_clusters_with_both_states": 2,
+    "n_months": 20,
+    "reason": "",
+    "rng_seed": 20261102,
+    "status": "OK"
+  },
+  "reconciliation": {
+    "canonical_finite_dispersion": true,
+    "canonical_reported_vs_recomputed_diff_net_match": true,
+    "canonical_reported_vs_recomputed_n_formations_match": true,
+    "canonical_state_counts_match": true,
+    "cost_treatment": "net = gross - 0.001 (1x cost) per formation; high_low_diff identical gross vs net because the per-formation cost cancels in the difference of state means",
+    "overlap_dependence_note": "formations are daily overlapping 30-day forward horizons; the simple mean difference ignores autocorrelation, so uncertainty is reported at the formation-month cluster level"
+  },
+  "status": "EXPLORATORY_ONLY"
+}

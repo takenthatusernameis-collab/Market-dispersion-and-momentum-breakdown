@@ -56,7 +56,7 @@
     "root_cause": "scripts/refresh_free_data.py FUNDING_HEADER and scripts/normalize_binance_panels.py both declared a symbol column but never prefixed it to the 3-column archive rows."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-02T18:03:15Z",
+  "last_updated_utc": "2026-11-02T18:10:11Z",
   "session_record_20261102T0943Z": {
     "adaptive_gate_trigger": "not applicable -- gate UNBLOCKED (October 2026 monthly klines AND fundingRate both HTTP 200; record research_state/cutoff_probe/cutoff_probe_20261102T092118Z.json). Test-suite synthetic UNBLOCKED line is mock data (tests/test_cutoff_probe.py); trust only real probe records.",
     "canonical_block_impact": "None on outcomes: H004V106 forward block byte-unchanged vs `git show HEAD:` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
@@ -72,6 +72,11 @@
     "canonical_block_impact": "None: canonical forward block byte-unchanged; additive code only.",
     "frozen_artifacts_untouched": true
   },
+  "session_record_20261102T1810Z": {
+    "summary": "Independent bounded task: read-only overlap-aware uncertainty audit of the sealed canonical H004V106 forward block (design-review gap follow-up). Wrote scripts/forward_block_overlap_aware_audit.py which recomputes every sealed outcome field from the formations ledger and computes the formation-month cluster-bootstrap (overlap-aware) interval on the high-minus-low net-1x spread difference, publishing a NEW EXPLORATORY_ONLY artifact integrity_audit/H004V106_forward_block_overlap_aware_audit_20261102.json. The sealed block's overlap_aware_uncertainty was null; this audit reports baseline +0.6165223953929935, bootstrap mean 0.507264, bootstrap SE 0.363831, 95% percentile CI [-0.136592, 1.117509] (ci_includes_zero=true), n_months=20, n_clusters_with_both_states=2. Consistent with the prior cluster-bootstrap audit (CLUSTER_INDIFFERENT): descriptive exploratory evidence on already-inspected development data, NOT independent confirmation; does not validate H1/H6/H7 and does not unlock the confirmatory track. No sealed/frozen/DISPERSION-001/002/grid artifact modified (canonical block sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 byte-unchanged vs git show HEAD:). Added tests/test_forward_block_overlap_aware_audit.py (5 tests). python3 -m unittest discover -s tests -> 180 run, 180 OK, 0 failures (EXIT=0). Real cutoff probe UNBLOCKED (record research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json: October 2026 monthly klines AND fundingRate HTTP 200). H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE awaiting November 2026 vintage maturity (n_high>0,n_low>0); do not loop on waiting; do not write 'wait for a new experiment ID'.",
+    "canonical_block_impact": "None: canonical forward block byte-unchanged vs git show HEAD: sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
+    "frozen_artifacts_untouched": true
+  },
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Refresh ran scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31 (free public only): BTCUSDT/ETHUSDT through 2026-10-31; other 30 assets' October monthly zips unpublished so panels end 2026-09-30; marketcap panel 2023-01-01..2026-10-31. Trust only real probe records under research_state/cutoff_probe/ (record cutoff_probe_20261102T172330Z.json).",
@@ -80,7 +85,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261102T172330Z.json",
     "target_published": true
   },
-  "latest_verified_test_claim": "175 run, 175 OK, 0 failures (EXIT=0); canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged (verified vs git show HEAD:); universe frontier re-walked at cursor 6347, 0 newly discovered; additive overlap_aware_interval reporting implemented in scripts/eval_forward_block.py and covered by tests/test_forward_block_overlap_aware_interval.py (8 new tests), canonical block byte-unchanged",
+  "latest_verified_test_claim": "180 run, 180 OK, 0 failures (EXIT=0); canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged (verified vs git show HEAD:); universe frontier cursor 6347, 0 newly discovered; overlap_aware_interval reporting implemented in scripts/eval_forward_block.py (tests/test_forward_block_overlap_aware_interval.py, 8 tests) and a new read-only overlap-aware audit of the sealed canonical block (scripts/forward_block_overlap_aware_audit.py + tests/test_forward_block_overlap_aware_audit.py, 5 tests), canonical block byte-unchanged",
   "live_or_paper_trading_allowed": false,
   "manifest_reconciliation_20261101T0225Z": {
     "canonical_block_impact": "None on outcomes: run_manifest.json is not a forward-block input. The canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
