@@ -1,9 +1,9 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T19:36:00Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T20:00:00Z)
 
 ## Situation
-- **Prior task DONE** (session 2026-11-02T19:36:00Z): read prior task from durable handoff; bounded re-verification (canonical hash, tests, cutoff probe, frontier re-walk).
+- **Prior task DONE** (session 2026-11-02T20:00:00Z): read prior task from durable handoff; bounded re-verification (canonical hash, tests, cutoff probe).
 - **Canonical H004V106 forward block** byte-unchanged (sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` vs `git show HEAD:`; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). Development/exploratory only; not independent confirmation.
-- **Cutoff gate:** UNBLOCKED per real record `research_state/cutoff_probe/cutoff_probe_20261102T192549Z.json` (October 2026 monthly klines AND fundingRate HTTP 200).
+- **Cutoff gate:** UNBLOCKED per real record `research_state/cutoff_probe/cutoff_probe_20261102T200015Z.json` (October 2026 monthly klines AND fundingRate HTTP 200).
 - **Fresh H10 block** (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json, cutoff 2026-10-31): BUILDS but IMMATURE — n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null.
 - **Test suite GREEN:** `python3 -m unittest discover -s tests` -> 180 run, 180 OK, 0 failures.
 
