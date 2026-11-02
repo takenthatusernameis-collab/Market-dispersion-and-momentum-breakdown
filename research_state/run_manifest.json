@@ -36,16 +36,16 @@
     "root_cause": "scripts/refresh_free_data.py FUNDING_HEADER and scripts/normalize_binance_panels.py both declared a symbol column but never prefixed it to the 3-column archive rows."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-02T05:26:17Z",
+  "last_updated_utc": "2026-11-02T06:23:04Z",
   "latest_archive_probe": {
     "cutoff_gate": "BLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-29/30/31 HTTP 200; September 2026 control HTTP 200. Monthly klines not published; partial publication unusable. Adaptive-gate trigger NOT met.",
     "probe_month": "2026-10",
-    "probe_utc": "2026-11-02T05:26:37Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261102T052637Z.json",
+    "probe_utc": "2026-11-02T06:23:41Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261102T062341Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "162 run, 162 OK, 0 failures (EXIT=0); environment-repaired: numpy 2.5.4 + pandas 3.1.0 installed via python3 -m pip install -r requirements.txt; guard tests/test_requirements_importable.py present; canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged",
+  "latest_verified_test_claim": "162 run, 162 OK, 0 failures (EXIT=0); environment-repaired: numpy 2.5.4 + pandas 3.1.0 installed via python3 -m pip install -r requirements.txt; guard tests/test_requirements_importable.py present; canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged (verified vs git show HEAD:)",
   "live_or_paper_trading_allowed": false,
   "manifest_reconciliation_20261101T0225Z": {
     "canonical_block_impact": "None on outcomes: run_manifest.json is not a forward-block input. The canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
