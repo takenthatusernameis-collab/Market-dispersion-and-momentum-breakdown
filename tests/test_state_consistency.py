@@ -241,6 +241,38 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         self.assertIn("no fixed top-N cutoff", frontier["rank_policy"])
         self.assertGreater(frontier["next_candidate_batch_size"], 0)
 
+    def test_durable_state_quotes_canonical_block_sha256(self):
+        """The durable state files (frontier latest_archive_probe,
+        manifest latest_archive_probe, registry evidence notes) all quote the
+        canonical forward block's sha256 by hand. A stale string there is the
+        single-source-of-truth hazard that once propagated 60a832fd... for
+        several sessions. Resolve the true value from the committed blob and
+        require every quoted occurrence to match it.
+
+        Only the frontier's structured field is asserted strictly; the
+        manifest and registry are prose and legitimately quote the OLD wrong
+        value inside historical reconciliation notes, so those are scanned for
+        the canonical string's presence rather than absence of the stale one.
+        """
+        import hashlib
+        import subprocess
+        canonical = hashlib.sha256(
+            subprocess.run(
+                ["git", "show", "HEAD:artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"],
+                cwd=ROOT, capture_output=True,
+            ).stdout
+        ).hexdigest()
+        frontier = _load(STATE / "universe_frontier.json")
+        quoted = frontier["latest_archive_probe"]["canonical_forward_block"]["sha256"]
+        self.assertEqual(quoted, canonical,
+                         f"frontier quotes {quoted}; committed blob is {canonical}")
+        # the canonical string must also appear somewhere in the manifest and
+        # registry, i.e. the corrected value must have propagated to both
+        manifest_text = (STATE / "run_manifest.json").read_text(encoding="utf-8")
+        registry_text = (STATE / "hypothesis_registry.json").read_text(encoding="utf-8")
+        self.assertIn(canonical, manifest_text, "manifest never records the canonical sha256")
+        self.assertIn(canonical, registry_text, "registry never records the canonical sha256")
+
     def test_defective_archive_remains_quarantined(self):
         archive = ART / "archive_defective_momentum_20261024" / "forward_block_evaluation.json"
         self.assertTrue(archive.exists())
