@@ -1,4 +1,4 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T00:53:42Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T00:56:20Z)
 
 ## Situation
 Tests: 161 run, 1 failure, 0 errors. Single failure `test_panel_start_end_match_csv_min_max` is a KNOWN CONSTRAINT (`marketcap_panel_manifest.json` vs panel CSV date-string mismatch; manifest is a frozen forward-block input — do not modify). All other 160 tests pass; 0 errors. Canonical H004V106 forward block verified byte-unchanged: sha256 `60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59`, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 9 (H1..H9 present). No preregistration yet; H10 remains pending. Universe frontier exhausted at cursor 6347. Frozen artifacts untouched.
