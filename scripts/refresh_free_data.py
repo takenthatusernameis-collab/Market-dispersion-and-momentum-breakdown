@@ -453,7 +453,7 @@ def main() -> int:
     # contradicted the panel CSV on disk (2023-01-01..2026-10-23). Derive the
     # summary from the panel CSV itself, the single source of truth.
     with cm_panel_path.open(newline="", encoding="utf-8") as fh:
-        _cm_dates = [r["date"] for r in csv.DictReader(fh) if r.get("date")]
+        _cm_dates = [r["date"][:10] for r in csv.DictReader(fh) if r.get("date")]
     cm_date_first = min(_cm_dates) if _cm_dates else None
     cm_date_last = max(_cm_dates) if _cm_dates else None
 

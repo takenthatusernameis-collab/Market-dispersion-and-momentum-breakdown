@@ -112,17 +112,25 @@ class ForwardBlockIntegrityTests(unittest.TestCase):
 
     def test_forward_block_reproducible_at_frozen_cutoff(self):
         """Re-running the evaluator at the frozen cutoff must reproduce the
-        committed high_low_diff_net_1x and formation count."""
-        import subprocess
+        committed high_low_diff_net_1x and formation count. The re-run writes to
+        a temp dir so the canonical block is never overwritten; only the frozen
+        outcome fields are compared."""
+        import subprocess, tempfile, json
+        from pathlib import Path
         fb = _fb()
         cutoff = fb["data_cutoff_utc"][:10]
-        r = subprocess.run(
-            ["python", str(ROOT / "scripts" / "eval_forward_block.py"),
-             "--data-cutoff", cutoff],
-            cwd=ROOT, capture_output=True, text=True,
-        )
-        self.assertEqual(r.returncode, 0, msg=r.stderr)
-        reloaded = json.loads(FB.read_text())
+        canonical_hash_before = hashlib.sha256(FB.read_bytes()).hexdigest()
+        with tempfile.TemporaryDirectory() as td:
+            out_dir = Path(td) / "repro_block"
+            r = subprocess.run(
+                ["python", str(ROOT / "scripts" / "eval_forward_block.py"),
+                 "--data-cutoff", cutoff, "--output-dir", str(out_dir)],
+                cwd=ROOT, capture_output=True, text=True,
+            )
+            self.assertEqual(r.returncode, 0, msg=r.stderr)
+            reloaded = json.loads((out_dir / "forward_block_evaluation.json").read_text())
+        self.assertEqual(hashlib.sha256(FB.read_bytes()).hexdigest(), canonical_hash_before,
+                         msg="reproducibility re-run must not modify the canonical block")
         self.assertEqual(reloaded["n_formations"], fb["n_formations"])
         self.assertAlmostEqual(reloaded["high_low_diff_net_1x"],
                                fb["high_low_diff_net_1x"], places=12)

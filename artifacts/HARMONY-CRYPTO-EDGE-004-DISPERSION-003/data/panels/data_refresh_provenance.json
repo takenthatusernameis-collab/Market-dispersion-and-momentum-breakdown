@@ -297,7 +297,7 @@
       {
         "asset": "btc",
         "date_first": "1672531200000",
-        "date_last": "1790726400000",
+        "date_last": "1793404800000",
         "kind": "klines",
         "months": [
           {
@@ -571,16 +571,18 @@
             "ym": "2026-09"
           },
           {
-            "status": "missing",
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/BTCUSDT/BTCUSDT-klines-2026-10.zip",
+            "raw_sha256": "38026e964abf291f7718a0c7ef27984cf36df21aa8b38b8a2c1fc144e08f1d4d",
+            "status": "ok",
             "ym": "2026-10"
           }
         ],
         "months_error": 0,
-        "months_missing": 1,
-        "months_ok": 45,
+        "months_missing": 0,
+        "months_ok": 46,
         "months_requested": 46,
         "raw_dir": "data/raw/binance/klines/BTCUSDT",
-        "rows": 1369,
+        "rows": 1399,
         "symbol": "BTCUSDT"
       },
       {
@@ -877,7 +879,7 @@
       {
         "asset": "eth",
         "date_first": "1672531200000",
-        "date_last": "1790726400000",
+        "date_last": "1793404800000",
         "kind": "klines",
         "months": [
           {
@@ -1151,16 +1153,18 @@
             "ym": "2026-09"
           },
           {
-            "status": "missing",
+            "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance/klines/ETHUSDT/ETHUSDT-klines-2026-10.zip",
+            "raw_sha256": "ef315999cbc47e3e17a219539d2d2a4c8478fc24e0d5653811b4e88bc4125fe1",
+            "status": "ok",
             "ym": "2026-10"
           }
         ],
         "months_error": 0,
-        "months_missing": 1,
-        "months_ok": 45,
+        "months_missing": 0,
+        "months_ok": 46,
         "months_requested": 46,
         "raw_dir": "data/raw/binance/klines/ETHUSDT",
-        "rows": 1369,
+        "rows": 1399,
         "symbol": "ETHUSDT"
       }
     ],
@@ -1177,7 +1181,7 @@
     "panel_sha256": "9fb6daf65b2269fec6d06e6b4e8cfbb1b2b98a50ee103c342fe131fe2aa77af8"
   },
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-11-02T00:30:12Z",
+  "fetch_utc": "2026-11-02T09:24:26Z",
   "point_in_time": "no forward-fill; eligibility and ranking use on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",

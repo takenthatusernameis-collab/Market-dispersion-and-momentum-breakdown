@@ -54,6 +54,11 @@ def parse_args() -> argparse.Namespace:
                    help="minimum completed forward-horizon days required after the "
                         "last formation date (default 30). Formations whose horizon "
                         "is not fully observed are excluded.")
+    p.add_argument("--forward-block-start", default=FORWARD_BLOCK_START,
+                   help="first formation date included in the block "
+                   "(default %(default)s). Set to a date after the previous block's "
+                   "cutoff to seal a genuinely fresh forward block, e.g. 2026-09-30 "
+                   "for H10 after the 2026-09-30 canonical cutoff.")
     p.add_argument("--output-dir", default=None,
                    help="directory for the sealed block artifact. Defaults to "
                         "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block "
@@ -261,6 +266,7 @@ def main() -> int:
     elig_map = build_eligibility_map(mc, px)
 
     data_cutoff = args.data_cutoff or derive_data_cutoff(px)
+    block_start = args.forward_block_start
     horizon = ANCHOR_PARAMS["forward_horizon_days"]
     min_horizon = args.min_horizon_days
     if horizon < min_horizon:
@@ -306,7 +312,7 @@ def main() -> int:
         "experiment_id": EXP,
         "anchor_id": ANCHOR_ID,
         "anchor_parameters": ANCHOR_PARAMS,
-        "forward_block_start": FORWARD_BLOCK_START,
+        "forward_block_start": block_start,
         "forward_block_end": None,  # set after evaluation
         "data_cutoff_utc": f"{data_cutoff}T00:00:00Z",
         "data_cutoff_source": "derived from latest fully closed UTC daily Binance kline candle (or --data-cutoff)",
@@ -345,7 +351,7 @@ def main() -> int:
     all_dispersions: dict[str, float] = {}
 
     for T, elig in sorted(elig_map.items()):
-        if T < FORWARD_BLOCK_START:
+        if block_start is not None and T < block_start:
             continue
         if last_allowed_str is not None and T > last_allowed_str:
             # Forward horizon not yet completed at the data cutoff: seal the
