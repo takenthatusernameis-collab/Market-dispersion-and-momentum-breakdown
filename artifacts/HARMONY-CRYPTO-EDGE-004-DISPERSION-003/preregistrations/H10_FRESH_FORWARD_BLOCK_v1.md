@@ -97,7 +97,7 @@ uncertainty on completed 30-day forward outcomes only.
 ## 6. Expected output
 
 - Fresh sealed forward block artifact under a new output dir
-  (e.g. `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10/`),
+  (e.g. `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`),
   new preregistration record here, registry entry H10 (next_sequence_number
   9->10), run-manifest entry, frontier/handoff update.
 
@@ -113,6 +113,21 @@ CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / BLOCKED. The blocker is preserved;
 the next agent should retry the fresh sealed block once >=20 assets have
 complete October 2026 price panels, and must not relax the 30-day maturity or
 the asset minimum to force a result.
+
+**Update 2026-11-02 (post-probe):** October 2026 monthly klines AND monthly
+fundingRate ARE published (cutoff probe UNBLOCKED, record
+research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json, EXIT=0). The
+fresh block now BUILDS with 26 eligible assets (>= MIN_ASSETS_DECILES=20) and
+passes the data gate, BUT is still IMMATURE: n_formations=1 (2026-09-30),
+n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null,
+last_allowed_formation_date 2026-09-30. The remaining blocker is the state rule
+(`trailing_window_outer_deciles` requires >=30 prior in-block dispersions before
+any high/low state assignment), which cannot be satisfied until the November
+2026 vintage matures (n_high>0,n_low>0). No relaxation of the 30-day maturity
+rule or MIN_ASSETS_DECILES=20. The used output directory is
+`forward_block_h10_fresh/` (not `forward_block_h10/`). This note is a
+documentation correction of the originally stale narrative; no methodology,
+parameters, costs or acceptance criteria changed.
 
 ## 8. Open questions for the next agent
 
