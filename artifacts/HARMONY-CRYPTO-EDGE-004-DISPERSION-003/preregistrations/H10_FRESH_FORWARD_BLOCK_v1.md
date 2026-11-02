@@ -116,7 +116,7 @@ the asset minimum to force a result.
 
 **Update 2026-11-02 (post-probe):** October 2026 monthly klines AND monthly
 fundingRate ARE published (cutoff probe UNBLOCKED, record
-research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json, EXIT=0). The
+research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json, EXIT=0). The
 fresh block now BUILDS with 26 eligible assets (>= MIN_ASSETS_DECILES=20) and
 passes the data gate, BUT is still IMMATURE: n_formations=1 (2026-09-30),
 n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null,
@@ -128,6 +128,28 @@ rule or MIN_ASSETS_DECILES=20. The used output directory is
 `forward_block_h10_fresh/` (not `forward_block_h10/`). This note is a
 documentation correction of the originally stale narrative; no methodology,
 parameters, costs or acceptance criteria changed.
+
+**Update 2026-11-02T22:15Z (panel-coverage correction):** the earlier note
+claimed only BTCUSDT and ETHUSDT had October 2026 price panels and the other 30
+panels ended 2026-09-30. That was stale even when written: a direct audit of the
+committed panels shows all 30 non-delisted Binance kline panels end
+2026-10-31 (MATICUSDT ends 2024-09-11 and EOSUSDT ends 2025-05-21, delisted by
+construction), and marketcap_panel.csv spans 2023-01-01..2026-10-31. The
+26-eligible-asset count was therefore correct for a different reason than the
+narrative stated: eligibility is the intersection of a cap observation and a
+price observation *on that date*, and the formation loop only visits dates that
+are present in the merged price index. The merged index omits 2026-10-28 (a
+genuine archive gap: the October 2026 daily kline for 2026-10-28 returns
+HTTP 404 while 10-29/30/31 return HTTP 200), which shifts the index position
+of 2026-10-31 so that `last_allowed_formation = cutoff_loc - 30` lands on
+2026-09-30 rather than 2026-10-01, excluding the one formation whose 30-day
+outcome would otherwise have been complete. The block is therefore sealed
+correctly, but it contains exactly one formation and the state rule cannot fire.
+This is a data-vintage maturity problem, not a pipeline defect; no code path was
+changed and the artifact was re-run byte-identically (only `evaluated_utc` and
+the later-added `overlap_aware_uncertainty` section differ). The blocker is
+preserved: re-attempt only when the November 2026 vintage yields n_high>0 and
+n_low>0.
 
 ## 8. Open questions for the next agent
 

@@ -12756,18 +12756,20 @@
       "reason": "The committed value 32 was the legacy refresh panel asset count, not the point-in-time eligible expanding universe. The expanding arm of the DISPERSION-003 grid (build_eligibility_map arm='expanding_point_in_time') uses every asset with a cap observation AND a Binance perpetual price, i.e. the full candidates_verified set. Recomputed from the committed panels: marketcap_panel.csv has 32 distinct assets, binance kline panels cover 32 symbols, and the intersection of cap assets with a Binance symbol is 32 legacy assets PLUS 190 verified candidates = 220. The grid ledger's eligible_assets_per_date max is 32 because only the legacy 32 have price history spanning the formation window; the 190 verified candidates have cap history but their Binance perpetual probe returned exists=True with no committed price panel, so they are NOT currently in the price panel and cannot enter the universe until their price/funding panels are fetched.",
       "to": 220
     },
-    "2026-11-02T04:17Z: latest_archive_probe.canonical_forward_block.sha256 corrected from stale 60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59 to the verified canonical value 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (matches git show HEAD and direct sha256sum). The stale string is preserved verbatim inside earlier records that quoted it at the time; it is not promoted."
+    "2026-11-02T04:17Z: latest_archive_probe.canonical_forward_block.sha256 corrected from stale 60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59 to the verified canonical value 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (matches git show HEAD and direct sha256sum). The stale string is preserved verbatim inside earlier records that quoted it at the time; it is not promoted.",
+    "2026-11-02T22:14Z: latest_archive_probe advanced from the stale BLOCKED 2026-11-02T07:25:12Z summary (record cutoff_probe_20261102T072512Z.json, target_published false, probe_exit 1) to the real UNBLOCKED 2026-11-02T22:14:12Z probe (record cutoff_probe_20261102T221412Z.json, target_published true, probe_exit 0). Root cause: the 07:25:12Z summary was hand-rewritten in a prior session and never refreshed after later real probes returned UNBLOCKED, so the durable state quoted a gate decision that no longer matched any record -- the same single-source-of-truth hazard class as the stale canonical sha256. The stale BLOCKED summary is preserved verbatim in this entry and is not promoted. New regression guard tests/test_latest_probe_record_pinned.py (6 tests) pins every latest_archive_probe summary to the record file it names (path under research_state/cutoff_probe/, record exists and parses, cutoff_gate / target_published / probe_utc / probe_month all agree with the record) and fails the build on a summary quoting a nonexistent record; it red-teamed clean against the pre-fix state (the stale frontier summary lacked probe_month and failed). current_panel_date_end also corrected 2026-10-23 -> 2026-10-31 (the 2026-10-23 value was the last CoinMetrics cap refresh before the October 2026 Binance monthly archive published; the committed Binance kline/funding panels already ran through 2026-10-31, verified directly from the panels). No canonical forward block, grid ledger, DISPERSION-001/002 or frozen panel was modified; durable-state correction only."
   ],
   "current_legacy_asset_count": 28,
-  "current_panel_date_end": "2026-10-23",
+  "current_panel_date_end": "2026-10-31",
   "current_panel_date_start": "2010-07-18",
+  "data_refresh_provenance_note_20261102T2214Z": "current_panel_date_end advanced 2026-10-23 -> 2026-10-31. The 2026-10-23 value was stale: it came from the last CoinMetrics cap refresh before the October 2026 Binance monthly archive published, while the committed Binance kline/funding panels already ran through 2026-10-31 (refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31, 2026-11-02T09:43Z). Verified directly from the panels: every kline panel's last open_time converts to 2026-10-31 for the 30 assets that have an October panel (MATICUSDT ends 2024-09-11 and EOSUSDT ends 2025-05-21, delisted by construction), and marketcap_panel.csv spans 2023-01-01..2026-10-31. This field is descriptive coverage, NOT a forward-block input and NOT a gate decision; the canonical H004V106 block (cutoff 2026-09-30) is byte-unchanged.",
   "data_refresh_provenance_repair_20261031": "data_refresh_provenance.json carried an inverted coinmetrics boundary (date_first 2026-07-16 > date_last 2023-04-04, contradicting the panel CSV 2023-01-01..2026-10-23) and stale binance funding/klines rows (4152 raw-archive newlines vs 4107/1369 data rows written to the panel CSVs after the 2026-10-31 funding-panel rebuild). Repaired by scripts/fix_refresh_provenance_boundaries.py recomputing every boundary/rows field from the panel CSVs; root cause fixed in scripts/refresh_free_data.py. New regression test tests/test_refresh_provenance_boundaries.py (4 tests). Full suite 135/135 OK. No panel CSV, no grid ledger, no hypothesis conclusion and no forward block changed; the canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True) and data_refresh_provenance.json is not a forward-block input, so no re-sealing was required. Catalog discovery unchanged: 6347 entries walked, 0 newly discovered, cursor 6347. Cutoff gate remains BLOCKED (October 2026 Binance archive unpublished; did NOT re-probe).",
   "expanding_universe_assets_with_cap_and_binance": 220,
   "expanding_universe_definition": "Number of distinct assets that have BOTH a CapMrktEstUSD observation and a Binance USD-M perpetual price series in the committed panels. This is the point-in-time eligible universe size used by the expanding arm of the DISPERSION-003 grid, NOT the legacy comparator count.",
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-02T20:02:20Z",
+  "last_updated_utc": "2026-11-02T22:15:00Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12778,17 +12780,18 @@
       "n_formations": 608,
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
-    "cutoff_gate": "BLOCKED",
-    "note": "Re-verified this session (2026-11-02T07:25:12Z). Gate stays BLOCKED: probe requires BOTH monthly endpoints HTTP 200 and refresh_free_data.py consumes the monthly klines zip; partial publication unusable. Adaptive-gate trigger NOT met. Did NOT re-probe at 07:34Z: the October 2026 monthly-klines 404 is a known, repeatedly confirmed failure (records 06:21:23Z through 07:25:12Z, 9 probes), and repeating the same endpoint is not a distinct failed route. Canonical forward block sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 verified byte-unchanged vs git show HEAD: (new git-pinned guard tests/test_canonical_block_git_pinned.py).",
+    "cutoff_gate": "UNBLOCKED",
+    "note": "Real live probe 2026-11-02T22:14:12Z (record research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json, EXIT=0). October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); target_published true. October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 2026-10-29/30/31 HTTP 200; September 2026 control monthly klines + fundingRate + daily HTTP 200, so the archive is alive and the gate is met by the two monthly endpoints that refresh_free_data.py consumes. CORRECTION: this field previously quoted the BLOCKED 2026-11-02T07:25:12Z probe (record cutoff_probe_20261102T072512Z.json) even though a later real probe had already returned UNBLOCKED; the stale BLOCKED summary was a hand-rewritten copy that had drifted from the record it named, and is now superseded. The earlier BLOCKED narrative is preserved verbatim in the corrections array for auditability and is not promoted.",
     "october_2026_daily_klines": "2026-10-28 HTTP 404; 2026-10-29/30/31 HTTP 200",
     "october_2026_monthly_fundingRate": "HTTP 200 (943 bytes)",
-    "october_2026_monthly_klines": "HTTP 404 (0 bytes)",
-    "probe_exit": 1,
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261102T052637Z.json",
-    "probe_utc": "2026-11-02T07:25:12Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261102T072512Z.json",
+    "october_2026_monthly_klines": "HTTP 200 (2064 bytes)",
+    "probe_exit": 0,
+    "probe_month": "2026-10",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json",
+    "probe_utc": "2026-11-02T22:14:12Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json",
     "september_2026_control": "HTTP 200",
-    "target_published": false
+    "target_published": true
   },
   "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
   "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
