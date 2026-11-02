@@ -1,12 +1,12 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T08:26:00Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T08:29:08Z)
 
 ## Situation
 Tests: `python3 -m unittest discover -s tests` -> 167 run, 167 OK, 0 failures (EXIT=0). Environment precondition: `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` (numpy 2.5.4 / pandas 3.1.0); guard `tests/test_requirements_importable.py` fails the build if any declared dependency is missing.
 
-Canonical H004V106 forward block verified byte-unchanged vs `git show HEAD:`: sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 9 (H1..H9 present); H10 never allocated. Universe frontier exhausted at cursor 6347 (re-walked this session: 6347 entries, 0 newly discovered, catalog not grown). Frozen artifacts untouched (working tree clean of tracked source changes; only `__pycache__` bytecode).
+Canonical H004V106 forward block verified byte-unchanged vs `git show HEAD:`: sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 9 (H1..H9 present); H10 never allocated. Universe frontier exhausted at cursor 6347. Frozen artifacts untouched (working tree clean of tracked source changes; only `__pycache__` bytecode).
 
 ## Status: cutoff gate BLOCKED
-Latest authoritative probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, 2026-11-02T08:23:39Z, record `research_state/cutoff_probe/cutoff_probe_20261102T082339Z.json`, EXIT=1): October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 / 10-29/30/31 HTTP 200; September 2026 control HTTP 200. `target_published: false`, `cutoff_gate: BLOCKED`. Monthly klines not published; partial publication unusable. Adaptive-gate trigger NOT met (same October 2026 monthly-klines endpoint as the 07:25:12Z probe — a repeat of a known failure, not a third distinct failed route). Do not loop on known failure. NOTE: the test suite stdout may carry a synthetic `"cutoff_gate": "UNBLOCKED"` line with a record path under `research_state/cutoff_probe/` that does NOT exist on disk; that is mock data from `tests/test_cutoff_probe.py` (mocks `probe_month` and `Path.write_text`, hits no network, writes no record) — trust only real probe records under `research_state/cutoff_probe/`.
+Latest authoritative probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, 2026-11-02T08:29:08Z, record `research_state/cutoff_probe/cutoff_probe_20261102T082908Z.json`, EXIT=1): October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200; October 2026 daily klines 2026-10-28 HTTP 404 / 10-29/30/31 HTTP 200; September 2026 control HTTP 200. `target_published: false`, `cutoff_gate: BLOCKED`. Monthly klines not published; partial publication unusable. Adaptive-gate trigger NOT met (same October 2026 monthly-klines endpoint as prior probes — repeat of known failure). Do not loop on known failure. NOTE: test suite stdout may carry synthetic `"cutoff_gate": "UNBLOCKED"` with a record path under `research_state/cutoff_probe/` that does NOT exist on disk; that is mock data from `tests/test_cutoff_probe.py` — trust only real probe records.
 
 ## Your task (blocked — preserve state)
 1. Do NOT run refresh while gate is BLOCKED.
@@ -21,5 +21,3 @@ Latest authoritative probe (`python3 scripts/probe_cutoff_gate.py --probe-month 
 
 ## Concrete next action
 Re-probe with `python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`. If EXIT=0/UNBLOCKED, execute unblocked sequence; else preserve BLOCKED and update durable state. If nothing bounded and unblocked remains, do a read-only state verification + durable-state refresh (do not re-probe the same endpoint within minutes of a known failure).
-
-(End of file - total 23 lines)
