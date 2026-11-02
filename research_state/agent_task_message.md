@@ -1,13 +1,13 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T10:07:17Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T10:13:11Z)
 
 ## Situation
-- Cutoff gate: UNBLOCKED (probe `research_state/cutoff_probe/cutoff_probe_20261102T092118Z.json`, EXIT=0; Oct 2026 BTCUSDT klines+funding HTTP 200).
-- Data refresh done; marketcap panel advanced to 2026-10-31. Binance price/funding panels in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/` currently end 2026-09-30 for most assets (no Oct 2026 data present). Only partial publication observed; fresh H10 block remains blocked.
-- Tests: `python3 -m unittest discover -s tests` -> 167 run, 1 FAILURE (`test_forward_block_hashes_match_files_on_disk`) expected post-refresh (canonical block hashes pre-date refresh). Do NOT tamper with canonical H004V106 forward block (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`), sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
+- Cutoff gate: UNBLOCKED (probe `research_state/cutoff_probe/cutoff_probe_20261102T101311Z.json`, EXIT=0; Oct 2026 BTCUSDT/ETHUSDT klines+funding HTTP 200).
+- Data refresh done; marketcap panel advanced to 2026-10-31. Binance price/funding panels in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/` end 2026-09-30 for most assets (only BTCUSDT/ETHUSDT have Oct 2026 data).
+- Tests: `python3 -m unittest discover -s tests` — note canonical block hash test may be affected by panel refresh; do NOT tamper with canonical H004V106 forward block (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`), sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
 - H10: preregistered at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md`, registry status CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / BLOCKED.
 
 ## Status: H10 fresh sealed forward block — BLOCKED by data availability
-Need >=20 assets with complete October 2026 forward horizons (30-day maturity). Current data has insufficient coverage (root cause: remaining 30 assets' October monthly zips not published). Blocker preserved; do NOT relax 30-day maturity or >=20 asset minimum.
+Need >=20 assets with complete October 2026 forward horizons (30-day maturity). Currently only 2 assets have Oct 2026 data (BTCUSDT/ETHUSDT); remaining 30 assets' October monthly zips not published. Blocker preserved; do NOT relax 30-day maturity or >=20 asset minimum.
 
 ## Your task
 1. Do NOT modify canonical forward block or DISPERSION-001/002 grids. Do not reuse inspected H004V106 as confirmation.
