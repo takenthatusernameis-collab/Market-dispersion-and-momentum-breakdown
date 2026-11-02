@@ -1,10 +1,9 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T22:20:00Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T23:10:00Z)
 
 ## Situation
-- Prior task DONE (verification only). Canonical H004V106 unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
-- Cutoff gate UNBLOCKED per REAL live probe 2026-11-02T22:14:12Z (record `research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json`, EXIT=0): October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly fundingRate HTTP 200 (943 bytes); daily 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200.
-- Panel coverage: all 30 non-delisted Binance kline panels end 2026-10-31 (MATICUSDT ends 2024-09-11, EOSUSDT ends 2025-05-21, delisted by construction); marketcap_panel.csv 2023-01-01..2026-10-31.
-- H10 fresh block at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`: n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null, 26 eligible assets, data_cutoff 2026-10-31T00:00:00Z. IMMATURE (trailing_window_outer_deciles needs >=30 prior in-block dispersions). Root cause: merged price index omits 2026-10-28 (genuine 404) → last_allowed_formation = cutoff_loc - 30 lands on 2026-09-30. No re-run this session.
+- Prior task DONE (tests + verification). Full suite green: 206 tests OK (skipped=1). Canonical H004V106 unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
+- Cutoff gate UNBLOCKED per real live probe 2026-11-02T22:14:12Z (record `research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json`). Panel coverage: all 30 non-delisted Binance kline panels end 2026-10-31; marketcap_panel.csv 2023-01-01..2026-10-31.
+- H10 fresh block at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`: n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null, 26 eligible assets, data_cutoff 2026-10-31T00:00:00Z. IMMATURE (trailing_window_outer_deciles needs >=30 prior in-block dispersions). Root cause: merged price index omits 2026-10-28 (genuine 404) → last_allowed_formation = cutoff_loc - 30 lands on 2026-09-30. No re-run.
 
 ## Your task
 Bounded independent task (tests/validation/design/red-team/source coverage). Re-verify canonical hash, tests, cutoff as needed; do not wait. Update handoff + rewrite this message. Re-attempt H10 fresh block evaluation only when n_high>0,n_low>0 (mature block). Follow prereg `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md` exactly.
@@ -15,5 +14,8 @@ As in AGENTS.md and prior messages. No fabrication/relaxation/promotion. Preserv
 ## New this session (do not undo)
 - `tests/test_latest_probe_record_pinned.py` (6 tests) pins every `latest_archive_probe` summary in `universe_frontier.json` / `run_manifest.json` to the real cutoff-probe record it names. Keep summaries consistent with their named record.
 - `universe_frontier.json latest_archive_probe` and `current_panel_date_end` reflect the real UNBLOCKED 22:14:12Z probe and panel end 2026-10-31. The old BLOCKED 07:25:12Z summary is preserved verbatim in `universe_frontier.corrections` for auditability.
+- Full test suite green: 206 tests OK (skipped=1) at 2026-11-02T23:10:00Z.
 
 (End of file)
+" filePath">
+research_state/agent_task_message.md
