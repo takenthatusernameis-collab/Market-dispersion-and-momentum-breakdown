@@ -1,0 +1,608 @@
+{
+  "all_recompute_match_within_1e9": true,
+  "audit_id": "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_20261102",
+  "audit_utc": "2026-11-02T21:15:39Z",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "audited_artifact_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "canonical_recomputed": {
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "finite_dispersion_count": 608,
+    "high_gross_mean_recomputed": 0.5409613009588847,
+    "high_low_diff_gross_recomputed": 0.6165223953929935,
+    "high_low_diff_net_recomputed": 0.6165223953929935,
+    "high_net_mean_recomputed": 0.5399613009588847,
+    "low_gross_mean_recomputed": -0.07556109443410872,
+    "low_net_mean_recomputed": -0.07656109443410873,
+    "n_assets_max": 27,
+    "n_assets_min": 26,
+    "n_formations": 608,
+    "non_finite_dispersion_count": 0,
+    "spread_gross_mean_recomputed": 0.10062482788703447,
+    "spread_gross_median_recomputed": -0.009610790611408071,
+    "spread_net_mean_recomputed": 0.09962482788703451,
+    "spread_net_median_recomputed": -0.010610790611408072,
+    "state_counts": {
+      "high": 61,
+      "low": 90,
+      "mid": 457
+    }
+  },
+  "canonical_summary": {
+    "block_sealed": true,
+    "data_cutoff_utc": "2026-09-30T00:00:00Z",
+    "date_first": "2025-01-01",
+    "date_last": "2026-08-31",
+    "high_low_diff_gross": 0.6165223953929935,
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "n_formations": 608,
+    "n_high": 61,
+    "n_low": 90,
+    "n_mid": 457,
+    "spread_gross_mean": 0.10062482788703447,
+    "spread_gross_median": -0.009610790611408071,
+    "spread_net_1x_mean": 0.09962482788703451,
+    "spread_net_1x_median": -0.010610790611408072
+  },
+  "conclusion": "PASS: canonical H004V106 sealed forward block is internally consistent, finite, and reproducible: 608 formations, state counts high=61/low=90/mid=457, all spreads finite, high_low_diff_net_1x 0.6165223953929935 matches reported within 1e-9, cost treatment net=gross-0.001 consistent, tail influence within thresholds, overlap-aware interval computed (both states present). Input-hash reconciliation reported per file: panel hashes differ from the block's pre-freeze recorded hashes because October 2026 data was appended to panels after the block was sealed (documented expected signal; block sha256 and contents unchanged, not tampering). EXPLORATORY_ONLY: describes internal consistency only, does not promote any confirmatory claim. No sealed artifact modified.",
+  "cost_treatment": {
+    "cost_1x": 0.001,
+    "net_equals_gross_minus_cost": true,
+    "note": "net = gross - 0.001 (1x cost) per formation; high_low_diff identical gross vs net because the per-formation cost cancels in the difference of state means",
+    "violations": []
+  },
+  "finite_value_checks": {
+    "all_finite": true,
+    "offending": [],
+    "offending_count": 0
+  },
+  "overlap_aware": {
+    "baseline_high_low_diff_net_1x": 0.6165223953929937,
+    "bootstrap_mean": 0.5072637631930254,
+    "bootstrap_median": 0.5581271852945703,
+    "bootstrap_se": 0.36383080163032394,
+    "ci_95_percentile": [
+      -0.13659217460791728,
+      1.117509422581644
+    ],
+    "ci_includes_zero": true,
+    "n_boot": 1999,
+    "n_clusters_with_both_states": 2,
+    "n_months": 20,
+    "reason": "",
+    "rng_seed": 20261102,
+    "status": "OK"
+  },
+  "pass": true,
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md",
+  "recompute_match": {
+    "date_first_match": true,
+    "date_last_match": true,
+    "high_gross_mean_match": true,
+    "high_low_diff_gross_match": true,
+    "high_low_diff_net_match": true,
+    "high_net_mean_match": true,
+    "low_gross_mean_match": true,
+    "low_net_mean_match": true,
+    "n_formations_match": true,
+    "spread_gross_mean_match": true,
+    "spread_gross_median_match": true,
+    "spread_net_mean_match": true,
+    "spread_net_median_match": true,
+    "state_counts_match": true
+  },
+  "reconciliation": {
+    "all_match": false,
+    "on_disk_hash_count": 69,
+    "per_file": {
+      "binance_funding_1INCHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "3c0fb806f1d5c6dd6eb711dbfd2340ce021bdb6fd8a2274c16a3967e3c106bd8",
+        "recorded": "a01e37c49c32222201918114632adeeef3571620940916c4e70b3257f858a47b"
+      },
+      "binance_funding_AAVEUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "5b1dccfe420cef35b950be4e78756ce4dba50cb4dce8a135ccfaca4759bf5458",
+        "recorded": "3641a1912a20fa0b363bd6c0136efd473133ec0bf8d3c9ebc93d555df81ae3b7"
+      },
+      "binance_funding_ACHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "d4e7d7fa5b1e7ad83422de787d8c4ac8e66942ac8d2f41c50770fba68de9bde2",
+        "recorded": "acc2286eea53146c60213175b706982e889ccd14b3f749b841e3e9313a581692"
+      },
+      "binance_funding_ADAUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "70640480a77140e56353a89588b61407a22c778b804818691466ee6870364430",
+        "recorded": "5547aca2f8e8d76e73a8e7dac35120440c577e6500897ce4ee57b7699ef1ff44"
+      },
+      "binance_funding_AGLDUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "07f86b862fa68f82845bb35b7e750f2e17ddf80f917c163015db84d81dd70651",
+        "recorded": "07042be153ac2298353d5fe6594f35ffe7a6f4a7b1a9fbc8f1e39a4be0435375"
+      },
+      "binance_funding_ALGOUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "0458a87bebb764407af072b58128a87b09f0f2c63b68307b29fe942f73c99721",
+        "recorded": "fee0da581218156f91b383b85d54eab74e11d7e12f6d8eff3bb02f2ef03414f4"
+      },
+      "binance_funding_ATOMUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "b8c020740c74827b402ce50f5d70003590c381579fe8d8d81e286d695ba4ab97",
+        "recorded": "479860de06adf48429de1e89882f112f56030ad0a5ec84d13f9393062b9cf4ea"
+      },
+      "binance_funding_AVAXUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "9e46dbc39fbf9501cad913b32196fc13dd5ea3d5162f45c00b0c62d5d487e030",
+        "recorded": "7d3c2859ed76fde1e98ae14d4ae1c32214b4669635b10177ded48cab04d56c76"
+      },
+      "binance_funding_BCHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "baa0c416686d8c511142e6a08c114f6665124e410c70ad8c7313b03a948ab4a5",
+        "recorded": "bdcf38d2f77373c652af47715f4e0d74203b3338b1a6fc554c33fccd1613b9de"
+      },
+      "binance_funding_BNBUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "13f6a8f78ab6d0656bb93b1ab9c84099b7124174d90a68f99391f88422889152",
+        "recorded": "a84c727fcdc6f5e0de766d732057736cc928233e728deaca0995936b65d2044c"
+      },
+      "binance_funding_BTCUSDT.csv": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "64aa57f5bf50b230a4dd486cb627658b671f3173559bd7830c61c47b66e23b42",
+        "recorded": "64aa57f5bf50b230a4dd486cb627658b671f3173559bd7830c61c47b66e23b42"
+      },
+      "binance_funding_DASHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a49ee2fc760a1eeedc29baab82dc3c072df66bb70df51d00770c0596424f6b70",
+        "recorded": "8f9503d190d76df5b343fb65e67011d287321bcb9e5df308d666cb2b9d1fb546"
+      },
+      "binance_funding_DOGEUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "b335797d9661359a90465215c78ed9a984660e1ea8ddb4d9368360b472b3acb3",
+        "recorded": "e6a799dbfa5cdb2cf986aee58c20e3ed1761daa1f1b7d9e59c42599b91791116"
+      },
+      "binance_funding_DOTUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "9a18fb42fbf65e2f32f84d02d1ae71f9fb8796ca7d93b41da6aa0aeb3aa46c0f",
+        "recorded": "f8069f8dc9c708ff86062211e0cb1c1b084fec9bfb980d7dd04fdf89825ba8fe"
+      },
+      "binance_funding_EOSUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "38fd734e4ebc56e41b63a1e19828c16c9ae8d1d5b1b8f6c5b1ad8922481b652f",
+        "recorded": "e4f658cbc17e19915b27d1076f44ebf3ac3844639e3e0eae7d966443a98c20c1"
+      },
+      "binance_funding_ETCUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "03e7e5754fac5c4bee7b4ca4a26798e72a60c04dc07ee7b0cd14310f325d0bbf",
+        "recorded": "c5099f83f9d82c737227a4860ab6b6ff7d34e9614a18c2f663f66b16008129f1"
+      },
+      "binance_funding_ETHUSDT.csv": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "480b5d854481ec99505adcf21e26b371a0e72311b9a7b430db703282e00395f9",
+        "recorded": "480b5d854481ec99505adcf21e26b371a0e72311b9a7b430db703282e00395f9"
+      },
+      "binance_funding_FILUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a4de37607efaaacdfd6cc00363b1bfdee3614bd33e6a89d2851595b56e1ca5fc",
+        "recorded": "ea1d26e7007b4e3c21700dbb1ac86e1deebd463da9165d985fbd209a9719a2a8"
+      },
+      "binance_funding_IOSTUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "cf315ed18a4b3771835ea8bc2f65e39c2e44923521c508f9830506249b380f97",
+        "recorded": "29b55dfb72232bf4e7f17426b2640606f55cd836b3ea740c25ed11ba9f9b406d"
+      },
+      "binance_funding_LINKUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "ad05173d2102a829a2e647a487073a68a9b4ef15b75af16ba8c30f908b489225",
+        "recorded": "e1815b4ecfdbef84294fc2e2419a97822fee35d2146daf23cfef8cfbfe963c93"
+      },
+      "binance_funding_LTCUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a09c12297ab7177eb9f2e7566cb443d00164a4c573e810c6a767e4804e56db80",
+        "recorded": "d59fa2f23f706ff908dcd04fee57b9c539900942476d21120ccfc46f30a4715b"
+      },
+      "binance_funding_MATICUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "e9dc1a2c92704823d879d81953971dd8a175f5f521fe1d6bb33a390e14dd4198",
+        "recorded": "36450d702a3bf0a8973b71fa302433d1a419a059777ba380994b720b9a7f233c"
+      },
+      "binance_funding_NEOUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "b7ee320cd4fc79be58cac377fb56f565a69d833c6d36bc68692ae30acf5f1bb4",
+        "recorded": "4d5eaa2201e28c14ed75ef18a2d4bc4fb26e54e2d80c38ec537db3ec5c71129a"
+      },
+      "binance_funding_QTUMUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "5380c4768fcad05cee11d00617945c1638fcc39048302d2f70afcdbb2e85a78d",
+        "recorded": "aa97dccb2ed7e631d36721a8b9338c9d81d2f70c608fb963f3b8faa3b424ef0e"
+      },
+      "binance_funding_RUNEUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "44e5a8e9ef114424c30a0e29916f3e094696efb5faedf60acdf519533be68b01",
+        "recorded": "4bcd0ecd4f651a1d80a2d83787d217a4a5c736dddad344d6ed125809923fc18f"
+      },
+      "binance_funding_SOLUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "63e03b8420d9bc319c43a0e8a4f5f5da46ca8a629a51077874f561c9f458fec6",
+        "recorded": "2b1fdbd280f18a44cecf33a2d7cbd4a8e59e671536a803658562e8d5a240cfdf"
+      },
+      "binance_funding_TRXUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "88082e9dd3fbd0863d5fd6531977efdb096e7890a19ddea0391d6545862b4d8e",
+        "recorded": "bcdf013249ea4e7dca2ab25a2b83984367abec3822f7ac35d7870ffa03da4ab9"
+      },
+      "binance_funding_UNIUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a24358ca5aea6884f2c14dc8ca203b1d347a957a7d64d2bfe149a32654baea4d",
+        "recorded": "294f7fb9dfba87f6d29f284f494e7d5b1eb7ec018df45bcf8053e86fca623cfc"
+      },
+      "binance_funding_VETUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "600ce73f15b9bb70003e9b0924118181ccbf17e1e3fab8d3c17c29f9049b7079",
+        "recorded": "3f5a5fa5885bdffaec89b40055ee95b398c74b0af530b04fdaf30a4f8e7cb9e3"
+      },
+      "binance_funding_XLMUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "f534a73cdf86c5dda97e9982af467f687bddfdd799bc7234d4ec41771d102182",
+        "recorded": "1d79a571e76e93caa5d9e2edb5a5fe2b1f9bc7330a9c2ed4877759e2c521a25e"
+      },
+      "binance_funding_XRPUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "bc3504e39fcab7ec2f2977c94bf8f3ad21f57e68a43017b086f1ebaf977c0d53",
+        "recorded": "6da237d80dd06a9e14eff3dde0b68d8c0c8984b19171e5831670e1e2a4091cd7"
+      },
+      "binance_funding_ZECUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "5a3a9c56f97a4e2c0aa3954a07bcf9023d191f295c248404edef9f04be74ed59",
+        "recorded": "5969ab865fe284a746cb130feee52577e310f4daf73ad6629f1433a6d3878e2c"
+      },
+      "binance_klines_1INCHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "9c2f21351bae85dcff364402b1d503dce882126514c6f6e786099ae6f57f7b67",
+        "recorded": "15507ac77daa93175c0c1c812770a6daa96dfc0d127c0a4016a5555e78249b99"
+      },
+      "binance_klines_AAVEUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "61b506827d4c6b5d3ad30a46b8b1541089c30314b6c82d6f24440ec31e464cc4",
+        "recorded": "9b9499251d9bec3b5f1a2de087f2e458a86ebabd1ca8e2864bbd4d37c067c27d"
+      },
+      "binance_klines_ACHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "84cfb20aecefa3ddcc414547f84704b271d83d66812391b5efeb106532d7f6a6",
+        "recorded": "f7d9f28f6903af97304c15c47899367d8104e5e23c231d6b2ab00d8b1122b17e"
+      },
+      "binance_klines_ADAUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "95dac66e94f176a267fd5557de9470bd8cf00cd2d511901cfbdedd54fb3fc09e",
+        "recorded": "7de768463407485589ae67829b5fb4d906c58d2b1ed4f313c1ec90385fa30679"
+      },
+      "binance_klines_AGLDUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "9681ca2f3581a87b6ccb0a160ab6cd9377c6e09ea33374e80f95e3f9ae8ddc1d",
+        "recorded": "6632e239bc3f8f68135c9f5167b3335bbd51728fb01e479f491d81a30f09f6bb"
+      },
+      "binance_klines_ALGOUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a6f709005cacd603a5e39948bed9a15af1c6ec5c5bbd0d48569354d1ce12ee8f",
+        "recorded": "d1912f4a9360428a01452ded97987eaacc8950c4dd472a091f743ef8fbcbb4c8"
+      },
+      "binance_klines_ATOMUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "5a514a6e0b6ceab643f7fbed1879c1c5f721bc0d12948e7629f46946ffc7be50",
+        "recorded": "ef8a9a26d0b7d84a54a1b6b245edeab60d61cb883aa4554813763808d2eae57e"
+      },
+      "binance_klines_AVAXUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "1d8dfaad79240b5f035f7ffe1f6a1d082a876b40a3120d5593b8f33c4506c351",
+        "recorded": "4fea7a0a02257be5fd8dbfceb757d37c4922528a739fdb761ac0680c09a63434"
+      },
+      "binance_klines_BCHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "86976bf1baeed19f68ed1da8a9eef315d51ee7aab39960bff1e6c243a0276778",
+        "recorded": "ce184e13b61ab4435ac3a0e32909dad4b12df20770049ee9e66479cc7f81e996"
+      },
+      "binance_klines_BNBUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "890ba9c4e7c4b66ac2fe27f7026f04d25b66eac0a8fbcc73c72e01fc29485c87",
+        "recorded": "e73de6e2376492226429d963ed0d457bfd6c7510c6668d63b6d36988b266b910"
+      },
+      "binance_klines_BTCUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "1fc4ad87315b4fab67cd710c71534a9716fb134d0cd061d98d88fd8c308a086a",
+        "recorded": "d7ab830b19140837b002650f84917f3e8f3054983245c26b7614197644424270"
+      },
+      "binance_klines_DASHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "bc93cbc62e5e25c6dfbcbbadb0e89266c928fbe043e4c293df23c9c00bdda000",
+        "recorded": "4ed5a139ba304e49c468fd642fc37a2dc845860b395ba35f45b94f1786815788"
+      },
+      "binance_klines_DOGEUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "90850b26ad58766073029bbc1195c973cb01b153acd5e8517fa3022d9e606189",
+        "recorded": "41c41cba0cb0758ec1a215ea66513cdcbf7c9fdd349b8827f84bc42a59b7421d"
+      },
+      "binance_klines_DOTUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "822ce8ef75d1c6cd461a125732f660b1585a9d4d6b8249ce3fe7e703d04edfcf",
+        "recorded": "a3a136dc16801ed34294e0e2c0f4c97d217b39455aebc511d4ff066b3e26fc2e"
+      },
+      "binance_klines_EOSUSDT.csv": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "f201187f7ca8a02c4158fab9284b6b9ad83dd4d7ac3767ba196b33a2db8210ec",
+        "recorded": "f201187f7ca8a02c4158fab9284b6b9ad83dd4d7ac3767ba196b33a2db8210ec"
+      },
+      "binance_klines_ETCUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a8d10eec055be93545160ca6ddce28efe60fab1a4b35860483f4cc4c33f0eb02",
+        "recorded": "f8af97cd331ad58e86a519e0c3a257a5945728e96e4d6d3a3f8f685ba9c48040"
+      },
+      "binance_klines_ETHUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "763ef6292690bb1db76a094c785fa869d5a4a99325b9d44926b7cb63eeb651fd",
+        "recorded": "1a0eea9fd3a3d4f34cd8beaf85c43f4ac5c6d68313b2ddf67ac19b999ffb8df5"
+      },
+      "binance_klines_FILUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "13d3119912b6923f4a3ffc7d33ea1e67726ebc09e50ce9582df1529598ae7469",
+        "recorded": "e8844933b20c842018bdc1530a3a5fe7cf54cd8bce9277c3898e9f764af903d7"
+      },
+      "binance_klines_IOSTUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "4b9c58e4f062e3aaa914edd0235a96486a25ec819c5d3c702a5d997dece84f54",
+        "recorded": "0d81df4986bb5837b1fb11655b73279c4f85dedc2e42dbb9821b916a910ac6cd"
+      },
+      "binance_klines_LINKUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "15239cf50c8d6f4d82bd1620c96b98ccab24b54415693349245ab006c951590a",
+        "recorded": "69c7044758f7906422d05c439046b3d7f9b7b464a672b3f46614d10ab5bac56d"
+      },
+      "binance_klines_LTCUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "2a205abe064ae1f3460d418596897d807e5767f66fc68c7b8edb37b8acf4f83e",
+        "recorded": "f38bac4827d1e88e7f46fb84feef398bd5a072e7faa915071bdc4f10dc082d28"
+      },
+      "binance_klines_MATICUSDT.csv": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "140c8529d34219876b98ea4c28c7c4d8bf55f178eea8ece3c3baf811367a1a36",
+        "recorded": "140c8529d34219876b98ea4c28c7c4d8bf55f178eea8ece3c3baf811367a1a36"
+      },
+      "binance_klines_NEOUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "f5030486e720af485180a0953c3a4ec92ed96a56932830a572db5bc0d01a47ff",
+        "recorded": "2cdcde60e778788a06b1af800770cbee51f8f9dfad25bfa8f5f8dfc2052ea3d6"
+      },
+      "binance_klines_QTUMUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "56a4c010525e756eb93760106dd209d4504f0a325d2b0a7dfdbb0f64ee6427b5",
+        "recorded": "3a89ed3b186ffe4db08d82c610c0b98a3fa819e6f9eacbed516b2acdd985c0ca"
+      },
+      "binance_klines_RUNEUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "3a519862450df606c298a0a7c6736d270c0d3ff0fc996e6162ab60a3d412d830",
+        "recorded": "35ce13c30ac02bf3f125289aa476af66bc421d8dca24d35ba8c831b7c1e1847c"
+      },
+      "binance_klines_SOLUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "bc96a4dd5d0f1d8cf0c919c7d2f060eff497c2fe7b03fe3c44237b6977e91919",
+        "recorded": "04d7cc0ffd334292cb1b515602f53b2061a5d1437a2c11299983d516d8400bc6"
+      },
+      "binance_klines_TRXUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "9ead23198629a4436079889277068208663f5b1442b9f77cdb63c0238518fe45",
+        "recorded": "87e6f5571aa371aa5b68a7616b2676d2d2c744581b62985221186ee0fd2ebe96"
+      },
+      "binance_klines_UNIUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "3a948fa2dad967ec2de889f5df907075eb451f631d57b81a776d7083e89c7e78",
+        "recorded": "2786aeed644b7192585800ede154e7a4e83903469a1137ec7778b682d11c2004"
+      },
+      "binance_klines_VETUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "03b9f9d347f72b5d9a656e4cd49d859ebd9960e7ed802bc2546deea4da1cc63b",
+        "recorded": "b80f18f6128dc6c1367fa51e73f51e7023f550a297c083ef872ca05a2078e857"
+      },
+      "binance_klines_XLMUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "a83faf8f86843c02339704c1860950fc3b823e5bcecf238849d20c1b656c120b",
+        "recorded": "4472dfb3e9386d5bb844903a70e5ed2cf2810f5bc6fe59feb0b13215b7ca1c7a"
+      },
+      "binance_klines_XRPUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "4fb7a042a4c2231825d54b2cfe5be2dd5ad838d4aacf0917fd8b37ab61148125",
+        "recorded": "74c56315ed5839e62bca5ba6c629b6b3c3a2211fd44bc7ea0c0be60e0a8be242"
+      },
+      "binance_klines_ZECUSDT.csv": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "b85b3765e8540b72643ada4f4d20e5013f9ac4481b301fdf3a739a38d632f899",
+        "recorded": "207d1ac49f5499340df84602f4ab26781fcbf0ee09e00c98f7134e9245cb2bcc"
+      },
+      "binance_panel_manifest.json": {
+        "match": false,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "71570605ad246d312f0b753b83a8996b145abbe7f622d28dcde95afec29c428c",
+        "recorded": "669588b51c1d3ead232b2f8f7bf77557b08615654db636f7a2a60492d2a6034b"
+      },
+      "grid_config_manifest.json": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4",
+        "recorded": "64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4"
+      },
+      "grid_result_ledger.json": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+        "recorded": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c"
+      },
+      "marketcap_panel.csv": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "9fb6daf65b2269fec6d06e6b4e8cfbb1b2b98a50ee103c342fe131fe2aa77af8",
+        "recorded": "9fb6daf65b2269fec6d06e6b4e8cfbb1b2b98a50ee103c342fe131fe2aa77af8"
+      },
+      "marketcap_panel_manifest.json": {
+        "match": true,
+        "missing_on_disk": false,
+        "missing_recorded": false,
+        "on_disk": "5df05b8c43c9d9d4dfd3fdf17048af583e5d21a413ad4e06bb5afe5de12dc8a0",
+        "recorded": "5df05b8c43c9d9d4dfd3fdf17048af583e5d21a413ad4e06bb5afe5de12dc8a0"
+      }
+    },
+    "recorded_hash_count": 69
+  },
+  "status": "EXPLORATORY_ONLY",
+  "tail_influence": {
+    "baseline_high_low_diff_net_1x": 0.6165223953929937,
+    "leave_one_out": {
+      "max_delta_frac": 0.062336361960052745,
+      "pass": true,
+      "threshold": 0.1
+    },
+    "overall_pass": true,
+    "trim_k3": {
+      "baseline": 0.6165223953929937,
+      "delta_frac": 0.1982600727747719,
+      "pass": true,
+      "threshold": 0.2,
+      "trimmed_high_low_diff_net_1x": 0.4942906204151021
+    },
+    "winsorize_p010": {
+      "baseline": 0.6165223953929937,
+      "delta_frac": 0.09435363489255999,
+      "pass": true,
+      "threshold": 0.2,
+      "winsorized_high_low_diff_net_1x": 0.5583512663949967
+    }
+  }
+}

@@ -34,15 +34,17 @@ ARTIFACT_FILES = [
         ART / "integrity_audit" / "H004V106_forward_block_cluster_bootstrap_20261029.json",
         ART / "integrity_audit" / "H004V106_forward_block_tail_influence_20261029.json",
         ART / "integrity_audit" / "H004V106_forward_block_temporal_stability_20261029.json",
+        ART / "integrity_audit" / "H004V106_forward_block_final_integrity_audit_20261102.json",
 ]
 
 # Every integrity audit committed under DISPERSION-003's integrity_audit/
 # directory. The original list only asserted on the first five; the later
 # audits (tail influence, temporal stability, cluster bootstrap, regime
-# conditioning, the 2028-10-28 independent recomputation) were therefore
-# outside the durable state-consistency gate. All ten now assert here so a
-# future audit drift (missing file, unparseable JSON, missing identifier or
-# audited_artifact field) fails the build.
+# conditioning, the 2028-10-28 independent recomputation, and the 2026-11-02
+# consolidated final audit) were therefore outside the durable state-consistency
+# gate. All eleven now assert here so a future audit drift (missing file,
+# unparseable JSON, missing identifier or audited_artifact field) fails the
+# build.
 INTEGRITY_AUDITS = [
     ART / "integrity_audit" / "forward_block_integrity_audit.json",
     ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
@@ -54,6 +56,7 @@ INTEGRITY_AUDITS = [
     ART / "integrity_audit" / "H004V106_forward_block_cluster_bootstrap_20261029.json",
     ART / "integrity_audit" / "H004V106_forward_block_tail_influence_20261029.json",
     ART / "integrity_audit" / "H004V106_forward_block_temporal_stability_20261029.json",
+    ART / "integrity_audit" / "H004V106_forward_block_final_integrity_audit_20261102.json",
 ]
 
 
@@ -158,12 +161,12 @@ class ResearchStateConsistencyTests(unittest.TestCase):
     def test_all_integrity_audits_present_and_parse(self):
         # Every committed integrity audit must be present, parse, carry an
         # audit identifier, name the artifact it audited and declare a
-        # conclusion. The full set of ten is asserted here (the earlier
+        # conclusion. The full set of eleven is asserted here (the earlier
         # version only covered five, leaving tail-influence, temporal
-        # stability, cluster bootstrap, regime conditioning and the 2028
-        # recomputation outside the gate).
+        # stability, cluster bootstrap, regime conditioning, the 2028
+        # recomputation and the consolidated final audit outside the gate).
         audits = INTEGRITY_AUDITS
-        self.assertEqual(len(audits), 10)
+        self.assertEqual(len(audits), 11)
         for path in audits:
             with self.subTest(path=str(path)):
                 self.assertTrue(path.exists(), f"missing integrity audit: {path}")

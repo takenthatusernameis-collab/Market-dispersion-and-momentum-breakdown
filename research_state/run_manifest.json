@@ -56,7 +56,7 @@
     "root_cause": "scripts/refresh_free_data.py FUNDING_HEADER and scripts/normalize_binance_panels.py both declared a symbol column but never prefixed it to the 3-column archive rows."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-02T19:31:00Z",
+  "last_updated_utc": "2026-11-02T21:15:00Z",
   "session_record_20261102T0943Z": {
     "adaptive_gate_trigger": "not applicable -- gate UNBLOCKED (October 2026 monthly klines AND fundingRate both HTTP 200; record research_state/cutoff_probe/cutoff_probe_20261102T092118Z.json). Test-suite synthetic UNBLOCKED line is mock data (tests/test_cutoff_probe.py); trust only real probe records.",
     "canonical_block_impact": "None on outcomes: H004V106 forward block byte-unchanged vs `git show HEAD:` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
@@ -87,6 +87,14 @@
     "cutoff_status": "UNBLOCKED (record research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json, EXIT=0)",
     "next_action": "H10 blocked awaiting November 2026 maturity; do not loop on waiting. When November archives publish, re-run eval_forward_block into forward_block_h10_fresh/ and evaluate per preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md."
   },
+  "session_record_20261102T2115Z": {
+    "summary": "Independent bounded task: consolidated final integrity audit of the canonical H004V106 sealed forward block. Wrote preregistrations/H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md (EXPLORATORY_ONLY, prospective, locked method before computation), scripts/forward_block_final_integrity_audit.py (read-only; recomputes inputs hashes vs the block's recorded input_file_hashes, independently re-derives every sealed outcome field from the formations ledger, runs finite-value, state-count, mean/median, cost-treatment net=gross-0.001, tail-influence leave-one-out/trim-k3/winsorize-p0.10, overlap-aware cluster-bootstrap, and independent recomputation within 1e-9 checks), and published a NEW additive EXPLORATORY_ONLY artifact integrity_audit/H004V106_forward_block_final_integrity_audit_20261102.json (result PASS: 608 formations, high=61/low=90/mid=457, high_low_diff_net_1x +0.6165223953929935 recomputed exactly, all spreads finite, cost treatment consistent, tail influence within thresholds, overlap-aware CI ci_includes_zero=true). Reconciliation reports expected per-file hash mismatches: October 2026 panel refresh appended rows after the block was frozen (documented signal; block sha256 and contents byte-unchanged, not tampering; not a PASS criterion). Wrote tests/test_forward_block_final_integrity_audit.py (10 tests) and extended tests/test_state_consistency.py INTEGRITY_AUDITS 10->11. python3 -m unittest discover -s tests -> 200 run, 200 OK, 0 failures (EXIT=0, skipped=1). Real cutoff probe UNBLOCKED EXIT=0 (record research_state/cutoff_probe/cutoff_probe_20261102T211540Z.json: October 2026 monthly klines AND fundingRate HTTP 200). Canonical H004V106 forward block byte-unchanged vs git show HEAD: sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). No canonical/DISPERSION-001/002/grid/frozen-panel artifact modified; no fabrication/silent exclusion; no live/paper trading.",
+    "canonical_block_impact": "None: canonical forward block byte-unchanged; additive audit artifact and tests only.",
+    "frozen_artifacts_untouched": true,
+    "test_result": "python3 -m unittest discover -s tests -> 200 run, 200 OK, 0 failures (EXIT=0), skipped=1",
+    "cutoff_status": "UNBLOCKED (record research_state/cutoff_probe/cutoff_probe_20261102T211540Z.json, EXIT=0)",
+    "next_action": "H10 blocked awaiting November 2026 maturity (n_high>0,n_low>0); do not loop on waiting. Next bounded independent actions: source coverage, candidate validation, audits, tests, or red-team on frozen data. Do not modify canonical forward block/DISPERSION-001/002/grids; do not promote from raw p-values/return alone; never reuse inspected H004V106 as confirmation; never write 'wait for a new experiment ID'."
+  },
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Refresh ran scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31 (free public only): BTCUSDT/ETHUSDT through 2026-10-31; other 30 assets' October monthly zips unpublished so panels end 2026-09-30; marketcap panel 2023-01-01..2026-10-31. Trust only real probe records under research_state/cutoff_probe/ (record cutoff_probe_20261102T172330Z.json).",
@@ -95,7 +103,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261102T180156Z.json",
     "target_published": true
   },
-  "latest_verified_test_claim": "180/180/0",
+  "latest_verified_test_claim": "200/200/0",
   "live_or_paper_trading_allowed": false,
   "manifest_reconciliation_20261101T0225Z": {
     "canonical_block_impact": "None on outcomes: run_manifest.json is not a forward-block input. The canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
