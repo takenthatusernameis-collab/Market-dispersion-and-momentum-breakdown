@@ -6126,10 +6126,10 @@
     "zyn",
     "zyro",
     "zzz",
-    "\u6211\u8e0f\u9a6c\u6765\u4e86",
-    "\u725b\u6765",
-    "\u8001\u5b50",
-    "\u9f99\u867e"
+    "我踏马来了",
+    "牛来",
+    "老子",
+    "龙虾"
   ],
   "candidates_discovered": [],
   "candidates_verified": [
@@ -12479,10 +12479,10 @@
       "zyn",
       "zyro",
       "zzz",
-      "\u6211\u8e0f\u9a6c\u6765\u4e86",
-      "\u725b\u6765",
-      "\u8001\u5b50",
-      "\u9f99\u867e"
+      "我踏马来了",
+      "牛来",
+      "老子",
+      "龙虾"
     ],
     "catalog_entries_walked": 6347,
     "endpoint": "https://community-api.coinmetrics.io/v4/reference-data/assets",
@@ -12755,7 +12755,8 @@
       "frozen_artifacts_unchanged": true,
       "reason": "The committed value 32 was the legacy refresh panel asset count, not the point-in-time eligible expanding universe. The expanding arm of the DISPERSION-003 grid (build_eligibility_map arm='expanding_point_in_time') uses every asset with a cap observation AND a Binance perpetual price, i.e. the full candidates_verified set. Recomputed from the committed panels: marketcap_panel.csv has 32 distinct assets, binance kline panels cover 32 symbols, and the intersection of cap assets with a Binance symbol is 32 legacy assets PLUS 190 verified candidates = 220. The grid ledger's eligible_assets_per_date max is 32 because only the legacy 32 have price history spanning the formation window; the 190 verified candidates have cap history but their Binance perpetual probe returned exists=True with no committed price panel, so they are NOT currently in the price panel and cannot enter the universe until their price/funding panels are fetched.",
       "to": 220
-    }
+    },
+    "2026-11-02T04:17Z: latest_archive_probe.canonical_forward_block.sha256 corrected from stale 60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59 to the verified canonical value 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (matches git show HEAD and direct sha256sum). The stale string is preserved verbatim inside earlier records that quoted it at the time; it is not promoted."
   ],
   "current_legacy_asset_count": 28,
   "current_panel_date_end": "2026-10-23",
@@ -12766,7 +12767,7 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-01T22:37:59Z",
+  "last_updated_utc": "2026-11-02T04:17:00Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12775,7 +12776,7 @@
       "high_low_diff_net_1x": 0.6165223953929935,
       "last_allowed_formation_date": "2026-08-31",
       "n_formations": 608,
-      "sha256": "60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59"
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
     "note": "Re-verified this session. Gate stays BLOCKED: probe requires BOTH monthly endpoints HTTP 200 and refresh_free_data.py consumes the monthly klines zip; partial publication unusable. Adaptive-gate trigger NOT met. Do not loop on known failure.",
@@ -12783,7 +12784,8 @@
     "october_2026_monthly_klines": "HTTP 404 (0 bytes)",
     "probe_exit": 1,
     "probe_record": "research_state/cutoff_probe/cutoff_probe_20261101T195844Z.json",
-    "probe_utc": "2026-11-01T19:58:44Z",
+    "probe_utc": "2026-11-02T04:16:51Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261102T041651Z.json",
     "september_2026_control": "HTTP 200",
     "target_published": false
   },

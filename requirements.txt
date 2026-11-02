@@ -5,5 +5,13 @@
 # imports numpy; several tests import pandas). Without this file and an
 # install step in .github/workflows/main.yml, `python3 -m unittest discover
 # -s tests` fails with ModuleNotFoundError on every run.
+#
+# Install before running the test suite:
+#   python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt
+#
+# tests/test_requirements_importable.py asserts that every name listed
+# here is importable in the running interpreter, so a missing dependency
+# fails the suite with a single actionable message rather than scattered
+# tracebacks.
 numpy
 pandas
