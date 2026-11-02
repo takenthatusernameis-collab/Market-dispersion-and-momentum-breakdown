@@ -1,0 +1,88 @@
+{
+  "archive_alive": true,
+  "control_endpoints": [
+    {
+      "bytes": 2066,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09.zip"
+    },
+    {
+      "bytes": 924,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-09.zip"
+    },
+    {
+      "bytes": 352,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09-28.zip"
+    },
+    {
+      "bytes": 354,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09-29.zip"
+    },
+    {
+      "bytes": 358,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09-30.zip"
+    },
+    {
+      "bytes": 0,
+      "error": null,
+      "status": 404,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-09-31.zip"
+    }
+  ],
+  "control_month": "2026-09",
+  "cutoff_gate": "BLOCKED",
+  "gate_date_required": "2026-10-29",
+  "gate_met_by_month_end": true,
+  "probe_month": "2026-10",
+  "probe_utc": "2026-11-02T02:44:14Z",
+  "rationale": "The forward block may only advance when a published Binance archive covers a cutoff >= 2026-10-29, so that formations after 2026-09-29 have a complete 30-day outcome. A 404 on the target month is a genuine availability signal only when the archive is alive around it (control month must return HTTP 200).",
+  "symbol": "BTCUSDT",
+  "target_endpoints": [
+    {
+      "bytes": 0,
+      "error": null,
+      "status": 404,
+      "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10.zip"
+    },
+    {
+      "bytes": 943,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/BTCUSDT/BTCUSDT-fundingRate-2026-10.zip"
+    },
+    {
+      "bytes": 0,
+      "error": null,
+      "status": 404,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-28.zip"
+    },
+    {
+      "bytes": 356,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-29.zip"
+    },
+    {
+      "bytes": 353,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-30.zip"
+    },
+    {
+      "bytes": 354,
+      "error": null,
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1d/BTCUSDT-1d-2026-10-31.zip"
+    }
+  ],
+  "target_published": false
+}
