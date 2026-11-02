@@ -17,9 +17,11 @@ import hashlib
 import json
 import math
 import statistics
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -250,6 +252,83 @@ def forward_returns(px_wide: pd.DataFrame, T: str, horizon: int,
     return out
 
 
+def overlap_aware_interval(formation_records, n_boot=2000, rng_seed=20261102):
+    """Formation-month cluster-bootstrap interval for the high-minus-low
+    net-1x spread difference (additive; does not alter the sealed outcome
+    fields). Reports IMMATURE when both states are not present, matching the
+    preregistration's HAC/overlap-aware uncertainty on completed outcomes only.
+    """
+    high = [f for f in formation_records if f.get("state") == "high"]
+    low = [f for f in formation_records if f.get("state") == "low"]
+    if not high or not low:
+        return {
+            "status": "IMMATURE",
+            "reason": "need n_high>0 and n_low>0 for overlap-aware interval",
+            "baseline_high_low_diff_net_1x": None,
+            "bootstrap_mean": None,
+            "bootstrap_median": None,
+            "bootstrap_se": None,
+            "ci_95_percentile": [None, None],
+            "ci_includes_zero": None,
+            "n_months": 0,
+            "n_clusters_with_both_states": 0,
+            "n_boot": 0,
+            "rng_seed": rng_seed,
+        }
+
+    months = defaultdict(list)
+    for f in formation_records:
+        months[f["formation_date"][:7]].append(f)
+
+    month_keys = sorted(months.keys())
+
+    def month_diff(forms):
+        hi = [f["spread_net_1x"] for f in forms if f.get("state") == "high"]
+        lo = [f["spread_net_1x"] for f in forms if f.get("state") == "low"]
+        if not hi or not lo:
+            return None
+        return statistics.mean(hi) - statistics.mean(lo)
+
+    baseline = month_diff(formation_records)
+
+    rng = np.random.default_rng(rng_seed)
+    boot = []
+    for _ in range(n_boot):
+        idx = rng.integers(0, len(month_keys), size=len(month_keys))
+        sampled = []
+        for i in idx:
+            sampled.extend(months[month_keys[i]])
+        d = month_diff(sampled)
+        if d is not None:
+            boot.append(d)
+
+    boot_arr = np.asarray(boot, dtype=float)
+    ci_lo = float(np.percentile(boot_arr, 2.5))
+    ci_hi = float(np.percentile(boot_arr, 97.5))
+    se = float(np.std(boot_arr, ddof=1))
+    n_clusters_both = sum(
+        1
+        for mk in month_keys
+        if any(f.get("state") == "high" for f in months[mk])
+        and any(f.get("state") == "low" for f in months[mk])
+    )
+
+    return {
+        "status": "OK",
+        "reason": "",
+        "baseline_high_low_diff_net_1x": float(baseline),
+        "bootstrap_mean": float(np.mean(boot_arr)),
+        "bootstrap_median": float(np.median(boot_arr)),
+        "bootstrap_se": se,
+        "ci_95_percentile": [ci_lo, ci_hi],
+        "ci_includes_zero": bool(ci_lo <= 0 <= ci_hi),
+        "n_months": len(month_keys),
+        "n_clusters_with_both_states": n_clusters_both,
+        "n_boot": len(boot),
+        "rng_seed": rng_seed,
+    }
+
+
 def main() -> int:
     args = parse_args()
     # The canonical H004V106 block lives at the default OUT_DIR and is
@@ -462,6 +541,14 @@ def main() -> int:
     freeze_record["low_net_1x_mean"] = float(lo_net.mean()) if len(lo_net) else None
     freeze_record["high_low_diff_gross"] = diff_gross
     freeze_record["high_low_diff_net_1x"] = diff_net
+    # Additive overlap-aware (formation-month cluster-bootstrap) uncertainty on
+    # the high-minus-low net-1x spread difference. The canonical outcome fields
+    # above are computed exactly as before; this section only extends the
+    # record. It reports a percentile interval when both states are present
+    # and IMMATURE otherwise (preregistration sec 3 step 6 / sec 4).
+    freeze_record["overlap_aware_uncertainty"] = overlap_aware_interval(
+        results_rows, n_boot=2000, rng_seed=20261102
+    )
     freeze_record["date_first"] = df["formation_date"].iloc[0]
     freeze_record["date_last"] = df["formation_date"].iloc[-1]
     freeze_record["eligible_assets_per_date"] = {
