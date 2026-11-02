@@ -36,16 +36,16 @@
     "root_cause": "scripts/refresh_free_data.py FUNDING_HEADER and scripts/normalize_binance_panels.py both declared a symbol column but never prefixed it to the 3-column archive rows."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-02T05:23:20Z",
+  "last_updated_utc": "2026-11-02T05:26:17Z",
   "latest_archive_probe": {
     "cutoff_gate": "BLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-29/30/31 HTTP 200; September 2026 control HTTP 200. Monthly klines not published; partial publication unusable. Adaptive-gate trigger NOT met.",
     "probe_month": "2026-10",
-    "probe_utc": "2026-11-02T05:23:20Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261102T052320Z.json",
+    "probe_utc": "2026-11-02T05:26:37Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261102T052637Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "162 run, 162 OK, 0 failures (EXIT=0); environment-repaired: numpy 2.5.4 + pandas 3.1.0 installed via python3 -m pip install -r requirements.txt; new guard tests/test_requirements_importable.py",
+  "latest_verified_test_claim": "162 run, 162 OK, 0 failures (EXIT=0); environment-repaired: numpy 2.5.4 + pandas 3.1.0 installed via python3 -m pip install -r requirements.txt; guard tests/test_requirements_importable.py present; canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged",
   "live_or_paper_trading_allowed": false,
   "manifest_reconciliation_20261101T0225Z": {
     "canonical_block_impact": "None on outcomes: run_manifest.json is not a forward-block input. The canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
@@ -59,7 +59,7 @@
   "next_experiment_status": "PREREGISTRATION_AND_FRONTIER_REFRESH_PENDING",
   "next_planned_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "next_required_actions": [
-    "refresh_free_historical_data -- BLOCKED until October 2026 Binance MONTHLY klines publishes (data cutoff gate requires cutoff >= 2026-10-29; probe 2026-11-02T04:16:51Z record research_state/cutoff_probe/cutoff_probe_20261102T041651Z.json, PROBE_EXIT=1: October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes), October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes), October 2026 daily klines 2026-10-29/30/31 now HTTP 200, September 2026 control HTTP 200 so archive alive and miss genuine; probe requires BOTH monthly endpoints HTTP 200 per scripts/probe_cutoff_gate.py:105, and refresh_free_data.py consumes the monthly klines zip per scripts/refresh_free_data.py:242-243, so daily partials are not consumed). NOTE: October fundingRate monthly and daily klines 2026-10-29/30/31 are now published (HTTP 200); only the monthly klines zip is missing.",
+    "refresh_free_historical_data -- BLOCKED until October 2026 Binance MONTHLY klines publishes (data cutoff gate requires cutoff >= 2026-10-29; probe 2026-11-02T05:26:37Z record research_state/cutoff_probe/cutoff_probe_20261102T052637Z.json, PROBE_EXIT=1: October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes), October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes), October 2026 daily klines 2026-10-29/30/31 HTTP 200, September 2026 control HTTP 200). Do not loop on known failure.",
     "expand_point_in_time_asset_frontier -- DONE this session: re-walked CoinMetrics community catalog, walked 6347 entries, 0 newly discovered at cursor 6347 (catalog not grown); candidates_discovered empty, nothing to validate; recorded in universe_frontier.json catalog_discovery. Re-walk again when catalog may gain new listings.",
     "freeze_exact_forward_cutoff -- pending refresh cutoff >= 2026-10-29",
     "generate_and_verify_216_cell_manifest -- DONE (byte-identical regeneration, 216 cells H004V001-H004V216, anchors H004V105/H004V106)",
@@ -79,7 +79,8 @@
     "cluster_bootstrap_audit_DISP003_CLUSTERBOOT001 -- DONE 2026-10-29T09:25:38Z (scripts/forward_block_cluster_bootstrap.py on frozen canonical H004V106 forward block, read-only; new artifact integrity_audit/H004V106_forward_block_cluster_bootstrap_20261029.json; new script scripts/forward_block_cluster_bootstrap.py; new test tests/test_forward_block_cluster_bootstrap.py: 5 OK; all EXPLORATORY_ONLY: formation-month cluster bootstrap, n_months=20, n_boot=1999, rng_seed 20261029, baseline high_low_diff_net_1x 0.6165223953929937, bootstrap mean 0.5239, bootstrap SE 0.3746, 95% percentile CI [-0.1179, 1.1431], ci_includes_zero=true, n_clusters_with_both_states=2. Label CLUSTER_INDIFFERENT: under month-level clustering the interval spans zero, so the HAC t=1.55 is not robust to cluster-level inference. Does not validate H1/H6/H7 and does not unlock the confirmatory track. NOTE recorded 2026-10-30T13:22Z: the audit was committed before its preregistration file and registry/manifest entries existed; the missing preregistration (preregistrations/H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md) and this manifest entry were written this session, and the script was re-run to confirm it reproduces the committed artifact exactly. No frozen artifact modified; cutoff still BLOCKED.)",
     "preregistration_timestamp_repair_DISP003 -- DONE 2026-10-30T17:15Z (tests/test_state_consistency.py::test_every_diagnostic_audit_has_a_preregistration failed on 4 of 6 DISP-003 diagnostic-audit preregistrations: H004V106_STATE_REPRESENTATIVENESS_AUDIT_v1.md, H004V106_DISPERSION_REGIME_CONDITIONING_v1.md, H004V106_ROLLING_DISPERSION_WINDOW_v1.md, H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_v1.md. Repaired by correcting the two backdated Created/Preregistered header timestamps to the documents earliest verifiable commit time (STATE 2026-10-25T07:45:00Z -> bbaeac9 07:40:51Z; REGIME 2026-10-26T01:15:00Z -> 1a6b8fd 01:05:19Z) and adding explicit correction notes to all four; the two prospective headers (ROLLING 2026-10-28T17:00Z, TAIL 2026-10-28T23:30:00Z) were retained as written with notes. No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion or decision rule was regenerated or altered; only the four prereg docs changed. All four remain EXPLORATORY_ONLY development evidence on the frozen canonical H004V106 forward block; none validates H1/H6/H7/H8 and none unlocks the confirmatory track. Full suite now 108 run, 108 OK, 0 failures; frozen artifacts byte-unchanged apart from these four docs and this manifest entry.)",
     "\"formation_set_containment_audit_DISP003 -- DONE 2026-10-30T19:23Z (read-only formation-set audit of the frozen canonical H004V106 forward block against the grid ledger and the quarantined defective archive; new regression test tests/test_forward_block_integrity.py::test_canonical_block_formation_set_is_strict_subset_of_ledger_and_defective_archive; full suite 109 run, 109 OK, 0 failures. Finding: the existing date-range containment test only asserts first/last dates and cannot detect a formation swap. Formation-set containment is the stronger holdout-integrity statement. Observed state: canonical 608 formations is a strict subset of the ledger's 1338 H004V106 formations AND a strict subset of the defective archive's 637 formations; the 29 formations in the defective archive but not in the canonical block are exactly 2026-09-01..2026-09-29, i.e. the cohort excluded by the sealing rule because their 30-day outcome was not complete by cutoff 2026-09-30. The new test pins this exact exclusion set and fails the build if the canonical block ever drifts onto a formation not already inspected in the ledger or the quarantined archive. No frozen artifact, script, grid ledger, hypothesis conclusion or decision rule modified; canonical forward block, DISPERSION-001/002 and defective archive byte-unchanged; cutoff still BLOCKED.)\"",
-    "verify_state_and_update_manifest -- DONE 2026-10-30T20:17Z (tests 109/109 OK; frozen artifacts byte-unchanged; state consistent; cutoff still BLOCKED; catalog exhausted; adaptive gate trigger not met; no same-endpoint re-probe)"
+    "verify_state_and_update_manifest -- DONE 2026-10-30T20:17Z (tests 109/109 OK; frozen artifacts byte-unchanged; state consistent; cutoff still BLOCKED; catalog exhausted; adaptive gate trigger not met; no same-endpoint re-probe)",
+    "When UNBLOCKED: run scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31 (free public only), re-run tests, verify H004V106 unchanged, preregister H10 (9->10) with fresh sealed forward block (formations after 2026-09-29, strict 30-day maturity, HAC/overlap-aware), evaluate H10, update handoff/registry/manifest/frontier."
   ],
   "paid_data_allowed": false,
   "preregistration_timestamp_repair_20261030T1715Z": {
@@ -280,6 +281,16 @@
     "session_record_20261101T1412Z",
     "session_record_20261101T1522Z",
     "session_record_20261102T0417Z",
-    "session_record_20261102T0523Z"
-  ]
+    "session_record_20261102T0523Z",
+    "session_record_20261102T0526Z"
+  ],
+  "session_record_20261102T0526Z": {
+    "adaptive_gate_trigger": "not met (single route/timing; partial publication is not a third distinct failed methodological route)",
+    "canonical_block_impact": "None: this session performed only read-only verification, a cutoff probe and durable-state refresh. No market data consumed, no forward-block input touched. Canonical H004V106 forward block byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
+    "completed": "Read prior agent task from durable handoff; re-probed cutoff gate (2026-11-02T05:26:37Z, record research_state/cutoff_probe/cutoff_probe_20261102T052637Z.json, EXIT=1) -> still BLOCKED; ran python3 -m unittest discover -s tests -> 162 run, 162 OK, 0 failures (EXIT=0); verified canonical H004V106 forward block fields directly (sha256 + outcome fields); verified hypothesis_registry.json next_sequence_number 9 (H1..H9 present); refreshed agent_handoff.md and rewrote agent_task_message.md; updated run_manifest.json and universe_frontier.json.",
+    "cutoff_probe": "2026-11-02T05:26:37Z direct HTTPS to data.binance.vision (record research_state/cutoff_probe/cutoff_probe_20261102T052637Z.json, PROBE_EXIT=1): target_published false, cutoff_gate BLOCKED. October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-29/30/31 HTTP 200; September 2026 control HTTP 200 so archive alive and miss genuine. Gate stays BLOCKED because refresh_free_data.py consumes the monthly klines zip (scripts/refresh_free_data.py:242-243) and the probe requires BOTH monthly endpoints HTTP 200 (scripts/probe_cutoff_gate.py:105). Daily klines 2026-10-29/30/31 HTTP 200 but are NOT consumed.",
+    "frozen_artifacts_untouched": true,
+    "prior_task_status": "DONE",
+    "timestamp_utc": "2026-11-02T05:26:17Z"
+  }
 }
