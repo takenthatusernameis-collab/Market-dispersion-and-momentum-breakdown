@@ -106,7 +106,17 @@ class MarketcapManifestProvenanceTests(unittest.TestCase):
                          msg="manifest panel_rows must match the CSV row count")
 
     def test_panel_start_end_match_csv_min_max(self):
-        dates = [r["date"] for r in self.rows if r.get("date")]
+        # The manifest stores start/end as bare YYYY-MM-DD strings while the
+        # panel CSV stores the same observations as full ISO-8601 timestamps
+        # (2023-01-01T00:00:00.000000000Z). Compare date-only prefixes: the
+        # manifest is a frozen forward-block input (its sha256 is recorded in
+        # forward_block_evaluation.json input_file_hashes) and must not be
+        # rewritten, so the invariant is normalised here rather than in the
+        # manifest.
+        def _date_only(ts):
+            return ts[:10] if ts else ts
+
+        dates = [_date_only(r["date"]) for r in self.rows if r.get("date")]
         self.assertEqual(self.manifest["start"], min(dates),
                          msg="manifest start must equal the panel CSV min date")
         self.assertEqual(self.manifest["end"], max(dates),
