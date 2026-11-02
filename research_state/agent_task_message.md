@@ -1,5 +1,5 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T12:08:XXZ)
-- **Situation:** Cutoff gate UNBLOCKED (latest probes in research_state/cutoff_probe/). Only 2/32 kline panels end Oct 2026 (BTCUSDT, ETHUSDT); 24 end 2026-09-30; 6 other. Canonical H004V106 forward block unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390). H10 preregistered at artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md (CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/BLOCKED). Suite: 167 run, 1 expected failure, 0 errors.
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T12:10:XXZ)
+- **Situation:** Cutoff gate UNBLOCKED (latest probes in research_state/cutoff_probe/). Only 2/32 kline panels end Oct 2026 (BTCUSDT, ETHUSDT); others end 2026-09-30 or earlier. Canonical H004V106 forward block unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390). H10 preregistered at artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md (CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/BLOCKED). Suite: 167 run, 1 expected failure (test_forward_block_hashes_match_files_on_disk), 0 errors.
 - **Status:** H10 fresh sealed forward block — BLOCKED by data availability (need >=20 assets with complete October 2026 forward horizons; currently 2). Blocker preserved; do NOT relax 30-day maturity or >=20 asset minimum.
 - **Your task:**
   1. Do NOT modify canonical forward block or DISPERSION-001/002 grids. Do not reuse inspected H004V106 as confirmation.
@@ -8,5 +8,3 @@
   4. Maintain read-only state verification + durable-state refresh.
 - **Hard constraints:** Free public data only; historical research only (no trading). No look-ahead/fabrication/forward-fill/invented fills/silent exclusions/outcome-informed params/costs/hidden multiplicity/reuse of inspected holdout. Never shorten 30-day maturity; never relax costs; never change DISPERSION-001/002 grids. October 2026 ranks not backfilled as historical ranks.
 - **Concrete next action:** Check publication of remaining assets' October 2026 Binance monthly zips for >=20 assets with complete 30-day horizons. If yes run H10 fresh-block sequence; if no preserve blocker and proceed to another bounded independent task.
-
-(End of file - total 10 lines)
