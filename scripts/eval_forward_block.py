@@ -82,8 +82,6 @@ def derive_data_cutoff(px: dict[str, pd.DataFrame]) -> str:
             continue
         if d > (latest or ""):
             latest = d
-        if d > (latest or ""):
-            latest = d
     return latest
 
 

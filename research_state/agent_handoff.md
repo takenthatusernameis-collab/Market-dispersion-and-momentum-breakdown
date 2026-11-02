@@ -1,4 +1,11 @@
 
+## Session record 2026-11-02T18:16:00Z (read prior task; removed dead duplicate in derive_data_cutoff; suite green 180 OK; state re-verified)
+
+- **Prior task status:** DONE (session 2026-11-02T18:11:58Z).
+- **Completed:** Read prior task from durable handoff/task message. Re-verified state: `python3 -m unittest discover -s tests` -> 180 run, 180 OK, 0 failures (EXIT=0). Canonical H004V106 forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` matches `git show HEAD:` blob exactly. Independent bounded task: removed dead duplicate `if d > (latest or "")` block in `scripts/eval_forward_block.py::derive_data_cutoff` (design-review gap #3); no behavior change; suite stays green. Cutoff gate UNBLOCKED (real record cutoff_probe_20261102T181547Z.json). H10 fresh block still IMMATURE (n_high=0,n_low=0). No canonical/DISPERSION-001/002/grid artifacts modified.
+- **State updated:** research_state/agent_handoff.md (this record), research_state/agent_task_message.md (rewritten), research_state/run_manifest.json (last_updated_utc 2026-11-02T18:16:00Z).
+- **Next action:** H10 blocked awaiting November 2026 maturity (need n_high>0,n_low>0). When matured: re-run `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never forward_block/), require n_high>0 and n_low>0, then evaluate per preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md requiring both |high_low_diff_net_1x| above economic threshold after costs AND Holm-significance across complete cell family. Do not relax 30-day maturity/state rule or MIN_ASSETS_DECILES=20; do not promote from raw p-values or return alone; never reuse inspected H004V106 as confirmation; never modify canonical forward block or DISPERSION-001/002 grids.
+
 ## Session record 2026-11-02T18:11:58Z (read prior task; state re-verified; suite green; handoff/task-message updated)
 
 - **Prior task status:** DONE (session 2026-11-02T18:10:11Z: read-only overlap-aware uncertainty audit of the sealed canonical H004V106 forward block; suite green 180 OK; canonical block byte-unchanged; cutoff UNBLOCKED per real probe 20261102T180156Z; handoff/task-message updated).
