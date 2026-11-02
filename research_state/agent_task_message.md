@@ -1,11 +1,12 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T20:00:00Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T20:01:00Z)
 
 ## Situation
-- **Prior task DONE** (session 2026-11-02T20:00:00Z): read prior task from durable handoff; bounded re-verification (canonical hash, tests, cutoff probe).
+- **Prior task DONE** (session 2026-11-02T20:01:00Z): read prior task from durable handoff; bounded re-verification (canonical hash vs git show HEAD:, tests, real cutoff probe), frontier re-walk.
 - **Canonical H004V106 forward block** byte-unchanged (sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` vs `git show HEAD:`; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). Development/exploratory only; not independent confirmation.
-- **Cutoff gate:** UNBLOCKED per real record `research_state/cutoff_probe/cutoff_probe_20261102T200015Z.json` (October 2026 monthly klines AND fundingRate HTTP 200).
-- **Fresh H10 block** (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json, cutoff 2026-10-31): BUILDS but IMMATURE — n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null.
+- **Cutoff gate:** UNBLOCKED per real record `research_state/cutoff_probe/cutoff_probe_20261102T192549Z.json` (October 2026 monthly klines AND fundingRate HTTP 200).
+- **Fresh H10 block** (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json): BUILDS but IMMATURE — n_formations=1, n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null.
 - **Test suite GREEN:** `python3 -m unittest discover -s tests` -> 180 run, 180 OK, 0 failures.
+- **Frontier:** `python3 scripts/discover_candidates.py` -> 6347 entries, legacy=32 verified=220 blocked=6127, newly_discovered=0.
 
 ## Blocker (preserved, exact)
 `trailing_window_outer_deciles` requires >=30 prior in-block dispersions before any high/low state assignment; only 1 formation exists after 2026-09-29, so n_high>0,n_low>0 cannot be produced. Need November 2026 vintage maturity. November 2026 monthly archives not published as of 2026-11-02 — do not fabricate. Do not relax 30-day maturity/state rule or MIN_ASSETS_DECILES=20; do not promote from raw p-values or return alone; never reuse inspected H004V106 as confirmation; never modify canonical forward block or DISPERSION-001/002 grids.
