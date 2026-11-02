@@ -56,7 +56,7 @@
     "root_cause": "scripts/refresh_free_data.py FUNDING_HEADER and scripts/normalize_binance_panels.py both declared a symbol column but never prefixed it to the 3-column archive rows."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-02T17:10:00Z",
+  "last_updated_utc": "2026-11-02T17:25:00Z",
   "session_record_20261102T0943Z": {
     "adaptive_gate_trigger": "not applicable -- gate UNBLOCKED (October 2026 monthly klines AND fundingRate both HTTP 200; record research_state/cutoff_probe/cutoff_probe_20261102T092118Z.json). Test-suite synthetic UNBLOCKED line is mock data (tests/test_cutoff_probe.py); trust only real probe records.",
     "canonical_block_impact": "None on outcomes: H004V106 forward block byte-unchanged vs `git show HEAD:` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
@@ -68,12 +68,12 @@
     "next_action": "Monitor for October price-panel publication for the remaining 30 assets; then retry scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff 2026-10-31 --output-dir <fresh dir>, evaluate H10, and update handoff/registry/manifest/frontier. Maintain read-only state verification + durable-state refresh."
   },
   "latest_archive_probe": {
-    "cutoff_gate": "BLOCKED",
-    "detail": "October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 / 10-29/30/31 HTTP 200; September 2026 control HTTP 200. Monthly klines not published; partial publication unusable. Adaptive-gate trigger NOT met (single route/timing; same endpoint as 07:25:12Z probe). NOTE: test-suite tail prints synthetic \"cutoff_gate\": \"UNBLOCKED\" from tests/test_cutoff_probe.py (mocks) — trust only real probe records under research_state/cutoff_probe/.",
+    "cutoff_gate": "UNBLOCKED",
+    "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Refresh ran scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31 (free public only): BTCUSDT/ETHUSDT through 2026-10-31; other 30 assets' October monthly zips unpublished so panels end 2026-09-30; marketcap panel 2023-01-01..2026-10-31. Trust only real probe records under research_state/cutoff_probe/ (record cutoff_probe_20261102T172330Z.json).",
     "probe_month": "2026-10",
-    "probe_utc": "2026-11-02T08:23:39Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261102T082339Z.json",
-    "target_published": false
+    "probe_utc": "2026-11-02T17:23:30Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261102T172330Z.json",
+    "target_published": true
   },
   "latest_verified_test_claim": "167 run, 167 OK, 0 failures (EXIT=0); canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged (verified vs git show HEAD:); universe frontier re-walked at cursor 6347, 0 newly discovered",
   "live_or_paper_trading_allowed": false,
@@ -86,10 +86,10 @@
     "verified": "python3 -m unittest discover -s tests -> 148 run, 148 OK, 0 failures (2026-11-01T02:25Z). git diff --stat -- ':!**/__pycache__' shows only research_state/run_manifest.json and tests/test_state_consistency.py; artifacts/, research_state/hypothesis_registry.json and research_state/universe_frontier.json untouched apart from their own last_updated_utc / reconciliation fields.",
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, audit artifact, script, frozen panel or forward block. Only research_state/run_manifest.json (the narrative line and last_updated_utc) and tests/test_state_consistency.py (+24 lines). DISPERSION-001/002, the defective archive and the canonical forward block byte-unchanged."
   },
-  "next_experiment_status": "PREREGISTRATION_AND_FRONTIER_REFRESH_PENDING",
+  "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
   "next_planned_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "next_required_actions": [
-    "refresh_free_historical_data -- BLOCKED until October 2026 Binance MONTHLY klines publishes (data cutoff gate requires cutoff >= 2026-10-29; probe 2026-11-02T08:23:39Z record research_state/cutoff_probe/cutoff_probe_20261102T082339Z.json, PROBE_EXIT=1: October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes), October 2026 monthly BTCUSDT fundingRate HTTP 200 (943 bytes), October 2026 daily klines 2026-10-28 HTTP 404 / 10-29/30/31 HTTP 200, September 2026 control HTTP 200. Do not loop on known failure; same endpoint as the 07:25:12Z probe — adaptive-gate trigger not met).",
+    "refresh_free_historical_data -- DONE this session (scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31, free public only): BTCUSDT/ETHUSDT price panels through 2026-10-31; other 30 assets' October monthly zips unpublished so panels end 2026-09-30; marketcap panel 2023-01-01..2026-10-31. Cutoff gate UNBLOCKED per real probe 2026-11-02T17:23:30Z (record research_state/cutoff_probe/cutoff_probe_20261102T172330Z.json, PROBE_EXIT=0): October 2026 monthly klines HTTP 200 AND monthly fundingRate HTTP 200; daily 2026-10-28 HTTP 404 (genuine gap), 10-29/30/31 HTTP 200; September 2026 control HTTP 200.",
     "expand_point_in_time_asset_frontier -- DONE this session (re-walked CoinMetrics community catalog: 6347 entries walked, 6347 unique ids, legacy=32 verified=220 blocked=6127, newly_discovered=0, cursor 6347 unchanged; catalog not grown; nothing to validate; recorded in universe_frontier.json catalog_discovery). Re-walk again when catalog may gain new listings.",
     "freeze_exact_forward_cutoff -- pending refresh cutoff >= 2026-10-29",
     "generate_and_verify_216_cell_manifest -- DONE (byte-identical regeneration, 216 cells H004V001-H004V216, anchors H004V105/H004V106)",
@@ -135,6 +135,11 @@
       "timestamp_utc": "2026-11-01T14:16:51Z"
     }
   ],
+  "session_record_20261102T1725Z": {
+    "summary": "Read prior agent task (DONE). Read-only red-team/design review of scripts/eval_forward_block.py and preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md (full findings in agent_handoff.md session record 2026-11-02T17:25:00Z; no code changes). Re-verified state: python3 -m unittest discover -s tests -> 167 run, 167 OK, 0 failures (EXIT=0); canonical H004V106 block sha256 7234fc4e... matches committed blob (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True); real cutoff probe UNBLOCKED EXIT=0 (record cutoff_probe_20261102T172330Z.json); frontier re-walk 6347 entries, 0 newly discovered, cursor 6347 unchanged. H10 fresh block (cutoff 2026-10-31): BUILDS (26 eligible assets >= MIN_ASSETS_DECILES=20) but IMMATURE (n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null); artifact sha256 9162561e..., idempotent re-run byte-identical. Blocker preserved: November 2026 vintage unavailable (durable structural impossibility). Canonical block, DISPERSION-001/002 grids, and frozen artifacts untouched.",
+    "canonical_block_impact": "None",
+    "frozen_artifacts_untouched": true
+  },
   "session_record_20261101T0508Z": {
     "adaptive_gate_trigger": "not met (single route - temporary timing; not three distinct failed routes)",
     "canonical_block_impact": "None: this session performed only read-only verification, a cutoff probe and durable-state refresh. No market data consumed, no forward-block input touched. Canonical H004V106 forward block byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
