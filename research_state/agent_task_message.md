@@ -1,24 +1,21 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T00:27:00Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-02T00:45Z)
 
 ## Situation
-Tests: 161 run, 1 failure, 0 errors. Single failure `test_rows_count_matches_archived_raw_file` is a KNOWN CONSTRAINT: `marketcap_panel_manifest.json` per-entry `rows` are stale but the manifest IS a forward-block input (hash in `input_file_hashes`); fixing it would break `test_forward_block_hashes_match_files_on_disk`. Do NOT modify `marketcap_panel_manifest.json`, `marketcap_panel.csv`, or the canonical forward block. All other 160 tests pass; 0 errors. Canonical H004V106 forward block verified byte-unchanged: sha256 `60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59`, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 10 (H1..H10 present; H10 preregistered). Universe frontier exhausted at cursor 6347. Frozen artifacts untouched.
+Tests: 161 run, 1 failure, 0 errors. Single failure `test_panel_start_end_match_csv_min_max` is a KNOWN CONSTRAINT (stale `marketcap_panel_manifest.json` rows; manifest is a frozen forward-block input — do not modify). All other 160 tests pass; 0 errors. Canonical H004V106 forward block verified byte-unchanged: sha256 `60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59`, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. `research_state/hypothesis_registry.json` next_sequence_number 9 (H1..H9 present). Universe frontier exhausted at cursor 6347. Frozen artifacts untouched.
 
-## Status: cutoff gate UNBLOCKED (H10 preregistration done)
-Latest real probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, 2026-11-02T00:27:17Z, record `research_state/cutoff_probe/cutoff_probe_20261102T002717Z.json`, PROBE_EXIT=0): October 2026 monthly BTCUSDT klines HTTP 200 AND October 2026 monthly BTCUSDT fundingRate HTTP 200; September 2026 control HTTP 200. `target_published: true`, `cutoff_gate: UNBLOCKED`. Both required monthly endpoints are live — the blocker that persisted across 20+ prior sessions is resolved. H10 has been preregistered (next_sequence_number 9->10, preregistration `preregistrations/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10_v1.md`) BEFORE any outcomes were computed.
+## Status: cutoff gate BLOCKED
+Latest real probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`, 2026-11-02T00:45:33Z, record `research_state/cutoff_probe/cutoff_probe_20261102T004533Z.json`, EXIT=1): October 2026 monthly BTCUSDT klines HTTP 404 (0 bytes); October 2026 monthly BTCUSDT fundingRate HTTP 200; September 2026 control HTTP 200. `target_published: false`, `cutoff_gate: BLOCKED`. The monthly klines archive has not published; partial publication unusable (`refresh_free_data.py` consumes the monthly klines zip). Adaptive-gate trigger NOT met. Do not loop on known failure.
 
-## Your task (unblocked — execute in order)
-1. Run `python3 scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` (free public data only). This consumes the now-live October 2026 monthly klines zip.
-2. Re-run `python3 -m unittest discover -s tests` (161 run; the `test_rows_count_matches_archived_raw_file` known constraint is expected to persist — do not modify frozen inputs).
-3. Verify H004V106 unchanged (sha256 `60a832fdf61d27b71a61b704394693bf7047c3960d69030c2026d701afc8fe59`, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).
-4. Build the fresh sealed forward block for H10: formations strictly after 2026-09-29, strict 30-day maturity (only completed 30-day outcomes), HAC/overlap-aware, Holm-corrected across the cell family. Do NOT reuse the already-inspected H004V106 block as confirmation — it is development/exploratory only.
-5. Evaluate H10 against the fresh block and record the result in `research_state/hypothesis_registry.json` (H10 entry). Do not promote to confirmation unless the fresh block, complete multiple-testing correction and independent recomputation gates are all met.
-6. Update `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/hypothesis_registry.json`, `research_state/run_manifest.json`, `research_state/universe_frontier.json` as appropriate.
+## Your task (blocked — preserve state)
+1. Do NOT run refresh while gate is BLOCKED.
+2. Preserve BLOCKED cutoff and H10 preregistration plan (allocate next_sequence_number 9->10 when unblocked).
+3. When October 2026 Binance monthly archives publish (both monthly klines AND monthly fundingRate HTTP 200, cutoff >= 2026-10-29): confirm with probe (expect EXIT=0/UNBLOCKED), then run `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` (free public data only), re-run `python3 -m unittest discover -s tests`, verify H004V106 unchanged, preregister H10 (next_sequence_number 9->10) with fresh sealed forward block (formations after 2026-09-29, strict 30-day maturity, HAC/overlap-aware, only completed 30-day outcomes), evaluate H10 against the fresh block, update handoff/registry/manifest/frontier.
+4. Do not modify `marketcap_panel_manifest.json`, `marketcap_panel.csv`, or the canonical forward block; do not reuse the inspected H004V106 block as confirmation.
 
 ## Hard constraints
 - No look-ahead/fabrication/forward-fill/invented fills/silent exclusions/outcome-informed params/costs/hidden multiplicity/reuse of inspected holdout.
 - Never shorten 30-day maturity; never change DISPERSION-001/002; never relax costs; no paid services/live/paper trading.
-- H004V106 is development/exploratory only; the fresh sealed forward block is required for any confirmatory claim.
-- Preserve the defective archive and the canonical H004V106 block byte-unchanged; create new artifact paths for H10.
+- H004V106 is development/exploratory only; fresh sealed forward block required for any confirmatory claim.
 
 ## Concrete next action
-Execute steps 1-6 above. Start with `python3 scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31`.
+Re-probe monthly availability with `python3 scripts/probe_cutoff_gate.py --probe-month 2026-10`. If EXIT=0/UNBLOCKED, execute the unblocked sequence above; otherwise preserve BLOCKED and update durable state.
