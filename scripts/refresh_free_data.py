@@ -467,8 +467,13 @@ def main() -> int:
         "panel_rows": cm_panel_rows,
         "assets_requested": assets,
         "assets_with_data": sorted(frames.keys()),
-        "start": args.cap_start,
-        "end": args.cap_end,
+        # start/end must describe the normalized panel CSV exactly, including its
+        # full ISO-8601 timestamp format, so the manifest agrees with the CSV
+        # min/max (test_panel_start_end_match_csv_min_max). Copying the bare
+        # request args (e.g. "2026-10-31") produced a format mismatch against the
+        # panel's "2026-10-31T00:00:00.000000000Z" rows.
+        "start": cm_date_first,
+        "end": cm_date_last,
         "frequency": CM_FREQUENCY,
         "metrics": CM_METRICS,
         "fetch_utc": fetch_utc,
