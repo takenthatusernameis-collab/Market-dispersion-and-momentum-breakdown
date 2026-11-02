@@ -1,11 +1,10 @@
 ## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-02T19:35:00Z)
 
 ## Situation
-- **Prior task DONE** (session 2026-11-02T19:33:00Z): re-verified state; suite green 180/180.
-- **This session:** bounded re-verification + frontier re-walk; suite green 180/180/0; canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` matches `git show HEAD:`; cutoff UNBLOCKED (research_state/cutoff_probe/cutoff_probe_20261102T192331Z.json); frontier re-walk 6347 entries, 0 newly discovered; durable state refreshed.
+- **Prior task DONE** (session 2026-11-02T19:35:00Z): read prior task from durable handoff; bounded re-verification; suite green 180/180.
 - **Canonical H004V106 forward block** byte-unchanged (sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` vs `git show HEAD:`; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). Development/exploratory only; not independent confirmation.
-- **Cutoff gate:** UNBLOCKED per real record `research_state/cutoff_probe/cutoff_probe_20261102T192331Z.json` (October 2026 monthly klines AND fundingRate HTTP 200).
-- **Fresh H10 block** (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json, cutoff 2026-10-31): BUILDS but IMMATURE — n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null. Overlap-aware uncertainty reports IMMATURE.
+- **Cutoff gate:** UNBLOCKED per real record `research_state/cutoff_probe/cutoff_probe_20261102T192549Z.json` (October 2026 monthly klines AND fundingRate HTTP 200).
+- **Fresh H10 block** (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json, cutoff 2026-10-31): BUILDS but IMMATURE — n_formations=1 (2026-09-30), n_high=0/n_low=0/n_mid=1, high_low_diff_net_1x=null.
 - **Test suite GREEN:** `python3 -m unittest discover -s tests` -> 180 run, 180 OK, 0 failures.
 
 ## Blocker (preserved, exact)
@@ -22,4 +21,3 @@ Free public data only; historical research only. No look-ahead/fabrication/forwa
 
 ## Concrete next action
 H10 blocked awaiting November 2026 maturity (n_high>0,n_low>0; unavailable as of 2026-11-02). Do bounded independent work now; re-attempt H10 only when n_high>0,n_low>0.
-EOF
