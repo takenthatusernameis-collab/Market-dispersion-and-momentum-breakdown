@@ -67,3 +67,13 @@ Do bounded independent work (tests/validation/design/red-team/source coverage/ca
   4. Cutoff gate UNBLOCKED; H10 fresh block remains IMMATURE (n_formations=1, n_high=0, n_low=0).
 - **State updated:** `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/universe_frontier.json`.
 - **Next action:** Bounded independent work only. Re-run H10 fresh block evaluation ONLY when n_high>0 and n_low>0 into a separate dir per prereg. Do not relax 30-day maturity/state rule or MIN_ASSETS_DECILES=20. Do not write "wait for a new experiment ID".
+
+## Session record 2026-11-03T02:35:00Z (refresh + verification)
+- **Prior task status:** PARTIAL.
+- **Completed:**
+  1. Re-verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
+  2. Refreshed free data: `scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31` completed (CoinMetrics + Binance panels through 2026-10-31).
+  3. Test suite: `python3 -m unittest discover -s tests` → 2 failures (binance manifest symbol coverage; coinmetrics provenance date_first format), 208 OK, 1 skipped. Not all green; investigate manifest/provenance format.
+  4. H10 fresh block remains structurally blocked (unchanged).
+- **State updated:** data panels refreshed; handoff/task message.
+- **Next action:** Fix provenance/manifest test failures (manifest must list all 32 symbols; date_first format alignment), then re-run tests to green. Address H10 structural blocker via new exploratory ID.
