@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T09:26:15Z",
+  "last_updated_utc": "2026-11-03T11:16:09Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -65,12 +65,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T09:23:10Z (record research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:09:31Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
+    "note": "Real live probe 2026-11-03T11:16:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:23:10Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
-    "probe_utc": "2026-11-03T09:23:10Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
+    "probe_utc": "2026-11-03T11:16:09Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
     "target_published": false
   },
   "latest_november_2026_probe": {
@@ -83,12 +83,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T09:23:10Z (record research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:09:31Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
+    "note": "Real live probe 2026-11-03T11:16:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:23:10Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
-    "probe_utc": "2026-11-03T09:23:10Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
+    "probe_utc": "2026-11-03T11:16:09Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
     "target_published": false
   },
   "latest_verified_test_claim": "210/210/0",
@@ -495,7 +495,15 @@
     "frozen_artifacts_untouched": true,
     "next_action": "Nothing bounded and unblocked remains. Preserve BLOCKED cutoff and H10 preregistration plan. When November 2026 Binance monthly archives publish (both klines AND fundingRate HTTP 200, cutoff >= 2026-11-29): confirm with probe (expect UNBLOCKED), run scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end> (free public data only), re-run python3 -m unittest discover -s tests, verify H004V106 unchanged, re-run fresh sealed block python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ (never forward_block/), require n_high>0 AND n_low>0, then economic significance after costs + Holm across complete family before any confirmatory claim. Do not relax 30-day maturity/MIN_ASSETS_DECILES=20/state rule; do not fabricate formations/outcomes."
   },
-  "session_record_latest": "20261103T0926Z",
+  "session_record_20261103T1116Z": {
+    "adaptive_gate_trigger": "not met (single timing route; repeated same-endpoint probes on the same day are not distinct failed routes spanning two source families)",
+    "canonical_block_impact": "None: this session performed only read-only verification, a cutoff probe and durable-state refresh. No market data consumed, no forward-block input touched. Canonical H004V106 forward block byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 verified vs git show HEAD: and direct sha256sum; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
+    "completed": "Read prior agent task from durable handoff; re-ran python3 -m unittest discover -s tests -> 210 run, 210 OK, 1 skipped, EXIT=0; verified canonical H004V106 sha256 against disk and git show HEAD: (identical); confirmed git diff --stat -- artifacts/ research_state/ configs/ scripts/ tests/ shows only __pycache__/*.pyc (0 insertions) before this session's state refresh; re-probed November 2026 (real network probe, EXIT=1) -> target_published=false, cutoff_gate=BLOCKED, record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json; verified fresh H10 block unchanged (IMMATURE/NULL_DIFF, n_formations=1, n_high=0, n_low=0, n_mid=1, date 2026-09-30, high_low_diff_net_1x null, overlap_aware_uncertainty status IMMATURE) at artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json; refreshed run_manifest.json and universe_frontier.json latest_archive_probe / latest_november_2026_probe to quote the new 11:16:09Z record; appended session_record_20261103T1116Z and set session_record_latest; last_updated_utc -> 2026-11-03T11:16:09Z.",
+    "cutoff_probe": "2026-11-03T11:16:09Z direct HTTPS to data.binance.vision (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json, probe_exit=1): November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published=false; cutoff_gate=BLOCKED. Control September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date) -> archive alive, miss is genuine month-not-over absence. gate_date_required 2026-10-29, gate_met_by_month_end true.",
+    "frozen_artifacts_untouched": true,
+    "next_action": "Nothing bounded and unblocked remains. Re-probe November 2026 (python3 scripts/probe_cutoff_gate.py --probe-month 2026-11) only once per session and only after material passage of time / near month-end (cutoff >= 2026-11-29 for a complete 30-day outcome; same-day repeats of a known-failed endpoint are looping). When target_published=true: refresh free public data (python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>), re-run tests, verify H004V106 unchanged, re-run fresh sealed block python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ (never forward_block/). Do not relax 30-day maturity / MIN_ASSETS_DECILES=20 / trailing-decile state rule. If n_high>0 and n_low>0, require |high_low_diff_net_1x| above the predeclared economic-significance threshold after costs AND Holm across the complete family before any confirmatory claim. Never fabricate formations/outcomes; never open canonical sealed forward_block/."
+  },
+  "session_record_latest": "session_record_20261103T1116Z",
   "session_records": [
     "session_record_20261101T1404Z",
     "session_record_20261101T1406Z",
@@ -507,6 +515,7 @@
     "session_record_20261102T0720Z",
     "session_record_20261102T1710Z",
     "session_record_20261103T0618Z",
-    "session_record_20261103T0926Z"
+    "session_record_20261103T0926Z",
+    "session_record_20261103T1116Z"
   ]
 }

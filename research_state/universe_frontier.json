@@ -12526,6 +12526,7 @@
     "newly_discovered": 0,
     "status": "ok",
     "verification_note_20261103T0816Z": "Re-verified this session: catalog_entries_walked 6347, unique ids 6347, legacy_excluded 32, verified_excluded 220, blocked 6127, newly_discovered 0, candidates_discovered 0, candidate_page_cursor 6347 unchanged. Catalog not grown; nothing to validate; frontier exhausted.",
+    "verification_note_20261103T1116Z": "Re-verified this session: catalog_entries_walked 6347, unique ids 6347, legacy_excluded 32, verified_excluded 220, blocked 6127, newly_discovered 0, candidates_discovered 0, candidate_page_cursor 6347 unchanged. Catalog not grown; nothing to validate; frontier exhausted. Latest real cutoff probe advanced to research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json (2026-11-03T11:16:09Z): probe-month 2026-11, target_published=false, cutoff_gate=BLOCKED, probe_exit=1; all six November endpoints HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine = month not over). Fresh H10 block unchanged: IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, n_mid=1, date 2026-09-30, high_low_diff_net_1x null, overlap_aware_uncertainty status IMMATURE). Canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged (disk and git show HEAD:). No frozen artifacts modified.",
     "verified_excluded": [
       "1inch",
       "aave",
@@ -12771,7 +12772,7 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-03T09:23:10Z",
+  "last_updated_utc": "2026-11-03T11:16:09Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12783,12 +12784,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T09:23:10Z (record research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:09:31Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
+    "note": "Real live probe 2026-11-03T11:16:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:23:10Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
-    "probe_utc": "2026-11-03T09:23:10Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
+    "probe_utc": "2026-11-03T11:16:09Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
     "target_published": false
   },
   "latest_november_2026_probe": {
@@ -12801,12 +12802,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T09:23:10Z (record research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:09:31Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
+    "note": "Real live probe 2026-11-03T11:16:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:23:10Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
-    "probe_utc": "2026-11-03T09:23:10Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T092310Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
+    "probe_utc": "2026-11-03T11:16:09Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
     "target_published": false
   },
   "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
