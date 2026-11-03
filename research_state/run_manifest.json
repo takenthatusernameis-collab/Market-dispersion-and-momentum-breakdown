@@ -54,16 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T09:03:45Z",
-  "latest_november_2026_probe": {
-    "cutoff_gate": "BLOCKED",
-    "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
-    "panel_date_end_verified": "2026-09-30 (Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against published October 2026 monthly zips)",
-    "probe_month": "2026-11",
-    "probe_utc": "2026-11-03T09:04:19Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T090419Z.json",
-    "target_published": false
-  },
+  "last_updated_utc": "2026-11-03T09:07:21Z",
   "latest_november_2026_probe": {
     "cutoff_gate": "BLOCKED",
     "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until November vintage matures so the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
