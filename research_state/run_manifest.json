@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T06:18:31Z",
+  "last_updated_utc": "2026-11-03T07:14:37Z",
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Supersedes the stale 2026-11-03T021343Z reference in the prior handoff (that record does not exist on disk); trust only real probe records under research_state/cutoff_probe/.",
@@ -69,8 +69,8 @@
     "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until November vintage matures so the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
     "panel_date_end_verified": "2026-09-30 (Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against published October 2026 monthly zips)",
     "probe_month": "2026-11",
-    "probe_utc": "2026-11-03T06:18:05Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json",
+    "probe_utc": "2026-11-03T07:14:37Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T071437Z.json",
     "target_published": false
   },
   "latest_verified_test_claim": "210/210/0",
@@ -143,6 +143,12 @@
       "outcome": "cutoff_unblocked_h10_structurally_blocked_tests_210ok",
       "session_id": "session_20261103T0230Z",
       "timestamp_utc": "2026-11-03T02:30:00Z"
+    },
+    {
+      "action": "read_prior_task_verified_state_refreshed_durable_task_handoff",
+      "outcome": "cutoff_blocked_november_2026_not_published_h10_immature_tests_210ok",
+      "session_id": "session_20261103T0714Z",
+      "timestamp_utc": "2026-11-03T07:14:37Z"
     }
   ],
   "session_record_20261101T0508Z": {

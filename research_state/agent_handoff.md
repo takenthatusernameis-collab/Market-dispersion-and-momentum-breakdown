@@ -1,3 +1,13 @@
+## Session record 2026-11-03T07:14:37Z (durable handoff update)
+- **Prior task status:** IN_PROGRESS (blocked on data vintage: November 2026 not yet published; month not over).
+- **Completed this pass:**
+  1. Re-probed November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` -> target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T071437Z.json`). Archive alive (control 2026-09 HTTP 200); miss is genuine month-not-over absence.
+  2. Verified H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD` (both identical).
+  3. Ran `python3 -m unittest discover -s tests` -> Ran 210 tests OK (skipped=1) (EXIT=0).
+  4. Fresh H10 block remains IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, diff null) at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`; canonical `forward_block/` unchanged. No frozen artifacts modified.
+- **State updated:** `research_state/agent_handoff.md`, `research_state/agent_task_message.md`.
+- **Next action:** H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE awaiting November 2026 vintage maturity (n_high>0 AND n_low>0). Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) on the next session; when target_published=true, refresh free public data (`python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>`), re-run tests, verify H004V106 unchanged, re-run fresh sealed block `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`). Do not relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile state rule. If n_high>0 and n_low>0, require |high_low_diff_net_1x| above predeclared economic-significance threshold after costs AND Holm across complete family before any confirmatory claim. Never fabricate formations/outcomes; never open canonical sealed `forward_block/`. Adaptive-gate trigger not met (single timing route, not three distinct failed routes); do not start an exploratory track yet.
+
 ## Session record 2026-11-03T07:12:56Z (durable handoff update)
 - **Prior task status:** IN_PROGRESS (blocked on data vintage: November 2026 not yet published; month not over).
 - **Completed this pass:**
