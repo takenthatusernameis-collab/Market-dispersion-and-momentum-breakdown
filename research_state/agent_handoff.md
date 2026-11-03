@@ -32,5 +32,6 @@
 - 2026-10-28 missing from merged price index (Binance archive gap) shifts `last_allowed_formation` to 2026-09-30.
 - `trailing_window_outer_deciles` requires ≥30 prior in-block dispersions to assign high/low states; fresh window is too short until November vintage matures.
 
-## Latest probe (2026-11-03T04:00:41Z)
-- probe-month 2026-11: target_published=false, control_month=2026-09 (control_ok=true), archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED. Record: research_state/cutoff_probe/cutoff_probe_20261103T040041Z.json. No new formations possible until November archive published.
+## Latest probe (2026-11-03T04:04:43Z)
+- probe-month 2026-11: target_published=false, control_month=2026-09 (control_ok=true), archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED. Record: research_state/cutoff_probe/cutoff_probe_20261103T040443Z.json. No new formations possible until November archive published.
+- Tests: `python3 -m unittest discover -s tests` → Ran 210 tests OK (skipped=1). H004V106 sha256 unchanged `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
