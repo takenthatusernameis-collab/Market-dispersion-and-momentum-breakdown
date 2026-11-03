@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T08:06:17Z",
+  "last_updated_utc": "2026-11-03T08:11:35Z",
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Supersedes the stale 2026-11-03T021343Z reference in the prior handoff (that record does not exist on disk); trust only real probe records under research_state/cutoff_probe/.",
@@ -126,6 +126,12 @@
   "program_status": "ACTIVE_CONTINUOUS_RESEARCH",
   "schema_version": "1.0",
   "session_history": [
+    {
+      "action": "read_prior_task_reprobed_november_2026_still_blocked_refreshed_handoff",
+      "outcome": "november_2026_target_published_false_cutoff_blocked_h10_immature_tests_210ok",
+      "session_id": "session_20261103T0811Z",
+      "timestamp_utc": "2026-11-03T08:11:35Z"
+    },
     {
       "action": "read_prior_task_verified_state_refreshed_durable_task_handoff",
       "outcome": "cutoff_blocked_h004v106_unchanged_tests_161ok",
