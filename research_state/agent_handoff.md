@@ -62,3 +62,16 @@
   4. Did NOT re-probe November 2026 before cutoff >= 2026-11-29.
 - **Cutoff status:** BLOCKED. November 2026 not published.
 - **Next action:** Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) on/after 2026-11-29. If target_published=true: refresh data, verify H004V106, run fresh sealed block into `forward_block_h10_fresh/`, require n_high>0 AND n_low>0. If still IMMATURE, record blocker and wait for next vintage. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
+## Session record 2026-11-03T18:50Z (durable handoff update)
+- **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED, gate >= 2026-11-29). No frozen artifact/source changed this pass.
+- **Completed this pass:**
+  1. Read prior handoff + task message + AGENTS.md; verified current state per instructions.
+  2. Full suite: `python3 -m unittest discover -s tests` -> **218 run, OK (skipped=1), EXIT=0**.
+  3. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`; fresh H10 block unchanged (n_formations=1, n_high=0, n_low=0, IMMATURE).
+  4. Did NOT re-probe November 2026 before cutoff >= 2026-11-29 (latest real probe `cutoff_probe_20261103T154136Z.json` remains current: target_published=false, cutoff_gate=BLOCKED).
+- **Cutoff status:** BLOCKED. November 2026 not published.
+- **Frontier/registry:** unchanged: cursor 6347, catalog exhausted; H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7/H9/H10 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY; H10 EVALUATED_NULL_DIFF_IMMATURE.
+- **Next action:** Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) on/after 2026-11-29. If target_published=true: refresh free public data if needed, re-run tests, verify H004V106 unchanged vs `git show HEAD:`, run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker and wait for next vintage. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
+(End of file - total 82 lines)
