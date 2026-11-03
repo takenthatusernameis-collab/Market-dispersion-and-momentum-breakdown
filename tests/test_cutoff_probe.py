@@ -144,5 +144,66 @@ class ProbeRecordShapeTests(unittest.TestCase):
         self.assertIn(rec["cutoff_gate"], ("UNBLOCKED", "BLOCKED"))
 
 
+class MockOutputIsNeverRealStateTests(unittest.TestCase):
+    """Guard against the single most dangerous artifact in this test file.
+
+    test_main_returns_zero_when_unblocked exercises probe.main() with
+    probe_month mocked and Path.write_text mocked, so NO record is written to
+    disk -- but main() still prints a JSON summary ending in
+    "cutoff_gate": "UNBLOCKED". That printed line is the last line of the
+    whole suite, and it looks exactly like a live gate decision. Sessions have
+    misread it as "the gate is open" when the real latest on-disk record is
+    BLOCKED (see research_state/cutoff_probe/cutoff_probe_20261103T152208Z.json).
+
+    These tests pin (a) that the printed mock line corresponds to no file on
+    disk, and (b) the durable state of the real November 2026 probe. They are
+    read-only: they never call probe.main() and never write anything.
+    """
+    PROBE_DIR = ROOT / "research_state" / "cutoff_probe"
+
+    @classmethod
+    def setUpClass(cls):
+        cls.records = sorted(
+            p for p in cls.PROBE_DIR.glob("cutoff_probe_*.json")
+            if p.is_file() and not p.name.startswith("MOCK")
+        )
+
+    def test_mock_unblocked_line_has_no_record_on_disk(self):
+        # The synthetic record printed by the mocked main() call would be
+        # written at a path derived from the mocked clock; the mock writes
+        # nothing. The danger being guarded is that this printed line looks
+        # exactly like a live gate decision, so pin the durable state: every
+        # real record on disk whose probe_month is 2026-11 must report the
+        # month unpublished and the gate BLOCKED. A future open gate is then
+        # detected as a state change rather than silently inherited.
+        import glob as _glob
+        probe_dir = self.PROBE_DIR
+        for p in _glob.glob(str(probe_dir / "cutoff_probe_*.json")):
+            if "MOCK" in p:
+                continue
+            with open(p) as fh:
+                rec = json.load(fh)
+            if rec.get("probe_month") != "2026-11":
+                continue
+            self.assertFalse(
+                rec.get("target_published"),
+                msg=f"real on-disk record {p} claims November 2026 published",
+            )
+            self.assertEqual(rec["cutoff_gate"], "BLOCKED")
+
+    def test_real_latest_november_2026_probe_is_blocked(self):
+        # Durable state: November 2026 is genuinely unpublished as of the
+        # latest real probe. Pin it so a future open gate is detected as a
+        # state change rather than silently inherited.
+        nov = [p for p in self.records if "20261103" in p.name]
+        self.assertTrue(nov, "expected at least one real November 2026 probe record")
+        latest = max(nov, key=lambda p: p.name)
+        rec = json.loads(latest.read_text())
+        self.assertEqual(rec["probe_month"], "2026-11")
+        self.assertFalse(rec["target_published"])
+        self.assertEqual(rec["cutoff_gate"], "BLOCKED")
+        self.assertTrue(rec["archive_alive"])
+
+
 if __name__ == "__main__":
     unittest.main()
