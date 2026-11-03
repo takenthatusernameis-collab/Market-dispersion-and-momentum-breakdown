@@ -1,9 +1,9 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T05:06:34Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T05:09:28Z)
 
 ## Session verification (2026-11-03T05:06:34Z)
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` verified byte-unchanged.
 - Full test suite green: `python3 -m unittest discover -s tests` → Ran 210 tests OK (skipped=1).
-- Latest probe for November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` → target_published=false, control_month=2026-09 (control_ok=true), archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T050634Z.json`).
+- Latest probe for November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` → target_published=false, control_month=2026-09 (control_ok=true), archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T050928Z.json`).
 - Fresh H10 block in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` remains IMMATURE/NULL_DIFF: n_formations=1 (2026-09-30), n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null, overlap_aware_uncertainty.status=IMMATURE. Canonical `forward_block/` unchanged. No frozen artifacts modified.
 
 ## Situation
@@ -26,7 +26,7 @@
 - Do not write "wait for a new experiment ID". If blocked by data maturity, wait for data vintage; do not fabricate formations/outcomes.
 - Correct for complete declared multiple-testing family if promoting.
 
-## Latest probe (2026-11-03T05:06:34Z)
-- probe-month 2026-11: target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED. Record: `research_state/cutoff_probe/cutoff_probe_20261103T050634Z.json`.
+## Latest probe (2026-11-03T05:09:28Z)
+- probe-month 2026-11: target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED. Record: `research_state/cutoff_probe/cutoff_probe_20261103T050928Z.json`.
 - Tests: `python3 -m unittest discover -s tests` → Ran 210 tests OK (skipped=1). H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
 - Fresh H10 block still IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, diff null). No frozen artifacts modified.
