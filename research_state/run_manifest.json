@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T05:22:41Z",
+  "last_updated_utc": "2026-11-03T06:18:31Z",
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Supersedes the stale 2026-11-03T021343Z reference in the prior handoff (that record does not exist on disk); trust only real probe records under research_state/cutoff_probe/.",
@@ -63,6 +63,15 @@
     "probe_utc": "2026-11-03T02:24:55Z",
     "record": "research_state/cutoff_probe/cutoff_probe_20261103T022455Z.json",
     "target_published": true
+  },
+  "latest_november_2026_probe": {
+    "cutoff_gate": "BLOCKED",
+    "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until November vintage matures so the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
+    "panel_date_end_verified": "2026-09-30 (Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against published October 2026 monthly zips)",
+    "probe_month": "2026-11",
+    "probe_utc": "2026-11-03T06:18:05Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json",
+    "target_published": false
   },
   "latest_verified_test_claim": "210/210/0",
   "live_or_paper_trading_allowed": false,
@@ -384,7 +393,7 @@
     "summary": "Independent bounded task: consolidated final integrity audit of the canonical H004V106 sealed forward block. Wrote preregistrations/H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md (EXPLORATORY_ONLY, prospective, locked method before computation), scripts/forward_block_final_integrity_audit.py (read-only; recomputes inputs hashes vs the block's recorded input_file_hashes, independently re-derives every sealed outcome field from the formations ledger, runs finite-value, state-count, mean/median, cost-treatment net=gross-0.001, tail-influence leave-one-out/trim-k3/winsorize-p0.10, overlap-aware cluster-bootstrap, and independent recomputation within 1e-9 checks), and published a NEW additive EXPLORATORY_ONLY artifact integrity_audit/H004V106_forward_block_final_integrity_audit_20261102.json (result PASS: 608 formations, high=61/low=90/mid=457, high_low_diff_net_1x +0.6165223953929935 recomputed exactly, all spreads finite, cost treatment consistent, tail influence within thresholds, overlap-aware CI ci_includes_zero=true). Reconciliation reports expected per-file hash mismatches: October 2026 panel refresh appended rows after the block was frozen (documented signal; block sha256 and contents byte-unchanged, not tampering; not a PASS criterion). Wrote tests/test_forward_block_final_integrity_audit.py (10 tests) and extended tests/test_state_consistency.py INTEGRITY_AUDITS 10->11. python3 -m unittest discover -s tests -> 200 run, 200 OK, 0 failures (EXIT=0, skipped=1). Real cutoff probe UNBLOCKED EXIT=0 (record research_state/cutoff_probe/cutoff_probe_20261102T211540Z.json: October 2026 monthly klines AND fundingRate HTTP 200). Canonical H004V106 forward block byte-unchanged vs git show HEAD: sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). No canonical/DISPERSION-001/002/grid/frozen-panel artifact modified; no fabrication/silent exclusion; no live/paper trading.",
     "test_result": "python3 -m unittest discover -s tests -> 200 run, 200 OK, 0 failures (EXIT=0), skipped=1"
   },
-  "session_record_latest": "2026-11-02T19:31:00Z",
+  "session_record_latest": "2026-11-03T06:18:31Z",
   "session_records": [
     "session_record_20261101T1404Z",
     "session_record_20261101T1406Z",
@@ -394,6 +403,17 @@
     "session_record_20261102T0523Z",
     "session_record_20261102T0526Z",
     "session_record_20261102T0720Z",
-    "session_record_20261102T1710Z"
-  ]
+    "session_record_20261102T1710Z",
+    "session_record_20261103T0618Z"
+  ],
+  "session_record_20261103T0618Z": {
+    "canonical_block_impact": "None: canonical forward block byte-unchanged vs git show HEAD: sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
+    "cutoff_status": "BLOCKED (record research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json, EXIT=1): November 2026 monthly klines and fundingRate not yet published (month not over); target_published=false. October 2026 IS published (UNBLOCKED per cutoff_probe_20261103T022455Z.json) but does not unblock H10: 2026-10-28 kline gap + strict 30-day maturity pin last_allowed_formation to 2026-09-30; trailing-decile burn-in needs >=30 prior in-block dispersions.",
+    "frozen_artifacts_untouched": true,
+    "next_action": "Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) on the next session; when target_published=true, refresh free public data, re-run tests, verify H004V106 unchanged, re-run fresh sealed block into forward_block_h10_fresh/ (never forward_block/), require n_high>0 AND n_low>0, then economic significance after costs + Holm across complete family before any confirmatory claim. Do not relax 30-day maturity/MIN_ASSETS_DECILES/state rule; do not fabricate formations/outcomes; never open canonical sealed forward_block/. Adaptive-gate trigger not met (single timing route); do not start an exploratory track yet.",
+    "prior_task_status": "IN_PROGRESS_BLOCKED",
+    "summary": "Read prior agent task from durable handoff (H10 fresh sealed forward block blocked on November 2026 data maturity). Re-probed November 2026: target_published=false, cutoff_gate=BLOCKED (record research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json). Verified H004V106 sha256 7234fc4e... unchanged vs disk and git show HEAD. Re-ran python3 -m unittest discover -s tests -> Ran 210 tests OK (skipped=1) (EXIT=0). Fresh H10 block remains IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, diff null) at forward_block_h10_fresh/forward_block_evaluation.json; canonical forward_block/ unchanged. No frozen artifacts modified. Rewrote agent_handoff.md and agent_task_message.md; updated run_manifest.json.",
+    "test_result": "python3 -m unittest discover -s tests -> Ran 210 tests OK (skipped=1) (EXIT=0)",
+    "timestamp_utc": "2026-11-03T06:18:31Z"
+  }
 }
