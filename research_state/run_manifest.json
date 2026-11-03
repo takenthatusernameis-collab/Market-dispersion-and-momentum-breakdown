@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T11:16:09Z",
+  "last_updated_utc": "2026-11-03T12:26:00Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -148,6 +148,7 @@
     "what": "tests/test_state_consistency.py::test_every_diagnostic_audit_has_a_preregistration failed on 4 of 6 DISP-003 diagnostic-audit preregistrations. Repaired by correcting the declared Created/Preregistered header timestamps to the documents earliest verifiable repository commit time and adding explicit correction notes to all four documents.",
     "what_was_not_changed": "No audit artifact, script, test, frozen formation panel, grid ledger, hypothesis conclusion or decision rule was regenerated, altered or reclassified. Only the four preregistration documents header lines and correction notes changed. The two backdated headers (STATE, REGIME) were corrected to their commit times; the two prospective headers (ROLLING, TAIL) were retained as written with explicit notes. All four are EXPLORATORY_ONLY and remain development/exploratory evidence on the frozen canonical H004V106 forward block; none validates H1/H6/H7/H8 and none unlocks the confirmatory track."
   },
+  "session_record_20261103T1226Z": "DONE (read prior task, verified state, refreshed durable task/handoff): python3 -m unittest discover -s tests -> 216 run, 216 OK, 0 failures (EXIT=0, skipped=1). Canonical H004V106 forward block verified byte-unchanged vs disk and vs git show HEAD: sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z. Registry: next_sequence_number 10 (H1..H10 present); H10 status CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. Frontier cursor 6347 unchanged; frozen artifacts untouched. Cutoff re-probe NOT performed (gated to cutoff >= 2026-11-29; latest real probe 2026-11-03T11:16:09Z still BLOCKED, target_published false). Adaptive-gate trigger not met. Rewrote agent_task_message.md; refreshed agent_handoff.md; updated run_manifest.json last_updated_utc. No source, artifact or hypothesis change.",
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "program_status": "ACTIVE_CONTINUOUS_RESEARCH",
   "schema_version": "1.0",
