@@ -1,3 +1,16 @@
+## Session record 2026-11-03T12:16:48Z (durable handoff update)
+
+- **Prior task status:** BLOCKED by data maturity. November 2026 not published (month not over); re-probe gated to cutoff >= 2026-11-29. No frozen artifacts/source changed. No code changed this pass.
+- **Completed this pass:**
+  1. Read prior handoff + task message + operating contract + research protocol + hypothesis registry; verified current state directly.
+  2. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and vs `git show HEAD:` (both match).
+  3. `git diff --stat -- ':!**/__pycache__'` empty — only `__pycache__/*.pyc` bytecode changed; no frozen artifacts/source changed.
+  4. Full suite: `python3 -m unittest discover -s tests` -> **216 run, 216 OK, 0 failures** (skipped=1). numpy/pandas already installed on this runner.
+  5. Did NOT re-probe November 2026: today 2026-11-03, month not over; probe gated to cutoff >= 2026-11-29. Re-probing now repeats a known failure (monthly klines/fundingRate HTTP 404 per real probe 2026-11-03T11:16:09Z, record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json); adaptive-gate trigger NOT met (single timing route, not three distinct failed routes across two source families).
+- **Cutoff status:** BLOCKED. November 2026 monthly BTCUSDT klines AND fundingRate HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine). October 2026 published but does NOT unblock H10 (verified structurally: 2026-10-28 kline gap + strict 30-day maturity pin last_allowed_formation to 2026-09-30; trailing-decile burn-in needs >=30 prior in-block dispersions).
+- **Next action:** Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) only after material passage of time / near month-end (cutoff >= 2026-11-29). Then follow conditional steps in task message: if target_published=true, refresh free public data, re-run tests, verify H004V106 unchanged, re-run fresh sealed block into `forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0, then economic significance after costs + Holm across family before any confirmatory claim. If still IMMATURE, record blocker and wait for next vintage. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile state rule. Never open canonical sealed holdout. If blocked by data maturity, wait for data vintage.
+- **Registry/manifest/frontier:** unchanged this pass (no hypothesis, grid, decision-rule, or frontier change; next_sequence_number 10, H1..H10 present).
+
 ## Session record 2026-11-03T11:35:xxZ (durable handoff update)
 
 - **Prior task status:** COMPLETED (verified state directly; nothing bounded/unblocked remains). No code changed; no frozen artifacts changed.
