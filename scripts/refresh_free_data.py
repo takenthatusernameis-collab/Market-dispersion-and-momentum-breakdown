@@ -442,20 +442,13 @@ def main() -> int:
     cm_panel_rows = sum(len(v) for v in frames.values())
 
     # The provenance summary's date_first/date_last must describe the panel CSV
-    # actually written, not a copy of the manifest's per-metric boundaries. The
-    # manifest is computed after sorting each metric's rows by time ascending,
-    # so its time_first/time_last are correct -- but the previous code reached
-    # into the manifest for the alphabetically-first asset's CapMrktEstUSD
-    # time_first (which is that asset's LATEST observation, since CoinMetrics
-    # paginates descending) and for the max CapMrktEstUSD time_last across assets
-    # (some other asset's EARLIEST observation). The committed summary read
-    # date_first 2026-07-16 / date_last 2023-04-04: an inverted boundary that
-    # contradicted the panel CSV on disk (2023-01-01..2026-10-23). Derive the
-    # summary from the panel CSV itself, the single source of truth.
+    # actually written. Derive from the panel CSV itself.
     with cm_panel_path.open(newline="", encoding="utf-8") as fh:
-        _cm_dates = [r["date"][:10] for r in csv.DictReader(fh) if r.get("date")]
-    cm_date_first = min(_cm_dates) if _cm_dates else None
-    cm_date_last = max(_cm_dates) if _cm_dates else None
+        _cm_dates_full = [r["date"] for r in csv.DictReader(fh) if r.get("date")]
+    cm_date_first_full = min(_cm_dates_full) if _cm_dates_full else None
+    cm_date_last_full = max(_cm_dates_full) if _cm_dates_full else None
+    cm_date_first = cm_date_first_full[:10] if cm_date_first_full else None
+    cm_date_last = cm_date_last_full[:10] if cm_date_last_full else None
 
     cm_manifest_path = panels / "marketcap_panel_manifest.json"
     cm_manifest = {
@@ -472,7 +465,7 @@ def main() -> int:
         # min/max (test_panel_start_end_match_csv_min_max). Copying the bare
         # request args (e.g. "2026-10-31") produced a format mismatch against the
         # panel's "2026-10-31T00:00:00.000000000Z" rows.
-        "start": cm_date_first,
+        "start": cm_date_first,  # YYYY-MM-DD for manifest compatibility
         "end": cm_date_last,
         "frequency": CM_FREQUENCY,
         "metrics": CM_METRICS,

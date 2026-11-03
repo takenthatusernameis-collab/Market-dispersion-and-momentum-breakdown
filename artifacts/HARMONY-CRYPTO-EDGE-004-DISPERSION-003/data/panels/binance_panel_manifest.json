@@ -1,7 +1,7 @@
 {
   "archive": "https://data.binance.vision/data/futures/um",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-11-03T02:35:27Z",
+  "fetch_utc": "2026-11-03T02:45:13Z",
   "series": [
     {
       "asset": "btc",

@@ -1519,10 +1519,10 @@
     "xrp",
     "zec"
   ],
-  "end": "2026-10-31",
+  "end": "2026-10-31T00:00:00.000000000Z",
   "endpoint": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-11-02T00:30:12Z",
+  "fetch_utc": "2026-11-03T02:45:13Z",
   "frequency": "1d",
   "metrics": [
     "CapMrktEstUSD",
@@ -1532,5 +1532,5 @@
   "panel_rows": 43909,
   "panel_sha256": "9fb6daf65b2269fec6d06e6b4e8cfbb1b2b98a50ee103c342fe131fe2aa77af8",
   "source": "coinmetrics_community_api",
-  "start": "2023-01-01"
+  "start": "2023-01-01T00:00:00.000000000Z"
 }
