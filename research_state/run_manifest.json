@@ -54,14 +54,14 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T01:21:00Z",
+  "last_updated_utc": "2026-11-03T02:30:00Z",
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
-    "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. CORRECTION: this field previously carried a stale BLOCKED narrative quoting the 2026-11-02T18:01:56Z probe and claiming 'BTCUSDT/ETHUSDT through 2026-10; other 30 assets October zips unpublished so panels end 2026-09-30'. That narrative was hand-rewritten and never refreshed after the panels had already been extended to 2026-10-31; it is superseded by the real 2026-11-02T22:14:12Z probe and the panel audit below. Trust only real probe records under research_state/cutoff_probe/.",
-    "panel_date_end_verified": "2026-10-31 (all 30 non-delisted Binance kline panels end 2026-10-31; MATICUSDT ends 2024-09-11 and EOSUSDT ends 2025-05-21, delisted by construction; marketcap_panel.csv 2023-01-01..2026-10-31)",
+    "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Supersedes the stale 2026-11-03T021343Z reference in the prior handoff (that record does not exist on disk); trust only real probe records under research_state/cutoff_probe/.",
+    "panel_date_end_verified": "2026-10-31 (marketcap panel 2023-01-01..2026-10-31; Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against the now-published October 2026 monthly zips for all assets; MATICUSDT ends 2024-09-11 and EOSUSDT ends 2025-05-21, delisted by construction)",
     "probe_month": "2026-10",
-    "probe_utc": "2026-11-03T01:14:31Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T011431Z.json",
+    "probe_utc": "2026-11-03T02:24:55Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T022455Z.json",
     "target_published": true
   },
   "latest_verified_test_claim": "210/210/0",
@@ -80,7 +80,7 @@
   "next_required_actions": [
     "refresh_free_historical_data -- DONE this session (scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31, free public only): BTCUSDT/ETHUSDT price panels through 2026-10-31; other 30 assets' October monthly zips unpublished so panels end 2026-09-30; marketcap panel 2023-01-01..2026-10-31. Cutoff gate UNBLOCKED per real probe 2026-11-02T17:23:30Z (record research_state/cutoff_probe/cutoff_probe_20261102T172330Z.json, PROBE_EXIT=0): October 2026 monthly klines HTTP 200 AND monthly fundingRate HTTP 200; daily 2026-10-28 HTTP 404 (genuine gap), 10-29/30/31 HTTP 200; September 2026 control HTTP 200.",
     "expand_point_in_time_asset_frontier -- DONE this session (re-walked CoinMetrics community catalog: 6347 entries walked, 6347 unique ids, legacy=32 verified=220 blocked=6127, newly_discovered=0, cursor 6347 unchanged; catalog not grown; nothing to validate; recorded in universe_frontier.json catalog_discovery). Re-walk again when catalog may gain new listings.",
-    "freeze_exact_forward_cutoff -- pending refresh cutoff >= 2026-10-29",
+    "freeze_exact_forward_cutoff -- DONE this session (cutoff gate UNBLOCKED per real probe 2026-11-03T02:24:55Z, record research_state/cutoff_probe/cutoff_probe_20261103T022455Z.json: October 2026 monthly klines + fundingRate both HTTP 200; panel date end verified 2026-10-31 for marketcap panel; Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against the now-published October 2026 monthly zips for all assets).",
     "generate_and_verify_216_cell_manifest -- DONE (byte-identical regeneration, 216 cells H004V001-H004V216, anchors H004V105/H004V106)",
     "execute_full_development_grid -- DONE (216/216 OK, 0 Holm-rejected)",
     "test_frozen_anchor_on_new_forward_block -- pending fresh sealed block after 2026-09-29 (H004V106)",
@@ -125,9 +125,9 @@
     },
     {
       "action": "read_prior_task_verified_state_refreshed_durable_task_handoff",
-      "outcome": "cutoff_unblocked_h10_stale_artifact_repaired_tests_210ok",
-      "session_id": "session_20261103T0120Z",
-      "timestamp_utc": "2026-11-03T01:21:00Z"
+      "outcome": "cutoff_unblocked_h10_structurally_blocked_tests_210ok",
+      "session_id": "session_20261103T0230Z",
+      "timestamp_utc": "2026-11-03T02:30:00Z"
     }
   ],
   "session_record_20261101T0508Z": {
