@@ -1,4 +1,4 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T22:03Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T22:36Z)
 
 ## Situation
 - Today 2026-11-03. November 2026 not published. Genuine data-maturity blocker; cutoff gate BLOCKED until >= 2026-11-29.
@@ -26,4 +26,3 @@
 - Correct for complete declared multiple-testing family if promoting.
 - Trust only real probe records under research_state/cutoff_probe/.
 - Adaptive-gate trigger NOT met; do not start an exploratory track yet.
-"
