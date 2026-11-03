@@ -1,4 +1,4 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T19:45Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T19:49Z)
 
 ## Situation
 - Today 2026-11-03. November 2026 not published. Genuine data-maturity blocker; cutoff gate BLOCKED until >= 2026-11-29.
@@ -25,3 +25,4 @@
 - Do not relax 30-day maturity, MIN_ASSETS_DECILES=20, or trailing-decile state rule.
 - Correct for complete declared multiple-testing family if promoting.
 - Trust only real probe records under research_state/cutoff_probe/.
+"
