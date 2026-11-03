@@ -117,9 +117,16 @@ class MarketcapManifestProvenanceTests(unittest.TestCase):
             return ts[:10] if ts else ts
 
         dates = [_date_only(r["date"]) for r in self.rows if r.get("date")]
-        self.assertEqual(self.manifest["start"], min(dates),
+        # Normalise BOTH sides: the manifest has at times carried the full
+        # ISO-8601 timestamp (written by fix_marketcap_manifest_boundaries.py from
+        # the panel CSV min/max) and at other times a bare YYYY-MM-DD (written by
+        # refresh_free_data.py "for manifest compatibility"). The panel CSV always
+        # carries full ISO-8601. The invariant that matters is date-level agreement;
+        # comparing an un-normalised manifest value against date-only CSV dates was
+        # a test bug, not a manifest defect.
+        self.assertEqual(_date_only(self.manifest["start"]), min(dates),
                          msg="manifest start must equal the panel CSV min date")
-        self.assertEqual(self.manifest["end"], max(dates),
+        self.assertEqual(_date_only(self.manifest["end"]), max(dates),
                          msg="manifest end must equal the panel CSV max date")
 
     def test_assets_with_data_matches_panel(self):

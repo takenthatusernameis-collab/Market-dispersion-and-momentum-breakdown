@@ -1166,6 +1166,486 @@
         "raw_dir": "data/raw/binance/klines/ETHUSDT",
         "rows": 1399,
         "symbol": "ETHUSDT"
+      },
+      {
+        "asset": "1inch",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 2286,
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "asset": "aave",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 2286,
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "asset": "ach",
+        "date_first": "1677052800010",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 2129,
+        "symbol": "ACHUSDT"
+      },
+      {
+        "asset": "ada",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "ADAUSDT"
+      },
+      {
+        "asset": "agld",
+        "date_first": "1690560000000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 1660,
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "asset": "algo",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "ALGOUSDT"
+      },
+      {
+        "asset": "atom",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "ATOMUSDT"
+      },
+      {
+        "asset": "avax",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "AVAXUSDT"
+      },
+      {
+        "asset": "bch",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "BCHUSDT"
+      },
+      {
+        "asset": "bnb",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "BNBUSDT"
+      },
+      {
+        "asset": "dash",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "DASHUSDT"
+      },
+      {
+        "asset": "doge",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "DOGEUSDT"
+      },
+      {
+        "asset": "dot",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "DOTUSDT"
+      },
+      {
+        "asset": "eos",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "EOSUSDT"
+      },
+      {
+        "asset": "etc",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "ETCUSDT"
+      },
+      {
+        "asset": "fil",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "FILUSDT"
+      },
+      {
+        "asset": "iost",
+        "date_first": "1672531200000",
+        "date_last": "1793476800003",
+        "kind": "funding",
+        "rows": 4584,
+        "symbol": "IOSTUSDT"
+      },
+      {
+        "asset": "link",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "LINKUSDT"
+      },
+      {
+        "asset": "ltc",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "LTCUSDT"
+      },
+      {
+        "asset": "matic",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "MATICUSDT"
+      },
+      {
+        "asset": "neo",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "NEOUSDT"
+      },
+      {
+        "asset": "qtum",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "QTUMUSDT"
+      },
+      {
+        "asset": "rune",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "RUNEUSDT"
+      },
+      {
+        "asset": "sol",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "SOLUSDT"
+      },
+      {
+        "asset": "trx",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "asset": "uni",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "UNIUSDT"
+      },
+      {
+        "asset": "vet",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "VETUSDT"
+      },
+      {
+        "asset": "xlm",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "XLMUSDT"
+      },
+      {
+        "asset": "xrp",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "XRPUSDT"
+      },
+      {
+        "asset": "zec",
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "kind": "funding",
+        "rows": 4200,
+        "symbol": "ZECUSDT"
+      },
+      {
+        "asset": "1inch",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 761,
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "asset": "aave",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 761,
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "asset": "ach",
+        "date_first": "1677024000000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 709,
+        "symbol": "ACHUSDT"
+      },
+      {
+        "asset": "ada",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "ADAUSDT"
+      },
+      {
+        "asset": "agld",
+        "date_first": "1690588800000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 552,
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "asset": "algo",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "ALGOUSDT"
+      },
+      {
+        "asset": "atom",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "ATOMUSDT"
+      },
+      {
+        "asset": "avax",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "AVAXUSDT"
+      },
+      {
+        "asset": "bch",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "BCHUSDT"
+      },
+      {
+        "asset": "bnb",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "BNBUSDT"
+      },
+      {
+        "asset": "dash",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "DASHUSDT"
+      },
+      {
+        "asset": "doge",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "DOGEUSDT"
+      },
+      {
+        "asset": "dot",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "DOTUSDT"
+      },
+      {
+        "asset": "eos",
+        "date_first": "1672531200000",
+        "date_last": "1747785600000",
+        "kind": "klines",
+        "rows": 872,
+        "symbol": "EOSUSDT"
+      },
+      {
+        "asset": "etc",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "ETCUSDT"
+      },
+      {
+        "asset": "fil",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "FILUSDT"
+      },
+      {
+        "asset": "iost",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "IOSTUSDT"
+      },
+      {
+        "asset": "link",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "LINKUSDT"
+      },
+      {
+        "asset": "ltc",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "LTCUSDT"
+      },
+      {
+        "asset": "matic",
+        "date_first": "1672531200000",
+        "date_last": "1726012800000",
+        "kind": "klines",
+        "rows": 620,
+        "symbol": "MATICUSDT"
+      },
+      {
+        "asset": "neo",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "NEOUSDT"
+      },
+      {
+        "asset": "qtum",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "QTUMUSDT"
+      },
+      {
+        "asset": "rune",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "RUNEUSDT"
+      },
+      {
+        "asset": "sol",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "SOLUSDT"
+      },
+      {
+        "asset": "trx",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "asset": "uni",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "UNIUSDT"
+      },
+      {
+        "asset": "vet",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "VETUSDT"
+      },
+      {
+        "asset": "xlm",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "XLMUSDT"
+      },
+      {
+        "asset": "xrp",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "XRPUSDT"
+      },
+      {
+        "asset": "zec",
+        "date_first": "1672531200000",
+        "date_last": "1793404800000",
+        "kind": "klines",
+        "rows": 1399,
+        "symbol": "ZECUSDT"
       }
     ],
     "window": {
