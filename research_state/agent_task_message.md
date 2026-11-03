@@ -1,25 +1,27 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-03T03:23:08Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T03:24:22Z)
 
 ## Situation
-- Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
+- Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (608 formations, +0.6165 net 1x).
 - Full test suite green: 210 tests OK (skipped=1).
-- Free data refreshed through 2026-10-31 (CoinMetrics + Binance panels).
-- Manifest/provenance tests pass.
-- Cutoff gate UNBLOCKED.
-- H10 fresh block structurally blocked (durable). Adaptive research-gate trigger met.
+- Free data refreshed through 2026-10-31; cutoff gate UNBLOCKED (October 2026 monthly klines+funding published).
+- H10 preregistered at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md`, hypothesis H10 in registry (next_sequence_number 10).
+- Fresh block evaluated in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`: builds with 26 eligible assets (>=20) but IMMATURE/NULL_DIFF. n_formations=1 (2026-09-30), n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null. Block is sealed correctly; no frozen artifacts modified.
 
 ## Your task
-1. Re-verify canonical hash + tests.
-2. Create a new uniquely identified exploratory version under adaptive research-gate policy (new ID, new artifact paths, preregistration) addressing the H10 structural blocker with the smallest feasible change (e.g. expand fresh-block window backward to accumulate ≥30 prior in-block dispersions, or a descriptive measurement feasibility study on development data). Keep frozen artifacts unchanged.
-3. Do not relax 30-day maturity/state rule or MIN_ASSETS_DECILES=20. Do not modify canonical forward_block/.
-4. Update frontier, registry, manifest, handoff.
+1. Re-verify canonical hash + tests (`python3 -m unittest discover -s tests`).
+2. Monitor for November 2026 data vintage (advance cutoff past 2026-10-31). When available, refresh data if needed and re-run the fresh sealed block:
+   `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`
+   (separate dir, never `forward_block/`). Do not relax 30-day maturity or MIN_ASSETS_DECILES=20.
+3. If n_high>0 and n_low>0, report full results with overlap-aware/HAC uncertainty and apply the predeclared decision rule: require |high_low_diff_net_1x| above predeclared economic-significance threshold after costs AND Holm-significance across the complete multiple-testing family before any confirmatory claim. Neither raw p-values nor return alone may promote a winner.
+4. Update frontier, registry, manifest and handoff with results; record any blocker with exact unmet requirements if still immature/blocked.
 
 ## Hard constraints
 - Free public data only; historical research only; no live/paper trading.
-- Preserve DISPERSION-001/002. Never modify canonical forward_block/.
-- Do not relax 30-day maturity/state rule or MIN_ASSETS_DECILES=20.
-- Do not write "wait for a new experiment ID".
+- Preserve DISPERSION-001/002. Never modify canonical `forward_block/` or other frozen artifacts.
+- Do not relax 30-day maturity, MIN_ASSETS_DECILES=20, or the state rule.
+- Do not write "wait for a new experiment ID". If blocked by data maturity, wait for data vintage; do not fabricate formations/outcomes.
+- Correct for complete declared multiple-testing family if promoting.
 
-## Open questions
-- Does expanding H10 fresh-block window backward yield ≥30 prior in-block dispersions and n_high>0/n_low>0 on dev data?
-(End of file)
+## Root cause (for awareness)
+- 2026-10-28 missing from merged price index (Binance archive gap) shifts `last_allowed_formation` to 2026-09-30.
+- `trailing_window_outer_deciles` requires ≥30 prior in-block dispersions to assign high/low states; fresh window is too short until November vintage matures.
