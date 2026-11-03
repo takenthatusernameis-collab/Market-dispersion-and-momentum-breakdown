@@ -1,3 +1,14 @@
+## Session record 2026-11-03T19:04Z (durable handoff update)
+- **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED, gate >= 2026-11-29). No frozen artifact/source changed this pass.
+- **Completed this pass:**
+  1. Read prior handoff + task message + AGENTS.md; verified current state per instructions.
+  2. Same-run recovery: local HEAD 64a2de8b equals origin/main 64a2de8b; no local-ahead commits; no reset performed. Persistence failure diagnosed as transient remote checkpoint; controller will retry.
+  3. Full suite: `python3 -m unittest discover -s tests` -> **218 run, OK (skipped=1), EXIT=0**.
+  4. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged; fresh H10 block unchanged (IMMATURE).
+  5. Did NOT re-probe November 2026 before cutoff >= 2026-11-29.
+- **Cutoff status:** BLOCKED. November 2026 not published.
+- **Next action:** Re-probe November 2026 on/after 2026-11-29 per established procedure. Never write "wait for a new experiment ID."
+
 ## Session record 2026-11-03T18:57Z (durable handoff update)
 - **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED, gate >= 2026-11-29). No frozen artifact/source changed this pass.
 - **Completed this pass:**
