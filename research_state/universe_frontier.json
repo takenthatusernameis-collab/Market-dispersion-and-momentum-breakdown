@@ -12772,7 +12772,7 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-03T11:16:09Z",
+  "last_updated_utc": "2026-11-03T13:24:00Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12784,12 +12784,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T11:16:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:23:10Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
+    "note": "Real live probe 2026-11-03T12:33:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. This is the LATEST real November 2026 probe; supersedes the 2026-11-03T11:16:09Z summary still quoted by latest_november_2026_probe below (kept for audit continuity). Trust only real probe records under research_state/cutoff_probe/.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
-    "probe_utc": "2026-11-03T11:16:09Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
+    "probe_utc": "2026-11-03T12:33:09Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
     "target_published": false
   },
   "latest_november_2026_probe": {
@@ -12802,16 +12802,16 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T11:16:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T09:23:10Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
+    "note": "Real live probe 2026-11-03T12:33:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Refreshed 2026-11-03T13:24Z to the latest real November 2026 probe; the earlier 11:16:09Z summary is preserved verbatim in the 2026-11-03T13:24Z handoff session record for audit continuity.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
-    "probe_utc": "2026-11-03T11:16:09Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
+    "probe_utc": "2026-11-03T12:33:09Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
     "target_published": false
   },
   "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
-  "next_action": "Bounded independent work only. H10 fresh sealed block is STRUCTURALLY BLOCKED (durable, not a data gap): forward_block_start=2026-09-30 + 30-day forward horizon => <=2 formations in the block window; trailing_window_outer_deciles needs >=30 prior in-block dispersions before any high/low state assignment, so n_high=n_low=0 can never be satisfied with this config even after the November 2026 vintage matures. Do NOT wait for November vintage maturity; do NOT relax the 30-day maturity rule, the state rule or MIN_ASSETS_DECILES=20; do NOT write 'wait for a new experiment ID.' Next: (1) re-run scripts/refresh_free_data.py --price-end 2026-10-31 --cap-end 2026-10-31 (free public data) to bring all Binance kline panels through 2026-10-31 now that October monthly zips are published; re-run python3 -m unittest discover -s tests; verify canonical H004V106 unchanged. (2) Per the adaptive research-gate policy (durable structural impossibility evidenced by sample counts), create a new uniquely identified exploratory version with the smallest feasible change (e.g. expand the fresh-block window backward to accumulate >=30 prior in-block dispersions under a NEW experiment ID/preregistration, or a descriptive measurement feasibility study on development data). Status EXPLORATORY_ONLY or INCONCLUSIVE; cannot validate/replace/unlock the frozen confirmatory track. Continue candidate frontier expansion and red-team work in parallel.",
+  "next_action": "Bounded independent work only. H10 fresh sealed block is BLOCKED BY DATA MATURITY, not by a durable structural impossibility: DISP-003-H10-FEASIBILITY-001 (integrity_audit/H10_feasibility_analysis_20261103.json, verified from on-disk panels) shows the October 2026 cutoff (2026-10-31) yields exactly 1 fresh-block formation because forward_block_start=2026-09-30 + 30-day horizon pins last_allowed_formation to 2026-09-30, while trailing_window_outer_deciles needs >=30 prior in-block dispersions. CORRECTION to an earlier frontier note that called this a durable structural impossibility: the projection shows November 2026 (cutoff 2026-11-30) is the FIRST cutoff that structurally could classify high/low (~31 formations). So waiting for the November 2026 vintage is the correct and only path for the registered H10 config; it is not a dead end and does not trigger the adaptive-gate exploratory track. Do NOT relax the 30-day maturity rule, the state rule or MIN_ASSETS_DECILES=20; do NOT fabricate formations/outcomes; do NOT open the canonical sealed holdout. Next: (1) re-probe November 2026 (python3 scripts/probe_cutoff_gate.py --probe-month 2026-11) only when cutoff >= 2026-11-29; (2) if target_published=true, refresh free public data (python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>), re-run python3 -m unittest discover -s tests, verify H004V106 unchanged vs git show HEAD:, then re-run the fresh sealed block into forward_block_h10_fresh/ (never forward_block/): python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/; (3) require n_high>0 AND n_low>0, |high_low_diff_net_1x| above the predeclared economic-significance threshold after costs, and Holm-significance across the complete 216-cell family before any confirmatory claim. If still IMMATURE, record the exact blocker and wait for the next vintage. Continue candidate frontier expansion and red-team work in parallel where unblocked.",
   "next_candidate_batch_size": 25,
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "rank_frontier_exhausted": false,
