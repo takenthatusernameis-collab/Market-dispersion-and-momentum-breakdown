@@ -1,9 +1,9 @@
-## Session record 2026-11-03T22:36Z (durable handoff update)
+## Session record 2026-11-03T22:39Z (durable handoff update)
 - **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED, gate >= 2026-11-29). No frozen artifact/source changed this pass.
 - **Completed this pass:**
   1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified current state per instructions.
-  2. Full suite: `python3 -m unittest discover -s tests` -> **218 run, OK (skipped=1), EXIT=0**. Mock `test_cutoff_probe.py` prints synthetic UNBLOCKED lines to stdout only; no real probe file written. Trust only real records under research_state/cutoff_probe/.
-  3. Latest real probe `cutoff_probe_20261103T154136Z.json` remains current: target_published=false, cutoff_gate=BLOCKED, probe_exit=1, archive_alive=true; November 2026 monthly/daily archives all HTTP 404; September 2026 control HTTP 200.
+  2. Full suite: `python3 -m unittest discover -s tests` -> **218 run, OK (skipped=1), EXIT=0**.
+  3. Latest real probe `cutoff_probe_20261103T154136Z.json` remains current: target_published=false, cutoff_gate=BLOCKED, probe_exit=1, archive_alive=true; November 2026 monthly/daily archives all HTTP 404; September 2026 control HTTP 200. Trust only real records under research_state/cutoff_probe/ (mock test_cutoff_probe.py stdout only).
   4. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk AND `git show HEAD:`. Fresh H10 block sha256 `4106f42105d224ab0880710e8e1847c012025e5d50fdd47a3e66feb20e03435a` unchanged: n_formations=1, n_high=0, n_low=0, n_mid=1, date 2026-09-30, high_low_diff_net_1x null, overlap_aware_uncertainty IMMATURE.
   5. Did NOT re-probe November 2026 before cutoff >= 2026-11-29 (today 2026-11-03 before gate; same-day repeat of known failure prohibited). git status shows only `__pycache__` artifacts changed; no source/config/artifact files modified. Old experiment artifacts unchanged.
 - **Cutoff status:** BLOCKED. November 2026 not published; October 2026 cannot unblock H10.
