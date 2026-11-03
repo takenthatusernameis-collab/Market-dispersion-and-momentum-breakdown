@@ -1,12 +1,12 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T03:26:48Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T03:31:XXZ)
 
 ## Situation
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (608 formations, +0.6165 net 1x).
-- Full test suite green: 210 tests OK (skipped=1).
-- Free data refreshed through 2026-10-31; cutoff gate UNBLOCKED (October 2026 monthly klines+funding published).
-- November 2026 daily klines/funding still 404 (not yet published) — fresh block remains immature/blocked.
-- H10 preregistered at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md`, hypothesis H10 in registry (next_sequence_number 10).
-- Fresh block evaluated in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`: builds with 26 eligible assets (>=20) but IMMATURE/NULL_DIFF. n_formations=1 (2026-09-30), n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null. Block is sealed correctly; no frozen artifacts modified.
+- Full test suite green: `python3 -m unittest discover -s tests` → Ran 210 tests OK (skipped=1).
+- Free data refreshed through 2026-10-31; cutoff gate for Oct 2026: UNBLOCKED (probe shows target published / archive alive).
+- November 2026 daily klines/funding still not published (404) — fresh block remains immature/blocked.
+- H10 preregistered at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md`, hypothesis H10 in registry.
+- Fresh block evaluated in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`: builds with 26 eligible assets (>=20) but IMMATURE/NULL_DIFF. n_formations=1 (2026-09-30), n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null. Block sealed correctly; no frozen artifacts modified (canonical `forward_block/` untouched).
 
 ## Your task
 1. Re-verify canonical hash + tests (`python3 -m unittest discover -s tests`).
@@ -14,7 +14,7 @@
    `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`
    (separate dir, never `forward_block/`). Do not relax 30-day maturity or MIN_ASSETS_DECILES=20.
 3. If n_high>0 and n_low>0, report full results with overlap-aware/HAC uncertainty and apply the predeclared decision rule: require |high_low_diff_net_1x| above predeclared economic-significance threshold after costs AND Holm-significance across the complete multiple-testing family before any confirmatory claim. Neither raw p-values nor return alone may promote a winner.
-4. Update frontier, registry, manifest and handoff with results; record any blocker with exact unmet requirements if still immature/blocked.
+4. Update frontier/registry/manifest/handoff with results; record any blocker with exact unmet requirements if still immature/blocked.
 
 ## Hard constraints
 - Free public data only; historical research only; no live/paper trading.
@@ -26,5 +26,3 @@
 ## Root cause (for awareness)
 - 2026-10-28 missing from merged price index (Binance archive gap) shifts `last_allowed_formation` to 2026-09-30.
 - `trailing_window_outer_deciles` requires ≥30 prior in-block dispersions to assign high/low states; fresh window is too short until November vintage matures.
-" filePath">
-/home/runner/work/Market-dispersion-and-momentum-breakdown/Market-dispersion-and-momentum-breakdown/research_state/agent_task_message.md
