@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T14:30Z",
+  "last_updated_utc": "2026-11-03T15:22:30Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -73,24 +73,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
     "target_published": false
   },
-  "latest_november_2026_probe": {
-    "canonical_forward_block": {
-      "block_sealed": true,
-      "data_cutoff_utc": "2026-09-30T00:00:00Z",
-      "high_low_diff_net_1x": 0.6165223953929935,
-      "last_allowed_formation_date": "2026-08-31",
-      "n_formations": 608,
-      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
-    },
-    "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T14:29:16Z (record research_state/cutoff_probe/cutoff_probe_20261103T142916Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Identical to the 2026-11-03T13:41:20Z probe; no state change. Supersedes the 2026-11-03T12:33:09Z November probe summary; trust only real probe records under research_state/cutoff_probe/.",
-    "probe_exit": 1,
-    "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T142916Z.json",
-    "probe_utc": "2026-11-03T14:29:16Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T142916Z.json",
-    "target_published": false
-  },
+  "latest_november_2026_probe": "research_state/cutoff_probe/cutoff_probe_20261103T152208Z.json",
   "latest_verified_test_claim": "216/216/0",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -214,6 +197,12 @@
       "outcome": "november_2026_target_published_false_cutoff_blocked_h10_immature_tests_210ok",
       "session_id": "session_20261103T0926Z",
       "timestamp_utc": "2026-11-03T09:26:15Z"
+    },
+    {
+      "action": "read_prior_task_reprobed_november_2026_still_blocked_refreshed_handoff_and_task_message",
+      "outcome": "november_2026_target_published_false_cutoff_blocked_h10_immature_canonical_h004v106_sha256_unchanged_tests_216ok_frozen_artifacts_unchanged",
+      "session_id": "session_20261103T1522Z",
+      "timestamp_utc": "2026-11-03T15:22:30Z"
     }
   ],
   "session_record_20261101T0508Z": {

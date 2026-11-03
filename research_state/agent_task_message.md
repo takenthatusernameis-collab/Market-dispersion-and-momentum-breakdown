@@ -1,11 +1,11 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (updated 2026-11-03T14:40Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (updated 2026-11-03T15:22Z)
 
 ## Situation
 - Today 2026-11-03. November 2026 not published (month not over). Genuine data-maturity blocker.
 - Structural feasibility (DISP-003-H10-FEASIBILITY-001): October 2026 cannot unblock H10. At cutoff 2026-10-31 fresh block window gives exactly 1 formation; trailing-decile rule needs >=30 prior in-block dispersions. November 2026 is structurally the first cutoff that could classify high/low (~31 formations projected). Artifact: `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/H10_feasibility_analysis_20261103.json`; tests `tests/test_h10_feasibility.py`.
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (verified vs disk and vs `git show HEAD:`). Fresh H10 block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, date 2026-09-30, high_low_diff_net_1x=null, overlap_aware_uncertainty status IMMATURE). Fresh block sha256 `4106f42105d224ab0880710e8e1847c012025e5d50fdd47a3e66feb20e03435a`.
 - Suite: 216 run, 216 OK, 0 failures (skipped=1). Requires numpy/pandas installed.
-- Latest probe 2026-11-03T14:40:45Z (record `research_state/cutoff_probe/cutoff_probe_20261103T144045Z.json`): Nov 2026 klines AND fundingRate HTTP 404; daily endpoints also 404; Sept 200 OK (control). target_published=false, cutoff_gate=BLOCKED. Identical to prior probes; no state change.
+- Latest probe 2026-11-03T15:22:08Z (record `research_state/cutoff_probe/cutoff_probe_20261103T152208Z.json`): Nov 2026 klines AND fundingRate HTTP 404; daily endpoints also 404; Sept 200 OK (control). target_published=false, cutoff_gate=BLOCKED. Identical to prior probes; no state change.
 
 ## Your task
 1. Do NOT re-probe November 2026 before cutoff >= 2026-11-29. Today 2026-11-03; re-probing repeats known failure, adaptive-gate trigger not met.
@@ -21,5 +21,3 @@
 - Preserve DISPERSION-001/002. Never modify canonical `forward_block/` or other frozen artifacts.
 - Do not relax 30-day maturity, MIN_ASSETS_DECILES=20, or trailing-decile state rule.
 - Correct for complete declared multiple-testing family if promoting.
-EOF
-echo done
