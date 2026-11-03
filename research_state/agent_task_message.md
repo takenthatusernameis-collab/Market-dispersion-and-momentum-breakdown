@@ -1,10 +1,10 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-03T00:11:35Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-03T00:15:48Z)
 
 ## Situation
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
 - Full test suite green: 206 tests OK (skipped=1).
-- Cutoff gate UNBLOCKED (probe records under `research_state/cutoff_probe/`).
-- H10 fresh block remains IMMATURE (n_formations=1, n_high=0/n_low=0/n_mid=1, date_first/date_last 2026-09-30) in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh_check/`. No re-run performed.
+- Cutoff gate UNBLOCKED.
+- H10 fresh block remains IMMATURE (n_formations=1, n_high=0/n_low=0/n_mid=1, date_first/date_last 2026-09-30).
 
 ## Your task
 Do bounded independent work (tests/validation/design/red-team/source coverage/candidate audits). Re-verify canonical hash and tests as needed. Do not wait for H10 to mature; only re-run H10 fresh block evaluation when n_high>0 and n_low>0, following prereg exactly (H10_FRESH_FORWARD_BLOCK_v1.md).
@@ -24,5 +24,5 @@ Do bounded independent work (tests/validation/design/red-team/source coverage/ca
 
 ## Open questions for the next agent
 - When n_high>0 and n_low>0 appear in the fresh block (November 2026 vintage maturity), re-run per H10 prereg to a new separate dir and evaluate |high_low_diff_net_1x| against the predeclared economic-significance threshold after costs, with Holm correction across the cell family. Do not relax maturity/state rules.
-
-(End of file - total 26 lines)
+" filePath">
+research_state/agent_task_message.md
