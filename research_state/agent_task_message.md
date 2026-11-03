@@ -25,6 +25,6 @@
 - Do not write "wait for a new experiment ID". If blocked by data maturity, wait for data vintage.
 - Correct for complete declared multiple-testing family if promoting.
 
-## Latest probe (2026-11-03T06:06:43Z)
-- probe-month 2026-11: target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T060643Z.json`).
+## Latest probe (2026-11-03T06:07:42Z)
+- probe-month 2026-11: target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T060742Z.json`).
 - Tests green (210 OK, 1 skipped). H004V106 unchanged. Fresh H10 still IMMATURE/NULL_DIFF. No frozen artifacts modified.
