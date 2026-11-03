@@ -1,9 +1,9 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T18:50Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T18:52Z)
 
 ## Situation
 - Today 2026-11-03. November 2026 not published (month not over). Genuine data-maturity blocker; cutoff gate BLOCKED until >= 2026-11-29.
 - Latest REAL probe: research_state/cutoff_probe/cutoff_probe_20261103T154136Z.json (2026-11-03T15:41:36Z): November 2026 monthly klines AND monthly fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; September 2026 control HTTP 200. target_published=false, cutoff_gate=BLOCKED, probe_exit=1.
-- Do NOT re-probe November 2026 before cutoff >= 2026-11-29.
+- Do NOT re-probe November 2026 before cutoff >= 2026-11-29. Today (2026-11-03) is before the gate date; re-probing is a same-day repeat of a known failure and is prohibited.
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged; sealed forward block is development/exploratory evidence only.
 - Fresh H10 block unchanged: n_formations=1, n_high=0, n_low=0, IMMATURE.
 - Environment: numpy/pandas installed; suite green (218 run, OK, skipped=1).
@@ -22,5 +22,3 @@
 - Do not relax 30-day maturity, MIN_ASSETS_DECILES=20, or trailing-decile state rule.
 - Correct for complete declared multiple-testing family if promoting.
 - Trust only real probe records under research_state/cutoff_probe/.
-EOF
-echo done
