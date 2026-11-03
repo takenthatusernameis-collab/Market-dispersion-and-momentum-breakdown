@@ -12769,7 +12769,7 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-02T22:15:00Z",
+  "last_updated_utc": "2026-11-03T01:21:00Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12781,20 +12781,20 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "UNBLOCKED",
-    "note": "Real live probe 2026-11-02T22:14:12Z (record research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json, EXIT=0). October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); target_published true. October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 2026-10-29/30/31 HTTP 200; September 2026 control monthly klines + fundingRate + daily HTTP 200, so the archive is alive and the gate is met by the two monthly endpoints that refresh_free_data.py consumes. CORRECTION: this field previously quoted the BLOCKED 2026-11-02T07:25:12Z probe (record cutoff_probe_20261102T072512Z.json) even though a later real probe had already returned UNBLOCKED; the stale BLOCKED summary was a hand-rewritten copy that had drifted from the record it named, and is now superseded. The earlier BLOCKED narrative is preserved verbatim in the corrections array for auditability and is not promoted.",
+    "note": "Real live probe 2026-11-03T01:14:31Z (record research_state/cutoff_probe/cutoff_probe_20261103T011431Z.json, EXIT=0). October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); target_published true, cutoff_gate UNBLOCKED. October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Panels already refreshed through 2026-10-31 (all 30 non-delisted Binance kline panels end 2026-10-31; MATICUSDT ends 2024-09-11 and EOSUSDT ends 2025-05-21, delisted by construction; marketcap_panel.csv 2023-01-01..2026-10-31). Supersedes the hand-written 2026-11-02T22:14:12Z narrative in this field; trust only real probe records under research_state/cutoff_probe/.",
     "october_2026_daily_klines": "2026-10-28 HTTP 404; 2026-10-29/30/31 HTTP 200",
     "october_2026_monthly_fundingRate": "HTTP 200 (943 bytes)",
     "october_2026_monthly_klines": "HTTP 200 (2064 bytes)",
     "probe_exit": 0,
     "probe_month": "2026-10",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json",
-    "probe_utc": "2026-11-02T22:14:12Z",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T011431Z.json",
+    "probe_utc": "2026-11-03T01:14:31Z",
     "record": "research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json",
     "september_2026_control": "HTTP 200",
     "target_published": true
   },
   "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
-  "next_action": "Evaluate H004V106 anchor on the next sealed forward block after 2026-09-29; continue candidate frontier expansion; red-team inference, accounting, and holdout integrity; preregister next falsifiable experiment if warranted.",
+  "next_action": "H10 fresh sealed block re-run to the preregistered separate dir (forward_block_h10_fresh/, never forward_block/) reproduces the same IMMATURE outcome: 1 formation (2026-09-30), n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x null. The binding constraint is formation-count maturity: trailing_window_outer_deciles needs >=30 prior in-block dispersions before any high/low state assignment, and the sealed window 2026-09-30..2026-10-01 holds <=2 formations even ignoring the genuine 2026-10-28 archive gap. Wait for the November 2026 vintage to mature (cutoff advance so the fresh block spans enough formation dates with completed 30-day outcomes); then re-run per preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md and require n_high>0 and n_low>0, |high_low_diff_net_1x| above the predeclared economic-significance threshold after costs, and Holm-significance across the cell family before any confirmatory claim. Do not relax the 30-day maturity rule, the state rule or MIN_ASSETS_DECILES=20. Continue candidate frontier expansion and red-team work in parallel.",
   "next_candidate_batch_size": 25,
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "rank_frontier_exhausted": false,

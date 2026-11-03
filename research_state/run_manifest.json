@@ -46,18 +46,25 @@
     "repair": "scripts/repair_funding_panels.py rewrites each panel from the raw zips already on disk (no re-download) with the symbol column prefixed. Production fixed in refresh_free_data.py and normalize_binance_panels.py.",
     "root_cause": "scripts/refresh_free_data.py FUNDING_HEADER and scripts/normalize_binance_panels.py both declared a symbol column but never prefixed it to the 3-column archive rows."
   },
+  "h10_stale_artifact_repair_20261103T0120Z": {
+    "canonical_block_impact": "None on outcomes. The canonical H004V106 forward block is byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs git show HEAD). Only the H10 fresh-block artifact (forward_block_h10_fresh/forward_block_evaluation.json) and one new test file changed.",
+    "finding": "The committed H10 fresh block (sha256 9162561ed61d6ce27edcd87c2faeba3b36aad9fa1b82361bb9a1ccddeb9f88bb) was produced by an older build of eval_forward_block.py that predates the overlap_aware_interval code path (added 2026-11-02T18:03Z). It therefore carried NO overlap_aware_uncertainty key, while the current evaluator emits one on every run and H10 prereg sec 3 step 6 requires it. The durable state's 'idempotent re-run verified byte-identical' claim was false against current code. A throwaway subprocess run reproduces all 15 outcome fields exactly but ADDS overlap_aware_uncertainty{status: IMMATURE, reason: need n_high>0 and n_low>0 for overlap-aware interval}. Outcome fields did not change; the block is still IMMATURE (n_formations 1, n_high 0, n_low 0, n_mid 1, date 2026-09-30, high_low_diff_net_1x null).",
+    "repair": "Re-ran scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff 2026-10-31 --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh (the preregistered separate dir, never forward_block/). The evaluator's no-op branch preserved evaluated_utc 2026-11-02T15:18:56Z, so the artifact now carries the overlap_aware_uncertainty section with all prior fields intact. NEW GUARD tests/test_h10_fresh_block_current.py (4 tests): asserts the overlap_aware_uncertainty section is present and IMMATURE, asserts the 17 frozen outcome fields, asserts a throwaway subprocess run reproduces them, and asserts the canonical block is byte-identical to the committed blob.",
+    "verified": "python3 -m unittest discover -s tests -> 210 run, 210 OK, 0 failures (EXIT=0) (was 206; +4 new guards). Canonical block sha256 7234fc4e... matches git show HEAD:. git status clean of source changes apart from the H10 fresh-block artifact, tests/test_h10_fresh_block_current.py and this manifest entry.",
+    "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
+  },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-02T22:15:00Z",
+  "last_updated_utc": "2026-11-03T01:21:00Z",
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. CORRECTION: this field previously carried a stale BLOCKED narrative quoting the 2026-11-02T18:01:56Z probe and claiming 'BTCUSDT/ETHUSDT through 2026-10; other 30 assets October zips unpublished so panels end 2026-09-30'. That narrative was hand-rewritten and never refreshed after the panels had already been extended to 2026-10-31; it is superseded by the real 2026-11-02T22:14:12Z probe and the panel audit below. Trust only real probe records under research_state/cutoff_probe/.",
     "panel_date_end_verified": "2026-10-31 (all 30 non-delisted Binance kline panels end 2026-10-31; MATICUSDT ends 2024-09-11 and EOSUSDT ends 2025-05-21, delisted by construction; marketcap_panel.csv 2023-01-01..2026-10-31)",
     "probe_month": "2026-10",
-    "probe_utc": "2026-11-02T22:14:12Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json",
+    "probe_utc": "2026-11-03T01:14:31Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T011431Z.json",
     "target_published": true
   },
-  "latest_verified_test_claim": "200/200/0",
+  "latest_verified_test_claim": "210/210/0",
   "live_or_paper_trading_allowed": false,
   "manifest_reconciliation_20261101T0225Z": {
     "canonical_block_impact": "None on outcomes: run_manifest.json is not a forward-block input. The canonical H004V106 forward block outcome is byte-unchanged (n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
@@ -115,6 +122,12 @@
       "outcome": "cutoff_blocked_h004v106_unchanged_tests_161ok",
       "session_id": "session_20261101T1415Z",
       "timestamp_utc": "2026-11-01T14:16:51Z"
+    },
+    {
+      "action": "read_prior_task_verified_state_refreshed_durable_task_handoff",
+      "outcome": "cutoff_unblocked_h10_stale_artifact_repaired_tests_210ok",
+      "session_id": "session_20261103T0120Z",
+      "timestamp_utc": "2026-11-03T01:21:00Z"
     }
   ],
   "session_record_20261101T0508Z": {

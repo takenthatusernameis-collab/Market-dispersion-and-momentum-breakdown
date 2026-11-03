@@ -116,6 +116,23 @@
   "n_high": 0,
   "n_low": 0,
   "n_mid": 1,
+  "overlap_aware_uncertainty": {
+    "baseline_high_low_diff_net_1x": null,
+    "bootstrap_mean": null,
+    "bootstrap_median": null,
+    "bootstrap_se": null,
+    "ci_95_percentile": [
+      null,
+      null
+    ],
+    "ci_includes_zero": null,
+    "n_boot": 0,
+    "n_clusters_with_both_states": 0,
+    "n_months": 0,
+    "reason": "need n_high>0 and n_low>0 for overlap-aware interval",
+    "rng_seed": 20261102,
+    "status": "IMMATURE"
+  },
   "reason": "",
   "spread_gross_mean": -0.047729065266337745,
   "spread_gross_median": -0.047729065266337745,
