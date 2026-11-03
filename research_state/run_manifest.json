@@ -54,7 +54,7 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T08:11:35Z",
+  "last_updated_utc": "2026-11-03T08:16:24Z",
   "latest_archive_probe": {
     "cutoff_gate": "UNBLOCKED",
     "detail": "October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes); October 2026 daily klines 2026-10-28 HTTP 404 (genuine archive gap) / 10-29/30/31 HTTP 200; September 2026 control HTTP 200 (archive alive, miss genuine). Both monthly endpoints required by refresh_free_data.py are HTTP 200, so target_published true and cutoff_gate UNBLOCKED. Supersedes the stale 2026-11-03T021343Z reference in the prior handoff (that record does not exist on disk); trust only real probe records under research_state/cutoff_probe/.",
@@ -69,8 +69,8 @@
     "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until November vintage matures so the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
     "panel_date_end_verified": "2026-09-30 (Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against published October 2026 monthly zips)",
     "probe_month": "2026-11",
-    "probe_utc": "2026-11-03T08:04:12Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T080412Z.json",
+    "probe_utc": "2026-11-03T08:16:24Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T081624Z.json",
     "target_published": false
   },
   "latest_verified_test_claim": "210/210/0",
@@ -161,6 +161,12 @@
       "outcome": "november_2026_target_published_false_cutoff_blocked_h10_immature_tests_210ok",
       "session_id": "session_20261103T0806Z",
       "timestamp_utc": "2026-11-03T08:06:17Z"
+    },
+    {
+      "action": "read_prior_task_reprobed_november_2026_still_blocked_refreshed_handoff",
+      "outcome": "november_2026_target_published_false_cutoff_blocked_h10_immature_tests_210ok",
+      "session_id": "session_20261103T0816Z",
+      "timestamp_utc": "2026-11-03T08:16:24Z"
     }
   ],
   "session_record_20261101T0508Z": {
@@ -433,5 +439,13 @@
     "summary": "Read prior agent task from durable handoff (H10 fresh sealed forward block blocked on November 2026 data maturity). Re-probed November 2026: target_published=false, cutoff_gate=BLOCKED (record research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json). Verified H004V106 sha256 7234fc4e... unchanged vs disk and git show HEAD. Re-ran python3 -m unittest discover -s tests -> Ran 210 tests OK (skipped=1) (EXIT=0). Fresh H10 block remains IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, diff null) at forward_block_h10_fresh/forward_block_evaluation.json; canonical forward_block/ unchanged. No frozen artifacts modified. Rewrote agent_handoff.md and agent_task_message.md; updated run_manifest.json.",
     "test_result": "python3 -m unittest discover -s tests -> Ran 210 tests OK (skipped=1) (EXIT=0)",
     "timestamp_utc": "2026-11-03T06:18:31Z"
+  },
+  "session_record_20261103T0816Z": {
+    "adaptive_gate_trigger": "not met (single route - temporary timing; not three distinct failed routes)",
+    "canonical_block_impact": "None: this session performed only read-only verification, a cutoff probe and durable-state refresh. No market data consumed, no forward-block input touched. Canonical H004V106 forward block byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs disk AND vs `git show HEAD:`).",
+    "completed": "Read prior agent task from durable handoff; re-ran python3 -m unittest discover -s tests -> 210 run, 210 OK, 0 failures (EXIT=0); verified canonical H004V106 forward block fields directly AND against the committed git blob; verified hypothesis_registry.json next_sequence_number 10 (H1..H10 present); verified universe_frontier.json catalog cursor 6347, newly_discovered 0, candidates_discovered 0 (frontier exhausted, nothing to validate); re-ran python3 scripts/probe_cutoff_gate.py --probe-month 2026-11 (real network probe, EXIT=0); refreshed agent_handoff.md and rewrote agent_task_message.md.",
+    "cutoff_probe": "2026-11-03T08:16:24Z direct HTTPS to data.binance.vision: BTCUSDT-1d-2026-11.zip HTTP 404, BTCUSDT-fundingRate-2026-11.zip HTTP 404, BTCUSDT-1d-2026-09.zip HTTP 200 (positive control - endpoint live, miss genuine). November 2026 monthly archive STILL NOT PUBLISHED (month not over); cutoff gate BLOCKED; target_published false because BOTH monthly endpoints must be HTTP 200 (consumed by refresh_free_data.py).",
+    "frozen_artifacts_untouched": true,
+    "next_action": "Nothing bounded and unblocked remains. Preserve BLOCKED cutoff and H10 preregistration plan. When November 2026 Binance monthly archives publish (both klines AND fundingRate HTTP 200, cutoff >= 2026-11-29): confirm with probe (expect UNBLOCKED), run scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end> (free public data only), re-run python3 -m unittest discover -s tests, verify H004V106 unchanged, re-run fresh sealed block python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ (never forward_block/), require n_high>0 AND n_low>0, then economic significance after costs + Holm across complete family before any confirmatory claim. Do not relax 30-day maturity/MIN_ASSETS_DECILES=20/state rule; do not fabricate formations/outcomes."
   }
 }
