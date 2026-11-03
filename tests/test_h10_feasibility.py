@@ -1,0 +1,112 @@
+"""Regression guard for the H10 structural feasibility analysis.
+
+DISP-003-H10-FEASIBILITY-001 (artifacts/.../integrity_audit/
+H10_feasibility_analysis_20261103.json) established, from on-disk panels only,
+that the current 2026-10-31 cutoff yields exactly 1 fresh-block formation and
+that the trailing-decile state rule therefore cannot classify high/low. This
+test pins those hard structural facts so that a silent drift in the panels or
+in the evaluator's horizon math fails the build.
+
+Pure stdlib + pandas (no network, no frozen artifact modified).
+"""
+import json
+import unittest
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
+ART = ROOT / "artifacts" / EXP
+PANEL_DIR = ART / "data" / "panels"
+FRESH = ART / "forward_block_h10_fresh" / "forward_block_evaluation.json"
+FEAS = ART / "integrity_audit" / "H10_feasibility_analysis_20261103.json"
+HORIZON = 30
+START = "2026-09-30"
+
+
+def build_index():
+    frames = []
+    for p in sorted(PANEL_DIR.glob("binance_klines_*.csv")):
+        df = pd.read_csv(p)
+        col = [c for c in df.columns if "time" in c.lower()][0]
+        d = pd.to_datetime(df[col], unit="ms", utc=True).dt.strftime("%Y-%m-%d")
+        sym = p.stem.replace("binance_klines_", "")
+        asset = sym[:-4].lower() if sym.endswith("USDT") else sym.lower()
+        frames.append(pd.DataFrame({"date": d, asset: df["close"]}))
+    merged = frames[0]
+    for f in frames[1:]:
+        merged = merged.merge(f, on="date", how="outer")
+    idx = pd.DatetimeIndex(sorted(pd.to_datetime(merged["date"], utc=True).unique()))
+    return idx
+
+
+def fresh_block_formations(idx, cutoff: str) -> int:
+    """Replicates eval_forward_block.py's last_allowed math exactly."""
+    cutoff_ts = pd.Timestamp(cutoff, tz="UTC")
+    loc = idx.get_loc(cutoff_ts)
+    lad = idx[loc - HORIZON]
+    return int(sum(1 for d in idx if d >= pd.Timestamp(START, tz="UTC") and d <= lad))
+
+
+class TestH10Feasibility(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.idx = build_index()
+        cls.fresh = json.loads(FRESH.read_text())
+        cls.feas = json.loads(FEAS.read_text())
+
+    def test_artifact_exists(self):
+        self.assertTrue(FEAS.is_file(), "feasibility artifact missing")
+
+    def test_current_cutoff_yields_one_formation(self):
+        n = fresh_block_formations(self.idx, "2026-10-31")
+        self.assertEqual(n, 1,
+                         f"expected 1 fresh-block formation at cutoff 2026-10-31, got {n}")
+
+    def test_artifact_matches_recomputed_state(self):
+        self.assertEqual(self.fresh["n_formations"], 1)
+        self.assertEqual(self.fresh["last_allowed_formation_date"], "2026-09-30")
+        self.assertEqual(self.fresh["n_high"], 0)
+        self.assertEqual(self.fresh["n_low"], 0)
+        self.assertIsNone(self.fresh["high_low_diff_net_1x"])
+        self.assertEqual(self.fresh["data_cutoff_utc"], "2026-10-31T00:00:00Z")
+        self.assertEqual(self.feas["observed_on_disk"]["october_2026_missing_dates"],
+                         ["2026-10-28"])
+
+    def test_october_28_gap_present_in_all_active_symbols(self):
+        """2026-10-28 is absent from every kline panel still trading in October.
+
+        Mirrors the feasibility artifact's observed_on_disk scope: 30 active
+        symbols (EOSUSDT and MATICUSDT are delisted and end before October).
+        """
+        missing = []
+        active = []
+        for p in sorted(PANEL_DIR.glob("binance_klines_*.csv")):
+            df = pd.read_csv(p)
+            col = [c for c in df.columns if "time" in c.lower()][0]
+            dates = set(pd.to_datetime(df[col], unit="ms", utc=True).dt.strftime("%Y-%m-%d"))
+            sym = p.stem.replace("binance_klines_", "")
+            if max(dates) >= "2026-10-01":
+                active.append(sym)
+                if "2026-10-28" not in dates:
+                    missing.append(sym)
+        # Every active symbol must show the gap (not a subset).
+        self.assertEqual(sorted(missing), sorted(active))
+        self.assertEqual(len(missing), 30)
+
+    def test_state_rule_needs_thirty_prior_dispersions(self):
+        """eval_forward_block.py:497 - high/low state is only assigned when
+        len(past) >= 30, so a block with <31 formations can never classify."""
+        src = (ROOT / "scripts" / "eval_forward_block.py").read_text()
+        self.assertIn("if len(past) >= 30:", src)
+        self.assertIn('state = "high"', src)
+        self.assertIn('state = "low"', src)
+
+    def test_projection_first_classifiable_cutoff_is_november(self):
+        self.assertEqual(self.feas["projection"]["cutoff_2026_11_30"]["state_classifiable"], True)
+        self.assertEqual(self.feas["projection"]["cutoff_2026_10_31"]["state_classifiable"], False)
+
+
+if __name__ == "__main__":
+    unittest.main()

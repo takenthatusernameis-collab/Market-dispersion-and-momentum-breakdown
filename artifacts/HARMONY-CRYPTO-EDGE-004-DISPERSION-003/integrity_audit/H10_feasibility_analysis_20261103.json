@@ -1,0 +1,37 @@
+{
+  "artifact_id": "DISP-003-H10-FEASIBILITY-001",
+  "created_utc": "2026-11-03T11:30:00Z",
+  "purpose": "Structural feasibility analysis of whether a published future month would actually unblock H10 (fresh sealed forward block, formations strictly after 2026-09-29, strict 30-day maturity, trailing-decile high/low classification). No network, no fabrication: computed from on-disk Binance kline panels only.",
+  "method": "Reconstructed the px_wide index exactly as scripts/eval_forward_block.py does (outer-join of all 32 binance_klines_*.csv on date). last_allowed_formation = index_loc(data_cutoff) - forward_horizon_days (30). Fresh-block formations = index dates >= 2026-09-30 and <= last_allowed_formation. The trailing_window_outer_deciles state rule requires >=30 prior in-block dispersions, i.e. effectively >=31 formations, before any high/low state can be assigned (eval_forward_block.py:497).",
+  "observed_on_disk": {
+    "px_wide_index_span": "2023-01-01 -> 2026-10-31",
+    "px_wide_n_dates": 1399,
+    "october_2026_present_dates": ["2026-10-01..2026-10-27", "2026-10-29", "2026-10-30", "2026-10-31"],
+    "october_2026_missing_dates": ["2026-10-28"],
+    "october_2028_gap_scope": "2026-10-28 absent from ALL 30 active symbols' kline panels (EOSUSDT and MATICUSDT already delisted). A single missing day; it shifts last_allowed_formation by index position but does not change the month-count math.",
+    "november_2026_present_dates": []
+  },
+  "current_state": {
+    "data_cutoff": "2026-10-31",
+    "last_allowed_formation_date": "2026-09-30",
+    "fresh_block_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "verdict": "IMMATURE / NULL_DIFF. Matches the committed forward_block_h10_fresh artifact exactly."
+  },
+  "projection": {
+    "trading_days_per_month_mean": 30.41,
+    "trading_days_per_month_median": 31,
+    "basis": "Real panel 2023-01..2026-10 (BTCUSDT, the gating symbol).",
+    "caveat": "Structural projection only, NOT a data claim about November 2026. Assumes Nov/Dec 2026 follow the same distribution.",
+    "cutoff_2026_10_31": {"fresh_block_formations": 1, "state_classifiable": false},
+    "cutoff_2026_11_30": {"fresh_block_formations": 31, "state_classifiable": true, "note": "FIRST cutoff that structurally could classify high/low"},
+    "cutoff_2026_12_31": {"fresh_block_formations": 62, "state_classifiable": true},
+    "cutoff_2027_01_31": {"fresh_block_formations": 92, "state_classifiable": true}
+  },
+  "key_finding": "October 2026 publication (already UNBLOCKED per cutoff_probe_20261103T022455Z.json) did NOT and could NOT unblock H10: at cutoff 2026-10-31 the fresh block window holds exactly 1 formation, and the state rule needs >=30 prior in-block dispersions. November 2026 is the first month whose publication would structurally change this (~31 formations projected). The durable state's earlier framing ('wait for the data vintage to mature') was therefore correct but imprecise: the gate is not 'any newer vintage' but specifically the November 2026 vintage.",
+  "constraints_not_relaxed": ["30-day strict maturity", "trailing_window_outer_deciles state rule (>=30 prior dispersions)", "MIN_ASSETS_DECILES=20", "forward_block_start=2026-09-30", "no look-ahead, no fabricated formations/outcomes"],
+  "status": "EXPLORATORY_ONLY",
+  "does_not": "validate, replace, or unlock the frozen confirmatory track (H1/H6/H7). No frozen artifact modified. Canonical H004V106 block byte-unchanged.",
+  "next_action": "When the November 2026 Binance monthly archive publishes (both klines AND fundingRate HTTP 200, cutoff >= 2026-11-29), re-probe, refresh free data, re-run tests, verify H004V106 unchanged, then re-run the fresh sealed block into forward_block_h10_fresh/ and require n_high>0 AND n_low>0 before any confirmatory claim."
+}
