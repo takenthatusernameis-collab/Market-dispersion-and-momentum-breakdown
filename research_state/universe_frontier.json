@@ -12772,7 +12772,7 @@
   "expanding_universe_target_met": true,
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-03T13:24:00Z",
+  "last_updated_utc": "2026-11-03T14:30Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12822,5 +12822,6 @@
     "Binance Public Data Archive",
     "other verified free public historical sources"
   ],
-  "status": "ACTIVE_INCOMPLETE"
+  "status": "ACTIVE_INCOMPLETE",
+  "catalog_discovery_note_20261103T1430Z": "Sweep this pass: catalog_discovery cursor=6347, candidates_discovered=[] (empty), candidates_verified=220, candidates_blocked=6127, expanding_universe_target_met=true. Catalog is exhausted \u2014 no new listings to validate. Nothing to discover or validate without a new data vintage. All free-source exploratory audits on the frozen canonical block are complete."
 }
