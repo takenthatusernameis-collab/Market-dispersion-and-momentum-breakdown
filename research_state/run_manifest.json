@@ -54,14 +54,14 @@
     "what_was_not_changed": "No hypothesis, conclusion, grid, decision rule, cost model, preregistration or handoff narrative changed. The canonical forward_block/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. No relaxation of the 30-day maturity rule, the trailing-decile state rule (>=30 prior in-block dispersions) or MIN_ASSETS_DECILES=20."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-03T09:07:21Z",
+  "last_updated_utc": "2026-11-03T09:11:16Z",
   "latest_november_2026_probe": {
     "cutoff_gate": "BLOCKED",
-    "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until November vintage matures so the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
+    "detail": "November 2026 monthly BTCUSDT klines and fundingRate not yet published (month not over); target_published=false. Archive alive (control 2026-09 HTTP 200). Genuine data-maturity blocker; H10 cannot evaluate until the November 2026 vintage matures so the fresh block window (forward-block-start 2026-09-30, strict 30-day maturity) spans enough formation dates for trailing-decile high/low classification.",
     "panel_date_end_verified": "2026-09-30 (Binance klines panels end 2026-09-30 until refresh_free_data.py is re-run against published October 2026 monthly zips)",
     "probe_month": "2026-11",
-    "probe_utc": "2026-11-03T08:16:24Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T081624Z.json",
+    "probe_utc": "2026-11-03T09:09:31Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T090931Z.json",
     "target_published": false
   },
   "latest_verified_test_claim": "210/210/0",
@@ -164,6 +164,12 @@
       "outcome": "november_2026_target_published_false_cutoff_blocked_h10_immature_tests_210ok",
       "session_id": "session_20261103T0903Z",
       "timestamp_utc": "2026-11-03T09:03:45Z"
+    },
+    {
+      "action": "read_prior_task_verified_state_repaired_committed_regression_refreshed_durable_state",
+      "outcome": "tests_failed_6_errors_repaired_latest_archive_probe_key_restored_tests_210ok_canonical_unchanged_h10_immature",
+      "session_id": "session_20261103T0911Z",
+      "timestamp_utc": "2026-11-03T09:11:16Z"
     }
   ],
   "session_record_20261101T0508Z": {
@@ -444,5 +450,31 @@
     "cutoff_probe": "2026-11-03T08:16:24Z direct HTTPS to data.binance.vision: BTCUSDT-1d-2026-11.zip HTTP 404, BTCUSDT-fundingRate-2026-11.zip HTTP 404, BTCUSDT-1d-2026-09.zip HTTP 200 (positive control - endpoint live, miss genuine). November 2026 monthly archive STILL NOT PUBLISHED (month not over); cutoff gate BLOCKED; target_published false because BOTH monthly endpoints must be HTTP 200 (consumed by refresh_free_data.py).",
     "frozen_artifacts_untouched": true,
     "next_action": "Nothing bounded and unblocked remains. Preserve BLOCKED cutoff and H10 preregistration plan. When November 2026 Binance monthly archives publish (both klines AND fundingRate HTTP 200, cutoff >= 2026-11-29): confirm with probe (expect UNBLOCKED), run scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end> (free public data only), re-run python3 -m unittest discover -s tests, verify H004V106 unchanged, re-run fresh sealed block python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ (never forward_block/), require n_high>0 AND n_low>0, then economic significance after costs + Holm across complete family before any confirmatory claim. Do not relax 30-day maturity/MIN_ASSETS_DECILES=20/state rule; do not fabricate formations/outcomes."
+  },
+  "latest_archive_probe": {
+    "canonical_forward_block": {
+      "block_sealed": true,
+      "data_cutoff_utc": "2026-09-30T00:00:00Z",
+      "high_low_diff_net_1x": 0.6165223953929935,
+      "last_allowed_formation_date": "2026-08-31",
+      "n_formations": 608,
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
+    },
+    "cutoff_gate": "BLOCKED",
+    "note": "Real live probe 2026-11-03T09:09:31Z (record research_state/cutoff_probe/cutoff_probe_20261103T090931Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T02:24:55Z October-2026 UNBLOCKED summary; trust only real probe records under research_state/cutoff_probe/.",
+    "probe_exit": 1,
+    "probe_month": "2026-11",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T090931Z.json",
+    "probe_utc": "2026-11-03T09:09:31Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T090931Z.json",
+    "target_published": false
+  },
+  "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
+    "canonical_block_impact": "None on outcomes: this session repaired only durable-state JSON. The canonical H004V106 forward block is byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs git show HEAD: and direct sha256sum; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
+    "cutoff_status": "BLOCKED (November 2026 monthly BTCUSDT klines AND fundingRate both HTTP 404 per real probe 2026-11-03T09:09:31Z, record research_state/cutoff_probe/cutoff_probe_20261103T090931Z.json; target_published=false, probe_exit=1; control 2026-09 HTTP 200 so archive alive and miss genuine).",
+    "finding": "The checkpoint commit 2d6fcb3e (2026-11-03T09:10:35Z) had DELETED the top-level `latest_archive_probe` key from research_state/run_manifest.json while leaving `latest_november_2026_probe` in place. tests/test_latest_probe_record_pinned.py (6 tests) loads manifest['latest_archive_probe'] and therefore raised KeyError on all 6 tests (test_record_exists_and_parses, test_record_path_is_under_cutoff_probe_dir, test_summary_does_not_quote_a_record_that_does_not_exist, test_summary_gate_matches_record, test_summary_probe_month_matches_record, test_summary_probe_utc_matches_record). The suite FAILED (errors=6, skipped=1) on this session's first run. This is precisely the single-source-of-truth hazard class those guards exist to catch: the durable state had drifted from the record it claims to quote, and the build failed rather than silently accepting a gate decision with no auditable record.",
+    "repair": "Restored run_manifest.json:latest_archive_probe and refreshed universe_frontier.json:latest_archive_probe to quote the real record research_state/cutoff_probe/cutoff_probe_20261103T090931Z (BLOCKED, target_published=false, probe_exit=1), including the canonical H004V106 block fields (sha256 7234fc4e..., n_formations 608, high_low_diff_net_1x +0.6165223953929935, data_cutoff_utc 2026-09-30T00:00:00Z, block_sealed true). Updated latest_november_2026_probe in the manifest to the same record. Set last_updated_utc 2026-11-03T09:11:16Z in both files.",
+    "verified": "python3 -m unittest discover -s tests -> 210 run, 210 OK, 1 skipped, EXIT=0 (was 210 run, FAILED errors=6 before the repair). Canonical block sha256 7234fc4e... matches git show HEAD: and direct sha256sum.",
+    "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion or decision rule changed. Only research_state/run_manifest.json (restored latest_archive_probe, refreshed latest_november_2026_probe, this entry, last_updated_utc) and research_state/universe_frontier.json (refreshed latest_archive_probe, last_updated_utc). DISPERSION-001/002, the defective archive and the canonical forward block byte-unchanged. Fresh H10 block unchanged (IMMATURE/NULL_DIFF)."
   }
 }
