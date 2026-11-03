@@ -16,3 +16,10 @@
 - **Completed this pass:** Read prior handoff + task message; re-ran `python3 -m unittest discover -s tests` -> 218 run, OK (skipped=1), EXIT=0; verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`; did not re-probe November 2026 before cutoff >= 2026-11-29.
 - **Cutoff status:** BLOCKED. November 2026 not published; October 2026 cannot unblock H10.
 - **Next action:** Re-probe November 2026 on/after 2026-11-29; if target_published=true follow H10 unblock procedure (refresh data -> tests -> verify H004V106 -> fresh sealed block in forward_block_h10_fresh/, never forward_block/; require n_high>0 AND n_low>0; predeclared costs/rules/Holm). If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
+## Session record 2026-11-03T23:49Z
+- **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED, gate >= 2026-11-29). No frozen artifact/source changed this pass.
+- **Completed this pass:** Re-read handoff + task message + AGENTS.md; re-probed November 2026 -> target_published=false, cutoff_gate=BLOCKED, archive_alive=true (record cutoff_probe_20261103T235035Z.json); full suite 218 run, OK (skipped=1); canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged vs disk and git show HEAD:.
+- **Cutoff status:** BLOCKED. November 2026 not published; October 2026 cannot unblock H10.
+- **Frontier/registry:** unchanged.
+- **Next action:** Re-probe November 2026 on/after 2026-11-29; if target_published=true follow H10 unblock procedure (refresh data -> tests -> verify H004V106 -> fresh sealed block in forward_block_h10_fresh/, never forward_block/; require n_high>0 AND n_low>0; predeclared costs/rules/Holm). If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
