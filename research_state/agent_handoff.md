@@ -26,6 +26,6 @@
 - Do not write "wait for a new experiment ID". If blocked by data maturity, wait for data vintage; do not fabricate formations/outcomes.
 - Correct for complete declared multiple-testing family if promoting.
 
-## Latest probe (2026-11-03T04:14:32Z)
-- probe-month 2026-11: target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED. Record: `research_state/cutoff_probe/cutoff_probe_20261103T041432Z.json`.
+## Latest probe (2026-11-03T04:16:03Z)
+- probe-month 2026-11: target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED. Record: `research_state/cutoff_probe/cutoff_probe_20261103T041603Z.json`.
 - Tests: `python3 -m unittest discover -s tests` → Ran 210 tests OK (skipped=1). H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
