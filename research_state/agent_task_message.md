@@ -1,4 +1,4 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (updated 2026-11-03T13:41Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (updated 2026-11-03T14:17Z)
 
 ## Situation
 - Today 2026-11-03. November 2026 not published (month not over). Genuine data-maturity blocker.
@@ -21,5 +21,3 @@
 - Preserve DISPERSION-001/002. Never modify canonical `forward_block/` or other frozen artifacts.
 - Do not relax 30-day maturity, MIN_ASSETS_DECILES=20, or trailing-decile state rule.
 - Correct for complete declared multiple-testing family if promoting.
-
-(End of file)
