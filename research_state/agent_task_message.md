@@ -1,4 +1,4 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T20:48Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 H10 (2026-11-03T20:51Z)
 
 ## Situation
 - Today 2026-11-03. November 2026 not published. Genuine data-maturity blocker; cutoff gate BLOCKED until >= 2026-11-29.
@@ -6,9 +6,8 @@
 - Do NOT re-probe November 2026 before cutoff >= 2026-11-29. Today is before the gate date; re-probing is a same-day repeat of a known failure and is prohibited. Trust only real on-disk records under research_state/cutoff_probe/; the mock test_cutoff_probe.py prints synthetic "UNBLOCKED" lines to stdout that write NO file on disk.
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`; sealed forward block is development/exploratory evidence only.
 - Fresh H10 block unchanged: n_formations=1, n_high=0, n_low=0, n_mid=1, date 2026-09-30, high_low_diff_net_1x null, overlap_aware_uncertainty status IMMATURE, data_cutoff 2026-10-31, sha256 `4106f42105d224ab0880710e8e1847c012025e5d50fdd47a3e66feb20e03435a`.
-- Environment: numpy/pandas installed; suite green (EXIT=0).
-- Frontier exhausted (cursor 6347); grid ledger 216/216 OK.
-- All H004V106 audit artifacts present and passing (consolidated final integrity audit PASS).
+- Environment: numpy/pandas installed; suite green (218 run, OK skipped=1, EXIT=0).
+- Frontier exhausted (cursor 6347); grid ledger 216/216 OK. H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7/H9/H10 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY; H10 EVALUATED_NULL_DIFF_IMMATURE.
 - H10 feasibility analysis confirms November 2026 is the first vintage that could structurally classify high/low. October 2026 publication did NOT and could NOT unblock H10.
 - No bounded, no-cost, unblocked productive action remains; all remaining work requires November 2026 data vintage.
 - Adaptive-gate trigger NOT met (single timing route, not three distinct failed routes spanning two source families); do NOT start an exploratory track yet.
