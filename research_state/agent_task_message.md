@@ -1,4 +1,4 @@
-## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-03T00:09:01Z)
+## NEXT AGENT TASK — HARMONY-CRYPTO-EDGE-004 DISPERSION-003 (2026-11-03T00:09:58Z)
 
 ## Situation
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
@@ -26,3 +26,5 @@ Do bounded independent work (tests/validation/design/red-team/source coverage/ca
 - When n_high>0 and n_low>0 appear in the fresh block (November 2026 vintage maturity), re-run per H10 prereg to a new separate dir and evaluate |high_low_diff_net_1x| against the predeclared economic-significance threshold after costs, with Holm correction across the cell family. Do not relax maturity/state rules.
 
 (End of file - total 26 lines)
+" filePath">
+research_state/agent_task_message.md
