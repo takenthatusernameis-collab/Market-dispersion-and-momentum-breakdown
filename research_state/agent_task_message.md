@@ -3,7 +3,7 @@
 ## Session verification (2026-11-03T06:18:31Z)
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` verified byte-unchanged vs disk and `git show HEAD`.
 - Full test suite green: `python3 -m unittest discover -s tests` -> Ran 210 tests OK (skipped=1) (EXIT=0).
-- Re-probed November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` -> target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json`). Archive alive (control 2026-09 HTTP 200); miss is genuine month-not-over absence.
+- Re-probed November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` -> target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T062227Z.json`). Archive alive (control 2026-09 HTTP 200); miss is genuine month-not-over absence.
 - Fresh H10 block in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` remains IMMATURE/NULL_DIFF: n_formations=1, n_high=0, n_low=0, diff null; canonical `forward_block/` unchanged. No frozen artifacts modified.
 
 ## Situation
@@ -26,6 +26,6 @@
 - Do not write "wait for a new experiment ID." If blocked by data maturity, wait for data vintage.
 - Correct for the complete declared multiple-testing family if promoting.
 
-## Latest probe (2026-11-03T06:18:31Z)
-- probe-month 2026-11: target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T061805Z.json`).
+## Latest probe (2026-11-03T06:22:27Z)
+- probe-month 2026-11: target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T062227Z.json`).
 - Tests green (210 OK, 1 skipped). H004V106 unchanged. Fresh H10 still IMMATURE/NULL_DIFF. No frozen artifacts modified.
