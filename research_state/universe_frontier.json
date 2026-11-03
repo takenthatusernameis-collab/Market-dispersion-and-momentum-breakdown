@@ -12789,7 +12789,7 @@
     "probe_month": "2026-10",
     "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T011431Z.json",
     "probe_utc": "2026-11-03T01:14:31Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261102T221412Z.json",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261103T011431Z.json",
     "september_2026_control": "HTTP 200",
     "target_published": true
   },

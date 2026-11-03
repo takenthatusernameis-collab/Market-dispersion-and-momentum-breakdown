@@ -37,3 +37,13 @@ Do bounded independent work (tests/validation/design/red-team/source coverage/ca
 - When n_high>0 and n_low>0 appear in the fresh block (November 2026 vintage maturity), re-run per H10 prereg to a new separate dir and evaluate |high_low_diff_net_1x| against the predeclared economic-significance threshold after costs, with Holm correction across the cell family. Do not relax maturity/state rules.
 
 (End of file)
+
+## Session record 2026-11-03T02:12:00Z (bounded independent work + durable-state fix)
+- **Prior task status:** DONE (re-verified this session).
+- **Completed:**
+  1. Re-verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
+  2. Full test suite: `python3 -m unittest discover -s tests` → Ran 210 tests OK (skipped=1).
+  3. Fixed `research_state/universe_frontier.json` `latest_archive_probe.record` to point to the real probe record `cutoff_probe_20261103T011431Z.json` (was mis-pointed at `cutoff_probe_20261102T221412Z.json`), restoring single-source-of-truth consistency. No artifact or frozen state modified.
+  4. Cutoff gate UNBLOCKED; H10 fresh block remains IMMATURE (n_formations=1, n_high=0, n_low=0).
+- **State updated:** `research_state/agent_handoff.md`, `research_state/agent_task_message.md`, `research_state/universe_frontier.json`.
+- **Next action:** Bounded independent work only. Re-run H10 fresh block evaluation ONLY when n_high>0 and n_low>0 into a separate dir per prereg. Do not relax 30-day maturity/state rule or MIN_ASSETS_DECILES=20. Do not write "wait for a new experiment ID".
