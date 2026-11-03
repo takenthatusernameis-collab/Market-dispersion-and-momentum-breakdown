@@ -1,7 +1,7 @@
 ## Session record 2026-11-03T08:20:49Z (durable handoff update)
 - **Prior task status:** IN_PROGRESS (data-maturity blocked; no change to frozen artifacts).
 - **Completed this pass:**
-  1. Re-probed November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` -> target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T082049Z.json`). Archive alive (control 2026-09 HTTP 200); miss is genuine month-not-over absence.
+  1. Re-probed November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` -> target_published=false, cutoff_gate=BLOCKED (record `research_state/cutoff_probe/cutoff_probe_20261103T082154Z.json`). Archive alive (control 2026-09 HTTP 200); miss is genuine month-not-over absence.
   2. Verified H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and vs `git show HEAD:` (both identical).
   3. Confirmed tests green: `python3 -m unittest discover -s tests` -> Ran 210 tests OK (skipped=1) (EXIT=0).
   4. Fresh H10 block remains IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, diff null) at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`; canonical `forward_block/` unchanged. No frozen artifacts modified. Only new untracked file is the fresh probe record.
