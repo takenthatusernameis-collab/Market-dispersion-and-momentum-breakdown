@@ -155,3 +155,15 @@
   5. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`. No frozen artifact modified.
 - **Cutoff status:** UNBLOCKED.
 - **Next action:** Run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
+## Session record 2026-11-04T01:53Z (current)
+
+- **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED). No frozen artifact/source changed this pass.
+- **Completed this pass:**
+  1. Read prior handoff + task message + AGENTS.md + research_protocol.md + H10 preregistration; confirmed state per instructions.
+  2. Full suite related to H10: `python3 -m unittest tests.test_h10_fresh_block_current tests.test_h10_feasibility` -> **10 run, OK (0 failures), EXIT=0**. H004V106 sha256 unchanged vs disk and `git show HEAD:`.
+  3. Re-probed November 2026: `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11` -> target_published=false, cutoff_gate=BLOCKED, archive_alive=true (Sept 2026 control OK, November klines/fundingRate HTTP 404). Record `research_state/cutoff_probe/cutoff_probe_20261104T015312Z.json`.
+  4. Verified fresh H10 block at `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`: n_formations=1, n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x null, overlap_aware_uncertainty status IMMATURE. Canonical block unchanged.
+- **Cutoff status:** BLOCKED. November 2026 not published (current month; monthly archive unavailable until after 2026-11-30). October 2026 UNBLOCKED but cannot unblock H10 (needs November 2026 formation/30-day outcomes + trailing-decile burn-in).
+- **Frontier/registry:** unchanged.
+- **Next action:** Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) after 2026-11-30. If target_published=true: refresh free public data if needed (`python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>`), re-run `python3 -m unittest discover -s tests`, verify H004V106 unchanged vs `git show HEAD:`, run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) via `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`, require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
