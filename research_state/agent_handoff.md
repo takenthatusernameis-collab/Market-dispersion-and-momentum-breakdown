@@ -1,10 +1,11 @@
-## Session record 2026-11-04T11:36Z (current)
+## Session record 2026-11-04T11:39Z (current)
 
 - **Prior task status:** BLOCKED on two fronts: (1) data maturity (November 2026 not published; do NOT re-probe before 2026-11-30); (2) preregistration reconciliation requires explicit research decisions; cannot be completed without fabricating hypotheses/metrics/preregistrations.
 - **Completed this pass:**
   1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified state.
   2. Re-ran full suite: `python3 -m unittest discover -s tests` -> 223 run, 13 failures, 0 errors, skipped=1, EXIT=1 (unchanged).
   3. Preserved blocker; no frozen experiment artifact changed; no fabrication performed.
+  4. Updated handoff and wrote clear initial task message for next agent.
 - **Cutoff status:** BLOCKED (November 2026 not published; probe only after 2026-11-30). Printed probe output showing UNBLOCKED with record=null is not evidence; guard enforced.
 - **Next action:** (a) Research decision needed to reconcile preregistration gate -- register diagnostic audits as hypotheses with preregistrations, or declare addenda and null their ids -- requires explicit user/research authorization; record decision + rationale before changing durable state. (b) Re-probe November 2026 after 2026-11-30. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 
