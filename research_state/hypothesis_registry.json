@@ -2,7 +2,7 @@
  "schema_version": "1.0",
  "program_id": "HARMONY-CRYPTO-EDGE-004",
  "program_status": "ACTIVE",
- "next_sequence_number": 13,
+ "next_sequence_number": 21,
  "hypotheses": [
   {
    "id": "H1",
@@ -117,7 +117,7 @@
   },
   {
    "id": "H12",
-   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10-FEASIBILITY",
+   "experiment_id": "DISP-003-H10-FEASIBILITY-001",
    "statement": "A published future month is necessary but not sufficient to unblock H10: the fresh sealed forward block (formations strictly after 2026-09-29, strict 30-day maturity, trailing-decile high/low classification) needs >=31 in-block formations, which no cutoff earlier than 2026-11-30 can provide on the current panel set.",
    "predicted_high_minus_low_sign": "feasibility_only",
    "status": "EXPLORATORY_ONLY",
@@ -134,6 +134,78 @@
     "evidence_note": "DISP-003-FORWARD-BLOCK-PLACEBO-001, preregistered 2026-10-28T17:30:00Z (preregistrations/H004V106 Forward Block Placebo Red Team v1.md), artifact artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/H004V106_forward_block_placebo_red_team_20261028.json (sha256 target = canonical block 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs git show HEAD:), script scripts/forward_block_placebo_red_team.py, regression tests tests/test_forward_block_placebo_red_team.py (9 tests, 1 slow test gated behind RUN_SLOW_PLACEBO=1). Computed on the frozen canonical H004V106 forward block (608 formations, 2025-01-01..2026-08-31, high_low_diff_net_1x +0.6165223953929935, n_high=61, n_low=90, n_mid=457) with N=10000 draws per family at seed 20261028. Three predeclared permutation nulls, all two-sided: state_permutation (shuffle state labels, spreads fixed), random_ranking (shuffle spreads, states fixed), dispersion_shuffle (shuffle dispersion values, re-derive states by the SAME trailing-window outer-decile rule as the block). RESULT: all three families reject the null -- state_permutation p=1.00e-04, CI [-0.154, 0.160]; random_ranking p=1.00e-04, CI [-0.150, 0.158]; dispersion_shuffle p=1.00e-04, CI [-0.178, 0.174]; observed +0.617 outside all three 95% CIs. Label PLACEBO_SENSITIVE: the observed conditional spread is distinguishable from every permutation null, i.e. the pairing of dispersion state to spread is not an artifact of the formation ordering, selection counts or accounting. Self-consistency checks passed (derived spread matches stored, re-derived states match stored). No frozen artifact modified (modified_frozen_artifacts=[]). This is EXPLORATORY_ONLY development evidence on already-inspected data: the block is a strict subset of the grid ledger's development window and was already inspected, so it is NOT independent confirmation and does NOT validate, refute or unlock H1/H6/H7/H8/H9/H10. A PLACEBO_SENSITIVE label means the conditional association is real on this block vintage, not that it is an edge: it says nothing about out-of-sample stability, and the block remains CLUSTER_DOMINATED by 2025-10 (H8), temporally unstable (H8 addendum 20261029T16Z) and CLUSTER_INDIFFERENT under month-level clustering (H8 addendum 20261029T21Z).",
     "next_test": "No new computation preregistered here. The next authorized action is H10 fresh-block maturity (November 2026 vintage) or another independent unblocked task per AGENTS.md. A placebo result on an already-inspected block cannot substitute for a genuinely fresh sealed forward block (formations after 2026-09-29); re-run the placebo on the fresh block only once it is mature (n_high>0 and n_low>0), under a NEW experiment ID.",
     "immutable": false
+   },
+   {
+    "id": "H14",
+    "experiment_id": "H004V106_DISPERSION_REGIME_CONDITIONING_20261028",
+    "statement": "Continuous dispersion-momentum association on the canonical H004V106 forward block is weak (Spearman -0.153 excluding 2025-10); high/low states are regime-sparse and not robustly predictive.",
+    "predicted_high_minus_low_sign": "continuous_slope",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-REGIME-001, preregistered in preregistrations/H004V106_DISPERSION_REGIME_CONDITIONING_v1.md, artifact integrity_audit/H004V106_dispersion_regime_conditioning_20261028.json. Result WEAK_CONTINUOUS_ASSOCIATION; high states only in high-dispersion half, low states only in low-dispersion half; 2025-10 conditioning reproduces H8 delta frac -0.849. EXPLORATORY_ONLY development evidence on already-inspected data; does not validate H1/H6/H7 and does not unlock the confirmatory track.",
+    "next_test": "Replicate on a fresh mature forward block after 2026-09-29 under a new experiment ID if pursued; otherwise close as unvalidated candidate."
+   },
+   {
+    "id": "H15",
+    "experiment_id": "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_20261029",
+    "statement": "Formation-month cluster bootstrap on the canonical H004V106 forward block yields an overlap-aware 95% percentile CI that spans zero (CLUSTER_INDIFFERENT); month-level clustering does not support a nonzero spread.",
+    "predicted_high_minus_low_sign": "cluster_inference",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-CLUSTERBOOT-001, preregistered in preregistrations/H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md, artifact integrity_audit/H004V106_forward_block_cluster_bootstrap_20261029.json. Baseline high_low_diff_net_1x +0.6165; bootstrap mean 0.5239, SE 0.3746, 95% CI [-0.1179, 1.1431], ci_includes_zero=true; only 2 of 20 months contain both high and low formations. EXPLORATORY_ONLY development evidence on already-inspected data; does not validate H1/H6/H7 and does not unlock the confirmatory track.",
+    "next_test": "No further computation on this block; await fresh mature forward block after 2026-09-29 for cluster-aware inference."
+   },
+   {
+    "id": "H16",
+    "experiment_id": "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_20261102",
+    "statement": "Consolidated final integrity audit of the canonical H004V106 sealed forward block: PASS on all predeclared criteria (13/13 recomputation matches within 1e-9; all 608 dispersions finite; cost net=gross-0.001 consistent with 0 violations; tail leave-one-out +0.062 <0.10; trim k=3 -0.110 <0.20; winsorize p=0.10 -0.109 <0.20).",
+    "predicted_high_minus_low_sign": "consistency_only",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-FINALINTEGRITY-001, preregistered in preregistrations/H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md, artifact integrity_audit/H004V106_forward_block_final_integrity_audit_20261102.json. H11 already records the same audit result; H16 registers the audit itself for AUDIT_TO_HYPOTHESIS coverage. EXPLORATORY_ONLY internal-consistency audit of already-inspected development evidence; not a fresh holdout and not independent confirmation.",
+    "next_test": "No further audit of this block; audit chain complete. Next authorized action is H10 fresh-block maturity or another independent unblocked task."
+   },
+   {
+    "id": "H17",
+    "experiment_id": "H004V106_FORWARD_BLOCK_OVERLAP_AWARE_AUDIT_20261102",
+    "statement": "Overlap-aware uncertainty on the canonical H004V106 forward block computed via formation-month cluster bootstrap; interval spans zero and only 2 of 20 months contain both high and low formations.",
+    "predicted_high_minus_low_sign": "overlap_aware",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "Artifact integrity_audit/H004V106_forward_block_overlap_aware_audit_20261102.json, script scripts/eval_forward_block.py (overlap_aware_interval, added 2026-11-02T18:03Z). Baseline high_low_diff_net_1x +0.6165; bootstrap SE 0.3746, 95% CI spans zero; ci_includes_zero=true. EXPLORATORY_ONLY development evidence on already-inspected data; the sealed block's own overlap_aware_uncertainty was null before this additive audit.",
+    "next_test": "Replicate overlap-aware interval on a fresh mature forward block once n_high>0 and n_low>0; requires November 2026 data vintage."
+   },
+   {
+    "id": "H18",
+    "experiment_id": "H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_20261029",
+    "statement": "Tail-influence audit on the canonical H004V106 forward block: TAIL_ROBUST (single-formation leave-one-out max delta frac +0.062 <0.10; trim k=3 -0.110 <0.20; winsorize p=0.10 -0.109 <0.20); sensitivity is at the calendar-month cluster level (2025-10), not the formation-tail level.",
+    "predicted_high_minus_low_sign": "robustness",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-TAILAUDIT-001, preregistered in preregistrations/H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_v1.md, artifact integrity_audit/H004V106_forward_block_tail_influence_20261029.json. High-state skew +1.083, low-state skew -1.049; top-1% high share 8.6% of high-state sum, bottom-1% low share 11.5% of low-state sum. EXPLORATORY_ONLY development evidence on already-inspected data; does not confirm H9 or reject H5.",
+    "next_test": "Replicate tail-influence diagnostic on next sealed forward block after 2026-09-29 once n_high>0 and n_low>0; require TAIL_ROBUST there too."
+   },
+   {
+    "id": "H19",
+    "experiment_id": "H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_20261029",
+    "statement": "Temporal stability audit on the canonical H004V106 forward block: the high_minus_low sign is not temporally stable (+0.6456 over 2025-01..2025-10 vs -0.1629 over 2025-11..2026-08 at split 2025-11-01), consistent with CLUSTER_DOMINATED by 2025-10.",
+    "predicted_high_minus_low_sign": "temporal_stability",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-TEMPSTABILITY-001, preregistered in preregistrations/H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_AUDIT_v1.md, artifact integrity_audit/H004V106_forward_block_temporal_stability_20261029.json. Split at 2025-11-01: pre-split n_high=53/n_low=21 SE 0.390 CI [-0.107,1.110]; post-split n_high=8/n_low=69 SE 0.042 CI [-0.253,-0.089]. EXPLORATORY_ONLY development evidence on already-inspected data; does not validate H1/H6/H7 and does not unlock the confirmatory track.",
+    "next_test": "No further computation on this block; sign instability is a stability warning, not a resolved finding."
+   },
+   {
+    "id": "H20",
+    "experiment_id": "H004V106_ROLLING_DISPERSION_WINDOW_20261028",
+    "statement": "Rolling dispersion-window robustness on the canonical H004V106 forward block: every window W in {30,90,180,270,365} is sign-positive but all 2025-10 leave-one-out delta fractions (-0.77 to -1.00) breach the predeclared [-0.50,+0.50] band; overall ROLLING_FRAGILE.",
+    "predicted_high_minus_low_sign": "rolling_window",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-REGIME-002, preregistered in preregistrations/H004V106_ROLLING_DISPERSION_WINDOW_v1.md, artifact integrity_audit/H004V106_rolling_dispersion_window_20261028.json. W=365 reproduces canonical high_low_diff_net_1x +0.6165223953929935 exactly; n_high 61-95, n_low 82-134 across windows. H8 next_test branches (a) and (b) both executed on development data. EXPLORATORY_ONLY; does not unlock the confirmatory track.",
+    "next_test": "No further computation on this block; await fresh mature forward block after 2026-09-29 for confirmation of any window-specific result."
+   },
+   {
+    "id": "H21",
+    "experiment_id": "H004V106_STATE_REPRESENTATIVENESS_AUDIT_20261025",
+    "statement": "State-representativeness audit on the canonical H004V106 forward block: CLUSTER_DOMINATED by the 2025-10 calendar-month cluster (dropping 2025-10 moves high_low_diff_net_1x from +0.617 to +0.093, delta frac -0.849; largest high-state month 2025-10 contributes 31 of 61 high formations).",
+    "predicted_high_minus_low_sign": "cluster_robustness",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-STATEAUDIT-001, preregistered in preregistrations/H004V106_STATE_REPRESENTATIVENESS_AUDIT_v1.md, artifact integrity_audit/H004V106_state_representativeness_audit_20261025.json. H8 already records the base finding; H21 registers the audit itself for AUDIT_TO_HYPOTHESIS coverage. High states occur in only 7 calendar months and none after 2025-11. EXPLORATORY_ONLY development evidence on already-inspected data; does not validate H1/H6/H7 and does not unlock the confirmatory track.",
+    "next_test": "If cluster-driven, test rolling/adaptive dispersion windows and 2025-10 regime conditioning under new preregistered IDs on development data only; fresh mature forward block required for any confirmatory claim."
    }
   ],
  "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block.",

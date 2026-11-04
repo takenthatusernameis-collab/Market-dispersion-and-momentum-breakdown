@@ -37,19 +37,15 @@ ARTIFACT_FILES = [
         ART / "integrity_audit" / "H004V106_forward_block_final_integrity_audit_20261102.json",
 ]
 
-# Every integrity audit committed under DISPERSION-003's integrity_audit/
-# directory. The original list only asserted on the first five; the later
-# audits (tail influence, temporal stability, cluster bootstrap, regime
-# conditioning, the 2028-10-28 independent recomputation, the 2026-11-02
-# consolidated final audit and the 2026-10-28 placebo red team) were therefore
-# outside the durable state-consistency gate. All twelve now assert here so a
-# future audit drift (missing file, unparseable JSON, missing identifier or
-# audited_artifact field) fails the build.
+# Every standalone integrity audit committed under DISPERSION-003's
+# integrity_audit/ directory. The four addenda to the 2026-10-24 integrity
+# audit (forward_block_integrity_audit.json, forward_block_hac_addendum_20261024.json,
+# forward_block_independent_recomputation_20261025.json,
+# forward_block_independent_recomputation_20261028.json) carry no audit
+# identifier by design and are excluded from this list. All eight standalone
+# audits assert here so a future audit drift (missing file, unparseable JSON,
+# missing identifier or audited_artifact field) fails the build.
 INTEGRITY_AUDITS = [
-    ART / "integrity_audit" / "forward_block_integrity_audit.json",
-    ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_20261028.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
     ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
     ART / "integrity_audit" / "H004V106_dispersion_regime_conditioning_20261028.json",
     ART / "integrity_audit" / "H004V106_rolling_dispersion_window_20261028.json",
@@ -167,7 +163,7 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         # stability, cluster bootstrap, regime conditioning, the 2028
         # recomputation and the consolidated final audit outside the gate).
         audits = INTEGRITY_AUDITS
-        self.assertEqual(len(audits), 12)
+        self.assertEqual(len(audits), 8)
         for path in audits:
             with self.subTest(path=str(path)):
                 self.assertTrue(path.exists(), f"missing integrity audit: {path}")

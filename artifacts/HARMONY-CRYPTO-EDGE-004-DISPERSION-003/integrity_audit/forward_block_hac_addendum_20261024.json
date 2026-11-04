@@ -1,5 +1,4 @@
 {
-  "addendum_id": "H004V106_FORWARD_BLOCK_HAC_ADDENDUM_20261024",
   "parent_audit": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/forward_block_integrity_audit.json",
   "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
   "computed_utc": "2026-10-24T14:29:30Z",

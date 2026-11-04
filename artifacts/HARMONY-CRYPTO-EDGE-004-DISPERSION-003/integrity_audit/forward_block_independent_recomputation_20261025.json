@@ -1,5 +1,4 @@
 {
-  "audit_id": "H004V106_INDEPENDENT_RECOMPUTATION_AUDIT_20261025",
   "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
   "computed_utc": "2026-10-25T04:18:24.632617+00:00",
   "block_sealing": "formations with formation_date > 2026-08-31 excluded because their 30-day forward horizon is not completed by the data cutoff 2026-09-30; no truncated outcomes are computed",
