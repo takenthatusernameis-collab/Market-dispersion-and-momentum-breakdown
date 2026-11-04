@@ -1,6 +1,7 @@
 {
   "alpha": 0.05,
   "audit_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001",
+  "conclusion": "PLACEBO_SENSITIVE: the observed conditional spread (+0.6165) is outside all three permutation-null 95% CIs (state_permutation p=1e-4, random_ranking p=1e-4, dispersion_shuffle p=1e-4); development/exploratory evidence on the already-inspected sealed block, not independent confirmation and not a confirmatory claim for H1/H6/H7.",
   "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
   "block": {
     "anchor_id": "H004V106",

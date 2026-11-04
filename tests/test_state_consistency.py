@@ -48,8 +48,8 @@ ARTIFACT_FILES = [
 INTEGRITY_AUDITS = [
     ART / "integrity_audit" / "forward_block_integrity_audit.json",
     ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_2028.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_2025.json",
+    ART / "integrity_audit" / "forward_block_independent_recomputation_20261028.json",
+    ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
     ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
     ART / "integrity_audit" / "H004V106_dispersion_regime_conditioning_20261028.json",
     ART / "integrity_audit" / "H004V106_rolling_dispersion_window_20261028.json",
@@ -167,7 +167,7 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         # stability, cluster bootstrap, regime conditioning, the 2028
         # recomputation and the consolidated final audit outside the gate).
         audits = INTEGRITY_AUDITS
-        self.assertEqual(len(audits), 11)
+        self.assertEqual(len(audits), 12)
         for path in audits:
             with self.subTest(path=str(path)):
                 self.assertTrue(path.exists(), f"missing integrity audit: {path}")

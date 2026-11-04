@@ -61,8 +61,8 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # H10 was allocated after the 2026-11-02 cutoff unblock and refresh
         # (DISP-003-H10 fresh sealed forward block, currently BLOCKED by data
         # availability); H11 was added as final integrity audit; H12 added for
-        # H10 feasibility.
-        self.assertEqual(registry["next_sequence_number"], 12)
+        # H10 feasibility; H13 added for the forward-block placebo red team.
+        self.assertEqual(registry["next_sequence_number"], 13)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
