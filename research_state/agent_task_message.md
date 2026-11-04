@@ -4,7 +4,7 @@ Read prior handoff + task message + AGENTS.md + research_protocol.md + operating
 
 Current status: BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED). Today is 2026-11-04, before the 2026-11-30 month-end; November 2026 monthly archive not yet published and cannot unblock H10. This is an immutable date gate; do NOT re-probe before 2026-11-30 (same-day repeat of known failure prohibited).
 
-Verified this session (2026-11-04T10:23Z):
+Verified this session (2026-11-04T10:35Z):
 - Full suite: `python3 -m unittest discover -s tests` -> **220 run, OK (skipped=1), EXIT=0**.
 - Latest genuine on-disk November 2026 probe: `research_state/cutoff_probe/cutoff_probe_20261104T083218Z.json`, target_published=false, cutoff_gate=BLOCKED, archive_alive=true (Sept 2026 control HTTP 200; November monthly klines/fundingRate both HTTP 404 = genuine month-not-over).
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`. Git clean apart from `__pycache__` bytecode churn.
