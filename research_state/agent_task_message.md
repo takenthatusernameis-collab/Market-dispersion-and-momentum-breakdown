@@ -2,11 +2,11 @@
 
 Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verify current state per instructions.
 
-Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State re-verified 2026-11-04T22:06:13Z. Test suite green (223 run, 1 skipped, 0 failures).
+Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State re-verified 2026-11-04T22:08:41Z. Test suite green (223 run, 1 skipped, 0 failures).
 
-Verified this pass (2026-11-04T22:06:13Z):
-- Branch HEAD 4be54da6; tests: `python3 -m unittest discover -s tests` → Ran 223 tests, OK (skipped=1).
-- Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED).
+Verified this pass (2026-11-04T22:08:41Z):
+- Branch HEAD 93f29394; tests: `python3 -m unittest discover -s tests` → Ran 223 tests, OK (skipped=1).
+- Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261103T231540Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED).
 - No frozen experiment artifact changed; no fabrication performed. Only `__pycache__` bytecode caches differ (untracked, not source).
 
 IMMEDIATE NEXT ACTION (unblocked, do NOT fabricate):
@@ -15,3 +15,4 @@ IMMEDIATE NEXT ACTION (unblocked, do NOT fabricate):
 3. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 
 (End of file - total 15 lines)
+"""
