@@ -17,12 +17,22 @@ import hashlib
 import json
 import math
 import statistics
+import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+# Sibling module in scripts/ (stdlib-only sequential alpha-spending rule, H22 /
+# prereg sec 4.1). Path insertion makes the evaluator importable both as
+# `python scripts/eval_forward_block.py` and as a module; the rule itself is
+# pure arithmetic and is never a forward-block input, so importing it cannot
+# touch any sealed outcome.
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+import alpha_spending  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
@@ -69,6 +79,15 @@ def parse_args() -> argparse.Namespace:
                         "artifact. The canonical block is read-only input to every "
                         "future block: it is development/exploratory evidence only and "
                         "must never be re-sealed or overwritten.")
+    p.add_argument("--look-number", type=int, default=1,
+                   help="1-based sequential look number k for the H10 fresh block "
+                        "(H22 / prereg sec 4.1). The per-look significance level "
+                        "alpha_k = 0.05/(k*(k+1)) is written into the sealed artifact "
+                        "as sequential_look_number / sequential_alpha_k / "
+                        "sequential_alpha_rule so the look number cannot be lost "
+                        "between evaluation and inference. Default 1. An IMMATURE "
+                        "evaluation (n_high=0 or n_low=0) does NOT advance k: pass the "
+                        "same k again on the next mature evaluation.")
     return p.parse_args()
 
 
