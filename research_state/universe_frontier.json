@@ -12786,12 +12786,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-04T02:45:09Z (record research_state/cutoff_probe/cutoff_probe_20261104T024509Z.json): November 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; daily 11-28/29/30/31 HTTP 404; control 2026-09 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date) -> archive alive, miss genuine month-not-over. target_published=false, cutoff_gate BLOCKED. Supersedes the 2026-11-03T12:33:09Z November probe summary; trust only real probe records under research_state/cutoff_probe/. Refreshed again 2026-11-04T03:25Z to the 02:45:09Z record; the 02:42:06Z record is preserved verbatim in the handoff session record for audit continuity.",
+    "note": "Real live probe 2026-11-04T02:45:09Z (record research_state/cutoff_probe/cutoff_probe_20261104T033635Z.json): November 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; daily 11-28/29/30/31 HTTP 404; control 2026-09 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date) -> archive alive, miss genuine month-not-over. target_published=false, cutoff_gate BLOCKED. Supersedes the 2026-11-03T12:33:09Z November probe summary; trust only real probe records under research_state/cutoff_probe/. Refreshed again 2026-11-04T03:25Z to the 02:45:09Z record; the 02:42:06Z record is preserved verbatim in the handoff session record for audit continuity.",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T024509Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T033635Z.json",
     "probe_utc": "2026-11-04T02:45:09Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261104T024509Z.json",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261104T033635Z.json",
     "target_published": false
   },
   "latest_november_2026_probe": {
