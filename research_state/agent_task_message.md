@@ -1,4 +1,14 @@
-## Session record 2026-11-04T03:36Z (current)
+## Session record 2026-11-04T03:40Z (current)
+
+- **Prior task status:** UNBLOCKED — November 2026 now published; cutoff gate UNBLOCKED (probe record cutoff_probe_20261104T034035Z.json, target_published=true, archive_alive=true). H10 unblock procedure eligible. Registry JSON parse error repaired (trailing comma).
+- **Completed this pass:**
+  1. Re-probed November 2026 -> UNBLOCKED.
+  2. Repaired hypothesis_registry.json trailing-comma JSON syntax error; tests now parse cleanly.
+  3. Full suite: 218 run, 3 failures (state consistency: probe UTC mismatch in universe_frontier.json, registry sequence), 1 skipped.
+  4. Canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged.
+- **Cutoff status:** UNBLOCKED.
+- **Next action:** Update universe_frontier.json latest_archive_probe to the new probe record; run H10 unblock procedure: refresh free public data (`python3 scripts/refresh_free_data.py --price-end 2026-11-30 --cap-end 2026-11-30`), re-run tests to green, verify H004V106 unchanged, run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) via `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff 2026-11-30 --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`, require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+EOF
 
 - **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED). No frozen artifact/source changed this pass.
 - **Completed this pass:**
