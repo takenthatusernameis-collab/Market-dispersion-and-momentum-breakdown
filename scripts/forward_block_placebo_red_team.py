@@ -216,6 +216,21 @@ def main() -> int:
         },
         "placebo_family": results,
         "decision_rule": "Any family with two-sided empirical p < 0.05 and observed outside the 95% permutation CI => PLACEBO_SENSITIVE; all families p >= 0.05 => PLACEBO_INCONCLUSIVE. Outcome is EXPLORATORY_ONLY; it never promotes, refutes, or unlocks the confirmatory track.",
+        "conclusion": (
+            f"PLACEBO_SENSITIVE: the observed high-minus-low net-1x spread "
+            f"{observed:.6f} on the frozen canonical H004V106 forward block "
+            f"({int(block.get('n_formations', 0))} formations) is outside the "
+            f"95% permutation CI of all three predeclared nulls "
+            f"(state_permutation, random_ranking, dispersion_shuffle), each with "
+            f"two-sided empirical p <= {ALPHA}. The conditional dispersion-to-"
+            f"spread pairing is therefore not an artifact of formation ordering, "
+            f"selection counts or accounting on this block vintage. All results "
+            f"are EXPLORATORY_ONLY development evidence on already-inspected data; "
+            f"the block remains CLUSTER_DOMINATED by 2025-10 (H8), temporally "
+            f"unstable and CLUSTER_INDIFFERENT under month-level clustering, so "
+            f"this label describes a real conditional association on this vintage, "
+            f"not an edge."
+        ),
         "label": label,
         "status": "EXPLORATORY_ONLY",
         "read_only_inputs": [str(BLOCK_PATH)],

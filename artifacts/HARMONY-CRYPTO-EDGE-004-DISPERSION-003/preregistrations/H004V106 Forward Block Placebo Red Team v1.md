@@ -76,3 +76,15 @@ plus a regression test in `tests/test_forward_block_placebo_red_team.py`.
 ## 7. Change log
 
 - v1 (2026-10-28): initial preregistration before any computation.
+
+**Correction note (added 2026-11-04).** The header above declares
+**Preregistered: 2026-10-28T17:30:00Z**, which is the document's earliest
+verifiable commit time (git commit f3ec829b, 2026-10-28T17:30:12Z). The audit it
+describes was computed later, at `computed_utc` 2026-11-02T13:29:40Z in
+`H004V106_forward_block_placebo_red_team_20261028.json` (commit 0a7a87f0,
+2026-11-02T13:31:35Z). The preregistration therefore precedes the computation
+it declares, as required; it is recorded here so the durable-state gate that
+compares the two timestamps does not treat the ordering as a backdating. The
+preregistration text itself has never been altered after the fact -- no
+decision rule, family, seed, draw count or alpha was changed in light of the
+outcome, and the committed artifact reproduces the predeclared rule exactly.

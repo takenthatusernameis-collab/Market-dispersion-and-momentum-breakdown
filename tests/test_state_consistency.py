@@ -40,22 +40,23 @@ ARTIFACT_FILES = [
 # Every integrity audit committed under DISPERSION-003's integrity_audit/
 # directory. The original list only asserted on the first five; the later
 # audits (tail influence, temporal stability, cluster bootstrap, regime
-# conditioning, the 2028-10-28 independent recomputation, and the 2026-11-02
-# consolidated final audit) were therefore outside the durable state-consistency
-# gate. All eleven now assert here so a future audit drift (missing file,
-# unparseable JSON, missing identifier or audited_artifact field) fails the
-# build.
+# conditioning, the 2028-10-28 independent recomputation, the 2026-11-02
+# consolidated final audit and the 2026-10-28 placebo red team) were therefore
+# outside the durable state-consistency gate. All twelve now assert here so a
+# future audit drift (missing file, unparseable JSON, missing identifier or
+# audited_artifact field) fails the build.
 INTEGRITY_AUDITS = [
     ART / "integrity_audit" / "forward_block_integrity_audit.json",
     ART / "integrity_audit" / "forward_block_hac_addendum_20261024.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_20261028.json",
-    ART / "integrity_audit" / "forward_block_independent_recomputation_20261025.json",
+    ART / "integrity_audit" / "forward_block_independent_recomputation_2028.json",
+    ART / "integrity_audit" / "forward_block_independent_recomputation_2025.json",
     ART / "integrity_audit" / "H004V106_state_representativeness_audit_20261025.json",
     ART / "integrity_audit" / "H004V106_dispersion_regime_conditioning_20261028.json",
     ART / "integrity_audit" / "H004V106_rolling_dispersion_window_20261028.json",
     ART / "integrity_audit" / "H004V106_forward_block_cluster_bootstrap_20261029.json",
     ART / "integrity_audit" / "H004V106_forward_block_tail_influence_20261029.json",
     ART / "integrity_audit" / "H004V106_forward_block_temporal_stability_20261029.json",
+    ART / "integrity_audit" / "H004V106_forward_block_placebo_red_team_20261028.json",
     ART / "integrity_audit" / "H004V106_forward_block_final_integrity_audit_20261102.json",
 ]
 
