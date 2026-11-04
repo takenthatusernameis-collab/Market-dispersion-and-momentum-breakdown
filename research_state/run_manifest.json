@@ -72,7 +72,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-04T15:14Z",
+  "last_updated_utc": "2026-11-04T15:31Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -83,12 +83,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-04T08:32:18Z (record research_state/cutoff_probe/cutoff_probe_20261104T083218Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T12:33:09Z November probe summary; trust only real probe records under research_state/cutoff_probe/. A printed UNBLOCKED line is only evidence when its record field is non-null AND that path exists on disk (fixed 2026-11-04T08:38Z, see probe_mock_record_path_fix_20261104T0838Z).",
+    "note": "Real live probe 2026-11-04T15:14:23Z (record research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json). November 2026 monthly BTCUSDT klines HTTP 404 (0 bytes) AND monthly BTCUSDT fundingRate HTTP 404 (0 bytes); daily 11-28/29/30/31 all HTTP 404 (0 bytes); target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines HTTP 200 (2066 bytes) and monthly fundingRate HTTP 200 (924 bytes), plus daily 09-28/29/30 HTTP 200 and 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. This summary supersedes the 2026-11-04T08:32:18Z November probe summary (record cutoff_probe_20261104T083218Z.json, same verdict, preserved verbatim in earlier reconciliation notes); trust only real probe records under research_state/cutoff_probe/. A printed UNBLOCKED line is only evidence when its record field is non-null AND that path exists on disk (fixed 2026-11-04T08:38Z, see probe_mock_record_path_fix_20261104T0838Z).",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T083218Z.json",
-    "probe_utc": "2026-11-04T08:32:18Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261104T083218Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
+    "probe_utc": "2026-11-04T15:14:23Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
     "target_published": false
   },
   "latest_november_2026_probe": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",

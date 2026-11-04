@@ -12774,7 +12774,7 @@
   "h11_audit_allocation_note_20261104T0325Z": "Durable-state completeness repair only. Allocated H11 (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FINAL-INTEGRITY-AUDIT, EXPLORATORY_ONLY) to register the already-completed, preregistered and tested consolidated final integrity audit of the canonical H004V106 forward block (artifact integrity_audit/H004V106_forward_block_final_integrity_audit_20261102.json, PASS on every predeclared criterion). The audit artifact, its preregistration and its regression test all existed; only the hypothesis registry had no entry (next_sequence_number was 10, H1..H10 present). No frozen artifact, panel, grid ledger, hypothesis conclusion, decision rule or cost model changed. Canonical block byte-unchanged (sha256 7234fc4e..., n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0). Adaptive-gate trigger NOT met (single timing route; this pass's only action was a durable-state repair, not a new failed route).",
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-04T03:25Z",
+  "last_updated_utc": "2026-11-04T15:31Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
@@ -12786,12 +12786,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-04T02:45:09Z (record research_state/cutoff_probe/cutoff_probe_20261104T033635Z.json): November 2026 monthly BTCUSDT klines AND monthly fundingRate both HTTP 404; daily 11-28/29/30/31 HTTP 404; control 2026-09 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date) -> archive alive, miss genuine month-not-over. target_published=false, cutoff_gate BLOCKED. Supersedes the 2026-11-03T12:33:09Z November probe summary; trust only real probe records under research_state/cutoff_probe/. Refreshed again 2026-11-04T03:25Z to the 02:45:09Z record; the 02:42:06Z record is preserved verbatim in the handoff session record for audit continuity.",
+    "note": "Real live probe 2026-11-04T15:14:23Z (record research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json): November 2026 monthly BTCUSDT klines HTTP 404 (0 bytes) AND monthly BTCUSDT fundingRate HTTP 404 (0 bytes); daily 11-28/29/30/31 all HTTP 404 (0 bytes); target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines HTTP 200 (2066 bytes) and monthly fundingRate HTTP 200 (924 bytes), plus daily 09-28/29/30 HTTP 200 and 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. This summary supersedes the 2026-11-04T08:32:18Z November probe summary (record cutoff_probe_20261104T083218Z.json, same verdict, preserved verbatim in earlier reconciliation notes); trust only real probe records under research_state/cutoff_probe/. A printed UNBLOCKED line is only evidence when its record field is non-null AND that path exists on disk (fixed 2026-11-04T08:38Z, see probe_mock_record_path_fix_20261104T0838Z).",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T033635Z.json",
-    "probe_utc": "2026-11-04T03:36:35Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261104T033635Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
+    "probe_utc": "2026-11-04T15:14:23Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
     "target_published": false
   },
   "latest_november_2026_probe": {
@@ -12804,12 +12804,12 @@
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
     "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-03T12:33:09Z (record research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json). November 2026 monthly BTCUSDT klines HTTP 404 AND monthly BTCUSDT fundingRate HTTP 404; daily 11-28/29/30/31 HTTP 404; target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Refreshed 2026-11-03T13:24Z to the latest real November 2026 probe; the earlier 11:16:09Z summary is preserved verbatim in the 2026-11-03T13:24Z handoff session record for audit continuity.",
+    "note": "Real live probe 2026-11-04T15:14:23Z (record research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json). November 2026 monthly BTCUSDT klines HTTP 404 (0 bytes) AND monthly BTCUSDT fundingRate HTTP 404 (0 bytes); daily 11-28/29/30/31 all HTTP 404 (0 bytes); target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. Supersedes the 2026-11-03T12:33:09Z November probe summary; trust only real probe records under research_state/cutoff_probe/. A printed UNBLOCKED line is only evidence when its record field is non-null AND that path exists on disk (fixed 2026-11-04T08:38Z, see probe_mock_record_path_fix_20261104T0838Z).",
     "probe_exit": 1,
     "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
-    "probe_utc": "2026-11-03T12:33:09Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261103T123309Z.json",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
+    "probe_utc": "2026-11-04T15:14:23Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
     "target_published": false
   },
   "latest_verified_data_refresh_utc": "2026-10-31T04:06:00Z",
