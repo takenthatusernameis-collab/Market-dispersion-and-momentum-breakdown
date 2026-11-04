@@ -1,7 +1,6 @@
 {
   "alpha": 0.05,
   "audit_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001",
-  "conclusion": "PLACEBO_SENSITIVE: the observed conditional spread (+0.6165) is outside all three permutation-null 95% CIs (state_permutation p=1e-4, random_ranking p=1e-4, dispersion_shuffle p=1e-4); development/exploratory evidence on the already-inspected sealed block, not independent confirmation and not a confirmatory claim for H1/H6/H7.",
   "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
   "block": {
     "anchor_id": "H004V106",
@@ -13,7 +12,8 @@
     "n_low": 90,
     "n_mid": 457
   },
-  "computed_utc": "2026-11-02T13:29:40Z",
+  "computed_utc": "2026-11-04T20:13:16Z",
+  "conclusion": "PLACEBO_SENSITIVE: the observed high-minus-low net-1x spread 0.616522 on the frozen canonical H004V106 forward block (608 formations) is outside the 95% permutation CI of all three predeclared nulls (state_permutation, random_ranking, dispersion_shuffle), each with two-sided empirical p <= 0.05. The conditional dispersion-to-spread pairing is therefore not an artifact of formation ordering, selection counts or accounting on this block vintage. All results are EXPLORATORY_ONLY development evidence on already-inspected data; the block remains CLUSTER_DOMINATED by 2025-10 (H8), temporally unstable and CLUSTER_INDIFFERENT under month-level clustering, so this label describes a real conditional association on this vintage, not an edge.",
   "decision_rule": "Any family with two-sided empirical p < 0.05 and observed outside the 95% permutation CI => PLACEBO_SENSITIVE; all families p >= 0.05 => PLACEBO_INCONCLUSIVE. Outcome is EXPLORATORY_ONLY; it never promotes, refutes, or unlocks the confirmatory track.",
   "label": "PLACEBO_SENSITIVE",
   "modified_frozen_artifacts": [],
