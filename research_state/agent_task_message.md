@@ -4,7 +4,7 @@ Read prior handoff + task message + AGENTS.md + research_protocol.md + operating
 
 Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). Preregistration reconciliation RESOLVED (2026-11-04T14:06Z): 8 diagnostic audits registered as H14-H21; 4 addenda declared by nulling ids; H12 experiment_id corrected. No fabrication performed.
 
-Verified this pass (2026-11-04T16:12Z):
+Verified this pass (2026-11-04T16:14Z):
 - Full suite: `python3 -m unittest discover -s tests` -> OK (223 run, 1 skipped, 0 failures).
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`.
 - Probe guard respected: no re-probe before 2026-11-30. November monthly archive unavailable until after 2026-11-30. Last probe on disk: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (target_published=false, all six target endpoints HTTP 404, control month 2026-09 alive HTTP 200).
