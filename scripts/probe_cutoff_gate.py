@@ -157,6 +157,14 @@ def main() -> int:
     out_path = out_dir / f"cutoff_probe_{stamp}.json"
     out_path.write_text(json.dumps(record, indent=2, sort_keys=True) + "\n")
 
+    # The summary line is only trustworthy when the record it names actually
+    # exists on disk. probe_month is mocked in the test suite and Path.write_text
+    # is mocked to a no-op, so a naive print would emit a fake "record" path and
+    # a fake UNBLOCKED line that looks exactly like a live gate decision. Real
+    # runs write the file and out_path.exists() is True; mocked runs report
+    # record: null instead of inventing a path.
+    record_path = str(out_path.relative_to(ROOT)) if out_path.exists() else None
+
     print(json.dumps({
         "probe_month": target,
         "target_published": target_published,
@@ -165,7 +173,7 @@ def main() -> int:
         "archive_alive": archive_alive,
         "gate_met_by_month_end": gate_met_by_month_end,
         "cutoff_gate": gate,
-        "record": str(out_path.relative_to(ROOT)),
+        "record": record_path,
     }, indent=2))
     return 0 if gate == "UNBLOCKED" else 1
 

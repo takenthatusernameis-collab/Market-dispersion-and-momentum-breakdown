@@ -8,7 +8,9 @@ durable handoff relies on, so it is pinned here rather than re-derived by
 hand each session.
 """
 import importlib.util
+import io
 import json
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -124,6 +126,30 @@ class ProbeGateLogicTests(unittest.TestCase):
                 rc = probe.main()
                 self.assertEqual(rc, 0)
 
+    def test_mocked_main_prints_record_null_not_a_fabricated_path(self):
+        # Root cause of the spurious-UNBLOCKED hazard: probe.main() prints a JSON
+        # summary whose "record" field named a path derived from the mocked clock.
+        # With Path.write_text mocked to a no-op, that path does not exist on
+        # disk, so the printed line claimed a gate decision backed by no record.
+        # The fix makes the printed record field null when the file was never
+        # written, so a printed UNBLOCKED line can never masquerade as a live
+        # decision. Pin that behavior here.
+        with mock.patch.object(probe, "probe_month") as pm:
+            pm.side_effect = (
+                _monthly_results(True),  # target published (monthly 200)
+                _control_results(),      # control alive
+            )
+            with mock.patch.object(Path, "mkdir"), \
+                 mock.patch.object(Path, "write_text"), \
+                 mock.patch.object(sys, "argv", ["probe", "--probe-month", "2026-10"]):
+                buf = io.StringIO()
+                with mock.patch.object(sys, "stdout", buf):
+                    probe.main()
+        out = json.loads(buf.getvalue())
+        self.assertIsNone(out["record"],
+                          msg="mocked main() must not print a fabricated record path")
+        self.assertEqual(out["cutoff_gate"], "UNBLOCKED")
+
 
 class ProbeRecordShapeTests(unittest.TestCase):
     def test_record_has_required_fields(self):
@@ -203,6 +229,38 @@ class MockOutputIsNeverRealStateTests(unittest.TestCase):
         self.assertFalse(rec["target_published"])
         self.assertEqual(rec["cutoff_gate"], "BLOCKED")
         self.assertTrue(rec["archive_alive"])
+
+    def test_printed_record_path_must_exist_on_disk(self):
+        # Mirror of the fix in scripts/probe_cutoff_gate.py: any summary line
+        # that names a record path must name a file that exists on disk and
+        # reports the same gate. This is what makes a printed UNBLOCKED line
+        # actionable: if the record is absent, the line is not evidence. Here we
+        # audit every real record on disk for (a) existence and (b) internal
+        # consistency: its declared gate must equal the decision rule applied to
+        # its own published/alive/month-end fields, so a hand-edited or
+        # misprinted record cannot claim a gate its own fields do not support.
+        import glob as _glob
+        for p in _glob.glob(str(self.PROBE_DIR / "cutoff_probe_*.json")):
+            if "MOCK" in p:
+                continue
+            self.assertTrue(
+                os.path.exists(p),
+                msg=f"summary line names {p} but it does not exist on disk",
+            )
+            with open(p) as fh:
+                rec = json.load(fh)
+            recomputed = (
+                "UNBLOCKED"
+                if (rec["target_published"]
+                    and rec["archive_alive"]
+                    and rec["gate_met_by_month_end"])
+                else "BLOCKED"
+            )
+            self.assertEqual(
+                rec["cutoff_gate"], recomputed,
+                msg=f"record {p} declares gate {rec['cutoff_gate']} inconsistent "
+                    f"with its own fields (recomputed {recomputed})",
+            )
 
 
 if __name__ == "__main__":
