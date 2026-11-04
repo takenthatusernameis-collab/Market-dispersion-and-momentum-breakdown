@@ -72,7 +72,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-04T15:31Z",
+  "last_updated_utc": "2026-11-04T16:41Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -92,7 +92,7 @@
     "target_published": false
   },
   "latest_november_2026_probe": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
-  "latest_verified_test_claim": "220/220/0",
+  "latest_verified_test_claim": "223/223/0",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
     "canonical_block_impact": "None on outcomes: this session repaired only durable-state JSON. The canonical H004V106 forward block is byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs git show HEAD: and direct sha256sum; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
