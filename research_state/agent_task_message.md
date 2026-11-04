@@ -2,10 +2,10 @@
 
 Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verify current state per instructions.
 
-Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State re-verified 2026-11-04T22:11:59Z. Test suite green (223 run, 1 skipped, 0 failures).
+Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State re-verified 2026-11-04T22:15:15Z. Test suite green (223 run, 1 skipped, 0 failures).
 
-Verified this pass (2026-11-04T22:11:59Z):
-- Branch HEAD 04162c50; tests: `python3 -m unittest discover -s tests` → Ran 223 tests, OK (skipped=1).
+Verified this pass (2026-11-04T22:15:15Z):
+- Branch HEAD 1bca027e; tests: `python3 -m unittest discover -s tests` → Ran 223 tests, OK (skipped=1).
 - Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261103T231540Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED).
 - No frozen experiment artifact changed; no fabrication performed. Only `__pycache__` bytecode caches differ (untracked, not source).
 
