@@ -303,3 +303,18 @@
 - **Frontier/registry:** unchanged: cursor 6347, catalog exhausted; H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7/H9/H10 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY; H10 EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE).
 - **Adaptive-gate trigger:** NOT met (single timing route). Exploratory track NOT started.
 - **Next action:** Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) after 2026-11-30. If target_published=true: refresh free public data if needed (`python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>`), re-run `python3 -m unittest discover -s tests`, verify H004V106 unchanged vs `git show HEAD:`, run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) via `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/`, require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
+## Session record 2026-11-04T04:26Z (current)
+
+- **Prior task status:** COMPLETED state-consistency repair (3 failing tests: probe UTC mismatch, registry sequence, manifest narrative). All 218 tests now pass (skipped=1).
+- **Completed this pass:**
+  1. Read prior handoff + task message + AGENTS.md; confirmed state.
+  2. Fixed universe_frontier.json latest_archive_probe.probe_utc 02:45:09Z -> 03:36:35Z to match named record cutoff_probe_20261104T033635Z.json.
+  3. Fixed hypothesis_registry.json next_sequence_number 10 -> 11 (H11 allocated) and updated stale test expectation.
+  4. Fixed run_manifest.json next_required_actions narrative "next_sequence_number 10" -> "11".
+  5. Full suite: `python3 -m unittest discover -s tests` -> 218 run, OK (skipped=1), EXIT=0.
+  6. Canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged vs disk and git show HEAD:.
+- **Cutoff status:** BLOCKED. November 2026 not published; monthly archive unavailable until after 2026-11-30. October 2026 UNBLOCKED but cannot unblock H10.
+- **Frontier/registry:** unchanged: cursor 6347, catalog exhausted; H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7/H9/H10 CANDIDATE_UNVALIDATED; H8 EXPLORATORY_ONLY; H10 EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0); H11 EXPLORATORY_ONLY.
+- **Adaptive-gate trigger:** NOT met (single timing route). Exploratory track NOT started.
+- **Next action:** Re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) after 2026-11-30. If target_published=true: refresh free public data, re-run tests, verify H004V106 unchanged, run fresh sealed block into forward_block_h10_fresh/, require n_high>0 AND n_low>0, apply predeclared rules/costs/Holm. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
