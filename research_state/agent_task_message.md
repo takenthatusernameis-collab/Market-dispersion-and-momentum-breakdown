@@ -4,11 +4,11 @@ Read prior handoff + task message + AGENTS.md + research_protocol.md + operating
 
 Current status: BLOCKED on two fronts: (1) data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30); (2) preregistration reconciliation requires explicit research decisions and is NOT completable by fabricating hypotheses/preregistrations/metrics.
 
-Verified this pass (2026-11-04T11:40Z):
-- Full suite: `python3 -m unittest discover -s tests` -> 223 run, 13 failures, 0 errors, skipped=1, EXIT=1 (unchanged).
+Verified this pass (2026-11-04T11:53Z):
+- Full suite: `python3 -m unittest discover -s tests` -> FAILED (failures=13, skipped=1), EXIT=1 (unchanged; all 13 failures in tests/test_preregistration_completeness.py).
+- Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`.
 - Blocker preserved; no frozen experiment artifact changed; no fabrication performed.
-- Canonical H004V106 sha256 unchanged; H10 block unchanged (n_formations=1, n_high=0, n_low=0); cutoff gate BLOCKED; adaptive-gate trigger NOT met.
-- Handoff updated with new session record; this task message written for next agent.
+- Probe guard: latest on-disk probe shows cutoff_gate=UNBLOCKED with record=null -- not evidence; November monthly archive unavailable until after 2026-11-30.
 
 IMMEDIATE NEXT ACTION (unblocked, do NOT fabricate):
 1. Preserve blocker. Do NOT attempt to green the suite by fabricating hypotheses, preregistrations, metrics, or by nulling audit ids without an explicit research decision.

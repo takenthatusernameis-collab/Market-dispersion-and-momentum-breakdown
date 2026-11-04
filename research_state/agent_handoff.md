@@ -1,6 +1,15 @@
-## Session record 2026-11-04T11:40Z (current)
+## Session record 2026-11-04T11:53Z (current)
 
 - **Prior task status:** COMPLETED (verification pass). Both blocking fronts remain: (1) data maturity (November 2026 not published; do NOT re-probe before 2026-11-30); (2) preregistration reconciliation requires explicit research decisions and is NOT completable by fabricating hypotheses/preregistrations/metrics.
+- **Completed this pass:**
+  1. Independent verification: re-ran full suite `python3 -m unittest discover -s tests` -> FAILED (failures=13, skipped=1), EXIT=1; all 13 failures in tests/test_preregistration_completeness.py, durable-state mismatches requiring research decisions (unchanged vs prior pass).
+  2. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`.
+  3. Probe guard confirmed: latest on-disk probe shows cutoff_gate=UNBLOCKED with record=null -- not evidence; November 2026 monthly archive unavailable until after 2026-11-30; same-day repeat of known failure prohibited.
+  4. No frozen experiment artifact changed; no fabrication performed; git status clean apart from `__pycache__` bytecode churn.
+- **Cutoff status:** BLOCKED (November 2026 not published; current month; monthly archive unavailable until after 2026-11-30).
+- **Frontier/registry:** unchanged: cursor 6347, catalog exhausted; H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7/H9/H10 CANDIDATE_UNVALIDATED; H8/H11/H12 EXPLORATORY_ONLY; H10 EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE); H13 EXPLORATORY_ONLY (placebo, PLACEBO_SENSITIVE).
+- **Adaptive-gate trigger:** NOT met. Exploratory track NOT started.
+- **Next action:** Preserve blocker; await explicit research decision on preregistration reconciliation (register diagnostic audits as hypotheses with preregistrations, or declare addenda and null their ids) before changing durable state; after 2026-11-30 re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) per agent_task_message.md. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 - **Completed this pass:**
   1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified current state.
   2. Re-ran full suite: `python3 -m unittest discover -s tests` -> 223 run, 13 failures, 0 errors, skipped=1, EXIT=1 (unchanged; all 13 failures in tests/test_preregistration_completeness.py, durable-state mismatches requiring research decisions).
