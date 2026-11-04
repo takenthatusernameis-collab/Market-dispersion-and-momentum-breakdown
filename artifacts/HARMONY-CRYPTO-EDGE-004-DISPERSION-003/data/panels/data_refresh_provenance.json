@@ -526,10 +526,10 @@
     "date_last": "2026-11-03T00:00:00.000000000Z",
     "panel_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/marketcap_panel.csv",
     "panel_rows": 43996,
-    "panel_sha256": "9503da82990c080e9d45fd4ae5cf4cdf469cae07ba5f3f08bf4bfcae1b3e6d75"
+    "panel_sha256": "b531e679531116482aa5c438c398849c6e591a23580d901ce547b9b4ba060f92"
   },
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-11-04T01:29:01Z",
+  "fetch_utc": "2026-11-04T02:34:56Z",
   "point_in_time": "no forward-fill; eligibility and ranking use on-or-before formation information",
   "sources": {
     "binance_public_data_archive": "https://data.binance.vision/data/futures/um",

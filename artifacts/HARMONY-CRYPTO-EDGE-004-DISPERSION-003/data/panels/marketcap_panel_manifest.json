@@ -528,28 +528,28 @@
       "metrics": {
         "CapMrktCurUSD": {
           "page_shas": [
-            "f198c54f1e51ecaed59b500efd320b08611bf9ceb197414e5a5a492e336901ea",
-            "b62621c7e16c05243d53a3ee56cca25875229c4782f73a5b6687aa1f4d61df4b",
-            "2cac4d09b60b1443c35d3903df633d1bddf33d4e12291d1e0827ef5386239f0c",
-            "4210fa4084fe4c5cb13f78caff6219c96812d7dbd25ff3fb73046c611cdde6b9",
-            "b9f24b8a8866d0ecac4779c182f887c6cca1bab472452249f5da1aa0f88d1b31",
-            "592cdce10cd3e0de530e6a8bda7554b791549da7d0e84a3e549d4b46b9d088a4",
-            "9bb497e14a898044c882c8bd8ac77aa44ce21e64b98afe1797c1c989aa3e889b",
-            "20231d33c79d97084f450534113ce2586c33322bd7d1b2bee5f9792de9ac7aaa",
-            "8949807fa26ad513608de74925f25096967c150fdf79f1a76e845a8b42d1a7b0",
-            "fe3af970dca510038c1cbaf324a84a8b1b5ebb3628fc3d9d1bc547bf5fdf106d",
-            "39e7d364107b94fbf1abecc3511a11d3b4bc1a8663d2f65db601a797df8c872d",
-            "d8e6b8933155f0a3a269e8e84c4d63307a14c14e3892eb404c2910d171a9dff4",
-            "9f15d1a15362553b554d1614976feef272722218b0a18f56e537000605d3b371",
-            "0306faf6ff20bcb26325bdf53a80ea53d402efada452304a023634ded85a7233",
-            "d6e5046edce26a5652a1dd6d1cc92de908b12d61a7b3d4cf603c24e945fb2fe2"
+            "e90c04a92f9b5389118aa9345a7fb22ab0e5145378ce424396e6058b12561b8e",
+            "5d0c9e7b15d808cdf0bab445bb5ebb9cdf2573f5dabd6a3cef67e454918f3701",
+            "5e83fe7dc7b77f50c4fe6ec9741e107c0556645441e6433048d0a1f20212496d",
+            "5e36d69920057f64996170d2ff17658f0fdcadd9f29595a0a596293fec3b3e9c",
+            "ff9d9abb218dafcb22ba9c04a7d7ec5afb1d7461f693d46a47cbc7ba02cf21e9",
+            "3b22c006ddea8616a680d43b2cb29474e95d0f8216e3ab18a5bd498323c743cb",
+            "a791de10447bc938b02dd7307d6812b4e68ae943bb587a934e0c4418282da899",
+            "c48e632d28bf912959e2d57ce4cd58a7b8a66a9f94dd26ea73752f0790fbbcce",
+            "a82a0ce679fb37007065370e7834031f3461f9a7ef7399228376a12841d752ec",
+            "6f8a3a359bece08171100a67f15af4903b2f4d4222504272eb30a2008fcb9169",
+            "2c2f73ce6cf78dfe9f6c9de6f13a79a18673784c1f0413abb06e228b866e218d",
+            "4eb5db9ebe9b93fbfb107e970389e1308f63207af266941c76038d4d4f24140b",
+            "2ff034fe156ab11e10b430bc1a343550b65176cd83397bedef4075c569588af0",
+            "27730fd47426ff84cd71f1f23ba07002968682d41b4a3dc8b8746a09c523cef5",
+            "9b872a50c75b84d6a9a67e4df377148bab3785056d34972dc854a3763a889a4b"
           ],
           "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/coinmetrics/dash_CapMrktCurUSD.json",
-          "raw_sha256": "625d7215b69880fb6576739304cb219503c5a5e3664905cf29e087887e93011b",
-          "rows": 1402,
+          "raw_sha256": "03fe98268fd7ce57ae811358ba650fb02712b1cf596a974f250cb685570e4709",
+          "rows": 1403,
           "status": "ok",
           "time_first": "2023-01-01T00:00:00.000000000Z",
-          "time_last": "2026-11-02T00:00:00.000000000Z",
+          "time_last": "2026-11-03T00:00:00.000000000Z",
           "time_order_note": "boundaries computed after sorting rows by time ascending; the CoinMetrics timeseries endpoint paginates descending, so the raw file's first/last rows are not the earliest/latest"
         },
         "CapMrktEstUSD": {
@@ -1564,20 +1564,18 @@
     "xrp",
     "zec"
   ],
-  "end": "2026-11-03T00:00:00.000000000Z",
+  "end": "2026-11-03",
   "endpoint": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
-  "fetch_utc": "2026-11-04T01:29:01Z",
+  "fetch_utc": "2026-11-04T02:34:56Z",
   "frequency": "1d",
   "metrics": [
     "CapMrktEstUSD",
     "CapMrktCurUSD"
   ],
   "panel_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/marketcap_panel.csv",
-  "panel_raw_divergence_note": "The archived raw files contain rows beyond the normalized panel: the CoinMetrics timeseries request was truncated at the panel end date, but the API returned additional observations (e.g. btc_CapMrktEstUSD raw 1397 rows through 2026-10-28 vs 1392 panel rows through 2026-10-23). Raw files are left byte-identical (they carry raw_sha256 provenance); panel boundaries and panel_sha256 describe the panel CSV only.",
   "panel_rows": 43996,
-  "panel_sha256": "9503da82990c080e9d45fd4ae5cf4cdf469cae07ba5f3f08bf4bfcae1b3e6d75",
+  "panel_sha256": "b531e679531116482aa5c438c398849c6e591a23580d901ce547b9b4ba060f92",
   "source": "coinmetrics_community_api",
-  "start": "2023-01-01T00:00:00.000000000Z",
-  "timestamp_boundary_correction_utc": "2026-10-30T22:15:00Z: time_first/time_last recomputed from the raw payloads after sorting by time ascending (the CoinMetrics timeseries endpoint paginates descending); `rows` corrected to the actual record count in each archived raw file; top-level start/end recomputed from the panel CSV. Raw files and panel CSV untouched."
+  "start": "2023-01-01"
 }

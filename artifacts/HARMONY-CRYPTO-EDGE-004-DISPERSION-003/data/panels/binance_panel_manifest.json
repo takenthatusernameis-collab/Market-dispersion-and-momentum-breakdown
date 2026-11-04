@@ -8,7 +8,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for 1INCHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 761,
       "symbol": "1INCHUSDT"
     },
@@ -17,7 +17,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for AAVEUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 761,
       "symbol": "AAVEUSDT"
     },
@@ -26,7 +26,7 @@
       "date_first": "1677024000000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ACHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 709,
       "symbol": "ACHUSDT"
     },
@@ -35,7 +35,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ADAUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "ADAUSDT"
     },
@@ -44,7 +44,7 @@
       "date_first": "1690588800000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for AGLDUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 552,
       "symbol": "AGLDUSDT"
     },
@@ -53,7 +53,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ALGOUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "ALGOUSDT"
     },
@@ -62,7 +62,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ATOMUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "ATOMUSDT"
     },
@@ -71,7 +71,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for AVAXUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "AVAXUSDT"
     },
@@ -80,7 +80,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for BCHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "BCHUSDT"
     },
@@ -89,7 +89,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for BNBUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "BNBUSDT"
     },
@@ -98,7 +98,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for BTCUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "BTCUSDT"
     },
@@ -107,7 +107,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for DASHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "DASHUSDT"
     },
@@ -116,7 +116,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for DOGEUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "DOGEUSDT"
     },
@@ -125,7 +125,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for DOTUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "DOTUSDT"
     },
@@ -134,7 +134,7 @@
       "date_first": "1672531200000",
       "date_last": "1747785600000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for EOSUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 872,
       "symbol": "EOSUSDT"
     },
@@ -143,7 +143,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ETCUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "ETCUSDT"
     },
@@ -152,7 +152,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ETHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "ETHUSDT"
     },
@@ -161,7 +161,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for FILUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "FILUSDT"
     },
@@ -170,7 +170,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for IOSTUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "IOSTUSDT"
     },
@@ -179,7 +179,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for LINKUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "LINKUSDT"
     },
@@ -188,7 +188,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for LTCUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "LTCUSDT"
     },
@@ -197,7 +197,7 @@
       "date_first": "1672531200000",
       "date_last": "1726012800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for MATICUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 620,
       "symbol": "MATICUSDT"
     },
@@ -206,7 +206,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for NEOUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "NEOUSDT"
     },
@@ -215,7 +215,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for QTUMUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "QTUMUSDT"
     },
@@ -224,7 +224,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for RUNEUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "RUNEUSDT"
     },
@@ -233,7 +233,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for SOLUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "SOLUSDT"
     },
@@ -242,7 +242,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for TRXUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "TRXUSDT"
     },
@@ -251,7 +251,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for UNIUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "UNIUSDT"
     },
@@ -260,7 +260,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for VETUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "VETUSDT"
     },
@@ -269,7 +269,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for XLMUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "XLMUSDT"
     },
@@ -278,7 +278,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for XRPUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "XRPUSDT"
     },
@@ -287,7 +287,7 @@
       "date_first": "1672531200000",
       "date_last": "1793404800000",
       "kind": "klines",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (klines panel for ZECUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1399,
       "symbol": "ZECUSDT"
     },
@@ -296,7 +296,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for 1INCHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 2286,
       "symbol": "1INCHUSDT"
     },
@@ -305,7 +305,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for AAVEUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 2286,
       "symbol": "AAVEUSDT"
     },
@@ -314,7 +314,7 @@
       "date_first": "1677052800010",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ACHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 2129,
       "symbol": "ACHUSDT"
     },
@@ -323,7 +323,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ADAUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "ADAUSDT"
     },
@@ -332,7 +332,7 @@
       "date_first": "1690560000000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for AGLDUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 1660,
       "symbol": "AGLDUSDT"
     },
@@ -341,7 +341,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ALGOUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "ALGOUSDT"
     },
@@ -350,7 +350,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ATOMUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "ATOMUSDT"
     },
@@ -359,7 +359,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for AVAXUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "AVAXUSDT"
     },
@@ -368,7 +368,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for BCHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "BCHUSDT"
     },
@@ -377,7 +377,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for BNBUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "BNBUSDT"
     },
@@ -386,7 +386,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for BTCUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "BTCUSDT"
     },
@@ -395,7 +395,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for DASHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "DASHUSDT"
     },
@@ -404,7 +404,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for DOGEUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "DOGEUSDT"
     },
@@ -413,7 +413,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for DOTUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "DOTUSDT"
     },
@@ -422,7 +422,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for EOSUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "EOSUSDT"
     },
@@ -431,7 +431,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ETCUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "ETCUSDT"
     },
@@ -440,7 +440,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ETHUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "ETHUSDT"
     },
@@ -449,7 +449,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for FILUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "FILUSDT"
     },
@@ -458,7 +458,7 @@
       "date_first": "1672531200000",
       "date_last": "1793476800003",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for IOSTUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4584,
       "symbol": "IOSTUSDT"
     },
@@ -467,7 +467,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for LINKUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "LINKUSDT"
     },
@@ -476,7 +476,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for LTCUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "LTCUSDT"
     },
@@ -485,7 +485,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for MATICUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "MATICUSDT"
     },
@@ -494,7 +494,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for NEOUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "NEOUSDT"
     },
@@ -503,7 +503,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for QTUMUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "QTUMUSDT"
     },
@@ -512,7 +512,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for RUNEUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "RUNEUSDT"
     },
@@ -521,7 +521,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for SOLUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "SOLUSDT"
     },
@@ -530,7 +530,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for TRXUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "TRXUSDT"
     },
@@ -539,7 +539,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for UNIUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "UNIUSDT"
     },
@@ -548,7 +548,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for VETUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "VETUSDT"
     },
@@ -557,7 +557,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for XLMUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "XLMUSDT"
     },
@@ -566,7 +566,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for XRPUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "XRPUSDT"
     },
@@ -575,7 +575,7 @@
       "date_first": "1672531200000",
       "date_last": "1793462400000",
       "kind": "funding",
-      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV after the funding panels were rebuilt from all saved monthly zips; previously date_first for funding series reflected the truncated final-month panel and rows counted per-month archive header lines",
+      "manifest_boundary_note": "date_first/date_last/rows recomputed from the panel CSV (funding panel for ZECUSDT) after the panels were rebuilt from all saved monthly zips",
       "rows": 4200,
       "symbol": "ZECUSDT"
     }
