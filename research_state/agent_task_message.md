@@ -4,7 +4,7 @@ Read prior handoff + task message + AGENTS.md + research_protocol.md + operating
 
 Current status: BLOCKED on two fronts: (1) data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30); (2) preregistration reconciliation requires explicit research decisions and is NOT completable by fabricating hypotheses/preregistrations/metrics.
 
-Verified this pass (2026-11-04T12:09Z):
+Verified this pass (2026-11-04T12:12Z):
 - Full suite: `python3 -m unittest discover -s tests` -> FAILED (failures=13, skipped=1); preregistration completeness/durable-state mismatches remain (8 committed audits not in AUDIT_TO_HYPOTHESIS/addenda, 4 addenda carrying ids, H12 experiment_id != audit_id).
 - Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`.
 - Blocker preserved; no frozen experiment artifact changed; no fabrication performed.
@@ -18,3 +18,5 @@ IMMEDIATE NEXT ACTION (unblocked, do NOT fabricate):
 4. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 
 (End of file - total 18 lines)
+" filePath">
+research_state/agent_task_message.md
