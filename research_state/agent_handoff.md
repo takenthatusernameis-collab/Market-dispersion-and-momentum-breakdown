@@ -13,7 +13,7 @@
 - **Adaptive-gate trigger:** NOT met. Exploratory track NOT started.
 - **Next action:** Preserve blocker; after 2026-11-30 re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`). A printed UNBLOCKED line is only evidence when its `record` field is non-null AND that path exists on disk. If target_published=true AND record confirmed on disk: refresh free public data if needed, re-run tests, verify H004V106 unchanged vs `git show HEAD:`, run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 
-## Session record 2026-11-04T15:23Z (current)
+## Session record 2026-11-04T15:25Z (current)
 
 - **Prior task status:** COMPLETE (preregistration reconciliation done 2026-11-04T14:06Z). Blocker preserved: (1) data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30); (2) no fabrication performed.
 - **Completed this pass:**
