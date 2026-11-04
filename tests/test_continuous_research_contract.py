@@ -60,8 +60,9 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # added after the 2026-10-29 tail-influence audit (DISP-003-TAILAUDIT-001);
         # H10 was allocated after the 2026-11-02 cutoff unblock and refresh
         # (DISP-003-H10 fresh sealed forward block, currently BLOCKED by data
-        # availability: only 2 assets have complete October forward horizons).
-        self.assertEqual(registry["next_sequence_number"], 11)
+        # availability); H11 was added as final integrity audit; H12 added for
+        # H10 feasibility.
+        self.assertEqual(registry["next_sequence_number"], 12)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
