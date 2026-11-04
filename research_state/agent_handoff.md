@@ -143,3 +143,15 @@
 - **Completed this pass:** Re-ran refresh to completion; full suite 218 run, 3 FAIL, 1 skipped; canonical H004V106 sha256 unchanged.
 - **Cutoff status:** UNBLOCKED.
 - **Next action:** Repair refresh manifest to enumerate all 32 Binance symbols (or regenerate from on-disk raw), re-run tests to green, verify H004V106 unchanged, then run fresh sealed block into `forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0, apply predeclared rules/costs/Holm. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
+## Session record 2026-11-04T01:46Z (current)
+
+- **Prior task status:** PARTIAL — refresh manifest covered only 2 Binance symbols; 3 tests failing.
+- **Completed this pass:**
+  1. Regenerated Binance manifest (64 series) via scripts/regenerate_binance_manifest.py.
+  2. Fixed Binance provenance series (64 total) via scripts/add_missing_binance_provenance_series.py + scripts/repair_refresh_provenance_binance.py.
+  3. Fixed candidate validation timestamps (4 entries) via scripts/fix_candidate_validation_timestamps.py.
+  4. Full suite: `python3 -m unittest discover -s tests` -> 218 run, OK (skipped=1), EXIT=0.
+  5. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`. No frozen artifact modified.
+- **Cutoff status:** UNBLOCKED.
+- **Next action:** Run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."

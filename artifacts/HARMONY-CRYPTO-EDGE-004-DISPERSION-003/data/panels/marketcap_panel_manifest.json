@@ -1564,7 +1564,7 @@
     "xrp",
     "zec"
   ],
-  "end": "2026-11-03",
+  "end": "2026-11-03T00:00:00.000000000Z",
   "endpoint": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics",
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
   "fetch_utc": "2026-11-04T01:29:01Z",
@@ -1574,8 +1574,10 @@
     "CapMrktCurUSD"
   ],
   "panel_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/marketcap_panel.csv",
+  "panel_raw_divergence_note": "The archived raw files contain rows beyond the normalized panel: the CoinMetrics timeseries request was truncated at the panel end date, but the API returned additional observations (e.g. btc_CapMrktEstUSD raw 1397 rows through 2026-10-28 vs 1392 panel rows through 2026-10-23). Raw files are left byte-identical (they carry raw_sha256 provenance); panel boundaries and panel_sha256 describe the panel CSV only.",
   "panel_rows": 43996,
   "panel_sha256": "9503da82990c080e9d45fd4ae5cf4cdf469cae07ba5f3f08bf4bfcae1b3e6d75",
   "source": "coinmetrics_community_api",
-  "start": "2023-01-01"
+  "start": "2023-01-01T00:00:00.000000000Z",
+  "timestamp_boundary_correction_utc": "2026-10-30T22:15:00Z: time_first/time_last recomputed from the raw payloads after sorting by time ascending (the CoinMetrics timeseries endpoint paginates descending); `rows` corrected to the actual record count in each archived raw file; top-level start/end recomputed from the panel CSV. Raw files and panel CSV untouched."
 }
