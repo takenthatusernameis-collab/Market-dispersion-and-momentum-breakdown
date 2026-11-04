@@ -1,3 +1,14 @@
+## Session record 2026-11-04T11:34Z (current)
+
+- **Prior task status:** BLOCKED. Preregistration reconciliation requires research decisions (registering diagnostic audits as hypotheses/preregistrations or declaring addenda); cannot be completed without fabricating hypotheses/metrics, which is forbidden. Test gate remains red (13 failures) by design. No frozen experiment artifact changed.
+- **Completed this pass:**
+  1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified state.
+  2. Re-ran full suite: `python3 -m unittest discover -s tests` -> 223 run, 13 failures, 0 errors, skipped=1, EXIT=1 (unchanged from prior pass).
+  3. Inspected audit artifacts: 13 files; addenda (hac_addendum, recomputation x2, integrity_audit) carry non-null ids; 9 diagnostic audits carry ids; H10 feasibility audit carries artifact_id `DISP-003-H10-FEASIBILITY-001`. Reconciliation requires explicit research decisions; not performed to avoid fabricating hypotheses.
+  4. Canonical H004V106 sha256 unchanged; H10 block unchanged; cutoff gate BLOCKED; adaptive-gate trigger NOT met.
+- **Cutoff status:** BLOCKED (November 2026 not published; probe only after 2026-11-30).
+- **Next action:** (a) Research decision needed to reconcile preregistration gate (register diagnostic audits as hypotheses with preregistrations, or declare addenda and null their ids) -- requires explicit user/research authorization; (b) re-probe November 2026 after 2026-11-30. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
 ## Session record 2026-11-04T11:21Z (current)
 
 - **Prior task status:** BLOCKED by data maturity (November 2026 not published; cutoff gate BLOCKED). No frozen experiment result changed; only an additive placebo `conclusion` field and test-file/manifest regressions were touched.
