@@ -81,6 +81,51 @@ uncertainty on completed 30-day forward outcomes only.
   confirmatory gates are met on admissible data with complete
   multiple-testing correction and independent recomputation.
 
+## 4.1. Sequential looks and alpha-spending (added 2026-11-04T22:45Z)
+
+H10 is re-evaluated each calendar month as the Binance archive publishes
+(November 2026, December 2026, ...). Each re-evaluation with a wider formation
+window is a sequential look at the same estimand, so research protocol 6
+requires a predeclared alpha-spending rule rather than reusing a fixed 0.05 on
+every look:
+
+    "For future ongoing blocks, freeze each new block and evaluate it once.
+    Number sequential looks and apply a predeclared alpha-spending rule such as
+    alpha_k = 0.05 / (k * (k + 1))."
+
+This section is the single declaration of that rule for H10. It is added before
+any mature outcome exists, so it cannot be outcome-informed.
+
+- **Rule:** `alpha_k = 0.05 / (k * (k + 1))`, with k the 1-based sequential look
+  number at which the fresh block is evaluated.
+- **Declared per-look values:**
+  - k=1 -> alpha_1 = 0.025, cumulative_spend = 0.025, remaining_budget = 0.025
+  - k=2 -> alpha_2 = 0.05/6, cumulative_spend = 0.025 + 0.05/6,
+    remaining_budget = 0.05 - (0.025 + 0.05/6)
+  - The series sums to 0.05 over k = 1..inf, so the family-wise error rate is
+    controlled at the declared family alpha 0.05 in the limit and is strictly
+    below it for any finite number of looks.
+- **Look counter semantics:** k counts completed evaluations of the fresh block
+  that produced an outcome (n_high>0 AND n_low>0). An evaluation that returns
+  IMMATURE (n_high=0 or n_low=0, high_low_diff_net_1x = null) produces no
+  inference and does NOT advance the counter; the next mature evaluation is
+  still look k, not k+1. A skipped look consumes no budget.
+- **Inference rule:** a confirmatory claim on the fresh block requires BOTH
+  section 4(a) (|high_low_diff_net_1x| above the predeclared economic-
+  significance threshold after costs) AND section 4(b) (Holm-significance across
+  the complete 216-cell family) evaluated at the per-look alpha_k for the current
+  look number, NOT at a fixed 0.05. The Holm correction itself is unchanged and
+  always spans the complete declared family; the alpha-spending rule only sets
+  the per-look significance level against which the Holm-adjusted p-value is
+  compared.
+- **Implementation:** scripts/alpha_spending.py is the single implementation
+  (pure arithmetic, no market data, stdlib-only). Guard:
+  tests/test_h10_sequential_alpha_spending.py asserts the prereg text and the
+  module agree on the rule and on the k=1 and k=2 values, and that cumulative
+  spend stays below the family budget.
+- **Not relaxed:** no look-ahead, no outcome-informed choice of k, no reuse of an
+  inspected holdout, no lowering of the family alpha to manufacture a pass.
+
 ## 5. Safeguards (not relaxed)
 
 - No look-ahead: formations strictly after 2026-09-29; no outcomes computed

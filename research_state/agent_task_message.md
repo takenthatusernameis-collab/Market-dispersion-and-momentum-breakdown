@@ -2,17 +2,23 @@
 
 Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verify current state per instructions.
 
-Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State re-verified 2026-11-04T22:15:15Z. Test suite green (223 run, 1 skipped, 0 failures).
+Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State re-verified 2026-11-04T22:45:15Z. Test suite green (229 run, 1 skipped, 0 failures).
 
-Verified this pass (2026-11-04T22:15:15Z):
-- Branch HEAD 1bca027e; tests: `python3 -m unittest discover -s tests` → Ran 223 tests, OK (skipped=1).
-- Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261103T231540Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED).
-- No frozen experiment artifact changed; no fabrication performed. Only `__pycache__` bytecode caches differ (untracked, not source).
+Verified this pass (2026-11-04T22:45:15Z):
+- Branch HEAD f0089921; tests: `python3 -m unittest discover -s tests` -> Ran 229 tests, OK (skipped=1), EXIT=0.
+- Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED).
+- No frozen experiment artifact changed; no fabrication performed. Canonical H004V106 forward block sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged vs `git show HEAD:`. Only `__pycache__` bytecode caches differ (untracked, not source).
+
+NEW WORK THIS PASS (pre-outcome inference-protocol gap, nothing outcome-visible changed):
+- Found that H10's preregistration declared Holm correction across the complete 216-cell family and an economic-significance threshold but was silent on the per-look significance level for sequential re-evaluation, even though research protocol 6 requires a predeclared alpha-spending rule for ongoing blocks and H10 is re-evaluated every calendar month as the Binance archive publishes. `scripts/alpha_spending.py` already implemented the rule (pure arithmetic, no market data, stdlib-only) but nothing wired it into H10's declared decision criteria.
+- Added `preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md` section 4.1 (Sequential looks and alpha-spending) BEFORE any mature outcome exists: rule `alpha_k = 0.05/(k*(k+1))`, family alpha 0.05, explicit k=1 (alpha_1=0.025, cumulative_spend=0.025, remaining_budget=0.025) and k=2 (alpha_2=0.05/6, cumulative_spend=0.025+0.05/6, remaining_budget=0.05-(0.025+0.05/6)); series sums to 0.05 over k=1..inf; look counter counts only evaluations that produced an outcome (n_high>0 AND n_low>0), so an IMMATURE evaluation does not advance k and consumes no budget; a confirmatory claim requires BOTH section 4(a) (|high_low_diff_net_1x| above the predeclared economic-significance threshold after costs) AND section 4(b) (Holm-significance across the complete 216-cell family) evaluated at the per-look alpha_k, never at a fixed 0.05; the Holm family itself is unchanged and always spans all 216 cells -- the alpha-spending rule only sets the per-look significance level.
+- Allocated H22 (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10-SEQUENTIAL-ALPHA, EXPLORATORY_ONLY); registry next_sequence_number 21 -> 22.
+- Added `tests/test_h10_sequential_alpha_spending.py` (6 tests): parses the prereg text and asserts it agrees with `scripts/alpha_spending.py` on the rule and on the k=1/k=2 values, that cumulative spend stays below the family budget, and that a skipped/immature look consumes no budget.
+- Repaired the two tests that pinned next_sequence_number == 21 against the stale manifest narrative: re-corrected run_manifest.json next_required_actions line 134 to 22 (earlier values preserved as a record of what each batch registration set the number to at the time), and updated `tests/test_continuous_research_contract.py::test_registry_keeps_old_hypothesis_and_active_sequence` and `tests/test_state_consistency.py::test_manifest_narrative_next_sequence_number_agrees_with_registry` to assert 22.
 
 IMMEDIATE NEXT ACTION (unblocked, do NOT fabricate):
 1. Preserve blocker. Do NOT attempt to green the suite by fabricating hypotheses, preregistrations, metrics, or by nulling audit ids without an explicit research decision.
-2. After 2026-11-30, re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`). If target_published=true: refresh free public data if needed, re-run tests, verify H004V106 unchanged vs `git show HEAD:` (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390), run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker.
+2. After 2026-11-30, re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`). If target_published=true: refresh free public data if needed, re-run tests, verify H004V106 unchanged vs `git show HEAD:` (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390), run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across the complete family AND the sequential alpha-spending rule at the current look number k (alpha_k = 0.05/(k*(k+1)), per H22/section 4.1) -- never a fixed 0.05. If still IMMATURE, record blocker and do not advance k.
 3. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 
-(End of file - total 15 lines)
-"""
+(End of file - total 18 lines)

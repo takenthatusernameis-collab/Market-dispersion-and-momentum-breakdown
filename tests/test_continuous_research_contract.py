@@ -62,11 +62,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # (DISP-003-H10 fresh sealed forward block, currently BLOCKED by data
         # availability); H11 was added as final integrity audit; H12 added for
         # H10 feasibility; H13 added for the forward-block placebo red team;
-        # H14..H21 added for DISP-003 diagnostic-audit AUDIT_TO_HYPOTHESIS
+        # H14..H22 added for DISP-003 diagnostic-audit AUDIT_TO_HYPOTHESIS
         # coverage (regime conditioning, cluster bootstrap, final integrity,
         # overlap aware, tail influence, temporal stability, rolling dispersion
-        # window, state representativeness).
-        self.assertEqual(registry["next_sequence_number"], 21)
+        # window, state representativeness) and for the H10 sequential
+        # alpha-spending declaration (H22).
+        self.assertEqual(registry["next_sequence_number"], 22)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
