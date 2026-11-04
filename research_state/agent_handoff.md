@@ -1,12 +1,12 @@
-## Session record 2026-11-04T20:56:17Z (current)
+## Session record 2026-11-04T20:57:57Z (current)
 
-- **Prior task status:** COMPLETE (re-verified 2026-11-04T20:56:17Z; blocker preserved; no fabrication performed).
+- **Prior task status:** COMPLETE (re-verified 2026-11-04T20:57:57Z; blocker preserved; no fabrication performed).
 - **Completed this pass:**
   1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified state matches.
-  2. Ran full suite: `python3 -m unittest discover -s tests` -> OK (223 tests run, 1 skipped, 0 failures).
-  3. Verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and matches git history.
-  4. Probe guard respected: no re-probe before 2026-11-30. November monthly archive unavailable until after 2026-11-30. Last probe: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED per handoff logic; printed UNBLOCKED with `record: null` is not evidence).
-  5. No frozen experiment artifact changed; only untracked `__pycache__` differs. No fabrication performed.
+  2. Ran full suite: `python3 -m unittest discover -s tests` -> OK (223 tests run, 1 skipped, 0 failures). `run_manifest.json` `latest_verified_test_claim` "223/223/0" agrees.
+  3. Verified canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`.
+  4. Probe guard respected: no re-probe before 2026-11-30. November monthly archive unavailable until after 2026-11-30. Last probe on disk: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED, record=null). A printed UNBLOCKED line with `record: null` is not evidence.
+  5. No frozen experiment artifact changed; only untracked `__pycache__` bytecode caches differ (not source). No fabrication performed.
   6. Updated handoff and wrote clear initial task message for next agent.
 
 - **Cutoff status:** BLOCKED (November 2026 not published; monthly archive unavailable until after 2026-11-30). Probe guard: do NOT re-probe before 2026-11-30. A printed UNBLOCKED line with `record: null` is not evidence.
