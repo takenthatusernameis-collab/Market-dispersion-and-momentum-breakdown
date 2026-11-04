@@ -1,3 +1,17 @@
+## Session record 2026-11-04T11:58Z (current)
+
+- **Prior task status:** BLOCKED (verification pass). Blockers remain: (1) data maturity (November 2026 not published; do NOT re-probe before 2026-11-30); (2) preregistration reconciliation requires explicit research decisions and is NOT completable by fabricating hypotheses/preregistrations/metrics.
+- **Completed this pass:**
+  1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified current state.
+  2. Re-ran full suite: `python3 -m unittest discover -s tests` -> FAILED (failures=13, skipped=1), EXIT=1 (unchanged; all 13 failures in tests/test_preregistration_completeness.py, durable-state mismatches requiring research decisions: 8 committed audits not in AUDIT_TO_HYPOTHESIS/addenda, 4 addenda carrying ids, H12 experiment_id != audit_id).
+  3. Canonical H004V106 sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs disk and `git show HEAD:`.
+  4. Cutoff probe 2026-11-04T08:32:18Z (record research_state/cutoff_probe/cutoff_probe_20261104T083218Z.json): target_published=false, cutoff_gate=BLOCKED, November 2026 monthly klines AND fundingRate both HTTP 404; control September 2026 HTTP 200 (archive alive, miss genuine month-not-over). Same-day repeat of known failure prohibited; November monthly archive unavailable until after 2026-11-30.
+  5. No frozen experiment artifact changed; no fabrication performed; git status clean apart from `__pycache__` bytecode churn.
+- **Cutoff status:** BLOCKED (November 2026 not published; current month; monthly archive unavailable until after 2026-11-30).
+- **Frontier/registry:** unchanged: cursor 6347, catalog exhausted; H1 NOT_SUPPORTED_AS_ROBUST_EDGE; H2-H7/H9/H10 CANDIDATE_UNVALIDATED; H8/H11/H12 EXPLORATORY_ONLY; H10 EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE); H13 EXPLORATORY_ONLY (placebo, PLACEBO_SENSITIVE).
+- **Adaptive-gate trigger:** NOT met. Exploratory track NOT started.
+- **Next action:** Preserve blocker; await explicit research decision on preregistration reconciliation (register diagnostic audits as hypotheses with preregistrations, or declare addenda and null their ids) before changing durable state; after 2026-11-30 re-probe November 2026 (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`) per agent_task_message.md. A printed UNBLOCKED line is only evidence when its `record` field is non-null AND that path exists on disk. If target_published=true AND record confirmed on disk: refresh free public data if needed, re-run tests, verify H004V106 unchanged vs `git show HEAD:`, run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), require n_high>0 AND n_low>0 before any confirmatory claim, apply predeclared rules/costs/Holm across complete family. If still IMMATURE, record blocker. Never relax 30-day maturity/MIN_ASSETS_DECILES=20/trailing-decile rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
+
 ## Session record 2026-11-04T11:56Z (current)
 
 - **Prior task status:** COMPLETED (verification pass). Blockers remain: (1) data maturity (November 2026 not published; do NOT re-probe before 2026-11-30); (2) preregistration reconciliation requires explicit research decisions (register diagnostic audits as hypotheses with preregistrations, or declare addenda and null their ids) and is NOT completable by fabricating hypotheses/preregistrations/metrics.
