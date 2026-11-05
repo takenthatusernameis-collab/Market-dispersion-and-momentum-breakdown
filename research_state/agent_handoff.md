@@ -1,9 +1,9 @@
-## Session record 2026-11-04T23:50:38Z (current)
+## Session record 2026-11-04T23:59:44Z (current)
 
 - **Prior task status:** COMPLETE (read prior handoff/task message/AGENTS.md/research_protocol.md/operating contract; verified state matches; executed per instructions).
 - **Completed this pass:**
   1. Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verified state matches.
-  2. Verified branch HEAD (f0089921) and tests: `python3 -m unittest discover -s tests` -> Ran 229 tests, OK (skipped=1), EXIT=0.
+  2. Verified branch HEAD (907d8213) and tests: `python3 -m unittest discover -s tests` -> Ran 229 tests, OK (skipped=1), EXIT=0.
   3. Confirmed cutoff probe state: latest probe `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED). November 2026 monthly archives unavailable; probe guard: do NOT re-probe before 2026-11-30.
   4. Verified canonical H004V106 forward block sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged vs `git show HEAD:`.
   5. State reflects H22 (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10-SEQUENTIAL-ALPHA, EXPLORATORY_ONLY) with sequential alpha-spending rule added to H10 preregistration (section 4.1); tests updated accordingly. No frozen experiment artifacts changed; only untracked `__pycache__` bytecode caches differ.
