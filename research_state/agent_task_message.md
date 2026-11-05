@@ -2,10 +2,10 @@
 
 Read prior handoff + task message + AGENTS.md + research_protocol.md + operating contract; verify current state per instructions.
 
-Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State verified 2026-11-05T05:37:02Z. Tests green (229 OK, skipped=1), no tracked changes.
+Current status: BLOCKED on data maturity (November 2026 not published; cutoff gate BLOCKED; do NOT re-probe before 2026-11-30). State verified 2026-11-05T05:46:16Z. Tests green (229 OK, skipped=1), no tracked changes.
 
 Verified this pass (2026-11-05T05:37:02Z):
-- Branch HEAD 5be1cacd; working tree clean of tracked changes aside from __pycache__.
+- Branch HEAD c6808fda; working tree clean of tracked changes aside from __pycache__.
 - Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED, archive_alive=true, control_month=2026-09 ok). Trust only real probe records under `research_state/cutoff_probe/`.
 - No frozen experiment artifact changed. Canonical H004V106 forward block sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged vs `git show HEAD:`.
 
