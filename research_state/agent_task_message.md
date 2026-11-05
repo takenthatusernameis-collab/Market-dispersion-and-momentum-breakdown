@@ -2,8 +2,8 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T17:24Z)
-- **Prior task:** COMPLETE. Re-verified durable state, ran checks (compileall clean; 241 tests OK skipped=1), preserved blocker, did not re-probe November 2026 (guard: no re-probe before 2026-11-30).
+### Verified state (2026-11-05T17:27Z)
+- **Prior task:** COMPLETE. Session verification `research_state/session_verifications/session_verify_20261105T1727Z.json` recorded: compileall clean; unittest discover 241 tests OK skipped=1; all canonical hashes unchanged vs committed blobs; no frozen artifacts modified.
 - **Canonical H004V106 (DO NOT TOUCH):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
 - **H10 fresh block (IMMATURE):** sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` unchanged (cutoff 2026-10-31, n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null). H10 `CANDIDATE_UNVALIDATED`/`EVALUATED_NULL_DIFF_IMMATURE`. H22 `EXPLORATORY_ONLY`. Registry next=22 (H1..H22).
 - **Cutoff probes:** October 2026 UNBLOCKED (`cutoff_probe_20261105T103851Z.json`); November 2026 BLOCKED (`cutoff_probe_20261104T151423Z.json`). **Do NOT re-probe November 2026 before 2026-11-30.**
@@ -16,4 +16,4 @@ Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_p
    - If still blocked, preserve blocker, update handoff/task message with new probe record, continue with any independent unblocked audit/test/doc task that does not touch frozen artifacts or fabricate evidence.
 3. Never relax 30-day maturity, `MIN_ASSETS_DECILES=20`, or trailing-decile state rule. Never open canonical sealed holdout. Never write "wait for a new experiment ID."
 4. Precondition: `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before running the suite.
-"
+5. Measurable progress this session: re-run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests` (baseline: 241 OK, skipped=1) and record a new `research_state/session_verifications/session_verify_<UTC>.json` before signing off.

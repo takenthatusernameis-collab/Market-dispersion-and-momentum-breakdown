@@ -1,0 +1,25 @@
+{
+  "session_utc": "2026-11-05T17:27Z",
+  "head_short": "159890d6",
+  "checks": {
+    "compileall": "clean",
+    "unittest_discover": {"ran": 241, "ok": true, "skipped": 1}
+  },
+  "hashes_sha256": {
+    "canonical_h004v106_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "universe_frontier": "13fe75a27f1eccca0850afef133691ce0af72458108f2ead68fdc4381bc4c563",
+    "hypothesis_registry": "497e0b5157671400206c6ae358dd4db214a69e753c555093753605e6c360f599"
+  },
+  "cutoff_probes": {
+    "october_2026": {"file": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json", "gate": "UNBLOCKED", "target_published": true},
+    "november_2026": {"file": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json", "gate": "BLOCKED", "target_published": false, "no_reprobe_before": "2026-11-30"}
+  },
+  "h10_fresh_status": "IMMATURE",
+  "frontier_status": "ACTIVE_INCOMPLETE",
+  "adaptive_gate_trigger_met": false,
+  "confirmatory_advance": false,
+  "november_probe_run_this_session": false,
+  "source_artifacts_touched": [],
+  "frozen_artifacts_modified": false
+}
