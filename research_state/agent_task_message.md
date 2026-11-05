@@ -2,7 +2,7 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T09:26:33Z)
+### Verified state (2026-11-05T09:43:32Z)
 - **HEAD:** 238af0f0 (`chore(kilo): checkpoint agent session`). Tracked source unchanged vs HEAD except generated `__pycache__` files. No frozen experiment artifacts modified.
 - **Canonical H004V106:** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (verify vs `git show HEAD:` before any fresh-block work).
 - **Cutoff probe:** BLOCKED. Latest real probe: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, `target_published=false`, `cutoff_gate=BLOCKED`, `archive_alive=true`, control 2026-09 ok). **Do NOT re-probe before 2026-11-30.** Trust only real probe records under `research_state/cutoff_probe/`.
@@ -17,3 +17,4 @@ Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_p
    - If still blocked, preserve the blocker, update handoff/task message with the new probe record, and continue with any independent unblocked audit/test/doc task that does not touch frozen artifacts or fabricate evidence.
 3. Never relax 30-day maturity, `MIN_ASSETS_DECILES=20`, or the trailing-decile state rule. Never open the canonical sealed holdout. Never write "wait for a new experiment ID."
 4. Precondition: `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before running the suite.
+"
