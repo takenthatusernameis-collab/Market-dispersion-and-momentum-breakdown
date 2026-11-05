@@ -2,7 +2,7 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T15:48:16Z)
+### Verified state (2026-11-05T15:51:46Z)
 - **HEAD (at verification):** `ebe5aaa9` (`chore(kilo): checkpoint agent session`, 2026-11-05). Working tree has only generated `__pycache__` (not committed). No frozen experiment artifacts modified.
 - **Prior task:** COMPLETE. Re-verified durable state, preserved blocker, ran checks (audit pass=14, compileall clean, 241 tests OK skipped=1), did not re-probe November 2026 (guard: no re-probe before 2026-11-30).
 - **Canonical H004V106 (DO NOT TOUCH):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (disk verified).
@@ -11,7 +11,7 @@ Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_p
   - **October 2026 UNBLOCKED:** `cutoff_probe_20261105T103851Z.json` (probe_utc 2026-11-05T10:38:51Z, probe_month=2026-10): `target_published=true`, `cutoff_gate=UNBLOCKED`, `archive_alive=true`, sha256 `acdc11f79c5f625861013e532b9f534decc21e48afb2cfdf56b782fd89810c1f`.
   - **November 2026 BLOCKED:** `cutoff_probe_20261104T151423Z.json` (probe_utc 2026-11-04T15:14:23Z, probe_month=2026-11): `target_published=false`, `cutoff_gate=BLOCKED`, `archive_alive=true`, sha256 `073adbb60365d7ac85027327db5cf03db39c8e366ca964e2debcccbf86cde92a`. **Do NOT re-probe November 2026 before 2026-11-30.**
 - **Frontier:** `research_state/universe_frontier.json` (sha256 `13fe75a27f1eccca0850afef133691ce0af72458108f2ead68fdc4381bc4c563`) `ACTIVE_INCOMPLETE`; catalog exhausted (`catalog_entries_walked=6347`, `newly_discovered=0`, `candidates_discovered=[]`, `expanding_universe_target_met=true`); `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`. Adaptive-gate trigger NOT met.
-- **Checks (2026-11-05T15:48:16Z):** `python3 scripts/audit_preregistration_coverage.py` -> pass=True, audits=14, missing_prereq=0, uncovered_prereq=0. `python3 -m compileall -q scripts tests` -> clean. `python3 -m unittest discover -s tests` -> 241 run, OK (skipped=1), 0 failures.
+- **Checks (2026-11-05T15:51:46Z):** `python3 scripts/audit_preregistration_coverage.py` -> pass=True, audits=14, missing_prereq=0, uncovered_prereq=0. `python3 -m compileall -q scripts tests` -> clean. `python3 -m unittest discover -s tests` -> 241 run, OK (skipped=1), 0 failures.
 
 ### Immediate next action (unblocked, do not fabricate)
 1. Preserve blocker. Do NOT fabricate hypotheses, preregistrations, metrics, probe records, or audit IDs.
