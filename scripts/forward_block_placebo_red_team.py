@@ -38,6 +38,7 @@ non-zero rather than emitting a placebo artifact built on a wrong rule.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -49,7 +50,10 @@ ROOT = Path(__file__).resolve().parents[1]
 EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 ART = ROOT / "artifacts" / EXP
 BLOCK_PATH = ART / "forward_block" / "forward_block_evaluation.json"
-OUT_PATH = ART / "integrity_audit" / "H004V106_forward_block_placebo_red_team_20261028.json"
+OUT_PATH = Path(
+    os.environ.get("PLACEBO_OUT_PATH")
+    or (ART / "integrity_audit" / "H004V106_forward_block_placebo_red_team_20261028.json")
+)
 
 SEED = 20261028
 N_PERM = 10000
@@ -73,21 +77,34 @@ def derive_states(disp_by_date: pd.Series) -> pd.Series:
     quantile of the reference window, 'low' when <= the LOWER_DECILE
     quantile, and 'mid' otherwise. Matches the state-derivation rule in
     scripts/eval_forward_block.py.
+
+    The per-formation reference window is computed with a single
+    shift(1).rolling(WINDOW_DAYS, min_periods=MIN_PAST) pass over the
+    quantile columns. At position i that rolling window covers exactly
+    values[max(0, i - WINDOW_DAYS):i] -- the same trailing slice the
+    per-formation loop used -- so the result is identical; it is only
+    vectorised so the N=10000 permutation loop does not re-scan and
+    re-quantile a 365-element slice for every one of the ~608 formations
+    per draw.
     """
     values = disp_by_date.to_numpy(dtype=float)
     dates = disp_by_date.index
+    shifted = pd.Series(values, index=dates).shift(1)
+    thr_hi = shifted.rolling(WINDOW_DAYS, min_periods=MIN_PAST).quantile(UPPER_DECILE)
+    thr_lo = shifted.rolling(WINDOW_DAYS, min_periods=MIN_PAST).quantile(LOWER_DECILE)
     n = len(values)
     states = ["mid"] * n
     for i in range(n):
         if i < MIN_PAST:
             continue
-        win = values[max(0, i - WINDOW_DAYS):i]
-        thr_hi = float(np.percentile(win, UPPER_DECILE * 100.0))
-        thr_lo = float(np.percentile(win, LOWER_DECILE * 100.0))
+        hi = thr_hi.iloc[i]
+        lo = thr_lo.iloc[i]
+        if pd.isna(hi) or pd.isna(lo):
+            continue
         d = float(values[i])
-        if d >= thr_hi:
+        if d >= float(hi):
             states[i] = "high"
-        elif d <= thr_lo:
+        elif d <= float(lo):
             states[i] = "low"
     return pd.Series(states, index=dates)
 

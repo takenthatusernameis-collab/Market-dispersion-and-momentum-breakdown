@@ -16,7 +16,9 @@ track.
 
 import hashlib
 import json
+import os
 import subprocess
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -26,6 +28,8 @@ ART = ROOT / "artifacts" / EXP
 AUDIT = ART / "integrity_audit" / "H004V106_forward_block_placebo_red_team_20261028.json"
 CANONICAL = ART / "forward_block" / "forward_block_evaluation.json"
 PLACEBO = ROOT / "scripts" / "forward_block_placebo_red_team.py"
+TMP_AUDIT = Path(tempfile.mkdtemp(prefix="placebo_throwaway_")) / "forward_block_evaluation.json"
+_raw_before = AUDIT.read_bytes()
 
 FAMILIES = ("state_permutation", "random_ranking", "dispersion_shuffle")
 
@@ -140,12 +144,16 @@ class ForwardBlockPlaceboRedTeamTests(unittest.TestCase):
             )
         audit = _load(AUDIT)
         before = CANONICAL.read_bytes()
+        env = dict(os.environ, PLACEBO_OUT_PATH=str(TMP_AUDIT))
         r = subprocess.run(
-            ["python", str(PLACEBO)], cwd=ROOT, capture_output=True, text=True,
+            ["python", str(PLACEBO)], cwd=ROOT, capture_output=True, text=True, env=env,
         )
         self.assertEqual(r.returncode, 0, msg=r.stderr)
         self.assertEqual(CANONICAL.read_bytes(), before)
-        reloaded = _load(AUDIT)
+        # The committed audit artifact must be byte-identical: the slow test
+        # re-runs the script into a throwaway path, never the committed file.
+        self.assertEqual(AUDIT.read_bytes(), _raw_before)
+        reloaded = _load(TMP_AUDIT)
         self.assertEqual(reloaded["label"], "PLACEBO_SENSITIVE")
         for name in FAMILIES:
             self.assertAlmostEqual(
