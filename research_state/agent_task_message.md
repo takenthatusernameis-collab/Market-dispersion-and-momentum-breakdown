@@ -2,8 +2,8 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T09:56:19Z)
-- **HEAD:** d47d7c7a. Tracked source unchanged vs HEAD except generated `__pycache__` files (modified/untracked). No frozen experiment artifacts modified.
+### Verified state (2026-11-05T10:00:13Z)
+- **HEAD:** 2938bb8a. Tracked source unchanged vs HEAD except generated `__pycache__` files (modified/untracked). No frozen experiment artifacts modified.
 - **Canonical H004V106:** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (verify vs `git show HEAD:` before any fresh-block work).
 - **Cutoff probe:** BLOCKED. Latest real probe: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target monthly klines/funding 404; `archive_alive=true`, control 2026-09 ok). **Do NOT re-probe before 2026-11-30.** Trust only real probe records under `research_state/cutoff_probe/`.
 - **H10/H22:** H10 `EVALUATED_NULL_DIFF_IMMATURE` context (`n_formations=1, n_high=0, n_low=0`). H22 (`HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10-SEQUENTIAL-ALPHA`, `EXPLORATORY_ONLY`) preregisters sequential alpha-spending in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md` §4.1 (pre-outcome). Registry `next_sequence_number=22`.
@@ -17,3 +17,5 @@ Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_p
    - If still blocked, preserve the blocker, update handoff/task message with the new probe record, and continue with any independent unblocked audit/test/doc task that does not touch frozen artifacts or fabricate evidence.
 3. Never relax 30-day maturity, `MIN_ASSETS_DECILES=20`, or the trailing-decile state rule. Never open the canonical sealed holdout. Never write "wait for a new experiment ID."
 4. Precondition: `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before running the suite.
+" filePath">
+research_state/agent_task_message.md
