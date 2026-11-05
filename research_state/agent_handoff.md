@@ -1,4 +1,15 @@
-## Session record 2026-11-05T06:25:54Z (current)
+## Session record 2026-11-05T06:39:27Z (current)
+
+- **Prior task status:** COMPLETE (read prior handoff/task message/AGENTS.md/research_protocol.md/operating contract; verified current state; preserved blocker; did not re-probe before 2026-11-30).
+- **Verified this pass:**
+  1. Git status: clean tracked tree (only __pycache__ untracked/modified). HEAD e336504c.
+  2. Canonical H004V106 forward block sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged vs `git show HEAD:` (verified).
+  3. Probe guard respected: no re-probe before 2026-11-30. Latest probe on disk: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED, archive_alive=true, control_month=2026-09 ok). Trust only real probes under `research_state/cutoff_probe/`.
+- **Cutoff status:** BLOCKED (November 2026 not published; no re-probe before 2026-11-30).
+- **Tests:** 229 run, OK (skipped=1), 0 failures (`python3 -m unittest discover -s tests`).
+- **Next action:** Preserve blocker. Do NOT re-probe before 2026-11-30. After 2026-11-30 re-probe November 2026 per task message.
+
+## Session record 2026-11-05T06:25:54Z (prior)
 
 - **Prior task status:** COMPLETE (read prior handoff/task message/AGENTS.md/research_protocol.md/operating contract; verified current state; preserved blocker; did not re-probe before 2026-11-30).
 - **Verified this pass:**
