@@ -2,8 +2,8 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T08:39:14Z)
-- **HEAD:** 75293af9. Tracked source clean; only `__pycache__` generated files modified/untracked. No frozen experiment artifacts modified.
+### Verified state (2026-11-05T08:42:41Z)
+- **HEAD:** fa9cdb3f. Tracked source clean except `__pycache__` generated files. No frozen experiment artifacts modified.
 - **Canonical H004V106:** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (verify vs `git show HEAD:` before any fresh-block work).
 - **Cutoff probe:** BLOCKED. Latest real probe: `research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json` (probe_month=2026-11, `target_published=false`, `cutoff_gate=BLOCKED`, `archive_alive=true`, control 2026-09 ok). **Do NOT re-probe before 2026-11-30.** Trust only real probe records under `research_state/cutoff_probe/`.
 - **H10:** `EVALUATED_NULL_DIFF_IMMATURE` (`n_formations=1, n_high=0, n_low=0`). H22 (`HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10-SEQUENTIAL-ALPHA`, `EXPLORATORY_ONLY`) preregisters sequential alpha-spending in `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md` §4.1 (pre-outcome). Registry `next_sequence_number=22`.
