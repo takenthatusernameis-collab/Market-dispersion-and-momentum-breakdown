@@ -12785,15 +12785,16 @@
       "n_formations": 608,
       "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
     },
-    "cutoff_gate": "BLOCKED",
-    "note": "Real live probe 2026-11-04T15:14:23Z (record research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json): November 2026 monthly BTCUSDT klines HTTP 404 (0 bytes) AND monthly BTCUSDT fundingRate HTTP 404 (0 bytes); daily 11-28/29/30/31 all HTTP 404 (0 bytes); target_published false, cutoff_gate BLOCKED. Archive alive: September 2026 monthly klines HTTP 200 (2066 bytes) and monthly fundingRate HTTP 200 (924 bytes), plus daily 09-28/29/30 HTTP 200 and 09-31 HTTP 404 (invalid date), so the miss is a genuine month-not-over absence, not a dead endpoint. This summary supersedes the 2026-11-04T08:32:18Z November probe summary (record cutoff_probe_20261104T083218Z.json, same verdict, preserved verbatim in earlier reconciliation notes); trust only real probe records under research_state/cutoff_probe/. A printed UNBLOCKED line is only evidence when its record field is non-null AND that path exists on disk (fixed 2026-11-04T08:38Z, see probe_mock_record_path_fix_20261104T0838Z).",
-    "probe_exit": 1,
-    "probe_month": "2026-11",
-    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
-    "probe_utc": "2026-11-04T15:14:23Z",
-    "record": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
-    "target_published": false
+    "cutoff_gate": "UNBLOCKED",
+    "note": "Real live probe 2026-11-05T10:38:51Z (record research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json): the H10 cutoff gate is met by the PUBLISHED October 2026 archive, not by November 2026. October 2026 monthly BTCUSDT klines HTTP 200 (2064 bytes) AND monthly BTCUSDT fundingRate HTTP 200 (943 bytes) -> target_published true, cutoff_gate UNBLOCKED, probe_exit 0. Daily 2026-10-28 HTTP 404 (0 bytes, genuine source gap) while 10-29/30/31 HTTP 200 (356/353/354 bytes). Control September 2026 monthly klines/fundingRate HTTP 200 plus daily 09-28/29/30 HTTP 200, 09-31 HTTP 404 (invalid date) -> archive alive, miss genuine. This summary SUPERSEDES the stale BLOCKED 2026-11-04T15:14:23Z November summary (record cutoff_probe_20261104T151423Z.json, preserved verbatim under latest_november_2026_probe): that summary probed the wrong month for the H10 gate. H10 gate_date_required is 2026-10-29, satisfied by a published 2026-10 archive; November 2026 is not required and its 404s do not block H10. The durable state had carried the November BLOCKED verdict as the H10 gate decision for several sessions, which was a single-source-of-truth error: the gate was in fact UNBLOCKED since at least the 2026-11-02T09:21:18Z probe (record cutoff_probe_20261102T092118Z.json), and 268 real 2026-10 probe records exist on disk (latest 2026-11-03T03:31:21Z), contradicting the earlier claim that no 2026-10 records existed. Trust only real probe records under research_state/cutoff_probe/. A printed UNBLOCKED line is only evidence when its record field is non-null AND that path exists on disk (fixed 2026-11-04T08:38Z, see probe_mock_record_path_fix_20261104T0838Z).",
+    "probe_exit": 0,
+    "probe_month": "2026-10",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json",
+    "probe_utc": "2026-11-05T10:38:51Z",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json",
+    "target_published": true
   },
+  "latest_h10_gate_reconciliation_20261105T1039Z": "Durable-state correction only. The latest_archive_probe summary in both research_state/*.json quoted the 2026-11-04T15:14:23Z November probe (target_published false, BLOCKED, probe_exit 1) as the H10 cutoff-gate decision. That is the wrong month: H10's gate_date_required is 2026-10-29 and the October 2026 archive is published (both monthly endpoints HTTP 200), so the gate is UNBLOCKED. Live re-probe 2026-11-05T10:38:51Z (record cutoff_probe_20261105T103851Z.json) returned UNBLOCKED with byte-identical October endpoints to the committed 2026-11-03T03:31:21Z record, confirming the gate was already open and the durable state was stale, not that a new event occurred. No canonical forward block, grid ledger, DISPERSION-001/002, panel, hypothesis conclusion, decision rule or cost model changed; the canonical H004V106 block is byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs git show HEAD:). The stale November BLOCKED summary is preserved verbatim under latest_november_2026_probe and is not promoted.",
   "latest_november_2026_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
