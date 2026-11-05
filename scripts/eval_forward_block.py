@@ -592,6 +592,36 @@ def main() -> int:
     ]
     freeze_record["evaluated_utc"] = now_utc()
 
+    # Sequential look number and alpha-spending level (H22 / prereg sec 4.1).
+    # Emitted ONLY for fresh blocks sealed to an explicit --output-dir: the
+    # sequential-look protocol governs the H10 fresh block's repeated monthly
+    # re-evaluation, while the canonical H004V106 block was sealed once, before
+    # this rule existed, and is read-only input that must never be re-sealed
+    # (test_canonical_block_git_pinned.py pins it byte-for-byte to the
+    # committed blob). Gating here keeps a default re-run of the canonical path
+    # a true no-op instead of silently appending new keys to the frozen block.
+    if args.output_dir:
+        look_k = int(args.look_number)
+        mature = n_high > 0 and n_low > 0
+        spend = alpha_spending.evaluate_look(look_k)
+        freeze_record["sequential_look_number"] = look_k
+        freeze_record["sequential_family_alpha"] = spend.family_alpha
+        freeze_record["sequential_alpha_k"] = spend.alpha_k
+        freeze_record["sequential_cumulative_spend"] = spend.cumulative_spend
+        freeze_record["sequential_remaining_budget"] = spend.remaining_budget
+        freeze_record["sequential_alpha_rule"] = spend.rule
+        freeze_record["sequential_look_mature"] = bool(mature)
+        freeze_record["sequential_look_consumes_budget"] = bool(mature)
+        freeze_record["sequential_look_note"] = (
+            f"look k={look_k} at alpha_k={spend.alpha_k} "
+            f"(family alpha {spend.family_alpha}); "
+            + ("mature: this look consumes budget and advances the counter"
+               if mature else
+               "IMMATURE (n_high=0 or n_low=0): consumes no budget, do NOT "
+               "advance k -- pass the same --look-number again on the next "
+               "mature evaluation")
+        )
+
     out_path = OUT_DIR / "forward_block_evaluation.json"
     # Preserve the committed evaluated_utc when the re-run reproduces the same
     # sealed result, so a no-op re-evaluation leaves the artifact byte-identical.
