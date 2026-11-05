@@ -2,8 +2,8 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T16:45Z)
-- **HEAD (at verification):** `0abe30e1` (`chore(kilo): checkpoint agent session`). Working tree may contain generated `__pycache__`/`scripts/__pycache__` and regenerated handoff/task/coverage-audit artifacts; no frozen experiment artifacts modified.
+### Verified state (2026-11-05T16:48Z)
+- **HEAD (at verification):** working tree clean of frozen artifacts; generated `__pycache__`/handoff/task/coverage-audit artifacts may be present. No frozen experiment artifacts modified.
 - **Prior task:** COMPLETE. Re-verified durable state, preserved blocker, ran checks (audit pass=True audits=14 missing_prereq=0 uncovered_prereq=0; compileall clean; 241 tests OK skipped=1), did not re-probe November 2026 (guard: no re-probe before 2026-11-30).
 - **Canonical H004V106 (DO NOT TOUCH):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
 - **H10 fresh block (IMMATURE):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json` sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` unchanged (cutoff 2026-10-31, forward_block_start 2026-09-30, n_formations=1, n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null, overlap-aware IMMATURE). H10 `CANDIDATE_UNVALIDATED`/`EVALUATED_NULL_DIFF_IMMATURE`. H22 `EXPLORATORY_ONLY` (`alpha_k = 0.05/(k*(k+1))`; IMMATURE does not advance k). Registry next=22 (H1..H22).
