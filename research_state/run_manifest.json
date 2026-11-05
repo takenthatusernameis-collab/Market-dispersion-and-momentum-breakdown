@@ -81,7 +81,7 @@
     "adaptive_gate_trigger": "NOT met. This pass's only action was a pre-outcome inference-protocol declaration plus a durable-state registration, not a new failed route. The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-04T22:45Z",
+  "last_updated_utc": "2026-11-05T14:37:42Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -101,7 +101,8 @@
     "target_published": true
   },
   "latest_november_2026_probe": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
-  "latest_verified_test_claim": "229/229/0",
+  "latest_verified_test_claim": "241/241/0",
+  "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
     "canonical_block_impact": "None on outcomes: this session repaired only durable-state JSON. The canonical H004V106 forward block is byte-unchanged (sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, verified vs git show HEAD: and direct sha256sum; n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z).",
