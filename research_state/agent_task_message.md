@@ -2,15 +2,15 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-05T13:29:56Z)
-- **HEAD:** `efd8fa39` (`chore(kilo): checkpoint agent session`; commits only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`; no source or frozen-artifact change). Working tree clean apart from generated `__pycache__` (not committed). No frozen experiment artifacts modified.
+### Verified state (2026-11-05T13:33:17Z)
+- **HEAD:** `22daded3` (`chore(kilo): checkpoint agent session`; commits only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`; no source or frozen-artifact change). Working tree clean apart from generated `__pycache__` (not committed). No frozen experiment artifacts modified.
 - **Canonical H004V106:** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged (disk verified).
 - **H10 fresh block:** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json` sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` unchanged (cutoff 2026-10-31, forward_block_start 2026-09-30, n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null, overlap-aware IMMATURE). H10 `CANDIDATE_UNVALIDATED`/`EVALUATED_NULL_DIFF_IMMATURE`. H22 `EXPLORATORY_ONLY` (sequential alpha-spending, H10 prereg §4.1, `alpha_k = 0.05/(k*(k+1))`; IMMATURE does not advance k). Registry `next_sequence_number=22`.
 - **Cutoff probes (real records only under `research_state/cutoff_probe/`):**
   - **October 2026 UNBLOCKED:** `cutoff_probe_20261105T103851Z.json` (probe_utc 2026-11-05T10:38:51Z, probe_month=2026-10): `target_published=true`, `cutoff_gate=UNBLOCKED`, `archive_alive=true` (monthly klines/fundingRate HTTP 200; 10-28 daily HTTP 404 known gap; control 2026-09 ok).
   - **November 2026 BLOCKED:** latest `cutoff_probe_20261104T151423Z.json` (probe_utc 2026-11-04T15:14:23Z, probe_month=2026-11): `target_published=false`, `cutoff_gate=BLOCKED`, `archive_alive=true`, control 2026-09 ok. **Do NOT re-probe November 2026 before 2026-11-30.**
 - **Frontier:** `research_state/universe_frontier.json` `candidate_page_cursor=6347`, `candidates_discovered=[]`, `expanding_universe_target_met=true` (catalog exhausted). Adaptive-gate trigger NOT met.
-- **Checks (2026-11-05T13:29:56Z):** `python3 scripts/audit_preregistration_coverage.py` -> pass=True, audits=14, missing_prereq=0, uncovered_prereq=0. `python3 -m unittest discover -s tests` -> 236 run, OK (skipped=1), 0 failures.
+- **Checks (2026-11-05T13:33:17Z):** `python3 scripts/audit_preregistration_coverage.py` -> pass=True, audits=14, missing_prereq=0, uncovered_prereq=0. `python3 -m unittest discover -s tests` -> 236 run, OK (skipped=1), 0 failures.
 
 ### Immediate next action (unblocked, do not fabricate)
 1. Preserve blocker. Do NOT fabricate hypotheses, preregistrations, metrics, probe records, or audit IDs.
