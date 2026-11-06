@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "20261106T220443Z",
+  "head": "5874ea14d24b83a146a7616bc4a3853071407049",
+  "checks": {
+    "compileall": "ok",
+    "prereg_audit_pass": true,
+    "unittests": {
+      "total_ok": 255,
+      "skipped": 1
+    }
+  },
+  "frozen_hashes": {
+    "h004v106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "git_status_clean": true,
+  "source_test_artifact_changes": false,
+  "nov_probe_before_20261130": false,
+  "notes": "session verification only"
+}
