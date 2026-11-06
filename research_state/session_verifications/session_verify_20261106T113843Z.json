@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-11-06T11:38:43Z",
+  "head_at_verify_start": "3a4c4b64",
+  "prior_task_status": "COMPLETE",
+  "actions_taken": [
+    "Read durable handoff (session 2026-11-06T11:36Z) and agent_task_message.md; completed prior task.",
+    "Ran python3 -m compileall -q scripts tests (EXIT=0).",
+    "Ran python3 scripts/audit_preregistration_coverage.py (pass=True, 14/0/0, EXIT=0).",
+    "Detected recurring bytecode-hygiene issue: 3 tracked tests/__pycache__/*.cpython-312.pyc; fixed via git rm --cached; confirmed git ls-files tests/__pycache__ empty.",
+    "Ran python3 -m unittest discover -s tests (255 OK, skipped=1, 25.524s).",
+    "Verified frozen/canonical hashes unchanged: H004V106 forward_block 7234fc4e..., H10 fresh 9bdee66f..., hypothesis_registry 40110dce....",
+    "Confirmed git diff --name-only -- artifacts/ configs/ empty.",
+    "No November 2026 re-probe (latest cutoff_probe_20261105T205749Z.json BLOCKED, target_published=false; do NOT re-probe before 2026-11-30). No confirmatory advance; k not advanced."
+  ],
+  "checks": {
+    "compileall_exit": 0,
+    "prereg_coverage_pass": true,
+    "prereg_coverage_counts": "14/0/0",
+    "unittest_ran": 255,
+    "unittest_ok": true,
+    "unittest_skipped": 1,
+    "bytecode_hygiene_fixed": true,
+    "frozen_artifacts_unchanged": true
+  },
+  "canonical_hashes_verified": {
+    "H004V106_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "hypothesis_registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf"
+  },
+  "blocker_preserved": true,
+  "november_2026_reprobe_before_20261130": false,
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
