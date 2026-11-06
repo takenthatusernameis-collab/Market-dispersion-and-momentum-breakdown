@@ -81,7 +81,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-06T10:35:19Z",
+  "last_updated_utc": "2026-11-06T10:41:07Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -806,5 +806,14 @@
     "session_verify": "research_state/session_verifications/session_verify_20261106T103303Z.json",
     "timestamp_utc": "2026-11-06T10:33:03Z",
     "tests": "255 OK, skipped=1 (24.496s)"
+  },
+  "session_record_20261106T104107Z": {
+    "utc": "2026-11-06T10:41:07Z",
+    "head_at_verify_start": "e27680e4",
+    "action": "independent_unblocked_verification",
+    "result": "compileall clean; prereg 14/0/0 pass; unittest 255 OK skipped=1 (24.739s); bytecode hygiene re-fixed (3 pyc removed from index); frozen artifacts/configs unchanged",
+    "verification": "research_state/session_verifications/session_verify_20261106T104107Z.json",
+    "november_reprobe": "NOT_DONE (do not re-probe before 2026-11-30)",
+    "confirmatory_advance": false
   }
 }
