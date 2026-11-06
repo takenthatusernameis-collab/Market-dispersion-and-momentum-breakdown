@@ -1,9 +1,9 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session 2026-11-06T20:09Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session 2026-11-06T20:16Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-06T20:09Z, HEAD at verify start `7a09de48`)
-- **Prior task:** COMPLETE. Independent unblocked verification: deps present (Python 3.12.3, numpy 2.5.4, pandas 3.1.1); `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (52.452s). `git ls-files tests/__pycache__` = 0; `git status --short` clean at start; `git diff --name-only -- artifacts/ configs/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/run_manifest.json` empty. Verification: `research_state/session_verifications/session_verify_20261106T200900Z.json`.
+### Verified state (2026-11-06T20:16Z, HEAD at verify start `3d2c6e38cb859e23c2dc1fe18c1d43f78563a279`)
+- **Prior task:** COMPLETE. Independent unblocked verification: deps present (Python 3.12.3, numpy 2.5.4, pandas 3.1.1); `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (52.023s). `git ls-files tests/__pycache__` = 0; `git status --short` clean at start; `git diff --name-only -- artifacts/ configs/ research_state/hypothesis_registry.json research_state/universe_frontier.json research_state/run_manifest.json` empty. Verification: `research_state/session_verifications/session_verify_20261106T201613Z.json`. Hygiene: removed staged junk tracked malformed-redirect path; no frozen artifacts touched.
 - **Canonical H004V106 (DO NOT TOUCH):** sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
 - **H10 fresh block (IMMATURE, preserved):** sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`.
 - **Frontier:** sha256 `ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6` (unchanged).
@@ -17,4 +17,4 @@ Read `research_state/agent_handoff.md` (current session 2026-11-06T20:09Z), this
 4. Never relax 30-day maturity, `MIN_ASSETS_DECILES=20`, or trailing-decile state rule. Never open canonical sealed holdout. Never use today's rank as historical point-in-time truth.
 5. Re-run `compileall -q scripts tests`, `audit_preregistration_coverage.py`, and `unittest discover -s tests` (baseline 255 OK, skipped=1) and record `research_state/session_verifications/session_verify_<UTC>.json` before sign-off. Check `git ls-files tests/__pycache__` is 0. **Never write "wait for a new experiment ID."**
 
-(End of file - total 18 lines)
+(End of file - total 20 lines)
