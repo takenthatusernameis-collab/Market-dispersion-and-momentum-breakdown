@@ -1,0 +1,46 @@
+{
+ "verification_utc": "2026-11-06T05:50:00Z",
+ "git_head_at_verify_start": "dca25199",
+ "prior_task_status": "COMPLETE",
+ "compileall_scripts_tests": {
+  "exit_code": 0
+ },
+ "audit_preregistration_coverage": {
+  "pass": true,
+  "audits": 14,
+  "missing_prereq": 0,
+  "uncovered_prereq": 0
+ },
+ "unittest_discover_tests": {
+  "ran": 255,
+  "ok": true,
+  "skipped": 1,
+  "failures": 0,
+  "errors": 0,
+  "duration_sec": 25.0
+ },
+ "bytecode_hygiene": {
+  "issue": "3 tracked tests/__pycache__/*.cpython-312.pyc files present in index at session start (recurring issue per task message)",
+  "action": "git rm --cached on tracked pyc files; git ls-files confirms NO_TRACKED_BYTECODE; test_no_tracked_bytecode_files passes in full suite",
+  "hygiene_test_pass": true
+ },
+ "durable_state_guard_tests": {
+  "ran": 7,
+  "ok": true,
+  "tests": [
+   "tests.test_state_timestamp_not_stale",
+   "tests.test_bytecode_hygiene"
+  ]
+ },
+ "frozen_hashes_verified_unchanged": {
+  "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "H10_fresh_forward_block_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+  "hypothesis_registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf",
+  "universe_frontier": "2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c"
+ },
+ "universe_frontier_hash_note": "On-disk sha256 is 2ef39517..., which equals git show HEAD:research_state/universe_frontier.json; the stale 1da2f5f4... quoted in some prior handoffs does not match on-disk and is not used.",
+ "universe_frontier_last_updated_utc": "2026-11-06T05:36:42Z",
+ "diff_since_prior_head_e471b6c4": "Only research_state session records changed (handoff, task_message, run_manifest, session_verify_20261106T054600Z, verified_test_claim_claim_snapshot). No artifacts/ or configs/ changes; no frozen experiment artifacts/configs modified.",
+ "november_2026_reprobe": "NOT RUN (latest cutoff_probe_20261105T205749Z.json, 2026-11-05T20:57:49Z, BLOCKED, target_published=false). Do NOT re-probe before 2026-11-30.",
+ "confirmatory_advance": "NONE; k not advanced."
+}
