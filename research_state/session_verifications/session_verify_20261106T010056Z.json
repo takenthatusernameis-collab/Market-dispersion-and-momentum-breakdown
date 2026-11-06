@@ -1,0 +1,31 @@
+{
+  "session_ts": "20261106T010056Z",
+  "head": "95b012a34b935d002ba9b4a1c828caac5ba91aae",
+  "pip_requirements": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "importable": true
+  },
+  "compileall": "clean",
+  "unittest": {
+    "ran": 244,
+    "ok": 244,
+    "skipped": 1
+  },
+  "prereg_audit": {
+    "pass": true,
+    "audits": 14,
+    "missing_prereq": 0,
+    "uncovered_prereq": 0
+  },
+  "canonical_h004v106_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+  "frozen_artifacts_modified": false,
+  "november_probe_before_20261130": false,
+  "cutoff_probes": {
+    "october_2026": "UNBLOCKED (cutoff_probe_20261105T103851Z.json)",
+    "november_2026": "BLOCKED (cutoff_probe_20261105T205749Z.json)"
+  },
+  "k_advanced": false,
+  "frontier_registry_unchanged": true
+}
