@@ -1,13 +1,13 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session 2026-11-06T10:33Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session 2026-11-06T10:35Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-06T10:33:03Z, HEAD `c5a8e690` at verify start)
-- **Prior task:** COMPLETE. Independent unblocked verification: `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (24.496s). Recurring bytecode-hygiene issue (3 tracked `tests/__pycache__/*.cpython-312.pyc`) re-fixed via `git update-index --force-remove`; `git ls-files tests/__pycache__` confirms 0 tracked bytecode. `git diff --name-only -- artifacts/ configs/` empty. Verification: `research_state/session_verifications/session_verify_20261106T103303Z.json`. Manifest entry `session_record_20261106T103303Z`; frontier/manifest `last_updated_utc` bumped to `2026-11-06T10:33:03Z`.
+### Verified state (2026-11-06T10:35:19Z, HEAD `888db97a` at verify start)
+- **Prior task:** COMPLETE. Independent unblocked verification: `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (25.282s). Recurring bytecode-hygiene issue (3 tracked `tests/__pycache__/*.cpython-312.pyc`) re-fixed via `git update-index --force-remove`; `git ls-files tests/__pycache__` confirms 0 tracked bytecode. `git diff --name-only -- artifacts/ configs/` empty. Verification: `research_state/session_verifications/session_verify_20261106T103519Z.json`. Manifest entry `session_record_20261106T103519Z`; frontier/manifest `last_updated_utc` bumped to `2026-11-06T10:35:19Z`.
 - **Canonical H004V106 (DO NOT TOUCH):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
 - **H10 fresh block (IMMATURE):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json` sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (cutoff 2026-10-31, n_high=0, n_low=0, n_mid=1). H10 `CANDIDATE_UNVALIDATED/EVALUATED_NULL_DIFF_IMMATURE`; H22 `EXPLORATORY_ONLY`; registry next=22 (H1..H22).
 - **Cutoff probes:** October 2026 UNBLOCKED (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`). November 2026 BLOCKED (latest `research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json`, 2026-11-05T20:57:49Z, target_published=false). **Do NOT re-probe November 2026 before 2026-11-30.**
-- **Frontier/registry:** `research_state/universe_frontier.json` sha256 `2cbe5211406550821519cc9c14adf9e695ebc4656370b5e71012ccdaee0fd0c1` (last_updated `2026-11-06T10:33:03Z`). `research_state/hypothesis_registry.json` sha256 `40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf`. Adaptive-gate trigger NOT met.
+- **Frontier/registry:** `research_state/universe_frontier.json` sha256 `1f77dd4f17fe3a2df60779b151a493ab6ce3ce7ebf8806dc786862e1e27ed0ee` (last_updated `2026-11-06T10:35:19Z`). `research_state/hypothesis_registry.json` sha256 `40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf`. Adaptive-gate trigger NOT met.
 - **HASH NOTE:** Frontier/manifest hashes change with durable-state updates; always recompute `sha256sum`. Older hashes in past handoff/task messages may be stale.
 
 ### Immediate next action (unblocked, do not fabricate)
@@ -19,6 +19,4 @@ Read `research_state/agent_handoff.md` (current session 2026-11-06T10:33Z), this
 4. Precondition: `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before running the suite if deps are missing.
 5. **Measurable progress each session:** re-run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests` (baseline 255 OK, skipped=1) and record `research_state/session_verifications/session_verify_<UTC>.json` before signing off.
 6. Durable-state guard: if you hand-edit `research_state/universe_frontier.json` or `research_state/run_manifest.json`, bump `last_updated_utc`. Use `scripts/record_test_claim.py` when .py inventory/suite count changes. Use `scripts/append_manifest_entry.py` for session records as appropriate.
-7. Note recurring issue: `tests/__pycache__/*.pyc` reappear after `compileall`/test runs; re-apply `git rm --cached` / `git update-index --force-remove` if `test_no_tracked_bytecode_files` fails before signing off.
-
-(End of file - total 31 lines)
+7. Note recurring issue: `tests/__pycache__/*.pyc` reappear after `compileall`/test runs; re-apply `git update-index --force-remove` / `git rm --cached` if `test_no_tracked_bytecode_files` fails before signing off.

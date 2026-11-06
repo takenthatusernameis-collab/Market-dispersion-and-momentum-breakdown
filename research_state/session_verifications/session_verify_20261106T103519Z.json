@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261106T103519Z",
+  "timestamp_utc": "2026-11-06T10:35:19Z",
+  "head_at_verify_start": "888db97aed4651487f2b9e72009db69ad74a0ef7",
+  "prior_task_status": "COMPLETE",
+  "prior_task_summary": "Read prior agent task from durable handoff (2026-11-06T10:33Z) and completed it. Independent unblocked verification performed.",
+  "checks": {
+    "compileall_scripts_tests": {"exit_code": 0, "status": "PASS"},
+    "preregistration_coverage_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0, "status": "PASS"},
+    "unittest_discover": {"ran": 255, "ok": true, "skipped": 1, "duration_seconds": 25.282, "status": "PASS"}
+  },
+  "bytecode_hygiene": {
+    "issue": "3 tracked tests/__pycache__/*.cpython-312.pyc reappeared as modified in working tree",
+    "fix": "git update-index --force-remove tests/__pycache__/test_data_pipeline.cpython-312.pyc tests/__pycache__/test_grid_validation.cpython-312.pyc tests/__pycache__/test_inference_repro.cpython-312.pyc",
+    "tracked_pycache_after_fix": 0,
+    "status": "FIXED"
+  },
+  "frozen_artifacts_configs_modified": false,
+  "canonical_frozen_hashes_verified": {
+    "H004V106_forward_block_evaluation": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block_evaluation": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "hypothesis_registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf",
+    "unchanged": true
+  },
+  "state_hashes_at_verify_time": {
+    "universe_frontier": "2cbe5211406550821519cc9c14adf9e695ebc4656370b5e71012ccdaee0fd0c1",
+    "run_manifest": "a98ed59cb31bb0b9bae80a0691d4d3ca8ff9186d4ae197312531a3924e34c93c",
+    "note": "Durable-state files will be updated by this session; recompute sha256sum after edits."
+  },
+  "blockers_preserved": {
+    "november_2026_probe": "BLOCKED (latest cutoff_probe_20261105T205749Z.json, target_published=false). Do NOT re-probe before 2026-11-30.",
+    "H10_fresh": "IMMATURE (n_high=0, n_low=0, n_mid=1, cutoff 2026-10-31)",
+    "confirmatory_advance": false,
+    "k_not_advanced": true
+  },
+  "evidence_fabricated": false
+}
