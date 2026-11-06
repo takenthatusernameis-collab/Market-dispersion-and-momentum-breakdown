@@ -81,7 +81,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-06T10:41:07Z",
+  "last_updated_utc": "2026-11-06T11:26:52Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -768,7 +768,51 @@
     "unittest_skipped": 1,
     "verification": "research_state/session_verifications/session_verify_20261106T102901Z.json"
   },
-  "session_record_latest": "session_record_20261106T092854Z",
+  "session_record_20261106T103303Z": {
+    "bytecode_hygiene_fixed": true,
+    "compileall_exit": 0,
+    "confirmatory_advance": false,
+    "frozen_artifacts_touched": false,
+    "head_at_verify_start": "c5a8e690ca6ea3a60ec57c6ee58f208af9e24a22",
+    "k_advanced": false,
+    "november_reprobe_before_20261130": false,
+    "prereg_coverage_pass": true,
+    "prior_task": "COMPLETE",
+    "session_verify": "research_state/session_verifications/session_verify_20261106T103303Z.json",
+    "tests": "255 OK, skipped=1 (24.496s)",
+    "timestamp_utc": "2026-11-06T10:33:03Z"
+  },
+  "session_record_20261106T104107Z": {
+    "action": "independent_unblocked_verification",
+    "confirmatory_advance": false,
+    "head_at_verify_start": "e27680e4",
+    "november_reprobe": "NOT_DONE (do not re-probe before 2026-11-30)",
+    "result": "compileall clean; prereg 14/0/0 pass; unittest 255 OK skipped=1 (24.739s); bytecode hygiene re-fixed (3 pyc removed from index); frozen artifacts/configs unchanged",
+    "utc": "2026-11-06T10:41:07Z",
+    "verification": "research_state/session_verifications/session_verify_20261106T104107Z.json"
+  },
+  "session_record_20261106T112652Z": {
+    "bytecode_hygiene": "removed 3 tracked tests/__pycache__/*.cpython-312.pyc via git rm --cached",
+    "canonical_hashes_unchanged": {
+      "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf"
+    },
+    "checks": {
+      "compileall": "clean",
+      "prereg_coverage": "14/0/0 pass",
+      "unittest": "255 OK skipped=1 (26.177s)"
+    },
+    "confirmatory_advance": false,
+    "frozen_artifacts_touched": false,
+    "head_at_verify_start": "9c2f116c",
+    "k_advanced": false,
+    "november_2026_reprobe_done": false,
+    "prior_task_status": "COMPLETE",
+    "session_utc": "2026-11-06T11:26:52Z",
+    "verification": "research_state/session_verifications/session_verify_20261106T112652Z.json"
+  },
+  "session_record_latest": "session_record_20261106T112652Z",
   "session_records": [
     "session_record_20261101T1404Z",
     "session_record_20261101T1406Z",
@@ -791,29 +835,7 @@
     "session_record_20261106T0546Z",
     "session_record_20261106T0550Z",
     "session_record_20261106T092854Z",
-    "session_record_20261106T103519Z"
-  ],
-  "session_record_20261106T103303Z": {
-    "bytecode_hygiene_fixed": true,
-    "compileall_exit": 0,
-    "confirmatory_advance": false,
-    "frozen_artifacts_touched": false,
-    "head_at_verify_start": "c5a8e690ca6ea3a60ec57c6ee58f208af9e24a22",
-    "k_advanced": false,
-    "november_reprobe_before_20261130": false,
-    "prereg_coverage_pass": true,
-    "prior_task": "COMPLETE",
-    "session_verify": "research_state/session_verifications/session_verify_20261106T103303Z.json",
-    "timestamp_utc": "2026-11-06T10:33:03Z",
-    "tests": "255 OK, skipped=1 (24.496s)"
-  },
-  "session_record_20261106T104107Z": {
-    "utc": "2026-11-06T10:41:07Z",
-    "head_at_verify_start": "e27680e4",
-    "action": "independent_unblocked_verification",
-    "result": "compileall clean; prereg 14/0/0 pass; unittest 255 OK skipped=1 (24.739s); bytecode hygiene re-fixed (3 pyc removed from index); frozen artifacts/configs unchanged",
-    "verification": "research_state/session_verifications/session_verify_20261106T104107Z.json",
-    "november_reprobe": "NOT_DONE (do not re-probe before 2026-11-30)",
-    "confirmatory_advance": false
-  }
+    "session_record_20261106T103519Z",
+    "session_record_20261106T112652Z"
+  ]
 }
