@@ -1,0 +1,32 @@
+{
+  "verification_utc": "2026-11-06T05:46:00Z",
+  "git_head_at_verify_start": "e471b6c4",
+  "prior_task_status": "COMPLETE",
+  "compileall_scripts_tests": {"exit_code": 0},
+  "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+  "unittest_discover_tests": {"ran": 255, "ok": true, "skipped": 1, "failures": 0, "errors": 0, "duration_sec": 24.86},
+  "bytecode_hygiene": {
+    "issue": "3 tracked tests/__pycache__/*.cpython-312.pyc files present in index at session start (recurring issue per task message)",
+    "action": "git rm --cached on tracked pyc files; git ls-files confirms NO_TRACKED_BYTECODE; test_no_tracked_bytecode_files passes in full suite",
+    "hygiene_test_pass": true
+  },
+  "durable_state_guard_tests": {"ran": 7, "ok": true, "tests": ["tests.test_state_timestamp_not_stale", "tests.test_bytecode_hygiene"]},
+  "frozen_hashes_verified_unchanged": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "hypothesis_registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf",
+    "universe_frontier": "2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c"
+  },
+  "universe_frontier_hash_note": "On-disk sha256 is 2ef39517..., which equals git show HEAD:research_state/universe_frontier.json and git show 093bf482:research_state/universe_frontier.json. The 1da2f5f4... value quoted in the prior handoff/task message is a STALE hash from an earlier session record and does not correspond to the current file; file content is byte-identical across the recent commits (git diff 093bf482 e471b6c4 -- research_state/universe_frontier.json is empty). Recorded the actual verified hash to prevent a stale-hash handoff from propagating.",
+  "git_diff_name_only": {
+    "artifacts_configs": "empty",
+    "working_tree_changes": ["research_state/run_manifest.json (last_updated_utc bump from record_test_claim.py)", "research_state/verified_test_claim_claim_snapshot.json (recorded_utc bump from record_test_claim.py)", "tests/__pycache__/*.cpython-312.pyc staged deletions"]
+  },
+  "cutoff_probes": {
+    "october_2026": {"status": "UNBLOCKED", "record": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json"},
+    "november_2026": {"status": "BLOCKED", "record": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json", "target_published": false, "do_not_reprobe_before": "2026-11-30"}
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "notes": "Independent unblocked verification at HEAD e471b6c4. Recurring bytecode hygiene re-fixed (3 tracked pyc removed from index). record_test_claim.py re-run (designated writer) refreshed verified_test_claim_claim_snapshot.json (255/255/0) and run_manifest.json last_updated_utc; no test-count or suite-content change. Frontier last_updated_utc already 2026-11-06T05:36:42Z (later than the quoted 2026-11-05T20:57:49Z probe), so fix_frontier_last_updated_utc.py was NOT needed and was not run. No frozen artifacts/configs modified. No November 2026 re-probe before 2026-11-30."
+}
