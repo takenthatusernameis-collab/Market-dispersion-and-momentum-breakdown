@@ -1,9 +1,9 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session 2026-11-06T12:37Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session 2026-11-06T12:41Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-06T12:37Z, HEAD `3bdea88d` at verify start)
-- **Prior task:** COMPLETE. Independent unblocked verification: `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (25.016s). Bytecode-hygiene re-fixed; `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261106T123724Z.json`.
+### Verified state (2026-11-06T12:41Z, HEAD `771233c5` at verify start)
+- **Prior task:** COMPLETE. Independent unblocked verification: `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (24.492s). Bytecode-hygiene re-fixed; `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261106T124100Z.json`.
 - **Canonical H004V106 (DO NOT TOUCH):** sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
 - **H10 fresh block (IMMATURE):** sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (cutoff 2026-10-31, n_high=0, n_low=0, n_mid=1).
 - **Cutoff probes:** October 2026 UNBLOCKED. November 2026 BLOCKED (latest `cutoff_probe_20261105T205749Z.json`, target_published=false). **Do NOT re-probe November 2026 before 2026-11-30.**
