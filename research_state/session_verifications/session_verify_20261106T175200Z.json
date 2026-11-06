@@ -1,0 +1,34 @@
+{
+  "session": "2026-11-06T17:52Z",
+  "head_at_verify_start": "6709cfc9da1242397e4187a573b906c855e9a917",
+  "deps": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compileall": {
+    "cmd": "python3 -m compileall -q scripts tests",
+    "exit": 0
+  },
+  "audit": {
+    "cmd": "python3 scripts/audit_preregistration_coverage.py",
+    "pass": true,
+    "audits": 14,
+    "missing_prereq": 0,
+    "uncovered_prereq": 0
+  },
+  "tests": {
+    "cmd": "python3 -m unittest discover -s tests",
+    "ran": 255,
+    "ok": true,
+    "skipped": 1
+  },
+  "pycache_tracked": 0,
+  "frozen_hashes": {
+    "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "november_probe": "BLOCKED (do not re-probe before 2026-11-30)",
+  "confirmatory_advance": false
+}
