@@ -1,0 +1,31 @@
+{
+  "session_ts": "20261106T010342Z",
+  "head": "68b7bef99d461e38d92efb605adf05e0096e84a7",
+  "pip_requirements": "satisfied (prior session verified; no changes)",
+  "compileall": "clean (scripts, tests)",
+  "unittest": {
+    "ran": 244,
+    "ok": true,
+    "skipped": 1,
+    "duration_s": 52.2
+  },
+  "prereg_audit": {
+    "pass": true,
+    "audits": 14,
+    "missing_prereq": 0,
+    "uncovered_prereq": 0
+  },
+  "canonical_h004v106_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+  "frontier_sha256": "13fe75a27f1eccca0850afef133691ce0af72458108f2ead68fdc4381bc4c563",
+  "registry_sha256": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf",
+  "frozen_artifacts_modified": false,
+  "november_probe_before_20261130": false,
+  "cutoff_probes": {
+    "october_2026": "UNBLOCKED (cutoff_probe_20261105T103851Z.json)",
+    "november_2026_latest": "BLOCKED (cutoff_probe_20261105T205749Z.json)"
+  },
+  "k_advanced": false,
+  "confirmatory_advance": false,
+  "prior_task_status": "COMPLETE (read handoff/task; independent verification + audit; no fabrication)"
+}
