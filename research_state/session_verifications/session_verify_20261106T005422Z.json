@@ -1,0 +1,26 @@
+{
+  "schema_version": "session_verification_v1",
+  "timestamp_utc": "2026-11-06T00:54:22Z",
+  "head_commit": "b902f6004cff7bd927f55defadf3d7560d764006",
+  "prior_task_status": "COMPLETE",
+  "checks": {
+    "pip_install_requirements": {"status": "OK", "detail": "numpy 2.5.4, pandas 3.1.1 importable"},
+    "compileall": {"status": "OK", "command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "unittest_discover": {"status": "OK", "command": "python3 -m unittest discover -s tests", "ran": 244, "skipped": 1, "failures": 0, "errors": 0},
+    "preregistration_coverage_audit": {"status": "OK", "command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0}
+  },
+  "canonical_frozen_hashes_verified_unchanged": {
+    "H004V106_forward_block_evaluation_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block_evaluation_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "universe_frontier_sha256": "13fe75a27f1eccca0850afef133691ce0af72458108f2ead68fdc4381bc4c563",
+    "hypothesis_registry_sha256": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf"
+  },
+  "cutoff_probes_verified": {
+    "october_2026": {"file": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json", "gate": "UNBLOCKED"},
+    "november_2026_latest": {"file": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json", "gate": "BLOCKED", "target_published": false}
+  },
+  "november_reprobe_before_2026_11_30": false,
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "frozen_artifacts_modified": false
+}
