@@ -81,7 +81,7 @@
     "adaptive_gate_trigger": "NOT met. This pass's only action was a pre-outcome inference-protocol declaration plus a durable-state registration, not a new failed route. The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-06T00:05:08Z",
+  "last_updated_utc": "2026-11-06T02:14:52Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -101,7 +101,7 @@
     "target_published": true
   },
   "latest_november_2026_probe": "research_state/cutoff_probe/cutoff_probe_20261104T151423Z.json",
-  "latest_verified_test_claim": "244/244/0",
+  "latest_verified_test_claim": "246/246/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
