@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-11-06T16:54:10Z",
+  "head_sha_at_verify_start": "605397f2942bf4271931ef92f8f262628aa6f183",
+  "prior_task_file": "research_state/agent_task_message.md",
+  "prior_task_session": "2026-11-06T16:47Z",
+  "prior_task_status": "COMPLETE",
+  "python": "3.12.3",
+  "deps": {"numpy": "2.5.4", "pandas": "3.1.1"},
+  "checks": {
+    "compileall_scripts_tests": {"exit_code": 0, "clean": true},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover_tests": {"ran": 255, "ok": true, "skipped": 1, "failures": 0, "errors": 0, "duration_s": 52.208}
+  },
+  "hygiene": {
+    "git_ls_files_tests_pycache_count": 0,
+    "git_status_short_at_start": "",
+    "git_diff_artifacts_configs": ""
+  },
+  "frozen_hashes_verified": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "universe_frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "cutoff_probe": {
+    "latest_november": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json",
+    "november_target_published": false,
+    "november_blocked": true,
+    "reprobe_before_2026_11_30": "FORBIDDEN"
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "frozen_artifacts_touched": false
+}
