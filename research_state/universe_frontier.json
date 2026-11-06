@@ -12486,9 +12486,8 @@
     ],
     "catalog_entries_walked": 6347,
     "endpoint": "https://community-api.coinmetrics.io/v4/reference-data/assets",
-    "fetch_utc": "2026-11-02T20:02:20Z",
+    "fetch_utc": "2026-11-06T03:55:04Z",
     "first_20": [],
-    "last_verified_utc": "2026-11-03T08:16:24Z",
     "legacy_excluded": [
       "1inch",
       "aave",
@@ -12525,8 +12524,6 @@
     ],
     "newly_discovered": 0,
     "status": "ok",
-    "verification_note_20261103T0816Z": "Re-verified this session: catalog_entries_walked 6347, unique ids 6347, legacy_excluded 32, verified_excluded 220, blocked 6127, newly_discovered 0, candidates_discovered 0, candidate_page_cursor 6347 unchanged. Catalog not grown; nothing to validate; frontier exhausted.",
-    "verification_note_20261103T1116Z": "Re-verified this session: catalog_entries_walked 6347, unique ids 6347, legacy_excluded 32, verified_excluded 220, blocked 6127, newly_discovered 0, candidates_discovered 0, candidate_page_cursor 6347 unchanged. Catalog not grown; nothing to validate; frontier exhausted. Latest real cutoff probe advanced to research_state/cutoff_probe/cutoff_probe_20261103T111609Z.json (2026-11-03T11:16:09Z): probe-month 2026-11, target_published=false, cutoff_gate=BLOCKED, probe_exit=1; all six November endpoints HTTP 404; September 2026 control HTTP 200 (archive alive, miss genuine = month not over). Fresh H10 block unchanged: IMMATURE/NULL_DIFF (n_formations=1, n_high=0, n_low=0, n_mid=1, date 2026-09-30, high_low_diff_net_1x null, overlap_aware_uncertainty status IMMATURE). Canonical H004V106 sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged (disk and git show HEAD:). No frozen artifacts modified.",
     "verified_excluded": [
       "1inch",
       "aave",
@@ -12774,7 +12771,7 @@
   "h11_audit_allocation_note_20261104T0325Z": "Durable-state completeness repair only. Allocated H11 (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FINAL-INTEGRITY-AUDIT, EXPLORATORY_ONLY) to register the already-completed, preregistered and tested consolidated final integrity audit of the canonical H004V106 forward block (artifact integrity_audit/H004V106_forward_block_final_integrity_audit_20261102.json, PASS on every predeclared criterion). The audit artifact, its preregistration and its regression test all existed; only the hypothesis registry had no entry (next_sequence_number was 10, H1..H10 present). No frozen artifact, panel, grid ledger, hypothesis conclusion, decision rule or cost model changed. Canonical block byte-unchanged (sha256 7234fc4e..., n_formations 608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, block_sealed True, data_cutoff_utc 2026-09-30T00:00:00Z). H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0). Adaptive-gate trigger NOT met (single timing route; this pass's only action was a durable-state repair, not a new failed route).",
   "historical_rank_coverage_reason": "No historical descending market-cap rank has been independently verified for any candidate outside the legacy 32. The CoinMetrics community catalog was fully walked (6347 entries) and every id is now either legacy32, verified (220) or blocked (6127), so no further catalog discovery is possible with the free CoinMetrics reference endpoint. Proving rank coverage would require a point-in-time ranked panel, which the free sources do not support at this cutoff. Kept NOT_PROVEN_COMPLETE; today's rank is never backfilled as historical rank.",
   "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
-  "last_updated_utc": "2026-11-06T02:11:09Z",
+  "last_updated_utc": "2026-11-06T03:55:04Z",
   "last_verified_historical_rank": null,
   "latest_archive_probe": {
     "canonical_forward_block": {
