@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-06T19:04:38Z",
+  "head_at_verify_start": "efa87a00f0fcc61c4c31ecf5f3c5a1b7ec62b871",
+  "deps": {"python": "3.12.3", "numpy": "2.5.4", "pandas": "3.1.1"},
+  "compileall": {"command": "python3 -m compileall -q scripts tests", "exit": 0},
+  "audit_preregistration_coverage": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+  "tests": {"command": "python3 -m unittest discover -s tests", "ran": 255, "skipped": 1, "result": "OK"},
+  "git_ls_files_tests_pycache": 0,
+  "git_status_clean_at_start": true,
+  "git_diff_name_only_artifacts_configs": "",
+  "november_2026_reprobe": "NOT_PERFORMED (do not re-probe before 2026-11-30; latest cutoff_probe_20261105T205749Z.json BLOCKED)",
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
