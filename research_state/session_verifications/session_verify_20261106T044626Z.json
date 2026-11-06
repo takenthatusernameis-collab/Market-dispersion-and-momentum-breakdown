@@ -1,0 +1,10 @@
+{
+  "session_utc": "20261106T044626Z",
+  "compileall": "clean (EXIT=0)",
+  "preregistration_coverage": "pass=True (14/0/0)",
+  "unittest": "255 OK, skipped=1 (27.303s)",
+  "bytecode_hygiene": "re-applied git rm --cached on 3 tracked pyc; git ls-files *.pyc = 0",
+  "frozen_artifacts_modified": false,
+  "november_reprobe": "BLOCKED (latest cutoff_probe_20261105T205749Z.json); do NOT re-probe before 2026-11-30",
+  "k_advanced": false
+}
