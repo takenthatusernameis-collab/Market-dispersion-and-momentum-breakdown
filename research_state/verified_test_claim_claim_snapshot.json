@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-05T20:53:25Z",
+  "recorded_utc": "2026-11-06T00:05:08Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 241,
-  "tests_ok": 241,
+  "tests_run": 244,
+  "tests_ok": 244,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "241/241/0",
-  "input_fingerprint": "d739736c815a0b62affe997e9909c9a3e3c9556a8cd44264a938f674b17a5e32",
+  "claim": "244/244/0",
+  "input_fingerprint": "ec6d11cb1a2e31f5dcd7631e264c4d44137c96f9c73611f252978bbc7d9ca629",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -50,6 +50,7 @@
     "scripts/refresh_free_data.py",
     "scripts/regenerate_binance_manifest.py",
     "scripts/repair_funding_panels.py",
+    "scripts/repair_h10_fresh_block_registry_hash.py",
     "scripts/repair_refresh_provenance_binance.py",
     "scripts/rewrite_state_json.py",
     "scripts/run_all_phases_c_g.py",
@@ -82,6 +83,7 @@
     "tests/test_grid_validation.py",
     "tests/test_h10_feasibility.py",
     "tests/test_h10_fresh_block_current.py",
+    "tests/test_h10_fresh_block_hash_pinned.py",
     "tests/test_h10_sequential_alpha_spending.py",
     "tests/test_holm_pvalue.py",
     "tests/test_inference_repro.py",
@@ -98,5 +100,5 @@
     "tests/test_state_representativeness_audit.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 87
+  "input_file_count": 89
 }
