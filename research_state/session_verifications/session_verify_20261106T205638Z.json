@@ -1,0 +1,21 @@
+{
+  "session_utc": "20261106T205638Z",
+  "head_at_verify_start": "5ea9b02dc1599e2751366de0f4bd6fe26e7ce506",
+  "compileall_exit": 0,
+  "coverage_pass": true,
+  "coverage": "14/0/0",
+  "tests_run": 255,
+  "tests_ok": 255,
+  "tests_failures": 0,
+  "tests_skipped": 1,
+  "git_status_clean": true,
+  "tests_pycache_tracked": 0,
+  "frozen_artifacts_unchanged": true,
+  "canonical_h004v106_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+  "frontier_sha256": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6",
+  "november_2026_reprobe": "BLOCKED_until_2026-11-30",
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "source_test_artifact_changes": "none_session_verification_only"
+}
