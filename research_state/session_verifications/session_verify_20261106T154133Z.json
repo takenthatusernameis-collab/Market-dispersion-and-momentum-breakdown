@@ -1,0 +1,31 @@
+{
+  "session_utc": "2026-11-06T15:41:33.934554Z",
+  "head": "0995f153b68aee2af72a9ae0b2e1dc3355184148",
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit": 0
+    },
+    "prereg_coverage": {
+      "command": "python3 scripts/audit_preregistration_coverage.py",
+      "pass": true,
+      "audits": 14,
+      "missing": 0,
+      "uncovered": 0
+    },
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests",
+      "result": "255 OK, skipped=1"
+    }
+  },
+  "hygiene": {
+    "tests_pycache_tracked": 0,
+    "git_status_clean": true,
+    "artifacts_configs_diff_empty": true
+  },
+  "frozen_hashes": {
+    "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  }
+}
