@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-06T02:14:52Z",
+  "recorded_utc": "2026-11-06T02:39:46Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 246,
@@ -8,10 +8,11 @@
   "tests_failures": 0,
   "tests_skipped": 1,
   "claim": "246/246/0",
-  "input_fingerprint": "ef8e14acbeca707a9cad1f17ae1e17042d53a9b5ddf8228fd9487980e7e34241",
+  "input_fingerprint": "935cddebe8df44ad2cc373c1e86d1bdb0fb5c8561727871035c57ac70c6ee55e",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
+    "scripts/append_manifest_entry.py",
     "scripts/audit_preregistration_coverage.py",
     "scripts/build_universe.py",
     "scripts/discover_candidates.py",
@@ -102,5 +103,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 91
+  "input_file_count": 92
 }
