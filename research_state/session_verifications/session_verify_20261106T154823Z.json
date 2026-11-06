@@ -1,0 +1,21 @@
+{
+  "session_utc": "2026-11-06T15:48:23Z",
+  "head_at_verify_start": "c1ae599c310afb5fe60316a9489a66436610734c",
+  "deps": {"numpy": "2.5.4", "pandas": "3.1.1"},
+  "compileall": {"scripts_tests": "clean", "exit": 0},
+  "preregistration_coverage_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+  "unittest_discover": {"run": 255, "ok": 255, "failures": 0, "skipped": 1, "seconds": 52.874},
+  "git_status_short_clean": true,
+  "git_diff_artifacts_configs_empty": true,
+  "canonical_hashes_unchanged": {
+    "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "november_2026_reprobe": "blocked_until_2026_11_30",
+  "latest_probe": "cutoff_probe_20261105T205749Z.json, BLOCKED, target_published=false",
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "frozen_artifacts_touched": false,
+  "verdict": "ALL_CHECKS_PASS"
+}
