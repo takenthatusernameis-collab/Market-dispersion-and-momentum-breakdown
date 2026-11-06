@@ -713,4 +713,27 @@
   "head": "9d00bb23d5e29ddf51ce3373e1048fefe28315fb",
   "verification_record": "research_state/session_verifications/session_verify_20261106T084147Z.json",
   "frozen_artifacts_touched": false
+},
+  "session_record_20261106T084335Z": {
+  "session": "session_verify_20261106T084335Z",
+  "head": "245b34e634b92c989138cb92bc17a5955cc5b33b",
+  "recorded_utc": "2026-11-06T08:43:35Z",
+  "status": "COMPLETE",
+  "checks": {
+    "compileall": "clean (exit 0)",
+    "prereg_coverage": "14/0/0 pass",
+    "unittest": "255 OK, skipped=1 (24.061s after hygiene fix; initial pre-fix run had 1 recurring bytecode-hygiene failure)",
+    "bytecode_hygiene": "3 tracked pyc removed via git rm --cached; 0 tracked after fix; guard 7/7 OK",
+    "frozen_artifacts_diff": "empty",
+    "hashes_verified": {
+      "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "frontier": "2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c",
+      "registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf"
+    }
+  },
+  "november_2026_reprobe": false,
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "verification_artifact": "research_state/session_verifications/session_verify_20261106T084335Z.json"
 }}
