@@ -1,0 +1,35 @@
+{
+  "timestamp_utc": "2026-11-06T18:03:50Z",
+  "session_task": "Read prior agent task from durable handoff and complete it; update handoff and task message for next agent.",
+  "prior_task_source": "research_state/agent_task_message.md (2026-11-06T18:00Z session context)",
+  "prior_task_status": "COMPLETE",
+  "head_at_verify_start": "99722969d0397b8c60174cb2ce702c183a9b3deb",
+  "head_note": "HEAD from `git rev-parse HEAD` at verification start",
+  "checks": {
+    "git_status_short_at_start": "",
+    "python": "Python 3.12.3",
+    "deps": {"numpy": "2.5.4", "pandas": "3.1.1"},
+    "compileall_scripts_tests": {"exit_code": 0, "stdout": "", "stderr": ""},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover_tests": {"tests": 255, "ok": true, "skipped": 1, "failures": 0, "errors": 0, "duration_sec": 52.704},
+    "tracked_pycache": {"git_ls_files_tests___pycache__": ""},
+    "frozen_dirs_diff": {"git_diff_name_only_artifacts_configs": ""}
+  },
+  "frozen_hashes_verified": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "universe_frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "blockers_preserved": {
+    "november_2026_cutoff_probe": {
+      "latest_probe": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json",
+      "target_published": false,
+      "cutoff_gate": "BLOCKED",
+      "action": "Do NOT re-probe before 2026-11-30"
+    }
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "artifacts_configs_modified": false,
+  "next_action_explicit": "Preserve blocker. Do NOT fabricate. Do NOT re-probe November 2026 before 2026-11-30. Continue independent unblocked audit/test/doc/hygiene tasks. After 2026-11-30 probe November 2026 and follow frozen gate rules (fresh sealed block to forward_block_h10_fresh/, never forward_block/; k=1; require n_high>0 AND n_low>0; Holm across 216 cells + alpha spending)."
+}
