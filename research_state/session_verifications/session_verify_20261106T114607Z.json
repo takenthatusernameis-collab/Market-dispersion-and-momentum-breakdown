@@ -1,0 +1,13 @@
+{
+  "session_utc": "2026-11-06T11:46:07Z",
+  "head_at_verify_start": "e0b89343716b2a2a8434b4d31cf8106e54682a7b",
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit": 0, "result": "clean"},
+    "preregistration_coverage": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "result": "255 OK, skipped=1", "duration_s": 28.507},
+    "bytecode_hygiene": {"command": "git rm --cached tests/__pycache__/*.pyc", "tracked_after": 0}
+  },
+  "frozen_artifacts_modified": false,
+  "november_2026_reprobe": "NOT_PERFORMED (do not re-probe before 2026-11-30)",
+  "confirmatory_advance": false
+}
