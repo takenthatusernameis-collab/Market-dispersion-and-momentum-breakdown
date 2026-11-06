@@ -1,0 +1,25 @@
+{
+  "session": "2026-11-06T19:05Z",
+  "head": "$(git rev-parse HEAD)",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover": {"ran": 255, "ok": true, "skipped": 1}
+  },
+  "hygiene": {
+    "git_ls_files_pycache": 0,
+    "git_status_short": 0,
+    "artifacts_configs_diff": 0
+  },
+  "frozen_hashes": {
+    "H004V106_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "cutoff_probes": {
+    "2026-11": {"cutoff_gate": "BLOCKED", "target_published": false},
+    "2026-10": {"cutoff_gate": "UNBLOCKED", "target_published": true}
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
