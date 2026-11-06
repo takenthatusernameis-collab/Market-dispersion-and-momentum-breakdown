@@ -1,0 +1,13 @@
+{
+  "compileall": 0,
+  "audit_rc": 0,
+  "tests_rc": 0,
+  "tests_summary": [
+    "Ran 255 tests in 52.136s",
+    "",
+    "OK (skipped=1)"
+  ],
+  "head": "880b1c305d1f7d5e08e309866b4803cdb077c422",
+  "diff": "",
+  "pycache": ""
+}
