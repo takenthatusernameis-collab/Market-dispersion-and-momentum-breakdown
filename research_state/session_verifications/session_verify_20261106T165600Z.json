@@ -1,0 +1,19 @@
+{
+  "session_utc": "2026-11-06T16:56:00Z",
+  "head_at_verify_start": "e55adab28daca311b88288f9faa643783d8ab3a7",
+  "deps": {"python": "3.12.3", "numpy": "2.5.4", "pandas": "3.1.1"},
+  "compileall": {"command": "python3 -m compileall -q scripts tests", "exit": 0},
+  "prereg_coverage": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+  "tests": {"command": "python3 -m unittest discover -s tests", "ran": 255, "status": "OK", "skipped": 1, "duration_s": 52.213},
+  "pycache_tracked": 0,
+  "git_status_clean_at_start": true,
+  "artifacts_configs_diff_empty": true,
+  "frozen_hashes": {
+    "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "november_2026_reprobe": "NOT_PERFORMED (blocked until 2026-11-30)",
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
