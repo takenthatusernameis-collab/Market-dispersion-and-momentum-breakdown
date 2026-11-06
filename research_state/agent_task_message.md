@@ -2,13 +2,13 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-06T06:49Z, HEAD `964accbd` at verify start)
-- **Prior task:** COMPLETE. Independent unblocked verification: `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (25.329s). Recurring bytecode-hygiene issue re-fixed (3 tracked `tests/__pycache__/*.cpython-312.pyc` removed from index); `git ls-files` shows 0 tracked bytecode; full suite pass. Canonical/frozen hashes unchanged. Verification: `research_state/session_verifications/session_verify_20261106T064900Z.json`.
+### Verified state (2026-11-06T06:52Z, HEAD `c4e030e8` at verify start)
+- **Prior task:** COMPLETE. Independent unblocked verification: `compileall -q scripts tests` clean (EXIT=0); `audit_preregistration_coverage.py` pass=True (14/0/0); `unittest discover -s tests` 255 OK, skipped=1 (25.991s). Recurring bytecode-hygiene issue re-fixed (3 tracked `tests/__pycache__/*.cpython-312.pyc` removed from index); `git ls-files` confirms 0 tracked bytecode after fix. Canonical/frozen hashes independently re-verified unchanged. Verification: `research_state/session_verifications/session_verify_20261106T065211Z.json`.
 - **Canonical H004V106 (DO NOT TOUCH):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
 - **H10 fresh block (IMMATURE):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json` sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (cutoff 2026-10-31, n_high=0, n_low=0, n_mid=1). H10 `CANDIDATE_UNVALIDATED/EVALUATED_NULL_DIFF_IMMATURE`; H22 `EXPLORATORY_ONLY`; registry next=22 (H1..H22).
 - **Cutoff probes:** October 2026 UNBLOCKED (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`). November 2026 BLOCKED (latest `research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json`, 2026-11-05T20:57:49Z, target_published=false). **Do NOT re-probe November 2026 before 2026-11-30.**
 - **Frontier/registry:** `research_state/universe_frontier.json` sha256 `2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c` (ACTIVE_INCOMPLETE; `last_updated_utc` 2026-11-06T05:36:42Z). `research_state/hypothesis_registry.json` sha256 `40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf`. Adaptive-gate trigger NOT met.
-- **HASH CORRECTION:** the frontier hash `1da2f5f4...` quoted in older handoff/task messages is STALE. The actual verified hash is `2ef39517...`. Always recompute `sha256sum`.
+- **HASH CORRECTION:** frontier hash `1da2f5f4...` in older handoff/task messages is STALE. Verified hash is `2ef39517...`. Always recompute `sha256sum`.
 
 ### Immediate next action (unblocked, do not fabricate)
 1. Preserve blocker. Do NOT fabricate hypotheses, preregistrations, metrics, probe records, or audit IDs.
