@@ -1,0 +1,28 @@
+{
+  "timestamp": "20261106T214647Z",
+  "head": "807144536316e42326427ef8798fea1bcb0f8961",
+  "deps": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compileall_exit": 0,
+  "audit_prereg": {
+    "pass": true,
+    "audits": 14,
+    "missing_prereq": 0,
+    "uncovered_prereq": 0
+  },
+  "unittest": {
+    "status": "OK",
+    "skipped": 1
+  },
+  "git_ls_files_pycache": 0,
+  "git_status_short_clean": true,
+  "frozen_hashes": {
+    "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "ebd4406ab53f2265903a58ad8eda1dc24bcd5a3fcbb026d78c3b170cd9e59bb6"
+  },
+  "notes": "Independent unblocked verification only; no source/test/artifact changes."
+}
