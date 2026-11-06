@@ -1,0 +1,17 @@
+{
+  "session_utc": "2026-11-06T09:26:25Z",
+  "head_at_verify_start": "0592a0c8",
+  "compileall": "EXIT=0",
+  "prereg_coverage": "pass=True (14/0/0)",
+  "unittest": "255 OK, skipped=1",
+  "bytecode_hygiene": "git rm --cached 3 tracked pyc; 0 tracked after fix",
+  "frozen_hashes_verified": {
+    "H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "frontier": "2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c",
+    "registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf"
+  },
+  "frozen_artifacts_diff": "empty (artifacts/, configs/)",
+  "november_2026_reprobe": "NOT performed (blocked until 2026-11-30)",
+  "confirmatory_advance": "none; k not advanced"
+}
