@@ -1,0 +1,10 @@
+{
+  "session_utc": "2026-11-06T23:42:44Z",
+  "head": "03666caad8cbaf6cc82407f5b28a4e2c7674683c",
+  "compileall": "EXIT=0",
+  "prereg_coverage": "pass=True (14/0/0)",
+  "tests": "255 OK, skipped=1 (52.243s)",
+  "git_ls_files_pycache": 0,
+  "git_status_short": "clean",
+  "changes": "session verification only; no source/test/frozen artifact changes"
+}
