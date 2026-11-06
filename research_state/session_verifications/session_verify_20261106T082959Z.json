@@ -1,0 +1,50 @@
+{
+  "session": "session_verify_20261106T082959Z",
+  "recorded_utc": "2026-11-06T08:29:59Z",
+  "head_at_verify_start": "131f4f8cd93247cde44cc7f4d5dc240179f5e1c2",
+  "prior_task_status": "COMPLETE",
+  "checks": {
+    "compileall_scripts_tests": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0,
+      "result": "clean"
+    },
+    "preregistration_coverage_audit": {
+      "command": "python3 scripts/audit_preregistration_coverage.py",
+      "pass": true,
+      "audits": 14,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0
+    },
+    "unittest_discover": {
+      "command": "python3 -m unittest discover -s tests",
+      "ran": 255,
+      "ok": 255,
+      "skipped": 1,
+      "exit_code": 0
+    },
+    "tracked_bytecode_hygiene": {
+      "before": 3,
+      "action": "git rm --cached on tests/__pycache__/test_data_pipeline.cpython-312.pyc, tests/__pycache__/test_grid_validation.cpython-312.pyc, tests/__pycache__/test_inference_repro.cpython-312.pyc",
+      "after_tracked_pyc": 0
+    },
+    "frozen_artifact_diff": {
+      "command": "git diff --name-only -- artifacts/ configs/",
+      "result": "empty",
+      "frozen_modified": false
+    },
+    "canonical_hash_reverification": {
+      "H004V106_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "H10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "universe_frontier": "2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c",
+      "hypothesis_registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf",
+      "all_unchanged": true
+    }
+  },
+  "november_2026_reprobe": {
+    "performed": false,
+    "reason": "latest November 2026 cutoff probe is BLOCKED (target_published=false); do NOT re-probe before 2026-11-30"
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
