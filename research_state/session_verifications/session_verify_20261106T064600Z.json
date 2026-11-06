@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-11-06T06:46:00Z",
+  "head_at_verify_start": "7a513324",
+  "commands": {
+    "compileall_scripts_tests": {"exit_code": 0, "result": "clean"},
+    "audit_preregistration_coverage": {"exit_code": 0, "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover_s_tests": {"exit_code": 0, "ran": 255, "ok": true, "skipped": 1, "duration_s": 25.691}
+  },
+  "bytecode_hygiene": {
+    "issue_found": true,
+    "description": "3 tracked tests/__pycache__/*.cpython-312.pyc files reappeared (modified in worktree after compileall/test runs); removed from index via git rm --cached",
+    "files_removed_from_index": [
+      "tests/__pycache__/test_data_pipeline.cpython-312.pyc",
+      "tests/__pycache__/test_grid_validation.cpython-312.pyc",
+      "tests/__pycache__/test_inference_repro.cpython-312.pyc"
+    ],
+    "post_fix_git_ls_files_bytecode_count": 0
+  },
+  "frozen_artifacts_touched": false,
+  "canonical_hashes_verified_unchanged": {
+    "H004V106_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "universe_frontier": "2ef395176ba07bbb382ed842a347ec10eb526c5bf0b77de7f67f5a2297b8554c",
+    "hypothesis_registry": "40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf"
+  },
+  "cutoff_probe_november_2026": {
+    "reprobed": false,
+    "reason": "Do NOT re-probe before 2026-11-30; latest probe 2026-11-05T20:57:49Z BLOCKED target_published=false"
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "prior_task_from_handoff": "COMPLETE"
+}
