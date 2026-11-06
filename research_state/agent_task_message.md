@@ -2,8 +2,8 @@
 
 Read `research_state/agent_handoff.md`, this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-06T01:15Z, HEAD `f19784d8d3f54cf0e47c350f850dcac86a5b427f`)
-- **Prior task:** COMPLETE. Session verification `research_state/session_verifications/session_verify_20261106T011507Z.json`: compileall clean (scripts, tests); unittest discover 244 tests OK skipped=1 (55.5s); preregistration coverage audit pass=True (14/0/0). Canonical/frozen hashes independently re-verified; no frozen experiment artifacts modified.
+### Verified state (2026-11-06T01:47Z, HEAD `f4586cdca52ecc143b0073d82c9ee0bd1b4dee8b`)
+- **Prior task:** COMPLETE. Session verification `research_state/session_verifications/session_verify_20261106T014750Z.json`: compileall clean (scripts, tests); unittest discover 244 tests OK skipped=1 (52.7s); preregistration coverage audit pass=True (14/0/0). Canonical/frozen hashes independently re-verified; no frozen experiment artifacts modified.
 - **Canonical H004V106 (DO NOT TOUCH):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json` sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
 - **H10 fresh block (IMMATURE):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json` sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (cutoff 2026-10-31, n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null). H10 `CANDIDATE_UNVALIDATED`/`EVALUATED_NULL_DIFF_IMMATURE`. H22 `EXPLORATORY_ONLY`. Registry next=22 (H1..H22).
 - **Cutoff probes:** October 2026 UNBLOCKED (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`); November 2026 BLOCKED (latest: `research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json`). **Do NOT re-probe November 2026 before 2026-11-30.**

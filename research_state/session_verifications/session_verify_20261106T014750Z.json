@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-11-06T01:47:50Z",
+  "head": "f4586cdca52ecc143b0073d82c9ee0bd1b4dee8b",
+  "actions": [
+    "Read research_state/agent_handoff.md, agent_task_message.md, AGENTS.md, docs/research_protocol.md",
+    "Verified canonical/frozen hashes independently (sha256): H004V106_canonical=7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, H10_fresh=9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a, frontier=13fe75a27f1eccca0850afef133691ce0af72458108f2ead68fdc4381bc4c563, registry=40110dce8691ee921a3ceadbbcb7089475b8d78ffd47eebc21e7a61aef3844cf",
+    "Ran python3 -m compileall -q scripts tests (clean)",
+    "Ran python3 -m unittest discover -s tests: 244 tests OK, skipped=1 (52.74s)",
+    "Ran python3 scripts/audit_preregistration_coverage.py: pass=True audits=14 missing_prereq=0 uncovered_prereq=0"
+  ],
+  "checks": {
+    "compileall": "clean",
+    "unittest": "244 OK, skipped=1 (52.74s)",
+    "preregistration_coverage_audit": "pass=True (14/0/0)",
+    "canonical_hashes_unchanged": true,
+    "frozen_artifacts_modified": false,
+    "november_2026_reprobe_performed": false
+  },
+  "state": {
+    "canonical_h004v106_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "h10_status": "IMMATURE (2026-10-31 cutoff, n_high=0, n_low=0, n_mid=1)",
+    "november_probe_latest": "cutoff_probe_20261105T205749Z.json (BLOCKED)",
+    "do_not_reprobe_november_before": "2026-11-30",
+    "k_not_advanced": true,
+    "adaptive_gate_trigger_met": false
+  },
+  "next_action": "Preserve blocker. No November 2026 re-probe before 2026-11-30. After 2026-11-30 probe 2026-11; if unblocked refresh data/run tests/verify H004V106 unchanged, run fresh sealed block into forward_block_h10_fresh/ with --forward-block-start 2026-09-30 --data-cutoff 2026-11-30 --look-number 1 (k=1), require n_high>0 AND n_low>0, apply Holm 216-cell family + alpha_k=0.05/(k*(k+1)). If IMMATURE record blocker and do not advance k. Continue independent unblocked audit/test/doc tasks."
+}
