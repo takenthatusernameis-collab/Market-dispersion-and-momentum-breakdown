@@ -1,0 +1,26 @@
+# Python bytecode and cache artefacts. The repository tracks source only;
+# every session's working tree was accumulating untracked __pycache__/
+# *.pyc directories (and three historically tracked .pyc blobs) that churn
+# `git status` and pollute the executable-input fingerprint used by
+# scripts/record_test_claim.py. These rules make that state explicit and
+# reproducible rather than a per-session accident.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
