@@ -695,4 +695,13 @@
     "k_advanced": false,
     "verification_artifact": "research_state/session_verifications/session_verify_20261106T083557Z.json"
   }
-}
+,
+  "session_record_20261106T083936Z": {
+  "session_verify": "research_state/session_verifications/session_verify_20261106T083936Z.json",
+  "status": "COMPLETE",
+  "tests": "255 OK, skipped=1",
+  "compileall": "clean",
+  "prereg": "14/0/0",
+  "bytecode_hygiene": "fixed (3 tracked pyc removed)",
+  "frozen_artifacts_modified": false
+}}
