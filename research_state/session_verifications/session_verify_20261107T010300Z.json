@@ -1,0 +1,17 @@
+{
+  "session_utc": "2026-11-07T01:03:00Z",
+  "head": "c91073aacd83663b3f15287ac23151df1f4435bb",
+  "clean_start": true,
+  "deps": "Python 3.12.3, numpy 2.5.4, pandas 3.1.1",
+  "compileall": "EXIT=0",
+  "audit_preregistration_coverage": "pass=True (14/0/0)",
+  "tests": "255 OK, skipped=1 (52.321s)",
+  "git_ls_files_tests_pycache": "0",
+  "frozen_hashes_unchanged": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "november_2026_reprobe": "NOT performed (BLOCKED; do not re-probe before 2026-11-30)",
+  "confirmatory_advance": "none; k not advanced",
+  "changes": "none (verification only)"
+}
