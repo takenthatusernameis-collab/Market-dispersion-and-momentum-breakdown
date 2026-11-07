@@ -1,18 +1,19 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-07T15:13:56Z",
+  "recorded_utc": "2026-11-07T19:18:33Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 291,
-  "tests_ok": 291,
+  "tests_run": 296,
+  "tests_ok": 296,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "291/291/0",
-  "input_fingerprint": "fdd625a7dbccec067ef003f6975f3c65e92b9869dbc96e32a70b117e7be98596",
+  "claim": "296/296/0",
+  "input_fingerprint": "47d130ecaf0b0ba0d0bdb63a7ae9102a8d4f3c9c9f16b46a986312457a46b004",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
     "scripts/append_manifest_entry.py",
+    "scripts/audit_integrity_audit_references.py",
     "scripts/audit_preregistration_coverage.py",
     "scripts/build_universe.py",
     "scripts/discover_candidates.py",
@@ -93,6 +94,7 @@
     "tests/test_h10_sequential_artifact_contract.py",
     "tests/test_holm_pvalue.py",
     "tests/test_inference_repro.py",
+    "tests/test_integrity_audit_reference_consistency.py",
     "tests/test_latest_probe_record_pinned.py",
     "tests/test_ledger_manifest_binding.py",
     "tests/test_marketcap_manifest_provenance.py",
@@ -108,5 +110,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 97
+  "input_file_count": 99
 }

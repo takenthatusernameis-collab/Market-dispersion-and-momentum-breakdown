@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-11-07T19:15:14Z",
+  "head": "fb7f6356b8f33c42233450f9307f5fb0d90c79b5",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "preregistration_coverage_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "integrity_audit_reference_consistency": {
+      "pass": true,
+      "scanned": 14,
+      "critical": 0,
+      "errors": 0,
+      "info": 8,
+      "output": "research_state/integrity_audit_reference_consistency_20261107T191514Z.json",
+      "scope": "read-only scan of integrity_audit JSONs for stale pointers/hash mismatches; INFO findings are addenda/legacy ID-filename naming only"
+    },
+    "unittest_discover_tests": {"ran": 296, "failures": 0, "errors": 0, "skipped": 1, "ok": true, "verified_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json"}
+  },
+  "frozen_hashes": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "disk_matches_head": true
+  },
+  "artifacts_configs_diff_vs_head": "empty (no frozen artifact/config modifications)",
+  "bounded_delta": {
+    "added": [
+      "scripts/audit_integrity_audit_references.py",
+      "tests/test_integrity_audit_reference_consistency.py",
+      "research_state/integrity_audit_reference_consistency_20251107T191514Z.json"
+    ],
+    "note": "New read-only integrity-audit reference/hash consistency scanner + regression test; output written to research_state to avoid unregistered integrity_audit/ additions. Prereg coverage/test-claim snapshot updated by their canonical scripts."
+  },
+  "h10_status_unchanged": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; k not advanced; November reprobe forbidden before 2026-11-30; no empirical scope before 2026-11-30"
+}
