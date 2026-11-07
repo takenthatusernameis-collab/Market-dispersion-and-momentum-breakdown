@@ -42,7 +42,7 @@ bootstrap SE/CI for each half.
 
 ## 3. Method (frozen before computation)
 
-1. Load `artifacts/HARMONY-CRYPTO-EDGE-004-DISPRESSION-003/forward_block/forward_block_evaluation.json`
+1. Load `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`
    (608 formations). Read-only.
 2. Sort formations by `formation_date`. Split at the median formation date
    (`len // 2` = 304 formations per half; split date 2025-11-01).

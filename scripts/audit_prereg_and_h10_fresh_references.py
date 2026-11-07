@@ -74,6 +74,25 @@ def _norm(v: str) -> str:
     return v.replace("\\", "/").lstrip("./")
 
 
+def _path_like(v: str) -> bool:
+    """True only when a string value names a repo artifact path.
+
+    PATH_KEYS collects fields that *may* name artifacts, but several of them
+    also carry free-text descriptions (e.g. ``data_cutoff_source`` =
+    "derived from latest fully closed UTC daily Binance kline candle (or
+    --data-cutoff)"). Without a shape guard every non-empty string in those
+    fields is treated as a path reference and reported as a missing artifact,
+    which is a false positive, not a defect. A genuine path reference must
+    contain a forward slash and end with a known artifact extension; prose
+    values fail both and are skipped. This is a tightening, not a loosening:
+    if a prose field ever does name a real file it is still caught.
+    """
+    if not isinstance(v, str) or not v.strip():
+        return False
+    s = v.strip().replace("\\", "/")
+    return "/" in s and s.lower().rsplit(".", 1)[-1] in {"json", "md", "csv", "py"}
+
+
 def audit_prereg_md(p: Path) -> dict:
     text = p.read_text(encoding="utf-8")
     row = {
@@ -131,7 +150,7 @@ def audit_h10_json(p: Path) -> dict:
         return row
     for k in PATH_KEYS:
         v = d.get(k)
-        if not isinstance(v, str) or not v.strip():
+        if not _path_like(v):
             continue
         raw = _norm(v)
         fp = ROOT / raw if not raw.startswith("/") else Path(raw)

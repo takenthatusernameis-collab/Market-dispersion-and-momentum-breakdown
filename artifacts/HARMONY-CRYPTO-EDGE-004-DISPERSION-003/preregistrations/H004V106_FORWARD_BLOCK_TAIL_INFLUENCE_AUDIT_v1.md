@@ -96,7 +96,7 @@ skewness.
 
 ## 6. Expected output
 
-- `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/H004V106_forward_block_tail_influence_20261028.json`
+- `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/H004V106_forward_block_tail_influence_20261029.json`
 - `scripts/forward_block_tail_influence.py`
 - `tests/test_forward_block_tail_influence.py`
 - Registry addendum for H7/H8, manifest entry, handoff update.

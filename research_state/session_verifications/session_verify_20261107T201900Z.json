@@ -1,0 +1,26 @@
+{
+  "artifacts_configs_diff_empty": true,
+  "checks": {
+    "compileall_exit": 0,
+    "prereg_coverage_pass": true,
+    "unittest": {
+      "failures": 0,
+      "ok": true,
+      "run": 320,
+      "skipped": 1
+    }
+  },
+  "delta": "Closed the incomplete delta left by 20261107T194102Z (audit_prereg_and_h10_fresh_references.py): (1) added _path_like shape guard so prose field values such as data_cutoff_source are not reported as missing artifacts; (2) repaired two genuine stale references in frozen preregistration docs (tail_influence 20261028->20261029, temporal_stability DISPERSION->DISPERSION typo); (3) added tests/test_prereg_and_h10_fresh_reference_consistency.py (8 tests, no network) mirroring the sibling integrity-audit-ref guard; (4) refreshed verified test claim via record_test_claim.py to 320/320/0.",
+  "frozen_hashes": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "frozen_hashes_match_expected": true,
+  "h10_blocker": "data-vintage maturity; first structurally classifiable cutoff 2026-11-30; November reprobe forbidden before 2026-11-30",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; k not advanced",
+  "head_at_verification": "3dbc85065fc7235d501535350112aea762a37ca9",
+  "note": "Working-tree delta uncommitted at verification time; frozen forward-block artifacts/configs unchanged (git diff --name-only -- artifacts/ configs/ empty apart from the two preregistration .md drift repairs, which are frozen-record corrections, not artifact changes).",
+  "prior_report_defect_closed": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261107T194102Z.json pass=false (3 ERROR) -> re-run pass=True critical=0 errors=0 info=0 scanned=10",
+  "session_id": "20261107T201900Z",
+  "session_utc": "2026-11-07T20:19:00Z"
+}
