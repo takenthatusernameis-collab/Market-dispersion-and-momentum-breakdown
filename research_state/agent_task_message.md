@@ -1,21 +1,21 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261107T180700Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261107T181007Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (20261107T180700Z, HEAD `c8168fa1`; deps present numpy 2.5.4, pandas 3.1.1)
-- Prior task **COMPLETE** (reverification-only; no unblocked empirical scope before 2026-11-30). Baseline: `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **291 run, 0 failures, 1 skipped (OK)**. Record: `research_state/session_verifications/session_verify_20261107T180700Z.json`.
-- Frozen hashes unchanged (verify vs disk AND `git show HEAD:`): H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`); H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`).
-- **H10 blocker is data-vintage maturity, not cutoff gate.** Cutoff gate UNBLOCKED (Oct 2026 archive; `research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`, probe_month 2026-10). First structurally classifiable cutoff is 2026-11-30 (H10 feasibility: `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/H10_feasibility_analysis_20261103.json`; cutoff 2026-10-31 yields 1 formation, n_high=0/n_low=0; trailing-decile rule needs >=30 prior in-block dispersions). Latest November probe is audit trail only (`research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json`, 2026-11 BLOCKED) — **do not re-probe November before 2026-11-30**.
-- H10 remains **CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE**; k not advanced. No confirmatory claim.
+### Verified state (20261107T181007Z, HEAD `c8168fa1`)
+- Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`.
+- H10 blocker is data-vintage maturity (first structurally classifiable cutoff 2026-11-30). Cutoff gate UNBLOCKED (Oct 2026 archive). November reprobe forbidden before 2026-11-30.
+- H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced.
 
-### Immediate next action (highest-value unblocked item)
-1. **Do not create another reverification-only session.** Before acting, check for a concrete delta, broken invariant, stale pointer, failing check, or a genuinely new bounded unblocked task.
-2. **If a bounded unblocked task exists before 2026-11-30:** choose one with explicit scope and concrete output (audit/doc/test/red-team/hygiene). Re-verify frozen hashes vs disk AND `git show HEAD:` + `compileall -q scripts tests` + `scripts/audit_preregistration_coverage.py`. Make the narrow change, run applicable checks, confirm `git diff --name-only -- artifacts/ configs/` is empty, record a session verification/artifact, and update `agent_handoff.md` + this task message.
-3. **On/after 2026-11-30 (November 2026 vintage path):** run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If usable, refresh only required free public data, install deps if needed, run tests, verify H004V106 unchanged vs `git show HEAD:`, then run the fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (**never `forward_block/`**) with: `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff 2026-11-30 --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh --look-number 1` (k=1). Evaluate under H10 prereg + alpha-spending. Confirmatory requires ALL of: `n_high>0 AND n_low>0`, `n_high>=5 AND n_low>=5`, `|high_low_diff_net_1x| >= 0.05`, Holm significance across the complete 216-cell family at `alpha_k = 0.05/(k*(k+1))`. If IMMATURE or gates fail, record blocker precisely and do not advance k.
-4. **If no empirical scope is available:** allocate a new uniquely identified exploratory preregistration only for a bounded, no-cost task that does not alter frozen artifacts/configs/results and cannot be mistaken for confirmation; document estimand, vintage, and EXPLORATORY_ONLY status.
+### Immediate next action
+1. Do not create another reverification-only session. Check for a concrete delta, broken invariant, stale pointer, failing check, or genuinely new bounded unblocked task.
+2. If a bounded unblocked task exists before 2026-11-30: choose one with explicit scope and concrete output (audit/doc/test/red-team/hygiene). Re-verify frozen hashes vs disk AND `git show HEAD:` + `compileall -q scripts tests` + `scripts/audit_preregistration_coverage.py`. Make narrow change, run checks, confirm `git diff --name-only -- artifacts/ configs/` empty, record session verification, update handoff + task message.
+3. On/after 2026-11-30: run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If usable, refresh required free public data, install deps if needed, run tests, verify H004V106 unchanged vs `git show HEAD:`, then run fresh sealed block into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) with k=1 command from prior task message. Evaluate under H10 prereg + alpha-spending.
+4. If no empirical scope: allocate a new uniquely identified exploratory preregistration only for a bounded, no-cost task that does not alter frozen artifacts/configs/results.
 
 ### Hard rules
-- Never relax 30-day maturity, `MIN_ASSETS_DECILES=20`, trailing-decile rule, or 0.05 threshold.
-- Never open canonical sealed holdout (`forward_block/`); fresh outputs go only to `forward_block_h10_fresh/` or a new uniquely identified path.
+- Never relax 30-day maturity, MIN_ASSETS_DECILES=20, trailing-decile rule, or 0.05 threshold.
+- Never open canonical sealed holdout (`forward_block/`); fresh outputs go only to `forward_block_h10_fresh/` or new uniquely identified path.
 - Never use today's rank as historical truth. Never fabricate metrics. Preserve old artifacts/configs/results.
 - Allocate unique IDs/preregister for new exploratory work. Keep confirmatory and exploratory tracks separate.
+"
