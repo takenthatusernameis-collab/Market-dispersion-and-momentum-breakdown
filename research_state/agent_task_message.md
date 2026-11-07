@@ -1,8 +1,8 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261107T220455Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261107T220633Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (20261107T220455Z, HEAD `f55b3e2c`)
+### Verified state (20261107T220633Z, HEAD `1a6a4723`)
 - Frozen hashes (unchanged): H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. `git diff --name-only -- artifacts/ configs/` must remain empty.
 - Reverification-only (no source delta): compileall EXIT=0; prereg coverage pass=True (14/0/0); prereg/h10 ref audit pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; unittest discover **324 run, 0 failures, 1 skipped** (verified claim 324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files; run_manifest `latest_verified_test_claim` `324/324/0`).
 - **No bounded no-cost delta exists before 2026-11-30** (recorded). Reference audits are comprehensive; alpha-spending utility is tested; remaining untested scripts mutate artifacts, require network, or are data-dependent. Do not fabricate work or reverification-only artifacts beyond what is needed; keep next action as (1).
@@ -20,3 +20,5 @@ Read `research_state/agent_handoff.md` (current **20261107T220455Z**), this file
 - Do not modify immutable closed preregistration/experiment records (DISP-001/002, frozen DISP-003 prereg docs) to "fix" historical text; report stale pointers as INFO/addenda only.
 - Allocate unique IDs/preregister for new exploratory work. Keep confirmatory and exploratory tracks separate.
 - A passing workflow/test proves only what it covers. No confirmatory claim from exploratory/integrity work.
+
+(End of file)
