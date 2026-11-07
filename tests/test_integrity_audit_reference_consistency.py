@@ -6,10 +6,11 @@ run_audit(), not main()).
 
 Pins:
 - script is importable and run_audit() is deterministic in structure;
-- no CRITICAL/ERROR findings (stale pointer or hash mismatch requires
-  investigation);
-- H004V106 canonical and H10 fresh frozen hashes match disk;
-- audited artifacts referenced by integrity audits resolve on disk.
+- no CRITICAL/ERROR findings (stale pointer, disk/git-HEAD drift, or hash
+  mismatch requires investigation);
+- H004V106 canonical and H10 fresh frozen hashes match disk and git HEAD;
+- audited artifacts referenced by integrity audits resolve on disk;
+- frozen_git_head_checks present for known frozen artifacts.
 """
 import hashlib
 import importlib.util
@@ -55,6 +56,18 @@ class IntegrityAuditReferenceConsistencyTests(unittest.TestCase):
             actual = hashlib.sha256(p.read_bytes()).hexdigest()
             self.assertEqual(actual, expected, f"FROZEN drift: {rel}")
 
+    def test_frozen_git_head_checks_present_and_clean(self):
+        checks = self.res.get("frozen_git_head_checks", [])
+        self.assertEqual(len(checks), len(FROZEN), checks)
+        by_path = {c["path"]: c for c in checks}
+        for rel, expected in FROZEN.items():
+            self.assertIn(rel, by_path, checks)
+            c = by_path[rel]
+            self.assertTrue(c["matches_frozen"], c)
+            if c["git_head_sha256"] is not None:
+                self.assertTrue(c["matches_git_head"], c)
+                self.assertEqual(c["git_head_sha256"], expected, c)
+
     def test_all_referenced_paths_exist(self):
         for row in self.res["rows"]:
             for ref in row["references"]:
@@ -63,6 +76,9 @@ class IntegrityAuditReferenceConsistencyTests(unittest.TestCase):
                 if ref["frozen_expected"]:
                     self.assertTrue(ref["matches_frozen"],
                                     f"{row['file']} frozen mismatch for {ref['path']}")
+                if "matches_git_head" in ref and ref.get("git_head_sha256"):
+                    self.assertTrue(ref["matches_git_head"],
+                                    f"{row['file']} git-HEAD mismatch for {ref['path']}")
 
     def test_recorded_hash_checks_match_when_present(self):
         for row in self.res["rows"]:

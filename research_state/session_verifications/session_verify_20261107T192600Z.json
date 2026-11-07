@@ -1,0 +1,33 @@
+{
+  "session_id": "20261107T192600Z",
+  "head_baseline": "ff9bd734",
+  "timestamp_utc": "2026-11-07T19:26:00Z",
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "prereg_coverage": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "run": 297, "failures": 0, "errors": 0, "skipped": 1, "verified_claim": "research_state/verified_test_claim_claim_snapshot.json"}
+  },
+  "frozen_hashes_disk_equals_git_head": true,
+  "frozen_hashes": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "artifacts_configs_diff_empty": true,
+  "delta": {
+    "type": "bounded_no_cost_integrity_audit_enhancement",
+    "summary": "Extended scripts/audit_integrity_audit_references.py with git-HEAD sha256 cross-checks (disk vs git show HEAD for referenced paths) and frozen_git_head_checks summary; added CRITICAL detection for GIT HEAD HASH MISMATCH. Extended tests/test_integrity_audit_reference_consistency.py (+1 test, 6 total) to pin git-HEAD checks and per-reference matches_git_head. New report: research_state/integrity_audit_reference_consistency_20261107T192300Z.json (pass=True, 14 scanned, 0 critical/errors).",
+    "files_changed": [
+      "scripts/audit_integrity_audit_references.py",
+      "tests/test_integrity_audit_reference_consistency.py",
+      "research_state/integrity_audit_reference_consistency_20261107T192300Z.json",
+      "research_state/verified_test_claim_claim_snapshot.json",
+      "research_state/run_manifest.json",
+      "research_state/session_verifications/session_verify_20261107T192600Z.json",
+      "research_state/agent_handoff.md",
+      "research_state/agent_task_message.md"
+    ],
+    "no_frozen_artifact_config_modified": true
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; k not advanced",
+  "november_reprobe_forbidden_before": "2026-11-30"
+}

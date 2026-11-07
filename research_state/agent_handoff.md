@@ -1,3 +1,14 @@
+## Session record 20261107T192600Z (current)
+
+- **Prior task status:** COMPLETE (task 20261107T191514Z option 2a-adjacent). Bounded no-cost delta executed; no reverification-only session.
+- **Delta:** Extended `scripts/audit_integrity_audit_references.py` to cross-check referenced artifacts against `git show HEAD:` hashes (disk vs committed) and added `frozen_git_head_checks` for H004V106 canonical + H10 fresh; `GIT HEAD HASH MISMATCH` is now CRITICAL. Extended `tests/test_integrity_audit_reference_consistency.py` (6 tests) to pin git-HEAD checks/per-reference `matches_git_head`. New report `research_state/integrity_audit_reference_consistency_20261107T192300Z.json` (pass=True, scanned=14, critical=0, errors=0, info=8). No frozen artifact/config modified.
+- **Checks (HEAD `ff9bd734` baseline + delta):** `compileall -q scripts tests` EXIT=0; `scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **297 run, 0 failures, 1 skipped (OK)**. Verified claim refreshed via `scripts/record_test_claim.py` → `research_state/verified_test_claim_claim_snapshot.json` (297/297/0). Note: `test_verified_test_claim_guard` snapshot fingerprint required refresh after legitimate test-file delta.
+- **Frozen hashes (unchanged, disk == `git show HEAD:`):** H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. `git diff --name-only -- artifacts/ configs/` empty. Session verification: `research_state/session_verifications/session_verify_20261107T192600Z.json`.
+- **No new empirical scope before 2026-11-30.** H10 cutoff gate UNBLOCKED (Oct 2026 archive); blocker is data-vintage maturity (first structurally classifiable cutoff 2026-11-30). November reprobe forbidden before 2026-11-30.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. No confirmatory claim.
+
+---
+
 ## Session record 20261107T191514Z (current)
 
 - **Prior task status:** COMPLETE. Prior session (181238Z) left state clean; this session executed task-message option (2) bounded no-cost delta (no reverification-only session).

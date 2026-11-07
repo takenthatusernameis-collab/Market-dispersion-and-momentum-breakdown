@@ -19,6 +19,7 @@ import argparse
 import hashlib
 import json
 import re
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -49,6 +50,20 @@ ID_KEYS = ("audit_id", "addendum_id", "experiment_id", "artifact_id")
 
 def sha256_file(p: Path) -> str:
     return hashlib.sha256(p.read_bytes()).hexdigest()
+
+
+def git_head_sha256(repo_rel: str) -> str | None:
+    """Return sha256 of `git show HEAD:<repo_rel>`, or None if not tracked/unavailable."""
+    try:
+        r = subprocess.run(
+            ["git", "show", f"HEAD:{repo_rel}"],
+            cwd=ROOT, capture_output=True, check=False,
+        )
+        if r.returncode != 0 or not r.stdout:
+            return None
+        return hashlib.sha256(r.stdout).hexdigest()
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def _norm_repo_path(v: str) -> Path:
@@ -86,7 +101,11 @@ def audit_one(p: Path) -> dict:
         exists = fp.exists() and fp.is_file()
         disk_hash = sha256_file(fp) if exists else None
         frozen_expected = FROZEN.get(v.replace("\\", "/"))
+        repo_rel = v.replace("\\", "/")
+        git_hash = git_head_sha256(repo_rel) if exists else None
         ref = {"key": k, "path": v, "exists": exists, "disk_sha256": disk_hash,
+               "git_head_sha256": git_hash,
+               "matches_git_head": (git_hash is None or disk_hash == git_hash),
                "frozen_expected": frozen_expected,
                "matches_frozen": (frozen_expected is None or disk_hash == frozen_expected)}
         row["references"].append(ref)
@@ -95,6 +114,9 @@ def audit_one(p: Path) -> dict:
         if frozen_expected and disk_hash and disk_hash != frozen_expected:
             row["findings"].append(
                 f"FROZEN HASH MISMATCH: {k}={v} disk={disk_hash} expected={frozen_expected}")
+        if git_hash and disk_hash and disk_hash != git_hash:
+            row["findings"].append(
+                f"GIT HEAD HASH MISMATCH: {k}={v} disk={disk_hash} git_head={git_hash}")
 
     # Recorded hash checks (compare recorded hash to disk for any referenced path)
     disk_by_path = {r["path"]: r["disk_sha256"] for r in row["references"]}
@@ -133,7 +155,7 @@ def audit_one(p: Path) -> dict:
             row["findings"].append(
                 f"ID/filename loose mismatch (informational): {ik}={v} vs {stem}")
 
-    if any("FROZEN HASH MISMATCH" in f or "parse error" in f for f in row["findings"]):
+    if any("FROZEN HASH MISMATCH" in f or "GIT HEAD HASH MISMATCH" in f or "parse error" in f for f in row["findings"]):
         row["severity"] = "CRITICAL"
     elif any("missing referenced artifact" in f or "recorded hash mismatch" in f for f in row["findings"]):
         row["severity"] = "ERROR"
@@ -148,19 +170,34 @@ def run_audit() -> dict:
     critical = [r["file"] for r in rows if r["severity"] == "CRITICAL"]
     errors = [r["file"] for r in rows if r["severity"] == "ERROR"]
     info = [r["file"] for r in rows if r["severity"] == "INFO"]
+    frozen_git_checks = []
+    for rel, expected in FROZEN.items():
+        fp = ROOT / rel
+        disk = sha256_file(fp) if fp.is_file() else None
+        gh = git_head_sha256(rel)
+        chk = {"path": rel, "expected_frozen": expected, "disk_sha256": disk,
+               "git_head_sha256": gh,
+               "matches_frozen": disk == expected if disk else False,
+               "matches_git_head": (disk == gh) if (disk and gh) else None}
+        frozen_git_checks.append(chk)
+        if disk and disk != expected:
+            critical.append(f"FROZEN_DRIFT:{rel}")
+        if disk and gh and disk != gh:
+            critical.append(f"GIT_HEAD_DRIFT:{rel}")
     return {
         "audit_id": "INTEGRITY_AUDIT_REFERENCE_CONSISTENCY",
         "timestamp_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "audited_dir": str(AUDIT_DIR.relative_to(ROOT)),
         "files_scanned": len(rows),
-        "critical": critical,
+        "critical": sorted(set(critical)),
         "errors": errors,
         "info": info,
-        "pass": len(critical) == 0 and len(errors) == 0,
+        "pass": len(set(critical)) == 0 and len(errors) == 0,
         "frozen_hashes_checked": FROZEN,
+        "frozen_git_head_checks": frozen_git_checks,
         "rows": rows,
         "scope_note": (
-            "Read-only consistency scan over integrity_audit JSONs. INFO findings "
+            "Read-only consistency scan over integrity_audit JSONs plus frozen/git-HEAD cross-checks. INFO findings "
             "(e.g. ID/filename loose mismatch for addenda or legacy naming) are "
             "recorded but do not fail the audit. CRITICAL/ERROR indicate stale "
             "pointers or hash mismatches requiring investigation. Does not modify "
