@@ -1,0 +1,32 @@
+{
+  "ts_utc": "2026-11-07T13:17:55Z",
+  "action": "read_prior_handoff_and_task_complete_reverification",
+  "prior_task_status": "COMPLETE_REVERIFIED",
+  "env_dep_light": true,
+  "baseline": {
+    "compileall_scripts_tests_exit": 0,
+    "prereg_audit_pass": true,
+    "prereg_audits": 14,
+    "prereg_missing": 0,
+    "prereg_uncovered": 0
+  },
+  "dep_light_guard_tests": {
+    "cutoff_and_probe_pinning": {"tests": 23, "status": "OK", "modules": ["tests.test_cutoff_probe", "tests.test_latest_probe_record_pinned"]},
+    "hash_and_timestamp_guards": {"tests": 32, "status": "OK", "modules": ["tests.test_h10_fresh_block_hash_pinned", "tests.test_canonical_block_git_pinned", "tests.test_state_timestamp_not_stale", "tests.test_latest_probe_record_pinned", "tests.test_cutoff_probe"]},
+    "state_contract_prereg_alpha": {"tests": 37, "status": "OK", "modules": ["tests.test_state_consistency", "tests.test_continuous_research_contract", "tests.test_preregistration_coverage_audit", "tests.test_alpha_spending"]}
+  },
+  "frozen_hashes": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "unchanged": true
+  },
+  "cutoff_probe": {
+    "status": "BLOCKED",
+    "do_not_reprobe_before": "2026-11-30",
+    "confirmatory_advanced": false,
+    "k_advanced": false
+  },
+  "new_unblocked_scope_executed": "bounded dep-light guard suite re-verification (cutoff/probe pinning, hash/timestamp guards, state/contract/prereg/alpha); no frozen artifacts changed",
+  "frozen_artifacts_changed": false,
+  "next_action": "Preserve blocker; re-verify frozen hashes + compileall + prereg audit before new work. No cutoff re-probe before 2026-11-30. Pursue only newly identified bounded no-cost unblocked tasks (doc/contract drift, test gap, manifest/hash delta, prereg edge case) with session verification. After 2026-11-30: probe month 2026-11; if published run fresh sealed block in forward_block_h10_fresh/ (not forward_block/) with fixed gates and Holm alpha_k=0.05/(k*(k+1)), k=1. If IMMATURE record blocker, do not advance k. Never relax maturity/MIN_ASSETS_DECILES/trailing-decile/0.05; never open canonical holdout; never use today's rank as historical truth; never wait for a new experiment ID."
+}
