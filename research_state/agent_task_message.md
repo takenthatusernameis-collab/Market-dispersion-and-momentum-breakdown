@@ -1,8 +1,8 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261107T222504Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261107T222828Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (20261107T222504Z, HEAD `4873ddc2`, working tree has only untracked session/audit records)
+### Verified state (20261107T222828Z, HEAD `cdb82a6b`, working tree has only untracked session/audit records)
 - Frozen hashes (unchanged): H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. `git diff --name-only -- artifacts/ configs/` empty.
 - Reverification-only session (no source/artifact/config delta): compileall EXIT=0; prereg coverage pass=True (14/0/0); prereg/h10 ref audit pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; integrity-audit ref audit pass=True scanned=14 critical=0 errors=0 info=8; `python3 -m unittest discover -s tests` **324 run, 0 failures, 1 skipped (OK)**. Verified test claim unchanged (324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files; `research_state/run_manifest.json:latest_verified_test_claim` = `324/324/0`).
 - **No bounded no-cost delta exists before 2026-11-30** (recorded). All reference/prereg/integrity audits pass; pure utility coverage present; remaining untested scripts mutate artifacts, require network, or are data-dependent. Do not fabricate work or reverification-only artifacts beyond what is needed; keep next action as (1).

@@ -1,0 +1,33 @@
+{
+  "ts_utc": "2026-11-07T22:28:28Z",
+  "head": "cdb82a6b9980cde19da84142d71f5ae6d4a003d8",
+  "prior_task_status": "COMPLETE",
+  "prior_task_ref": "research_state/agent_task_message.md (20261107T222504Z): reverification before 2026-11-30; no bounded delta.",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "audit_prereg_and_h10_fresh_references": {"pass": true, "scanned": 13, "prereg": 9, "frozen_prereg": 0, "h10": 1, "forward_block": 1, "h10_variant": 2, "critical": 0, "errors": 0, "info": 0, "record": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261107T222821Z.json"},
+    "audit_integrity_audit_references": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "info": 8, "record": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261107T222821Z.json"},
+    "unittest_discover": {"ran": 324, "failures": 0, "errors": 0, "skipped": 1, "ok": true}
+  },
+  "verified_test_claim": {
+    "claim": "324/324/0",
+    "passed": 324,
+    "ran": 324,
+    "failures": 0,
+    "skipped": 1,
+    "fingerprint": "e442d8b28997fe49",
+    "input_files": 102,
+    "manifest_field": "research_state/run_manifest.json:latest_verified_test_claim",
+    "note": "Unchanged from prior verified claim; no source/test delta."
+  },
+  "frozen_hashes_unchanged": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "artifacts_configs_diff": "empty",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null; first structurally classifiable cutoff projected 2026-11-30 (~31 formations); k not advanced.",
+  "cutoff_gate": "H10 UNBLOCKED per latest_archive_probe (Oct 2026 archive published 2026-11-05T10:38:51Z); Nov 2026 BLOCKED target_published=false (probe 2026-11-07T09:11:52Z); re-probe forbidden before 2026-11-30.",
+  "bounded_no_cost_delta_before_2026_11_30": false,
+  "next_action": "1) On/after 2026-11-30 probe 2026-11 and, if usable, refresh free data + run fresh sealed H10 block into forward_block_h10_fresh/ only (never forward_block/). 2) Before 2026-11-30 act only on a genuine bounded no-cost gap. 3) Otherwise record no unblocked task and keep (1)."
+}
