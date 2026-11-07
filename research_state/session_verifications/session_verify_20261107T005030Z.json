@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-11-07T00:50:30Z",
+  "head": "00f3c91de641efe677928805551c6f686719855e",
+  "prior_task_message": "research_state/agent_task_message.md (2026-11-07T00:47Z)",
+  "prior_task_status": "COMPLETE",
+  "checks": {
+    "git_status_clean_start": true,
+    "git_ls_files_tests_pycache_count": 0,
+    "compileall_scripts_tests_exit": 0,
+    "preregistration_coverage_pass": true,
+    "preregistration_coverage_counts": {"audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover": {"ok": 255, "skipped": 1, "failures": 0, "errors": 0, "seconds": 52.090}
+  },
+  "deps": {"python": "3.12.3", "numpy": "2.5.4", "pandas": "3.1.1"},
+  "frozen_hashes_verified": {
+    "h004v106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probe_latest": {
+    "november_2026": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json",
+    "november_target_published": false,
+    "reprobe_before_2026_11_30": false
+  },
+  "confirmatory_advanced": false,
+  "k_advanced": false,
+  "source_or_test_changes": false,
+  "frozen_artifact_changes": false
+}
