@@ -1,10 +1,3 @@
-try:
-    import numpy as _np_guard
-    import pandas as _pd_guard
-except Exception as _e:
-    import unittest as _ut
-    __unittest_skip__ = True
-    __unittest_skip_why__ = 'dep-light: numpy/pandas not installed'
 """Tests for the additive overlap-aware (formation-month cluster-bootstrap)
 uncertainty reporting in scripts/eval_forward_block.py.
 
@@ -22,6 +15,18 @@ import sys
 import unittest
 from pathlib import Path
 
+
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
+_HAS_NUMPY_PANDAS = _has_module("numpy") and _has_module("pandas")
+
 ROOT = Path(__file__).resolve().parents[1]
 EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 ART = ROOT / "artifacts" / EXP
@@ -30,8 +35,12 @@ FRESH = ART / "forward_block_h10_fresh" / "forward_block_evaluation.json"
 EVAL = ROOT / "scripts" / "eval_forward_block.py"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-eval_fb = importlib.import_module("eval_forward_block")
-overlap_aware_interval = eval_fb.overlap_aware_interval
+try:
+    eval_fb = importlib.import_module("eval_forward_block")
+    overlap_aware_interval = eval_fb.overlap_aware_interval
+except Exception:
+    eval_fb = None
+    overlap_aware_interval = None
 
 
 def _form(formation_date, state, spread_net_1x):
@@ -42,6 +51,9 @@ def _form(formation_date, state, spread_net_1x):
     }
 
 
+@unittest.skipUnless(
+    _HAS_NUMPY_PANDAS, "numpy/pandas not installed (dep-light env)"
+)
 class OverlapAwareIntervalUnitTests(unittest.TestCase):
     def test_immature_when_no_high_or_no_low(self):
         res = overlap_aware_interval([_form("2026-01-02", "high", 0.1)])
@@ -123,6 +135,9 @@ class OverlapAwareIntervalPipelineTests(unittest.TestCase):
         after = CANONICAL.read_bytes()
         self.assertEqual(before, after)
 
+    @unittest.skipUnless(
+        _HAS_NUMPY_PANDAS, "numpy/pandas not installed (dep-light env)"
+    )
     def test_fresh_block_pipeline_emits_overlap_aware_section(self):
         import tempfile
 

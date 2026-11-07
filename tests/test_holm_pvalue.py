@@ -11,14 +11,35 @@ import importlib.util
 import unittest
 from pathlib import Path
 
+
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
+_HAS_PANDAS = _has_module("pandas")
+
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "run_dispersion003_grid.py"
 
-spec = importlib.util.spec_from_file_location("run_grid", SCRIPT)
-run_grid = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(run_grid)
+try:
+    spec = importlib.util.spec_from_file_location("run_grid", SCRIPT)
+    run_grid = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(run_grid)
+except Exception:
+    __unittest_skip__ = True
+    __unittest_skip_why__ = (
+        'dep-light: pandas not installed '
+        '(scripts/run_dispersion003_grid.py imports pandas)'
+    )
+    run_grid = None
 
 
+@unittest.skipUnless(_HAS_PANDAS, "pandas not installed (dep-light env)")
 class HolmPvalueTests(unittest.TestCase):
     def test_abs_diff_was_not_a_pvalue(self):
         """The old code fed abs(mean difference) into Holm; that is not a p-value.

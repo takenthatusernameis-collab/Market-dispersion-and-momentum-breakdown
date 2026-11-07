@@ -23,6 +23,15 @@ SCRIPT = root / "scripts" / "fix_inference.py"
 TARGET_FILES = ["phase_c_summary.json", "phase_f_summary.json"]
 
 
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
 def _snapshot():
     tmp = Path(tempfile.mkdtemp())
     for name in TARGET_FILES:
@@ -44,12 +53,18 @@ class InferenceRepro(unittest.TestCase):
         self.assertIn('EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-002"', src)
         self.assertNotIn('EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-001"', src)
 
+    @unittest.skipUnless(
+        _has_module("numpy"), "scripts/fix_inference.py subprocess requires numpy/pandas"
+    )
     def test_script_runs_clean(self):
         r = subprocess.run(
             ["python", str(SCRIPT)], cwd=root, capture_output=True, text=True,
         )
         self.assertEqual(r.returncode, 0, msg=r.stderr)
 
+    @unittest.skipUnless(
+        _has_module("numpy"), "scripts/fix_inference.py subprocess requires numpy/pandas"
+    )
     def test_artifacts_reproduced_byte_identical(self):
         """Re-running the script must not change the committed artifacts."""
         before = {n: (ART / n).read_bytes() for n in TARGET_FILES}
@@ -75,6 +90,7 @@ class InferenceRepro(unittest.TestCase):
             self.assertIsNone(pf[split]["diff_gross_ci_95"][0])
             self.assertEqual(pf[split]["n_diff_observations"], 0)
 
+    @unittest.skipUnless(_has_module("pandas"), "pandas not installed (dep-light env)")
     def test_phase_f_split_counts_match_formation_panel(self):
         """Split sizes must reconcile with the conditioned formation panel."""
         import pandas as pd

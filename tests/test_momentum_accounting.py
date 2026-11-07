@@ -1,10 +1,3 @@
-try:
-    import numpy as _np_guard
-    import pandas as _pd_guard
-except Exception as _e:
-    import unittest as _ut
-    __unittest_skip__ = True
-    __unittest_skip_why__ = 'dep-light: numpy/pandas not installed'
 """Regression tests for the price-level vs return-based momentum defect.
 
 DISPERSION-003 was computed with a cumulative product of (1 + price) across
@@ -16,14 +9,32 @@ were both recomputed using daily returns.
 
 These tests pin the corrected behaviour so the defect cannot regress silently.
 """
+from __future__ import annotations
+
 import unittest
 from pathlib import Path
 
-import pandas as pd
+
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
+_HAS_PANDAS = _has_module("pandas")
+
+try:
+    import pandas as pd
+except Exception:
+    pd = None  # dep-light: whole class is skipped dep-light
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@unittest.skipUnless(_HAS_PANDAS, "pandas not installed (dep-light env)")
 class MomentumAccountingTests(unittest.TestCase):
     def _make_price_frame(self) -> pd.DataFrame:
         idx = pd.date_range("2023-01-01", periods=40, freq="D", tz="UTC")

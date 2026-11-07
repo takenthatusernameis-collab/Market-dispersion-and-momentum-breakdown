@@ -40,10 +40,22 @@ CANONICAL = ART / "forward_block" / "forward_block_evaluation.json"
 EVAL = ROOT / "scripts" / "eval_forward_block.py"
 
 
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
 def _sha(p: Path) -> str:
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
+@unittest.skipUnless(
+    _has_module("numpy"), "scripts/eval_forward_block.py subprocess requires numpy"
+)
 class ForwardBlockOutputDirTests(unittest.TestCase):
     def test_output_dir_override_writes_separate_block_and_leaves_canonical_intact(self):
         import tempfile

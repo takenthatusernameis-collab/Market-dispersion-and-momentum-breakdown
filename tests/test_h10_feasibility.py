@@ -1,10 +1,3 @@
-try:
-    import numpy as _np_guard
-    import pandas as _pd_guard
-except Exception as _e:
-    import unittest as _ut
-    __unittest_skip__ = True
-    __unittest_skip_why__ = 'dep-light: numpy/pandas not installed'
 """Regression guard for the H10 structural feasibility analysis.
 
 DISP-003-H10-FEASIBILITY-001 (artifacts/.../integrity_audit/
@@ -20,7 +13,22 @@ import json
 import unittest
 from pathlib import Path
 
-import pandas as pd
+
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
+_HAS_PANDAS = _has_module("pandas")
+
+try:
+    import pandas as pd
+except Exception:
+    pd = None  # dep-light: whole class is skipped dep-light
 
 ROOT = Path(__file__).resolve().parents[1]
 EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
@@ -56,6 +64,8 @@ def fresh_block_formations(idx, cutoff: str) -> int:
     return int(sum(1 for d in idx if d >= pd.Timestamp(START, tz="UTC") and d <= lad))
 
 
+@unittest.skipUnless(_HAS_PANDAS, "pandas not installed (dep-light env)")
+@unittest.skipUnless(_HAS_PANDAS, "pandas not installed (dep-light env)")
 class TestH10Feasibility(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

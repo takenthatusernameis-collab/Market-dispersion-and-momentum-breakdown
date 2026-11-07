@@ -35,6 +35,15 @@ FB = ART / "forward_block" / "forward_block_evaluation.json"
 LEDGER = ART / "grid_result_ledger.json"
 
 
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named stdlib/third-party module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
 def _fb():
     return json.loads(FB.read_text())
 
@@ -117,6 +126,9 @@ class ForwardBlockIntegrityTests(unittest.TestCase):
             self.assertNotIn(non_input, fb["input_file_hashes"],
                              msg=f"{non_input} is not a forward-block input")
 
+    @unittest.skipUnless(
+        _has_module("numpy"), "scripts/eval_forward_block.py subprocess requires numpy"
+    )
     def test_forward_block_reproducible_at_frozen_cutoff(self):
         """Re-running the evaluator at the frozen cutoff must reproduce the
         committed high_low_diff_net_1x and formation count. The re-run writes to
@@ -195,6 +207,7 @@ class ForwardBlockIntegrityTests(unittest.TestCase):
         self.assertEqual(diff[0], "2026-09-01")
         self.assertEqual(diff[-1], "2026-09-29")
 
+    @unittest.skipUnless(_has_module("pandas"), "pandas not installed (dep-light env)")
     def test_funding_panels_have_aligned_header_and_data(self):
         """Regression for the 2026-10-25 panel-schema defect.
 

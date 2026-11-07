@@ -34,6 +34,15 @@ EVAL = ROOT / "scripts" / "eval_forward_block.py"
 CANONICAL_SHA = "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
 
 
+def _has_module(name: str) -> bool:
+    """dep-light probe: True when the named module imports."""
+    try:
+        __import__(name)
+        return True
+    except Exception:
+        return False
+
+
 class H10FreshBlockCurrentGuardTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -68,6 +77,9 @@ class H10FreshBlockCurrentGuardTests(unittest.TestCase):
         self.assertEqual(self.fb["formations"][0]["formation_date"], "2026-09-30")
         self.assertEqual(self.fb["formations"][0]["state"], "mid")
 
+    @unittest.skipUnless(
+        _has_module("numpy"), "scripts/eval_forward_block.py subprocess requires numpy"
+    )
     def test_reproducibility_against_current_evaluator(self):
         # A fresh subprocess run into a throwaway dir must reproduce the
         # committed outcome fields and the overlap-aware section exactly. This
