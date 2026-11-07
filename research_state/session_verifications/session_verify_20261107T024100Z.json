@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-11-07T02:41:00Z",
+  "head": "f2ed57d846022a066cb36dd63e8bd12dd158669e",
+  "git_status_clean_at_start": true,
+  "git_ls_files_tests_pycache": 0,
+  "python": "3.12.3",
+  "deps": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compileall_exit": 0,
+  "prereg_coverage_audit": {
+    "pass": true,
+    "audits": 14,
+    "missing_prereq": 0,
+    "uncovered_prereq": 0
+  },
+  "unittest": {
+    "ran": 255,
+    "ok": true,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "duration_s": 52.027
+  },
+  "frozen_hashes": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probe_latest_nov2026": {
+    "path": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json",
+    "status": "BLOCKED",
+    "target_published": false,
+    "do_not_reprobe_before": "2026-11-30"
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "source_test_frozen_changes": false,
+  "notes": "Independent unblocked verification of prior handoff task (2026-11-07T02:37Z). No November 2026 re-probe performed."
+}
