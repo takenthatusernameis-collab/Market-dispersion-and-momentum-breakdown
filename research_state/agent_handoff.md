@@ -1,3 +1,10 @@
+## Session record 2026-11-07T11:30Z
+
+- **Prior task status:** COMPLETE. Re-verified baseline and frozen hashes in dep-light env; no code/test/prereg/artifact changes. compileall EXIT=0; prereg audit pass=True (14/0/0). Frozen hashes unchanged (H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`). HEAD `70d63860`.
+- **Cutoff probe latest:** BLOCKED (do NOT re-probe before 2026-11-30).
+- **Change made:** None (baseline re-verification only; no frozen artifacts/preregs/data changed).
+- **Next action:** Preserve blocker. Do NOT re-probe November 2026 before 2026-11-30. Continue independent unblocked audit/test/doc/hygiene tasks (dep-light guards, pre-outcome inference-protocol gaps, doc/consistency audits, hash/manifest verification). Record results in `research_state/session_verifications/` and update handoff + task message. After 2026-11-30 only: probe cutoff gate and, if published, run fresh sealed block per protocol. Never relax maturity/MIN_ASSETS/threshold. Never open canonical sealed holdout. Never use today's rank as historical truth. Never write "wait for a new experiment ID."
+
 ## Session record 2026-11-07T11:15Z (current)
 
 - **Prior task status:** COMPLETE. Re-verified baseline and frozen hashes; no changes.
