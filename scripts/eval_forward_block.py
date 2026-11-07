@@ -361,6 +361,8 @@ def overlap_aware_interval(formation_records, n_boot=2000, rng_seed=20261102):
 
 def main() -> int:
     args = parse_args()
+    if int(args.look_number) < 1:
+        raise SystemExit("--look-number must be a positive integer (1-based sequential look)")
     # The canonical H004V106 block lives at the default OUT_DIR and is
     # read-only input to every future block. A --output-dir override seals a
     # fresh forward block into a separate directory without touching the
