@@ -43,6 +43,19 @@ OUT_DIR = ART / "forward_block"
 BASE_COST_TURN = 0.0005
 COST_1X = BASE_COST_TURN * 2.0
 MIN_ASSETS_DECILES = 20
+
+# Predeclared economic-significance threshold for the H10 fresh-block confirmatory
+# gate (prereg sec 4.2). A confirmatory claim requires
+# |high_low_diff_net_1x| >= this value, where high_low_diff_net_1x is already net
+# of COST_1X. Declared before any mature outcome exists; never re-derived from
+# outcomes, never lowered to manufacture a pass.
+ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05
+
+# Research-protocol 6 state-count floor folded into the same gate: a magnitude
+# claim is only estimable when both states have at least five independent
+# formations. Below this floor the result is INCONCLUSIVE regardless of
+# magnitude, and the look counter does not advance.
+MIN_STATE_FORMATIONS = 5
 FORWARD_BLOCK_START = "2025-01-01"
 
 # Anchor H004V106 parameters (frozen from grid manifest).
@@ -620,6 +633,38 @@ def main() -> int:
                "IMMATURE (n_high=0 or n_low=0): consumes no budget, do NOT "
                "advance k -- pass the same --look-number again on the next "
                "mature evaluation")
+        )
+
+        # Confirmatory gate (prereg sec 4 / 4.2). Recorded into every fresh-block
+        # artifact so the decision is auditable and cannot be re-argued from the
+        # raw outcome later. A confirmatory claim requires ALL of:
+        #   (a) |high_low_diff_net_1x| >= ECONOMIC_SIGNIFICANCE_THRESHOLD
+        #   (b) n_high >= MIN_STATE_FORMATIONS and n_low >= MIN_STATE_FORMATIONS
+        #   (c) Holm-significance across the complete 216-cell family at alpha_k
+        # (c) is evaluated by the caller against the grid ledger; it is not
+        # recomputed here, so it is recorded as pending and the caller must fill
+        # confirmatory_holm_significant before any SUPPORTED claim is made.
+        diff = freeze_record["high_low_diff_net_1x"]
+        econ_ok = bool(diff is not None and abs(diff) >= ECONOMIC_SIGNIFICANCE_THRESHOLD)
+        state_ok = bool(n_high >= MIN_STATE_FORMATIONS and n_low >= MIN_STATE_FORMATIONS)
+        freeze_record["economic_significance_threshold"] = ECONOMIC_SIGNIFICANCE_THRESHOLD
+        freeze_record["min_state_formations"] = MIN_STATE_FORMATIONS
+        freeze_record["high_low_diff_net_1x_abs"] = None if diff is None else abs(diff)
+        freeze_record["economic_significance_met"] = econ_ok
+        freeze_record["state_count_floor_met"] = state_ok
+        freeze_record["confirmatory_holm_significant"] = None  # caller fills
+        freeze_record["confirmatory_claim_allowed"] = bool(
+            econ_ok and state_ok and freeze_record["confirmatory_holm_significant"] is True
+        )
+        freeze_record["confirmatory_note"] = (
+            f"gate: |high_low_diff_net_1x|={None if diff is None else round(abs(diff), 6)} "
+            f">= {ECONOMIC_SIGNIFICANCE_THRESHOLD} -> {econ_ok}; "
+            f"n_high={n_high}>= {MIN_STATE_FORMATIONS} and n_low={n_low}>="
+            f"{MIN_STATE_FORMATIONS} -> {state_ok}; "
+            "Holm-significance across the complete 216-cell family at alpha_k "
+            f"= {spend.alpha_k} -> {freeze_record['confirmatory_holm_significant']} "
+            "(pending caller). A confirmatory claim requires all three True and "
+            "is never promoted from raw p-values or return alone."
         )
 
     out_path = OUT_DIR / "forward_block_evaluation.json"

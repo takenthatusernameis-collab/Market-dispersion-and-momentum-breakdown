@@ -100,5 +100,88 @@ class H10SequentialAlphaSpendingTests(unittest.TestCase):
         )
 
 
+class H10EconomicSignificanceThresholdTests(unittest.TestCase):
+    """Guard for prereg section 4.2 (quantified economic-significance threshold).
+
+    H10's prereg declared criterion 4(a) -- "|high_low_diff_net_1x| above a
+    predeclared economic-significance threshold (after costs)" -- without a
+    number, so no outcome could ever satisfy or fail it: the confirmatory gate
+    was structurally undecidable. Section 4.2 supplies the number, and this test
+    is the single-source-of-truth guard that the prereg text and the evaluator
+    constant agree. It parses the prereg rather than hard-coding the value, so a
+    drift between the two is a build failure instead of a silent mismatch.
+
+    The constant lives in scripts/eval_forward_block.py
+    (ECONOMIC_SIGNIFICANCE_THRESHOLD) and is emitted into every fresh-block
+    artifact, so the decision is auditable and cannot be re-argued from the raw
+    outcome later.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.text = PREREQ.read_text(encoding="utf-8")
+        match = re.search(r"## 4\.2.*?(?=\n## )", cls.text, re.DOTALL)
+        cls.section = match.group(0) if match else ""
+
+    def test_prereg_has_section_4_2(self):
+        self.assertTrue(
+            self.section,
+            "H10 prereg is missing section 4.2 (quantified economic-significance "
+            "threshold); criterion 4(a) is undecidable without it and must be "
+            "declared before any mature outcome exists",
+        )
+
+    def test_declared_threshold_matches_evaluator_constant(self):
+        import scripts.eval_forward_block as efb
+
+        # The constant is module-level and is read from the current source at
+        # import time; no reload is needed and none is performed, so this guard
+        # cannot be satisfied by a stale cached value.
+        threshold = efb.ECONOMIC_SIGNIFICANCE_THRESHOLD
+        section = self.section
+        self.assertIn(
+            f"ECONOMIC_SIGNIFICANCE_THRESHOLD = {threshold}",
+            section,
+            "prereg section 4.2 does not declare the threshold constant as "
+            f"ECONOMIC_SIGNIFICANCE_THRESHOLD = {threshold}",
+        )
+        self.assertAlmostEqual(threshold, 0.05)
+
+    def test_declared_threshold_is_net_of_cost(self):
+        # The endpoint high_low_diff_net_1x is already net of COST_1X = 0.001
+        # (BASE_COST_TURN 0.0005 x 2). The threshold must be stated against that
+        # net quantity, and the prereg must say so explicitly.
+        self.assertIn("already net of cost", self.section)
+        self.assertIn("COST_1X = 0.001", self.section)
+
+    def test_state_count_floor_declared(self):
+        # Research protocol 6 requires the inference to be estimable: both
+        # states need at least five independent formations. Section 4.2 folds
+        # that floor into criterion 4(a) so it cannot be overlooked at decision
+        # time, and the evaluator must carry the matching constant.
+        import scripts.eval_forward_block as efb
+
+        self.assertTrue(
+            re.search(r"n_high >= 5 AND n_low >= 5", self.section),
+            "prereg section 4.2 does not declare the n_high>=5 / n_low>=5 "
+            "state-count floor",
+        )
+        self.assertEqual(efb.MIN_STATE_FORMATIONS, 5)
+
+    def test_threshold_is_not_rederived_from_outcomes(self):
+        # The threshold must be chosen in ignorance of every observed outcome,
+        # including the canonical H004V106 block's exploratory +0.617. The
+        # prereg must state that the canonical block is NOT an input to it.
+        self.assertIn("NOT an input to this threshold", self.section)
+        self.assertIn("development/exploratory evidence", self.section)
+
+    def test_threshold_never_lowered(self):
+        # The prereg must forbid lowering the threshold to manufacture a pass and
+        # re-deriving it from the fresh block's outcome. The two clauses sit on
+        # separate wrapped lines, so each is asserted independently.
+        self.assertIn("never lowered to manufacture a pass", self.section)
+        self.assertIn("re-derived from the fresh block", self.section)
+
+
 if __name__ == "__main__":
     unittest.main()

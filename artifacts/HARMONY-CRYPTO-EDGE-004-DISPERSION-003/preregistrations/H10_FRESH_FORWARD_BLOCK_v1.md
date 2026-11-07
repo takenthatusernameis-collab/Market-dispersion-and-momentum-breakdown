@@ -126,6 +126,48 @@ any mature outcome exists, so it cannot be outcome-informed.
 - **Not relaxed:** no look-ahead, no outcome-informed choice of k, no reuse of an
   inspected holdout, no lowering of the family alpha to manufacture a pass.
 
+## 4.2. Quantified economic-significance threshold (added 2026-11-07T06:27Z)
+
+Section 4(a) requires `|high_low_diff_net_1x|` to be "above a predeclared
+economic-significance threshold (after costs)" but stated no number, so no
+outcome could ever satisfy or fail criterion 4(a): the confirmatory gate was
+structurally undecidable. This section supplies the number. It is added before
+any mature fresh-block outcome exists, so it cannot be outcome-informed.
+
+- **Endpoint is already net of cost.** `high_low_diff_net_1x` =
+  mean(high spread_net_1x) - mean(low spread_net_1x), where
+  `spread_net_1x = spread_gross - COST_1X` and `COST_1X = 0.001` per side-pair
+  (BASE_COST_TURN 0.0005 x 2, scripts/eval_forward_block.py:43-44). The
+  threshold therefore applies to a cost-adjusted quantity; no further cost
+  deduction is made at the decision step.
+- **Declared threshold:** a confirmatory claim requires
+  `|high_low_diff_net_1x| >= ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05`, i.e. a
+  net high-minus-low spread of at least 5% per 30-day formation cohort, in
+  either direction. The sign is NOT pre-registered: H1's registered prediction
+  is negative, but H10's estimand is the magnitude of the spread on genuinely
+  fresh data, and a positive result is a candidate for a separately registered
+  hypothesis (H2/H7), never a retroactive rewrite of H1.
+- **Why 0.05.** It is ~50x the per-formation cost (0.001) embedded in the
+  endpoint, so it cannot be satisfied by costless noise; it annualizes to roughly
+  20%+ over the 30-day formation cadence, a conservative bar for a
+  dispersion-conditioned cross-sectional momentum spread. It is a round,
+  mechanism-agnostic, predeclared number, chosen in ignorance of every observed
+  outcome -- including the canonical H004V106 block's +0.617, which is
+  development/exploratory evidence and is NOT an input to this threshold. The
+  threshold is deliberately an order of magnitude below that exploratory
+  estimate so that it functions as a genuine hurdle rather than a rubber stamp.
+- **State-count floor (research protocol 6).** A magnitude claim also requires
+  the inference to be estimable: `n_high >= 5 AND n_low >= 5`. If either state
+  has fewer than five independent formations, the result is labeled
+  INCONCLUSIVE / EXPLORATORY_ONLY regardless of the magnitude, and the look
+  counter does not advance. This is the protocol's own floor, folded into
+  criterion 4(a) so it cannot be overlooked at decision time.
+- **Not relaxed:** the threshold is never lowered to manufacture a pass, never
+  re-derived from the fresh block's outcome, and never applied to the canonical
+  block (which is read-only development evidence). If the fresh block's
+  `|high_low_diff_net_1x|` is below 0.05, or either state has <5 formations,
+  the correct record is INCONCLUSIVE, not SUPPORTED.
+
 ## 5. Safeguards (not relaxed)
 
 - No look-ahead: formations strictly after 2026-09-29; no outcomes computed
