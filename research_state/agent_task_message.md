@@ -1,6 +1,6 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session **2026-11-07T06:28Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session **2026-11-07T06:47Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
 ### Verified state (2026-11-07T06:28Z, working-tree HEAD context `0ee0c82c`)
 - **Prior task:** COMPLETE. Baseline re-verified; then a pre-outcome inference-protocol gap was found and repaired (see below). `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **261 OK, skipped=1** (was 255). `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261107T062800Z.json`. Deps: Python 3.12.3, numpy 2.5.4, pandas 3.1.1.
