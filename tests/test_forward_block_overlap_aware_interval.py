@@ -1,3 +1,10 @@
+try:
+    import numpy as _np_guard
+    import pandas as _pd_guard
+except Exception as _e:
+    import unittest as _ut
+    __unittest_skip__ = True
+    __unittest_skip_why__ = 'dep-light: numpy/pandas not installed'
 """Tests for the additive overlap-aware (formation-month cluster-bootstrap)
 uncertainty reporting in scripts/eval_forward_block.py.
 
