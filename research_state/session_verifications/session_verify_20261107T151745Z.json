@@ -1,0 +1,35 @@
+{
+  "session_utc": "20261107T151745Z",
+  "head": "031b483a",
+  "prior_task_status": "COMPLETE_REVERIFIED",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "preregistration_coverage_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover": {"ran": 291, "failures": 0, "errors": 0, "skipped": 1, "ok": true, "note": "tail observed OK; deps installed (numpy 2.5.4, pandas 3.1.1)"}
+  },
+  "frozen_hashes": {
+    "H004V106_canonical_forward_block": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "disk_equals_head": true
+    },
+    "H10_fresh_immature": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+      "sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "disk_equals_head": true
+    }
+  },
+  "git_diff_artifacts_configs": "empty",
+  "git_status": "clean",
+  "h10_state": {
+    "cutoff_gate": "UNBLOCKED",
+    "latest_archive_probe": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json",
+    "latest_november_probe_audit_trail": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "blocker": "DATA_VINTAGE_MATURITY",
+    "first_structurally_classifiable_cutoff": "2026-11-30",
+    "status": "CANDIDATE_UNVALIDATED_EXPLORATORY_ONLY_EVALUATED_NULL_DIFF_IMMATURE",
+    "k_advanced": false
+  },
+  "no_new_unblocked_empirical_scope_before": "2026-11-30",
+  "bounded_hygiene_this_session": "session verification artifact only; no code/test/config/frozen-artifact changes"
+}
