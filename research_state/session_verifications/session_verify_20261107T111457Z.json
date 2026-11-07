@@ -1,0 +1,15 @@
+{
+  "session": "2026-11-07T11:14:57Z",
+  "prior_task_status": "COMPLETE",
+  "change": "Baseline re-verification only; no code/tests/preregs/scripts/frozen artifacts/data changed.",
+  "compileall": "EXIT=0",
+  "prereg_audit": "pass=True (14/0/0)",
+  "tests": "287 run, 2 failures, 0 errors, 35 skipped (dep-light env limits)",
+  "frozen_hashes": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_IMMATURE": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probe": "BLOCKED (do NOT re-probe before 2026-11-30)",
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
