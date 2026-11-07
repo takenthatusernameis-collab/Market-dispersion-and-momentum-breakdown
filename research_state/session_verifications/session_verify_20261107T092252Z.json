@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-11-07T09:22:52Z",
+  "head_sha": "52d421468663bb53b3edf603391b49eb01179547",
+  "task_completed": "Read prior durable handoff/task (2026-11-07T09:19Z); re-verified baseline (compileall EXIT=0, prereg audit pass=True 14/0/0, git ls-files tests/__pycache__=0); re-verified frozen hashes unchanged vs git show HEAD: (H004V106 canonical 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390, H10 fresh IMMATURE 9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a); confirmed cutoff probe 2026-11-07T09:11:52Z BLOCKED (target_published=false, control_ok=true, archive_alive=true) — do not re-probe Nov 2026 before 2026-11-30. Added narrow dep-light single-source-of-truth hardening in tests/test_sequential_alpha_rule_source.py (now 5 tests): pins all sequential spend artifact fields (sequential_family_alpha/alpha_k/cumulative_spend/remaining_budget/rule) to alpha_spending spend object attributes in eval_forward_block.py and asserts AlphaSpendResult declares those fields. No frozen-artifact/prereg/script-evaluator-behavior/data change; no confirmatory advance; k not advanced.",
+  "environment_limits": "Dep-light env (pandas/numpy not installed). Full-suite 279 OK, skipped=1 (fingerprint 0f53ad4bb765d0b1, recorded 2026-11-07T09:05Z snapshot) preserved/not reproducible here; record_test_claim.py not run to overwrite. Dep-light checks this session: compileall EXIT=0; prereg audit pass=True (14/0/0); test_sequential_alpha_rule_source 5/5 OK; test_alpha_spending 10/10 OK; test_cutoff_probe 17/17 OK. Prior 2 errors in h10_sequential_alpha_spending (numpy import via eval_forward_block) remain pre-existing dep-light env limits.",
+  "checks": {
+    "compileall": {"exit": 0},
+    "prereg_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "dep_light_tests": {
+      "test_sequential_alpha_rule_source": {"run": 5, "ok": 5, "failures": 0, "errors": 0},
+      "test_alpha_spending": {"run": 10, "ok": 10, "failures": 0, "errors": 0},
+      "test_cutoff_probe": {"run": 17, "ok": 17, "failures": 0, "errors": 0}
+    },
+    "tracked_pycache": 0
+  },
+  "frozen_hashes_unchanged_vs_head": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probe_latest": {
+    "path": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "probe_month": "2026-11",
+    "target_published": false,
+    "control_ok": true,
+    "archive_alive": true,
+    "cutoff_gate": "BLOCKED",
+    "do_not_reprobe_before": "2026-11-30"
+  },
+  "files_changed_this_session": [
+    "tests/test_sequential_alpha_rule_source.py",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "research_state/session_verifications/session_verify_20261107T092252Z.json"
+  ],
+  "next_action": "Preserve blocker; do not fabricate. Do NOT re-probe November 2026 before 2026-11-30. Continue independent unblocked dep-light audit/test/doc/hygiene tasks (further inference-protocol/evaluator contract guards, prereg consistency, hash/manifest verification, alpha-spending/look/consumes_budget semantics) recording env limits honestly. After 2026-11-30 only: probe cutoff gate; if target_published=true refresh free public data, install deps, run tests, verify H004V106 unchanged, run fresh sealed block into forward_block_h10_fresh/ with --look-number 1 and require n_high/n_low>0 and >=5, |high_low_diff_net_1x|>=0.05, Holm-significant across complete 216-cell family at alpha_k=0.05/(k*(k+1)); if IMMATURE record blocker and do not advance k. Never relax gates/holdout; never use today's rank as historical point-in-time truth; never write 'wait for a new experiment ID'."
+}

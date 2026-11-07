@@ -43,6 +43,37 @@ class SequentialAlphaRuleSourceTests(unittest.TestCase):
                       "alpha_spending.py must declare the rule string quoted by "
                       "H10 prereg section 4.1 as the AlphaSpendResult.rule default")
 
+    def test_sequential_spend_fields_emitted_from_spend_object_not_hardcoded(self):
+        # All sealed-artifact sequential alpha fields (except look number/k, which
+        # comes from --look-number) must be sourced from the alpha_spending result
+        # object, never hardcoded. This prevents a silent divergence between the
+        # emitted artifact and the single source of truth in alpha_spending.py.
+        for artifact_key, spend_attr in [
+            ('sequential_family_alpha', 'spend.family_alpha'),
+            ('sequential_alpha_k', 'spend.alpha_k'),
+            ('sequential_cumulative_spend', 'spend.cumulative_spend'),
+            ('sequential_remaining_budget', 'spend.remaining_budget'),
+            ('sequential_alpha_rule', 'spend.rule'),
+        ]:
+            self.assertIn(
+                f'freeze_record["{artifact_key}"] = {spend_attr}',
+                EVAL_SRC,
+                f"eval_forward_block.py must emit {artifact_key} from {spend_attr} "
+                "(alpha_spending single source of truth), not a hardcoded literal",
+            )
+
+    def test_alpha_spending_exposes_expected_spend_result_fields(self):
+        # The evaluator reads spend.family_alpha/alpha_k/cumulative_spend/
+        # remaining_budget/rule; the module must declare these on AlphaSpendResult
+        # so the contract is explicit and dep-light-auditable.
+        for field in ("family_alpha", "alpha_k", "cumulative_spend",
+                      "remaining_budget", "rule"):
+            self.assertRegex(
+                ALPHA_SRC, rf"\b{field}\b\s*:",
+                f"alpha_spending.AlphaSpendResult must declare field {field!r} "
+                "consumed by eval_forward_block.py artifact emission",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
