@@ -1,0 +1,24 @@
+{
+  "artifacts_configs_diff_empty": true,
+  "checks": {
+    "compileall_exit": 0,
+    "prereg_coverage_pass": true,
+    "unittest": {
+      "failures": 0,
+      "ok": true,
+      "run": 312,
+      "skipped": 1
+    }
+  },
+  "delta": "Added tests/test_record_test_claim.py (15 unit tests, no network/no suite exec) pinning parse_summary/CLAIM_FORMAT/inventory_fingerprint/sync_from_snapshot contracts; refreshed verified test claim via record_test_claim.py to 312/312/0.",
+  "frozen_hashes": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "frozen_hashes_match_expected": true,
+  "h10_blocker": "data-vintage maturity; first structurally classifiable cutoff 2026-11-30; November reprobe forbidden before 2026-11-30",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; k not advanced",
+  "head_at_verification": "803466560d94a8af623886ec6040e0decf1a7682",
+  "session_id": "20261107T193221Z",
+  "session_utc": "2026-11-07T19:32:21Z"
+}

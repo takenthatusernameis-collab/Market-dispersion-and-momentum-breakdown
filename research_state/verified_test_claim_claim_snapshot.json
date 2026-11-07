@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-07T19:25:58Z",
+  "recorded_utc": "2026-11-07T19:32:57Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 297,
-  "tests_ok": 297,
+  "tests_run": 312,
+  "tests_ok": 312,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "297/297/0",
-  "input_fingerprint": "bece21078e3f4b7787ee2ea204e1ef11603d1d438493f4ab372cabab50b5b01e",
+  "claim": "312/312/0",
+  "input_fingerprint": "e928d9ed797aab86467e5590543ba5532cc897b09bb8e1f326a838fd20b472fb",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -102,6 +102,7 @@
     "tests/test_preregistration_completeness.py",
     "tests/test_preregistration_coverage_audit.py",
     "tests/test_provenance_stability.py",
+    "tests/test_record_test_claim.py",
     "tests/test_refresh_provenance_boundaries.py",
     "tests/test_requirements_importable.py",
     "tests/test_sequential_alpha_rule_source.py",
@@ -110,5 +111,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 99
+  "input_file_count": 100
 }
