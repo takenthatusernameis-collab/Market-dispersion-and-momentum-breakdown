@@ -1,0 +1,23 @@
+{
+  "session": "2026-11-07T05:48Z",
+  "head": "7251b67f",
+  "deps": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compileall": {"ok": true, "exit": 0},
+  "prereg_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+  "tests": {"summary": "OK (skipped=1)", "exit": 0},
+  "frozen_hashes": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probes": {
+    "october": {"target_published": true, "gate_met_by_month_end": true, "cutoff_gate": "UNBLOCKED"},
+    "november": {"target_published": false, "cutoff_gate": "BLOCKED", "do_not_reprobe_before": "2026-11-30"}
+  },
+  "k_advanced": false,
+  "source_changes": [],
+  "frozen_artifact_changes": []
+}
