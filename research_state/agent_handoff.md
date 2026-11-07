@@ -1,3 +1,14 @@
+## Session record 20261107T225529Z (current)
+
+- **Prior task status:** COMPLETE (20261107T222828Z). Reverified state at HEAD `cdb82a6b` (no source/artifact/config delta): `compileall -q scripts tests` EXIT=0; `scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `scripts/audit_prereg_and_h10_fresh_references.py` pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; `scripts/audit_integrity_audit_references.py` pass=True scanned=14 critical=0 errors=0 info=8; `python3 -m unittest discover -s tests` **324 run, 0 failures, 1 skipped (OK)**. Verified claim unchanged (324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files; `research_state/run_manifest.json:latest_verified_test_claim` = `324/324/0`). `git diff --name-only -- artifacts/ configs/` empty.
+- **Frozen hashes (unchanged):** H004V106 canonical `7234fc4e23b8dd07…`; H10 fresh IMMATURE `9bdee66f…`.
+- **Cutoff gate:** H10 gate UNBLOCKED (October 2026 archive published). November 2026 still BLOCKED; **re-probe forbidden before 2026-11-30**.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; first structurally classifiable cutoff projected 2026-11-30 (~31 formations). k not advanced. No confirmatory claim.
+- **No bounded no-cost delta before 2026-11-30.** All audits pass; keep next action as (1).
+- **Session verification:** records `PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261107T225533Z.json`, `INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261107T225533Z.json`.
+
+---
+
 ## Session record 20261107T222828Z (current)
 
 - **Prior task status:** COMPLETE (20261107T222504Z). Reverified state at HEAD `cdb82a6b` (no source/artifact/config delta; working tree had only untracked audit/session records at check time): `compileall -q scripts tests` EXIT=0; `scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `scripts/audit_prereg_and_h10_fresh_references.py` pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; `scripts/audit_integrity_audit_references.py` pass=True scanned=14 critical=0 errors=0 info=8; `python3 -m unittest discover -s tests` **324 run, 0 failures, 1 skipped (OK)**. Verified claim unchanged (324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files; `research_state/run_manifest.json:latest_verified_test_claim` = `324/324/0`). `git diff --name-only -- artifacts/ configs/` empty.
