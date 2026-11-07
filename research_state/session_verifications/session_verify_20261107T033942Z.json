@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-11-07T03:39:42Z",
+  "head": "f5358b9dcaecb947b933d33eedbbb454beebacf8",
+  "git_status_short_at_start": "",
+  "prior_task_status": "COMPLETE",
+  "prior_task_source": "research_state/agent_task_message.md (2026-11-07T03:36Z)",
+  "checks": {
+    "compileall": {"exit": 0, "command": "python3 -m compileall -q scripts tests"},
+    "audit_preregistration_coverage": {"exit": 0, "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"exit": 0, "ran": 255, "ok": true, "skipped": 1, "duration_s": 36.302}
+  },
+  "environment": {"python": "3.12.3", "numpy": "2.5.4", "pandas": "3.1.1"},
+  "hygiene": {"git_ls_files_tests_pycache": 0},
+  "frozen_artifacts_sha256": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probes": {
+    "october_2026": "UNBLOCKED/published (cutoff_probe_20261105T103851Z.json)",
+    "november_2026_latest": "BLOCKED/target_published=false (cutoff_probe_20261105T205749Z.json)",
+    "november_reprobe_before_20261130": "DO_NOT_REPROBE"
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "source_test_frozen_artifact_changes": false
+}
