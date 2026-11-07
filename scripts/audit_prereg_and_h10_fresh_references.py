@@ -233,6 +233,7 @@ def run_audit(
     h10_dir: Path | None = None,
     forward_block_dir: Path | None = None,
     frozen_prereg_dirs: list[Path] | None = None,
+    include_h10_variants: bool = True,
 ) -> dict:
     prereg_dir = prereg_dir or PREREG_DIR
     h10_dir = h10_dir or H10_DIR
@@ -251,7 +252,24 @@ def run_audit(
     canon = (forward_block_dir or FORWARD_BLOCK_DIR) / "forward_block_evaluation.json"
     canon_rows = [audit_forward_block_json(canon, kind="forward_block_canonical_json")] if canon.is_file() else []
 
-    rows = prereg_rows + frozen_prereg_rows + canon_rows + h10_rows + fb_rows
+    # Non-frozen H10 variant dirs (e.g. forward_block_h10/, forward_block_h10_fresh_check/)
+    # are scanned read-only as h10_variant_json. These are unreferenced throwaway outputs,
+    # not frozen canonical targets (FROZEN pins only forward_block/ and forward_block_h10_fresh/);
+    # findings are reported but they do not carry frozen self-hash expectations.
+    variant_rows: list[dict] = []
+    if include_h10_variants:
+        exp_dir = h10_dir.parent if h10_dir else (ROOT / "artifacts" / EXP)
+        h10_fresh_name = (h10_dir or H10_DIR).name
+        for vd in sorted(exp_dir.glob("forward_block_h10*")) if exp_dir.exists() else []:
+            if not vd.is_dir() or vd.name == h10_fresh_name:
+                continue
+            for p in sorted(vd.glob("*.json")):
+                if p.is_file():
+                    r = audit_forward_block_json(p, kind="h10_variant_json")
+                    r["variant_dir"] = vd.name
+                    variant_rows.append(r)
+
+    rows = prereg_rows + frozen_prereg_rows + canon_rows + h10_rows + fb_rows + variant_rows
     critical = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "CRITICAL"]
     errors = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "ERROR"]
     infos = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "INFO"]
@@ -278,6 +296,7 @@ def run_audit(
         "prereg_files_scanned": len(prereg_rows),
         "frozen_prereg_files_scanned": len(frozen_prereg_rows),
         "h10_json_files_scanned": len(h10_rows),
+        "h10_variant_json_files_scanned": len(variant_rows),
         "forward_block_json_files_scanned": len(canon_rows) + len(fb_rows),
         "files_scanned": len(rows),
         "critical": sorted(set(critical)),
@@ -289,13 +308,14 @@ def run_audit(
         "rows": rows,
         "scope_note": (
             "Read-only scan of preregistration markdown and forward-block JSONs "
-            "(canonical forward_block/, forward_block_h10_fresh/) for stale path refs, "
-            "missing referenced files, and frozen/git-HEAD hash drift. Frozen pre-DISP-003 "
-            "preregistration docs (when scanned via --include-disp002-preregs) report "
-            "missing refs as INFO (frozen_record_stale_pointer) because immutable records "
-            "are never modified. Preregistration documents are frozen records and are never "
-            "modified; findings are reported only. CRITICAL/ERROR indicate stale pointers or "
-            "hash drift requiring investigation. Default output: research_state/."
+            "(canonical forward_block/, forward_block_h10_fresh/, and non-frozen "
+            "forward_block_h10* variant dirs) for stale path refs, missing referenced "
+            "files, and frozen/git-HEAD hash drift. Frozen pre-DISP-003 preregistration "
+            "docs (when scanned via --include-disp002-preregs) report missing refs as INFO "
+            "(frozen_record_stale_pointer) because immutable records are never modified. "
+            "Preregistration documents are frozen records and are never modified; findings "
+            "are reported only. CRITICAL/ERROR indicate stale pointers or hash drift "
+            "requiring investigation. Default output: research_state/."
         ),
     }
 

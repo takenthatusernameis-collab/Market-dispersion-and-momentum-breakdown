@@ -165,6 +165,39 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
         self.assertIn("frozen_record_stale_pointer", info_joined)
         self.assertIn("PHASE-B-PLACEBO-V1.md", info_joined)
 
+    def test_h10_variant_dirs_scanned_read_only_by_default(self):
+        """Non-frozen H10 variant dirs (forward_block_h10/, forward_block_h10_fresh_check/)
+        exist as unreferenced throwaway outputs. The audit scans them read-only as
+        h10_variant_json (they are not FROZEN targets) so stale internal refs cannot hide.
+        They must not introduce CRITICAL/ERROR or flip pass=False, and FROZEN still pins
+        only forward_block/ + forward_block_h10_fresh/."""
+        variants = [r for r in self.first["rows"] if r["kind"] == "h10_variant_json"]
+        # if dirs are present on disk, they must be scanned; if absent, count is 0 (no false fail)
+        self.assertEqual(self.first.get("h10_variant_json_files_scanned"), len(variants))
+        for r in variants:
+            with self.subTest(file=r["file"], variant_dir=r.get("variant_dir")):
+                self.assertNotEqual(r["severity"], "CRITICAL", r)
+                self.assertNotEqual(r["severity"], "ERROR", r)
+                self.assertIn("variant_dir", r)
+                self.assertNotEqual(r["variant_dir"], "forward_block_h10_fresh")
+        frozen_paths = set(self.first.get("frozen_hashes_checked", {}).keys())
+        self.assertNotIn(
+            "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10/forward_block_evaluation.json",
+            frozen_paths,
+        )
+        self.assertNotIn(
+            "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh_check/forward_block_evaluation.json",
+            frozen_paths,
+        )
+        self.assertTrue(self.first["pass"], self.first.get("errors"))
+
+    def test_h10_variant_scan_can_be_disabled(self):
+        """Disabling variant scan is supported for callers that need a narrow scope."""
+        res = mod.run_audit(include_h10_variants=False)
+        self.assertEqual(res.get("h10_variant_json_files_scanned", 0), 0)
+        self.assertFalse(any(r["kind"] == "h10_variant_json" for r in res["rows"]))
+        self.assertTrue(res["pass"], res.get("errors"))
+
 
 if __name__ == "__main__":
     unittest.main()
