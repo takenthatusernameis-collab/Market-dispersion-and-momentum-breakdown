@@ -1,10 +1,10 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session **2026-11-07T11:14Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session **2026-11-07T11:15Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-07T11:14Z, dep-light env: pandas/numpy not installed)
-- Prior task COMPLETE. Baseline: compileall EXIT=0; prereg audit pass=True (14/0/0). 287 run, 2 failures, 0 errors, 35 skipped (dep-light env limits).
-- Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. HEAD `eccd947dd73c8d372794a4fbe9f94d1360496e87`.
+### Verified state (2026-11-07T11:15Z, dep-light env: pandas/numpy not installed)
+- Prior task COMPLETE. Baseline: compileall EXIT=0; prereg audit pass=True (14/0/0).
+- Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. HEAD `bbd6387700187f68dbc7680a2193b90a059f7719`.
 - Cutoff probe latest BLOCKED (do NOT re-probe before 2026-11-30). No confirmatory advance; k not advanced.
 
 ### Immediate next action
