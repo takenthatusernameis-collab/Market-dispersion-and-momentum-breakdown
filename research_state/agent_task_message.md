@@ -1,9 +1,9 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session 2026-11-07T03:22Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session 2026-11-07T03:26Z), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-07T03:23Z, HEAD `9d0a5baba56aa0d47ca5cd7ac6ae753a4f631992`)
-- **Prior task:** COMPLETE. Independent unblocked verification: deps installed (Python 3.12.3, numpy 2.5.4, pandas 3.1.1); `python3 -m compileall -q scripts tests` clean (EXIT=0); `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` 255 OK, skipped=1 (36.288s). `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261107T032336Z.json`. No source/test/frozen-artifact changes.
+### Verified state (2026-11-07T03:26Z, HEAD `85a764ecb0ede2cfedfb1265dc43413925398d17`)
+- **Prior task:** COMPLETE. Independent unblocked verification: deps present (Python 3.12.3, numpy 2.5.4, pandas 3.1.1); `python3 -m compileall -q scripts tests` clean (EXIT=0); `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` 255 OK, skipped=1 (36.297s). `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261107T032600Z.json`. No source/test/frozen-artifact changes.
 - **Canonical H004V106 (DO NOT TOUCH):** sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`).
 - **H10 fresh block (IMMATURE, preserved):** sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`).
 - **Cutoff probes:** October 2026 UNBLOCKED/published (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`, target_published=true, gate_met_by_month_end=true — satisfies October gate only). November 2026 BLOCKED (`research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json`, target_published=false). **Do NOT re-probe November 2026 before 2026-11-30.**
