@@ -1,0 +1,31 @@
+{
+  "baseline": {
+    "compileall_exit": 0,
+    "dep_light_unittest_ok": true,
+    "dep_light_unittest_tail": "test_script_is_importable_and_deterministic (tests.test_preregistration_coverage_audit.PreregistrationCoverageAuditTests.test_script_is_importable_and_deterministic) ... ok\n\n----------------------------------------------------------------------\nRan 49 tests in 0.136s\n\nOK",
+    "prereg_coverage_audit_pass": true
+  },
+  "consistency_audit": {
+    "evaluator_confirmatory_constants_present": true,
+    "h10_prereg_sections_4_1_4_2_present": true,
+    "hypothesis_registry_count": 22,
+    "hypothesis_registry_next_sequence_number": 22,
+    "prereg_coverage_pass": true,
+    "session_verification_json_parse_bad": 0,
+    "v3_artifact_grid_config_manifest_configurations": 216,
+    "v3_config_expected_combinations": 216
+  },
+  "cutoff_probe": {
+    "do_not_reprobe_before": "2026-11-30",
+    "status": "BLOCKED"
+  },
+  "frozen_hashes": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "git_status_porcelain_at_record_time": [],
+  "no_frozen_artifacts_modified": true,
+  "prior_task_20261107T121654Z_status": "COMPLETE_REVERIFIED",
+  "scope": "New unblocked hygiene: cross-artifact consistency + confirmatory-gate alignment audit (v3 config/manifest structure, JSON parse, H10 prereg 4.1/4.2 vs evaluator constants/emit, dep-light guard suite). No frozen artifacts/data/code logic changed.",
+  "session_utc": "2026-11-07T12:18:59Z"
+}
