@@ -74,6 +74,24 @@ class SequentialAlphaRuleSourceTests(unittest.TestCase):
                 "consumed by eval_forward_block.py artifact emission",
             )
 
+    def test_sequential_look_consumes_budget_and_mature_derived_from_mature_not_hardcoded(self):
+        # The H10 look-counter semantics (prereg sec 4.1): an IMMATURE evaluation
+        # (n_high=0 or n_low=0) consumes no budget and does NOT advance k. The
+        # sealed artifact must carry sequential_look_consumes_budget and
+        # sequential_look_mature as bool(mature) where mature = n_high > 0 and
+        # n_low > 0, never hardcoded to True (which would wrongly spend budget on
+        # an immature look and break the alpha-spending contract).
+        self.assertIn('mature = n_high > 0 and n_low > 0', EVAL_SRC,
+                      "eval_forward_block.py must define mature = n_high > 0 and "
+                      "n_low > 0 (the H10 look-counter maturity rule)")
+        for key in ("sequential_look_consumes_budget", "sequential_look_mature"):
+            self.assertIn(
+                f'freeze_record["{key}"] = bool(mature)',
+                EVAL_SRC,
+                f"eval_forward_block.py must emit {key} as bool(mature) "
+                "(immature look consumes no budget), not a hardcoded literal",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
