@@ -1,0 +1,25 @@
+{
+  "session_utc": "2026-11-07T05:44:02Z",
+  "head": "965c525bfcf7f0ec65c277a621a19ce97f3a37a4",
+  "task": "Independent unblocked verification of prior agent task (handoff/task message 2026-11-07T05:40Z); no source/test/frozen-artifact changes.",
+  "checks": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "compileall_scripts_tests_exit": 0,
+    "preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"ran": 255, "ok": true, "skipped": 1, "seconds": 36.196},
+    "git_ls_files_tests_pycache_count": 0
+  },
+  "frozen_hashes_sha256": {
+    "H004V106_canonical_forward_block_evaluation": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block_evaluation": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probes": {
+    "october_2026": "UNBLOCKED/published (cutoff_probe_20261105T103851Z.json; October gate only)",
+    "november_2026": "BLOCKED target_published=false (cutoff_probe_20261105T205749Z.json); do NOT re-probe before 2026-11-30"
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "registry": {"next_sequence_number": 22, "hypotheses_count": 22, "path": "research_state/hypothesis_registry.json"}
+}
