@@ -1,0 +1,48 @@
+{
+  "session_utc": "2026-11-07T15:34:14Z",
+  "head_at_verification": "3889b9dc27f3b2ccc8e98256afe8c255914e6821",
+  "prior_task_status": "COMPLETE (re-verified)",
+  "baseline_checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest_discover_tests": {"ran": 291, "failures": 0, "errors": 0, "skipped": 1, "ok": true}
+  },
+  "frozen_hashes_sha256_unchanged_disk_and_git_head": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "git_diff_name_only_artifacts_configs_after_work": [],
+  "bounded_change": {
+    "type": "durable_state_hygiene",
+    "description": "Normalized research_state/run_manifest.json latest_november_2026_probe from a plain string path to the full audit-trail dict shape used by research_state/universe_frontier.json (same record: cutoff_probe_20261107T091152Z.json, probe_month 2026-11, BLOCKED, target_published false). This resolves the non-blocking shape inconsistency noted in 20261107T152601Z. Updated run_manifest.json last_updated_utc to 2026-11-07T15:30:23Z.",
+    "files_changed": ["research_state/run_manifest.json"],
+    "frozen_artifacts_touched": false,
+    "configs_touched": false,
+    "code_or_tests_touched": false,
+    "targeted_tests_after_change": {
+      "command": "python3 -m unittest tests.test_latest_probe_record_pinned tests.test_canonical_block_git_pinned tests.test_state_consistency tests.test_verified_test_claim_guard tests.test_state_timestamp_not_stale -v",
+      "ran": 31,
+      "failures": 0,
+      "errors": 0,
+      "ok": true
+    }
+  },
+  "h10_status": {
+    "cutoff_gate": "UNBLOCKED",
+    "latest_archive_probe": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json",
+    "latest_november_2026_probe_audit_trail_only": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "blocker": "data_vintage_maturity_not_cutoff_gate",
+    "first_structurally_classifiable_cutoff": "2026-11-30",
+    "status_label": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE",
+    "k_advanced": false,
+    "confirmatory_claim": false
+  },
+  "hard_rules_respected": [
+    "no_november_probe_before_2026_11_30",
+    "no_frozen_artifact_or_config_change",
+    "no_canonical_sealed_holdout_opened",
+    "no_30_day_maturity_or_threshold_or_decile_rule_relaxation",
+    "no_confirmatory_claim",
+    "no_wait_for_new_experiment_id"
+  ]
+}
