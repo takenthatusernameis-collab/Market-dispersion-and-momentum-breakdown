@@ -1,0 +1,49 @@
+{
+  "session_utc": "20261107T170930Z",
+  "head": "57c22720",
+  "head_full": "57c22720e6ece10aefd796465a97fce318aebe1e",
+  "prior_task_status": "COMPLETE",
+  "checks": {
+    "compileall_scripts_tests": {
+      "exit_code": 0
+    },
+    "prereg_audit": {
+      "pass": true,
+      "audits": 14,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0
+    },
+    "unittest_discover_tests": {
+      "run": 291,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "ok": true
+    }
+  },
+  "frozen_hashes": {
+    "H004V106_canonical": {
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "disk": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "head": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true
+    },
+    "H10_fresh_immature": {
+      "expected": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "disk": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "head": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "match": true
+    }
+  },
+  "artifacts_configs_diff": "",
+  "h10_state": {
+    "cutoff_gate": "UNBLOCKED (Oct 2026 archive; gate satisfied 2026-10-29)",
+    "blocker": "DATA_VINTAGE_MATURITY (not cutoff gate)",
+    "first_structurally_classifiable_cutoff": "2026-11-30",
+    "status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE",
+    "k_advanced": false,
+    "november_reprobe_before_20261130": "FORBIDDEN"
+  },
+  "bounded_unblocked_task_found": false,
+  "next_action": "After 2026-11-30, probe November 2026; if usable run fresh sealed H10 block into forward_block_h10_fresh/ with preregistered confirmatory gates (k=1). Do not touch forward_block/."
+}
