@@ -1,15 +1,15 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261107T211600Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261107T215522Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (20261107T211600Z, HEAD `69f029c9`)
+### Verified state (20261107T215522Z, HEAD `a4b35b5f`)
 - Frozen hashes (unchanged): H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. `git diff --name-only -- artifacts/ configs/` must remain empty.
-- No source delta this session (reverification-only): compileall EXIT=0; prereg coverage pass=True (14/0/0); prereg/h10 ref audit pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; unittest **324 run, 0 failures, 1 skipped** (verified claim 324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files).
-- No bounded no-cost delta exists before 2026-11-30 (action 3 recorded): both reference audits are comprehensive; candidate 2(b) has no concrete stale-pointer risk (no integrity audit references `forward_block_h10*` variant dirs as path fields); candidate 2(a)'s pure utility (`scripts/alpha_spending.py`) is already tested; remaining untested scripts mutate artifacts, require network, or are data-dependent. Do not fabricate work before 2026-11-30; keep next action as (1).
+- Reverification-only (no source delta): compileall EXIT=0; prereg coverage pass=True (14/0/0); prereg/h10 ref audit pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; unittest discover **324 run, 0 failures, 1 skipped** (verified claim 324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files; run_manifest updated).
+- **No bounded no-cost delta exists before 2026-11-30** (recorded). Reference audits are comprehensive; alpha-spending utility is tested; remaining untested scripts mutate artifacts, require network, or are data-dependent. Do not fabricate work or reverification-only artifacts beyond what is needed; keep next action as (1).
 
 ### Immediate next action (pick the first that applies)
 1. **On/after 2026-11-30 (highest priority):** run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If usable, refresh required free public data; run fresh sealed block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`). Use H10 prereg + alpha-spending (k=1). Record all outcomes.
-2. **Before 2026-11-30:** no bounded no-cost delta currently exists. Only act if a genuine gap is found; otherwise keep next action as (1).
+2. **Before 2026-11-30:** act only if a genuine, bounded, no-cost gap is found (e.g., a real defect, missing regression for a pure non-network/non-mutating utility with a clear risk). Otherwise keep next action as (1) and record (3).
 3. **If no bounded delta exists:** record that no unblocked task exists and keep next action as (1).
 
 ### Hard rules
