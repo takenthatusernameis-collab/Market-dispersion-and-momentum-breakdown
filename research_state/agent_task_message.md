@@ -1,20 +1,13 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current session **2026-11-07T06:47Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
+Read `research_state/agent_handoff.md` (current session **2026-11-07T07:25Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify current state before acting.
 
-### Verified state (2026-11-07T06:28Z, working-tree HEAD context `0ee0c82c`)
-- **Prior task:** COMPLETE. Baseline re-verified; then a pre-outcome inference-protocol gap was found and repaired (see below). `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **261 OK, skipped=1** (was 255). `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261107T062800Z.json`. Deps: Python 3.12.3, numpy 2.5.4, pandas 3.1.1.
+### Verified state (2026-11-07T07:25Z, working-tree HEAD context)
+- **Prior task:** COMPLETE. Baseline re-verified; `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **261 OK, skipped=1**. `git ls-files tests/__pycache__` = 0. Verification: `research_state/session_verifications/session_verify_20261107T072500Z.json`. Deps: Python 3.12.3, numpy 2.5.4, pandas 3.1.1.
 - **Canonical H004V106 (DO NOT TOUCH):** sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`).
 - **H10 fresh block (IMMATURE, preserved):** sha256 `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`). n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null.
 - **Cutoff probes:** October 2026 UNBLOCKED/published. November 2026 BLOCKED (`research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json`, target_published=false). **Do NOT re-probe November 2026 before 2026-11-30.**
 - **Confirmatory:** No confirmatory advance; k not advanced. Registry `research_state/hypothesis_registry.json`: next_sequence_number=22, 22 hypotheses (verify before allocating). Frontier: `research_state/universe_frontier.json` (cursor 6347, catalog exhausted, rank coverage NOT_PROVEN_COMPLETE).
-
-### Change made this session (narrow, pre-outcome, no frozen-artifact change)
-H10's prereg declared confirmatory criterion 4(a) — "|high_low_diff_net_1x| above a predeclared economic-significance threshold (after costs)" — but supplied **no number**, so the gate was structurally undecidable. Repaired before any mature outcome exists:
-1. `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md` — added **section 4.2**: `ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05` (net of `COST_1X = 0.001`, ~50x per-formation cost); sign NOT pre-registered (a positive result is a candidate for a separately registered hypothesis, never a retroactive rewrite of H1); state-count floor `n_high >= 5 AND n_low >= 5` folded into 4(a); explicit "never lowered / never re-derived from the fresh block / canonical block is NOT an input".
-2. `scripts/eval_forward_block.py` — added constants `ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05` and `MIN_STATE_FORMATIONS = 5`; emit a `confirmatory_*` block (threshold, floor, met flags, pending Holm slot, `confirmatory_note`) into every fresh-block artifact.
-3. `tests/test_h10_sequential_alpha_spending.py` — added `H10EconomicSignificanceThresholdTests` (6 tests) as single-source-of-truth guards between the prereg text and the evaluator constant.
-4. `scripts/record_test_claim.py` re-run: snapshot re-recorded 255/255/0 → **261/261/0** (skipped=1), inventory fingerprint refreshed.
 
 ### Immediate next action (unblocked, do not fabricate)
 1. Preserve blocker. Do NOT fabricate. Verify frozen hashes + tests/prereg audit before doing new work.
