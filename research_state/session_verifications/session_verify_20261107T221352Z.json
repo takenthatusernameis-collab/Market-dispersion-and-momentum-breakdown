@@ -1,0 +1,21 @@
+{
+  "session_id": "20261107T221352Z",
+  "recorded_utc": "2026-11-07T22:13:52Z",
+  "head": "bd18bc35",
+  "prior_task_status": "COMPLETE (20261107T220914Z)",
+  "checks": {
+    "compileall_q_scripts_tests": {"exit": 0},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "audit_prereg_and_h10_fresh_references": {"pass": true, "scanned": 13, "prereg": 9, "frozen_prereg": 0, "h10": 1, "forward_block": 1, "h10_variant": 2, "critical": 0, "errors": 0, "info": 0, "record": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261107T221352Z.json"},
+    "audit_integrity_audit_references": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "info": 8, "record": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261107T221645Z.json"},
+    "unittest_discover_s_tests": {"run": 324, "failures": 0, "errors": 0, "skipped": 1, "ok": true}
+  },
+  "verified_test_claim": {"claim": "324/324/0", "fingerprint": "e442d8b28997fe49", "input_files": 102, "manifest_field": "research_state/run_manifest.json:latest_verified_test_claim"},
+  "frozen_hashes_unchanged": {
+    "h004v106_canonical_forward_block_evaluation_sha256_prefix": "7234fc4e23b8dd07",
+    "h10_fresh_forward_block_evaluation_sha256_prefix": "9bdee66f737e492b"
+  },
+  "artifacts_configs_diff_empty": true,
+  "bounded_no_cost_delta_before_2026_11_30": false,
+  "next_action": "1_on_or_after_2026_11_30_probe_cutoff_gate_2026_11"
+}
