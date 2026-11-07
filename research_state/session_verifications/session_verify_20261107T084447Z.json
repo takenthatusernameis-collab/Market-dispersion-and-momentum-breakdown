@@ -1,0 +1,35 @@
+{
+  "session_verification_id": "session_verify_20261107T084447Z",
+  "utc": "20261107T084447Z",
+  "git_head": "eff7afc4",
+  "prior_task_status": "COMPLETE (2026-11-07T08:29Z handoff read and re-verified)",
+  "baseline": {
+    "compileall_scripts_tests_exit": 0,
+    "prereg_coverage_pass": true,
+    "prereg_coverage_stdout": "[prereg-coverage] pass=True audits=14 missing_prereq=0 uncovered_prereq=0\n[prereg-coverage] wrote research_state/preregistration_coverage_audit.json",
+    "unittest_summary": "  \"gate_met_by_month_end\": true,\n  \"cutoff_gate\": \"UNBLOCKED\",\n  \"record\": null\n}",
+    "unittest_ran": 275,
+    "unittest_ok": 275,
+    "unittest_skipped": 1,
+    "tracked_tests_pycache": "",
+    "test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json (refreshed by scripts/record_test_claim.py: 275/275/0, skipped=1, files=95, fingerprint b91fcce930c562ab)"
+  },
+  "frozen_hashes_unchanged": {
+    "H004V106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H004V106_canonical_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "H10_fresh_expected": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "match": true
+  },
+  "change_this_session": {
+    "type": "narrow pre-outcome test hardening (no frozen-artifact/prereg/script/data change)",
+    "file": "tests/test_grid_validation.py",
+    "added": "GridV3ManifestValidation.test_config_declared_family_matches_artifact_manifest: asserts configs/dispersion_momentum_grid_v3.json and artifacts/.../grid_config_manifest.json agree on experiment_id, grid_id, expected_combinations=216, family_size_for_holm=216, combination_count=216, and axis-product=216 (3*3*2*3*2*2). Cross-check prevents Holm denominator drift between declared config and canonical H10-gate manifest.",
+    "tests_after": "275 OK, skipped=1"
+  },
+  "blockers_preserved": {
+    "november_2026_cutoff_probe": "BLOCKED (research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json, target_published=false). Do NOT re-probe before 2026-11-30.",
+    "H10_fresh": "IMMATURE (n_formations=1, n_high=0, n_low=0). No confirmatory advance; k not advanced."
+  },
+  "next_action": "Preserve blockers. Do NOT fabricate/re-probe Nov before 2026-11-30. Continue independent unblocked audit/test/doc/hygiene tasks (pre-outcome, no frozen-artifact changes). After 2026-11-30 probe Nov cutoff; if published run fresh sealed H10 block to forward_block_h10_fresh/ only with full confirmatory gates."
+}

@@ -115,6 +115,38 @@ class GridV3ManifestValidation(unittest.TestCase):
         self.assertEqual(len(set(ids)), 216)
         self.assertEqual(ids, [f"H004V{i:03d}" for i in range(1, 217)])
 
+    def test_config_declared_family_matches_artifact_manifest(self):
+        """Configs/dispersion_momentum_grid_v3.json declares the grid; the
+        artifact manifest is the canonical H10-gate family artifact. Their
+        experiment/grid IDs and 216-cell family size must agree so Holm
+        correction is never computed against a mismatched denominator."""
+        cfg_path = Path(__file__).resolve().parents[1] / "configs" / "dispersion_momentum_grid_v3.json"
+        self.assertTrue(cfg_path.exists(), cfg_path)
+        cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+        self.assertEqual(cfg["experiment_id"], self.stored["experiment_id"])
+        self.assertEqual(cfg["grid_id"], self.stored["grid_id"])
+        self.assertEqual(cfg["expected_combinations"], 216)
+        self.assertEqual(cfg["expected_combinations"], self.stored["family_size_for_holm"])
+        self.assertEqual(cfg["expected_combinations"], self.stored["combination_count"])
+        # Axis product check matches declared check string semantics: 3*3*2*3*2*2=216
+        axes = cfg["axes"]
+        if isinstance(axes, dict):
+            axis_items = list(axes.values())
+        else:
+            axis_items = list(axes)
+        product = 1
+        for a in axis_items:
+            if isinstance(a, dict):
+                vals = a.get("values") or a.get("levels") or a.get("options")
+                if vals is None:
+                    raise AssertionError(f"unrecognized axis schema: {sorted(a.keys())}")
+            elif isinstance(a, list):
+                vals = a
+            else:
+                raise AssertionError(f"unrecognized axis entry type: {type(a)}")
+            product *= len(vals)
+        self.assertEqual(product, 216)
+
 
 if __name__ == "__main__":
     unittest.main()
