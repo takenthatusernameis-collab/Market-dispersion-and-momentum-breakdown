@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-07T09:08:37Z",
+  "recorded_utc": "2026-11-07T15:13:56Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 279,
-  "tests_ok": 279,
+  "tests_run": 291,
+  "tests_ok": 291,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "279/279/0",
-  "input_fingerprint": "9cedd743bf136a1bf9587407237ef2057b06dc9aa3b59ab95a85489131c3b366",
+  "claim": "291/291/0",
+  "input_fingerprint": "fdd625a7dbccec067ef003f6975f3c65e92b9869dbc96e32a70b117e7be98596",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -90,6 +90,7 @@
     "tests/test_h10_fresh_block_current.py",
     "tests/test_h10_fresh_block_hash_pinned.py",
     "tests/test_h10_sequential_alpha_spending.py",
+    "tests/test_h10_sequential_artifact_contract.py",
     "tests/test_holm_pvalue.py",
     "tests/test_inference_repro.py",
     "tests/test_latest_probe_record_pinned.py",
@@ -101,10 +102,11 @@
     "tests/test_provenance_stability.py",
     "tests/test_refresh_provenance_boundaries.py",
     "tests/test_requirements_importable.py",
+    "tests/test_sequential_alpha_rule_source.py",
     "tests/test_state_consistency.py",
     "tests/test_state_representativeness_audit.py",
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 95
+  "input_file_count": 97
 }

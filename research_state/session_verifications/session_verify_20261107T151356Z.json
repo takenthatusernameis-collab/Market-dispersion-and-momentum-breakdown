@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-11-07T15:13:56Z",
+  "session": "20261107T151356Z",
+  "head": "b9485cf2",
+  "baseline_checks": {
+    "compileall_scripts_tests": {"command": "python3 -m compileall -q scripts tests", "exit": 0},
+    "audit_preregistration_coverage": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0}
+  },
+  "frozen_hash_reverification": {
+    "H004V106_canonical": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+      "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true
+    },
+    "H10_fresh": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+      "disk_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "head_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+      "match": true
+    }
+  },
+  "durable_state_pointers": {
+    "latest_archive_probe_record": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json",
+    "latest_archive_probe_gate": "UNBLOCKED",
+    "latest_archive_probe_month": "2026-10",
+    "latest_november_2026_probe_record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "latest_november_2026_probe_gate": "BLOCKED",
+    "latest_november_2026_probe_month": "2026-11",
+    "pointers_consistent_with_disk": true
+  },
+  "deps_installed": "numpy 2.5.4, pandas 3.1.1 (requirements.txt)",
+  "test_suite_full": {
+    "command": "python3 -m unittest discover -s tests",
+    "before": {"run": 291, "failures": 1, "skipped": 1, "failure": "test_verified_test_claim_guard.test_snapshot_fingerprint_matches_inventory (stale claim snapshot 279/279/0 predating 2 tracked tests)"},
+    "after": {"run": 291, "failures": 0, "skipped": 1, "result": "OK"}
+  },
+  "bounded_hygiene_applied": {
+    "action": "python3 scripts/record_test_claim.py",
+    "outcome": "wrote research_state/verified_test_claim_claim_snapshot.json (claim 291/291/0, fingerprint fdd625a7dbccec06..., 97 files) and repaired run_manifest.json latest_verified_test_claim 279/279/0 -> 291/291/0",
+    "files_touched": ["research_state/run_manifest.json", "research_state/verified_test_claim_claim_snapshot.json"],
+    "frozen_artifacts_unchanged": true,
+    "configs_unchanged": true,
+    "git_diff_name_only": ["research_state/run_manifest.json", "research_state/verified_test_claim_claim_snapshot.json"]
+  },
+  "h10_status_unchanged": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; cutoff gate UNBLOCKED (October 2026 published); blocker is data-vintage maturity (cutoff 2026-10-31 has 1 formation; first structurally classifiable cutoff 2026-11-30). k not advanced. No confirmatory claim.",
+  "next_action": "Do NOT re-probe November 2026 before 2026-11-30. After 2026-11-30 only: python3 scripts/probe_cutoff_gate.py --probe-month 2026-11; if published, refresh free data, re-run tests, verify H004V106 unchanged vs git show HEAD:, run fresh sealed block into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with --forward-block-start 2026-09-30 --data-cutoff 2026-11-30 --output-dir ... --look-number 1 (k=1). Require n_high>0 AND n_low>0, n_high>=5 AND n_low>=5, |high_low_diff_net_1x| >= 0.05, and Holm significance across the complete 216-cell family at alpha_k = 0.05/(k*(k+1)). If IMMATURE, record blocker and do not advance k."
+}
