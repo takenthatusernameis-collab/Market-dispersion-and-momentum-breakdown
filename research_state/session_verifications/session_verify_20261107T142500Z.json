@@ -1,0 +1,15 @@
+{
+  "session": "20261107T142500Z",
+  "prior_task_status": "COMPLETE (re-verified)",
+  "compileall": {"command": "python3 -m compileall -q scripts tests", "exit": 0},
+  "prereg_audit": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+  "frozen_hashes": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_IMMATURE": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "git_diff_artifacts_configs": "empty",
+  "cutoff": "BLOCKED (latest real probe research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json, target_published=false; do NOT re-probe before 2026-11-30)",
+  "new_unblocked_hygiene_scope": "none identified",
+  "k_advanced": false,
+  "confirmatory_advance": false
+}
