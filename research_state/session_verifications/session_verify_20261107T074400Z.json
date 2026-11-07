@@ -1,0 +1,23 @@
+{
+  "verification_id": "session_verify_20261107T074400Z",
+  "timestamp_utc": "2026-11-07T07:44:00Z",
+  "session_context": "Read prior durable handoff/task (2026-11-07T07:55Z): prior task COMPLETE (tests/test_h10_confirmatory_gate.py added, baseline 273 OK skipped=1, frozen hashes unchanged). November 2026 data BLOCKED (do NOT re-probe before 2026-11-30); H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0). Picked the highest-priority unblocked action: manifest verification / targeted test hardening. Found and closed a real gap: the DISPERSION-003 grid manifest declares family_size_for_holm=216, which is the confirmatory gate's Holm-family foundation (H10 criterion c), but no test pinned it to the actual cell count. Added tests/test_grid_validation.py::test_holm_family_size_matches_cell_count asserting family_size_for_holm==216==combination_count==expected_combinations==len(configurations)==216 unique IDs H004V001-H004V216, anchors H004V105/H004V106 unchanged. No frozen artifacts modified; no source logic modified; no live probes; November 2026 not re-probed. Refreshed verified_test_claim snapshot/manifest via scripts/record_test_claim.py for the changed inventory (274/274/0, skipped=1, fingerprint refreshed, files=95).",
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "prereg_audit": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "result": "Ran 274 tests / OK (skipped=1)", "ok": 274, "skipped": 1, "failures": 0, "errors": 0},
+    "record_test_claim": {"command": "python3 scripts/record_test_claim.py", "claim": "274/274/0", "skipped": 1, "fingerprint": "ea4a3cb6bb0e22ab", "files": 95},
+    "frozen_hash_canonical_h004v106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "frozen_hash_h10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "git_ls_files_tests_pycache_count": 0,
+    "november_2026_probe": "BLOCKED (cutoff_probe_20261105T205749Z.json, target_published=false); do NOT re-probe before 2026-11-30"
+  },
+  "environment": {"python": "3.12.3", "numpy": "2.5.4", "pandas": "3.1.1"},
+  "changes_this_session": [
+    "Added tests/test_grid_validation.py::GridV3ManifestValidation.test_holm_family_size_matches_cell_count: pins the grid manifest's family_size_for_holm (the H10 confirmatory-gate Holm-family denominator) to 216 == combination_count == expected_combinations == len(configurations) == 216 unique cell IDs H004V001-H004V216, with anchors H004V105 (legacy28_comparator) and H004V106 (expanding_point_in_time) unchanged. Single-source-of-truth guard so Holm correction across 'the complete 216-cell family' is never computed against a drifted denominator.",
+    "Ran scripts/record_test_claim.py to refresh verified_test_claim snapshot/manifest for the modified inventory (274/274/0, skipped=1, fingerprint ea4a3cb6..., files=95)."
+  ],
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "frozen_artifacts_modified": false
+}

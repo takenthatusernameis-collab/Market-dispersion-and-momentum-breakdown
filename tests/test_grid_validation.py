@@ -101,6 +101,20 @@ class GridV3ManifestValidation(unittest.TestCase):
             [(r["config_id"], r["config_sha256"]) for r in self.stored["configurations"]],
         )
 
+    def test_holm_family_size_matches_cell_count(self):
+        """The confirmatory gate's Holm correction spans the complete declared
+        cell family. The manifest's family_size_for_holm must equal the actual
+        number of configurations / combination_count / expected_combinations,
+        all 216, so Holm correction across "the complete 216-cell family" is
+        never computed against a drifted denominator (H10 gate criterion c)."""
+        self.assertEqual(self.stored["family_size_for_holm"], 216)
+        self.assertEqual(self.stored["family_size_for_holm"], self.stored["combination_count"])
+        self.assertEqual(self.stored["family_size_for_holm"], self.stored["expected_combinations"])
+        self.assertEqual(self.stored["family_size_for_holm"], len(self.stored["configurations"]))
+        ids = [r["config_id"] for r in self.stored["configurations"]]
+        self.assertEqual(len(set(ids)), 216)
+        self.assertEqual(ids, [f"H004V{i:03d}" for i in range(1, 217)])
+
 
 if __name__ == "__main__":
     unittest.main()
