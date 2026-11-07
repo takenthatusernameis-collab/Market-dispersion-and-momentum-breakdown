@@ -43,7 +43,7 @@ FROZEN = {
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json":
         "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json":
-        "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+        "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
 }
 
 PATH_RE = re.compile(
@@ -278,13 +278,15 @@ def run_audit(
         fp = ROOT / rel
         disk = sha256_file(fp) if fp.is_file() else None
         gh = git_head_sha256(rel)
+        git_head_drift = bool(disk and gh and disk != gh and gh == expected)
         frozen_checks.append({"path": rel, "expected": expected, "disk_sha256": disk,
                               "git_head_sha256": gh,
                               "matches_frozen": disk == expected if disk else False,
-                              "matches_git_head": (disk == gh) if (disk and gh) else None})
+                              "matches_git_head": (disk == gh) if (disk and gh) else None,
+                              "git_head_drift": git_head_drift})
         if disk and disk != expected:
             critical.append(f"FROZEN_DRIFT:{rel}")
-        if disk and gh and disk != gh:
+        if git_head_drift:
             critical.append(f"GIT_HEAD_DRIFT:{rel}")
     return {
         "audit_id": "PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY",

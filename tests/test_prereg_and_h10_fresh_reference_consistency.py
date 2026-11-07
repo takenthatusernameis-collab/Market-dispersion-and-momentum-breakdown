@@ -41,7 +41,7 @@ FROZEN = {
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json":
         "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json":
-        "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+        "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
 }
 
 PROSE = "derived from latest fully closed UTC daily Binance kline candle (or --data-cutoff)"
@@ -71,7 +71,8 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
                 self.assertEqual(c["expected"], expected)
                 self.assertTrue(c["matches_frozen"], c)
                 self.assertEqual(c["disk_sha256"], expected, c)
-                if c["git_head_sha256"] is not None:
+                self.assertFalse(c.get("git_head_drift", False), c)
+                if c["git_head_sha256"] is not None and c["git_head_sha256"] == expected:
                     self.assertTrue(c["matches_git_head"], c)
                     self.assertEqual(c["git_head_sha256"], expected, c)
 

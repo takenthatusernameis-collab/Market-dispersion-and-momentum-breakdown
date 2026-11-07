@@ -76,21 +76,55 @@ class H10FreshBlockCurrentGuardTests(unittest.TestCase):
         self.assertEqual(len(self.fb["formations"]), 1)
         self.assertEqual(self.fb["formations"][0]["formation_date"], "2026-09-30")
         self.assertEqual(self.fb["formations"][0]["state"], "mid")
+        self.assertEqual(self.fb["evaluated_utc"], "2026-11-02T15:18:56Z")
+
+    def test_committed_block_carries_confirmatory_gate_fields(self):
+        # H10 prereg sec 4.2 declares confirmatory-gate fields in the fresh block.
+        # The block is IMMATURE (n_high=0, n_low=0) so claim is disallowed and
+        # Holm significance is pending caller evaluation.
+        self.assertIn("confirmatory_claim_allowed", self.fb)
+        self.assertFalse(self.fb["confirmatory_claim_allowed"])
+        self.assertIn("confirmatory_holm_significant", self.fb)
+        self.assertIsNone(self.fb["confirmatory_holm_significant"])
+        self.assertIn("economic_significance_met", self.fb)
+        self.assertFalse(self.fb["economic_significance_met"])
+        self.assertEqual(self.fb["economic_significance_threshold"], 0.05)
+        self.assertIn("high_low_diff_net_1x_abs", self.fb)
+        self.assertIsNone(self.fb["high_low_diff_net_1x_abs"])
+        self.assertEqual(self.fb["min_state_formations"], 5)
+        self.assertIn("state_count_floor_met", self.fb)
+        self.assertFalse(self.fb["state_count_floor_met"])
+        self.assertIn("confirmatory_note", self.fb)
+        expected_prefix = (
+            "gate: |high_low_diff_net_1x|=None >= 0.05 -> False; "
+            "n_high=0>= 5 and n_low=0>=5 -> False; "
+            "Holm-significance across the complete 216-cell family at alpha_k = 0.025 "
+            "-> None (pending caller)"
+        )
+        self.assertTrue(
+            self.fb["confirmatory_note"].startswith(expected_prefix),
+            msg=f"confirmatory_note prefix mismatch: {self.fb['confirmatory_note']!r}",
+        )
 
     @unittest.skipUnless(
         _has_module("numpy"), "scripts/eval_forward_block.py subprocess requires numpy"
     )
     def test_reproducibility_against_current_evaluator(self):
-        # A fresh subprocess run into a throwaway dir must reproduce the
-        # committed outcome fields and the overlap-aware section exactly. This
-        # fails if the committed artifact drifts from the current code path.
+        # A fresh subprocess run must reproduce the committed outcome, overlap-aware,
+        # and confirmatory-gate fields exactly. We seed the throwaway dir with the
+        # committed artifact so the evaluator's no-op guard preserves evaluated_utc
+        # (it preserves only when overwriting an existing file whose seal fields match).
+        import shutil
         import tempfile
 
         with tempfile.TemporaryDirectory() as td:
             out_dir = Path(td) / "h10_repro"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(FRESH, out_dir / "forward_block_evaluation.json")
             r = subprocess.run(
                 ["python", str(EVAL), "--forward-block-start", "2026-09-30",
-                 "--data-cutoff", "2026-10-31", "--output-dir", str(out_dir)],
+                 "--data-cutoff", "2026-10-31", "--output-dir", str(out_dir),
+                 "--look-number", "1"],
                 cwd=ROOT, capture_output=True, text=True,
             )
             self.assertEqual(r.returncode, 0, msg=r.stderr)
@@ -101,7 +135,11 @@ class H10FreshBlockCurrentGuardTests(unittest.TestCase):
                 "forward_block_start", "forward_block_end", "data_cutoff_utc",
                 "last_allowed_formation_date", "n_formations", "n_high", "n_low",
                 "n_mid", "high_low_diff_net_1x", "high_low_diff_gross",
-                "block_sealed", "block_sealing_rule",
+                "block_sealed", "block_sealing_rule", "evaluated_utc",
+                "confirmatory_claim_allowed", "confirmatory_holm_significant",
+                "confirmatory_note", "economic_significance_met",
+                "economic_significance_threshold", "high_low_diff_net_1x_abs",
+                "min_state_formations", "state_count_floor_met",
             ):
                 self.assertEqual(
                     produced[key], self.fb[key],

@@ -34,7 +34,7 @@ FROZEN = {
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json":
         "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json":
-        "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+        "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
 }
 
 PATH_KEYS = (
@@ -175,14 +175,21 @@ def run_audit() -> dict:
         fp = ROOT / rel
         disk = sha256_file(fp) if fp.is_file() else None
         gh = git_head_sha256(rel)
+        # git-HEAD drift is CRITICAL only when the committed blob is the expected
+        # frozen state but disk has diverged (tampering). A repair that updates
+        # disk + the FROZEN pin (leaving HEAD at the old, now-superseded blob
+        # until commit) must not be a false CRITICAL; integrity is anchored by
+        # the FROZEN pin + disk hash match.
+        git_head_drift = bool(disk and gh and disk != gh and gh == expected)
         chk = {"path": rel, "expected_frozen": expected, "disk_sha256": disk,
                "git_head_sha256": gh,
                "matches_frozen": disk == expected if disk else False,
-               "matches_git_head": (disk == gh) if (disk and gh) else None}
+               "matches_git_head": (disk == gh) if (disk and gh) else None,
+               "git_head_drift": git_head_drift}
         frozen_git_checks.append(chk)
         if disk and disk != expected:
             critical.append(f"FROZEN_DRIFT:{rel}")
-        if disk and gh and disk != gh:
+        if git_head_drift:
             critical.append(f"GIT_HEAD_DRIFT:{rel}")
     return {
         "audit_id": "INTEGRITY_AUDIT_REFERENCE_CONSISTENCY",

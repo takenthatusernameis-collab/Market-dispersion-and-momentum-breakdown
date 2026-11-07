@@ -10,10 +10,15 @@
   },
   "block_sealed": true,
   "block_sealing_rule": "formations with formation_date > 2026-09-30 excluded because their 30-day forward horizon is not completed by the data cutoff 2026-10-31; no truncated outcomes are computed",
+  "confirmatory_claim_allowed": false,
+  "confirmatory_holm_significant": null,
+  "confirmatory_note": "gate: |high_low_diff_net_1x|=None >= 0.05 -> False; n_high=0>= 5 and n_low=0>=5 -> False; Holm-significance across the complete 216-cell family at alpha_k = 0.025 -> None (pending caller). A confirmatory claim requires all three True and is never promoted from raw p-values or return alone.",
   "data_cutoff_source": "derived from latest fully closed UTC daily Binance kline candle (or --data-cutoff)",
   "data_cutoff_utc": "2026-10-31T00:00:00Z",
   "date_first": "2026-09-30",
   "date_last": "2026-09-30",
+  "economic_significance_met": false,
+  "economic_significance_threshold": 0.05,
   "eligible_assets_per_date": {
     "max": 26,
     "mean": 26.0,
@@ -36,6 +41,7 @@
   "high_gross_mean": null,
   "high_low_diff_gross": null,
   "high_low_diff_net_1x": null,
+  "high_low_diff_net_1x_abs": null,
   "high_net_1x_mean": null,
   "input_file_hashes": {
     "binance_funding_1INCHUSDT.csv": "3c0fb806f1d5c6dd6eb711dbfd2340ce021bdb6fd8a2274c16a3967e3c106bd8",
@@ -112,6 +118,7 @@
   "low_gross_mean": null,
   "low_net_1x_mean": null,
   "min_completed_forward_horizon_days": 30,
+  "min_state_formations": 5,
   "n_formations": 1,
   "n_high": 0,
   "n_low": 0,
@@ -147,5 +154,6 @@
   "spread_gross_median": -0.047729065266337745,
   "spread_net_1x_mean": -0.048729065266337745,
   "spread_net_1x_median": -0.048729065266337745,
+  "state_count_floor_met": false,
   "status": "OK"
 }
