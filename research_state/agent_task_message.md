@@ -1,11 +1,10 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **2026-11-07T12:19:06Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **2026-11-07T12:20:10Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, and `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (2026-11-07T12:19:06Z, dep-light env: pandas/numpy not installed)
-- Prior task COMPLETE (re-verified). New unblocked hygiene done: cross-artifact consistency + confirmatory-gate alignment audit (v3 216-cell config/manifest aligned; JSON parse clean; registry H1..H22/next=22; H10 prereg 4.1/4.2 aligns with evaluator constants/emit). Artifact `research_state/session_verifications/session_verify_20261107T121859Z.json`.
-- Baseline: `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0). Dep-light guards `tests.test_h10_sequential_alpha_spending tests.test_alpha_spending tests.test_canonical_block_git_pinned tests.test_state_consistency tests.test_preregistration_coverage_audit` → 49 OK.
-- Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. Session-start HEAD `8f63568a92e7b13abae081177085d6d0f97ad49b` (durable-state changes in this session only).
+### Verified state (2026-11-07T12:20:10Z, dep-light env: pandas/numpy not installed)
+- Prior task COMPLETE (re-verified). State re-verified: compileall EXIT=0; prereg audit pass=True (14/0/0); frozen hashes unchanged.
+- Baseline: `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0). Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. HEAD `542b65915be23020ec2317a822e9f643856dc5a2`.
 - Cutoff probe BLOCKED. **Do NOT re-probe before 2026-11-30.** No confirmatory advance; k not advanced.
 
 ### Immediate next action
