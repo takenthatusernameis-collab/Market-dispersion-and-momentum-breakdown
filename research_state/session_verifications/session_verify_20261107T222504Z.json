@@ -1,0 +1,22 @@
+{
+  "session_utc": "20261107T222504Z",
+  "head": "4873ddc2",
+  "prior_task_status": "COMPLETE (20261107T222131Z reverification)",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "audit_prereg_and_h10_fresh_references": {"pass": true, "scanned": 13, "prereg": 9, "frozen_prereg": 0, "h10": 1, "forward_block": 1, "h10_variant": 2, "critical": 0, "errors": 0, "info": 0},
+    "audit_integrity_audit_references": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "info": 8},
+    "unittest_discover": {"ran": 324, "failures": 0, "skipped": 1, "ok": true}
+  },
+  "verified_test_claim_manifest": "324/324/0",
+  "frozen_hashes_unchanged": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "git_diff_artifacts_configs": "empty",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null)",
+  "cutoff_gate": "H10 UNBLOCKED (Oct 2026 archive published); Nov 2026 BLOCKED target_published=false; reprobe forbidden before 2026-11-30",
+  "bounded_no_cost_delta": false,
+  "next_action": "On/after 2026-11-30: probe_cutoff_gate --probe-month 2026-11; if usable refresh free public data and run fresh sealed H10 block only into forward_block_h10_fresh/ (never forward_block/), k=1, record all outcomes. Before 2026-11-30 act only on a genuine bounded no-cost gap; otherwise keep next action (1)."
+}
