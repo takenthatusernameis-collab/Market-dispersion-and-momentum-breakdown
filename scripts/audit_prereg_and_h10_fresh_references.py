@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""Read-only consistency audit over preregistration docs and h10_fresh artifacts.
+"""Read-only consistency audit over preregistration docs and forward-block artifacts.
 
 Scans:
-- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/*.md for
-  repo-relative artifact/research_state path references and 64-char SHA256 refs;
+- DISP-003 preregistration markdown (default: artifacts/.../DISPERSION-003/preregistrations/*.md)
+  for repo-relative artifact/research_state path references and 64-char SHA256 refs;
   verifies referenced paths exist on disk and frozen hashes match where applicable.
-- artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/*
-  JSON files for path/hash reference fields and frozen/git-HEAD consistency.
+- DISP-003 forward_block_h10_fresh/*.json and (by default) forward_block/*.json
+  for path/hash reference fields and frozen/git-HEAD consistency.
+- Optionally, frozen pre-DISP-003 preregistration dirs (e.g. DISPERSION-002) can be
+  scanned via --frozen-prereg-dirs. Missing path references in frozen pre-DISP-003
+  prereg docs are reported as INFO (frozen_record_stale_pointer), NOT ERROR, because
+  frozen/closed preregistration records must not be modified to "fix" historical
+  prose; the finding is still surfaced for durable-state awareness.
 
 Writes a timestamped report under research_state/ by default. DOES NOT modify
 any existing artifact, config, preregistration, or result.
 
 Usage:
     python3 scripts/audit_prereg_and_h10_fresh_references.py [--out PATH]
+           [--include-disp002-preregs]
 """
 from __future__ import annotations
 
@@ -29,6 +35,8 @@ ROOT = Path(__file__).resolve().parents[1]
 EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 PREREG_DIR = ROOT / "artifacts" / EXP / "preregistrations"
 H10_DIR = ROOT / "artifacts" / EXP / "forward_block_h10_fresh"
+FORWARD_BLOCK_DIR = ROOT / "artifacts" / EXP / "forward_block"
+DISP002_PREREG_DIR = ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-002" / "preregistrations"
 STATE_DIR = ROOT / "research_state"
 
 FROZEN = {
@@ -93,11 +101,20 @@ def _path_like(v: str) -> bool:
     return "/" in s and s.lower().rsplit(".", 1)[-1] in {"json", "md", "csv", "py"}
 
 
-def audit_prereg_md(p: Path) -> dict:
+def audit_prereg_md(p: Path, *, frozen_record: bool = False) -> dict:
+    """Audit a preregistration markdown file.
+
+    When frozen_record=True (for immutable closed preregistrations such as
+    DISPERSION-002), missing path references are reported as INFO findings
+    tagged ``frozen_record_stale_pointer`` rather than ERROR. The pointer is
+    still surfaced, but the audit does not fail the pass invariant because the
+    record must not be modified.
+    """
     text = p.read_text(encoding="utf-8")
     row = {
         "file": p.name,
         "kind": "preregistration_md",
+        "frozen_record": frozen_record,
         "path_refs": [],
         "hash_refs": [],
         "findings": [],
@@ -118,8 +135,10 @@ def audit_prereg_md(p: Path) -> dict:
                "matches_frozen": (frozen_expected is None or disk == frozen_expected)}
         row["path_refs"].append(ref)
         if not exists:
-            # Known frozen canonical path typo pattern? report as finding.
-            row["findings"].append(f"missing referenced path: {raw}")
+            if frozen_record:
+                row["findings"].append(f"frozen_record_stale_pointer (INFO, not modified): {raw}")
+            else:
+                row["findings"].append(f"missing referenced path: {raw}")
         if frozen_expected and disk and disk != frozen_expected:
             row["findings"].append(
                 f"FROZEN HASH MISMATCH: {raw} disk={disk} expected={frozen_expected}")
@@ -128,15 +147,17 @@ def audit_prereg_md(p: Path) -> dict:
         row["hash_refs"].append({"sha256": h, "matches_known_frozen": frozen_path})
     if any("FROZEN HASH MISMATCH" in f for f in row["findings"]):
         row["severity"] = "CRITICAL"
-    elif row["findings"]:
+    elif any(f.startswith("missing referenced path:") for f in row["findings"]):
         row["severity"] = "ERROR"
+    elif row["findings"]:
+        row["severity"] = "INFO"
     return row
 
 
-def audit_h10_json(p: Path) -> dict:
+def audit_forward_block_json(p: Path, kind: str = "forward_block_json") -> dict:
     row = {
         "file": p.name,
-        "kind": "h10_fresh_json",
+        "kind": kind,
         "references": [],
         "recorded_hash_checks": [],
         "findings": [],
@@ -185,8 +206,11 @@ def audit_h10_json(p: Path) -> dict:
         if match is False:
             row["findings"].append(f"recorded hash mismatch: {hk} for {target_n}")
     # frozen self-check for known file
-    rel_self = str(p.relative_to(ROOT)).replace("\\", "/")
-    if rel_self in FROZEN:
+    try:
+        rel_self = str(p.resolve().relative_to(ROOT)).replace("\\", "/")
+    except Exception:  # noqa: BLE001
+        rel_self = None
+    if rel_self and rel_self in FROZEN:
         actual = sha256_file(p)
         if actual != FROZEN[rel_self]:
             row["findings"].append(f"FROZEN SELF HASH MISMATCH: {rel_self}")
@@ -199,12 +223,35 @@ def audit_h10_json(p: Path) -> dict:
     return row
 
 
-def run_audit(prereg_dir: Path | None = None, h10_dir: Path | None = None) -> dict:
+# Backward-compatible alias used by existing tests/callers.
+def audit_h10_json(p: Path) -> dict:
+    return audit_forward_block_json(p, kind="h10_fresh_json")
+
+
+def run_audit(
+    prereg_dir: Path | None = None,
+    h10_dir: Path | None = None,
+    forward_block_dir: Path | None = None,
+    frozen_prereg_dirs: list[Path] | None = None,
+) -> dict:
     prereg_dir = prereg_dir or PREREG_DIR
     h10_dir = h10_dir or H10_DIR
+    forward_block_dir = forward_block_dir or FORWARD_BLOCK_DIR
+    frozen_prereg_dirs = frozen_prereg_dirs or []
+
     prereg_rows = [audit_prereg_md(p) for p in sorted(prereg_dir.glob("*.md")) if p.is_file()] if prereg_dir.exists() else []
-    h10_rows = [audit_h10_json(p) for p in sorted(h10_dir.glob("*.json")) if p.is_file()] if h10_dir.exists() else []
-    rows = prereg_rows + h10_rows
+    frozen_prereg_rows: list[dict] = []
+    for fd in frozen_prereg_dirs:
+        if fd.exists():
+            frozen_prereg_rows.extend(audit_prereg_md(p, frozen_record=True) for p in sorted(fd.glob("*.md")) if p.is_file())
+
+    h10_rows = [audit_forward_block_json(p, kind="h10_fresh_json") for p in sorted(h10_dir.glob("*.json")) if p.is_file()] if h10_dir.exists() else []
+    fb_rows = [audit_forward_block_json(p, kind="forward_block_json") for p in sorted(forward_block_dir.glob("*.json")) if p.is_file() and p.name != "forward_block_evaluation.json"] if forward_block_dir and forward_block_dir.exists() else []
+    # Always include canonical forward_block_evaluation.json if present (self/frozen check).
+    canon = (forward_block_dir or FORWARD_BLOCK_DIR) / "forward_block_evaluation.json"
+    canon_rows = [audit_forward_block_json(canon, kind="forward_block_canonical_json")] if canon.is_file() else []
+
+    rows = prereg_rows + frozen_prereg_rows + canon_rows + h10_rows + fb_rows
     critical = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "CRITICAL"]
     errors = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "ERROR"]
     infos = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "INFO"]
@@ -226,8 +273,12 @@ def run_audit(prereg_dir: Path | None = None, h10_dir: Path | None = None) -> di
         "timestamp_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "prereg_dir": str(prereg_dir.relative_to(ROOT)) if prereg_dir.is_relative_to(ROOT) else str(prereg_dir),
         "h10_fresh_dir": str(h10_dir.relative_to(ROOT)) if h10_dir.is_relative_to(ROOT) else str(h10_dir),
+        "forward_block_dir": str((forward_block_dir or FORWARD_BLOCK_DIR).relative_to(ROOT)) if (forward_block_dir or FORWARD_BLOCK_DIR).is_relative_to(ROOT) else str(forward_block_dir),
+        "frozen_prereg_dirs": [str(d.relative_to(ROOT)) if d.is_relative_to(ROOT) else str(d) for d in frozen_prereg_dirs],
         "prereg_files_scanned": len(prereg_rows),
+        "frozen_prereg_files_scanned": len(frozen_prereg_rows),
         "h10_json_files_scanned": len(h10_rows),
+        "forward_block_json_files_scanned": len(canon_rows) + len(fb_rows),
         "files_scanned": len(rows),
         "critical": sorted(set(critical)),
         "errors": errors,
@@ -237,11 +288,14 @@ def run_audit(prereg_dir: Path | None = None, h10_dir: Path | None = None) -> di
         "frozen_checks": frozen_checks,
         "rows": rows,
         "scope_note": (
-            "Read-only scan of preregistration markdown and forward_block_h10_fresh JSONs "
-            "for stale path refs, missing referenced files, and frozen/git-HEAD hash drift. "
-            "Preregistration documents are frozen records and are never modified; findings "
-            "are reported only. CRITICAL/ERROR indicate stale pointers or hash drift requiring "
-            "investigation. Default output: research_state/."
+            "Read-only scan of preregistration markdown and forward-block JSONs "
+            "(canonical forward_block/, forward_block_h10_fresh/) for stale path refs, "
+            "missing referenced files, and frozen/git-HEAD hash drift. Frozen pre-DISP-003 "
+            "preregistration docs (when scanned via --include-disp002-preregs) report "
+            "missing refs as INFO (frozen_record_stale_pointer) because immutable records "
+            "are never modified. Preregistration documents are frozen records and are never "
+            "modified; findings are reported only. CRITICAL/ERROR indicate stale pointers or "
+            "hash drift requiring investigation. Default output: research_state/."
         ),
     }
 
@@ -251,10 +305,16 @@ def main() -> int:
     ap.add_argument("--out", default=None)
     ap.add_argument("--prereg-dir", default=None)
     ap.add_argument("--h10-dir", default=None)
+    ap.add_argument("--forward-block-dir", default=None)
+    ap.add_argument("--include-disp002-preregs", action="store_true",
+                    help="Scan DISPERSION-002 preregistration docs as frozen records (stale pointers reported as INFO).")
     args = ap.parse_args()
+    frozen = [DISP002_PREREG_DIR] if args.include_disp002_preregs else []
     res = run_audit(
         Path(args.prereg_dir) if args.prereg_dir else None,
         Path(args.h10_dir) if args.h10_dir else None,
+        Path(args.forward_block_dir) if args.forward_block_dir else None,
+        frozen,
     )
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     if args.out:
@@ -266,7 +326,8 @@ def main() -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(res, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"[prereg-h10-ref] pass={res['pass']} scanned={res['files_scanned']} "
-          f"prereg={res['prereg_files_scanned']} h10={res['h10_json_files_scanned']} "
+          f"prereg={res['prereg_files_scanned']} frozen_prereg={res['frozen_prereg_files_scanned']} "
+          f"h10={res['h10_json_files_scanned']} forward_block={res['forward_block_json_files_scanned']} "
           f"critical={len(res['critical'])} errors={len(res['errors'])} info={len(res['info'])}")
     print(f"[prereg-h10-ref] wrote {out_path.relative_to(ROOT)}")
     return 0 if res["pass"] else 1

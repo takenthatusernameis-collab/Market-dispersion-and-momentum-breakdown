@@ -1,0 +1,34 @@
+{
+  "artifacts_configs_diff_empty": true,
+  "blockers": {
+    "h10_data_vintage_maturity": "UNBLOCKED cutoff gate (Oct 2026 archive) but structurally immature until first classifiable cutoff 2026-11-30; November reprobe forbidden before 2026-11-30.",
+    "no_new_empirical_scope_before": "2026-11-30"
+  },
+  "checks": {
+    "audit_prereg_and_h10_fresh_references_default": "pass=True scanned=11 prereg=9 frozen_prereg=0 h10=1 forward_block=1 critical=0 errors=0 info=0",
+    "audit_prereg_and_h10_fresh_references_with_disp002": "pass=True scanned=12 prereg=9 frozen_prereg=1 h10=1 forward_block=1 critical=0 errors=0 info=1 (PHASE-B-PLACEBO-V1.md frozen_record_stale_pointer)",
+    "audit_preregistration_coverage": "pass=True audits=14 missing_prereq=0 uncovered_prereq=0",
+    "compileall_scripts_tests": "EXIT=0",
+    "record_test_claim": "322/322/0 fingerprint=bf7719ccc1999def... files=102; run_manifest updated",
+    "unittest": "Ran 322 tests in 53.236s; OK (skipped=1)"
+  },
+  "delta": {
+    "files_changed": [
+      "scripts/audit_prereg_and_h10_fresh_references.py",
+      "tests/test_prereg_and_h10_fresh_reference_consistency.py"
+    ],
+    "summary": "Extended prereg/h10 reference audit to scan canonical DISP-003 forward_block/forward_block_evaluation.json by default (frozen self/git-head/hash checks) and added optional --include-disp002-preregs to scan frozen pre-DISP-003 preregistration docs; stale pointers in immutable closed prereg records are reported as INFO (frozen_record_stale_pointer), never as ERROR and never by modifying frozen records (DISP-002 PHASE-B-PLACEBO-V1.md DISPENSITY typo remains visible as INFO). Added 2 regression tests pinning canonical-forward-block default coverage and frozen-predisp003 INFO behavior. No frozen artifact/config/result modified.",
+    "type": "bounded_no_cost_audit_coverage_and_regression_tests"
+  },
+  "frozen_hashes": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "frozen_hashes_unchanged": true,
+  "h10_status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced; no confirmatory claim.",
+  "head": "415aeebe",
+  "next_action": "On/after 2026-11-30 run probe_cutoff_gate --probe-month 2026-11; if usable, refresh required free public data and run fresh sealed block only into forward_block_h10_fresh/ per H10 prereg/alpha-spending (k=1), never forward_block/. Before 2026-11-30 only bounded no-cost non-empirical deltas with checks + frozen-hash verification.",
+  "prior_task_status": "COMPLETE (20261107T205304Z reverification-only; no delta).",
+  "session_id": "20261107T210400Z",
+  "timestamp_utc": "2026-11-07T21:05:45Z"
+}

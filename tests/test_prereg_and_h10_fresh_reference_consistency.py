@@ -1,15 +1,15 @@
 """Regression guard for scripts/audit_prereg_and_h10_fresh_references.py.
 
-Read-only: scans preregistration markdown under
-artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/ and the
-forward_block_h10_fresh JSON for stale path references, missing referenced
-files, recorded hash mismatches and frozen/git-HEAD drift. Writes nothing (tests
-call run_audit(), not main()).
+Read-only: scans DISP-003 preregistration markdown, the canonical
+forward_block_evaluation.json, and forward_block_h10_fresh JSON for stale path
+references, missing referenced files, recorded hash mismatches and frozen/git-HEAD
+drift. Writes nothing (tests call run_audit(), not main()).
 
 Pins:
 - script is importable and run_audit() is deterministic across calls;
-- no CRITICAL or ERROR findings (a stale pointer, a missing referenced file, a
-  disk/frozen/git-HEAD drift or a recorded-hash mismatch is a defect, not noise);
+- no CRITICAL or ERROR findings in default scope (a stale pointer, a missing
+  referenced file, a disk/frozen/git-HEAD drift or a recorded-hash mismatch is
+  a defect, not noise);
 - the two frozen forward-block hashes match disk and git HEAD;
 - every path reference in every prereg doc resolves to a file on disk and
   matches its frozen hash where one is declared;
@@ -18,6 +18,12 @@ Pins:
   candle (or --data-cutoff)" must NOT be treated as a path reference and must
   NOT be reported as a missing artifact. This is the guard that prevents the
   false positive that made the 20261107T194102Z report pass=false with 3 ERRORs.
+- canonical forward_block_evaluation.json is scanned by default (kind
+  forward_block_canonical_json) and has no CRITICAL/ERROR findings;
+- frozen pre-DISP-003 prereg dirs (DISP-002, via --include-disp002-preregs path
+  in CLI / frozen_prereg_dirs in API) report stale pointers as INFO
+  (frozen_record_stale_pointer) and do NOT flip pass=False, because immutable
+  closed preregistration records must never be modified.
 """
 import hashlib
 import importlib.util
@@ -125,6 +131,39 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
             "data_cutoff_source=" + PROSE,
             self.first["errors"],
         )
+
+    def test_canonical_forward_block_scanned_by_default(self):
+        """Canonical forward_block_evaluation.json must be in default scope
+        (task 20261107T205304Z: extend audit coverage to canonical forward_block
+        JSON ref fields). Its frozen hash is checked in frozen_checks; the row
+        must exist with no CRITICAL/ERROR."""
+        kinds = {(r["file"], r["kind"]) for r in self.first["rows"]}
+        self.assertIn(("forward_block_evaluation.json", "forward_block_canonical_json"), kinds)
+        canon = [r for r in self.first["rows"] if r["file"] == "forward_block_evaluation.json"]
+        self.assertTrue(canon)
+        self.assertNotEqual(canon[0]["severity"], "CRITICAL", canon[0])
+        self.assertNotEqual(canon[0]["severity"], "ERROR", canon[0])
+        self.assertGreaterEqual(self.first.get("forward_block_json_files_scanned", 0), 1)
+
+    def test_frozen_predisp003_prereg_stale_pointer_is_info_not_error(self):
+        """DISPERSION-002 preregistration is an immutable closed record. A stale
+        path pointer inside it (e.g. DISPENSITY typo in PHASE-B-PLACEBO-V1.md)
+        must be surfaced as INFO (frozen_record_stale_pointer), not as ERROR, and
+        must not flip pass=False. The file itself is never modified."""
+        res = mod.run_audit(frozen_prereg_dirs=[mod.DISP002_PREREG_DIR])
+        self.assertTrue(res["pass"], res["errors"])
+        self.assertFalse(res["errors"], res["errors"])
+        self.assertGreaterEqual(res.get("frozen_prereg_files_scanned", 0), 1)
+        frozen_rows = [r for r in res["rows"] if r.get("frozen_record") is True]
+        self.assertTrue(frozen_rows, "expected at least one frozen prereg row")
+        for row in frozen_rows:
+            self.assertIn(row["severity"], ("OK", "INFO"), row)
+            for f in row["findings"]:
+                self.assertNotIn("missing referenced path:", f)
+        # the known DISP-002 stale pointer remains visible as INFO
+        info_joined = "\n".join(res["info"])
+        self.assertIn("frozen_record_stale_pointer", info_joined)
+        self.assertIn("PHASE-B-PLACEBO-V1.md", info_joined)
 
 
 if __name__ == "__main__":
