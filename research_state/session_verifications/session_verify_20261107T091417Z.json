@@ -1,0 +1,37 @@
+{
+  "recorded_utc": "2026-11-07T09:14:17Z",
+  "git_head": "b56d18f785389c9be5cab02c7f314a3da812934e",
+  "prior_task": "research_state/agent_task_message.md (2026-11-07T09:05Z)",
+  "prior_task_status": "COMPLETE",
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit": 0},
+    "prereg_audit": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {
+      "command": "python3 -m unittest discover -s tests",
+      "environment_note": "Dep-light runner (pandas/numpy not installed). Full 279/279/0+1s baseline from 2026-11-07T09:05Z (fingerprint 0f53ad4bb765d0b1, snapshot preserved) not reproducible here; failures/errors are ModuleNotFoundError for pandas/numpy in data-dependent tests, not logic regressions.",
+      "run": 241,
+      "failures": 7,
+      "errors": 9,
+      "skipped": 1,
+      "dep_independent_subset_verified": "12/14 tests in test_h10_sequential_alpha_spending pass (2 pre-existing errors import eval_forward_block->numpy); alpha_spending, prereg coverage, evidence audit, frontier scoring, grid validation subsets exercised (35 collected in targeted run, 5 errors from numpy-dependent threshold tests)."
+    }
+  },
+  "frozen_hashes_sha256_prefix16": {
+    "H004V106_canonical_forward_block_evaluation.json": "7234fc4e23b8dd07",
+    "H10_fresh_immature_forward_block_evaluation.json": "9bdee66f737e492b",
+    "status": "UNCHANGED vs git show HEAD:"
+  },
+  "cutoff_probe": {
+    "command": "python3 scripts/probe_cutoff_gate.py --probe-month 2026-11",
+    "probe_utc": "2026-11-07T09:11:52Z",
+    "probe_month": "2026-11",
+    "target_published": false,
+    "control_ok": true,
+    "archive_alive": true,
+    "cutoff_gate": "BLOCKED",
+    "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json"
+  },
+  "change_made_this_session": "Added H10LookNumberGuardContractTests (2 dep-light structural tests) to tests/test_h10_sequential_alpha_spending.py guarding --look-number positivity (reject k<1) and placement before data loads in eval_forward_block.main(); no frozen artifacts/preregs/scripts/data changed.",
+  "confirmatory_advance": false,
+  "k_advanced": false
+}

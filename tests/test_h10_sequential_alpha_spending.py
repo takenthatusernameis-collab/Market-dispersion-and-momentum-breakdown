@@ -185,3 +185,33 @@ class H10EconomicSignificanceThresholdTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class H10LookNumberGuardContractTests(unittest.TestCase):
+    """Structural guard: --look-number must be rejected when < 1 (H22 hardening).
+
+    Parses scripts/eval_forward_block.py source (no numpy/pandas import needed)
+    so the guard is verifiable in dep-light environments and cannot silently
+    regress to accept k=0 or negative look numbers.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.src = (ROOT / "scripts" / "eval_forward_block.py").read_text(encoding="utf-8")
+
+    def test_parse_args_declares_look_number(self):
+        self.assertIn('--look-number', self.src)
+        self.assertIn('type=int', self.src)
+        self.assertIn('default=1', self.src)
+
+    def test_main_rejects_nonpositive_look_number(self):
+        # Guard must appear in main() before any data load / side effects.
+        self.assertRegex(
+            self.src,
+            r"if int\(args\.look_number\) < 1:\s+raise SystemExit\([^\n]*look-number[^\n]*positive",
+        )
+        main_src = self.src[self.src.index('def main()'):]
+        guard_idx = main_src.index('if int(args.look_number) < 1:')
+        load_idx = main_src.index('load_marketcap()')
+        self.assertLess(guard_idx, load_idx,
+                        "look-number guard must run before data loads/side effects in main()")
