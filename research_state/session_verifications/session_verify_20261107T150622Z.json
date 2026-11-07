@@ -1,0 +1,79 @@
+{
+  "session_utc": "20261107T150622Z",
+  "prior_task_status": "COMPLETE_REVERIFIED",
+  "scope": "bounded reverification + durable-state hygiene (latest_november_2026_probe pointer refresh to latest real on-disk record) + handoff/task update; no frozen artifact/config/code/test changes",
+  "actions": [
+    "read research_state/agent_handoff.md, research_state/agent_task_message.md, AGENTS.md, docs/research_protocol.md, prompts/continuous_research_operating_contract_v1.md",
+    "verified git status clean at session start; HEAD 896484d0 reviewed",
+    "ran python3 -m compileall -q scripts tests (EXIT=0)",
+    "ran python3 scripts/audit_preregistration_coverage.py (pass=True, audits=14, missing_prereq=0, uncovered_prereq=0)",
+    "verified frozen hashes disk == git show HEAD: == expected for H004V106 canonical (7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390) and H10 fresh IMMATURE (9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a)",
+    "confirmed H10 cutoff gate remains UNBLOCKED via latest_archive_probe record cutoff_probe_20261105T103851Z.json (probe_month=2026-10, target_published=true, archive_alive=true); November probes are preserved under latest_november_2026_probe and are NOT the H10 gate decision",
+    "found durable-state drift: latest_november_2026_probe pointed to cutoff_probe_20261104T151423Z.json while latest real November probe on disk is cutoff_probe_20261107T091152Z.json (2026-11-07T09:11:52Z, probe_month=2026-11, BLOCKED, target_published=false, archive_alive=true); refreshed research_state/universe_frontier.json latest_november_2026_probe dict and research_state/run_manifest.json latest_november_2026_probe string to the latest on-disk record; did not alter latest_archive_probe (H10 gate) or canonical block fields",
+    "ran targeted tests (dep-light/unittest): tests.test_latest_probe_record_pinned (6 OK), tests.test_state_consistency (14 OK), tests.test_state_timestamp_not_stale (2 OK), tests.test_cutoff_probe (17 OK), tests.test_preregistration_coverage_audit (3 OK), tests.test_continuous_research_contract+test_preregistration_coverage_audit subset (13 OK as run), tests.test_h10_sequential_artifact_contract+test_sequential_alpha_rule_source (10 OK)"
+  ],
+  "checks": {
+    "compileall_scripts_tests_exit": 0,
+    "preregistration_coverage_audit": {
+      "pass": true,
+      "audits": 14,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0,
+      "output": "research_state/preregistration_coverage_audit.json"
+    },
+    "targeted_unittest_results": {
+      "latest_probe_record_pinned": "6 OK",
+      "state_consistency": "14 OK",
+      "state_timestamp_not_stale": "2 OK",
+      "cutoff_probe": "17 OK",
+      "h10_sequential_artifact_contract+sequential_alpha_rule_source": "10 OK"
+    },
+    "full_suite_unittest_discover_dep_light": {
+      "command": "python3 -m unittest discover -s tests",
+      "result": "287 tests, failures=2, skipped=35, exit=1 (dep-light environment)",
+      "failures": [
+        "test_requirements_importable: numpy/pandas not installed in interpreter (expected in dep-light env without requirements install)",
+        "test_verified_test_claim_guard.snapshot_fingerprint_matches_inventory: worktree has 2 tracked .py tests (test_h10_sequential_artifact_contract.py, test_sequential_alpha_rule_source.py) not reflected in research_state/verified_test_claim_claim_snapshot.json; snapshot/manifest test-claim not refreshed in this session"
+      ],
+      "note": "Full verified 279/279/0 claim in manifest predates current inventory; do not treat this dep-light run as contradicting recorded claim without installing deps and refreshing claim via scripts/record_test_claim.py."
+    },
+    "git_diff_artifacts_configs": "empty (no changes under artifacts/ or configs/)",
+    "git_status_after_changes": "modified: research_state/run_manifest.json, research_state/universe_frontier.json (bounded hygiene) + session verification/handoff/task updates from this session"
+  },
+  "frozen_hashes": {
+    "expected": {
+      "h004v106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_immature_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+    },
+    "disk": {
+      "h004v106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_immature_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+    },
+    "git_head": {
+      "h004v106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_immature_forward_block": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+    },
+    "all_match": true
+  },
+  "h10_cutoff_gate": {
+    "status": "UNBLOCKED",
+    "latest_archive_probe_record": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json",
+    "probe_month": "2026-10",
+    "probe_utc": "2026-11-05T10:38:51Z",
+    "target_published": true,
+    "note": "October 2026 monthly klines+fundingRate published; gate_date_required 2026-10-29 satisfied. H10 blocker remains data-vintage maturity (first structurally classifiable cutoff 2026-11-30), not cutoff gate."
+  },
+  "latest_november_2026_probe": {
+    "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "probe_utc": "2026-11-07T09:11:52Z",
+    "probe_month": "2026-11",
+    "cutoff_gate": "BLOCKED",
+    "target_published": false,
+    "archive_alive": true,
+    "note": "Latest November probe on disk; preserved as audit trail. NOT the H10 gate decision. Do not re-probe November before 2026-11-30."
+  },
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "reprobe_policy": "DO_NOT_REPROBE_NOVEMBER_2026_BEFORE_2026-11-30",
+  "next_action_explicit": "Preserve blocker. Re-verify frozen hashes (disk+HEAD) + compileall + prereg audit before any new work. Do NOT re-probe November 2026 before 2026-11-30. H10 cutoff gate is UNBLOCKED (October archive published) but H10 remains blocked by data-vintage maturity: first structurally classifiable cutoff 2026-11-30 (trailing-decile rule needs >=30 prior in-block dispersions). After 2026-11-30 only: probe November if needed for 2026-11 data, refresh free public data as needed, install deps, run tests, verify H004V106 unchanged vs git show HEAD:, run fresh sealed block into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ (never forward_block/) with --forward-block-start 2026-09-30 --data-cutoff 2026-11-30 --output-dir ... --look-number 1 (k=1). Require n_high>0 AND n_low>0, n_high>=5 AND n_low>=5, |high_low_diff_net_1x|>=0.05, and Holm significance across complete 216-cell family at alpha_k=0.05/(k*(k+1)) before any confirmatory claim. IMMATURE => record blocker and do not advance k. If a fully-deps environment is used before 2026-11-30, a bounded hygiene option is to refresh research_state/verified_test_claim_claim_snapshot.json via scripts/record_test_claim.py after a passing suite (captures 2 added tracked tests) — only if tests pass and no frozen artifacts/configs change. Never relax 30-day maturity, MIN_ASSETS_DECILES=20, trailing-decile rule, or 0.05 threshold. Never open canonical sealed holdout. Never use today's rank as historical truth. Never write \"wait for a new experiment ID.\""
+}
