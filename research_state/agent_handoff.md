@@ -1,4 +1,14 @@
-## Session record 20261107T215843Z (current)
+## Session record 20261107T220455Z (current)
+
+- **Prior task status:** COMPLETE (20261107T215843Z). Reverification-only at HEAD `f55b3e2c` (no source/artifact delta since `597a86e8`): compileall EXIT=0; prereg coverage pass=True (14/0/0); prereg/h10 ref audit pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; unittest discover **324 run, 0 failures, 1 skipped (OK)**. Verified test claim unchanged (324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files; run_manifest latest_verified_test_claim `324/324/0`). `git diff --name-only -- artifacts/ configs/` empty. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a`. No bounded no-cost delta exists; next action remains (1).
+- **Cutoff gate:** H10 gate UNBLOCKED per `run_manifest.json:latest_archive_probe` (October 2026 archive published, probe `2026-11-05T10:38:51Z`, probe_exit 0); November 2026 still BLOCKED (target_published=false, probe `2026-11-07T09:11:52Z`). Re-probe forbidden before 2026-11-30.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; fresh block n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null, overlap_aware_uncertainty IMMATURE. First structurally classifiable cutoff projected 2026-11-30 (~31 formations). k not advanced. No confirmatory claim.
+- **No new bounded no-cost delta before 2026-11-30.** Reference audits comprehensive; alpha-spending utility tested; remaining untested scripts mutate artifacts, require network, or are data-dependent. Do not fabricate work; keep next action as (1).
+- **Session verification:** new audit record `research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261107T220139Z.json`.
+
+---
+
+## Session record 20261107T215843Z (prior)
 
 - **Prior task status:** COMPLETE (20261107T215522Z). Reverification-only; no new bounded no-cost delta identified before 2026-11-30. Checks at HEAD `597a86e8`: compileall EXIT=0; prereg coverage pass=True (14/0/0); prereg/h10 ref audit pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; unittest discover **324 run, 0 failures, 1 skipped (OK)**. Verified test claim unchanged (324/324/0, fingerprint `e442d8b28997fe49…`, 102 input files). `git diff --name-only -- artifacts/ configs/` empty. Frozen hashes unchanged: H004V106 canonical `7234fc4e…`; H10 fresh IMMATURE `9bdee66f…`. No bounded no-cost delta exists; next action remains (1).
 
