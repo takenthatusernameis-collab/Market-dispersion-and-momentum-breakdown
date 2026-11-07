@@ -1,9 +1,9 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261107T162928Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261107T163151Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (20261107T162928Z, HEAD `ec500292d`; deps installed numpy 2.5.4, pandas 3.1.1)
-- Prior task **COMPLETE**. Baseline: `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **291 run, 0 failures, 1 skipped (OK)**. Record: `research_state/session_verifications/session_verify_20261107T162928Z.json`.
+### Verified state (20261107T163151Z, HEAD `063dcddc`; deps installed numpy 2.5.4, pandas 3.1.1)
+- Prior task **COMPLETE**. Baseline: `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_preregistration_coverage.py` pass=True (14/0/0); `python3 -m unittest discover -s tests` **291 run, 0 failures, 1 skipped (OK)**. Record: `research_state/session_verifications/session_verify_20261107T163151Z.json`.
 - Frozen hashes unchanged (verify vs disk AND `git show HEAD:`): H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`); H10 fresh IMMATURE `9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`).
 - **H10 cutoff gate is UNBLOCKED** (October 2026 monthly klines+fundingRate published; gate_date_required 2026-10-29 satisfied). `latest_archive_probe` = `research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json` (probe_month 2026-10, target_published=true).
 - **Latest November probe (audit trail only, NOT H10 gate):** `latest_november_2026_probe` = `research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json` (probe_month 2026-11, BLOCKED, target_published=false). **Do not re-probe November before 2026-11-30.**
