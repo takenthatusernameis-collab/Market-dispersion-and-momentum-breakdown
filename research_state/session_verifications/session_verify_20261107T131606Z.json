@@ -1,0 +1,32 @@
+{
+  "ts_utc": "2026-11-07T13:16:06Z",
+  "action": "read_prior_handoff_and_task_and_reverify_state",
+  "prior_task_status": "COMPLETE_REVERIFIED",
+  "env_dep_light": true,
+  "baseline": {
+    "compileall_scripts_tests_exit": 0,
+    "prereg_audit_pass": true,
+    "prereg_audits": 14,
+    "prereg_missing": 0,
+    "prereg_uncovered": 0
+  },
+  "frozen_hashes": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "unchanged": true
+  },
+  "cutoff_probe": {
+    "status": "BLOCKED",
+    "do_not_reprobe_before": "2026-11-30",
+    "confirmatory_advanced": false,
+    "k_advanced": false
+  },
+  "new_unblocked_hygiene_scope_identified": false,
+  "changes_made": [
+    "research_state/session_verifications/session_verify_20261107T131606Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "frozen_artifacts_changed": false,
+  "next_action": "Preserve blocker; re-verify before new work; no cutoff re-probe before 2026-11-30; pursue only newly identified unblocked bounded no-cost tasks; after 2026-11-30 probe and if published run fresh sealed block with full confirmatory gates; never wait for a new experiment ID."
+}
