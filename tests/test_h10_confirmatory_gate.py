@@ -22,9 +22,28 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import scripts.eval_forward_block as efb
-
 ROOT = Path(__file__).resolve().parents[1]
+EVAL_SRC_PATH = ROOT / "scripts" / "eval_forward_block.py"
+
+
+def _parse_eval_constant(name: str) -> str:
+    src = EVAL_SRC_PATH.read_text(encoding="utf-8")
+    m = re.search(rf"^{re.escape(name)}\s*=\s*(.+?)\s*(?:#.*)?$", src, re.M)
+    if not m:
+        raise AssertionError(f"{name} not found in eval_forward_block.py")
+    return m.group(1)
+
+
+def _has_numpy() -> bool:
+    try:
+        import numpy  # noqa: F401
+        return True
+    except Exception:
+        return False
+
+
+ECONOMIC_SIGNIFICANCE_THRESHOLD = float(_parse_eval_constant("ECONOMIC_SIGNIFICANCE_THRESHOLD"))
+MIN_STATE_FORMATIONS = int(_parse_eval_constant("MIN_STATE_FORMATIONS"))
 EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 ART = ROOT / "artifacts" / EXP
 FRESH = ART / "forward_block_h10_fresh" / "forward_block_evaluation.json"
@@ -35,10 +54,10 @@ EVAL = ROOT / "scripts" / "eval_forward_block.py"
 def confirmatory_gate(diff, n_high, n_low, holm_significant):
     """Mirror of eval_forward_block's confirmatory gate (sec 4/4.2)."""
     econ_ok = bool(
-        diff is not None and abs(diff) >= efb.ECONOMIC_SIGNIFICANCE_THRESHOLD
+        diff is not None and abs(diff) >= ECONOMIC_SIGNIFICANCE_THRESHOLD
     )
     state_ok = bool(
-        n_high >= efb.MIN_STATE_FORMATIONS and n_low >= efb.MIN_STATE_FORMATIONS
+        n_high >= MIN_STATE_FORMATIONS and n_low >= MIN_STATE_FORMATIONS
     )
     allowed = bool(econ_ok and state_ok and holm_significant is True)
     return {
@@ -128,8 +147,8 @@ class TestH10FreshBlockImmatureNotConfirmable(unittest.TestCase):
         self.assertIn("ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05", self.prereg)
 
     def test_constants_match_prereg(self):
-        self.assertEqual(efb.ECONOMIC_SIGNIFICANCE_THRESHOLD, 0.05)
-        self.assertEqual(efb.MIN_STATE_FORMATIONS, 5)
+        self.assertEqual(ECONOMIC_SIGNIFICANCE_THRESHOLD, 0.05)
+        self.assertEqual(MIN_STATE_FORMATIONS, 5)
 
 
 class TestEvaluatorEmitsConfirmatoryGateFields(unittest.TestCase):
@@ -145,6 +164,8 @@ class TestEvaluatorEmitsConfirmatoryGateFields(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        if not _has_numpy():
+            raise unittest.SkipTest("numpy not installed; evaluator subprocess contract test is dep-limited")
         cls.td = tempfile.TemporaryDirectory()
         out_dir = Path(cls.td.name) / "h10_gate"
         r = subprocess.run(
@@ -171,14 +192,15 @@ class TestEvaluatorEmitsConfirmatoryGateFields(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        cls.td.cleanup()
+        if getattr(cls, "td", None):
+            cls.td.cleanup()
 
     def test_gate_constants_emitted(self):
         self.assertEqual(
             self.a["economic_significance_threshold"],
-            efb.ECONOMIC_SIGNIFICANCE_THRESHOLD,
+            ECONOMIC_SIGNIFICANCE_THRESHOLD,
         )
-        self.assertEqual(self.a["min_state_formations"], efb.MIN_STATE_FORMATIONS)
+        self.assertEqual(self.a["min_state_formations"], MIN_STATE_FORMATIONS)
         self.assertEqual(self.a["economic_significance_threshold"], 0.05)
         self.assertEqual(self.a["min_state_formations"], 5)
 

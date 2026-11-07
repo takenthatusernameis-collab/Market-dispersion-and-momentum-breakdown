@@ -26,6 +26,15 @@ from pathlib import Path
 from scripts import alpha_spending
 
 ROOT = Path(__file__).resolve().parents[1]
+EVAL_SRC_PATH = ROOT / "scripts" / "eval_forward_block.py"
+
+def _parse_eval_constant(name: str) -> str:
+    src = EVAL_SRC_PATH.read_text(encoding="utf-8")
+    m = re.search(rf"^{re.escape(name)}\s*=\s*(.+?)\s*(?:#.*)?$", src, re.M)
+    if not m:
+        raise AssertionError(f"{name} not found in eval_forward_block.py")
+    return m.group(1)
+
 PREREQ = (
     ROOT
     / "artifacts"
@@ -132,12 +141,8 @@ class H10EconomicSignificanceThresholdTests(unittest.TestCase):
         )
 
     def test_declared_threshold_matches_evaluator_constant(self):
-        import scripts.eval_forward_block as efb
-
-        # The constant is module-level and is read from the current source at
-        # import time; no reload is needed and none is performed, so this guard
-        # cannot be satisfied by a stale cached value.
-        threshold = efb.ECONOMIC_SIGNIFICANCE_THRESHOLD
+        # Dep-light: parse current source constant (no numpy/pandas import).
+        threshold = float(_parse_eval_constant("ECONOMIC_SIGNIFICANCE_THRESHOLD"))
         section = self.section
         self.assertIn(
             f"ECONOMIC_SIGNIFICANCE_THRESHOLD = {threshold}",
@@ -159,14 +164,12 @@ class H10EconomicSignificanceThresholdTests(unittest.TestCase):
         # states need at least five independent formations. Section 4.2 folds
         # that floor into criterion 4(a) so it cannot be overlooked at decision
         # time, and the evaluator must carry the matching constant.
-        import scripts.eval_forward_block as efb
-
         self.assertTrue(
             re.search(r"n_high >= 5 AND n_low >= 5", self.section),
             "prereg section 4.2 does not declare the n_high>=5 / n_low>=5 "
             "state-count floor",
         )
-        self.assertEqual(efb.MIN_STATE_FORMATIONS, 5)
+        self.assertEqual(int(_parse_eval_constant("MIN_STATE_FORMATIONS")), 5)
 
     def test_threshold_is_not_rederived_from_outcomes(self):
         # The threshold must be chosen in ignorance of every observed outcome,

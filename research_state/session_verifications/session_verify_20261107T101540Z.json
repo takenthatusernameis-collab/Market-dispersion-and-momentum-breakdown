@@ -1,0 +1,43 @@
+{
+  "session_utc": "2026-11-07T10:15:40Z",
+  "head": "762bd045ed504d70fb743be28fff9e24aac71efe",
+  "prior_task_status": "COMPLETE (2026-11-07T10:12Z baseline re-verification preserved)",
+  "env": "dep-light (pandas/numpy not installed in this runner)",
+  "baseline": {
+    "compileall_scripts_tests_exit": 0,
+    "prereg_coverage_audit": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "git_ls_files_tests_pycache": "empty"
+  },
+  "targeted_tests_dep_light": {
+    "command": "python3 -m unittest tests.test_h10_confirmatory_gate tests.test_h10_sequential_alpha_spending tests.test_h10_sequential_artifact_contract tests.test_sequential_alpha_rule_source tests.test_alpha_spending tests.test_cutoff_probe",
+    "ran": 63,
+    "ok": true,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "skip_reason": "TestEvaluatorEmitsConfirmatoryGateFields subprocess requires numpy (dep-limited); gate formula/artifact/prereg constant contracts still verified dep-light"
+  },
+  "full_suite_claim_preserved_not_reproducible_dep_light": {
+    "result": "279 OK, skipped=1",
+    "fingerprint": "0f53ad4bb765d0b1",
+    "recorded_utc": "2026-11-07T09:05Z",
+    "snapshot": "research_state/verified_test_claim_claim_snapshot.json",
+    "record_test_claim_run": false
+  },
+  "frozen_hashes_unchanged_vs_git_show_HEAD": {
+    "H004V106_canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_IMMATURE_forward_block_sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_probe_latest": {
+    "file": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "probe_month": "2026-11",
+    "target_published": false,
+    "control_ok": true,
+    "archive_alive": true,
+    "cutoff_gate": "BLOCKED",
+    "reprobe_before_2026_11_30": "DO NOT"
+  },
+  "change_made": "Narrow dep-light test hardening only (no frozen artifacts, preregs, evaluator behavior, or data changed): (1) tests/test_h10_confirmatory_gate.py now parses ECONOMIC_SIGNIFICANCE_THRESHOLD/MIN_STATE_FORMATIONS from scripts/eval_forward_block.py source (dep-light, no numpy import at module load) and skips the evaluator-subprocess schema test only when numpy is absent; gate formula, prereg section 4/4.2 criteria, and IMMATURE-artifact non-confirmability remain verified. (2) tests/test_h10_sequential_alpha_spending.py H10EconomicSignificanceThresholdTests now compares prereg-declared gate constants to source-parsed evaluator constants dep-light (no numpy). Pre-existing dep-light import failures in these modules are resolved without altering gate semantics.",
+  "confirmatory_advance": false,
+  "k_advanced": false
+}
