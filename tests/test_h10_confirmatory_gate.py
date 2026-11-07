@@ -16,6 +16,9 @@ for this guard and is evaluated only on a mature, admissible fresh block.
 """
 import json
 import re
+import subprocess
+import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -26,6 +29,7 @@ EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 ART = ROOT / "artifacts" / EXP
 FRESH = ART / "forward_block_h10_fresh" / "forward_block_evaluation.json"
 PREREQ = ART / "preregistrations" / "H10_FRESH_FORWARD_BLOCK_v1.md"
+EVAL = ROOT / "scripts" / "eval_forward_block.py"
 
 
 def confirmatory_gate(diff, n_high, n_low, holm_significant):
@@ -126,6 +130,84 @@ class TestH10FreshBlockImmatureNotConfirmable(unittest.TestCase):
     def test_constants_match_prereg(self):
         self.assertEqual(efb.ECONOMIC_SIGNIFICANCE_THRESHOLD, 0.05)
         self.assertEqual(efb.MIN_STATE_FORMATIONS, 5)
+
+
+class TestEvaluatorEmitsConfirmatoryGateFields(unittest.TestCase):
+    """The current evaluator must emit the confirmatory gate fields for fresh blocks.
+
+    This is an evaluator-contract guard (subprocess into a throwaway dir, no frozen
+    artifact modified). It does NOT re-run the committed H10 fresh artifact and does
+    NOT compute Holm; it proves the fresh-block output schema records the gate
+    constants, per-criterion booleans, and a pending caller-filled Holm field so the
+    confirmatory decision is auditable (prereg sec 4/4.2). The IMMATURE case must
+    never emit confirmatory_claim_allowed=True.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.td = tempfile.TemporaryDirectory()
+        out_dir = Path(cls.td.name) / "h10_gate"
+        r = subprocess.run(
+            [
+                sys.executable,
+                str(EVAL),
+                "--forward-block-start",
+                "2026-09-30",
+                "--data-cutoff",
+                "2026-10-31",
+                "--output-dir",
+                str(out_dir),
+                "--look-number",
+                "1",
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        assert r.returncode == 0, f"evaluator failed: {r.stderr}\n{r.stdout}"
+        cls.a = json.loads(
+            (out_dir / "forward_block_evaluation.json").read_text(encoding="utf-8")
+        )
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.td.cleanup()
+
+    def test_gate_constants_emitted(self):
+        self.assertEqual(
+            self.a["economic_significance_threshold"],
+            efb.ECONOMIC_SIGNIFICANCE_THRESHOLD,
+        )
+        self.assertEqual(self.a["min_state_formations"], efb.MIN_STATE_FORMATIONS)
+        self.assertEqual(self.a["economic_significance_threshold"], 0.05)
+        self.assertEqual(self.a["min_state_formations"], 5)
+
+    def test_immature_gate_fields(self):
+        # IMMATURE: n_high=0, n_low=0, diff null -> (a),(b),(c-pending) all fail.
+        self.assertEqual(self.a["n_high"], 0)
+        self.assertEqual(self.a["n_low"], 0)
+        self.assertIsNone(self.a["high_low_diff_net_1x"])
+        self.assertIsNone(self.a["high_low_diff_net_1x_abs"])
+        self.assertFalse(self.a["economic_significance_met"])
+        self.assertFalse(self.a["state_count_floor_met"])
+        self.assertIsNone(self.a["confirmatory_holm_significant"])
+        self.assertFalse(self.a["confirmatory_claim_allowed"])
+
+    def test_holm_field_is_pending_caller_fill(self):
+        # The evaluator must never pre-compute Holm across the 216-cell family; it
+        # records a pending null and requires the caller to fill it before any
+        # SUPPORTED claim. A non-null True/False here would be a contract break.
+        self.assertIsNone(self.a["confirmatory_holm_significant"])
+        note = self.a["confirmatory_note"]
+        self.assertIn("pending caller", note)
+        self.assertIn("216-cell family", note)
+        self.assertIn("alpha_k", note)
+
+    def test_sequential_fields_emitted_for_fresh_block(self):
+        self.assertEqual(self.a["sequential_look_number"], 1)
+        self.assertAlmostEqual(self.a["sequential_alpha_k"], 0.025)
+        self.assertFalse(self.a["sequential_look_mature"])
+        self.assertFalse(self.a["sequential_look_consumes_budget"])
 
 
 if __name__ == "__main__":
