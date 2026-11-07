@@ -1,0 +1,40 @@
+{
+  "blocker": "data-vintage maturity (first structurally classifiable cutoff 2026-11-30); November reprobe forbidden before 2026-11-30",
+  "bounded_action": "state reverification + durable handoff/task update; no new unblocked empirical scope found",
+  "checks": {
+    "compileall_scripts_tests": {
+      "exit": 0
+    },
+    "preregistration_coverage_audit": {
+      "audits": 14,
+      "missing_prereq": 0,
+      "pass": true,
+      "uncovered_prereq": 0
+    },
+    "unittest_discover_tests": {
+      "errors": 0,
+      "failures": 0,
+      "ok": true,
+      "ran": 291,
+      "skipped": 1
+    }
+  },
+  "frozen_hashes": {
+    "h004v106_canonical": {
+      "matches_git_head": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
+    },
+    "h10_fresh_immature": {
+      "matches_git_head": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+      "sha256": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+    }
+  },
+  "git_diff_artifacts_configs": "",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; k not advanced",
+  "head_short": "c8168fa1",
+  "no_artifacts_configs_modified": true,
+  "session_verify_id": "session_verify_20261107T180700Z",
+  "verified_utc": "20261107T180700Z"
+}
