@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-11-07T00:40:29Z",
+  "head": "f7f0f3fc76fac43ea3fea371118361cea8e9e8fb",
+  "prior_task_status": "COMPLETE",
+  "prior_task_source": "research_state/agent_task_message.md (2026-11-07T00:36Z) / research_state/agent_handoff.md (session 2026-11-07T00:36Z)",
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "preregistration_coverage_audit": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "ran": 255, "ok": true, "skipped": 1, "duration_s": 52.133},
+    "tracked_pycache": {"command": "git ls-files tests/__pycache__ | wc -l", "count": 0},
+    "git_status_start_clean": true
+  },
+  "frozen_artifacts_sha256_verified": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a"
+  },
+  "cutoff_state": {
+    "october_2026": {"probe": "research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json", "target_published": true, "gate": "UNBLOCKED", "gate_met_by_month_end": true},
+    "november_2026": {"probe": "research_state/cutoff_probe/cutoff_probe_20261105T205749Z.json", "target_published": false, "gate": "BLOCKED", "note": "do not re-probe before 2026-11-30"}
+  },
+  "changes_made": ["research_state/session_verifications/session_verify_20261107T004029Z.json", "research_state/agent_handoff.md (appended session record)", "research_state/agent_task_message.md (updated)"],
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "fabrication": false
+}
