@@ -1,0 +1,132 @@
+"""Confirmatory-gate contract tests for the H10 fresh forward block.
+
+H10 prereg section 4 / 4.2 (H10_FRESH_FORWARD_BLOCK_v1.md) and
+scripts/eval_forward_block.py define a three-part confirmatory gate for any
+fresh-block claim:
+  (a) |high_low_diff_net_1x| >= ECONOMIC_SIGNIFICANCE_THRESHOLD (net of cost)
+  (b) n_high >= MIN_STATE_FORMATIONS and n_low >= MIN_STATE_FORMATIONS
+  (c) Holm-significance across the complete 216-cell family at alpha_k (caller)
+
+A confirmatory claim requires ALL THREE True. (c) is recorded as pending in the
+evaluator and must never be inferred here. This module is pure arithmetic +
+artifact inspection (no network, no frozen artifact modified) and pins the gate
+formula/contract so a drift between prereg, constants, and decision logic fails
+the build. It does NOT re-run the block or compute Holm; Holm is out of scope
+for this guard and is evaluated only on a mature, admissible fresh block.
+"""
+import json
+import re
+import unittest
+from pathlib import Path
+
+import scripts.eval_forward_block as efb
+
+ROOT = Path(__file__).resolve().parents[1]
+EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
+ART = ROOT / "artifacts" / EXP
+FRESH = ART / "forward_block_h10_fresh" / "forward_block_evaluation.json"
+PREREQ = ART / "preregistrations" / "H10_FRESH_FORWARD_BLOCK_v1.md"
+
+
+def confirmatory_gate(diff, n_high, n_low, holm_significant):
+    """Mirror of eval_forward_block's confirmatory gate (sec 4/4.2)."""
+    econ_ok = bool(
+        diff is not None and abs(diff) >= efb.ECONOMIC_SIGNIFICANCE_THRESHOLD
+    )
+    state_ok = bool(
+        n_high >= efb.MIN_STATE_FORMATIONS and n_low >= efb.MIN_STATE_FORMATIONS
+    )
+    allowed = bool(econ_ok and state_ok and holm_significant is True)
+    return {
+        "economic_significance_met": econ_ok,
+        "state_count_floor_met": state_ok,
+        "confirmatory_claim_allowed": allowed,
+    }
+
+
+class TestH10ConfirmatoryGateFormula(unittest.TestCase):
+    def test_boundary_pass_all_three(self):
+        g = confirmatory_gate(0.05, 5, 5, True)
+        self.assertTrue(g["economic_significance_met"])
+        self.assertTrue(g["state_count_floor_met"])
+        self.assertTrue(g["confirmatory_claim_allowed"])
+
+    def test_below_threshold_fails(self):
+        g = confirmatory_gate(0.049999, 5, 5, True)
+        self.assertFalse(g["economic_significance_met"])
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+    def test_negative_magnitude_satisfies_threshold(self):
+        # Sign is NOT pre-registered (H10 sec 4.2); magnitude is what counts.
+        g = confirmatory_gate(-0.06, 5, 5, True)
+        self.assertTrue(g["economic_significance_met"])
+        self.assertTrue(g["confirmatory_claim_allowed"])
+
+    def test_state_floor_n_high_fails(self):
+        g = confirmatory_gate(0.10, 4, 5, True)
+        self.assertFalse(g["state_count_floor_met"])
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+    def test_state_floor_n_low_fails(self):
+        g = confirmatory_gate(0.10, 5, 4, True)
+        self.assertFalse(g["state_count_floor_met"])
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+    def test_holm_false_fails(self):
+        g = confirmatory_gate(0.10, 5, 5, False)
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+    def test_holm_pending_fails(self):
+        # Pending caller evaluation (evaluator emits None) must never allow.
+        g = confirmatory_gate(0.10, 5, 5, None)
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+    def test_null_diff_fails(self):
+        g = confirmatory_gate(None, 5, 5, True)
+        self.assertFalse(g["economic_significance_met"])
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+
+class TestH10FreshBlockImmatureNotConfirmable(unittest.TestCase):
+    """The preserved IMMATURE H10 fresh block cannot satisfy the confirmatory gate."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.art = json.loads(FRESH.read_text(encoding="utf-8"))
+        cls.prereg = PREREQ.read_text(encoding="utf-8")
+
+    def test_artifact_is_immature(self):
+        self.assertEqual(self.art["n_formations"], 1)
+        self.assertEqual(self.art["n_high"], 0)
+        self.assertEqual(self.art["n_low"], 0)
+        self.assertIsNone(self.art["high_low_diff_net_1x"])
+
+    def test_gate_rejects_current_artifact_even_if_holm_true(self):
+        # Even with a hypothetical Holm pass (impossible to evaluate on this
+        # IMMATURE block), criteria (a) and (b) fail, so no confirmatory claim.
+        g = confirmatory_gate(
+            self.art["high_low_diff_net_1x"],
+            self.art["n_high"],
+            self.art["n_low"],
+            holm_significant=True,
+        )
+        self.assertFalse(g["economic_significance_met"])
+        self.assertFalse(g["state_count_floor_met"])
+        self.assertFalse(g["confirmatory_claim_allowed"])
+
+    def test_prereg_sec4_lists_all_three_criteria(self):
+        # The inference rule must name (a) magnitude, (b) Holm at alpha_k, and
+        # sec 4.2 must fold in the state-count floor; all must be present.
+        self.assertIn("|high_low_diff_net_1x|", self.prereg)
+        self.assertIn("Holm-significance", self.prereg)
+        self.assertIn("alpha_k", self.prereg)
+        self.assertIn("n_high >= 5 AND n_low >= 5", self.prereg)
+        self.assertIn("ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05", self.prereg)
+
+    def test_constants_match_prereg(self):
+        self.assertEqual(efb.ECONOMIC_SIGNIFICANCE_THRESHOLD, 0.05)
+        self.assertEqual(efb.MIN_STATE_FORMATIONS, 5)
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-07T06:43:01Z",
+  "recorded_utc": "2026-11-07T07:35:56Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 261,
-  "tests_ok": 261,
+  "tests_run": 273,
+  "tests_ok": 273,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "261/261/0",
-  "input_fingerprint": "b73420406b74486720de7f9ccdce18cb36f93306f35035638d84bf7435538110",
+  "claim": "273/273/0",
+  "input_fingerprint": "0dca8593cdfdbd657327f2cf880cc91478a06495448a00b242a8f98624e93f22",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -85,6 +85,7 @@
     "tests/test_forward_block_tail_influence.py",
     "tests/test_forward_block_temporal_stability.py",
     "tests/test_grid_validation.py",
+    "tests/test_h10_confirmatory_gate.py",
     "tests/test_h10_feasibility.py",
     "tests/test_h10_fresh_block_current.py",
     "tests/test_h10_fresh_block_hash_pinned.py",
@@ -105,5 +106,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 94
+  "input_file_count": 95
 }

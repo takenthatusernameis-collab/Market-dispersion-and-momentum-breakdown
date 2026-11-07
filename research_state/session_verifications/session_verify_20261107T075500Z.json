@@ -1,0 +1,23 @@
+{
+  "verification_id": "session_verify_20261107T075500Z",
+  "timestamp_utc": "2026-11-07T07:55:00Z",
+  "session_context": "Read prior durable handoff/task (2026-11-07T07:25Z) and completed it. Baseline re-verified at working-tree HEAD, then added a narrow pre-outcome confirmatory-gate contract test (tests/test_h10_confirmatory_gate.py) pinning H10 prereg sec 4/4.2 gate formula (magnitude threshold, state-count floor, Holm-pending must not allow) and the IMMATURE fresh block as not confirmable. No frozen artifacts modified. Refreshed test-claim snapshot via scripts/record_test_claim.py to bind the new inventory.",
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "prereg_audit": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "result": "Ran 273 tests in 36.076s / 36.330s (final)", "ok": 273, "skipped": 1, "failures": 0, "errors": 0},
+    "record_test_claim": {"command": "python3 scripts/record_test_claim.py", "claim": "273/273/0", "skipped": 1, "fingerprint": "0dca8593cdfdbd65", "files": 95},
+    "frozen_hash_canonical_h004v106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "frozen_hash_h10_fresh_immature": "9bdee66f737e492b3302a730af29ab9f811611e5a908ccf6002d08eab3e8bc5a",
+    "git_ls_files_tests_pycache_count": 0,
+    "november_2026_probe": "BLOCKED (cutoff_probe_20261105T205749Z.json, target_published=false); do NOT re-probe before 2026-11-30"
+  },
+  "environment": {"python": "3.12.3", "numpy": "2.5.4", "pandas": "3.1.1"},
+  "changes_this_session": [
+    "Added tests/test_h10_confirmatory_gate.py (12 tests): pure confirmatory-gate formula guard for H10 sec 4/4.2 (boundary/magnitude/sign/state-floor/Holm-false/Holm-pending/null-diff) and contract that the preserved IMMATURE H10 fresh block cannot satisfy the gate. No frozen artifacts or source logic modified.",
+    "Ran scripts/record_test_claim.py to refresh verified_test_claim snapshot/manifest for the new 273-test inventory (273/273/0, skipped=1)."
+  ],
+  "confirmatory_advance": false,
+  "k_advanced": false,
+  "frozen_artifacts_modified": false
+}
