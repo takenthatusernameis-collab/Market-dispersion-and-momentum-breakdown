@@ -1,0 +1,38 @@
+{
+  "session_utc": "2026-11-08T02:26:18Z",
+  "head": "893d20f3",
+  "prior_task_status": "COMPLETE (20261108T022523Z record reviewed)",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "frozen_artifact_config_diff": {"exit": 0, "output": ""},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "audit_prereg_and_h10_fresh_references": {"pass": true, "scanned": 13, "prereg": 9, "h10": 1, "forward_block": 1, "critical": 0, "errors": 0, "info": 0},
+    "audit_integrity_audit_references": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "info": 8}
+  },
+  "frozen_hashes_recomputed": {
+    "H004V106_canonical": {
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "n_formations": 608, "n_high": 61, "n_low": 90,
+      "high_low_diff_net_1x": 0.6165223953929935,
+      "block_sealed": true, "data_cutoff_utc": "2026-09-30T00:00:00Z"
+    },
+    "H10_fresh": {
+      "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "n_formations": 1, "n_high": 0, "n_low": 0,
+      "high_low_diff_net_1x": null,
+      "confirmatory_holm_significant": null,
+      "confirmatory_claim_allowed": false,
+      "block_sealed": true, "data_cutoff_utc": "2026-10-31T00:00:00Z"
+    }
+  },
+  "cutoff_gate": {
+    "november_2026": "BLOCKED",
+    "last_real_probe_utc": "2026-11-07T09:11:52Z",
+    "reprobe_forbidden_before": "2026-11-30",
+    "first_structurally_classifiable_cutoff_projected": "2026-11-30"
+  },
+  "bounded_delta_search": "none found (no reproducible audit/test defect, missing reference guard, or outcome-impacting drift)",
+  "source_artifact_config_change": false,
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE; k not advanced; no confirmatory claim",
+  "next_action": "On/after 2026-11-30 run python3 scripts/probe_cutoff_gate.py --probe-month 2026-11; if usable refresh required free public data and run fresh sealed block only into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with H10 prereg + k=1 alpha-spending."
+}
