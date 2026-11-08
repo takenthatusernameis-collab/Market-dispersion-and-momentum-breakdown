@@ -1,15 +1,14 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261108T095914Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261108T103642Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (2026-11-08T09:59:14Z)
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m pip install -r requirements.txt` already satisfied (numpy-2.5.4, pandas-3.1.1); `python3 -m unittest discover -s tests` **338 run / 338 OK / 0 failed / 1 skipped, EXIT=0** (confirmed with a bare redirect, not a pipe). `git status --short` clean pre-edit. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Both match `git show HEAD:` byte-for-byte (HEAD `edf9964d82a741c49aff47e77197f8b26f54f461`).
+### Verified state (2026-11-08T10:36:42Z)
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m pip install -q -r requirements.txt` then `python3 -m unittest discover -s tests` **338 run / 338 OK / 0 failed / 1 skipped, EXIT=0** (verified from full suite output). `git status --short` clean pre/post tests. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. HEAD `103c701c495777e9e3a1bb1704a6e2bb4bf84076`.
 - **H10 status:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. **No confirmatory claim.**
-- **Cutoff gate:** November 2026 BLOCKED. Last real probe `2026-11-07T09:11:52Z` (`run_manifest.json` `latest_november_2026_probe`, target_published=false, probe_exit=1, record exists on disk). **Re-probe forbidden before 2026-11-30.** `latest_archive_probe` remains UNBLOCKED (October 2026, record `cutoff_probe_20261105T103851Z.json`), but does not unblock H10.
-- **Reference audits:** `audit_prereg_and_h10_fresh_references.py` pass=True (scanned=13, critical=0, errors=0); `audit_integrity_audit_references.py` pass=True (scanned=14, critical=0, errors=0). Both re-run this session as pure-regeneration checks and their reports deleted after (no net delta).
+- **Cutoff gate:** November 2026 BLOCKED. Last real probe `2026-11-07T09:11:52Z` (`run_manifest.json` `latest_november_2026_probe`, target_published=false, probe_exit=1). **Re-probe forbidden before 2026-11-30.** `latest_archive_probe` remains UNBLOCKED (October 2026, record `cutoff_probe_20261105T103851Z.json`) but does not unblock H10.
 
-### Prior task disposition (20261108T095914Z)
-**COMPLETE.** Independently verified compileall, unittest (338/338/0 EXIT=0), clean git status, frozen hashes unchanged, both reference audits pass, and both quoted probe records exist on disk. Re-ran the bounded no-cost search; no code/audit delta found. No source/artifact/config change made.
+### Prior task disposition (20261108T103642Z)
+**COMPLETE.** Independently verified compileall, full unittest (338/338/0 EXIT=0), clean git status, and frozen hashes unchanged. Bounded no-cost search found no reproducible code/audit defect, missing reference guard, or outcome-impacting drift. No source/artifact/config change made. Test-suite `record_test_claim` repair messages observed only for temp-path fixtures; repo remained clean.
 
 ### Immediate next action (explicit, executable)
 1. **On/after 2026-11-30:** run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If usable, refresh required free public data; run the fresh sealed block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`). Use H10 prereg + k=1 alpha-spending. Record all outcomes, including confirmatory-gate fields.
