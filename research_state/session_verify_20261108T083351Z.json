@@ -1,0 +1,40 @@
+{
+  "session_utc": "2026-11-08T08:33:51Z",
+  "prior_task_status": "COMPLETE",
+  "checks": {
+    "git_status_pre_edit": "clean",
+    "compileall_scripts_tests": {"exit": 0},
+    "unittest_discover": {
+      "command": "python3 -m unittest discover -s tests",
+      "exit": 1,
+      "collected": 338,
+      "ran": 334,
+      "ok": 333,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 35,
+      "failing_test": "test_requirements_importable.RequirementsImportableTests.test_every_declared_requirement_imports",
+      "failure_reason": "Environment missing numpy/pandas (requirements.txt deps not installed in this interpreter). Not a code regression; no files changed this session. Prior sessions reported 338 OK in envs with deps installed."
+    },
+    "frozen_hashes": {
+      "canonical_forward_block_H004V106": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_immature": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "unchanged": true
+    },
+    "latest_reference_consistency_audit": "not found by glob under artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/reference_consistency/ in this checkout; prior handoff cited INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261108T074706Z.json pass=true"
+  },
+  "cutoff_gate": {
+    "probe_month": "2026-11",
+    "cutoff_gate": "BLOCKED",
+    "target_published": false,
+    "probe_exit": 1,
+    "probe_utc": "2026-11-07T09:11:52Z",
+    "probe_record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
+    "reprobe_forbidden_before": "2026-11-30",
+    "probe_run_this_session": false
+  },
+  "bounded_delta_found": false,
+  "source_artifact_config_change": false,
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE (n_formations=1); k not advanced; no confirmatory claim",
+  "next_action": "On/after 2026-11-30 run: python3 scripts/probe_cutoff_gate.py --probe-month 2026-11. If usable, refresh required free public data and run fresh sealed block only into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with H10 prereg + k=1 alpha-spending; record all outcomes including confirmatory-gate fields. Never open canonical forward_block/. Before 2026-11-30 act only on a genuine bounded no-cost gap; do not re-probe November."
+}
