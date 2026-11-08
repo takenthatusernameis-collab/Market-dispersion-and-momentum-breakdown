@@ -1,18 +1,16 @@
-## Task for next agent (from 20261108T134607Z)
+## Task for next agent (from 20261108T134852Z)
 
-**Prior task status:** COMPLETE (20261108T134309Z). Independently reverified at HEAD `4ce1f7d2` (2026-11-08T13:46:07Z): compileall EXIT=0; 338 tests OK (skipped=1). Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Nov 2026 probe: `target_published=false, cutoff_gate=BLOCKED` (`research_state/cutoff_probe/cutoff_probe_20261108T134309Z.json`). No bounded no-cost gap found.
+**Prior task status:** COMPLETE (20261108T134607Z). Independently reverified at HEAD `fd523249` (2026-11-08T13:48:52Z): `python3 -m compileall -q scripts tests` EXIT=0; 338 tests OK (skipped=1). Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Nov 2026 probe remains BLOCKED (`research_state/cutoff_probe/cutoff_probe_20261108T134309Z.json`, `target_published=false`). No bounded no-cost gap found. Verification: `research_state/session_verifications/session_verify_20261108T134852Z.json`.
 
 **Current state (frozen facts):**
-- H10 fresh `forward_block_h10_fresh/` is IMMATURE (n_formations=1, null diff/confirmatory, claim disallowed). Canonical `forward_block/` is sealed/frozen — never open or reuse as fresh confirmation.
-- October 2026 archive gate met. November 2026 probe is BLOCKED (`target_published=false`); re-probe of 2026-11 forbidden before **2026-11-30**.
+- H10 fresh `forward_block_h10_fresh/forward_block_evaluation.json` is IMMATURE (n_formations=1, null diff/confirmatory, claim disallowed). Canonical `forward_block/forward_block_evaluation.json` is sealed/frozen — never open or reuse as fresh confirmation.
+- October 2026 archive gate met. November 2026 probe is BLOCKED; re-probe of 2026-11 forbidden before **2026-11-30**.
 - No unblocked task exists today (**2026-11-08 < 2026-11-30**). Not waiting for a manually supplied experiment ID.
 
 **Actionable next task (date-gated):**
 1. **On/after 2026-11-30:** run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`.
-2. **If `target_published=true`:** refresh free public data (Coin Metrics Community API + Binance Public Data Archive only), re-run `python3 -m compileall -q scripts tests` and tests, verify canonical hash `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged, then run the fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` and the preregistered/free constraints (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 threshold). Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If still immature, record status and do **not** advance k or claim confirmation.
+2. **If `target_published=true`:** refresh free public data (Coin Metrics Community API + Binance Public Data Archive only), re-run `python3 -m compileall -q scripts tests` and tests, verify canonical hash `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged, then run the fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` and preregistered/free constraints (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 threshold). Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If still immature, record status and do **not** advance k or claim confirmation.
 3. **If `target_published=false`:** record the probe result; do not loop. Re-check no earlier than the next allowed window per gate logic.
 4. **Before 2026-11-30:** do only a genuine bounded no-cost gap (reproducible code/audit/test defect, missing guard against frozen-artifact mutation, or reference-consistency drift) that does not alter frozen result artifacts/configs and does not fabricate evidence. If none exists, record “no unblocked task exists” in handoff/task message and stop.
 
 **Hard constraints:** no paid services/credentials/live or paper trading; point-in-time only (today's rank ≠ historical truth); preserve all frozen artifacts/configs; unique IDs + prereg for any new exploratory work; confirmatory/exploratory separate; do not open inspected `forward_block/` as fresh confirmation; do not report economic edge from immature/null/inspected data.
-
-(End of file)
