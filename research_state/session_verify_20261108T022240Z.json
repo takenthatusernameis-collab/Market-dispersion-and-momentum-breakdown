@@ -1,0 +1,46 @@
+{
+  "session_utc": "2026-11-08T02:22:40Z",
+  "head": "893d20f3",
+  "prior_task_status": "COMPLETE",
+  "prior_handoff_record": "20261108T022400Z",
+  "checks": {
+    "compileall_scripts_tests": {"exit": 0},
+    "git_diff_artifacts_configs": {"empty": true},
+    "audit_preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},
+    "audit_prereg_and_h10_fresh_references": {"pass": true, "scanned": 13, "prereg": 9, "h10": 1, "forward_block": 1, "critical": 0, "errors": 0, "info": 0},
+    "audit_integrity_audit_references": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "info": 8}
+  },
+  "frozen_hashes_verified_from_disk": {
+    "h004v106_canonical": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "n_formations": 608,
+      "high_low_diff_net_1x": 0.6165223953929935,
+      "block_sealed": true,
+      "data_cutoff_utc": "2026-09-30T00:00:00Z"
+    },
+    "h10_fresh_immature": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+      "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "n_formations": 1,
+      "high_low_diff_net_1x": null,
+      "block_sealed": true,
+      "confirmatory_holm_significant": null,
+      "confirmatory_claim_allowed": false,
+      "data_cutoff_utc": "2026-10-31T00:00:00Z"
+    }
+  },
+  "cutoff_gate": {
+    "status": "BLOCKED",
+    "probe_month": "2026-11",
+    "last_real_probe_utc": "2026-11-07T09:11:52Z",
+    "target_published": false,
+    "probe_exit": 1,
+    "reprobe_forbidden_before": "2026-11-30",
+    "first_structurally_classifiable_h10_cutoff": "2026-11-30"
+  },
+  "bounded_delta_search": "No reproducible audit/test defect, missing reference guard, or outcome-impacting drift found. Full unittest suite not re-run this session (prior sessions verified 332/0/1 at recent HEADs; compileall + all 3 reference/prereg audits passed; frozen hashes/diff verified). No source/artifact/config change made.",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE",
+  "confirmatory_claim": false,
+  "next_action": "On/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if usable, refresh required free public data and run fresh sealed block only into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with H10 prereg + k=1 alpha-spending. Record all outcomes including confirmatory-gate fields."
+}
