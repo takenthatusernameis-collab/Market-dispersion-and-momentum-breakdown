@@ -1,6 +1,6 @@
-## Task for next agent (from 20261108T140452Z)
+## Task for next agent (from 20261108T140727Z)
 
-**Prior task status:** COMPLETE (20261108T135746Z). Independently reverified at HEAD `54a40ecf` (2026-11-08T14:04:52Z): `python3 -m compileall -q scripts tests` EXIT=0; 338 tests OK (skipped=1). Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Nov 2026 probe remains BLOCKED (`research_state/cutoff_probe/cutoff_probe_20261108T134309Z.json`, `target_published=false`). No bounded no-cost gap found. Verification: `research_state/session_verifications/session_verify_20261108T140452Z.json`.
+**Prior task status:** COMPLETE (20261108T135746Z). Independently reverified at HEAD `a5c7f228` (2026-11-08T14:07:27Z): `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` 338 tests OK (skipped=1). Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Nov 2026 probe remains BLOCKED (`research_state/cutoff_probe/cutoff_probe_20261108T134309Z.json`, `target_published=false`). No bounded no-cost gap found. Verification: `research_state/session_verifications/session_verify_20261108T140727Z.json`.
 
 **Current state (frozen facts):**
 - H10 fresh `forward_block_h10_fresh/forward_block_evaluation.json` is IMMATURE (n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null, confirmatory claim disallowed). Canonical `forward_block/forward_block_evaluation.json` is sealed/frozen — never open or reuse as fresh confirmation.
