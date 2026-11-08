@@ -1,6 +1,6 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261108T024400Z**, HEAD `7db06b67`), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261108T024425Z**, HEAD `8b192a95`), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
 ### Verified state (2026-11-08T02:44Z)
 - **Frozen hashes (recomputed from disk, unchanged):** H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (sealed, n_formations=608, `high_low_diff_net_1x=0.6165223953929935`, data_cutoff=2026-09-30T00:00:00Z); H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (n_formations=1, n_high=0, n_low=0, `high_low_diff_net_1x=null`, `confirmatory_holm_significant=null`, `confirmatory_claim_allowed=false`, block_sealed=true, data_cutoff=2026-10-31T00:00:00Z).
