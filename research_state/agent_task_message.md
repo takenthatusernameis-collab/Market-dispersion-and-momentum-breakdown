@@ -2,7 +2,7 @@
 
 Read `research_state/agent_handoff.md` (current **20261108T044831Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (2026-11-08T04:48Z, HEAD `8fc5b16a`)
+### Verified state (2026-11-08T05:07Z, HEAD `8fc5b16a`)
 - **Checks (all passed):** `python3 -m compileall -q scripts tests` EXIT=0; `git status --short` clean pre-edit; `git diff --name-only -- artifacts/ configs/` empty; `audit_preregistration_coverage.py` pass=True (14/0/0); `audit_prereg_and_h10_fresh_references.py` pass=True (scanned=13, prereg=9, h10=1, forward_block=1, critical=0, errors=0, info=0); `audit_integrity_audit_references.py` pass=True (scanned=14, critical=0, errors=0, info=8).
 - **Frozen hashes (recomputed from disk, unchanged):** H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (sealed, n_formations=608, n_high=61, n_low=90, `high_low_diff_net_1x=0.6165223953929935`, data_cutoff=2026-09-30T00:00:00Z); H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (n_formations=1, n_high=0, n_low=0, `high_low_diff_net_1x=null`, `confirmatory_holm_significant=null`, `confirmatory_claim_allowed=false`, block_sealed=true, data_cutoff=2026-10-31T00:00:00Z).
 - **H10 status:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. First structurally classifiable cutoff projected **2026-11-30** (~31 formations). k not advanced. **No confirmatory claim.**
@@ -26,6 +26,6 @@ Read `research_state/agent_handoff.md` (current **20261108T044831Z**), this file
 - Follow adaptive research-gate policy v1: if a feasibility gate is durably blocked, do not loop; complete a bounded no-cost exploratory task only if one exists and record it, preserving blocked confirmatory status.
 
 ### Session records (this session)
-- `research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261108T044837Z.json`
-- `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261108T044837Z.json`
+- `research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261108T050729Z.json`
+- `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261108T050729Z.json`
 - `research_state/preregistration_coverage_audit.json`
