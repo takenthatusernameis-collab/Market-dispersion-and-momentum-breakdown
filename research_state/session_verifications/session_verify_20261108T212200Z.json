@@ -1,0 +1,82 @@
+{
+ "session_utc": "2026-11-08T21:22:00Z",
+ "head": "350271a4",
+ "compileall_exit": 0,
+ "unittest": {
+  "total": 340,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "exit": 0
+ },
+ "state_consistency": {
+  "total": 16,
+  "failures": 0,
+  "errors": 0,
+  "exit": 0
+ },
+ "frozen_hashes": {
+  "forward_block_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "forward_block_h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "forward_block_h10_orphan": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+  "forward_block_h10_fresh_check_orphan": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8"
+ },
+ "frozen_hash_git_head_match": {
+  "forward_block_canonical": "YES",
+  "forward_block_h10_fresh": "YES",
+  "forward_block_h10_orphan": "YES",
+  "forward_block_h10_fresh_check_orphan": "YES"
+ },
+ "reference_audits": {
+  "prereg_and_h10_fresh": {
+   "pass": true,
+   "files_scanned": 13,
+   "prereg_files_scanned": 9,
+   "h10_json_files_scanned": 1,
+   "h10_variant_json_files_scanned": 2,
+   "forward_block_json_files_scanned": 1,
+   "critical": 0,
+   "errors": 0,
+   "info": 0,
+   "report": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261108T212216Z.json"
+  },
+  "integrity_audit_references": {
+   "pass": true,
+   "scanned": 14,
+   "critical": 0,
+   "errors": 0,
+   "info": 8,
+   "report": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261108T212316Z.json"
+  },
+  "preregistration_coverage": {
+   "pass": true,
+   "audits": 14,
+   "missing_prereq": 0,
+   "uncovered_prereq": 0,
+   "report": "research_state/preregistration_coverage_audit.json"
+  }
+ },
+ "november_probe": {
+  "latest": "cutoff_probe_20261108T194646Z.json",
+  "target_published": false,
+  "control_ok": true,
+  "archive_alive": true,
+  "gate_blocked": true,
+  "reprobe_forbidden_before": "2026-11-30"
+ },
+ "registry": {
+  "next_sequence_number": 22,
+  "hypotheses": 22,
+  "ids": "H1..H22"
+ },
+ "frontier": {
+  "candidate_page_cursor": 6347,
+  "candidates_verified": 220,
+  "candidates_blocked": 6127,
+  "candidates_discovered": [],
+  "rank_frontier_exhausted": true
+ },
+ "git_diff_non_pycache": "",
+ "bounded_delta": "none",
+ "status": "COMPLETE_REVERIFIED"
+}
