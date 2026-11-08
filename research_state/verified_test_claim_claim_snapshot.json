@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 1,
   "claim": "340/340/0",
-  "input_fingerprint": "1abaacd68906c8cf8d7ea1aff9c2c28fa4b2a5649cd463d43edfe1aa7a859249",
+  "input_fingerprint": "6fd2dc306d77844330dd2ac6b9dde621ae5906dfe062f353660c30200253efa0",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
