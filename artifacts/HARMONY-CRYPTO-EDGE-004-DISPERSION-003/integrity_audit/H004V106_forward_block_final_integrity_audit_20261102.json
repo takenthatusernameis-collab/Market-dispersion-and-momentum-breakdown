@@ -1,7 +1,7 @@
 {
   "all_recompute_match_within_1e9": true,
   "audit_id": "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_20261102",
-  "audit_utc": "2026-11-02T21:15:39Z",
+  "audit_utc": "2026-11-08T13:06:39Z",
   "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
   "audited_artifact_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
   "canonical_recomputed": {
@@ -565,17 +565,17 @@
         "recorded": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c"
       },
       "marketcap_panel.csv": {
-        "match": true,
+        "match": false,
         "missing_on_disk": false,
         "missing_recorded": false,
-        "on_disk": "9fb6daf65b2269fec6d06e6b4e8cfbb1b2b98a50ee103c342fe131fe2aa77af8",
+        "on_disk": "b531e679531116482aa5c438c398849c6e591a23580d901ce547b9b4ba060f92",
         "recorded": "9fb6daf65b2269fec6d06e6b4e8cfbb1b2b98a50ee103c342fe131fe2aa77af8"
       },
       "marketcap_panel_manifest.json": {
-        "match": true,
+        "match": false,
         "missing_on_disk": false,
         "missing_recorded": false,
-        "on_disk": "5df05b8c43c9d9d4dfd3fdf17048af583e5d21a413ad4e06bb5afe5de12dc8a0",
+        "on_disk": "f2678b55602a4eb608a273408c3808f8a07c810ff4594fed271ef40b72c2fd2f",
         "recorded": "5df05b8c43c9d9d4dfd3fdf17048af583e5d21a413ad4e06bb5afe5de12dc8a0"
       }
     },

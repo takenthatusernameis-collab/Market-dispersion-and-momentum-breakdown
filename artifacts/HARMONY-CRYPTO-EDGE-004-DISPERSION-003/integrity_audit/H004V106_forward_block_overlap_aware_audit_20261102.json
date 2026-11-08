@@ -1,7 +1,7 @@
 {
   "addendum_id": null,
   "audit_id": "H004V106_FORWARD_BLOCK_OVERLAP_AWARE_AUDIT_20261102",
-  "audit_utc": "2026-11-02T18:08:34Z",
+  "audit_utc": "2026-11-08T13:06:27Z",
   "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
   "audited_artifact_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
   "canonical_recomputed": {
