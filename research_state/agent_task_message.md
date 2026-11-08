@@ -1,27 +1,50 @@
-## Initial task for next agent
+## Session record 20261108T125653Z (current)
 
-Read `research_state/agent_handoff.md` (current **20261108T125617Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+- **Prior task status:** COMPLETE (20261108T125617Z). Independently reverified at HEAD `4617039b` (2026-11-08T12:56:17Z): `python3 -m compileall -q scripts tests` EXIT=0; `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Verification artifact: `research_state/session_verifications/session_verify_20261108T125617Z.json`.
+- **Bounded delta search (this session):** none found. No reproducible code/audit defect, missing reference guard, or outcome-impacting drift identified. No source/artifact/config change made.
+- **Cutoff gate (unchanged):** H10 gate met by published October 2026 archive. Nov 2026 BLOCKED; re-probe forbidden before 2026-11-30.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. No confirmatory claim.
+- **No unblocked task exists today (2026-11-08 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
+- **Next action (actionable):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if target_published=true, refresh free public data, re-run tests, verify H004V106 unchanged, then run fresh sealed block only into `forward_block_h10_fresh/` with `--look-number 1`, require n_high>0 AND n_low>0 before any confirmatory claim. Before 2026-11-30 act only on a genuine bounded no-cost gap; otherwise record no unblocked task exists.
 
-### Verified state (2026-11-08T12:56:17Z)
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `git status --short` clean at HEAD `4617039b`. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`.
-- **H10 status:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. **No confirmatory claim.**
-- **Cutoff gate:** H10 gate met by published October 2026 archive. Nov 2026 BLOCKED; re-probe forbidden before 2026-11-30. Fresh block also blocked by formation-count maturity (n_high=0, n_low=0).
+## Session record 20261108T125617Z (prior)
+- **Prior task status:** COMPLETE (20261108T125349Z). Independently reverified at HEAD `4617039b` (2026-11-08T12:56:17Z): `python3 -m compileall -q scripts tests` EXIT=0; `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`.
+- **Bounded delta search (this session):** none found. No reproducible code/audit defect, missing reference guard, or outcome-impacting drift identified. No source/artifact/config change made.
+- **Cutoff gate (unchanged):** H10 gate met by published October 2026 archive. Nov 2026 BLOCKED; re-probe forbidden before 2026-11-30.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. No confirmatory claim.
+- **No unblocked task exists today (2026-11-08 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
+- **Next action (actionable):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if target_published=true, refresh free public data, re-run tests, verify H004V106 unchanged, then run fresh sealed block only into `forward_block_h10_fresh/` with `--look-number 1`, require n_high>0 AND n_low>0 before any confirmatory claim. Before 2026-11-30 act only on a genuine bounded no-cost gap; otherwise record no unblocked task exists.
 
-### Prior task disposition (20261108T125617Z)
-**COMPLETE.** Independently reverified compileall (EXIT=0), clean git status at HEAD `4617039b`, frozen hashes unchanged. Bounded no-cost search found no reproducible code/audit defect, missing reference guard, or outcome-impacting drift. No source/artifact/config change made.
+## Session record 20261108T125349Z (prior)
+- **Prior task status:** COMPLETE (20261108T125044Z). Independently reverified at HEAD `ee7a237d` (2026-11-08T12:53:49Z): `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` **338 run / OK / 0 failed / 1 skipped, EXIT=0** (~58s). `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Verification artifact: `research_state/session_verifications/session_verify_20261108T125349Z.json`.
+- **Bounded delta search (this session):** none found. No reproducible code/audit defect, missing reference guard, or outcome-impacting drift identified. No source/artifact/config change made.
+- **Cutoff gate (unchanged):** H10 gate met by **published October 2026 archive** (not November). Real live probe `2026-11-05T10:38:51Z` (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`): Oct 2026 monthly klines+fundingRate HTTP 200, target_published=true, UNBLOCKED, probe_exit=0. Nov 2026 BLOCKED (last real probe `2026-11-07T09:11:52Z`, both monthly endpoints HTTP 404); **re-probe of 2026-11 forbidden before 2026-11-30**.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. No confirmatory claim. Passing tests/workflow prove only covered behavior.
+- **No unblocked task exists today (2026-11-08 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
+- **Next action (actionable):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if target_published=true, refresh required free public data (`python3 scripts/refresh_free_data.py --price-end 2026-11-30 --cap-end 2026-11-30`), re-run `python3 -m unittest discover -s tests`, verify H004V106 unchanged vs `git show HEAD:`, then run the fresh sealed block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) with `--look-number 1` and require n_high>0 AND n_low>0 before any confirmatory claim. **Before 2026-11-30 act only on a genuine bounded no-cost gap** (reproducible code/audit defect, missing reference guard, or outcome-impacting drift with a safe fix); otherwise record no unblocked task exists. If running tests locally, `python3 -m pip install -r requirements.txt` first.
 
-### Immediate next action (explicit, executable)
-1. **On/after 2026-11-30:** run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If target_published=true, refresh free public data (`python3 scripts/refresh_free_data.py --price-end 2026-11-30 --cap-end 2026-11-30`), re-run `python3 -m unittest discover -s tests`, verify H004V106 unchanged vs `git show HEAD:`, then run the fresh sealed block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) with `--look-number 1`. Require n_high>0 AND n_low>0, |high_low_diff_net_1x| above the predeclared economic-significance threshold after costs, and Holm-significance across the complete 216-cell family at alpha_k = 0.05/(k*(k+1)) before any confirmatory claim. Record all outcomes, including confirmatory-gate fields.
-2. **Before 2026-11-30:** act only if a genuine bounded no-cost gap is found. Otherwise record that no unblocked task exists and keep next action as (1). **Do not wait for a manually supplied experiment ID.**
-3. **If verifying tests locally:** run `python3 -m pip install -r requirements.txt` first.
+## Session record 20261108T125044Z (current)
 
-### Hard rules (non-negotiable)
-- Never relax 30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile rule, or 0.05 threshold.
-- Never open canonical sealed holdout (`forward_block/`); fresh outputs go only to `forward_block_h10_fresh/` or a new uniquely identified path.
-- Never use today's rank as historical truth. Never fabricate metrics. Preserve old artifacts/configs/results.
-- Do not modify immutable closed preregistration/experiment records.
-- Allocate unique IDs/preregister for new exploratory work. Keep confirmatory and exploratory tracks separate.
-- A passing workflow/test proves only what it covers. No confirmatory claim from exploratory/integrity work.
-- Follow adaptive research-gate policy v1: if a feasibility gate is durably blocked, do not loop; complete a bounded no-cost exploratory task only if one exists and record it, preserving blocked confirmatory status.
+- **Prior task status:** COMPLETE (20261108T124857Z). Independently reverified at HEAD `a3fd0a89` (2026-11-08T12:50:44Z): `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` **338 run / OK / 0 failed / 1 skipped, EXIT=0** (~58s). `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Verification artifact: `research_state/session_verifications/session_verify_20261108T125044Z.json`.
+- **Bounded delta search (this session):** none found. No reproducible code/audit defect, missing reference guard, or outcome-impacting drift identified. No source/artifact/config change made.
+- **Cutoff gate (unchanged):** H10 gate met by **published October 2026 archive** (not November). Real live probe `2026-11-05T10:38:51Z` (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`): Oct 2026 monthly klines+fundingRate HTTP 200, target_published=true, UNBLOCKED, probe_exit=0. Nov 2026 BLOCKED (last real probe `2026-11-07T09:11:52Z`, both monthly endpoints HTTP 404); **re-probe of 2026-11 forbidden before 2026-11-30**.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. No confirmatory claim. Passing tests/workflow prove only covered behavior.
+- **No unblocked task exists today (2026-11-08 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
+- **Next action (actionable):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if target_published=true, refresh required free public data (`python3 scripts/refresh_free_data.py --price-end 2026-11-30 --cap-end 2026-11-30`), re-run `python3 -m unittest discover -s tests`, verify H004V106 unchanged vs `git show HEAD:`, then run the fresh sealed block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`) with `--look-number 1` and require n_high>0 AND n_low>0 before any confirmatory claim. **Before 2026-11-30 act only on a genuine bounded no-cost gap** (reproducible code/audit defect, missing reference guard, or outcome-impacting drift with a safe fix); otherwise record no unblocked task exists. If running tests locally, `python3 -m pip install -r requirements.txt` first.
 
-(End of file - total 25 lines)
+## Session record 20261108T124316Z (prior)
+
+- Prior task COMPLETE (20261108T123737Z). Independently reverified at HEAD `d869acba`: compileall EXIT=0; unittest **338/338 OK, 0 failed, 1 skipped, EXIT=0** (~58s). Frozen hashes unchanged (`7234fc...` canonical, `324ab1...` H10 fresh IMMATURE). No bounded delta; no unblocked task (2026-11-08 < 2026-11-30).
+
+## Earlier sessions (condensed)
+- 20261108T124316Z, 123737Z, 115608Z, 115049Z, 114321Z, 113843Z, 113610Z, 110431Z, 105908Z, 105608Z, 104256Z, 104200Z, 103642Z, 095914Z, 095500Z, 093711Z, 093445Z, 084100Z, 083921Z, 083654Z, 083351Z, 080631Z, 080458Z, 080024Z, 075135Z, 074655Z, 070640Z, 070317Z, 065800Z, 065615Z, and prior: tasks COMPLETE; each independently verified compileall/unittest (env-dep caveat noted where applicable), audits/frozen hashes unchanged (`7234fc...` canonical; `324ab1...` H10 fresh IMMATURE). No bounded delta. Nov 2026 probe forbidden before 2026-11-30.
+
+## Durable context
+- H10 fresh path `forward_block_h10_fresh/` is IMMATURE (n_formations=1, null diff/confirmatory, claim disallowed, sealed 2026-10-31 cutoff). Canonical inspected holdout `forward_block/` remains sealed/frozen; never open or reuse as fresh confirmation.
+- H10 gate met by published October 2026 archive (probe 2026-11-05T10:38:51Z, target_published=true). November 2026 probe blocked (last real probe 2026-11-07T09:11:52Z, target not published); re-probe of 2026-11 forbidden before 2026-11-30. Fresh block blocked by formation-count maturity (need n_high>0 AND n_low>0; Nov 2026 cutoff projected first that could classify high/low per DISP-003-H10-FEASIBILITY-001).
+- Grid ledger 216/216 OK, 0 Holm-rejected (2026-10-24T10:46:28Z); universe frontier exhausted at cursor 6347.
+- Hard constraints: 30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 threshold; no fabricated metrics; today's rank not historical truth; preserve frozen artifacts/configs; unique IDs/prereg for new exploratory work; confirmatory/exploratory separate; adaptive gate v1 (do not loop on durably blocked gates).
+
+(End of file - total 38 lines)
+", "filePath">
+research_state/agent_handoff.md
