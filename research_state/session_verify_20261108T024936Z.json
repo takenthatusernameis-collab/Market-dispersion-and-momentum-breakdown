@@ -1,0 +1,41 @@
+{
+  "session_utc": "20261108T024936Z",
+  "prior_task": "COMPLETE (20261108T024858Z)",
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit": 0
+    },
+    "frozen_diff_empty": true,
+    "audit_preregistration_coverage": {
+      "pass": true,
+      "audits": 14,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0
+    },
+    "audit_prereg_and_h10_fresh_references": {
+      "pass": true,
+      "scanned": 13,
+      "prereg": 9,
+      "h10": 1,
+      "forward_block": 1,
+      "critical": 0,
+      "errors": 0,
+      "info": 0
+    },
+    "audit_integrity_audit_references": {
+      "pass": true,
+      "scanned": 14,
+      "critical": 0,
+      "errors": 0,
+      "info": 8
+    }
+  },
+  "frozen_hashes_recomputed": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "bounded_delta_found": false,
+  "no_unblocked_task_before": "2026-11-30",
+  "source_artifact_config_change": false
+}
