@@ -1,5 +1,13 @@
-## Session record 20261108T125349Z (current)
+## Session record 20261108T125617Z (current)
 
+- **Prior task status:** COMPLETE (20261108T125349Z). Independently reverified at HEAD `4617039b` (2026-11-08T12:56:17Z): `python3 -m compileall -q scripts tests` EXIT=0; `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`.
+- **Bounded delta search (this session):** none found. No reproducible code/audit defect, missing reference guard, or outcome-impacting drift identified. No source/artifact/config change made.
+- **Cutoff gate (unchanged):** H10 gate met by published October 2026 archive. Nov 2026 BLOCKED; re-probe forbidden before 2026-11-30.
+- **H10 status (unchanged):** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. No confirmatory claim.
+- **No unblocked task exists today (2026-11-08 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
+- **Next action (actionable):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if target_published=true, refresh free public data, re-run tests, verify H004V106 unchanged, then run fresh sealed block only into `forward_block_h10_fresh/` with `--look-number 1`, require n_high>0 AND n_low>0 before any confirmatory claim. Before 2026-11-30 act only on a genuine bounded no-cost gap; otherwise record no unblocked task exists.
+
+## Session record 20261108T125349Z (prior)
 - **Prior task status:** COMPLETE (20261108T125044Z). Independently reverified at HEAD `ee7a237d` (2026-11-08T12:53:49Z): `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` **338 run / OK / 0 failed / 1 skipped, EXIT=0** (~58s). `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Verification artifact: `research_state/session_verifications/session_verify_20261108T125349Z.json`.
 - **Bounded delta search (this session):** none found. No reproducible code/audit defect, missing reference guard, or outcome-impacting drift identified. No source/artifact/config change made.
 - **Cutoff gate (unchanged):** H10 gate met by **published October 2026 archive** (not November). Real live probe `2026-11-05T10:38:51Z` (`research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`): Oct 2026 monthly klines+fundingRate HTTP 200, target_published=true, UNBLOCKED, probe_exit=0. Nov 2026 BLOCKED (last real probe `2026-11-07T09:11:52Z`, both monthly endpoints HTTP 404); **re-probe of 2026-11 forbidden before 2026-11-30**.
