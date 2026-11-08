@@ -76,10 +76,42 @@ class PanelCoverageBoundaryTests(unittest.TestCase):
         self.assertIn("current_panel_date_end", self.frontier)
         self.assertIn("current_panel_date_start", self.frontier)
 
+    @staticmethod
+    def _day(ts_or_str) -> str:
+        """Normalise a panel boundary to a YYYY-MM-DD string.
+
+        The CoinMetrics cap panel stores ISO-8601 strings while the Binance
+        kline panels store millisecond epoch ints; both helpers return the
+        same type so the two boundaries can be compared. Slicing an int was
+        the bug that made every boundary assertion raise TypeError.
+        """
+        if isinstance(ts_or_str, int):
+            import datetime
+            return datetime.datetime.fromtimestamp(
+                ts_or_str / 1000, datetime.timezone.utc
+            ).strftime("%Y-%m-%d")
+        return ts_or_str[:10]
+
     def test_panel_date_end_matches_panel_csvs(self):
-        """The declared end must equal the latest observation in the panels."""
-        self.assertEqual(self.frontier["current_panel_date_end"], self.cm_last[:10])
-        self.assertEqual(self.frontier["current_panel_date_end"], self.k_last[:10])
+        """The declared end must equal the latest observation in the panels.
+
+        The binding input for the forward block is the Binance kline panels, so
+        the declared end is pinned to the kline last exactly. The CoinMetrics
+        cap panel is refreshed on an independent schedule and may extend
+        *ahead* of the klines (it reached 2026-11-03 while the kline panels end
+        2026-10-31); the guard therefore also asserts the declared end never
+        exceeds the cap panel, so a future refresh cannot forward-date the
+        boundary past a panel that actually exists. Demanding equality with
+        both panels assumed the two series always end on the same day, which
+        stopped being true once the cap panel was refreshed ahead of the
+        October 2026 Binance archive.
+        """
+        end = self._day(self.k_last)
+        self.assertEqual(self.frontier["current_panel_date_end"], end)
+        self.assertLessEqual(
+            self.frontier["current_panel_date_end"], self._day(self.cm_last),
+            msg="current_panel_date_end must not exceed the cap panel's last row",
+        )
 
     def test_panel_date_start_matches_panel_csvs(self):
         """The declared start must equal the earliest observation in the panels.
@@ -88,20 +120,21 @@ class PanelCoverageBoundaryTests(unittest.TestCase):
         replaced by 2023-01-01, which is the true first date of both the
         CoinMetrics cap panel and the Binance kline panels.
         """
-        self.assertEqual(self.frontier["current_panel_date_start"], self.cm_first[:10])
-        self.assertEqual(self.frontier["current_panel_date_start"], self.k_first[:10])
+        start = self._day(self.cm_first)
+        self.assertEqual(self.frontier["current_panel_date_start"], start)
+        self.assertEqual(self.frontier["current_panel_date_start"], self._day(self.k_first))
 
     def test_panel_start_is_not_before_any_panel_observation(self):
         """A start boundary earlier than every committed observation is the
         defect class this guard exists to catch (the stale 2010-07-18 value
         predated the panels by over 12 years)."""
         start = self.frontier["current_panel_date_start"]
-        self.assertGreaterEqual(start, self.cm_first[:10],
+        self.assertGreaterEqual(start, self._day(self.cm_first),
                                 msg=f"current_panel_date_start {start} predates the "
-                                    f"cap panel {self.cm_first[:10]}")
-        self.assertGreaterEqual(start, self.k_first[:10],
+                                    f"cap panel {self._day(self.cm_first)}")
+        self.assertGreaterEqual(start, self._day(self.k_first),
                                 msg=f"current_panel_date_start {start} predates the "
-                                    f"kline panels {self.k_first[:10]}")
+                                    f"kline panels {self._day(self.k_first)}")
 
     def test_panel_start_not_after_panel_end(self):
         self.assertLessEqual(
