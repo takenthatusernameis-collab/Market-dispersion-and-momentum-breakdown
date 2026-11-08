@@ -426,5 +426,74 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                 )
 
 
+    def test_orphan_h10_variant_dirs_are_never_promotable(self):
+            """The two git-tracked orphan H10 variant dirs must never be mistaken for
+            the frozen H10 fresh block.
+
+            Two throwaway directories sit next to the frozen H10 fresh block:
+            ``forward_block_h10/`` (n_formations 0, status BLOCKED, block_sealed null,
+            the very first attempt at a fresh block, which found no formations) and
+            ``forward_block_h10_fresh_check/`` (n_formations 1, block_sealed true,
+            but lacking the overlap_aware_uncertainty and confirmatory-gate sections
+            that the current evaluator emits). Both predate the current code path,
+            both are byte-identical to their committed blobs, and both were left
+            untouched on a preserve-all decision after several sessions flagged them
+            as "must never be promoted".
+
+            Nothing in the build previously enforced that: a future session could
+            re-point the handoff's "run the fresh block into ..." instruction at one
+            of these dirs, or quote one of their estimates as the H10 result, and
+            every existing guard would still pass (they pin the canonical block and
+            the frozen fresh block, not the orphans). That is the same
+            single-source-of-truth hazard the dangling-pointer guard exists for,
+            applied to the two dirs that carry plausible-looking but non-canonical
+            H10 artifacts.
+
+            This guard pins all three dirs so their roles cannot drift:
+              * forward_block_h10_fresh/ is the ONLY frozen H10 target -- it must
+                carry the additive sections and must not be confirmable;
+              * forward_block_h10/ and forward_block_h10_fresh_check/ must stay
+                byte-identical to their committed blobs and must never carry a
+                confirmatory_claim_allowed that is not None, i.e. they can never
+                be read as a decided block.
+            """
+            import subprocess
+            exp = ART / "forward_block_h10_fresh" / "forward_block_evaluation.json"
+            orphans = [
+                ART / "forward_block_h10" / "forward_block_evaluation.json",
+                ART / "forward_block_h10_fresh_check" / "forward_block_evaluation.json",
+            ]
+
+            # The frozen target must be present and must not be confirmable.
+            self.assertTrue(exp.exists(), "frozen H10 fresh block is missing")
+            frozen = _load(exp)
+            self.assertFalse(frozen.get("confirmatory_claim_allowed"),
+                             "frozen H10 fresh block must never be confirmable")
+
+            # Every orphan must be byte-identical to its committed blob and must not
+            # carry a confirmatory decision (None or absent), so it can never be
+            # read as a decided block.
+            for path in orphans:
+                with self.subTest(path=path.name):
+                    self.assertTrue(path.exists(), f"orphan variant dir missing: {path}")
+                    disk = path.read_bytes()
+                    git = subprocess.run(
+                        ["git", "show", f"HEAD:{path.relative_to(ROOT).as_posix()}"],
+                        cwd=ROOT, capture_output=True,
+                    )
+                    self.assertEqual(git.returncode, 0, msg=git.stderr.decode())
+                    self.assertEqual(disk, git.stdout,
+                                     f"{path.name} differs from its committed blob")
+                    orphan = _load(path)
+                    self.assertIsNone(
+                        orphan.get("confirmatory_claim_allowed"),
+                        f"{path.name} must not carry a confirmatory decision",
+                    )
+                    self.assertNotEqual(
+                        orphan.get("status"), "SUPPORTED_FOR_FURTHER_RESEARCH",
+                        f"{path.name} must never be labelled supported",
+                    )
+
+
 if __name__ == "__main__":
     unittest.main()
