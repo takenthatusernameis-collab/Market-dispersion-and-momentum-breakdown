@@ -1,0 +1,78 @@
+{
+  "session_id": "20261108T224430Z",
+  "timestamp": "2026-11-08T22:44:30Z",
+  "head_commit": "339d6e89",
+  "compileall_exit": 0,
+  "test_suite": {
+    "ran": 340,
+    "ok": 340,
+    "skipped": 1,
+    "failed": 0,
+    "duration_seconds": 40.743
+  },
+  "state_consistency": {
+    "ran": 16,
+    "ok": 16
+  },
+  "frozen_artifact_hashes": {
+    "canonical": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+      "working_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "git_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true
+    },
+    "h10_fresh": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+      "working_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "git_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "match": true
+    },
+    "orphan_h10": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10/forward_block_evaluation.json",
+      "working_hash": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+      "git_hash": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+      "match": true
+    },
+    "orphan_h10_fresh_check": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh_check/forward_block_evaluation.json",
+      "working_hash": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8",
+      "git_hash": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8",
+      "match": true
+    }
+  },
+  "cutoff_probe": {
+    "record_path": "research_state/cutoff_probe/cutoff_probe_20261108T223542Z.json",
+    "probe_month": "2026-11",
+    "target_published": false,
+    "cutoff_gate": "BLOCKED",
+    "reprobe_forbidden_before": "2026-11-30"
+  },
+  "reference_audits": {
+    "prereg_and_h10_fresh": {
+      "pass": true,
+      "scanned": 13,
+      "prereg": 9,
+      "h10": 1,
+      "forward_block": 1,
+      "critical": 0,
+      "errors": 0,
+      "info": 0
+    },
+    "integrity_audit": {
+      "pass": true,
+      "scanned": 14,
+      "critical": 0,
+      "errors": 0,
+      "info": 8
+    },
+    "preregistration_coverage": {
+      "pass": true,
+      "audits": 14,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0
+    }
+  },
+  "frozen_area_diff": "empty",
+  "source_changes": "session_verification_record_and_durable_state_only",
+  "bounded_delta_search": "no_actionable_gap"
+}
