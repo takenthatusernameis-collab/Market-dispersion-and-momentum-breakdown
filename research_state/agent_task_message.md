@@ -1,8 +1,8 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261108T001320Z**, HEAD `b16edcf7`), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261108T001801Z**, HEAD `713c4510`), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (2026-11-08T00:13Z recheck)
+### Verified state (2026-11-08T00:18Z)
 - **Frozen hashes (unchanged):** H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (sealed, n_formations=608); H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (n_formations=1, n_high=0, n_low=0, `high_low_diff_net_1x=null`, confirmatory gates `false`/immature).
 - **Checks (all passed):** `compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` **325 run, 0 failures, 1 skipped (OK, ~51.2s)**; `audit_preregistration_coverage.py` pass=True (14/0/0); `audit_prereg_and_h10_fresh_references.py` pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0; `audit_integrity_audit_references.py` pass=True scanned=14 critical=0 errors=0 info=8.
 - **Artifacts:** `git diff --name-only -- artifacts/ configs/` empty. Canonical `forward_block/` sealed/unchanged. H10 fresh carries prereg sec 4.2 confirmatory gates; outcome fields unchanged.
