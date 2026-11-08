@@ -1,0 +1,22 @@
+{
+  "session_utc": "2026-11-08T02:01:12Z",
+  "head": "af09254ca3fcfc2d77829eb3b1010d52c2783f5d",
+  "prior_task_status": "COMPLETE_20261108T011200Z",
+  "checks": {
+    "compileall_scripts_tests": "EXIT=0",
+    "unittest_discover": "332 run, 0 failures, 1 skipped (OK, ~51.5s)",
+    "audit_preregistration_coverage": "pass=True audits=14 missing_prereq=0 uncovered_prereq=0",
+    "audit_prereg_and_h10_fresh_references": "pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 h10_variant=2 critical=0 errors=0 info=0",
+    "audit_integrity_audit_references": "pass=True scanned=14 critical=0 errors=0 info=8",
+    "artifacts_configs_diff": "empty"
+  },
+  "frozen_hashes_verified": {
+    "h004v106_canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block_immature": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null, confirmatory_holm_significant=null, confirmatory_claim_allowed=false)",
+  "cutoff_gate": "November 2026 BLOCKED (last probe 2026-11-07T09:11:52Z, reprobe forbidden before 2026-11-30); classifiable cutoff projected 2026-11-30 (~31 formations)",
+  "bounded_delta_found": false,
+  "bounded_delta_note": "Searched for reproducible audit/test defects, stale unguarded pointers, and frontier/manifest drift with outcome impact. Frontier last_updated_utc (2026-11-06T12:27:02Z) is stale vs manifest but is non-blocking metadata previously noted; no repair made (unrequested durable-state edit with no outcome effect). No source/artifact/config change.",
+  "next_action": "On/after 2026-11-30: python3 scripts/probe_cutoff_gate.py --probe-month 2026-11; if usable, refresh required free public data and run fresh sealed block only into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with H10 prereg + k=1 alpha-spending, recording all outcomes including confirmatory-gate fields. Never touch forward_block/ or relax maturity/sample rules."
+}
