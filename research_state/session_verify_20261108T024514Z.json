@@ -1,0 +1,28 @@
+{
+  "bounded_delta_found": false,
+  "checks": {
+    "artifacts_configs_diff_count": 0,
+    "compileall_exit": 0,
+    "integrity_ref_critical": 0,
+    "integrity_ref_errors": 0,
+    "integrity_ref_pass": true,
+    "integrity_ref_scanned": 14,
+    "prereg_coverage_audits": 14,
+    "prereg_coverage_pass": true,
+    "prereg_h10_ref_critical": 0,
+    "prereg_h10_ref_errors": 0,
+    "prereg_h10_ref_pass": true,
+    "prereg_h10_ref_scanned": 13
+  },
+  "cutoff_gate": "November 2026 BLOCKED; reprobe forbidden before 2026-11-30",
+  "frozen_hashes": {
+    "H004V106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "H10_fresh_immature": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE",
+  "head": "ba53bb50",
+  "next_action": "On/after 2026-11-30 run python3 scripts/probe_cutoff_gate.py --probe-month 2026-11; if usable refresh free public data and run fresh sealed block only into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with H10 prereg + k=1 alpha-spending.",
+  "no_unblocked_task": true,
+  "prior_task": "COMPLETE (20261108T024425Z)",
+  "timestamp_utc": "20261108T024514Z"
+}
