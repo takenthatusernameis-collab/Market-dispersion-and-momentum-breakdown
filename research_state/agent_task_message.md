@@ -1,19 +1,19 @@
 ## Initial task for next agent
 
-Read `research_state/agent_handoff.md` (current **20261108T103642Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
+Read `research_state/agent_handoff.md` (current **20261108T104200Z**), this file, `AGENTS.md`, `docs/research_protocol.md`, `prompts/continuous_research_operating_contract_v1.md`. Verify state before acting.
 
-### Verified state (2026-11-08T10:36:42Z)
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m pip install -q -r requirements.txt` then `python3 -m unittest discover -s tests` **338 run / 338 OK / 0 failed / 1 skipped, EXIT=0** (verified from full suite output). `git status --short` clean pre/post tests. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. HEAD `103c701c495777e9e3a1bb1704a6e2bb4bf84076`.
+### Verified state (2026-11-08T10:42:00Z)
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m pip install -q -r requirements.txt` then `python3 -m unittest discover -s tests` **338 run / 338 OK / 0 failed / 1 skipped, EXIT=0**. `git status --short` clean. Frozen hashes unchanged: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. HEAD `6de84495a3a1800d9a40c03d290da8167dce408f`.
 - **H10 status:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1). k not advanced. **No confirmatory claim.**
-- **Cutoff gate:** November 2026 BLOCKED. Last real probe `2026-11-07T09:11:52Z` (`run_manifest.json` `latest_november_2026_probe`, target_published=false, probe_exit=1). **Re-probe forbidden before 2026-11-30.** `latest_archive_probe` remains UNBLOCKED (October 2026, record `cutoff_probe_20261105T103851Z.json`) but does not unblock H10.
+- **Cutoff gate:** November 2026 BLOCKED. Last real probe `2026-11-07T09:11:52Z`. **Re-probe forbidden before 2026-11-30.**
 
-### Prior task disposition (20261108T103642Z)
-**COMPLETE.** Independently verified compileall, full unittest (338/338/0 EXIT=0), clean git status, and frozen hashes unchanged. Bounded no-cost search found no reproducible code/audit defect, missing reference guard, or outcome-impacting drift. No source/artifact/config change made. Test-suite `record_test_claim` repair messages observed only for temp-path fixtures; repo remained clean.
+### Prior task disposition (20261108T104200Z)
+**COMPLETE.** Independently verified compileall, full unittest (338/338/0 EXIT=0), clean git status, and frozen hashes unchanged. Bounded no-cost search found no reproducible code/audit defect, missing reference guard, or outcome-impacting drift. No source/artifact/config change made.
 
 ### Immediate next action (explicit, executable)
 1. **On/after 2026-11-30:** run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If usable, refresh required free public data; run the fresh sealed block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`). Use H10 prereg + k=1 alpha-spending. Record all outcomes, including confirmatory-gate fields.
-2. **Before 2026-11-30:** act only if a genuine bounded no-cost gap is found (reproducible audit/test defect in code, missing reference guard, or outcome-impacting drift with a safe fix). Otherwise record that no unblocked task exists and keep next action as (1). **Do not wait for a manually supplied experiment ID.**
-3. **If verifying tests locally:** run `python3 -m pip install -r requirements.txt` first so `test_requirements_importable` reflects a dep-complete environment.
+2. **Before 2026-11-30:** act only if a genuine bounded no-cost gap is found. Otherwise record that no unblocked task exists and keep next action as (1). **Do not wait for a manually supplied experiment ID.**
+3. **If verifying tests locally:** run `python3 -m pip install -r requirements.txt` first.
 
 ### Hard rules (non-negotiable)
 - Never relax 30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile rule, or 0.05 threshold.
