@@ -280,6 +280,65 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         self.assertIsNone(block.get("block_sealing_rule"))
         self.assertIsNone(block.get("last_allowed_formation_date"))
 
+    def test_durable_state_has_no_dangling_session_verify_pointer(self):
+        """Every session_verify_*.json filename quoted by a durable-state control
+        file must exist on disk.
+
+        The durable handoff and task message each name the file that records the
+        most recent re-verification. A session once quoted
+        `session_verify_20261108T165629Z.json`, which did not exist anywhere in the
+        tree; the real record was `session_verify_20261108T165600Z.json`. The drift
+        survived several bounded-delta searches because every check compared
+        hashes and test counts, never file existence. This gate resolves every
+        quoted filename against the filesystem and fails the build on a dangling
+        pointer, so the durable state can never again carry a reference to a
+        verification record that was never written.
+
+        Only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`
+        are scanned: they are the two files whose whole purpose is to point the
+        next agent at the latest verification record, and they are the two that
+        carried the broken pointer. Session-verification files themselves are
+        also allowed to quote one another (a later record may summarise an
+        earlier one), so those are scanned too, but the scan is existence-only:
+        a record may legitimately note that a prior pointer was wrong, and that
+        note must not be treated as a new dangling reference.
+        """
+        import re
+
+        VERIFY_RE = re.compile(r"session_verify_2026\d{8}T\d{6}Z\.json")
+        # Phrases a verification record may use to name a filename that is
+        # deliberately known to be absent: a historical note about a pointer
+        # that was wrong, or a record that never existed. These are the only
+        # legitimate excuse for a quoted filename that is not on disk; any
+        # other quote must resolve.
+        ABSENCE_ANNOTATIONS = (
+            "file absent", "does not exist", "not found", "missing", "never existed",
+            "dangling", "does not exist anywhere", "annotated historical reference",
+            "claimed", "which does not exist", "file does not exist",
+        )
+        candidates = [
+            STATE / "agent_handoff.md",
+            STATE / "agent_task_message.md",
+        ]
+        candidates += sorted(STATE.glob("session_verifications/session_verify_*.json"))
+        for source in candidates:
+            text = source.read_text(encoding="utf-8")
+            for match in VERIFY_RE.findall(text):
+                with self.subTest(source=source.name, target=match):
+                    resolved = STATE / "session_verifications" / match
+                    if resolved.exists():
+                        continue
+                    # Find the nearest surrounding window and require an
+                    # explicit absence annotation; otherwise the quote is a
+                    # dangling pointer and the build must fail.
+                    idx = text.index(match)
+                    window = text[max(0, idx - 260): idx + len(match) + 40].lower()
+                    self.assertTrue(
+                        any(annotation in window for annotation in ABSENCE_ANNOTATIONS),
+                        f"{source.name} quotes {match}, which does not exist on disk, "
+                        f"near no absence annotation; context: {window!r}",
+                    )
+
     def test_audit_conclusions_match_registry_evidence_notes(self):
         """Each integrity audit's declared operative label must agree with
         the label recorded in the H8/H9 evidence notes of the hypothesis

@@ -1,0 +1,34 @@
+{
+  "session_utc": "2026-11-08T17:33:23Z",
+  "head": "113e5bf5",
+  "prior_task_status": "COMPLETE_REVERIFIED",
+  "compileall_exit": 0,
+  "unittest": {"ran": 338, "ok": true, "skipped": 1},
+  "frozen_hashes": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "cutoff_probe_latest": "research_state/cutoff_probe/cutoff_probe_20261108T153647Z.json",
+  "cutoff_probe_status": {"probe_month": "2026-11", "target_published": false, "archive_alive": true, "cutoff_gate": "BLOCKED"},
+  "reference_audits": {
+    "prereg_h10_fresh": {"pass": true, "scanned": 13, "critical": 0, "errors": 0},
+    "integrity_audit_refs": {"pass": true, "scanned": 14, "critical": 0, "errors": 0}
+  },
+  "bounded_delta_search": "reference_consistency_drift_found_and_repaired",
+  "delta_findings": [
+    {
+      "severity": "error",
+      "kind": "dangling_reference",
+      "detail": "agent_handoff.md:3 and agent_task_message.md:3 both cite research_state/session_verifications/session_verify_20261108T165629Z.json as the session verification record. That file does not exist anywhere in the tree (find + test -f). The actual record for the 2026-11-08T16:56:29Z re-verification is research_state/session_verifications/session_verify_20261108T165600Z.json (session_utc 2026-11-08T16:56:00Z, prior_task_status COMPLETE_REVERIFIED, head 15876148583c, 338 tests, frozen hashes matching). Prior session's 'bounded delta search: none_actionable / no reference-consistency drift' claim was therefore incorrect on this one pointer.",
+      "repair": "Corrected the two dangling pointers to session_verify_20261108T165600Z.json with an explicit correction note. Frozen-record correction only; no source, artifact or config changed."
+    },
+    {
+      "severity": "info",
+      "kind": "misplaced_file",
+      "detail": "Three session_verify_*.json files live directly in research_state/ rather than in research_state/session_verifications/: session_verify_20261108T001801Z.json, session_verify_20261108T002700Z.json, session_verify_20261108T083654Z.json. Their sibling records for the same timestamps are correctly in session_verifications/ (and are the ones referenced by the integrity-audit reference-consistency scan, which scans artifacts/.../integrity_audit, not research_state).",
+      "repair": "Left untouched. Not referenced by any active durable pointer; moving them now would be an unrequested structural change. Recorded here for the next session."
+    }
+  ],
+  "frozen_artifacts_modified": false,
+  "notes": "Date 2026-11-08 < 2026-11-30; Nov 2026 re-probe forbidden before 2026-11-30. H10 fresh IMMATURE; canonical forward_block sealed. One actionable bounded delta found and repaired (dangling session_verify pointer); no unblocked empirical task exists."
+}
