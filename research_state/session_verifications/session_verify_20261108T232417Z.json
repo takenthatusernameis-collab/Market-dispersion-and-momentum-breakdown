@@ -1,0 +1,35 @@
+{
+  "session_utc": "20261108T232417Z",
+  "head": "04f00fbdae160737e2504459fbd765d79d5ad29c",
+  "prior_task_status": "COMPLETE_REVERIFIED",
+  "prior_session": "20261108T224430Z",
+  "checks": {
+    "compileall": {"exit": 0},
+    "unittest_discover": {"ran": 340, "ok": true, "skipped": 1, "seconds": 40.926},
+    "test_state_consistency": {"ran": 16, "ok": true},
+    "frozen_hashes_vs_head": {
+      "canonical_forward_block": {"sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390", "match": true},
+      "forward_block_h10_fresh": {"sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f", "match": true, "status": "IMMATURE"},
+      "forward_block_h10_orphan": {"sha256": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c", "match": true},
+      "forward_block_h10_fresh_check_orphan": {"sha256": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8", "match": true}
+    },
+    "frozen_areas_diff_empty": true,
+    "cutoff_probe_2026_11": {
+      "record": "research_state/cutoff_probe/cutoff_probe_20261108T232421Z.json",
+      "target_published": false,
+      "control_month": "2026-09",
+      "control_ok": true,
+      "archive_alive": true,
+      "cutoff_gate": "BLOCKED",
+      "note": "Re-probe of 2026-11 forbidden before 2026-11-30; this session produced a probe record during verification — do not re-probe again before 2026-11-30."
+    },
+    "reference_audits": {
+      "prereg_and_h10_fresh": {"pass": true, "scanned": 13, "critical": 0, "errors": 0, "info": 0, "report": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261108T232511Z.json"},
+      "integrity_audit_refs": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "info": 8, "report": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261108T232511Z.json"},
+      "preregistration_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0}
+    }
+  },
+  "bounded_delta_search": "no actionable gap found",
+  "h10_status": "CANDIDATE_UNVALIDATED/EXPLORATORY_ONLY/EVALUATED_NULL_DIFF_IMMATURE",
+  "no_unblocked_task_exists": true
+}
