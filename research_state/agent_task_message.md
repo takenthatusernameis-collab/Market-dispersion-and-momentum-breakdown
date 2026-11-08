@@ -1,8 +1,10 @@
-## Task for next agent (from 20261108T174515Z)
+## Task for next agent (from 20261108T183331Z)
 
-**Prior task status:** COMPLETE_REVERIFIED (20261108T173912Z). Reverified at HEAD `113e5bf5` (2026-11-08T17:45:15Z): `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests` → **339 tests OK (skipped=1)**. Frozen hashes verified: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`. Nov 2026 probe BLOCKED (`cutoff_probe_20261108T153647Z.json`, `probe_month=2026-11`, `target_published=false`, `archive_alive=true`, `cutoff_gate=BLOCKED`). Reference audits pass (prereg/h10 scanned=13, integrity-audit scanned=14, prereg-coverage 14/0/0, critical=0, errors=0).
+**Prior task status:** COMPLETE_REVERIFIED (20261108T174515Z). Reverified at HEAD `de743489` (2026-11-08T18:33:31Z): `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests` → **339 tests OK (skipped=1)**. Frozen hashes verified from disk bytes AND against `git show HEAD:`: H004V106 canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; H10 fresh IMMATURE `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` — both byte-identical to HEAD. Nov 2026 probe BLOCKED (`cutoff_probe_20261108T153647Z.json`, `probe_month=2026-11`, `target_published=false`, `archive_alive=true`, `cutoff_gate=BLOCKED`). Reference audits re-run fresh: prereg/h10 scanned=13 (critical=0, errors=0), integrity-audit scanned=14 (critical=0, errors=0), prereg-coverage 14/0/0. Verified-test-claim snapshot matches current inventory (fingerprint `4f90d8e047d99c06...`, 103 files); manifest claim `339/339/0` and snapshot reference both resolve.
 
-**What was done this session (bounded no-cost gap check):** No actionable gap found. Re-ran compileall + full suite (339 OK, skipped=1) and the dangling-pointer regression guard (passes). Frozen hashes byte-identical to `git show HEAD:`. Durable pointers resolve; no reference-consistency drift. Orphan session_verify files (001801/002700/083654) remain untouched per prior decision. Frozen-record only; no source/artifact/config changed.
+**What was done this session (bounded no-cost gap check):** No actionable gap found. Re-ran compileall + full suite (339 OK, skipped=1) and the dangling-pointer regression guard (passes). Frozen hashes byte-identical to `git show HEAD:`. `git diff --stat -- artifacts/ configs/` empty. Verified-test-claim snapshot re-derived from on-disk inventory and matches. Durable pointers resolve; no reference-consistency drift. Orphan session_verify files (001801/002700/083654) remain untouched per prior decision. Frozen-record only; no source/artifact/config changed. Verification record: `research_state/session_verifications/session_verify_20261108T183331Z.json`.
+
+**Documentation note (not a defect):** the regression guard lives in class `tests.test_state_consistency.ResearchStateConsistencyTests` (NOT `TestStateConsistency`, which does not exist). Invoking it by the wrong class name raises an `AttributeError` and prints a spurious FAILED line. Use the real class name.
 
 **Current state (frozen facts):**
 - H10 fresh is IMMATURE (n_formations=1, n_high=0, n_low=0). Canonical `forward_block/` is sealed/frozen — never open/reuse as fresh confirmation.
@@ -19,4 +21,3 @@
 **Hard constraints:** no paid services/credentials/live or paper trading; point-in-time only (today's rank ≠ historical truth); preserve frozen artifacts/configs; unique IDs + prereg for any new exploratory work; do not report economic edge from immature/null/inspected data.
 
 (End of file)
-""" , filePath="research_state/agent_task_message.md")

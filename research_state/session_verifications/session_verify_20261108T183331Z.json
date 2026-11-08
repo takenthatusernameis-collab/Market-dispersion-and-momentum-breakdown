@@ -1,0 +1,51 @@
+{
+  "session_utc": "2026-11-08T18:33:31Z",
+  "head": "de743489",
+  "prior_task_status": "COMPLETE_REVERIFIED (20261108T174515Z handoff/task)",
+  "compileall_exit": 0,
+  "unittest": {"ran": 339, "ok": true, "skipped": 1},
+  "frozen_hashes": {
+    "h004v106_canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_immature": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "frozen_hashes_vs_git_head": {
+    "canonical_disk": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "canonical_git_head": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_disk": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "h10_fresh_git_head": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "match": true
+  },
+  "cutoff_probe_latest": "research_state/cutoff_probe/cutoff_probe_20261108T153647Z.json",
+  "cutoff_probe_status": {"probe_month": "2026-11", "target_published": false, "archive_alive": true, "cutoff_gate": "BLOCKED"},
+  "reference_audits": {
+    "prereg_h10_fresh": {"pass": true, "scanned": 13, "critical": 0, "errors": 0, "artifact": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261108T183331Z.json"},
+    "integrity_audit_refs": {"pass": true, "scanned": 14, "critical": 0, "errors": 0, "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261108T183331Z.json"},
+    "prereg_coverage": {"pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0}
+  },
+  "regression_guard": {
+    "test": "tests.test_state_consistency.ResearchStateConsistencyTests.test_durable_state_has_no_dangling_session_verify_pointer",
+    "result": "OK",
+    "note": "Ran with the correct unittest class name (ResearchStateConsistencyTests, not TestStateConsistency). The prior session's handoff did not record the class name, which caused a spurious FAILED/AttributeError on first invocation."
+  },
+  "verified_test_claim_snapshot": {
+    "claim": "339/339/0",
+    "fingerprint": "4f90d8e047d99c06232fa1f71e47d9c689db04cb591350bc6d8c5e3cd7dc0c4a",
+    "input_file_count": 103,
+    "matches_current_inventory": true,
+    "manifest_claim": "339/339/0",
+    "manifest_references_snapshot": true
+  },
+  "bounded_delta_search": "no_actionable_gap",
+  "delta_findings": [
+    {
+      "severity": "info",
+      "kind": "documentation_gap",
+      "detail": "The prior session's regression-guard invocation used the wrong unittest class name (tests.test_state_consistency.TestStateConsistency, which does not exist; the real class is ResearchStateConsistencyTests). This produced a FAILED line in the suite tail output that could be misread as a regression. The guard itself passes when invoked correctly.",
+      "repair": "Not a code defect; recorded here so the next session invokes the guard by its real class name. No source/test/artifact/config change."
+    }
+  ],
+  "frozen_artifacts_modified": false,
+  "git_diff_stat_artifacts_configs": "",
+  "orphan_session_verify_files": "session_verify_20261108T001801Z.json, session_verify_20261108T002700Z.json, session_verify_20261108T083654Z.json remain in research_state/ rather than research_state/session_verifications/; not referenced by any active durable pointer; left untouched per prior decision.",
+  "notes": "Date 2026-11-08 < 2026-11-30; Nov 2026 re-probe forbidden before 2026-11-30. H10 fresh IMMATURE (n_formations=1, n_high=0, n_low=0); canonical forward_block sealed/frozen, never opened. Bounded delta search found no actionable gap (only a documentation note about the guard's class name). No unblocked empirical task exists. Next action remains the date-gated 2026-11-30 cutoff re-probe."
+}
