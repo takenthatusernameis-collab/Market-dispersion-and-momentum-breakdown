@@ -1,5 +1,5 @@
 {
-  "session_id": "20261107T132715Z",
+  "session_id": "session_verify_20261107T132715Z",
   "status": "COMPLETE",
   "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
   "prereg_audit": {"command": "python3 scripts/audit_preregistration_coverage.py", "pass": true, "audits": 14, "missing_prereq": 0, "uncovered_prereq": 0},

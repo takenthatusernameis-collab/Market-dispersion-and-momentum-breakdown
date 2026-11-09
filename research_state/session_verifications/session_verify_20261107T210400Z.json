@@ -29,6 +29,6 @@
   "head": "415aeebe",
   "next_action": "On/after 2026-11-30 run probe_cutoff_gate --probe-month 2026-11; if usable, refresh required free public data and run fresh sealed block only into forward_block_h10_fresh/ per H10 prereg/alpha-spending (k=1), never forward_block/. Before 2026-11-30 only bounded no-cost non-empirical deltas with checks + frozen-hash verification.",
   "prior_task_status": "COMPLETE (20261107T205304Z reverification-only; no delta).",
-  "session_id": "20261107T210400Z",
+  "session_id": "session_verify_20261107T210400Z",
   "timestamp_utc": "2026-11-07T21:05:45Z"
 }

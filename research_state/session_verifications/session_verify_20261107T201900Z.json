@@ -21,6 +21,6 @@
   "head_at_verification": "3dbc85065fc7235d501535350112aea762a37ca9",
   "note": "Working-tree delta uncommitted at verification time; frozen forward-block artifacts/configs unchanged (git diff --name-only -- artifacts/ configs/ empty apart from the two preregistration .md drift repairs, which are frozen-record corrections, not artifact changes).",
   "prior_report_defect_closed": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261107T194102Z.json pass=false (3 ERROR) -> re-run pass=True critical=0 errors=0 info=0 scanned=10",
-  "session_id": "20261107T201900Z",
+  "session_id": "session_verify_20261107T201900Z",
   "session_utc": "2026-11-07T20:19:00Z"
 }

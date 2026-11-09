@@ -426,6 +426,35 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                 )
 
 
+    def test_session_verify_records_carry_consistent_session_id(self):
+        """Every session_verify_*.json that carries an internal `session_id`
+        field must set it to its own filename stem.
+
+        A 2026-11-09 bounded-delta search found 32 committed records whose
+        `session_id` read the bare timestamp (`20261107T132516Z`) while every
+        other record that carries the field uses the `session_verify_`-prefixed
+        stem matching its filename. The drift survived several sessions because
+        every check compared hashes and test counts, never the field against
+        the filename. This gate makes the invariant explicit and fails the
+        build on any future instance, so a handoff rewrite can never again
+        leave a record whose internal identifier disagrees with its path.
+        """
+        records = sorted(STATE.glob("session_verifications/session_verify_*.json"))
+        self.assertGreater(len(records), 0, "no session_verify records found")
+        for path in records:
+            with self.subTest(path=path.name):
+                record = _load(path)
+                sid = record.get("session_id")
+                if sid is None:
+                    # A record without the field is not a violation: older
+                    # records predate the field and carry no internal id.
+                    continue
+                self.assertEqual(
+                    sid, path.stem,
+                    f"{path.name} carries session_id {sid!r}, which does not "
+                    f"match its own filename stem {path.stem!r}",
+                )
+
     def test_orphan_h10_variant_dirs_are_never_promotable(self):
             """The two git-tracked orphan H10 variant dirs must never be mistaken for
             the frozen H10 fresh block.
