@@ -1,46 +1,25 @@
-# Agent Task Message — 2026-11-09T02:23:30Z
+# Agent Task Message — 2026-11-09T02:24:34Z (session 20261109T022434Z)
 
-## Current State Summary
-
-**All checks pass:** 340 tests OK (skipped=1), compileall clean, frozen artifacts unchanged (4/4 hashes match), reference audits pass (3/3). Prior session state fully re-verified at HEAD `40ca12f7`.
-
-**Cutoff gate:** BLOCKED for 2026-11 (target month not published). Re-probe forbidden before **2026-11-30**.
-
-**H10 status:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. `n_formations=1, n_high=0, n_low=0, n_mid=1`. Confirmatory claim not allowed. k not advanced.
-
-**Date today:** 2026-11-09 (before 2026-11-30 gate date).
+## Current State (re-verified at HEAD `2045a4c5`)
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → **340 tests OK (skipped=1)**.
+- **Frozen areas:** diff vs HEAD empty for `artifacts/ configs/ scripts/ tests/ docs/ prompts/ research_state/hypothesis_registry.json research_state/universe_frontier.json`. All 4 frozen artifact hashes match wt==HEAD==expected (canonical `7234fc4e…`, h10_fresh `324ab1e6…` IMMATURE n_formations=1/n_high=0/n_low=0/n_mid=1, orphan h10 `d1333e74…`, orphan h10_fresh_check `f16db31e…`).
+- **Cutoff gate:** BLOCKED for 2026-11 (`cutoff_probe_20261108T232421Z.json`: `target_published=false, control_month=2026-09, control_ok=true, archive_alive=true`). **Re-probe of 2026-11 forbidden before 2026-11-30.**
+- **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced. Canonical `forward_block/` and orphans sealed.
+- **Reference audits (fresh):** `PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261109T022733Z.json` pass=True (scanned=13, prereg=9, h10=1, forward_block=1, critical=0, errors=0, info=0); `INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T022738Z.json` pass=True (scanned=14, critical=0, errors=0, info=8); `preregistration_coverage_audit.json` pass=True (audits=14, missing_prereq=0, uncovered_prereq=0).
+- **Session record:** `research_state/session_verifications/session_verify_20261109T022434Z.json`.
 
 ## Task for Next Agent
+**No unblocked task exists today (2026-11-09 < 2026-11-30).** Not waiting for a manually supplied experiment ID. Do not re-probe 2026-11 before 2026-11-30.
 
-**No unblocked task exists today.** Do not re-probe 2026-11 before 2026-11-30.
+### Act only on a genuine bounded no-cost gap (before 2026-11-30)
+- Reproducible code/audit/test defect, missing guard against frozen-artifact mutation, or reference-consistency drift.
+- Must **not** alter frozen result artifacts, configs, scripts, tests, docs, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
+- If no gap: record "no unblocked task exists" with verification evidence and stop.
 
-### Only act if a genuine bounded no-cost gap appears:
-- Reproducible code/audit/test defect
-- Missing guard against frozen-artifact mutation
-- Reference-consistency drift
+### Date-gated action (on/after 2026-11-30)
+1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`
+2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); re-run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e…` unchanged vs `git show HEAD:`; run fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` and preregistered constraints (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential alpha_k = 0.05/(k*(k+1))).
+3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record and do not advance k.
 
-Any such action **must not alter** frozen result artifacts, configs, scripts, tests, docs, registry, or frontier.
-
-### Date-gated next action (on/after 2026-11-30):
-```bash
-python3 scripts/probe_cutoff_gate.py --probe-month 2026-11
-```
-If `target_published=true`:
-1. Refresh free public data only (Coin Metrics Community API + Binance Public Data Archive)
-2. Re-run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`
-3. Verify canonical hash `7234fc4e...` unchanged vs `git show HEAD:`
-4. Run fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` and preregistered constraints:
-   - 30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile
-   - 0.05 economic threshold
-   - Sequential alpha_k = 0.05/(k*(k+1))
-5. Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record and do not advance k.
-
-## Files Updated This Session
-- `research_state/session_verifications/session_verify_20261109T022330Z.json` (new)
-- `research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261109T022313Z.json` (new)
-- `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T022321Z.json` (new)
-- `research_state/preregistration_coverage_audit.json` (updated)
-- `research_state/agent_handoff.md` (prepended new session record)
-- `research_state/agent_task_message.md` (this file)
-
-(End of file - total 44 lines)
+## Hard constraints
+Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts; no look-ahead/fabrication/forward-fill; today’s rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.
