@@ -1,0 +1,31 @@
+{
+  "session_id": "session_verify_20261109T053720Z",
+  "timestamp_utc": "20261109T054037Z",
+  "head_commit": "b43f10e8",
+  "working_tree_clean": true,
+  "compileall_exit": 0,
+  "unittest_result": "341 tests OK (skipped=1)",
+  "frozen_artifact_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "forward_block_h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "orphan_forward_block_h10": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+    "orphan_forward_block_h10_fresh_check": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8"
+  },
+  "cutoff_probe": {
+    "probe_file": "cutoff_probe_20261108T232421Z.json",
+    "target_published": false,
+    "probe_month": "2026-11",
+    "cutoff_gate": "BLOCKED",
+    "reprobe_forbidden_before": "2026-11-30"
+  },
+  "h10_status": {
+    "status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false
+  },
+  "bounded_delta_search": "no actionable gap found",
+  "frozen_areas_changed": false
+}
