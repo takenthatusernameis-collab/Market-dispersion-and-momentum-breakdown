@@ -1,0 +1,10 @@
+{
+  "session_id": "20261109T105348Z",
+  "head": "41059de956fd832e52d563060ad07ea2e10ec7fa",
+  "compileall_exit": 0,
+  "unittest_result": "OK",
+  "unittest_output_tail": "d\": true,\n  \"cutoff_gate\": \"BLOCKED\",\n  \"record\": null\n}\n{\n  \"probe_month\": \"2026-10\",\n  \"target_published\": true,\n  \"control_month\": \"2026-09\",\n  \"control_ok\": true,\n  \"archive_alive\": true,\n  \"gate_met_by_month_end\": true,\n  \"cutoff_gate\": \"UNBLOCKED\",\n  \"record\": null\n}\n[record_test_claim] repaired drifted manifest claim '1/1/0' -> '9/9/0' from research_state/_tmp_rtc_test2/s.json\n[record_test_claim] repaired drifted manifest claim '1/1/0' -> '8/8/0' from research_state/_tmp_rtc_test3/s.json\n",
+  "integrity_audit_pass": true,
+  "integrity_audit_output": "[integrity-audit-ref] pass=True scanned=14 critical=0 errors=0 info=8\n[integrity-audit-ref] wrote research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T105438Z.json",
+  "working_tree_clean": false
+}
