@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-09T13:16:11Z (session 20261109T131611Z)
+# Agent Task Message — 2026-11-09T13:45:00Z (session 20261109T134500Z)
 
-## Current State (verified at HEAD `12cf7fb3`, 2026-11-09)
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → **342 tests OK (skipped=1)** (50.704s). Integrity audit: `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T131611Z.json` → `pass=True scanned=14 critical=0 errors=0 info=8`.
-- **Frozen integrity:** All 4 frozen hashes verified vs expected and `git show HEAD:`: canonical `7234fc4e...5390`, h10_fresh `324ab1e6...f18f` (IMMATURE n_formations=1/n_high=0/n_low=0/n_mid=1/confirmatory_claim_allowed=false), orphan h10 `d1333e74...b1f4c`, orphan h10_fresh_check `f16db31e...15d8`. No frozen areas changed.
-- **Cutoff gate:** BLOCKED for 2026-11 (`research_state/cutoff_probe/cutoff_probe_20261108T232421Z.json`: `target_published=false, cutoff_gate=BLOCKED, probe_utc=2026-11-08T23:24:21Z, gate_date_required=2026-10-29`). **Re-probe of 2026-11 forbidden before 2026-11-30.**
+## Current State (verified at HEAD `abb56151`, 2026-11-09)
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → **342 tests OK (skipped=1)**. Integrity audit: `scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8`.
+- **Frozen integrity:** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...f18f` (IMMATURE n_formations=1/n_high=0/n_low=0/n_mid=1/confirmatory_claim_allowed=false), orphan h10 `d1333e74...b1f4c`, orphan h10_fresh_check `f16db31e...15d8` — verified consistent (audit pass); no frozen artifacts/configs/scripts/tests/docs/prompts/registry/frontier changed.
+- **Cutoff gate (latest tracked probe):** `research_state/cutoff_probe/cutoff_probe_20261109T123310Z.json` (probe_utc 2026-11-09T12:33:10Z) → `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Re-probe of 2026-11 forbidden before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced. Canonical `forward_block/` and orphans sealed.
 - **Bounded delta search:** no actionable gap found.
 
@@ -12,8 +12,8 @@
 
 ### Act only on a genuine bounded no-cost gap (before 2026-11-30)
 - Reproducible code/audit/test defect, missing guard against frozen-artifact mutation, or reference-consistency drift.
-- Must **not** alter frozen result artifacts, configs, scripts, tests, docs, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
-- If no gap: record "no unblocked task exists" with verification evidence (compileall exit, unittest result, frozen hash checks, probe state) and stop.
+- Must **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
+- If no gap: record "no unblocked task exists" with verification evidence (compileall exit, unittest result, frozen hash/integrity-audit result, latest probe state) and stop.
 
 ### Date-gated action (on/after 2026-11-30)
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`
