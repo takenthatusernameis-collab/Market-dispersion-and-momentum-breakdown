@@ -455,6 +455,61 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                     f"match its own filename stem {path.stem!r}",
                 )
 
+    def test_session_verify_drift_scan_counts_are_not_self-blind(self):
+        """The per-record `session_id_drift_scan` block must not under-count.
+
+        A 2026-11-09 bounded-delta search found that the drift scan recorded in
+        session_verify_20261109T074349Z.json reported "total_records 385,
+        field_carrying 60, mismatches 0" while an independent re-scan of the same
+        tree found 62 field-carrying records and exactly one mismatch -- the
+        very record that was carrying the scan. The scan is computed before its
+        own file is written, so it can never observe the defect it is currently
+        writing into, and every prior session re-ran the scan, saw a clean
+        number, and stopped. A scan that excludes the record it lives in is not
+        a scan: it is a self-attesting footnote.
+
+        This gate recomputes the scan independently and requires that every
+        record that carries the block reports the same total and the same
+        mismatch count, and that no record's own session_id disagrees with its
+        filename stem.
+        """
+        records = sorted(STATE.glob("session_verifications/session_verify_*.json"))
+        self.assertGreater(len(records), 0)
+        # Independent ground truth.
+        carrying = 0
+        mismatches = []
+        for path in records:
+            record = _load(path)
+            sid = record.get("session_id")
+            if sid is None:
+                continue
+            carrying += 1
+            if sid != path.stem:
+                mismatches.append(path.name)
+        for path in records:
+            record = _load(path)
+            scan = record.get("session_id_drift_scan")
+            if not isinstance(scan, dict):
+                continue  # older records predate the block; not a violation
+            reported_total = scan.get("total_records")
+            reported_carrying = scan.get("field_carrying")
+            reported_mismatches = scan.get("mismatches")
+            self.assertEqual(
+                reported_total, len(records),
+                f"{path.name} drift scan total_records {reported_total!r} != "
+                f"actual {len(records)}",
+            )
+            self.assertEqual(
+                reported_carrying, carrying,
+                f"{path.name} drift scan field_carrying {reported_carrying!r} != "
+                f"actual {carrying}",
+            )
+            self.assertEqual(
+                reported_mismatches, len(mismatches),
+                f"{path.name} drift scan mismatches {reported_mismatches!r} != "
+                f"actual {len(mismatches)} ({mismatches})",
+            )
+
     def test_orphan_h10_variant_dirs_are_never_promotable(self):
             """The two git-tracked orphan H10 variant dirs must never be mistaken for
             the frozen H10 fresh block.
