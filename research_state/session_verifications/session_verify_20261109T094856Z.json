@@ -1,0 +1,36 @@
+{
+  "session_id": "session_verify_20261109T094856Z",
+  "timestamp_utc": "2026-11-09T09:48:56Z",
+  "head_commit": "5ad3b25254e4b3cde16d1787acbf80eb3c7dd957",
+  "compileall_exit": 0,
+  "unittest_result": "342 tests OK (skipped=1)",
+  "unittest_duration_seconds": 49.761,
+  "integrity_audit": {
+    "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T094856Z.json",
+    "pass": true,
+    "scanned": 14,
+    "critical": 0,
+    "errors": 0,
+    "frozen_hashes_match": true,
+    "canonical_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "orphan_h10_hash": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+    "orphan_h10_fresh_check_hash": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8"
+  },
+  "session_id_drift_scan": {
+    "total_records": 387,
+    "field_carrying": 62,
+    "mismatches": 0
+  },
+  "cutoff_gate": {
+    "probe_artifact": "research_state/cutoff_probe/cutoff_probe_20261108T232421Z.json",
+    "target_published": false,
+    "probe_month": "2026-11",
+    "cutoff_gate": "BLOCKED",
+    "reprobe_forbidden_before": "2026-11-30"
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE",
+  "k_advanced": false,
+  "no_unblocked_task": true,
+  "next_action_date_gated": "2026-11-30"
+}

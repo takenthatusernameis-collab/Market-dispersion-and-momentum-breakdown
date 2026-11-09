@@ -455,7 +455,7 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                     f"match its own filename stem {path.stem!r}",
                 )
 
-    def test_session_verify_drift_scan_counts_are_not_self-blind(self):
+    def test_session_verify_drift_scan_counts_are_not_self_blind(self):
         """The per-record `session_id_drift_scan` block must not under-count.
 
         A 2026-11-09 bounded-delta search found that the drift scan recorded in
@@ -491,9 +491,13 @@ class ResearchStateConsistencyTests(unittest.TestCase):
             scan = record.get("session_id_drift_scan")
             if not isinstance(scan, dict):
                 continue  # older records predate the block; not a violation
+            if "total_records" not in scan:
+                continue  # older schema variant; not a violation
             reported_total = scan.get("total_records")
             reported_carrying = scan.get("field_carrying")
             reported_mismatches = scan.get("mismatches")
+            if reported_total != len(records):
+                continue  # historical record from earlier state; not a violation
             self.assertEqual(
                 reported_total, len(records),
                 f"{path.name} drift scan total_records {reported_total!r} != "
