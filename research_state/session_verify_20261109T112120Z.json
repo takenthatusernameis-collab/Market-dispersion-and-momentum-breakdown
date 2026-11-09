@@ -1,0 +1,57 @@
+{
+  "session_id": "20261109T112120Z",
+  "timestamp_utc": "2026-11-09T11:21:20Z",
+  "git_head": "bb8b129c",
+  "compileall_exit_code": 0,
+  "unittest_result": {
+    "tests_run": 342,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "duration_seconds": 50.532,
+    "status": "OK"
+  },
+  "integrity_audit": {
+    "audit_file": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T112248Z.json",
+    "pass": true,
+    "scanned": 14,
+    "critical": 0,
+    "errors": 0,
+    "frozen_hashes_verified": [
+      {
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+        "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "matches_frozen": true,
+        "matches_git_head": true
+      },
+      {
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+        "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "matches_frozen": true,
+        "matches_git_head": true
+      }
+    ],
+    "orphan_hashes_verified": [
+      {
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/archive_defective_momentum_20261024/forward_block_evaluation.json",
+        "sha256": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c"
+      },
+      {
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/archive_defective_momentum_20261024/forward_block_check/forward_block_evaluation.json",
+        "sha256": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8"
+      }
+    ]
+  },
+  "cutoff_gate": {
+    "probe_file": "research_state/cutoff_probe/cutoff_probe_20261108T232421Z.json",
+    "target_published": false,
+    "cutoff_gate": "BLOCKED",
+    "probe_utc": "2026-11-08T23:24:21Z",
+    "gate_date_required": "2026-10-29",
+    "reprobe_forbidden_before": "2026-11-30"
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE",
+  "frozen_areas_changed": false,
+  "bounded_delta_search": "no actionable gap found",
+  "verification_status": "COMPLETE_REVERIFIED"
+}
