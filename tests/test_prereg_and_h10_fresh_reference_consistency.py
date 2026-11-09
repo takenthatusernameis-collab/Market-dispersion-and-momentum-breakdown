@@ -50,8 +50,9 @@ PROSE = "derived from latest fully closed UTC daily Binance kline candle (or --d
 class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.first = mod.run_audit()
-        cls.second = mod.run_audit()
+        fixed_ts = "2026-11-09T00:00:00Z"
+        cls.first = mod.run_audit(timestamp_utc=fixed_ts)
+        cls.second = mod.run_audit(timestamp_utc=fixed_ts)
 
     def test_script_is_importable_and_deterministic(self):
         self.assertEqual(self.first, self.second)

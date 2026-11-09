@@ -234,6 +234,7 @@ def run_audit(
     forward_block_dir: Path | None = None,
     frozen_prereg_dirs: list[Path] | None = None,
     include_h10_variants: bool = True,
+    timestamp_utc: str | None = None,
 ) -> dict:
     prereg_dir = prereg_dir or PREREG_DIR
     h10_dir = h10_dir or H10_DIR
@@ -288,9 +289,11 @@ def run_audit(
             critical.append(f"FROZEN_DRIFT:{rel}")
         if git_head_drift:
             critical.append(f"GIT_HEAD_DRIFT:{rel}")
+    if timestamp_utc is None:
+        timestamp_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     return {
         "audit_id": "PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY",
-        "timestamp_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "timestamp_utc": timestamp_utc,
         "prereg_dir": str(prereg_dir.relative_to(ROOT)) if prereg_dir.is_relative_to(ROOT) else str(prereg_dir),
         "h10_fresh_dir": str(h10_dir.relative_to(ROOT)) if h10_dir.is_relative_to(ROOT) else str(h10_dir),
         "forward_block_dir": str((forward_block_dir or FORWARD_BLOCK_DIR).relative_to(ROOT)) if (forward_block_dir or FORWARD_BLOCK_DIR).is_relative_to(ROOT) else str(forward_block_dir),
