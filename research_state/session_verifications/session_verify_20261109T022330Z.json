@@ -1,0 +1,98 @@
+{
+  "session_id": "20261109T022330Z",
+  "timestamp_utc": "2026-11-09T02:23:30Z",
+  "git_head": "40ca12f7",
+  "compileall_exit_code": 0,
+  "test_suite": {
+    "ran": 340,
+    "passed": 340,
+    "skipped": 1,
+    "failed": 0,
+    "duration_seconds": 58.634
+  },
+  "frozen_areas_diff_empty": true,
+  "frozen_artifact_hashes": {
+    "canonical_forward_block": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "disk": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "git_head": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true
+    },
+    "forward_block_h10_fresh": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+      "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "disk": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "git_head": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "match": true
+    },
+    "forward_block_h10_orphan": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10/forward_block_evaluation.json",
+      "expected": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+      "disk": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+      "git_head": "d1333e74bbb5997a71699a952cc443b3548c707703b320f37100fdf14a8b1f4c",
+      "match": true
+    },
+    "forward_block_h10_fresh_check": {
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh_check/forward_block_evaluation.json",
+      "expected": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8",
+      "disk": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8",
+      "git_head": "f16db31e3d54b645df30f7a776f44ec0d805fea31908bae618025afba34215d8",
+      "match": true
+    }
+  },
+  "reference_audits": {
+    "prereg_and_h10_fresh": {
+      "file": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261109T022313Z.json",
+      "pass": true,
+      "scanned": 14,
+      "prereg": 9,
+      "frozen_prereg": 1,
+      "h10": 1,
+      "forward_block": 1,
+      "critical": 0,
+      "errors": 0,
+      "info": 1
+    },
+    "integrity_audit": {
+      "file": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T022321Z.json",
+      "pass": true,
+      "scanned": 14,
+      "critical": 0,
+      "errors": 0,
+      "info": 8
+    },
+    "preregistration_coverage": {
+      "file": "research_state/preregistration_coverage_audit.json",
+      "pass": true,
+      "audits": 14,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0
+    }
+  },
+  "cutoff_probe_latest": {
+    "file": "research_state/cutoff_probe/cutoff_probe_20261108T232421Z.json",
+    "target_published": false,
+    "control_month": "2026-09",
+    "control_ok": true,
+    "archive_alive": true,
+    "gate_date_required": "2026-10-29",
+    "gate_met_by_month_end": true,
+    "cutoff_gate": "BLOCKED",
+    "reprobe_forbidden_before": "2026-11-30"
+  },
+  "h10_status": {
+    "status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false,
+    "k_advanced": false
+  },
+  "bounded_delta_search": {
+    "actionable_gap_found": false,
+    "description": "No reproducible code/audit/test defect, no missing frozen-artifact mutation guard, no reference-consistency drift found. All checks pass."
+  },
+  "session_outcome": "COMPLETE_REVERIFIED"
+}
