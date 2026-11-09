@@ -1,7 +1,7 @@
-# Agent Task Message — 2026-11-09T13:50:00Z (session 20261109T135000Z)
+# Agent Task Message — 2026-11-09T13:54:00Z (session 20261109T135400Z)
 
 ## Current State (verified at HEAD `abb56151`, 2026-11-09)
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → **342 tests OK (skipped=1)**. Integrity audit: `scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8`.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → **342 tests OK (skipped=1)** (50.623s). Integrity audit: `scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (wrote `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261109T135423Z.json`, untracked).
 - **Frozen integrity:** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...f18f` (IMMATURE n_formations=1/n_high=0/n_low=0/n_mid=1/confirmatory_claim_allowed=false), orphan h10 `d1333e74...b1f4c`, orphan h10_fresh_check `f16db31e...15d8` — verified consistent (audit pass); no frozen artifacts/configs/scripts/tests/docs/prompts/registry/frontier changed.
 - **Cutoff gate (latest tracked probe):** `research_state/cutoff_probe/cutoff_probe_20261109T123310Z.json` (probe_utc 2026-11-09T12:33:10Z) → `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Re-probe of 2026-11 forbidden before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced. Canonical `forward_block/` and orphans sealed.
@@ -23,4 +23,5 @@
 ## Hard constraints
 Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts; no look-ahead/fabrication/forward-fill; today's rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.
 
-(End of file - total 24 lines)
+## End of session
+Leave clean state; update durable state, report only verified progress, and leave a concrete next action. Never wait for a user-provided experiment ID.
