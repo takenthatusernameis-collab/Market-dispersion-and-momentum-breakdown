@@ -1,3 +1,14 @@
+## Session record 20261110T035015Z (current)
+
+- **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `3ef55f9a` (durable-state-only checkpoint after `ede21049`; `git diff ede21049..3ef55f9a` touches only research_state/agent_handoff.md and research_state/agent_task_message.md). `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
+- **Frozen integrity verified on disk (all unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (608 formations, 61/90/457), h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (1 formation, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, cutoff probe `7db2bb65d310f1fadb3307618ff36d1af554d2fcfb777f58d89dd7cdff5d5212`.
+- **Cutoff gate (latest tracked):** `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29` (probe_utc 2026-11-10T00:18:09Z; repeat 2026-11-10T03:05:17Z identical). **Do not re-probe 2026-11 before 2026-11-30.**
+- **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced.
+- **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no safe stdlib-only fix outside frozen areas/deps/network).
+- **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
+- **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
+
 ## Session record 20261110T034817Z (current)
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `ede21049` (durable-state-only checkpoint after `5dee961f`; `git diff 5dee961f..ede21049` touches only research_state/agent_handoff.md and research_state/agent_task_message.md). `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
@@ -7,6 +18,7 @@
 - **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no safe stdlib-only fix outside frozen areas/deps/network).
 - **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
 
 
 ## Session record 20261110T034535Z
@@ -20,6 +32,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T034411Z
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `a4399658`. `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
@@ -29,6 +42,7 @@
 - **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no safe stdlib-only fix outside frozen areas/deps/network).
 - **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
 
 
 ## Session record 20261110T025937Z
@@ -42,6 +56,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T025731Z
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `38723e26` (durable-state-only checkpoint commit `38723e26` after `7b487c5b`/`198fd866`; `git diff 7b487c5b..38723e26` touches only research_state/agent_handoff.md and research_state/agent_task_message.md). `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
@@ -51,6 +66,7 @@
 - **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no ref drift, no safe stdlib-only fix outside frozen areas/deps/network).
 - **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
 
 
 ## Session record 20261110T025503Z
@@ -64,6 +80,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T024926Z (current)
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `85313f83`. `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
@@ -75,6 +92,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T024703Z
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `85313f83`. `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped). Frozen integrity verified on disk (all unchanged vs handoff): canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (608 formations, 61/90/457), h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (1 formation, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, cutoff probe `7db2bb65d310f1fadb3307618ff36d1af554d2fcfb777f58d89dd7cdff5d5212`.
@@ -83,6 +101,7 @@
 - **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no ref drift, no safe stdlib-only fix outside frozen areas/deps/network).
 - **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
 
 
 ## Session record 20261110T024534Z
@@ -96,6 +115,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T024304Z
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `9d1841d1`. `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
@@ -105,6 +125,7 @@
 - **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no ref drift, no safe stdlib-only fix outside frozen areas/deps/network).
 - **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
 
 
 ## Session record 20261110T015333Z
@@ -118,6 +139,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T014150Z
 
 - **Task completed:** "no unblocked task exists today (2026-11-10 < 2026-11-30)" — verified, no code changes. Working tree clean at HEAD `ad62eccc`. `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
@@ -129,6 +151,7 @@
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
 
 
+
 ## Session record 20261110T013142Z
 
 - **Prior task status:** COMPLETE (no-op, date-gated). Read prior handoff/task message (session 20261110T013021Z). Verified at HEAD `5ed02283` (clean working tree before durable-state update). `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped). Frozen hashes unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (608 formations, 61/90/457), h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (1 formation, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, cutoff probe `7db2bb65d310f1fadb3307618ff36d1af554d2fcfb777f58d89dd7cdff5d5212`.
@@ -137,6 +160,7 @@
 - **Bounded delta search:** no actionable no-cost gap found (compileall/audit pass, frozen hashes/cutoff unchanged, no ref drift, no safe stdlib-only fix outside frozen areas/deps/network).
 - **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 - **Next action (date-gated):** on/after 2026-11-30 run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`). Require `n_high > 0 AND n_low > 0` before any confirmatory claim; if still immature, record outcome and do not advance k. Before 2026-11-30 act only on a genuine bounded no-cost gap that does not alter frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier; otherwise record "no unblocked task exists" and stop.
+
 
 
 ## Earlier records
