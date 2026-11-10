@@ -1,0 +1,463 @@
+{
+  "audit_id": "INTEGRITY_AUDIT_REFERENCE_CONSISTENCY",
+  "audited_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit",
+  "critical": [],
+  "errors": [],
+  "files_scanned": 14,
+  "frozen_git_head_checks": [
+    {
+      "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "expected_frozen": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "git_head_drift": false,
+      "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "matches_frozen": true,
+      "matches_git_head": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+    },
+    {
+      "disk_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "expected_frozen": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "git_head_drift": false,
+      "git_head_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "matches_frozen": true,
+      "matches_git_head": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json"
+    }
+  ],
+  "frozen_hashes_checked": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "info": [
+    "H004V106_dispersion_regime_conditioning_20261028.json",
+    "H004V106_forward_block_cluster_bootstrap_20261029.json",
+    "H004V106_forward_block_placebo_red_team_20261028.json",
+    "H004V106_forward_block_tail_influence_20261029.json",
+    "H004V106_forward_block_temporal_stability_20261029.json",
+    "H004V106_rolling_dispersion_window_20261028.json",
+    "H004V106_state_representativeness_audit_20261025.json",
+    "H10_feasibility_analysis_20261103.json"
+  ],
+  "pass": true,
+  "rows": [
+    {
+      "file": "H004V106_dispersion_regime_conditioning_20261028.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-001 vs H004V106_dispersion_regime_conditioning_20261028"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_dispersion_regime_conditioning_20261028",
+          "id_key": "audit_id",
+          "id_value": "H004V106_DISPERSION_REGIME_CONDITIONING_20261028",
+          "loose_match": true
+        },
+        {
+          "filename_stem": "H004V106_dispersion_regime_conditioning_20261028",
+          "id_key": "experiment_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-001",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H004V106_forward_block_cluster_bootstrap_20261029.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003 vs H004V106_forward_block_cluster_bootstrap_20261029"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_forward_block_cluster_bootstrap_20261029",
+          "id_key": "audit_id",
+          "id_value": "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_20261029",
+          "loose_match": true
+        },
+        {
+          "filename_stem": "H004V106_forward_block_cluster_bootstrap_20261029",
+          "id_key": "experiment_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H004V106_forward_block_final_integrity_audit_20261102.json",
+      "findings": [],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_forward_block_final_integrity_audit_20261102",
+          "id_key": "audit_id",
+          "id_value": "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_20261102",
+          "loose_match": true
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "hash_key": "audited_artifact_sha256",
+          "match": true,
+          "recorded": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "target_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "OK"
+    },
+    {
+      "file": "H004V106_forward_block_overlap_aware_audit_20261102.json",
+      "findings": [],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_forward_block_overlap_aware_audit_20261102",
+          "id_key": "audit_id",
+          "id_value": "H004V106_FORWARD_BLOCK_OVERLAP_AWARE_AUDIT_20261102",
+          "loose_match": true
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "hash_key": "audited_artifact_sha256",
+          "match": true,
+          "recorded": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "target_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "OK"
+    },
+    {
+      "file": "H004V106_forward_block_placebo_red_team_20261028.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): audit_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001 vs H004V106_forward_block_placebo_red_team_20261028"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_forward_block_placebo_red_team_20261028",
+          "id_key": "audit_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H004V106_forward_block_tail_influence_20261029.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-TAILAUDIT-001 vs H004V106_forward_block_tail_influence_20261029"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_forward_block_tail_influence_20261029",
+          "id_key": "audit_id",
+          "id_value": "H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_20261029",
+          "loose_match": true
+        },
+        {
+          "filename_stem": "H004V106_forward_block_tail_influence_20261029",
+          "id_key": "experiment_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-TAILAUDIT-001",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H004V106_forward_block_temporal_stability_20261029.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003 vs H004V106_forward_block_temporal_stability_20261029"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_forward_block_temporal_stability_20261029",
+          "id_key": "audit_id",
+          "id_value": "H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_20261029",
+          "loose_match": true
+        },
+        {
+          "filename_stem": "H004V106_forward_block_temporal_stability_20261029",
+          "id_key": "experiment_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H004V106_rolling_dispersion_window_20261028.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-002 vs H004V106_rolling_dispersion_window_20261028"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_rolling_dispersion_window_20261028",
+          "id_key": "audit_id",
+          "id_value": "H004V106_ROLLING_DISPERSION_WINDOW_20261028",
+          "loose_match": true
+        },
+        {
+          "filename_stem": "H004V106_rolling_dispersion_window_20261028",
+          "id_key": "experiment_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-REGIME-002",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H004V106_state_representativeness_audit_20261025.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-STATEAUDIT-001 vs H004V106_state_representativeness_audit_20261025"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H004V106_state_representativeness_audit_20261025",
+          "id_key": "audit_id",
+          "id_value": "H004V106_STATE_REPRESENTATIVENESS_AUDIT_20261025",
+          "loose_match": true
+        },
+        {
+          "filename_stem": "H004V106_state_representativeness_audit_20261025",
+          "id_key": "experiment_id",
+          "id_value": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-STATEAUDIT-001",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "INFO"
+    },
+    {
+      "file": "H10_feasibility_analysis_20261103.json",
+      "findings": [
+        "ID/filename loose mismatch (informational): artifact_id=DISP-003-H10-FEASIBILITY-001 vs H10_feasibility_analysis_20261103"
+      ],
+      "id_consistency": [
+        {
+          "filename_stem": "H10_feasibility_analysis_20261103",
+          "id_key": "artifact_id",
+          "id_value": "DISP-003-H10-FEASIBILITY-001",
+          "loose_match": false
+        }
+      ],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [],
+      "severity": "INFO"
+    },
+    {
+      "file": "forward_block_hac_addendum_20261024.json",
+      "findings": [],
+      "id_consistency": [],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "OK"
+    },
+    {
+      "file": "forward_block_independent_recomputation_20261025.json",
+      "findings": [],
+      "id_consistency": [],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "OK"
+    },
+    {
+      "file": "forward_block_independent_recomputation_20261028.json",
+      "findings": [],
+      "id_consistency": [],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "OK"
+    },
+    {
+      "file": "forward_block_integrity_audit.json",
+      "findings": [],
+      "id_consistency": [],
+      "parse_ok": true,
+      "recorded_hash_checks": [],
+      "references": [
+        {
+          "disk_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "exists": true,
+          "frozen_expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "git_head_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "key": "audited_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+        },
+        {
+          "disk_sha256": "37a781541daffb56d0828296036e1cc4a4ce4bf4279b75d4b6e05bc6f27571b1",
+          "exists": true,
+          "frozen_expected": null,
+          "git_head_sha256": "37a781541daffb56d0828296036e1cc4a4ce4bf4279b75d4b6e05bc6f27571b1",
+          "key": "archived_artifact",
+          "matches_frozen": true,
+          "matches_git_head": true,
+          "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/archive_defective_momentum_20261024/forward_block_evaluation.json"
+        }
+      ],
+      "severity": "OK"
+    }
+  ],
+  "scope_note": "Read-only consistency scan over integrity_audit JSONs plus frozen/git-HEAD cross-checks. INFO findings (e.g. ID/filename loose mismatch for addenda or legacy naming) are recorded but do not fail the audit. CRITICAL/ERROR indicate stale pointers or hash mismatches requiring investigation. Does not modify any existing artifact/config/result. Default output: research_state/.",
+  "timestamp_utc": "2026-11-10T18:08:43Z"
+}
