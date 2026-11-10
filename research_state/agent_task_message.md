@@ -1,22 +1,22 @@
-# Agent Task Message — 2026-11-10T22:22:29Z (session 20261110T222229Z)
+# Agent Task Message — 2026-11-10T22:38:40Z (session 20261110T223840Z)
 
 ## Current state (independently re-verified)
-- **HEAD:** `435d72e0` (`git log --oneline -5`: 435d72e0,9238689e,cbd37be8,48768d58,1b916ef7). Working tree clean. HEAD commit 435d72e0 touched only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. This session modifies only those two files.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests`: **342 tests, 0 failures, 1 skipped**. The prior sole failure `test_every_declared_requirement_imports` (env-only: numpy/pandas absent, 35 skipped) is closed — `python3 -m pip install -r requirements.txt` installed numpy-2.5.4 / pandas-3.1.1 / python-dateutil-4.0.0 / tzdata-2026.6 into user site-packages; the 34 previously-skipped tests now run and pass. Environment-only install; no tracked source change.
-- **Frozen integrity (sha256):** canonical `7234fc4e...5390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`, n_formations=608, diff_net_1x +0.6165223953929935, date_last 2026-08-31, n_high=61, n_low=90); h10_fresh `324ab1e6...f18f` (n_formations=1, n_high=0, n_low=0, diff null, confirmatory_claim_allowed=false); registry `7faacdb3...4df4`; frontier `9ba08f3f...4f4e`; latest probe `ea002e9e...72ed`. All on-disk hashes equal `git show HEAD:` — no drift.
-- **Cutoff gate (not re-probed — 2026-11-10 < 2026-11-30):** `research_state/cutoff_probe/cutoff_probe_20261110T135706Z.json` probe_utc 2026-11-10T13:57:06Z: probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29. **Do not re-probe 2026-11 before 2026-11-30.**
+- **HEAD:** `1e12249f` (`git log --oneline -5`: 1e12249f,435d72e0,9238689e,cbd37be8,48768d58). Working tree clean before durable-state edits. This session modifies only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests`: **342 tests, 0 failures, 1 skipped**.
+- **Frozen integrity (sha256):** canonical `7234fc4e...5390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`, n_formations=608, diff_net_1x +0.6165223953929935, date_last 2026-08-31, n_high=61, n_low=90); h10_fresh `324ab1e6...f18f` (n_formations=1, n_high=0, n_low=0, diff null, confirmatory_claim_allowed=false); registry `7faacdb3...4df4`; frontier `9ba08f3f...4f4e`; latest probe `ea002e9e...72ed` (`research_state/cutoff_probe/cutoff_probe_20261110T135706Z.json`). No drift observed.
+- **Cutoff gate (not re-probed — 2026-11-10 < 2026-11-30):** probe_utc 2026-11-10T13:57:06Z: probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29. **Do not re-probe 2026-11 before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout is exploratory evidence only, never fresh confirmation.
 
 ## Initial task for next agent
-**No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID. The dependency gap is closed; remaining gate is the date-gated cutoff probe.
+**No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID. Dependency gap closed; remaining gate is date-gated cutoff probe.
 
 ### A) Before 2026-11-30 — only on a genuine bounded no-cost gap
-- Acceptable: reproducible tracked code/audit/test defect (excluding env-only dependency absence — that is now closed), missing guard against frozen-artifact mutation, or reference-consistency drift — **only if** it does **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
-- If no such gap: record "no unblocked task exists" with verification evidence (compileall, frozen hashes vs `git show HEAD:`, latest probe state, unittest status) and stop. Avoid idle churn beyond necessary durable-state update.
+- Acceptable: reproducible tracked code/audit/test defect (excluding env-only dependency absence — closed), missing guard against frozen-artifact mutation, or reference-consistency drift — **only if** it does **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
+- If no such gap: record "no unblocked task exists" with verification evidence (compileall, frozen hashes, latest probe state, unittest status) and stop. Avoid idle churn beyond necessary durable-state update.
 
 ### B) On/after 2026-11-30 (date-gated)
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`
-2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`).
+2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged; run a fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`).
 3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If still immature, record outcome and **do not advance k**. Preserve all frozen artifacts/configs unchanged.
 
 ## Hard constraints
@@ -24,5 +24,3 @@ Free public data only; historical research only (no orders/live/paper trading); 
 
 ## End-of-session requirement
 Leave clean state; update durable handoff/task message with verified evidence; report only verified progress; leave a concrete next action. Never write "wait for a new experiment ID."
-
-(End of file)
