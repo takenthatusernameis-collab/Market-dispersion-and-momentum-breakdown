@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-10T03:45:35Z (session 20261110T034535Z)
+# Agent Task Message — 2026-11-10T03:48:17Z (session 20261110T034817Z)
 
-## Current State (verified at HEAD `5dee961f`, working tree clean before this update)
+## Current State (verified at HEAD `ede21049`, working tree clean before this update)
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
-- **Frozen integrity (unchanged, verified on disk):** canonical `7234fc4e...5390` (`forward_block/forward_block_evaluation.json`, n_formations=608, 61/90/457), h10_fresh `324ab1e6...df18f` (`forward_block_h10_fresh/`, n_formations=1, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3...64df4`, frontier `9ba08f3f...a4f4e`, cutoff probe `7db2bb65...5d5212` (`cutoff_probe_20261110T001809Z.json`). A repeat probe at `cutoff_probe_20261110T030517Z.json` confirms identical state (target_published=false, archive_alive=true, cutoff_gate=BLOCKED).
+- **Frozen integrity (unchanged, verified on disk):** canonical `7234fc4e...5390` (`forward_block/forward_block_evaluation.json`, n_formations=608, 61/90/457), h10_fresh `324ab1e6...df18f` (`forward_block_h10_fresh/`, n_formations=1, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3...64df4`, frontier `9ba08f3f...a4f4e`, cutoff probe `7db2bb65...5d5212` (`cutoff_probe_20261110T001809Z.json`). Repeat probe `cutoff_probe_20261110T030517Z.json` confirms identical state (target_published=false, archive_alive=true, cutoff_gate=BLOCKED).
 - **Cutoff gate (latest tracked):** `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29` (probe_utc 2026-11-10T00:18:09Z; repeat 2026-11-10T03:05:17Z identical). **Do not re-probe 2026-11 before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced.
 - **Bounded delta search:** no actionable no-cost gap found; no safe change outside frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier.
@@ -25,4 +25,4 @@ Free public data only; historical research only (no orders/live/paper trading); 
 ## End of session
 Leave a clean state; update durable handoff/task message; report only verified progress; leave a concrete next action. Never wait for a user-provided experiment ID.
 
-(End of file - total 26 lines)
+(End of file - total 28 lines)
