@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-10T02:53:43Z (session 20261110T025343Z)
+# Agent Task Message — 2026-11-10T02:55:03Z (session 20261110T025503Z)
 
-## Current State (verified at HEAD `198fd866`, working tree clean)
+## Current State (verified at HEAD `7b487c5b`, working tree clean)
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient audit JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
-- **Frozen integrity (unchanged):** canonical `7234fc4e...5390` (`forward_block/forward_block_evaluation.json`, n_formations=608, 61/90/457), h10_fresh `324ab1e6...df18f` (`forward_block_h10_fresh/`, n_formations=1, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3...64df4`, frontier `9ba08f3f...a4f4e`. `forward_block/` and `forward_block_h10_fresh/` sealed. `git diff 85313f83..198fd866` empty for artifacts/, registry, frontier, cutoff probe, prompts/, docs/, scripts/, tests/.
-- **Cutoff gate (latest tracked):** `research_state/cutoff_probe/cutoff_probe_20261110T001809Z.json` (sha256 `7db2bb65...5d5212`, probe_utc 2026-11-10T00:18:09Z) → `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Do not re-probe 2026-11 before 2026-11-30.**
+- **Frozen integrity (unchanged, verified on disk and vs `git show HEAD:`):** canonical `7234fc4e...5390` (`forward_block/forward_block_evaluation.json`, n_formations=608, 61/90/457), h10_fresh `324ab1e6...df18f` (`forward_block_h10_fresh/`, n_formations=1, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3...64df4`, frontier `9ba08f3f...a4f4e`, cutoff probe `7db2bb65...5d5212`.
+- **Cutoff gate (latest tracked):** `research_state/cutoff_probe/cutoff_probe_20261110T001809Z.json` (probe_utc 2026-11-10T00:18:09Z) → `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Do not re-probe 2026-11 before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced.
 - **Bounded delta search:** no actionable no-cost gap found; no safe change outside frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier.
 
