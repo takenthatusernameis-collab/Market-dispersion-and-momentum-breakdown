@@ -1,7 +1,7 @@
-# Agent Task Message — 2026-11-10T14:47:30Z (session 20261110T144730Z)
+# Agent Task Message — 2026-11-10T15:22:42Z (session 20261110T152242Z)
 
 ## Current state (independently re-verified this session)
-- **HEAD:** `023079096fde729fb6e8e8180f23ef1b21b3e45a` (working tree clean before/after state update; transient audit JSONs written to research_state/, no repo files modified). No code/script/test/doc/config/frozen-artifact changes this session.
+- **HEAD:** `d5ddc6dd35c87b0c143adf77a3f05e7a80f12992` (working tree clean before/after state update; transient audit JSONs written to /tmp only, no repo files modified). No code/script/test/doc/config/frozen-artifact changes this session.
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `audit_integrity_audit_references.py` pass=True scanned=14 critical=0 errors=0 info=8; `audit_prereg_and_h10_fresh_references.py` pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 critical=0 errors=0 info=0; `audit_preregistration_coverage.py` pass=True audits=14 missing_prereq=0 uncovered_prereq=0. Frozen integrity (sha256 on disk, matches_git_head=true): canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`, n_formations=608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31, n_high=61, n_low=90); h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`.../forward_block_h10_fresh/forward_block_evaluation.json`, n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null, confirmatory_claim_allowed=false); registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
 - **Cutoff gate (latest probed record, not re-probed — 2026-11 not before 2026-11-30):** record `research_state/cutoff_probe/cutoff_probe_20261110T135706Z.json`, probe_utc 2026-11-10T13:57:06Z: `probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Do not re-probe 2026-11 before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced. Inspected 003 holdout is exploratory evidence only, never fresh confirmation.
@@ -25,4 +25,4 @@ Free public data only; historical research only (no orders/live/paper trading); 
 ## End-of-session requirement
 Leave clean state; update durable handoff/task message with verified evidence; report only verified progress; leave a concrete next action. Never write "wait for a new experiment ID."
 
-(End of file - total 26 lines)
+(End of file - total 27 lines)
