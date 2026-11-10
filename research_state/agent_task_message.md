@@ -1,22 +1,22 @@
-# Agent Task Message — 2026-11-10T01:28:12Z (session 20261110T012812Z)
+# Agent Task Message — 2026-11-10T01:30:21Z (session 20261110T013021Z)
 
-## Current State (verified at HEAD `a167bfa0`)
+## Current State (verified at HEAD `5ed02283`)
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 scripts/audit_integrity_audit_references.py` → `pass=True scanned=14 critical=0 errors=0 info=8` (transient JSON removed). Unittest not re-run (no script/test changes since prior verified run; prior: 338 tests, 1 env-only numpy/pandas import failure, 35 skipped).
-- **Frozen integrity (unchanged, byte-verified):** canonical `7234fc4e...5390` (`forward_block/forward_block_evaluation.json`, n_formations=608, n_high=61, n_low=90, n_mid=457), h10_fresh `324ab1e6...df18f` (`forward_block_h10_fresh/`, n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false), registry `7faacdb3...64df4`, frontier `9ba08f3f...a4f4e`. Canonical `forward_block/` and `forward_block_h10_fresh/` sealed.
-- **Cutoff gate (latest tracked, re-verified):** `research_state/cutoff_probe/cutoff_probe_20261110T001809Z.json` (sha256 `7db2bb65...5d5212`, probe_utc 2026-11-10T00:18:09Z) → `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Do not re-probe 2026-11 before 2026-11-30.**
+- **Frozen integrity (unchanged):** canonical `7234fc4e...5390` (`forward_block/forward_block_evaluation.json`, n_formations=608, 61/90/457), h10_fresh `324ab1e6...df18f` (`forward_block_h10_fresh/`, n_formations=1, 0/0/1, confirmatory_claim_allowed=false), registry `7faacdb3...64df4`, frontier `9ba08f3f...a4f4e`. `forward_block/` and `forward_block_h10_fresh/` sealed.
+- **Cutoff gate (latest tracked):** `research_state/cutoff_probe/cutoff_probe_20261110T001809Z.json` (sha256 `7db2bb65...5d5212`, probe_utc 2026-11-10T00:18:09Z) → `probe_month=2026-11, target_published=false, archive_alive=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Do not re-probe 2026-11 before 2026-11-30.**
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE. k not advanced.
-- **Bounded delta search (2026-11-10):** no actionable no-cost gap found; no safe change to frozen artifacts/configs/scripts/tests/docs/prompts/`research_state/hypothesis_registry.json`/`research_state/universe_frontier.json`.
+- **Bounded delta search (2026-11-10):** no actionable no-cost gap found; no safe change outside frozen result artifacts/configs/scripts/tests/docs/prompts/registry/frontier.
 
 ## Task for Next Agent
 **No unblocked task exists today (2026-11-10 < 2026-11-30).** Not waiting for a manually supplied experiment ID.
 
 ### 1) Before 2026-11-30: act only on a genuine bounded no-cost gap
-- Acceptable: reproducible code/audit/test defect (excluding the known numpy/pandas env absence), a missing guard against frozen-artifact mutation, or reference-consistency drift — **only if** the fix does **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
+- Acceptable: reproducible code/audit/test defect (excluding known numpy/pandas env absence), a missing guard against frozen-artifact mutation, or reference-consistency drift — **only if** it does **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
 - If no such gap exists: record "no unblocked task exists" with verification evidence (compileall, integrity audit, frozen hashes, latest probe state; unittest status if not re-run) and stop.
 
 ### 2) On/after 2026-11-30 (date-gated)
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`
-2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); re-run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` and preregistered constraints (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`).
+2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests`; verify canonical hash `7234fc4e...5390` unchanged vs `git show HEAD:`; run a fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`).
 3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If still immature, record outcome and **do not advance k**.
 
 ## Hard constraints
