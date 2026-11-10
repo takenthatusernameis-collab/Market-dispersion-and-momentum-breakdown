@@ -1,7 +1,7 @@
-# Agent Task Message — 2026-11-10T20:18:40Z (session 20261110T201840Z)
+# Agent Task Message — 2026-11-10T20:20:53Z (session 20261110T202053Z)
 
 ## Current state (independently re-verified)
-- **HEAD at read time:** `f923978e` (verify with `git log --oneline -5`). Working tree clean before edits (`git status --porcelain` EXIT=0). This session modified only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No code/script/test/doc/config/frozen-artifact changes.
+- **HEAD at read time:** `960bb938` (verify with `git log --oneline -5`). Working tree clean before edits (`git status --porcelain` EXIT=0). This session modified only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No code/script/test/doc/config/frozen-artifact changes.
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. Full `unittest discover -s tests` re-run: 338 tests, 1 failure, 35 skipped — sole failure is `test_every_declared_requirement_imports` (env-only: numpy/pandas absent in this interpreter; no tracked changes, pre-existing gap). `unittest` exit=1 solely from that env-only gap.
 - **Frozen integrity (sha256):** canonical `7234fc4e...5390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`, n_formations=608, diff_net_1x +0.6165223953929935, date_last 2026-08-31, n_high=61, n_low=90); h10_fresh `324ab1e6...f18f` (n_formations=1, n_high=0, n_low=0, diff null, confirmatory_claim_allowed=false); registry `7faacdb3...4df4`; frontier `9ba08f3f...4f4e`; probe `ea002e9e...72ed`.
 - **Cutoff gate (not re-probed — 2026-11-10 < 2026-11-30):** `research_state/cutoff_probe/cutoff_probe_20261110T135706Z.json` probe_utc 2026-11-10T13:57:06Z: `probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29`. **Do not re-probe before 2026-11-30.**
