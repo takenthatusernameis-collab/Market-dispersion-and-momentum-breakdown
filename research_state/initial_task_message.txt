@@ -2,11 +2,11 @@ Read AGENTS.md, research_state/agent_handoff.md, research_state/agent_task_messa
 
 The program is ACTIVE CONTINUOUS RESEARCH. Do not wait for a new experiment ID. Work on HARMONY-CRYPTO-EDGE-004-DISPERSION-003. Preserve completed DISPERSION-001 and DISPERSION-002 artifacts unchanged.
 
-Current state (verified 2026-11-10T10:54:17Z):
+Current state (verified 2026-11-10T13:36:45Z):
 - Tests: `python3 -m unittest discover -s tests` -> 338 run, FAILED failures=1, skipped=35 (sole failure known env-only numpy/pandas import `test_requirements_importable`; state/contract subset 24 OK). Not re-run this session (no script/test changes since prior verified run).
 - `python3 -m compileall -q scripts tests` EXIT=0.
+- Reference audits all pass: `audit_integrity_audit_references.py` (scanned=14 critical=0 errors=0 info=8), `audit_prereg_and_h10_fresh_references.py` (scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 critical=0 errors=0 info=0), `audit_preregistration_coverage.py` (audits=14 missing_prereq=0 uncovered_prereq=0).
 - Frozen artifacts byte-unchanged (`git diff --stat -- artifacts/ research_state/ configs/` empty): canonical `7234fc4e...5390` (n_formations=608, high_low_diff_net_1x +0.6165223953929935, date_last 2026-08-31), h10_fresh `324ab1e6...18f` (n_formations=1, n_high=0, n_low=0, high_low_diff_net_1x=null, confirmatory_claim_allowed=false), registry `7faacdb3...df4`, frontier `9ba08f3...f4e`.
-- Reference audits all pass: `audit_integrity_audit_references.py` (scanned=14 critical=0 errors=0 info=8), `audit_prereg_and_h10_fresh_references.py` (scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 critical=0 errors=0 info=0), `audit_preregistration_coverage.py` (audits=14 missing_prereq=0 uncovered_prereq=0). Transient audit JSONs removed after run.
 - Cutoff gate: BLOCKED (archive). Today 2026-11-10; November 2026 Binance monthly archive still unpublished (date_last = 2026-09-30; canonical forward block data_cutoff_utc = 2026-09-30T00:00:00Z, last_allowed_formation_date = 2026-08-31). Do NOT re-probe this endpoint.
 - Frontier/catalog exhausted (cursor 6347; candidates_discovered=[]; candidates_verified=220; candidates_blocked=6127).
 - H1 NOT_SUPPORTED_AS_ROBUST_EDGE (immutable). H2-H7, H9 CANDIDATE_UNVALIDATED. H8 EXPLORATORY_ONLY with addenda. Program ACTIVE.
