@@ -1,12 +1,17 @@
-# Agent Handoff — 2026-11-11T02:32:33Z (session 20261111T023233Z)
+# Agent Handoff — 2026-11-11T02:37:49Z (session 20261111T023749Z)
 
 ## Session summary (this session)
-- **Prior task completed:** read durable handoff/task from session 20261111T022923Z and independently re-verified repo state/integrity at current HEAD.
-- **HEAD observed:** `9bf2cd29` at session start (`git log --oneline -3`: 9bf2cd29, 50f52c5d, 9d9c5a81). Working tree clean at start. This session modifies only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No tracked source/config/test/doc/prompt/registry/frontier/frozen artifact changed.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests`: **342 tests, 0 failures, 1 skipped** (exit 0).
-- **Frozen integrity (sha256, on-disk):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`); h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`.../forward_block_h10_fresh/forward_block_evaluation.json`, n_formations=1, n_high=0, n_low=0, diff null, confirmatory_claim_allowed=false); registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4` (`research_state/hypothesis_registry.json`); frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`research_state/universe_frontier.json`). No drift observed.
-- **Frontier state:** `candidate_page_cursor=6347`, `candidates_discovered=[]`, `candidates_verified=220`, `candidates_blocked=6127`, `status=ACTIVE_INCOMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`. Catalog exhausted; no free-source discovery remaining.
-- **Cutoff gate (latest on-disk probe, not re-probed — 2026-11-11 < 2026-11-30):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — probe_utc 2026-11-11T01:34:59Z, probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29. **Do not re-probe before 2026-11-30.**
+- **Prior task completed:** read durable handoff/task from session 20261111T023233Z and independently re-verified repo state/integrity at current HEAD.
+- **HEAD observed:** `4e0556a4` at session start (`git log --oneline -3`: 4e0556a4, 9bf2cd29, 50f52c5d). Working tree clean at start except two new untracked audit JSONs produced by this session. This session modifies only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No tracked source/config/test/doc/prompt/registry/frontier/frozen artifact changed.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests`: **342 tests, 0 failures, 1 skipped** (exit 0, ~57.9s).
+- **Frozen integrity (sha256, on-disk, independently recomputed):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`); h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`.../forward_block_h10_fresh/forward_block_evaluation.json`, n_formations=1, n_high=0, n_low=0, diff null, confirmatory_claim_allowed=false); registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4` (`research_state/hypothesis_registry.json`); frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`research_state/universe_frontier.json`). No drift observed.
+- **Reference-consistency audits (this session, both pass=True, errors=0):**
+  - `python3 scripts/audit_integrity_audit_references.py` -> wrote `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261111T023749Z.json` (scanned=14, critical=0, errors=0, info=8 diagnostic artifacts).
+  - `python3 scripts/audit_prereg_and_h10_fresh_references.py` -> wrote `research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261111T023749Z.json` (scanned=13, prereg=9, frozen_prereg=0, h10=1, forward_block=1, critical=0, errors=0).
+  - Both new JSONs are untracked; prior session JSONs of the same name are tracked and committed in `c23fd843`, so this follows the established durable-state convention.
+- **Frontier state:** `candidate_page_cursor=6347`, `candidates_discovered=[]`, `candidates_verified=220`, `candidates_blocked=6127`, `status=ACTIVE_INCOMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `rank_frontier_exhausted=false`. Catalog exhausted; no free-source discovery remaining.
+- **Cutoff gate (latest on-disk probe, not re-probed — 2026-11-11 < 2026-11-30):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — probe_utc 2026-11-11T01:34:59Z, probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=None, archive_alive=True, gate_met_by_month_end=True, cutoff_gate=BLOCKED, gate_date_required=2026-10-29. **Do not re-probe before 2026-11-30.**
+- **Reference-consistency drift found and corrected (this session):** the prior handoff/task message (session 20261111T023233Z) quoted `control_ok=true` for the above probe, but the on-disk JSON field is `control_ok=None`. Durable state now quotes the observed value. The probe was not re-run (still date-gated). This drift did not change the gate conclusion (cutoff_gate=BLOCKED, target_published=false).
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout is exploratory evidence only, never fresh confirmation.
 
 ## Current unblocked work
@@ -23,4 +28,4 @@ Free public data only; historical research only (no orders/live/paper trading); 
 ## Resume notes
 Leave clean state; update this handoff and `research_state/agent_task_message.md` with verified evidence; never write "wait for a new experiment ID."
 
-(End of file - total 24 lines)
+(End of file - total 34 lines)
