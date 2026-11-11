@@ -459,5 +459,5 @@
     }
   ],
   "scope_note": "Read-only consistency scan over integrity_audit JSONs plus frozen/git-HEAD cross-checks. INFO findings (e.g. ID/filename loose mismatch for addenda or legacy naming) are recorded but do not fail the audit. CRITICAL/ERROR indicate stale pointers or hash mismatches requiring investigation. Does not modify any existing artifact/config/result. Default output: research_state/.",
-  "timestamp_utc": "2026-11-11T13:55:30Z"
+  "timestamp_utc": "2026-11-11T14:30:53Z"
 }
