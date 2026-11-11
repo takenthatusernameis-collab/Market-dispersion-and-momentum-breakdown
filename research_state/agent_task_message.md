@@ -1,7 +1,7 @@
-# Agent Task Message — 2026-11-11T01:12:14Z (session 20261111T011214Z)
+# Agent Task Message — 2026-11-11T01:15:46Z (session 20261111T011546Z)
 
 ## Current state (independently re-verified)
-- **HEAD:** `25200433` (`git log --oneline -5`: 25200433, d675b8d2, ad3e2ad8, e8aadca9, 1fb9cad0). Working tree clean before durable-state edits. This session modifies only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`.
+- **HEAD:** `7684a169` (`git log --oneline -5`: 7684a169, 25200433, d675b8d2, ad3e2ad8, e8aadca9). Working tree clean before durable-state edits. This session modifies only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`.
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests`: **342 tests, 0 failures, 1 skipped** (exit 0).
 - **Frozen integrity (sha256, on-disk, recomputed this session):** canonical `7234fc4e...5390` (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`, n_formations=608, diff_net_1x +0.6165223953929935, date_last 2026-08-31, n_high=61, n_low=90); h10_fresh `324ab1e6...f18f` (n_formations=1, n_high=0, n_low=0, diff null, confirmatory_claim_allowed=false); registry `7faacdb3...4df4`; frontier `9ba08f3f...4f4e`; latest probe `ea002e9e...72ed` (`research_state/cutoff_probe/cutoff_probe_20261110T135706Z.json`). No drift observed.
 - **Cutoff gate (not re-probed — 2026-11-11 < 2026-11-30):** probe_utc 2026-11-10T13:57:06Z: probe_month=2026-11, target_published=false, control_month=2026-09, control_ok=true, archive_alive=true, gate_met_by_month_end=true, cutoff_gate=BLOCKED, gate_date_required=2026-10-29. **Do not re-probe 2026-11 before 2026-11-30.**
