@@ -1,0 +1,60 @@
+{
+  "session_id": "session_verify_20261111T0817Z",
+  "timestamp_utc": "2026-11-11T08:17:00Z",
+  "head_commit": "bb3d3591",
+  "prior_head_commit": "7b01d565",
+  "compileall_exit": 0,
+  "unittest_result": "342 run, 342 OK, 0 failures, 1 skipped",
+  "unittest_known_skipped": "test_script_is_reproducible_and_read_only (test_forward_block_placebo_red_team) skipped 'slow reproducibility check (N=10000 x 3 permutation families); set RUN_SLOW_PLACEBO=1 to run it' -- gated behind RUN_SLOW_PLACEBO=1, not an env-only dependency absence",
+  "integrity_audit": {
+    "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261111T081651Z.json",
+    "pass": true,
+    "scanned": 14,
+    "critical": 0,
+    "errors": 0,
+    "info": 8,
+    "frozen_hashes_match": true,
+    "canonical_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "registry_hash": "7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4",
+    "frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "prereg_and_h10_fresh_audit": {
+    "artifact": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261111T081704Z.json",
+    "pass": true,
+    "scanned": 13,
+    "prereg": 9,
+    "frozen_prereg": 0,
+    "h10": 1,
+    "forward_block": 1,
+    "critical": 0,
+    "errors": 0,
+    "info": 0
+  },
+  "frontier_unchanged": {
+    "candidate_page_cursor": 6347,
+    "candidates_discovered": 0,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "status": "ACTIVE_INCOMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "rank_frontier_exhausted": false
+  },
+  "cutoff_gate_unchanged": {
+    "artifact": "research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json",
+    "probe_utc": "2026-11-11T01:34:59Z",
+    "probe_month": "2026-11",
+    "target_published": false,
+    "control_month": "2026-09",
+    "control_ok": null,
+    "archive_alive": true,
+    "gate_met_by_month_end": true,
+    "cutoff_gate": "BLOCKED",
+    "gate_date_required": "2026-10-29"
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced; inspected 003 holdout is exploratory evidence only, never fresh confirmation",
+  "unblocked_bounded_no_cost_gap_found": false,
+  "action_taken": "Ran two bounded no-cost reference-consistency audits (audit_integrity_audit_references.py, audit_prereg_and_h10_fresh_references.py); both pass=True, 0 critical, 0 errors. Committed the two new audit artifacts (research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261111T081651Z.json, research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261111T081704Z.json) plus this session verification. No frozen artifact, config, script, test, doc, prompt, registry or frontier file was altered.",
+  "next_action": "Before 2026-11-30: no unblocked bounded no-cost task exists. On/after 2026-11-30: run python3 scripts/probe_cutoff_gate.py --probe-month 2026-11 and, if target_published=true, follow the date-gated H10 fresh-block procedure in agent_handoff.md."
+}
