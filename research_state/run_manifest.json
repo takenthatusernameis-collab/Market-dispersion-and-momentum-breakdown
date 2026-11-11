@@ -169,7 +169,7 @@
   "verified": "python3 -m compileall -q scripts tests EXIT=0; python3 -m unittest discover -s tests -> 341 run, 341 OK, skipped=1, EXIT=0 (Ran 341 tests in 58.710s). All four frozen artifact hashes match working tree == git HEAD == expected (canonical 7234fc4e..., h10_fresh 324ab1e6..., orphan h10 d1333e74..., orphan h10_fresh_check f16db31e...). git diff --stat HEAD shows only the 32 session_verify records, tests/test_state_consistency.py, research_state/verified_test_claim_claim_snapshot.json and this manifest entry.",
   "what_was_not_changed": "No hypothesis conclusion, grid, decision rule, cost model, preregistration outcome, frozen artifact, panel, grid ledger, script implementation or outcome field changed. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule, the family alpha, the 0.05 economic threshold or the sealed-holdout rule. No re-probe of 2026-11 before 2026-11-30."
  },
- "last_updated_utc": "2026-11-11T04:27:22Z",
+ "last_updated_utc": "2026-11-11T11:15:38Z",
  "latest_archive_probe": {
   "canonical_forward_block": {
    "block_sealed": true,
