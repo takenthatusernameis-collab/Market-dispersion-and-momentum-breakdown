@@ -1,0 +1,54 @@
+{
+  "session_utc": "2026-11-12T23:50:30Z",
+  "head_commit": "6ddcb7f00fb82c033a6eb2949071424450a8cd5c",
+  "working_tree": "clean",
+  "compile_check": "python3 -m compileall -q scripts tests; EXIT=0",
+  "unit_tests": "370 tests, OK (skipped=2)",
+  "unit_tests_detail": "Ran 370 tests in 45.943s; OK (skipped=2). Prior handoff note of 2 failures was stale: tests.test_h10_gate_vs_november_probe (5 tests) passes fully, including test_durable_state_does_not_call_the_h10_gate_blocked.",
+  "git_diff_artifacts_configs": "empty",
+  "git_diff_5a8dd493_to_HEAD": "only research_state/agent_handoff.md, research_state/agent_task_message.md, and session_verifications/*.json changed; no scripts/, tests/, artifacts/, configs/ changes",
+  "grid_summary": "216 expected / 216 evaluated / 216 OK / 0 blocked / 0 failed",
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_probes": 393,
+    "probe_month_2026_11": 123,
+    "all_target_published_false": true,
+    "all_probe_verdict_blocked": true,
+    "newest_probe": "cutoff_probe_20261112T235000Z.json",
+    "newest_probe_utc": "2026-11-12T23:50:00Z",
+    "archive_alive_control": "2026-09 (HTTP 200, bytes > 0)",
+    "target_endpoints": "2026-11 monthly klines/fundingRate and daily 11-28/29/30 all HTTP 404 (0 bytes)"
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED",
+    "gate_met_by_month_end": true,
+    "gate_date_required": "2026-10-29",
+    "november_probe": "BLOCKED as probe only (never promoted to gate decision)",
+    "fresh_block_status": "IMMATURE (n_formations=1, n_high=0, n_low=0)",
+    "k_advanced": false
+  },
+  "frontier_status": {
+    "status": "ACTIVE_INCOMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "rank_frontier_exhausted": false,
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true,
+    "panel": "2023-01-01..2026-10-31"
+  },
+  "date_gated_resolution": "no bounded no-cost H10 task unblocked before 2026-11-30 (today 2026-11-12; probe_month=2026-11 target_published=false)",
+  "files_changed": [
+    "research_state/session_verifications/session_verify_20261112T235030Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "no_code_test_gap_found": true,
+  "correction_to_prior_handoff": "Prior handoff/task message claimed 2 failing tests (test_durable_state_does_not_call_the_h10_gate_blocked). Re-run shows 0 failures; the claim was stale. Corrected in this handoff/task message."
+}
