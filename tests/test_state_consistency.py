@@ -514,6 +514,45 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                 f"actual {len(mismatches)} ({mismatches})",
             )
 
+    def test_session_record_latest_points_at_the_most_recent_record(self):
+        """The manifest's session_record_latest pointer must name the most
+        recent session record present in the manifest.
+
+        A 2026-11-12 checkpoint commit (9c06ddf0) re-serialised
+        research_state/run_manifest.json and rolled the pointer back to
+        session_record_20261111T0427Z (2026-11-11T04:27:22Z) while leaving the
+        newer session_record_20261112T0844Z block (2026-11-12T08:44:09Z) in the
+        file untouched. The durable handoff and task message then described the
+        08:44 session as current, so the manifest's own index disagreed with the
+        narrative it was supposed to summarise. Every prior bounded-delta search
+        compared hashes and test counts and never checked the pointer, so the
+        drift survived several sessions.
+
+        This gate resolves every session_record_* block's timestamp_utc from
+        the manifest itself and requires the pointer to name the block with the
+        maximum timestamp. Timestamps are ISO-8601 UTC in a fixed-width format,
+        so a lexicographic comparison is exact.
+        """
+        manifest = _load(STATE / "run_manifest.json")
+        records = {
+            k: v["timestamp_utc"]
+            for k, v in manifest.items()
+            if k.startswith("session_record_") and isinstance(v, dict)
+            and isinstance(v.get("timestamp_utc"), str)
+        }
+        self.assertGreater(len(records), 0, "run_manifest.json carries no session_record_* blocks")
+        latest_key = manifest.get("session_record_latest")
+        self.assertIn(latest_key, records,
+                      f"session_record_latest points at {latest_key!r}, which is not a "
+                      f"session_record_* block in the manifest")
+        most_recent = max(records, key=lambda k: records[k])
+        self.assertEqual(
+            latest_key, most_recent,
+            f"session_record_latest points at {latest_key} ({records[latest_key]}), but "
+            f"the most recent record in the manifest is {most_recent} "
+            f"({records[most_recent]})",
+        )
+
     def test_orphan_h10_variant_dirs_are_never_promotable(self):
             """The two git-tracked orphan H10 variant dirs must never be mistaken for
             the frozen H10 fresh block.
