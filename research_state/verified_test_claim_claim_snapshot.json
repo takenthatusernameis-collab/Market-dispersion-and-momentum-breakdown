@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-12T04:59:53Z",
+  "recorded_utc": "2026-11-12T07:56:47Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 342,
-  "tests_ok": 342,
+  "tests_run": 347,
+  "tests_ok": 347,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "342/342/0",
-  "input_fingerprint": "4b89bc5e0cd5b9b58bfd353c524e146b75b0e540bc4b9ff9833a22734b8c3944",
+  "claim": "347/347/0",
+  "input_fingerprint": "80804e17c50665943b2ab61d9e8d43b8ffecbeae0a337709e1d5e49b96abb98c",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -91,6 +91,7 @@
     "tests/test_h10_feasibility.py",
     "tests/test_h10_fresh_block_current.py",
     "tests/test_h10_fresh_block_hash_pinned.py",
+    "tests/test_h10_gate_vs_november_probe.py",
     "tests/test_h10_sequential_alpha_spending.py",
     "tests/test_h10_sequential_artifact_contract.py",
     "tests/test_holm_pvalue.py",
@@ -114,5 +115,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 103
+  "input_file_count": 104
 }
