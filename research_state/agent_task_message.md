@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-12T05:10:12Z (session current)
+# Agent Task Message — 2026-11-12T05:33:21Z (session current)
 
 ## Current state (independently re-verified this session)
 - **HEAD:** `7e81c58b19c97efe1de147d273cf71c39509d5f0` (`main...origin/main`); `git status --short --branch` clean. Prior handoff cited `00c8e2be`; checkpoint commits after it touched only state files. This session updates only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No tracked code, config, test, script, doc, prompt, registry, frontier, or frozen artifact modified.
 - **Hashes (verified unchanged):** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` 342 OK (skipped=1); integrity/reference-consistency/prereg-coverage audits pass (critical=0, errors=0) per `research_state/session_verifications/session_verify_20261112T045200Z.json`.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` 342 OK (skipped=1) after `python3 -m pip install -r requirements.txt`; integrity/reference-consistency/prereg-coverage audits pass (critical=0, errors=0) per `research_state/session_verifications/session_verify_20261112T045200Z.json`.
 - **Cutoff gate (latest on-disk, not re-probed — 2026-11-12 < 2026-11-30):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — probe_utc `2026-11-11T01:34:59Z`, `probe_month=2026-11`, `target_published=false`, `control_month=2026-09`, `archive_alive=true`, `gate_met_by_month_end=true`, `cutoff_gate=BLOCKED`. **Do not re-probe before 2026-11-30.**
 - **Frontier:** `status=ACTIVE_INCOMPLETE`, catalog exhausted; `rank_frontier_exhausted=false`; no free-source discovery remaining.
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout never fresh confirmation.
@@ -25,3 +25,5 @@ Free public data only; historical research only (no orders/live/paper trading); 
 
 ## End-of-session requirement
 Leave clean state; update durable handoff/task message with verified evidence; report only verified progress; leave a concrete next action. Never write "wait for a new experiment ID."
+
+(End of file - total 27 lines)
