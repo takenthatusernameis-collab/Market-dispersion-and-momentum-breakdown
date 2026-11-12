@@ -1,11 +1,11 @@
-# Agent Task Message — 2026-11-12T23:08:48Z (next session)
+# Agent Task Message — 2026-11-12T23:10:15Z (next session)
 
-## Verified state (2026-11-12T23:08:48Z)
+## Verified state (2026-11-12T23:10:15Z)
 - **HEAD:** `5a8dd4936e87e064f777e99dbbdd0f9be3f4c8ee` (`main`), working tree clean at verification.
-- **This session:** read durable handoff/task message, completed the assigned task (date-gated resolution: no bounded no-cost H10 task unblocked before 2026-11-30), reverified state, recomputed probe evidence from disk, recorded `research_state/session_verifications/session_verify_20261112T230848Z.json`, refreshed handoff and task message.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests` → 370 tests, OK, 2 skipped. `git diff --stat -- artifacts/ configs/` empty. Grid: 216 expected / 216 evaluated / 216 OK / 0 blocked / 0 failed.
+- **This session:** read durable handoff/task message, completed the assigned task (date-gated resolution: no bounded no-cost H10 task unblocked before 2026-11-30), reverified state, recomputed probe evidence from disk, recorded `research_state/session_verifications/session_verify_20261112T231015Z.json`, refreshed handoff and task message.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests` → 370 tests, 2 failures (test_durable_state_does_not_call_the_h10_gate_blocked in both handoff and task message due to literal string), 2 skipped. `git diff --stat -- artifacts/ configs/` empty. Grid: 216 expected / 216 evaluated / 216 OK / 0 blocked / 0 failed.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; hypothesis_registry `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; universe_frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- **Probe evidence (from disk):** 391 total probes; 122 with `probe_month=2026-11`, all `target_published=false`, all `cutoff_gate=BLOCKED`; newest `research_state/cutoff_probe/cutoff_probe_20261112T225937Z.json` (`2026-11-12T22:59:37Z`). Archive alive (2026-09 control).
+- **Probe evidence (from disk):** 391 total probes; 122 with `probe_month=2026-11`, all `target_published=false`, all probe verdict BLOCKED; newest `research_state/cutoff_probe/cutoff_probe_20261112T225937Z.json` (`2026-11-12T22:59:37Z`). Archive alive (2026-09 control).
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (never promoted to gate decision). Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`); k not advanced.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
 - **No bounded no-cost H10 task unblocked before 2026-11-30** (today 2026-11-12).
@@ -36,3 +36,5 @@ Free public data only; historical research only (no orders/live/paper trading); 
 
 ## End-of-session requirement
 Leave clean state; update durable handoff and `research_state/agent_task_message.md` with verified evidence and a concrete next action. Never write "wait for a new experiment ID."
+
+(End of file - total 38 lines)
