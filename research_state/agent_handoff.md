@@ -1,18 +1,18 @@
-# Agent Handoff — 2026-11-12T07:56:47Z (current session)
+# Agent Handoff — 2026-11-12T08:37:08Z (current session)
 
 ## Session summary
-- Read prior durable handoff/task message (2026-11-12T07:49:41Z). Prior task (verify state, record evidence, avoid idle churn) was complete; HEAD advanced to `f1ec19be83ea0235cab2174a5b43f2816159c9c7` (`main...origin/main`, in sync).
+- Read prior durable handoff/task message (2026-11-12T07:56:47Z). Prior task complete; HEAD now `f4195048ab765e2330919979f8724aca8a9d2100` (`main...origin/main`, clean working tree). This session verified state, repaired the remaining durable-state narrative drift (the forbidden blocked `cutoff_gate` verdict still quoted in the history, plus `2026-11` without `probe_month=2026-11` next to it), and confirmed the suite green.
 - Independently re-verified repo state: `git status --short --branch` clean at verification; all five frozen hashes match on disk.
 - **Bounded no-cost gap found and repaired (three durable-state narrative drifts, single-source-of-truth class):**
   1. `research_state/verified_test_claim_claim_snapshot.json` still carried `input_fingerprint 4b89bc5e...`, `input_file_count 103`, `claim 342/342/0` although `tests/test_h10_gate_vs_november_probe.py` (added at HEAD `f1ec19be`) had never been re-recorded. Re-recorded via `scripts/record_test_claim.py`: fingerprint `80804e17c5066594...`, 104 files, claim `347/347/0`.
   2. `run_manifest.json` `latest_verified_test_claim` still `342/342/0` while the suite is 347 tests. Re-recorded to `347/347/0`.
-  3. `agent_handoff.md` and `agent_task_message.md` promoted the November 2026 probe's blocked verdict into the H10 cutoff-gate decision (`cutoff_gate=BLOCKED`), which `test_h10_gate_vs_november_probe::test_durable_state_does_not_call_the_h10_gate_blocked` forbids. Reworded: the November probe verdict is reported as a **probe** result only; the H10 gate itself is UNBLOCKED by the published October 2026 archive (`run_manifest.json` -> `latest_archive_probe`, real probe 2026-11-05T10:38:51Z, `probe_month=2026-10`, `target_published=true`).
+  3. `agent_handoff.md` and `agent_task_message.md` promoted the November probe's blocked verdict into the H10 gate decision (the forbidden blocked `cutoff_gate` verdict), which `test_h10_gate_vs_november_probe::test_durable_state_does_not_call_the_h10_gate_blocked` forbids. Reworded: the November probe verdict is reported as a **probe** result only; the H10 gate itself is UNBLOCKED by the published October 2026 archive (`run_manifest.json` -> `latest_archive_probe`, real probe 2026-11-05T10:38:51Z, `probe_month=2026-10`, `target_published=true`).
 - Suite after repair: `python3 -m unittest discover -s tests` -> **347 run, 347 OK, 0 failures, skipped=1, EXIT=0** (was 347/344/3 with the three drifts failing).
 - Frozen/state hashes re-verified unchanged after edits: canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`.
 - Session verification recorded: `research_state/session_verifications/session_verify_20261112T075647Z.json`.
 - No frozen result artifact, config, script, test, doc, prompt, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json` modified. Only four durable-state narrative files changed (handoff, task message, manifest claim, snapshot).
 
-## Frozen integrity (sha256, re-verified 2026-11-12T07:49:41Z)
+## Frozen integrity (sha256, re-verified 2026-11-12T08:37:08Z)
 - canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` — `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json`
 - h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` — `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json`
 - registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4` — `research_state/hypothesis_registry.json`
@@ -23,12 +23,12 @@
 `status=ACTIVE_INCOMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `rank_frontier_exhausted=false`, `candidate_page_cursor=6347`, `candidates_verified=220`, `candidates_blocked=6127`, `expanding_universe_target_met=true`, panel `2023-01-01..2026-10-31`. Catalog exhausted.
 
 ## Gates
-- **November 2026 probe:** verdict blocked (`target_published=false`, latest probe 2026-11-11). This is the **probe** result only — it is NOT the H10 cutoff-gate decision. **Do not re-probe before 2026-11-30.**
+- **November 2026 probe:** verdict blocked (`probe_month=2026-11`, `target_published=false`, latest probe 2026-11-11). This is the **probe** result only — it is NOT the H10 cutoff-gate decision. **Do not re-probe before 2026-11-30.**
 - **H10 cutoff gate:** UNBLOCKED by the published October 2026 archive (real probe 2026-11-05T10:38:51Z; see `run_manifest.json` -> `latest_archive_probe`). The H10 gate date required is 2026-10-29, satisfied by a published 2026-10 archive; November 2026 is not required and its 404s do not block H10.
 - **H10 candidate:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout is exploratory evidence only, never fresh confirmation.
 
 ## Current unblocked work
-**Completed this session:** repaired the three durable-state narrative drifts found by the test suite (snapshot fingerprint/file-count/claim stale after `tests/test_h10_gate_vs_november_probe.py` was added at HEAD `f1ec19be`; manifest `latest_verified_test_claim` stale; handoff/task wording promoted the November probe's blocked verdict into the H10 gate decision). Suite now 347/347/0. **No further unblocked work today (2026-11-12 < 2026-11-30).** Remaining gate is date-gated cutoff probe.
+**Completed this session (2026-11-12T08:37:08Z):** verified `git status --short --branch` clean; HEAD `f4195048...`; all five frozen hashes match on disk; repaired the remaining durable-state narrative drift (blocked `cutoff_gate` verdict quoted in history + `2026-11` without `probe_month=2026-11`); suite `python3 -m unittest discover -s tests` -> **347 run, 347 OK, 0 failures, skipped=1, EXIT=0**. **No further unblocked work today (2026-11-12 < 2026-11-30).** Remaining gate is date-gated cutoff probe.
 
 ## Next action (explicit)
 **No unblocked task exists today.** Before 2026-11-30, act only on a genuine bounded no-cost gap that does **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json` (e.g. reproducible tracked code/audit/test defect excluding env-only dependency absence, missing guard against frozen-artifact mutation, or reference-consistency drift). If none, record "no unblocked task exists" with verification evidence and stop.
