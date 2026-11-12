@@ -1,0 +1,42 @@
+{
+  "session": "31st_pass_handoff_task_message_refresh_task_a_complete",
+  "verified_at_utc": "2026-11-12T21:46:42Z",
+  "head_at_start": "441ac68c",
+  "branch_state": "main; working tree clean; no uncommitted changes",
+  "prior_task": "Action A from the 2026-11-12T18:39:53Z handoff: reconcile the F1COVERAGE-001 registry reference (H23) and add a stdlib guard that every experiment id referenced under artifacts/ resolves to a registered hypothesis.",
+  "prior_task_status": "COMPLETE (already committed at HEAD 441ac68c; this session confirmed and documented it)",
+  "evidence": {
+    "registry": "hypothesis_registry.json holds H1..H23 with next_sequence_number=23; H23 experiment_id=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001, status=EXPLORATORY_ONLY, predicted_high_minus_low_sign=coverage_only, immutable=false",
+    "reconciliation_record": "registry_reconciliation_20261112T2045Z records the H23 allocation (next_sequence_number 22 -> 23) and the operative F1 PASS result",
+    "guard_test": "tests/test_experiment_registry_reference.py added (7 stdlib guards: sequence contiguity, artifact-id resolution, allowlist integrity, doubled-id confinement, operative F1 audit id)",
+    "test_claim": "python3 scripts/record_test_claim.py wrote 363/363/0 (107 files)",
+    "test_suite": "python3 -m unittest discover -s tests -> Ran 363 tests in 46.074s, OK (skipped=1), EXIT=0",
+    "frozen_hashes": "canonical_forward_block 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390; h10_fresh_forward_block 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f — both byte-unchanged vs git show HEAD:"
+  },
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "final_unittest": {
+      "command": "python3 -m unittest discover -s tests",
+      "summary": "Ran 363 tests",
+      "result": "OK (skipped=1)",
+      "exit_code": 0
+    },
+    "frozen_artifacts_modified": false
+  },
+  "changes_this_session": {
+    "research_state/agent_handoff.md": "marked task A (registry reference reconciliation) complete; set date-gated next action (task B, H10 fresh sealed block, on/after 2026-11-30)",
+    "research_state/agent_task_message.md": "marked prior task complete; wrote clear initial task for next agent (date-gated task B on/after 2026-11-30)",
+    "research_state/session_verifications/session_verify_20261112T214642Z.json": "new session verification record (this file)"
+  },
+  "frozen_artifacts_modified": false,
+  "notes": [
+    "No DISPERSION-001/002/003 artifact, config, input, registry hypothesis entry or frontier was modified; H23 registration and the guard test were already committed at HEAD 441ac68c.",
+    "The F1COVERAGE-001 repaired panels/raw remain EXPLORATORY_ONLY and are not part of the sealed 003 inputs.",
+    "November 2026 cutoff probe NOT re-run (date-gated; do not re-probe before 2026-11-30). Latest probe cutoff_probe_20261107T091152Z.json: probe_month=2026-11, target_published=false, cutoff_gate=BLOCKED.",
+    "H10 gate UNBLOCKED by October 2026 archive but fresh block IMMATURE (n_formations=1, n_high=0, n_low=0); k not advanced.",
+    "Nothing bounded and unblocked remains before 2026-11-30; next action is date-gated task B."
+  ]
+}
