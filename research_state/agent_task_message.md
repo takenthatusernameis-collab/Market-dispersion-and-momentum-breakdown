@@ -1,27 +1,20 @@
-# Agent Task Message — 2026-11-12T16:20:52Z (current session)
+# Agent Task Message — 2026-11-12T17:03:53Z (next session)
 
-## Verified state
-- **HEAD:** `cec33df6f5f73d0e8a8a29fbae5fe4cb35de5c9d` (`main` up to date with `origin/main`, clean tracked tree at verify start; only new untracked `research_state/` audit outputs from this pass).
-- **Frozen hashes re-verified unchanged:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
+## Verified state (unchanged from prior session)
+- **HEAD:** `cec33df6f5f73d0e8a8a29fbae5fe4cb35de5c9d` (`main` up to date with `origin/main`, clean tracked tree).
+- **Frozen hashes re-verified unchanged:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`; latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
 - **November 2026 probe (verdict only, NOT the H10 gate):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — `probe_month=2026-11`, `target_published=false`. **Do not re-probe before 2026-11-30.**
 - **H10 cutoff gate:** UNBLOCKED by the published October 2026 archive (probe 2026-11-05T10:38:51Z, `cutoff_probe_20261105T103851Z.json`, `probe_month=2026-10`, `target_published=true`). Gate date 2026-10-29; November 404s do not block H10.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
-- **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced.
-- **Verified test claim:** `348/348/0` (skipped=1). Independently re-confirmed this pass: `python3 -m unittest discover -s tests` → `Ran 348 tests in 59.464s`, `OK (skipped=1)`, EXIT=0; `python3 -m compileall -q scripts tests` EXIT=0.
-- **Audits this pass:** `audit_integrity_audit_references.py` pass (14/0/0, info 8); `audit_prereg_and_h10_fresh_references.py` pass (13, prereg 9, h10 1, forward_block 1, 0/0); `audit_preregistration_coverage.py` pass (14, missing_prereq 0, uncovered_prereq 0).
+- **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Fresh block: `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, date 2026-09-30, `high_low_diff_net_1x=null`.
+- **Verified test claim:** `348/348/0` (skipped=1). Independently re-confirmed this session: `python3 -m unittest discover -s tests` → `Ran 348 tests in 59.464s`, `OK (skipped=1)`, EXIT=0; `python3 -m compileall -q scripts tests` EXIT=0.
+- **Audits this session:** `audit_integrity_audit_references.py` pass (14/0/0); `audit_prereg_and_h10_fresh_references.py` pass (13, 0/0); `audit_preregistration_coverage.py` pass (14, missing_prereq 0, uncovered_prereq 0).
 
-## What this session delivered (read this before doing anything else)
-`research_state/DISP_003_PANEL_COVERAGE_LINEAGE_AUDIT_20261112T162052Z.json` (`DISP-003-PANEL-COVERAGE-LINEAGE-001`, verdict `PASS_WITH_NEW_INPUT_COVERAGE_FINDING`):
-- **F1:** panel symbols `1inch`, `aave`, `ach`, `agld` (4 of 32) have **no klines and no funding for 2025-01-01..2026-09-30** — 168 missing monthly zips. Not a delisting (series resume 2026-10, cap panel complete).
-- **F2:** the sealed canonical H004V106 block (2025-01-01..2026-08-31) ran on **26–27 assets**; recomputing the documented eligibility rule reproduces **608/608** recorded `n_assets` exactly (27 through 2025-05-21, 26 after).
-- **F3:** H10 fresh formation 2026-09-30 uses 26 assets (consistent with immature status).
-- **F4:** minor 1-day holes only.
-- **F5:** frontier `expanding_universe_assets_with_cap_and_binance=220` is pinned to `len(candidates_verified)`, while its definition text claims "in the committed panels" (only 32 assets have a committed series). Value and frontier file were NOT changed.
+## Prior task — complete
+The input-coverage lineage audit (DISP-003-PANEL-COVERAGE-LINEAGE-001) is complete and recorded in `research_state/DISP_003_PANEL_COVERAGE_LINEAGE_AUDIT_20261112T162052Z.json` with findings F1–F5 (4 panel symbols `1inch`/`aave`/`ach`/`agld` lack klines+funding for 2025-01-01..2026-09-30; canonical block ran on 26–27 assets; H10 immature; minor 1-day holes; frontier-count documentation drift). Nothing further is required of that task.
 
-No frozen artifact, panel, raw zip, config, script, test, doc, prompt, registry or frontier file was modified; no network access was used.
-
-## Initial task for next agent
-**Not waiting for a manually supplied experiment ID.** The registered H10 confirmation remains blocked by data maturity (needs the 2026-11-30 vintage). Do not re-probe November 2026 before 2026-11-30.
+## Initial task for next agent — no unblocked task before 2026-11-30
+**Current date 2026-11-12 is before the 2026-11-30 date gate. Do not re-probe November 2026 before 2026-11-30.**
 
 ### A) Before 2026-11-30 — only on a genuine bounded no-cost gap
 Acceptable: a reproducible tracked code/audit/test defect (excluding env-only dependency absence), a missing guard against frozen-artifact mutation, or reference-consistency drift — **only if** it does not alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json` or `research_state/universe_frontier.json`. Prefer `python3 -m unittest discover -s tests` to confirm `348/348/0` independently rather than trusting this snapshot. If no such gap exists, record "no unblocked task exists" with the verification evidence and stop. **Do not repeat the same verification pass a fourth time; do not open a new audit of the same frozen block without a specific new question.**
