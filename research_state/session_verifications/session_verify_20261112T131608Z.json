@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "session_id": "session_verify_20261112T131608Z",
+  "verified_utc": "2026-11-12T13:16:08Z",
+  "git": {
+    "head": "0ad539f2f774de4cc6c8f1c3331b06fb7374be9c",
+    "branch": "main",
+    "origin_main": "0ad539f2f774de4cc6c8f1c3331b06fb7374be9c",
+    "status_clean": true,
+    "untracked_except_pycache": true,
+    "untracked_files": [
+      "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261112T131527Z.json",
+      "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261112T131527Z.json"
+    ]
+  },
+  "prior_head": "46fea347c8147a60cf61c5723a302be876a666",
+  "checkpoint_commits_since_prior_head": [
+    "0ad539f2 (handoff, run_manifest.json, verified_test_claim_claim_snapshot.json)"
+  ],
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "registry": "7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "latest_probe": "25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6"
+  },
+  "frozen_hashes_unchanged": true,
+  "test_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "exit_code": 0,
+    "tests_run": 348,
+    "tests_ok": 348,
+    "tests_failures": 0,
+    "tests_skipped": 1
+  },
+  "verified_test_claim": {
+    "claim": "348/348/0",
+    "input_fingerprint": "943f5e1f411dd13cd06a02d0f128c02a4c40033920a888244fad31827c311af0",
+    "input_file_count": 104,
+    "matches_run_manifest": true
+  },
+  "latest_probe": {
+    "probe_month": "2026-11",
+    "target_published": false,
+    "cutoff_gate": "BLOCKED",
+    "probe_utc": "2026-11-11T01:34:59Z",
+    "note": "November 2026 probe BLOCKED (target_published=false). This is the PROBE result only; it is NOT the H10 cutoff-gate decision. Do not re-probe before 2026-11-30."
+  },
+  "h10_gate": {
+    "status": "UNBLOCKED",
+    "satisfied_by": "October 2026 archive",
+    "latest_archive_probe_utc": "2026-11-05T10:38:51Z",
+    "gate_date_required": "2026-10-29",
+    "note": "H10 gate date required is 2026-10-29, satisfied by a published 2026-10 archive; November 2026 404s do not block H10."
+  },
+  "frontier": {
+    "status": "ACTIVE_INCOMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "catalog_exhausted": true,
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "panel": "2023-01-01..2026-10-31"
+  },
+  "h10_status": "CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE",
+  "reference_audits": {
+    "audit_integrity_audit_references": "pass=True scanned=14 critical=0 errors=0 info=8",
+    "audit_prereg_and_h10_fresh_references": "pass=True scanned=13 prereg=9 frozen_prereg=0 h10=1 forward_block=1 critical=0 errors=0 info=0",
+    "audit_preregistration_coverage": "pass=True audits=14 missing_prereq=0 uncovered_prereq=0"
+  },
+  "compileall": {
+    "command": "python3 -m compileall -q scripts tests",
+    "exit_code": 0
+  },
+  "gap_found": false,
+  "unblocked_work_today": false,
+  "next_action": "No unblocked task exists today (2026-11-12 < 2026-11-30). Remaining gate is date-gated cutoff probe."
+}
