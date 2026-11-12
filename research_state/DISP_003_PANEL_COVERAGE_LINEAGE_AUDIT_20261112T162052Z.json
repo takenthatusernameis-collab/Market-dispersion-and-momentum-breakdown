@@ -1,0 +1,144 @@
+{
+  "audit_id": "DISP-003-PANEL-COVERAGE-LINEAGE-001",
+  "audit_type": "READ_ONLY_EVIDENCE_AUDIT",
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "timestamp_utc": "2026-11-12T16:20:52Z",
+  "scope": "Read-only lineage audit of the committed DISPERSION-003 price/funding/market-cap panels: interior coverage completeness, and the effective eligible-asset count actually used by the sealed canonical H004V106 forward block. No panel, artifact, config, script, test or durable-state file was modified.",
+  "method": "stdlib csv/json hashing plus pandas date algebra over artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/*.csv and data/raw/binance/{klines,funding}/*/ listing only. Eligible set per date reproduced with the same rule as scripts/run_dispersion003_grid.py::build_eligibility_map (CapMrktEstUSD non-null on date AND Binance kline date AND Binance funding date; asset = <SYMBOL without USDT>.lower()). No network access, no paid source, no credentials.",
+  "inputs": {
+    "panel_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels",
+    "raw_binance_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/raw/binance",
+    "canonical_block": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+    "canonical_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+    "h10_fresh_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "panel_csv_count": 65,
+    "marketcap_panel_sha256": "b531e679531116482aa5c438c398849c6e591a23580d901ce547b9b4ba060f92",
+    "binance_panel_manifest_sha256": "71570605ad246d312f0b753b83a8996b145abbe7f622d28dcde95afec29c428c"
+  },
+  "checks": {
+    "marketcap_panel_assets": 32,
+    "klines_panel_symbols": 32,
+    "funding_panel_symbols": 32,
+    "assets_with_cap_and_klines_and_funding": 32,
+    "raw_klines_zip_count_total": 1339,
+    "symbols_with_interior_gap_klines": 4,
+    "symbols_with_interior_gap_funding": 4,
+    "canonical_block_formations": 608,
+    "canonical_block_n_assets_recomputed_matches_recorded": "608/608",
+    "canonical_block_n_assets_distribution": {"27": 141, "26": 467},
+    "canonical_block_recorded_eligible_assets_per_date": {"max": 27, "mean": 26.231907894736842, "min": 26},
+    "h10_fresh_block_n_assets": 26,
+    "grid_anchor_eligible_assets_per_date": {"max": 32, "mean": 29.015695067264573, "min": 26}
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "title": "Four of the 32 panel symbols have no price or funding observations for 2025-01-01..2026-09-30",
+      "severity": "material_input_coverage_gap",
+      "evidence": {
+        "symbols": ["1inch", "aave", "ach", "agld"],
+        "binance_symbols": ["1INCHUSDT", "AAVEUSDT", "ACHUSDT", "AGLDUSDT"],
+        "missing_months": "2025-01 .. 2026-09 (21 months per symbol)",
+        "missing_klines_zips": 84,
+        "missing_funding_zips": 84,
+        "missing_zips_total": 168,
+        "per_symbol_klines_gap_days": 639,
+        "per_symbol_funding_gap_days": 638,
+        "klines_last_before_gap": "2024-12-31",
+        "klines_first_after_gap": "2026-10-01",
+        "on_disk_klines_zip_counts": {"1INCHUSDT": 25, "AAVEUSDT": 25, "ACHUSDT": 24, "AGLDUSDT": 19, "BTCUSDT": 46, "ADAUSDT": 46},
+        "marketcap_panel_has_these_assets_across_the_gap": true,
+        "affected_panels_sha256": {
+          "binance_klines_1INCHUSDT.csv": "9c2f21351bae85dcff364402b1d503dce882126514c6f6e786099ae6f57f7b67",
+          "binance_klines_AAVEUSDT.csv": "61b506827d4c6b5d3ad30a46b8b1541089c30314b6c82d6f24440ec31e464cc4",
+          "binance_klines_AGLDUSDT.csv": "9681ca2f3581a87b6ccb0a160ab6cd9377c6e09ea33374e80f95e3f9ae8ddc1d",
+          "binance_klines_ACHUSDT.csv": "84cfb20aecefa3ddcc414547f84704b271d83d66812391b5efeb106532d7f6a6",
+          "binance_funding_1INCHUSDT.csv": "3c0fb806f1d5c6dd6eb711dbfd2340ce021bdb6fd8a2274c16a3967e3c106bd8"
+        }
+      },
+      "interpretation": "This is a raw-archive acquisition gap, not a delisting: the same four symbols have both klines and funding monthly zips again for 2026-10, and their market-cap series is present on every day of the gap. A delisted symbol would not resume. The panel CSVs and the panel manifest rows are arithmetically accurate for what was downloaded (boundaries and row counts match the CSVs), but no field records interior completeness, so the gap is invisible to a boundary-level check.",
+      "not_a_defect_in": "Frozen artifacts, cost model, state rule, or inference. Nothing was fabricated or forward-filled: the missing months are simply absent, which is why the eligibility rule excludes these assets on those dates."
+    },
+    {
+      "id": "F2",
+      "title": "The sealed canonical H004V106 block was estimated on 26-27 assets, and the shortfall is fully explained",
+      "severity": "material_input_coverage_gap",
+      "evidence": {
+        "block_window": "2025-01-01..2026-08-31",
+        "recomputed_n_assets_matches_recorded": "608 of 608 formations match exactly",
+        "distribution": {"27 assets": 141, "26 assets": 467},
+        "excluded_on_every_block_date": {
+          "1inch": "no klines/funding after 2024-12-31 (F1)",
+          "aave": "no klines/funding after 2024-12-31 (F1)",
+          "ach": "no klines/funding after 2024-12-31 (F1)",
+          "agld": "no klines/funding after 2024-12-31 (F1)",
+          "matic": "delisted; last kline 2024-09-11"
+        },
+        "excluded_only_until": {"eos": "last kline 2025-05-21 (delisted)"},
+        "dates_with_27_assets": "2025-01-01..2025-05-21 (eos still present)",
+        "dates_with_26_assets": "2025-05-22..2026-08-31",
+        "counterfactual_if_F1_were_repaired": {
+          "note": "Descriptive coverage counterfactual only. NOT an outcome estimate and NOT a recomputation of any test statistic.",
+          "n_assets_dates_2025-01-01..2025-05-21": 31,
+          "n_assets_dates_2025-05-22..2026-08-31": 30
+        }
+      },
+      "interpretation": "The headline canonical numbers (n_formations 608, high_low_diff_net_1x +0.6165223953929935, high 61 / low 90 / mid 457) are cross-sectional dispersion and momentum-decile spreads computed on 26-27 names, i.e. 81-84% of the 32-symbol committed panel and about 12% of the 220 verified candidate universe. The per-formation n_assets field in the sealed artifact already exposes the reduced count, so the limitation is visible; what was missing is the attribution, which this audit supplies."
+    },
+    {
+      "id": "F3",
+      "title": "The H10 fresh sealed block's single formation (2026-09-30) uses 26 assets",
+      "severity": "informational",
+      "evidence": {
+        "n_assets": 26,
+        "eligible_assets_per_date": {"max": 26, "mean": 26.0, "min": 26},
+        "excluded": "the four F1 symbols plus MATIC and EOS"
+      },
+      "interpretation": "Consistent with F1/F2 and with the recorded H10 status EVALUATED_NULL_DIFF_IMMATURE (n_high 0, n_low 0). No change to the H10 gate, the k counter or the maturity rule. This audit does not evaluate the H10 outcome."
+    },
+    {
+      "id": "F4",
+      "title": "Minor single-day coverage gaps (not material)",
+      "severity": "informational",
+      "evidence": {
+        "all_26_full_coverage_symbols_missing": ["2026-10-28"],
+        "marketcap_panel_missing_day": {"eos": ["2025-06-05"]},
+        "marketcap_panel_end": "2026-11-03 (kline panels end 2026-10-31; 3 cap-only trailing days)"
+      },
+      "interpretation": "Interior one-day holes do not change any state classification at the 365-day trailing window scale and are recorded for completeness."
+    },
+    {
+      "id": "F5",
+      "title": "Frontier field definition text does not match what the field measures (documentation drift, no value change)",
+      "severity": "low_documentation_drift",
+      "evidence": {
+        "field": "expanding_universe_assets_with_cap_and_binance",
+        "value": 220,
+        "definition_text": "Number of distinct assets that have BOTH a CapMrktEstUSD observation and a Binance USD-M perpetual price series in the committed panels.",
+        "measured_panel_support": 32,
+        "grid_eligible_assets_per_date_max": 32,
+        "pinned_by_test": "tests/test_candidate_validation.py::test_frontier_universe_count_tracks_the_verified_list asserts the field equals len(candidates_verified)",
+        "what_the_value_actually_measures": "len(candidates_verified): catalog IDs with cap history and an existing Binance symbol at validation time (190 from the validation snapshot plus 30 legacy panel assets); 188 of them have no committed price panel."
+      },
+      "interpretation": "The number is internally consistent with its test and with the candidate-validation record, but the definition sentence overstates panel support: only 32 assets have a committed price series, and the grid's expanding arm can never exceed 32 eligible assets per date. The value itself was NOT changed and the frontier file was NOT modified (out of scope this session); recorded here so the frontier owner can correct the sentence or the field name in a future durable-state pass."
+    }
+  ],
+  "already_documented_context": {
+    "input_hash_reconciliation": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/H004V106_forward_block_final_integrity_audit_20261102.json already records all_match=false for the panel input hashes, with the documented explanation that October 2026 data was appended to the panels after the block was sealed. That is expected drift and is not re-reported as a defect here.",
+    "no_prior_artifact_documents_F1": "Searched research_state/*.json, research_state/session_verifications/*.json and artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/*.json for the gap description; the reduced 26-27 asset counts appear in the sealed block and in the final integrity audit (n_assets_max 27 / min 26) but no artifact states the cause or the missing-month count."
+  },
+  "disposition": {
+    "panels_modified": false,
+    "raw_archive_modified": false,
+    "zips_downloaded": false,
+    "frozen_artifacts_modified": false,
+    "durable_state_modified": false,
+    "corrective_action_taken": "None. Repairing the panel (168 missing monthly zips from the free Binance Public Data Archive) would change the inputs of a sealed artifact and therefore requires a NEW experiment ID, a new preregistration and a new artifact path; it is deliberately not done inside this audit.",
+    "recommended_next_step_for_a_future_session": "If a full-panel confirmatory estimate is ever wanted: allocate a new hypothesis/experiment ID, preregister it, fetch only the 168 missing keyless zips (4 symbols x 21 months x 2 series) from https://data.binance.vision/data/futures/um, rebuild panels into a NEW panel directory (never overwrite the current one), and keep the current 003 block, panels and findings unchanged."
+  },
+  "verdict": "PASS_WITH_NEW_INPUT_COVERAGE_FINDING",
+  "verdict_note": "The frozen canonical block is internally consistent and reproducible from the committed panels as they stand (608/608 formation asset counts reproduced). The audit adds a previously unrecorded input-coverage limitation (F1/F2) and a documentation drift (F5). No confirmatory claim is made or changed.",
+  "frozen_artifacts_untouched": true
+}
