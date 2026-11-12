@@ -1,0 +1,62 @@
+{
+  "session_utc": "2026-11-12T23:06:27Z",
+  "head_commit": "59461fe6",
+  "prior_session_task": "read durable handoff/task message and complete the date-gated H10 branch",
+  "compile_check": "PASS",
+  "unit_tests": "370 tests, OK, 2 skipped",
+  "git_diff_artifacts_configs": "empty",
+  "canonical_forward_block_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "registry_hash": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+  "frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+  "grid_ledger": {
+    "expected": 216,
+    "evaluated": 216,
+    "ok": 216,
+    "blocked": 0,
+    "failed": 0
+  },
+  "probe_evidence": {
+    "total_cutoff_probe_records": 391,
+    "probe_month": "2026-11",
+    "probe_month_2026_11_records": 122,
+    "all_target_published_false": true,
+    "all_cutoff_gate_blocked": true,
+    "newest_record": "research_state/cutoff_probe/cutoff_probe_20261112T225937Z.json",
+    "newest_probe_utc": "2026-11-12T22:59:37Z",
+    "archive_alive_via_control_month": "2026-09"
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED",
+    "gate_met_by_month_end": true,
+    "november_probe_verdict": "BLOCKED as probe only (cutoff_gate=BLOCKED, target_published=false)",
+    "november_probe_never_promoted_to_gate": true,
+    "fresh_block": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "k_advanced": false
+  },
+  "frontier": {
+    "status": "ACTIVE_INCOMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "panel": "2023-01-01..2026-10-31"
+  },
+  "date_gate": {
+    "today": "2026-11-12",
+    "h10_maturity_date": "2026-11-30",
+    "gate_met": false,
+    "action": "no bounded no-cost H10 task unblocked before 2026-11-30"
+  },
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261112T230627Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "frozen_artifacts_unchanged": true,
+  "notes": "No re-probe of probe_month=2026-11 performed before 2026-11-30. H10 cutoff gate is UNBLOCKED by the published October 2026 archive; the probe_month=2026-11 probe remains BLOCKED as a probe only and is never promoted into the H10 gate decision. Frozen DISPERSION-003 artifacts/configs/inputs, frontier, registry, and sealed holdout unchanged."
+}

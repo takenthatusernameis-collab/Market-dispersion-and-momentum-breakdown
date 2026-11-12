@@ -1,19 +1,19 @@
-# Agent Task Message — 2026-11-12T22:58:15Z (next session)
+# Agent Task Message — 2026-11-12T23:06:27Z (next session)
 
-## Verified state (2026-11-12T22:58:15Z)
-- **HEAD at session start:** `6be62a28` (`main`). Prior durable refresh committed at `d8dfa24e` (`9166ffe2`), with later checkpoints `073ff2e4` and `6be62a28` containing only research_state text/verification changes.
-- **This session completed:** read durable handoff/task message, reverified state, corrected a conflated probe-count claim in the durable prose (121 → 122 `probe_month=2026-11` records), recorded `research_state/session_verifications/session_verify_20261112T225815Z.json`, and refreshed the durable handoff/task for the next agent.
+## Verified state (2026-11-12T23:06:27Z)
+- **HEAD at session start:** `59461fe6` (`main`). Working tree clean; later checkpoints after `6be62a28` contain only research_state text/verification changes.
+- **This session completed:** read durable handoff/task message, reverified state, recomputed probe evidence from disk, recorded `research_state/session_verifications/session_verify_20261112T230627Z.json`, and refreshed the durable handoff/task for the next agent.
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests` → 370 tests, OK, 2 skipped. `git diff --stat -- artifacts/ configs/` empty. Grid ledger: 216 expected / 216 evaluated / 216 OK / 0 blocked / 0 failed.
-- **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; registry `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- **Probe evidence (recomputed from disk, not from prose):** 122 records carry `probe_month=2026-11`; 391 is the total number of `research_state/cutoff_probe/cutoff_probe_*.json` records across all months. Every November 2026 record reports `target_published=false` and a probe verdict of BLOCKED; newest is `research_state/cutoff_probe/cutoff_probe_20261112T225937Z.json` (`probe_utc=2026-11-12T22:59:37Z`). Archive alive via the 2026-09 control.
+- **Frozen hashes (verified on disk, unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; `research_state/hypothesis_registry.json` `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
+- **Probe evidence (recomputed from disk):** 391 total `research_state/cutoff_probe/cutoff_probe_*.json` records; 122 records carry `probe_month=2026-11`; all `target_published=false` and all `cutoff_gate=BLOCKED`; newest is `research_state/cutoff_probe/cutoff_probe_20261112T225937Z.json` (`probe_utc=2026-11-12T22:59:37Z`). Archive alive via the 2026-09 control month.
 - **H10 gate vs probe (two distinct verdicts):** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. The `probe_month=2026-11` probe is **BLOCKED as a probe only** and is never promoted to the gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`); k not advanced. F1COVERAGE-001 repairs are EXPLORATORY_ONLY, outside sealed 003 inputs.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
-- **No bounded no-cost H10 task unblocked before 2026-11-30.**
+- **No bounded no-cost H10 task unblocked before 2026-11-30.** Today is 2026-11-12; the H10 maturity date is 2026-11-30.
 
 ## Initial task for next agent
 
 ### 1) On/after 2026-11-30 — H10 fresh sealed forward block (date-gated, bounded, no-cost)
-This is the next executable action (date-gated, not an experiment-ID wait). Do **not** re-probe November 2026 before 2026-11-30.
+This is the next executable action (date-gated, not an experiment-ID wait). Do **not** re-probe `probe_month=2026-11` before 2026-11-30.
 
 1. Run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`.
 2. If `target_published=true`:
@@ -37,4 +37,4 @@ Free public data only; historical research only (no orders/live/paper trading); 
 ## End-of-session requirement
 Leave clean state; update durable handoff and `research_state/agent_task_message.md` with verified evidence and a concrete next action. Never write "wait for a new experiment ID."
 
-(End of file - total 38 lines)
+(End of file)
