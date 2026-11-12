@@ -431,7 +431,7 @@ def main() -> int:
 
     artifact = {
         "audit_id": "DISP-003-F1COVERAGE-001",
-        "experiment_id": f"HARMONY-CRYPTO-EDGE-004-{NEW_EXP}",
+        "experiment_id": NEW_EXP,
         "hypothesis": "H23",
         "audit_type": "SOURCE_COVERAGE_REPAIR",
         "status": "EXPLORATORY_ONLY",

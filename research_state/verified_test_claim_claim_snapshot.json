@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-12T18:11:05Z",
+  "recorded_utc": "2026-11-12T18:38:35Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 348,
-  "tests_ok": 348,
+  "tests_run": 356,
+  "tests_ok": 356,
   "tests_failures": 0,
   "tests_skipped": 1,
-  "claim": "348/348/0",
-  "input_fingerprint": "57c4d856ea81715ddc3f7fdf7d70b6a1bb6f70b6aceec2d366a7a610e4de4bde",
+  "claim": "356/356/0",
+  "input_fingerprint": "e2a92cf3411a0f3fd67e188378ed48790b11a89b97ecd76ae16231908d003ebc",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -77,6 +77,7 @@
     "tests/test_disp002_phase_b_placebos.py",
     "tests/test_dispersion_regime_conditioning.py",
     "tests/test_dispersion_rolling_window.py",
+    "tests/test_f1_panel_coverage_repair.py",
     "tests/test_forward_block_accounting.py",
     "tests/test_forward_block_cluster_bootstrap.py",
     "tests/test_forward_block_final_integrity_audit.py",
@@ -116,5 +117,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 105
+  "input_file_count": 106
 }

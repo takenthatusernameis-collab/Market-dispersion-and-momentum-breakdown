@@ -1,0 +1,71 @@
+{
+  "session": "29th_pass_f1_coverage_repair_guard_and_id_fix",
+  "verified_at_utc": "2026-11-12T18:39:53Z",
+  "head": "26b849f2f5d66ff3d244407be0b0cad8ee22dc9e",
+  "branch_state": "main; working tree had the in-session F1COVERAGE-001 fix/additions only",
+  "frozen_hashes_sha256": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "latest_cutoff_probe": "25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6"
+  },
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "unittest_before_snapshot_refresh": {
+      "command": "python3 -m unittest discover -s tests",
+      "summary": "Ran 356 tests in 59.396s",
+      "result": "FAILED (failures=1, skipped=1)",
+      "failure": "test_verified_test_claim_guard.test_snapshot_fingerprint_matches_inventory (expected: new .py inventory invalidated the recorded snapshot fingerprint)",
+      "exit_code": 1
+    },
+    "record_test_claim": {
+      "command": "python3 scripts/record_test_claim.py",
+      "refreshed_files": 106,
+      "wrote_claim": "356/356/0",
+      "exit_code": 0
+    },
+    "unittest_after_snapshot_refresh": {
+      "command": "python3 -m unittest discover -s tests",
+      "summary": "Ran 356 tests in 59.824s",
+      "result": "OK (skipped=1)",
+      "exit_code": 0
+    }
+  },
+  "bounded_gap_found": true,
+  "gap": {
+    "id": "F1COVERAGE-001-GUARD-001",
+    "kind": "reproducible_tracked_code_defect + missing_promised_regression_guard",
+    "scope": "Exploratory F1COVERAGE-001 arm only; no frozen DISPERSION-003 artifact, config, input, registry or frontier touched",
+    "defect": "scripts/f1_panel_coverage_repair.py built experiment_id as f\"HARMONY-CRYPTO-EDGE-004-{NEW_EXP}\" while NEW_EXP already carries the program prefix, so the first committed audit (f1_panel_coverage_repair_20261112T172913Z.json) recorded a doubled id 'HARMONY-CRYPTO-EDGE-004-HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001'.",
+    "missing_guard": "The F1 preregistration (F1_PANEL_COVERAGE_REPAIR_v1.md §6 item 4) promised tests/test_f1_panel_coverage_repair.py; no such test existed.",
+    "fix": "Changed experiment_id to the bare NEW_EXP constant and added tests/test_f1_panel_coverage_repair.py (8 guards)."
+  },
+  "evidence": {
+    "corrected_audit": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/integrity_audit/f1_panel_coverage_repair_20261112T183449Z.json",
+    "corrected_audit_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001",
+    "corrected_audit_verdict": "PASS",
+    "idempotent": "Offline re-run changed 0 existing files and added only the new audit; 365 pre-existing files byte-identical.",
+    "coverage_recomputed": {
+      "canonical_block_dates_old": {"n_dates": 608, "min": 26, "max": 27, "mean": 26.231907894736842, "distribution": {"26": 467, "27": 141}},
+      "canonical_block_dates_repaired": {"n_dates": 608, "min": 29, "max": 31, "mean": 30.075657894736842, "distribution": {"29": 95, "30": 372, "31": 141}},
+      "dates_increased": 638,
+      "dates_decreased": 0
+    },
+    "read_only_checks": {
+      "old_panels_byte_unchanged": true,
+      "old_kline_panel_hashes_match": true,
+      "frozen_artifacts_match": true
+    }
+  },
+  "frozen_artifacts_modified": false,
+  "notes": [
+    "The prior (doubled-id) audit is preserved unchanged as a historical record; the corrected audit is additive and does not overwrite it.",
+    "Registry still has H1..H22 and next_sequence_number 22: the F1COVERAGE-001 preregistration names hypothesis H23 but the registry was intentionally not edited (registry is off-limits in this pass). Recording the observation; a future registry pass should reconcile H23.",
+    "November 2026 cutoff probe remains date-gated (do not re-probe before 2026-11-30). H10 gate, k counter and maturity rule unchanged. Inspected 003 holdout remains exploratory evidence only.",
+    "Changed files: scripts/f1_panel_coverage_repair.py, tests/test_f1_panel_coverage_repair.py (new), corrected audit (new), research_state/run_manifest.json (claim 348->356), research_state/verified_test_claim_claim_snapshot.json."
+  ]
+}
