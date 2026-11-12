@@ -1,0 +1,38 @@
+{
+  "audit_id": "DISP-003-FRONTIER-INTEGRITY-001",
+  "audit_type": "READ_ONLY_EVIDENCE_AUDIT",
+  "checks": {
+    "blocked_count": 6127,
+    "catalog_blocked_set_equals_frontier_blocked": true,
+    "catalog_discovery_status": "ok",
+    "catalog_entries_walked": 6347,
+    "catalog_verified_set_equals_frontier_verified": true,
+    "duplicate_blocked": 0,
+    "duplicate_verified": 0,
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "legacy_excluded_count": 32,
+    "legacy_overlap_with_blocked": 0,
+    "legacy_subset_of_verified": true,
+    "newly_discovered": 0,
+    "overlap_verified_and_blocked": 0,
+    "rank_frontier_exhausted": false,
+    "sum_matches_catalog_entries_walked": true,
+    "verified_count": 220,
+    "verified_plus_blocked": 6347
+  },
+  "defects_found": [],
+  "frozen_artifacts_untouched": true,
+  "method": "python3 stdlib json load; set algebra on candidates_verified / candidates_blocked / catalog_discovery.{verified_excluded,blocked_excluded,legacy_excluded}; compared as sets because the frontier lists are in discovery order and the catalog lists are sorted.",
+  "notes": [
+    "220 verified + 6127 blocked = 6347 catalog entries walked; no duplicates and no verified/blocked overlap.",
+    "The 32 legacy assets are a subset of the 220 verified (catalog IDs with cap history), which is why walked = verified + blocked rather than verified + blocked + legacy.",
+    "catalog_discovery.verified_excluded/blocked_excluded are the same sets as the frontier lists but sorted; order-only difference, not drift.",
+    "catalog_discovery.newly_discovered is 0 and status=ok, consistent with catalog exhaustion at cursor 6347.",
+    "No change made to universe_frontier.json, any frozen artifact, config, script or test."
+  ],
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "schema_version": 1.0,
+  "scope": "Internal-consistency audit of research_state/universe_frontier.json candidate sets (no file modified).",
+  "timestamp_utc": "2026-11-12T15:13:54Z",
+  "verdict": "PASS"
+}
