@@ -1,0 +1,42 @@
+{
+  "session": "34th_pass_prior_task_completion_and_durable_state_guard_fix",
+  "verified_at_utc": "2026-11-12T21:59:27Z",
+  "head_at_start": "930694f6",
+  "branch_state": "main",
+  "prior_task": "Read the prior agent task from the durable handoff and complete it. Then update the handoff and write a clear initial task message for the next agent. (Prior durable task: Action A registry reference reconciliation for F1COVERAGE-001/H23 — already complete at 441ac68c.)",
+  "prior_task_status": "COMPLETE — registry reconciliation committed; no bounded no-cost task unblocked before 2026-11-30",
+  "defect_found": {
+    "test": "tests/test_h10_gate_vs_november_probe.py::H10GateIsDecidedByPublishedMonthTests::test_durable_state_does_not_call_the_h10_gate_blocked",
+    "sources": ["research_state/agent_handoff.md", "research_state/agent_task_message.md"],
+    "failure_count": 2,
+    "cause": "durable files mention 2026-11 via timestamps but omitted the required literal probe_month=2026-11 label for the November 2026 probe, so the guard could not verify the probe was reported as a probe and not as the gate decision",
+    "fix": "report the November probe with its exact probe_month=2026-11 label; no test or production code changed"
+  },
+  "evidence": {
+    "task_a": "H1-H23 registered, next_sequence_number=23; H23=HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001 EXPLORATORY_ONLY coverage_only; guard tests/test_experiment_registry_reference.py present and passing; reconciliation registry_reconciliation_20261112T2045Z (committed prior session).",
+    "compileall": "python3 -m compileall -q scripts tests EXIT=0",
+    "unittest_before_fix": "Ran 363 tests, FAILED (failures=2, skipped=1), EXIT=1",
+    "unittest_after_fix": "Ran 363 tests, OK (skipped=1), EXIT=0",
+    "frozen_hashes_sha256": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "h10_gate": "UNBLOCKED by published October 2026 archive (gate_met_by_month_end=true)",
+    "november_probe": "probe_month=2026-11 BLOCKED as a probe only (target_published=false); latest record research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json; pinned frontier/manifest summary still cutoff_probe_20261107T091152Z.json",
+    "fresh_block": "IMMATURE n_formations=1 n_high=0 n_low=0; k not advanced"
+  },
+  "changes_this_session": {
+    "research_state/agent_handoff.md": "refreshed to current session, recorded prior task complete, documented the 2-failure guard defect and fix, kept date-gated next action, added probe_month=2026-11 label",
+    "research_state/agent_task_message.md": "refreshed clear initial task for next agent (date-gated H10 fresh block on/after 2026-11-30) and the durable-state guard constraint",
+    "research_state/session_verifications/session_verify_20261112T215927Z.json": "new verification record"
+  },
+  "frozen_artifacts_modified": false,
+  "notes": [
+    "No DISPERSION-001/002/003 artifact, config, input, registry entry, or frontier modified.",
+    "Do not re-probe November 2026 before 2026-11-30; waiting for 2026-11-30 is a date gate, not an experiment ID.",
+    "Fresh H10 block uses ~26-asset sealed 003 inputs; F1COVERAGE-001 repairs are EXPLORATORY_ONLY and not part of sealed inputs.",
+    "Known non-blocking drift: frontier/manifest latest_november_2026_probe points at cutoff_probe_20261107T091152Z.json while newer probe_month=2026-11 re-probes exist on disk; summaries remain internally consistent with their named records, so the pinned guard passes."
+  ]
+}

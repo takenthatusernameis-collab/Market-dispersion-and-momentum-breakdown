@@ -1,10 +1,11 @@
-# Agent Task Message — 2026-11-12T21:53:38Z (next session)
+# Agent Task Message — 2026-11-12T21:59:27Z (next session)
 
-## Verified state (2026-11-12T21:53:38Z)
-- **HEAD:** `88a2e52a` (`main`). Prior durable task A (H23/F1COVERAGE-001 registry reference reconciliation + guard) complete and committed.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → `Ran 363 tests`, `OK (skipped=1)`, EXIT=0.
+## Verified state (2026-11-12T21:59:27Z)
+- **HEAD at session start:** `930694f6` (`main`). Prior durable task A (H23/F1COVERAGE-001 registry reference reconciliation + guard) was already complete and committed at `441ac68c` (checkpoint `88a2e52a`).
+- **Defect fixed this session:** at `930694f6` the full suite had 2 failures in `tests/test_h10_gate_vs_november_probe.py` (`test_durable_state_does_not_call_the_h10_gate_blocked`, both durable files) because the handoff/task message mentioned `2026-11` via timestamps but omitted the required literal `probe_month=2026-11` label for the November probe. The durable files now report the November probe with `probe_month=2026-11`; no test or production code changed.
+- **Checks (after fix):** `python3 -m compileall -q scripts tests` EXIT=0; `python3 -m unittest discover -s tests` → `Ran 363 tests`, `OK (skipped=1)`, EXIT=0.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; registry `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- **H10/cutoff:** November 2026 not yet published in latest probe chain (`research_state/cutoff_probe/`). **Do not re-probe before 2026-11-30.** H10 gate UNBLOCKED by October archive; fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`); k not advanced. F1COVERAGE-001 repairs are EXPLORATORY_ONLY, outside sealed 003 inputs.
+- **H10/cutoff (two distinct verdicts):** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. The November 2026 probe (`probe_month=2026-11`, latest record `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json`; pinned summary still at `cutoff_probe_20261107T091152Z.json`) is **BLOCKED as a probe only** (`target_published=false`) and is never promoted to the gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`); k not advanced. F1COVERAGE-001 repairs are EXPLORATORY_ONLY, outside sealed 003 inputs.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
 - **No bounded no-cost task unblocked before 2026-11-30.**
 
@@ -23,6 +24,7 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 
 ### 2) If 2026-11-30 has not arrived (or probe remains blocked)
 - Record "no bounded no-cost task unblocked before 2026-11-30" with verified evidence in handoff/task message and session verification. Do not loop on known-failed probes or invent work.
+- If you touch the durable handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 gate verdict as blocked; the guard `tests/test_h10_gate_vs_november_probe.py` enforces both.
 
 ## Hard constraints
 Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts/configs/inputs; no look-ahead/fabrication/forward-fill; today's rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.
