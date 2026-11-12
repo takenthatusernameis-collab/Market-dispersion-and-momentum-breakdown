@@ -1,0 +1,61 @@
+{
+  "session_utc": "2026-11-12T23:54:32Z",
+  "head_commit": "5a8dd4936e87e064f777e99dbbdd0f9be3f4c8ee",
+  "working_tree_clean": true,
+  "python_compile_ok": true,
+  "test_suite": {
+    "total": 370,
+    "passed": 368,
+    "skipped": 2,
+    "failures": 0,
+    "notes": "2 skipped; test_durable_state_does_not_call_the_h10_gate_blocked failures resolved (literal string in test file itself)"
+  },
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "artifacts_configs_diff": "empty",
+  "grid_summary": {
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+    "expected": 216,
+    "evaluated": 216,
+    "ok": 216,
+    "blocked": 0,
+    "failed": 0
+  },
+  "probe_evidence_recomputed": {
+    "total_probes": 392,
+    "probe_month_2026_11_count": 123,
+    "all_target_published_false": true,
+    "all_probe_verdict_blocked": true,
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261112T235000Z.json",
+    "newest_probe_utc": "2026-11-12T23:50:00Z",
+    "control_month_2026_09_alive": true
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED (by published October 2026 archive, gate_met_by_month_end=true)",
+    "probe_month_2026_11": "BLOCKED as probe only (target_published=false, never promoted to gate decision)",
+    "h10_fresh_block_status": "IMMATURE (n_formations=1, n_high=0, n_low=0); k not advanced"
+  },
+  "frontier_state": {
+    "status": "ACTIVE_INCOMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "rank_frontier_exhausted": false,
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true,
+    "panel": "2023-01-01..2026-10-31",
+    "catalog_exhausted": true
+  },
+  "h10_task_status": "no bounded no-cost H10 task unblocked before 2026-11-30 (today 2026-11-12); 30-day maturity and trailing-decile rules are hard",
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261112T235432Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "no_code_test_gap_found": true
+}
