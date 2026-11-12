@@ -1,14 +1,14 @@
-# Agent Task Message — 2026-11-12T13:24:30Z (current session)
+# Agent Task Message — 2026-11-12T14:21:37Z (current session)
 
 ## Verified state
-- **HEAD:** `e1d88a4b49edbc06238f9d4ad2ab151d913a0372` (`main...origin/main`, tracked tree clean at verification start). Untracked additions this session: `research_state/session_verifications/session_verify_20261112T132430Z.json`, `research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261112T132417Z.json`, `research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261112T132417Z.json`.
-- **Hashes unchanged (re-verified 2026-11-12T13:24:30Z):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
+- **HEAD:** `18fc5a15` (`main...origin/main`, clean at verify start). Commits `e1d88a4b..HEAD` checkpoint-only; excluding verification/audit records they touch only `research_state/` handoff/task/manifest/snapshot (`git diff --name-only e1d88a4b..HEAD -- artifacts/ configs/ docs/ prompts/ scripts/ tests/` empty).
+- **Hashes unchanged (re-verified 2026-11-12T14:21:37Z):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
 - **November 2026 probe (probe verdict only, NOT H10 gate):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — `probe_month=2026-11`, `target_published=false`, blocked. **Do not re-probe before 2026-11-30.**
 - **H10 cutoff gate:** UNBLOCKED by published October 2026 archive (real probe 2026-11-05T10:38:51Z, `cutoff_probe_20261105T103851Z.json`, `probe_month=2026-10`, `target_published=true`; `run_manifest.json` -> `latest_archive_probe`). Gate date 2026-10-29; November 404s do not block H10.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout is not fresh confirmation.
-- **Verified test claim:** `348/348/0` (manifest == snapshot `research_state/verified_test_claim_claim_snapshot.json`), fingerprint `943f5e1f411dd13cd06a02d0f128c02a4c40033920a888244fad31827c311af0`, 104 input files; fingerprint recomputed this session via `scripts/record_test_claim.py::inventory_fingerprint` and matches.
-- **Checks run this session:** `python3 -m compileall -q scripts tests` EXIT=0; `audit_integrity_audit_references.py` pass (scanned=14, critical=0, errors=0, info=8); `audit_prereg_and_h10_fresh_references.py` pass (scanned=13, prereg=9, h10=1, forward_block=1, critical=0, errors=0); `audit_preregistration_coverage.py` pass (audits=14, missing_prereq=0, uncovered_prereq=0). Bounded delta sweep: no reproducible tracked code/audit/test defect, missing frozen-artifact guard, or reference-consistency drift found.
+- **Verified test claim:** `348/348/0` (manifest == snapshot), fingerprint `943f5e1f411dd13cd06a02d0f128c02a4c40033920a888244fad31827c311af0`, 104 input files.
+- **Checks run this session (15th pass):** `python3 -m compileall -q scripts tests` EXIT=0; `audit_integrity_audit_references.py` pass (scanned=14, critical=0, errors=0, info=8); `audit_prereg_and_h10_fresh_references.py` pass (scanned=13, prereg=9, h10=1, forward_block=1, critical=0, errors=0); `audit_preregistration_coverage.py` pass (audits=14, missing_prereq=0, uncovered_prereq=0). Bounded delta sweep: no reproducible tracked code/audit/test defect, missing frozen-artifact guard, or reference-consistency drift found.
 
 ## Initial task for next agent
 **No unblocked task exists today (2026-11-12 < 2026-11-30).** Not waiting for a manually supplied experiment ID. Remaining gate is date-gated cutoff probe. Avoid idle churn.
@@ -26,4 +26,4 @@
 Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts/configs; no look-ahead/fabrication/forward-fill; today's rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.
 
 ## End-of-session requirement
-Leave clean state; update durable handoff/task message with verified evidence; report only verified progress; leave a concrete next action. Never write "wait for a new experiment ID."
+Leave clean state; update durable handoff/task message with verified evidence; report only verified progress; leave a concrete next action. Never write "wait for a new experiment ID".
