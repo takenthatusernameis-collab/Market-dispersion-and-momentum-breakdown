@@ -1,14 +1,15 @@
-# Agent Task Message — 2026-11-12T17:12:05Z (next session)
+# Agent Task Message — 2026-11-12T18:12:30Z (next session)
 
 ## Verified state (unchanged from prior session)
-- **HEAD:** `a5fa0149a1f0d4e8c9b3e2f1d0c9b8a7f6e5d4c3b` (`main` up to date with `origin/main`, clean tracked tree; only new audit output files untracked).
+- **HEAD:** `a5fa0149a1f0d4e8c9b3e2f1d0c9b8a7f6e5d4c3b` (`main` up to date with `origin/main`, clean tracked tree; only `research_state/run_manifest.json` and `research_state/verified_test_claim_claim_snapshot.json` updated by `scripts/record_test_claim.py`, new audit output files untracked).
 - **Frozen hashes re-verified unchanged:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`; latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
 - **November 2026 probe (verdict only, NOT the H10 gate):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — `probe_month=2026-11`, `target_published=false`. **Do not re-probe before 2026-11-30.**
 - **H10 cutoff gate:** UNBLOCKED by the published October 2026 archive (probe 2026-11-05T10:38:51Z, `cutoff_probe_20261105T103851Z.json`, `probe_month=2026-10`, `target_published=true`). Gate date 2026-10-29; November 404s do not block H10.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Fresh block: `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, date 2026-09-30, `high_low_diff_net_1x=null`.
-- **Verified test claim:** `348/348/0` (skipped=1). Independently re-confirmed this session: `python3 -m unittest discover -s tests` → `Ran 348 tests in 59.572s`, `OK (skipped=1)`, EXIT=0; `python3 -m compileall -q scripts tests` EXIT=0.
+- **Verified test claim:** `348/348/0` (skipped=1). Independently re-confirmed this session: `python3 -m unittest discover -s tests` → `Ran 348 tests in 60.852s`, `OK (skipped=1)`, EXIT=0; `python3 -m compileall -q scripts tests` EXIT=0.
 - **Audits this session:** `audit_integrity_audit_references.py` pass (14/0/0); `audit_prereg_and_h10_fresh_references.py` pass (13, 0/0); `audit_preregistration_coverage.py` pass (14, missing_prereq 0, uncovered_prereq 0).
+- **Test claim snapshot refreshed:** `scripts/record_test_claim.py` updated `research_state/verified_test_claim_claim_snapshot.json` (fingerprint `57c4d856ea81715ddc3f7fdf7d70b6a1bb6f70b6aceec2d366a7a610e4de4bde`, file count 105, claim `348/348/0` preserved) and `research_state/run_manifest.json` (`latest_verified_test_claim=348/348/0`).
 
 ## Prior task — complete
 The input-coverage lineage audit (DISP-003-PANEL-COVERAGE-LINEAGE-001) is complete and recorded in `research_state/DISP_003_PANEL_COVERAGE_LINEAGE_AUDIT_20261112T162052Z.json` with findings F1–F5 (4 panel symbols `1inch`/`aave`/`ach`/`agld` lack klines+funding for 2025-01-01..2026-09-30; canonical block ran on 26–27 assets; H10 immature; minor 1-day holes; frontier-count documentation drift). Nothing further is required of that task.
