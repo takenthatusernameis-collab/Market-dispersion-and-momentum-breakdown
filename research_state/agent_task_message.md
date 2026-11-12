@@ -1,12 +1,12 @@
-# Agent Task Message — 2026-11-12T07:36:18Z (current session)
+# Agent Task Message — 2026-11-12T07:46:52Z (current session)
 
 ## Verified state
-- **HEAD:** `207ae1534d37092f7fb568e219ecaed8c0b1d36b` (`main...origin/main`, clean working tree at verification; origin/main == HEAD).
+- **HEAD:** `f1ec19be83ea0235cab2174a5b43f2816159c9c7` (`main...origin/main`, clean working tree at verification; origin/main == HEAD).
 - **Hashes unchanged (re-verified on disk):** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`.
 - **Cutoff gate:** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — probe_utc `2026-11-11T01:34:59Z`, `probe_month=2026-11`, `target_published=false`, `control_month=2026-09`, `archive_alive=true`, `cutoff_gate=BLOCKED`. **Do not re-probe before 2026-11-30.**
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted, no free-source discovery remaining.
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout is not fresh confirmation.
-- **This session:** read prior handoff/task (2026-11-12T06:56:41Z); re-verified git state, frozen hashes, and probe; recorded `research_state/session_verifications/session_verify_20261112T065641Z.json`; no bounded no-cost gap found. No frozen artifacts modified; only handoff and task message updated (uncommitted).
+- **This session:** read prior handoff/task (2026-11-12T07:36:18Z); re-verified git state, frozen hashes, and probe; recorded `research_state/session_verifications/session_verify_20261112T074652Z.json`; no bounded no-cost gap found. No frozen artifacts modified.
 
 ## Initial task for next agent
 **No unblocked task exists today (2026-11-12 < 2026-11-30).** Not waiting for a manually supplied experiment ID. Remaining gate is date-gated cutoff probe. Avoid idle churn.
