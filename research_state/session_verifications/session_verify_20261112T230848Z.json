@@ -1,0 +1,64 @@
+{
+  "session_utc": "2026-11-12T23:08:48Z",
+  "head_at_start": "5a8dd4936e87e064f777e99dbbdd0f9be3f4c8ee",
+  "head_note": "main at 5a8dd49 (prior durable state commit 59461fe6 reflected in handoff/task); working tree clean at start of verification.",
+  "checks": {
+    "compileall_scripts_tests": {
+      "exit": 0
+    },
+    "unittest_discover_s_tests": {
+      "result": "OK",
+      "tests": 370,
+      "skipped": 2,
+      "failures": 0,
+      "errors": 0
+    },
+    "git_diff_artifacts_configs": "empty"
+  },
+  "grid_summary": {
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_summary.json",
+    "expected_cells": 216,
+    "evaluated_cells": 216,
+    "ok_count": 216,
+    "blocked_count": 0,
+    "failed_count": 0
+  },
+  "frozen_hashes_sha256": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence_recomputed_from_disk": {
+    "total_records": 391,
+    "probe_month_2026_11_records": 122,
+    "probe_month_2026_11_all_target_published_false": true,
+    "probe_month_2026_11_all_cutoff_gate_blocked": true,
+    "newest_2026_11_record": "research_state/cutoff_probe/cutoff_probe_20261112T225937Z.json",
+    "newest_2026_11_probe_utc": "2026-11-12T22:59:37Z",
+    "archive_alive_control_month": "2026-09"
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED_BY_PUBLISHED_OCTOBER_2026",
+    "probe_month_2026_11_probe_verdict": "BLOCKED_AS_PROBE_ONLY",
+    "note": "Two distinct verdicts; probe_month=2026-11 BLOCKED is never promoted to H10 gate decision.",
+    "fresh_block_state": "IMMATURE",
+    "fresh_block_n_formations": 1,
+    "fresh_block_n_high": 0,
+    "fresh_block_n_low": 0,
+    "k_advanced": false
+  },
+  "frontier": {
+    "status": "ACTIVE_INCOMPLETE",
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "rank_frontier_exhausted": false,
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true,
+    "panel_end": "2026-10-31",
+    "catalog_exhausted": true
+  },
+  "prior_task_resolution": "Date-gated: no bounded no-cost H10 task unblocked before 2026-11-30 (today 2026-11-12). No probe_month=2026-11 re-probe performed. No verified code/test/source-coverage gap found requiring bounded fix.",
+  "next_action": "On/after 2026-11-30 run probe_month=2026-11 probe; if target_published=true refresh free public data, run checks, verify canonical hash, run fresh sealed H10 block into forward_block_h10_fresh/ with required params; require n_high>0 and n_low>0 for any confirmatory claim; if immature do not advance k."
+}
