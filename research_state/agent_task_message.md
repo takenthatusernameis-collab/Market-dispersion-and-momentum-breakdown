@@ -1,12 +1,11 @@
-# Agent Task Message — 2026-11-12T04:02:48Z (session current)
+# Agent Task Message — 2026-11-12T04:05:14Z (session current)
 
 ## Current state (independently re-verified this session)
-- **HEAD:** `fdda3edf chore(kilo): checkpoint agent session` (`main...origin/main`); `git status --short --branch` clean at start/end (audit-evidence JSONs generated during checks removed). This session updates only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No tracked code, config, test, script, doc, prompt, registry, frontier, or frozen artifact modified.
-- **Checks:** `sha256sum` re-verified all five frozen hashes unchanged — canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`; newest on-disk probe remains `cutoff_probe_20261111T013459Z.json` (not re-probed, 2026-11-12 < 2026-11-30); `python3 -m compileall -q scripts tests` EXIT=0; `python3 scripts/audit_integrity_audit_references.py` PASS (`pass=True`, `scanned=14`, `critical=0`, `errors=0`, `info=8`); `python3 scripts/audit_prereg_and_h10_fresh_references.py` PASS (`pass=True`, `scanned=13`, `prereg=9`, `frozen_prereg=0`, `h10=1`, `forward_block=1`, `critical=0`, `errors=0`, `info=0`); `python3 -m unittest discover -s tests` 342 OK (skipped=1) EXIT=0 (tracked code unchanged since last recorded run). Generated audit-evidence JSONs removed.
-- **Frontier:** `status=ACTIVE_INCOMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `rank_frontier_exhausted=false`, `candidate_page_cursor=6347`, `candidates_discovered=[]`, `candidates_verified=220`, `candidates_blocked=6127`, `expanding_universe_target_met=true`, `current_legacy_asset_count=28`, `last_verified_historical_rank=null`. Catalog exhausted.
+- **HEAD:** `d55cb417` (`main...origin/main`); `git status --short --branch` clean. This session updates only `research_state/agent_handoff.md` and `research_state/agent_task_message.md`. No tracked code, config, test, script, doc, prompt, registry, frontier, or frozen artifact modified.
+- **Hashes (verified unchanged):** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`.
 - **Cutoff gate (latest on-disk, not re-probed — 2026-11-12 < 2026-11-30):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — probe_utc `2026-11-11T01:34:59Z`, `probe_month=2026-11`, `target_published=false`, `control_month=2026-09`, `archive_alive=true`, `gate_met_by_month_end=true`, `cutoff_gate=BLOCKED`. **Do not re-probe before 2026-11-30.**
-- **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Fresh sealed block `forward_block_h10_fresh/forward_block_evaluation.json` (sha256 `324ab1e6...df18f`) has `n_formations=1`, `n_high=0`, `n_low=0`, `high_low_diff_net_1x=null`. Inspected 003 holdout never fresh confirmation.
-- **Genuine bounded no-cost gap scan:** none found (no reproducible tracked defect, no missing guard against frozen-artifact mutation, no reference-consistency drift requiring change). Verified clean this session (2026-11-12T04:02:48Z).
+- **Frontier:** `status=ACTIVE_INCOMPLETE`, catalog exhausted; `rank_frontier_exhausted=false`; no free-source discovery remaining.
+- **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout never fresh confirmation.
 
 ## Initial task for next agent
 **No unblocked task exists today (2026-11-12 < 2026-11-30).** Not waiting for a manually supplied experiment ID. Remaining gate is date-gated cutoff probe. Avoid idle churn.
@@ -17,7 +16,7 @@
 
 ### B) On/after 2026-11-30 (date-gated) — executable next task
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`
-2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests` (install `numpy`/`pandas` via `python3 -m pip install -r requirements.txt` if needed); verify canonical hash `7234fc4e...5390` unchanged; run fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`).
+2. If `target_published=true`: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive); run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests` (install deps via `python3 -m pip install -r requirements.txt` if needed); verify canonical hash `7234fc4e...5390` unchanged; run fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))`).
 3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If still immature, record outcome and **do not advance k**. Preserve all frozen artifacts/configs unchanged.
 
 ## Hard constraints
