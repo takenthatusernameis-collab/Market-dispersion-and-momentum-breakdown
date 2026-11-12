@@ -1,21 +1,22 @@
-# Agent Task Message — 2026-11-12T14:21:37Z (current session)
+# Agent Task Message — 2026-11-12T14:28:13Z (current session)
 
 ## Verified state
-- **HEAD:** `18fc5a15` (`main...origin/main`, clean at verify start). Commits `e1d88a4b..HEAD` checkpoint-only; excluding verification/audit records they touch only `research_state/` handoff/task/manifest/snapshot (`git diff --name-only e1d88a4b..HEAD -- artifacts/ configs/ docs/ prompts/ scripts/ tests/` empty).
-- **Hashes unchanged (re-verified 2026-11-12T14:21:37Z):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
+- **HEAD:** `c257909d` (`main...origin/main` = 0/0 in sync, clean at verify start). Delta `18fc5a15..HEAD` is checkpoint + verification records only; excluding those it touches only `research_state/` handoff/task (`git diff --name-only 18fc5a15..HEAD -- artifacts/ configs/ docs/ prompts/ scripts/ tests/` empty).
+- **Hashes unchanged (re-verified 2026-11-12T14:28:13Z):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, registry `7faacdb3f7add98a9e6bddf3c4ab3403fd812711dd0ca601b5ddda031a664df4`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`, latest probe `25c11cbae9e62c9f5feb41d9f2de09a996dd4a0a1ddcfa4828ecc05daa73f7e6`.
 - **November 2026 probe (probe verdict only, NOT H10 gate):** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — `probe_month=2026-11`, `target_published=false`, blocked. **Do not re-probe before 2026-11-30.**
 - **H10 cutoff gate:** UNBLOCKED by published October 2026 archive (real probe 2026-11-05T10:38:51Z, `cutoff_probe_20261105T103851Z.json`, `probe_month=2026-10`, `target_published=true`; `run_manifest.json` -> `latest_archive_probe`). Gate date 2026-10-29; November 404s do not block H10.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted (cursor 6347, verified 220, blocked 6127), `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, panel `2023-01-01..2026-10-31`.
 - **H10:** CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE; k not advanced. Inspected 003 holdout is not fresh confirmation.
 - **Verified test claim:** `348/348/0` (manifest == snapshot), fingerprint `943f5e1f411dd13cd06a02d0f128c02a4c40033920a888244fad31827c311af0`, 104 input files.
-- **Checks run this session (15th pass):** `python3 -m compileall -q scripts tests` EXIT=0; `audit_integrity_audit_references.py` pass (scanned=14, critical=0, errors=0, info=8); `audit_prereg_and_h10_fresh_references.py` pass (scanned=13, prereg=9, h10=1, forward_block=1, critical=0, errors=0); `audit_preregistration_coverage.py` pass (audits=14, missing_prereq=0, uncovered_prereq=0). Bounded delta sweep: no reproducible tracked code/audit/test defect, missing frozen-artifact guard, or reference-consistency drift found.
+- **Checks run this session (16th pass, incl. independent full-suite re-run):** `python3 -m unittest discover -s tests` → `Ran 348 tests ... OK (skipped=1)`, exit 0; `python3 -m compileall -q scripts tests` EXIT=0; `audit_integrity_audit_references.py` pass (scanned=14, critical=0, errors=0, info=8); `audit_prereg_and_h10_fresh_references.py` pass (scanned=13, prereg=9, h10=1, forward_block=1, critical=0, errors=0); `audit_preregistration_coverage.py` pass (audits=14, missing_prereq=0, uncovered_prereq=0). Frozen-artifact mutation guards exist and pass. H004V106 final integrity audit `pass=true` (reconciliation `all_match=false` is the documented expected post-seal Oct-2026 panel append; not tampering). No reproducible defect, missing guard, or reference drift found.
 
 ## Initial task for next agent
 **No unblocked task exists today (2026-11-12 < 2026-11-30).** Not waiting for a manually supplied experiment ID. Remaining gate is date-gated cutoff probe. Avoid idle churn.
 
 ### A) Before 2026-11-30 — only on a genuine bounded no-cost gap
 - Acceptable: reproducible tracked code/audit/test defect (excluding env-only dependency absence), missing guard against frozen-artifact mutation, or reference-consistency drift — **only if** it does **not** alter frozen result artifacts, configs, scripts, tests, docs, prompts, `research_state/hypothesis_registry.json`, or `research_state/universe_frontier.json`.
-- If no such gap: record "no unblocked task exists" with verification evidence and stop.
+- To confirm no defect, **re-run the full suite** (`python3 -m unittest discover -s tests`) rather than trusting the recorded snapshot.
+- If no such gap: record "no unblocked task exists" with verification evidence (session verify record + audit outputs) and stop.
 
 ### B) On/after 2026-11-30 (date-gated) — executable next task
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`
