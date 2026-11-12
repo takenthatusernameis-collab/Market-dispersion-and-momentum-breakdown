@@ -1,0 +1,2957 @@
+{
+  "audit_id": "DISP-003-F1COVERAGE-001",
+  "audit_type": "SOURCE_COVERAGE_REPAIR",
+  "completed_utc": "2026-11-12T17:29:13Z",
+  "coverage": {
+    "rule_canonical_cap_and_klines": {
+      "all_dates": {
+        "distribution": {
+          "0": 4,
+          "26": 497,
+          "27": 141,
+          "29": 30,
+          "30": 52,
+          "31": 268,
+          "32": 411
+        },
+        "max": 32,
+        "mean": 28.95153243050606,
+        "min": 0,
+        "n_dates": 1403
+      },
+      "canonical_block_dates": {
+        "distribution": {
+          "26": 467,
+          "27": 141
+        },
+        "max": 27,
+        "mean": 26.231907894736842,
+        "min": 26,
+        "n_dates": 608
+      },
+      "canonical_block_dates_repaired": {
+        "distribution": {
+          "29": 95,
+          "30": 372,
+          "31": 141
+        },
+        "max": 31,
+        "mean": 30.075657894736842,
+        "min": 29,
+        "n_dates": 608
+      },
+      "dates_decreased": 0,
+      "dates_increased": 638,
+      "delta_examples": [
+        {
+          "date": "2025-01-01",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-02",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-03",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-04",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-05",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-06",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-07",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-08",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-09",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        },
+        {
+          "date": "2025-01-10",
+          "delta": 4,
+          "new": 31,
+          "old": 27
+        }
+      ],
+      "repaired_all_dates": {
+        "distribution": {
+          "0": 4,
+          "29": 155,
+          "30": 424,
+          "31": 409,
+          "32": 411
+        },
+        "max": 32,
+        "mean": 30.681397006414826,
+        "min": 0,
+        "n_dates": 1403
+      }
+    },
+    "rule_cap_and_klines_and_funding": {
+      "all_dates": {
+        "distribution": {
+          "0": 4,
+          "26": 497,
+          "27": 141,
+          "29": 30,
+          "30": 52,
+          "31": 268,
+          "32": 411
+        },
+        "max": 32,
+        "mean": 28.95153243050606,
+        "min": 0,
+        "n_dates": 1403
+      },
+      "canonical_block_dates": {
+        "distribution": {
+          "26": 467,
+          "27": 141
+        },
+        "max": 27,
+        "mean": 26.231907894736842,
+        "min": 26,
+        "n_dates": 608
+      },
+      "canonical_block_dates_repaired": {
+        "distribution": {
+          "29": 95,
+          "30": 372,
+          "31": 141
+        },
+        "max": 31,
+        "mean": 30.075657894736842,
+        "min": 29,
+        "n_dates": 608
+      },
+      "repaired_all_dates": {
+        "distribution": {
+          "0": 4,
+          "29": 155,
+          "30": 424,
+          "31": 409,
+          "32": 411
+        },
+        "max": 32,
+        "mean": 30.681397006414826,
+        "min": 0,
+        "n_dates": 1403
+      }
+    }
+  },
+  "disposition": {
+    "frozen_artifacts_modified": false,
+    "old_panels_modified": false,
+    "old_raw_modified": false,
+    "outcomes_computed": false
+  },
+  "estimand": "descriptive input coverage only; no return/spread/state/inference",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001",
+  "fetch": {
+    "expected_records": 168,
+    "n_absent_offline": 0,
+    "n_error": 0,
+    "n_missing": 0,
+    "n_ok": 0,
+    "n_present_on_disk": 168,
+    "n_records": 168
+  },
+  "fetch_records": [
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-01.zip",
+      "raw_sha256": "a5c81fc72ce6e1435ddfbc808c3c0f142ad2f90c4974d3ccf579f6732596a2ba",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-02.zip",
+      "raw_sha256": "5aa41aeeda62f28209f58119414ebcff91519b5876d05e45c63e43561afeaecc",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-03.zip",
+      "raw_sha256": "129aebaf98eab2b844f4395800abda5bca27a4bf06cf6c521fd35eb5a6a7025d",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-04.zip",
+      "raw_sha256": "ead5f07dd854a3afb20ee11792a90547703df13b5bb5c45873c3883e749242d8",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-05.zip",
+      "raw_sha256": "303d544173021e4d45d6750cd39e495b103bff5f4c5c65b00a7b53db3984550a",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-06.zip",
+      "raw_sha256": "408568e92d563e64aee989179b564ec74ef837b0a9ad8da6ac59cc12676d4479",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-07.zip",
+      "raw_sha256": "6df8a0263bc7cbd3373b0fd5fe2d55ed2b34693a8045e8db573d987394ce8114",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-08.zip",
+      "raw_sha256": "4f52fe0cb8ebb5af8d1f73a59685cea6eab383195c877b53795d6ad394647497",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-09.zip",
+      "raw_sha256": "aad9036a0bb4f70d79d4d888d657a48ca6c19ce79c6534169ab76e5ab50df117",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-10.zip",
+      "raw_sha256": "de75242676c45fe3909981c14a2e3f288162c093cdc7aaab9d1f2343c48d0eda",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-11.zip",
+      "raw_sha256": "ceabf097b60d75161e5554969f15d8b5b7d829051fffaaf8158b01cc100e5bfb",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2025-12.zip",
+      "raw_sha256": "2b95099e7531205c57f82700d930164511cd76ab07ce8152c787a31aace7abbd",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-01.zip",
+      "raw_sha256": "669253825e0169a14315c90efd39cfafe691050a1fe2be66689245aceca2653b",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-02.zip",
+      "raw_sha256": "62cbc356556586ca29e5a360c46aa0529a79bc486c64111a1560e3317509625e",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-03.zip",
+      "raw_sha256": "92008354f7dac8e2a440ba3d7dde6ee4ced17138cf3fecd1489df635c49abfd7",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-04.zip",
+      "raw_sha256": "d6f61c52739668783be5da2783b733b3c6edc146f8e4f5d0503e8b6b98bfb956",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-05.zip",
+      "raw_sha256": "6a293122d0ba63a65f9ca3e9820c820403a996f092970491ca1447990e45095d",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-06.zip",
+      "raw_sha256": "4da0955f991bf70e8671e0676ef5ca48de5d830f4a96b3e1f5d3bd2d7ee8f65f",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-07.zip",
+      "raw_sha256": "9ea4927c6fefe546810abae837273dc592654bde421f13e29408ed87e105e82a",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-08.zip",
+      "raw_sha256": "d8d5f1b36b487240dd1a5d92725a2968308330e246eb7a7b5e65a15f62a903c2",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-09.zip",
+      "raw_sha256": "bd2027e61c1f99d7db1449b909813e7502dfccc1fd0f0d99b8ce35e0a9e64188",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-01.zip",
+      "raw_sha256": "114fa5089037a0453a5d9c228911e75baa4ce58070a847d48f8f5f70f55b9fa9",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-02.zip",
+      "raw_sha256": "81bce93deede12cf3e0c372dbd9c2ba2f326dd407a355fe7cd0dd1d8d4c83ef7",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-03.zip",
+      "raw_sha256": "94f4e462a8bbf1f279e1bb915787c676a446fc913e579f543a9d33fd29b6c87f",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-04.zip",
+      "raw_sha256": "105eb7698088dd6bc99a925cafb407da096500091ec4bc83ab224246e36b2b90",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-05.zip",
+      "raw_sha256": "c3db6461f852ccbcd34f4bc40b31900f6ee267a2baf8b9ad7d5bcf1601ea308a",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-06.zip",
+      "raw_sha256": "2ec6d08bdecee71e8e4a252cfd98bea8d38eb44d5e7a132122b14f425ceef505",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-07.zip",
+      "raw_sha256": "669deb755ecd42412dfd974dfbe1a97ba0a07010bbd25d5acde7ada6807a3138",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-08.zip",
+      "raw_sha256": "7817afc7e6c28aa26fd7b612d1c925a23001ee44b02c03c3bbb4016ee06456f8",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-09.zip",
+      "raw_sha256": "9011f28d2adc5777f43730d4de45e9499d78a2c2ccc9319974ed4df456bc9e6a",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-10.zip",
+      "raw_sha256": "bb5b363dd673b2864de9e0eaca3943c2238eb74fe2cf17473fa35a42041dbbb7",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-11.zip",
+      "raw_sha256": "5329d996d68a03233f7d5248e992ba5d9d823b7746a1cc3585ae93f6f54da59a",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2025-12.zip",
+      "raw_sha256": "424278937011ab059a894493dff46d3a11f4bb6ef27c104648a05a7231656746",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-01.zip",
+      "raw_sha256": "5e8e7bb93cda203479ddba83b41f9ecdf8124fe84871da72880f0bcf0ed5551a",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-02.zip",
+      "raw_sha256": "79bc5bb410534d433c61b10120e444f698f81bebb0cd48cd9454c66736bdc109",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-03.zip",
+      "raw_sha256": "148ec1bd5d9ff3219f001daf19101fb77810312a7fa87b8248f9f87e2b161802",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-04.zip",
+      "raw_sha256": "2f7d412cfda793f3a2066f39a239e3023652c6a6de6156b4bf2e49a2847f9ec9",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-05.zip",
+      "raw_sha256": "1bc7731c490564e5280f7caf2c34774ca45a4b1a9b8f6eed3704bdeba247c8d5",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-06.zip",
+      "raw_sha256": "f908809e5b4536cd7b43461d263c57c26cdb847fa9037412ba7239f9e334e420",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-07.zip",
+      "raw_sha256": "74520c19e8413a0e9f727f0dfb55902e957300f0a8d2a2d88accb1aac3aa88d0",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-08.zip",
+      "raw_sha256": "35b8a4eaa725b5c66d564402a400e9a548adc23cc4c7b15d5758f7d269a0de1f",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-09.zip",
+      "raw_sha256": "af6b7f07955c212fbb3a31d9ecdd6e86c01069decc7ad4b04c5d25a821a5ae16",
+      "status": "present_on_disk",
+      "symbol": "1INCHUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-01.zip",
+      "raw_sha256": "af0c30c2ed60a971487527bccee1ffe210dd56595a2e2073995d4759fd438020",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-02.zip",
+      "raw_sha256": "d3b892223c01ecb5b0ffe2d87290455c569ea38b894961b7abfaa7890d0ec046",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-03.zip",
+      "raw_sha256": "8c552b2b7dd337c7e81b1703286a8a5dea98e76b960da751d895b3c7d7da31c1",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-04.zip",
+      "raw_sha256": "0a9c30a5832c064a7d7fcef70385e56856889cfc3a43af0187e59c61732b06a5",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-05.zip",
+      "raw_sha256": "2eb6244667805454b96dfdfad8bdd5ff4bef0c91a77c5a70b92a886d211ee109",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-06.zip",
+      "raw_sha256": "a586c1c74ddfe41459d92fb5ef336662de2cf5b4c045e540448961be40641993",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-07.zip",
+      "raw_sha256": "cfa8b5bfba005d12b97d474a548d2033d02f2ac784feb93ed8c9e350ba3a9c80",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-08.zip",
+      "raw_sha256": "04fe7d2d1be6ae37fa6492416bd844253873bd4b29523d02589f97db4ce4ecff",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-09.zip",
+      "raw_sha256": "c680809c0b1a9427513795c7637232e82ae81bb8478934411080f9e3c0a47bbf",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-10.zip",
+      "raw_sha256": "cb2203c8f5bf3e497dce7b768a306f26af7fee96fe01bd859333ebb7c970fd7c",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-11.zip",
+      "raw_sha256": "07458e5163fe9582635b38585218ce2cc7ae7741032a750994f7c53c67fb5daa",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2025-12.zip",
+      "raw_sha256": "138ccc532d700f6fbaf6f0fece189228a30d256022d5b7417acd3be68c2af671",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-01.zip",
+      "raw_sha256": "248dd37c60e9a9da9610c073e6b6b7b975c0ef330d8c4b0ea3449653bc50c1e1",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-02.zip",
+      "raw_sha256": "ca7c64c0ac347924df07ba306365567d6b998fe7e85604f2681807a5bbb94fca",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-03.zip",
+      "raw_sha256": "e3500c9eda4e973e3305ff0f4a093ad63b61f83fc7028c3e361450d70e1568b6",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-04.zip",
+      "raw_sha256": "d230e4001336e394861850c652d5cc55cf6a2afbf4b5cd56bc5b0b21a99d1fda",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-05.zip",
+      "raw_sha256": "e2258741f10e1fa3493b4432016f0c4e4c882b980ad49a73b2ef09b3828699ad",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-06.zip",
+      "raw_sha256": "0806fc46ea7fb524288fb00bc4beb58993577e36cfc0957e108efe64e06b987e",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-07.zip",
+      "raw_sha256": "aaa2f32fef65ba7659ba282bf8256efcef48090af46dd66ab676dcfe7ccb833b",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-08.zip",
+      "raw_sha256": "6d0220269e08dd43d8bf2fc1247eee5e11708a6ff360e9eecd8b63bcbfd1d4a4",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-09.zip",
+      "raw_sha256": "4386e327bca755a7f43522d0112b6823f72d4aac87030327f5f4205052a6ca30",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-01.zip",
+      "raw_sha256": "a563e9a5b92f005b244194cc07567d679166d4f167b16f01a0e0e5142da4890c",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-02.zip",
+      "raw_sha256": "472071c246064ee6045830cb078140cb8abb45d0cd9ecdc6e06544749b45f633",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-03.zip",
+      "raw_sha256": "9c56febce5fc7766153ee88b7c0eed24222d790f401611ea3d87a95f430940a5",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-04.zip",
+      "raw_sha256": "ceb32245130f62744f29cd196312c67305e9dc2fe6d2b739e2788a11954ce9e6",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-05.zip",
+      "raw_sha256": "eadfe453f8f9e046701af6d3e221fec2bebfd6b37cfe4b2648bcd9a1b486b31f",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-06.zip",
+      "raw_sha256": "96cbf6f343a39a20ab859d93de811020b2acc99f80707d21f7b657b8f9d01531",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-07.zip",
+      "raw_sha256": "c711c7329220d5e0e65ccc776bf1b57268fb2c8fae0698303ad9c051973264cd",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-08.zip",
+      "raw_sha256": "10aa6adcf3138e019b9bdd9f4061f386d5cc904ee3acb3f9549cb3d82b6316bf",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-09.zip",
+      "raw_sha256": "1ef6d6de377ba8f839dd600ebf5264b2177ce148b4efd834438594ee95c424b3",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-10.zip",
+      "raw_sha256": "e436615c3eed6f6117a7e6ffd16e5d6752f46a36e6f2b8667ec9e3a7a4f1222c",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-11.zip",
+      "raw_sha256": "f457c8f96b2d1cf44a1e3c6c35fe451cb6c80f12a8e2b5ff3c8e03df5cd01181",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2025-12.zip",
+      "raw_sha256": "6bc3c04f0058e5ba12f198907ff141512d3aab2ca0f3e1d0a51934cb6ccd6473",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-01.zip",
+      "raw_sha256": "decfbf6e398b7104ad03a8145623ea3cbcc795bd445e4a7bc01b21bd400804b0",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-02.zip",
+      "raw_sha256": "92e083680ef6fcbbe8dbd51d7e58a3ec1d474b2c3a85fc7ac6322ade46bae973",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-03.zip",
+      "raw_sha256": "40c00e92b28dc796669901bea9113c3182ae463d6fe9444951255eadfcc6b9e5",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-04.zip",
+      "raw_sha256": "06d6432b3fe1594996cf98c35cfb807e1f28539915bab60105a5d1e04e6a2f3c",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-05.zip",
+      "raw_sha256": "78505e2d0b51863a0e1e199ad22eb7b5b8878fb38736de2865bff07dfad45623",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-06.zip",
+      "raw_sha256": "c03882f4b39c77de4e5159d3642af8142957281e7ef0839f97097e14dacd8433",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-07.zip",
+      "raw_sha256": "cfb1c7064d102b325c5578546e677e5056b802b1121006b3333ed28d429cd732",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-08.zip",
+      "raw_sha256": "ce0bd645a89f52e737bb7b06902c23f3f76db4c0fb0423178ed0b9e5ca2aa9a0",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-09.zip",
+      "raw_sha256": "7eebe5c7b9f7cdf06703dd19e4250511e068c5ea334b110744ed9ef95bbcd055",
+      "status": "present_on_disk",
+      "symbol": "AAVEUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-01.zip",
+      "raw_sha256": "b392f789c1325081380a9a6a3546c67823b464d64b3a40b23ea55039a42aa428",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-02.zip",
+      "raw_sha256": "1f2e1be1cbf3520635032f2e06f5eb436a411c9ac3d418836af549d2edd207b3",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-03.zip",
+      "raw_sha256": "721550686b6dc49bb7d17e5e12f79186319b55953a4eec4ee16fd13c7b353507",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-04.zip",
+      "raw_sha256": "39365dd1132c7104103e4a79cff7fa9ec48ce3e414426493d8386355df177f97",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-05.zip",
+      "raw_sha256": "52c4a7cafd58b3b816c0405e2025a9ef6b29c5f353903ad3f6cb3bf3e5ba17ff",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-06.zip",
+      "raw_sha256": "b483c6de8d228e2753b1e64e0208140215404d4e11f23e43a8c2a56e4e64c670",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-07.zip",
+      "raw_sha256": "e1f251dee6342af4d964a5534c30d98969f085262801a169c1fa125e5792437c",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-08.zip",
+      "raw_sha256": "64ea04044214171f2e3bfbf3dfd91cfcdb8e6a1c951461f4101a47fefb8550bd",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-09.zip",
+      "raw_sha256": "6366c23e7d204ea60134fa24816ad00544782ffc0876723471c066b53c4b6846",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-10.zip",
+      "raw_sha256": "f6341df5abf90b16c69269c0a50aeb93718ade4f7a6302fccc964e3170e7f21e",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-11.zip",
+      "raw_sha256": "5186c7268184c6c19b41df2bf61e498affc7840cb2f6bae9f69dc9ed51977475",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2025-12.zip",
+      "raw_sha256": "a02e37636fc8cd101530d2ba5086d91cb87628178e6b09da4bfbf0c3be3c0a12",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-01.zip",
+      "raw_sha256": "e98b3e4efda75c1cf32e439c99feefb96f2a3cc9ccfda9929f310ad37faebd1b",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-02.zip",
+      "raw_sha256": "94c380b986ad939e70ffe859028fafd7de920547ac162e3b041680aa5c5ea47a",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-03.zip",
+      "raw_sha256": "be22ccc3dacd4a624633e8a378d2dd4187fff66263c3d868bfb0873b6cb9f485",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-04.zip",
+      "raw_sha256": "607b3b95dbee9cebe1d8830e5a44cbac03289fc4d03bece6af69339a6d0f21e3",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-05.zip",
+      "raw_sha256": "acc85201e77d6198db3161f72eef140ef944589f53c6473a576e93b0bf8ac97f",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-06.zip",
+      "raw_sha256": "7e5c24a325f5cd6f943c697577eeab7a67d051393eb1f2e2910e02bed94cbe39",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-07.zip",
+      "raw_sha256": "5c6a0dfe18a3d55e942ce0cdb2b6f5e373a8c8e238d7266523da388bad579189",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-08.zip",
+      "raw_sha256": "962f0e448e2bc0f3eef2b09127842b0a1bfd4aed0c19d79287a5474bf70c75f1",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-09.zip",
+      "raw_sha256": "282ccc39e9716c11eebad50ed13ed4351c82ade03695152083b4d6010aaa25bf",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-01.zip",
+      "raw_sha256": "f9e10dd84ee615ae0a20018a2d7cbf4f68e088879a38a1eceb98e1aeb079d3d1",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-02.zip",
+      "raw_sha256": "d7a39ca5ecb21ec49ed8d8abad0a171433389875593a36bf75590b936fcc58a4",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-03.zip",
+      "raw_sha256": "af7fd3c41eab5a6f0e30c37e73ec07c4f56995bc6f313ba519f7ee2c02549c74",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-04.zip",
+      "raw_sha256": "bee671caccb5344c4563dd0c78e8b53f7a43b43d6323cc80319b9f59d1360e7b",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-05.zip",
+      "raw_sha256": "bb9782bd6e00afc626122043d94aa42a20fc011b8d38bc249a6cb9ef099aade8",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-06.zip",
+      "raw_sha256": "5ec0e6e1cd66dc65b09f286f21a7748ac740bbfb3a466755e820f3836b051102",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-07.zip",
+      "raw_sha256": "205f4111beb0565c24f6cbe97371399dde528355680480697873497466ccd075",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-08.zip",
+      "raw_sha256": "19b12290c7b8e5333fcc8dda97233e12935adefab231eea46f385d77f4c16785",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-09.zip",
+      "raw_sha256": "6df7b872d1672737c6702c78380cf878bd14bf294fe011d2ded6e66dfb65d8cd",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-10.zip",
+      "raw_sha256": "ba9d08a04a9a732edac06820c3d1bd51182564f93e1367c6ef96a81bedd08be9",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-11.zip",
+      "raw_sha256": "483e4135575f246c1362397daf8e686841fd22b2679ee471f1f49d813e10da43",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2025-12.zip",
+      "raw_sha256": "e4d607e864fc2a45e88d865ef7917843dd603a3d9bb68a7f045cc6ef2aadedec",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-01.zip",
+      "raw_sha256": "2e8eb9b888b35eff463572d9d9bb62e1f5f39854654caf780803c19521b3e60d",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-02.zip",
+      "raw_sha256": "bdbedb35409f220b05fececaadee126f85a874ae58f28478881fd79fda4a3082",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-03.zip",
+      "raw_sha256": "bfcf7b2f6103b272d0b74d471f16263b8c8b3f575b734cca9a6bf195dcb8189b",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-04.zip",
+      "raw_sha256": "87af209a6a2ecb880d2500b62e76813305a5458abbf8d2c6c375fb6e82adfbd5",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-05.zip",
+      "raw_sha256": "74de3d293f9459e27044dc1d39599a0eb7fd875a8e41dca0b00f984a87a5be12",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-06.zip",
+      "raw_sha256": "80ec8303fe875e65ce16159984818767614d5e71a6b8172687fd15e6c1b1bfc2",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-07.zip",
+      "raw_sha256": "3bc11f4352eaeabaf83abdbcd43aed50cd6a0983eb602f1875660539c634015d",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-08.zip",
+      "raw_sha256": "8efe6a4f5230412f16b54636b2cbb2a499615dfcb86f5b61d0158f2a7ae43667",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-09.zip",
+      "raw_sha256": "054bc81dcd2fcef15d50125ac2d81da132f6726a1797bd6eece45bc6d4d5e02a",
+      "status": "present_on_disk",
+      "symbol": "ACHUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-01.zip",
+      "raw_sha256": "29d19be3660a66cd341e0ac0033cc9f4309f8c07b5acffa30a65919cfc90e3e6",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-02.zip",
+      "raw_sha256": "3fbf05f6a48eb569d79c2e71f5a683e63231cc7bbaa441dadac6abfbc8f43f86",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-03.zip",
+      "raw_sha256": "b0e5c366c64b25dadff72f531173ef39a0c237787db1b93f5c07424c0465c440",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-04.zip",
+      "raw_sha256": "947a65252c9de3436cc212ad78a3ef0d6db1c915ad66e71886fe54851b612976",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-05.zip",
+      "raw_sha256": "833e49b7bc04c60cd854c8a35289dcfa87e7cb420e659f11f55fc53d4495d918",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-06.zip",
+      "raw_sha256": "e2fcab45965fe87f3b5517db0d8f1137e1d1c821c65146eabca925118c6be74a",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-07.zip",
+      "raw_sha256": "f25105dd7da01e8dca2485650f8395e40857b7e658f2e178d7110da35aa55ef1",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-08.zip",
+      "raw_sha256": "762275c1357f5c32b2f8ca6275f7981d13de1908702e44abe86b21bbca635a1c",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-09.zip",
+      "raw_sha256": "5e16d73bd801bb1306b4802fcd50d6b700e890041b5f4b0c232379a9ee32c754",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-10.zip",
+      "raw_sha256": "5b2557dc03db7dbee93b95a3a66bad4fe5381218e46f8596f7df5ed5a2876260",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-11.zip",
+      "raw_sha256": "d2e6b74d23a360942e1f1f05d38252f68eef98fe6cfe9c07fa57b3dfc9561c0e",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2025-12.zip",
+      "raw_sha256": "66bba1740428e96f704662389d745a6f1dcae629780dd864a9c6e007f49ff0ba",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-01.zip",
+      "raw_sha256": "6648301824368dd762147bdfd0a38473410826540c52a3f1e4a183a324e3048c",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-02.zip",
+      "raw_sha256": "ad5ca7f644e776247d3af5d03e757a1629b9a54a8adba9f01b8fc06d67219e37",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-03.zip",
+      "raw_sha256": "20e6e1baab4777e054c71d69ca715299ba43a63d4c8fb42e2a4cbd19b4b69297",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-04.zip",
+      "raw_sha256": "e1595c37e1468573d62bd11c460e0b8302385d2f687dae5a781f2f076c0e2235",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-05.zip",
+      "raw_sha256": "f890869dd07c3487d7bd1996d0d06c7e394307dc0a3a4a1d86fb8365a38917e3",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-06.zip",
+      "raw_sha256": "e222d97c93ef8ecfaca4ae1532f518dbe404a00f7cd06640f7965226930adb32",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-07.zip",
+      "raw_sha256": "6c84b15601e3b01654852b70f8c89e8af814645ba5d0d3a877382125efbff2e9",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-08.zip",
+      "raw_sha256": "2065ad9d5e3ba70121ff34683db6c3db177a26dca185afefd42c86bfdb1e2c4b",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "klines",
+      "raw_path": "data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-09.zip",
+      "raw_sha256": "f47e7dd459c7d4c9bc43e27287f2cf0445c9844522f0a63ea47ae2d18bc3ad68",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-01.zip",
+      "raw_sha256": "24a65d54b78bfcff9e72bf44287a4b6f443d8fae0d689068b587e6cea307564c",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-02.zip",
+      "raw_sha256": "5762b7b1a1e59ad47d546727cf40ae9eb28cd863be34bb57ae6e64514ad7add7",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-03.zip",
+      "raw_sha256": "75c27ded0e96e8a342761477a7744718eddaca41838e3e9cc636f8a33bd1f6dc",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-04.zip",
+      "raw_sha256": "1023f52b7270ec53b11a9739c07f187c19c7164188cfd74281173a9aacd2305f",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-05.zip",
+      "raw_sha256": "49bf42219c0b74c01e7446b01cb27f25f86dc51e96440e540b585818edf7de21",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-06.zip",
+      "raw_sha256": "623dc721114e82fa62a33910bbfc20d3f0b1bafe69b21d08114a1c2ab608c463",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-07.zip",
+      "raw_sha256": "e2ac3e4f02776543a986b72d1f90c966166ea41f64d3ddc5f4e4bd6d6799b78a",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-08.zip",
+      "raw_sha256": "95bdafba2d5d664b56959b8bfc84fe664a507b676316fccc91213126bab92b26",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-09.zip",
+      "raw_sha256": "aab3c62e1e1ad6922adceb78a516a60da85aed1dbc51640880a3dc1088e89659",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-09"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-10.zip",
+      "raw_sha256": "7799d32e75debd4444345f4985afafec8c335ee26bef4151f148ea92dddb3111",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-10"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-11.zip",
+      "raw_sha256": "3c798ab8aebd7b1eb7a81ce2dc32b28b0ceb9aed2c6794c575a55c7b20da6a53",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-11"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2025-12.zip",
+      "raw_sha256": "38df22cbc834aa76c4b0d7f62c0c99ba8a30c402298e175fcd0a5050bc3341f5",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2025-12"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-01.zip",
+      "raw_sha256": "7c2557734c94fec2580c2f287454e55be1b7e6e6ee27e21fbfe3f2ee69f4101a",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-01"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-02.zip",
+      "raw_sha256": "3d6d48bbcab38bfa286b2af7fe03352cdf7f7d96557fb6f0d69c80b881f9119d",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-02"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-03.zip",
+      "raw_sha256": "554732253ea7d30d74ba4423f23f19a51becf1cfe1753653a04a8c6b511bc383",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-03"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-04.zip",
+      "raw_sha256": "81b04156edf666a3e33ed86a55c93dcfe9aaf53594f04d399e3aa440dd35376e",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-04"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-05.zip",
+      "raw_sha256": "2dcbf8e77e75fc4e6e2f94a5843a9a985df97b35a76d00a87c6d54e1806ead68",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-05"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-06.zip",
+      "raw_sha256": "490a9f87f7e7f4c6645a5212b8c2ec185bb4762450557df8dfb3e26ba74b65c2",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-06"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-07.zip",
+      "raw_sha256": "bbcd89295c56e0c201e2bb2aa34b6b4ca0d4e67450986839ae9e3da6e21ff1ac",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-07"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-08.zip",
+      "raw_sha256": "55407b9665ad4418e4b1b0f51a613b0ad09ca987e0d62d93812fcb74cc216c1d",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-08"
+    },
+    {
+      "kind": "funding",
+      "raw_path": "data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-09.zip",
+      "raw_sha256": "818ccd519d8d3f77c5cb317e55423a1e9c60422c38dd003e4f02e81b62a003a1",
+      "status": "present_on_disk",
+      "symbol": "AGLDUSDT",
+      "ym": "2026-09"
+    }
+  ],
+  "gap": {
+    "expected_zips": 168,
+    "months": "2025-01..2026-09",
+    "symbols": [
+      "1INCHUSDT",
+      "AAVEUSDT",
+      "ACHUSDT",
+      "AGLDUSDT"
+    ]
+  },
+  "hypothesis": "H23",
+  "offline": false,
+  "read_only_checks": {
+    "frozen_artifacts": {
+      "forward_block/forward_block_evaluation.json": {
+        "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "match": true
+      },
+      "forward_block_h10_fresh/forward_block_evaluation.json": {
+        "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "match": true
+      }
+    },
+    "old_kline_panel_hashes": {
+      "binance_klines_1INCHUSDT.csv": {
+        "actual": "9c2f21351bae85dcff364402b1d503dce882126514c6f6e786099ae6f57f7b67",
+        "expected": "9c2f21351bae85dcff364402b1d503dce882126514c6f6e786099ae6f57f7b67",
+        "match": true
+      },
+      "binance_klines_AAVEUSDT.csv": {
+        "actual": "61b506827d4c6b5d3ad30a46b8b1541089c30314b6c82d6f24440ec31e464cc4",
+        "expected": "61b506827d4c6b5d3ad30a46b8b1541089c30314b6c82d6f24440ec31e464cc4",
+        "match": true
+      },
+      "binance_klines_ACHUSDT.csv": {
+        "actual": "84cfb20aecefa3ddcc414547f84704b271d83d66812391b5efeb106532d7f6a6",
+        "expected": "84cfb20aecefa3ddcc414547f84704b271d83d66812391b5efeb106532d7f6a6",
+        "match": true
+      },
+      "binance_klines_AGLDUSDT.csv": {
+        "actual": "9681ca2f3581a87b6ccb0a160ab6cd9377c6e09ea33374e80f95e3f9ae8ddc1d",
+        "expected": "9681ca2f3581a87b6ccb0a160ab6cd9377c6e09ea33374e80f95e3f9ae8ddc1d",
+        "match": true
+      }
+    },
+    "old_panels_byte_unchanged": true
+  },
+  "rebuilt_panels": {
+    "panels": {
+      "funding/1INCHUSDT": {
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "n_months": 46,
+        "rows": 4200,
+        "sha256": "e59536493851f9ba732e39246edf39887d28dffe3d4c60aa49e0895c05b0b772"
+      },
+      "funding/AAVEUSDT": {
+        "date_first": "1672531200000",
+        "date_last": "1793462400000",
+        "n_months": 46,
+        "rows": 4200,
+        "sha256": "1187ca2bb67ce36e98057c1664dc365005a84e63e6faa41269a503557b4494a7"
+      },
+      "funding/ACHUSDT": {
+        "date_first": "1677052800010",
+        "date_last": "1793462400000",
+        "n_months": 45,
+        "rows": 4043,
+        "sha256": "22cc8411e29f667f02811c81f92dc83cd997d855ea431ad44fe6b3448ed89f6c"
+      },
+      "funding/AGLDUSDT": {
+        "date_first": "1690560000000",
+        "date_last": "1793462400000",
+        "n_months": 40,
+        "rows": 3574,
+        "sha256": "57b304586fa16123894f629a092f84dbf65869cc9c035330adbaccbcc594091f"
+      },
+      "klines/1INCHUSDT": {
+        "date_first": "2023-01-01",
+        "date_last": "2026-10-31",
+        "n_months": 46,
+        "rows": 1399,
+        "sha256": "d141194b8c1ba5832a78ac26ba646c1687e3bef595d5f4159ec16129cc0ed168"
+      },
+      "klines/AAVEUSDT": {
+        "date_first": "2023-01-01",
+        "date_last": "2026-10-31",
+        "n_months": 46,
+        "rows": 1399,
+        "sha256": "51748b273a3346b8c9aa9239463dfeda23347a8f2620c0094fc58d26e20f40a6"
+      },
+      "klines/ACHUSDT": {
+        "date_first": "2023-02-22",
+        "date_last": "2026-10-31",
+        "n_months": 45,
+        "rows": 1347,
+        "sha256": "22b92a453e9883f0f542276bc45ccd971f183350e6e6e89f03d276b138adb109"
+      },
+      "klines/AGLDUSDT": {
+        "date_first": "2023-07-29",
+        "date_last": "2026-10-31",
+        "n_months": 40,
+        "rows": 1190,
+        "sha256": "94183e2c24d2637657a27e1ba47391e640ef4d91eb654313e047a024c9ff325f"
+      }
+    },
+    "total_rows": 21352
+  },
+  "seeded_from_committed_raw": {
+    "n": 186,
+    "note": "byte-identical copies of already-present pre-gap/post-gap zips; originals untouched",
+    "records": [
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-01.zip",
+        "raw_sha256": "6a8f9b7dfac0a8c93d7dd02b976b27e8b7023b3fb9a17e00aa1f7e1118618661",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-02.zip",
+        "raw_sha256": "d1aaf88f94b3a89265f218026a03cc5bb0aa835fd419a88ec20632e507540643",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-03.zip",
+        "raw_sha256": "49600f7c28f006f83d7d87dc2d8ef1a6ce8f91373cfd9e45c0566f876c09a5a1",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-04.zip",
+        "raw_sha256": "bf26644600bf89bdf3f0e71d6e4d43fce2a04a3ecfec603d74e872220c8b0aaf",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-05.zip",
+        "raw_sha256": "adf1cae1b44d533ec6d5edef8d3e754b0c208d388efc00d15570ff22d8df9de0",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-06.zip",
+        "raw_sha256": "4d6b705ae510892d412a5b22c67ca4d96cd6790b8830b6ed444e938fe53a38d3",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-07.zip",
+        "raw_sha256": "e03a623737a4d2683d6fb40f150039b60362365c584ffa1fecd5de6b48477634",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-08.zip",
+        "raw_sha256": "b7ccad482e6c87875a81d7b90a7f75434dd9becc9dd50d47f2dcfb509ab3fadf",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-09.zip",
+        "raw_sha256": "7c35bc4a69f70fee35991f949eb5e4beeb80b49b5be94aea1284219787df35af",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-10.zip",
+        "raw_sha256": "630d008661bb33c26f2efedd6cb6398eea36aba67c29b6d4028ca4897d6ad34d",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-11.zip",
+        "raw_sha256": "ef886cdbdbdccde3289514d2a0e743e3299a66eabd03023c9fcd5fc0708e780e",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2023-12.zip",
+        "raw_sha256": "9af633ccec996b763f62963294f9f00f0fc3e3c6ddbe8f29933806c51fef934c",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-01.zip",
+        "raw_sha256": "2c03d251b4b9fe4fee9dc0faf41bddb94ba73119eed9eca713bbd5afd24f68a3",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-02.zip",
+        "raw_sha256": "829adf6de4aa0b818cb0afb7ce48794f9c5a6937f0ea6dac3931a2e19dfd0108",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-03.zip",
+        "raw_sha256": "cef21a236455de2de6eb07d65d6d55e4e02c22b5d963364d1b2359a88ea21db7",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-04.zip",
+        "raw_sha256": "f26a5752887f6f00c01e7f53dcc59833ad46dde2d736f48182c5544b2fb75637",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-05.zip",
+        "raw_sha256": "5ea5c4787e21801d50416f70abc5029330b8f3ed805458ecc8dc4f0c5edb8f14",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-06.zip",
+        "raw_sha256": "8f6f03bcadb438d9aac2514b75ce28c995c709edac845a4f8da0c0727699b7fe",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-07.zip",
+        "raw_sha256": "11ac6c8900f32acfd922f96564e7849c674ff8f0a82120876cd4f3c62024d55e",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-08.zip",
+        "raw_sha256": "00e3a1f86395639c95d522fa74abcbb57e273220b186258bb34dfe5fcca4fb52",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-09.zip",
+        "raw_sha256": "a495240a6ca3f680bb30608a83b397cc09244d05e884de61e3d55fcaea90e4e3",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-10.zip",
+        "raw_sha256": "645c6d3db29a6178107e2bab2b1c138a7506c168b5881b474c0541ffc8118215",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-11.zip",
+        "raw_sha256": "77e317f04b2ba8b5d87c546b5e818c28a4f9d431ea97cdbc1aefdec8b7e78286",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2024-12.zip",
+        "raw_sha256": "4e2cda4fe2e8a209fc30476599ea5cc44c08857c6a4d8db4919caba589fc7416",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/1INCHUSDT/1INCHUSDT-klines-2026-10.zip",
+        "raw_sha256": "91d82c06390000d60825b2693e9e0210a218eee417e8639047880dc8f3cea86c",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-01.zip",
+        "raw_sha256": "fee1bd0d70a9fbf9f5d1105183a8109041c6e6eec54db3f9b670a52badcb02fe",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-02.zip",
+        "raw_sha256": "7dc89b7095069e2ee02d514ab36e779bbca9a6431572416c9b2c31dea350c979",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-03.zip",
+        "raw_sha256": "5dbe996d397702999cc6245b4e8b58d3b6bb5422df579fc52a3f447a1658b96b",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-04.zip",
+        "raw_sha256": "6f7f3fe192c3472dc4c57f9bac34eb332eac60b79f47309de7741b95884ccceb",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-05.zip",
+        "raw_sha256": "41215a7503fbc0a9562f48df7da9187a350913e374ac02da6d2f1ae4dc090680",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-06.zip",
+        "raw_sha256": "d6ad83e65afe74405109826b36fe9227e7b4bd3b0af4aaed9744a462a66a4eb1",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-07.zip",
+        "raw_sha256": "89c9b5c9e0a2df0472e568c06766100a881bedc9ffcee1c1aa62064ccc476788",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-08.zip",
+        "raw_sha256": "659a3a020bc9a8e167e44aa50e7f3317931429451602c3b689cc2165df78a25c",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-09.zip",
+        "raw_sha256": "d04993e603ec8e8db867ab1d14c6a67aed61c8ebe36cfe22fee6eb29a2cc0b01",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-10.zip",
+        "raw_sha256": "44bdb7c3e3ce441d6ef8e1e4d8c02c69f25a8bef0885f3ef7512cafa6540138d",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-11.zip",
+        "raw_sha256": "f31b618aa34c7b3cad48b4df1b7c304ece9b674c8038418284b4919e0a2a80b3",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2023-12.zip",
+        "raw_sha256": "45dbd855da674901d087f1999a1269f3efef8f4f7b4107d2a6459ea87c2438f3",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-01.zip",
+        "raw_sha256": "cbbaed2cbfd5b74833eb2a2590617fd39f9de9af0d3a4d9f0d3bdb633c6c3c80",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-02.zip",
+        "raw_sha256": "9b1b231883e1b85f8a22cc6565664aeb2f2c6b6f56eb31a019c9572532934eb0",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-03.zip",
+        "raw_sha256": "2badfef5bd4ba2b6a5cb60534cb06af546c8d463b311207e74df810e99c187d3",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-04.zip",
+        "raw_sha256": "01e3ddb0e78b2444bb32143d0412cbaf1a6ae47f657fa737c70dbe5509201a01",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-05.zip",
+        "raw_sha256": "45c98a18b83147578e93368e35574a6a5333b7afc61d93a1e3394ff4e4ec06eb",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-06.zip",
+        "raw_sha256": "ceb73025d7cbcf78be3b9ccd6ae0d0115bc97b2a587cb87306df6d77914cf437",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-07.zip",
+        "raw_sha256": "9b82ef239141c958e6c394405cf04aa977e27ec5cede466df6ede82319dc4248",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-08.zip",
+        "raw_sha256": "c60bfc7bb33d2b92e75504407068c4b523b112037673f761a9891155c32489ab",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-09.zip",
+        "raw_sha256": "d7fa123a97fe4822b8bd5cfaa5beb8ec7d3b1514bf54812a31e7c8166cbdb898",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-10.zip",
+        "raw_sha256": "debf308f2fa67c3c41bc5167202de40820d2d74376e1fd9135356508f688cc46",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-11.zip",
+        "raw_sha256": "73486f60f63060bbaac865ba0442f4f33e67fc3b68b4e4bc4dab161c0f5e4be4",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2024-12.zip",
+        "raw_sha256": "c5d0cdf67c2e219d738b48767292f34df453766556329a09124817c6464ab19e",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/1INCHUSDT/1INCHUSDT-funding-2026-10.zip",
+        "raw_sha256": "8801efbbc0f89ddbfcdc6985aaaa174fca759c895dca2d41e77a5fdd4055b714",
+        "status": "copied_from_old_raw",
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-01.zip",
+        "raw_sha256": "e91ae130eb2e39b31f1dc08800dce76876d6490b96c5a6227c4f6c666de7b0d2",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-02.zip",
+        "raw_sha256": "8ba97700391363d57dce2b3c156d2f3bbc445625d4e07d969ac67322cba016d4",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-03.zip",
+        "raw_sha256": "232dc17aa325f85c32938f9ca80665d3c0041d1c6f01f077c0f0e870760194ac",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-04.zip",
+        "raw_sha256": "1797466fc9e0a4b922f650edd70ba539433407470001f48abbc52ba92c5e1097",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-05.zip",
+        "raw_sha256": "aa47b1f20b12529dd9b893dcecee82c83210f3206101fcb1444d77df896a2de8",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-06.zip",
+        "raw_sha256": "cf7342faf7e356f029a8336a212f936ae1d31c70829ed34a27d0cc5412823886",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-07.zip",
+        "raw_sha256": "5dec7b350027e96025269d18a80f9786d5d3304980402c6aa519c1ff355092aa",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-08.zip",
+        "raw_sha256": "ac70401ea650209fa3459bb4e3dd2946f7c0e9f66914727451bbfb32afc7fe53",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-09.zip",
+        "raw_sha256": "c14f285df27ecbe39079e207a3f040906748af6bc2447feb0d37f2467790b5b1",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-10.zip",
+        "raw_sha256": "2555e9201236144b247347c6168202ce9e920b49b6c28d71a4bb2f9f57c32ef2",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-11.zip",
+        "raw_sha256": "0d26a1c3b76ee7f38d2ad0111a25d6aade7720b0d5c53f01505b7ea7937cdf24",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2023-12.zip",
+        "raw_sha256": "b1d9db51dcf5040a0b30f401e3750678c2eecd9cb12a35b8e4dfe76bcb6b7330",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-01.zip",
+        "raw_sha256": "26d10abcd9544bdc96b78c906a9d67e28994e94591583bab2eb0460d8bccf082",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-02.zip",
+        "raw_sha256": "170909cf794dfbcc22bc219429466a98bd9a7a3dba75573957faa70ae3225d6c",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-03.zip",
+        "raw_sha256": "fdf2bfb14bcce0977714d8f3f5cb91eab4810aa4c8f66c39aaed7a972016aad0",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-04.zip",
+        "raw_sha256": "518ac1518f1a54b5e580572b95bbd795101925bc9378a4355e34e0cc28249811",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-05.zip",
+        "raw_sha256": "7e260752e70fc58a4acd2e97a889065099909623b7d74d43c00b3574d583fd48",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-06.zip",
+        "raw_sha256": "fd0a70e8ccf82110e125ebb977036b2a828085bcc99ae13cfdc7ae0e8a2ce1fb",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-07.zip",
+        "raw_sha256": "a84b1ac9765249fd227cd582e30524e0748a6c0001f7d65f106946e31a228d20",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-08.zip",
+        "raw_sha256": "cdd7aed40a0440b38c028f1f107283c1c3e14e3ff3888273909af8f68a2c13f2",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-09.zip",
+        "raw_sha256": "a355f06578e4829a2ef4e2cb5e87218c53f9946fe9af2f91fedaa65a1045df58",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-10.zip",
+        "raw_sha256": "a7d754134d965cc6aea00c7d0a25a03e603d7d9c024fb24eabf86135ea61e20b",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-11.zip",
+        "raw_sha256": "3512599a6c7329ec5ddf9fffea1a13a2e724d7310d10bc43233c5dd35ed71649",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2024-12.zip",
+        "raw_sha256": "ecae260dcbe01c6393d221c641ec81e47ae60303272c993f7d533de3f3543b07",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AAVEUSDT/AAVEUSDT-klines-2026-10.zip",
+        "raw_sha256": "2842dbbc9a9d7fe9ca32ac54be864a819bf91c19dc738f1394f41a7efe91611d",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-01.zip",
+        "raw_sha256": "8ccde0024bc83011b46667ea672b76e64a90923937f372faf4caa8c85d256703",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-02.zip",
+        "raw_sha256": "9e9e2bdd01076d9f411acaefc67a1537e4eb655910845db02cab7096e580cf96",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-03.zip",
+        "raw_sha256": "7f508bdb8d87a302f47ab0e133f0ab5584d4222b589f9f6e995a7d857b8c58aa",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-04.zip",
+        "raw_sha256": "5cf7b0981c375e70cf7b970c6478302b680ddd6762b7ea9541e586930ba9c177",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-05.zip",
+        "raw_sha256": "6f9bbdeca9f6b61cee973f80dcf995afe065da20641f76c839da19fb6ab01cee",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-06.zip",
+        "raw_sha256": "bc4841fd66de7df131b392e4320be02eb7394a223d432f57493bdf803e0f7af3",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-07.zip",
+        "raw_sha256": "a5aba94dcd7ae4c768c65811895b3b8c0a58a9c6b6ac75c9ec93e0444d668164",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-08.zip",
+        "raw_sha256": "77921682f00fb09909d6b8f461a85e5e1416283a0a643d1786fedd493b7b4a57",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-09.zip",
+        "raw_sha256": "e1b359a2155ddb87629b78832d3024143bf1e0343af4300c4439f5affd02eda2",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-10.zip",
+        "raw_sha256": "3b7e941bbc7801fb467cada1959c6546f37530ecf7905d6d5f58970317d32f30",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-11.zip",
+        "raw_sha256": "917bc689300eb745d50ab35bc364c7aefa90bc6b36a00a2b262517a5fda8e5fc",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2023-12.zip",
+        "raw_sha256": "198c8e139cd68af25a2ab1b4ae2132d1fb1a401a9be886644e0f1487d6d92db5",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-01.zip",
+        "raw_sha256": "b20a6dc4d00fdc42b486da6b8be052713c09af230cdbc85bd4a5d42014ce8e70",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-02.zip",
+        "raw_sha256": "39d9601d8cc0d881a89b44131931a178968bfeacabdcdcc88f2babbb3909dea7",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-03.zip",
+        "raw_sha256": "0b089dfee46a8265dce2a4f94619fcc31cc301d6461fcb693ab82bb0e2d1b466",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-04.zip",
+        "raw_sha256": "8a56d6810465a0d34fce679b4ede6cdfcbc474aeb7e8c503f3d35c937209a210",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-05.zip",
+        "raw_sha256": "3fc160502b59747a9c7d875d0cd5e2bb1f8e97f6fe75b43fe49b49d33b0a5f81",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-06.zip",
+        "raw_sha256": "7a65e1e37a8a2aca870cc65178fb226d65174cd278ca57478d7ad0512e0ca486",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-07.zip",
+        "raw_sha256": "1e36380d3308cb4582f18e912f7e7c829db7b73b56acf95a80c065920a1e35f7",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-08.zip",
+        "raw_sha256": "24646f80c67ed2d53974d8685a9ba82ee5813500bf149501f4b3c5832ce663c1",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-09.zip",
+        "raw_sha256": "7e044e098737f8732de6e617cff9089b6b81f535563bede812ad8faf422d6741",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-10.zip",
+        "raw_sha256": "789b53b665ff8a49e034ef10d5ac70294121910b720667013977dec91e79de2f",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-11.zip",
+        "raw_sha256": "5830d63b951a65a78abc7ea1e43fa13a43753920efa788f899dae05cc39b11a7",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2024-12.zip",
+        "raw_sha256": "f9c4a5c8af9e9caba6ddaafc392cedbeae767ed5217d0cb0c8b0273e3941b844",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AAVEUSDT/AAVEUSDT-funding-2026-10.zip",
+        "raw_sha256": "aecb7a13df7a835fbd7f43a9c32c534929932751055dfc76000f26f3a00dc5df",
+        "status": "copied_from_old_raw",
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-02.zip",
+        "raw_sha256": "ed9cd92e5c819db26019152aa8fc300a8df25a6b38885f59118c04da213707d7",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-03.zip",
+        "raw_sha256": "8de4d396672c4819c017bdc7248ccb7681a695446d1609957705acde482320db",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-04.zip",
+        "raw_sha256": "e355e13fc6d67a0ca8957ac76a0780f70ec184d79855e44666f0d5690bfe1fa8",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-05.zip",
+        "raw_sha256": "0b7bfc57ab0f8095735d1e98ae473ea09f98a3c23d552da4b1d569215740a563",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-06.zip",
+        "raw_sha256": "987f77e2c49b09182a739c1e6bd1d8ecb97157ce35825c86433911ee6a9a67b4",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-07.zip",
+        "raw_sha256": "fd2043587e4d57c255be8ac9e17bcc82f624e52a93014025042b229ababf73ce",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-08.zip",
+        "raw_sha256": "0d8f3d84e61b00a19861839c38a5991b4588efd4837ae796cad29e31fd36a53c",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-09.zip",
+        "raw_sha256": "90c4f834e8450c08508c2e40fa6a6833cb9c53380d5bda2fe4ecf992efdf86a6",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-10.zip",
+        "raw_sha256": "f71753db6f72c170494547174d1cd8916decfdec68e209b450e92d57cfc0c51d",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-11.zip",
+        "raw_sha256": "8e586091592e32a6c9968731820594b42828fa86f98da8efd41536e18efb9a2b",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2023-12.zip",
+        "raw_sha256": "181e1075edc673a6097c5b1e0b1da690aabe4ea6defa23a2c98e21647631512e",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-01.zip",
+        "raw_sha256": "fcf847a362d4d2939549c01253a3535ae365d0ad31aff54d1ae652279098bc0f",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-02.zip",
+        "raw_sha256": "b6b149fc09b8bf46f83a16f5d8244979995dcea9be4b7a0bf9e4ec2e8b2f902b",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-03.zip",
+        "raw_sha256": "80f569b323751460e919c08699a4128236b51d8374d3eb9495dd48940c3a30db",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-04.zip",
+        "raw_sha256": "79a65797eaf1cb67cb0c585075da5bb5109af0a80164ce95be6a713308b18bb1",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-05.zip",
+        "raw_sha256": "a8980b834f8a0e4a9b05c08a5d2dd2d24bd3234782ac2b9160d797f13342c579",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-06.zip",
+        "raw_sha256": "d0de582b4b367726744a8d0d9df74871492e10a2aad111945959c179ad632f2a",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-07.zip",
+        "raw_sha256": "d331d741038df7250a99a29ac9bfb9cf946fda1df1336a663a98b42086659e85",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-08.zip",
+        "raw_sha256": "569b35fb81500b2770331545e92b235d152c773ad3f74893f1a6e80f5af0bbba",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-09.zip",
+        "raw_sha256": "16ebf527614c4943c045c8060967ca4b50cddaae24e6ca4c806ad15526a8b66c",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-10.zip",
+        "raw_sha256": "02eb899707813c6bf996165fd4f671461163070de4d2634e8721bf4824e07372",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-11.zip",
+        "raw_sha256": "c67bd71759fc13a26fda302d01f7ca7f178d022ba3425967864607921808d3bc",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2024-12.zip",
+        "raw_sha256": "29e31cfc48ecd0639aba00ec2b495c60ece8a40538c0445f21f46b0aaf3e35ae",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/ACHUSDT/ACHUSDT-klines-2026-10.zip",
+        "raw_sha256": "75b314eb873174c5fedf64d2a7750c08d05fe1b3be80c5ed13829b5fa083a773",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-02.zip",
+        "raw_sha256": "faec18489038e99d4d5a35f2670bef5732a3151009928ae08b11d27eca014b91",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-03.zip",
+        "raw_sha256": "29d1ace268249a2417b82dd76ed48e0543c9da773409ab8fc9d04f9f9a8391b8",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-04.zip",
+        "raw_sha256": "e902fc8314bb6a3513e8ac5ba3441f82f552962e249b3a5f6124f9d6a4be2e55",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-05.zip",
+        "raw_sha256": "33ab16e4af0d85ca35bdba396dc5af5c94ee10f14021b422dada02ef41a81816",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-06.zip",
+        "raw_sha256": "e1ef1bab6e89b71db1bc5595f849cdd4d3cb9373a8efdad081a7136c865dd5ae",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-07.zip",
+        "raw_sha256": "566ccee18a55a84670fbabaf373b777b352cea17f7260798b2cca32b4f3c89a9",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-08.zip",
+        "raw_sha256": "1a8cf4d51adfaa6f470be8480fdb726e60580417ccbfecd7855b426fcc8bbf12",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-09.zip",
+        "raw_sha256": "8ffbe92499b336ef2329aab64b4b6df8bacb1d4200910df484ca28715709be76",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-10.zip",
+        "raw_sha256": "bc34633634adce647a3f4531c04f90bfd10f8cf79b1a70f5c82b30d44a7c2295",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-11.zip",
+        "raw_sha256": "59d3c5416fd50783068d95718caf71b5b9c96aa7cfa9bc34e712bcb46dd8e200",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2023-12.zip",
+        "raw_sha256": "e44e8428ce0c6ee8da94d9d76a18fd99c82959679d329aa5eb85b21df257d25b",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-01.zip",
+        "raw_sha256": "92123283f6ba22310cbf300bcf32868cb290c150319a122109ecfd67f32ee059",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-02.zip",
+        "raw_sha256": "8cd28560e228b7deea604b5dcd56c53137c653099e920041a1fe259a6be640e8",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-03.zip",
+        "raw_sha256": "1d577b3a4f4fbf623b04add6dfe0e49f21178ce5a07013557c7f28a7c3c58bb8",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-04.zip",
+        "raw_sha256": "93d99fb9a2a3227e08f060a43587ca4b9deb0d3a626f29ba953b278b140e97c6",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-05.zip",
+        "raw_sha256": "aae23e33331fb0ad8e596c4f9e79f728d26b97b09a02b253e6dead42c3dce55d",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-06.zip",
+        "raw_sha256": "2729d88ec774a9ffc7621c752e84453c908e7699d5108512f5cb71377fbbb803",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-07.zip",
+        "raw_sha256": "b65a0f3bd3bb6326945b6bc01f796bcddc148648de873429cf6b1fc6e26a4de6",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-08.zip",
+        "raw_sha256": "54b6d21c4313c7a6425e698c3c7d01d9f62c2376fb825da5b7839a666a188b4d",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-09.zip",
+        "raw_sha256": "52d8d9c7c9d059950d570456deb27406e9b8e01fd951aa0563cd6477f91718df",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-10.zip",
+        "raw_sha256": "3436f57fb507514d998729731d33beda7320e696b1aae463d1931c3dbaf3b2a3",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-11.zip",
+        "raw_sha256": "76a3d507221aff4d1ed241b8186fb99df551bd433690176bb3907aa6e294b593",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2024-12.zip",
+        "raw_sha256": "f3e917e659575cc1cc93ce80199a6a1865e8f2b794f0dec5acad29323d48a2fa",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/ACHUSDT/ACHUSDT-funding-2026-10.zip",
+        "raw_sha256": "e9cd4f1af218045016d3db6c14654fc154cae4b3bb10c4651d92e6b5c8741695",
+        "status": "copied_from_old_raw",
+        "symbol": "ACHUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2023-07.zip",
+        "raw_sha256": "4a3c693e6a6c62db6dada7b933b06f733d5db7a6402c2d2e2712001a85436383",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2023-08.zip",
+        "raw_sha256": "9438b988b8d5dd52dedf22fd4101482fd76f7a06524797fe2e4dfd6287cdcc87",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2023-09.zip",
+        "raw_sha256": "e636c323af16e38f31414e18913c40e987fdba76babac617b9c6f0b4f189bedd",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2023-10.zip",
+        "raw_sha256": "f691c074b971170355ed02ef9d4471d66680905c346a1a7e3f52bf433ff399a3",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2023-11.zip",
+        "raw_sha256": "469a58e01e164ff4e92fe3d293bee8dd989d377c51ee3d9d559e6a9d12003a39",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2023-12.zip",
+        "raw_sha256": "5718af2cf18258149e88247b26375deebb41e8a9b8062cb986fc7dbf0df18233",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-01.zip",
+        "raw_sha256": "6e907dd271bb096cc2f86272660d560deaa7902b6d2bf2763169c993e95efa5b",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-02.zip",
+        "raw_sha256": "7f7f08cb0e61d4b9f32404e3fd31d985f21b3c5bfd5add89074425628ff846f0",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-03.zip",
+        "raw_sha256": "fed37e0bae26909f40e7354aa8a4f41558353031e65fd865dc115c9f8f812f70",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-04.zip",
+        "raw_sha256": "7681ecfc237e996fec1cb81674754c9a8bfae0759a72e3da80a529999194760b",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-05.zip",
+        "raw_sha256": "afd2fffcf733fbf626f17872234ae5d4079c15803658ed58196b1a313a33b53b",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-06.zip",
+        "raw_sha256": "1733c07e29bce11e7df5e33ee1c00609c5db64c3c9db5fdce052963b47b83527",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-07.zip",
+        "raw_sha256": "0fad2b9b50ddb590162253c0e0a1f489266f8f2f2406bdc5e82165e4f2d2031e",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-08.zip",
+        "raw_sha256": "14c631673c0488fd6309761a5778fa8c2236a826bcb3869849ad2c5828bef2a1",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-09.zip",
+        "raw_sha256": "58a2c320e2836051407cdd884e40f328aae9720002518cd35df8f033c1c566a8",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-10.zip",
+        "raw_sha256": "6c3e174d0b165c368425a19ce106903d9ea6d160ff012a88f11aaff49f1689b2",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-11.zip",
+        "raw_sha256": "06d95fba06641fd3f61035c299f8026be61f8a8225877ee2e41ad3753d1f94d8",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2024-12.zip",
+        "raw_sha256": "0c4d90be335bcff7aa153b15201da23c07806e18b8c0fe28a5375930a7c02812",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "klines",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/klines/AGLDUSDT/AGLDUSDT-klines-2026-10.zip",
+        "raw_sha256": "74ac68e00c227a6447ebe58fba849ead6ad90206016a4a46197c4bfffa2cd592",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2023-07.zip",
+        "raw_sha256": "f2608c43c197df947cd315c2f960dfe39aa243545c41e38bf248b55d9cd58655",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2023-08.zip",
+        "raw_sha256": "db2adbc819977d799f5a73da379f0bfbf9aa50f1d3e1c686e0420b1038bd9ee4",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2023-09.zip",
+        "raw_sha256": "caa6604f01a10a7f89c75da530125228c1a36269d525c2b04213e628beacc534",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2023-10.zip",
+        "raw_sha256": "cdfe4a9a23990544a8c09b6e7df8405524dec1bf4da4d3d331746a8820415b31",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2023-11.zip",
+        "raw_sha256": "7d6e5e4fc40542c685b33142c777e209534dd2b9d7730d640f09d031e5a98099",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2023-12.zip",
+        "raw_sha256": "3ce88d00eb29b2279203b53c202afe309e56c0a872838439670a2aa4e87ff41e",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-01.zip",
+        "raw_sha256": "8096eac9e97e74651d14d1a1eae3c043e8f2b4a750cd049fe52d21600fc86528",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-02.zip",
+        "raw_sha256": "b601b66358eaa131fa8a29d4a20e0e0d7f98a92989fc18cc82a1165c82d1d1a9",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-03.zip",
+        "raw_sha256": "2f9f963e09d1d66d74e53216ba3aca575c8002301e1f7c05e59a10098f03ca87",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-04.zip",
+        "raw_sha256": "b279fa42fbe104530cbdf799e7c597e814adb8052eece6cc52ce88952757cf71",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-05.zip",
+        "raw_sha256": "f8cded164596b1b9bc0b6c3df9346880f62eff05c94d93df4d467dbe6f6e1d1e",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-06.zip",
+        "raw_sha256": "b7995d3bcfd229fe301157219d3ab4e5ff5b89353425c9a9130712a59327022c",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-07.zip",
+        "raw_sha256": "58eeb5e51f8017d81d293cab207640ac7df4cd4ac67e9af0f787cac8c5943600",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-08.zip",
+        "raw_sha256": "6315249b428de0fe3663b508df66c8d9a405f25473c4d22f0381ba519cdf400d",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-09.zip",
+        "raw_sha256": "f10843bb79a356aff4be65300692103a870e435cac85e4620073bad497558e54",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-10.zip",
+        "raw_sha256": "cbb2b84ef310f8ef3611307513c82a8d4e52e3c394973504fd4fedd6449dc9f2",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-11.zip",
+        "raw_sha256": "7ed51511b0423c5aeba49146766772b90590f71d1c18b62f1f4b6e74af71d33f",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2024-12.zip",
+        "raw_sha256": "0fc9aebc66612936ed28fb6294ee485c8f83e4e73d2b6eac3eb3d8c6cd65bfd1",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "kind": "funding",
+        "raw_path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/raw/binance/funding/AGLDUSDT/AGLDUSDT-funding-2026-10.zip",
+        "raw_sha256": "bf3321d5c60d19d9b64b23611bea59752262c1d38b25f941483a8440ee9c4fd3",
+        "status": "copied_from_old_raw",
+        "symbol": "AGLDUSDT"
+      }
+    ]
+  },
+  "started_utc": "2026-11-12T17:29:12Z",
+  "status": "EXPLORATORY_ONLY",
+  "verdict": "PASS"
+}
