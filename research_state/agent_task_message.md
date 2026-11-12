@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-12T09:59:11Z (current session)
+# Agent Task Message — 2026-11-12T10:05:28Z (current session)
 
 ## Verified state
 - **HEAD:** `a30e2e36eb88aaf5466642e40c0964ce861c0eb5` (`main...origin/main`, clean working tree at verification; origin/main == HEAD). Parent `f4195048ab765e2330919979f8724aca8a9d2100`; the checkpoint diff touches only `agent_handoff.md` and `agent_task_message.md` (10 insertions / 10 deletions) and is a timestamp refresh of the same durable-state repair — no new drift.
-- **Hashes unchanged (re-verified on disk 2026-11-12T09:59:11Z):** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`.
+- **Hashes unchanged (re-verified on disk 2026-11-12T10:05:28Z):** canonical `7234fc4e...5390`, h10_fresh `324ab1e6...df18f`, registry `7faacdb3...6df4`, frontier `9ba08f3f...4f4e`, latest probe `25c11cba...73f7e6`.
 - **November 2026 probe:** `research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json` — probe_utc `2026-11-11T01:34:59Z`, `probe_month=2026-11`, `target_published=false`, `control_month=2026-09`, `archive_alive=true`, `gate_met_by_month_end=true`. This is the **November probe verdict only** (blocked); it is NOT the H10 cutoff-gate decision. **Do not re-probe before 2026-11-30.**
 - **H10 cutoff gate:** UNBLOCKED by the published October 2026 archive (real probe 2026-11-05T10:38:51Z; see `run_manifest.json` -> `latest_archive_probe`, `probe_month=2026-10`, `target_published=true`). The H10 gate date required is 2026-10-29; November 2026's 404s do not block H10.
 - **Frontier:** `ACTIVE_INCOMPLETE`, catalog exhausted, no free-source discovery remaining.
