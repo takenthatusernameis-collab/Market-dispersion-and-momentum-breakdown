@@ -1,0 +1,38 @@
+{
+  "session_id": "session_verify_20261112T221100Z",
+  "session": "36th_pass_state_reverification_before_date_gate",
+  "verified_at_utc": "2026-11-12T22:11:00Z",
+  "head_at_start": "9166ffe2",
+  "branch_state": "main",
+  "prior_task": "Read the prior agent task from the durable handoff and complete it. Then update the handoff and write a clear initial task message for the next agent.",
+  "prior_task_status": "COMPLETE — prior durable task (Action A registry reconciliation for F1COVERAGE-001/H23) was already committed at 441ac68c; the durable handoff/task message were refreshed and committed at 5ab00f8e, then checkpointed at 9166ffe2. The prior session also completed a bounded no-cost local task (tests/test_november_probe_summary_consistency.py, 7 tests 1 skipped) and recorded claim 370/370/0. The date-gated branch applies: 2026-11-12 < 2026-11-30, so no H10 fresh-block action is unblocked. No new bounded local work was required beyond the prior session's guard; state reverified clean.",
+  "bounded_task_completed": null,
+  "evidence": {
+    "compileall": "python3 -m compileall -q scripts tests EXIT=0",
+    "unittest_final": "Ran 370 tests, OK (skipped=2), EXIT=0",
+    "claim_current": "verified_test_claim_claim_snapshot.json claim 370/370/0, input_file_count=108 (unchanged from prior session)",
+    "frozen_hashes_sha256": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "artifacts_configs_diff": "git diff --stat -- artifacts/ configs/ empty",
+    "git_status": "clean",
+    "h10_gate": "UNBLOCKED by published October 2026 archive (gate_met_by_month_end=true)",
+    "november_probe": "probe_month=2026-11 BLOCKED as a probe only (target_published=false); newest record research_state/cutoff_probe/cutoff_probe_20261111T013459Z.json; durable summary still cutoff_probe_20261107T091152Z.json (frontier and manifest agree)",
+    "fresh_block": "IMMATURE n_formations=1 n_high=0 n_low=0; k not advanced"
+  },
+  "changes_this_session": {
+    "research_state/session_verifications/session_verify_20261112T221100Z.json": "this record",
+    "research_state/agent_handoff.md": "refreshed with this session's verification summary",
+    "research_state/agent_task_message.md": "refreshed initial task for next agent"
+  },
+  "frozen_artifacts_modified": false,
+  "notes": [
+    "No DISPERSION-001/002/003 artifact, config, input, registry entry, or frontier modified. Frozen hashes byte-unchanged.",
+    "Do not re-probe November 2026 before 2026-11-30; waiting for 2026-11-30 is a date gate, not an experiment ID.",
+    "No new bounded local work was required: the prior session's read-only guard (tests/test_november_probe_summary_consistency.py) already closes the identified gap, and all 370 tests pass.",
+    "Known non-blocking drift (guarded for agreement, not recency): frontier/manifest latest_november_2026_probe points at cutoff_probe_20261107T091152Z.json while newer probe_month=2026-11 re-probes exist on disk (newest cutoff_probe_20261111T013459Z.json); both summaries agree with each other and with all evidence they could have seen."
+  ]
+}
