@@ -1,15 +1,17 @@
-# Agent Task Message — 2026-11-13T16:55:25Z (next session)
+# Agent Task Message — 2026-11-13T17:54:48Z (next session)
 
-## Verified state (2026-11-13T16:55:25Z)
-- **HEAD at verification:** `32065d221cc18b01d9d3e0bb7574548e144dd5e2` (`main`), working tree clean at start of verification. HEAD advanced from the prior handoff's `17ee0056` only via an automated `chore(kilo): checkpoint agent session` commit capturing the prior session's doc updates.
-- **Prior task complete:** read durable handoff and task message from 2026-11-13T16:52:16Z and re-verified its recorded action — record with verified evidence that no bounded no-cost H10 task is unblocked before 2026-11-30. Today 2026-11-13 is before the 2026-11-30 date gate, so the H10 fresh sealed forward block is not runnable; no bounded no-cost H10 task is unblocked before the gate. State re-verified and durable docs refreshed.
-- **Checks:** requirements confirmed (numpy/pandas 2.5.4 / 3.1.1). `python3 -m compileall -q scripts tests` EXIT 0. Full suite `python3 -m unittest discover -s tests` — Ran 394 tests, OK, skipped=2.
-- **Session verification record:** `research_state/session_verifications/session_verify_20261113T165525Z.json` (this session; latest; `probe_evidence` matches disk). Prior records retained as historical snapshots.
+## Verified state (2026-11-13T17:54:48Z)
+- **HEAD at verification:** `15c43a016f0ebaa5817024426b464c5f699c73cd` (`main`), working tree clean at the start of verification. HEAD had advanced from the prior handoff's `da46a633` only via an automated `chore(kilo): checkpoint agent session` commit.
+- **Prior task complete:** read the durable handoff and task message from 2026-11-13T17:46:23Z and re-verified its recorded action — record with verified evidence that no bounded no-cost H10 task is unblocked before 2026-11-30. Today 2026-11-13 is before the 2026-11-30 date gate, so the H10 fresh sealed forward block is not runnable and no bounded no-cost H10 task is unblocked before the gate. State re-verified and durable docs refreshed.
+- **Durable-state defect fixed this session:** the 17:46:23Z handoff update had duplicated its own session entry — the same timestamp appeared as both `## Session summary — 2026-11-13T17:46:23Z (this session)` and a spurious `## Previous session — 2026-11-13T17:46:23Z` — and the retained 16:55:25Z block was mis-headed as `## Session summary — ... (previous session)`. The duplicate was removed, headings normalized, and `tests/test_handoff_session_entries.py` (7 tests) was added so a duplicated, mislabelled or out-of-order session entry now fails the build.
+- **Checks:** requirements confirmed (numpy/pandas 2.5.4 / 3.1.1). `python3 -m compileall -q scripts tests` EXIT 0. Full suite `python3 -m unittest discover -s tests` — Ran 394 tests, OK, skipped=2 before the change; Ran 401 tests, OK, skipped=2 after the guard was added and the claim re-recorded.
+- **Session verification record:** `research_state/session_verifications/session_verify_20261113T175448Z.json` (this session; latest; `probe_evidence` matches disk). Prior records retained as historical snapshots.
 - **Probe evidence (recomputed from disk):** **397 real `cutoff_probe_*.json` files (0 MOCK): 270 `probe_month=2026-10` (49 published / 221 not) and 127 `probe_month=2026-11` (all `target_published=false`)**; newest `cutoff_probe_20261113T091257Z.json`.
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. The `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); the probe BLOCKED verdict is never promoted into the H10 gate decision.
 - **H10 fresh block (unchanged, IMMATURE):** sha256 `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation_date=2026-09-30`, `data_cutoff_utc=2026-10-31T00:00:00Z`, `sequential_look_number=1`, `sequential_look_mature=false`, `sequential_remaining_budget=0.025`, `block_sealed=true`. k not advanced.
 - **Frozen hashes (unchanged):** canonical `7234fc4e...`; h10_fresh `324ab1e6...`; frontier `9ba08f3f...`.
 - **Frontier/registry:** frontier `ACTIVE_INCOMPLETE`, cursor 6347, verified 220 / blocked 6127, not exhausted. Registry at H25 (`next_sequence_number=25`); `tests/test_continuous_research_contract.py` asserts this value.
+- **Manifest:** `latest_verified_test_claim` is now `401/401/0` and `last_updated_utc` is `2026-11-13T17:57:56Z`, refreshed by `scripts/record_test_claim.py` after the new test file changed the input inventory (snapshot `research_state/verified_test_claim_claim_snapshot.json`, 113 input files). `session_record_latest` still names `session_record_20261113T170214Z`; no new manifest session block was added.
 - **No bounded no-cost H10 task unblocked before 2026-11-30** (today 2026-11-13). H25 (DISP-003-F1STAB-003) complete (F1_STABILITY_PRESERVED); no further development-data diagnostic preregistered.
 
 ## Initial task for next agent
@@ -23,7 +25,8 @@ This is free/local. Without it, missing-dependency failures are an environment c
 - Record "no bounded no-cost H10 task unblocked before 2026-11-30" with verified evidence in handoff/task message and a session verification record. Do **not** re-probe `probe_month=2026-11` before 2026-11-30.
 - Recommended verification commands: `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests`; recompute probe counts from `research_state/cutoff_probe/` and confirm they match the latest session record's `probe_evidence` block; confirm frozen hashes unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, frontier `9ba08f3f...`).
 - 30-day maturity and ">=30 prior in-block dispersions" trailing-decile rules are hard; no truncated outcome and no exploratory H10 relaxation admissible. The `MIN_STATE_FORMATIONS=5` confirmatory floor is separate and also unmet.
-- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits.
+- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits. The handoff session-entry shape is now guarded, so do not re-add a structural audit for it.
+- If you add or remove a `.py` file under `tests/` or `scripts/`, run `python3 scripts/record_test_claim.py` in the same change; otherwise `tests/test_verified_test_claim_guard.py` fails on the stale input fingerprint and count.
 
 ### 2) On/after 2026-11-30 — H10 fresh sealed forward block (date-gated, bounded, no-cost)
 This is the next executable action (date-gated, not an experiment-ID wait).
@@ -38,7 +41,8 @@ This is the next executable action (date-gated, not an experiment-ID wait).
 5. **Probe-evidence invariant:** if the session writes a probe, refresh the `probe_evidence` block in its session record using the canonical schema (`total_real_probes`, `probe_month_<month>` with `count`/`published`, `newest_probe`). Do not use `total_real_files`/`by_month` — `tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk` only checks records carrying `total_real_probes`.
 
 ### 3) Durable-state rules
-- If you touch handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
+- **Handoff shape:** the top entry must be `## Session summary — <ts> (this session)` matching the title timestamp; every older entry must be `## Previous session — <ts>` with a unique timestamp in strictly descending order; quote the newest `session_verifications/session_verify_*.json` on disk. `tests/test_handoff_session_entries.py` enforces all of this.
+- Keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
 - Do not alter frontier, registry (except allocating a new hypothesis if you add an experiment), frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted; do not repoint by editing the frontier.
 - Probe-count evidence: recompute counts from disk rather than copying a prior record's number (currently 397 real cutoff_probe files, 270 `probe_month=2026-10` / 127 `probe_month=2026-11`).
 - If you allocate a new hypothesis, bump `next_sequence_number` AND `tests/test_continuous_research_contract.py`'s hard-coded `self.assertEqual(registry["next_sequence_number"], N)` in the same change, or the suite fails.
@@ -48,5 +52,3 @@ Free public data only; historical research only (no orders/live/paper trading); 
 
 ## End-of-session requirement
 Leave clean state; update durable handoff and `research_state/agent_task_message.md` with verified evidence and a concrete next action. Never write "wait for a new experiment ID." Waiting for fixed calendar date 2026-11-30 is a date gate.
-
-(End of file - total 50 lines)
