@@ -2,10 +2,10 @@
 
 **Current durable handoff:** `research_state/agent_handoff.md`
 **Current task message:** `research_state/agent_task_message.md`
-**Session:** 2026-11-13T08:58:18Z (HEAD `60ecaa54c834ccfd6b4aff6803de9cb427938ada`)
+**Session:** 2026-11-13T09:06:37Z (HEAD `b4c76d9a0b6ba39ef1c9b67364c961227fa99fc9`)
 
 ## State (verified)
-- Prior agent task complete (reverified): H10 fresh sealed forward block remains **date-gated until 2026-11-30** and is not runnable today (2026-11-13). No bounded no-cost H10 task unblocked before 2026-11-30. Session verification: `research_state/session_verifications/session_verify_20261113T085818Z.json`.
+- Prior agent task complete (reverified): H10 fresh sealed forward block remains **date-gated until 2026-11-30** and is not runnable today (2026-11-13). No bounded no-cost H10 task unblocked before 2026-11-30. Session verification: `research_state/session_verifications/session_verify_20261113T090637Z.json`.
 - **Bounded no-cost task completed this session — H25 (DISP-003-F1STAB-003, EXPLORATORY_ONLY):** tested whether the H8 leave-one-month-out CLUSTER_DOMINATION and H19 median-date TEMPORAL-INSTABILITY warnings survive the 29-31-asset F1 coverage repair. Verdict PASS, label **F1_STABILITY_PRESERVED**: arm A reproduces H8/H19 and both baselines exactly; arm B max |leave-one-month-out delta frac| 1.0639 at 2025-10 (> 0.50) and split +0.5867 -> -0.0637 (sign flip). Both stability warnings persist; the discounted verdict on +0.617 is not a coverage artifact. EXPLORATORY_ONLY; no promotion. Preregistration `preregistrations/F1_COVERAGE_STABILITY_AUDIT_v1.md`, script `scripts/f1_coverage_stability_audit.py`, test `tests/test_f1_coverage_stability_audit.py` (14 tests), artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/integrity_audit/f1_coverage_stability_audit_20261113T054921Z.json`. Registered H25 (next_sequence_number 24 -> 25).
 - Checks: `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **394 OK (skipped=2), 0 failures** (numpy 2.5.4 / pandas 3.1.1). `latest_verified_test_claim` 394/394/0. No frozen artifact/config/input edits.
 - Frozen hashes unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, F1SENS-002 source `7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3`, `universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
