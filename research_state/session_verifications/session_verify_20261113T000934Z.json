@@ -1,0 +1,56 @@
+{
+  "session_utc": "2026-11-13T00:09:34Z",
+  "head": "d36143304ce2d51c6bcf66ddb8090d7c5757b8d2",
+  "branch": "main",
+  "working_tree_clean": true,
+  "checks": {
+    "compileall_scripts_tests": {"exit_code": 0},
+    "unittest_discover_tests": {"exit_code": 0, "ran": 370, "ok": true, "skipped": 2, "failures": 0}
+  },
+  "frozen_hashes_sha256": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "grid": {"expected": 216, "evaluated": 216, "ok": 216, "blocked": 0, "failed": 0},
+  "probe_evidence": {
+    "total_probes": 392,
+    "probe_month_2026_11_count": 123,
+    "probe_month_2026_11_all_target_published_false": true,
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261112T235000Z.json",
+    "newest_probe_utc": "2026-11-12T23:50:00Z",
+    "newest_probe_month": "2026-11",
+    "newest_target_published": false,
+    "archive_alive_control_2026_09": true
+  },
+  "h10_status": {
+    "cutoff_gate": "UNBLOCKED_BY_PUBLISHED_OCTOBER_2026",
+    "probe_month_2026_11_verdict": "BLOCKED_AS_PROBE_ONLY_NOT_PROMOTED_TO_GATE",
+    "fresh_block_state": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "k_advanced": false
+  },
+  "frontier": {
+    "status": "ACTIVE_INCOMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true,
+    "panel": "2023-01-01..2026-10-31"
+  },
+  "date_gate": {
+    "today_utc": "2026-11-13",
+    "h10_fresh_runnable_on_or_after": "2026-11-30",
+    "bounded_no_cost_h10_task_unblocked_before_2026_11_30": false,
+    "note": "30-day outcome maturity and >=30 prior in-block dispersions are hard; truncated outcomes forbidden."
+  },
+  "diffs": {
+    "artifacts_configs_clean": true
+  },
+  "prior_task_completed": "Read durable handoff/task message; resolved assigned H10 action as date-gated (no bounded no-cost task before 2026-11-30). No re-probe of probe_month=2026-11 before 2026-11-30."
+}
