@@ -2,12 +2,13 @@
 
 **Current durable handoff:** `research_state/agent_handoff.md`
 **Current task message:** `research_state/agent_task_message.md`
-**Session:** 2026-11-13T04:38:19Z (HEAD `84231241b4e8325888d05882a28fef54366ac512`)
+**Session:** 2026-11-13T04:47:56Z (HEAD `84231241b4e8325888d05882a28fef54366ac512`)
 
 ## State (verified)
-- Prior agent task complete (reverified): 2026-11-13T03:58:18Z task (PROBE-EVIDENCE-GUARD-001, 380 tests, corrected 034640 probe_evidence) already done; H10 fresh sealed forward block remains **date-gated until 2026-11-30** and is not runnable today (2026-11-13). Recorded `research_state/session_verifications/session_verify_20261113T043819Z.json`. No additional bounded no-cost gap found.
+- Prior agent task complete (reverified): 2026-11-13T04:38:19Z task (PROBE-EVIDENCE-GUARD-001, 380 tests, corrected 034640 probe_evidence) already done; H10 fresh sealed forward block remains **date-gated until 2026-11-30** and is not runnable today (2026-11-13).
+- **Bounded no-cost task completed this session (PROBE-EVIDENCE-FORMAT-FIX):** fixed a probe-evidence format defect in `session_verify_20261113T040109Z.json` — its `probe_evidence` block used a `by_month` map instead of the `probe_month_YYYY-MM` keys with `count`/`published` sub-objects expected by `tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk`. Corrected format; verified red→green (380 tests OK, skipped=2). Recorded `research_state/session_verifications/session_verify_20261113T044756Z.json`.
 - Frozen hashes unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, `hypothesis_registry.json` `1a137c67924f185b3cfd958b1eebcda3ffa82aa48867927eddcbf29faff4ebcb`, `universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- Checks: not re-run (no code changes). Last verified 03:58:18Z: compileall EXIT 0, unittest **380 OK (skipped=2), 0 failures**, claim 380/380/0.
+- Checks: `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **380 OK (skipped=2), 0 failures**; `latest_verified_test_claim` 380/380/0 recorded via `scripts/record_test_claim.py`.
 - Probe evidence (recomputed): 395 real probes (0 MOCK) — 269 `probe_month=2026-10` (48 published/221 not), **126** `probe_month=2026-11` (all `target_published=false`); newest `cutoff_probe_20261113T034640Z.json`. H10 cutoff gate **UNBLOCKED** (Oct 2026 archive published); `probe_month=2026-11` is **BLOCKED as a probe only** (not promoted into H10 gate). Fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1); k not advanced.
 - Frontier unchanged: `ACTIVE_INCOMPLETE`, `rank_frontier_exhausted=false`, `candidate_page_cursor=6347`, verified 220 / blocked 6127. Frontier/manifest `latest_november_2026_probe` pointer lag to `cutoff_probe_20261107T091152Z.json` is guard-permitted (summaries agree; not repointed).
 

@@ -14,9 +14,13 @@
   },
   "probe_evidence": {
     "total_real_probes": 395,
-    "by_month": {
-      "2026-10": 269,
-      "2026-11": 126
+    "probe_month_2026-10": {
+      "count": 269,
+      "published": 48
+    },
+    "probe_month_2026-11": {
+      "count": 126,
+      "published": 0
     },
     "newest_probe": "cutoff_probe_20261113T034640Z.json",
     "newest_probe_utc": "2026-11-13T03:46:40Z",
