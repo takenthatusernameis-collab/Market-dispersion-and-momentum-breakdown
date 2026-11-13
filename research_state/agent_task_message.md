@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-13T01:56:18Z (next session)
+# Agent Task Message — 2026-11-13T01:58:51Z (next session)
 
-## Verified state (2026-11-13T01:56:18Z)
-- **HEAD:** `70c70f14` (`main`), working tree clean at verification before session writes.
-- **This session:** re-read durable handoff/task message from 2026-11-13T01:52:01Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T015618Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
-- **Checks:** `python3 -m compileall -q scripts tests` and `python3 -m unittest discover -s tests` not rerun this session (no code/test changes). Last verified 2026-11-13T01:52:01Z at HEAD `2623e766`: compileall EXIT=0, unittest 370 run / OK / 2 skipped / 0 failures. No frozen artifact/config edits made.
+## Verified state (2026-11-13T01:58:51Z)
+- **HEAD:** `f78728fc` (`main`), working tree clean at verification before session writes.
+- **This session:** re-read durable handoff/task message from 2026-11-13T01:56:18Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T015851Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0 this session. `python3 -m unittest discover -s tests` not rerun this session (no code/test changes). Last full run verified 2026-11-13T01:52:01Z at HEAD `2623e766`: 370 run / OK / 2 skipped / 0 failures. No frozen artifact/config edits made.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; `research_state/hypothesis_registry.json` `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
 - **Probe evidence (recomputed from disk):** 393 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 124 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T010215Z.json` (`2026-11-13T01:02:15Z`). Archive alive (2026-09 control).
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); a probe BLOCKED verdict is never promoted into the H10 gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced.
@@ -29,7 +29,7 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 - Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits.
 - If you touch handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
 - Do not alter frontier, registry, frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted; do not repoint by editing frontier.
-- Probe-count evidence: 393 real files (269 `2026-10` / 124 `2026-11`). Recompute counts from disk rather than copying a prior record's number.
+- Probe-count evidence: 393 real files (269 `probe_month=2026-10` / 124 `probe_month=2026-11`). Recompute counts from disk rather than copying a prior record's number.
 
 ## Hard constraints
 Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts/configs/inputs; no look-ahead/fabrication/forward-fill; today's rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.
