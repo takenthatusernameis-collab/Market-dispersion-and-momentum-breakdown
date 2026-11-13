@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-12T22:49:08Z",
+  "recorded_utc": "2026-11-13T03:06:52Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 370,
-  "tests_ok": 370,
+  "tests_run": 379,
+  "tests_ok": 379,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "370/370/0",
-  "input_fingerprint": "3cd0a92be7aacd0cefe1cdd619e15513a810454312b82fc25942d5431637c865",
+  "claim": "379/379/0",
+  "input_fingerprint": "885aaff02f583bd564128cabe31186040887662a8e96964ee9555b7646a769ea",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
@@ -21,6 +21,7 @@
     "scripts/dispersion_regime_conditioning.py",
     "scripts/dispersion_rolling_window.py",
     "scripts/eval_forward_block.py",
+    "scripts/f1_coverage_outcome_sensitivity.py",
     "scripts/f1_panel_coverage_repair.py",
     "scripts/fetch_binance_data.py",
     "scripts/fetch_coinmetrics_marketcap.py",
@@ -78,6 +79,7 @@
     "tests/test_dispersion_regime_conditioning.py",
     "tests/test_dispersion_rolling_window.py",
     "tests/test_experiment_registry_reference.py",
+    "tests/test_f1_coverage_outcome_sensitivity.py",
     "tests/test_f1_panel_coverage_repair.py",
     "tests/test_forward_block_accounting.py",
     "tests/test_forward_block_cluster_bootstrap.py",
@@ -119,5 +121,5 @@
     "tests/test_state_timestamp_not_stale.py",
     "tests/test_verified_test_claim_guard.py"
   ],
-  "input_file_count": 108
+  "input_file_count": 110
 }

@@ -69,8 +69,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # alpha-spending declaration (H22); H23 was added for the F1COVERAGE-001
         # panel-coverage repair (DISP-003-F1COVERAGE-001, EXPLORATORY_ONLY,
         # coverage_only) so the committed F1 repair audit no longer references an
-        # unallocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 23)
+        # unallocated registry hypothesis; H24 was added for the F1SENS-002
+        # coverage-outcome sensitivity (DISP-003-F1SENS-002, EXPLORATORY_ONLY)
+        # so the committed F1 sensitivity audit references an allocated
+        # registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 24)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
