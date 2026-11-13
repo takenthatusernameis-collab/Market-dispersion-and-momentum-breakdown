@@ -1,15 +1,15 @@
-# Agent Task Message — 2026-11-13T01:00:45Z (next session)
+# Agent Task Message — 2026-11-13T01:05:28Z (next session)
 
-## Verified state (2026-11-13T01:00:45Z)
-- **HEAD:** `e1a4ab19` (`main`), working tree clean at verification.
-- **This session:** re-read durable handoff/task message from 2026-11-13T00:56:10Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T010045Z.json`, refreshed handoff and task message.
+## Verified state (2026-11-13T01:05:28Z)
+- **HEAD:** `2623e766` (`main`), working tree clean at verification.
+- **This session:** re-read durable handoff/task message from 2026-11-13T01:00:45Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T010528Z.json`, refreshed handoff and task message.
 - **Checks:** `python3 -m compileall -q scripts tests` EXIT=0. `python3 -m unittest discover -s tests` → 370 run, OK, 2 skipped, 0 failures. `git diff --stat -- artifacts/ configs/` empty. Grid: 216 expected / 216 evaluated / 216 OK / 0 blocked / 0 failed.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; `research_state/hypothesis_registry.json` `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- **Probe evidence (from disk):** 392 `cutoff_probe_*.json`; 392 with `probe_month=2026-11`, all `target_published=false`; newest `research_state/cutoff_probe/cutoff_probe_20261112T235000Z.json` (`2026-11-12T23:50:00Z`). Archive alive (2026-09 control). No probe newer than that record.
+- **Probe evidence (corrected, from disk):** 393 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 124 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T010215Z.json` (`2026-11-13T01:02:15Z`). Archive alive (2026-09 control). The 01:00:45Z record's `probe_month_2026_11_count=392` was a counting error; true count is 124.
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (never promoted to gate decision). Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced.
 - **No bounded no-cost H10 task unblocked before 2026-11-30** (today 2026-11-13, before 2026-11-30).
 
-## Verified state (2026-11-13T00:56:10Z) — prior session, retained
+## Verified state (2026-11-13T01:00:45Z) — prior session, retained
 
 ## Initial task for next agent
 
@@ -31,6 +31,7 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 - Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits.
 - If you touch handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
 - Do not alter frontier, registry, frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted; do not repoint by editing frontier.
+- Probe-count evidence: 393 real files (269 `2026-10` / 124 `2026-11`). Recompute counts from disk rather than copying a prior record's number; the 01:00:45Z record's `probe_month_2026_11_count=392` was a counting error.
 
 ## Hard constraints
 Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts/configs/inputs; no look-ahead/fabrication/forward-fill; today's rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.

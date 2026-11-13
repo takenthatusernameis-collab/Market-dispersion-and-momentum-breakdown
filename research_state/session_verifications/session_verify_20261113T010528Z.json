@@ -1,0 +1,49 @@
+{
+  "session_utc": "2026-11-13T01:05:28Z",
+  "head_commit": "2623e766",
+  "working_tree_clean": true,
+  "compile_check": "EXIT=0",
+  "unit_tests": "370 run, OK, 2 skipped, 0 failures",
+  "frozen_artifacts_diff": "empty",
+  "grid_state": "216 expected / 216 evaluated / 216 OK / 0 blocked / 0 failed",
+  "canonical_forward_block_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "hypothesis_registry_hash": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+  "universe_frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+  "probe_evidence": {
+    "total_real_probe_files": 393,
+    "mock_probe_files": 0,
+    "by_probe_month": {
+      "2026-10": 269,
+      "2026-11": 124
+    },
+    "probe_month_2026_11_count": 124,
+    "probe_month_2026_11_all_target_published_false": true,
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261113T010215Z.json",
+    "newest_probe_utc": "2026-11-13T01:02:15Z",
+    "archive_alive_via_control": "2026-09",
+    "prior_record_correction": "research_state/session_verifications/session_verify_20261113T010045Z.json reported total_probe_files=392 and probe_month_2026_11_count=392. That 2026-11 count is not reproducible: on disk the 393 real probe records split 269 (probe_month=2026-10) / 124 (probe_month=2026-11). The prior record appears to have set the 2026-11 count equal to the total file count. The substantive verdict is unchanged (all 2026-11 records target_published=false; October 2026 published; H10 cutoff gate UNBLOCKED); only the count field was wrong. Prior record left in place; corrected here."
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED (met by published October 2026 archive, cutoff_probe_20261105T103851Z.json)",
+    "probe_month_2026_11": "BLOCKED as probe only (target_published=false, month-not-yet-published)",
+    "fresh_h10_block": "IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, last_allowed_formation=2026-09-30, data_cutoff=2026-10-31)",
+    "k_advanced": false
+  },
+  "frontier_pointer_audit": {
+    "frontier_manifest_agree": true,
+    "latest_archive_probe": "cutoff_probe_20261105T103851Z.json (2026-10, published, UNBLOCKED)",
+    "latest_november_2026_probe_named": "cutoff_probe_20261107T091152Z.json",
+    "newest_november_probe_on_disk": "cutoff_probe_20261113T010215Z.json",
+    "guard_permitted": true,
+    "reason": "tests/test_november_probe_summary_consistency.py asserts agreement/unanimity, not recency; tests/test_state_timestamp_not_stale.py compares each file's last_updated_utc to the probe it quotes"
+  },
+  "date_gate_status": "2026-11-13 is before 2026-11-30; no bounded no-cost H10 task unblocked",
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261113T010528Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "HANDOFF.md"
+  ],
+  "code_test_gap_found": false
+}
