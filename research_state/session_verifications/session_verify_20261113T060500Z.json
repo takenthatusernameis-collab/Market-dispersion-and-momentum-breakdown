@@ -1,0 +1,53 @@
+{
+  "session_utc": "2026-11-13T06:05:00Z",
+  "session_id": "session_verify_20261113T060500Z",
+  "git_head": "2540e7df9db9766b3380ff1fe195dcaccefe8a5a",
+  "git_status_clean_before_writes": true,
+  "compileall_exit": 0,
+  "unittest_count": 394,
+  "unittest_skipped": 2,
+  "unittest_failures": 0,
+  "numpy_version": "2.5.4",
+  "pandas_version": "3.1.1",
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "f1sens_source": "7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3",
+    "hypothesis_registry": "18c6ed6b3d7abc06ab3960e532d1fae0c23b6436ebbd29262c247e52c825e5d5",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 395,
+    "probe_month_2026-10": {
+      "count": 269,
+      "published": 48
+    },
+    "probe_month_2026-11": {
+      "count": 126,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T034640Z.json",
+    "newest_probe_utc": "2026-11-13T03:46:40Z",
+    "control_month_2026_09_alive": true,
+    "no_mock_probes": true
+  },
+  "h10_gate_verdict": "UNBLOCKED (October 2026 archive published)",
+  "november_probe_verdict": "BLOCKED_AS_PROBE_ONLY (month-not-yet-published)",
+  "h10_fresh_block_status": "IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1)",
+  "h10_sequential_look": {
+    "number": 1,
+    "mature": false,
+    "remaining_budget": 0.025
+  },
+  "date_gate": "2026-11-30",
+  "today_utc": "2026-11-13",
+  "bounded_no_cost_h10_task_unblocked": false,
+  "prior_agent_task": "Read durable handoff/task message from 2026-11-13T05:57:36Z (agent_handoff.md + agent_task_message.md). H10 fresh sealed forward block date-gated until 2026-11-30; not runnable today (2026-11-13). No bounded no-cost H10 task unblocked before the gate. State reverified: git status clean at HEAD 2540e7df; compileall EXIT 0; unittest 394/394/0 (recorded 2026-11-13T05:53:51Z); all four frozen hashes unchanged; probe evidence recomputed from disk (395 real, 0 MOCK: 269 probe_month=2026-10 with 48 published / 126 probe_month=2026-11 all target_published=false, newest cutoff_probe_20261113T034640Z.json). H10 cutoff gate UNBLOCKED by the published October 2026 archive; probe_month=2026-11 BLOCKED as probe only, never promoted into the H10 gate. Fresh block IMMATURE; k not advanced (look 1, remaining_budget 0.025). Registry H25; contract test asserts next_sequence_number == 25 and passes.",
+  "bounded_task_completed_this_session": "None executable — H10 fresh sealed forward block date-gated until 2026-11-30; today 2026-11-13 is before the gate and probe_month=2026-11 remains unpublished. Recorded verified state (compiled OK, unittest 394/394/0, all four frozen hashes unchanged, probe counts recomputed from disk). H25 (DISP-003-F1STAB-003) complete: F1_STABILITY_PRESERVED, both H8/H19 stability warnings persist under the 29-31-asset F1 repair; no further development-data diagnostic preregistered. No new hypothesis allocated; registry stays H25.",
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261113T060500Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "notes": "No frozen artifact, config, input, panel, grid ledger, registry, frontier, or sealed holdout changed. Canonical H004V106 block (7234fc4e...), H10 fresh block (324ab1e6...), F1SENS-002 source (7f85b38...), universe_frontier.json (9ba08f3f...) all byte-unchanged vs HEAD. November 2026 cutoff probe NOT re-run (date-gated; re-probing before 2026-11-30 prohibited). Next executable action remains on/after 2026-11-30 (fresh sealed H10 forward block). Handoff and task message updated with verified evidence and a concrete next action."
+}
