@@ -1,0 +1,47 @@
+{
+  "session_timestamp": "20261113T164615Z",
+  "head_at_verification": "5bb3b64547f9c9f3d8f809f1e817909b34557d4e",
+  "working_tree_clean": true,
+  "checks": {
+    "compileall": "EXIT 0",
+    "test_suite": "Ran 394 tests, OK, skipped=2",
+    "numpy_pandas": "2.5.4 / 3.1.1"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": { "count": 270, "published": 49 },
+    "probe_month_2026-11": { "count": 127, "published": 0 },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "h10_gate": "UNBLOCKED",
+  "november_probe_gate": "BLOCKED_AS_PROBE_ONLY",
+  "h10_fresh_block": {
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "frontier_status": {
+    "status": "ACTIVE_INCOMPLETE",
+    "rank_frontier_exhausted": false,
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true
+  },
+  "registry": { "next_sequence_number": 25 },
+  "recorded_action": "Prior task completed: read durable handoff and task message (2026-11-13T14:11:55Z) and re-verified recorded action — no bounded no-cost H10 task unblocked before 2026-11-30 (today 2026-11-13 is before the 2026-11-30 date gate). Installed requirements (numpy/pandas 2.5.4/3.1.1), compileall EXIT 0, suite Ran 394 tests OK skipped=2. Probe counts recomputed from disk (397 real cutoff_probe files: 270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261113T091257Z.json). H10 cutoff gate UNBLOCKED by published October 2026 archive; probe_month=2026-11 probe BLOCKED as a probe only (month-not-yet-published), verdict not promoted into H10 gate decision. probe_month=2026-11 NOT re-probed. Frozen hashes unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier 9ba08f3f...); H10 fresh block IMMATURE and sealed (n_formations=1, n_high=0, n_low=0). No frozen artifacts/configs/inputs/frontier/registry/sealed holdout modified."
+}
