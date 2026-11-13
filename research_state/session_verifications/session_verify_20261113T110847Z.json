@@ -1,0 +1,88 @@
+{
+  "session_id": "session_verify_20261113T110847Z",
+  "timestamp_utc": "2026-11-13T11:08:47Z",
+  "git_head_at_start": "ff4d5619d3b74d03ae881a9a4f499e6224b0fd0c",
+  "git_branch": "main",
+  "git_status_at_start": "clean (no output from git status --porcelain)",
+  "prior_task_read": [
+    "research_state/agent_handoff.md (2026-11-13T10:59:10Z session)",
+    "research_state/agent_task_message.md (2026-11-13T10:59:10Z next-session task)"
+  ],
+  "prior_task_completed": true,
+  "prior_task_outcome": "Prior task: before 2026-11-30 record, with verified evidence, that no bounded no-cost H10 task is unblocked, without re-probing probe_month=2026-11 and without altering frozen 003 artifacts/configs/inputs, the frontier, the registry or the sealed holdout. Completed in the 10:57:04Z session and re-verified in the 10:59:10Z session; re-verified again this session (clean tree at HEAD ff4d5619, compileall EXIT 0, 394 tests OK skipped=2, numpy 2.5.4 / pandas 3.1.1), with probe counts recomputed from disk (397 real, 0 MOCK; 270 probe_month=2026-10 with 49 published; 127 probe_month=2026-11 with 0 published; newest cutoff_probe_20261113T091257Z.json), frozen hashes re-derived from git HEAD blobs, and both frozen blocks re-read for their maturity fields. No probe written this session.",
+  "checks": {
+    "compileall": "python3 -m compileall -q scripts tests -> EXIT 0",
+    "unittest": "python3 -m unittest discover -s tests -> Ran 394 tests in 73.209s, OK (skipped=2) at 2026-11-13T11:08:47Z",
+    "unittest_skip_audit": "the only two skips are test_forward_block_placebo_red_team.test_script_is_reproducible_and_read_only (RUN_SLOW_PLACEBO=1 gated reproducibility, documented) and test_november_probe_summary_consistency.test_if_november_publishes_the_summary_must_track_the_newest_verdict (tripwire that is skipped while every November record reports target_published=false). Both are intentional; no check is silently skipped.",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block_forward_block_evaluation_json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block_evaluation_json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier_json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "verified_against": "git show HEAD:<path> | sha256sum for all three files; working tree clean (git status --porcelain empty), so disk == committed blob",
+    "unchanged": true
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "h10_gate_status": "UNBLOCKED (published October 2026 archive; the November 2026 probe never re-blocks it)",
+  "probe_month_2026_11_status": "BLOCKED as a probe only (month-not-yet-published); the probe BLOCKED verdict is never promoted into the H10 gate decision",
+  "h10_fresh_block": {
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true,
+    "evaluated_utc": "2026-11-02T15:18:56Z"
+  },
+  "canonical_block_fields": {
+    "n_formations": 608,
+    "high_low_diff_net_1x": 0.6165223953929935,
+    "data_cutoff_utc": "2026-09-30T00:00:00Z",
+    "forward_block_end": "2026-08-31"
+  },
+  "frontier": {
+    "status": "ACTIVE_INCOMPLETE",
+    "rank_frontier_exhausted": false,
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true,
+    "latest_november_2026_probe_pointer": "cutoff_probe_20261107T091152Z.json",
+    "disk_newest_november_probe": "cutoff_probe_20261113T091257Z.json",
+    "pointer_lag_guard_permitted": true
+  },
+  "registry": {
+    "next_sequence_number": 25,
+    "latest_hypothesis": "H25",
+    "h25_status": "EXPLORATORY_ONLY / F1_STABILITY_PRESERVED"
+  },
+  "no_bounded_no_cost_h10_task_unblocked_before_2026_11_30": true,
+  "blocker_evidence": [
+    "Calendar: today is 2026-11-13, before the 2026-11-30 date gate. The November 2026 Binance archive is unpublished (127 real probe_month=2026-11 records, 0 with target_published=true), and re-probing it is prohibited as a known-failed endpoint.",
+    "Formation maturity is the binding constraint, not the >=20-asset gate: eval_forward_block.py's trailing_window_outer_deciles state rule needs >=30 prior in-block dispersions, so >=31 in-block formations are required before any high/low state exists. The fresh block has n_formations=1 (2026-09-30) and n_high=0, n_low=0.",
+    "30-day outcome maturity is hard: truncated outcomes are forbidden, so a cutoff before ~2026-10-31 cannot produce 30-day-completed formations after 2026-09-29.",
+    "No development-data diagnostic is preregistered: H25's next_test records that the stability warnings are coverage-robust and that the next decisive step is a genuinely fresh mature sealed forward block, not further development-data diagnostics. H10/H12 feasibility analysis already projected the first classifiable cutoff at 2026-11-30.",
+    "No frozen artifact, config, input, frontier, registry or sealed holdout was modified and no probe was written this session."
+  ],
+  "bounded_delta_search": "No genuine local test/consistency gap found. Skip inventory audited (both skips intentional). Run manifest session_record_latest pointer is internally consistent (points at session_record_20261113T054751Z, the max-timestamp block present). No duplicate audit added.",
+  "actions_taken": "Read the durable handoff, task message, operating contract and research protocol. Verified clean tree at HEAD ff4d5619; ran compileall (EXIT 0) and the full suite (394 OK, skipped=2) and audited both skips as intentional; recomputed probe counts from disk; re-derived the canonical block, H10 fresh block and frontier hashes from git HEAD blobs; re-read both blocks' maturity fields; confirmed the registry is at H25 with next_sequence_number=25 and the frontier is ACTIVE_INCOMPLETE at cursor 6347. No probe written; no frozen artifact/config/input/frontier/registry/sealed holdout modified. Wrote this session verification record, appended a session_record block to run_manifest.json (pointer + last_updated_utc), and updated the durable handoff, agent task message and root HANDOFF.md.",
+  "next_action": "On/after 2026-11-30 (date-gated, bounded, no-cost): run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If target_published=true: refresh free public data only (Coin Metrics Community API + Binance Public Data Archive), install requirements if numpy/pandas are missing, run compileall+unittest, verify canonical hash 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 is unchanged, then run the fresh sealed H10 block ONLY into artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/ with --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --look-number 1 (30-day maturity, MIN_ASSETS_DECIMAL=20, trailing-decile, 0.05 economic threshold, sequential alpha_k = 0.05/(k*(k+1)) per H22/prereg sec 4.1). Require n_high > 0 AND n_low > 0 before any confirmatory claim; if immature record the outcome and do not advance k. If this session writes a probe, refresh probe_evidence in its session record using the canonical total_real_probes/probe_month_<month> schema. Before 2026-11-30: no bounded no-cost H10 task is unblocked; do not re-probe probe_month=2026-11 and do not alter frozen 003 artifacts/configs/inputs, frontier, registry or sealed holdout."
+}

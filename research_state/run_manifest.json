@@ -169,7 +169,7 @@
   "verified": "python3 -m compileall -q scripts tests EXIT=0; python3 -m unittest discover -s tests -> 341 run, 341 OK, skipped=1, EXIT=0 (Ran 341 tests in 58.710s). All four frozen artifact hashes match working tree == git HEAD == expected (canonical 7234fc4e..., h10_fresh 324ab1e6..., orphan h10 d1333e74..., orphan h10_fresh_check f16db31e...). git diff --stat HEAD shows only the 32 session_verify records, tests/test_state_consistency.py, research_state/verified_test_claim_claim_snapshot.json and this manifest entry.",
   "what_was_not_changed": "No hypothesis conclusion, grid, decision rule, cost model, preregistration outcome, frozen artifact, panel, grid ledger, script implementation or outcome field changed. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule, the family alpha, the 0.05 economic threshold or the sealed-holdout rule. No re-probe of 2026-11 before 2026-11-30."
  },
- "last_updated_utc": "2026-11-13T05:53:51Z",
+ "last_updated_utc": "2026-11-13T11:08:47Z",
  "latest_archive_probe": {
   "canonical_forward_block": {
    "block_sealed": true,
@@ -997,7 +997,7 @@
   "verified_utc": "2026-11-08T11:43:21Z",
   "what_was_not_changed": "No source, script, test, config, artifact, hypothesis conclusion, decision rule, grid, cost model or frozen panel changed. DISPERSION-001/002, the defective archive and the canonical forward block byte-unchanged."
  },
- "session_record_latest": "session_record_20261113T054751Z",
+ "session_record_latest": "session_record_20261113T110847Z",
  "session_records": [
   "session_record_20261101T1404Z",
   "session_record_20261101T1406Z",
@@ -1124,5 +1124,17 @@
   "timestamp_utc": "2026-11-13T05:47:51Z",
   "delta_repaired": "H25 (DISP-003-F1STAB-003, EXPLORATORY_ONLY) registered; next_sequence_number 24->25. Preregistered before any artifact-producing computation (preregistrations/F1_COVERAGE_STABILITY_AUDIT_v1.md Created 2026-11-13T05:48:41Z). Gap: H8 (leave-one-month-out CLUSTER_DOMINATION) and H19 (median-date TEMPORAL-INSTABILITY) were computed only on the 26-27-asset universe (arm A); H24/F1SENS-002 measured only the point-estimate move (arm A +0.6165 -> arm B +0.5398) and did NOT test whether the two stability warnings survive the 29-31-asset F1 repair. New arm DISP-003-F1STAB-003 (script scripts/f1_coverage_stability_audit.py; test tests/test_f1_coverage_stability_audit.py 14 tests; artifact integrity_audit/f1_coverage_stability_audit_20261113T054921Z.json). Reads only the committed F1SENS-002 per-formation records; decision rule inherited verbatim from H8 (0.50 leave-one-month-out band) and H19 (median-date sign flip), not outcome-tuned. Fidelity anchors reproduce the committed evidence exactly: arm A baseline +0.6165223953929935, arm A 2025-10 LOO delta frac -0.8487210159492463, arm A split 2025-11-01 first +0.6456322213084524 (n_high=53,n_low=21) / second -0.16288800752983412 (n_high=8,n_low=69); arm B baseline +0.5397762360511249. Arm B: max |LOO delta frac| 1.0638544739480873 at 2025-10 (> 0.50) and split +0.5866982849791593 (n_high=41,n_low=54) -> -0.06372880012345064 (n_high=8,n_low=72) sign flip => label F1_STABILITY_PRESERVED. The discounted verdict on +0.617 is NOT a coverage artifact; both stability warnings persist under the 29-31-asset repair. EXPLORATORY_ONLY: no p-value, no multiple-testing family, no promotion, no sealed holdout opened. Canonical H004V106 block (7234fc4e...), H10 fresh block (324ab1e6...), F1SENS-002 source (7f85b38...), F1COVERAGE-001 panels/raw and DISPERSION-001/002 byte-unchanged. November 2026 probe NOT re-run. Suite 380 -> 394, all OK (skipped=2).",
   "frozen_artifacts": "canonical H004V106 forward_block_evaluation.json sha256 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390 unchanged; forward_block_h10_fresh sha256 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f unchanged; F1SENS-002 source sha256 7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3 unchanged; universe_frontier.json sha256 9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e unchanged"
+ },
+ "session_record_20261113T110847Z": {
+  "action": "read_prior_task_verified_state_recorded_no_bounded_no_cost_h10_task_unblocked_before_2026_11_30",
+  "outcome": "h10_date_gated_not_runnable_today_2026_11_13_before_2026_11_30_no_bounded_no_cost_task_unblocked_probe_counts_397_real_270_oct_127_nov_newest_cutoff_probe_20261113T091257Z_frozen_artifacts_byte_unchanged_394_394_0",
+  "canonical_block_impact": "none",
+  "cutoff_status": "BLOCKED (date-gated to November 2026 vintage, not before 2026-11-30; NOT re-probed)",
+  "frozen_artifacts_untouched": true,
+  "next_action": "on_after_2026_11_30_run_python3_scripts_probe_cutoff_gate_py_probe_month_2026_11",
+  "session_id": "session_20261113T110847Z",
+  "timestamp_utc": "2026-11-13T11:08:47Z",
+  "delta_repaired": "none (no reproducible test/consistency gap found; suite skip inventory audited, both skips intentional)",
+  "verification": "clean tree at HEAD ff4d5619; compileall EXIT 0; unittest 394 OK skipped=2 (numpy 2.5.4 / pandas 3.1.1); probe evidence recomputed from disk: 397 real (0 MOCK), 270 probe_month=2026-10 (49 published), 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json; frozen hashes re-derived from git HEAD blobs: canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier 9ba08f3f...; h10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, last_allowed_formation_date=2026-09-30, data_cutoff_utc=2026-10-31T00:00:00Z, sequential_look_number=1, sequential_look_mature=false, sequential_remaining_budget=0.025, block_sealed=true); frontier ACTIVE_INCOMPLETE cursor 6347; registry next_sequence_number=25 (H25). No probe written; no frozen artifact/config/input/frontier/registry/sealed holdout modified."
  }
 }
