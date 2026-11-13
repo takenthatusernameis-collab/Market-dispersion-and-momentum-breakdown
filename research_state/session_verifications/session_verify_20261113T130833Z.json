@@ -1,0 +1,25 @@
+{
+  "session_timestamp": "2026-11-13T13:09:26.734420Z",
+  "head_at_start": "4db0224f42a8d9c5fcdbb447ea5c81c3be588428",
+  "branch": "main",
+  "working_tree_clean": true,
+  "compile_check": "python3 -m compileall -q scripts tests EXIT 0",
+  "targeted_gate_suites": "python3 -m unittest tests.test_state_consistency tests.test_h10_gate_vs_november_probe tests.test_continuous_research_contract -- Ran 31 tests, OK",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "h10_fresh_block_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "canonical_forward_block_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "universe_frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+  "no_bounded_no_cost_h10_task_unblocked_before_2026_11_30": true,
+  "notes": "Today 2026-11-13 is before the 2026-11-30 date gate; H10 fresh sealed forward block not runnable; no bounded no-cost H10 task unblocked before gate."
+}
