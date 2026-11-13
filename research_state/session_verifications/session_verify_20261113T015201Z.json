@@ -1,0 +1,55 @@
+{
+  "session_utc": "2026-11-13T01:52:01Z",
+  "head_commit": "2623e766",
+  "working_tree_clean_at_verification": true,
+  "compile_check": "EXIT=0 (python3 -m compileall -q scripts tests)",
+  "unit_tests": "370 run, OK, 2 skipped, 0 failures (EXIT=0)",
+  "frozen_artifacts_diff": "empty (git diff --stat -- artifacts/ configs/)",
+  "grid_state": {
+    "expected": 216,
+    "evaluated": 216,
+    "ok": 216,
+    "blocked": 0,
+    "failed": 0
+  },
+  "canonical_forward_block_hash": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "hypothesis_registry_hash": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+  "universe_frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+  "probe_evidence": {
+    "total_real_probe_files": 393,
+    "mock_probe_files": 0,
+    "by_probe_month": {
+      "2026-10": 269,
+      "2026-11": 124
+    },
+    "probe_month_2026_10_published": 48,
+    "probe_month_2026_11_all_target_published_false": true,
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261113T010215Z.json",
+    "newest_probe_utc": "2026-11-13T01:02:15Z",
+    "archive_alive_via_control": "2026-09",
+    "note": "Counts recomputed from disk. Prior record session_verify_20261113T010045Z.json reported probe_month_2026_11_count=392; true count is 124 (corrected in 010528Z and here)."
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED (published October 2026 archive)",
+    "probe_month_2026_11_status": "BLOCKED as probe only (target_published=false, month-not-yet-published); never promoted to H10 gate decision",
+    "fresh_h10_block": "IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, last_allowed_formation=2026-09-30, data_cutoff=2026-10-31)",
+    "k_advanced": false
+  },
+  "frontier_pointer_audit": {
+    "frontier_manifest_agree": true,
+    "latest_november_2026_probe_named": "cutoff_probe_20261107T091152Z.json",
+    "newest_november_probe_on_disk": "cutoff_probe_20261113T010215Z.json",
+    "guard_permitted": true,
+    "reason": "Agreement/unanimity guards satisfied; recency not required. Repointing would change frozen frontier hash."
+  },
+  "date_gate_status": "2026-11-13 is before 2026-11-30; no bounded no-cost H10 task unblocked",
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261113T015201Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "HANDOFF.md"
+  ],
+  "code_test_gap_found": false,
+  "prior_task_completed": "Re-read durable handoff/task from 2026-11-13T01:05:28Z; independently reverified state, tests, hashes, probe evidence and date gate; updated durable handoff and next-agent task message."
+}
