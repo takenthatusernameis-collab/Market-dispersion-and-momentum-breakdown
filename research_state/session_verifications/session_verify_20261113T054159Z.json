@@ -1,0 +1,52 @@
+{
+  "session_utc": "2026-11-13T05:41:59Z",
+  "git_head": "23cadc49421c27cf286e0a7b69bfec5baf3ff0bf",
+  "git_status_clean_before_writes": true,
+  "compileall_exit": 0,
+  "unittest_count": 380,
+  "unittest_skipped": 2,
+  "unittest_failures": 0,
+  "numpy_version": "2.5.4",
+  "pandas_version": "3.1.1",
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "1a137c67924f185b3cfd958b1eebcda3ffa82aa48867927eddcbf29faff4ebcb",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 395,
+    "probe_month_2026-10": {
+      "count": 269,
+      "published": 48
+    },
+    "probe_month_2026-11": {
+      "count": 126,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T034640Z.json",
+    "newest_probe_utc": "2026-11-13T03:46:40Z",
+    "control_month_2026_09_alive": true,
+    "no_mock_probes": true
+  },
+  "h10_gate_verdict": "UNBLOCKED (October 2026 archive published)",
+  "november_probe_verdict": "BLOCKED_AS_PROBE_ONLY (month-not-yet-published)",
+  "h10_fresh_block_status": "IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1)",
+  "h10_sequential_look": {
+    "number": 1,
+    "mature": false,
+    "remaining_budget": 0.025
+  },
+  "date_gate": "2026-11-30",
+  "today_utc": "2026-11-13",
+  "bounded_no_cost_task_unblocked": false,
+  "prior_agent_task": "Read durable handoff/task from 2026-11-13T05:17:51Z (agent_handoff.md + agent_task_message.md). H10 fresh sealed forward block date-gated until 2026-11-30; not runnable today (2026-11-13). State reverified: git status clean at HEAD 23cadc49; compileall EXIT 0; unittest 380 OK (skipped=2, 0 failures); frozen hashes unchanged; probe evidence recomputed from disk 395 real (0 MOCK), 269 probe_month=2026-10 (48 published) / 126 probe_month=2026-11 (0 published, target_published=false), newest cutoff_probe_20261113T034640Z.json (2026-11-13T03:46:40Z). H10 cutoff gate UNBLOCKED; probe_month=2026-11 BLOCKED as probe only, never promoted into H10 gate. Fresh block IMMATURE; k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30. No additional verified gap found this session.",
+  "bounded_task_completed_this_session": null,
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261113T054159Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "HANDOFF.md"
+  ],
+  "notes": "No code or frozen artifact changes. Next executable action remains on/after 2026-11-30 (fresh sealed H10 forward block). Do not re-probe probe_month=2026-11 before 2026-11-30. HANDOFF.md, agent_handoff.md and agent_task_message.md updated with verified evidence and concrete next action."
+}
