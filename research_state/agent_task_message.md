@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-13T02:35:38Z (next session)
+# Agent Task Message — 2026-11-13T02:45:11Z (next session)
 
-## Verified state (2026-11-13T02:35:38Z)
-- **HEAD:** `3b6a82fe25ed12dd5937f53b29fd4842de6225b2` (`main`), working tree clean at verification before session writes.
-- **This session:** re-read durable handoff/task message from 2026-11-13T02:20:13Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Installed the documented environment precondition (numpy 2.5.4 / pandas 3.1.1 via `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt`; the bare runner interpreter ships without them) and re-ran all checks. Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T023538Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0 this session. `python3 -m unittest discover -s tests` run this session → Ran 370 tests in 64.175s; OK (skipped=2); 0 failures (without numpy/pandas installed the same command ran 358 tests with failures/errors purely from `ModuleNotFoundError` — pre-existing environment gap, not a code gap). No frozen artifact/config edits made.
+## Verified state (2026-11-13T02:45:11Z)
+- **HEAD:** `703d2398cfdd299c7702c93cf06570bfca991f64` (`main`), working tree clean at verification before session writes.
+- **This session:** re-read durable handoff/task message from 2026-11-13T02:35:38Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T024511Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
+- **Checks:** not re-run this session (no code changes). Last full passing run: `session_verify_20261113T023538Z.json` — `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` 370 tests, OK (skipped=2), 0 failures (numpy 2.5.4 / pandas 3.1.1 present). No frozen artifact/config edits made.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; `research_state/hypothesis_registry.json` `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
 - **Probe evidence (recomputed from disk):** 394 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 125 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T020116Z.json` (`2026-11-13T02:01:16Z`). Archive alive (2026-09 control).
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); a probe BLOCKED verdict is never promoted into the H10 gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced (`sequential_look_number=1`, `sequential_look_mature=false`, `sequential_remaining_budget=0.025`).
@@ -17,7 +17,7 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 1. Run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`.
 2. If `target_published=true`:
    - Refresh free public data only (Coin Metrics Community API + Binance Public Data Archive).
-   - Run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests` (install `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` first if the runner interpreter lacks numpy/pandas).
+   - Run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests` (install `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` first if numpy/pandas missing).
    - Verify canonical hash `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
    - Run the fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--forward-block-start 2026-09-30 --data-cutoff <new cutoff> --look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))` per H22/prereg sec 4.1).
 3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If immature, record outcome and **do not advance k**.
