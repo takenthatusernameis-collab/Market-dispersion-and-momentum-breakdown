@@ -1,0 +1,54 @@
+{
+  "session_id": "session_verify_20261113T065802Z",
+  "timestamp_utc": "2026-11-13T06:58:02Z",
+  "git_head": "3453062d21513cc42fa0a5e75daedc82c28b9a33",
+  "git_branch": "main",
+  "git_status": "clean_at_verification",
+  "compile_check": "EXIT 0",
+  "unit_tests": "Ran 394 tests, OK (skipped=2)",
+  "latest_verified_test_claim": "394/394/0 (2 skipped)",
+  "prior_session_defect_fixed": "None (prior session already fixed session_verify_20261113T064503Z.json session_id and probe_evidence schema; full suite green)",
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "f1sens_002_source": "7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 396,
+    "probe_month_2026-10": {
+      "count": 269,
+      "published": 48
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T034640Z.json",
+    "newest_probe_utc": "2026-11-13T03:46:40Z"
+  },
+  "h10_gate_status": "UNBLOCKED (October 2026 published)",
+  "november_probe_status": "BLOCKED as probe only (month-not-yet-published)",
+  "h10_fresh_block": {
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025
+  },
+  "registry_state": {
+    "next_sequence_number": 25,
+    "last_hypothesis": "H25",
+    "contract_test_assertion": "next_sequence_number == 25"
+  },
+  "frontier_pointer_lag": {
+    "frontier_latest_november_probe": "cutoff_probe_20261107T091152Z.json",
+    "disk_newest_november_probe": "cutoff_probe_20261113T034640Z.json",
+    "guard_verdict": "permitted (agreement, not recency)"
+  },
+  "actions_taken": "Read durable handoff and task message from 2026-11-13T06:55:58Z. Recomputed probe counts from disk (396 real: 269 probe_month=2026-10 / 127 probe_month=2026-11; +1 Nov probe vs prior). Ran full suite: 394 tests OK (skipped=2). Verified frozen hashes unchanged. No probe written, no frozen artifact/config/input edited. Updated handoff and task message with current verified state. H10 fresh sealed forward block remains date-gated until 2026-11-30 (today 2026-11-13). No bounded no-cost H10 task unblocked before the gate."
+}
