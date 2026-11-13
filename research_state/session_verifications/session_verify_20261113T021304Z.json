@@ -1,0 +1,56 @@
+{
+  "session_utc": "2026-11-13T02:15:59.463338Z",
+  "head": "4f44d1931571482e7f2a9613a3cfe83b38422e61",
+  "git_status_clean": true,
+  "compileall_exit": 0,
+  "unittest_result": "Ran 370 tests in 46.058s; OK (skipped=2); 0 failures",
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_files": 394,
+    "probe_month_2026_10": 269,
+    "probe_month_2026_10_published": 48,
+    "probe_month_2026_10_not_published": 221,
+    "probe_month_2026_11": 125,
+    "probe_month_2026_11_all_not_published": true,
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261113T020116Z.json",
+    "newest_probe_utc": "2026-11-13T02:01:16Z",
+    "control_month_2026_09_alive": true
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED",
+    "probe_month_2026_11": "BLOCKED_AS_PROBE_ONLY",
+    "note": "probe BLOCKED verdict never promoted into H10 gate decision",
+    "fresh_h10_block": {
+      "status": "IMMATURE",
+      "n_formations": 1,
+      "n_high": 0,
+      "n_low": 0,
+      "n_mid": 1,
+      "last_allowed_formation_date": "2026-09-30",
+      "data_cutoff_utc": "2026-10-31T00:00:00Z",
+      "k_not_advanced": true
+    }
+  },
+  "frontier_pointer_audit": {
+    "frontier_latest_november_2026_probe": "cutoff_probe_20261107T091152Z.json",
+    "manifest_latest_november_2026_probe": "cutoff_probe_20261107T091152Z.json",
+    "agree_field_for_field": true,
+    "newest_on_disk": "cutoff_probe_20261113T020116Z.json",
+    "lag_guard_permitted": true,
+    "note": "test_november_probe_summary_consistency.py asserts agreement/unanimity, not recency; do not repair by editing frozen frontier"
+  },
+  "no_bounded_no_cost_h10_task_before_2026_11_30": true,
+  "reason": "today 2026-11-13 is before date gate; probe_month=2026-11 remains not published; did not re-probe (repeat of known-failing endpoint prohibited)",
+  "files_changed_this_session": [
+    "research_state/session_verifications/session_verify_20261113T021004Z.json (prior)",
+    "research_state/agent_handoff.md (prior)",
+    "research_state/agent_task_message.md (prior)",
+    "HANDOFF.md (prior)"
+  ],
+  "no_frozen_artifact_config_edits": true
+}

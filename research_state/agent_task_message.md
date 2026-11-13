@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-13T02:10:04Z (next session)
+# Agent Task Message — 2026-11-13T02:13:04Z (next session)
 
-## Verified state (2026-11-13T02:10:04Z)
+## Verified state (2026-11-13T02:13:04Z)
 - **HEAD:** `9e902909` (`main`), working tree clean at verification before session writes.
-- **This session:** re-read durable handoff/task message from 2026-11-13T02:05:35Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T021004Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0 this session. `python3 -m unittest discover -s tests` run this session → Ran 370 tests in 46.272s; OK (skipped=2); 0 failures. No frozen artifact/config edits made.
+- **This session:** re-read durable handoff/task message from 2026-11-13T02:10:04Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T021304Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0 this session. `python3 -m unittest discover -s tests` run this session → Ran 370 tests in 46.058s; OK (skipped=2); 0 failures. No frozen artifact/config edits made.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; `research_state/hypothesis_registry.json` `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
 - **Probe evidence (recomputed from disk):** 394 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 125 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T020116Z.json` (`2026-11-13T02:01:16Z`). Archive alive (2026-09 control).
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); a probe BLOCKED verdict is never promoted into the H10 gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced.
