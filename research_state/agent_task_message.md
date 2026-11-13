@@ -1,10 +1,10 @@
-# Agent Task Message — 2026-11-13T12:06:17Z (next session)
+# Agent Task Message — 2026-11-13T12:13:12Z (next session)
 
-## Verified state (2026-11-13T12:06:17Z)
-- **HEAD at verification start:** `55ef3a4dfd3a838988a12003f3eca4abf92c2320` (`main`), working tree clean at start.
-- **Prior task complete:** read the durable handoff and task message from 2026-11-13T11:08:47Z and executed its recorded action — record with verified evidence that no bounded no-cost H10 task is unblocked before 2026-11-30 (re-verified today). Today 2026-11-13 is before the gate, so the H10 fresh sealed forward block is not runnable; no bounded no-cost H10 task is unblocked before the gate. State re-verified and recorded.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` Ran 394 tests in 73.046s, OK (skipped=2). numpy 2.5.4 / pandas 3.1.1 importable. Skip audit: the two skips are the `RUN_SLOW_PLACEBO=1`-gated placebo reproducibility test and the November-publication tripwire that is skipped while every November record reports `target_published=false`; both are intentional.
-- **Session verification record:** `research_state/session_verifications/session_verify_20261113T120617Z.json` (this session; latest; `probe_evidence` matches disk). Prior records retained as historical snapshots.
+## Verified state (2026-11-13T12:13:12Z)
+- **HEAD at verification start:** `f33e20fc5c9f4aea41f1dc3aae34b470ad1a1d5f` (`main`), working tree clean at start.
+- **Prior task complete:** read the durable handoff and task message from 2026-11-13T12:06:17Z and executed its recorded action — record with verified evidence that no bounded no-cost H10 task is unblocked before 2026-11-30 (re-verified today). Today 2026-11-13 is before the gate, so the H10 fresh sealed forward block is not runnable; no bounded no-cost H10 task is unblocked before the gate. State re-verified and recorded.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0. Targeted gate suites `python3 -m unittest tests.test_state_consistency tests.test_h10_gate_vs_november_probe tests.test_continuous_research_contract` — Ran 31 tests, OK. numpy 2.5.4 / pandas 3.1.1 importable.
+- **Session verification record:** `research_state/session_verifications/session_verify_20261113T121312Z.json` (this session; latest; `probe_evidence` matches disk). Prior records retained as historical snapshots.
 - **Probe evidence (recomputed from disk):** **397 real `cutoff_probe_*.json` files (0 MOCK): 270 `probe_month=2026-10` (49 published / 221 not) and 127 `probe_month=2026-11` (all `target_published=false`)**; newest `cutoff_probe_20261113T091257Z.json`.
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. The `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); the probe BLOCKED verdict is never promoted into the H10 gate decision.
 - **H10 fresh block (unchanged, IMMATURE):** sha256 `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation_date=2026-09-30`, `data_cutoff_utc=2026-10-31T00:00:00Z`, `sequential_look_number=1`, `sequential_look_mature=false`, `sequential_remaining_budget=0.025`, `block_sealed=true`. k not advanced.
@@ -35,7 +35,7 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 ### 2) If 2026-11-30 has not arrived (or the probe remains blocked)
 - Record "no bounded no-cost H10 task unblocked before 2026-11-30" with verified evidence in handoff/task message and a session verification record. Do not loop on known-failed probes or invent work.
 - 30-day maturity and ">=30 prior in-block dispersions" trailing-decile rules are hard; no truncated outcome and no exploratory H10 relaxation admissible. The `MIN_STATE_FORMATIONS=5` confirmatory floor is separate and also unmet.
-- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits. This session audited the suite's skip inventory and found both skips intentional, so no test gap was found.
+- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits.
 - If you touch handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
 - Do not alter frontier, registry (except allocating a new hypothesis if you add an experiment), frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted; do not repoint by editing the frontier.
 - Probe-count evidence: recompute counts from disk rather than copying a prior record's number (currently 397 real files, 270 `probe_month=2026-10` / 127 `probe_month=2026-11`).
