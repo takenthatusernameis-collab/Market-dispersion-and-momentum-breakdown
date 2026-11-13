@@ -1,0 +1,59 @@
+{
+  "session_id": "20261113T064503Z",
+  "timestamp_utc": "2026-11-13T06:45:03Z",
+  "git_head": "e3f2f88f73c47c625902c3a3e154e4cb04b091be",
+  "git_branch": "main",
+  "git_status": "clean",
+  "compile_check": "EXIT 0",
+  "unit_tests": "Ran 394 tests, OK (skipped=2)",
+  "latest_verified_test_claim": "394/394/0 (2 skipped)",
+  "test_claim_source": "research_state/verified_test_claim_claim_snapshot.json (recorded 2026-11-13T05:53:51Z)",
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "f1sens_002_source": "7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_files": 395,
+    "mock_files": 0,
+    "by_month": {
+      "2026-10": {
+        "count": 269,
+        "published": 48,
+        "not_published": 221
+      },
+      "2026-11": {
+        "count": 126,
+        "published": 0,
+        "not_published": 126
+      }
+    },
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261113T034640Z.json",
+    "newest_probe_utc": "2026-11-13T03:46:40Z"
+  },
+  "h10_gate_status": "UNBLOCKED (October 2026 published)",
+  "november_probe_status": "BLOCKED as probe only (month-not-yet-published)",
+  "h10_fresh_block": {
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025
+  },
+  "registry_state": {
+    "next_sequence_number": 25,
+    "last_hypothesis": "H25",
+    "contract_test_assertion": "next_sequence_number == 25"
+  },
+  "frontier_pointer_lag": {
+    "frontier_latest_november_probe": "cutoff_probe_20261107T091152Z.json",
+    "disk_newest_november_probe": "cutoff_probe_20261113T034640Z.json",
+    "guard_verdict": "permitted (agreement, not recency)"
+  },
+  "actions_taken": "Verified state; updated handoff, task message, and session verification. No artifacts modified."
+}
