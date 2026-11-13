@@ -72,8 +72,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # unallocated registry hypothesis; H24 was added for the F1SENS-002
         # coverage-outcome sensitivity (DISP-003-F1SENS-002, EXPLORATORY_ONLY)
         # so the committed F1 sensitivity audit references an allocated
-        # registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 24)
+        # registry hypothesis; H25 was added for the F1STAB-003 coverage
+        # stability audit (DISP-003-F1STAB-003, EXPLORATORY_ONLY,
+        # stability_robustness) so the committed F1 stability audit references
+        # an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 25)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
