@@ -16,17 +16,18 @@
     "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
   },
   "probe_evidence": {
-    "total_real_probes": 394,
+    "total_real_probes": 395,
     "probe_month_2026-10": {
       "count": 269,
       "published": 48
     },
     "probe_month_2026-11": {
-      "count": 125,
+      "count": 126,
       "published": 0
     },
     "newest_probe": "cutoff_probe_20261113T034640Z.json",
-    "newest_probe_utc": "2026-11-13T03:46:40Z"
+    "newest_probe_utc": "2026-11-13T03:46:40Z",
+    "probe_evidence_correction_20261113T0352Z": "Corrected from total_real_probes 394 and probe_month_2026-11.count 125 to 395 and 126 after an independent recomputation from research_state/cutoff_probe/ found this record undercounted by one: it copied the prior session's counts while writing its own new probe (cutoff_probe_20261113T034640Z.json, the 126th November probe and 395th real probe). The original values are preserved here for audit: total_real_probes=394, probe_month_2026-11.count=125, probe_month_2026-10 unchanged (269/48), newest_probe unchanged. Regression guard: tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk."
   },
   "h10_gate_verdict": "UNBLOCKED (October 2026 archive published)",
   "november_probe_verdict": "BLOCKED_AS_PROBE_ONLY (month-not-yet-published)",

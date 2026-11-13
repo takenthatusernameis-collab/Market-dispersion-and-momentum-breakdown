@@ -1,0 +1,61 @@
+{
+  "session_utc": "2026-11-13T03:58:18Z",
+  "session_id": "session_verify_20261113T035818Z",
+  "git_head": "84231241b4e8325888d05882a28fef54366ac512",
+  "git_head_verified": "HEAD 84231241 is a chore(kilo) checkpoint containing only prior session writes (agent_handoff.md, agent_task_message.md, HANDOFF.md, cutoff_probe_20261113T034640Z.json, session_verify_20261113T034640Z.json); working tree clean before this session's writes",
+  "git_status_clean_before_writes": true,
+  "compileall_exit": 0,
+  "unittest_count": 380,
+  "unittest_skipped": 2,
+  "unittest_failures": 0,
+  "numpy_version": "2.5.4",
+  "pandas_version": "3.1.1",
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "hypothesis_registry": "1a137c67924f185b3cfd958b1eebcda3ffa82aa48867927eddcbf29faff4ebcb",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 395,
+    "probe_month_2026-10": {
+      "count": 269,
+      "published": 48
+    },
+    "probe_month_2026-11": {
+      "count": 126,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T034640Z.json",
+    "newest_probe_utc": "2026-11-13T03:46:40Z"
+  },
+  "h10_gate_verdict": "UNBLOCKED (October 2026 archive published)",
+  "november_probe_verdict": "BLOCKED_AS_PROBE_ONLY (month-not-yet-published)",
+  "h10_fresh_block_status": "IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1)",
+  "h10_sequential_look": {
+    "number": 1,
+    "mature": false,
+    "remaining_budget": 0.025
+  },
+  "date_gate": "2026-11-30",
+  "today_utc": "2026-11-13",
+  "bounded_no_cost_task_unblocked": false,
+  "bounded_task_completed_this_session": {
+    "id": "PROBE-EVIDENCE-GUARD-001",
+    "type": "regression_test_and_state_correction",
+    "defect": "session_verify_20261113T034640Z.json undercounted probe evidence by one: it copied the prior record's counts (total_real_probes 394, probe_month_2026-11 count 125) while writing its own new probe cutoff_probe_20261113T034640Z.json, so its own probe was not counted even though newest_probe named it. Disk holds 395 real probes (269 probe_month=2026-10 / 126 probe_month=2026-11).",
+    "guard": "tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk recomputes probe counts from research_state/cutoff_probe/ and asserts the latest probe-evidence-bearing session record matches disk exactly (total, per-month counts, published counts, no invented months, newest probe filename). Verified red against the uncorrected 034640 record (394 != 395) and green after correction.",
+    "correction": "session_verify_20261113T034640Z.json probe_evidence corrected to 395/126 with a probe_evidence_correction_20261113T0352Z note preserving the original wrong values.",
+    "not_changed": "No frozen artifact, config, input, panel, grid ledger, preregistration, hypothesis conclusion, frontier, registry or sealed holdout changed. Only tests/test_state_consistency.py, session_verify_20261113T034640Z.json, research_state/verified_test_claim_claim_snapshot.json and research_state/run_manifest.json (latest_verified_test_claim 379/379/0 -> 380/380/0, last_updated_utc)."
+  },
+  "files_changed_this_session": [
+    "tests/test_state_consistency.py",
+    "research_state/session_verifications/session_verify_20261113T034640Z.json",
+    "research_state/verified_test_claim_claim_snapshot.json",
+    "research_state/run_manifest.json",
+    "research_state/session_verifications/session_verify_20261113T035818Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "HANDOFF.md"
+  ]
+}

@@ -73,6 +73,35 @@ def _float_values(obj):
             yield from _float_values(v)
 
 
+def _recompute_probe_evidence():
+    """Independently recompute the cutoff-probe evidence block from disk.
+
+    The probe directory is the single source of truth for how many real
+    (non-MOCK) ``cutoff_probe_*.json`` records exist, how they split by
+    ``probe_month`` and how many are ``target_published``. Session
+    verification records quote these counts by hand; this recomputation is
+    the ground truth any such quote is checked against.
+    """
+    probe_dir = STATE / "cutoff_probe"
+    files = sorted(
+        p for p in probe_dir.glob("cutoff_probe_*.json")
+        if "MOCK" not in p.name
+    )
+    counts = {}
+    for path in files:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        month = data.get("probe_month")
+        entry = counts.setdefault(month, {"count": 0, "published": 0})
+        entry["count"] += 1
+        if data.get("target_published"):
+            entry["published"] += 1
+    return {
+        "total_real_probes": len(files),
+        "counts": counts,
+        "newest_probe": files[-1].name if files else None,
+    }
+
+
 class ResearchStateConsistencyTests(unittest.TestCase):
     def test_state_and_artifact_files_parse_cleanly(self):
         for path in STATE_FILES + ARTIFACT_FILES:
@@ -512,6 +541,69 @@ class ResearchStateConsistencyTests(unittest.TestCase):
                 reported_mismatches, len(mismatches),
                 f"{path.name} drift scan mismatches {reported_mismatches!r} != "
                 f"actual {len(mismatches)} ({mismatches})",
+            )
+
+    def test_latest_session_probe_evidence_matches_disk(self):
+        """The most recent session verification record's ``probe_evidence``
+        block must equal an independent recomputation from the probe directory.
+
+        Session records quote ``total_real_probes`` and per-``probe_month``
+        counts by hand. A 2026-11-13 session ran the mandated cutoff probe
+        (writing ``cutoff_probe_20261113T034640Z.json``) but copied the prior
+        record's counts, so its ``probe_evidence`` reported 394/125 while the
+        directory held 395/126 -- the record undercounted its own probe. The
+        ``newest_probe`` field named the new file, so the block was internally
+        inconsistent, and no test compared the counts to disk.
+
+        This gate recomputes the counts from ``research_state/cutoff_probe/``
+        and requires the latest block-bearing record to match exactly: total,
+        every ``probe_month`` count, every published count, no invented months,
+        and the newest probe filename. Older records are historical snapshots
+        of an earlier directory state and are not required to match today's
+        disk; only the latest record, which is supposed to describe the
+        current tree, is pinned.
+        """
+        records = []
+        for path in sorted(STATE.glob("session_verifications/session_verify_*.json")):
+            data = _load(path)
+            evidence = data.get("probe_evidence")
+            if isinstance(evidence, dict) and "total_real_probes" in evidence:
+                records.append((path, data))
+        self.assertGreater(len(records), 0,
+                           "no session record carries a probe_evidence block")
+        # Filenames are fixed-width session_verify_YYYYMMDDTHHMMSSZ.json, so the
+        # lexicographic maximum is the most recent record.
+        latest_path, latest = max(records, key=lambda item: item[0].name)
+        evidence = latest["probe_evidence"]
+        disk = _recompute_probe_evidence()
+
+        with self.subTest(record=latest_path.name):
+            self.assertEqual(
+                evidence["total_real_probes"], disk["total_real_probes"],
+                f"{latest_path.name} reports total_real_probes "
+                f"{evidence['total_real_probes']}; disk has {disk['total_real_probes']}",
+            )
+            disk_months = disk["counts"]
+            # Every month on disk must be reported with matching counts.
+            for month, expected in disk_months.items():
+                key = f"probe_month_{month}"
+                self.assertIn(key, evidence,
+                              f"{latest_path.name} omits {key}; disk has {expected}")
+                self.assertEqual(evidence[key]["count"], expected["count"],
+                                 f"{latest_path.name} {key}.count drift")
+                self.assertEqual(evidence[key]["published"], expected["published"],
+                                 f"{latest_path.name} {key}.published drift")
+            # No month may be claimed that is not on disk.
+            for key in evidence:
+                if not key.startswith("probe_month_"):
+                    continue
+                month = key[len("probe_month_"):]
+                self.assertIn(month, disk_months,
+                              f"{latest_path.name} claims {key}, absent from disk")
+            self.assertEqual(
+                evidence.get("newest_probe"), disk["newest_probe"],
+                f"{latest_path.name} newest_probe drift: "
+                f"{evidence.get('newest_probe')!r} vs disk {disk['newest_probe']!r}",
             )
 
     def test_session_record_latest_points_at_the_most_recent_record(self):
