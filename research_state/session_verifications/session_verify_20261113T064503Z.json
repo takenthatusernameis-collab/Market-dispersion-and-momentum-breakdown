@@ -1,5 +1,5 @@
 {
-  "session_id": "20261113T064503Z",
+  "session_id": "session_verify_20261113T064503Z",
   "timestamp_utc": "2026-11-13T06:45:03Z",
   "git_head": "e3f2f88f73c47c625902c3a3e154e4cb04b091be",
   "git_branch": "main",
@@ -15,21 +15,16 @@
     "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
   },
   "probe_evidence": {
-    "total_real_files": 395,
-    "mock_files": 0,
-    "by_month": {
-      "2026-10": {
-        "count": 269,
-        "published": 48,
-        "not_published": 221
-      },
-      "2026-11": {
-        "count": 126,
-        "published": 0,
-        "not_published": 126
-      }
+    "total_real_probes": 395,
+    "probe_month_2026-10": {
+      "count": 269,
+      "published": 48
     },
-    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261113T034640Z.json",
+    "probe_month_2026-11": {
+      "count": 126,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T034640Z.json",
     "newest_probe_utc": "2026-11-13T03:46:40Z"
   },
   "h10_gate_status": "UNBLOCKED (October 2026 published)",
