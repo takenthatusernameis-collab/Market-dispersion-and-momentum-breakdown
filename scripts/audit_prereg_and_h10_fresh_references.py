@@ -37,6 +37,19 @@ PREREG_DIR = ROOT / "artifacts" / EXP / "preregistrations"
 H10_DIR = ROOT / "artifacts" / EXP / "forward_block_h10_fresh"
 FORWARD_BLOCK_DIR = ROOT / "artifacts" / EXP / "forward_block"
 DISP002_PREREG_DIR = ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-002" / "preregistrations"
+# DISP-003 sub-experiment preregistration dirs (F1COVERAGE-001, F1SENS-002,
+# F1STAB-003). These are closed records whose artifact paths point at the
+# F1COVERAGE-001 data/panels and at each other's integrity_audit JSONs; they are
+# not frozen in the DISP-002 sense (the F1COVERAGE-001 panels are not sealed
+# forward-block inputs) but they must never be modified either, because they are
+# the preregistrations that the committed F1 audits were computed against. A
+# stale pointer inside them is reported as INFO (frozen_record_stale_pointer),
+# exactly like DISP-002.
+DISP003_FROZEN_PREREG_DIRS = [
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001" / "preregistrations",
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002" / "preregistrations",
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003" / "preregistrations",
+]
 STATE_DIR = ROOT / "research_state"
 
 FROZEN = {
@@ -233,6 +246,7 @@ def run_audit(
     h10_dir: Path | None = None,
     forward_block_dir: Path | None = None,
     frozen_prereg_dirs: list[Path] | None = None,
+    disp003_frozen_prereg_dirs: list[Path] | None = None,
     include_h10_variants: bool = True,
     timestamp_utc: str | None = None,
 ) -> dict:
@@ -240,12 +254,26 @@ def run_audit(
     h10_dir = h10_dir or H10_DIR
     forward_block_dir = forward_block_dir or FORWARD_BLOCK_DIR
     frozen_prereg_dirs = frozen_prereg_dirs or []
+    # DISP-003 sub-experiment prereg dirs are scanned by default as frozen
+    # records (stale pointers reported as INFO, never ERROR, and the docs are
+    # never modified).
+    disp003_frozen_prereg_dirs = (
+        disp003_frozen_prereg_dirs
+        if disp003_frozen_prereg_dirs is not None
+        else DISP003_FROZEN_PREREG_DIRS
+    )
 
     prereg_rows = [audit_prereg_md(p) for p in sorted(prereg_dir.glob("*.md")) if p.is_file()] if prereg_dir.exists() else []
     frozen_prereg_rows: list[dict] = []
     for fd in frozen_prereg_dirs:
         if fd.exists():
             frozen_prereg_rows.extend(audit_prereg_md(p, frozen_record=True) for p in sorted(fd.glob("*.md")) if p.is_file())
+    disp003_frozen_prereg_rows: list[dict] = []
+    for fd in disp003_frozen_prereg_dirs:
+        if fd.exists():
+            disp003_frozen_prereg_rows.extend(
+                audit_prereg_md(p, frozen_record=True) for p in sorted(fd.glob("*.md")) if p.is_file()
+            )
 
     h10_rows = [audit_forward_block_json(p, kind="h10_fresh_json") for p in sorted(h10_dir.glob("*.json")) if p.is_file()] if h10_dir.exists() else []
     fb_rows = [audit_forward_block_json(p, kind="forward_block_json") for p in sorted(forward_block_dir.glob("*.json")) if p.is_file() and p.name != "forward_block_evaluation.json"] if forward_block_dir and forward_block_dir.exists() else []
@@ -270,7 +298,7 @@ def run_audit(
                     r["variant_dir"] = vd.name
                     variant_rows.append(r)
 
-    rows = prereg_rows + frozen_prereg_rows + canon_rows + h10_rows + fb_rows + variant_rows
+    rows = prereg_rows + frozen_prereg_rows + disp003_frozen_prereg_rows + canon_rows + h10_rows + fb_rows + variant_rows
     critical = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "CRITICAL"]
     errors = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "ERROR"]
     infos = [f"{r['file']}:{f}" for r in rows for f in r["findings"] if r["severity"] == "INFO"]
@@ -298,8 +326,10 @@ def run_audit(
         "h10_fresh_dir": str(h10_dir.relative_to(ROOT)) if h10_dir.is_relative_to(ROOT) else str(h10_dir),
         "forward_block_dir": str((forward_block_dir or FORWARD_BLOCK_DIR).relative_to(ROOT)) if (forward_block_dir or FORWARD_BLOCK_DIR).is_relative_to(ROOT) else str(forward_block_dir),
         "frozen_prereg_dirs": [str(d.relative_to(ROOT)) if d.is_relative_to(ROOT) else str(d) for d in frozen_prereg_dirs],
+        "disp003_frozen_prereg_dirs": [str(d.relative_to(ROOT)) if d.is_relative_to(ROOT) else str(d) for d in disp003_frozen_prereg_dirs],
         "prereg_files_scanned": len(prereg_rows),
         "frozen_prereg_files_scanned": len(frozen_prereg_rows),
+        "disp003_frozen_prereg_files_scanned": len(disp003_frozen_prereg_rows),
         "h10_json_files_scanned": len(h10_rows),
         "h10_variant_json_files_scanned": len(variant_rows),
         "forward_block_json_files_scanned": len(canon_rows) + len(fb_rows),
@@ -315,12 +345,13 @@ def run_audit(
             "Read-only scan of preregistration markdown and forward-block JSONs "
             "(canonical forward_block/, forward_block_h10_fresh/, and non-frozen "
             "forward_block_h10* variant dirs) for stale path refs, missing referenced "
-            "files, and frozen/git-HEAD hash drift. Frozen pre-DISP-003 preregistration "
-            "docs (when scanned via --include-disp002-preregs) report missing refs as INFO "
-            "(frozen_record_stale_pointer) because immutable records are never modified. "
-            "Preregistration documents are frozen records and are never modified; findings "
-            "are reported only. CRITICAL/ERROR indicate stale pointers or hash drift "
-            "requiring investigation. Default output: research_state/."
+            "files, and frozen/git-HEAD hash drift. DISP-002 preregistration docs are "
+            "scanned as frozen records when --include-disp002-preregs is passed; "
+            "DISP-003 sub-experiment prereg docs (F1COVERAGE-001, F1SENS-002, "
+            "F1STAB-003) are scanned as frozen records BY DEFAULT. In all three "
+            "cases stale pointers are reported as INFO (frozen_record_stale_pointer) "
+            "and the docs are never modified. CRITICAL/ERROR indicate stale pointers "
+            "or hash drift requiring investigation. Default output: research_state/."
         ),
     }
 
@@ -333,13 +364,18 @@ def main() -> int:
     ap.add_argument("--forward-block-dir", default=None)
     ap.add_argument("--include-disp002-preregs", action="store_true",
                     help="Scan DISPERSION-002 preregistration docs as frozen records (stale pointers reported as INFO).")
+    ap.add_argument("--no-disp003-frozen-preregs", action="store_true",
+                    help="Disable the default scan of DISP-003 sub-experiment prereg "
+                         "docs (F1COVERAGE-001, F1SENS-002, F1STAB-003) as frozen records.")
     args = ap.parse_args()
     frozen = [DISP002_PREREG_DIR] if args.include_disp002_preregs else []
+    disp003 = [] if args.no_disp003_frozen_preregs else None
     res = run_audit(
         Path(args.prereg_dir) if args.prereg_dir else None,
         Path(args.h10_dir) if args.h10_dir else None,
         Path(args.forward_block_dir) if args.forward_block_dir else None,
         frozen,
+        disp003,
     )
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     if args.out:

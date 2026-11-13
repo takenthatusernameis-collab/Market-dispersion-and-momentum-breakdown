@@ -200,6 +200,57 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
         self.assertFalse(any(r["kind"] == "h10_variant_json" for r in res["rows"]))
         self.assertTrue(res["pass"], res.get("errors"))
 
+    def test_disp003_frozen_prereg_dirs_scanned_by_default(self):
+        """DISP-003 sub-experiment prereg docs (F1COVERAGE-001, F1SENS-002,
+        F1STAB-003) are closed records whose artifact paths point at each other's
+        integrity_audit JSONs and at the F1COVERAGE-001 data/panels. They must be
+        scanned by default as frozen records (stale pointers reported as INFO,
+        never ERROR, and the docs never modified), so a stale pointer in any of
+        them cannot hide behind an un-scanned directory."""
+        self.assertGreaterEqual(self.first.get("disp003_frozen_prereg_files_scanned", 0), 3)
+        expected_files = {
+            "F1_PANEL_COVERAGE_REPAIR_v1.md",
+            "F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md",
+            "F1_COVERAGE_STABILITY_AUDIT_v1.md",
+        }
+        frozen_rows = [r for r in self.first["rows"] if r.get("frozen_record") is True]
+        self.assertGreaterEqual(len(frozen_rows), 3)
+        for row in frozen_rows:
+            with self.subTest(file=row["file"]):
+                self.assertIn(row["severity"], ("OK", "INFO"), row)
+                for f in row["findings"]:
+                    self.assertNotIn("missing referenced path:", f)
+        # every path ref in every DISP-003 frozen prereg doc must resolve on disk
+        for row in frozen_rows:
+            for ref in row["path_refs"]:
+                with self.subTest(file=row["file"], path=ref["path"]):
+                    self.assertTrue(ref["exists"],
+                                    f"{row['file']} references missing path {ref['path']}")
+        # the three expected docs are all present in the scanned set
+        scanned = {r["file"] for r in frozen_rows}
+        self.assertTrue(expected_files.issubset(scanned), scanned)
+
+    def test_disp003_frozen_prereg_scan_can_be_disabled(self):
+        """The default DISP-003 frozen-prereg scan is opt-out for callers that
+        need a narrow scope (e.g. before the F1 experiment dirs exist)."""
+        res = mod.run_audit(disp003_frozen_prereg_dirs=[])
+        self.assertEqual(res.get("disp003_frozen_prereg_files_scanned", 0), 0)
+        self.assertFalse(any(r.get("frozen_record") is True for r in res["rows"]))
+        self.assertTrue(res["pass"], res.get("errors"))
+
+    def test_disp003_frozen_prereg_paths_point_inside_f1_experiment_dirs(self):
+        """The three DISP-003 frozen prereg dirs are the F1 experiment dirs
+        themselves (not DISP-002), so the scanned set must not include
+        DISP-002's prereg dir and must include all three F1 dirs."""
+        dirs = set(self.first.get("disp003_frozen_prereg_dirs", []))
+        self.assertNotIn(
+            str(mod.DISP002_PREREG_DIR.relative_to(mod.ROOT)), dirs)
+        for name in ("F1COVERAGE-001", "F1SENS-002", "F1STAB-003"):
+            with self.subTest(name=name):
+                self.assertTrue(
+                    any(d.endswith(f"{name}/preregistrations") for d in dirs),
+                    f"{name} prereg dir missing from {sorted(dirs)}")
+
 
 if __name__ == "__main__":
     unittest.main()
