@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-13T12:13:12Z",
+  "last_updated_utc": "2026-11-13T12:15:35Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1068,7 +1068,7 @@
     "timestamp_utc": "2026-11-13T12:06:17Z",
     "verification": "clean tree at HEAD 55ef3a4d; compileall EXIT 0; unittest 394 OK skipped=2 (numpy 2.5.4 / pandas 3.1.1); probe evidence recomputed from disk: 397 real (0 MOCK), 270 probe_month=2026-10 (49 published), 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json; frozen hashes unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier 9ba08f3f...); h10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, last_allowed_formation_date=2026-09-30, data_cutoff_utc=2026-10-31T00:00:00Z, sequential_look_number=1, sequential_look_mature=false, sequential_remaining_budget=0.025, block_sealed=true); frontier ACTIVE_INCOMPLETE cursor 6347; registry next_sequence_number=25 (H25). No probe written; no frozen artifact/config/input/frontier/registry/sealed holdout modified."
   },
-  "session_record_latest": "session_record_20261113T120617Z",
+  "session_record_latest": "session_record_20261113T121535Z",
   "session_records": [
     "session_record_20261101T1404Z",
     "session_record_20261101T1406Z",

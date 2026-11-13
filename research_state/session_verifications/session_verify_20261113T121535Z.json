@@ -1,0 +1,46 @@
+{
+  "session_id": "20261113T121535Z",
+  "session_id_drift_scan": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "head_commit": "f33e20fc5c9f4aea41f1dc3aae34b470ad1a1d5f",
+  "head_branch": "main",
+  "working_tree_clean_at_start": true,
+  "compile_check": "EXIT 0",
+  "targeted_gate_tests": {
+    "command": "python3 -m unittest tests.test_state_consistency tests.test_h10_gate_vs_november_probe tests.test_continuous_research_contract",
+    "result": "Ran 31 tests, OK"
+  },
+  "numpy_version": "2.5.4",
+  "pandas_version": "3.1.1",
+  "frozen_artifacts_unchanged": true,
+  "frozen_configs_unchanged": true,
+  "frozen_inputs_unchanged": true,
+  "frontier_unchanged": true,
+  "registry_unchanged": true,
+  "sealed_holdout_unchanged": true,
+  "probe_written_this_session": false,
+  "verification_utc": "2026-11-13T12:15:35Z",
+  "note": "Re-verified no bounded no-cost H10 task unblocked before 2026-11-30 date gate"
+}
