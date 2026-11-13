@@ -1,14 +1,13 @@
-# Agent Task Message — 2026-11-13T03:58:18Z (next session)
+# Agent Task Message — 2026-11-13T04:38:19Z (next session)
 
-## Verified state (2026-11-13T03:58:18Z)
+## Verified state (2026-11-13T04:38:19Z)
 - **HEAD:** `84231241b4e8325888d05882a28fef54366ac512` (`main`), working tree clean before this session's writes.
-- **This session:** re-read durable handoff/task message from 2026-11-13T03:46:40Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T035818Z.json`; refreshed handoff, task message, and top-level `HANDOFF.md`.
-- **Bounded no-cost task completed (PROBE-EVIDENCE-GUARD-001):** `session_verify_20261113T034640Z.json` undercounted probe evidence by one (copied prior counts while writing its own new probe). Disk holds **395** real probes (269 `probe_month=2026-10` / **126** `probe_month=2026-11`). Added `tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk` (recomputes counts from `research_state/cutoff_probe/`, pins the latest probe-evidence-bearing session record to disk); verified red (`394 != 395`) then green. Corrected the 034640 record with a `probe_evidence_correction_20261113T0352Z` note.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **380 tests, OK (skipped=2), 0 failures** (numpy 2.5.4 / pandas 3.1.1 present; was 379). `python3 scripts/record_test_claim.py` re-recorded `latest_verified_test_claim` 380/380/0. No frozen artifact/config/input edits made.
+- **This session:** re-read durable handoff/task message from 2026-11-13T03:58:18Z; the assigned H10 fresh sealed forward block is date-gated until 2026-11-30 and is not runnable today (2026-11-13). Prior task (PROBE-EVIDENCE-GUARD-001, 380 tests OK, 034640 probe-evidence correction) was already complete; independently reverified state and recorded `research_state/session_verifications/session_verify_20261113T043819Z.json`. Refreshed handoff, task message, and top-level `HANDOFF.md`.
+- **Checks:** not re-run (no code changes since 03:58:18Z). Last verified: `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **380 tests, OK (skipped=2), 0 failures** (numpy 2.5.4 / pandas 3.1.1). `latest_verified_test_claim` remains 380/380/0. No frozen artifact/config/input edits made.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; `research_state/hypothesis_registry.json` `1a137c67924f185b3cfd958b1eebcda3ffa82aa48867927eddcbf29faff4ebcb`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
 - **Probe evidence (recomputed from disk):** 395 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 126 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T034640Z.json` (`2026-11-13T03:46:40Z`). Archive alive (2026-09 control).
 - **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); a probe BLOCKED verdict is never promoted into the H10 gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced (`sequential_look_number=1`, `sequential_look_mature=false`, `sequential_remaining_budget=0.025`).
-- **No bounded no-cost H10 task unblocked before 2026-11-30** (today 2026-11-13).
+- **No bounded no-cost H10 task unblocked before 2026-11-30** (today 2026-11-13). No additional verified gap found this session.
 
 ## Initial task for next agent
 
@@ -23,15 +22,15 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
    - Run the fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--forward-block-start 2026-09-30 --data-cutoff <new cutoff> --look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))` per H22/prereg sec 4.1).
 3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If immature, record outcome and **do not advance k**.
 4. After a completed/blocked block, run `python3 scripts/record_test_claim.py` if any test/script changed, then update handoff, task message and a session verification record.
-5. **Probe-evidence invariant (new):** if the session writes a probe, refresh the `probe_evidence` block in its session record. `tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk` now fails the build if the latest probe-evidence-bearing session record's counts disagree with `research_state/cutoff_probe/`.
+5. **Probe-evidence invariant:** if the session writes a probe, refresh the `probe_evidence` block in its session record. `tests/test_state_consistency.py::test_latest_session_probe_evidence_matches_disk` fails the build if the latest probe-evidence-bearing session record's counts disagree with `research_state/cutoff_probe/`.
 
 ### 2) If 2026-11-30 has not arrived (or probe remains blocked)
 - Record "no bounded no-cost H10 task unblocked before 2026-11-30" with verified evidence in handoff/task message and a session verification record. Do not loop on known-failed probes or invent work.
 - 30-day maturity and ">=30 prior in-block dispersions" trailing-decile rules are hard; no truncated outcome and no exploratory H10 relaxation admissible. The `MIN_STATE_FORMATIONS=5` confirmatory floor is separate and also unmet.
-- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits. The probe-evidence guard was this session's genuine gap; do not rebuild it.
+- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits.
 - If you touch handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
-- Do not alter frontier, registry, frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted; do not repoint by editing frontier.
-- Probe-count evidence: recompute counts from disk rather than copying a prior record's number (this session: 395 real files, 269 `probe_month=2026-10` / 126 `probe_month=2026-11`).
+- Do not alter frontier, registry, frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted (frontier/manifest name `cutoff_probe_20261107T091152Z.json`, newest on disk `cutoff_probe_20261113T034640Z.json`, summaries agree); do not repoint by editing frontier.
+- Probe-count evidence: recompute counts from disk rather than copying a prior record's number (currently 395 real files, 269 `probe_month=2026-10` / 126 `probe_month=2026-11`).
 
 ## Hard constraints
 Free public data only; historical research only (no orders/live/paper trading); preserve DISPERSION-001/002 and frozen 003 artifacts/configs/inputs; no look-ahead/fabrication/forward-fill; today's rank ≠ historical truth; complete multiple-testing correction for any claim; do not reuse inspected holdout as fresh confirmation.
