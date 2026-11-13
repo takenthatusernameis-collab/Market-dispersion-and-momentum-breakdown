@@ -1,0 +1,55 @@
+{
+  "session_id": "session_verify_20261113T061414Z",
+  "verified_utc": "2026-11-13T06:14:14Z",
+  "head_commit": "e3f2f88f73c47c625902c3a3e154e4cb04b091be",
+  "branch": "main",
+  "working_tree_clean": true,
+  "prior_task_complete": true,
+  "prior_task_summary": "Read durable handoff/task message (2026-11-13T06:05:00Z). H10 fresh sealed forward block date-gated until 2026-11-30; not runnable 2026-11-13. No bounded no-cost H10 task unblocked before gate.",
+  "checks": {
+    "compileall_scripts_tests": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "latest_verified_test_claim_reference": "research_state/verified_test_claim_claim_snapshot.json (394/394/0, 2 skipped, recorded 2026-11-13T05:53:51Z; not re-run this session)"
+  },
+  "frozen_hashes_verified_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "f1sens002_source": "7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence_recomputed_from_disk": {
+    "directory": "research_state/cutoff_probe",
+    "real_probe_files": 395,
+    "mock_files_excluded": 0,
+    "by_probe_month": {
+      "2026-10": {"total": 269, "target_published_true": 48, "target_published_false": 221},
+      "2026-11": {"total": 126, "target_published_true": 0, "target_published_false": 126}
+    },
+    "newest_probe_file": "cutoff_probe_20261113T034640Z.json",
+    "newest_probe_utc": "2026-11-13T03:46:40Z"
+  },
+  "h10_gate_assessment": {
+    "h10_cutoff_gate": "UNBLOCKED (October 2026 archive published)",
+    "probe_month_2026_11_status": "BLOCKED as a probe only (target month not yet published); probe BLOCKED verdict never promoted into H10 gate decision",
+    "h10_fresh_block_immature": true,
+    "h10_fresh_n_formations": 1,
+    "h10_fresh_n_high": 0,
+    "h10_fresh_n_low": 0,
+    "h10_fresh_n_mid": 1,
+    "h10_sequential_look_number": 1,
+    "h10_sequential_look_mature": false,
+    "date_gate": "2026-11-30",
+    "today_utc": "2026-11-13"
+  },
+  "frontier_pointer_note": {
+    "frontier_latest_november_2026_probe": "cutoff_probe_20261107T091152Z.json",
+    "newest_november_probe_on_disk": "cutoff_probe_20261113T034640Z.json",
+    "lag_guard_permitted": true,
+    "frontier_hash_unchanged": true
+  },
+  "no_bounded_no_cost_h10_task_unblocked_before": "2026-11-30",
+  "artifacts_modified_this_session": [
+    "research_state/session_verifications/session_verify_20261113T061414Z.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ]
+}
