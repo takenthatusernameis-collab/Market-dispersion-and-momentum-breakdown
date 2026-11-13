@@ -1,0 +1,30 @@
+{
+  "session_utc": "2026-11-13T20:55:12Z",
+  "head_at_verification_start": "f39ba014cbe02f23a1bd23300c04f8c6bc2b4368",
+  "branch": "main",
+  "working_tree_clean_at_start": true,
+  "checks": {
+    "compileall_scripts_tests": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "unittest_discover": {"command": "python3 -m unittest discover -s tests", "exit_code": 0, "ran": 401, "ok": true, "skipped": 2, "failures": 0, "errors": 0}
+  },
+  "environment": {"numpy": "2.5.4", "pandas": "3.1.1"},
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "h10_gate_status": "UNBLOCKED_BY_PUBLISHED_OCTOBER_2026_ARCHIVE",
+  "november_probe_status": "BLOCKED_AS_PROBE_ONLY_MONTH_NOT_YET_PUBLISHED",
+  "no_bounded_no_cost_h10_task_unblocked_before_2026_11_30": true,
+  "date_gate_reason": "Today 2026-11-13 is before 2026-11-30. H10 fresh block requires formations strictly after 2026-09-29, strict 30-day outcome maturity, and >=30 prior in-block dispersions for trailing-decile high/low; post-2026-09-29 formations live only in the November 2026 monthly archive which is unpublished (0/127 probe_month=2026-11 target_published=true). 30-day maturity and no-truncated-outcome are hard safeguards, so no admissible fresh block exists before 2026-11-30. MIN_STATE_FORMATIONS=5 confirmatory floor also unmet. Genuine date gate, not experiment-ID wait.",
+  "frozen_hashes_sha256": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "frozen_artifacts_modified": false,
+  "probe_month_2026_11_reprobed": false,
+  "prior_session_verification": "research_state/session_verifications/session_verify_20261113T205255Z.json"
+}
