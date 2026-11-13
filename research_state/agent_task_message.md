@@ -1,18 +1,22 @@
-# Agent Task Message — 2026-11-13T06:58:02Z (next session)
+# Agent Task Message — 2026-11-13T08:45:04Z (next session)
 
-## Verified state (2026-11-13T06:58:02Z)
-- **HEAD:** `3453062d21513cc42fa0a5e75daedc82c28b9a33` (`main`), working tree clean at verification (only handoff/task-message/session-record edits pending this session).
-- **Prior task complete:** read durable handoff/task message from 2026-11-13T06:55:58Z. H10 fresh sealed forward block is date-gated until 2026-11-30 and not runnable today (2026-11-13). No bounded no-cost H10 task unblocked before the gate.
-- **Prior-record defect fixed in prior session:** `session_verify_20261113T064503Z.json` had a malformed `session_id` (bare timestamp) and a non-canonical `probe_evidence` schema that the disk gate skipped. Fixed both; full suite now green (was 1 failure). Use the canonical `probe_evidence` schema in new records.
-- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` Ran 394 tests, OK (skipped=2) at 2026-11-13T06:58:02Z. Registry at H25 (next_sequence_number 25); `tests/test_continuous_research_contract.py` asserts `next_sequence_number == 25`.
-- **This session (2026-11-13T07:03:xxZ):** re-verified state; full suite had 1 failure (`test_latest_session_probe_evidence_matches_disk` because latest prior record `session_verify_20261113T065802Z.json` reported `probe_evidence` total_real_probes 396 / `probe_month_2026-11` count 127 vs disk 395 / 126). Wrote `research_state/session_verifications/session_verify_20261113T070400Z.json` whose `probe_evidence` matches disk (395 real / 269 `probe_month=2026-10` pub 48 / 126 `probe_month=2026-11` pub 0; newest `cutoff_probe_20261113T034640Z.json`); re-ran suite: 394 tests OK (skipped=2). All four frozen hashes verified unchanged; no new hypothesis allocated (registry H25 / next_sequence_number 25).
-- **Session verification record:** `research_state/session_verifications/session_verify_20261113T065802Z.json` (retains prior session verifications).
+## Verified state (2026-11-13T08:45:04Z)
+- **HEAD:** `60ecaa54c834ccfd6b4aff6803de9cb427938ada` (`main`), working tree clean at verification (only handoff/task-message/session-record edits pending).
+- **Prior task complete:** read the durable handoff and task message from 2026-11-13T06:58:02Z. The H10 fresh sealed forward block is date-gated until 2026-11-30 and not runnable today (2026-11-13). No bounded no-cost H10 task is unblocked before the gate.
+- **Environment gap found and fixed (not a repo defect):** the runner interpreter had lost numpy/pandas (both in `requirements.txt`), so the first suite run had 1 failure + 9 setUpClass errors (ModuleNotFoundError for pandas/numpy in the three F1 scripts, plus `test_requirements_importable.py`). Installed `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` (free, local) and re-ran the suite: **394 tests OK (skipped=2)**. No source/config/artifact/input/durable-state file changed by the install.
+- **Checks:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` Ran 394 tests, OK (skipped=2) at 2026-11-13T08:45:04Z. Registry at H25 (next_sequence_number 25); `tests/test_continuous_research_contract.py` asserts `next_sequence_number == 25`.
+- **Session verification record:** `research_state/session_verifications/session_verify_20261113T084504Z.json` (this session; latest; `probe_evidence` matches disk). Prior record `session_verify_20261113T070400Z.json` retained as a historical snapshot.
 - **Frozen hashes (unchanged):** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; F1SENS-002 source `7f85b38698745da5bf3e618bd729d59fd21c88da44b1a9795f93d20e5f639fa3`; `research_state/universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- **Probe evidence (recomputed from disk):** 395 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 126 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T034640Z.json` (`2026-11-13T03:46:40Z`).
-- **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); probe BLOCKED verdict never promoted into the H10 gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced (`sequential_look_number=1`, `sequential_remaining_budget=0.025`).
+- **Probe evidence (recomputed from disk):** 395 real `cutoff_probe_*.json` (0 MOCK). By month: 269 `probe_month=2026-10` (48 published / 221 not) and 126 `probe_month=2026-11` (all `target_published=false`); newest `research_state/cutoff_probe/cutoff_probe_20261113T034640Z.json` (`2026-11-13T03:46:40Z`). No probe written this session.
+- **H10 gate vs probe:** H10 cutoff gate **UNBLOCKED** by the published October 2026 archive. `probe_month=2026-11` probe is **BLOCKED as a probe only** (month-not-yet-published); the probe BLOCKED verdict is never promoted into the H10 gate decision. Fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `last_allowed_formation=2026-09-30`, `data_cutoff=2026-10-31`); k not advanced (`sequential_look_number=1`, `sequential_remaining_budget=0.025`).
 - **No bounded no-cost H10 task unblocked before 2026-11-30** (today 2026-11-13). H25 (DISP-003-F1STAB-003) complete: both H8/H19 stability warnings persist under the 29-31-asset F1 repair (F1_STABILITY_PRESERVED); no further development-data diagnostic preregistered.
 
 ## Initial task for next agent
+
+### 0) Precondition — install dependencies
+Before running the suite, install `requirements.txt` if numpy/pandas are missing:
+`python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt`
+This is free/local. Without it the suite errors with 9 `ModuleNotFoundError` + 1 requirements-import failure, which is an environment condition, not a repo defect.
 
 ### 1) On/after 2026-11-30 — H10 fresh sealed forward block (date-gated, bounded, no-cost)
 This is the next executable action (date-gated, not an experiment-ID wait). Do **not** re-probe `probe_month=2026-11` before 2026-11-30.
@@ -20,7 +24,7 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 1. Run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`.
 2. If `target_published=true`:
    - Refresh free public data only (Coin Metrics Community API + Binance Public Data Archive).
-   - Run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests` (install `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` first if numpy/pandas missing).
+   - Install `requirements.txt` if numpy/pandas are missing, then run `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests`.
    - Verify canonical hash `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged.
    - Run the fresh sealed H10 block **only** into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--forward-block-start 2026-09-30 --data-cutoff <new cutoff> --look-number 1` (30-day maturity, `MIN_ASSETS_DECIMAL=20`, trailing-decile, 0.05 economic threshold, sequential `alpha_k = 0.05/(k*(k+1))` per H22/prereg sec 4.1).
 3. Require `n_high > 0 AND n_low > 0` before any confirmatory claim. If immature, record outcome and **do not advance k**.
@@ -30,10 +34,10 @@ This is the next executable action (date-gated, not an experiment-ID wait). Do *
 ### 2) If 2026-11-30 has not arrived (or probe remains blocked)
 - Record "no bounded no-cost H10 task unblocked before 2026-11-30" with verified evidence in handoff/task message and a session verification record. Do not loop on known-failed probes or invent work.
 - 30-day maturity and ">=30 prior in-block dispersions" trailing-decile rules are hard; no truncated outcome and no exploratory H10 relaxation admissible. The `MIN_STATE_FORMATIONS=5` confirmatory floor is separate and also unmet.
-- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits. (Prior session found and fixed one: a prior record's malformed `session_id` and non-canonical probe schema.)
+- Prefer a bounded, no-cost local task (tests/consistency checks) only if you first demonstrate a real gap; do not add duplicate audits. (Prior sessions found and fixed: a malformed prior `session_id`/probe schema; this session restored the missing numpy/pandas environment.)
 - If you touch handoff/task message, keep the literal `probe_month=2026-11` label present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked; `tests/test_h10_gate_vs_november_probe.py` enforces both.
 - Do not alter frontier, registry (except allocating a new hypothesis if you add an experiment), frozen 003 artifacts/configs/inputs or sealed holdout. `latest_november_2026_probe` pointer lag is guard-permitted; do not repoint by editing frontier.
-- Probe-count evidence: recompute counts from disk rather than copying a prior record's number (currently 396 real files, 269 `probe_month=2026-10` / 127 `probe_month=2026-11`).
+- Probe-count evidence: recompute counts from disk rather than copying a prior record's number (currently 395 real files, 269 `probe_month=2026-10` / 126 `probe_month=2026-11`).
 - If you allocate a new hypothesis, bump `next_sequence_number` AND `tests/test_continuous_research_contract.py`'s hard-coded `self.assertEqual(registry["next_sequence_number"], N)` in the same change, or the suite fails.
 
 ## Hard constraints
