@@ -2,12 +2,12 @@
 
 **Current durable handoff:** `research_state/agent_handoff.md`
 **Current task message:** `research_state/agent_task_message.md`
-**Session:** 2026-11-13T02:45:11Z (HEAD `703d2398cfdd299c7702c93cf06570bfca991f64`)
+**Session:** 2026-11-13T03:40:43Z (HEAD `b2b48e8250d3fc1f21218a3501f3bbee7117b48d`)
 
 ## State (verified)
-- Prior agent task complete (re-read 2026-11-13T02:35:38Z handoff/task): H10 fresh sealed forward block is **date-gated until 2026-11-30**; not runnable today (2026-11-13). Recorded `research_state/session_verifications/session_verify_20261113T024511Z.json`.
-- Frozen hashes unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, `hypothesis_registry.json` `693b13097ebaee14e16b18906e698478a5ccc2df7bac5c135af571a28195c6e5`, `universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
-- Checks (last full passing run, `session_verify_20261113T023538Z.json`, no code changes this session): `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` 370 tests, OK (skipped=2), 0 failures.
+- Prior agent task complete (re-read 2026-11-13T02:45:11Z handoff/task): H10 fresh sealed forward block is **date-gated until 2026-11-30**; not runnable today (2026-11-13). Recorded `research_state/session_verifications/session_verify_20261113T034043Z.json`.
+- Frozen hashes unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, `hypothesis_registry.json` `1a137c67924f185b3cfd958b1eebcda3ffa82aa48867927eddcbf29faff4ebcb`, `universe_frontier.json` `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
+- Checks (this session): `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` 379 tests, OK (skipped=2), 0 failures.
 - Probe evidence (recomputed): 394 real probes (0 MOCK) — 269 `probe_month=2026-10` (48 published/221 not), 125 `probe_month=2026-11` (all `target_published=false`); newest `cutoff_probe_20261113T020116Z.json` (2026-11-13T02:01:16Z). H10 cutoff gate **UNBLOCKED** (Oct 2026 archive published); `probe_month=2026-11` is **BLOCKED as a probe only** (not promoted into H10 gate). Fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1); k not advanced.
 - Frontier unchanged: `ACTIVE_INCOMPLETE`, `rank_frontier_exhausted=false`, `candidate_page_cursor=6347`, verified 220 / blocked 6127. Frontier/manifest `latest_november_2026_probe` pointer lag to `cutoff_probe_20261107T091152Z.json` is guard-permitted (summaries agree; not repointed).
 
