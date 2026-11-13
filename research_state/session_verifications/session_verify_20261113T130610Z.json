@@ -1,0 +1,62 @@
+{
+  "session_id": "session_verify_20261113T130610Z",
+  "verified_at_utc": "2026-11-13T13:06:10Z",
+  "head_commit": "4db0224f42a8d9c5fcdbb447ea5c81c3be588428",
+  "working_tree_clean_at_start": true,
+  "prior_task_read": [
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "prior_task_completed": "Read durable handoff and task message from 2026-11-13T13:05:00Z and re-verified its recorded action: no bounded no-cost H10 task is unblocked before 2026-11-30 (2026-11-13 < 2026-11-30). State re-verified from disk; durable handoff and task message refreshed for next agent.",
+  "checks": {
+    "compileall_scripts_tests": {"exit_code": 0},
+    "targeted_gate_tests": {
+      "command": "python3 -m unittest tests.test_state_consistency tests.test_h10_gate_vs_november_probe tests.test_continuous_research_contract",
+      "ran": 31,
+      "ok": true,
+      "skipped": 0
+    },
+    "full_suite_run_this_session": false,
+    "numpy_pandas_importable": {"numpy": "2.5.4", "pandas": "3.1.1"}
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {"count": 270, "published": 49, "unpublished": 221},
+    "probe_month_2026-11": {"count": 127, "published": 0, "unpublished": 127}
+  },
+  "h10_gate_status": "UNBLOCKED",
+  "h10_gate_basis": "published October 2026 archive (probe_month=2026-10); probe_month=2026-11 probe BLOCKED as probe-only (month-not-yet-published), never promoted to gate decision",
+  "h10_fresh_block": {
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "frontier": {
+    "status": "ACTIVE_INCOMPLETE",
+    "candidate_page_cursor": 6347,
+    "candidates_verified": 220,
+    "candidates_blocked": 6127,
+    "expanding_universe_target_met": true,
+    "rank_frontier_exhausted": false
+  },
+  "bounded_no_cost_h10_task_unblocked_before_2026_11_30": false,
+  "date_gate": "2026-11-30",
+  "next_action": "On/after 2026-11-30 run probe_cutoff_gate.py --probe-month 2026-11 and follow handoff. Before 2026-11-30 record no bounded no-cost H10 task unblocked with verified evidence; do not re-probe probe_month=2026-11."
+}
