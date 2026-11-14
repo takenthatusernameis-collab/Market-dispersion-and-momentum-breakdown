@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T19:59:23Z",
+  "recorded_utc": "2026-11-14T20:17:13Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 549,
-  "tests_ok": 549,
+  "tests_run": 557,
+  "tests_ok": 557,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "549/549/0",
-  "input_fingerprint": "a0df5d86839a9c1d14212600194de2850cc16eafed5f79e4fb6d08fd0e413580",
+  "claim": "557/557/0",
+  "input_fingerprint": "9292b01768b578d07f9c9395d5559645976b76f6ebfaaac04451ad83f69e559f",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -503,6 +503,10 @@
       "sha256": "e7f4a5337a810386d5a54b750f17abef4f370107271e1a9f541b7878a73bb940"
     },
     {
+      "path": "tests/test_rewrite_state_json.py",
+      "sha256": "39624011922d2f2a70b09ab818d0c24b70537d798d64dc7fda953faae3abbe87"
+    },
+    {
       "path": "tests/test_sequential_alpha_rule_source.py",
       "sha256": "2b5161114730dc9665c10e09f49803cf0284bca4d4b6f785c32d18fbe65ccefa"
     },
@@ -527,5 +531,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 129
+  "input_file_count": 130
 }
