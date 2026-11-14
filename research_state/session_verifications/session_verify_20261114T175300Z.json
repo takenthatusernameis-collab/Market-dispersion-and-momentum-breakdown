@@ -1,0 +1,64 @@
+{
+  "session_id": "session_verify_20261114T175300Z",
+  "session_timestamp_utc": "2026-11-14T17:53:00Z",
+  "head_sha_start": "5e7f8f8cb27ff93d104d5679ad2d109af4b4ec69",
+  "origin_main_sha_start": "5e7f8f8cb27ff93d104d5679ad2d109af4b4ec69",
+  "remote_tracking_reconciled": true,
+  "persistence_claimable_at_start": true,
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "new_tests_targeted": {
+      "command": "python3 -m unittest tests.test_dispersion_rolling_window",
+      "tests_run": 14,
+      "ok": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "note": "Hermetic coverage for pure seams in scripts/dispersion_rolling_window.py (window_label, window_metrics, assign_states, constants). No network, no frozen artifact reads/writes; synthetic fixtures only."
+    },
+    "full_suite": {
+      "command": "python3 -m unittest discover -s tests",
+      "status": "INCOMPLETE_IN_SESSION",
+      "discovered_tests": 512,
+      "note": "Full suite started (including new tests/test_dispersion_rolling_window.py) but did not reach a final summary within session wall time in this environment and was still running at handoff; final Ran/OK/skip counts not captured. Prior verified claim snapshot (pre-change) was 504/504/0, fingerprint c64209bb37746578..., recorded_utc 2026-11-14T17:36:35Z — now stale because a new .py test file was added. Next session must run full suite to completion and run `python3 scripts/record_test_claim.py` to refresh the claim/fingerprint."
+    }
+  },
+  "probe_evidence": {
+    "source": "research_state/cutoff_probe/cutoff_probe_*.json",
+    "recomputed_from_disk_utc": "2026-11-14T17:53:00Z",
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "frontier_universe": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "f1grid002_committed_grid_summary": "MISSING_LOCALLY_UNTRACKED",
+    "f1grid002_committed_grid_ledger": "MISSING_LOCALLY_UNTRACKED",
+    "f1grid002_committed_summary": "MISSING_LOCALLY_UNTRACKED"
+  },
+  "gates": {
+    "h10_cutoff_gate": "UNBLOCKED_BY_PUBLISHED_2026-10_ARCHIVE",
+    "probe_month_2026-11_probe_status": "BLOCKED_AS_PROBE_ONLY_0_of_127_published",
+    "h10_fresh_block": "IMMATURE_n_formations_1_n_high_0_n_low_0",
+    "no_bounded_no_cost_h10_task_before": "2026-11-30",
+    "blocker_code": "BLOCKED_BY_HARD_DATE_GATE"
+  },
+  "artifacts_added_this_session": [
+    "tests/test_dispersion_rolling_window.py"
+  ],
+  "notes": "Genuinely new bounded no-cost test coverage added for scripts/dispersion_rolling_window.py (no prior direct test reference). F1GRID-002 not re-run. No frozen artifact/config/input/frontier/registry/sealed holdout modified; registry next_sequence_number unchanged at 28. Oversized untracked F1GRID-002 artifacts remain gitignored and must not be committed. probe_month=2026-11 not re-probed."
+}

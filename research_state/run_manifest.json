@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T17:37:07Z",
+  "last_updated_utc": "2026-11-14T17:53:00Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1112,7 +1112,8 @@
     "session_record_20261114T153352Z",
     "session_record_verify_20261114T165020Z",
     "session_record_verify_20261114T170510Z",
-    "session_record_verify_20261114T173707Z"
+    "session_record_verify_20261114T173707Z",
+    "session_record_verify_20261114T175300Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1194,7 +1195,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T173707Z",
+  "session_record_latest": "session_record_verify_20261114T175300Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1362,5 +1363,32 @@
       "newest_probe": "cutoff_probe_20261113T091257Z.json"
     },
     "notes": "New test file tests/test_formation_accounting.py (14 tests) covers DISPERSION-001 Phase A/B accounting seams sha256_file, formation_dates, momentum; hermetic, no network, no frozen artifact touched. record_test_claim refreshed 490->504 (fingerprint ab1a1fdf...)."
+  },
+  "session_record_verify_20261114T175300Z": {
+    "session_id": "session_verify_20261114T175300Z",
+    "timestamp_utc": "2026-11-14T17:53:00Z",
+    "action": "Added hermetic unit tests for pure seams in scripts/dispersion_rolling_window.py (window_label, window_metrics, assign_states, constants) as tests/test_dispersion_rolling_window.py; ran compileall and targeted tests; started full unittest suite; recomputed probe evidence and verified frozen hashes; wrote session verification and updated handoff/task message.",
+    "outcome": "compileall EXIT 0; targeted tests 14/14 OK. Full suite discovered 512 tests but did not complete within session wall time (still running with embedded self-test output at handoff), so final Ran/OK/skip/exit not captured and verified_test_claim snapshot remains stale pre-change 504/504/0 (fingerprint c64209bb..., recorded 2026-11-14T17:36:35Z, manifest pinned 504/504/0). Probes 397 real (270 Oct/49 published, 127 Nov/0), newest 20261113T091257Z. Frozen hashes unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier 9ba08f3f..., grid_v3 1ff4c1f...). H10 cutoff gate UNBLOCKED by published 2026-10 archive; probe_month=2026-11 blocked as probe only (0/127); H10 fresh IMMATURE (n_formations=1,n_high=0,n_low=0); BLOCKED_BY_HARD_DATE_GATE before 2026-11-30. No frozen artifacts/configs/registry modified; F1GRID-002 not re-run.",
+    "verification": "research_state/session_verifications/session_verify_20261114T175300Z.json",
+    "head_sha_start": "5e7f8f8cb27ff93d104d5679ad2d109af4b4ec69",
+    "origin_main_sha_start": "5e7f8f8cb27ff93d104d5679ad2d109af4b4ec69",
+    "remote_tracking_reconciled": true,
+    "persistence_claimable_at_start": true,
+    "probe_evidence": {
+      "total_real_probes": 397,
+      "mock_probes": 0,
+      "probe_month_2026-10": {
+        "count": 270,
+        "published": 49
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261113T091257Z.json"
+    },
+    "artifacts_added_this_session": [
+      "tests/test_dispersion_rolling_window.py"
+    ]
   }
 }

@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 2,
   "claim": "504/504/0",
-  "input_fingerprint": "ab1a1fdfd5ed857fd7bab8525b19529922eb5562392edc9f279b0cd72fe71646",
+  "input_fingerprint": "c64209bb37746578daf4cc482984eda1b4a8659ca26dabe6027507bfb1de20b6",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -312,7 +312,7 @@
     },
     {
       "path": "tests/test_dispersion_rolling_window.py",
-      "sha256": "df9dadbb761a57e5833e9170267a7bfeb9fe2ea17d91886ecbe926b8433c2847"
+      "sha256": "36be1bc6c7a391dd3ae78f9c76b3f60113f6926567c266b34f3334d8a2fe8921"
     },
     {
       "path": "tests/test_eval_forward_block_maturity.py",
