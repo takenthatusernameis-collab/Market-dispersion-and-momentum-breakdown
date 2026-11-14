@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T17:05:10Z",
+  "last_updated_utc": "2026-11-14T17:37:07Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "490/490/0",
+  "latest_verified_test_claim": "504/504/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1111,7 +1111,8 @@
     "session_record_20261114T152033Z",
     "session_record_20261114T153352Z",
     "session_record_verify_20261114T165020Z",
-    "session_record_verify_20261114T170510Z"
+    "session_record_verify_20261114T170510Z",
+    "session_record_verify_20261114T173707Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1193,7 +1194,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T170510Z",
+  "session_record_latest": "session_record_verify_20261114T173707Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1334,5 +1335,32 @@
     "outcome": "490/490/0 tests pass; 397 real probes (270 2026-10 / 127 2026-11); all frozen hashes match; H10 blocked by hard date gate until 2026-11-30",
     "verification": "All checks passed; no bounded no-cost H10 task unblocked before 2026-11-30",
     "notes": "Default action completed: full suite 490/490/0, frozen hashes unchanged, probe counts 397 real (270 2026-10 / 127 2026-11), no bounded no-cost H10 task before 2026-11-30"
+  },
+  "session_record_verify_20261114T173707Z": {
+    "session_id": "session_verify_20261114T173707Z",
+    "session_type": "verification",
+    "timestamp_utc": "2026-11-14T17:37:07Z",
+    "head_sha": "bac0ef02ae417270db7f15d7e3636c6a6f9fef10",
+    "origin_main_sha": "bac0ef02ae417270db7f15d7e3636c6a6f9fef10",
+    "persistence_claimable": true,
+    "test_claim": "504/504/0",
+    "input_file_count": 126,
+    "action": "Added hermetic tests for scripts/formation_accounting.py pure seams; then full verification cycle",
+    "outcome": "504/504/0 tests pass (was 490/490/0); 126 input files; 397 real probes (270 2026-10 / 127 2026-11, 49 published); all frozen hashes match; H10 blocked by hard date gate until 2026-11-30",
+    "verification": "All checks passed; no bounded no-cost H10 task unblocked before 2026-11-30",
+    "probe_evidence": {
+      "total_real_probes": 397,
+      "mock_probes": 0,
+      "probe_month_2026-10": {
+        "count": 270,
+        "published": 49
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261113T091257Z.json"
+    },
+    "notes": "New test file tests/test_formation_accounting.py (14 tests) covers DISPERSION-001 Phase A/B accounting seams sha256_file, formation_dates, momentum; hermetic, no network, no frozen artifact touched. record_test_claim refreshed 490->504 (fingerprint ab1a1fdf...)."
   }
 }
