@@ -2,7 +2,7 @@
  "schema_version": "1.0",
  "program_id": "HARMONY-CRYPTO-EDGE-004",
  "program_status": "ACTIVE",
- "next_sequence_number": 25,
+ "next_sequence_number": 26,
  "hypotheses": [
   {
    "id": "H1",
@@ -246,6 +246,16 @@
     "status": "EXPLORATORY_ONLY",
     "evidence_note": "DISP-003-F1STAB-003, preregistered before any artifact-producing computation (preregistrations/F1_COVERAGE_STABILITY_AUDIT_v1.md, Created 2026-11-13T05:48:41Z). Operative artifact: integrity_audit/f1_coverage_stability_audit_20261113T054921Z.json. Verdict PASS, label F1_STABILITY_PRESERVED. Reads only the committed F1SENS-002 per-formation records (arm A 608, arm B 608). Fidelity anchors reproduce the committed evidence exactly: arm A baseline +0.6165223953929935, arm A 2025-10 leave-one-month-out delta fraction -0.8487210159492463 (H8 CLUSTER_DOMINATED), arm A median split at 2025-11-01 first +0.6456322213084524 (n_high=53, n_low=21) / second -0.16288800752983412 (n_high=8, n_low=69) (H19 not temporally stable); arm B baseline +0.5397762360511249 (H24). Arm B result: max |leave-one-month-out delta frac| 1.0638544739480873 at 2025-10 (drop 2025-10 -> -0.03446712760272323) > 0.50, and median split 2025-11-01 first +0.5866982849791593 (n_high=41, n_low=54) / second -0.06372880012345064 (n_high=8, n_low=72) -> sign flip. Therefore the discounted verdict on +0.617 is NOT an artifact of the 26-27-asset universe; both stability warnings persist under the 29-31-asset repair. This is EXPLORATORY_ONLY development evidence on already-inspected data; no p-value, no multiple-testing family, no promotion, no sealed holdout opened. The F1SENS-002 source artifact, the committed panels (hashes match the F1SENS record) and both frozen blocks (canonical 7234fc4e..., H10 fresh 324ab1e6...) are byte-unchanged.",
     "next_test": "No further computation is preregistered on this arm. The stability warnings are coverage-robust, so the next decisive step remains a genuinely fresh, mature sealed forward block (formations after 2026-09-29) with complete multiple-testing correction, not further development-data diagnostics. Do not treat this as confirmation or overwrite the sealed 003 panels, raw archive or frozen artifacts.",
+    "immutable": false
+   },
+   {
+    "id": "H26",
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001",
+    "statement": "Running the complete 216-cell DISPERSION-003 sensitivity grid on the F1-repaired panel set (arm B: four F1-repaired kline panels overriding the committed versions) versus the committed panels (arm A) changes the full grid's sensitivity surface -- formation counts, state counts, high/low spreads and Holm-adjusted inferences -- in a way that is not an artifact of the 26-27-asset universe.",
+    "predicted_high_minus_low_sign": "coverage_sensitivity",
+    "status": "EXPLORATORY_ONLY",
+    "evidence_note": "DISP-003-F1GRID-001, preregistered before any computation (preregistrations/F1_GRID_COVERAGE_REPAIR_v1.md, Created 2026-11-13T23:00:00Z). Script scripts/run_f1_grid.py; test tests/test_f1_grid_coverage_repair.py. Executed 2026-11-14T04:0xZ. Arm A is the fidelity anchor: it must reproduce the committed DISPERENCE-003 grid_result_ledger.json within 1e-9 on every cell; on fidelity failure the script aborts and writes no comparison. Arm B substitutes only the four F1-repaired kline panels (funding NOT substituted, per F1COVERAGE-001). Descriptive contrasts only: two-sided block-bootstrap p-value (block_len=21, n_boot=1000) and Holm step-down across all 216 cells per arm, computed for descriptive contrast only -- NOT a confirmation family, no p-value promotion, no hypothesis conclusion. No frozen artifact, panel, grid ledger, cost model or decision rule is modified; the canonical block (7234fc4e...), H10 fresh block (324ab1e6...), F1COVERAGE-001 panels and DISPERSION-001/002 are byte-verified unchanged before and after the run.",
+    "next_test": "If the grid sensitivity reveals material changes (ANCHOR_HOLM_CHANGE, widespread DIRECTIONAL_ATTENUATION or a large status-flip count), a confirmatory evaluation on a genuinely fresh, mature sealed forward block (formations after 2026-09-29) with complete multiple-testing correction would be required under a NEW experiment ID. Never treat this development-data grid sensitivity as confirmation; do not relax the 30-day outcome maturity rule.",
     "immutable": false
    }
   ],
