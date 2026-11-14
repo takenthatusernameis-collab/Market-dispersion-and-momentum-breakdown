@@ -83,8 +83,16 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
                 continue
             for ref in row["path_refs"]:
                 with self.subTest(file=row["file"], path=ref["path"]):
-                    self.assertTrue(ref["exists"],
-                                    f"{row['file']} references missing path {ref['path']}")
+                    if row.get("frozen_record") and not ref["exists"]:
+                        self.assertIn(
+                            "frozen_record_stale_pointer",
+                            "\n".join(row["findings"]),
+                            f"{row['file']} missing path {ref['path']} in frozen "
+                            "record must be reported as frozen_record_stale_pointer",
+                        )
+                    else:
+                        self.assertTrue(ref["exists"],
+                                        f"{row['file']} references missing path {ref['path']}")
                     if ref["frozen_expected"]:
                         self.assertTrue(ref["matches_frozen"],
                                         f"{row['file']} frozen mismatch for {ref['path']}: "
@@ -202,31 +210,40 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
 
     def test_disp003_frozen_prereg_dirs_scanned_by_default(self):
         """DISP-003 sub-experiment prereg docs (F1COVERAGE-001, F1SENS-002,
-        F1STAB-003) are closed records whose artifact paths point at each other's
-        integrity_audit JSONs and at the F1COVERAGE-001 data/panels. They must be
-        scanned by default as frozen records (stale pointers reported as INFO,
+        F1STAB-003, F1GRID-001) are closed records whose artifact paths point at
+        committed panels, manifests, scripts and each other's artifacts. They must
+        be scanned by default as frozen records (stale pointers reported as INFO,
         never ERROR, and the docs never modified), so a stale pointer in any of
         them cannot hide behind an un-scanned directory."""
-        self.assertGreaterEqual(self.first.get("disp003_frozen_prereg_files_scanned", 0), 3)
+        self.assertGreaterEqual(self.first.get("disp003_frozen_prereg_files_scanned", 0), 4)
         expected_files = {
             "F1_PANEL_COVERAGE_REPAIR_v1.md",
             "F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md",
             "F1_COVERAGE_STABILITY_AUDIT_v1.md",
+            "F1_GRID_COVERAGE_REPAIR_v1.md",
         }
         frozen_rows = [r for r in self.first["rows"] if r.get("frozen_record") is True]
-        self.assertGreaterEqual(len(frozen_rows), 3)
+        self.assertGreaterEqual(len(frozen_rows), 4)
         for row in frozen_rows:
             with self.subTest(file=row["file"]):
                 self.assertIn(row["severity"], ("OK", "INFO"), row)
                 for f in row["findings"]:
                     self.assertNotIn("missing referenced path:", f)
-        # every path ref in every DISP-003 frozen prereg doc must resolve on disk
+        # every path ref in every DISP-003 frozen prereg doc must either exist on
+        # disk or be surfaced as a frozen_record_stale_pointer (INFO) — the audit
+        # never fails the pass invariant for a missing path inside an immutable
+        # closed record, but the pointer must still be visible.
         for row in frozen_rows:
+            info_joined = "\n".join(row["findings"])
             for ref in row["path_refs"]:
                 with self.subTest(file=row["file"], path=ref["path"]):
-                    self.assertTrue(ref["exists"],
-                                    f"{row['file']} references missing path {ref['path']}")
-        # the three expected docs are all present in the scanned set
+                    if not ref["exists"]:
+                        self.assertIn("frozen_record_stale_pointer", info_joined,
+                                      f"{row['file']} missing path {ref['path']} not "
+                                      "reported as frozen_record_stale_pointer")
+                    else:
+                        self.assertTrue(ref["exists"])
+        # the four expected docs are all present in the scanned set
         scanned = {r["file"] for r in frozen_rows}
         self.assertTrue(expected_files.issubset(scanned), scanned)
 
@@ -239,13 +256,13 @@ class PreregAndH10FreshReferenceConsistencyTests(unittest.TestCase):
         self.assertTrue(res["pass"], res.get("errors"))
 
     def test_disp003_frozen_prereg_paths_point_inside_f1_experiment_dirs(self):
-        """The three DISP-003 frozen prereg dirs are the F1 experiment dirs
-        themselves (not DISP-002), so the scanned set must not include
-        DISP-002's prereg dir and must include all three F1 dirs."""
+        """The DISP-003 frozen prereg dirs are the F1 experiment dirs themselves
+        (not DISP-002), so the scanned set must not include DISP-002's prereg dir
+        and must include all four F1 dirs that carry committed prereg docs."""
         dirs = set(self.first.get("disp003_frozen_prereg_dirs", []))
         self.assertNotIn(
             str(mod.DISP002_PREREG_DIR.relative_to(mod.ROOT)), dirs)
-        for name in ("F1COVERAGE-001", "F1SENS-002", "F1STAB-003"):
+        for name in ("F1COVERAGE-001", "F1SENS-002", "F1STAB-003", "F1GRID-001"):
             with self.subTest(name=name):
                 self.assertTrue(
                     any(d.endswith(f"{name}/preregistrations") for d in dirs),

@@ -38,17 +38,17 @@ H10_DIR = ROOT / "artifacts" / EXP / "forward_block_h10_fresh"
 FORWARD_BLOCK_DIR = ROOT / "artifacts" / EXP / "forward_block"
 DISP002_PREREG_DIR = ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-002" / "preregistrations"
 # DISP-003 sub-experiment preregistration dirs (F1COVERAGE-001, F1SENS-002,
-# F1STAB-003). These are closed records whose artifact paths point at the
-# F1COVERAGE-001 data/panels and at each other's integrity_audit JSONs; they are
-# not frozen in the DISP-002 sense (the F1COVERAGE-001 panels are not sealed
-# forward-block inputs) but they must never be modified either, because they are
-# the preregistrations that the committed F1 audits were computed against. A
-# stale pointer inside them is reported as INFO (frozen_record_stale_pointer),
-# exactly like DISP-002.
+# F1STAB-003, F1GRID-001). These are closed records whose artifact paths point at
+# committed panels, grid manifests and scripts; they are not frozen in the
+# DISP-002 sense (their panels are not sealed forward-block inputs) but they must
+# never be modified either, because they are the preregistrations that the
+# committed F1 audits/analyses were computed against. A stale pointer inside them
+# is reported as INFO (frozen_record_stale_pointer), exactly like DISP-002.
 DISP003_FROZEN_PREREG_DIRS = [
     ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001" / "preregistrations",
     ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002" / "preregistrations",
     ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003" / "preregistrations",
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001" / "preregistrations",
 ]
 STATE_DIR = ROOT / "research_state"
 
@@ -348,7 +348,7 @@ def run_audit(
             "files, and frozen/git-HEAD hash drift. DISP-002 preregistration docs are "
             "scanned as frozen records when --include-disp002-preregs is passed; "
             "DISP-003 sub-experiment prereg docs (F1COVERAGE-001, F1SENS-002, "
-            "F1STAB-003) are scanned as frozen records BY DEFAULT. In all three "
+            "F1STAB-003, F1GRID-001) are scanned as frozen records BY DEFAULT. In all "
             "cases stale pointers are reported as INFO (frozen_record_stale_pointer) "
             "and the docs are never modified. CRITICAL/ERROR indicate stale pointers "
             "or hash drift requiring investigation. Default output: research_state/."
@@ -366,7 +366,8 @@ def main() -> int:
                     help="Scan DISPERSION-002 preregistration docs as frozen records (stale pointers reported as INFO).")
     ap.add_argument("--no-disp003-frozen-preregs", action="store_true",
                     help="Disable the default scan of DISP-003 sub-experiment prereg "
-                         "docs (F1COVERAGE-001, F1SENS-002, F1STAB-003) as frozen records.")
+                         "docs (F1COVERAGE-001, F1SENS-002, F1STAB-003, F1GRID-001) as "
+                         "frozen records.")
     args = ap.parse_args()
     frozen = [DISP002_PREREG_DIR] if args.include_disp002_preregs else []
     disp003 = [] if args.no_disp003_frozen_preregs else None
