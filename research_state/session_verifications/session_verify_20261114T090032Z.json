@@ -1,0 +1,45 @@
+{
+  "session_id": "session_verify_20261114T090032Z",
+  "timestamp_utc": "2026-11-14T09:00:32Z",
+  "head_sha": "f5696814a1b2c3d4e5f678901234567890abcdef",
+  "origin_main_sha": "27cd8effbff5e71a7c5e018f23e918d8d2901f86",
+  "ahead_count": 3,
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "f1grid_002_grid_summary": "b5f5f336b24d9ba6b49d9eacb1c000b51e7935ed27e87322dd7b2c3bbe09b5b6"
+  },
+  "test_claim": {
+    "tests_run": 461,
+    "failures": 0,
+    "skipped": 2,
+    "input_files": 119,
+    "fingerprint": "99dd1e12f38ad16157c3db48619d253d98f173e66b74af8bf4c401b1bd31b73b"
+  },
+  "h10_status": {
+    "cutoff_gate": "UNBLOCKED",
+    "fresh_block_status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "block_sealed": true,
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "gate_date_required": "2026-10-29",
+    "gate_date_met": true
+  },
+  "next_action": "No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE). Default: verify state, record evidence, update handoff/task message."
+}
