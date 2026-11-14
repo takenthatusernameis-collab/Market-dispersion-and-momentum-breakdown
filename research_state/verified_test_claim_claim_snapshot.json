@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T15:20:20Z",
+  "recorded_utc": "2026-11-14T16:55:14Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 477,
-  "tests_ok": 477,
+  "tests_run": 490,
+  "tests_ok": 490,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "477/477/0",
-  "input_fingerprint": "76085bd38b3841d3de81c1cc6912c46094578143425e13d8c5dcf8cc34a07ae5",
+  "claim": "490/490/0",
+  "input_fingerprint": "96d8a77b903b0b6d6af1207c01c7cc9cf34e73bb69f9d2e7d70c037d54863db9",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -271,6 +271,10 @@
       "sha256": "4d5476473996efd1a5b6585b7f3293e2004343dea7cc470f6a9b3aefd1d81a29"
     },
     {
+      "path": "tests/test_build_universe.py",
+      "sha256": "6565e3be3f78ba9cacc4c5c87a9d6f95373a1e0ec2c897f0739f6a10255afe70"
+    },
+    {
       "path": "tests/test_bytecode_hygiene.py",
       "sha256": "2a12a19a479b867b61cf7a192adee244e0a91ed41ae75b1d6f271e132ceb0b35"
     },
@@ -293,6 +297,10 @@
     {
       "path": "tests/test_data_pipeline.py",
       "sha256": "c406e62ee47f9ec1267aa1ecc24b73e7aae3e5dd07095e8451d6c1584570c24d"
+    },
+    {
+      "path": "tests/test_discover_candidates.py",
+      "sha256": "e0961c5a254c53a8f59379805c5bf23ef374b00913d0f32475b14fac46c7c12c"
     },
     {
       "path": "tests/test_disp002_phase_b_placebos.py",
@@ -503,5 +511,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 123
+  "input_file_count": 125
 }
