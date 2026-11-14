@@ -1,0 +1,100 @@
+{
+  "session_id": "session_verify_20261114T0616Z",
+  "timestamp_utc": "2026-11-14T06:26:00Z",
+  "head_commit": "de7332606a11b9174dfce6960802b45523614efb",
+  "branch": "main",
+  "working_tree_clean": false,
+  "requirements_verified": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compile_check": "EXIT 0",
+  "test_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "exit_code": 0,
+    "tests_run": 461,
+    "tests_ok": 461,
+    "tests_failed": 0,
+    "tests_skipped": 2
+  },
+  "verified_test_claim": {
+    "claim": "461/461/0",
+    "input_fingerprint": "99dd1e12f38ad16157c3db48619d253d98f173e66b74af8bf4c401b1bd31b73b",
+    "input_file_count": 119,
+    "recorded_utc": "2026-11-14T06:26:00Z",
+    "snapshot_path": "research_state/verified_test_claim_claim_snapshot.json"
+  },
+  "read_only_audits": {
+    "prereg_and_h10_fresh_reference_consistency": {
+      "pass": true,
+      "scanned": 17,
+      "critical": 0,
+      "errors": 0,
+      "info": 0,
+      "artifact": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261114T062530Z.json"
+    },
+    "integrity_audit_reference_consistency": {
+      "pass": true,
+      "scanned": 19,
+      "critical": 0,
+      "errors": 0,
+      "info": 13,
+      "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T062530Z.json"
+    },
+    "preregistration_coverage": {
+      "pass": true,
+      "audits": 19,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0,
+      "artifact": "research_state/preregistration_coverage_audit.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "h10_cutoff_gate": "UNBLOCKED",
+    "november_probe_status": "BLOCKED_AS_PROBE_ONLY"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "committed_grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "committed_grid_summary": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "h10_fresh_block": {
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true,
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "h10_gate": "BLOCKED_BY_HARD_DATE_GATE",
+  "blocker_detail": "Requires formations strictly after 2026-09-29, strict 30-day maturity, and >=30 prior in-block dispersions for trailing-decile high/low rule. Only post-2026-09-29 formations live in unpublished November 2026 monthly archive (0/127 published). 30-day maturity and truncated-outcome prohibition are hard safeguards; MIN_STATE_FORMATIONS=5 confirmatory floor separate and unmet.",
+  "new_task_completed": "F1GRID-002 (H27, EXPLORATORY_ONLY) vintage-trim full grid executed and finalized: scripts/run_f1_grid_vintage_trim.py arm A on committed panels trimmed to 2026-09-30 reproduces the committed 216-cell DISPERSION-003 grid_result_ledger.json within 1e-9 on all 216 cells (0 drifts; fidelity anchor passed); arm B (four F1-repaired kline panels, funding shared) evaluated on the same vintage, 216/216 OK both arms; grid_result_ledger.json and grid_summary.json written under artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/; all aggregate descriptive labels false (null sensitivity result); nothing promoted; no frozen artifact/panel/ledger modified. Durable-state repairs: manifest next_required_actions sequence claim 26->27 (H27 allocated; registry H1..H27, next_sequence_number 27); test claim snapshot refreshed 461/461/0 (119 files); run_manifest session_record_20261114T0616Z added and session_record_latest repointed to it.",
+  "uncommitted_changes": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_summary.json",
+    "research_state/run_manifest.json",
+    "research_state/verified_test_claim_claim_snapshot.json",
+    "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261114T062530Z.json",
+    "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T062530Z.json"
+  ]
+}
