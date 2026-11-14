@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261114T225000Z",
+  "timestamp_utc": "2026-11-14T22:50:00Z",
+  "agent": "kilo",
+  "head_at_start": "6177e0bb8457e64ef0f3bb92444f40ddb5280d97",
+  "origin_main_at_start": "6177e0bb8457e64ef0f3bb92444f40ddb5280d97",
+  "persistence_claimable_at_start": true,
+  "prior_session": "session_verify_20261114T223800Z",
+  "task_completed": "Added tests/test_fix_candidate_validation_timestamps.py (8 hermetic tests) demonstrating a real gap: scripts/fix_candidate_validation_timestamps.py (DISPERSION-003 candidate timestamp-boundary repair) had no test file. Tests cover the pure seam recomputing time_first/time_last as min/max of raw CoinMetrics payload row times: inverted-boundary repair, already-correct idempotency, missing raw file (rc=1), non-ok status skip, missing raw_path skip, raw without times skip, both metrics processed independently, empty candidates_processed. Synthetic records in a temp dir under repo root (module-level VAL_PATH monkeypatched); no network, no committed-panel reads/writes, no frozen-artifact mutation. compileall EXIT 0; targeted tests 8/8 OK; full suite python3 -m unittest discover -s tests Ran 674 tests, OK, skipped=2; python3 scripts/record_test_claim.py refreshed claim to 674/674/0 (139 input files, fingerprint 8abc38a17b718dae...) and re-pinned run_manifest latest_verified_test_claim.",
+  "checks": {
+    "compileall": "python3 -m compileall -q scripts tests (EXIT 0)",
+    "targeted_tests": "python3 -m unittest tests.test_fix_candidate_validation_timestamps -v (8 tests, OK)",
+    "full_suite": "python3 -m unittest discover -s tests (Ran 674 tests, OK, skipped=2)",
+    "record_test_claim": "python3 scripts/record_test_claim.py -> 674/674/0, 139 files, fingerprint 8abc38a17b718dae...; run_manifest latest_verified_test_claim=674/674/0"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "frontier_universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176 (last recorded value from prior handoff; no current tracked file re-matches this hash — pre-existing record discrepancy, not modified this session)"
+  },
+  "h10_status": {
+    "cutoff_gate": "UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 is BLOCKED as a probe only (0/127 target_published=true), not promoted into H10 gate decision",
+    "fresh_block": "IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true); k not advanced",
+    "date_gate": "No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait)"
+  },
+  "registry": {"next_sequence_number": 28, "hypotheses": "H1..H28"},
+  "frozen_artifacts_modified": false,
+  "notes": "numpy 2.5.4 / pandas 3.1.1 present in environment. Two untracked oversized F1GRID-002 artifacts remain gitignored and must not be committed (grid_result_ledger.json ~166 MB, grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json ~66 MB). Working tree carries tests/test_fix_candidate_validation_timestamps.py plus durable-state updates (run_manifest.json, verified_test_claim_claim_snapshot.json); uncommitted, commit not requested."
+}
