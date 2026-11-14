@@ -39,22 +39,31 @@ CLAIM_FORMAT = re.compile(r"^(\d+)/(\d+)/(\d+)$")
 INPUT_DIRS = ("tests", "scripts")
 
 
-def inventory_fingerprint() -> str:
-    """Deterministic sha256 over the sorted .py file inventory of the suite inputs."""
+def inventory_fingerprint() -> tuple[str, list[dict]]:
+    """Deterministic sha256 over the sorted .py file inventory of the suite inputs.
+
+    Returns the aggregate fingerprint and a list of per-file entries with
+    path and sha256, so the guard can name exactly which files drifted.
+    """
     files = []
     for d in INPUT_DIRS:
         for p in sorted((ROOT / d).rglob("*.py")):
             if "__pycache__" in p.parts:
                 continue
-            files.append((p.relative_to(ROOT).as_posix(), p.read_bytes()))
-    files.sort(key=lambda t: t[0])
+            data = p.read_bytes()
+            file_hash = hashlib.sha256(data).hexdigest()
+            files.append({
+                "path": p.relative_to(ROOT).as_posix(),
+                "sha256": file_hash,
+            })
+    files.sort(key=lambda t: t["path"])
     h = hashlib.sha256()
-    for rel, data in files:
-        h.update(rel.encode("utf-8"))
+    for f in files:
+        h.update(f["path"].encode("utf-8"))
         h.update(b"\0")
-        h.update(data)
+        h.update(f["sha256"].encode("utf-8"))
         h.update(b"\0")
-    return h.hexdigest(), [rel for rel, _ in files]
+    return h.hexdigest(), files
 
 
 def parse_summary(output: str):

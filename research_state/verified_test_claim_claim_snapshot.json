@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T01:09:57Z",
+  "recorded_utc": "2026-11-14T01:24:23Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 412,
@@ -8,121 +8,464 @@
   "tests_failures": 0,
   "tests_skipped": 2,
   "claim": "412/412/0",
-  "input_fingerprint": "5ec5cf7f263ff4b9cd290c30fb011f15e5a826131fd91df9f76fe804938e8154",
+  "input_fingerprint": "a2d17c98255d2bbe48ecafe0f718b097a7b1a918eaa92f4adc1b555ea3e3d0dc",
   "input_files": [
-    "scripts/add_missing_binance_provenance_series.py",
-    "scripts/alpha_spending.py",
-    "scripts/append_manifest_entry.py",
-    "scripts/audit_integrity_audit_references.py",
-    "scripts/audit_prereg_and_h10_fresh_references.py",
-    "scripts/audit_preregistration_coverage.py",
-    "scripts/build_universe.py",
-    "scripts/discover_candidates.py",
-    "scripts/dispersion_regime_conditioning.py",
-    "scripts/dispersion_rolling_window.py",
-    "scripts/eval_forward_block.py",
-    "scripts/f1_coverage_outcome_sensitivity.py",
-    "scripts/f1_coverage_stability_audit.py",
-    "scripts/f1_panel_coverage_repair.py",
-    "scripts/fetch_binance_data.py",
-    "scripts/fetch_coinmetrics_marketcap.py",
-    "scripts/fetch_missing_october_zips.py",
-    "scripts/finalize_data_gate.py",
-    "scripts/fix_binance_manifest_boundaries.py",
-    "scripts/fix_candidate_validation_timestamps.py",
-    "scripts/fix_frontier_last_updated_utc.py",
-    "scripts/fix_funding_panel_rows.py",
-    "scripts/fix_inference.py",
-    "scripts/fix_marketcap_manifest_boundaries.py",
-    "scripts/fix_refresh_provenance_boundaries.py",
-    "scripts/formation_accounting.py",
-    "scripts/forward_block_cluster_bootstrap.py",
-    "scripts/forward_block_final_integrity_audit.py",
-    "scripts/forward_block_overlap_aware_audit.py",
-    "scripts/forward_block_placebo_red_team.py",
-    "scripts/forward_block_tail_influence.py",
-    "scripts/forward_block_temporal_stability.py",
-    "scripts/generate_grid_manifest.py",
-    "scripts/generate_grid_v3_manifest.py",
-    "scripts/make_grid_quick.py",
-    "scripts/normalize_binance_panels.py",
-    "scripts/phase_b_placebos.py",
-    "scripts/phase_b_placebos_disp002.py",
-    "scripts/phase_c.py",
-    "scripts/phase_c_proper.py",
-    "scripts/phase_c_refined.py",
-    "scripts/probe_cutoff_gate.py",
-    "scripts/rebuild_binance_panels.py",
-    "scripts/record_test_claim.py",
-    "scripts/refresh_free_data.py",
-    "scripts/regenerate_binance_manifest.py",
-    "scripts/repair_funding_panels.py",
-    "scripts/repair_h10_fresh_block_registry_hash.py",
-    "scripts/repair_refresh_provenance_binance.py",
-    "scripts/rewrite_state_json.py",
-    "scripts/run_all_phases_c_g.py",
-    "scripts/run_dispersion002_phases.py",
-    "scripts/run_dispersion003_grid.py",
-    "scripts/run_phase_g_fast.py",
-    "scripts/run_phase_g_only.py",
-    "scripts/state_representativeness_audit.py",
-    "scripts/validate_candidate_batch.py",
-    "tests/test_alpha_spending.py",
-    "tests/test_append_manifest_entry.py",
-    "tests/test_binance_manifest_provenance.py",
-    "tests/test_bytecode_hygiene.py",
-    "tests/test_candidate_validation.py",
-    "tests/test_canonical_block_git_pinned.py",
-    "tests/test_continuous_research_contract.py",
-    "tests/test_cutoff_probe.py",
-    "tests/test_data_pipeline.py",
-    "tests/test_disp002_phase_b_placebos.py",
-    "tests/test_dispersion_regime_conditioning.py",
-    "tests/test_dispersion_rolling_window.py",
-    "tests/test_experiment_registry_reference.py",
-    "tests/test_f1_coverage_outcome_sensitivity.py",
-    "tests/test_f1_coverage_stability_audit.py",
-    "tests/test_f1_panel_coverage_repair.py",
-    "tests/test_forward_block_accounting.py",
-    "tests/test_forward_block_cluster_bootstrap.py",
-    "tests/test_forward_block_final_integrity_audit.py",
-    "tests/test_forward_block_integrity.py",
-    "tests/test_forward_block_output_dir.py",
-    "tests/test_forward_block_overlap_aware_audit.py",
-    "tests/test_forward_block_overlap_aware_interval.py",
-    "tests/test_forward_block_placebo_red_team.py",
-    "tests/test_forward_block_tail_influence.py",
-    "tests/test_forward_block_temporal_stability.py",
-    "tests/test_grid_validation.py",
-    "tests/test_h10_confirmatory_gate.py",
-    "tests/test_h10_feasibility.py",
-    "tests/test_h10_fresh_block_current.py",
-    "tests/test_h10_fresh_block_hash_pinned.py",
-    "tests/test_h10_gate_vs_november_probe.py",
-    "tests/test_h10_sequential_alpha_spending.py",
-    "tests/test_h10_sequential_artifact_contract.py",
-    "tests/test_handoff_session_entries.py",
-    "tests/test_holm_pvalue.py",
-    "tests/test_inference_repro.py",
-    "tests/test_integrity_audit_reference_consistency.py",
-    "tests/test_latest_probe_record_pinned.py",
-    "tests/test_ledger_manifest_binding.py",
-    "tests/test_marketcap_manifest_provenance.py",
-    "tests/test_momentum_accounting.py",
-    "tests/test_november_probe_summary_consistency.py",
-    "tests/test_panel_coverage_boundaries.py",
-    "tests/test_prereg_and_h10_fresh_reference_consistency.py",
-    "tests/test_preregistration_completeness.py",
-    "tests/test_preregistration_coverage_audit.py",
-    "tests/test_provenance_stability.py",
-    "tests/test_record_test_claim.py",
-    "tests/test_refresh_provenance_boundaries.py",
-    "tests/test_requirements_importable.py",
-    "tests/test_sequential_alpha_rule_source.py",
-    "tests/test_state_consistency.py",
-    "tests/test_state_representativeness_audit.py",
-    "tests/test_state_timestamp_not_stale.py",
-    "tests/test_verified_test_claim_guard.py"
+    {
+      "path": "scripts/add_missing_binance_provenance_series.py",
+      "sha256": "6d4165334ffb2d3dfb8f08ef3a95006a2d6fad0e25afa219ba93546a0802afba"
+    },
+    {
+      "path": "scripts/alpha_spending.py",
+      "sha256": "dbf82dadfbd8e733e4a6afb2d561b68f92d6980287671dedc25a9eab139b9940"
+    },
+    {
+      "path": "scripts/append_manifest_entry.py",
+      "sha256": "b38976b2f3b20a26f07f665b9afa2cbab7d5d77b42cb9ef023222d9af9f2a958"
+    },
+    {
+      "path": "scripts/audit_integrity_audit_references.py",
+      "sha256": "e531787f156944cbfc0913717517f7ef45b60fb0a9dc8a1281c0570158c7bdff"
+    },
+    {
+      "path": "scripts/audit_prereg_and_h10_fresh_references.py",
+      "sha256": "fd5087adbc87583c9f74d28ce5a66a0f8b2623cc428b060472b60f3f58f77124"
+    },
+    {
+      "path": "scripts/audit_preregistration_coverage.py",
+      "sha256": "fa28664a874b07db8a1a8d67f1130c48f155d8c14c572c8811ad34deb1d63356"
+    },
+    {
+      "path": "scripts/build_universe.py",
+      "sha256": "7bea5029f258f6e6d50e970e17f4a7c9a32cd52275146204ebd3bf62060065d4"
+    },
+    {
+      "path": "scripts/discover_candidates.py",
+      "sha256": "fb2c63b1d56b69ed5e19f9bc04e6bd7431c6247e080b4ebe062a5954f285239b"
+    },
+    {
+      "path": "scripts/dispersion_regime_conditioning.py",
+      "sha256": "e75021c95bb413786191f2bb7b10be3675400ea50433eaf6ee74d743841604da"
+    },
+    {
+      "path": "scripts/dispersion_rolling_window.py",
+      "sha256": "5b7fc0534eea08e00f651f703c883e5c7d5b881def87959a9e7b41c262aac290"
+    },
+    {
+      "path": "scripts/eval_forward_block.py",
+      "sha256": "27742edb4478f0df9af80dc4d5f7d81346624ad1e383e126e7cd6d58e283001c"
+    },
+    {
+      "path": "scripts/f1_coverage_outcome_sensitivity.py",
+      "sha256": "d832fbbf5753225ec2776cd73e6ce8f4d119ed3f163722b89d3208a7dd27c2c6"
+    },
+    {
+      "path": "scripts/f1_coverage_stability_audit.py",
+      "sha256": "d30580151e191b29de08ad9a03ed44de3acd1a4b86a73a8ae7e5a01729d971e3"
+    },
+    {
+      "path": "scripts/f1_panel_coverage_repair.py",
+      "sha256": "a5af8a25b611c15cd07e27533aa3b6dac7c594a55ff19736aec176b9f811c81c"
+    },
+    {
+      "path": "scripts/fetch_binance_data.py",
+      "sha256": "e8bb0a8bebbc566ede76dd099d6ca34aa969c2d93f50cd6a046f0df0328cc403"
+    },
+    {
+      "path": "scripts/fetch_coinmetrics_marketcap.py",
+      "sha256": "86c586f50f866ed93544b3d6601000da9e7a224b4e9635dc65850d61b8e030ac"
+    },
+    {
+      "path": "scripts/fetch_missing_october_zips.py",
+      "sha256": "daf8a21707bd4a68a5007b3de5c8fe2c83a85cfea6fbb63862dee44b1671b93a"
+    },
+    {
+      "path": "scripts/finalize_data_gate.py",
+      "sha256": "31be583d8c993ace54cbcde4aa4873131d5ddc1a03856ef78e96d0c45fded875"
+    },
+    {
+      "path": "scripts/fix_binance_manifest_boundaries.py",
+      "sha256": "d731dacf46307ff37a59331ca0727d36a14dcd3847769825145a97e29828ca0f"
+    },
+    {
+      "path": "scripts/fix_candidate_validation_timestamps.py",
+      "sha256": "46904d3516b6c467daa86296cecfef098881e18805077f80f8842f03336b88fb"
+    },
+    {
+      "path": "scripts/fix_frontier_last_updated_utc.py",
+      "sha256": "6ff361aeb3f2a1f3c946a21e6141b20397be2545b34968be590e7bf9246079db"
+    },
+    {
+      "path": "scripts/fix_funding_panel_rows.py",
+      "sha256": "7c7ab85ebde09709d1d6d6f691d4ca500b14ef39a8b33cc37b0217cf7cc9d9f1"
+    },
+    {
+      "path": "scripts/fix_inference.py",
+      "sha256": "8e9189f3fe6f17c3a418296dd36794b37ab9163060d0cd1cede46ef51b817b34"
+    },
+    {
+      "path": "scripts/fix_marketcap_manifest_boundaries.py",
+      "sha256": "417489327743fb88873d2f2f7fd2fbb919775517dcb656e6eb4452a8dd1f5960"
+    },
+    {
+      "path": "scripts/fix_refresh_provenance_boundaries.py",
+      "sha256": "5a7290031be7a4d33bd5c7085796547ed30f03a7e2eb5c3c9ea2c9ad6c407c20"
+    },
+    {
+      "path": "scripts/formation_accounting.py",
+      "sha256": "f75ae123f4283a211387f271a26d870de38275414763b025a8b4064e2ee603ab"
+    },
+    {
+      "path": "scripts/forward_block_cluster_bootstrap.py",
+      "sha256": "8c13c69a9cfda48b0b522eeba8c833125035ef0dc55f27ac91ef4f752d20613b"
+    },
+    {
+      "path": "scripts/forward_block_final_integrity_audit.py",
+      "sha256": "0b046b605c75c2517ea2366e6c082da2633f410c28556068dba64608f4fe43e7"
+    },
+    {
+      "path": "scripts/forward_block_overlap_aware_audit.py",
+      "sha256": "b42a205dc8c8abbd849f05b8fb1000e2c14ad157e06f478c8d38591a8405e518"
+    },
+    {
+      "path": "scripts/forward_block_placebo_red_team.py",
+      "sha256": "93f731fb20862bdeaac784711e0355675644a1898893bcdbaaf37d03e46e1550"
+    },
+    {
+      "path": "scripts/forward_block_tail_influence.py",
+      "sha256": "78f02540003d4a1d8be0b16cac5f55587c43d472c981bf232812168ea402d8fb"
+    },
+    {
+      "path": "scripts/forward_block_temporal_stability.py",
+      "sha256": "e75ad54c4291b3deb3481753757b1a4cd0914c0489d1f9ef7192a9e93a23062c"
+    },
+    {
+      "path": "scripts/generate_grid_manifest.py",
+      "sha256": "dfbbf5d8cb4edb637629b86fa24afff57fc2e82b77000db7d91d0c2e18025117"
+    },
+    {
+      "path": "scripts/generate_grid_v3_manifest.py",
+      "sha256": "77669ff0539d1d8a11828454644e0e6fe8417b29e2290550a79fb6d656432d0b"
+    },
+    {
+      "path": "scripts/make_grid_quick.py",
+      "sha256": "a346e3bf19225dfead6a0d88455a43256881c28c560f82e544e34e3d4f1769e1"
+    },
+    {
+      "path": "scripts/normalize_binance_panels.py",
+      "sha256": "376d92c95f71c5b263e3db903b86d653d2ca08edb2b800987e4050428f1bb37d"
+    },
+    {
+      "path": "scripts/phase_b_placebos.py",
+      "sha256": "1aadd07ff1a3175e68c61d5aec4e4118e1cc672342e262aa9dbdf2c87d02823a"
+    },
+    {
+      "path": "scripts/phase_b_placebos_disp002.py",
+      "sha256": "5cebaafe84e0eacfcfec6f67d6499afd0cbbde4b720c6479e881ddf6f2649926"
+    },
+    {
+      "path": "scripts/phase_c.py",
+      "sha256": "b85ecbb21750b0854312fc6a6d1be5b1dadfab719de0adfd783ae8e65df4e9fe"
+    },
+    {
+      "path": "scripts/phase_c_proper.py",
+      "sha256": "af38d4e9ad51c66e1e3aa7737ab5d211ef05b023f303a11e1e2cf617e9e94eec"
+    },
+    {
+      "path": "scripts/phase_c_refined.py",
+      "sha256": "36c4e723efb8dbb54c37f17d9752a32d152f29f0b3aea24a93b8c21eabfdba1a"
+    },
+    {
+      "path": "scripts/probe_cutoff_gate.py",
+      "sha256": "cd671aedaed4578520cc39ac5d926a923b5dd2b46aafde7b389db9384a6709e1"
+    },
+    {
+      "path": "scripts/rebuild_binance_panels.py",
+      "sha256": "31ea118ea01a2150ae8338a8effe64e4267a0aca50e84e319708021a59e68dbd"
+    },
+    {
+      "path": "scripts/record_test_claim.py",
+      "sha256": "d7ee696d50b12327f86b9f763bd8f2de43503886c75e5dd70f60a37e59b7295d"
+    },
+    {
+      "path": "scripts/refresh_free_data.py",
+      "sha256": "c83f2f0ac383b868fa5fef9abe2d914bbb1b2b6645f9572aeb850cf36811cce0"
+    },
+    {
+      "path": "scripts/regenerate_binance_manifest.py",
+      "sha256": "9f0c54667a0493f3bb4a2e423cb72168332b3ea38a18381f5f53e57f8398cf14"
+    },
+    {
+      "path": "scripts/repair_funding_panels.py",
+      "sha256": "bc68c34426258738e95197dbfeb98f62e281339b8a832ba7abb0a6e451e48e9e"
+    },
+    {
+      "path": "scripts/repair_h10_fresh_block_registry_hash.py",
+      "sha256": "57b022130a987200182db78b8247bf9e93f053fe58ff35428c0c7799d0db9189"
+    },
+    {
+      "path": "scripts/repair_refresh_provenance_binance.py",
+      "sha256": "e1b186e9f36b41aa42cf7fb1d5bd82820d6fa49cb1ca3974b5ceedf788ce6e83"
+    },
+    {
+      "path": "scripts/rewrite_state_json.py",
+      "sha256": "1f5a647da630c53863be4c0c4196fe10eaaa6e7231319cfcd773974f6e855027"
+    },
+    {
+      "path": "scripts/run_all_phases_c_g.py",
+      "sha256": "f25cedb2fcc2d25817885ad8f74b820d5cc83de00a00b8d487cf0fa4d6f37cd2"
+    },
+    {
+      "path": "scripts/run_dispersion002_phases.py",
+      "sha256": "4c358dbc16460d06cb34393a9000c78282bd5a4351d5e97161112247ccab1399"
+    },
+    {
+      "path": "scripts/run_dispersion003_grid.py",
+      "sha256": "e34492301861fed39bc307b05e449a5b04c91f72b34c350d163d428365098d76"
+    },
+    {
+      "path": "scripts/run_phase_g_fast.py",
+      "sha256": "b8c1dc4affa0ae8db8ff3077d35f1fe3a3e7674060b48578f337561043d1eef6"
+    },
+    {
+      "path": "scripts/run_phase_g_only.py",
+      "sha256": "7b45ae62c27fbb1cf676d321015bba64926b339f7788dd34acec3e4f8f3d90b2"
+    },
+    {
+      "path": "scripts/state_representativeness_audit.py",
+      "sha256": "1b6621bbbd83e289faa996dd1ec469d4292eb7fe1420141c081e2ec99f188fdf"
+    },
+    {
+      "path": "scripts/validate_candidate_batch.py",
+      "sha256": "384387247b3550226e0af2629547516bae1a75252a93fab5b5a9223cb8b99cf7"
+    },
+    {
+      "path": "tests/temp_test_drift.py",
+      "sha256": "2ef4faef5c13b1765ad497a759e4433ab4691c9510ecc374ebc02b0f668f2ee7"
+    },
+    {
+      "path": "tests/test_alpha_spending.py",
+      "sha256": "7b057bd4c6930bf1f1f7d0678cda2da4ee1309c6894906b5b5b65c98284a4c3e"
+    },
+    {
+      "path": "tests/test_append_manifest_entry.py",
+      "sha256": "cc1ffde51a981c48f0c55b4366acd839360085f1c1d5f21f624819ce310b8936"
+    },
+    {
+      "path": "tests/test_binance_manifest_provenance.py",
+      "sha256": "4d5476473996efd1a5b6585b7f3293e2004343dea7cc470f6a9b3aefd1d81a29"
+    },
+    {
+      "path": "tests/test_bytecode_hygiene.py",
+      "sha256": "1d79db554c43fd3504dcf742f5decbf8cdf69889088792ca88f643e1e27a3625"
+    },
+    {
+      "path": "tests/test_candidate_validation.py",
+      "sha256": "0b57ae9b9ef07efbd90457ee2d1128101936ec100f2a174f68c15ed3f77961e5"
+    },
+    {
+      "path": "tests/test_canonical_block_git_pinned.py",
+      "sha256": "1abe632596a18366e4b50782e0b680fba8297758882051bd3481f8a340e19594"
+    },
+    {
+      "path": "tests/test_continuous_research_contract.py",
+      "sha256": "8e8d748d0696f15e0fe91cadb164f07cc5ead86debcb62653e87eedf25dc89f3"
+    },
+    {
+      "path": "tests/test_cutoff_probe.py",
+      "sha256": "b13cb6327e83e854df23d51b4572ff6742423202294c7f0d38c27c76b97128a1"
+    },
+    {
+      "path": "tests/test_data_pipeline.py",
+      "sha256": "c406e62ee47f9ec1267aa1ecc24b73e7aae3e5dd07095e8451d6c1584570c24d"
+    },
+    {
+      "path": "tests/test_disp002_phase_b_placebos.py",
+      "sha256": "d81917f0f022ee45c9bfab5e4d93ad6e4965ccb556c44266b2289f2b809d44e3"
+    },
+    {
+      "path": "tests/test_dispersion_regime_conditioning.py",
+      "sha256": "80e8d602cd345ba159e4d9028605c43bf0489bbae354142f10d5e2c477725012"
+    },
+    {
+      "path": "tests/test_dispersion_rolling_window.py",
+      "sha256": "df9dadbb761a57e5833e9170267a7bfeb9fe2ea17d91886ecbe926b8433c2847"
+    },
+    {
+      "path": "tests/test_experiment_registry_reference.py",
+      "sha256": "9b4bd074f37a71a5757a43e97cc46c2a2750bfea2bb5edac533d9163de034fed"
+    },
+    {
+      "path": "tests/test_f1_coverage_outcome_sensitivity.py",
+      "sha256": "bffe54e11b2e2a8d5cc757d27bca8814b94d0e62918c53f322b8a5548dc76c24"
+    },
+    {
+      "path": "tests/test_f1_coverage_stability_audit.py",
+      "sha256": "92d9182bbe33ff22923b70cebfe3dc56f3d9624c2c40877b6efa43b60171a6c1"
+    },
+    {
+      "path": "tests/test_f1_panel_coverage_repair.py",
+      "sha256": "1e3a64e45e043701386401339445712dfb6e7bcfe9879f375b88bde6763022a9"
+    },
+    {
+      "path": "tests/test_forward_block_accounting.py",
+      "sha256": "fc52fd2d5214945ed13ee8f41bc9fab3507ad8402f3d9e3b8582d6b78ad0d43f"
+    },
+    {
+      "path": "tests/test_forward_block_cluster_bootstrap.py",
+      "sha256": "9871f39d5be24e4cb405c43886d4edbe070148b9f22d24da59074ded657d27ce"
+    },
+    {
+      "path": "tests/test_forward_block_final_integrity_audit.py",
+      "sha256": "69f1ab0093ee09ab4766f4e7d7e1690ff2bb519a150018b528e729fa29b1da35"
+    },
+    {
+      "path": "tests/test_forward_block_integrity.py",
+      "sha256": "55f7603e9aa27ab4edbf58d650aec46cd3ee8e5da06156395b89cfd1637059fa"
+    },
+    {
+      "path": "tests/test_forward_block_output_dir.py",
+      "sha256": "0bef208903d20162e14948b80f32d5b46f035fdb18a0cbea0aeb37b3e0a0f854"
+    },
+    {
+      "path": "tests/test_forward_block_overlap_aware_audit.py",
+      "sha256": "ddcb8cc23aeba7ca9feb069679b6c60402d9f8d612d0d9c990d6e2c23894461f"
+    },
+    {
+      "path": "tests/test_forward_block_overlap_aware_interval.py",
+      "sha256": "4b7b00547787ef2a1a755d927bdef23d2b9f8d0f11eb911a250d0913edc3fe3e"
+    },
+    {
+      "path": "tests/test_forward_block_placebo_red_team.py",
+      "sha256": "4f14e54ad71592b1fe56cbd73c81554effd09d3b1cdb71ac0303286bad435475"
+    },
+    {
+      "path": "tests/test_forward_block_tail_influence.py",
+      "sha256": "eba20e460a432f04b0b0a87ba9064017d2b2b0a432d424d77146da41b04a6e01"
+    },
+    {
+      "path": "tests/test_forward_block_temporal_stability.py",
+      "sha256": "64ff1d6dac6c6d881cedd990b8f70774fa20d58a8ab78302f68d268cb74d4e85"
+    },
+    {
+      "path": "tests/test_grid_validation.py",
+      "sha256": "ed3b3e5be9db4c2fea999484deced1a64183896e4f88f2a2b2dae080b64920cc"
+    },
+    {
+      "path": "tests/test_h10_confirmatory_gate.py",
+      "sha256": "6dee3e533390060fd3d6618061087761a8a9078b35da15d3ac4f258baef6f524"
+    },
+    {
+      "path": "tests/test_h10_feasibility.py",
+      "sha256": "c103f7510d63a7d3d4ecf616de57c025c058818ecd292bbfa94b01771edba021"
+    },
+    {
+      "path": "tests/test_h10_fresh_block_current.py",
+      "sha256": "26cf1a25101a4f91e37ff7d9f944ed909e3135e6abdf3e2ae195e559f665f614"
+    },
+    {
+      "path": "tests/test_h10_fresh_block_hash_pinned.py",
+      "sha256": "7607ca3ddaccdea79aa5cbd0580424b56a808757cbf62825b681590f3b86bd04"
+    },
+    {
+      "path": "tests/test_h10_gate_vs_november_probe.py",
+      "sha256": "7ce15118a040488d5973e61d8527f8d9cb00b92f68c96667442045683c6687d7"
+    },
+    {
+      "path": "tests/test_h10_sequential_alpha_spending.py",
+      "sha256": "eb253646b56292235f0a2dc51d7dab8e9aaa77fd57aa519a43bf9d90de63c535"
+    },
+    {
+      "path": "tests/test_h10_sequential_artifact_contract.py",
+      "sha256": "ff3900583d1234f074324dde04c152f38cb6736434e43bad3e63a7afeb962c42"
+    },
+    {
+      "path": "tests/test_handoff_session_entries.py",
+      "sha256": "edfc3845528e7bf523fec96181340323b531d605ffe826530edd7e159bf08b63"
+    },
+    {
+      "path": "tests/test_holm_pvalue.py",
+      "sha256": "a863b93e02f8c3d81a0f92055ae87393522dd84f07e8a9dec43eda46eabe1a0e"
+    },
+    {
+      "path": "tests/test_inference_repro.py",
+      "sha256": "6269f546aa04c46ec1273f1d5c9aaa0170283d960722cd04dfe0517d8a013bfe"
+    },
+    {
+      "path": "tests/test_integrity_audit_reference_consistency.py",
+      "sha256": "34691cc6ef219670fb5ddc0358ed1c648db780a07996a59d1cc512bb3b0be505"
+    },
+    {
+      "path": "tests/test_latest_probe_record_pinned.py",
+      "sha256": "9728b3ae0853214e604c0c60c5af18584a95b795d997cfabba59fcf26a38704b"
+    },
+    {
+      "path": "tests/test_ledger_manifest_binding.py",
+      "sha256": "27c37058c1867310d44adfb9bf3492224f9805787a0dd5d43f97d55b5ecb5931"
+    },
+    {
+      "path": "tests/test_marketcap_manifest_provenance.py",
+      "sha256": "4c56699af407ee6d71f8c964c10042fb4fd5a58d131cb6279723f4fb6dd420ac"
+    },
+    {
+      "path": "tests/test_momentum_accounting.py",
+      "sha256": "1e3bd447b93571a19fe00c9dc946b3e01a6359128dc71eeca1f9ebf119aaa77c"
+    },
+    {
+      "path": "tests/test_november_probe_summary_consistency.py",
+      "sha256": "91fd4d0e09c36a1dd89480398933c5c685e63888b5a5d850b928fa8281fe1488"
+    },
+    {
+      "path": "tests/test_panel_coverage_boundaries.py",
+      "sha256": "742f0ee2cefaddfe3b696ef794a4023ef81d5a1b3519281d1d6643b9c1bdc38b"
+    },
+    {
+      "path": "tests/test_prereg_and_h10_fresh_reference_consistency.py",
+      "sha256": "db282084c602e3ff6c682f502013c7181a50f6fe7b2eff1bf14c21827f54349c"
+    },
+    {
+      "path": "tests/test_preregistration_completeness.py",
+      "sha256": "d1e29ef7bdb72c9fac279c3efba630bcc6841217d37169875da272c8cb610844"
+    },
+    {
+      "path": "tests/test_preregistration_coverage_audit.py",
+      "sha256": "45794bf694a60d4905cf9d33321921c309e96540eb1131dfe795b9b472b440e8"
+    },
+    {
+      "path": "tests/test_provenance_stability.py",
+      "sha256": "a4a038ebf2538ed9937a8fd2ac59d3ba18b1b2c876e286920f56e1c53fb2eace"
+    },
+    {
+      "path": "tests/test_record_test_claim.py",
+      "sha256": "cc27de822b5e3c56130164cfa75b2fec7eb661dcb6f55556a90247e1d3bd2629"
+    },
+    {
+      "path": "tests/test_refresh_provenance_boundaries.py",
+      "sha256": "ec5403fff14da904391a19bc6f1568152f89cb7f41ac2bf77a2f6a0e24652220"
+    },
+    {
+      "path": "tests/test_requirements_importable.py",
+      "sha256": "e7f4a5337a810386d5a54b750f17abef4f370107271e1a9f541b7878a73bb940"
+    },
+    {
+      "path": "tests/test_sequential_alpha_rule_source.py",
+      "sha256": "2b5161114730dc9665c10e09f49803cf0284bca4d4b6f785c32d18fbe65ccefa"
+    },
+    {
+      "path": "tests/test_state_consistency.py",
+      "sha256": "c085e0829493b454643817d50405cd898547667e3ac918c255a2600f91b1bcb3"
+    },
+    {
+      "path": "tests/test_state_representativeness_audit.py",
+      "sha256": "bc063e9c2224e4f0351fc21cf3e64945d0eefcba7fe2059f224d6053bd18f592"
+    },
+    {
+      "path": "tests/test_state_timestamp_not_stale.py",
+      "sha256": "d5034ef027e22caaa47061853836e3d13f63c7e085737a0bc06e66db831b32ad"
+    },
+    {
+      "path": "tests/test_verified_test_claim_guard.py",
+      "sha256": "aa4c41cd4730bc52a3b21f4adb73f940ea7a24f4efb8fbcf24f5f000e43abee3"
+    }
   ],
-  "input_file_count": 113
+  "input_file_count": 114
 }

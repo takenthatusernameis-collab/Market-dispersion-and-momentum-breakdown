@@ -78,8 +78,8 @@ class TestRecordTestClaimExcludesBytecode(unittest.TestCase):
 
     def test_fingerprint_paths_exclude_pycache(self):
         offenders = [
-            p for p in self.files
-            if "/__pycache__/" in p or p.startswith("__pycache__/") or p.endswith(".pyc")
+            f["path"] for f in self.files
+            if "/__pycache__/" in f["path"] or f["path"].startswith("__pycache__/") or f["path"].endswith(".pyc")
         ]
         self.assertEqual(
             offenders, [],
@@ -89,15 +89,18 @@ class TestRecordTestClaimExcludesBytecode(unittest.TestCase):
     def test_fingerprint_covers_all_source_files(self):
         # Sanity: the fingerprint is not empty and covers both input dirs.
         self.assertGreater(len(self.files), 0)
-        self.assertTrue(any(p.startswith("scripts/") for p in self.files))
-        self.assertTrue(any(p.startswith("tests/") for p in self.files))
+        self.assertTrue(any(f["path"].startswith("scripts/") for f in self.files))
+        self.assertTrue(any(f["path"].startswith("tests/") for f in self.files))
 
     def test_snapshot_contains_no_bytecode_paths(self):
         if not SNAPSHOT.exists():
             self.skipTest("no committed snapshot yet")
         snap = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+        snap_files = snap.get("input_files", [])
+        # Handle both old format (list of strings) and new format (list of dicts)
+        paths = [f["path"] if isinstance(f, dict) else f for f in snap_files]
         offenders = [
-            p for p in snap.get("input_files", [])
+            p for p in paths
             if "/__pycache__/" in p or p.startswith("__pycache__/") or p.endswith(".pyc")
         ]
         self.assertEqual(

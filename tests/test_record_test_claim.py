@@ -77,27 +77,29 @@ class InventoryFingerprintTests(unittest.TestCase):
 
     def test_excludes_pycache_and_includes_inputs(self):
         fp, files = rtc.inventory_fingerprint()
-        for rel in files:
-            self.assertNotIn("__pycache__", rel)
-            self.assertTrue(rel.endswith(".py"), rel)
-            self.assertTrue(rel.startswith("tests/") or rel.startswith("scripts/"), rel)
-        self.assertEqual(files, sorted(files))
+        for entry in files:
+            self.assertNotIn("__pycache__", entry["path"])
+            self.assertTrue(entry["path"].endswith(".py"), entry["path"])
+            self.assertTrue(entry["path"].startswith("tests/") or entry["path"].startswith("scripts/"), entry["path"])
+        paths = [f["path"] for f in files]
+        self.assertEqual(paths, sorted(paths))
 
     def test_deterministic_across_calls(self):
         fp1, files1 = rtc.inventory_fingerprint()
         fp2, files2 = rtc.inventory_fingerprint()
         self.assertEqual(fp1, fp2)
-        self.assertEqual(files1, files2)
+        self.assertEqual([f["path"] for f in files1], [f["path"] for f in files2])
 
     def test_matches_snapshot_contract_shape(self):
         # Snapshot must record the same fingerprint algorithm inputs.
         fp, files = rtc.inventory_fingerprint()
         h = hashlib.sha256()
-        for rel in files:
-            data = (ROOT / rel).read_bytes()
+        for entry in files:
+            rel = entry["path"]
+            file_hash = entry["sha256"]
             h.update(rel.encode("utf-8"))
             h.update(b"\0")
-            h.update(data)
+            h.update(file_hash.encode("utf-8"))
             h.update(b"\0")
         self.assertEqual(h.hexdigest(), fp)
 
