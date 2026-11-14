@@ -1,0 +1,269 @@
+{
+  "artifact_sha256": "723b4f7a9db1369b95752c7a53776e5691c7ad843f58851517513a43e407bbef",
+  "audit_id": "DISP-003-SOURCECOV-001",
+  "binance_without_capmkt": [
+    {
+      "asset": "1000sats",
+      "binance_error": null,
+      "binance_symbol": "1000SATSUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T12:55:37Z"
+    },
+    {
+      "asset": "agix",
+      "binance_error": null,
+      "binance_symbol": "AGIXUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T18:35:08Z"
+    },
+    {
+      "asset": "ai",
+      "binance_error": null,
+      "binance_symbol": "AIUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T18:35:08Z"
+    },
+    {
+      "asset": "amb",
+      "binance_error": null,
+      "binance_symbol": "AMBUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T18:57:24Z"
+    },
+    {
+      "asset": "bake",
+      "binance_error": null,
+      "binance_symbol": "BAKEUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T19:52:50Z"
+    },
+    {
+      "asset": "bnx",
+      "binance_error": null,
+      "binance_symbol": "BNXUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T20:12:39Z"
+    },
+    {
+      "asset": "btcst",
+      "binance_error": null,
+      "binance_symbol": "BTCSTUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T20:26:44Z"
+    },
+    {
+      "asset": "cocos",
+      "binance_error": null,
+      "binance_symbol": "COCOSUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T20:43:57Z"
+    },
+    {
+      "asset": "combo",
+      "binance_error": null,
+      "binance_symbol": "COMBOUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T20:45:09Z"
+    },
+    {
+      "asset": "defi",
+      "binance_error": null,
+      "binance_symbol": "DEFIUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T21:32:09Z"
+    },
+    {
+      "asset": "edu",
+      "binance_error": null,
+      "binance_symbol": "EDUUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T21:45:16Z"
+    },
+    {
+      "asset": "flm",
+      "binance_error": null,
+      "binance_symbol": "FLMUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:02:40Z"
+    },
+    {
+      "asset": "hook",
+      "binance_error": null,
+      "binance_symbol": "HOOKUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:26:13Z"
+    },
+    {
+      "asset": "id",
+      "binance_error": null,
+      "binance_symbol": "IDUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:31:08Z"
+    },
+    {
+      "asset": "lever",
+      "binance_error": null,
+      "binance_symbol": "LEVERUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:51:19Z"
+    },
+    {
+      "asset": "lina",
+      "binance_error": null,
+      "binance_symbol": "LINAUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:52:38Z"
+    },
+    {
+      "asset": "luna2",
+      "binance_error": null,
+      "binance_symbol": "LUNA2USDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:58:42Z"
+    },
+    {
+      "asset": "magic",
+      "binance_error": null,
+      "binance_symbol": "MAGICUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T22:59:54Z"
+    },
+    {
+      "asset": "mav",
+      "binance_error": null,
+      "binance_symbol": "MAVUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T23:06:16Z"
+    },
+    {
+      "asset": "nfp",
+      "binance_error": null,
+      "binance_symbol": "NFPUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-24T23:52:16Z"
+    },
+    {
+      "asset": "one",
+      "binance_error": null,
+      "binance_symbol": "ONEUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-25T00:01:58Z"
+    },
+    {
+      "asset": "ong",
+      "binance_error": null,
+      "binance_symbol": "ONGUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-25T00:01:58Z"
+    },
+    {
+      "asset": "phb",
+      "binance_error": null,
+      "binance_symbol": "PHBUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-25T00:11:44Z"
+    },
+    {
+      "asset": "rif",
+      "binance_error": null,
+      "binance_symbol": "RIFUSDT",
+      "capmkt_metrics": {
+        "CapMrktCurUSD": "asset_not_served",
+        "CapMrktEstUSD": "asset_not_served"
+      },
+      "fetch_utc": "2026-10-25T00:51:12Z"
+    }
+  ],
+  "description": "Analysis of candidate_batch_validation.json identifying assets with live Binance USDT perpetual futures but no Coin Metrics market-cap data, preventing their inclusion in the point-in-time expanding universe.",
+  "findings": {
+    "binance_no_capmkt_no": 5140,
+    "binance_no_capmkt_yes": 895,
+    "binance_yes_capmkt_no": 24,
+    "binance_yes_capmkt_yes": 191,
+    "eligible_in_committed_panels": 32,
+    "eligible_in_expanding_universe": 191,
+    "total_candidates_processed": 6250
+  },
+  "generated_utc": "2026-11-14T12:30:00Z",
+  "implications": [
+    "These 24 assets are tradeable on Binance but cannot be ranked historically due to missing Coin Metrics market-cap data.",
+    "The point-in-time expanding universe requires historical market-cap ranks; assets without Coin Metrics coverage are structurally excluded.",
+    "This is a source-coverage limitation, not a fixable data gap, because Coin Metrics Community API does not serve these assets.",
+    "The 191 verified candidates (both Binance and Coin Metrics) represent the maximum feasible expanding universe with current free sources.",
+    "The 32 assets in committed panels are a strict subset of the 191 verified candidates."
+  ],
+  "method": "Full scan of candidate_batch_validation.json (6250 candidates processed). Classification by binance.exists and capmkt status.",
+  "preregistered": false,
+  "source_data": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json",
+  "status": "EXPLORATORY_ONLY",
+  "title": "Source Coverage Gap: Binance Perpetuals Without Coin Metrics Market-Cap Data"
+}
