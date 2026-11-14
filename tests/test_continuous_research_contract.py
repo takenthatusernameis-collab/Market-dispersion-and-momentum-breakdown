@@ -78,8 +78,13 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # an allocated registry hypothesis. H26 was added for the F1GRID-001
         # full 216-cell grid sensitivity arm (DISP-003-F1GRID-001,
         # EXPLORATORY_ONLY) so the committed F1 grid preregistration references
-        # an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 26)
+        # an allocated registry hypothesis. H27 was added for the F1GRID-002
+        # ledger-vintage (as-of 2026-09-30) grid sensitivity arm
+        # (DISP-003-F1GRID-002, EXPLORATORY_ONLY), preregistering the
+        # F1GRID-001 unblock path (a): trim panels to the frozen ledger
+        # vintage so arm A can reproduce the committed ledger before the
+        # arm B contrast.
+        self.assertEqual(registry["next_sequence_number"], 27)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

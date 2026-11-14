@@ -1,0 +1,48 @@
+{
+  "audit_id": "F1GRID-002-VINTAGE-TRIM-PRECHECK",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002",
+  "hypothesis": "H27",
+  "status": "PREREGISTERED_PRECHECK_PASS",
+  "audited_utc": "2026-11-14T04:53:00Z",
+  "type": "EXPLORATORY_ONLY_design_precheck",
+  "purpose": "Bounded pre-execution verification that trimming committed panels to as-of 2026-09-30 (ledger vintage) reproduces the frozen DISPERSION-003 grid ledger for representative cells, satisfying the F1GRID-002 preregistration's single-cell pre-check (H004V002 formation 2026-09-29 spread_gross 0.0, matching ledger) and demonstrating arm-A fidelity is feasible on the trimmed vintage. Full 216-cell arm A/B execution is deferred to the next session to stay within bounded runtime and to keep this session's artifact verifiable.",
+  "trim": {
+    "asof_date_inclusive": "2026-09-30",
+    "scope": "binance kline date, binance funding date, marketcap date trimmed <= 2026-09-30 for both arms",
+    "label": "ledger-vintage (as-of 2026-09-30) EXPLORATORY_ONLY development evidence; not comparable to current-vintage checkpoints; not confirmation"
+  },
+  "inputs_read_only": {
+    "committed_panels": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/",
+    "f1_repaired_klines": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/data/panels/binance_klines_{1INCHUSDT,AAVEUSDT,ACHUSDT,AGLDUSDT}.csv",
+    "grid_manifest": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_config_manifest.json",
+    "committed_ledger_fidelity_target": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json",
+    "committed_ledger_sha256": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "committed_ledger_evaluated_utc": "2026-10-24T10:46:28Z"
+  },
+  "representative_fidelity_checks": {
+    "method": "Loaded committed panels, trimmed date <= 2026-09-30, built price wide/momentum cache/eligibility maps via unmodified run_dispersion003_grid functions, evaluated cells and compared n_formations, date_last and full formations arrays to committed grid_result_ledger.json cells.",
+    "cells": {
+      "H004V001": {"n_formations": 1354, "date_last": "2026-09-29", "matches_ledger": true},
+      "H004V002": {"n_formations": 1354, "date_last": "2026-09-29", "matches_ledger": true, "tail_formation": {"formation_date": "2026-09-29", "dispersion": 0.13279171617692803, "n_assets": 26, "spread_gross": 0.0, "spread_net_1x": -0.001, "state": "mid"}, "tail_matches_ledger": true},
+      "H004V105": {"n_formations": 1338, "date_last": "2026-09-29", "matches_ledger": true},
+      "H004V106": {"n_formations": 1338, "date_last": "2026-09-29", "matches_ledger": true},
+      "H004V216": {"n_formations": 1308, "date_last": "2026-09-29", "matches_ledger": true}
+    },
+    "single_cell_precheck_h004v002_2026_09_29_spread_gross_zero": true,
+    "note": "Representative coverage spans lookbacks/horizons/universe arms including both primary anchors (H004V105 legacy, H004V106 expanding) and a high-index cell (H004V216). This is a precheck, not a substitute for the full 216-cell fidelity gate required before any arm B comparison is written."
+  },
+  "frozen_hashes_verified_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "committed_grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "disposition": {
+    "frozen_artifacts_modified": false,
+    "committed_panels_modified": false,
+    "full_grid_executed": false,
+    "comparison_written": false,
+    "promotion": "none (EXPLORATORY_ONLY preregistration and precheck)"
+  },
+  "next_test": "Execute scripts/run_f1_grid_vintage_trim.py to run the full 216-cell arm A fidelity check on the 2026-09-30-trimmed panels and, only if arm A reproduces the committed ledger within 1e-9 on every cell, evaluate arm B on the same vintage and write the descriptive comparison under this experiment root. Keep all outputs EXPLORATORY_ONLY; do not promote or modify frozen artifacts."
+}
