@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T00:15:18Z",
+  "recorded_utc": "2026-11-14T01:09:57Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 412,
@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 2,
   "claim": "412/412/0",
-  "input_fingerprint": "9c856f3719b842eae8d12079459ff763b172229c6b87cb1260c67404c99c7b3c",
+  "input_fingerprint": "5ec5cf7f263ff4b9cd290c30fb011f15e5a826131fd91df9f76fe804938e8154",
   "input_files": [
     "scripts/add_missing_binance_provenance_series.py",
     "scripts/alpha_spending.py",
