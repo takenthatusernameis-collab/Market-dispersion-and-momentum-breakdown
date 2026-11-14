@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T18:36:01.827469Z",
+  "last_updated_utc": "2026-11-14T18:43:08Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1114,7 +1114,8 @@
     "session_record_verify_20261114T170510Z",
     "session_record_verify_20261114T173707Z",
     "session_record_verify_20261114T175300Z",
-    "session_record_verify_20261114T183536Z"
+    "session_record_verify_20261114T183536Z",
+    "session_record_verify_20261114T184308Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1196,7 +1197,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T183536Z",
+  "session_record_latest": "session_record_verify_20261114T184308Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1446,6 +1447,37 @@
         "next_sequence_number": 28,
         "hypotheses": "H1..H28"
       }
+    }
+  },
+  "session_record_verify_20261114T184308Z": {
+    "session_id": "session_verify_20261114T184308Z",
+    "timestamp_utc": "2026-11-14T18:43:08Z",
+    "action": "Standard verification cycle: compileall, full unittest suite, probe recompute, frozen-hash check, durable-state update (handoff/task/session verification/manifest).",
+    "outcome": "compileall EXIT 0. Full suite Ran 524 tests, OK, skipped=2 (132.861s, exit 0). Verified claim remains 524/524/0 (127 input files, fingerprint 6a54fa9abf527977) with no .py inventory change. Probes recomputed from disk: 397 real (0 MOCK), 270 probe_month=2026-10 (49 published), 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json. Frozen hashes unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier/universe_frontier 9ba08f3f..., grid_v3 1ff4c1f...). H10 cutoff gate UNBLOCKED (gate_date_required 2026-10-29 met); probe_month=2026-11 blocked as probe only (0/127 published) and not promoted into gate decision; h10_fresh IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true), k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait).",
+    "verification": {
+      "local_head": "e44a1f3fdfb4c7afabbd25a19e07370b672fef9d",
+      "remote_head": "e44a1f3fdfb4c7afabbd25a19e07370b672fef9d",
+      "persistence_claimable": true,
+      "compileall_exit": 0,
+      "tests_ran": 524,
+      "tests_passed": 524,
+      "tests_skipped": 2,
+      "test_exit_code": 0,
+      "verified_claim": "524/524/0",
+      "fingerprint_prefix": "6a54fa9abf527977",
+      "input_files": 127
+    },
+    "probe_evidence": {
+      "total_real_probes": 397,
+      "probe_month_2026-10": {
+        "count": 270,
+        "published": 49
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261113T091257Z.json"
     }
   }
 }
