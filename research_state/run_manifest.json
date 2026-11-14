@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T18:25:28Z",
+  "last_updated_utc": "2026-11-14T18:36:01.827469Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1113,7 +1113,8 @@
     "session_record_verify_20261114T165020Z",
     "session_record_verify_20261114T170510Z",
     "session_record_verify_20261114T173707Z",
-    "session_record_verify_20261114T175300Z"
+    "session_record_verify_20261114T175300Z",
+    "session_record_verify_20261114T183536Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1195,7 +1196,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T175300Z",
+  "session_record_latest": "session_record_verify_20261114T183536Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1390,5 +1391,61 @@
     "artifacts_added_this_session": [
       "tests/test_dispersion_rolling_window.py"
     ]
+  },
+  "session_record_verify_20261114T183536Z": {
+    "session_id": "session_verify_20261114T183536Z",
+    "timestamp_utc": "2026-11-14T18:36:01.827469Z",
+    "action": "completed_verification_cycle",
+    "outcome": "success",
+    "verification": {
+      "test_suite": {
+        "ran": 524,
+        "passed": 524,
+        "skipped": 2,
+        "exit_code": 0,
+        "verified_claim": "524/524/0",
+        "fingerprint": "6a54fa9abf527977...",
+        "input_files": 127
+      },
+      "probe_evidence": {
+        "total_real_probes": 397,
+        "probe_month_2026-10": {
+          "count": 270,
+          "published": 49
+        },
+        "probe_month_2026-11": {
+          "count": 127,
+          "published": 0
+        },
+        "newest_probe": "cutoff_probe_20261113T091257Z.json",
+        "mock_probes": 0
+      },
+      "h10_gate": {
+        "cutoff_gate": "UNBLOCKED",
+        "gate_date_required": "2026-10-29",
+        "gate_met_by_month_end": true,
+        "november_probe_blocked": true,
+        "november_probe_published": 0,
+        "fresh_block_immature": true,
+        "n_formations": 1,
+        "n_high": 0,
+        "n_low": 0,
+        "last_allowed_formation_date": "2026-09-30",
+        "data_cutoff_utc": "2026-10-31T00:00:00Z",
+        "block_sealed": true,
+        "k_not_advanced": true,
+        "blocked_by_hard_date_gate": true
+      },
+      "frozen_hashes": {
+        "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+      },
+      "registry": {
+        "next_sequence_number": 28,
+        "hypotheses": "H1..H28"
+      }
+    }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "session_id": "20261114T183536Z",
+  "recorded_utc": "2026-11-14T18:35:36.628726Z",
+  "local_head": "5e7f8f8cb27ff93d104d5679ad2d109af4b4ec69",
+  "remote_head": "5e7f8f8cb27ff93d104d5679ad2d109af4b4ec69",
+  "persistence_claimable": true,
+  "test_suite": {
+    "ran": 524,
+    "passed": 524,
+    "skipped": 2,
+    "exit_code": 0,
+    "verified_claim": "524/524/0",
+    "fingerprint": "6a54fa9abf527977...",
+    "input_files": 127
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "mock_probes": 0
+  },
+  "h10_gate": {
+    "cutoff_gate": "UNBLOCKED",
+    "gate_date_required": "2026-10-29",
+    "gate_met_by_month_end": true,
+    "november_probe_blocked": true,
+    "november_probe_published": 0,
+    "fresh_block_immature": true,
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "block_sealed": true,
+    "k_not_advanced": true,
+    "blocked_by_hard_date_gate": true
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "registry": {
+    "next_sequence_number": 28,
+    "hypotheses": "H1..H28"
+  },
+  "tracked_changes": [
+    "tests/test_dispersion_rolling_window.py",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "research_state/run_manifest.json"
+  ],
+  "oversized_untracked": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json"
+  ]
+}
