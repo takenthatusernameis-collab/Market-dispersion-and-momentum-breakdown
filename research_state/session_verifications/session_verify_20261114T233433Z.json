@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261114T233433Z",
+  "timestamp_utc": "2026-11-14T23:34:33Z",
+  "agent": "kilo",
+  "head_at_start": "bf3daaf0d70632d284d664ab3b916a4961596fad",
+  "origin_main_at_start": "bf3daaf0d70632d284d664ab3b916a4961596fad",
+  "persistence_claimable_at_start": true,
+  "prior_session": "session_verify_20261114T225000Z",
+  "task_completed": "Added tests/test_fix_frontier_last_updated_utc.py (7 hermetic tests) demonstrating a real gap: scripts/fix_frontier_last_updated_utc.py (the DISPERSION-003 universe-frontier last_updated_utc repair) had no test file. Tests cover the pure seam in main(): non-backdating floor new_ts = max(now, probe_utc) -- probe later than now floors to probe, now later than probe uses now, earlier probe never backdates a later last_updated_utc; missing probe_utc returns rc=1 with no write; already-current is a byte-identical noop; other content (notes list, int count) preserved on write; canonical output is indent=2, ensure_ascii-escaped (caf\\u00e9) with trailing newline. Synthetic frontier file in a temp dir under repo root (module-level FRONTIER monkeypatched) with datetime.now frozen to a fixed instant; stdlib-only; no network, no real frontier read/write, no frozen-artifact mutation. compileall EXIT 0; targeted tests 7/7 OK; full suite python3 -m unittest discover -s tests Ran 681 tests, OK, skipped=2; python3 scripts/record_test_claim.py refreshed claim to 681/681/0 (140 input files, fingerprint 6e6fdb0e...) and re-pinned run_manifest latest_verified_test_claim.",
+  "checks": {
+    "compileall": "python3 -m compileall -q scripts tests (EXIT 0)",
+    "targeted_tests": "python3 -m unittest tests.test_fix_frontier_last_updated_utc -v (7 tests, OK)",
+    "full_suite": "python3 -m unittest discover -s tests (Ran 681 tests, OK, skipped=2)",
+    "record_test_claim": "python3 scripts/record_test_claim.py -> 681/681/0, 140 files, fingerprint 6e6fdb0e...; run_manifest latest_verified_test_claim=681/681/0"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "frontier_universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176 (last recorded value from prior handoff; no current tracked file re-matches this hash — pre-existing record discrepancy, not modified this session)"
+  },
+  "h10_status": {
+    "cutoff_gate": "UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 is BLOCKED as a probe only (0/127 target_published=true), not promoted into H10 gate decision",
+    "fresh_block": "IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true); k not advanced",
+    "date_gate": "No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait)"
+  },
+  "registry": {"next_sequence_number": 28, "hypotheses": "H1..H28"},
+  "frozen_artifacts_modified": false,
+  "notes": "numpy 2.5.4 / pandas 3.1.1 present in environment. Two untracked oversized F1GRID-002 artifacts remain gitignored and must not be committed (grid_result_ledger.json ~166 MB, grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json ~66 MB). Working tree carries tests/test_fix_frontier_last_updated_utc.py plus durable-state updates (run_manifest.json, verified_test_claim_claim_snapshot.json); uncommitted, commit not requested."
+}

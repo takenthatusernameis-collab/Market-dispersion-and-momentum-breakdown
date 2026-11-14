@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T22:50:00Z",
+  "last_updated_utc": "2026-11-14T23:34:33Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "674/674/0",
+  "latest_verified_test_claim": "681/681/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1125,7 +1125,8 @@
     "session_record_verify_20261114T220706Z",
     "session_record_verify_20261114T223210Z",
     "session_record_verify_20261114T223800Z",
-    "session_record_verify_20261114T225000Z"
+    "session_record_verify_20261114T225000Z",
+    "session_record_verify_20261114T233433Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1207,7 +1208,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T225000Z",
+  "session_record_latest": "session_record_verify_20261114T233433Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1946,5 +1947,13 @@
       "block_sealed": true,
       "date_gate": "BLOCKED_BY_HARD_DATE_GATE before 2026-11-30, not an experiment-ID wait"
     }
+  },
+  "session_record_verify_20261114T233433Z": {
+    "session_id": "session_verify_20261114T233433Z",
+    "timestamp_utc": "2026-11-14T23:34:33Z",
+    "agent": "kilo",
+    "action": "Added tests/test_fix_frontier_last_updated_utc.py (7 hermetic tests) closing a real coverage gap: scripts/fix_frontier_last_updated_utc.py had no test file. Covered the pure main() seam: non-backdating floor new_ts=max(now, probe_utc) (probe>now floors to probe, now>probe uses now, earlier probe never backdates), missing probe_utc rc=1 no write, already-current byte-identical noop, other content preserved, canonical indent=2/ensure_ascii/trailing-newline output. Synthetic frontier in a temp dir (FRONTIER monkeypatched), datetime.now frozen; stdlib-only; no network/committed-panel/frozen-artifact mutation.",
+    "outcome": "compileall EXIT 0; targeted 7/7 OK; full suite Ran 681 tests, OK, skipped=2; record_test_claim refreshed claim to 681/681/0 (140 files, fingerprint 6e6fdb0e...) and re-pinned run_manifest latest_verified_test_claim. Frozen hashes unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier 9ba08f3f...). Probe evidence recomputed from disk: 397 real (0 MOCK), 270 probe_month=2026-10 (49 published) / 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json. H10 cutoff gate UNBLOCKED by published October 2026 archive; probe_month=2026-11 BLOCKED as a probe only; H10 fresh block IMMATURE; k not advanced; no H10 task unblocked before 2026-11-30. Registry next_sequence_number unchanged at 28 (H1..H28).",
+    "verification": "python3 -m compileall -q scripts tests (EXIT 0); python3 -m unittest tests.test_fix_frontier_last_updated_utc -v (7 OK); python3 -m unittest discover -s tests (681 OK, skipped=2); python3 scripts/record_test_claim.py (681/681/0, 140 files, 6e6fdb0e...). New session verification record: research_state/session_verifications/session_verify_20261114T233433Z.json."
   }
 }
