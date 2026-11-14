@@ -1,0 +1,95 @@
+{
+  "session_id": "session_verify_20261114T0748Z",
+  "timestamp_utc": "2026-11-14T07:48:00Z",
+  "head_commit": "571a374d5dc6cca8c8d49a1de839b8ec98fd90a5",
+  "branch": "main",
+  "working_tree_clean": false,
+  "requirements_verified": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compile_check": "EXIT 0",
+  "test_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "exit_code": 0,
+    "tests_run": 461,
+    "tests_ok": 461,
+    "tests_failed": 0,
+    "tests_skipped": 2
+  },
+  "verified_test_claim": {
+    "claim": "461/461/0",
+    "input_fingerprint": "99dd1e12f38ad16157c3db48619d253d98f173e66b74af8bf4c401b1bd31b73b",
+    "input_file_count": 119,
+    "recorded_utc": "2026-11-14T07:48:00Z",
+    "snapshot_path": "research_state/verified_test_claim_claim_snapshot.json"
+  },
+  "read_only_audits": {
+    "prereg_and_h10_fresh_reference_consistency": {
+      "pass": true,
+      "scanned": 17,
+      "critical": 0,
+      "errors": 0,
+      "info": 0,
+      "artifact": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261114T074712Z.json"
+    },
+    "integrity_audit_reference_consistency": {
+      "pass": true,
+      "scanned": 19,
+      "critical": 0,
+      "errors": 0,
+      "info": 13,
+      "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T074712Z.json"
+    },
+    "preregistration_coverage": {
+      "pass": true,
+      "audits": 19,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0,
+      "artifact": "research_state/preregistration_coverage_audit.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "mock_probes": 0,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "h10_cutoff_gate": "UNBLOCKED",
+    "november_probe_status": "BLOCKED_AS_PROBE_ONLY"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "committed_grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "committed_grid_summary": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "h10_fresh_block": {
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true,
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "h10_gate": "BLOCKED_BY_HARD_DATE_GATE",
+  "blocker_detail": "Requires formations strictly after 2026-09-29, strict 30-day maturity, and >=30 prior in-block dispersions for trailing-decile high/low rule. Only post-2026-09-29 formations live in unpublished November 2026 monthly archive (0/127 published). 30-day maturity and truncated-outcome prohibition are hard safeguards; MIN_STATE_FORMATIONS=5 confirmatory floor separate and unmet.",
+  "new_task_completed": "Remote checkpoint persistence failure diagnosed and remedied (session 17, same run). Root cause confirmed: commit 19f49d25 re-introduced two artifacts exceeding GitHub file size limits - grid_result_ledger.json (~158 MB > 100 MB hard limit) and grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json (~66 MB > 50 MB recommended limit) - and, as an ancestor of commits 2e95f57d and a9277c42, it blocked the whole push via the GitHub pre-receive hook. Per the recovery rules (confirmed root cause, history rewrite justified): preserved a recovery bundle before rewriting - backup branch recovery/pre-rewrite-20261114T0734Z at a9277c42 plus a verified full-history bundle at /home/runner/work/_temp/kilo-tmp/kilo/recovery_pre_rewrite_20261114T0734Z.bundle. Rollback plan: point main at recovery/pre-rewrite-20261114T0734Z and force-push with --force-with-lease if the rewrite ever needs to be undone. Rebased the three local-ahead commits onto origin/main 3980decc, stripping the two oversized files from the rewritten first commit (new commit 2e0a18f4) while keeping the generated artifacts in the working tree as untracked files (not to be committed); commits 2e95f57d and a9277c42 replayed cleanly. New HEAD 571a374d. Push with --force-with-lease succeeded: remote origin/main = 571a374d = local HEAD; remote-tracking SHA reconciled. Persistence achieved and claimable. compileall EXIT 0; full suite 461 tests OK, skipped=2. Frozen hashes unchanged; no frozen artifact/config/input/frontier/registry/sealed holdout modified; registry next_sequence_number unchanged at 27 (H1..H27).",
+  "uncommitted_changes": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json"
+  ]
+}
