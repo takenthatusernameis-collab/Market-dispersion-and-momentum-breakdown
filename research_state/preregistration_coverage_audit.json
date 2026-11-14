@@ -2,10 +2,25 @@
   "audit_id": "PREREGISTRATION_COVERAGE_AUDIT_20261103",
   "audited_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit",
   "audits_missing_prereq": [],
-  "audits_scanned": 14,
+  "audits_scanned": 19,
+  "f1_audit_files_scanned": 5,
+  "f1_integrity_audit_dirs": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/integrity_audit",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002/integrity_audit",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/integrity_audit"
+  ],
+  "f1_prereg_dirs": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/preregistrations",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002/preregistrations",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/preregistrations"
+  ],
+  "main_audits_scanned": 14,
   "pass": true,
   "prereg_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations",
   "preregistrations_on_disk": [
+    "F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md",
+    "F1_COVERAGE_STABILITY_AUDIT_v1.md",
+    "F1_PANEL_COVERAGE_REPAIR_v1.md",
     "H004V106 Forward Block Placebo Red Team v1.md",
     "H004V106_DISPERSION_REGIME_CONDITIONING_v1.md",
     "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md",
@@ -106,6 +121,46 @@
       "note": "addendum to the 2026-10-24 integrity audit; no separate experiment id or prereq",
       "preregistration": null,
       "resolved": null
+    },
+    {
+      "audit": "f1_panel_coverage_repair_20261112T172845Z.json",
+      "exists": true,
+      "frozen_record": true,
+      "note": null,
+      "preregistration": "F1_PANEL_COVERAGE_REPAIR_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/preregistrations/F1_PANEL_COVERAGE_REPAIR_v1.md"
+    },
+    {
+      "audit": "f1_panel_coverage_repair_20261112T172913Z.json",
+      "exists": true,
+      "frozen_record": true,
+      "note": null,
+      "preregistration": "F1_PANEL_COVERAGE_REPAIR_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/preregistrations/F1_PANEL_COVERAGE_REPAIR_v1.md"
+    },
+    {
+      "audit": "f1_panel_coverage_repair_20261112T183449Z.json",
+      "exists": true,
+      "frozen_record": true,
+      "note": null,
+      "preregistration": "F1_PANEL_COVERAGE_REPAIR_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/preregistrations/F1_PANEL_COVERAGE_REPAIR_v1.md"
+    },
+    {
+      "audit": "f1_coverage_outcome_sensitivity_20261113T025950Z.json",
+      "exists": true,
+      "frozen_record": true,
+      "note": null,
+      "preregistration": "F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002/preregistrations/F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md"
+    },
+    {
+      "audit": "f1_coverage_stability_audit_20261113T054921Z.json",
+      "exists": true,
+      "frozen_record": true,
+      "note": null,
+      "preregistration": "F1_COVERAGE_STABILITY_AUDIT_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/preregistrations/F1_COVERAGE_STABILITY_AUDIT_v1.md"
     }
   ]
 }

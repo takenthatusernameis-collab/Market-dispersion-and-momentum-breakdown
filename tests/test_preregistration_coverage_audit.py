@@ -52,7 +52,10 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
                         or self.first["preregistrations_uncovered_by_any_audit"])
         self.assertEqual(self.first["audits_missing_prereq"], [])
         self.assertEqual(self.first["preregistrations_uncovered_by_any_audit"], [])
-        self.assertEqual(self.first["audits_scanned"], 14)
+        self.assertEqual(self.first["main_audits_scanned"], 14)
+        self.assertEqual(self.first["f1_audit_files_scanned"], 5)
+        self.assertEqual(self.first["audits_scanned"], 19)
+        self.assertEqual(len(self.first["preregistrations_on_disk"]), 12)
 
     def test_overlap_aware_audit_has_no_prereq_of_its_own(self):
         row = next(r for r in self.first["rows"]
@@ -66,6 +69,62 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
                    if r["audit"] == "H10_feasibility_analysis_20261103.json")
         self.assertEqual(row["preregistration"], "H10_FRESH_FORWARD_BLOCK_v1.md")
         self.assertTrue(row["exists"])
+
+    def test_f1_audits_scanned_as_frozen_records(self):
+        """The F1 sub-experiment integrity audits (F1COVERAGE-001, F1SENS-002,
+        F1STAB-003) are scanned by default as frozen records; their committed
+        audit JSONs cannot hide outside the coverage check."""
+        f1_rows = [r for r in self.first["rows"] if r.get("frozen_record") is True]
+        self.assertEqual(len(f1_rows), 5, self.first)
+        scanned = {r["audit"] for r in f1_rows}
+        expected = {
+            "f1_panel_coverage_repair_20261112T172845Z.json",
+            "f1_panel_coverage_repair_20261112T172913Z.json",
+            "f1_panel_coverage_repair_20261112T183449Z.json",
+            "f1_coverage_outcome_sensitivity_20261113T025950Z.json",
+            "f1_coverage_stability_audit_20261113T054921Z.json",
+        }
+        self.assertTrue(expected.issubset(scanned),
+                        f"F1 audit files missing from scan: {sorted(expected - scanned)}")
+        for row in f1_rows:
+            with self.subTest(file=row["audit"]):
+                self.assertEqual(row["frozen_record"], True, row)
+                self.assertTrue(row.get("exists", False), row)
+
+    def test_f1_audits_resolve_to_f1_prereqs(self):
+        expected = {
+            "f1_panel_coverage_repair_20261112T183449Z.json":
+                "F1_PANEL_COVERAGE_REPAIR_v1.md",
+            "f1_coverage_outcome_sensitivity_20261113T025950Z.json":
+                "F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md",
+            "f1_coverage_stability_audit_20261113T054921Z.json":
+                "F1_COVERAGE_STABILITY_AUDIT_v1.md",
+        }
+        for audit_name, prereq in expected.items():
+            with self.subTest(audit=audit_name):
+                row = next(r for r in self.first["rows"]
+                           if r["audit"] == audit_name)
+                self.assertEqual(row["preregistration"], prereq, row)
+                self.assertTrue(row["exists"], row)
+
+    def test_f1_prereqs_covered_by_f1_audits(self):
+        f1_prereqs = {"F1_PANEL_COVERAGE_REPAIR_v1.md",
+                      "F1_COVERAGE_OUTCOME_SENSITIVITY_v1.md",
+                      "F1_COVERAGE_STABILITY_AUDIT_v1.md"}
+        self.assertTrue(f1_prereqs.issubset(set(self.first["preregistrations_on_disk"])),
+                        self.first["preregistrations_on_disk"])
+        self.assertFalse(f1_prereqs & set(self.first["preregistrations_uncovered_by_any_audit"]),
+                         self.first["preregistrations_uncovered_by_any_audit"])
+
+    def test_f1_coverage_opt_out(self):
+        """The default F1 frozen-coverage scan is opt-out for callers that need
+        a narrow scope."""
+        res = mod.audit(f1_integrity_audit_dirs=[], f1_prereg_dirs=[])
+        self.assertEqual(res["f1_audit_files_scanned"], 0, res)
+        self.assertEqual(res["main_audits_scanned"], 14, res)
+        self.assertEqual(res["audits_scanned"], 14, res)
+        self.assertFalse(any(r.get("frozen_record") is True for r in res["rows"]), res)
+        self.assertTrue(res["pass"], res)
 
     def test_addenda_are_recognised_as_addenda(self):
         addenda = {"forward_block_hac_addendum_20261024.json",
