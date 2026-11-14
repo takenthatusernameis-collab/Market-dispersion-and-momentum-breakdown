@@ -1,5 +1,5 @@
 {
-  "artifact_sha256": "723b4f7a9db1369b95752c7a53776e5691c7ad843f58851517513a43e407bbef",
+  "artifact_sha256": "af2416828f78badc4b3f74535eef366b4dcb074a508bbc9d5bafb1e62d3a527d",
   "audit_id": "DISP-003-SOURCECOV-001",
   "binance_without_capmkt": [
     {
@@ -262,7 +262,8 @@
     "The 32 assets in committed panels are a strict subset of the 191 verified candidates."
   ],
   "method": "Full scan of candidate_batch_validation.json (6250 candidates processed). Classification by binance.exists and capmkt status.",
-  "preregistered": false,
+  "preregistered": true,
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/SOURCE_COVERAGE_GAP_AUDIT_v1.md",
   "source_data": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels/candidate_batch_validation.json",
   "status": "EXPLORATORY_ONLY",
   "title": "Source Coverage Gap: Binance Perpetuals Without Coin Metrics Market-Cap Data"

@@ -1,0 +1,55 @@
+{
+  "session_id": "session_20261114T131500Z",
+  "timestamp_utc": "20261114T131500Z",
+  "head_sha": "6d0a4ca96d14752548cbcc9f62158ac1eab40c4e",
+  "remote_sha": "6d0a4ca96d14752548cbcc9f62158ac1eab40c4e",
+  "persistence_claimable": true,
+  "test_suite": {
+    "ran": 468,
+    "passed": 468,
+    "failed": 0,
+    "skipped": 2,
+    "claim": "468/468/0",
+    "input_files": 121,
+    "fingerprint": "473a5fc3a15e52f21916f77a0392d3f858e41a47fedb99762b25696f9a9d8426"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "total_mock_probes": 0,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "h10_gate_vs_probe": {
+    "h10_cutoff_gate": "UNBLOCKED",
+    "gate_date_required": "2026-10-29",
+    "probe_month_2026_11": "BLOCKED_AS_PROBE_ONLY",
+    "h10_fresh_block": {
+      "status": "IMMATURE",
+      "n_formations": 1,
+      "n_high": 0,
+      "n_low": 0,
+      "last_allowed_formation_date": "2026-09-30",
+      "data_cutoff_utc": "2026-10-31T00:00:00Z",
+      "block_sealed": true
+    },
+    "bounded_no_cost_h10_task_unblocked_before_2026_11_30": false,
+    "blocked_reason": "BLOCKED_BY_HARD_DATE_GATE"
+  },
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "committed_grid_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_summary": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "registry_next_sequence_number": 28,
+  "f1grid_002_complete": true,
+  "oversized_artifacts_untracked": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json"
+  ],
+  "completed_action": "closed the single-source-of-truth gap left by the committed DISP-003-SOURCECOV-001 audit: wrote its retroactive preregistration (preregistrations/SOURCE_COVERAGE_GAP_AUDIT_v1.md, dated after the artifact's generated_utc with an explicit correction note), added the missing preregistration and artifact_sha256 fields via scripts/repair_source_coverage_audit_prereg.py (which re-verifies the recorded findings against candidate_batch_validation.json first), allocated H28 (next_sequence_number 27 -> 28), and extended the three single-source-of-truth guards (AUDIT_TO_HYPOTHESIS, ALIASES, the F1 opt-out count) so the new audit is covered by construction. Suite 468/468/0 (was 463; +5 from the guard extensions), fingerprint 473a5fc3..., 121 input files.",
+  "what_was_not_changed": "No frozen artifact, panel, grid ledger, forward block, cost model, decision rule, hypothesis conclusion, panel CSV, DISPERSION-001/002 or the defective archive was modified. The canonical forward block, H10 fresh block, grid ledger, grid summary, frontier and grid v3 config are byte-identical to git show HEAD:. Only the source-coverage audit artifact (two fields added, findings re-verified unchanged), hypothesis_registry.json, run_manifest.json, preregistration_coverage_audit.json, verified_test_claim_claim_snapshot.json, one new script, one new prereg doc and five test/script guard extensions changed. probe_month=2026-11 was NOT re-probed."
+}

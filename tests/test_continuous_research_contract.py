@@ -83,8 +83,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # (DISP-003-F1GRID-002, EXPLORATORY_ONLY), preregistering the
         # F1GRID-001 unblock path (a): trim panels to the frozen ledger
         # vintage so arm A can reproduce the committed ledger before the
-        # arm B contrast.
-        self.assertEqual(registry["next_sequence_number"], 27)
+        # arm B contrast. H28 was added for the DISP-003-SOURCECOV-001
+        # source-coverage gap audit (EXPLORATORY_ONLY, coverage_only) so the
+        # committed audit artifact references an allocated registry hypothesis;
+        # the artifact predated its preregistration, which is repaired by
+        # scripts/repair_source_coverage_audit_prereg.py.
+        self.assertEqual(registry["next_sequence_number"], 28)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

@@ -18,6 +18,15 @@ final integrity audit) and H12 (the H10 structural feasibility analysis):
 
   * H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_20261102 (H11)
   * DISP-003-H10-FEASIBILITY-001 (H12)
+  * DISP-003-SOURCECOV-001 (H28) -- the source-coverage gap audit naming the 24
+    Binance-perpetual assets that lack Coin Metrics market-cap data and are
+    therefore structurally unrankable. Its artifact
+    source_coverage_gap_binance_no_capmkt_20261114.json was committed before
+    its preregistration existed; the retroactive prereg
+    (preregistrations/SOURCE_COVERAGE_GAP_AUDIT_v1.md) carries an explicit
+    correction note and is dated after the artifact's generated_utc, and
+    scripts/repair_source_coverage_audit_prereg.py re-verifies the recorded
+    findings against the source data before adding the missing fields.
 
 The mapping is audit_id -> expected hypothesis id. A future audit committed
 without a registry entry fails the build instead of silently drifting.
@@ -40,6 +49,7 @@ AUDIT_TO_HYPOTHESIS = {
     "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FORWARD-BLOCK-PLACEBO-001": "H13",
     "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-FINAL-INTEGRITY-AUDIT": "H11",
     "DISP-003-H10-FEASIBILITY-001": "H12",
+    "DISP-003-SOURCECOV-001": "H28",
     "H004V106_DISPERSION_REGIME_CONDITIONING_20261028": "H14",
     "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_20261029": "H15",
     "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_20261102": "H16",

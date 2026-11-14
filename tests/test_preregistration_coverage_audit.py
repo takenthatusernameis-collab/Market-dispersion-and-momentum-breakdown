@@ -52,10 +52,10 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
                         or self.first["preregistrations_uncovered_by_any_audit"])
         self.assertEqual(self.first["audits_missing_prereq"], [])
         self.assertEqual(self.first["preregistrations_uncovered_by_any_audit"], [])
-        self.assertEqual(self.first["main_audits_scanned"], 14)
+        self.assertEqual(self.first["main_audits_scanned"], 15)
         self.assertEqual(self.first["f1_audit_files_scanned"], 5)
-        self.assertEqual(self.first["audits_scanned"], 19)
-        self.assertEqual(len(self.first["preregistrations_on_disk"]), 12)
+        self.assertEqual(self.first["audits_scanned"], 20)
+        self.assertEqual(len(self.first["preregistrations_on_disk"]), 13)
 
     def test_overlap_aware_audit_has_no_prereq_of_its_own(self):
         row = next(r for r in self.first["rows"]
@@ -116,13 +116,31 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
         self.assertFalse(f1_prereqs & set(self.first["preregistrations_uncovered_by_any_audit"]),
                          self.first["preregistrations_uncovered_by_any_audit"])
 
+    def test_source_coverage_gap_audit_resolves_to_its_prereq(self):
+        row = next(r for r in self.first["rows"]
+                   if r["audit"] == "source_coverage_gap_binance_no_capmkt_20261114.json")
+        # The preregistration field carries the full relative path, matching the
+        # convention used by every other DISP-003 audit artifact (e.g. the
+        # placebo red-team audit quotes
+        # artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/
+        # H004V106 Forward Block Placebo Red Team v1.md verbatim).
+        self.assertEqual(
+            row["preregistration"],
+            "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/"
+            "preregistrations/SOURCE_COVERAGE_GAP_AUDIT_v1.md",
+            row)
+        self.assertTrue(row["exists"], row)
+        self.assertEqual(row["resolved"],
+                         "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/"
+                         "preregistrations/SOURCE_COVERAGE_GAP_AUDIT_v1.md")
+
     def test_f1_coverage_opt_out(self):
         """The default F1 frozen-coverage scan is opt-out for callers that need
         a narrow scope."""
         res = mod.audit(f1_integrity_audit_dirs=[], f1_prereg_dirs=[])
         self.assertEqual(res["f1_audit_files_scanned"], 0, res)
-        self.assertEqual(res["main_audits_scanned"], 14, res)
-        self.assertEqual(res["audits_scanned"], 14, res)
+        self.assertEqual(res["main_audits_scanned"], 15, res)
+        self.assertEqual(res["audits_scanned"], 15, res)
         self.assertFalse(any(r.get("frozen_record") is True for r in res["rows"]), res)
         self.assertTrue(res["pass"], res)
 

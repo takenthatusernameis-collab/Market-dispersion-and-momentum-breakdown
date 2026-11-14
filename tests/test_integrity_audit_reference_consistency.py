@@ -152,7 +152,7 @@ class IntegrityAuditReferenceConsistencyTests(unittest.TestCase):
         res = mod.run_audit(f1_integrity_audit_dirs=[])
         self.assertEqual(res.get("frozen_integrity_audit_files_scanned", 0), 0)
         self.assertFalse(any(r.get("frozen_record") is True for r in res["rows"]))
-        self.assertEqual(res.get("main_integrity_audit_files_scanned"), 14, res)
+        self.assertEqual(res.get("main_integrity_audit_files_scanned"), 15, res)
         self.assertTrue(res["pass"], res.get("errors"))
 
 
