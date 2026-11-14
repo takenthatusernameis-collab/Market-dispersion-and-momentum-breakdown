@@ -1,0 +1,57 @@
+{
+  "session_id": "session_verify_20261114T000049Z",
+  "timestamp_utc": "2026-11-14T00:00:49Z",
+  "head_short": "f5ab66c8",
+  "branch": "main",
+  "working_tree_clean_at_verification_start": true,
+  "prior_session_verification_reverified": "research_state/session_verifications/session_verify_20261113T220837Z.json",
+  "prior_task_complete": true,
+  "prior_task_summary": "Read durable handoff and task message from 2026-11-13T21:50:09Z and completed its recorded action: record with verified evidence that no bounded no-cost H10 task is unblocked before 2026-11-30. Today 2026-11-13 is before the 2026-11-30 date gate; the H10 fresh sealed forward block remains not runnable and no bounded no-cost H10 task is unblocked before the gate. State re-verified; durable docs refreshed; quoting session_verify_20261113T220837Z.json.",
+  "checks": {
+    "requirements_confirmed": {"numpy": "2.5.4", "pandas": "3.1.1"},
+    "compileall_scripts_tests": {"exit_code": 0},
+    "unittest_discover_tests": {"ran": 408, "ok": true, "failures": 0, "errors": 0, "skipped": 2}
+  },
+  "probe_evidence": {
+    "source": "disk_recompute",
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "h10_gate": {
+    "cutoff_gate_unblocked_by_october_archive": true,
+    "probe_month_2026-11_blocked_as_probe_only": true,
+    "probe_blocked_verdict_not_promoted_to_gate_decision": true
+  },
+  "h10_fresh_block": {
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true,
+    "k_advanced": false
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "no_bounded_no_cost_h10_task_unblocked_before_2026-11-30": true,
+  "reason": "Today 2026-11-13 is before the 2026-11-30 date gate. H10 fresh sealed forward block requires formations strictly after 2026-09-29, strict 30-day outcome maturity, and >=30 prior in-block dispersions for trailing-decile high/low rule. Only post-2026-09-29 formation dates live in the November 2026 monthly archive which is unpublished (0/127 probe_month=2026-11 target_published=true). 30-day maturity and truncated-outcome prohibition are hard safeguards; MIN_STATE_FORMATIONS=5 confirmatory floor also unmet. No admissible fresh block exists before 2026-11-30.",
+  "frozen_artifacts_modified": false,
+  "probe_month_2026-11_reprobed": false,
+  "this_session_task": "Extend scripts/audit_integrity_audit_references.py to scan the three F1 sub-experiment integrity_audit dirs (F1COVERAGE-001, F1SENS-002, F1STAB-003) as frozen records: stale top-level path pointers reported as INFO (frozen_record_stale_pointer), never ERROR, docs never modified. Added 4 regression guards in tests/test_integrity_audit_reference_consistency.py (suite 404 -> 408). Audit re-run pass=True scanned=19 (main 14 + f1_frozen 5), critical=0 errors=0 info=13 -> research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T000049Z.json. Frozen hashes unchanged; no frozen artifact/config/input/frontier/registry/sealed holdout modified; probe_month=2026-11 not re-probed.",
+  "audit_scripts_run": {
+    "audit_integrity_audit_references": {"pass": true, "files_scanned": 19, "main_integrity_audit_files_scanned": 14, "frozen_integrity_audit_files_scanned": 5, "critical": 0, "errors": 0, "info": 13, "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T000049Z.json"}
+  },
+  "record_test_claim": {"ran": 408, "ok": 408, "failures": 0, "skipped": 2, "claim": "408/408/0", "fingerprint": "43418d844cea68ec...", "files": 113}
+}

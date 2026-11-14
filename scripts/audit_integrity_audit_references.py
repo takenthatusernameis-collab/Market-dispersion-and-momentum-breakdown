@@ -29,6 +29,17 @@ EXP = "HARMONY-CRYPTO-EDGE-004-DISPERSION-003"
 AUDIT_DIR = ROOT / "artifacts" / EXP / "integrity_audit"
 STATE_DIR = ROOT / "research_state"
 
+# F1 sub-experiment integrity_audit dirs (F1COVERAGE-001, F1SENS-002,
+# F1STAB-003). These are committed audit records whose nested fields reference
+# committed panels, frozen block hashes and each other's artifacts. They must
+# never be modified; a stale top-level path pointer inside them is reported as
+# INFO (frozen_record_stale_pointer), exactly like frozen DISP-002 prereg docs.
+F1_INTEGRITY_AUDIT_DIRS = [
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001" / "integrity_audit",
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002" / "integrity_audit",
+    ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003" / "integrity_audit",
+]
+
 # Known frozen hashes (handoff-verified); mismatch is a critical finding.
 FROZEN = {
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json":
@@ -72,9 +83,10 @@ def _norm_repo_path(v: str) -> Path:
     return ROOT / v
 
 
-def audit_one(p: Path) -> dict:
+def audit_one(p: Path, *, frozen_record: bool = False) -> dict:
     row = {
         "file": p.name,
+        "frozen_record": frozen_record,
         "parse_ok": False,
         "references": [],
         "recorded_hash_checks": [],
@@ -110,7 +122,11 @@ def audit_one(p: Path) -> dict:
                "matches_frozen": (frozen_expected is None or disk_hash == frozen_expected)}
         row["references"].append(ref)
         if not exists:
-            row["findings"].append(f"missing referenced artifact: {k}={v}")
+            if frozen_record:
+                row["findings"].append(
+                    f"frozen_record_stale_pointer (INFO, not modified): {k}={v}")
+            else:
+                row["findings"].append(f"missing referenced artifact: {k}={v}")
         if frozen_expected and disk_hash and disk_hash != frozen_expected:
             row["findings"].append(
                 f"FROZEN HASH MISMATCH: {k}={v} disk={disk_hash} expected={frozen_expected}")
@@ -157,6 +173,12 @@ def audit_one(p: Path) -> dict:
 
     if any("FROZEN HASH MISMATCH" in f or "GIT HEAD HASH MISMATCH" in f or "parse error" in f for f in row["findings"]):
         row["severity"] = "CRITICAL"
+    elif frozen_record:
+        # Frozen committed records are never modified: stale pointers and
+        # recorded-hash mismatches surface as INFO, never ERROR, so they cannot
+        # fail the build. The finding is still surfaced for durable-state
+        # awareness.
+        row["severity"] = "INFO" if row["findings"] else "OK"
     elif any("missing referenced artifact" in f or "recorded hash mismatch" in f for f in row["findings"]):
         row["severity"] = "ERROR"
     elif row["findings"]:
@@ -164,9 +186,37 @@ def audit_one(p: Path) -> dict:
     return row
 
 
-def run_audit() -> dict:
-    files = sorted(p for p in AUDIT_DIR.glob("*.json") if p.is_file())
-    rows = [audit_one(p) for p in files]
+def run_audit(
+    audit_dir: Path | None = None,
+    f1_integrity_audit_dirs: list[Path] | None = None,
+    timestamp_utc: str | None = None,
+) -> dict:
+    audit_dir = audit_dir or AUDIT_DIR
+    # F1 sub-experiment integrity_audit dirs are scanned as frozen records by
+    # default (stale pointers reported as INFO, never ERROR, docs never
+    # modified), exactly like the DISP-003 frozen prereg docs in the sibling
+    # prereg reference audit.
+    f1_integrity_audit_dirs = (
+        f1_integrity_audit_dirs
+        if f1_integrity_audit_dirs is not None
+        else F1_INTEGRITY_AUDIT_DIRS
+    )
+
+    main_rows: list[dict] = (
+        [audit_one(p) for p in sorted(audit_dir.glob("*.json")) if p.is_file()]
+        if audit_dir.exists()
+        else []
+    )
+    f1_rows: list[dict] = []
+    for fd in f1_integrity_audit_dirs:
+        if fd.exists():
+            f1_rows.extend(
+                audit_one(p, frozen_record=True)
+                for p in sorted(fd.glob("*.json"))
+                if p.is_file()
+            )
+
+    rows = main_rows + f1_rows
     critical = [r["file"] for r in rows if r["severity"] == "CRITICAL"]
     errors = [r["file"] for r in rows if r["severity"] == "ERROR"]
     info = [r["file"] for r in rows if r["severity"] == "INFO"]
@@ -191,11 +241,19 @@ def run_audit() -> dict:
             critical.append(f"FROZEN_DRIFT:{rel}")
         if git_head_drift:
             critical.append(f"GIT_HEAD_DRIFT:{rel}")
+    if timestamp_utc is None:
+        timestamp_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     return {
         "audit_id": "INTEGRITY_AUDIT_REFERENCE_CONSISTENCY",
-        "timestamp_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "audited_dir": str(AUDIT_DIR.relative_to(ROOT)),
+        "timestamp_utc": timestamp_utc,
+        "audited_dir": str(audit_dir.relative_to(ROOT)) if audit_dir.is_relative_to(ROOT) else str(audit_dir),
+        "f1_integrity_audit_dirs": [
+            str(d.relative_to(ROOT)) if d.is_relative_to(ROOT) else str(d)
+            for d in f1_integrity_audit_dirs
+        ],
         "files_scanned": len(rows),
+        "main_integrity_audit_files_scanned": len(main_rows),
+        "frozen_integrity_audit_files_scanned": len(f1_rows),
         "critical": sorted(set(critical)),
         "errors": errors,
         "info": info,
@@ -204,11 +262,14 @@ def run_audit() -> dict:
         "frozen_git_head_checks": frozen_git_checks,
         "rows": rows,
         "scope_note": (
-            "Read-only consistency scan over integrity_audit JSONs plus frozen/git-HEAD cross-checks. INFO findings "
-            "(e.g. ID/filename loose mismatch for addenda or legacy naming) are "
-            "recorded but do not fail the audit. CRITICAL/ERROR indicate stale "
-            "pointers or hash mismatches requiring investigation. Does not modify "
-            "any existing artifact/config/result. Default output: research_state/."
+            "Read-only consistency scan over integrity_audit JSONs plus frozen/git-HEAD cross-checks. "
+            "The F1 sub-experiment integrity_audit dirs (F1COVERAGE-001, F1SENS-002, F1STAB-003) are "
+            "scanned by default as frozen records: stale top-level path pointers surface as INFO "
+            "(frozen_record_stale_pointer), never ERROR, and the frozen docs are never modified. "
+            "INFO findings (e.g. ID/filename loose mismatch for addenda or legacy naming) are "
+            "recorded but do not fail the audit. CRITICAL/ERROR indicate stale pointers or hash "
+            "mismatches requiring investigation. Does not modify any existing artifact/config/"
+            "result. Default output: research_state/."
         ),
     }
 
@@ -217,8 +278,12 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", default=None,
                     help="Output path (default: research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_<ts>.json)")
+    ap.add_argument("--no-f1-frozen-integrity-audits", action="store_true",
+                    help="Disable the default scan of F1 sub-experiment integrity_audit "
+                         "dirs (F1COVERAGE-001, F1SENS-002, F1STAB-003) as frozen records.")
     args = ap.parse_args()
-    res = run_audit()
+    f1 = [] if args.no_f1_frozen_integrity_audits else None
+    res = run_audit(f1_integrity_audit_dirs=f1)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     if args.out:
         out_path = Path(args.out)
@@ -229,6 +294,7 @@ def main() -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(res, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"[integrity-audit-ref] pass={res['pass']} scanned={res['files_scanned']} "
+          f"main={res['main_integrity_audit_files_scanned']} f1_frozen={res['frozen_integrity_audit_files_scanned']} "
           f"critical={len(res['critical'])} errors={len(res['errors'])} info={len(res['info'])}")
     print(f"[integrity-audit-ref] wrote {out_path.relative_to(ROOT)}")
     return 0 if res["pass"] else 1
