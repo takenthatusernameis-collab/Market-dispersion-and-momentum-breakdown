@@ -1,0 +1,68 @@
+{
+  "session_id": "session_verify_20261114T0759Z",
+  "recorded_utc": "2026-11-14T07:59:30Z",
+  "git": {
+    "head_at_verification_start": "20f47abb4900068cef9ec350eb9715f0919a75be",
+    "head_after_recovery": "27cd8effbff5e71a7c5e018f23e918d8d2901f86",
+    "branch": "main",
+    "origin_main": "27cd8effbff5e71a7c5e018f23e918d8d2901f86",
+    "remote_tracking_reconciled": true,
+    "remote_persistence_claimable_this_session": false,
+    "notes": "Same-run recovery (new worker session) diagnosed prior persistence failure: local HEAD 20f47abb was 1 commit ahead of origin/main 27cd8eff and added two oversized artifacts (F1GRID-002 grid_result_ledger.json ~159 MB, grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json ~66 MB) that exceed GitHub file size limits and block push pre-receive. Recovery bundle/branch/tag created before rewrite (branch recovery/pre-fix-oversize-20261114T0755Z, tag recovery-oversize-20261114T0755Z, bundle /home/runner/work/_temp/kilo-tmp/kilo/recovery_pre_fix_oversize_20261114T0755Z.bundle; existing recovery/pre-rewrite-20261114T0734Z at a9277c42 preserved). Local branch reset to origin/main 27cd8eff preserving oversized artifacts as untracked working-tree files (not committed). No commits created or pushed this session; controller may retry persistence if local-ahead commits appear."
+  },
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "unittest_full_suite": {
+      "command": "python3 -m unittest discover -s tests",
+      "status": "RUNNING_AT_RECORD_TIME",
+      "verified_claim_snapshot_current": "461/461/0",
+      "verified_claim_snapshot_recorded_utc": "2026-11-14T07:10:07Z",
+      "verified_claim_snapshot_input_fingerprint": "99dd1e12f38ad16157c3db48619d253d98f173e66b74af8bf4c401b1bd31b73b"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "source": "research_state/cutoff_probe/cutoff_probe_*.json"
+  },
+  "h10": {
+    "cutoff_gate": "UNBLOCKED",
+    "gate_basis": "published October 2026 archive",
+    "probe_month_2026-11_status": "BLOCKED_AS_PROBE_ONLY",
+    "fresh_block_status": "IMMATURE",
+    "fresh_block": {
+      "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "n_formations": 1,
+      "n_high": 0,
+      "n_low": 0,
+      "last_allowed_formation_date": "2026-09-30",
+      "data_cutoff_utc": "2026-10-31T00:00:00Z",
+      "block_sealed": true
+    },
+    "k_advanced": false,
+    "blocked_before": "2026-11-30",
+    "blocker_code": "BLOCKED_BY_HARD_DATE_GATE"
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "committed_grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "committed_grid_summary": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "artifacts_untracked_oversized_preserved": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json"
+  ]
+}
