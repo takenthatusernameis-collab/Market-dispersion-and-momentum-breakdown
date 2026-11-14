@@ -56,6 +56,14 @@ ECONOMIC_SIGNIFICANCE_THRESHOLD = 0.05
 # formations. Below this floor the result is INCONCLUSIVE regardless of
 # magnitude, and the look counter does not advance.
 MIN_STATE_FORMATIONS = 5
+
+# Trailing-decile high/low rule (prereg sec 3): a formation is classifiable as
+# high or low only when at least MIN_PRIOR_DISPERSIONS strictly prior in-block
+# dispersions exist within the trailing window. With fewer priors every
+# formation is "mid", so an immature block never emits a finite
+# high_low_diff_net_1x, the state-count floor fails, and the sequential look
+# consumes no budget.
+MIN_PRIOR_DISPERSIONS = 30
 FORWARD_BLOCK_START = "2025-01-01"
 
 # Anchor H004V106 parameters (frozen from grid manifest).
@@ -280,6 +288,36 @@ def forward_returns(px_wide: pd.DataFrame, T: str, horizon: int,
             continue
         out[a] = float(s.iloc[-1] / s.iloc[0] - 1.0)
     return out
+
+
+def assign_trailing_decile_states(dispersions: dict[str, float], window_days: int,
+                                  min_prior: int = MIN_PRIOR_DISPERSIONS) -> dict[str, str]:
+    """Classify each date as high/low/mid under the trailing outer-decile rule.
+
+    A date is classifiable only when at least ``min_prior`` strictly prior
+    in-block dispersions exist within ``window_days`` preceding entries;
+    otherwise it is ``mid``. With fewer than ``min_prior`` prior in-block
+    dispersions no formation can be high or low, so an immature block never
+    emits a finite ``high_low_diff_net_1x`` and the sequential look consumes no
+    budget.
+    """
+    dser = pd.Series(dispersions)
+    states: dict[str, str] = {}
+    for T in dser.index:
+        past = dser.loc[:T].iloc[:-1].tail(window_days)
+        if len(past) < min_prior:
+            states[T] = "mid"
+            continue
+        thr_hi = float(past.quantile(0.9))
+        thr_lo = float(past.quantile(0.1))
+        value = float(dser[T])
+        if value >= thr_hi:
+            states[T] = "high"
+        elif value <= thr_lo:
+            states[T] = "low"
+        else:
+            states[T] = "mid"
+    return states
 
 
 def overlap_aware_interval(formation_records, n_boot=2000, rng_seed=20261102):
@@ -522,20 +560,13 @@ def main() -> int:
         print("[forward-block] BLOCKED: no formations passed data gate")
         return 1
 
-    dser = pd.Series({r["formation_date"]: r["dispersion"] for r in formation_records})
+    states = assign_trailing_decile_states(
+        {r["formation_date"]: r["dispersion"] for r in formation_records},
+        window_days,
+    )
     results_rows = []
     for r in formation_records:
-        T = r["formation_date"]
-        past = dser.loc[:T].iloc[:-1].tail(window_days)
-        state = "mid"
-        if len(past) >= 30:
-            thr_hi = float(past.quantile(0.9))
-            thr_lo = float(past.quantile(0.1))
-            if r["dispersion"] >= thr_hi:
-                state = "high"
-            elif r["dispersion"] <= thr_lo:
-                state = "low"
-        r["state"] = state
+        r["state"] = states[r["formation_date"]]
         results_rows.append(r)
 
     df = pd.DataFrame(results_rows)

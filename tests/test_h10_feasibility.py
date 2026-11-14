@@ -13,6 +13,8 @@ import json
 import unittest
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+
 
 def _has_module(name: str) -> bool:
     """dep-light probe: True when the named module imports."""
@@ -24,6 +26,21 @@ def _has_module(name: str) -> bool:
 
 
 _HAS_PANDAS = _has_module("pandas")
+
+try:
+    import importlib
+    import sys
+
+    sys.path.insert(0, str(ROOT / "scripts"))
+    _eval_fb = importlib.import_module("eval_forward_block")
+    assign_trailing_decile_states = _eval_fb.assign_trailing_decile_states
+    MIN_PRIOR_DISPERSIONS = _eval_fb.MIN_PRIOR_DISPERSIONS
+    _EVAL_FB_AVAILABLE = True
+except Exception:
+    _eval_fb = None
+    assign_trailing_decile_states = None
+    MIN_PRIOR_DISPERSIONS = None
+    _EVAL_FB_AVAILABLE = False
 
 try:
     import pandas as pd
@@ -64,8 +81,10 @@ def fresh_block_formations(idx, cutoff: str) -> int:
     return int(sum(1 for d in idx if d >= pd.Timestamp(START, tz="UTC") and d <= lad))
 
 
-@unittest.skipUnless(_HAS_PANDAS, "pandas not installed (dep-light env)")
-@unittest.skipUnless(_HAS_PANDAS, "pandas not installed (dep-light env)")
+@unittest.skipUnless(_HAS_PANDAS and _EVAL_FB_AVAILABLE,
+                     "pandas/eval_forward_block not importable (dep-light env)")
+@unittest.skipUnless(_HAS_PANDAS and _EVAL_FB_AVAILABLE,
+                     "pandas/eval_forward_block not importable (dep-light env)")
 class TestH10Feasibility(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -113,12 +132,26 @@ class TestH10Feasibility(unittest.TestCase):
         self.assertEqual(len(missing), 30)
 
     def test_state_rule_needs_thirty_prior_dispersions(self):
-        """eval_forward_block.py:497 - high/low state is only assigned when
-        len(past) >= 30, so a block with <31 formations can never classify."""
+        """eval_forward_block.assign_trailing_decile_states: high/low state is
+        only assigned when at least MIN_PRIOR_DISPERSIONS (30) strictly prior
+        in-block dispersions exist, so a block with <31 formations can never
+        classify. Semantics unchanged from the prior inline `if len(past) >= 30:`
+        rule, now extracted into a testable function (scripts/eval_forward_block.py)."""
+        self.assertEqual(MIN_PRIOR_DISPERSIONS, 30)
         src = (ROOT / "scripts" / "eval_forward_block.py").read_text()
-        self.assertIn("if len(past) >= 30:", src)
-        self.assertIn('state = "high"', src)
-        self.assertIn('state = "low"', src)
+        self.assertIn("def assign_trailing_decile_states", src)
+        self.assertIn("if len(past) < min_prior:", src)
+        # Behavioral pin mirroring the old inline rule.
+        days = ["2026-01-%02d" % d for d in range(1, 31)]
+        base = {d: 1.0 for d in days}
+        extreme = dict(base)
+        extreme["2026-01-31"] = 2.0  # exactly 30 strictly prior dispersions
+        states = assign_trailing_decile_states(extreme, window_days=365)
+        self.assertEqual(states["2026-01-31"], "high")
+        self.assertEqual(
+            [s for d, s in states.items() if d != "2026-01-31"],
+            ["mid"] * 30,
+        )
 
     def test_projection_first_classifiable_cutoff_is_november(self):
         self.assertEqual(self.feas["projection"]["cutoff_2026_11_30"]["state_classifiable"], True)
