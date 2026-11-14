@@ -24,3 +24,14 @@ env/
 .idea/
 .vscode/
 .DS_Store
+
+# Oversized generated F1GRID-002 artifacts.
+# The two ledgers below are genuine grid outputs (~166 MB and ~69 MB) that
+# exceed GitHub's hard 100 MB / recommended 50 MB file-size limits and block
+# the pre-receive hook on push. They are generated, reproducible from the
+# committed 216-cell grid summary, and must never be tracked. Prior sessions
+# (14, 17, 18, 19, 20, 23) repeatedly re-added them in checkpoint commits,
+# which is why the rule is declared here and guarded by
+# tests/test_bytecode_hygiene.py rather than left to per-session discipline.
+artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json
+artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json

@@ -35,6 +35,15 @@ SNAPSHOT = ROOT / "research_state" / "verified_test_claim_claim_snapshot.json"
 
 BYTECODE_PATTERNS = ("__pycache__/", "*.py[cod]", "*$py.class")
 
+# Oversized generated F1GRID-002 artifacts that exceed GitHub's hard 100 MB /
+# recommended 50 MB file-size limits and block the pre-receive hook on push.
+# Declared in .gitignore so they can never silently re-enter a checkpoint
+# commit (root cause of the session 14/17/18/19/20/23 persistence failures).
+OVERSIZE_PATTERNS = (
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json",
+)
+
 
 def _spec():
     return util.spec_from_file_location(
@@ -48,6 +57,27 @@ class TestGitignoreBytecodeHygiene(unittest.TestCase):
         text = GITIGNORE.read_text(encoding="utf-8")
         for pat in BYTECODE_PATTERNS:
             self.assertIn(pat, text, f".gitignore missing pattern {pat!r}")
+
+    def test_gitignore_declares_oversize_patterns(self):
+        text = GITIGNORE.read_text(encoding="utf-8")
+        for pat in OVERSIZE_PATTERNS:
+            self.assertIn(pat, text, f".gitignore missing oversize pattern {pat!r}")
+
+    def test_no_tracked_oversize_files(self):
+        # The two generated F1GRID-002 ledgers are ~166 MB and ~69 MB and
+        # exceed GitHub's file-size limits; they must never be tracked.
+        out = subprocess.run(
+            ["git", "-C", str(ROOT), "ls-files"],
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout
+        tracked = set(out.splitlines())
+        offenders = [p for p in OVERSIZE_PATTERNS if p in tracked]
+        self.assertEqual(
+            offenders, [],
+            f"oversize generated artifacts must not be tracked: {offenders}",
+        )
 
     def test_no_tracked_bytecode_files(self):
         out = subprocess.run(
