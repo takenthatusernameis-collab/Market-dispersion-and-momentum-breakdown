@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T18:43:08Z",
+  "last_updated_utc": "2026-11-14T19:34:50Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "524/524/0",
+  "latest_verified_test_claim": "533/533/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1115,7 +1115,8 @@
     "session_record_verify_20261114T173707Z",
     "session_record_verify_20261114T175300Z",
     "session_record_verify_20261114T183536Z",
-    "session_record_verify_20261114T184308Z"
+    "session_record_verify_20261114T184308Z",
+    "session_record_verify_20261114T193450Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1197,7 +1198,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T184308Z",
+  "session_record_latest": "session_record_verify_20261114T193450Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1479,5 +1480,75 @@
       },
       "newest_probe": "cutoff_probe_20261113T091257Z.json"
     }
+  },
+  "session_record_verify_20261114T193450Z": {
+    "session_id": "session_verify_20261114T193450Z",
+    "timestamp_utc": "2026-11-14T19:34:50Z",
+    "action": "completed_verification_cycle_and_added_coverage_for_add_missing_binance_provenance_series",
+    "outcome": "prior_session_claimed_green_524_524_0_but_suite_was_not_green_repaired_two_session_verify_session_id_fields_to_filename_stems_added_tests/test_add_missing_binance_provenance_series.py_9_hermetic_tests_for_previously_uncovered_seam_full_suite_ran_533_ok_skipped_2_exit_0_claim_refreshed_533_533_0_128_input_files_fingerprint_dc4be295_probe_counts_recomputed_from_disk_397_real_270_probe_month_2026_10_49_published_127_probe_month_2026_11_0_published_0_mock_newest_cutoff_probe_20261113T091257Z_frozen_hashes_unchanged_h10_fresh_block_immature_date_gate_2026_11_30_stands",
+    "verification": "compileall EXIT 0; python3 -m unittest discover -s tests Ran 533 tests OK skipped=2; python3 scripts/record_test_claim.py rewrote snapshot claim=533/533/0 fingerprint=dc4be295a499db74a95de6cc15668c4223fd74b393ba934899eddb19d0535094 files=128 and re-pinned run_manifest latest_verified_test_claim=533/533/0; probe_evidence recomputed from research_state/cutoff_probe/ matches disk; frozen hashes canonical 7234fc4e h10_fresh 324ab1e6 frontier 9ba08f3f grid_v3 1ff4c1f2 unchanged vs recorded values and direct sha256",
+    "test_suite": {
+      "ran": 533,
+      "passed": 533,
+      "skipped": 2,
+      "exit_code": 0,
+      "verified_claim": "533/533/0",
+      "fingerprint": "dc4be295a499db74a95de6cc15668c4223fd74b393ba934899eddb19d0535094",
+      "input_files": 128
+    },
+    "probe_evidence": {
+      "total_real_probes": 397,
+      "probe_month_2026-10": {
+        "count": 270,
+        "published": 49
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261113T091257Z.json",
+      "mock_probes": 0
+    },
+    "h10_gate": {
+      "cutoff_gate": "UNBLOCKED",
+      "gate_date_required": "2026-10-29",
+      "gate_met_by_month_end": true,
+      "november_probe_blocked": true,
+      "november_probe_published": 0,
+      "fresh_block_immature": true,
+      "n_formations": 1,
+      "n_high": 0,
+      "n_low": 0,
+      "last_allowed_formation_date": "2026-09-30",
+      "data_cutoff_utc": "2026-10-31T00:00:00Z",
+      "block_sealed": true,
+      "k_not_advanced": true,
+      "blocked_by_hard_date_gate": true
+    },
+    "frozen_hashes": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+    },
+    "registry": {
+      "next_sequence_number": 28,
+      "hypotheses": "H1..H28"
+    },
+    "tracked_changes": [
+      "tests/test_add_missing_binance_provenance_series.py (new)",
+      "research_state/session_verifications/session_verify_20261114T183536Z.json (session_id repaired to filename stem)",
+      "research_state/session_verifications/session_verify_20261114T184308Z.json (session_id repaired to filename stem)",
+      "research_state/session_verifications/session_verify_20261114T193450Z.json (new)",
+      "research_state/verified_test_claim_claim_snapshot.json (refreshed: claim 533/533/0, 128 input files)",
+      "research_state/run_manifest.json (claim re-pinned 533/533/0, this session record appended, session_record_latest repointed)",
+      "research_state/agent_handoff.md",
+      "research_state/agent_task_message.md"
+    ],
+    "oversized_untracked": [
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json"
+    ],
+    "next_action": "pick ONE bounded no-cost genuinely new task from AGENTS.md categories (tests/source-coverage/evidence-audit/candidate-evaluation/red-team/design), demonstrate a real gap, run compileall + full suite, refresh the test claim if .py inventory changed, recompute probe counts, confirm frozen hashes unchanged, update handoff/task message and session record; do not re-probe probe_month=2026-11 before 2026-11-30; do not re-run run_f1_grid_vintage_trim.py; H10 cannot advance before 2026-11-30"
   }
 }
