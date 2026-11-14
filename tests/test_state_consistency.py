@@ -61,6 +61,22 @@ def _load(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _dangling_session_record_entries(manifest):
+    """Return the ``session_records`` index entries with no top-level block.
+
+    The manifest stores each session record as a top-level
+    ``session_record_<stem>`` key and keeps an ordered ``session_records``
+    index of the notable ones. An index entry that names no stored block is a
+    dangling pointer: a reader following the index reaches nothing. This is a
+    pure function so the guard can be exercised against synthetic manifests as
+    well as the committed one.
+    """
+    listed = manifest.get("session_records")
+    if not isinstance(listed, (list, tuple)):
+        return []
+    return [key for key in listed if key not in manifest]
+
+
 def _float_values(obj):
     """Recursively yield every JSON float in a nested dict/list/scalar structure."""
     if isinstance(obj, float):
@@ -644,6 +660,77 @@ class ResearchStateConsistencyTests(unittest.TestCase):
             f"the most recent record in the manifest is {most_recent} "
             f"({records[most_recent]})",
         )
+
+    def test_session_record_list_has_no_dangling_entries(self):
+        """Every key in the manifest's ``session_records`` index must resolve to a
+        real top-level ``session_record_*`` block.
+
+        ``session_records`` is the ordered index of session records (see
+        scripts/record_session_record.py). Three entries
+        (session_record_20261101T1404Z, session_record_20261106T103519Z,
+        session_record_20261108T095500Z) had drifted into the list with no
+        matching top-level block, so the index pointed at records that do not
+        exist. The ``session_record_latest`` guard resolves the pointer from the
+        top-level blocks and never inspects the list, so the dangling entries
+        survived several sessions. This gate closes that single-source-of-truth
+        gap: the index may be a curated subset of the stored blocks, but every
+        entry it names must exist.
+        """
+        manifest = _load(STATE / "run_manifest.json")
+        listed = manifest.get("session_records")
+        self.assertIsInstance(listed, list, "session_records is not a list")
+        self.assertGreater(len(listed), 0, "session_records is empty")
+        self.assertEqual(
+            len(listed), len(set(listed)),
+            "session_records contains duplicate entries",
+        )
+        dangling = _dangling_session_record_entries(manifest)
+        self.assertEqual(
+            dangling, [],
+            f"session_records lists entries with no top-level block: {dangling}",
+        )
+        for key in listed:
+            with self.subTest(entry=key):
+                self.assertIsInstance(key, str)
+                self.assertNotEqual(key, "session_record_latest")
+        # The index is ordered oldest-first; an out-of-order append would make
+        # "the most recent record" ambiguous to a reader of the list. The keys
+        # embed fixed-width UTC timestamp stems, so a lexicographic sort is the
+        # chronological order for the shapes present in this manifest.
+        self.assertEqual(
+            listed, sorted(listed),
+            "session_records is not in ascending timestamp order",
+        )
+
+    def test_dangling_session_record_helper_detects_synthetic_drift(self):
+        """The dangling-index guard must actually flag a synthetic dangling entry.
+
+        The committed-manifest test above passes only because the manifest is
+        clean; on its own it could not distinguish a working guard from one that
+        silently accepts everything. This exercises the same helper against a
+        synthetic manifest carrying one dangling entry, one real entry and the
+        ``session_record_latest`` pseudo-key, and requires the dangling entry to
+        be reported.
+        """
+        synthetic = {
+            "session_record_20261101T1406Z": {"timestamp_utc": "2026-11-01T14:06:00Z"},
+            "session_record_latest": "session_record_20261101T1406Z",
+            "session_records": [
+                "session_record_20261101T1406Z",
+                "session_record_20990101T0000Z",  # dangling: no such block
+            ],
+        }
+        dangling = _dangling_session_record_entries(synthetic)
+        self.assertEqual(
+            dangling, ["session_record_20990101T0000Z"],
+            "the helper failed to report a synthetic dangling index entry",
+        )
+        # A clean manifest yields no dangling entries.
+        clean = {
+            "session_record_20261101T1406Z": {"timestamp_utc": "2026-11-01T14:06:00Z"},
+            "session_records": ["session_record_20261101T1406Z"],
+        }
+        self.assertEqual(_dangling_session_record_entries(clean), [])
 
     def test_orphan_h10_variant_dirs_are_never_promotable(self):
             """The two git-tracked orphan H10 variant dirs must never be mistaken for
