@@ -38,22 +38,56 @@ CLAIM_FORMAT = re.compile(r"^(\d+)/(\d+)/(\d+)$")
 # Directories whose .py files are the executable inputs to the recorded claim.
 INPUT_DIRS = ("tests", "scripts")
 
+# The suite runs as ``python3 -m unittest discover -s tests``, whose default
+# collection pattern is ``test*.py``. Only those files under ``tests/`` are
+# executable test inputs; ``scripts/`` holds the imported implementation and is
+# covered in full. A non-``test*.py`` file under ``tests/`` is therefore not part
+# of the suite -- e.g. a scratch ``tests/temp_*.py`` an agent writes to
+# demonstrate a gap and deletes later. Recording such a file makes the snapshot
+# reference a path that can vanish with no source change, which turns the
+# fingerprint guard RED for a non-defect (exactly the failure that left the suite
+# red with a stale ``tests/temp_test_drift.py`` entry). Excluding it keeps the
+# fingerprint bound to real suite inputs.
+TEST_DISCOVERY_PREFIX = "test"
+
+
+def is_suite_input(rel_path: str) -> bool:
+    """True when ``rel_path`` is an executable input to the recorded suite.
+
+    ``tests/`` contributes only files matching the ``unittest`` discovery
+    pattern (``test*.py``); ``scripts/`` contributes every ``.py``. Any other
+    top-level directory is not a suite input.
+    """
+    parts = rel_path.split("/")
+    if len(parts) < 2:
+        return False
+    top, name = parts[0], parts[-1]
+    if top == "tests":
+        return name.startswith(TEST_DISCOVERY_PREFIX)
+    if top == "scripts":
+        return True
+    return False
+
 
 def inventory_fingerprint() -> tuple[str, list[dict]]:
     """Deterministic sha256 over the sorted .py file inventory of the suite inputs.
 
     Returns the aggregate fingerprint and a list of per-file entries with
     path and sha256, so the guard can name exactly which files drifted.
+    Non-suite scratch files (see ``is_suite_input``) are excluded.
     """
     files = []
     for d in INPUT_DIRS:
         for p in sorted((ROOT / d).rglob("*.py")):
             if "__pycache__" in p.parts:
                 continue
+            rel = p.relative_to(ROOT).as_posix()
+            if not is_suite_input(rel):
+                continue
             data = p.read_bytes()
             file_hash = hashlib.sha256(data).hexdigest()
             files.append({
-                "path": p.relative_to(ROOT).as_posix(),
+                "path": rel,
                 "sha256": file_hash,
             })
     files.sort(key=lambda t: t["path"])
@@ -141,6 +175,22 @@ def main(argv):
         suite = argv[i + 1]
 
     fingerprint, file_list = inventory_fingerprint()
+
+    # Surface any non-suite scratch .py files so an agent knows why they are not
+    # in the recorded claim (they are not executed by `unittest discover`).
+    excluded = []
+    for d in INPUT_DIRS:
+        for p in sorted((ROOT / d).rglob("*.py")):
+            if "__pycache__" in p.parts:
+                continue
+            rel = p.relative_to(ROOT).as_posix()
+            if not is_suite_input(rel):
+                excluded.append(rel)
+    if excluded:
+        print(
+            "[record_test_claim] excluded non-suite scratch .py files from the "
+            f"fingerprint: {excluded}"
+        )
 
     # If a previous passing run wrote a snapshot, repair a drifted manifest
     # claim first so the guard tests in the suite do not fail on the stale

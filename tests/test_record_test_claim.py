@@ -68,6 +68,32 @@ class ClaimFormatTests(unittest.TestCase):
         self.assertIsNotNone(rtc.CLAIM_FORMAT.match("297/296/0"))
 
 
+class SuiteInputPredicateTests(unittest.TestCase):
+    """``is_suite_input`` decides which .py files the claim fingerprint covers.
+
+    The suite runs as ``python3 -m unittest discover -s tests`` (default pattern
+    ``test*.py``), so only ``test*.py`` under ``tests/`` and every ``.py`` under
+    ``scripts/`` are executable inputs. A scratch ``tests/temp_*.py`` is not a
+    suite input and must be excluded, otherwise deleting it turns the guard RED.
+    """
+
+    def test_test_files_under_tests_are_inputs(self):
+        self.assertTrue(rtc.is_suite_input("tests/test_alpha_spending.py"))
+        self.assertTrue(rtc.is_suite_input("tests/test_state_consistency.py"))
+
+    def test_scratch_file_under_tests_is_not_an_input(self):
+        self.assertFalse(rtc.is_suite_input("tests/temp_test_drift.py"))
+        self.assertFalse(rtc.is_suite_input("tests/_tmp_scratch.py"))
+
+    def test_scripts_are_inputs(self):
+        self.assertTrue(rtc.is_suite_input("scripts/record_test_claim.py"))
+        self.assertTrue(rtc.is_suite_input("scripts/alpha_spending.py"))
+
+    def test_other_top_level_dirs_are_not_inputs(self):
+        self.assertFalse(rtc.is_suite_input("artifacts/foo.py"))
+        self.assertFalse(rtc.is_suite_input("tests.py"))
+
+
 class InventoryFingerprintTests(unittest.TestCase):
     def test_fingerprint_is_hex_sha256(self):
         fp, files = rtc.inventory_fingerprint()

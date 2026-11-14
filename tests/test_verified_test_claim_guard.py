@@ -29,6 +29,26 @@ CLAIM_FORMAT = re.compile(r"^(\d+)/(\d+)/(\d+)$")
 # Directories whose .py files are the executable inputs to the recorded claim.
 INPUT_DIRS = ("tests", "scripts")
 
+# Must mirror scripts/record_test_claim.py: the suite runs as
+# `python3 -m unittest discover -s tests`, whose default pattern is test*.py, so
+# only test*.py files under tests/ are executable test inputs. A non-test*.py
+# file under tests/ (e.g. a scratch tests/temp_*.py) is not part of the suite and
+# must not appear in the snapshot; recording it makes the guard RED after the
+# scratch file is deleted, with no real source change.
+TEST_DISCOVERY_PREFIX = "test"
+
+
+def _is_suite_input(rel_path):
+    parts = rel_path.split("/")
+    if len(parts) < 2:
+        return False
+    top, name = parts[0], parts[-1]
+    if top == "tests":
+        return name.startswith(TEST_DISCOVERY_PREFIX)
+    if top == "scripts":
+        return True
+    return False
+
 
 def _load(path):
     with open(path) as f:
@@ -40,16 +60,20 @@ def _inventory_fingerprint():
 
     Returns the aggregate fingerprint and a list of per-file entries with
     path and sha256, so the guard can name exactly which files drifted.
+    Non-suite scratch files (see ``_is_suite_input``) are excluded.
     """
     files = []
     for d in INPUT_DIRS:
         for p in sorted((ROOT / d).rglob("*.py")):
             if "__pycache__" in p.parts:
                 continue
+            rel = p.relative_to(ROOT).as_posix()
+            if not _is_suite_input(rel):
+                continue
             data = p.read_bytes()
             file_hash = hashlib.sha256(data).hexdigest()
             files.append({
-                "path": p.relative_to(ROOT).as_posix(),
+                "path": rel,
                 "sha256": file_hash,
             })
     files.sort(key=lambda t: t["path"])
@@ -103,6 +127,30 @@ class TestVerifiedTestClaimGuard(unittest.TestCase):
         self.assertEqual(self.snapshot["tests_run"], self.snapshot["tests_ok"])
         self.assertEqual(self.snapshot["tests_failures"], 0)
         self.assertGreater(self.snapshot["tests_run"], 0)
+
+    def test_snapshot_excludes_non_test_scratch_files(self):
+        """A non-``test*.py`` file under ``tests/`` is not executed by
+        ``unittest discover`` and must never be recorded as a suite input.
+
+        A snapshot that listed a scratch ``tests/temp_test_drift.py`` made the
+        fingerprint guard RED after that scratch file was deleted, even though no
+        real source changed. Pin the exclusion so a future snapshot cannot carry
+        such a path.
+        """
+        snap_files = self.snapshot.get("input_files", [])
+        paths = [f["path"] if isinstance(f, dict) else f for f in snap_files]
+        scratch = [
+            p for p in paths
+            if p.startswith("tests/") and not p.rsplit("/", 1)[-1].startswith("test")
+        ]
+        self.assertEqual(
+            scratch, [],
+            f"snapshot input_files includes non-suite scratch tests/ files: {scratch}",
+        )
+        # The exclusion predicate itself: test files in, scratch files out.
+        self.assertTrue(_is_suite_input("tests/test_alpha_spending.py"))
+        self.assertFalse(_is_suite_input("tests/temp_test_drift.py"))
+        self.assertTrue(_is_suite_input("scripts/alpha_spending.py"))
 
     def test_snapshot_fingerprint_matches_inventory(self):
         # Re-derive the fingerprint from the on-disk .py inventory so the
