@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T03:48:23Z",
+  "recorded_utc": "2026-11-14T04:39:05Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 427,
-  "tests_ok": 427,
+  "tests_run": 456,
+  "tests_ok": 456,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "427/427/0",
-  "input_fingerprint": "9919de47b2dfc86979350b74eff816ab8060ae0cc213e71285a5d426ee5546ea",
+  "claim": "456/456/0",
+  "input_fingerprint": "161ff25f736ebaf611194a00b0fba8664503506530195764f20ab00beef12d38",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -21,6 +21,10 @@
     {
       "path": "scripts/append_manifest_entry.py",
       "sha256": "b38976b2f3b20a26f07f665b9afa2cbab7d5d77b42cb9ef023222d9af9f2a958"
+    },
+    {
+      "path": "scripts/audit_f1_grid_execution_state.py",
+      "sha256": "2f3f43f0d0164c42a840e46f56112559360995306d12fdc6fe45b72b7444e48c"
     },
     {
       "path": "scripts/audit_integrity_audit_references.py",
@@ -268,7 +272,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "8e8d748d0696f15e0fe91cadb164f07cc5ead86debcb62653e87eedf25dc89f3"
+      "sha256": "a8f9608d493ea2b8a883bd487b6e291b247e01bbb29ef66f6eb0f6137547ee20"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -305,6 +309,10 @@
     {
       "path": "tests/test_f1_coverage_stability_audit.py",
       "sha256": "92d9182bbe33ff22923b70cebfe3dc56f3d9624c2c40877b6efa43b60171a6c1"
+    },
+    {
+      "path": "tests/test_f1_grid_coverage_repair.py",
+      "sha256": "082aefeeb60ab638b404b99c24270e5097b50d15e32c088c6b5feb6082e8d112"
     },
     {
       "path": "tests/test_f1_panel_coverage_repair.py",
@@ -471,5 +479,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 115
+  "input_file_count": 117
 }

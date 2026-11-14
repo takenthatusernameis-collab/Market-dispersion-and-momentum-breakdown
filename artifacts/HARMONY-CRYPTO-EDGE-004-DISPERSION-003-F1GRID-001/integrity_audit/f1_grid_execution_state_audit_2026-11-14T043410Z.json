@@ -1,0 +1,104 @@
+{
+  "audit_id": "F1GRID-001-EXECUTION-STATE",
+  "audited_utc": "2026-11-14T04:34:10Z",
+  "disposition": {
+    "committed_panels_modified": false,
+    "comparison_written": false,
+    "frozen_artifacts_modified": false,
+    "promotion": "none: EXPLORATORY_ONLY development evidence; a fidelity failure aborts the run and writes no comparison"
+  },
+  "evidence": {
+    "arm_a_cells": {
+      "blocked": 0,
+      "cells": 216,
+      "failed": 0,
+      "ok": 216
+    },
+    "arm_a_checkpoint_sha256": "843b76b4cae41363f88f2405429077b94d952cc86e039a97f333f49a33c0fc97",
+    "arm_a_max_date_last": "2026-10-30",
+    "arm_b_checkpoint_sha256": null,
+    "committed_ledger_cells_ok": 216,
+    "committed_ledger_evaluated_utc": "2026-10-24T10:46:28Z",
+    "committed_ledger_holm_rejected_count": 0,
+    "committed_ledger_max_date_last": "2026-09-29",
+    "committed_ledger_sha256": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "outputs": {
+      "arm_b_checkpoint_present": false,
+      "ledger_experiment_id": null,
+      "ledger_fidelity_anchor": null,
+      "ledger_present": false,
+      "summary_present": false
+    },
+    "panel_vintage": {
+      "funding_files": 32,
+      "funding_max_calc_time_utc": "2026-10-31T20:00:00Z",
+      "kline_files": 32,
+      "kline_max_open_time_utc": "2026-10-31T00:00:00Z",
+      "kline_min_of_file_maxima_utc": "2024-09-11T00:00:00Z",
+      "marketcap_max_date": "2026-11-03",
+      "marketcap_rows": 43996
+    },
+    "prereg_sha256": "9f4069c4b665d6c165f2233052b7cec523d7e2b0e39cc5967e5501e7dd0a8272",
+    "script_sha256": "fd57fad1a345a2113904638b84be6d085edbc6941982ca036316ed903c141902"
+  },
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001",
+  "fidelity": {
+    "cells_with_different_date_last": 216,
+    "cells_with_different_n_formations": 216,
+    "compared_cells": 216,
+    "drift_count": 3812,
+    "fidelity_passed": false,
+    "max_abs_delta_high_low_diff_net_1x": 0.01961808967970768,
+    "sample_drifts": [
+      "  H004V001.date_last: '2026-10-30' vs '2026-09-29'",
+      "  H004V001.eligible_assets_per_date.mean: 27.057803468208093 vs 27.081240768094535 (diff 2.344e-02)",
+      "  H004V001.formations: list length 1384 vs 1354",
+      "  H004V001.high_low_diff_gross: 0.03759991604120408 vs 0.03312181022478988 (diff 4.478e-03)",
+      "  H004V001.high_low_diff_net_1x: 0.03759991604120409 vs 0.03312181022478989 (diff 4.478e-03)",
+      "  H004V001.low_gross_mean: 0.008621840480656947 vs 0.013099946297071148 (diff 4.478e-03)",
+      "  H004V001.low_net_1x_mean: 0.007621840480656943 vs 0.012099946297071144 (diff 4.478e-03)",
+      "  H004V001.n_formations: 1384 vs 1354",
+      "  H004V001.n_low: 270 vs 251",
+      "  H004V001.n_mid: 874 vs 863"
+    ]
+  },
+  "frozen_artifacts": {
+    "forward_block/forward_block_evaluation.json": {
+      "matches_declared_constant": true,
+      "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
+    },
+    "forward_block_h10_fresh/forward_block_evaluation.json": {
+      "matches_declared_constant": true,
+      "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+    }
+  },
+  "hypothesis": "H26",
+  "interpretation": "The preregistered fidelity anchor requires arm A on the committed panels to reproduce the frozen 216-cell DISPERSION-003 ledger within 1e-9. The committed panels now end later than the vintage that produced that ledger, so the same formation dates carry different forward windows and no cell reproduces. The run script aborts by design and writes no comparison; nothing is promoted and no frozen artifact is modified. Re-running on the current vintage cannot satisfy the anchor; satisfying it requires an explicitly vintage-matched arm A under a new experiment ID and preregistration.",
+  "next_test": "Either (a) preregister a new EXPLORATORY_ONLY experiment that trims the panels to the frozen ledger's as-of date so arm A reproduces the committed ledger, then compares arm B on that same vintage; or (b) re-baseline arm A on the current vintage and drop the ledger-anchor claim. Neither path may promote a result or modify the frozen 003 artifacts, and neither may treat this audit as confirmation.",
+  "promise": {
+    "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/preregistrations/F1_GRID_COVERAGE_REPAIR_v1.md",
+    "promised_outputs": [
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/grid_result_ledger.json",
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/grid_summary.json",
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/grid_checkpoints/cell_checkpoint_armA_committed.json",
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/grid_checkpoints/cell_checkpoint_armB_f1_repaired.json"
+    ],
+    "script": "scripts/run_f1_grid.py"
+  },
+  "status": "BLOCKED_SPECIFICATION_GATE",
+  "verdict": "BLOCKED_FIDELITY_ANCHOR_UNSATISFIABLE",
+  "vintage_mismatch": {
+    "arm_a_max_formation_date": "2026-10-30",
+    "ledger_max_formation_date": "2026-09-29",
+    "panel_max_kline_date": "2026-10-31",
+    "tail_formation_contrast": {
+      "arm_a_n_assets": 26,
+      "arm_a_spread_gross": -0.08792293967581771,
+      "config_id": "H004V002",
+      "formation_date": "2026-09-29",
+      "ledger_n_assets": 26,
+      "ledger_spread_gross": 0.0,
+      "note": "the same formation date carries a different forward window in the two panel vintages; the older vintage ends immediately after this date, so its forward window degenerates to one bar"
+    }
+  }
+}

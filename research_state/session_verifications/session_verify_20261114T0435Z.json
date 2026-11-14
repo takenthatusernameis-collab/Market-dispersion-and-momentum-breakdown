@@ -1,0 +1,104 @@
+{
+  "session_id": "session_verify_20261114T0435Z",
+  "timestamp_utc": "2026-11-14T04:35:00Z",
+  "head_commit": "0326b117f1d9e6421ce92cd695b40711f2f6c467",
+  "branch": "main",
+  "working_tree_clean": false,
+  "requirements_verified": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compile_check": "EXIT 0",
+  "test_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "exit_code": 0,
+    "tests_run": 456,
+    "tests_ok": 456,
+    "tests_failed": 0,
+    "tests_skipped": 2
+  },
+  "verified_test_claim": {
+    "claim": "456/456/0",
+    "input_fingerprint": "161ff25f736ebaf611194a00b0fba8664503506530195764f20ab00beef12d38",
+    "input_file_count": 117,
+    "recorded_utc": "2026-11-14T04:39:05Z",
+    "snapshot_path": "research_state/verified_test_claim_claim_snapshot.json"
+  },
+  "read_only_audits": {
+    "prereg_and_h10_fresh_reference_consistency": {
+      "pass": true,
+      "scanned": 17,
+      "critical": 0,
+      "errors": 0,
+      "info": 0,
+      "artifact": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261114T043943Z.json"
+    },
+    "integrity_audit_reference_consistency": {
+      "pass": true,
+      "scanned": 19,
+      "critical": 0,
+      "errors": 0,
+      "info": 13,
+      "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T043943Z.json"
+    },
+    "preregistration_coverage": {
+      "pass": true,
+      "audits": 19,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0,
+      "artifact": "research_state/preregistration_coverage_audit.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "h10_cutoff_gate": "UNBLOCKED",
+    "november_probe_status": "BLOCKED_AS_PROBE_ONLY"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "committed_grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "committed_grid_summary": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "h10_fresh_block": {
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true,
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "h10_gate": "BLOCKED_BY_HARD_DATE_GATE",
+  "blocker_detail": "Requires formations strictly after 2026-09-29, strict 30-day maturity, and >=30 prior in-block dispersions for trailing-decile high/low rule. Only post-2026-09-29 formations live in unpublished November 2026 monthly archive (0/127 published). 30-day maturity and truncated-outcome prohibition are hard safeguards; MIN_STATE_FORMATIONS=5 confirmatory floor separate and unmet.",
+  "new_task_completed": "F1GRID-001 execution-state audit (bounded, no-cost, genuinely new; the recorded initial task for this session). Ran scripts/run_f1_grid.py, which resumed the committed 216-cell arm A checkpoint (216/216 OK, p-values present, evaluated 04:04:18Z-04:12:14Z) and aborted at the preregistered fidelity anchor: arm A on the current committed panels does not reproduce the frozen DISPERSION-003 grid_result_ledger.json (evaluated 2026-10-24T10:46:28Z) within 1e-9 (compared_cells=216, drift_count=3812; every cell differs in date_last and n_formations, e.g. H004V001 1384 vs 1354). Cause: the committed panels now end 2026-10-31 (klines/funding; marketcap 2026-11-03) while the frozen ledger vintage ended 2026-09-30, so formation 2026-09-29 carries a one-bar degenerate forward window in the ledger and a full window in arm A (H004V002 spread_gross 0.0 vs -0.08792293967581771). No grid_result_ledger.json and no grid_summary.json were written; arm B was never evaluated; nothing promoted. Added the prereg-promised tests/test_f1_grid_coverage_repair.py (29 tests) and the read-only scripts/audit_f1_grid_execution_state.py, which produced artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/integrity_audit/f1_grid_execution_state_audit_2026-11-14T043410Z.json (verdict BLOCKED_FIDELITY_ANCHOR_UNSATISFIABLE, status BLOCKED_SPECIFICATION_GATE). Repaired the stale manifest next_required_actions sequence claim 25 -> 26 and recorded registry_reconciliation_20261114T0435Z correcting the H26 'Executed 2026-11-14T04:0xZ' note. No frozen artifact, panel, grid ledger or forward block modified; probe_month=2026-11 not re-probed.",
+  "uncommitted_changes": [
+    "research_state/run_manifest.json",
+    "research_state/hypothesis_registry.json",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "research_state/verified_test_claim_claim_snapshot.json",
+    "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261114T043943Z.json",
+    "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T043943Z.json",
+    "research_state/preregistration_coverage_audit.json",
+    "scripts/audit_f1_grid_execution_state.py",
+    "tests/test_f1_grid_coverage_repair.py",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-001/integrity_audit/f1_grid_execution_state_audit_2026-11-14T043410Z.json"
+  ]
+}
