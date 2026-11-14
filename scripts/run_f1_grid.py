@@ -288,12 +288,13 @@ def cell_counts(summary_block: dict) -> dict:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("Usage:")[0])
-    parser.add_argument("--out-dir", default=str(OUT_DIR),
+    parser.add_argument("--out-dir", default=str(NEW_EXP_DIR),
                         help="output directory (default: the F1GRID-001 experiment root)")
     args = parser.parse_args(argv)
 
     out_dir = Path(args.out_dir)
-    OUT_CHECKPOINTS.mkdir(parents=True, exist_ok=True)
+    out_checkpoints = out_dir / "grid_checkpoints"
+    out_checkpoints.mkdir(parents=True, exist_ok=True)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # --- read-only verification: capture input hashes BEFORE computation ---
@@ -316,8 +317,8 @@ def main(argv=None) -> int:
     committed_fd = load_binance_panel(OLD_PANELS, "funding")
     (px_a, fd_a, mc), (px_b, fd_b, mc_b) = build_arm_panels(committed_px, committed_fd)
 
-    ckpt_a = OUT_CHECKPOINTS / "cell_checkpoint_armA_committed.json"
-    ckpt_b = OUT_CHECKPOINTS / "cell_checkpoint_armB_f1_repaired.json"
+    ckpt_a = out_checkpoints / "cell_checkpoint_armA_committed.json"
+    ckpt_b = out_checkpoints / "cell_checkpoint_armB_f1_repaired.json"
     checkpoint_a = json.loads(ckpt_a.read_text(encoding="utf-8")) if ckpt_a.exists() else {}
     checkpoint_b = json.loads(ckpt_b.read_text(encoding="utf-8")) if ckpt_b.exists() else {}
 
@@ -456,7 +457,9 @@ def main(argv=None) -> int:
             "net-1x series (block_len=21, n_boot=1000); Holm step-down across "
             "all 216 cells per arm; descriptive contrast only"),
     }
-    OUT_LEDGER.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    out_ledger = out_dir / "grid_result_ledger.json"
+    out_summary = out_dir / "grid_summary.json"
+    out_ledger.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
 
     summary = {
         "experiment_id": NEW_EXP,
@@ -496,7 +499,7 @@ def main(argv=None) -> int:
                 "conclusion; EXPLORATORY_ONLY development evidence on "
                 "already-inspected panels.",
     }
-    OUT_SUMMARY.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
+    out_summary.write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
 
     ok_a = arm_a["cells_ok"]; ok_b = arm_b["cells_ok"]
     rej_a = arm_a["holm_rejected_count"]; rej_b = arm_b["holm_rejected_count"]
@@ -505,9 +508,9 @@ def main(argv=None) -> int:
     print(f"[grid] cells OK in both arms: {n_compare}")
     print(f"[grid] labels: {labels}")
     print(f"[grid] mean delta eligible assets (B - A): {coverage_delta_mean:+.4f}")
-    print(f"[grid] ledger -> {OUT_LEDGER.relative_to(ROOT)}")
-    print(f"[grid] summary -> {OUT_SUMMARY.relative_to(ROOT)}")
-    print(f"[grid] checkpoints -> {OUT_CHECKPOINTS.relative_to(ROOT)}")
+    print(f"[grid] ledger -> {out_ledger.relative_to(ROOT)}")
+    print(f"[grid] summary -> {out_summary.relative_to(ROOT)}")
+    print(f"[grid] checkpoints -> {out_checkpoints.relative_to(ROOT)}")
     return 0
 
 
