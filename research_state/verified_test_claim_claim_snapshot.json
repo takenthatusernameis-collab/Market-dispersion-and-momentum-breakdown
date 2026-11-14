@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T09:08:06Z",
+  "recorded_utc": "2026-11-14T09:52:32Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 461,
-  "tests_ok": 461,
+  "tests_run": 463,
+  "tests_ok": 463,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "461/461/0",
-  "input_fingerprint": "99dd1e12f38ad16157c3db48619d253d98f173e66b74af8bf4c401b1bd31b73b",
+  "claim": "463/463/0",
+  "input_fingerprint": "9cffc08418edb56304651a945a1dfceca6ca0742407a0b3806d7c0e5f0d65935",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -264,7 +264,7 @@
     },
     {
       "path": "tests/test_bytecode_hygiene.py",
-      "sha256": "1d79db554c43fd3504dcf742f5decbf8cdf69889088792ca88f643e1e27a3625"
+      "sha256": "2a12a19a479b867b61cf7a192adee244e0a91ed41ae75b1d6f271e132ceb0b35"
     },
     {
       "path": "tests/test_candidate_validation.py",
