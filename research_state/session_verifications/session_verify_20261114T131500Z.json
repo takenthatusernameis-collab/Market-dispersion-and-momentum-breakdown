@@ -1,5 +1,5 @@
 {
-  "session_id": "session_20261114T131500Z",
+  "session_id": "session_verify_20261114T131500Z",
   "timestamp_utc": "20261114T131500Z",
   "head_sha": "6d0a4ca96d14752548cbcc9f62158ac1eab40c4e",
   "remote_sha": "6d0a4ca96d14752548cbcc9f62158ac1eab40c4e",
@@ -16,8 +16,14 @@
   "probe_evidence": {
     "total_real_probes": 397,
     "total_mock_probes": 0,
-    "probe_month_2026-10": {"count": 270, "published": 49},
-    "probe_month_2026-11": {"count": 127, "published": 0},
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
     "newest_probe": "cutoff_probe_20261113T091257Z.json"
   },
   "h10_gate_vs_probe": {
