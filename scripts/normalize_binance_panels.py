@@ -19,21 +19,45 @@ KLINES_HEADER = "open_time,open,high,low,close,volume,close_time,quote_volume,co
 FUNDING_HEADER = "symbol,calc_time,funding_interval_hours,last_funding_rate"
 
 
+def ym_key(path: Path) -> tuple[int, int]:
+    """Sort key: (year, month) parsed from the zip filename stem.
+
+    Splitting "MATICUSDT-klines-2026-10.zip" on "-" and taking the last
+    element ("10.zip") groups every year's October together, so the
+    concatenated panel would read 2023-01, 2024-01, 2025-01, 2026-01,
+    2023-02, ... instead of chronological order. The year is the second-to-
+    last dash-delimited token.
+    """
+    parts = path.stem.split("-")
+    return int(parts[-2]), int(parts[-1].split(".")[0])
+
+
+def strip_header(lines: list[str]) -> list[str]:
+    """Drop a leading canonical header row if present, else return unchanged."""
+    if lines and lines[0].startswith(("open_time,", "calc_time,", "symbol,")):
+        return lines[1:]
+    return lines
+
+
+def prefix_funding(symbol: str, lines: list[str]) -> list[str]:
+    """Prepend the symbol column to each funding row.
+
+    The Binance fundingRate archive ships 3 columns
+    (calc_time,funding_interval_hours,last_funding_rate) with no symbol
+    column, but the panel header is 4 columns and every downstream reader
+    (pandas, build_universe, eval_forward_block) expects the symbol in
+    column 0. Without this the symbol int lands in calc_time and
+    last_funding_rate parses as NaN.
+    """
+    return [f"{symbol},{l}" for l in lines]
+
+
 def main() -> None:
     PANEL_DIR.mkdir(parents=True, exist_ok=True)
     total_rows = 0
     for kind, header in (("klines", KLINES_HEADER), ("funding", FUNDING_HEADER)):
         by_symbol: dict[str, list[str]] = {}
-        # Sort by (year, month) from the filename, not by the month suffix
-        # alone: splitting "MATICUSDT-klines-2026-10.zip" on "-" and taking
-        # the last element ("10.zip") groups every year's October together, so
-        # the concatenated panel would read 2023-01, 2024-01, 2025-01, 2026-01,
-        # 2023-02, ... instead of chronological order.
-        def _ym_key(p: Path) -> tuple[int, int]:
-            parts = p.stem.split("-")
-            return int(parts[-2]), int(parts[-1].split(".")[0])
-
-        for z in sorted(RAW_DIR.glob(f"{kind}/*/*.zip"), key=_ym_key):
+        for z in sorted(RAW_DIR.glob(f"{kind}/*/*.zip"), key=ym_key):
             symbol = z.parent.name
             with zipfile.ZipFile(z) as zf:
                 csv_names = [n for n in zf.namelist() if n.endswith(".csv")]
@@ -41,23 +65,13 @@ def main() -> None:
                     continue
                 text = zf.read(csv_names[0]).decode("utf-8")
             lines = [l for l in text.splitlines() if l.strip()]
-            if lines and lines[0].startswith(("open_time,", "calc_time,", "symbol,")):
-                lines = lines[1:]
+            lines = strip_header(lines)
             by_symbol.setdefault(symbol, []).extend(lines)
             total_rows += len(lines)
 
         for symbol, lines in by_symbol.items():
             panel_path = PANEL_DIR / f"binance_{kind}_{symbol}.csv"
-            # The Binance fundingRate archive ships 3 columns
-            # (calc_time,funding_interval_hours,last_funding_rate) with no symbol
-            # column, but the panel header is 4 columns and every downstream reader
-            # (pandas, build_universe, eval_forward_block) expects the symbol in
-            # column 0. Prefix every funding row with the symbol so the header and
-            # the data agree; without this the symbol int lands in calc_time and
-            # last_funding_rate parses as NaN.
-            prefixed = (
-                [f"{symbol},{l}" for l in lines] if kind == "funding" else lines
-            )
+            prefixed = prefix_funding(symbol, lines) if kind == "funding" else lines
             panel_path.write_text(header + "\n" + "\n".join(prefixed) + "\n")
 
     print(f"[normalize] wrote per-symbol klines+funding panels, {total_rows} total data rows")

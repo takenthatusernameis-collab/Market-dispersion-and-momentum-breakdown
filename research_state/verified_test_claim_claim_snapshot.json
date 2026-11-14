@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T17:36:35Z",
+  "recorded_utc": "2026-11-14T18:25:28Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 504,
-  "tests_ok": 504,
+  "tests_run": 524,
+  "tests_ok": 524,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "504/504/0",
-  "input_fingerprint": "c64209bb37746578daf4cc482984eda1b4a8659ca26dabe6027507bfb1de20b6",
+  "claim": "524/524/0",
+  "input_fingerprint": "6a54fa9abf52797711b5c6b6c81b38c6ac565e2173c501f06d8941eeb75ed368",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -156,7 +156,7 @@
     },
     {
       "path": "scripts/normalize_binance_panels.py",
-      "sha256": "376d92c95f71c5b263e3db903b86d653d2ca08edb2b800987e4050428f1bb37d"
+      "sha256": "79c514da098bac33d7dc0ae1409a2c373f77d6d08fbb0a242cc595c99980010e"
     },
     {
       "path": "scripts/phase_b_placebos.py",
@@ -451,6 +451,10 @@
       "sha256": "1e3bd447b93571a19fe00c9dc946b3e01a6359128dc71eeca1f9ebf119aaa77c"
     },
     {
+      "path": "tests/test_normalize_binance_panels.py",
+      "sha256": "8d55840f163c12e743d23284d95716147027d26ccd5e73284ccddc286c8208ed"
+    },
+    {
       "path": "tests/test_november_probe_summary_consistency.py",
       "sha256": "91fd4d0e09c36a1dd89480398933c5c685e63888b5a5d850b928fa8281fe1488"
     },
@@ -515,5 +519,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 126
+  "input_file_count": 127
 }
