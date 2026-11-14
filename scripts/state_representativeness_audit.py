@@ -132,7 +132,11 @@ def main() -> int:
         ),
     }
     OUT_PATH.write_text(json.dumps(out, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"[state-audit] label={label} baseline={baseline} out={OUT_PATH.relative_to(ROOT)}")
+    try:
+        out_display = OUT_PATH.relative_to(ROOT)
+    except ValueError:
+        out_display = OUT_PATH
+    print(f"[state-audit] label={label} baseline={baseline} out={out_display}")
     return 0
 
 
