@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T01:57:53Z",
+  "recorded_utc": "2026-11-14T03:48:23Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 423,
-  "tests_ok": 423,
+  "tests_run": 427,
+  "tests_ok": 427,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "423/423/0",
-  "input_fingerprint": "61a8426ffa28892124f388dc99e021a1ebba2001547c5d5eee3223834a1a8c64",
+  "claim": "427/427/0",
+  "input_fingerprint": "9919de47b2dfc86979350b74eff816ab8060ae0cc213e71285a5d426ee5546ea",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -184,7 +184,7 @@
     },
     {
       "path": "scripts/record_test_claim.py",
-      "sha256": "b3fb148edad8cee7fda2ab902815f9b68719ea1a8992f852a53643606fb8381a"
+      "sha256": "b845a6deda30bf3d5ea825e2f9887f23e879bd23b3d76ef7bf423b07e7fc6f55"
     },
     {
       "path": "scripts/refresh_free_data.py",
@@ -221,6 +221,10 @@
     {
       "path": "scripts/run_dispersion003_grid.py",
       "sha256": "e34492301861fed39bc307b05e449a5b04c91f72b34c350d163d428365098d76"
+    },
+    {
+      "path": "scripts/run_f1_grid.py",
+      "sha256": "fd57fad1a345a2113904638b84be6d085edbc6941982ca036316ed903c141902"
     },
     {
       "path": "scripts/run_phase_g_fast.py",
@@ -436,7 +440,7 @@
     },
     {
       "path": "tests/test_record_test_claim.py",
-      "sha256": "37f293223e28f8cca13ad6dbefe94e4a52067c15212eb4ed77a74732d8a78a47"
+      "sha256": "de98538e56119912f0ab8b19d49570761f0bc89278720936425072677d79eb26"
     },
     {
       "path": "tests/test_refresh_provenance_boundaries.py",
@@ -467,5 +471,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 114
+  "input_file_count": 115
 }

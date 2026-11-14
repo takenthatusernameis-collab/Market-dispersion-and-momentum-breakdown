@@ -118,6 +118,42 @@ def parse_summary(output: str):
     return run, ok, failures, skipped
 
 
+def _upgrade_legacy_snapshot(snapshot: dict) -> dict:
+    """Upgrade a legacy snapshot format to the current schema.
+
+    Legacy format (schema_version 1, pre-per-file-hashes):
+      - input_files: list of strings (paths only)
+    Current format (schema_version 1, with per-file hashes):
+      - input_files: list of dicts with "path" and "sha256"
+
+    This function does NOT change the on-disk format for the current schema;
+    it only upgrades a legacy snapshot in memory so the single writer can
+    proceed without failing on a format mismatch.
+    """
+    if not isinstance(snapshot.get("input_files"), list):
+        return snapshot
+    if not snapshot["input_files"]:
+        return snapshot
+    if isinstance(snapshot["input_files"][0], dict):
+        return snapshot  # already current format
+
+    # Legacy format detected: list of strings -> list of dicts with placeholder hashes.
+    # The actual hashes will be recomputed from disk when the snapshot is refreshed
+    # after the suite passes. We use a placeholder so the snapshot structure is valid.
+    upgraded_files = [
+        {"path": path, "sha256": "0" * 64} for path in snapshot["input_files"]
+    ]
+    snapshot["input_files"] = upgraded_files
+    snapshot["input_file_count"] = len(upgraded_files)
+    # Mark that this was upgraded so the refresher knows to recompute.
+    snapshot["_legacy_upgraded"] = True
+    print(
+        f"[record_test_claim] upgraded legacy snapshot format: "
+        f"{len(upgraded_files)} input_files converted from list-of-strings to list-of-dicts"
+    )
+    return snapshot
+
+
 def sync_from_snapshot(manifest_path, snapshot_path):
     """Repair a drifted manifest claim from the snapshot, when one exists.
 
@@ -133,10 +169,19 @@ def sync_from_snapshot(manifest_path, snapshot_path):
     with the current fingerprint. Requiring a fingerprint match here would
     deadlock -- the guards would fail on the stale manifest, the suite would
     not run, and the snapshot could never be refreshed.
+
+    Legacy snapshot formats (list-of-strings input_files) are upgraded in
+    memory and written back to disk so the guard tests can read the current
+    format.
     """
     if not snapshot_path.exists():
         return False
     snap = json.loads(snapshot_path.read_text())
+    snap = _upgrade_legacy_snapshot(snap)
+    # Write upgraded snapshot back to disk if it was upgraded
+    if snap.get("_legacy_upgraded"):
+        snap.pop("_legacy_upgraded", None)
+        snapshot_path.write_text(json.dumps(snap, indent=2) + "\n")
     manifest = json.loads(manifest_path.read_text())
     if manifest.get("latest_verified_test_claim") == snap["claim"]:
         return False
@@ -197,7 +242,7 @@ def main(argv):
     # narrative before this script has a chance to refresh it.
     sync_from_snapshot(MANIFEST_PATH, SNAPSHOT_PATH)
 
-    # Refresh the snapshot's derived inventory fields now that the manifest
+# Refresh the snapshot's derived inventory fields now that the manifest
     # claim is synced. The guard tests assert the snapshot's fingerprint
     # matches the on-disk .py inventory; without this the suite would fail on
     # the stale fingerprint before this script could refresh the snapshot, and
@@ -206,9 +251,19 @@ def main(argv):
     # actual suite summary) is written below only if the suite passes.
     if SNAPSHOT_PATH.exists():
         snap = json.loads(SNAPSHOT_PATH.read_text())
-        snap["input_fingerprint"] = fingerprint
-        snap["input_file_count"] = len(file_list)
-        snap["input_files"] = file_list
+        snap = _upgrade_legacy_snapshot(snap)
+        # If the snapshot was upgraded from legacy format, recompute the actual
+        # hashes from disk instead of keeping the placeholder.
+        if snap.get("_legacy_upgraded"):
+            fingerprint, file_list = inventory_fingerprint()
+            snap["input_fingerprint"] = fingerprint
+            snap["input_files"] = file_list
+            snap["input_file_count"] = len(file_list)
+            snap.pop("_legacy_upgraded", None)
+        else:
+            snap["input_fingerprint"] = fingerprint
+            snap["input_files"] = file_list
+            snap["input_file_count"] = len(file_list)
         SNAPSHOT_PATH.write_text(json.dumps(snap, indent=2) + "\n")
         print(
             f"[record_test_claim] refreshed snapshot fingerprint "

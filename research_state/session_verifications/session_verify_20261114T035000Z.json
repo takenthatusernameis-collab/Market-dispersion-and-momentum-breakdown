@@ -1,0 +1,94 @@
+{
+  "session_id": "session_verify_20261114T035000Z",
+  "timestamp_utc": "2026-11-14T03:50:00Z",
+  "head_commit": "db8cc2bf",
+  "branch": "main",
+  "working_tree_clean": false,
+  "requirements_verified": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "compile_check": "EXIT 0",
+  "test_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "exit_code": 0,
+    "tests_run": 427,
+    "tests_ok": 427,
+    "tests_failed": 0,
+    "tests_skipped": 2
+  },
+  "verified_test_claim": {
+    "claim": "427/427/0",
+    "input_fingerprint": "9919de47b2dfc86979350b74eff816ab8060ae0cc213e71285a5d426ee5546ea",
+    "input_file_count": 115,
+    "snapshot_path": "research_state/verified_test_claim_claim_snapshot.json"
+  },
+  "read_only_audits": {
+    "prereg_and_h10_fresh_reference_consistency": {
+      "pass": true,
+      "scanned": 17,
+      "critical": 0,
+      "errors": 0,
+      "info": 1,
+      "artifact": "research_state/PREREG_AND_H10_FRESH_REFERENCE_CONSISTENCY_20261114T034924Z.json"
+    },
+    "integrity_audit_reference_consistency": {
+      "pass": true,
+      "scanned": 19,
+      "critical": 0,
+      "errors": 0,
+      "info": 13,
+      "artifact": "research_state/INTEGRITY_AUDIT_REFERENCE_CONSISTENCY_20261114T034924Z.json"
+    },
+    "preregistration_coverage": {
+      "pass": true,
+      "audits": 19,
+      "missing_prereq": 0,
+      "uncovered_prereq": 0,
+      "artifact": "research_state/preregistration_coverage_audit.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "h10_cutoff_gate": "UNBLOCKED",
+    "november_probe_status": "BLOCKED_AS_PROBE_ONLY"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "h10_fresh_block": {
+    "status": "IMMATURE",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "sequential_look_number": 1,
+    "sequential_look_mature": false,
+    "sequential_remaining_budget": 0.025,
+    "block_sealed": true,
+    "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "h10_gate": "BLOCKED_BY_HARD_DATE_GATE",
+  "blocker_detail": "Requires formations strictly after 2026-09-29, strict 30-day maturity, and >=30 prior in-block dispersions for trailing-decile high/low rule. Only post-2026-09-29 formations live in unpublished November 2026 monthly archive (0/127 published). 30-day maturity and truncated-outcome prohibition are hard safeguards; MIN_STATE_FORMATIONS=5 confirmatory floor separate and unmet.",
+  "new_task_completed": "Verified-claim snapshot schema hardening (bounded, no-cost, genuinely new): Added _upgrade_legacy_snapshot() to scripts/record_test_claim.py to detect and upgrade legacy list-of-strings input_files format to current list-of-dicts format with per-file sha256. Added 4 regression tests in tests/test_record_test_claim.py::LegacySnapshotUpgradeTests covering in-memory upgrade, current format preservation, empty list handling, and sync_from_snapshot disk upgrade. Test suite 423 -> 427 (4 new tests). Refreshed claim snapshot to 427/427/0 with fingerprint 9919de47b2dfc869... (115 files, includes new scripts/run_f1_grid.py). All audits pass, frozen artifacts unchanged.",
+  "uncommitted_changes": [
+    "scripts/record_test_claim.py",
+    "tests/test_record_test_claim.py",
+    "research_state/verified_test_claim_claim_snapshot.json",
+    "research_state/run_manifest.json"
+  ]
+}

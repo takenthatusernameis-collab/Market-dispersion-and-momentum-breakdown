@@ -206,5 +206,83 @@ class SyncFromSnapshotTests(unittest.TestCase):
             tmp.rmdir()
 
 
+class LegacySnapshotUpgradeTests(unittest.TestCase):
+    """Test that legacy snapshot format (list-of-strings input_files) is upgraded."""
+
+    def test_upgrade_legacy_snapshot_in_memory(self):
+        # Legacy snapshot: input_files as list of strings
+        legacy_snap = {
+            "schema_version": 1,
+            "claim": "10/10/0",
+            "recorded_utc": "2026-01-01T00:00:00Z",
+            "input_files": ["tests/test_foo.py", "scripts/bar.py"],
+            "input_file_count": 2,
+        }
+        upgraded = rtc._upgrade_legacy_snapshot(legacy_snap)
+        self.assertIsInstance(upgraded["input_files"], list)
+        self.assertEqual(len(upgraded["input_files"]), 2)
+        self.assertIsInstance(upgraded["input_files"][0], dict)
+        self.assertIn("path", upgraded["input_files"][0])
+        self.assertIn("sha256", upgraded["input_files"][0])
+        self.assertEqual(upgraded["input_files"][0]["path"], "tests/test_foo.py")
+        self.assertEqual(upgraded["input_files"][0]["sha256"], "0" * 64)
+        self.assertTrue(upgraded.get("_legacy_upgraded"))
+
+    def test_current_format_not_changed(self):
+        # Current snapshot: input_files as list of dicts
+        current_snap = {
+            "schema_version": 1,
+            "claim": "10/10/0",
+            "recorded_utc": "2026-01-01T00:00:00Z",
+            "input_files": [
+                {"path": "tests/test_foo.py", "sha256": "abc123"},
+                {"path": "scripts/bar.py", "sha256": "def456"},
+            ],
+            "input_file_count": 2,
+        }
+        upgraded = rtc._upgrade_legacy_snapshot(current_snap)
+        self.assertEqual(upgraded["input_files"], current_snap["input_files"])
+        self.assertNotIn("_legacy_upgraded", upgraded)
+
+    def test_empty_input_files_not_changed(self):
+        snap = {
+            "schema_version": 1,
+            "claim": "10/10/0",
+            "input_files": [],
+            "input_file_count": 0,
+        }
+        upgraded = rtc._upgrade_legacy_snapshot(snap)
+        self.assertEqual(upgraded["input_files"], [])
+
+    def test_sync_from_snapshot_upgrades_legacy(self):
+        tmp = ROOT / "research_state" / "_tmp_rtc_legacy"
+        tmp.mkdir(exist_ok=True)
+        try:
+            m = tmp / "m.json"
+            s = tmp / "s.json"
+            # Legacy snapshot with list-of-strings input_files
+            s.write_text(json.dumps({
+                "claim": "9/9/0",
+                "recorded_utc": "2026-02-02T00:00:00Z",
+                "input_files": ["tests/test_foo.py", "scripts/bar.py"],
+                "input_file_count": 2,
+            }))
+            m.write_text(
+                '{\n  "latest_verified_test_claim": "1/1/0",\n'
+                '  "last_updated_utc": "2020-01-01T00:00:00Z"\n}\n')
+            changed = rtc.sync_from_snapshot(m, s)
+            self.assertTrue(changed)
+            repaired = json.loads(m.read_text())
+            self.assertEqual(repaired["latest_verified_test_claim"], "9/9/0")
+            # Verify the snapshot file was upgraded on disk
+            snap_on_disk = json.loads(s.read_text())
+            self.assertIsInstance(snap_on_disk["input_files"][0], dict)
+            self.assertIn("sha256", snap_on_disk["input_files"][0])
+        finally:
+            for p in tmp.glob("*"):
+                p.unlink()
+            tmp.rmdir()
+
+
 if __name__ == "__main__":
     unittest.main()
