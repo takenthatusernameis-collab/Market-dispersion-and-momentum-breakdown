@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-14T20:18:00Z",
+  "last_updated_utc": "2026-11-14T20:34:41Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "557/557/0",
+  "latest_verified_test_claim": "563/563/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1118,7 +1118,8 @@
     "session_record_verify_20261114T184308Z",
     "session_record_verify_20261114T193450Z",
     "session_record_verify_20261114T195600Z",
-    "session_record_verify_20261114T201800Z"
+    "session_record_verify_20261114T201800Z",
+    "session_record_verify_20261114T203441Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1200,7 +1201,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261114T201800Z",
+  "session_record_latest": "session_record_verify_20261114T203441Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1588,6 +1589,24 @@
       "new_tests": "tests/test_rewrite_state_json.py (8 tests)",
       "probe_evidence": "397 real / 0 mock; 2026-10: 270/49 published; 2026-11: 127/0 published; newest cutoff_probe_20261113T091257Z.json",
       "frozen_hashes": "unchanged",
+      "registry": "next_sequence_number 28, H1..H28",
+      "h10_gate": "UNBLOCKED by October 2026 archive; November 2026 probe blocked; fresh block immature; k not advanced"
+    }
+  },
+  "session_record_verify_20261114T203441Z": {
+    "session_id": "session_verify_20261114T203441Z",
+    "timestamp_utc": "2026-11-14T20:34:41Z",
+    "action": "added_hermetic_tests_for_fix_funding_panel_rows_month_key_and_fixed_a_sort_key_regression",
+    "outcome": "green",
+    "verification": {
+      "test_suite": "563/563/0 (skipped=2, exit 0)",
+      "verified_claim": "563/563/0",
+      "input_files": 131,
+      "fingerprint": "2dbf8b52da4b0d23...",
+      "new_tests": "tests/test_fix_funding_panel_rows.py (6 tests)",
+      "script_fix": "scripts/fix_funding_panel_rows.py month_key: path.stem.split('-')[-1] (MM only, interleaving years) -> '-'.join(path.stem.split('-')[-2:]) (full YYYY-MM); verified against real zips (46 BTCUSDT zips 2023-01..2026-10 now ascending) and against the committed panel (binance_funding_BTCUSDT.csv 4200 rows, 2023-01-01..2026-10-31, strictly ascending by calc_time)",
+      "probe_evidence": "397 real / 0 mock; 2026-10: 270/49 published; 2026-11: 127/0 published; newest cutoff_probe_20261113T091257Z.json",
+      "frozen_hashes": "unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., frontier 9ba08f3f..., grid v3 config 1ff4c1f2...)",
       "registry": "next_sequence_number 28, H1..H28",
       "h10_gate": "UNBLOCKED by October 2026 archive; November 2026 probe blocked; fresh block immature; k not advanced"
     }

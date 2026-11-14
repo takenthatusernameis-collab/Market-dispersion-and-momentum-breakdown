@@ -35,8 +35,19 @@ FUNDING_HEADER = "symbol,calc_time,funding_interval_hours,last_funding_rate"
 
 
 def month_key(path: Path) -> str:
-    """Return the ``YYYY-MM`` suffix of a funding zip filename."""
-    return path.stem.split("-")[-1]
+    """Return the ``YYYY-MM`` suffix of a funding zip filename.
+
+    The stem is ``<SYMBOL>-funding-YYYY-MM`` (e.g.
+    ``BTCUSDT-funding-2023-01``). Taking only the last dash-separated
+    component returns ``MM`` -- the same value for every year's January -- so
+    sorting by it groups 2023-01, 2024-01, 2025-01, 2026-01 together and the
+    concatenated panel reads out of chronological order. The last TWO
+    components are joined to recover the full ``YYYY-MM`` token, which sorts
+    correctly across years. The committed panels (binance_funding_BTCUSDT.csv,
+    4200 rows, 2023-01-01..2026-10-31, strictly ascending by calc_time) are
+    produced by this key.
+    """
+    return "-".join(path.stem.split("-")[-2:])
 
 
 def rebuild() -> int:

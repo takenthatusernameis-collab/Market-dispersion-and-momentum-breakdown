@@ -1,0 +1,59 @@
+{
+  "session_id": "session_verify_20261114T203441Z",
+  "recorded_utc": "2026-11-14T20:34:41Z",
+  "local_head": "a5ce2f2c89bcbffbaa1b8d2329cbcf0cfcdd0d74",
+  "remote_head": "a5ce2f2c89bcbffbaa1b8d2329cbcf0cfcdd0d74",
+  "persistence_claimable": true,
+  "test_suite": {
+    "ran": 563,
+    "passed": 563,
+    "skipped": 2,
+    "exit_code": 0,
+    "verified_claim": "563/563/0",
+    "fingerprint": "2dbf8b52da4b0d23...",
+    "input_files": 131
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": { "count": 270, "published": 49 },
+    "probe_month_2026-11": { "count": 127, "published": 0 },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "mock_probes": 0
+  },
+  "h10_gate": {
+    "cutoff_gate": "UNBLOCKED",
+    "gate_date_required": "2026-10-29",
+    "gate_met_by_month_end": true,
+    "november_probe_blocked": true,
+    "november_probe_published": 0,
+    "fresh_block_immature": true,
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "last_allowed_formation_date": "2026-09-30",
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "block_sealed": true,
+    "k_not_advanced": true,
+    "blocked_by_hard_date_gate": true
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "registry": { "next_sequence_number": 28, "hypotheses": "H1..H28" },
+  "tracked_changes": [
+    "tests/test_fix_funding_panel_rows.py (new; 6 hermetic tests for the previously uncovered fix_funding_panel_rows.py month_key pure seam)",
+    "scripts/fix_funding_panel_rows.py (month_key bug fix: was path.stem.split('-')[-1] -> MM only, interleaving years; now '-'.join(path.stem.split('-')[-2:]) -> full YYYY-MM, matching the chronological committed panels)",
+    "research_state/verified_test_claim_claim_snapshot.json (refreshed: claim 563/563/0, 131 input files, fingerprint 2dbf8b52da4b0d23...)",
+    "research_state/run_manifest.json (claim re-pinned 563/563/0; manifest session record appended; session_record_latest repointed)",
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md",
+    "research_state/session_verifications/session_verify_20261114T203441Z.json (new)"
+  ],
+  "oversized_untracked": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json"
+  ]
+}

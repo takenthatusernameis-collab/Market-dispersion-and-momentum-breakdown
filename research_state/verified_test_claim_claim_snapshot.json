@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T20:17:13Z",
+  "recorded_utc": "2026-11-14T20:49:12Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 557,
-  "tests_ok": 557,
+  "tests_run": 563,
+  "tests_ok": 563,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "557/557/0",
-  "input_fingerprint": "9292b01768b578d07f9c9395d5559645976b76f6ebfaaac04451ad83f69e559f",
+  "claim": "563/563/0",
+  "input_fingerprint": "2dbf8b52da4b0d23769170740385bae7f5fd1ff43a9e08a3faadae972723a2cb",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -100,7 +100,7 @@
     },
     {
       "path": "scripts/fix_funding_panel_rows.py",
-      "sha256": "7c7ab85ebde09709d1d6d6f691d4ca500b14ef39a8b33cc37b0217cf7cc9d9f1"
+      "sha256": "3bcdc1df7639cc1d829bfe528fcd22e3ad464d5e71f02bf91ca1e0656d5e3570"
     },
     {
       "path": "scripts/fix_inference.py",
@@ -351,6 +351,10 @@
       "sha256": "1e3a64e45e043701386401339445712dfb6e7bcfe9879f375b88bde6763022a9"
     },
     {
+      "path": "tests/test_fix_funding_panel_rows.py",
+      "sha256": "9f1786ba32150cec9bd6e688d66c6d9d0977369e9156486db00deefe64be205a"
+    },
+    {
       "path": "tests/test_formation_accounting.py",
       "sha256": "c93edf5b7fcc4feca390481599df8ef8d4ad49a54cded6ad6c2ad67c5f564917"
     },
@@ -531,5 +535,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 130
+  "input_file_count": 131
 }
