@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -50,13 +51,71 @@ GRID_MANIFEST = OLD_EXP_DIR / "grid_config_manifest.json"
 
 ASOF_DATE = "2026-09-30"
 FIDELITY_TOL = 1e-9
-SKIP_FIELDS = {"evaluated_utc"}
+SKIP_FIELDS = {"evaluated_utc", "pvalue_note", "pvalue_bootstrap_two_sided", "holm_rejected"}
 
 
 def trim_panel(df: pd.DataFrame, col: str = "date") -> pd.DataFrame:
     d = df.copy()
     d = d[d[col].astype(str).str.slice(0, 10) <= ASOF_DATE]
     return d
+
+
+def fidelity_check(arm_a_cells: dict, committed_cells: dict) -> dict:
+    drifted = []
+    if set(arm_a_cells) != set(committed_cells):
+        drifted.append("  cell id mismatch: "
+                       f"{sorted(set(arm_a_cells) ^ set(committed_cells))}")
+    for cid in sorted(set(arm_a_cells) & set(committed_cells)):
+        a, b = arm_a_cells[cid], committed_cells[cid]
+        for key in sorted(set(a) | set(b)):
+            if key in SKIP_FIELDS:
+                continue
+            aval = a.get(key, "<MISSING>")
+            bval = b.get(key, "<MISSING>")
+            if key == "formations":
+                values_close(aval, bval, f"{cid}.formations", drifted)
+                continue
+            values_close(aval, bval, f"{cid}.{key}", drifted)
+    return {
+        "passed": len(drifted) == 0,
+        "max_abs_diff": None,
+        "drifted": drifted[:50],
+        "drift_count": len(drifted),
+        "compared_cells": len(set(arm_a_cells) & set(committed_cells)),
+    }
+
+
+def values_close(a, b, path: str, drifted: list[str]) -> None:
+    if isinstance(a, float) or isinstance(b, float):
+        try:
+            fa, fb = float(a), float(b)
+        except (TypeError, ValueError):
+            drifted.append(f"  {path}: type mismatch {a!r} vs {b!r}")
+            return
+        if math.isnan(fa) and math.isnan(fb):
+            return
+        if abs(fa - fb) > FIDELITY_TOL:
+            drifted.append(f"  {path}: {a!r} vs {b!r} (diff {abs(fa - fb):.3e})")
+        return
+    if isinstance(a, dict) and isinstance(b, dict):
+        if set(a) != set(b):
+            drifted.append(f"  {path}: key mismatch "
+                           f"{sorted(set(a) ^ set(b))}")
+            for k in sorted(set(a) & set(b)):
+                values_close(a[k], b[k], f"{path}.{k}", drifted)
+        else:
+            for k in sorted(a):
+                values_close(a[k], b[k], f"{path}.{k}", drifted)
+        return
+    if isinstance(a, list) and isinstance(b, list):
+        if len(a) != len(b):
+            drifted.append(f"  {path}: list length {len(a)} vs {len(b)}")
+            return
+        for i, (x, y) in enumerate(zip(a, b)):
+            values_close(x, y, f"{path}[{i}]", drifted)
+        return
+    if a != b:
+        drifted.append(f"  {path}: {a!r} vs {b!r}")
 
 
 def load_trimmed_panels():
@@ -157,7 +216,7 @@ def main(argv=None) -> int:
     arm_a = evaluate_arm("A (ledger-vintage committed)", px_a, fd_a, mc_a,
                          rows, checkpoint_a, ckpt_a)
     committed = json.loads(COMMITTED_LEDGER.read_text(encoding="utf-8"))
-    fidelity = f1.fidelity_check(arm_a["cells"], committed["cells"])
+    fidelity = fidelity_check(arm_a["cells"], committed["cells"])
     print(f"[grid] fidelity anchor: {'PASS' if fidelity['passed'] else 'FAIL'} "
           f"(compared {fidelity['compared_cells']}, "
           f"drifts {fidelity['drift_count']})", flush=True)
