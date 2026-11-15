@@ -350,7 +350,7 @@
     },
     {
       "id": "H36",
-      "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-H10-POST-2026-11-30",
+      "experiment_id": "H004V106_H10_POST_2026_11_30_EVALUATION_SEQUENCE",
       "statement": "The H10 post-2026-11-30 evaluation sequence (ordered looks k=1,2,..., per-look alpha_k = 0.05/(k*(k+1)), Holm family spanning all 216 cells, confirmatory claim requiring BOTH |high_low_diff_net_1x|>=0.05 after costs AND Holm-adjusted p-value <= alpha_k) is fully predeclared before any mature outcome exists, so no confirmatory claim can be re-argued from the raw outcome.",
       "predicted_high_minus_low_sign": "planning_only",
       "status": "EXPLORATORY_ONLY",

@@ -2,20 +2,21 @@
   "schema_version": 1,
   "session_id": "session_verify_20261115T131515Z",
   "generated_utc": "2026-11-15T13:15:15Z",
-  "head_at_verification": "9e852da0989774c7fb5785f66c493c240fb2fbb9",
-  "working_tree_clean": true,
+  "head_at_verification": "2cf7539230a4dc68068585b0a5cc4a4c57b2f915",
+  "working_tree_clean": false,
   "compileall_exit": 0,
   "full_suite": {
     "command": "python3 -m unittest discover -s tests",
-    "claim": "1018/1018/0",
-    "tests_run": 1018,
-    "tests_ok": 1018,
-    "tests_failures": 0,
+    "claim": "1032/1023/5",
+    "tests_run": 1032,
+    "tests_ok": 1023,
+    "tests_failures": 5,
+    "tests_errors": 4,
     "tests_skipped": 2,
-    "source": "research_state/verified_test_claim_claim_snapshot.json recorded_utc 2026-11-15T12:39:11Z (latest verified claim on disk; no .py changes this session)"
+    "source": "direct run 2026-11-15T14:1xZ; see correction note -- the original 13:15:15Z record claimed 1018/1018/0 from a stale snapshot and was NOT a genuine full-suite result"
   },
   "targeted_checks": {
-    "tests.test_expanding_universe_eligibility_audit_seams": "21/21/0 OK"
+    "tests.test_expanding_universe_eligibility_audit_seams": "21/21/0 OK (prior session)"
   },
   "frozen_hashes_unchanged": {
     "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
@@ -28,8 +29,7 @@
     "probe_month_2026-10": { "count": 270, "published": 49 },
     "probe_month_2026-11": { "count": 127, "published": 0 },
     "newest_probe": "cutoff_probe_20261113T091257Z.json",
-    "h10_cutoff_gate_unblocked": true,
-    "probe_month_2026-11_blocked_as_probe_only": true
+    "h10_cutoff_gate_unblocked": true
   },
   "h10_fresh_block_state": {
     "artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json",
@@ -42,5 +42,5 @@
     "status": "IMMATURE",
     "blocked_by_hard_date_gate_before": "2026-11-30"
   },
-  "notes": "Prior agent task (H33 seam-test coverage gap, 12:19:43Z session) is completed and committed in HEAD history (e9bd71e5/9e852da0 chain); H35 H10 maturity timeline audit also present at HEAD. No frozen artifacts/configs/inputs/frontier/registry/sealed holdout modified. No new hypothesis allocated. probe_month=2026-11 not re-probed."
+  "correction_note": "RECORDED 2026-11-15T14:1xZ (this session). The original 13:15:15Z record was factually wrong on three counts and is corrected in place (session_id and generated_utc preserved): (1) full_suite claimed 1018/1018/0 from a stale snapshot; a genuine discover run at HEAD 9e852da0 returns 1032 tests with 5 failures + 4 errors, all of them caused by the H37 seam-test file calling a module-level helper as self._write_fixture. (2) head_at_verification was 9e852da0 but HEAD had already advanced to 2cf75392 (H36 at 13:30, H37 at 13:36) -- the durable handoff/task message were stale relative to HEAD. (3) probe_evidence carried a synthetic key probe_month_2026-11_blocked_as_probe_only that is not a real probe month and failed test_latest_session_probe_evidence_matches_disk; removed. All three corrections are repairs of durable-state defects, not alterations of evidence: frozen hashes recomputed from disk are unchanged, probe counts recomputed from disk are unchanged (397 real, 270/127, newest cutoff_probe_20261113T091257Z.json), and no frozen artifact/config/input/frontier/registry/sealed holdout was modified. probe_month=2026-11 not re-probed."
 }

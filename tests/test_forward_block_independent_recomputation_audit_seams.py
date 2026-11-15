@@ -60,21 +60,6 @@ def _compliant_addendum(recomputed, n_formations=608):
     }
 
 
-def _write_fixture(td, block=None, addendum=None):
-    block = block if block is not None else _compliant_block([])
-    addendum = addendum if addendum is not None else _compliant_addendum(
-        mod.recompute_from_formations(block["formations"]))
-    canonical = Path(td) / "canonical.json"
-    addendum_path = Path(td) / "addendum.json"
-    canonical.write_text(json.dumps(block))
-    addendum_path.write_text(json.dumps(addendum))
-    return {
-        "CANONICAL_BLOCK_PATH": canonical,
-        "ADDENDUM_PATH": addendum_path,
-        "CANONICAL_SHA256": mod.sha256_file(canonical),
-    }
-
-
 class HelperSeamTests(unittest.TestCase):
     def test_check_equal_pass_and_fail(self):
         results = []
@@ -153,6 +138,21 @@ class RecomputeFromFormationsTests(unittest.TestCase):
 
 
 class AuditFunctionSeamTests(unittest.TestCase):
+    @staticmethod
+    def _write_fixture(td, block=None, addendum=None):
+        block = block if block is not None else _compliant_block([])
+        addendum = addendum if addendum is not None else _compliant_addendum(
+            mod.recompute_from_formations(block["formations"]))
+        canonical = Path(td) / "canonical.json"
+        addendum_path = Path(td) / "addendum.json"
+        canonical.write_text(json.dumps(block))
+        addendum_path.write_text(json.dumps(addendum))
+        return {
+            "CANONICAL_BLOCK_PATH": canonical,
+            "ADDENDUM_PATH": addendum_path,
+            "CANONICAL_SHA256": mod.sha256_file(canonical),
+        }
+
     def test_audit_passes_on_compliant_fixture(self):
         block = _compliant_block([
             _formation(state="high", net=0.5, gross=0.51),

@@ -139,8 +139,8 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
         a narrow scope."""
         res = mod.audit(f1_integrity_audit_dirs=[], f1_prereg_dirs=[])
         self.assertEqual(res["f1_audit_files_scanned"], 0, res)
-        self.assertEqual(res["main_audits_scanned"], 25, res)
-        self.assertEqual(res["audits_scanned"], 25, res)
+        self.assertEqual(res["main_audits_scanned"], 26, res)
+        self.assertEqual(res["audits_scanned"], 26, res)
         self.assertFalse(any(r.get("frozen_record") is True for r in res["rows"]), res)
         self.assertTrue(res["pass"], res)
 
