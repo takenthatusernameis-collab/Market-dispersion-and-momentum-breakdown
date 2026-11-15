@@ -1,0 +1,28 @@
+{
+  "session_id": "session_verify_20261115T024316Z",
+  "generated_utc": "2026-11-15T02:43:16Z",
+  "head": "8ba7f0a747c94a9dc7a2577ce548032dbcf33f1d",
+  "origin_main": "8ba7f0a747c94a9dc7a2577ce548032dbcf33f1d",
+  "persistence_claimable": true,
+  "note": "Verification-only session: read durable handoff/task, confirmed prior session's task (add tests/test_eval_forward_block_seams.py, 30 hermetic tests) already committed at HEAD with clean working tree; ran compileall and full test suite to completion (815 run, 0 failures, 0 errors, 2 skipped). Performed script-vs-test gap scan (module-name grep): remaining unreferenced scripts are network/I/O fetchers (fetch_binance_data, fetch_coinmetrics_marketcap, fetch_missing_october_zips), trivial/main-only runners (phase_c, run_dispersion002_phases), or scripts whose pure seams are already covered by existing artifact-pinning/seam tests (forward_block_temporal_stability, f1_coverage_outcome_sensitivity, forward_block_placebo_red_team, forward_block_tail_influence, forward_block_cluster_bootstrap, forward_block_overlap_aware_audit). No new import-safe pure-hermetic seam with zero test references identified; no .py changes made so test claim not refreshed. Probe evidence recomputed from disk. Frozen hashes verified unchanged. No frozen artifact/config/input/frontier/registry/sealed holdout modified.",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "unittest_ran": 815,
+    "unittest_failures": 0,
+    "unittest_errors": 0,
+    "unittest_skipped": 2,
+    "unittest_ok": true
+  }
+}
