@@ -1,6 +1,17 @@
-# Agent Handoff — 2026-11-15T19:10:00Z (current session)
+# Agent Handoff — 2026-11-15T19:20:48Z (current session)
 
-## Session summary — 2026-11-15T19:10:00Z (this session)
+## Session summary — 2026-11-15T19:20:48Z (this session)
+
+- **Prior task (completed, verified):** read durable handoff/task (`2026-11-15T19:10:00Z`) and completed its assigned action — confirm the durable state is green and consistent at HEAD without looping on date-gate re-verification. The prior session's durable updates (handoff/task/session_verify_20261115T190401Z.json) were committed as checkpoint `994a14ac` (`chore(kilo): checkpoint agent session`), so the true HEAD is `994a14ac7a8141c056f2123b134989420b918fe1` (the prior session_verify record still cited the pre-checkpoint HEAD `631586df`).
+- **Re-verification (this session):** `python3 -m compileall -q scripts tests` EXIT 0. `python3 -m unittest discover -s tests` → **Ran 1054 tests, OK, skipped=2 (EXIT=0)** at HEAD `994a14ac7a8141c056f2123b134989420b918fe1`. Latest recorded verified claim (fingerprint `d04bc057b7b42c28aac441d469e26e239e47be72d3af5966a686ad2ec7683134`, 171 input files, recorded `2026-11-15T15:29:05Z`) remains valid/consistent.
+- **Durable record added (this session):** `research_state/session_verifications/session_verify_20261115T192048Z.json` (newest on disk) records `head_at_verification` `994a14ac7a8141c056f2123b134989420b918fe1`, full_suite 1054/1054/0, and `probe_evidence.total_real_probes=397`. No `.py`, artifact, config, input, frozen, frontier or registry change; no new hypothesis allocated.
+- **Probe evidence (recomputed from disk, canonical schema):** 397 real `cutoff_probe_*.json` files (0 MOCK) — 270 `probe_month=2026-10` (49 published) / 127 `probe_month=2026-11` (0 published); newest `cutoff_probe_20261113T091257Z.json`. H10 cutoff gate UNBLOCKED by the published October 2026 archive (`gate_date_required` 2026-10-29 met). `probe_month=2026-11` probe BLOCKED as probe only (0 `target_published`); not promoted into the H10 gate decision. H10 fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `last_allowed_formation_date` 2026-09-30, `data_cutoff_utc` 2026-10-31T00:00:00Z, `block_sealed=true`); k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30 (**BLOCKED_BY_HARD_DATE_GATE**, not an experiment-ID wait).
+- **Frozen hashes unchanged (verified from disk):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; universe_frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176` (path `configs/dispersion_momentum_grid_v3.json`). No frozen artifact/config/input/frontier/registry/sealed holdout modified.
+- **Registry/manifest (verified):** `next_sequence_number`=38 (H1..H38); `run_manifest.latest_verified_test_claim` = 1054/1054/0; `session_record_latest` points at `session_record_verify_20261115T121943Z` (consistent, no dangling entries). No new hypothesis allocated.
+- **Session verification quoted:** `research_state/session_verifications/session_verify_20261115T192048Z.json` (newest on disk, `generated_utc` 2026-11-15T19:20:48Z, `head_at_verification` 994a14ac7a8141c056f2123b134989420b918fe1, full_suite 1054/1054/0 executed this session, probe_evidence total_real_probes=397).
+- **Coverage/duplication guard:** unchanged — H29–H38 integrity/planning audits and seam tests complete; hermetic seam-test coverage of pure import-safe seams is effectively exhausted without refactoring frozen logic (forbidden). Do not re-run `scripts/run_f1_grid_vintage_trim.py` and do not add another near-duplicate seam test for an I/O-only or already-covered audit seam.
+
+## Previous session — 2026-11-15T19:10:00Z
 
 - **Prior task (completed, verified):** read durable handoff/task (`2026-11-15T19:04:01Z`) and found state NOT green: HEAD is actually `631586df0b197fb896aa6f0d9e71d4980ba0a9db` (handoff/stale `4fe7f9a1` out of date), and `test_state_consistency.py::test_latest_session_probe_evidence_matches_disk` FAILED — `session_verify_20261115T190401Z.json` quoted stale `newest_probe` `cutoff_probe_20261104T062048Z.json` while disk newest is `cutoff_probe_20261113T091257Z.json`.
 - **Fix applied:** edited `session_verify_20261115T190401Z.json` — `newest_probe` → `cutoff_probe_20261113T091257Z.json` (basename only, per canonical schema); `head_at_verification` → `631586df0b197fb896aa6f0d9e71d4980ba0a9db`; `checks.full_suite` and `notes` updated to reflect the fix. No `.py`, artifact, config, input, frozen, frontier or registry change; no new hypothesis allocated. Frozen hashes unchanged (canonical forward block `7234fc4e...`; h10_fresh `324ab1e6...`; universe_frontier `9ba08f3f...`; grid v3 `1ff4c1f2...`).
@@ -35,6 +46,7 @@
 
 ## Previous sessions (summary chain)
 
+- **2026-11-15T19:10:00Z:** fixed stale `newest_probe`/`head_at_verification` in `session_verify_20261115T190401Z.json`; suite green at HEAD `631586df`; durable updates committed as `994a14ac`.
 - **2026-11-15T18:17:36Z:** completed prior task; verified committed state consistent and green; HEAD `8844234a`; H10 hard date-gated until 2026-11-30.
 - **2026-11-15T18:02:27Z:** completed prior task; verified committed state consistent and green; HEAD `f9f7f142`; H10 hard date-gated until 2026-11-30.
 - **2026-11-15T17:31:12Z:** repaired probe_evidence schema in session_verify record (hyphenated keys); full suite green at HEAD `0e70a4f0`.
