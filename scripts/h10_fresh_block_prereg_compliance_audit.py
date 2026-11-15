@@ -25,7 +25,7 @@ FRESH_BLOCK_PATH = ARTIFACT_DIR / "forward_block_h10_fresh/forward_block_evaluat
 PREREG_PATH = ARTIFACT_DIR / "preregistrations/H10_FRESH_FORWARD_BLOCK_v1.md"
 CANONICAL_BLOCK_PATH = ARTIFACT_DIR / "forward_block/forward_block_evaluation.json"
 GRID_LEDGER_PATH = ARTIFACT_DIR / "grid_result_ledger.json"
-UNIVERSE_FRONTIER_PATH = ARTIFACT_DIR / "universe_frontier.json"
+UNIVERSE_FRONTIER_PATH = Path("research_state/universe_frontier.json")
 
 EXPECTED_CANONICAL_SHA256 = "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390"
 EXPECTED_FRESH_BLOCK_SHA256 = "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"

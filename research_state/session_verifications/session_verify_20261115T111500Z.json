@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261115T111500Z",
+  "generated_utc": "2026-11-15T11:15:00Z",
+  "head_at_verification": "c6a8943521e050eac0d9cc877d1cf4496b7795d3",
+  "origin_main_at_verification": "c6a8943521e050eac0d9cc877d1cf4496b7795d3",
+  "persistence_claimable": true,
+  "note": "Completed the prior session's unfinished H10 fresh forward block preregistration-compliance audit (H34, H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT). The prior session committed the preregistration (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT_v1.md) and read-only audit script (scripts/h10_fresh_block_prereg_compliance_audit.py) but never executed them and left no artifact, registry entry, tests or handoff update. This session: (1) fixed the script's universe-frontier path (research_state/universe_frontier.json, not the artifact dir); (2) ran the audit to a PASS artifact (integrity_audit/H004V106_H10_fresh_forward_block_prereg_compliance_audit_2026-11-15T10-47-00Z.json, 40/40 checks, verdict PASS) confirming the H10 fresh block correctly encodes the preregistered confirmatory decision rules (economic threshold 0.05, min_state_formations 5, alpha_k=0.05/(k*(k+1)) with k=1 alpha_k=0.025, confirmatory_claim_allowed=false, block_sealed=true, IMMATURE overlap); (3) added hermetic seam tests (tests/test_h10_fresh_block_prereg_compliance_audit_seams.py, 8 tests); (4) registered H34 in research_state/hypothesis_registry.json and bumped next_sequence_number 33->34 (H1..H34) with a registry_reconciliation_20261115T111500Z note; (5) updated scripts/audit_preregistration_coverage.py ALIASES, tests/test_preregistration_completeness.py AUDIT_TO_HYPOTHESIS, tests/test_preregistration_coverage_audit.py counts (main 23, total 28, prereqs 19), tests/test_integrity_audit_reference_consistency.py (main 23), tests/test_continuous_research_contract.py (next_sequence_number 34); (6) regenerated research_state/preregistration_coverage_audit.json (pass, main 23, f1 5, total 28, prereqs 19, 0 missing, 0 uncovered); (7) updated run_manifest next_required_actions narrative to 34. Ran python3 -m compileall -q scripts tests (EXIT 0) and full python3 -m unittest discover -s tests to completion (Ran 982 tests, OK, skipped=2). Refreshed verified test claim via python3 scripts/record_test_claim.py (982/982/0, 164 input files, fingerprint f6d0d1ade244ffff...). Probe evidence recomputed from research_state/cutoff_probe/ using canonical schema (397 real cutoff_probe files, probe_month_2026-10 count 270 / published 49, probe_month_2026-11 count 127 / published 0, newest_probe cutoff_probe_20261113T091257Z.json). H10 cutoff gate UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 is BLOCKED as a probe only (0/127 target_published) and not promoted into the H10 gate decision. H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true, sha 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f); k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not experiment-ID wait). probe_month=2026-11 not re-probed. Working tree has uncommitted modifications (registry, preregistration_coverage_audit, run_manifest, verified_test_claim snapshot, h10_fresh_block_prereg_compliance_audit.py, test_continuous_research_contract, test_integrity_audit_reference_consistency, test_preregistration_completeness, test_preregistration_coverage_audit) plus new audit artifact and new seam test file; persistence claimable for committed HEAD c6a89435 only, not for this session's uncommitted changes. No frozen artifact/config/input/frontier/registry sealed holdout modified.",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_verified_unchanged": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "full_suite": {
+      "ran": 982,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "ok": true
+    },
+    "verified_test_claim": "982/982/0"
+  }
+}

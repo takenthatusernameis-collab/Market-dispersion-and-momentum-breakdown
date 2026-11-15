@@ -2,7 +2,7 @@
   "audit_id": "PREREGISTRATION_COVERAGE_AUDIT_20261103",
   "audited_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit",
   "audits_missing_prereq": [],
-  "audits_scanned": 27,
+  "audits_scanned": 28,
   "f1_audit_files_scanned": 5,
   "f1_integrity_audit_dirs": [
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/integrity_audit",
@@ -14,7 +14,7 @@
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002/preregistrations",
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/preregistrations"
   ],
-  "main_audits_scanned": 22,
+  "main_audits_scanned": 23,
   "pass": true,
   "prereg_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations",
   "preregistrations_on_disk": [
@@ -32,6 +32,7 @@
     "H004V106_GRID_LEDGER_INTERNAL_CONSISTENCY_v1.md",
     "H004V106_GRID_SUMMARY_LEDGER_CROSSCHECK_v1.md",
     "H004V106_H10_FRESH_FORWARD_BLOCK_INTEGRITY_AUDIT_v1.md",
+    "H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT_v1.md",
     "H004V106_ROLLING_DISPERSION_WINDOW_v1.md",
     "H004V106_STATE_REPRESENTATIVENESS_AUDIT_v1.md",
     "H10_FRESH_FORWARD_BLOCK_v1.md",
@@ -56,6 +57,12 @@
       "exists": true,
       "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_H10_FRESH_FORWARD_BLOCK_INTEGRITY_AUDIT_v1.md",
       "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_H10_FRESH_FORWARD_BLOCK_INTEGRITY_AUDIT_v1.md"
+    },
+    {
+      "audit": "H004V106_H10_fresh_forward_block_prereg_compliance_audit_2026-11-15T10-47-00Z.json",
+      "exists": true,
+      "preregistration": "H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT_v1.md"
     },
     {
       "audit": "H004V106_dispersion_regime_conditioning_20261028.json",

@@ -1,0 +1,256 @@
+{
+  "audit_id": "H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT",
+  "hypothesis_id": "H34",
+  "status": "EXPLORATORY_ONLY",
+  "verdict": "PASS",
+  "timestamp_utc": "2026-11-15T10:47:00Z",
+  "artifact_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "preregistration_sha256": "74c369be90c721b1d0083c367c735fa481f769f43eb5db3e059c5145c14283de",
+  "checks_total": 40,
+  "checks_passed": 40,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "economic_significance_threshold",
+      "expected": 0.05,
+      "actual": 0.05,
+      "passed": true
+    },
+    {
+      "check": "economic_significance_met",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "check": "high_low_diff_net_1x_abs",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "check": "formation_spread_net_1x_cost_consistent",
+      "expected": -0.048729065266,
+      "actual": -0.048729065266,
+      "passed": true
+    },
+    {
+      "check": "min_state_formations",
+      "expected": 5,
+      "actual": 5,
+      "passed": true
+    },
+    {
+      "check": "state_count_floor_met",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "check": "n_high_is_zero",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "check": "n_low_is_zero",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "check": "confirmatory_claim_allowed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "check": "confirmatory_holm_significant",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "check": "confirmatory_note_contains_economic_gate",
+      "expected": "|high_low_diff_net_1x|",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "confirmatory_note_contains_state_floor",
+      "expected": "n_high=0>= 5 and n_low=0>=5 -> False",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "confirmatory_note_contains_holm_at_alpha_k",
+      "expected": "Holm-significance across the complete 216-cell family at alpha_k = 0.025",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "confirmatory_note_contains_never_promoted",
+      "expected": "never promoted from raw p-values or return alone",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "sequential_alpha_rule",
+      "expected": "alpha_k = 0.05 / (k * (k + 1))",
+      "actual": "alpha_k = 0.05 / (k * (k + 1))",
+      "passed": true
+    },
+    {
+      "check": "sequential_family_alpha",
+      "expected": 0.05,
+      "actual": 0.05,
+      "passed": true
+    },
+    {
+      "check": "sequential_look_number",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "check": "sequential_alpha_k",
+      "expected": 0.025,
+      "actual": 0.025,
+      "passed": true
+    },
+    {
+      "check": "sequential_cumulative_spend",
+      "expected": 0.025,
+      "actual": 0.025,
+      "passed": true
+    },
+    {
+      "check": "sequential_remaining_budget",
+      "expected": 0.025,
+      "actual": 0.025,
+      "passed": true
+    },
+    {
+      "check": "sequential_look_consumes_budget",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "check": "sequential_look_mature",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "check": "sequential_look_note_explains_k1_alpha",
+      "expected": "k=1 at alpha_k=0.025",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "sequential_look_note_explains_immature_no_budget",
+      "expected": "consumes no budget",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "sequential_look_note_explains_do_not_advance_k",
+      "expected": "do NOT advance k",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "block_sealed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "check": "block_sealing_rule_mentions_30_day_maturity",
+      "expected": "30-day forward horizon is not completed",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "block_sealing_rule_mentions_no_truncated",
+      "expected": "no truncated outcomes",
+      "actual": "found",
+      "passed": true
+    },
+    {
+      "check": "n_formations",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "check": "n_mid",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "check": "high_low_diff_net_1x_is_null",
+      "expected": null,
+      "actual": null,
+      "passed": true
+    },
+    {
+      "check": "overlap_aware_status_immature",
+      "expected": "IMMATURE",
+      "actual": "IMMATURE",
+      "passed": true
+    },
+    {
+      "check": "overlap_aware_reason_correct",
+      "expected": "need n_high>0 and n_low>0 for overlap-aware interval",
+      "actual": "need n_high>0 and n_low>0 for overlap-aware interval",
+      "passed": true
+    },
+    {
+      "check": "overlap_aware_n_boot_zero",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "check": "overlap_aware_n_clusters_zero",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "check": "overlap_aware_n_months_zero",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "check": "canonical_block_sha256",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "passed": true
+    },
+    {
+      "check": "fresh_block_sha256",
+      "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "passed": true
+    },
+    {
+      "check": "grid_ledger_sha256",
+      "expected": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "actual": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "passed": true
+    },
+    {
+      "check": "universe_frontier_sha256",
+      "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "actual": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "passed": true
+    }
+  ],
+  "frozen_artifacts_modified": [],
+  "note": "EXPLORATORY_ONLY: compliance diagnostic on already-inspected development evidence. Does not validate, replace or unlock any confirmatory track."
+}

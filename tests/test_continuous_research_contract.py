@@ -100,7 +100,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # coverage audit (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-EXP-ELIG-001,
         # EXPLORATORY_ONLY, coverage_only) so the committed eligibility
         # coverage audit references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 33)
+        # H34 was added for the H004V106 H10 fresh forward block
+        # preregistration-compliance audit
+        # (H004V106_H10_FRESH_FORWARD_BLOCK_PREREG_COMPLIANCE_AUDIT,
+        # EXPLORATORY_ONLY, consistency_only) so the committed prereg-compliance
+        # audit references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 34)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
