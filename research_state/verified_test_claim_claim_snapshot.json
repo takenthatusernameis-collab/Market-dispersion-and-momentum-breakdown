@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-15T10:00:27Z",
+  "recorded_utc": "2026-11-15T10:37:18Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 974,
@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 2,
   "claim": "974/974/0",
-  "input_fingerprint": "b30e6043ac3957b037a2007b84ea4cb73d790a5823cf323d483a4dd4b745dadf",
+  "input_fingerprint": "15e950466f5475efc1ee55024bf7ac3972564715446e02179e11ce2d4f563de4",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -36,7 +36,7 @@
     },
     {
       "path": "scripts/audit_preregistration_coverage.py",
-      "sha256": "5ab41e0cbe8f55141c3efebc1d0fa56f1af2613c8e9a1c58e00889d24458ff5f"
+      "sha256": "15a89d6961fca6322ba977d3e74d8e2fd657145caff7dbed843e6b6307d9690c"
     },
     {
       "path": "scripts/build_universe.py",
@@ -57,6 +57,10 @@
     {
       "path": "scripts/eval_forward_block.py",
       "sha256": "aa25b3aebd4ed9519c38c6d9aab2d4058a46309746f908644a49bfa485506bff"
+    },
+    {
+      "path": "scripts/expanding_universe_eligibility_audit.py",
+      "sha256": "cc5c4250a489b76f515c320ce89c259e58a096eab224cac84ea64163f5c438da"
     },
     {
       "path": "scripts/f1_coverage_outcome_sensitivity.py",
@@ -312,7 +316,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "11401aeb662b5cb3dbaa2f3959435e1a24f4f6e9a12df7d7802b082e31fe9237"
+      "sha256": "2299ef2d8a66db3f9c9ede83e1581545923591aad80eeb18dc5330375270c088"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -352,7 +356,7 @@
     },
     {
       "path": "tests/test_experiment_registry_reference.py",
-      "sha256": "9b4bd074f37a71a5757a43e97cc46c2a2750bfea2bb5edac533d9163de034fed"
+      "sha256": "80906aba58d604403b24564733bccd0415d03b2599646c180e43e9d1eabe69bf"
     },
     {
       "path": "tests/test_f1_coverage_outcome_sensitivity.py",
@@ -528,7 +532,7 @@
     },
     {
       "path": "tests/test_integrity_audit_reference_consistency.py",
-      "sha256": "ff602ac6d489a338890cc35a1e93d7012923331234a37551febfe7925d9018ca"
+      "sha256": "cc4e9e6aa3cde994f7ce9e5995af6b0808218d01e054a64f6ea8ad1aca742971"
     },
     {
       "path": "tests/test_latest_probe_record_pinned.py",
@@ -572,11 +576,11 @@
     },
     {
       "path": "tests/test_preregistration_completeness.py",
-      "sha256": "bcc681325ac7c16cf7d7f3171da6553a4275aaa6c62baae4bb967040c48fa185"
+      "sha256": "ffd1134bfdb0c857a7012ed712bfe54068680f9a28b485e90d15d54d47cc989a"
     },
     {
       "path": "tests/test_preregistration_coverage_audit.py",
-      "sha256": "a46c5a5d4df6fd6a99f7a29b98c5af4aa0dac42ef2c9591bae0ec4a3ce45cb77"
+      "sha256": "89f5d1a2f76aee6d785f63bbd3e135030c4d99a364494846a722aeb5a962af5d"
     },
     {
       "path": "tests/test_provenance_stability.py",
@@ -655,5 +659,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 161
+  "input_file_count": 162
 }

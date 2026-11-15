@@ -2,7 +2,7 @@
   "audit_id": "PREREGISTRATION_COVERAGE_AUDIT_20261103",
   "audited_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit",
   "audits_missing_prereq": [],
-  "audits_scanned": 26,
+  "audits_scanned": 27,
   "f1_audit_files_scanned": 5,
   "f1_integrity_audit_dirs": [
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/integrity_audit",
@@ -14,7 +14,7 @@
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002/preregistrations",
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/preregistrations"
   ],
-  "main_audits_scanned": 21,
+  "main_audits_scanned": 22,
   "pass": true,
   "prereg_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations",
   "preregistrations_on_disk": [
@@ -23,6 +23,7 @@
     "F1_PANEL_COVERAGE_REPAIR_v1.md",
     "H004V106 Forward Block Placebo Red Team v1.md",
     "H004V106_DISPERSION_REGIME_CONDITIONING_v1.md",
+    "H004V106_EXPANDING_UNIVERSE_ELIGIBILITY_COVERAGE_AUDIT_v1.md",
     "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md",
     "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md",
     "H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_v1.md",
@@ -61,6 +62,12 @@
       "exists": true,
       "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_DISPERSION_REGIME_CONDITIONING_v1.md",
       "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_DISPERSION_REGIME_CONDITIONING_v1.md"
+    },
+    {
+      "audit": "H004V106_expanding_universe_eligibility_coverage_2026-11-15T10-14-12Z.json",
+      "exists": true,
+      "preregistration": "H004V106_EXPANDING_UNIVERSE_ELIGIBILITY_COVERAGE_AUDIT_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_EXPANDING_UNIVERSE_ELIGIBILITY_COVERAGE_AUDIT_v1.md"
     },
     {
       "audit": "H004V106_forward_block_cluster_bootstrap_20261029.json",

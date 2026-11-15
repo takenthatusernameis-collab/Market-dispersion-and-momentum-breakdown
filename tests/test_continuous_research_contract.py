@@ -96,7 +96,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # audit (HARMONY-CRYPTO-EDGE-004-DISPERSION-003, EXPLORATORY_ONLY,
         # consistency_only) so the committed whole-ledger 216-cell
         # internal-consistency audit references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 32)
+        # H33 was added for the H004V106 expanding universe eligibility
+        # coverage audit (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-EXP-ELIG-001,
+        # EXPLORATORY_ONLY, coverage_only) so the committed eligibility
+        # coverage audit references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 33)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

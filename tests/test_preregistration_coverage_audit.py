@@ -52,10 +52,10 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
                         or self.first["preregistrations_uncovered_by_any_audit"])
         self.assertEqual(self.first["audits_missing_prereq"], [])
         self.assertEqual(self.first["preregistrations_uncovered_by_any_audit"], [])
-        self.assertEqual(self.first["main_audits_scanned"], 21)
+        self.assertEqual(self.first["main_audits_scanned"], 22)
         self.assertEqual(self.first["f1_audit_files_scanned"], 5)
-        self.assertEqual(self.first["audits_scanned"], 26)
-        self.assertEqual(len(self.first["preregistrations_on_disk"]), 17)
+        self.assertEqual(self.first["audits_scanned"], 27)
+        self.assertEqual(len(self.first["preregistrations_on_disk"]), 18)
 
     def test_overlap_aware_audit_has_no_prereq_of_its_own(self):
         row = next(r for r in self.first["rows"]
@@ -139,8 +139,8 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
         a narrow scope."""
         res = mod.audit(f1_integrity_audit_dirs=[], f1_prereg_dirs=[])
         self.assertEqual(res["f1_audit_files_scanned"], 0, res)
-        self.assertEqual(res["main_audits_scanned"], 21, res)
-        self.assertEqual(res["audits_scanned"], 21, res)
+        self.assertEqual(res["main_audits_scanned"], 22, res)
+        self.assertEqual(res["audits_scanned"], 22, res)
         self.assertFalse(any(r.get("frozen_record") is True for r in res["rows"]), res)
         self.assertTrue(res["pass"], res)
 
