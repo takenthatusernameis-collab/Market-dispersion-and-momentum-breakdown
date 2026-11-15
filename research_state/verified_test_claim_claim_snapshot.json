@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-14T23:47:39Z",
+  "recorded_utc": "2026-11-15T00:33:01Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 686,
-  "tests_ok": 686,
+  "tests_run": 703,
+  "tests_ok": 703,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "686/686/0",
-  "input_fingerprint": "9d4cf373ecbba63d46836402c216a939679e2441f4ab108afee268b7d344a5ba",
+  "claim": "703/703/0",
+  "input_fingerprint": "5625d3e96d83282bf2f30d31dd8079c34bb51b5bbe3f146253866292dab5f3f0",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -144,7 +144,7 @@
     },
     {
       "path": "scripts/generate_grid_manifest.py",
-      "sha256": "dfbbf5d8cb4edb637629b86fa24afff57fc2e82b77000db7d91d0c2e18025117"
+      "sha256": "f35bd454ea949d6d72085d6bb158d4884694434751802e0e8bdb2e1d8c4b1866"
     },
     {
       "path": "scripts/generate_grid_v3_manifest.py",
@@ -423,6 +423,10 @@
       "sha256": "64ff1d6dac6c6d881cedd990b8f70774fa20d58a8ab78302f68d268cb74d4e85"
     },
     {
+      "path": "tests/test_generate_grid_manifest.py",
+      "sha256": "539d610c2b856bc586dc98423a8df3ddb39da16cd8f4cb3b839b5c78f2dbfd3b"
+    },
+    {
       "path": "tests/test_generate_grid_v3_manifest.py",
       "sha256": "21aabd76492ea19dadfc2df5a3fc23a9093e7eaa67677790698a4416b6dec45f"
     },
@@ -575,5 +579,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 141
+  "input_file_count": 142
 }
