@@ -1,0 +1,72 @@
+{
+  "artifact_sha256": {
+    "grid_checkpoints/cell_checkpoint.json": "89bd70964fa17e8573b252351897cc59409b05b947fd7674ff9cc0822b233ecd",
+    "grid_result_ledger.json": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_summary.json": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd"
+  },
+  "audit_id": "H004V106_GRID_ANCHOR_CROSSCHECK_20261115",
+  "audit_utc": "2026-11-15T04:13:49Z",
+  "audited_artifacts": [
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_summary.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_checkpoints/cell_checkpoint.json",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json"
+  ],
+  "conclusion": "PASS: H004V106 anchor is internally consistent across grid_summary.json, grid_checkpoints/cell_checkpoint.json, and grid_result_ledger.json. All 1338 formations match element-wise within 1e-12 tolerance. All summary statistics match within 1e-12 tolerance. All data integrity checks pass (finite values, unique dates, valid states, increasing dates). No artifact modified.",
+  "formation_checks": {
+    "cell_checkpoint_vs_grid_result_ledger": {
+      "match": true,
+      "mismatches": [],
+      "n_compared": 1338
+    },
+    "grid_summary_vs_cell_checkpoint": {
+      "match": true,
+      "mismatches": [],
+      "n_compared": 1338
+    },
+    "grid_summary_vs_grid_result_ledger": {
+      "match": true,
+      "mismatches": [],
+      "n_compared": 1338
+    }
+  },
+  "integrity_checks": {
+    "cell_checkpoint": {
+      "all_ok": true,
+      "issues": [],
+      "n_formations": 1338,
+      "source": "cell_checkpoint",
+      "unique_dates": 1338
+    },
+    "grid_result_ledger": {
+      "all_ok": true,
+      "issues": [],
+      "n_formations": 1338,
+      "source": "grid_result_ledger",
+      "unique_dates": 1338
+    },
+    "grid_summary": {
+      "all_ok": true,
+      "issues": [],
+      "n_formations": 1338,
+      "source": "grid_summary",
+      "unique_dates": 1338
+    }
+  },
+  "pass": true,
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_GRID_ANCHOR_CROSSCHECK_v1.md",
+  "status": "EXPLORATORY_ONLY",
+  "summary_checks": {
+    "cell_checkpoint_vs_grid_result_ledger": {
+      "match": true,
+      "mismatches": []
+    },
+    "grid_summary_vs_cell_checkpoint": {
+      "match": true,
+      "mismatches": []
+    },
+    "grid_summary_vs_grid_result_ledger": {
+      "match": true,
+      "mismatches": []
+    }
+  }
+}
