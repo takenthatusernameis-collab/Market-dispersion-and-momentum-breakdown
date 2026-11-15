@@ -17,8 +17,8 @@
   "probe_evidence": {
     "schema": "canonical_v1",
     "total_real_probes": 397,
-    "probe_month_2026_10": 270,
-    "probe_month_2026_11": 127,
+    "probe_month_2026_10": {"count": 270, "published": 49},
+    "probe_month_2026_11": {"count": 127, "published": 0},
     "newest_probe": "cutoff_probe_20261113T091257Z.json",
     "h10_cutoff_gate_unblocked_by_2026_10": true,
     "probe_month_2026_11_published": false
@@ -29,5 +29,5 @@
     "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
     "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
   },
-  "notes": "Durable state confirmed green and consistent at HEAD e58b41bb. No .py/test/artifact/config/input/frozen/frontier/registry change. H10 hard date-gated until 2026-11-30 (fresh block immature: n_formations=1,n_high=0,n_low=0). probe_month=2026-11 probe BLOCKED as probe only (0/127)."
+  "notes": "Durable state confirmed green and consistent at HEAD e58b41bb. No .py/test/artifact/config/input/frozen/frontier/registry change. H10 hard date-gated until 2026-11-30 (fresh block immature: n_formations=1,n_high=0,n_low=0). probe_month=2026-11 probe BLOCKED as probe only (0/127). CORRECTION 2026-11-15T17:21Z: the probe_evidence block originally committed at 65d07533 used flat scalar counts (probe_month_2026_10: 270) instead of the canonical nested {count, published} shape, so test_state_consistency::test_latest_session_probe_evidence_matches_disk failed (1/1054) and the state was NOT green. Repaired to canonical_v1 shape with recomputed published counts (2026-10: 49 published, 2026-11: 0 published)."
 }
