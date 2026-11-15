@@ -1,0 +1,28 @@
+{
+  "action_summary": "Added tests/test_eval_forward_block_seams.py (30 hermetic tests for eval_forward_block.py pure seams: compute_dispersion, portfolio_spread, forward_returns, assign_trailing_decile_states, overlap_aware_interval, MomentumCache.get). Full suite 815 tests OK. No frozen artifacts/configs/inputs modified.",
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "git_head": "e79b37cf62c8391d7b41529144e2931e1623cb59",
+  "git_origin_head": "e79b37cf62c8391d7b41529144e2931e1623cb59",
+  "probe_evidence": {
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "total_real_probes": 397
+  },
+  "registry_next_sequence_number": 28,
+  "session_id": "session_verify_20261115T022740Z",
+  "session_timestamp_utc": "2026-11-15T02:27:40Z",
+  "test_claim": "815/815/0",
+  "test_fingerprint": "e43db16c6bba201a2846b90f624f03eea258b735c3708217812ba91a39e2d30e"
+}
