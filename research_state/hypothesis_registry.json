@@ -2,8 +2,8 @@
  "schema_version": "1.0",
  "program_id": "HARMONY-CRYPTO-EDGE-004",
  "program_status": "ACTIVE",
- "next_sequence_number": 28,
- "hypotheses": [
+"next_sequence_number": 29,
+  "hypotheses": [
   {
    "id": "H1",
    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-001",
