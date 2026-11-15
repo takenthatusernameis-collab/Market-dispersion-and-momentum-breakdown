@@ -1,6 +1,19 @@
-# Agent Handoff — 2026-11-15T23:04:17Z (current session)
+# Agent Handoff — 2026-11-15T23:50:24Z (current session)
 
-## Session summary — 2026-11-15T23:04:17Z (this session)
+## Session summary — 2026-11-15T23:50:24Z (this session)
+
+- **Prior task (completed, verified):** read durable handoff/task (`2026-11-15T23:04:17Z`) and completed its assigned action — confirm the durable state is green and consistent at HEAD without looping on date-gate re-verification.
+- **Re-verification (this session):** `python3 -m compileall -q scripts tests` EXIT 0. `python3 -m unittest discover -s tests` → **Ran 1054 tests, OK, skipped=2 (EXIT=0)** at committed HEAD `049394c94b35514e168d4f5f55a9dac93c5efc20`. Latest recorded verified claim (fingerprint `d04bc057b7b42c28aac441d469e26e239e47be72d3af5966a686ad2ec7683134`, 171 input files, recorded `2026-11-15T15:29:05Z`) remains valid/consistent (no `.py` or test-input changed; commits `7265bd6c` and `049394c9` touched only durable state).
+- **Working tree / HEAD:** clean at `049394c94b35514e168d4f5f55a9dac93c5efc20` (`main...origin/main`); prior sessions' durable updates are now committed (`5d56be5b` → `7265bd6c` → `049394c9`).
+- **Durable updates (this session):** added `research_state/session_verifications/session_verify_20261115T235024Z.json` (newest on disk) and updated `research_state/agent_handoff.md` and `research_state/agent_task_message.md`; no `.py`, artifact, config, input, frozen, frontier or registry change; no new hypothesis allocated.
+- **Probe evidence (recomputed from disk, canonical schema):** 397 real `cutoff_probe_*.json` files in `research_state/cutoff_probe/` (0 MOCK) — 270 `probe_month=2026-10` (49 published) / 127 `probe_month=2026-11` (0 published); newest `cutoff_probe_20261113T091257Z.json` (basename only). H10 cutoff gate UNBLOCKED by the published October 2026 archive (`gate_date_required` 2026-10-29 met). `probe_month=2026-11` probe BLOCKED as probe only (0 `target_published=true`); not promoted into the H10 gate decision. H10 fresh block IMMATURE (`n_formations=1`, `n_high=0`, `n_low=0`, `last_allowed_formation_date` 2026-09-30, `data_cutoff_utc` 2026-10-31T00:00:00Z, `block_sealed=true`); k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30 (**BLOCKED_BY_HARD_DATE_GATE**, not an experiment-ID wait). `probe_month=2026-11` not re-probed.
+- **Frozen hashes unchanged (verified from disk):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; universe_frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`research_state/universe_frontier.json`); grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`. No frozen artifact/config/input/frontier/registry/sealed holdout modified.
+- **Registry/manifest (verified):** `next_sequence_number`=38 (H1..H38), `research_state/preregistration_coverage_audit.json` pass=true; `run_manifest.latest_verified_test_claim` = "1054/1054/0". No new hypothesis allocated.
+- **Panel coverage note (observed, not a new gap):** re-confirmed consistent with `DISP-003-F1COVERAGE-001` repair audit (canonical block 29–31 of 32 symbols per date). `EOSUSDT` klines last 2025-05-21 and `MATICUSDT` last 2024-09-11 — earlier than 2026-10-31, consistent with delisting/migration and already reflected in that audit; not treated as a current data gap and no manifest prose rewritten.
+- **Session verification quoted:** `research_state/session_verifications/session_verify_20261115T235024Z.json` (newest on disk, `generated_utc` 2026-11-15T23:50:24Z, `head_at_verification` 049394c94b35514e168d4f5f55a9dac93c5efc20, full_suite 1054/1054/0, probe_evidence total_real_probes=397).
+- **Coverage/duplication guard:** unchanged — H29–H38 integrity/planning audits and seam tests complete; hermetic seam-test coverage of pure import-safe seams effectively exhausted without refactoring frozen logic (forbidden). Do not re-run `scripts/run_f1_grid_vintage_trim.py` and do not add another near-duplicate seam test for an I/O-only or already-covered audit seam.
+
+## Previous session — 2026-11-15T23:04:17Z
 
 - **Prior task (completed, verified):** read durable handoff/task (`2026-11-15T22:49:41Z`) and completed its assigned action — confirm the durable state is green and consistent at HEAD without looping on date-gate re-verification.
 - **Re-verification (this session):** `python3 -m compileall -q scripts tests` EXIT 0. `python3 -m unittest discover -s tests` → **Ran 1054 tests, OK, skipped=2 (EXIT=0)** at committed HEAD `049394c94b35514e168d4f5f55a9dac93c5efc20`. Latest recorded verified claim (fingerprint `d04bc057b7b42c28aac441d469e26e239e47be72d3af5966a686ad2ec7683134`, 171 input files, recorded `2026-11-15T15:29:05Z`) remains valid/consistent (no `.py` or test-input changed; commits `7265bd6c` and `049394c9` touched only durable state).
@@ -98,4 +111,4 @@
 
 (Earlier session details preserved in git history and prior durable records.)
 
-(End of file - total 82 lines)
+(End of file - total 101 lines)
