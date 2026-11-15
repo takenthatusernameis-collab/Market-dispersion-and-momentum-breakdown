@@ -324,12 +324,44 @@ class MainTests(unittest.TestCase):
             ledger_path = Path(td) / "ledger.json"
             ledger_path.write_text(json.dumps(ledger))
             out = Path(td) / "audit.json"
-            old = MOD.LEDGER_PATH
+            old_ledger = MOD.LEDGER_PATH
+            old_audit = MOD.audit
             MOD.LEDGER_PATH = ledger_path
+            # audit() is the production path (216-cell ledger, fixed metadata).
+            # These seam tests exercise main()'s I/O/CLI wiring with a tiny
+            # synthetic ledger, so we substitute an audit that reuses the same
+            # check_ledger seam with expected_cells matching the synthetic size.
+            def _synthetic_audit():
+                data = json.loads(ledger_path.read_text(encoding="utf-8"))
+                result = MOD.check_ledger(data, expected_cells=len(data.get("cells", {})))
+                n_cell_violations = len(result["cell_violations"])
+                n_checks_failed = sum(len(v["violations"]) for v in result["cell_violations"])
+                passed = result["passed"]
+                return {
+                    "audit_id": "H004V106_GRID_LEDGER_INTERNAL_CONSISTENCY",
+                    "experiment_id": MOD.EXP,
+                    "hypothesis": "H32",
+                    "status": "PASS" if passed else "FAIL",
+                    "generated_utc": MOD.now_utc(),
+                    "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_GRID_LEDGER_INTERNAL_CONSISTENCY_v1.md",
+                    "script": "scripts/grid_ledger_internal_consistency.py",
+                    "inputs": {"ledger": "synthetic"},
+                    "n_cells_checked": result["n_cells"],
+                    "cells_with_violations": n_cell_violations,
+                    "total_violations": n_checks_failed + len(result["global_violations"]),
+                    "global_violations": result["global_violations"],
+                    "cell_violations": result["cell_violations"],
+                    "status_counts": result["status_counts"],
+                    "holm_rejected_true": result["holm_rejected_true"],
+                    "overall_passed": passed,
+                    "frozen_artifacts_modified": False,
+                }
+            MOD.audit = _synthetic_audit
             try:
                 rc = MOD.main(["--out", str(out)])
             finally:
-                MOD.LEDGER_PATH = old
+                MOD.LEDGER_PATH = old_ledger
+                MOD.audit = old_audit
             self.assertTrue(out.is_file())
             return rc, json.loads(out.read_text())
 

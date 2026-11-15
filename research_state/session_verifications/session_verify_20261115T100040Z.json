@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261115T100040Z",
+  "generated_utc": "2026-11-15T10:00:40Z",
+  "head_at_verification": "8f5a403477a98e7807642fdad2451def2dd09395",
+  "origin_main_at_verification": "8f5a403477a98e7807642fdad2451def2dd09395",
+  "persistence_claimable": true,
+  "note": "Read prior durable handoff/task (2026-11-15T08:25:07Z) and completed the assigned bounded no-cost evidence-audit task by finalizing H32 (H004V106_GRID_LEDGER_INTERNAL_CONSISTENCY) integration/verification. HEAD 8f5a403 already contained the H32 preregistration, read-only audit script, PASS artifact (integrity_audit/H004V106_grid_ledger_internal_consistency_2026-11-15T084959Z.json, 216/216 cells, 0 violations, overall_passed true), and seam tests; this session fixed the remaining integration gaps so the full suite is green: (1) repaired tests/test_grid_ledger_internal_consistency_seams.py MainTests to exercise main() CLI wiring against a synthetic ledger by patching audit() to use check_ledger(..., expected_cells=len(cells)) (production audit() remains 216-cell); (2) registered H32 in research_state/hypothesis_registry.json and bumped next_sequence_number 31->32 (H1..H32); (3) added H32 to scripts/audit_preregistration_coverage.py ALIASES and to tests/test_preregistration_completeness.py AUDIT_TO_HYPOTHESIS; (4) updated consistency-test expectations in tests/test_preregistration_coverage_audit.py (main_audits_scanned 21, audits_scanned 26, preregistrations_on_disk 17), tests/test_integrity_audit_reference_consistency.py (main_integrity_audit_files_scanned 21), and tests/test_continuous_research_contract.py (next_sequence_number 32 with H32 comment); (5) regenerated research_state/preregistration_coverage_audit.json; (6) updated run_manifest next_required_actions narrative claims to satisfy test_manifest_narrative_next_sequence_number_agrees_with_registry (all next_sequence_number claims in that entry now 32, present H1..H32) preserving historical correction notes. Ran python3 -m compileall -q scripts tests (EXIT 0) and full python3 -m unittest discover -s tests to completion (Ran 974 tests, OK, skipped=2). Refreshed verified test claim via python3 scripts/record_test_claim.py (974/974/0, 161 input files, fingerprint b30e6043ac3957b0..., snapshot/manifest latest_verified_test_claim re-pinned). Probe evidence recomputed from research_state/cutoff_probe/ using canonical schema (397 real cutoff_probe files, probe_month_2026-10 count 270 / published 49, probe_month_2026-11 count 127 / published 0, newest_probe cutoff_probe_20261113T091257Z.json). H10 cutoff gate UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 is BLOCKED as a probe only (0/127 target_published) and not promoted into H10 gate decision. H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true, sha 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f); k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not experiment-ID wait). probe_month=2026-11 not re-probed. Working tree has uncommitted modifications (registry, preregistration_coverage_audit, run_manifest, verified_test_claim snapshot, audit_preregistration_coverage.py, test_continuous_research_contract.py, test_grid_ledger_internal_consistency_seams.py, test_integrity_audit_reference_consistency.py, test_preregistration_completeness.py, test_preregistration_coverage_audit.py); persistence claimable for committed HEAD 8f5a403 only, not for this session's uncommitted fixes. No frozen artifact/config/input/frontier/registry sealed holdout modified.",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_verified_unchanged": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "full_suite": {
+      "ran": 974,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "ok": true
+    },
+    "verified_test_claim": "974/974/0"
+  }
+}

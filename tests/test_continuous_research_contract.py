@@ -92,7 +92,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-GRID-ANCHOR-CROSSCHECK,
         # EXPLORATORY_ONLY, consistency_only) so the committed grid anchor
         # cross-check audit references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 31)
+        # H32 was added for the H004V106 grid ledger internal-consistency
+        # audit (HARMONY-CRYPTO-EDGE-004-DISPERSION-003, EXPLORATORY_ONLY,
+        # consistency_only) so the committed whole-ledger 216-cell
+        # internal-consistency audit references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 32)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
