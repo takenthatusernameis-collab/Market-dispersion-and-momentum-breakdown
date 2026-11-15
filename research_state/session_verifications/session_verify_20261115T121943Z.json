@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261115T121943Z",
+  "generated_utc": "2026-11-15T12:19:43Z",
+  "head_at_verification": "e9bd71e5716004132530e10047dbb17e6f83a328",
+  "origin_main_at_verification": "e9bd71e5716004132530e10047dbb17e6f83a328",
+  "persistence_claimable": true,
+  "note": "Closed a real, non-duplicative test-coverage gap: scripts/expanding_universe_eligibility_audit.py (the H33 expanding-universe eligibility coverage audit) was the only delivered DISPERSION-003 integrity-audit script with zero direct test coverage (all siblings H29/H30/H31/H32/H34 have test_*_seams.py). Added tests/test_expanding_universe_eligibility_audit_seams.py (21 hermetic tests, synthetic frames/CSVs, no network, no frozen artifacts) exercising sha256_file, build_eligibility_map, compute_lifecycle, load_marketcap, load_binance_panel (klines+funding), now_utc, constants, and main()'s I/O/CLI wiring. No frozen artifact/config/input/frontier/registry/sealed holdout modified; no new hypothesis allocated. Ran python3 -m compileall -q scripts tests (EXIT 0) and full python3 -m unittest discover -s tests to completion (Ran 1003 tests, OK, skipped=2). Refreshed verified test claim to 1003/1003/0 (165 input files, fingerprint 1608574fd87940220b9fc0d68bc027f2b7bacc836dda971b0294b1823797a8a7) via python3 scripts/record_test_claim.py.",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_verified_unchanged": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "full_suite": {
+      "ran": 1003,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "ok": true
+    },
+    "verified_test_claim": "1003/1003/0"
+  }
+}
