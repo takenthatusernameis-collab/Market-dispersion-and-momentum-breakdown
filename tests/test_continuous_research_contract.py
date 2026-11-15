@@ -87,8 +87,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # source-coverage gap audit (EXPLORATORY_ONLY, coverage_only) so the
         # committed audit artifact references an allocated registry hypothesis;
         # the artifact predated its preregistration, which is repaired by
-        # scripts/repair_source_coverage_audit_prereg.py.
-        self.assertEqual(registry["next_sequence_number"], 28)
+        # scripts/repair_source_coverage_audit_prereg.py. H29 was added for the
+        # H004V106 grid anchor cross-check integrity audit
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-GRID-ANCHOR-CROSSCHECK,
+        # EXPLORATORY_ONLY, consistency_only) so the committed grid anchor
+        # cross-check audit references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 29)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-15T03:48:39Z",
+  "recorded_utc": "2026-11-15T04:31:19Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 822,
-  "tests_ok": 822,
+  "tests_run": 840,
+  "tests_ok": 840,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "822/822/0",
-  "input_fingerprint": "235915ab1a6bcafde6c10feb19207b09573a5d7d5d9079845438faaa3681fc44",
+  "claim": "840/840/0",
+  "input_fingerprint": "95991d09ab3d54319e725b523ce3d3328c4721d763ab2f748a8671647e7a5338",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -149,6 +149,10 @@
     {
       "path": "scripts/generate_grid_v3_manifest.py",
       "sha256": "77669ff0539d1d8a11828454644e0e6fe8417b29e2290550a79fb6d656432d0b"
+    },
+    {
+      "path": "scripts/grid_anchor_crosscheck.py",
+      "sha256": "231034fd3c0d17c2a588f55cf3d907b53cd139b560469b7926ff8dc704f0c57f"
     },
     {
       "path": "scripts/make_grid_quick.py",
@@ -296,7 +300,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "e90562f8a894b03590f62766e6071f2a2acf72955ffdefdd302728f75986720e"
+      "sha256": "af23ba4ce69c8917dcb6378c7eeb73983b17409dba0e41da6fecae1eb65a3003"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -439,6 +443,10 @@
       "sha256": "21aabd76492ea19dadfc2df5a3fc23a9093e7eaa67677790698a4416b6dec45f"
     },
     {
+      "path": "tests/test_grid_anchor_crosscheck_seams.py",
+      "sha256": "856fd1c0ed3c309d92b1a44b417875543fd3dfbf6e73be075b496b352f785bb0"
+    },
+    {
       "path": "tests/test_grid_validation.py",
       "sha256": "ed3b3e5be9db4c2fea999484deced1a64183896e4f88f2a2b2dae080b64920cc"
     },
@@ -484,7 +492,7 @@
     },
     {
       "path": "tests/test_integrity_audit_reference_consistency.py",
-      "sha256": "1a4c2d478b45ab3cc2b38361838f3b3cad1722b1970ac8f668a46ddd17c24a2e"
+      "sha256": "6638770e37c255150ea2b95d3dbfc95298da3e0226240e37bb6b9ca5db1a4484"
     },
     {
       "path": "tests/test_latest_probe_record_pinned.py",
@@ -528,11 +536,11 @@
     },
     {
       "path": "tests/test_preregistration_completeness.py",
-      "sha256": "bfa5f3309f35c1f624434c42805636f765ef2906422816fd32a8fc0137fc441e"
+      "sha256": "d91e317780af5cf1ff6b6c91a0f780b9d0b122f71f77a07986a55bcf972e4997"
     },
     {
       "path": "tests/test_preregistration_coverage_audit.py",
-      "sha256": "05b804e641e0f4ea2feaf8abdb47e97180eec7fa32c692e5df6b522dfbc4cde8"
+      "sha256": "119bcaecf20a572f40b9e47fb226f595dd5e10168eda7bab4cf35129e1e7a126"
     },
     {
       "path": "tests/test_provenance_stability.py",
@@ -611,5 +619,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 150
+  "input_file_count": 152
 }

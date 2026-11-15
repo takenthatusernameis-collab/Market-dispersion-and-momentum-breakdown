@@ -1,0 +1,44 @@
+{
+  "session_id": "session_verify_20261115T041607Z",
+  "generated_utc": "2026-11-15T04:16:07Z",
+  "head_at_verification": "9dbd7279e229fa10d2f53571f45a6dc8e8d3eeb4",
+  "origin_main_at_verification": "9dbd7279e229fa10d2f53571f45a6dc8e8d3eeb4",
+  "persistence_claimable": true,
+  "note": "Completed H004V106 grid anchor cross-check integrity audit and fixed 6 expected test failures from new audit artifact and test file. Updated hardcoded expectations in test_integrity_audit_reference_consistency (16 files), test_preregistration_completeness (added H29), test_preregistration_coverage_audit (16 main audits, 21 total, 14 prereqs), test_verified_test_claim_guard (refreshed fingerprint via scripts/record_test_claim.py), test_continuous_research_contract (next_sequence_number 29), test_state_consistency (manifest narrative updated). Allocated H29 for grid anchor cross-check integrity audit. Fixed handoff to quote newest session verification record session_verify_20261115T033924Z.json. Full suite: Ran 840 tests, OK, skipped=2. python3 scripts/record_test_claim.py refreshed claim/snapshot to 840/840/0 (152 input files). Probe evidence recomputed from disk (397 real cutoff_probe files, probe_month_2026-10 270/49 published, probe_month_2026-11 127/0 published, newest cutoff_probe_20261113T091257Z.json). H10 cutoff gate UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 is BLOCKED as a probe only (0/127 target_published) and not promoted into H10 gate decision; H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true, sha 324ab1e6...); k not advanced; no bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE). probe_month=2026-11 not re-probed. Frozen hashes verified unchanged. Registry next_sequence_number 29 (H1..H29).",
+  "probe_evidence": {
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "total_real_probes": 397
+  },
+  "frozen_hashes_verified_unchanged": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "targeted": {
+      "module": "tests.test_grid_anchor_crosscheck_seams",
+      "ran": 18,
+      "failures": 0,
+      "errors": 0,
+      "ok": true
+    },
+    "full_suite": {
+      "ran": 840,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "ok": true
+    },
+    "verified_test_claim": "840/840/0"
+  }
+}
