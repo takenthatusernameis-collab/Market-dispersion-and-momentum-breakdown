@@ -52,10 +52,10 @@ class PreregistrationCoverageAuditTests(unittest.TestCase):
                         or self.first["preregistrations_uncovered_by_any_audit"])
         self.assertEqual(self.first["audits_missing_prereq"], [])
         self.assertEqual(self.first["preregistrations_uncovered_by_any_audit"], [])
-        self.assertEqual(self.first["main_audits_scanned"], 16)
+        self.assertEqual(self.first["main_audits_scanned"], 17)
         self.assertEqual(self.first["f1_audit_files_scanned"], 5)
-        self.assertEqual(self.first["audits_scanned"], 21)
-        self.assertEqual(len(self.first["preregistrations_on_disk"]), 14)
+        self.assertEqual(self.first["audits_scanned"], 22)
+        self.assertEqual(len(self.first["preregistrations_on_disk"]), 15)
 
     def test_overlap_aware_audit_has_no_prereq_of_its_own(self):
         row = next(r for r in self.first["rows"]

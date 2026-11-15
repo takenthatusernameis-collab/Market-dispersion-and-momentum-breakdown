@@ -244,6 +244,7 @@ class ResearchStateConsistencyTests(unittest.TestCase):
             "H004V106_forward_block_cluster_bootstrap_20261029.json": "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md",
             "H004V106_forward_block_tail_influence_20261029.json": "H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_v1.md",
             "H004V106_forward_block_temporal_stability_20261029.json": "H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_AUDIT_v1.md",
+            "H004V106_grid_summary_ledger_crosscheck_2026-11-15T062831Z.json": "H004V106_GRID_SUMMARY_LEDGER_CROSSCHECK_v1.md",
         }
 
         def _parse_ts(text):

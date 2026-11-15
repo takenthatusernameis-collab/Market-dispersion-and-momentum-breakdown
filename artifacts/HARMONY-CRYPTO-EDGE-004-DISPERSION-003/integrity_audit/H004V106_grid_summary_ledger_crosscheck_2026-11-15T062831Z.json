@@ -1,0 +1,123 @@
+{
+  "anchors_checked": [
+    "H004V105",
+    "H004V106"
+  ],
+  "audit_id": "H004V106_GRID_SUMMARY_LEDGER_CROSSCHECK",
+  "audited_utc": "2026-11-15T06:28:31Z",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "frozen_artifacts_modified": false,
+  "hypothesis": "H30",
+  "inputs": {
+    "ledger": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json",
+    "summary": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_summary.json"
+  },
+  "interpretation": "This audit verifies internal consistency between the committed grid ledger and the grid summary for the primary anchors H004V105 and H004V106. It is an integrity check on already-inspected development evidence (DISPERSION-003), NOT a fresh holdout, NOT independent confirmation, and does NOT validate/refute/unlock H1/H6/H7/H8/H9/H10/H11.",
+  "overall_passed": true,
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_GRID_SUMMARY_LEDGER_CROSSCHECK_v1.md",
+  "results": {
+    "H004V105": {
+      "diffs": [],
+      "matched": true,
+      "recomputed_from_ledger": {
+        "date_first": "2023-01-31",
+        "date_last": "2026-09-29",
+        "eligible_assets_per_date": {
+          "max": 28,
+          "mean": 27.070254110612854,
+          "min": 26
+        },
+        "high_gross_mean": 0.2878180791871485,
+        "high_low_diff_gross": 0.29914182230939457,
+        "high_low_diff_net_1x": 0.2991418223093945,
+        "high_net_1x_mean": 0.28681807918714847,
+        "low_gross_mean": -0.011323743122246061,
+        "low_net_1x_mean": -0.012323743122246066,
+        "n_formations": 1338,
+        "n_high": 129,
+        "n_low": 146,
+        "n_mid": 1063,
+        "spread_gross_mean": 0.05221004269629464,
+        "spread_gross_median": -0.0001943384571525819,
+        "spread_net_1x_mean": 0.051210042696294644,
+        "spread_net_1x_median": -0.001194338457152582
+      },
+      "summary_eligible_assets": {
+        "max": 28,
+        "mean": 27.070254110612854,
+        "min": 26
+      },
+      "summary_fields": {
+        "date_first": "2023-01-31",
+        "date_last": "2026-09-29",
+        "high_gross_mean": 0.2878180791871485,
+        "high_low_diff_gross": 0.29914182230939457,
+        "high_low_diff_net_1x": 0.2991418223093945,
+        "high_net_1x_mean": 0.28681807918714847,
+        "low_gross_mean": -0.011323743122246061,
+        "low_net_1x_mean": -0.012323743122246066,
+        "n_formations": 1338,
+        "n_high": 129,
+        "n_low": 146,
+        "n_mid": 1063,
+        "spread_gross_mean": 0.05221004269629464,
+        "spread_gross_median": -0.0001943384571525819,
+        "spread_net_1x_mean": 0.051210042696294644,
+        "spread_net_1x_median": -0.001194338457152582
+      }
+    },
+    "H004V106": {
+      "diffs": [],
+      "matched": true,
+      "recomputed_from_ledger": {
+        "date_first": "2023-01-31",
+        "date_last": "2026-09-29",
+        "eligible_assets_per_date": {
+          "max": 32,
+          "mean": 29.015695067264573,
+          "min": 26
+        },
+        "high_gross_mean": 0.23926501280054874,
+        "high_low_diff_gross": 0.26449682269970615,
+        "high_low_diff_net_1x": 0.26449682269970615,
+        "high_net_1x_mean": 0.23826501280054874,
+        "low_gross_mean": -0.025231809899157423,
+        "low_net_1x_mean": -0.026231809899157424,
+        "n_formations": 1338,
+        "n_high": 124,
+        "n_low": 136,
+        "n_mid": 1078,
+        "spread_gross_mean": 0.04236562584732269,
+        "spread_gross_median": -0.001037045582581636,
+        "spread_net_1x_mean": 0.04136562584732269,
+        "spread_net_1x_median": -0.002037045582581636
+      },
+      "summary_eligible_assets": {
+        "max": 32,
+        "mean": 29.015695067264573,
+        "min": 26
+      },
+      "summary_fields": {
+        "date_first": "2023-01-31",
+        "date_last": "2026-09-29",
+        "high_gross_mean": 0.23926501280054874,
+        "high_low_diff_gross": 0.26449682269970615,
+        "high_low_diff_net_1x": 0.26449682269970615,
+        "high_net_1x_mean": 0.23826501280054874,
+        "low_gross_mean": -0.025231809899157423,
+        "low_net_1x_mean": -0.026231809899157424,
+        "n_formations": 1338,
+        "n_high": 124,
+        "n_low": 136,
+        "n_mid": 1078,
+        "spread_gross_mean": 0.04236562584732269,
+        "spread_gross_median": -0.001037045582581636,
+        "spread_net_1x_mean": 0.04136562584732269,
+        "spread_net_1x_median": -0.002037045582581636
+      }
+    }
+  },
+  "script": "scripts/grid_summary_ledger_crosscheck.py",
+  "status": "PASS",
+  "total_diffs": 0
+}
