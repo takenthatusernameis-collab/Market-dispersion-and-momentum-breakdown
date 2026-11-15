@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-15T00:40:00Z",
+  "last_updated_utc": "2026-11-15T01:00:00Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "713/713/0",
+  "latest_verified_test_claim": "731/731/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1129,7 +1129,8 @@
     "session_record_verify_20261114T233433Z",
     "session_record_verify_20261114T234800Z",
     "session_record_verify_20261115T002620Z",
-    "session_record_verify_20261115T004000Z"
+    "session_record_verify_20261115T004000Z",
+    "session_record_verify_20261115T010000Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1211,7 +1212,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261115T004000Z",
+  "session_record_latest": "session_record_verify_20261115T010000Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -1999,5 +2000,18 @@
     "action": "add_hermetic_unit_tests_for_fix_inference_seams",
     "outcome": "Added tests/test_fix_inference_seams.py (10 hermetic tests) covering the pure block_bootstrap_ci and paired_diff_series seams in scripts/fix_inference.py (zero direct test references previously). Full suite 713/713/0 (skipped=2). Verified test claim re-pinned to 713/713/0 (143 input files, fingerprint e92d93c5...). Frozen artifacts unchanged.",
     "verification": "python3 -m compileall -q scripts tests (EXIT 0); python3 -m unittest tests.test_fix_inference_seams -v (10 OK); python3 -m unittest discover -s tests (Ran 713, OK, skipped=2); python3 scripts/record_test_claim.py (claim 713/713/0, run_manifest latest_verified_test_claim re-pinned). New session verification record research_state/session_verifications/session_verify_20261115T004000Z.json written with probe_evidence recomputed from disk (397 real probes, 270 probe_month=2026-10 / 127 probe_month=2026-11, newest cutoff_probe_20261113T091257Z.json) and frozen hashes confirmed unchanged."
+  },
+  "session_record_verify_20261115T010000Z": {
+    "session_id": "session_verify_20261115T010000Z",
+    "timestamp_utc": "2026-11-15T01:00:00Z",
+    "action": "Closed a real test-coverage gap for scripts/run_phase_g_fast.py (DISPERSION-001 phase-G fast runner): five deterministic pure DataFrame seams (formation_dates_monthly, momentum_compounded, build_daily_dispersion_series, get_state_for_formation, compute_momentum_spread) had zero direct test references. Added tests/test_run_phase_g_fast_seams.py (18 hermetic tests) exercising all five seams with synthetic DataFrames only (no frozen artifacts, no network). No refactor, no frozen artifact/config/input modified.",
+    "outcome": "compileall EXIT 0; targeted 18/18 OK; full suite Ran 731 tests, OK (skipped=2). record_test_claim refreshed to 731/731/0, 144 input files, fingerprint 5c2dfb04d0bebccc...; run_manifest latest_verified_test_claim re-pinned to 731/731/0. Probe evidence recomputed from disk: 397 real (0 MOCK), 270 probe_month=2026-10 (49 published) / 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json. Frozen hashes unchanged: canonical 7234fc4e..., h10_fresh 324ab1e6..., universe_frontier 9ba08f3f..., grid_v3_config 1ff4c1f2....",
+    "verification": {
+      "compileall": "python3 -m compileall -q scripts tests (EXIT 0)",
+      "targeted_tests": "python3 -m unittest tests.test_run_phase_g_fast_seams -v (18 tests, OK)",
+      "full_suite": "python3 -m unittest discover -s tests (Ran 731 tests, OK, skipped=2)",
+      "record_test_claim": "python3 scripts/record_test_claim.py -> 731/731/0, 144 input files, fingerprint 5c2dfb04d0bebccc..., run_manifest latest_verified_test_claim re-pinned to 731/731/0",
+      "session_verify_record": "research_state/session_verifications/session_verify_20261115T010000Z.json"
+    }
   }
 }
