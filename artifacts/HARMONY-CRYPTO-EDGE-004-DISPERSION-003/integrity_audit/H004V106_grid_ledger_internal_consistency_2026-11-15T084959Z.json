@@ -1,0 +1,28 @@
+{
+  "audit_id": "H004V106_GRID_LEDGER_INTERNAL_CONSISTENCY",
+  "cell_violations": [],
+  "cells_with_violations": 0,
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "frozen_artifacts_modified": false,
+  "generated_utc": "2026-11-15T08:49:59Z",
+  "global_violations": [],
+  "holm_rejected_true": 0,
+  "hypothesis": "H32",
+  "inputs": {
+    "ledger": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json"
+  },
+  "interpretation": "This audit verifies that every committed DISPERSION-003 grid cell is internally self-consistent with its own formation records (accounting, state counts, aggregates, date range, eligible coverage, inference fields). It is an integrity check on already-inspected development evidence, NOT a fresh holdout, NOT independent confirmation, and does NOT validate/refute/unlock H1/H6/H7/H8/H9/H10/H11.",
+  "n_cells_checked": 216,
+  "overall_passed": true,
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_GRID_LEDGER_INTERNAL_CONSISTENCY_v1.md",
+  "script": "scripts/grid_ledger_internal_consistency.py",
+  "status": "PASS",
+  "status_counts": {
+    "BLOCKED": 0,
+    "FAILED": 0,
+    "INVALID": 0,
+    "NOT_RUN": 0,
+    "OK": 216
+  },
+  "total_violations": 0
+}
