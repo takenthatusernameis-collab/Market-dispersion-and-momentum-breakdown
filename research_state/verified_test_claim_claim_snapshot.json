@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-15T02:34:56Z",
+  "recorded_utc": "2026-11-15T03:48:39Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 815,
-  "tests_ok": 815,
+  "tests_run": 822,
+  "tests_ok": 822,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "815/815/0",
-  "input_fingerprint": "e43db16c6bba201a2846b90f624f03eea258b735c3708217812ba91a39e2d30e",
+  "claim": "822/822/0",
+  "input_fingerprint": "235915ab1a6bcafde6c10feb19207b09573a5d7d5d9079845438faaa3681fc44",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -515,6 +515,10 @@
       "sha256": "742f0ee2cefaddfe3b696ef794a4023ef81d5a1b3519281d1d6643b9c1bdc38b"
     },
     {
+      "path": "tests/test_phase_b_placebos_seams.py",
+      "sha256": "f99a1dbbdf79e4265c31879e01c6202479b02f1241ca8da410efc0db108fb2fe"
+    },
+    {
       "path": "tests/test_phase_c_proper_refined_seams.py",
       "sha256": "e51336b6c54591c13190801241684b857aa0e4d477304187ed13104096b51555"
     },
@@ -607,5 +611,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 149
+  "input_file_count": 150
 }
