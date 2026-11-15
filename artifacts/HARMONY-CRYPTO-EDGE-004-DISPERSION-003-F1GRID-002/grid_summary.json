@@ -4,7 +4,7 @@
     "COMPARATOR_HOLM_CHANGE": false,
     "COVERAGE_EXPANSION": false,
     "DIRECTIONAL_ATTENUATION": false,
-    "HOLM_STATUS_CHANGE": false
+    "HOLM_STATUS_CHANGE": true
   },
   "arms": {
     "A_ledger_vintage_committed": {
@@ -19,7 +19,7 @@
       "cells_evaluated": 216,
       "cells_failed": 0,
       "cells_ok": 216,
-      "holm_rejected_count": 0
+      "holm_rejected_count": 1
     }
   },
   "asof_date_trim": "2026-09-30",
@@ -1581,7 +1581,7 @@
       "delta_n_low": -1,
       "delta_n_mid": 1,
       "holm_rejected_a": false,
-      "holm_rejected_b": false,
+      "holm_rejected_b": true,
       "universe_arm": "expanding_point_in_time"
     },
     {
@@ -2618,7 +2618,7 @@
     }
   ],
   "delta_mean_eligible_assets": 0.909186884971348,
-  "evaluated_utc": "2026-11-14T06:08:59Z",
+  "evaluated_utc": "2026-11-15T03:08:59Z",
   "expected_cells": 216,
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002",
   "n_cells_ok_both_arms": 216,

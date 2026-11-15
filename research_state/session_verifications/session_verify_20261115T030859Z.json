@@ -1,0 +1,30 @@
+{
+  "session_id": "session_verify_20261115T030859Z",
+  "generated_utc": "2026-11-15T03:08:59Z",
+  "head": "8ba7f0a747c94a9dc7a2577ce548032dbcf33f1d",
+  "origin_main": "8ba7f0a747c94a9dc7a2577ce548032dbcf33f1d",
+  "persistence_claimable": true,
+  "note": "Execution session completing the H27 (F1GRID-002) next_test left open by the prior session. Read durable handoff/task, verified prerequisites (F1COVERAGE-001 repaired klines present; committed ledger sha256 0184f2d3...; arm A checkpoint 216/216 OK with p-values already present), then ran scripts/run_f1_grid_vintage_trim.py to completion: arm A resumed instantly (216/216 already checkpointed), fidelity anchor PASS (compared 216 cells, drifts 0), arm B evaluated 216/216 cells OK. Full test suite python3 -m unittest discover -s tests -> 815 run, 0 failures, 0 errors, 2 skipped. No .py changes this session; test claim snapshot not refreshed. Probe evidence recomputed from disk (397 real probes, 2026-10 270/49 published, 2026-11 127/0 published, newest cutoff_probe_20261113T091257Z.json). Frozen hashes verified unchanged: canonical forward block 7234fc4e..., h10_fresh 324ab1e6..., committed grid_result_ledger 0184f2d3..., grid_summary d6c40814..., universe_frontier 9ba08f3f..., grid v3 config 1ff4c1f2.... No frozen artifact/config/input/frontier/registry/sealed holdout modified. F1GRID-002 outputs are gitignored oversized artifacts and were NOT committed.",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_summary.json": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "unittest_ran": 815,
+    "unittest_failures": 0,
+    "unittest_errors": 0,
+    "unittest_skipped": 2,
+    "unittest_ok": true
+  }
+}
