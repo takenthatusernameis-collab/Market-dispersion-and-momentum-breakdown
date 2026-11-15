@@ -109,7 +109,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # milestone audit (H004V106_H10_MATURITY_TIMELINE_AUDIT, EXPLORATORY_ONLY,
         # planning_only) so the committed maturity-timeline audit references an
         # allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 35)
+        # H36 was added for the H004V106 H10 post-2026-11-30 evaluation sequence
+        # design (H004V106_H10_POST_2026_11_30_EVALUATION_SEQUENCE, EXPLORATORY_ONLY,
+        # planning_only) so the committed evaluation-sequence design artifact
+        # references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 36)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

@@ -1,0 +1,193 @@
+{
+  "artifact_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "audit_id": "H004V106_H10_POST_2026_11_30_EVALUATION_SEQUENCE",
+  "checks": [
+    {
+      "actual": 0.025,
+      "check": "alpha_1_value",
+      "expected": 0.025,
+      "passed": true
+    },
+    {
+      "actual": "0.05/(2*3) = 0.05/6",
+      "check": "alpha_2_formula",
+      "expected": "0.05/(2*3) = 0.05/6",
+      "passed": true
+    },
+    {
+      "actual": 0.025,
+      "check": "cumulative_spend_k1",
+      "expected": 0.025,
+      "passed": true
+    },
+    {
+      "actual": 0.025,
+      "check": "remaining_budget_k1",
+      "expected": 0.025,
+      "passed": true
+    },
+    {
+      "actual": "0.05*(1 - 1/(k+1))",
+      "check": "cumulative_spend_formula",
+      "expected": "0.05*(1 - 1/(k+1))",
+      "passed": true
+    },
+    {
+      "actual": "0.05 over k=1..inf",
+      "check": "series_sums_to_family_alpha",
+      "expected": "0.05 over k=1..inf",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "check": "immature_look_consumes_no_budget",
+      "expected": false,
+      "passed": true
+    },
+    {
+      "actual": false,
+      "check": "immature_look_does_not_advance_k",
+      "expected": false,
+      "passed": true
+    },
+    {
+      "actual": 216,
+      "check": "holm_family_cell_count",
+      "expected": 216,
+      "passed": true
+    },
+    {
+      "actual": 0.05,
+      "check": "economic_significance_threshold",
+      "expected": 0.05,
+      "passed": true
+    },
+    {
+      "actual": "n_high>=5 AND n_low>=5",
+      "check": "state_count_floor",
+      "expected": "n_high>=5 AND n_low>=5",
+      "passed": true
+    },
+    {
+      "actual": "BOTH criterion 4a AND criterion 4b at alpha_k",
+      "check": "confirmatory_claim_rule",
+      "expected": "BOTH criterion 4a AND criterion 4b at alpha_k",
+      "passed": true
+    },
+    {
+      "actual": "never at fixed 0.05",
+      "check": "per_look_alpha_not_fixed_0.05",
+      "expected": "never at fixed 0.05",
+      "passed": true
+    },
+    {
+      "actual": false,
+      "check": "threshold_never_lowered_to_manufacture_pass",
+      "expected": false,
+      "passed": true
+    },
+    {
+      "actual": false,
+      "check": "threshold_never_re_derived_from_fresh_block_outcome",
+      "expected": false,
+      "passed": true
+    },
+    {
+      "actual": false,
+      "check": "canonical_block_not_an_input_to_fresh_outcome",
+      "expected": false,
+      "passed": true
+    },
+    {
+      "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "check": "canonical_block_sha256",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "passed": true
+    },
+    {
+      "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "check": "fresh_block_sha256",
+      "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "passed": true
+    },
+    {
+      "actual": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "check": "grid_ledger_sha256",
+      "expected": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "passed": true
+    },
+    {
+      "actual": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "check": "universe_frontier_sha256",
+      "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "passed": true
+    },
+    {
+      "actual": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "check": "grid_config_sha256",
+      "expected": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "preregistration_exists_on_disk",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "design_is_pre_outcome_no_outcomes_computed",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "november_2026_vintage_gate_not_relaxed",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "read_only_no_frozen_writes",
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 22,
+  "checks_total": 22,
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "frozen_artifacts_modified": [],
+  "generated_utc": "2026-11-15T13:24:00Z",
+  "hypothesis_id": "H36",
+  "interpretation": "Design/planning artifact for the H10 post-2026-11-30 evaluation sequence. Predeclares the ordered look numbers (k=1,2,...), per-look alpha_k = 0.05/(k*(k+1)) values (alpha_1=0.025, alpha_2=0.05/6), cumulative alpha spend trajectory, Holm family binding (216 cells), confirmatory claim rule (BOTH |high_low_diff_net_1x|>=0.05 after costs AND Holm-adjusted p-value <= alpha_k), immature-look semantics (no k advance, no budget consume), and the artifact contract each evaluation must emit. No outcomes, returns, spreads, p-values or inference are computed. The November 2026 vintage gate (cutoff >= 2026-11-30) is not relaxed. All 22 predeclared design checks pass by construction. This is EXPLORATORY_ONLY planning on already-inspected development evidence; it does NOT validate, replace or unlock H1/H6/H7/H10/H11 and does not modify any frozen artifact.",
+  "milestones": {
+    "look_k1_first_mature_evaluation": {
+      "alpha_k": 0.025,
+      "cumulative_spend": 0.025,
+      "remaining_budget": 0.025,
+      "confirmatory_rule": "|high_low_diff_net_1x|>=0.05 after costs AND Holm-adjusted p-value<=0.025 across the 216-cell family"
+    },
+    "look_k2_second_mature_evaluation": {
+      "alpha_k": "0.05/6",
+      "cumulative_spend": "0.025 + 0.05/6",
+      "remaining_budget": "0.05 - (0.025 + 0.05/6)",
+      "confirmatory_rule": "|high_low_diff_net_1x|>=0.05 after costs AND Holm-adjusted p-value<=0.05/6 across the 216-cell family"
+    },
+    "look_k_ge_3": {
+      "alpha_k_formula": "0.05/(k*(k+1))",
+      "cumulative_spend_formula": "0.05*(1 - 1/(k+1))",
+      "note": "series sums to 0.05 over k=1..inf"
+    },
+    "immature_evaluation": {
+      "condition": "n_high=0 or n_low=0 or high_low_diff_net_1x=null",
+      "k_advance": false,
+      "budget_consume": false,
+      "confirmatory_claim_allowed": false
+    }
+  },
+  "note": "EXPLORATORY_ONLY: design/planning specification of the H10 post-2026-11-30 evaluation sequence on already-inspected development evidence. Does not validate, replace or unlock any confirmatory track and does not change the frozen H10 preregistration or date gate.",
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_H10_POST_2026_11_30_EVALUATION_SEQUENCE_v1.md",
+  "status": "EXPLORATORY_ONLY",
+  "verdict": "PASS"
+}
