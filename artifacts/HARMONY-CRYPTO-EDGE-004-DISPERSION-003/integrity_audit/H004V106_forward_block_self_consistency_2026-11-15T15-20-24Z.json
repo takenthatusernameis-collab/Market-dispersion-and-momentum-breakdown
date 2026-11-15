@@ -1,0 +1,105 @@
+{
+  "actual_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "audit_id": "H004V106_FORWARD_BLOCK_SELF_CONSISTENCY_AUDIT",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "canonical_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "checks": [
+    {
+      "actual": 26,
+      "check": "eligible_min_equals_array_min",
+      "expected": 26,
+      "passed": true
+    },
+    {
+      "actual": 27,
+      "check": "eligible_max_equals_array_max",
+      "expected": 27,
+      "passed": true
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": 26.231907894736842,
+      "check": "eligible_mean_equals_array_mean",
+      "expected": 26.231907894736842,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "actual": 608,
+      "check": "n_formations_equals_array_len",
+      "expected": 608,
+      "passed": true
+    },
+    {
+      "actual": 61,
+      "check": "n_high_equals_array_state_count",
+      "expected": 61,
+      "passed": true
+    },
+    {
+      "actual": 90,
+      "check": "n_low_equals_array_state_count",
+      "expected": 90,
+      "passed": true
+    },
+    {
+      "actual": 457,
+      "check": "n_mid_equals_array_state_count",
+      "expected": 457,
+      "passed": true
+    },
+    {
+      "actual": "2025-01-01",
+      "check": "date_first_equals_array_min",
+      "expected": "2025-01-01",
+      "passed": true
+    },
+    {
+      "actual": "2026-08-31",
+      "check": "date_last_equals_array_max",
+      "expected": "2026-08-31",
+      "passed": true
+    },
+    {
+      "actual": {
+        "strictly_increasing": true,
+        "unique": true
+      },
+      "check": "dates_strictly_increasing_and_unique",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": [],
+      "check": "all_states_in_domain",
+      "expected": [
+        "high",
+        "mid",
+        "low"
+      ],
+      "passed": true
+    },
+    {
+      "actual": [],
+      "check": "all_n_assets_meet_floor",
+      "expected": ">= 20",
+      "offending_count": 0,
+      "passed": true
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 12,
+  "checks_total": 12,
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "frozen_artifacts_modified": [],
+  "generated_utc": "2026-11-15T15:20:24Z",
+  "header_ok": true,
+  "hypothesis_id": "H38",
+  "note": "EXPLORATORY_ONLY/consistency_only: verifies the sealed canonical forward block's own header/summary fields against its own formations array. Does not validate, replace or unlock any confirmatory track; does not re-fetch market data; opens no sealed holdout; modifies no frozen artifact.",
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_SELF_CONSISTENCY_AUDIT_v1.md",
+  "scope": "consistency_only",
+  "script": "scripts/forward_block_internal_self_consistency_audit.py",
+  "sha256_match": true,
+  "status": "EXPLORATORY_ONLY",
+  "verdict": "PASS"
+}

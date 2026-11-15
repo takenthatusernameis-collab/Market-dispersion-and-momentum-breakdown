@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-15T14:41:05Z",
+  "recorded_utc": "2026-11-15T15:29:05Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1032,
-  "tests_ok": 1032,
+  "tests_run": 1054,
+  "tests_ok": 1054,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "1032/1032/0",
-  "input_fingerprint": "abce652034c8170c7189d75e44ab5b86280f56ea684e79ed0fdc3f39b2a5cac7",
+  "claim": "1054/1054/0",
+  "input_fingerprint": "d04bc057b7b42c28aac441d469e26e239e47be72d3af5966a686ad2ec7683134",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -133,6 +133,10 @@
     {
       "path": "scripts/forward_block_independent_recomputation_audit.py",
       "sha256": "480b8096714fd9fdd93229f6cfe16d9aab5d07e33c9b5e58acd7e9f9d3f1b64b"
+    },
+    {
+      "path": "scripts/forward_block_internal_self_consistency_audit.py",
+      "sha256": "d8e4accb563ffe39eabe5da436c2a1bce9ee3604ca863a21079088ace03585f5"
     },
     {
       "path": "scripts/forward_block_overlap_aware_audit.py",
@@ -328,7 +332,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "a4fa1cccb1dee063fe80d09fca23907a596ae9ced2c26b8152c33623b798044c"
+      "sha256": "de994b46b67276e40190d99fb63bf5687c1cdc06c7dd7db78c58e443dbddc8cd"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -459,6 +463,10 @@
       "sha256": "55f7603e9aa27ab4edbf58d650aec46cd3ee8e5da06156395b89cfd1637059fa"
     },
     {
+      "path": "tests/test_forward_block_internal_self_consistency_audit_seams.py",
+      "sha256": "28d9a40654f259ee7551444dfbadf75b705a1b73cbff52969680f1dae73ec086"
+    },
+    {
       "path": "tests/test_forward_block_output_dir.py",
       "sha256": "0bef208903d20162e14948b80f32d5b46f035fdb18a0cbea0aeb37b3e0a0f854"
     },
@@ -560,7 +568,7 @@
     },
     {
       "path": "tests/test_integrity_audit_reference_consistency.py",
-      "sha256": "b8e9ceaa695a9bcef1b4f95cc541b400c21ea7b924496a7d9a1cfd3489f4fa7f"
+      "sha256": "ab45f3dab1fcf496441d1529b11d76af3a4cf68bc06e0951e9b6098a8fcdcfc7"
     },
     {
       "path": "tests/test_latest_probe_record_pinned.py",
@@ -604,11 +612,11 @@
     },
     {
       "path": "tests/test_preregistration_completeness.py",
-      "sha256": "87c5ff5ead0eb547d54682d14d1cd48d104845cb3b0067b462f3f1d2d745468b"
+      "sha256": "114b090a103c38ae582cb44dd781e7e230610fd7fa001f988b7a1e2a6fc5a5c7"
     },
     {
       "path": "tests/test_preregistration_coverage_audit.py",
-      "sha256": "66d892f8866b044ba70864e4184ca73e730d5fcd8b8133dba2173a7997291bed"
+      "sha256": "3e4255976df424c07443202e035ee72c1f7f9ebaaca8792b1c8bf8b64623b42d"
     },
     {
       "path": "tests/test_provenance_stability.py",
@@ -687,5 +695,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 169
+  "input_file_count": 171
 }
