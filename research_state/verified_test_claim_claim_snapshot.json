@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-15T01:32:25Z",
+  "recorded_utc": "2026-11-15T01:42:23Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 759,
-  "tests_ok": 759,
+  "tests_run": 763,
+  "tests_ok": 763,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "759/759/0",
-  "input_fingerprint": "c684bca6f99482d520e982b10809f8ce713bd5b2b5d5194388e671cf17087761",
+  "claim": "763/763/0",
+  "input_fingerprint": "c315faff22e1445bf250d93ad9dc180bda0774a5eadd7bf04a0fa6f7c5cc0144",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -511,6 +511,10 @@
       "sha256": "742f0ee2cefaddfe3b696ef794a4023ef81d5a1b3519281d1d6643b9c1bdc38b"
     },
     {
+      "path": "tests/test_phase_c_proper_refined_seams.py",
+      "sha256": "e51336b6c54591c13190801241684b857aa0e4d477304187ed13104096b51555"
+    },
+    {
       "path": "tests/test_prereg_and_h10_fresh_reference_consistency.py",
       "sha256": "db282084c602e3ff6c682f502013c7181a50f6fe7b2eff1bf14c21827f54349c"
     },
@@ -595,5 +599,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 146
+  "input_file_count": 147
 }
