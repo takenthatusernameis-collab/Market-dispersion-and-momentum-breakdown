@@ -1,0 +1,40 @@
+{
+  "session_id": "session_verify_20261115T012700Z",
+  "timestamp_utc": "2026-11-15T01:27:00Z",
+  "agent": "kilo",
+  "head_at_start": "e79b37cf62c8391d7b41529144e2931e1623cb59",
+  "origin_main_at_start": "e79b37cf62c8391d7b41529144e2931e1623cb59",
+  "persistence_claimable_at_start": true,
+  "prior_session": "session_verify_20261115T010000Z",
+  "task_completed": "Demonstrated a real gap: scripts/run_all_phases_c_g.py (DISPERSION-002 phases C-G runner) exposes deterministic pure seams but zero test imports the module (fix_inference.py mentions it only in a comment; grep across tests/ and scripts/ returns no test references). The module is import-safe (top-level code is imports/constants only; main_all() is __main__-guarded), so the seams are testable without reading/writing any committed panel/artifact and without network. Added tests/test_run_all_phases_c_g_seams.py (22 hermetic tests, stdlib + numpy/pandas only) covering: hac_adjustment (mean, NaN drop, short series -> NaN), formation_dates_monthly (first eligible per month in order; no eligible -> empty), momentum_compounded (complete-window asset filter, end_date not in index, lookback longer than history, all-incomplete -> empty), build_daily_dispersion_series (skips dates before lookback, both estimators, too-few-eligible -> empty), get_state_for_formation (outer-decile low/high/mid, median-split low/high, unknown rule -> mid, insufficient history -> mid), and compute_momentum_spread (valid structure + exact cost_1x=0.001 and net = gross - cost arithmetic, extended fields turnover/top_assets/bot_assets/top_ret/bot_ret, quintiles q=5 path, too-few-eligible invalid, empty-forward invalid). Deliberately not re-tested: sha256_file (covered by tests/test_build_universe.py) and block_bootstrap_ci (covered by tests/test_fix_inference_seams.py) to avoid duplicate coverage. No refactor, no frozen artifact/config/input modified. python3 -m compileall -q scripts tests EXIT 0; targeted python3 -m unittest tests.test_run_all_phases_c_g_seams -v — 22 tests, OK; full suite python3 -m unittest discover -s tests — Ran 759 tests, OK, skipped=2. .py inventory changed (new test file), so python3 scripts/record_test_claim.py refreshed claim to 759/759/0, 146 input files, fingerprint c684bca6f99482d5..., run_manifest latest_verified_test_claim re-pinned to 759/759/0.",
+  "checks": {
+    "compileall": "python3 -m compileall -q scripts tests (EXIT 0)",
+    "targeted_tests": "python3 -m unittest tests.test_run_all_phases_c_g_seams -v (22 tests, OK)",
+    "full_suite": "python3 -m unittest discover -s tests (Ran 759 tests, OK, skipped=2)",
+    "record_test_claim": "python3 scripts/record_test_claim.py -> 759/759/0, 146 input files, fingerprint c684bca6f99482d5..., run_manifest latest_verified_test_claim re-pinned to 759/759/0"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "mock_probes": 0,
+    "probe_month_2026-10": { "count": 270, "published": 49 },
+    "probe_month_2026-11": { "count": 127, "published": 0 },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_unchanged": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "h10_status": {
+    "cutoff_gate": "UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 is BLOCKED as a probe only (0/127 target_published=true), not promoted into H10 gate decision",
+    "fresh_block": "IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true); k not advanced",
+    "date_gate": "No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait)"
+  },
+  "registry": {
+    "next_sequence_number": 28,
+    "hypotheses": "H1..H28"
+  },
+  "frozen_artifacts_modified": false,
+  "notes": "numpy 2.5.4 / pandas 3.1.1 present in environment. Two untracked oversized F1GRID-002 artifacts remain gitignored and must not be committed (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json ~166 MB, .../grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json ~66 MB). Working tree carries new tests/test_run_all_phases_c_g_seams.py plus updated run_manifest.json and verified_test_claim_claim_snapshot.json; uncommitted, commit not requested. probe_month=2026-11 not re-probed."
+}
