@@ -1,0 +1,33 @@
+{
+  "session_id": "session_verify_20261115T172000Z",
+  "generated_utc": "2026-11-15T17:20:00Z",
+  "head_at_verification": "e58b41bb291a58369de52e24cd42c806f2df7add",
+  "verified_test_claim": {
+    "source": "executed_this_session",
+    "ran": 1054,
+    "passed": 1054,
+    "failed": 0,
+    "skipped": 2,
+    "exit_code": 0,
+    "commands": [
+      "python3 -m compileall -q scripts tests",
+      "python3 -m unittest discover -s tests"
+    ]
+  },
+  "probe_evidence": {
+    "schema": "canonical_v1",
+    "total_real_probes": 397,
+    "probe_month_2026_10": 270,
+    "probe_month_2026_11": 127,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "h10_cutoff_gate_unblocked_by_2026_10": true,
+    "probe_month_2026_11_published": false
+  },
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "notes": "Durable state confirmed green and consistent at HEAD e58b41bb. No .py/test/artifact/config/input/frozen/frontier/registry change. H10 hard date-gated until 2026-11-30 (fresh block immature: n_formations=1,n_high=0,n_low=0). probe_month=2026-11 probe BLOCKED as probe only (0/127)."
+}
