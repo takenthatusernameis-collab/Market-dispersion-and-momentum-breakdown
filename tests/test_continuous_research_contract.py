@@ -113,7 +113,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # design (H004V106_H10_POST_2026_11_30_EVALUATION_SEQUENCE, EXPLORATORY_ONLY,
         # planning_only) so the committed evaluation-sequence design artifact
         # references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 36)
+        # H37 was added for the H004V106 forward block independent recomputation
+        # audit (H004V106_FORWARD_BLOCK_INDEPENDENT_RECOMPUTATION_AUDIT,
+        # EXPLORATORY_ONLY, consistency_only) so the committed recomputation
+        # audit references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 37)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

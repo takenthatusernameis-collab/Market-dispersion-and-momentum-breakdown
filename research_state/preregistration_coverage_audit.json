@@ -2,7 +2,7 @@
   "audit_id": "PREREGISTRATION_COVERAGE_AUDIT_20261103",
   "audited_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit",
   "audits_missing_prereq": [],
-  "audits_scanned": 30,
+  "audits_scanned": 31,
   "f1_audit_files_scanned": 5,
   "f1_integrity_audit_dirs": [
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1COVERAGE-001/integrity_audit",
@@ -14,7 +14,7 @@
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1SENS-002/preregistrations",
     "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1STAB-003/preregistrations"
   ],
-  "main_audits_scanned": 25,
+  "main_audits_scanned": 26,
   "pass": true,
   "prereg_dir": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations",
   "preregistrations_on_disk": [
@@ -26,6 +26,7 @@
     "H004V106_EXPANDING_UNIVERSE_ELIGIBILITY_COVERAGE_AUDIT_v1.md",
     "H004V106_FORWARD_BLOCK_CLUSTER_BOOTSTRAP_v1.md",
     "H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md",
+    "H004V106_FORWARD_BLOCK_INDEPENDENT_RECOMPUTATION_AUDIT_v1.md",
     "H004V106_FORWARD_BLOCK_TAIL_INFLUENCE_AUDIT_v1.md",
     "H004V106_FORWARD_BLOCK_TEMPORAL_STABILITY_AUDIT_v1.md",
     "H004V106_GRID_ANCHOR_CROSSCHECK_v1.md",
@@ -101,6 +102,12 @@
       "exists": true,
       "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md",
       "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_FINAL_INTEGRITY_AUDIT_v1.md"
+    },
+    {
+      "audit": "H004V106_forward_block_independent_recomputation_20261115T133537Z.json",
+      "exists": true,
+      "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_INDEPENDENT_RECOMPUTATION_AUDIT_v1.md",
+      "resolved": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_INDEPENDENT_RECOMPUTATION_AUDIT_v1.md"
     },
     {
       "audit": "H004V106_forward_block_overlap_aware_audit_20261102.json",
