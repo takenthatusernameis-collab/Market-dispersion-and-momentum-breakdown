@@ -31,7 +31,7 @@ ENTRY_RE = re.compile(
     r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)"
     r"( \(this session\))?$"
 )
-VERIFY_RE = re.compile(r"session_verify_2026\d{8}T\d{6}Z\.json")
+VERIFY_RE = re.compile(r"session_verify_\d{8}T\d{6}Z\.json")
 
 
 def _entries():

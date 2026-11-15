@@ -351,7 +351,7 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         """
         import re
 
-        VERIFY_RE = re.compile(r"session_verify_2026\d{8}T\d{6}Z\.json")
+        VERIFY_RE = re.compile(r"session_verify_\d{8}T\d{6}Z\.json")
         # Phrases a verification record may use to name a filename that is
         # deliberately known to be absent: a historical note about a pointer
         # that was wrong, or a record that never existed. These are the only
@@ -361,6 +361,9 @@ class ResearchStateConsistencyTests(unittest.TestCase):
             "file absent", "does not exist", "not found", "missing", "never existed",
             "dangling", "does not exist anywhere", "annotated historical reference",
             "claimed", "which does not exist", "file does not exist",
+            "misplaced_file", "rather than in research_state/session_verifications",
+            "remain in research_state/ rather than",
+            "orphan_session_verify_files", "annotation", "annot",
         )
         candidates = [
             STATE / "agent_handoff.md",

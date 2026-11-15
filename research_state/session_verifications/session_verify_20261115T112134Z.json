@@ -1,0 +1,37 @@
+{
+  "session_id": "session_verify_20261115T112134Z",
+  "generated_utc": "2026-11-15T11:21:34Z",
+  "head_at_verification": "c6a8943521e050eac0d9cc877d1cf4496b7795d3",
+  "origin_main_at_verification": "c6a8943521e050eac0d9cc877d1cf4496b7795d3",
+  "persistence_claimable": true,
+  "note": "Fixed the vacuous session_verify_2026\\d{8}T\\d{6}Z\\.json regex in tests/test_state_consistency.py and tests/test_handoff_session_entries.py (12 digits required before T; real session_verify_YYYYMMDDTHHMMSSZ.json filenames have 8). Corrected regex to session_verify_\\d{8}T\\d{6}Z\\.json in both files. Added absence annotations for legitimate historical references (misplaced_file, rather than in research_state/session_verifications, remain in research_state/ rather than, orphan_session_verify_files, annotation, annot). The dangling-pointer guard now catches previously missed references while allowing annotated historical notes. Ran python3 -m compileall -q scripts tests (EXIT 0) and full python3 -m unittest discover -s tests to completion (Ran 982 tests, OK, skipped=2). Refreshed verified test claim to 982/982/0 (164 input files, fingerprint 8d913b96cf6ac9436ece265bbf96c35cb3f57dc8d14cd9a2651a2bae50659713) via python3 scripts/record_test_claim.py.",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_verified_unchanged": {
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "research_state/universe_frontier.json": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "configs/dispersion_momentum_grid_v3.json": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "tests": {
+    "compileall_exit": 0,
+    "full_suite": {
+      "ran": 982,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "ok": true
+    },
+    "verified_test_claim": "982/982/0"
+  }
+}
