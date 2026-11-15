@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 2,
   "claim": "902/902/0",
-  "input_fingerprint": "b36d8a8b675ad80f85d094a6964af9d2af76a4e4bf1e5999ee2f9807898115f6",
+  "input_fingerprint": "774a664a2cfd59f9a49d89b329cc11a559fdbef4a4dc0f6aa841606e59489e44",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -36,7 +36,7 @@
     },
     {
       "path": "scripts/audit_preregistration_coverage.py",
-      "sha256": "eaff09c9e7bf00a77a42b3b0acf49dbf8df42c9e77ccef1bc783b7cf7cca075b"
+      "sha256": "78b1e0a58a125ff3f558f4a2526853199b100cb56206cd607956c6abf4afc865"
     },
     {
       "path": "scripts/build_universe.py",
@@ -153,6 +153,14 @@
     {
       "path": "scripts/grid_anchor_crosscheck.py",
       "sha256": "231034fd3c0d17c2a588f55cf3d907b53cd139b560469b7926ff8dc704f0c57f"
+    },
+    {
+      "path": "scripts/grid_summary_ledger_crosscheck.py",
+      "sha256": "d10d032853492cc85a35c936e1e1a610a5c3ff1fca195252b5fd3f2956d03a39"
+    },
+    {
+      "path": "scripts/h10_fresh_block_integrity_audit.py",
+      "sha256": "417b0aac1df78366768347b9e48664f489796dc89c5b1977efb0716f910e3855"
     },
     {
       "path": "scripts/make_grid_quick.py",
@@ -300,7 +308,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "af23ba4ce69c8917dcb6378c7eeb73983b17409dba0e41da6fecae1eb65a3003"
+      "sha256": "3eaf8e81deb0e0bda8139e614a5545de1d036dcbbbae540dcc758d06263ff323"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -459,6 +467,10 @@
       "sha256": "856fd1c0ed3c309d92b1a44b417875543fd3dfbf6e73be075b496b352f785bb0"
     },
     {
+      "path": "tests/test_grid_summary_ledger_crosscheck_seams.py",
+      "sha256": "ba065c44ceda5880996dcaf39358223d153b30e834a4db45da5a7e99d3c73da3"
+    },
+    {
       "path": "tests/test_grid_validation.py",
       "sha256": "ed3b3e5be9db4c2fea999484deced1a64183896e4f88f2a2b2dae080b64920cc"
     },
@@ -477,6 +489,10 @@
     {
       "path": "tests/test_h10_fresh_block_hash_pinned.py",
       "sha256": "7607ca3ddaccdea79aa5cbd0580424b56a808757cbf62825b681590f3b86bd04"
+    },
+    {
+      "path": "tests/test_h10_fresh_block_integrity_audit_seams.py",
+      "sha256": "0767df769559e0feb865a182625408bb476ee7bb4efad5491474f8f09b6c6645"
     },
     {
       "path": "tests/test_h10_gate_vs_november_probe.py",
@@ -504,7 +520,7 @@
     },
     {
       "path": "tests/test_integrity_audit_reference_consistency.py",
-      "sha256": "6638770e37c255150ea2b95d3dbfc95298da3e0226240e37bb6b9ca5db1a4484"
+      "sha256": "43172f7acabec551a1a277fcbdcdbfb344a9143a2b088eece2a1529aae08fc0a"
     },
     {
       "path": "tests/test_latest_probe_record_pinned.py",
@@ -548,11 +564,11 @@
     },
     {
       "path": "tests/test_preregistration_completeness.py",
-      "sha256": "d91e317780af5cf1ff6b6c91a0f780b9d0b122f71f77a07986a55bcf972e4997"
+      "sha256": "c1b304b76000cb0c13a91b718c09064bab027319031d60ebfa92d96c0e7d8dab"
     },
     {
       "path": "tests/test_preregistration_coverage_audit.py",
-      "sha256": "119bcaecf20a572f40b9e47fb226f595dd5e10168eda7bab4cf35129e1e7a126"
+      "sha256": "7c3b447ef103c76914ecd6ec4578eedfbfe48570955f3102d4ae7f9ca16ea809"
     },
     {
       "path": "tests/test_provenance_stability.py",
@@ -608,7 +624,7 @@
     },
     {
       "path": "tests/test_state_consistency.py",
-      "sha256": "42125e4e12e65d71ed6b80b49675da6ba8f1bd2a2bf02a4f06d1034d6399e60c"
+      "sha256": "f30a1a3f93ffc924a88d1c524036a01113f590c97c211546bea60c2bfc31c33c"
     },
     {
       "path": "tests/test_state_representativeness_audit.py",
@@ -631,5 +647,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 155
+  "input_file_count": 159
 }
