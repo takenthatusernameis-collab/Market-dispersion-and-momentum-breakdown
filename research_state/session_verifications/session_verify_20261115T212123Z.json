@@ -1,0 +1,43 @@
+{
+  "session_id": "session_verify_20261115T212123Z",
+  "generated_utc": "2026-11-15T21:21:23Z",
+  "head_at_verification": "94affe132007ff4ac9422333415727ab9bd4af24",
+  "checks": {
+    "compileall_scripts_tests": "PASS (exit 0)",
+    "full_suite": "Ran 1054 tests, OK, skipped=2 (exit 0) — executed this session at HEAD 94affe132007ff4ac9422333415727ab9bd4af24"
+  },
+  "latest_recorded_verified_claim": {
+    "fingerprint": "d04bc057b7b42c28aac441d469e26e239e47be72d3af5966a686ad2ec7683134",
+    "input_file_count": 171,
+    "recorded_utc": "2026-11-15T15:29:05Z",
+    "result": "1054/1054/0 skipped=2",
+    "valid_consistent": true,
+    "reason": "no .py or test-input changed this session"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "h10_cutoff_gate": "UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 probe BLOCKED as probe only (0 target_published=true)",
+    "h10_fresh_block": "IMMATURE (n_formations=1, n_high=0, n_low=0, last_allowed_formation_date 2026-09-30, data_cutoff_utc 2026-10-31T00:00:00Z, block_sealed=true); k not advanced; BLOCKED_BY_HARD_DATE_GATE until 2026-11-30"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "registry": {
+    "hypotheses": "H1..H38",
+    "next_sequence_number": 38,
+    "preregistration_coverage_audit_pass": true
+  },
+  "notes": "State green/consistent at committed HEAD 94affe132007ff4ac9422333415727ab9bd4af24. compileall EXIT 0; full suite 1054/1054/0 skipped=2 executed this session. Prior handoff/task durable updates (session_verify_20261115T210857Z) are present in committed HEAD 94affe13. H10 hard date-gated until 2026-11-30 (fresh block immature: n_formations=1, n_high=0, n_low=0); no new experiment/audit script/seam test added. No frozen artifact/config/input/frontier/registry/sealed holdout modified. Durable updates for this session (this session_verify record, handoff, task message) are uncommitted working-tree changes."
+}
