@@ -1,0 +1,38 @@
+{
+  "session_id": "session_verify_20261115T015940Z",
+  "timestamp_utc": "2026-11-15T01:59:40Z",
+  "action": "bounded_no_cost_test_coverage_gap",
+  "outcome": "completed",
+  "verification": {
+    "probe_evidence": {
+      "total_real_probes": 397,
+      "probe_month_2026-10": {
+        "count": 270,
+        "published": 49
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261113T091257Z.json"
+    },
+    "frozen_hashes": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+    },
+    "test_claim": {
+      "passed": 785,
+      "total": 785,
+      "failed": 0,
+      "skipped": 2,
+      "input_files": 148,
+      "fingerprint": "99a74226f864efc0117cc06aa34f80d77745195e76dc285f4c43856dd7050146"
+    },
+    "compileall": "EXIT 0",
+    "targeted_tests": "22 OK",
+    "full_suite": "785 OK, skipped=2"
+  },
+  "session_summary": "Default action completed (bounded, no-cost, genuinely new test coverage): demonstrated a real gap -- scripts/run_phase_g_only.py (DISPERSION-001 phase-G runner copy) exposes deterministic pure seams formation_dates_monthly, momentum_compounded, build_daily_dispersion_series, get_state_for_formation, compute_momentum_spread and the missing-file branch of load_funding_panel, but zero tests import the module or exercise them directly (grep across tests/ returned none). The module is import-safe (top-level imports/constants only; main() __main__-guarded), so the seams are testable without reading/writing committed panels/artifacts or network. Added tests/test_run_phase_g_only_seams.py (22 hermetic tests, stdlib + numpy/pandas only) covering: formation_dates_monthly (first eligible date per month in order; multiple assets per date deduped by month; no eligible rows -> empty), momentum_compounded (complete-window filter, missing end_date, lookback longer than history, all-incomplete -> empty, empty asset list, exact compounding formula), build_daily_dispersion_series (skips dates before lookback, both estimators numeric/nonnegative, too-few-eligible -> empty), get_state_for_formation (outer-decile low/high/mid, median-split low/high, unknown rule -> mid, insufficient history -> mid), compute_momentum_spread (valid structure + exact cost_1x=0.001/0.002/0.003 arithmetic net = gross - cost, quintiles q=5 path, too-few-eligible invalid, empty-forward-window invalid), and load_funding_panel (missing file -> empty DataFrame via monkeypatched PANEL_DIR). Deliberately not re-tested: sha256_file (covered by tests/test_build_universe.py). No refactor, no frozen artifact/config/input modified. python3 -m compileall -q scripts tests EXIT 0; targeted python3 -m unittest tests.test_run_phase_g_only_seams -v -- 22 tests, OK; full suite python3 -m unittest discover -s tests -- Ran 785 tests, OK, skipped=2. python3 scripts/record_test_claim.py refreshed claim to 785/785/0, 148 input files, fingerprint 99a74226f864efc0...; run_manifest.json latest_verified_test_claim re-pinned to 785/785/0. Probe evidence recomputed from disk: 397 real cutoff_probe_*.json files (0 MOCK) -- 270 probe_month=2026-10 (49 published) / 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json. H10 cutoff gate UNBLOCKED by the published October 2026 archive; probe_month=2026-11 probe BLOCKED as a probe only (0/127 target_published=true); not promoted into the H10 gate decision. H10 fresh block IMMATURE; no bounded no-cost H10 task before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait). Frozen hashes unchanged (verified): canonical 7234fc4e..., h10_fresh 324ab1e6..., universe_frontier 9ba08f3f..., grid v3 1ff4c1f2.... Registry next_sequence_number unchanged at 28 (H1..H28); no new hypothesis allocated. No frozen artifact/config/input/frontier/registry/sealed holdout modified. Manifest session record appended via scripts/record_session_record.py; session_record_latest repointed to session_record_verify_20261115T015940Z."
+}

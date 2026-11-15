@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-15T01:38:00Z",
+  "last_updated_utc": "2026-11-15T01:59:40Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "763/763/0",
+  "latest_verified_test_claim": "785/785/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1132,7 +1132,8 @@
     "session_record_verify_20261115T004000Z",
     "session_record_verify_20261115T010000Z",
     "session_record_verify_20261115T012700Z",
-    "session_record_verify_20261115T013800Z"
+    "session_record_verify_20261115T013800Z",
+    "session_record_verify_20261115T015940Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1214,7 +1215,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261115T013800Z",
+  "session_record_latest": "session_record_verify_20261115T015940Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -2060,5 +2061,36 @@
       "full_suite": "763 OK, skipped=2"
     },
     "session_summary": "Default action completed (bounded, no-cost, genuinely new test coverage): demonstrated a real gap — `scripts/phase_c_proper.py` and `scripts/phase_c_refined.py` (DISPERSION-001 phase C runners) expose deterministic pure seams `formation_dates` and `momentum` but zero test imports either module or exercises them directly. Both modules are import-safe (top-level imports/constants only; `main()` `__main__`-guarded), so the seams are testable without reading/writing committed panels/artifacts or network. Added `tests/test_phase_c_proper_refined_seams.py` (4 hermetic tests per module = 8 total, stdlib + numpy/pandas only) covering: `formation_dates` (first eligible date per month in order; no eligible rows -> empty; multiple assets per date) and `momentum` (complete-window filter, missing end_date, lookback longer than history, all-incomplete -> empty, empty asset list, exact compounding formula). Deliberately not re-tested: `sha256_file` (covered by `tests/test_build_universe.py`). No refactor, no frozen artifact/config/input modified. `python3 -m compileall -q scripts tests` EXIT 0; targeted `python3 -m unittest tests.test_phase_c_proper_refined_seams -v` — 4 tests, OK; full suite `python3 -m unittest discover -s tests` — **Ran 763 tests, OK, skipped=2**. `python3 scripts/record_test_claim.py` refreshed claim to **763/763/0**, 147 input files, fingerprint `c315faff22e1445b...`; `run_manifest.json` `latest_verified_test_claim` re-pinned to `763/763/0`. Session verification record: `research_state/session_verifications/session_verify_20261115T013800Z.json` (latest; `probe_evidence` recomputed from disk). Manifest session record appended via `scripts/record_session_record.py`; `session_record_latest` repointed to `session_record_verify_20261115T013800Z`."
+  },
+  "session_record_verify_20261115T015940Z": {
+    "session_id": "session_verify_20261115T015940Z",
+    "timestamp_utc": "2026-11-15T01:59:40Z",
+    "action": "bounded_no_cost_test_coverage_gap",
+    "outcome": "completed",
+    "verification": {
+      "probe_evidence": {
+        "total_real_probes": 397,
+        "probe_month_2026-10": {
+          "count": 270,
+          "published": 49
+        },
+        "probe_month_2026-11": {
+          "count": 127,
+          "published": 0
+        },
+        "newest_probe": "cutoff_probe_20261113T091257Z.json"
+      },
+      "test_claim": {
+        "passed": 785,
+        "total": 785,
+        "failed": 0,
+        "skipped": 2,
+        "input_files": 148,
+        "fingerprint": "99a74226f864efc0117cc06aa34f80d77745195e76dc285f4c43856dd7050146"
+      },
+      "compileall": "EXIT 0",
+      "full_suite": "785 OK, skipped=2"
+    },
+    "session_summary": "Added tests/test_run_phase_g_only_seams.py (22 hermetic tests) for scripts/run_phase_g_only.py pure seams; full suite 785 OK skipped=2; claim re-pinned 785/785/0; probe evidence recomputed from disk (397 real: 270 probe_month=2026-10/49 pub, 127 probe_month=2026-11/0 pub); frozen hashes unchanged; registry next_sequence_number 28."
   }
 }
