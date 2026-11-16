@@ -1,0 +1,13 @@
+{
+  "session_id": "session_verify_20261116T151926Z",
+  "generated_utc": "2026-11-16T15:19:26Z",
+  "head_at_verification": "dd66ff27b0032aee1e33c25790d2d1d6be3c32cc",
+  "full_suite": {"passed": 1122, "failed": 0, "errors": 0, "skipped": 2},
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "all_frozen_hashes_match": true
+}
