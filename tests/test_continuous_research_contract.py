@@ -134,7 +134,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # probe plan (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PLAN-001,
         # EXPLORATORY_ONLY, planning_only) enumerating deterministic subset
         # and monthly archive targets (no network, no outcomes).
-        self.assertEqual(registry["next_sequence_number"], 41)
+        # H42 was added for the independent rank-breadth reproducibility +
+        # raw cap-series integrity audit
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-REPRO-001,
+        # EXPLORATORY_ONLY, reproducibility_integrity_only) re-deriving the H39
+        # verdict from committed inputs via a separate stdlib-only code path.
+        self.assertEqual(registry["next_sequence_number"], 42)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

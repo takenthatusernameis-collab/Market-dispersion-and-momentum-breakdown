@@ -1,0 +1,3383 @@
+{
+  "all_frozen_hashes_match": true,
+  "audit_id": "H004V106_RANKBREADTH_REPRO_001",
+  "availability": {
+    "forward_fill_used": false,
+    "note": "Each cap value is keyed to its own observation date (time[:10]); no value is carried forward. Look-ahead is structurally impossible by construction; duplicate-date conflicts would be the only ambiguity and are counted above."
+  },
+  "comparison_to_h39": {
+    "all_match": true,
+    "band_stats": {
+      "[1-20]": {
+        "fields": {
+          "max": {
+            "h39": 20.0,
+            "match": true,
+            "recomputed": 20.0
+          },
+          "mean": {
+            "h39": 20.0,
+            "match": true,
+            "recomputed": 20.0
+          },
+          "min": {
+            "h39": 20.0,
+            "match": true,
+            "recomputed": 20.0
+          },
+          "n": {
+            "h39": 1399,
+            "match": true,
+            "recomputed": 1399
+          },
+          "p10": {
+            "h39": 20.0,
+            "match": true,
+            "recomputed": 20.0
+          },
+          "p50": {
+            "h39": 20.0,
+            "match": true,
+            "recomputed": 20.0
+          },
+          "p90": {
+            "h39": 20.0,
+            "match": true,
+            "recomputed": 20.0
+          }
+        },
+        "match": true
+      },
+      "[101-200]": {
+        "fields": {
+          "max": {
+            "h39": 100.0,
+            "match": true,
+            "recomputed": 100.0
+          },
+          "mean": {
+            "h39": 99.00571837026447,
+            "match": true,
+            "recomputed": 99.00571837026447
+          },
+          "min": {
+            "h39": 0.0,
+            "match": true,
+            "recomputed": 0.0
+          },
+          "n": {
+            "h39": 1399,
+            "match": true,
+            "recomputed": 1399
+          },
+          "p10": {
+            "h39": 98.0,
+            "match": true,
+            "recomputed": 98.0
+          },
+          "p50": {
+            "h39": 100.0,
+            "match": true,
+            "recomputed": 100.0
+          },
+          "p90": {
+            "h39": 100.0,
+            "match": true,
+            "recomputed": 100.0
+          }
+        },
+        "match": true
+      },
+      "[201-+]": {
+        "fields": {
+          "max": {
+            "h39": 18.0,
+            "match": true,
+            "recomputed": 18.0
+          },
+          "mean": {
+            "h39": 9.879199428162973,
+            "match": true,
+            "recomputed": 9.879199428162973
+          },
+          "min": {
+            "h39": 0.0,
+            "match": true,
+            "recomputed": 0.0
+          },
+          "n": {
+            "h39": 1399,
+            "match": true,
+            "recomputed": 1399
+          },
+          "p10": {
+            "h39": 0.0,
+            "match": true,
+            "recomputed": 0.0
+          },
+          "p50": {
+            "h39": 11.0,
+            "match": true,
+            "recomputed": 11.0
+          },
+          "p90": {
+            "h39": 17.0,
+            "match": true,
+            "recomputed": 17.0
+          }
+        },
+        "match": true
+      },
+      "[21-50]": {
+        "fields": {
+          "max": {
+            "h39": 30.0,
+            "match": true,
+            "recomputed": 30.0
+          },
+          "mean": {
+            "h39": 29.89492494639028,
+            "match": true,
+            "recomputed": 29.89492494639028
+          },
+          "min": {
+            "h39": 9.0,
+            "match": true,
+            "recomputed": 9.0
+          },
+          "n": {
+            "h39": 1399,
+            "match": true,
+            "recomputed": 1399
+          },
+          "p10": {
+            "h39": 30.0,
+            "match": true,
+            "recomputed": 30.0
+          },
+          "p50": {
+            "h39": 30.0,
+            "match": true,
+            "recomputed": 30.0
+          },
+          "p90": {
+            "h39": 30.0,
+            "match": true,
+            "recomputed": 30.0
+          }
+        },
+        "match": true
+      },
+      "[51-100]": {
+        "fields": {
+          "max": {
+            "h39": 50.0,
+            "match": true,
+            "recomputed": 50.0
+          },
+          "mean": {
+            "h39": 49.749821300929234,
+            "match": true,
+            "recomputed": 49.749821300929234
+          },
+          "min": {
+            "h39": 0.0,
+            "match": true,
+            "recomputed": 0.0
+          },
+          "n": {
+            "h39": 1399,
+            "match": true,
+            "recomputed": 1399
+          },
+          "p10": {
+            "h39": 50.0,
+            "match": true,
+            "recomputed": 50.0
+          },
+          "p50": {
+            "h39": 50.0,
+            "match": true,
+            "recomputed": 50.0
+          },
+          "p90": {
+            "h39": 50.0,
+            "match": true,
+            "recomputed": 50.0
+          }
+        },
+        "match": true
+      }
+    },
+    "n_assets_with_nonempty_series_match": true,
+    "per_asset": {
+      "detail": {
+        "1inch": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "aave": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "ach": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "ada": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "agld": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "algo": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "atom": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "avax": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "bch": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "bnb": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "btc": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "dash": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "doge": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "dot": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "eos": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "etc": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "eth": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "fil": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "iost": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "link": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "ltc": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "matic": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "neo": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "qtum": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "rune": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "sol": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "trx": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "uni": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "vet": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "xlm": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "xrp": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        },
+        "zec": {
+          "checks": {
+            "frac_study_dates_ranked": true,
+            "n_dates_ranked": true,
+            "rank_max": true,
+            "rank_min": true,
+            "rank_p50": true
+          },
+          "match": true
+        }
+      },
+      "mismatches": [],
+      "n_match": 32,
+      "n_total": 32
+    },
+    "rankable_size_stats": {
+      "fields": {
+        "max": {
+          "h39": 218.0,
+          "match": true,
+          "recomputed": 218.0
+        },
+        "mean": {
+          "h39": 208.52966404574696,
+          "match": true,
+          "recomputed": 208.52966404574696
+        },
+        "min": {
+          "h39": 29.0,
+          "match": true,
+          "recomputed": 29.0
+        },
+        "n": {
+          "h39": 1399,
+          "match": true,
+          "recomputed": 1399
+        },
+        "p10": {
+          "h39": 198.0,
+          "match": true,
+          "recomputed": 198.0
+        },
+        "p50": {
+          "h39": 211.0,
+          "match": true,
+          "recomputed": 211.0
+        },
+        "p90": {
+          "h39": 217.0,
+          "match": true,
+          "recomputed": 217.0
+        }
+      },
+      "match": true
+    },
+    "universe_size_match": true
+  },
+  "computed_utc": "2026-11-16T13:14:13Z",
+  "decision": {
+    "criteria": {
+      "a_n_assets_with_nonempty_series_match": true,
+      "a_universe_size_match": true,
+      "b_band_stats_match": true,
+      "b_rankable_size_stats_match": true,
+      "c_per_asset_rank_stats_match": true,
+      "d_integrity_clean": true
+    },
+    "label": "RANK_BREADTH_REPRODUCED"
+  },
+  "decision_rule": {
+    "band_fraction_threshold": 0.9,
+    "min_band_count": 10,
+    "min_median_n": 100,
+    "statement": "RANK_BREADTH_REPRODUCED iff universe/nonempty sizes match H39; median N(d) and all band fracs/distributions match within 1e-9; every legacy per-asset rank stat matches H39; and integrity is clean (no missing source, no conflicting duplicate dates, no non-finite/non-positive values used).",
+    "tolerance": 1e-09
+  },
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-REPRO-001",
+  "frozen_hashes_verified": {
+    "canonical_forward_block": {
+      "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+    },
+    "grid_result_ledger": {
+      "actual": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "expected": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json"
+    },
+    "grid_v3_config": {
+      "actual": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "expected": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "match": true,
+      "path": "configs/dispersion_momentum_grid_v3.json"
+    },
+    "h10_fresh_block": {
+      "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json"
+    },
+    "universe_frontier": {
+      "actual": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "match": true,
+      "path": "research_state/universe_frontier.json"
+    }
+  },
+  "h39_reference": {
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-FEAS-001/integrity_audit/H004V106_rank_breadth_feasibility_2026-11-16T06-57-08Z.json",
+    "sha256": "d13108da263822a145811feb18a90831bfa526380983e27a1e7db206dd3db85d"
+  },
+  "hypothesis": "H42",
+  "label": "RANK_BREADTH_REPRODUCED",
+  "note": "EXPLORATORY_ONLY reproducibility + integrity diagnostic on committed development inputs. No returns, spreads, dispersion states, p-values, costs or inference computed. Does not validate, replace or unlock any confirmatory track (H1/H6/H7/H10) and is not independent confirmation. A green result proves only that H39 is reproducible from the committed inputs and that the committed cap series are internally consistent.",
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-REPRO-001/preregistrations/RANKBREADTH_REPRO_001_v1.md",
+  "question": "Does an independent, stdlib-only re-derivation from the committed raw cap archive, kline daily index and candidate validation reproduce the H39 RANK_BREADTH_MEASURABLE verdict, and are the committed candidate cap series free of conflicting duplicate dates and non-finite/non-positive values that would undermine that verdict?",
+  "raw_series_integrity": {
+    "per_asset": {
+      "1inch": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "aave": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "ach": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-05-28",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1244,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1244,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "ada": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "agld": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "algo": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "alice": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "alpha": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "alt": {
+        "first_date": "2024-06-17",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 8,
+        "n_distinct_dates": 859,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 859,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ankr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ant": {
+        "first_date": "2023-01-01",
+        "last_date": "2024-11-07",
+        "n_conflicting_dates": 0,
+        "n_descents": 6,
+        "n_distinct_dates": 677,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 677,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ape": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "api3": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "apt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ar": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "arb": {
+        "first_date": "2023-03-23",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1311,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1311,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ark": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "arkm": {
+        "first_date": "2023-07-21",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1191,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1191,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "arpa": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "astr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ata": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "atom": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "auction": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "audio": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "avax": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "axs": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "badger": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bal": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "band": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bat": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bch": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "beamx": {
+        "first_date": "2023-11-09",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1080,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1080,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bel": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bico": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bigtime": {
+        "first_date": "2023-10-17",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1103,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1103,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "blur": {
+        "first_date": "2023-02-14",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1348,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1348,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "blz": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bnb": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "bnt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bond": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-08-18",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1326,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1326,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "bsv": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "btc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "bts": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "c98": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "cake": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "celo": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "celr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "cfx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "chr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "chz": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ckb": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "comp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "coti": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "crv": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ctk": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ctsi": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "cvc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "cvx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "cyber": {
+        "first_date": "2023-08-15",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1165,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1165,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "dar": {
+        "first_date": "2023-01-01",
+        "last_date": "2025-06-01",
+        "n_conflicting_dates": 0,
+        "n_descents": 8,
+        "n_distinct_dates": 883,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 883,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "dash": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "dent": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "dgb": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "doge": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "dot": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "dusk": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "dydx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "egld": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "enj": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ens": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "eos": {
+        "first_date": "2023-01-01",
+        "last_date": "2025-12-30",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1094,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1094,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "etc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "eth": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "ethw": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "fet": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "fil": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "flow": {
+        "first_date": "2024-03-27",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 9,
+        "n_distinct_dates": 941,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 941,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "front": {
+        "first_date": "2023-01-01",
+        "last_date": "2024-09-18",
+        "n_conflicting_dates": 0,
+        "n_descents": 6,
+        "n_distinct_dates": 627,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 627,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ftm": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ftt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "fxs": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "gal": {
+        "first_date": "2023-01-01",
+        "last_date": "2025-11-12",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1047,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1047,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "gala": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "gas": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "glmr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "gmt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "gmx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "grt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "gtc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "hbar": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "hft": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "hifi": {
+        "first_date": "2023-01-31",
+        "last_date": "2026-07-13",
+        "n_conflicting_dates": 0,
+        "n_descents": 12,
+        "n_distinct_dates": 1260,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1260,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "hnt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "icp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "icx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "idex": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ilv": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "imx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "inj": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "iost": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "iotx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "jasmy": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "joe": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "jto": {
+        "first_date": "2023-12-07",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1052,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1052,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "jup": {
+        "first_date": "2024-01-31",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 9,
+        "n_distinct_dates": 997,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 997,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "kas": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "kava": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "key": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-08-16",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1322,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1322,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "klay": {
+        "first_date": "2023-01-01",
+        "last_date": "2024-11-01",
+        "n_conflicting_dates": 0,
+        "n_descents": 6,
+        "n_distinct_dates": 671,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 671,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "knc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ksm": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ldo": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "link": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "lit": {
+        "first_date": "2025-12-30",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 2,
+        "n_distinct_dates": 298,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 298,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "loom": {
+        "first_date": "2023-01-01",
+        "last_date": "2025-12-08",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1073,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1073,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "lpt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "lqty": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "lrc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "lsk": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ltc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "mana": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "manta": {
+        "first_date": "2024-01-18",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1010,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1010,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "mask": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "matic": {
+        "first_date": "2023-01-01",
+        "last_date": "2025-08-28",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 971,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 971,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "mbl": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "mdt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "meme": {
+        "first_date": "2023-11-03",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1086,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1086,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "mina": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "mkr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-03-25",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1179,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1179,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "movr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "near": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "neo": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "nkn": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "nmr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ntrn": {
+        "first_date": "2024-01-12",
+        "last_date": "2026-08-18",
+        "n_conflicting_dates": 0,
+        "n_descents": 9,
+        "n_distinct_dates": 950,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 950,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ocean": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ogn": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "omg": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ondo": {
+        "first_date": "2024-01-20",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1008,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1008,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ont": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "op": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "orbs": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ordi": {
+        "first_date": "2023-05-12",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 12,
+        "n_distinct_dates": 1261,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1261,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "oxt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "pendle": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "people": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "perp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "polyx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "powr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "pyth": {
+        "first_date": "2023-11-22",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1067,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1067,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "qnt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "qtum": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "rad": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ray": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "rdnt": {
+        "first_date": "2023-10-30",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1090,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1090,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "reef": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ren": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "rlc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "rndr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "rose": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "rsr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "rune": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "rvn": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sand": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sei": {
+        "first_date": "2023-08-17",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1164,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1164,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sfp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "skl": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "slp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "snt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "snx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sol": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "spell": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "srm": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ssv": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "steem": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "stg": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "stmx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-03-25",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1180,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1180,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "storj": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "stpt": {
+        "first_date": "2023-01-01",
+        "last_date": "2025-07-13",
+        "n_conflicting_dates": 0,
+        "n_descents": 9,
+        "n_distinct_dates": 925,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 925,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "strax": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "stx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sui": {
+        "first_date": "2023-08-17",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1164,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1164,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "super": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sushi": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "sxp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-07",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1376,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1376,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "t": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "theta": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "tia": {
+        "first_date": "2023-10-31",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1089,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1089,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "tlm": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "token": {
+        "first_date": "2023-11-03",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1086,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1086,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "tomo": {
+        "first_date": "2023-01-01",
+        "last_date": "2023-11-30",
+        "n_conflicting_dates": 0,
+        "n_descents": 3,
+        "n_distinct_dates": 334,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 334,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "trb": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "tru": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "trx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "twt": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "uma": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "unfi": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "uni": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "usdc": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "vet": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "waves": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "waxp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "wif": {
+        "first_date": "2023-12-21",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1038,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1038,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "wld": {
+        "first_date": "2023-07-24",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 11,
+        "n_distinct_dates": 1188,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1188,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "woo": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "xai": {
+        "first_date": "2024-01-09",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 10,
+        "n_distinct_dates": 1019,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1019,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "xem": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "xlm": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "xmr": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "xrp": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "xtz": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "xvg": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "xvs": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "yfi": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "ygg": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "zec": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-11-03",
+        "n_conflicting_dates": 0,
+        "n_descents": 0,
+        "n_distinct_dates": 1403,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1403,
+        "source_present": true,
+        "strictly_increasing": true
+      },
+      "zen": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "zil": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      },
+      "zrx": {
+        "first_date": "2023-01-01",
+        "last_date": "2026-10-23",
+        "n_conflicting_dates": 0,
+        "n_descents": 13,
+        "n_distinct_dates": 1392,
+        "n_duplicate_date_rows": 0,
+        "n_nonfinite_or_nonpositive": 0,
+        "n_rows": 1392,
+        "source_present": true,
+        "strictly_increasing": false
+      }
+    },
+    "totals": {
+      "n_assets": 220,
+      "n_assets_not_strictly_increasing": 188,
+      "n_conflicting_duplicate_dates": 0,
+      "n_descents_total": 2319,
+      "n_empty": 0,
+      "n_missing_source": 0,
+      "n_nonfinite_or_nonpositive_values": 0,
+      "n_with_conflicting_duplicate_dates": 0,
+      "n_with_duplicate_date_rows": 0,
+      "n_with_nonfinite_or_nonpositive": 0
+    }
+  },
+  "recomputed": {
+    "band_stats": {
+      "[1-20]": {
+        "frac_dates_count_ge_min": 1.0,
+        "max": 20.0,
+        "mean": 20.0,
+        "min": 20.0,
+        "min_band_count": 10,
+        "n": 1399,
+        "p10": 20.0,
+        "p50": 20.0,
+        "p90": 20.0
+      },
+      "[101-200]": {
+        "frac_dates_count_ge_min": 0.9949964260185847,
+        "max": 100.0,
+        "mean": 99.00571837026447,
+        "min": 0.0,
+        "min_band_count": 10,
+        "n": 1399,
+        "p10": 98.0,
+        "p50": 100.0,
+        "p90": 100.0
+      },
+      "[201-+]": {
+        "frac_dates_count_ge_min": 0.6068620443173696,
+        "max": 18.0,
+        "mean": 9.879199428162973,
+        "min": 0.0,
+        "min_band_count": 10,
+        "n": 1399,
+        "p10": 0.0,
+        "p50": 11.0,
+        "p90": 17.0
+      },
+      "[21-50]": {
+        "frac_dates_count_ge_min": 0.9949964260185847,
+        "max": 30.0,
+        "mean": 29.89492494639028,
+        "min": 9.0,
+        "min_band_count": 10,
+        "n": 1399,
+        "p10": 30.0,
+        "p50": 30.0,
+        "p90": 30.0
+      },
+      "[51-100]": {
+        "frac_dates_count_ge_min": 0.9949964260185847,
+        "max": 50.0,
+        "mean": 49.749821300929234,
+        "min": 0.0,
+        "min_band_count": 10,
+        "n": 1399,
+        "p10": 50.0,
+        "p50": 50.0,
+        "p90": 50.0
+      }
+    },
+    "frac_dates_rankable_ge_min_median": 0.9949964260185847,
+    "rankable_size_stats": {
+      "max": 218.0,
+      "mean": 208.52966404574696,
+      "min": 29.0,
+      "n": 1399,
+      "p10": 198.0,
+      "p50": 211.0,
+      "p90": 217.0
+    }
+  },
+  "scope_note": "Computational reproducibility on the SAME committed inputs as H39; NOT an independent data-source verification. Does not change universe_frontier.json:historical_rank_coverage_state.",
+  "status": "EXPLORATORY_ONLY",
+  "study_window": {
+    "date_first": "2023-01-01",
+    "date_last": "2026-10-31",
+    "n_dates": 1399,
+    "source": "binance_klines_BTCUSDT.csv open_time (ms) daily UTC index"
+  },
+  "universe": {
+    "candidate_arm_size": 188,
+    "legacy_arm_size": 32,
+    "match_h39": true,
+    "n_assets_with_nonempty_series": 220,
+    "universe_size": 220
+  }
+}

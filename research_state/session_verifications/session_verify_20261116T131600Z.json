@@ -1,0 +1,39 @@
+{
+  "session_id": "session_verify_20261116T131600Z",
+  "generated_utc": "2026-11-16T13:16:00Z",
+  "head_at_verification": "470874bc2cefd25c9896b689cf7185c554715ca0",
+  "experiment": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "hypothesis": "H42",
+  "status": "EXPLORATORY_ONLY",
+  "sign": "reproducibility_integrity_only",
+  "full_suite": {
+    "ran": 1105,
+    "passed": 1105,
+    "failed": 0,
+    "skipped": 2
+  },
+  "compileall": {
+    "exit": 0
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    }
+  },
+  "frozen_hashes": {
+    "all_frozen_hashes_match": true,
+    "canonical_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "notes": "Verified H42 rank-breadth reproducibility + raw-series integrity audit. Independent stdlib-only re-derivation reproduces H39 (RANK_BREADTH_MEASURABLE) exactly; raw cap series integrity clean (0 conflicting duplicate dates, 0 non-finite/non-positive) despite page-chunked non-monotonic file order. EXPLORATORY_ONLY; no outcomes; frozen hashes unchanged; does not change historical_rank_coverage_state."
+}
