@@ -1,0 +1,41 @@
+{
+  "session_id": "session_verify_20261116T163606Z",
+  "generated_utc": "2026-11-16T16:36:06Z",
+  "head_at_verification": "c7a8cb559ce13dc46d3dca547b9ad178b591d83b",
+  "experiment": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "hypothesis": "H43",
+  "status": "EXPLORATORY_ONLY",
+  "sign": "source_coverage_only",
+  "full_suite": {
+    "ran": 1122,
+    "passed": 1122,
+    "failed": 0,
+    "skipped": 2
+  },
+  "compileall": {
+    "exit": 0
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    }
+  },
+  "frozen_hashes": {
+    "all_frozen_hashes_match": true,
+    "canonical_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config_disk": "13124319a753bc6d374c73f854517f92cda96b482ce7c2f6923126850bca0631",
+    "grid_v3_config_manifest": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "grid_v3_config_discrepancy_note": "manifest source_config_sha256 does not match current disk file hash; disk hash has been stable since grid activation commit 377d49ad"
+  },
+  "notes": "Prior task (read durable handoff/task and complete it) verified against CURRENT HEAD c7a8cb55, which is newer than the handoff-recorded HEAD 1b199e8d. Delta: one checkpoint commit (c7a8cb55) landing this session verification plus refreshed handoff/task_message. Re-verified: python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1122 tests, OK, skipped=2 (EXIT=0). Frozen hashes recomputed from disk; canonical forward block, h10_fresh, grid_result_ledger, universe_frontier all match committed blobs. Grid v3 config on disk hashes to 13124319a753bc6d374c73f854517f92cda96b482ce7c2f6923126850bca0631 (stable since 377d49ad); manifest source_config_sha256 quotes 1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176 (discrepancy noted, not a frozen artifact modification). No new hypothesis allocated; next_sequence_number still 43 (H1..H43). Probe evidence recomputed from disk: 397 real cutoff_probe_*.json (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published), newest cutoff_probe_20261113T091257Z.json. Correct posture BLOCKED_BY_HARD_DATE_GATE (not an experiment-ID wait): 2026-11-16 < 2026-11-30, H10 cannot advance; probe_month=2026-11 probe-only (0 target_published=true), not promoted. Handoff and agent_task_message refreshed this session. Next action: hold for date gate 2026-11-30; execute Option A then."
+}
