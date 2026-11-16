@@ -121,7 +121,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # audit (H004V106_FORWARD_BLOCK_SELF_CONSISTENCY_AUDIT, EXPLORATORY_ONLY,
         # consistency_only) so the committed self-consistency audit references an
         # allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 38)
+        # H39 was added for the H004V106 rank-breadth measurement feasibility
+        # study (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-FEAS-001,
+        # EXPLORATORY_ONLY, feasibility_only) so the committed feasibility
+        # artifact references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 39)
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")
