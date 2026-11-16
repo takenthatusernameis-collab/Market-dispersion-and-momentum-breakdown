@@ -1,17 +1,17 @@
-# Agent Task Message — 2026-11-16T16:06:00Z (next session)
+# Agent Task Message — 2026-11-16T16:13:00Z (next session)
 
-## Verified state (2026-11-16T16:06:00Z)
+## Verified state (2026-11-16T16:13:00Z)
 
-- **HEAD:** `4269ed82cc1a0c2344965ed7a889e976d849501e` (`main...origin/main`, working tree clean). Last full verification this session — `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` → Ran 1122 tests, OK, skipped=2 (EXIT=0).
-- **Prior task:** complete — state confirmed green after handoff title timestamp repair (1122 tests OK, skipped=2). H42 (RANKBREADTH-REPRO-001) green; H43 (PANELACQ-PROBE-001 source-coverage probe, ARCHIVE_PLAN_PARTIALLY_SERVED 889/920) already allocated and committed by post-handoff checkpoint commits `4e6a99e3`/`08e1e744`; `next_sequence_number` 43 (H1..H43). No new hypothesis allocated this session. No frozen artifact/config/input/frontier/registry/sealed-holdout modification; DISPERSION-001/002 unchanged.
+- **HEAD:** `255728b56ceb80aa06096a4b9fa5d6340ce32cc3` (`main...origin/main`, working tree clean at verification start). Last full verification this session — `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` → Ran 1122 tests, OK, skipped=2 (EXIT=0).
+- **Prior task:** complete — durable handoff and task message refreshed; state confirmed green. H42 (RANKBREADTH-REPRO-001) and H43 (PANELACQ-PROBE-001, ARCHIVE_PLAN_PARTIALLY_SERVED 889/920) complete; `next_sequence_number` 43 (H1..H43). No new hypothesis allocated this session. No frozen artifact/config/input/frontier/registry/sealed-holdout modification; DISPERSION-001/002 unchanged.
 - **Date gate:** 2026-11-16 < 2026-11-30. H10 cannot advance before 2026-11-30. Correct posture is **BLOCKED_BY_HARD_DATE_GATE** (not an experiment-ID wait). Do not loop or create verification-only checkpoint sessions. The H10 cutoff gate itself is UNBLOCKED by the published October 2026 archive (`gate_date_required` 2026-10-29 met); the `probe_month=2026-11` probe is BLOCKED as probe only (0 `target_published=true`), not promoted.
-- **Frozen hashes unchanged (disk):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; universe_frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`.
+- **Frozen hashes unchanged (disk):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; universe_frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`.
 - **Block/probe (disk):** canonical H004V106 `n_formations=608` (n_high=61, n_low=90, n_mid=457), `data_cutoff_utc` 2026-09-30, `last_allowed_formation_date` 2026-08-31, `block_sealed=true`, `high_low_diff_net_1x=0.6165223953929935`. H10 fresh IMMATURE (`n_formations=1`, n_high=0, n_low=0, n_mid=1, `data_cutoff_utc` 2026-10-31T00:00:00Z, `last_allowed_formation_date` 2026-09-30, `block_sealed=true`); k not advanced. 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10`, 49 published / 127 `probe_month=2026-11`, 0 published), newest `cutoff_probe_20261113T091257Z.json`.
-- **Registry/manifest/frontier:** `next_sequence_number`=43 (H1..H43), prereg coverage pass=true. Frontier `ACTIVE_INCOMPLETE`, `rank_frontier_exhausted=false`, `candidate_page_cursor=6347`, `last_verified_historical_rank=null`, `expanding_universe_target_met=true`, `candidates_discovered=[]`. Manifest `session_record_latest` = `session_record_verify_20261116T150821Z`. Newest session verification `session_verify_20261116T153324Z.json`.
+- **Registry/manifest/frontier:** `next_sequence_number`=43 (H1..H43), prereg coverage pass=true. Frontier `ACTIVE_INCOMPLETE`, `rank_frontier_exhausted=false`, `candidate_page_cursor=6347`, `last_verified_historical_rank=null`, `expanding_universe_target_met=true`, `candidates_discovered=[]`. Manifest `session_record_latest` = `session_record_verify_20261116T153324Z` (run_manifest). Newest session verification on disk `session_verify_20261116T161300Z.json`.
 
 ## Initial task for next agent
 
-Today is before 2026-11-30. **Do NOT loop.** State is green after the handoff timestamp repair; do not add another verification-only checkpoint unless a real, new, safely bounded gap emerges. H43 is complete; do not add further PANELCOV-FEAS-001/H42/H43 audit re-runs or near-duplicate seam/audits.
+Today is before 2026-11-30. **Do NOT loop.** State is green; do not add another verification-only checkpoint unless a real, new, safely bounded gap emerges. H42/H43 are complete; do not re-run PANELCOV-FEAS-001/H41/H42/H43 or add near-duplicate seam/audits.
 
 **Option A — at/after 2026-11-30 (primary, date-gated):**
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`, refresh free public data only (Coin Metrics Community API + Binance Public Data Archive) with per-file provenance/SHA256 and PIT discipline.
@@ -29,7 +29,7 @@ Today is before 2026-11-30. **Do NOT loop.** State is green after the handoff ti
 - Handoff top entry `## Session summary — <ts> (this session)` matching title timestamp; older entries `## Previous session — <ts>` unique and strictly descending; quote the newest `session_verifications/session_verify_*.json` on disk.
 - Keep literal `probe_month=2026-11` present whenever `2026-11` appears, and never assert the H10 cutoff gate as blocked (tests enforce both).
 - Do not alter frontier, registry (except allocating a new hypothesis if adding an experiment, plus explicit reconciliation notes), frozen 001/002/003 artifacts/configs/inputs, or sealed holdout.
-- Recompute probe counts from disk (currently 398 real files in `research_state/cutoff_probe/`, 270 `probe_month=2026-10` / 127 `probe_month=2026-11`).
+- Recompute probe counts from disk (currently 397 real files in `research_state/cutoff_probe/`, 270 `probe_month=2026-10` / 127 `probe_month=2026-11`).
 - If allocating a new hypothesis, bump `next_sequence_number` AND `tests/test_continuous_research_contract.py` in the same change (currently 43, H1..H43).
 - Manifest session records via `python3 scripts/record_session_record.py <payload.json>`; do not add `session_id_drift_scan`; keep `session_id` == filename stem.
 
