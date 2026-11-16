@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "program_status": "ACTIVE",
-  "next_sequence_number": 39,
+  "next_sequence_number": 40,
   "hypotheses": [
     {
       "id": "H1",
@@ -387,6 +387,18 @@
       "evidence_note": "DISP-003-RANKBREADTH-FEAS-001, preregistered before any computation (preregistrations/RANKBREADTH_FEAS_001_v1.md, Created 2026-11-16T06:54:36Z). Script scripts/rank_breadth_feasibility_audit.py; test tests/test_rank_breadth_feasibility_audit.py; artifact integrity_audit/H004V106_rank_breadth_feasibility_2026-11-16T06-57-08Z.json. Decision rule predeclared: RANK_BREADTH_MEASURABLE iff median N(d) >= 100 AND each of bands [1-20],[21-50],[51-100] has >= 10 assets on >= 90% of dates. Result: label RANK_BREADTH_MEASURABLE. Universe U = 32 legacy marketcap_panel assets (committed kline panels) UNION 188 candidate assets with binance.exists==true and a committed raw CapMrktEstUSD series; |U| = 220, matching the frontier's expanding_universe_assets_with_cap_and_binance = 220. Study window 2023-01-01..2026-10-31 (1399 dates from the committed BTCUSDT kline index). N(d) median 211, p10 198, p90 217, max 218, mean 208.5; bands [1-20],[21-50],[51-100] have >= 10 assets on 99.5% of dates (min 29 on the few dates after the candidate cap archive ends 2026-10-23 when only the 32 legacy assets remain). All 32 committed panel assets lie in U (btc rank 1, eth 2, sol median 5). CAVEAT: only the 32 legacy assets have committed Binance price panels; the 188 candidate-arm assets have cap history but no committed price/funding panels, so a full H3 rank-band OUTCOME study is still price-panel-limited at 32 assets. This is a descriptive measurement on committed development inputs: no returns, spreads, dispersion states, p-values, costs or inference computed; does not validate, replace or unlock any confirmatory track (H1/H6/H7/H10) and is not independent confirmation. No frozen artifact/config/input/frontier/sealed holdout modified; canonical block 7234fc4e..., H10 fresh 324ab1e6..., grid ledger 0184f2d3..., frontier 9ba08f3f... byte-unchanged.",
       "next_test": "A full H3 rank-breadth OUTCOME study requires committed Binance price/funding panels for the 188 candidate-arm assets (a new free-data refresh under a NEW experiment ID); until then this cap-rank feasibility result stands as EXPLORATORY_ONLY. The primary H10 fresh-block maturity (November 2026 vintage) remains the next confirmatory-track action.",
       "immutable": false
+    },
+    {
+      "id": "H40",
+      "title": "Committed panel-coverage extension feasibility for H39 PIT-union assets (planning/measurement)",
+      "status": "EXPLORATORY_ONLY",
+      "label": "feasibility_only",
+      "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001",
+      "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001/preregistrations/PANELCOV_FEAS_001_v1.md",
+      "audit_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001/integrity_audit/H004V106_panel_coverage_extension_feasibility_20261116T081554Z.json",
+      "statement": "Descriptive/planning feasibility: 188 H39 PIT-union assets without committed Binance kline/funding panels have deterministic verified Binance USD-M symbol mapping, committed Coin Metrics cap observations in 2023-01-01..2026-10-31, and no committed raw/panel files; bounded monthly archive scope is 46 months x 2 kinds = 92 files/asset upper bound (17,296 total).",
+      "evidence_note": "H004V106_PANELCOV_FEAS_001, EXPLORATORY_ONLY/PANEL_EXTENSION_FEASIBLE_IN_PRINCIPLE. Committed-artifact measurement/planning only: no network fetch, no panel construction, no returns/spreads/states/p-values/costs/inference, no archive-publication claim per month/symbol, no confirmation, no unlock of confirmatory track. Frozen hashes verified unchanged. Follows H39 (RANK_BREADTH_MEASURABLE, price-panel-limited at 32).",
+      "next_test": "If pursued, a separate bounded free-data acquisition/ingestion task (keyless Binance Public Data Archive probes/downloads for specific study months/symbols, with provenance, SHA256, and point-in-time panel normalization) under a NEW ID/prereg; must not compute outcomes or relax confirmatory gates."
     }
   ],
   "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block.",

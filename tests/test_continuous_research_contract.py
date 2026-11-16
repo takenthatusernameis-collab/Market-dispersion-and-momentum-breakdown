@@ -125,7 +125,13 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # study (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-FEAS-001,
         # EXPLORATORY_ONLY, feasibility_only) so the committed feasibility
         # artifact references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 39)
+        # H40 was added for the committed-panel coverage extension feasibility
+        # study (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001,
+        # EXPLORATORY_ONLY, feasibility_only) confirming deterministic verified
+        # Binance mapping + PIT cap observations for the 188 H39 union assets
+        # lacking committed panels (gap unfilled, planning only).
+        self.assertEqual(registry["next_sequence_number"], 40)
+
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
         self.assertEqual(h1["status"], "NOT_SUPPORTED_AS_ROBUST_EDGE")

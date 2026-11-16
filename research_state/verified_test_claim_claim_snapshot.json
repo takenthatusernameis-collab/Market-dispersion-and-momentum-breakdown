@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 2,
   "claim": "1067/1067/0",
-  "input_fingerprint": "b7ffc66e439212c39909d76bbd2b58a75b6cadf22e0f50cd7fc82a3c4662b8dd",
+  "input_fingerprint": "f94196026085162445123bc24310d163f11fc4bca147e26365f8196deda3c10d",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -195,6 +195,10 @@
       "sha256": "79c514da098bac33d7dc0ae1409a2c373f77d6d08fbb0a242cc595c99980010e"
     },
     {
+      "path": "scripts/panel_coverage_extension_feasibility.py",
+      "sha256": "409c0e9f804e3a9e38e6033b6a8f48525e439a92c4d30ca23ccb56e9d1bcb68f"
+    },
+    {
       "path": "scripts/phase_b_placebos.py",
       "sha256": "1aadd07ff1a3175e68c61d5aec4e4118e1cc672342e262aa9dbdf2c87d02823a"
     },
@@ -336,7 +340,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "1a43f5ad5c296090bd853ccca03889466b0a0625f5eba6a9262d7f4409d74be1"
+      "sha256": "004a3859530dcbf1eb6fedcb1a58d1f96dd53736821e2580576af83973cfaa3b"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -603,6 +607,10 @@
       "sha256": "742f0ee2cefaddfe3b696ef794a4023ef81d5a1b3519281d1d6643b9c1bdc38b"
     },
     {
+      "path": "tests/test_panel_coverage_extension_feasibility.py",
+      "sha256": "b08797ddce0206ac51c5236f939a27bf15b1d25056c9d9991ec1ac79f530babd"
+    },
+    {
       "path": "tests/test_phase_b_placebos_seams.py",
       "sha256": "f99a1dbbdf79e4265c31879e01c6202479b02f1241ca8da410efc0db108fb2fe"
     },
@@ -703,5 +711,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 173
+  "input_file_count": 175
 }
