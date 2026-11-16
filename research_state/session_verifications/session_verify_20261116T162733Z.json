@@ -1,0 +1,39 @@
+{
+  "session_id": "session_verify_20261116T162733Z",
+  "generated_utc": "2026-11-16T16:27:33Z",
+  "head_at_verification": "1b199e8d5c350cde7a64cdf5e5cba27b2e709800",
+  "experiment": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "hypothesis": "H43",
+  "status": "EXPLORATORY_ONLY",
+  "sign": "source_coverage_only",
+  "full_suite": {
+    "ran": 1122,
+    "passed": 1122,
+    "failed": 0,
+    "skipped": 2
+  },
+  "compileall": {
+    "exit": 0
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    }
+  },
+  "frozen_hashes": {
+    "all_frozen_hashes_match": true,
+    "canonical_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "notes": "Prior task (read durable handoff/task and complete it) verified against CURRENT HEAD 1b199e8d, which is newer than the handoff-recorded HEAD 255728b5. Delta: one checkpoint commit (1b199e8d) landing three H40 PANELCOV-FEAS-001 integrity audits (computed_utc 161320Z/161552Z/161713Z) plus refreshed handoff/task_message; all three are deterministic rebuilds of the same committed artifact, label PANEL_EXTENSION_FEASIBLE_IN_PRINCIPLE, all_frozen_hashes_match true, and are already covered by tests/test_panel_coverage_extension_feasibility.py (which pins the lexicographically newest committed artifact). No new hypothesis allocated; next_sequence_number still 43 (H1..H43). Re-verified: python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1122 tests, OK, skipped=2 (EXIT=0). Frozen hashes recomputed from disk, all match. Working tree restored clean after removing three transient test-generated audit files (162423Z/162544Z/162700Z) written to disk by build_audit(out_path=None) during the test run. Probe evidence recomputed from disk: 397 real cutoff_probe_*.json (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published), newest cutoff_probe_20261113T091257Z.json. Correct posture BLOCKED_BY_HARD_DATE_GATE (not an experiment-ID wait): 2026-11-16 < 2026-11-30, H10 cannot advance; probe_month=2026-11 probe-only (0 target_published=true), not promoted. Handoff and agent_task_message refreshed this session. Next action: hold for date gate 2026-11-30; execute Option A then."
+}
