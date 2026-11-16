@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "session_id": "session_verify_20261116T054538Z",
+  "generated_utc": "2026-11-16T05:45:38Z",
+  "head_at_verification": "2075f1a95fab3e4ff0f61238d336f731868411f6",
+  "checks": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "exit_code": 0, "ran": 1054, "ok": true, "failures": 0, "errors": 0, "skipped": 2}
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "notes": "Prior task (read durable handoff/task 2026-11-16T05:22:33Z) completed by durable-state re-verification at HEAD 2075f1a95fab3e4ff0f61238d336f731868411f6 (main...origin/main; working tree clean): python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt (numpy 2.5.5 / pandas 3.1.1 already present; bare runner image precondition) then python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1054 tests, OK, skipped=2 (EXIT=0). No date-gate re-probe, no seam-test/audit duplication, no new experiment, no new audit script. Frozen hashes independently recomputed from disk and compared byte-for-byte to committed HEAD blobs: all four match (canonical forward block, h10_fresh, universe_frontier, grid_v3_config). Latest recorded verified claim (fingerprint d04bc057b7b42c28aac441d469e26e239e47be72d3af5966a686ad2ec7683134, 171 input files, recorded 2026-11-15T15:29:05Z) remains valid/consistent (no .py or test-input changed since that claim; HEAD advanced only via durable-state checkpoint commits). Registry H1..H38 (next_sequence_number=38); research_state/preregistration_coverage_audit.json pass=true; frontier ACTIVE_INCOMPLETE, rank_frontier_exhausted=false, candidate_page_cursor=6347, last_verified_historical_rank=null, expanding_universe_target_met=true, candidates_discovered=[]. Canonical forward block H004V106 n_formations=608 (n_high=61, n_low=90, n_mid=457), data_cutoff_utc 2026-09-30, last_allowed_formation_date 2026-08-31, block_sealed=true, high_low_diff_net_1x=0.6165223953929935. H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, data_cutoff_utc 2026-10-31T00:00:00Z, last_allowed_formation_date 2026-09-30, block_sealed=true); k not advanced. Probe evidence recomputed from disk: 397 real cutoff_probe files (0 MOCK), 270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published, newest cutoff_probe_20261113T091257Z.json. H10 cutoff gate UNBLOCKED by published October 2026 archive (gate_date_required 2026-10-29 met). probe_month=2026-11 BLOCKED as probe only (0 target_published=true); not promoted into H10 gate decision. No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait). probe_month=2026-11 not re-probed. No frozen artifact/config/input/frontier/registry/sealed holdout modified."
+}
