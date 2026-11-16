@@ -1,0 +1,22 @@
+{
+  "session_id": "session_verify_20261116T064800Z",
+  "generated_utc": "2026-11-16T06:48:00Z",
+  "head_at_verification": "fd0224e19f8b44f7ebd5ec6b2a442a630216bf18",
+  "full_suite": {
+    "ran": 1054,
+    "passed": 1054,
+    "skipped": 2
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    }
+  }
+}
