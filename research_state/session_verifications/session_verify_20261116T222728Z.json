@@ -1,0 +1,34 @@
+{
+  "generated_utc": "2026-11-16T22:27:28Z",
+  "git_head": "f06203cc095553ac87299f5e2c5beda625c7a80a",
+  "compileall_exit": 0,
+  "full_suite": {
+    "ran": 1123,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2,
+    "exit": 0
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "next_sequence_number": 43,
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "notes": "Re-verified stable state at 2026-11-16T22:27:28Z (date gate < 2026-11-30). compileall EXIT 0, 1123 tests OK, skipped=2. No new hypothesis allocated; no frozen artifact/config/input/frontier/registry/sealed-holdout modification. No new bounded no-cost gap emerged; no verification-only loop."
+}
