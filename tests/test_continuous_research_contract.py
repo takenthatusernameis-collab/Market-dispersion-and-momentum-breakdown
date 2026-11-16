@@ -130,7 +130,11 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # EXPLORATORY_ONLY, feasibility_only) confirming deterministic verified
         # Binance mapping + PIT cap observations for the 188 H39 union assets
         # lacking committed panels (gap unfilled, planning only).
-        self.assertEqual(registry["next_sequence_number"], 40)
+        # H41 was added for the bounded committed-metadata panel acquisition/
+        # probe plan (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PLAN-001,
+        # EXPLORATORY_ONLY, planning_only) enumerating deterministic subset
+        # and monthly archive targets (no network, no outcomes).
+        self.assertEqual(registry["next_sequence_number"], 41)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
