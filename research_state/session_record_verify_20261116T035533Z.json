@@ -1,0 +1,7 @@
+{
+  "session_id": "session_verify_20261116T035533Z",
+  "timestamp_utc": "2026-11-16T03:55:33Z",
+  "action": "durable_state_reverification",
+  "outcome": "green: compileall EXIT 0; unittest 1054/1054/0 skipped=2 EXIT=0; probe evidence 397 (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published); frozen hashes unchanged vs committed blobs; H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0), BLOCKED_BY_HARD_DATE_GATE until 2026-11-30; no new experiment/audit/seam test",
+  "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1054 tests, OK, skipped=2 (EXIT=0); sha256 of canonical forward block, h10_fresh, universe_frontier, grid_v3_config all match git show HEAD:"
+}
