@@ -139,7 +139,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-RANKBREADTH-REPRO-001,
         # EXPLORATORY_ONLY, reproducibility_integrity_only) re-deriving the H39
         # verdict from committed inputs via a separate stdlib-only code path.
-        self.assertEqual(registry["next_sequence_number"], 42)
+        # H43 was added for the planned-archive source-coverage probe
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PROBE-001,
+        # EXPLORATORY_ONLY, source_coverage_only) keylessly HEAD-probing all 920
+        # H41-planned monthly archive entries against the free public Binance
+        # Public Data Archive to measure actual per-file availability.
+        self.assertEqual(registry["next_sequence_number"], 43)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
