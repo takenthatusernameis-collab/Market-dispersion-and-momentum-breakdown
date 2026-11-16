@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-16T15:42:43Z (next session)
+# Agent Task Message — 2026-11-16T16:06:00Z (next session)
 
-## Verified state (2026-11-16T15:33:24Z)
+## Verified state (2026-11-16T16:06:00Z)
 
 - **HEAD:** `4269ed82cc1a0c2344965ed7a889e976d849501e` (`main...origin/main`, working tree clean). Last full verification this session — `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` → Ran 1122 tests, OK, skipped=2 (EXIT=0).
-- **Prior task:** complete — the hold-for-date-gate task was executed as a state repair: the suite was NOT green at session start (`test_latest_session_probe_evidence_matches_disk` failed: `session_verify_20261116T151926Z.json` quoted `total_real_probes` 398 but disk holds 397 real probes). Repaired by writing corrected `session_verify_20261116T153324Z.json` and re-verifying green. H42 green (RANKBREADTH-REPRO-001); H43 (PANELACQ-PROBE-001 source-coverage probe, ARCHIVE_PLAN_PARTIALLY_SERVED 889/920) already allocated and committed by the post-handoff checkpoint commits `4e6a99e3`/`08e1e744`; `next_sequence_number` 43 (H1..H43). No new hypothesis allocated this session.
+- **Prior task:** complete — state confirmed green after handoff title timestamp repair (1122 tests OK, skipped=2). H42 (RANKBREADTH-REPRO-001) green; H43 (PANELACQ-PROBE-001 source-coverage probe, ARCHIVE_PLAN_PARTIALLY_SERVED 889/920) already allocated and committed by post-handoff checkpoint commits `4e6a99e3`/`08e1e744`; `next_sequence_number` 43 (H1..H43). No new hypothesis allocated this session. No frozen artifact/config/input/frontier/registry/sealed-holdout modification; DISPERSION-001/002 unchanged.
 - **Date gate:** 2026-11-16 < 2026-11-30. H10 cannot advance before 2026-11-30. Correct posture is **BLOCKED_BY_HARD_DATE_GATE** (not an experiment-ID wait). Do not loop or create verification-only checkpoint sessions. The H10 cutoff gate itself is UNBLOCKED by the published October 2026 archive (`gate_date_required` 2026-10-29 met); the `probe_month=2026-11` probe is BLOCKED as probe only (0 `target_published=true`), not promoted.
 - **Frozen hashes unchanged (disk):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; universe_frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`.
 - **Block/probe (disk):** canonical H004V106 `n_formations=608` (n_high=61, n_low=90, n_mid=457), `data_cutoff_utc` 2026-09-30, `last_allowed_formation_date` 2026-08-31, `block_sealed=true`, `high_low_diff_net_1x=0.6165223953929935`. H10 fresh IMMATURE (`n_formations=1`, n_high=0, n_low=0, n_mid=1, `data_cutoff_utc` 2026-10-31T00:00:00Z, `last_allowed_formation_date` 2026-09-30, `block_sealed=true`); k not advanced. 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10`, 49 published / 127 `probe_month=2026-11`, 0 published), newest `cutoff_probe_20261113T091257Z.json`.
@@ -11,7 +11,7 @@
 
 ## Initial task for next agent
 
-Today is before 2026-11-30. **Do NOT loop.** State is green after the probe-count repair; do not add another verification-only checkpoint unless a real, new, safely bounded gap emerges. H43 is complete; do not add further PANELCOV-FEAS-001/H42/H43 audit re-runs or near-duplicate seam/audits.
+Today is before 2026-11-30. **Do NOT loop.** State is green after the handoff timestamp repair; do not add another verification-only checkpoint unless a real, new, safely bounded gap emerges. H43 is complete; do not add further PANELCOV-FEAS-001/H42/H43 audit re-runs or near-duplicate seam/audits.
 
 **Option A — at/after 2026-11-30 (primary, date-gated):**
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`, refresh free public data only (Coin Metrics Community API + Binance Public Data Archive) with per-file provenance/SHA256 and PIT discipline.
