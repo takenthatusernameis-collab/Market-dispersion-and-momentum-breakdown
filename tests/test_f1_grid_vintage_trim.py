@@ -13,6 +13,7 @@ that trimming to 2026-09-30 reproduces the committed ledger for representative
 cells (including the H004V002/2026-09-29 tail formation the audit identified).
 """
 import json
+import subprocess
 import unittest
 from importlib import util
 from pathlib import Path
@@ -110,6 +111,123 @@ class TestVintageTrimFidelitySample(unittest.TestCase):
         self.assertEqual(last["formation_date"], "2026-09-29")
         self.assertEqual(last["spread_gross"], 0.0)
         self.assertEqual(last, self.committed["H004V002"]["formations"][-1])
+
+
+class TestVintageTrimCommittedResultPinned(unittest.TestCase):
+    """Pin the committed F1GRID-002 ledger-vintage result against a re-run.
+
+    scripts/run_f1_grid_vintage_trim.py is deterministic on the same committed
+    inputs, so a re-run must reproduce the committed artifacts exactly apart from
+    the wall-clock ``evaluated_utc`` field. This guard prevents the recorded
+    EXPLORATORY_ONLY result from silently drifting (e.g. a new code path in the
+    engine, a changed cost constant) while the committed artifacts still quote the
+    old numbers.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.ledger = json.loads(
+            (ROOT / "artifacts" / NEW_EXP / "grid_result_ledger.json").read_text(
+                encoding="utf-8"))
+        cls.summary = json.loads(
+            (ROOT / "artifacts" / NEW_EXP / "grid_summary.json").read_text(
+                encoding="utf-8"))
+
+    def _strip(self, d):
+        d = json.loads(json.dumps(d))
+        d.pop("evaluated_utc", None)
+        return d
+
+    def test_summary_reproduces_committed_blob_ignoring_evaluated_utc(self):
+        blob = subprocess.run(
+            ["git", "show", f"HEAD:artifacts/{NEW_EXP}/grid_summary.json"],
+            capture_output=True, text=True, check=True).stdout
+        committed = json.loads(blob)
+        self.assertEqual(self._strip(committed), self._strip(self.summary))
+
+    def test_ledger_is_idempotent_and_armA_checkpoint_matches_committed_blob(self):
+        # grid_result_ledger.json was never committed to git (only grid_summary.json
+        # and the arm A checkpoint were), so the ledger pin is a content-equality
+        # check against the on-disk artifact: a re-run must reproduce it exactly
+        # apart from evaluated_utc. The arm A checkpoint IS git-pinned.
+        blob = subprocess.run(
+            ["git", "show",
+             f"HEAD:artifacts/{NEW_EXP}/grid_checkpoints/"
+             "cell_checkpoint_armA_ledger_vintage.json"],
+            capture_output=True, text=True, check=True).stdout
+        committed_ckpt = json.loads(blob)
+        on_disk_ckpt = json.loads(
+            (ROOT / "artifacts" / NEW_EXP / "grid_checkpoints"
+             / "cell_checkpoint_armA_ledger_vintage.json").read_text(
+                encoding="utf-8"))
+        self.assertEqual(committed_ckpt, on_disk_ckpt)
+        self.assertEqual(self.ledger["arms"]
+                         ["A_ledger_vintage_committed"]["cells"], on_disk_ckpt)
+        # determinism: the ledger carries no wall-clock field other than
+        # evaluated_utc, so stripping it leaves a self-consistent document
+        stripped = self._strip(self.ledger)
+        self.assertNotIn("evaluated_utc", stripped)
+        self.assertEqual(len(stripped["arms"]), 2)
+
+    def test_fidelity_anchor_passed_on_all_216_cells(self):
+        self.assertTrue(self.ledger["fidelity_anchor"]["passed"])
+        self.assertEqual(self.ledger["fidelity_anchor"]["compared_cells"], 216)
+        self.assertEqual(self.ledger["fidelity_anchor"]["drift_count"], 0)
+        self.assertEqual(self.ledger["expected_cells"], 216)
+
+    def test_terminal_status_partition(self):
+        for arm in self.ledger["arms"].values():
+            self.assertEqual(arm["cells_evaluated"], 216)
+            self.assertEqual(arm["cells_ok"], 216)
+            self.assertEqual(arm["cells_blocked"], 0)
+            self.assertEqual(arm["cells_failed"], 0)
+        self.assertEqual(self.summary["n_cells_ok_both_arms"], 216)
+
+    def test_holm_rejection_counts(self):
+        a = self.ledger["arms"]["A_ledger_vintage_committed"]
+        b = self.ledger["arms"]["B_ledger_vintage_f1_repaired"]
+        self.assertEqual(a["holm_rejected_count"], 0)
+        self.assertEqual(b["holm_rejected_count"], 1)
+        flips = [d for d in self.summary["cell_deltas"]
+                 if d["holm_rejected_a"] != d["holm_rejected_b"]]
+        self.assertEqual([d["config_id"] for d in flips], ["H004V130"])
+
+    def test_anchor_contrasts(self):
+        d = {x["config_id"]: x for x in self.summary["cell_deltas"]}
+        # legacy comparator arm is untouched by the four-asset kline repair
+        self.assertEqual(d["H004V105"]["delta_high_low_diff_net_1x"], 0.0)
+        self.assertEqual(d["H004V105"]["delta_eligible_assets_mean"], 0.0)
+        # expanding anchor: eligible assets +1.81, high/low counts shift by one
+        self.assertAlmostEqual(d["H004V106"]["delta_eligible_assets_mean"],
+                               1.8116591928251111, places=9)
+        self.assertAlmostEqual(d["H004V106"]["delta_high_low_diff_net_1x"],
+                               -0.03765270427844142, places=12)
+        self.assertEqual(d["H004V106"]["delta_n_high"], 0)
+        self.assertEqual(d["H004V106"]["delta_n_low"], -1)
+        self.assertEqual(d["H004V106"]["delta_n_mid"], 1)
+        # mean eligible-asset delta across the whole grid
+        self.assertAlmostEqual(self.summary["delta_mean_eligible_assets"],
+                               0.909186884971348, places=9)
+
+    def test_no_frozen_artifact_was_modified(self):
+        # canonical forward block, H10 fresh block, committed ledger, frontier
+        import hashlib
+        expected = {
+            "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/"
+            "forward_block/forward_block_evaluation.json":
+                "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+            "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/"
+            "forward_block_h10_fresh/forward_block_evaluation.json":
+                "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+            "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/"
+            "grid_result_ledger.json":
+                "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+            "research_state/universe_frontier.json":
+                "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        }
+        for rel, want in expected.items():
+            h = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
+            self.assertEqual(h, want, rel)
 
 
 if __name__ == "__main__":

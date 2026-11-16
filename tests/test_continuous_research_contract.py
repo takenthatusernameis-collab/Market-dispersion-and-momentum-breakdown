@@ -144,7 +144,12 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # EXPLORATORY_ONLY, source_coverage_only) keylessly HEAD-probing all 920
         # H41-planned monthly archive entries against the free public Binance
         # Public Data Archive to measure actual per-file availability.
-        self.assertEqual(registry["next_sequence_number"], 43)
+        # H44 was added for the F1GRID-002 full 216-cell ledger-vintage
+        # execution (DISP-003-F1GRID-002 completed 2026-11-16T23:12:49Z,
+        # EXPLORATORY_ONLY, coverage_sensitivity) so the committed
+        # grid_result_ledger.json / grid_summary.json under the F1GRID-002
+        # experiment root reference an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 44)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

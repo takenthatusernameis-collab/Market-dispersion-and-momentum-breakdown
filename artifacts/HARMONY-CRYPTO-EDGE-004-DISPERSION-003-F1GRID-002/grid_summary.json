@@ -2618,7 +2618,7 @@
     }
   ],
   "delta_mean_eligible_assets": 0.909186884971348,
-  "evaluated_utc": "2026-11-15T03:08:59Z",
+  "evaluated_utc": "2026-11-16T23:12:49Z",
   "expected_cells": 216,
   "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002",
   "n_cells_ok_both_arms": 216,
