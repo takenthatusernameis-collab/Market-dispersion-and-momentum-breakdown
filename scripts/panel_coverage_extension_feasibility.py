@@ -285,12 +285,10 @@ def build_audit(out_path: Path | None = None) -> dict:
         ),
     }
 
-    AUDIT_DIR.mkdir(parents=True, exist_ok=True)
-    if out_path is None:
-        ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-        out_path = AUDIT_DIR / f"H004V106_panel_coverage_extension_feasibility_{ts}.json"
-    out_path.write_text(json.dumps(artifact, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    artifact["_output_path"] = str(out_path)
+    if out_path is not None:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(json.dumps(artifact, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        artifact["_output_path"] = str(out_path)
     return artifact
 
 
@@ -298,7 +296,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=None)
     args = ap.parse_args()
-    a = build_audit(args.out)
+    out = args.out
+    if out is None:
+        ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        out = AUDIT_DIR / f"H004V106_panel_coverage_extension_feasibility_{ts}.json"
+    a = build_audit(out)
     print(json.dumps({
         "audit_id": a["audit_id"],
         "label": a["label"],

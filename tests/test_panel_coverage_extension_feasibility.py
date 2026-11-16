@@ -4,7 +4,8 @@ DISP-003-PANELCOV-FEAS-001, EXPLORATORY_ONLY. Pins:
   * module import-safe (pure helpers);
   * decision rule behavior on synthetic aggregates;
   * build_audit() reproduces committed artifact (excluding wall-clock computed_utc)
-    and the committed artifact is EXPLORATORY_ONLY with all frozen hashes matching.
+    and the committed artifact is EXPLORATORY_ONLY with all frozen hashes matching;
+  * build_audit(out_path=None) is hermetic -- it writes no artifact.
 
 Read-only: no network, no secrets, no trading endpoints.
 """
@@ -118,6 +119,23 @@ class CommittedArtifactTests(unittest.TestCase):
             sorted(h39["universe_assets_without_committed_kline_panel"]),
             sorted(r["asset"] for r in self.artifact["per_asset"]),
         )
+
+
+class HermeticBuildTests(unittest.TestCase):
+    """build_audit(out_path=None) must be a pure read -- no artifact write.
+
+    Regression guard: the test suite previously called build_audit(out_path=None)
+    while the function still wrote a fresh timestamped artifact into the tracked
+    artifacts/ tree, so every ``unittest discover`` run dirtied the working tree
+    and checkpoint commits accumulated duplicate PANELCOV-FEAS-001 artifacts.
+    """
+
+    def test_none_out_path_writes_nothing(self):
+        before = set(p.name for p in AUDIT_DIR.glob("H004V106_panel_coverage_extension_feasibility_*.json"))
+        rebuilt = mod.build_audit(out_path=None)
+        after = set(p.name for p in AUDIT_DIR.glob("H004V106_panel_coverage_extension_feasibility_*.json"))
+        self.assertEqual(after, before, "build_audit(out_path=None) must not write an artifact")
+        self.assertNotIn("_output_path", rebuilt)
 
 
 if __name__ == "__main__":

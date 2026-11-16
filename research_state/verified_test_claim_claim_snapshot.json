@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-16T15:14:34Z",
+  "recorded_utc": "2026-11-16T22:07:20Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1122,
-  "tests_ok": 1122,
+  "tests_run": 1123,
+  "tests_ok": 1123,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "1122/1122/0",
-  "input_fingerprint": "9cbc8286d098b579869e813d0ecabe0b8510d98139ad6f7f9869344173a46102",
+  "claim": "1123/1123/0",
+  "input_fingerprint": "934b50a71db07fe72e0092981d0d8549caf85e5f82b5c2673081ed4ad011b6ae",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -204,7 +204,7 @@
     },
     {
       "path": "scripts/panel_coverage_extension_feasibility.py",
-      "sha256": "409c0e9f804e3a9e38e6033b6a8f48525e439a92c4d30ca23ccb56e9d1bcb68f"
+      "sha256": "43cb73a9712245c0b63207785bdfdd3413497ec7a91b47c4f3133e54fa325416"
     },
     {
       "path": "scripts/phase_b_placebos.py",
@@ -628,7 +628,7 @@
     },
     {
       "path": "tests/test_panel_coverage_extension_feasibility.py",
-      "sha256": "b08797ddce0206ac51c5236f939a27bf15b1d25056c9d9991ec1ac79f530babd"
+      "sha256": "b47d80ce7c00640a46fab7e92c4b4f2163f04f02930b47a70e9a19d4efac0095"
     },
     {
       "path": "tests/test_phase_b_placebos_seams.py",
