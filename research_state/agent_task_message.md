@@ -24,6 +24,8 @@ Today is before 2026-11-30. **Do NOT loop.** State is verified stable and the su
 
 **Probe-evidence invariant:** recompute probe counts from disk; do not hard-code.
 
+**Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
+
 ## Durable-state rules
 - Handoff top entry `## Session summary — <ts> (this session)` matching title timestamp; older entries `## Previous session — <ts>` unique and strictly descending.
 - Keep literal `probe_month=2026-11` present whenever `2026-11` appears.
