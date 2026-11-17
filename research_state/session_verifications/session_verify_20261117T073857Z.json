@@ -1,0 +1,59 @@
+{
+  "session_id": "session_verify_20261117T073857Z",
+  "timestamp_utc": "2026-11-17T07:38:57Z",
+  "head": "820a538c7459c37bb5addca09e768ca326579e2f",
+  "prior_checkpoint_head": "ffac198bef08002b5027d1eda166864c5e787153",
+  "checks": {
+    "compileall": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "full_suite_rerun_this_session": true,
+    "full_suite": {
+      "command": "python3 scripts/record_test_claim.py",
+      "ran": 1144,
+      "ok": true,
+      "skipped": 2,
+      "failures": 0,
+      "exit_code": 0,
+      "verification_record": "research_state/session_verifications/session_verify_20261117T073857Z.json"
+    }
+  },
+  "frozen_hashes_sha256": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "date_gate": {
+    "utc_date": "2026-11-17",
+    "h10_gate_date": "2026-11-30",
+    "status": "BLOCKED_BY_HARD_DATE_GATE",
+    "h10_cutoff_gate_unblocked_by_published_archive": true,
+    "probe_month_2026_11_promoted": false
+  },
+  "registry": {
+    "next_sequence_number": 45,
+    "hypotheses": "H1..H45"
+  },
+  "new_experiment": {
+    "hypothesis_id": "H45",
+    "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-FLIP-001",
+    "artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-FLIP-001/integrity_audit/f1_grid_flip_diagnostic_20261117T073630Z.json",
+    "result": "n_flips=1 (H004V130), MARGINAL_POINT_ESTIMATE_CHANGE, delta_net +0.0271 (<0.05), p 0.006->0.0, n_state_transfers=1"
+  },
+  "notes": "Read prior durable handoff/task (2026-11-17T07:27:29Z) and completed it. Date gate 2026-11-17 < 2026-11-30 holds so confirmatory Option A remains blocked. Per the adaptive research-gate policy, completed one new bounded no-cost exploratory task (H45 F1GRID-FLIP-001): a read-only characterisation of the sole Holm-status flip between the F1GRID-002 arms, finding it is a marginal significance crossing (p 0.006->0.0) with a negligible same-sign point-estimate move (+0.0271 < 0.05) and one formation reclassified low->mid. EXPLORATORY_ONLY; no p-value promotion, no confirmation, no frozen artifact modified. This is new evidence (a characterisation no prior artifact contained), not a verification-only loop."
+}

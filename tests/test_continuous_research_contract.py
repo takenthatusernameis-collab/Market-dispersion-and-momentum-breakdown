@@ -149,7 +149,13 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # EXPLORATORY_ONLY, coverage_sensitivity) so the committed
         # grid_result_ledger.json / grid_summary.json under the F1GRID-002
         # experiment root reference an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 44)
+        # H45 was added for the F1GRID-002 sole Holm-status flip diagnostic
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-FLIP-001,
+        # EXPLORATORY_ONLY, coverage_sensitivity_diagnostic) characterising the
+        # single cell (H004V130) whose Holm status differs between the F1GRID-002
+        # arms, so the committed diagnostic artifact references an allocated
+        # registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 45)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

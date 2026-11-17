@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-17T04:09:49Z",
+  "recorded_utc": "2026-11-17T07:38:51Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1133,
-  "tests_ok": 1133,
+  "tests_run": 1144,
+  "tests_ok": 1144,
   "tests_failures": 0,
   "tests_skipped": 2,
-  "claim": "1133/1133/0",
-  "input_fingerprint": "ce68169ba115be46c078e8cde25900ed57f8f041d1103292a9434f6c157114f4",
+  "claim": "1144/1144/0",
+  "input_fingerprint": "eafa81346d0ce6908e6f139275856cbaadfde00fbd12ca728c49a2e47063e6a0",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -69,6 +69,10 @@
     {
       "path": "scripts/f1_coverage_stability_audit.py",
       "sha256": "d30580151e191b29de08ad9a03ed44de3acd1a4b86a73a8ae7e5a01729d971e3"
+    },
+    {
+      "path": "scripts/f1_grid_flip_diagnostic.py",
+      "sha256": "6f8065acca265bc9a79e40b2efaa781f7f8a12a2da4899921804db4ebc5ef7f1"
     },
     {
       "path": "scripts/f1_panel_coverage_repair.py",
@@ -352,7 +356,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "97a3ef4bc80d66b525a78ebb356403d3577dd316a3afb602844b8e69e900c72e"
+      "sha256": "7b57ce3352ec51d804e00c75f087fb8de67b54d8d3dd887e5955ea1dfb553e36"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -409,6 +413,10 @@
     {
       "path": "tests/test_f1_grid_coverage_repair.py",
       "sha256": "082aefeeb60ab638b404b99c24270e5097b50d15e32c088c6b5feb6082e8d112"
+    },
+    {
+      "path": "tests/test_f1_grid_flip_diagnostic.py",
+      "sha256": "1add4c80fce54ac2f5d24611407a7095377683058717e14bbc751d5e4d167e44"
     },
     {
       "path": "tests/test_f1_grid_vintage_trim.py",
@@ -739,5 +747,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 182
+  "input_file_count": 184
 }

@@ -1,0 +1,60 @@
+{
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-FLIP-001",
+  "audit_id": "H004V106_F1GRID_FLIP_DIAGNOSTIC_20261117",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json",
+  "computed_utc": "2026-11-17T07:36:30Z",
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-FLIP-001/preregistrations/F1_GRID_FLIP_DIAGNOSTIC_v1.md",
+  "method": "For every config_id present in both F1GRID-002 arms, compare high_low_diff_net_1x, pvalue_bootstrap_two_sided, holm_rejected and n_high/n_low/n_mid; a flip cell is one whose holm_rejected differs. Each flip cell is classified SIGN_FLIP / MATERIAL_POINT_ESTIMATE_CHANGE (|delta_net| >= threshold) / MARGINAL_POINT_ESTIMATE_CHANGE by a rule predeclared before computation.",
+  "economic_threshold": 0.05,
+  "n_flips": 1,
+  "flip_cells": [
+    {
+      "a_high_low_diff_net_1x": 0.3530609260871389,
+      "b_high_low_diff_net_1x": 0.3801303035934344,
+      "delta_high_low_diff_net_1x": 0.02706937750629551,
+      "relative_net_change": 0.07667055600373779,
+      "a_pvalue_bootstrap_two_sided": 0.006,
+      "b_pvalue_bootstrap_two_sided": 0.0,
+      "delta_pvalue": -0.006,
+      "a_holm_rejected": false,
+      "b_holm_rejected": true,
+      "a_n_formations": 1338,
+      "b_n_formations": 1338,
+      "a_n_high": 124,
+      "b_n_high": 124,
+      "a_n_low": 136,
+      "b_n_low": 135,
+      "a_n_mid": 1078,
+      "b_n_mid": 1079,
+      "delta_n_high": 0,
+      "delta_n_low": -1,
+      "delta_n_mid": 1,
+      "n_state_transfers": 1,
+      "parameters": {
+        "dispersion_estimator": "cross_sectional_population_stddev",
+        "dispersion_state_rule": "trailing_window_outer_deciles",
+        "dispersion_window_days": 365,
+        "forward_horizon_days": 60,
+        "momentum_lookback_days": 30,
+        "universe_arm": "expanding_point_in_time"
+      },
+      "classification": "MARGINAL_POINT_ESTIMATE_CHANGE",
+      "config_id": "H004V130",
+      "universe_arm": "expanding_point_in_time"
+    }
+  ],
+  "summary_crosscheck": {
+    "summary_flip_ids": [
+      "H004V130"
+    ],
+    "summary_holm_status_change": true,
+    "ledger_flip_ids": [
+      "H004V130"
+    ],
+    "agrees": true
+  },
+  "verdict": "1 Holm-status flip cell(s) between F1GRID-002 arms A and B; classifications: H004V130=MARGINAL_POINT_ESTIMATE_CHANGE; the coverage repair changes Holm status for 1 cell(s) without a material point-estimate move (all |delta_net| < economic threshold and same sign).",
+  "exploratory_only": true,
+  "promotion_allowed": false,
+  "conclusion": "EXPLORATORY_ONLY: descriptive coverage-sensitivity diagnostic on already-inspected F1GRID-002 development data; no p-value promotion, no multiple-testing family claim, no economic inference, no sealed holdout opened, no frozen artifact modified."
+}
