@@ -61,6 +61,13 @@ def main(argv):
     ids = manifest.setdefault("session_records", [])
     if key not in ids:
         ids.append(key)
+    # The index is documented as ordered oldest-first; keys embed fixed-width
+    # UTC timestamp stems, so a lexicographic sort is the chronological order
+    # for the shapes present. Appending alone breaks that order whenever a
+    # ``session_record_<ts>`` key is added after the older
+    # ``session_record_verify_<ts>`` entries (``record_`` < ``verify_``), so
+    # keep the index sorted rather than merely appended.
+    ids.sort()
     manifest["session_record_latest"] = key
     manifest["last_updated_utc"] = payload["timestamp_utc"]
     MANIFEST.write_text(
