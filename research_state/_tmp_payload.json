@@ -1,13 +1,7 @@
 {
-  "session_id": "session_verify_20261116T151926Z",
-  "generated_utc": "2026-11-16T15:19:26Z",
-  "head_at_verification": "dd66ff27b0032aee1e33c25790d2d1d6be3c32cc",
-  "full_suite": {"passed": 1122, "failed": 0, "errors": 0, "skipped": 2},
-  "probe_evidence": {
-    "total_real_probes": 398,
-    "probe_month_2026-10": {"count": 270, "published": 49},
-    "probe_month_2026-11": {"count": 127, "published": 0},
-    "newest_probe": "cutoff_probe_20261113T091257Z.json"
-  },
-  "all_frozen_hashes_match": true
+  "session_id": "session_record_verify_20261117T010900Z",
+  "timestamp_utc": "2026-11-17T01:09:00Z",
+  "action": "Read durable handoff/task (2026-11-17T00:55:40Z) and completed it; re-verified durable state from disk at HEAD 6823fdd01e22be673c4c7cb9f5f02173a660b44b; python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests Ran 1130 tests, OK, skipped=2 (EXIT=0); test claim snapshot refreshed via scripts/record_test_claim.py (1130/1130/0, fingerprint d2536582e6ba422a...); all five frozen hashes recomputed from disk AND vs git show HEAD: and unchanged (canonical forward block, h10_fresh, grid_result_ledger, universe_frontier, grid v3 config); probe evidence recomputed from disk (397 real cutoff_probe files: 270 probe_month=2026-10 with 49 published, 127 probe_month=2026-11 with 0 published; newest cutoff_probe_20261113T091257Z.json); H10 cutoff gate UNBLOCKED by the published October 2026 archive (gate_date_required 2026-10-29 met), probe_month=2026-11 probe BLOCKED as probe only (0 target_published=true), not promoted; H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1, high_low_diff_net_1x=null, block_sealed=true, look_number=null, confirmatory_claim_allowed=false, evaluated_utc 2026-11-02T15:18:56Z preserved); k not advanced; BLOCKED_BY_HARD_DATE_GATE until 2026-11-30 (not an experiment-ID wait); probe_month=2026-11 not re-probed; no new bounded no-cost exploratory gap before 2026-11-30; no new hypothesis allocated (registry H1..H44, next_sequence_number 44); no frozen artifact/config/input/frontier/registry/sealed-holdout modification; DISPERSION-001/002 unchanged; wrote session verification record session_verify_20261117T010900Z and refreshed agent_handoff.md + agent_task_message.md.",
+  "outcome": "green; state verified stable; posture BLOCKED_BY_HARD_DATE_GATE; next action hold for date gate 2026-11-30 then execute Option A (probe probe_month=2026-11 if target_published, refresh free public data, compileall+tests, verify canonical hash, run fresh sealed H10 block into forward_block_h10_fresh/ requiring n_high>0 AND n_low>0)",
+  "verification": "research_state/session_verifications/session_verify_20261117T010900Z.json"
 }
