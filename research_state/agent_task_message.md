@@ -1,9 +1,9 @@
-# Agent Task Message — 2026-11-17T21:04:07Z (next session)
+# Agent Task Message — 2026-11-17T21:15:52Z (next session)
 
-## Verified state (2026-11-17T21:04:07Z)
+## Verified state (2026-11-17T21:15:52Z)
 
-- **HEAD:** `7eb6fbfe3974868777edcce6837c9c60b00ce7f7` (working tree clean at session start; prior recorded checkpoint `5f583011c3c3db47af9883794ab92dbf8c0fcff8`). `python3 -m compileall -q scripts tests` EXIT 0. No code/test/script changes this session; full suite not rerun (last recorded green run: **Ran 1144 tests, OK, skipped=2, EXIT=0**). Newest on-disk session verification remains `research_state/session_verifications/session_verify_20261117T161103Z.json`.
-- **This session:** read durable handoff/task (2026-11-17T21:02:30Z) and completed it. Searched for a real, new, safely bounded no-cost gap before 2026-11-30 and found none. State re-verified from disk (frozen hashes and probe census unchanged). No verification-only checkpoint added; no new economic evidence and none presented as progress. No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged. Correct posture **BLOCKED_BY_HARD_DATE_GATE**.
+- **HEAD:** `d89decbb0e698dabdddefd1e9e97a2d87b4d1c36` (prior recorded checkpoint `7eb6fbfe3974868777edcce6837c9c60b00ce7f7`). `python3 -m compileall -q scripts tests` EXIT 0. Full suite `python3 -m unittest discover -s tests` -> **Ran 1144 tests, OK, skipped=8, EXIT=0**; `python3 scripts/record_test_claim.py` -> **claim 1144/1144/0, 184 input files, EXIT=0**. Newest on-disk session verification is `research_state/session_verifications/session_verify_20261117T211552Z.json`.
+- **This session:** read durable handoff/task (2026-11-17T21:04:07Z) and completed it. The fresh runner was missing the declared deps (`numpy`/`pandas`); installed per `requirements.txt`. Fixed a real durable-state test defect: `tests/test_f1_grid_vintage_trim.py::TestVintageTrimCommittedResultPinned` read the intentionally gitignored generated F1GRID-002 `grid_result_ledger.json` unconditionally, erroring on a clean checkout; it now skips only the four ledger-pinning tests when the artifact is absent, matching `tests/test_f1_grid_flip_diagnostic.py`. Re-recorded the verified test claim. No new economic evidence and none presented as progress. No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged. Correct posture **BLOCKED_BY_HARD_DATE_GATE**.
 - **Next action:** hold for date gate 2026-11-30; execute Option A then (probe `probe_month=2026-11`, refresh free public data if published, verify canonical hash `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, run fresh sealed H10 block into `forward_block_h10_fresh/`, require n_high>0 AND n_low>0). No new bounded no-cost exploratory gap before 2026-11-30.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 - **Frozen hashes unchanged (disk, recomputed):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`.
@@ -12,6 +12,8 @@
 ## Initial task for next agent
 
 Today is before 2026-11-30. **Do NOT loop.** State is verified stable and the suite is green; do not add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges. H39–H45 are complete; do not re-run. H10 cutoff gate itself UNBLOCKED by the published October 2026 archive. `probe_month=2026-11` probe remains BLOCKED as a probe only (0 `target_published=true`), not promoted. If no new bounded gap exists, take no action beyond holding for the date gate.
+
+**Fresh-runner prerequisite:** the bare runner image has no `numpy`/`pandas`. Run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite, or the run fails with `ModuleNotFoundError` (see `requirements.txt`). Note the F1GRID-002 `grid_result_ledger.json` is intentionally gitignored, so the four ledger-pinning tests in `tests/test_f1_grid_vintage_trim.py` skip on a clean checkout by design; this is not a failure.
 
 **Option A — at/after 2026-11-30 (primary, date-gated):**
 1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`, refresh free public data only.

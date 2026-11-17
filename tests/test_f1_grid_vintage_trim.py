@@ -126,12 +126,25 @@ class TestVintageTrimCommittedResultPinned(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.ledger = json.loads(
-            (ROOT / "artifacts" / NEW_EXP / "grid_result_ledger.json").read_text(
-                encoding="utf-8"))
         cls.summary = json.loads(
             (ROOT / "artifacts" / NEW_EXP / "grid_summary.json").read_text(
                 encoding="utf-8"))
+        # grid_result_ledger.json is an intentionally gitignored, oversized
+        # generated artifact (.gitignore), so it is absent from a clean
+        # checkout. Load it when present and let the ledger-pinning tests skip
+        # otherwise, matching CommittedLedgerIntegrationTests in
+        # tests/test_f1_grid_flip_diagnostic.py. The summary and frozen-hash
+        # guards in this class still run without it.
+        ledger_path = ROOT / "artifacts" / NEW_EXP / "grid_result_ledger.json"
+        cls.ledger = (
+            json.loads(ledger_path.read_text(encoding="utf-8"))
+            if ledger_path.is_file() else None)
+
+    def _require_ledger(self):
+        if self.ledger is None:
+            self.skipTest(
+                "F1GRID-002 grid_result_ledger.json not present on disk "
+                "(gitignored generated artifact)")
 
     def _strip(self, d):
         d = json.loads(json.dumps(d))
@@ -146,6 +159,7 @@ class TestVintageTrimCommittedResultPinned(unittest.TestCase):
         self.assertEqual(self._strip(committed), self._strip(self.summary))
 
     def test_ledger_is_idempotent_and_armA_checkpoint_matches_committed_blob(self):
+        self._require_ledger()
         # grid_result_ledger.json was never committed to git (only grid_summary.json
         # and the arm A checkpoint were), so the ledger pin is a content-equality
         # check against the on-disk artifact: a re-run must reproduce it exactly
@@ -170,12 +184,14 @@ class TestVintageTrimCommittedResultPinned(unittest.TestCase):
         self.assertEqual(len(stripped["arms"]), 2)
 
     def test_fidelity_anchor_passed_on_all_216_cells(self):
+        self._require_ledger()
         self.assertTrue(self.ledger["fidelity_anchor"]["passed"])
         self.assertEqual(self.ledger["fidelity_anchor"]["compared_cells"], 216)
         self.assertEqual(self.ledger["fidelity_anchor"]["drift_count"], 0)
         self.assertEqual(self.ledger["expected_cells"], 216)
 
     def test_terminal_status_partition(self):
+        self._require_ledger()
         for arm in self.ledger["arms"].values():
             self.assertEqual(arm["cells_evaluated"], 216)
             self.assertEqual(arm["cells_ok"], 216)
@@ -184,6 +200,7 @@ class TestVintageTrimCommittedResultPinned(unittest.TestCase):
         self.assertEqual(self.summary["n_cells_ok_both_arms"], 216)
 
     def test_holm_rejection_counts(self):
+        self._require_ledger()
         a = self.ledger["arms"]["A_ledger_vintage_committed"]
         b = self.ledger["arms"]["B_ledger_vintage_f1_repaired"]
         self.assertEqual(a["holm_rejected_count"], 0)
