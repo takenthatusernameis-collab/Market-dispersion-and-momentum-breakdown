@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-11-17T02:15:18Z",
+  "session_id": "session_verify_20261117T021518Z",
+  "head": "2cce13b15cbb1df71d517b30c51466fc2289a424",
+  "compileall": {"command": "python3 -m compileall -q scripts tests", "exit_code": 0},
+  "full_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "ran": 1133,
+    "ok": 1133,
+    "skipped": 2,
+    "exit_code": 0
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176"
+  },
+  "date_gate": "2026-11-17 < 2026-11-30 BLOCKED_BY_HARD_DATE_GATE",
+  "next_sequence_number": 44,
+  "notes": "Prior task (read durable handoff/task 2026-11-17T01:59:24Z context) completed. Found and repaired a real durable-state defect: research_state/agent_task_message.md quoted the cutoff-probe census as 'all probe_month=2026-11 / 0 published, newest cutoff_probe_20261108T232421Z.json', while research_state/cutoff_probe/ held 397 real records = 270 probe_month=2026-10 (49 published) + 127 probe_month=2026-11 (0 published), newest cutoff_probe_20261113T091257Z.json; the handoff body already quoted the correct census, so the durable state contradicted itself. Repaired both the 'Probe evidence (disk)' line and the 'Recompute probe counts from disk' rule line to the disk census. Added tests/test_task_message_probe_evidence.py (3 read-only stdlib tests) that independently recompute the census from research_state/cutoff_probe/ and pin the quoted total, per-month count/published counts and newest filename; verified the guard rejects the original defective line (non-vacuous). Re-verified state from disk at HEAD 2cce13b15cbb1df71d517b30c51466fc2289a424: python3 -m compileall -q scripts tests EXIT 0; full suite Ran 1133 tests, OK, skipped=2 (EXIT=0) after re-running scripts/record_test_claim.py (claim=1133/1133/0, snapshot fingerprint ce68169ba115be46..., files=182). Frozen hashes recomputed from disk and unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., grid_result_ledger 0184f2d3..., universe_frontier 9ba08f3f..., grid_v3_config 1ff4c1f2...). Probe evidence recomputed from disk (canonical schema, cutoff_probe_*.json only): 397 real files -- 270 probe_month=2026-10 (49 published) / 127 probe_month=2026-11 (0 published); newest_probe cutoff_probe_20261113T091257Z.json. H10 cutoff gate UNBLOCKED by the published October 2026 archive (gate_date_required 2026-10-29 met); probe_month=2026-11 probe BLOCKED as probe only (0 target_published=true), not promoted into the H10 gate decision. H10 fresh block IMMATURE (n_formations=1, n_high=0, n_low=0, n_mid=1); k not advanced. No bounded no-cost H10 task unblocked before 2026-11-30 (BLOCKED_BY_HARD_DATE_GATE, not an experiment-ID wait). probe_month=2026-11 not re-probed. No new hypothesis allocated (registry stays H1..H44, next_sequence_number 44). No frozen artifact/config/input/frontier/registry/sealed-holdout modification; DISPERSION-001/002 unchanged. Correct posture BLOCKED_BY_HARD_DATE_GATE. Next action: hold for date gate 2026-11-30; execute Option A then."
+}
