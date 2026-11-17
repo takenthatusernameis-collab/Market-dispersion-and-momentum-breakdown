@@ -1,0 +1,14 @@
+{
+  "session_id": "session_verify_20261117T044226Z",
+  "timestamp_utc": "2026-11-17T04:42:26Z",
+  "action": "reverified_state_updated_durable_state",
+  "outcome": "all_tests_pass_1133_ok_2_skipped_frozen_hashes_unchanged_date_gate_holds_no_new_bounded_gap",
+  "verification": {
+    "compileall_exit": 0,
+    "full_suite": {"ran": 1133, "ok": 1133, "skipped": 2, "exit_code": 0},
+    "probe_evidence": {"total_real_probes": 397, "probe_month_2026-10": {"count": 270, "published": 49}, "probe_month_2026-11": {"count": 127, "published": 0}, "newest_probe": "cutoff_probe_20261113T091257Z.json"},
+    "frozen_hashes_verified": true,
+    "date_gate": "2026-11-17 < 2026-11-30 BLOCKED_BY_HARD_DATE_GATE",
+    "next_sequence_number": 44
+  }
+}
