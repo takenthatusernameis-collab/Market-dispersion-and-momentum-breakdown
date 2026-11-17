@@ -1,0 +1,14 @@
+{
+  "session_id": "session_verify_20261117T011743Z",
+  "timestamp_utc": "2026-11-17T01:17:43Z",
+  "action": "repaired_stale_handoff_verification_pointer_and_reverified_state",
+  "outcome": "handoff_quotes_newest_verification_compileall_exit_0_suite_1130_ok_2_skipped_date_gate_holds",
+  "verification": {
+    "compileall_exit": 0,
+    "full_suite": {"ran": 1130, "ok": 1130, "skipped": 2, "exit_code": 0},
+    "newest_session_verification": "session_verify_20261117T011743Z.json",
+    "head": "b889745433ae6471fa5698cb96951900a5ac0954",
+    "date_gate": "2026-11-17 < 2026-11-30 BLOCKED_BY_HARD_DATE_GATE",
+    "next_sequence_number": 44
+  }
+}
