@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-17T04:42:26Z",
+  "last_updated_utc": "2026-11-17T05:19:19Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1171,7 +1171,8 @@
     "session_record_verify_20261117T011743Z",
     "session_record_verify_20261117T021518Z",
     "session_record_verify_20261117T040802Z",
-    "session_record_verify_20261117T044226Z"
+    "session_record_verify_20261117T044226Z",
+    "session_record_verify_20261117T051919Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1253,7 +1254,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_verify_20261117T044226Z",
+  "session_record_latest": "session_record_verify_20261117T051919Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -2755,5 +2756,22 @@
     "action": "read durable handoff/task (2026-11-17T04:33:33Z context) and completed it; re-verified stable repository state from disk at HEAD 0dcfc1d1",
     "outcome": "compileall EXIT 0; full suite 1133 tests OK, skipped=2 (EXIT=0); frozen hashes unchanged; probe evidence unchanged (397 real probes, newest cutoff_probe_20261113T091257Z.json); posture BLOCKED_BY_HARD_DATE_GATE; no new bounded no-cost gap before 2026-11-30",
     "verification": "research_state/session_verifications/session_verify_20261117T044226Z.json"
+  },
+  "session_record_verify_20261117T051919Z": {
+    "session_id": "session_record_verify_20261117T051919Z",
+    "timestamp_utc": "2026-11-17T05:19:19Z",
+    "head": "a6d5d49b64ee3f7af538846a09baf0a658340d2f",
+    "outcome": "COMPLETED_STATE_REVERIFICATION",
+    "verification": "research_state/session_verifications/session_verify_20261117T051919Z.json",
+    "action": "read durable handoff/task and re-verified stable date-gated state; refreshed handoff and task message",
+    "posture": "BLOCKED_BY_HARD_DATE_GATE",
+    "compileall_exit": 0,
+    "tests": {
+      "ran": 1133,
+      "ok": true,
+      "skipped": 2,
+      "rerun_this_session": false,
+      "last_verified_session": "session_verify_20261117T044226Z"
+    }
   }
 }
