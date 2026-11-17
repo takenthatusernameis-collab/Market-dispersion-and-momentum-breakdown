@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-17T08:26:31Z",
+  "last_updated_utc": "2026-11-17T08:57:38Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1112,6 +1112,7 @@
     "session_record_20261114T153352Z",
     "session_record_20261115T072606Z",
     "session_record_20261115T2249Z",
+    "session_record_20261117T082631Z",
     "session_record_verify_20261114T165020Z",
     "session_record_verify_20261114T170510Z",
     "session_record_verify_20261114T173707Z",
@@ -1177,7 +1178,7 @@
     "session_record_verify_20261117T053938Z",
     "session_record_verify_20261117T063915Z",
     "session_record_verify_20261117T073857Z",
-    "session_record_20261117T082631Z"
+    "session_record_verify_20261117T085738Z"
   ],
   "manifest_session_record_list_repair_20261114T151756Z": {
     "action": "repaired_dangling_session_record_index_entries",
@@ -1259,7 +1260,7 @@
     "session_id": "session_20261113T170214Z",
     "timestamp_utc": "2026-11-13T17:02:14Z"
   },
-  "session_record_latest": "session_record_20261117T082631Z",
+  "session_record_latest": "session_record_verify_20261117T085738Z",
   "session_record_20261114T0435Z": {
     "session_id": "session_20261114T0435Z",
     "timestamp_utc": "2026-11-14T04:35:00Z",
@@ -2853,5 +2854,12 @@
     "action": "re-verify durable state from disk and refresh handoff/task/verification",
     "outcome": "compileall EXIT 0; full suite Ran 1144 tests, OK, skipped=2, EXIT=0; frozen hashes recomputed and unchanged (canonical 7234fc4e..., h10_fresh 324ab1e6..., grid_result_ledger 0184f2d3..., universe_frontier 9ba08f3f..., grid v3 config 1ff4c1f2...); probe census recomputed 397 real (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published), newest cutoff_probe_20261113T091257Z.json; registry next_sequence_number 45 (H1..H45). Date gate 2026-11-17 < 2026-11-30 holds so confirmatory Option A (H10 fresh sealed block) remains blocked; re-probing November is prohibited. No new real bounded no-cost gap emerged before 2026-11-30; H42-H45 complete. This session is a durable-state refresh (no new economic evidence) and must not be presented as research progress.",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
+  },
+  "session_record_verify_20261117T085738Z": {
+    "session_id": "session_verify_20261117T085738Z",
+    "timestamp_utc": "2026-11-17T08:57:38Z",
+    "action": "read_durable_handoff_and_complete",
+    "outcome": "state_reverified_blocked_by_date_gate",
+    "verification": "research_state/session_verifications/session_verify_20261117T085738Z.json"
   }
 }
