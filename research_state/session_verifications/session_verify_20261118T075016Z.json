@@ -1,0 +1,65 @@
+{
+  "commands": [
+    {
+      "cmd": "python3 -m compileall -q scripts tests",
+      "exit": 0
+    },
+    {
+      "cmd": "sha256sum canonical/h10_fresh/grid_config/frontier",
+      "exit": 0
+    },
+    {
+      "cmd": "recompute probe census from disk",
+      "exit": 0
+    }
+  ],
+  "compileall_exit": 0,
+  "date_gate": "2026-11-30",
+  "frontier": {
+    "expanding_universe_target_met": true,
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "rank_frontier_exhausted": false
+  },
+  "h10_fresh": {
+    "block_sealed": true,
+    "confirmatory_claim_allowed": false,
+    "data_cutoff_utc": "2026-10-31T00:00:00Z",
+    "evaluated_utc": "2026-11-02T15:18:56Z",
+    "forward_block_start": "2026-09-30",
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1
+  },
+  "hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+  },
+  "head": "34f4b346617c30bd0e64d9e16a8096e2c12bb929",
+  "last_verified_full_suite": {
+    "exit": 0,
+    "note": "No code or frozen-artifact changes since last green full suite.",
+    "record": "research_state/session_verifications/session_verify_20261118T070853Z.json",
+    "result": "OK",
+    "skipped": 8,
+    "tests": 1163
+  },
+  "notes": "Read prior durable handoff/task and completed hold: today 2026-11-18 before 2026-11-30; no new bounded no-cost gap identified (H46 already classifies ALPHA funding tail 2025-10..2026-10 as known trailing 404s; re-probing same endpoints not a distinct attempt). No code/frozen-artifact changes.",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "probe_census": {
+    "by_month": {
+      "2026-10": 270,
+      "2026-11": 127
+    },
+    "newest_by_filename": "cutoff_probe_20261113T091257Z.json",
+    "published": {
+      "2026-10": 49
+    },
+    "total_real": 397
+  },
+  "registry_next_sequence_number": 46,
+  "session_utc": "2026-11-18T07:50:16Z"
+}
