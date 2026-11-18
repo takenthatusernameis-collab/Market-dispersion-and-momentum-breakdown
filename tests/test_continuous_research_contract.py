@@ -189,7 +189,14 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # 18 pre-listing HTTP 404 files dropped without backfill (166 trimmed of
         # 184 planned, 0 absent inside trimmed window); no fetch, no outcomes,
         # confirmatory H10 gate unchanged.
-        self.assertEqual(registry["next_sequence_number"], 50)
+        # H51 was added for the extension-panel normalization plan
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-PLAN-001,
+        # EXPLORATORY_ONLY, source_coverage_normalization_plan): 9 extension
+        # assets, 810 panel files (644 wave-A + 166 wave-B), per-asset admissible
+        # months from H47/H50 served windows, point-in-time formation alignment,
+        # no backfill, strict DISP-003 schema, per-file sha256 provenance; no
+        # panel bytes, no outcomes, confirmatory H10 gate unchanged.
+        self.assertEqual(registry["next_sequence_number"], 51)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
