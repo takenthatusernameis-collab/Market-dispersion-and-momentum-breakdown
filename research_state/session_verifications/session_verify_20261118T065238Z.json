@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "compileall_scripts_tests": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "probe_census": {
+      "by_month": {
+        "2026-10": 270,
+        "2026-11": 127
+      },
+      "by_month_published": {
+        "2026-10:False": 221,
+        "2026-10:True": 49,
+        "2026-11:False": 127
+      },
+      "count": 397,
+      "newest_by_name": "cutoff_probe_20261113T091257Z.json"
+    }
+  },
+  "head": "e38805e4faab1602dc2de58498191b54d48d0a49",
+  "notes": "Read-only re-verification; no code or frozen-artifact changes. Last full suite green 1163/OK/skipped=8 per session_verify_20261118T061700Z (HEAD 96bcf6cd1e88c79b8939315928c4c6f18f165ba9). Posture BLOCKED_BY_HARD_DATE_GATE.",
+  "session_utc": "2026-11-18T06:52:38Z"
+}
