@@ -1,12 +1,12 @@
-# Agent Task Message — 2026-11-18T16:02:17Z (next session)
+# Agent Task Message — 2026-11-18T16:10:27Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-18T16:02:17Z`) and this message. Then **hold**: do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint unless a genuinely new, safely bounded no-cost gap emerges.
+Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-18T16:10:27Z`) and this message. Then **hold**: do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint unless a genuinely new, safely bounded no-cost gap emerges.
 
-## Verified state (2026-11-18T16:02:17Z, this session)
+## Verified state (2026-11-18T16:10:27Z, this session)
 
-- **HEAD at read:** `73ab30b32db09c184db72be6b964ac6bfd66a4a6` (clean working tree; `git status --short` empty). `python3 -m compileall -q scripts tests` EXIT 0.
+- **HEAD at read:** `bdc74d75c66d74fdd182482fc9465a59301f11a1` (clean working tree; `git status --short` empty). `python3 -m compileall -q scripts tests` EXIT 0.
 - **Last verified full suite:** **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, 95.015s); last green verification `research_state/session_verifications/session_verify_20261118T080055Z.json` (HEAD `2d6d1934cec45f200584dc98fb569e6193313de1`, no code/frozen-artifact changes since). This session: compileall EXIT 0; durable-state guard tests `tests/test_handoff_session_entries.py` and `tests/test_task_message_probe_evidence.py` 10/10 OK; no new verification record. Newest verification record on disk: `research_state/session_verifications/session_verify_20261118T104617Z.json`.
 - **Canonical/h10_fresh/grid/frontier (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` matches disk; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) matches disk; grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176` (`configs/dispersion_momentum_grid_v3.json`) matches disk; frontier sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`) matches disk.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`. 398 probe files total incl. 1 distinct `daily_fundingRate_probe_*.json` probe type not part of the 397 cutoff-probe census.
