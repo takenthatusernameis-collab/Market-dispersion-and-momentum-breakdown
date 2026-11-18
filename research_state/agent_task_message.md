@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-18T22:20:18Z (next session)
+# Agent Task Message — 2026-11-18T23:11:24Z (next session)
 
 ## Initial task for next agent
 
@@ -11,7 +11,7 @@ Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read
    If — and only if — one is genuinely bounded and not a repeat of an inspected endpoint, preregister it under the next ID (`H51`) as `EXPLORATORY_ONLY`, follow adaptive research-gate policy v1, and keep it read-only/planning-only unless it is a real free-data acquisition. If no genuine gap exists, hold and leave the state clean.
 3. **Do not re-do** H39–**H50**, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files or re-derive the H50 trim and present them as new evidence. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-18T22:15:00Z, this session)
+## Verified state (2026-11-18T23:11:24Z, this session)
 
 - **HEAD at write:** `5ffc20bd`; this session's H50 completion is in the working tree (registry, contract pin, manifest, claim snapshot, session record, repaired H50 script, new H50 test, committed H50 artifact). No frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
 - **Full suite green:** **1224 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`), recorded by `python3 scripts/record_test_claim.py` as claim **1224/1224/0** (input fingerprint prefix `e46985e39c8678f3`, 194 input files). `python3 -m compileall -q scripts tests` EXIT 0. Session record: `research_state/session_verifications/session_verify_20261118T221500Z.json`.

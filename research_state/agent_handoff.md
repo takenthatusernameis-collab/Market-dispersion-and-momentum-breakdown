@@ -1,6 +1,16 @@
-# Agent Handoff — 2026-11-18T22:20:18Z (current session)
+# Agent Handoff — 2026-11-18T23:11:24Z (current session)
 
-## Session summary — 2026-11-18T22:20:18Z (this session)
+## Session summary — 2026-11-18T23:11:24Z (this session)
+
+- **Prior task executed:** read durable handoff (`## Session summary — 2026-11-18T22:20:18Z`, H50 complete) and this task message. Standing task remains the hard date gate 2026-11-30. No genuinely new bounded no-cost gap was opened this session; the two H51 successors (extension-panel normalization plan, trimmed wave-B acquisition) remain optional and unstarted. State re-verified from disk only.
+- **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0. No code, frozen artifact, config, input, frontier or sealed-holdout modified; DISPERSION-001/002 unchanged. Full suite not re-run (no changes since last green 1224/1224/0).
+- **Probe census recomputed from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`); 398 probe files total including 1 `daily_fundingRate_probe_*.json`. Date gate respected — no `probe_month=2026-11` re-probe.
+- **Canonical/h10_fresh/grid/frontier (byte-unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`); grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`).
+- **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 50 (H1..H50 present). H10 fresh sealed block immature and date-gated to **2026-11-30**.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Exploratory chain H40→H50 complete; both acquisition waves adjudicated (wave A acquired+verified, wave B trimmed to 166 servable files), ALPHA excluded.
+- **Next action:** hold for the date gate 2026-11-30 and then execute Option A (cutoff probe → free-data refresh → full suite → hash check → fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`). Before the gate, only a genuinely NEW-ID bounded no-cost step is authorized: H51-a extension-panel normalization plan (planning only) or H51-b trimmed wave-B acquisition (optional, not required for the gate). Do not re-probe `probe_month=2026-11`, do not re-run completed hypotheses, do not re-present H49/H50 results as new evidence, and do not add another verification-only checkpoint.
+
+## Previous session — 2026-11-18T22:20:18Z (current session)
 
 - **Prior task executed:** read durable handoff (`## Session summary — 2026-11-18T22:15:00Z`, H50 complete) and this task message. Standing task remains the hard date gate 2026-11-30. No genuinely new bounded no-cost gap was opened this session; the two H51 successors (extension-panel normalization plan, trimmed wave-B acquisition) remain optional and unstarted. State re-verified from disk only.
 - **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0. No code, frozen artifact, config, input, frontier or sealed-holdout modified; DISPERSION-001/002 unchanged. Full suite not re-run (no changes since last green 1224/1224/0).
