@@ -1,0 +1,47 @@
+{
+  "verified_utc": "2026-11-18T00:59:05Z",
+  "head": "e73b96abb22378eaa4808f4c35a985739c2557c3",
+  "compileall_exit": 0,
+  "test_suite": {
+    "ran": 1144,
+    "ok": 1144,
+    "failed": 0,
+    "skipped": 8,
+    "exit_code": 0
+  },
+  "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "probe_census": {
+    "total": 397,
+    "by_month": {
+      "2026-10": {"total": 270, "published": 49},
+      "2026-11": {"total": 127, "published": 0}
+    },
+    "newest": "cutoff_probe_20261113T091257Z.json"
+  },
+  "grid": {
+    "expected_cells": 216,
+    "evaluated_utc": "2026-10-24T10:46:30Z"
+  },
+  "h10_fresh_block": {
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false,
+    "evaluated_utc": "2026-11-02T15:18:56Z",
+    "date_gate": "2026-11-30"
+  },
+  "frontier": {
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "catalog_exhausted": true,
+    "candidates_walked": 6347,
+    "candidates_verified": 220,
+    "candidates_discoverable": 0
+  },
+  "registry": {
+    "next_sequence_number": 45
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "note": "Verification hold; prior task complete, no durable-state defect found, probe-evidence labels remain correct. Diff vs prior verified HEAD 0da6a20c is research_state session records only; no durable state changed."
+}
