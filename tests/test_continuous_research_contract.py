@@ -155,7 +155,13 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # single cell (H004V130) whose Holm status differs between the F1GRID-002
         # arms, so the committed diagnostic artifact references an allocated
         # registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 45)
+        # H46 was added for the panel-acquisition coverage reconciliation
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-RECON-001,
+        # EXPLORATORY_ONLY, source_coverage_reconciliation) classifying the 31
+        # H41-planned archive files absent from the H43 probe as benign
+        # pre-listing vs genuine trailing gaps, so the committed reconciliation
+        # artifact references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 46)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

@@ -1,0 +1,689 @@
+{
+  "absent_summary": {
+    "AFTER_LAST_SERVED": 13,
+    "BEFORE_FIRST_SERVED": 18
+  },
+  "audit_id": "H004V106_PANELACQ_RECON_001",
+  "audited_artifacts": {
+    "h40_feasibility_context": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001/integrity_audit/H004V106_panel_coverage_extension_feasibility_20261116T215857Z.json",
+    "h41_plan": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PLAN-001/integrity_audit/H004V106_panel_acquisition_plan_20261116T085222Z.json",
+    "h43_probe": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PROBE-001/integrity_audit/H004V106_panel_archive_probe_20261116T142247Z.json"
+  },
+  "computed_utc": "2026-11-18T03:51:15Z",
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-RECON-001",
+  "exploratory_only": true,
+  "hypothesis": "H46",
+  "join_check": {
+    "n_plan_entries": 920,
+    "n_plan_keys": 920,
+    "n_plan_only": 0,
+    "n_probe_entries": 920,
+    "n_probe_keys": 920,
+    "n_probe_only": 0,
+    "ok": true
+  },
+  "method": "Read-only reconciliation of H41 plan (920 entries) and H43 probe (920 per_entry). Join on (symbol, kind, month); classify each 404 against its (asset, kind) served window as BEFORE_FIRST_SERVED / AFTER_LAST_SERVED / INTERIOR / ENTIRELY_ABSENT. H40 feasibility context annotates per-asset only. No network, no downloads, no panels, no outcomes.",
+  "n_absent_total": 31,
+  "non_claims": [
+    "No network access, no HEAD probe, no content downloaded.",
+    "No panel constructed; no returns/spreads/states/p-values/costs/inference computed.",
+    "Does not re-probe the date-gated 2026-11 cutoff month.",
+    "Does not overturn or confirm H40's PANEL_EXTENSION_FEASIBLE_IN_PRINCIPLE verdict; only locates which absent files are benign (pre-listing) vs which a future acquisition must resolve.",
+    "Cannot validate, replace, or unlock H1/H6/H7/H10 or any confirmatory track.",
+    "Never fabricates a missing file; absent files stay absent."
+  ],
+  "per_asset": {
+    "alice": {
+      "absent_class_counts": {},
+      "asset": "alice",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "alpha": {
+      "absent_class_counts": {
+        "AFTER_LAST_SERVED": 13
+      },
+      "asset": "alpha",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2025-09",
+          "n_absent": 13,
+          "n_served": 33
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 13,
+      "n_served": 79,
+      "n_total": 92
+    },
+    "ankr": {
+      "absent_class_counts": {},
+      "asset": "ankr",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "ape": {
+      "absent_class_counts": {},
+      "asset": "ape",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "api3": {
+      "absent_class_counts": {},
+      "asset": "api3",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "apt": {
+      "absent_class_counts": {},
+      "asset": "apt",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "ar": {
+      "absent_class_counts": {},
+      "asset": "ar",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "ark": {
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 16
+      },
+      "asset": "ark",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-09",
+          "last_served": "2026-10",
+          "n_absent": 8,
+          "n_served": 38
+        },
+        "klines": {
+          "first_served": "2023-09",
+          "last_served": "2026-10",
+          "n_absent": 8,
+          "n_served": 38
+        }
+      },
+      "n_absent": 16,
+      "n_served": 76,
+      "n_total": 92
+    },
+    "arpa": {
+      "absent_class_counts": {},
+      "asset": "arpa",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        },
+        "klines": {
+          "first_served": "2023-01",
+          "last_served": "2026-10",
+          "n_absent": 0,
+          "n_served": 46
+        }
+      },
+      "n_absent": 0,
+      "n_served": 92,
+      "n_total": 92
+    },
+    "astr": {
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 2
+      },
+      "asset": "astr",
+      "h40_cap_first_in_window": "2023-01-01",
+      "h40_cap_last_in_window": "2026-10-23",
+      "h40_expected_zip_files_upper_bound": 92,
+      "h40_required_study_months": 46,
+      "kinds": {
+        "funding": {
+          "first_served": "2023-02",
+          "last_served": "2026-10",
+          "n_absent": 1,
+          "n_served": 45
+        },
+        "klines": {
+          "first_served": "2023-02",
+          "last_served": "2026-10",
+          "n_absent": 1,
+          "n_served": 45
+        }
+      },
+      "n_absent": 2,
+      "n_served": 90,
+      "n_total": 92
+    }
+  },
+  "per_group": {
+    "alice:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "alice",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "alice:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "alice",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "alpha:funding": {
+      "absent": [
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2025-10"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2025-11"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2025-12"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-01"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-02"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-03"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-04"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-05"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-06"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-07"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-08"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-09"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "month": "2026-10"
+        }
+      ],
+      "absent_class_counts": {
+        "AFTER_LAST_SERVED": 13
+      },
+      "asset": "alpha",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2025-09",
+      "n_absent": 13,
+      "n_served": 33,
+      "n_total": 46
+    },
+    "alpha:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "alpha",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ankr:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ankr",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ankr:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ankr",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ape:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ape",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ape:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ape",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "api3:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "api3",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "api3:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "api3",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "apt:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "apt",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "apt:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "apt",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ar:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ar",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ar:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ar",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "ark:funding": {
+      "absent": [
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-01"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-02"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-03"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-04"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-05"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-06"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-07"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-08"
+        }
+      ],
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 8
+      },
+      "asset": "ark",
+      "first_served": "2023-09",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 8,
+      "n_served": 38,
+      "n_total": 46
+    },
+    "ark:klines": {
+      "absent": [
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-01"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-02"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-03"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-04"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-05"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-06"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-07"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-08"
+        }
+      ],
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 8
+      },
+      "asset": "ark",
+      "first_served": "2023-09",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 8,
+      "n_served": 38,
+      "n_total": 46
+    },
+    "arpa:funding": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "arpa",
+      "first_served": "2023-01",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "arpa:klines": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "arpa",
+      "first_served": "2023-01",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 0,
+      "n_served": 46,
+      "n_total": 46
+    },
+    "astr:funding": {
+      "absent": [
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-01"
+        }
+      ],
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 1
+      },
+      "asset": "astr",
+      "first_served": "2023-02",
+      "kind": "funding",
+      "last_served": "2026-10",
+      "n_absent": 1,
+      "n_served": 45,
+      "n_total": 46
+    },
+    "astr:klines": {
+      "absent": [
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "month": "2023-01"
+        }
+      ],
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 1
+      },
+      "asset": "astr",
+      "first_served": "2023-02",
+      "kind": "klines",
+      "last_served": "2026-10",
+      "n_absent": 1,
+      "n_served": 45,
+      "n_total": 46
+    }
+  },
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-RECON-001/preregistrations/PANELACQ_RECON_001_v1.md",
+  "promotion_allowed": false,
+  "verdict": "RECONCILIATION_HAS_COVERAGE_GAPS",
+  "verdict_rule": "JOIN_MISMATCH if plan/probe key sets differ; else RECONCILIATION_HAS_COVERAGE_GAPS if any absent file is AFTER_LAST_SERVED / INTERIOR / ENTIRELY_ABSENT; else RECONCILIATION_FULLY_BENIGN (all 404s are BEFORE_FIRST_SERVED)."
+}
