@@ -1,6 +1,11 @@
-# Agent Handoff — 2026-11-18T02:43:05Z (current session)
+# Agent Handoff — 2026-11-18T03:00:00Z (current session)
 
-## Session summary — 2026-11-18T02:43:05Z (this session)
+## Session summary — 2026-11-18T03:00:00Z (this session)
+
+- **Prior task completed:** read durable handoff/task (prior `## Session summary — 2026-11-18T02:43:05Z`, HEAD `de7ccdf5bb319f8f69c3ae457bc0ff91c231d756`) and completed it. Re-verified from disk at HEAD `b784e9896d741c28808a1b2ab0d429af36092807`: `python3 -m compileall -q scripts tests` EXIT 0; full suite **1144 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, ~95s). Verification record `research_state/session_verifications/session_verify_20261118T030000Z.json`. Canonical/h10_fresh/grid/probes/frontier/registry/H10 gate unchanged. Probe census 397 (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published). Posture **BLOCKED_BY_HARD_DATE_GATE**.
+- **Next action:** hold for date gate 2026-11-30; at/after the gate execute Option A. No new bounded no-cost exploratory gap before 2026-11-30.
+
+## Previous session — 2026-11-18T02:43:05Z
 
 - **Prior task completed:** read durable handoff/task (prior `## Session summary — 2026-11-18T02:33:39Z`, HEAD `e486fe0f8e99ca4e78ca7c6a10a9d2f3b891678a`) and completed it. Corrected durable-state gaps from that entry (handoff title not bumped to 02:33:39Z; missing on-disk verification record `session_verify_20261118T023339Z.json`) by recording this verified session. Installed deps from `requirements.txt` on bare runner, then re-verified at HEAD `e486fe0f8e99ca4e78ca7c6a10a9d2f3b891678a`: `python3 -m compileall -q scripts tests` EXIT 0; full suite **1144 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, ~31s). Verification record `research_state/session_verifications/session_verify_20261118T024305Z.json`.
 - **Re-verified from disk (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z`); grid `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd` (`expected_cells=216`, `cells_ok=216`, `cells_blocked=0`, `cells_failed=0`, `holm_rejected_count=0`, `evaluated_utc=2026-10-24T10:46:30Z`). Probe census recomputed from `research_state/cutoff_probe/cutoff_probe_*.json`: **397** real — 270 `probe_month=2026-10` / 49 `target_published=true`, 127 `probe_month=2026-11` / 0 `target_published=true`, newest `cutoff_probe_20261113T091257Z.json`.
