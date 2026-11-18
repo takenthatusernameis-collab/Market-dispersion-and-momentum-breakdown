@@ -1,10 +1,10 @@
-# Agent Task Message — 2026-11-18T00:11:00Z (next session)
+# Agent Task Message — 2026-11-18T00:55:00Z (next session)
 
-## Verified state (2026-11-18T00:11:00Z)
+## Verified state (2026-11-18T00:55:00Z)
 
 - **HEAD at verification:** `0da6a20c81e38e03e4335e8589d71aeeef772883`. Working tree clean. `python3 -m compileall -q scripts tests` EXIT 0.
-- **This session (real repair, not a verification-only hold):** read durable handoff/task (prior 2026-11-18T00:03:16Z) and completed it. Found a REAL durable-state defect the prior sessions missed: a prior task-message rewrite changed the probe-evidence labels to `Probe evidence (disk, recomputed)` and lowercase `recompute probe counts from disk`, which no longer matched the canonical substrings the guards in `tests/test_task_message_probe_evidence.py` require. The full suite was therefore RED (1144 tests, 3 failures) even though the handoff still quoted the stale d89decbb green run. Restored the canonical lines (the census numbers themselves were already correct). Full suite now 1144 tests, OK, skipped=8, EXIT=0.
-- **Re-verified from disk:** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged; h10_fresh `324ab1e6...` unchanged; universe_frontier `9ba08f3f...` unchanged; grid_v3_config `1ff4c1f2...` unchanged; grid `expected_cells=216`, `evaluated_utc=2026-10-24T10:46:30Z`.
+- **This session (verification hold):** read durable handoff/task (prior 2026-11-18T00:11:00Z) and completed it. No new defect found; the probe-evidence labels repaired in the prior session remain correct. Full suite 1144 tests, OK, skipped=8, EXIT=0.
+- **Re-verified from disk:** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged; h10_fresh `324ab1e6...` unchanged; universe_frontier `9ba08f3f...` unchanged; grid `expected_cells=216`, `evaluated_utc=2026-10-24T10:46:30Z`.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 - **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted (6347 walked, 220 verified, 0 discoverable); registry `next_sequence_number` 45 (H1..H45 complete). H10 fresh sealed block immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) and date-gated to 2026-11-30.
 - **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** No new economic evidence; none presented as progress. Posture **BLOCKED_BY_HARD_DATE_GATE**.
