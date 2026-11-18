@@ -421,7 +421,7 @@ def build_audit(out_path=None):
         "expected_scope": {
             "wave_b_assets": list(EXPECTED_WAVE_B_ASSETS),
             "kinds": list(KINDS),
-            "n_study_months": len(study),
+            "n_study_months": decision["n_study_months"],
             "wave_b_planned_files": EXPECTED_WAVE_B_FILES,
             "wave_b_absent_files_in_queue": 18,
             "wave_b_trimmed_planned_files": EXPECTED_TRIMMED_FILES,

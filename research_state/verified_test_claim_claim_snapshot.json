@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-18T21:19:12Z",
+  "recorded_utc": "2026-11-18T22:17:40Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1211,
-  "tests_ok": 1211,
+  "tests_run": 1224,
+  "tests_ok": 1224,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1211/1211/0",
-  "input_fingerprint": "441214b90af7fcf86fa2ef462aa8c047d1196af4d869e174601f7be942f6a758",
+  "claim": "1224/1224/0",
+  "input_fingerprint": "e46985e39c8678f368314e91e52f634b78c498632b226c4ec6173fa1a8700c5a",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -227,6 +227,10 @@
       "sha256": "5cb5ce8ab1589aea02aaaaf5cc65233a926404064639deec53f767e83a0cf969"
     },
     {
+      "path": "scripts/panel_wave_b_window_trim.py",
+      "sha256": "dd90d5fbbba4408f23e3bae39d2da3190337b5331d376da5ff70c4518c242784"
+    },
+    {
       "path": "scripts/phase_b_placebos.py",
       "sha256": "1aadd07ff1a3175e68c61d5aec4e4118e1cc672342e262aa9dbdf2c87d02823a"
     },
@@ -372,7 +376,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "eeaed0fc276a3becdb7f7814860fe316943328bb005064f781f58f6b7d818a10"
+      "sha256": "b7f847a7ac68cc2c5efa8ca55219282e1cfcc08e5c6375d5a65bb58df9addd35"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -671,6 +675,10 @@
       "sha256": "2e9f46535965e667fbd4d3d6b02a98693c2cadcc68d5e0a0e8549bbef7049b82"
     },
     {
+      "path": "tests/test_panel_wave_b_window_trim.py",
+      "sha256": "afb0980a4de33277e6a2822f87dc13bde531b6e90e7993046348e62a39a79fda"
+    },
+    {
       "path": "tests/test_phase_b_placebos_seams.py",
       "sha256": "f99a1dbbdf79e4265c31879e01c6202479b02f1241ca8da410efc0db108fb2fe"
     },
@@ -779,5 +787,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 192
+  "input_file_count": 194
 }

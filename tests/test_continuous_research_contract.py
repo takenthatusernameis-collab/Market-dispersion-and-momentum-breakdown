@@ -182,7 +182,14 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # 7 fully served extension assets fetched with per-file sha256 and
         # zipfile/csv content-integrity evidence; wave B (ARK/ASTR) and ALPHA
         # never fetched; no panel, no outcomes, confirmatory H10 gate unchanged.
-        self.assertEqual(registry["next_sequence_number"], 49)
+        # H50 was added for the wave-B (ARK/ASTR) window-trim decision
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-WAVEB-TRIM-001,
+        # EXPLORATORY_ONLY, source_coverage_window_trim): ARK 2023-09..2026-10
+        # (76 files) and ASTR 2023-02..2026-10 (90 files) declared admissible,
+        # 18 pre-listing HTTP 404 files dropped without backfill (166 trimmed of
+        # 184 planned, 0 absent inside trimmed window); no fetch, no outcomes,
+        # confirmatory H10 gate unchanged.
+        self.assertEqual(registry["next_sequence_number"], 50)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
