@@ -1,12 +1,12 @@
-# Agent Task Message — 2026-11-18T02:01:43Z (next session)
+# Agent Task Message — 2026-11-18T02:07:15Z (next session)
 
-## Verified state (2026-11-18T02:01:43Z)
+## Verified state (2026-11-18T02:07:15Z)
 
-- **HEAD at verification:** `9d87e8928c994d1e339f3d4e1271645c2b6318c9` (clean). This session's handoff/task/session-verification updates are pending commit. `python3 -m compileall -q scripts tests` EXIT 0.
-- **This session (completed prior task, verification hold):** read durable handoff/task (prior 2026-11-18T01:54:54Z) and completed it. No durable-state defect found. Full suite **1144 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, record `research_state/session_verifications/session_verify_20261118T020143Z.json`).
-- **Re-verified from disk (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z`). Grid `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_summary.json`: `expected_cells=216, cells_ok=216, cells_blocked=0, cells_failed=0, holm_rejected_count=0, evaluated_utc=2026-10-24T10:46:30Z`.
-- **Probe evidence (disk):** recomputed from `research_state/cutoff_probe/cutoff_probe_*.json` — **397** real files with `probe_month` (270 `probe_month=2026-10` / 49 `target_published=true`, 127 `probe_month=2026-11` / 0 `target_published=true`), newest `cutoff_probe_20261113T091257Z.json`.
-- **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted, `expanding_universe_target_met=true`; registry `next_sequence_number` 45 (H1..H45 complete). H10 fresh sealed block immature and date-gated to **2026-11-30**.
+- **HEAD at verification:** `d8df0b3897654955d8ac5a194ed91602bac23595` (clean at verification). This session's durable-state repair (probe-evidence label format in task message), handoff/task/session-verification updates are pending commit. `python3 -m compileall -q scripts tests` EXIT 0.
+- **This session (completed prior task, repair + verification hold):** read durable handoff/task (prior 2026-11-18T02:01:43Z) and completed it. Initial full-suite run found 3 failures in `tests/test_task_message_probe_evidence.py` due to non-canonical probe-evidence label formatting in the committed task message; repaired to canonical format. Full suite now **1144 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, record `research_state/session_verifications/session_verify_20261118T020715Z.json`).
+- **Re-verified from disk (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z`). Grid `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_summary.json`: sha256 `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd`, `expected_cells=216, cells_ok=216, cells_blocked=0, cells_failed=0, holm_rejected_count=0, evaluated_utc=2026-10-24T10:46:30Z`.
+- **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
+- **Frontier/registry:** `research_state/universe_frontier.json` — `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted, `expanding_universe_target_met=true`. `research_state/hypothesis_registry.json` — `next_sequence_number` 45 (H1..H45 complete). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** No new economic evidence; none presented as progress. Posture **BLOCKED_BY_HARD_DATE_GATE**.
 
 ## Initial task for next agent
@@ -24,7 +24,7 @@ Today is before **2026-11-30**. The suite is genuinely green (1144/OK/skipped=8)
 
 **Option B — only if a genuinely new bounded no-cost exploratory task with a NEW hypothesis/ID/artifact and real demonstrable gap becomes safely bounded before 2026-11-30:** preregister first, keep `EXPLORATORY_ONLY`/planning-only, and follow adaptive research-gate policy v1. If no such gap exists, take no action beyond holding for the date gate.
 
-**Recompute probe counts from disk; do not hard-code.** Every quoted probe census must equal disk: **397** real `research_state/cutoff_probe/cutoff_probe_*.json` with `probe_month` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
+**Recompute probe counts from disk; do not hard-code.** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 
 ## Durable-state rules
 
