@@ -1,0 +1,25 @@
+{
+  "session": "2026-11-18T06:09:06Z",
+  "head_at_verification": "f1e3d961fc935176cc8d8fe7992e1d3a930a3b86",
+  "prior_head": "144ba70d0427a226d54fb9735706f6d4bf28b79f",
+  "working_tree_clean": true,
+  "diff_vs_prior_head_limited_to": [
+    "research_state/agent_handoff.md",
+    "research_state/agent_task_message.md"
+  ],
+  "commands": {
+    "compileall": "python3 -m compileall -q scripts tests -> EXIT 0",
+    "full_suite": "python3 -m unittest discover -s tests -> Ran 1163 tests in 94.545s, OK (skipped=8), EXIT 0",
+    "canonical_hash": "sha256sum artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json == 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f (block_sealed=true, n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z)",
+    "frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e (historical_rank_coverage_state=NOT_PROVEN_COMPLETE, last_updated_utc=2026-11-06T12:27:02Z, expanding_universe_target_met=true) unchanged",
+    "probe_census": "397 real cutoff_probe_*.json: 270 probe_month=2026-10 (49 target_published=true), 127 probe_month=2026-11 (0 target_published=true). Newest by filename: cutoff_probe_20261113T091257Z.json",
+    "registry": "next_sequence_number 46, H1..H46 complete"
+  },
+  "verified_test_claim": "1163/1163/0",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "frozen_artifacts_unchanged": true,
+  "code_changes": false,
+  "no_new_bounded_no_cost_gap": true,
+  "date_gate": "2026-11-30"
+}
