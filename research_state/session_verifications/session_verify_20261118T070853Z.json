@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "compileall_scripts_tests": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "probe_census": {
+      "by_month": {
+        "2026-10": 270,
+        "2026-11": 127
+      },
+      "by_month_published": {
+        "2026-10:False": 221,
+        "2026-10:True": 49,
+        "2026-11:False": 127
+      },
+      "count": 397,
+      "newest_by_name": "cutoff_probe_20261113T091257Z.json"
+    },
+    "reference_audits": {
+      "audit_integrity_audit_references": "pass=True scanned=32 critical=0 errors=0 info=21",
+      "audit_prereg_and_h10_fresh_references": "pass=True scanned=28 prereg=20 critical=0 errors=0 info=0",
+      "audit_preregistration_coverage": "pass=True audits=32 missing_prereq=0 uncovered_prereq=0"
+    },
+    "unittest_discover": {
+      "command": "python3 -m unittest discover -s tests",
+      "exit_code": 0,
+      "ran": 1163,
+      "result": "OK",
+      "skipped": 8,
+      "seconds": 94.625
+    }
+  },
+  "head": "8b4f90675841fadaab3ba668103c23d35e775d0b",
+  "notes": "Read-only re-verification of the date-gated hold state. Working tree clean apart from the two audit consistency artifacts produced by this run. No code or frozen-artifact changes; canonical/h10_fresh/grid/frontier hashes match prior session record session_verify_20261118T065238Z.json. Today 2026-11-18 is before the 2026-11-30 date gate; H1..H46 complete; no new bounded no-cost gap; probe_month=2026-11 not re-probed. Posture BLOCKED_BY_HARD_DATE_GATE.",
+  "session_utc": "2026-11-18T07:08:53Z"
+}
