@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "compileall_scripts_tests": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "probe_census": {
+      "by_month": {
+        "2026-10": 270,
+        "2026-11": 127
+      },
+      "by_month_published": {
+        "2026-10:False": 221,
+        "2026-10:True": 49,
+        "2026-11:False": 127
+      },
+      "count": 397,
+      "newest_by_name": "cutoff_probe_20261113T091257Z.json"
+    },
+    "unittest_discover": {
+      "command": "python3 -m unittest discover -s tests",
+      "exit_code": 0,
+      "note": "Not re-run this session (no code or frozen-artifact changes since HEAD 2d6d1934; durable-state-only checkpoint to a232d507).",
+      "ran": 1163,
+      "result": "OK",
+      "skipped": 8,
+      "source_record": "research_state/session_verifications/session_verify_20261118T080055Z.json"
+    }
+  },
+  "head": "a232d507dba75bd7ee3f202b6c241ddcac5753ce",
+  "notes": "Read prior durable handoff/task at HEAD a232d507 (clean; git status --short empty, git diff --stat HEAD empty). Re-verified invariants from disk: canonical forward block, h10_fresh, grid config, and frontier sha256s match recorded values; h10_fresh block_sealed=true n_formations=1 n_high=0 n_low=0 n_mid=1 confirmatory_claim_allowed=false evaluated_utc=2026-11-02T15:18:56Z; frontier historical_rank_coverage_state=NOT_PROVEN_COMPLETE last_updated_utc=2026-11-06T12:27:02Z expanding_universe_target_met=true rank_frontier_exhausted=false; registry next_sequence_number 46 (H1..H46 complete). Probe census recomputed from disk: 397 real cutoff_probe_*.json (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published), newest cutoff_probe_20261113T091257Z.json. compileall EXIT 0. Full suite not re-run (no code/frozen changes since last green session_verify_20261118T080055Z at 2d6d1934). Today 2026-11-18 precedes 2026-11-30 hard date gate; no new bounded no-cost gap identified (H46 already classifies absent ALPHA funding tail as known trailing 404s; re-probing same endpoints not a distinct attempt). Posture BLOCKED_BY_HARD_DATE_GATE.",
+  "session_utc": "2026-11-18T08:09:32Z"
+}
