@@ -1,0 +1,88 @@
+{
+  "action": "read_prior_handoff_completed_prior_task_executed_bounded_free_data_acquisition_H49_waveA_644_files_updated_durable_state",
+  "outcome": "WAVEA_ACQUISITION_COMPLETE_644_of_644_files_content_verified_1211_of_1211_tests_green_h10_gate_unchanged",
+  "session_id": "session_verify_20261118T211830Z",
+  "timestamp_utc": "2026-11-18T21:18:30Z",
+  "verification": {
+    "checks": {
+      "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "compileall_scripts_tests": {
+        "command": "python3 -m compileall -q scripts tests",
+        "exit_code": 0
+      },
+      "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "frontier_state": {
+        "expanding_universe_target_met": true,
+        "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+        "last_updated_utc": "2026-11-06T12:27:02Z",
+        "rank_frontier_exhausted": false
+      },
+      "frozen_artifacts_modified": false,
+      "full_test_suite": {
+        "command": "python3 -m unittest discover -s tests",
+        "exit_code": 0,
+        "ran": 1211,
+        "result": "OK",
+        "skipped": 8
+      },
+      "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "h10_fresh_state": {
+        "block_sealed": true,
+        "confirmatory_claim_allowed": false,
+        "evaluated_utc": "2026-11-02T15:18:56Z",
+        "n_formations": 1,
+        "n_high": 0,
+        "n_low": 0,
+        "n_mid": 1
+      },
+      "h49_artifact_sha256": "37605fc803451c910014085d3903fcd1978df2afa4576f692e6b00b1b027cbf1",
+      "h49_records_canonical_sha256": "f94072df03e2b15c950c244e6938d75048bc8f90fd616b20022848048ceb758d",
+      "h49_result": {
+        "all_frozen_hashes_match": true,
+        "attempts_gt_1": 0,
+        "files_acquired_per_asset": 92,
+        "n_content_ok": 644,
+        "n_expected": 644,
+        "n_extra": 0,
+        "n_missing": 0,
+        "n_study_months": 46,
+        "no_wave_b_or_alpha_files": true,
+        "total_bytes_content_ok": 884311,
+        "wave_a_assets": [
+          "alice",
+          "ankr",
+          "ape",
+          "api3",
+          "apt",
+          "ar",
+          "arpa"
+        ]
+      },
+      "h49_verdict": "WAVEA_ACQUISITION_COMPLETE",
+      "network_scope": "only https://data.binance.vision/data/futures/um/monthly/{klines,fundingRate}/<symbol>/ archives listed verbatim in the pinned H41 plan; strict allowlist; no credentials, no other endpoints",
+      "probe_census": {
+        "newest_probe": "cutoff_probe_20261113T091257Z.json",
+        "note": "recomputed from disk this session; no probe_month=2026-11 re-probe performed (date gate respected)",
+        "other_probe_files": 1,
+        "probe_month_2026_10": {
+          "count": 270,
+          "published": 49
+        },
+        "probe_month_2026_11": {
+          "count": 127,
+          "published": 0
+        },
+        "total_real_cutoff_probes": 397
+      },
+      "record_test_claim_command": "python3 scripts/record_test_claim.py",
+      "sealed_holdout_opened": false,
+      "verified_test_claim": "1211/1211/0",
+      "verified_test_claim_fingerprint_prefix": "441214b90af7fcf8"
+    },
+    "registry": {
+      "h49_added": true,
+      "next_sequence_number": 49
+    }
+  }
+}

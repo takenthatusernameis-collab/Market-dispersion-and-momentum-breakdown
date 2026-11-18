@@ -493,10 +493,22 @@
       "statement": "A bounded, read-only, stdlib-only planning adjudication that turns the H47 roster into a bounded acquisition queue. Pre-declared outcome-blind rule: for every H47-included asset a required study month is absent when either required kind (klines, funding) has no HTTP 200 record in the committed H43 probe; assets with no absent required month form WAVE_A_UNCONDITIONAL (acquirable with no window trim and no backfill), assets with at least one absent required month form WAVE_B_REQUIRES_WINDOW_TRIM (admissible only after a separately preregistered window-trim decision). Expected result: wave A = ALICE, ANKR, APE, API3, APT, AR, ARPA (644 planned files, all served); wave B = ARK, ASTR (184 planned files, 18 absent); excluded ALPHA (92 planned files); 644+184+92 = 920 reconciled. 405 of 414 possible roster asset-months are verified servable across the 46 required study months. Verdict ACQUISITION_QUEUE_READY.",
       "status": "EXPLORATORY_ONLY",
       "title": "Panel-coverage acquisition queue (H47 roster -> bounded wave A / wave B queue and per-study-month utility)"
+    },
+    {
+      "id": "H49",
+      "label": "source_coverage_acquisition",
+      "status": "EXPLORATORY_ONLY",
+      "title": "Wave-A panel archive acquisition (H48 wave-A queue -> 644 verified monthly archive files with content-integrity evidence)",
+      "statement": "A bounded, keyless, free-public acquisition of exactly the H48 wave-A queue: the H41-planned monthly klines and funding archives for the 7 fully served extension assets (ALICE, ANKR, APE, API3, APT, AR, ARPA) across the 46 H40 study months = 7 x 2 x 46 = 644 files. Pre-declared outcome-blind rule: select a file only when its asset is wave A, its month is inside the study window, and the H43 probe recorded HTTP 200 for that exact (symbol, kind, month); fetch only URLs present verbatim in the pinned H41 plan; record HTTP status, bytes, sha256 and stdlib zipfile/csv content integrity (single csv member, documented header, non-empty, monotone timestamps). Verdict WAVEA_SCOPE_MISMATCH if the derived set differs from the pinned 7-asset/644-file scope or a pinned input digest fails; WAVEA_ACQUISITION_INCOMPLETE if any expected file lacks HTTP 200/sha256/content_ok; else WAVEA_ACQUISITION_COMPLETE. Wave B (ARK/ASTR, 184 files) and ALPHA (92 files) are never fetched; no month outside the study window and no 2026-11 re-probe.",
+      "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEA-001",
+      "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEA-001/preregistrations/PANELACQ_WAVEA_001_v1.md",
+      "audit_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEA-001/integrity_audit/panel_wave_a_acquisition_20261118T211130Z.json",
+      "evidence_note": "H004V106_PANELACQ_WAVEA_001, EXPLORATORY_ONLY/source_coverage_acquisition. Preregistered before any fetch (preregistrations/PANELACQ_WAVEA_001_v1.md, Created 2026-11-18T21:20:00Z). Script scripts/panel_wave_a_acquisition.py (pure select_wave_a_entries/verify_archive_bytes/reconcile/decide_verdict helpers, strict plan-URL allowlist; network and writes only under --execute, plan-only mode otherwise); test tests/test_panel_wave_a_acquisition.py (27 tests: hermetic selection/allowlist/content-integrity/reconciliation/verdict fixtures + committed-artifact integration + committed-input scope test). Result WAVEA_ACQUISITION_COMPLETE: 644/644 expected files fetched HTTP 200 on the first attempt, every one a valid zip with exactly one csv member, documented header, non-empty and monotone timestamps; 884,311 bytes content-verified; 92 files per wave-A asset (46 months x 2 kinds); klines rows 28-31 per month; 0 wave-B and 0 ALPHA files acquired; 0 missing, 0 extra; frozen hashes unchanged (canonical forward block 7234fc4e..., H10 fresh block 324ab1e6..., frontier 9ba08f3f..., grid v3 config 1ff4c1f2...). Raw bytes cached under gitignored data/panel_archive_wave_a/; only sha256/content-integrity evidence is committed. No panel constructed, no returns/spreads/states/p-values/costs/inference, no promotion, no sealed holdout opened, does not re-probe the date-gated 2026-11 cutoff month. Does not validate, replace or unlock H1/H6/H7/H10 or any confirmatory track.",
+      "next_test": "The acquired wave-A bytes are raw archives only; a future NEW-ID bounded step could normalize them into a DISP-003 extension panel with point-in-time formation alignment and no backfill before 2023-01 (the H47 verified window), while wave B (ARK/ASTR) still requires a separately preregistered window-trim decision and ALPHA remains excluded. The next authorized confirmatory action remains the H10 fresh sealed block maturity on/after 2026-11-30: cutoff probe for probe_month=2026-11, free-data refresh, full suite, hash check, then the fresh sealed H10 block requiring n_high > 0 AND n_low > 0."
     }
   ],
-  "last_updated_utc": "2026-11-18T20:22:00Z",
-  "next_sequence_number": 48,
+  "last_updated_utc": "2026-11-18T21:15:00Z",
+  "next_sequence_number": 49,
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "program_status": "ACTIVE",
   "registry_reconciliation_20261025T19Z": "Added H8 (DISP-003-STATEAUDIT-001) recording the executed state-representativeness audit result: the canonical H004V106 +0.617 estimate is CLUSTER_DOMINATED by the 2025-10 calendar-month cluster. H7 received an in-line evidence_note_addendum describing the same audit. H1 remains immutable and unchanged in substance; H2..H6 unchanged; no frozen experiment result was altered. The canonical forward block, grid ledger, summaries, DISPERSION-001/002 and the defective archive are byte-unchanged. New artifact: integrity_audit/H004V106_state_representativeness_audit_20261025.json; new script: scripts/state_representativeness_audit.py; new test: tests/test_state_representativeness_audit.py.",
@@ -540,5 +552,10 @@
     "at_utc": "2026-11-18T20:22:00Z"
   },
   "schema_version": "1.0",
-  "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block."
+  "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block.",
+  "registry_reconciliation_20261118T2115Z": {
+    "action": "H49 allocated for the wave-A panel archive acquisition (DISP-003-PANELACQ-WAVEA-001, EXPLORATORY_ONLY, source_coverage_acquisition)",
+    "evidence": "644/644 wave-A files acquired with content-integrity evidence; wave B and ALPHA untouched; confirmatory H10 gate unchanged",
+    "timestamp_utc": "2026-11-18T21:15:00Z"
+  }
 }

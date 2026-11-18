@@ -35,3 +35,9 @@ env/
 # tests/test_bytecode_hygiene.py rather than left to per-session discipline.
 artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json
 artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cell_checkpoint_armB_f1_repaired_ledger_vintage.json
+
+# Raw free-public archive bytes fetched by the H49 wave-A acquisition
+# (DISP-003-PANELACQ-WAVEA-001). The repository tracks source plus the committed
+# sha256/content-integrity audit, never the binary zips; the cache is
+# re-acquirable from data.binance.vision and would otherwise bloat checkpoints.
+data/panel_archive_wave_a/

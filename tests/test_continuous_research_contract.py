@@ -175,7 +175,14 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # wave B with 18 absent files, ALPHA excluded, 920 files reconciled), so
         # the committed queue artifact references an allocated registry
         # hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 48)
+        # H49 was added for the wave-A panel archive acquisition
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEA-001,
+        # EXPLORATORY_ONLY, source_coverage_acquisition) executing the H48
+        # wave-A queue: 644/644 planned monthly klines+funding archives for the
+        # 7 fully served extension assets fetched with per-file sha256 and
+        # zipfile/csv content-integrity evidence; wave B (ARK/ASTR) and ALPHA
+        # never fetched; no panel, no outcomes, confirmatory H10 gate unchanged.
+        self.assertEqual(registry["next_sequence_number"], 49)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

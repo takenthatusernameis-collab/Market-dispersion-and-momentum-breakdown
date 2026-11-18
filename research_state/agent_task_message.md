@@ -1,25 +1,27 @@
-# Agent Task Message — 2026-11-18T20:28:06Z (next session)
+# Agent Task Message — 2026-11-18T21:18:30Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-18T20:28:06Z`) and this message, then complete the standing task:
+Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-18T21:18:30Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
-2. **Deliver one genuinely new bounded no-cost artifact only if a real gap exists.** H40–H48 are consumed. If — and only if — you can name a genuinely new question that is not a repeat of an inspected endpoint, preregister it under a new ID (next `H49`) as `EXPLORATORY_ONLY`, follow adaptive research-gate policy v1, and keep it read-only/planning-only unless it is a real free-data acquisition. If no genuinely new bounded gap exists, do not manufacture one: hold and leave the state clean.
-3. **Do not re-do** H39/H40/H41/H42/H43/H44/H45/H46/H47/H48, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. A repeated verification-only session is a loop and is not progress.
+2. **Deliver one genuinely new bounded no-cost artifact only if a real gap exists.** H40–H49 are consumed. The two natural unexplored successors are:
+   - **(H50-a) wave-B window-trim decision:** an explicit, preregistered `EXPLORATORY_ONLY` decision for ARK and ASTR (H48: 184 planned files, 18 absent — ARK 2023-01..2023-08 both kinds, ASTR 2023-01 both kinds), stating exactly which study months are admissible without backfill and what the trimmed window loses. No fetches unless the trim is registered first.
+   - **(H50-b) wave-A normalization plan:** a NEW-ID plan (not outcomes) to normalize the H49-acquired raw archives (`data/panel_archive_wave_a/`, hashes recorded in the H49 artifact) into a DISP-003 extension panel with point-in-time formation alignment and no backfill before each asset's H47 verified window.
+   If — and only if — one of these is genuinely bounded and not a repeat of an inspected endpoint, preregister it under the next ID (`H50`) as `EXPLORATORY_ONLY`, follow adaptive research-gate policy v1, and keep it read-only/planning-only unless it is a real free-data acquisition. If no genuine gap exists, hold and leave the state clean.
+3. **Do not re-do** H39/H40/H41/H42/H43/H44/H45/H46/H47/H48/**H49**, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files and present them as new evidence. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-18T20:28:06Z, this session)
+## Verified state (2026-11-18T21:18:30Z, this session)
 
-- **HEAD at write:** `1fbc02ea`. No new code or frozen-artifact changes this session; state unchanged from the H48 session. No frozen artifact/config/input/frontier/sealed holdout modified; DISPERSION-001/002 unchanged.
-- **Full suite green (carried):** **1184 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`), recorded by `python3 scripts/record_test_claim.py` as claim **1184/1184/0** (input fingerprint prefix `76e111258d85e225`, 190 input files). `python3 -m compileall -q scripts tests` EXIT 0. Durable-state guards all OK. Session record: `research_state/session_verifications/session_verify_20261118T202529Z.json`.
-- **Newest durable evidence (H48):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-QUEUE-001/integrity_audit/panel_coverage_acquisition_queue_20261118T201951Z.json`, file sha256 `2999facf13146c60f91d51deab1fc86ace3bf55578e5f1cd5710fe9a72f811dc`, `queue_canonical_sha256` `38c099db5c233222cc51f39348f06e933871337b807d4761512d2800ec2375c7`, verdict `ACQUISITION_QUEUE_READY`:
-  - Wave A (no window trim, no backfill needed; every required file verified served): **ALICE, ANKR, APE, API3, APT, AR, ARPA** — 644 planned files, 0 absent.
-  - Wave B (needs a separately preregistered window-trim decision first): **ARK, ASTR** — 184 planned files, 18 absent (ARK 2023-01..2023-08 both kinds, ASTR 2023-01 both kinds).
-  - Excluded under the H47 no-backfill rule: **ALPHA** — 92 planned files. Reconciliation 644 + 184 + 92 = **920**.
-  - Monthly utility: 7 wave-A assets in every one of the 46 study months; 9 from 2023-09. **405 of 414** possible roster asset-months verified servable.
-  - `h47_roster_binding_ok=true` (pinned `171cd174...`) and `all_frozen_hashes_match=true`. EXPLORATORY_ONLY; no outcomes computed; no confirmatory claim.
+- **HEAD at write:** `15c7253a`; this session's H49 change is in the working tree (registry, contract pin, manifest, claim snapshot, `.gitignore`, new H49 prereg/script/test/artifact). No frozen artifact/config/input/frontier/sealed holdout modified; DISPERSION-001/002 unchanged.
+- **Full suite green:** **1211 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`), recorded by `python3 scripts/record_test_claim.py` as claim **1211/1211/0** (input fingerprint prefix `441214b90af7fcf8`, 192 input files). `python3 -m compileall -q scripts tests` EXIT 0. Session record: `research_state/session_verifications/session_verify_20261118T211830Z.json`.
+- **Newest durable evidence (H49):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEA-001/integrity_audit/panel_wave_a_acquisition_20261118T211130Z.json`, file sha256 `37605fc803451c910014085d3903fcd1978df2afa4576f692e6b00b1b027cbf1`, `records_canonical_sha256` `f94072df03e2b15c950c244e6938d75048bc8f90fd616b20022848048ceb758d`, verdict `WAVEA_ACQUISITION_COMPLETE`:
+  - **644/644** expected wave-A files fetched HTTP 200 first attempt; 92 files per asset (46 study months x 2 kinds) for ALICE, ANKR, APE, API3, APT, AR, ARPA.
+  - **884,311 bytes** content-verified; every file a valid zip with exactly one CSV member, documented header (`open_time` klines / `calc_time` funding), non-empty and monotone timestamps; klines rows 28–31 per month; 0 missing, 0 extra.
+  - 0 wave-B (ARK/ASTR) and 0 ALPHA files fetched; `all_frozen_hashes_match=true`; EXPLORATORY_ONLY; no panel, no outcomes, no confirmatory claim.
+  - Raw bytes are cached in gitignored `data/panel_archive_wave_a/` and are re-acquirable from `data.binance.vision`.
 - **Canonical/h10_fresh/grid/frontier (byte-unchanged, verified this session):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`).
-- **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 48 (H1..H48 present). H10 fresh sealed block immature and date-gated to **2026-11-30**.
+- **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 49 (H1..H49 present). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 
 ## Fresh-runner prerequisite
 
@@ -35,7 +37,7 @@ Bare runner may lack `numpy`/`pandas`. Run `python3 -m pip install --disable-pip
 
 ## Option B — only if a genuinely new bounded no-cost exploratory task with a NEW hypothesis/ID/artifact appears before 2026-11-30
 
-Preregister first, keep `EXPLORATORY_ONLY`, and follow adaptive research-gate policy v1. **Already consumed:** H40 (feasibility), H41 (plan), H42 (rank-breadth repro), H43 (probe), H46 (reconciliation), H47 (roster), H48 (acquisition queue). Re-probing the known ALPHA funding tail 2025-10..2026-10 is not a distinct attempt per policy v1 §2 unless it targets a different admissible source or route. The only natural unexplored successors of H48 are (a) a NEW-ID bounded free-data acquisition of **only** the H48 wave-A 644 files, and (b) a NEW-ID explicit window-trim decision for wave B (ARK/ASTR) — both optional, neither required for the confirmatory gate. Do not fabricate files and do not present a workflow pass as economic evidence.
+Preregister first, keep `EXPLORATORY_ONLY`, and follow adaptive research-gate policy v1. **Already consumed:** H40 (feasibility), H41 (plan), H42 (rank-breadth repro), H43 (probe), H46 (reconciliation), H47 (roster), H48 (acquisition queue), H49 (wave-A acquisition). Remaining successors: the wave-B window-trim decision for ARK/ASTR, and a wave-A normalization plan over the already-acquired, hash-verified archives. Re-probing the known ALPHA funding tail 2025-10..2026-10 is not a distinct attempt per policy v1 §2 unless it targets a different admissible source or route. Do not fabricate files and do not present a workflow pass as economic evidence.
 
 ## Durable-state rules
 
@@ -55,6 +57,3 @@ Free public data only; historical research only; preserve DISPERSION-001/002 and
 ## End-of-session requirement
 
 Leave clean state; update durable handoff and `research_state/agent_task_message.md` with verified evidence and a concrete next action. Never write "wait for a new experiment ID." Waiting for fixed calendar date **2026-11-30** is a date gate.
-
-(End of file)
-''', filePath='research_state/agent_task_message.md')
