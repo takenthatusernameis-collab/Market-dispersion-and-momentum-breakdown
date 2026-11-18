@@ -1,0 +1,54 @@
+{
+  "session_timestamp_utc": "2026-11-18T02:20:49Z",
+  "head_at_verification": "7a1a0bda88fc013c3f054f5aa54055e5fbec6895",
+  "compileall_exit": 0,
+  "test_suite": {
+    "total": 1144,
+    "ok": 1144,
+    "skipped": 8,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "h10_fresh_status": {
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false,
+    "evaluated_utc": "2026-11-02T15:18:56Z"
+  },
+  "grid_sha256": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+  "grid_status": {
+    "expected_cells": 216,
+    "cells_ok": 216,
+    "cells_blocked": 0,
+    "cells_failed": 0,
+    "holm_rejected_count": 0,
+    "evaluated_utc": "2026-10-24T10:46:30Z"
+  },
+  "probe_census": {
+    "total_real_probes": 397,
+    "probe_month_2026_10": 270,
+    "published_2026_10": 49,
+    "probe_month_2026_11": 127,
+    "published_2026_11": 0,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frontier": {
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "catalog_exhausted": true,
+    "expanding_universe_target_met": true
+  },
+  "registry": {
+    "next_sequence_number": 45
+  },
+  "h10_gate_date": "2026-11-30",
+  "today_utc": "2026-11-18",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "frozen_artifacts_unchanged": true,
+  "dispersion_001_002_unchanged": true
+}
