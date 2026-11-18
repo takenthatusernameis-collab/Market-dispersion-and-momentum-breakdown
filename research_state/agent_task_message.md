@@ -1,16 +1,16 @@
-# Agent Task Message — 2026-11-18T04:45:25Z (next session)
+# Agent Task Message — 2026-11-18T04:52:06Z (next session)
 
-## Verified state (2026-11-18T04:45:25Z)
+## Verified state (2026-11-18T04:52:06Z)
 
-- **HEAD at verification:** `2d5d783da2e5118755f923d97e571a2d2a113aa6`. `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` (already satisfied). Compileall EXIT 0; full suite **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, 94.461s). Verified test claim `1163/1163/0`; record `research_state/session_verifications/session_verify_20261118T044525Z.json`.
-- **Canonical/h10_fresh/grid/probes unchanged:** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z`); grid sha256 `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd` (`expected_cells=216, cells_ok=216, cells_blocked=0, cells_failed=0, holm_rejected_count=0, evaluated_utc=2026-10-24T10:46:30Z`); grid ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`.
+- **HEAD at verification:** `1f8f9bcd1d2544c0505a0804ca99c17cb139b4c7`. `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` (already satisfied). Compileall EXIT 0; full suite **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, ~95s). Verified test claim `1163/1163/0`; record `research_state/session_verifications/session_verify_20261118T045206Z.json`. This session repaired durable-state drift: the top handoff entry marker was `(current session)` instead of the guard-required `(this session)` (introduced at checkpoint `1f8f9bcd`), causing 2 failures in `tests/test_handoff_session_entries.py`; marker restored and suite re-verified green.
+- **Canonical/h10_fresh/grid/probes unchanged:** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z`); grid sha256 `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd` (`expected_cells=216, cells_ok=216, cells_blocked=0, cells_failed=0, holm_rejected_count=0, evaluated_utc=2026-10-24T10:46:30Z`); grid ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 - **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted, `expanding_universe_target_met=true` (byte-unchanged `9ba08f3f...`); registry `next_sequence_number` 46 (H1..H46 complete). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** No new economic evidence. Posture **BLOCKED_BY_HARD_DATE_GATE**.
 
 ## Initial task for next agent
 
-Today is before **2026-11-30**. Last full suite is green (1163/OK/skipped=8). **Do NOT add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges.** H1..H46 are complete; do not re-run. Do not re-probe `probe_month=2026-11` before 2026-11-30. If no new bounded gap exists, take no action beyond holding for the date gate.
+Today is before **2026-11-30**. Last full suite is green (1163/OK/skipped=8) after this session's handoff-marker repair. **Do NOT add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges.** H1..H46 are complete; do not re-run. Do not re-probe `probe_month=2026-11` before 2026-11-30. If no new bounded gap exists, take no action beyond holding for the date gate.
 
 **Fresh-runner prerequisite:** bare runner may lack `numpy`/`pandas`. Run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite. `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json` is intentionally gitignored; the four ledger-pinning tests in `tests/test_f1_grid_vintage_trim.py` skip on a clean checkout by design.
 
@@ -38,5 +38,3 @@ Free public data only; historical research only; preserve DISPERSION-001/002 and
 ## End-of-session requirement
 
 Leave clean state; update durable handoff and `research_state/agent_task_message.md` with verified evidence and a concrete next action. Never write "wait for a new experiment ID." Waiting for fixed calendar date **2026-11-30** is a date gate.
-
-(End of file)
