@@ -1,17 +1,17 @@
-# Agent Task Message — 2026-11-18T20:25:29Z (next session)
+# Agent Task Message — 2026-11-18T20:28:06Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-18T20:25:29Z`) and this message, then complete the standing task:
+Today is 2026-11-18, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-18T20:28:06Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
-2. **Deliver one genuinely new bounded no-cost artifact.** The last session executed **H48 PANELCOV-QUEUE-001** (the H47 roster → bounded acquisition queue plus per-study-month utility map), so H46/H47/H48 are consumed. If — and only if — you can name a genuinely new question that is not a repeat of an inspected endpoint, preregister it under a new ID (next `H49`) as `EXPLORATORY_ONLY`, follow adaptive research-gate policy v1, and keep it read-only/planning-only unless it is a real free-data acquisition. If no genuinely new bounded gap exists, do not manufacture one: hold and leave the state clean.
+2. **Deliver one genuinely new bounded no-cost artifact only if a real gap exists.** H40–H48 are consumed. If — and only if — you can name a genuinely new question that is not a repeat of an inspected endpoint, preregister it under a new ID (next `H49`) as `EXPLORATORY_ONLY`, follow adaptive research-gate policy v1, and keep it read-only/planning-only unless it is a real free-data acquisition. If no genuinely new bounded gap exists, do not manufacture one: hold and leave the state clean.
 3. **Do not re-do** H39/H40/H41/H42/H43/H44/H45/H46/H47/H48, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-18T20:25:29Z, this session)
+## Verified state (2026-11-18T20:28:06Z, this session)
 
-- **HEAD at write:** `1fbc02ea`. Changed paths from this session: `research_state/hypothesis_registry.json` (H48 appended, `next_sequence_number` 47 → 48), `research_state/run_manifest.json` (narrative re-corrected to 48), `research_state/verified_test_claim_claim_snapshot.json`, `tests/test_continuous_research_contract.py` (pin 47 → 48), plus the new H48 preregistration, script, test and artifact. No frozen artifact/config/input/frontier/sealed holdout modified; DISPERSION-001/002 unchanged.
-- **Full suite green:** **1184 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`), recorded by `python3 scripts/record_test_claim.py` as claim **1184/1184/0** (input fingerprint prefix `76e111258d85e225`, 190 input files). `python3 -m compileall -q scripts tests` EXIT 0. Durable-state guards all OK. Session record: `research_state/session_verifications/session_verify_20261118T202529Z.json`.
+- **HEAD at write:** `1fbc02ea`. No new code or frozen-artifact changes this session; state unchanged from the H48 session. No frozen artifact/config/input/frontier/sealed holdout modified; DISPERSION-001/002 unchanged.
+- **Full suite green (carried):** **1184 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`), recorded by `python3 scripts/record_test_claim.py` as claim **1184/1184/0** (input fingerprint prefix `76e111258d85e225`, 190 input files). `python3 -m compileall -q scripts tests` EXIT 0. Durable-state guards all OK. Session record: `research_state/session_verifications/session_verify_20261118T202529Z.json`.
 - **Newest durable evidence (H48):** `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-QUEUE-001/integrity_audit/panel_coverage_acquisition_queue_20261118T201951Z.json`, file sha256 `2999facf13146c60f91d51deab1fc86ace3bf55578e5f1cd5710fe9a72f811dc`, `queue_canonical_sha256` `38c099db5c233222cc51f39348f06e933871337b807d4761512d2800ec2375c7`, verdict `ACQUISITION_QUEUE_READY`:
   - Wave A (no window trim, no backfill needed; every required file verified served): **ALICE, ANKR, APE, API3, APT, AR, ARPA** — 644 planned files, 0 absent.
   - Wave B (needs a separately preregistered window-trim decision first): **ARK, ASTR** — 184 planned files, 18 absent (ARK 2023-01..2023-08 both kinds, ASTR 2023-01 both kinds).
@@ -57,3 +57,4 @@ Free public data only; historical research only; preserve DISPERSION-001/002 and
 Leave clean state; update durable handoff and `research_state/agent_task_message.md` with verified evidence and a concrete next action. Never write "wait for a new experiment ID." Waiting for fixed calendar date **2026-11-30** is a date gate.
 
 (End of file)
+''', filePath='research_state/agent_task_message.md')
