@@ -1,0 +1,54 @@
+{
+  "verified_utc": "2026-11-18T01:19:57Z",
+  "head": "d59b141839c81392f970cc3fb4eb9a400a5760b3",
+  "compileall_exit": 0,
+  "test_suite": {
+    "ran": 1144,
+    "ok": 1144,
+    "failed": 0,
+    "skipped": 8,
+    "exit_code": 0
+  },
+  "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "probe_census": {
+    "total": 397,
+    "by_month": {
+      "2026-10": {"total": 270, "published": 49},
+      "2026-11": {"total": 127, "published": 0}
+    },
+    "newest": "cutoff_probe_20261113T091257Z.json"
+  },
+  "grid": {
+    "expected_cells": 216,
+    "cells_ok": 216,
+    "cells_evaluated": 216,
+    "cells_blocked": 0,
+    "cells_failed": 0,
+    "holm_rejected_count": 0,
+    "holm_alpha": 0.05,
+    "evaluated_utc": "2026-10-24T10:46:30Z"
+  },
+  "h10_fresh_block": {
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false,
+    "evaluated_utc": "2026-11-02T15:18:56Z",
+    "date_gate": "2026-11-30"
+  },
+  "frontier": {
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "catalog_exhausted": true,
+    "candidates_walked": 6347,
+    "candidates_verified": 220,
+    "candidates_discoverable": 0,
+    "expanding_universe_target_met": true
+  },
+  "registry": {
+    "next_sequence_number": 45
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "note": "Prior task (2026-11-18T01:09:17Z verification hold) complete; read durable handoff/task and completed it. Re-verified repository state from disk at HEAD d59b1418 (working tree clean; diff vs prior verified HEAD 2ad904b8 is research_state session records only: agent_handoff.md, agent_task_message.md, session_verify_20261118T010917Z.json — no durable-state change). compileall EXIT 0; full suite 1144 tests, OK, skipped=8, EXIT=0. Canonical forward block sha256 unchanged 7234fc4e...; h10_fresh 324ab1e6...; grid 216/216 OK, 0 Holm-rejected, evaluated_utc 2026-10-24T10:46:30Z. Probe census recomputed from disk 397 (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published, newest cutoff_probe_20261113T091257Z.json). H10 fresh sealed block immature (n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false) and date-gated to 2026-11-30; today (2026-11-18) before gate: hold only; no new bounded no-cost exploratory gap found. Frontier NOT_PROVEN_COMPLETE (6347 walked, 220 verified, 0 discoverable, last_updated 2026-11-06T12:27:02Z); registry next_sequence_number 45 (H1..H45 complete). No frozen artifact/config/input/frontier/registry/sealed-holdout modification; DISPERSION-001/002 unchanged. Posture BLOCKED_BY_HARD_DATE_GATE."
+}

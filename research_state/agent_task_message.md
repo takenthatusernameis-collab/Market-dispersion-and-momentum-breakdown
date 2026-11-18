@@ -1,25 +1,25 @@
-# Agent Task Message — 2026-11-18T01:09:17Z (next session)
+# Agent Task Message — 2026-11-18T01:19:57Z (next session)
 
-## Verified state (2026-11-18T01:09:17Z)
+## Verified state (2026-11-18T01:19:57Z)
 
-- **HEAD at verification:** `2ad904b8c14b655837f2910c7d708ab9a372a5cb`. Working tree clean. Diff vs prior verified HEAD `5fe43264e3c95e61913d50698798e4481aee617f` is research_state session records only (`agent_handoff.md`, `agent_task_message.md`, `session_verify_20261118T010313Z.json`, `session_verify_20261118T010917Z.json`) — no durable state changed. `python3 -m compileall -q scripts tests` EXIT 0.
-- **This session (verification hold):** read durable handoff/task (prior 2026-11-18T01:03:13Z) and completed it. No new defect found; the probe-evidence labels repaired in the prior session remain correct. Full suite 1144 tests, OK, skipped=8, EXIT=0 (record `research_state/session_verifications/session_verify_20261118T010917Z.json`).
-- **Re-verified from disk:** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged; h10_fresh `324ab1e6...` unchanged; universe_frontier `9ba08f3f...` unchanged; grid `expected_cells=216`, `evaluated_utc=2026-10-24T10:46:30Z`.
+- **HEAD at verification:** `d59b141839c81392f970cc3fb4eb9a400a5760b3`. Working tree clean. Diff vs prior verified HEAD `2ad904b8c14b655837f2910c7d708ab9a372a5cb` is research_state session records only (`agent_handoff.md`, `agent_task_message.md`, `session_verify_20261118T010917Z.json`) — no durable state changed. `python3 -m compileall -q scripts tests` EXIT 0.
+- **This session (verification hold):** read durable handoff/task (prior 2026-11-18T01:09:17Z) and completed it. No new defect found; earlier probe-evidence label repairs remain correct. Full suite 1144 tests, OK, skipped=8, EXIT=0 (record `research_state/session_verifications/session_verify_20261118T011957Z.json`).
+- **Re-verified from disk:** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged; h10_fresh `324ab1e6...` unchanged; grid `expected_cells=216`, `cells_ok=216`, `cells_blocked=0`, `cells_failed=0`, `holm_rejected_count=0`, `evaluated_utc=2026-10-24T10:46:30Z`.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
-- **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted (6347 walked, 220 verified, 0 discoverable); registry `next_sequence_number` 45 (H1..H45 complete). H10 fresh sealed block immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) and date-gated to 2026-11-30.
+- **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted (6347 walked, 220 verified, 0 discoverable), `expanding_universe_target_met=true`; registry `next_sequence_number` 45 (H1..H45 complete). H10 fresh sealed block immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) and date-gated to 2026-11-30.
 - **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** No new economic evidence; none presented as progress. Posture **BLOCKED_BY_HARD_DATE_GATE**.
 
 ## Initial task for next agent
 
-Today is before 2026-11-30. The suite is now genuinely green (1144/1144/0) — do NOT add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges. H1..H45 are complete; do not re-run. The H10 cutoff gate is UNBLOCKED by the published October 2026 archive; the `probe_month=2026-11` probe is BLOCKED only as a probe (0 `target_published=true`), not promoted. Do not re-probe November before 2026-11-30 (frontier instruction). If no new bounded gap exists, take no action beyond holding for the date gate.
+Today is before 2026-11-30. The suite is genuinely green (1144/1144/0, skipped=8) and no durable-state defect remains. Do NOT add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges. H1..H45 are complete; do not re-run. The H10 cutoff gate is UNBLOCKED by the published October 2026 archive; the `probe_month=2026-11` probe is BLOCKED only as a probe (0 `target_published=true`), not promoted. Do not re-probe November before 2026-11-30 (frontier instruction: probe only when cutoff >= 2026-11-29). If no new bounded gap exists, take no action beyond holding for the date gate.
 
 **Fresh-runner prerequisite:** bare runner has no `numpy`/`pandas`. Run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite, or expect `ModuleNotFoundError`. `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json` is intentionally gitignored; the four ledger-pinning tests in `tests/test_f1_grid_vintage_trim.py` skip on a clean checkout by design (not a failure).
 
 **Option A — at/after 2026-11-30 (primary, date-gated):**
-1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`, refresh free public data only.
+1. `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`. If `target_published=true`, refresh free public data only (`python3 scripts/refresh_free_data.py --price-end 2026-11-30 --cap-end 2026-11-30`).
 2. `python3 -m compileall -q scripts tests && python3 -m unittest discover -s tests` to completion.
 3. Verify canonical hash `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` unchanged vs `git show HEAD:`.
-4. Run fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--forward-block-start 2026-09-30 --data-cutoff <new cutoff> --look-number 1`. Require `n_high > 0 AND n_low > 0` before any confirmatory claim.
+4. Run fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--forward-block-start 2026-09-30 --data-cutoff <new cutoff>`. Require `n_high > 0 AND n_low > 0` before any confirmatory claim.
 5. If tests/scripts change with a recordable claim, run `python3 scripts/record_test_claim.py`; update handoff, task message, and session verification record.
 
 **Option B — only if a genuinely new bounded no-cost exploratory task with a NEW hypothesis/ID/artifact and real demonstrable gap becomes safely bounded before 2026-11-30:** preregister first, keep `EXPLORATORY_ONLY`/planning-only. If no such gap exists, take no action beyond holding for the date gate.
