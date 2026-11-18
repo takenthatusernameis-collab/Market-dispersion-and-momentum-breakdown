@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-18T03:58:09Z",
+  "recorded_utc": "2026-11-18T19:17:16Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1163,
-  "tests_ok": 1163,
+  "tests_run": 1174,
+  "tests_ok": 1174,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1163/1163/0",
-  "input_fingerprint": "a229a693e14332b5e33495a1f4976d1dd4e5d4af01daff1192f661e6c1581423",
+  "claim": "1174/1174/0",
+  "input_fingerprint": "67f6c473f8856777ae73c61d415f4716f9a2a96c7b601f10d97f88ecbc7f628a",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -211,6 +211,10 @@
       "sha256": "47337e3c6c29289b322d40841c143f32a4e7ec56bd6474d1ff897c0faebdf4d2"
     },
     {
+      "path": "scripts/panel_coverage_eligibility_roster.py",
+      "sha256": "6be7a571e6f5f8290c4ca7f3a57f40f463e7d5973cfc08d73995c3babfbe9a48"
+    },
+    {
       "path": "scripts/panel_coverage_extension_feasibility.py",
       "sha256": "43cb73a9712245c0b63207785bdfdd3413497ec7a91b47c4f3133e54fa325416"
     },
@@ -360,7 +364,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "f6fd0e816dbd7d09fd85451455bd9f91e162f7daf1edc639013ef13fe6a4da1f"
+      "sha256": "c3d648dffccd879742490e5a9f7252b2c8bca7f63709502a869d34b6a30f3463"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -643,6 +647,10 @@
       "sha256": "742f0ee2cefaddfe3b696ef794a4023ef81d5a1b3519281d1d6643b9c1bdc38b"
     },
     {
+      "path": "tests/test_panel_coverage_eligibility_roster.py",
+      "sha256": "193642461e3d5e635cb223fce4755bb1c3529d74da39b24fbe693e797659d994"
+    },
+    {
       "path": "tests/test_panel_coverage_extension_feasibility.py",
       "sha256": "b47d80ce7c00640a46fab7e92c4b4f2163f04f02930b47a70e9a19d4efac0095"
     },
@@ -755,5 +763,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 186
+  "input_file_count": 188
 }

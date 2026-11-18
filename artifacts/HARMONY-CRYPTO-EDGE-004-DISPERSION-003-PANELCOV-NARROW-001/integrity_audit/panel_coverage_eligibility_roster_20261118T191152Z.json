@@ -1,0 +1,549 @@
+{
+  "audit_id": "H004V106_PANELCOV_NARROW_001",
+  "audited_inputs": {
+    "h40_feasibility_context": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001/integrity_audit/H004V106_panel_coverage_extension_feasibility_20261116T215857Z.json",
+    "h41_plan": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PLAN-001/integrity_audit/H004V106_panel_acquisition_plan_20261116T085222Z.json",
+    "h43_probe": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PROBE-001/integrity_audit/H004V106_panel_archive_probe_20261116T142247Z.json"
+  },
+  "computed_utc": "2026-11-18T19:11:52Z",
+  "confirmatory_claim_allowed": false,
+  "excluded_assets": [
+    "alpha"
+  ],
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-NARROW-001",
+  "exploratory_only": true,
+  "hypothesis": "H47",
+  "included_assets": [
+    "alice",
+    "ankr",
+    "ape",
+    "api3",
+    "apt",
+    "ar",
+    "ark",
+    "arpa",
+    "astr"
+  ],
+  "join_check": {
+    "n_plan_entries": 920,
+    "n_plan_keys": 920,
+    "n_plan_only": 0,
+    "n_probe_entries": 920,
+    "n_probe_keys": 920,
+    "n_probe_only": 0,
+    "ok": true
+  },
+  "method": "Read-only roster over the H41 plan (920 entries) and the H43 probe (920 per_entry). Join on (symbol, kind, month); per (asset, kind) served window is [min, max] month with HTTP 200; every absent file is classified BEFORE_FIRST_SERVED / AFTER_LAST_SERVED / INTERIOR / ENTIRELY_ABSENT / ERROR / UNPROBED; each asset gets an inclusion/exclusion decision under the pre-declared rule. H40 required-study-month context annotates exposure only. No network, no downloads, no panels, no outcomes.",
+  "n_assets_planned": 10,
+  "n_excluded": 1,
+  "n_included": 9,
+  "non_claims": [
+    "No network access, no HEAD probe, no content downloaded.",
+    "No panel constructed; no returns/spreads/states/p-values/costs/inference computed.",
+    "Missing archive files are never fabricated; they remain absent.",
+    "Does not re-probe the date-gated 2026-11 cutoff month.",
+    "Does not alter the confirmatory expanding-universe arm or any frozen DISP-001/002/003 artifact, config, ledger or forward block.",
+    "Cannot validate, replace or unlock H1/H6/H7/H10 or any confirmatory track."
+  ],
+  "per_asset": {
+    "alice": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "alice",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ALICEUSDT"
+    },
+    "alpha": {
+      "absent": [
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2025-10"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2025-11"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2025-12"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-01"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-02"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-03"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-04"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-05"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-06"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-07"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-08"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-09"
+        },
+        {
+          "classification": "AFTER_LAST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2026-10"
+        }
+      ],
+      "absent_class_counts": {
+        "AFTER_LAST_SERVED": 13
+      },
+      "asset": "alpha",
+      "decision": "EXCLUDED_UNSERVED_TIMELINE",
+      "included": false,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 13,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 13,
+      "n_required_study_months": 46,
+      "n_served": 79,
+      "required_months_outside_verified_window": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ],
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2025-09"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ALPHAUSDT"
+    },
+    "ankr": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ankr",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ANKRUSDT"
+    },
+    "ape": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ape",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "APEUSDT"
+    },
+    "api3": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "api3",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "API3USDT"
+    },
+    "apt": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "apt",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "APTUSDT"
+    },
+    "ar": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "ar",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ARUSDT"
+    },
+    "ark": {
+      "absent": [
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-01"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-02"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-03"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-04"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-05"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-06"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-07"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-08"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-01"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-02"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-03"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-04"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-05"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-06"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-07"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-08"
+        }
+      ],
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 16
+      },
+      "asset": "ark",
+      "decision": "INCLUDED_PRELISTING_GAPS_ONLY",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 16,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 8,
+      "n_required_study_months": 46,
+      "n_served": 76,
+      "required_months_outside_verified_window": [
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08"
+      ],
+      "served_window": {
+        "funding": {
+          "first": "2023-09",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-09",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ARKUSDT"
+    },
+    "arpa": {
+      "absent": [],
+      "absent_class_counts": {},
+      "asset": "arpa",
+      "decision": "INCLUDED_FULLY_SERVED",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 0,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 0,
+      "n_required_study_months": 46,
+      "n_served": 92,
+      "served_window": {
+        "funding": {
+          "first": "2023-01",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-01",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ARPAUSDT"
+    },
+    "astr": {
+      "absent": [
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "funding",
+          "month": "2023-01"
+        },
+        {
+          "classification": "BEFORE_FIRST_SERVED",
+          "http_status": 404,
+          "kind": "klines",
+          "month": "2023-01"
+        }
+      ],
+      "absent_class_counts": {
+        "BEFORE_FIRST_SERVED": 2
+      },
+      "asset": "astr",
+      "decision": "INCLUDED_PRELISTING_GAPS_ONLY",
+      "included": true,
+      "kinds": [
+        "funding",
+        "klines"
+      ],
+      "n_absent": 2,
+      "n_planned": 92,
+      "n_required_months_outside_verified_window": 1,
+      "n_required_study_months": 46,
+      "n_served": 90,
+      "required_months_outside_verified_window": [
+        "2023-01"
+      ],
+      "served_window": {
+        "funding": {
+          "first": "2023-02",
+          "last": "2026-10"
+        },
+        "klines": {
+          "first": "2023-02",
+          "last": "2026-10"
+        }
+      },
+      "symbol": "ASTRUSDT"
+    }
+  },
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-NARROW-001/preregistrations/PANELCOV_NARROW_001_v1.md",
+  "promotion_allowed": false,
+  "roster_canonical_sha256": "171cd174d527ff34c9ba0162f2b38c7e673f7c5b210daa118d8acdb99c067579",
+  "status": "EXPLORATORY_ONLY",
+  "verdict": "ROSTER_HAS_UNSERVED_ASSETS",
+  "verdict_rule": "ROSTER_JOIN_MISMATCH if any plan key has no probe record; else ROSTER_HAS_UNSERVED_ASSETS if at least one asset is excluded (unprobed / probe error / AFTER_LAST_SERVED / INTERIOR / ENTIRELY_ABSENT gap); else ROSTER_ALL_ASSETS_FULLY_SERVED. BEFORE_FIRST_SERVED gaps are benign pre-listing absences and do not exclude an asset; the verified served window bounds it."
+}

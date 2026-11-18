@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "compileall_scripts_tests": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "registry_next_sequence_number": 47,
+    "roster_artifact_sha256": "171cd174d527ff34c9ba0162f2b38c7e673f7c5b210daa118d8acdb99c067579",
+    "unittest_discover": {
+      "command": "python3 -m unittest discover -s tests",
+      "exit_code": 0,
+      "note": "Full suite run by scripts/record_test_claim.py after adding tests/test_panel_coverage_eligibility_roster.py (11 tests); claim recorded as 1174/1174/0 in research_state/run_manifest.json and research_state/verified_test_claim_claim_snapshot.json.",
+      "ran": 1174,
+      "result": "OK",
+      "skipped": 8
+    }
+  },
+  "head": "f51ec5cbb3f9c2c7ebb6f8b4596eb96848854381",
+  "notes": "Executed the prior durable task (2026-11-18T16:17:30Z), whose Option B authorized a NEW-ID bounded no-cost exploratory step when a real gap is bounded before the 2026-11-30 gate. H46's own next_test option (b) -- narrow the eligible extension universe to assets whose required study months are fully served -- had no artifact, so this session preregistered and executed it instead of another verification-only hold: H47 HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-NARROW-001 (preregistrations/PANELCOV_NARROW_001_v1.md Created 2026-11-18T19:20:00Z; stdlib-only read-only scripts/panel_coverage_eligibility_roster.py; 11 hermetic+integration tests; artifact integrity_audit/panel_coverage_eligibility_roster_20261118T191152Z.json). Result verdict ROSTER_HAS_UNSERVED_ASSETS: 9 of 10 H41 extension assets included (ALICE/ANKR/APE/API3/APT/AR/ARPA fully served; ARK verified from 2023-09 so 8 of 46 required study months fall outside its window; ASTR from 2023-02 so 1 of 46) and ALPHA excluded (13 AFTER_LAST_SERVED funding months 2025-10..2026-10, i.e. 13 of 46 study months unverifiable). roster_canonical_sha256 171cd174d527ff34c9ba0162f2b38c7e673f7c5b210daa118d8acdb99c067579. Registry bumped 46 -> 47 (H47) with an allocation note; tests/test_continuous_research_contract.py pin updated; run_manifest narrative claim updated; verified test claim re-recorded (1174/1174/0). Re-verified byte-unchanged: canonical forward block (7234fc4e...), H10 fresh block (324ab1e6...), grid v3 config (1ff4c1f2...), frontier (9ba08f3f...). Probe census recomputed from disk: 397 real cutoff_probe_*.json (270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published), newest cutoff_probe_20261113T091257Z.json; the date-gated 2026-11 month was NOT re-probed. No network, no downloads, no panels, no returns/spreads/states/p-values/costs/inference, no promotion, no sealed holdout opened. Today 2026-11-18 still precedes the 2026-11-30 H10 date gate; the next authorized confirmatory action remains the H10 fresh-block maturity check on/after 2026-11-30.",
+  "probe_evidence": {
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "total_real_probes": 397
+  },
+  "session_id": "session_verify_20261118T191722Z",
+  "session_utc": "2026-11-18T19:17:22Z"
+}

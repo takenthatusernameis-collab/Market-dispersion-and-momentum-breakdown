@@ -161,7 +161,13 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # H41-planned archive files absent from the H43 probe as benign
         # pre-listing vs genuine trailing gaps, so the committed reconciliation
         # artifact references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 46)
+        # H47 was added for the panel-coverage eligibility roster
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-NARROW-001,
+        # EXPLORATORY_ONLY, source_coverage_roster) executing H46 next-test
+        # option (b): per-asset inclusion decisions from the H43 served windows
+        # (9 included / ALPHA excluded), so the committed roster artifact
+        # references an allocated registry hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 47)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
