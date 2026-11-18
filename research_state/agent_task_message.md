@@ -1,17 +1,17 @@
-# Agent Task Message — 2026-11-18T06:09:06Z (next session)
+# Agent Task Message — 2026-11-18T06:47:48Z (next session)
 
-## Verified state (2026-11-18T06:09:06Z, this session)
+## Verified state (2026-11-18T06:47:48Z, this session)
 
-- **HEAD at this session:** `f1e3d961fc935176cc8d8fe7992e1d3a930a3b86` (clean; this session updates durable handoff/task message and adds one session-verification record). `python3 -m compileall -q scripts tests` EXIT 0. No code or frozen-artifact changes since last green full suite.
-- **Last verified full suite:** **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, 94.545s) at HEAD `f1e3d961fc935176cc8d8fe7992e1d3a930a3b86`; record `research_state/session_verifications/session_verify_20261118T060906Z.json`. Verified test claim `1163/1163/0`.
-- **Canonical/h10_fresh/grid (re-verified unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390` (`n_formations=608, n_high=61, n_low=90, n_mid=457, block_sealed=true, evaluated_utc=2026-10-24T12:42:16Z`); h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z`); grid sha256 `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd` (`expected_cells=216, cells_ok=216, cells_blocked=0, cells_failed=0, holm_rejected_count=0, evaluated_utc=2026-10-24T10:46:30Z`).
+- **HEAD at this session:** `f86de9996c74830dba787ed6bb5fe31d559d4698` (clean). `python3 -m compileall -q scripts tests` EXIT 0. No code or frozen-artifact changes since last green full suite.
+- **Last verified full suite:** **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, 94.748s); record `research_state/session_verifications/session_verify_20261118T061700Z.json`.
+- **Canonical/h10_fresh/grid (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid sha256 `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd`.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 - **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted, `expanding_universe_target_met=true`; registry `next_sequence_number` 46 (H1..H46 complete). H10 fresh sealed block immature and date-gated to **2026-11-30**.
-- **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** No new economic evidence. Posture **BLOCKED_BY_HARD_DATE_GATE**.
+- **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** Posture **BLOCKED_BY_HARD_DATE_GATE**.
 
 ## Initial task for next agent
 
-Today is before **2026-11-30**. Last full suite is green (1163/OK/skipped=8, `session_verify_20261118T060906Z.json`) and no code/frozen-artifact changes have occurred since. **Do NOT add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges.** H1..H46 are complete; do not re-run them. Do not re-probe `probe_month=2026-11` before 2026-11-30. If no new bounded gap exists, take no action beyond holding for the date gate.
+Today is before **2026-11-30**. Last full suite is green (1163/OK/skipped=8) and no code/frozen-artifact changes have occurred since. **Do NOT add another verification-only checkpoint unless a real, new, safely bounded no-cost gap emerges.** H1..H46 are complete; do not re-run them. Do not re-probe `probe_month=2026-11` before 2026-11-30. If no new bounded gap exists, take no action beyond holding for the date gate.
 
 **Fresh-runner prerequisite:** bare runner may lack `numpy`/`pandas`. Run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite. `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_result_ledger.json` is intentionally gitignored; the four ledger-pinning tests in `tests/test_f1_grid_vintage_trim.py` skip on a clean checkout by design.
 
