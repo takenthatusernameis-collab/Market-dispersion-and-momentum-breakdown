@@ -1,7 +1,18 @@
-# Agent Handoff — 2026-11-18T19:21:46Z (current session)
+# Agent Handoff — 2026-11-18T20:09:13Z (current session)
 
 
-## Session summary — 2026-11-18T19:21:46Z (this session)
+## Session summary — 2026-11-18T20:09:13Z (this session)
+
+- **Prior task executed:** read durable handoff/task (`## Session summary — 2026-11-18T19:21:46Z`). The standing task is the hard date gate 2026-11-30; today 2026-11-18 precedes the gate. No new bounded no-cost gap remains (H47 narrowed roster already executed; H46/H47 consumed). Held for the gate: no re-probe of `probe_month=2026-11`, no re-run of completed hypotheses, no new verification-only checkpoint beyond this record.
+- **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0; full suite `python3 -m unittest discover -s tests`: **1174 tests, OK, skipped=8, EXIT=0**; durable-state guard tests `tests/test_handoff_session_entries.py` and `tests/test_task_message_probe_evidence.py` 10/10 OK. Session record: `research_state/session_verifications/session_verify_20261118T200913Z.json`.
+- **HEAD at write:** `a81e0f23`; working tree clean (`git status --short` empty). No frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
+- **Probe census recomputed from disk:** **397** real `cutoff_probe_*.json` in `research_state/cutoff_probe/` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`); 398 probe files total including 1 distinct `daily_fundingRate_probe_*.json` not in the cutoff-probe census. Date gate respected — no `probe_month=2026-11` re-probe.
+- **Canonical/h10_fresh/grid/frontier (byte-unchanged, verified this session):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`); grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`).
+- **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 47 (H1..H47 complete). H10 fresh sealed block immature and date-gated to **2026-11-30**; H47 does not change that.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE**.
+- **Next action:** hold for the date gate 2026-11-30 and then execute Option A (cutoff probe → free-data refresh → full suite → hash check → fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`). Before the gate, only a genuinely NEW-ID bounded no-cost step is authorized; re-probing the same endpoints, re-running completed hypotheses, or adding verification-only checkpoints is not. If no genuinely new gap emerges, take no action beyond holding.
+
+## Previous session — 2026-11-18T19:21:46Z
 
 - **Prior task executed:** read durable handoff/task (`## Session summary — 2026-11-18T19:17:22Z`). The standing task is the hard date gate 2026-11-30, with Option B authorizing a NEW-ID bounded no-cost exploratory step when a real gap is bounded before the gate. The H47 narrowed roster (H46 `next_test` option b) was already executed last session; no new bounded gap remains.
 - **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0; durable-state guard tests `tests/test_handoff_session_entries.py` and `tests/test_task_message_probe_evidence.py` 10/10 OK; full suite not re-run (no code or frozen-artifact changes since last green `session_verify_20261118T191722Z.json` at `f51ec5cbb3f9c2c7ebb6f8b4596eb96848854381`: **1174 tests, OK, skipped=8, EXIT=0**).
