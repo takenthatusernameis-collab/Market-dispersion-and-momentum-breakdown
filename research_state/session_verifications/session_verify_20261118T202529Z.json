@@ -1,0 +1,101 @@
+{
+  "checks": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "compileall_scripts_tests": {
+      "command": "python3 -m compileall -q scripts tests",
+      "exit_code": 0
+    },
+    "durable_state_guard_tests": {
+      "command": "python3 -m unittest tests.test_continuous_research_contract tests.test_experiment_registry_reference tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_state_consistency",
+      "exit_code": 0,
+      "result": "OK"
+    },
+    "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "frontier_state": {
+      "expanding_universe_target_met": true,
+      "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+      "last_updated_utc": "2026-11-06T12:27:02Z",
+      "rank_frontier_exhausted": false
+    },
+    "frozen_hashes_verified_in_artifact": true,
+    "full_test_suite": {
+      "command": "python3 -m unittest discover -s tests",
+      "exit_code": 0,
+      "ran": 1184,
+      "result": "OK",
+      "skipped": 8
+    },
+    "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "h10_fresh_state": {
+      "block_sealed": true,
+      "confirmatory_claim_allowed": false,
+      "evaluated_utc": "2026-11-02T15:18:56Z",
+      "n_formations": 1,
+      "n_high": 0,
+      "n_low": 0,
+      "n_mid": 1
+    },
+    "h47_roster_canonical_sha256": "171cd174d527ff34c9ba0162f2b38c7e673f7c5b210daa118d8acdb99c067579",
+    "h48_queue_artifact_sha256": "2999facf13146c60f91d51deab1fc86ace3bf55578e5f1cd5710fe9a72f811dc",
+    "h48_queue_canonical_sha256": "38c099db5c233222cc51f39348f06e933871337b807d4761512d2800ec2375c7",
+    "h48_queue_verdict": "ACQUISITION_QUEUE_READY",
+    "h48_result": {
+      "excluded_alpha_planned_files": 92,
+      "n_excluded_assets": 1,
+      "n_included_assets": 9,
+      "n_study_months": 46,
+      "served_asset_months": 405,
+      "total_planned_files_reconciled": 920,
+      "total_possible_asset_months": 414,
+      "wave_a_absent_files": 0,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_a_planned_files": 644,
+      "wave_b_absent_files": 18,
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ],
+      "wave_b_planned_files": 184
+    },
+    "probe_census": {
+      "other_probe_files": 1,
+      "other_probe_files_detail": "1 distinct daily_fundingRate_probe_20261101T132013Z.json, not part of the cutoff-probe census",
+      "probe_month_2026_10": 270,
+      "probe_month_2026_11": 127,
+      "published_probe_month_2026_10": 49,
+      "published_probe_month_2026_11": 0,
+      "real_cutoff_probe_files": 397,
+      "total_probe_files_in_dir": 398
+    },
+    "probe_census_method": "Recomputed from disk: glob research_state/cutoff_probe/*.json, parsed each JSON, counted entries with cutoff_gate and probe_month keys.",
+    "probe_newest": "cutoff_probe_20261113T091257Z.json @ 2026-11-13T09:12:57Z",
+    "registry_next_sequence_number": 48,
+    "session_record_latest": "session_record_verify_20261117T132955Z",
+    "verified_test_claim": {
+      "claim": "1184/1184/0",
+      "command": "python3 scripts/record_test_claim.py",
+      "input_file_count": 190,
+      "input_fingerprint_prefix": "76e111258d85e225",
+      "snapshot": "research_state/verified_test_claim_claim_snapshot.json"
+    }
+  },
+  "head": "1fbc02ea",
+  "not_modified": [
+    "canonical forward block, H10 fresh sealed block, grid_result_ledger, grid v3 config, universe frontier",
+    "DISPERSION-001 and DISPERSION-002 artifacts",
+    "H40/H41/H43/H46/H47 artifacts (read-only inputs)",
+    "date-gated 2026-11 probe (no re-probe)"
+  ],
+  "notes": "Read the durable handoff (top entry ## Session summary \u2014 2026-11-18T20:09:13Z) and research_state/agent_task_message.md. The prior task was to hold for the hard date gate 2026-11-30; today 2026-11-18 precedes the gate. Instead of another verification-only hold (which AGENTS.md forbids as a loop), executed ONE genuinely new bounded no-cost EXPLORATORY_ONLY artifact: H48 PANELCOV-QUEUE-001, turning the H47 eligibility roster into a bounded acquisition queue plus per-study-month utility map. Preregistered first (PANELCOV_QUEUE_001_v1.md, Created 2026-11-18T20:25:00Z). No network, no downloads, no panels, no outcomes, no sealed holdout opened, no re-probe of probe_month=2026-11, no completed hypothesis re-run, no frozen artifact/config/ledger/forward block altered.",
+  "posture": "EXPLORATORY_ONLY source-coverage progress recorded; confirmatory track remains BLOCKED_BY_HARD_DATE_GATE for H10 fresh-block maturity on/after 2026-11-30.",
+  "session_utc": "2026-11-18T20:25:29Z"
+}

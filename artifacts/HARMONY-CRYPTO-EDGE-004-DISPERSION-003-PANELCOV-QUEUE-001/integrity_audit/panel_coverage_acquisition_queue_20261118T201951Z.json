@@ -1,0 +1,1043 @@
+{
+  "all_frozen_hashes_match": true,
+  "audit_id": "H004V106_PANELCOV_QUEUE_001",
+  "audited_input_sha256": {
+    "h40_feasibility_context": "8415a18fe24c3e6eee79018c4763e048e3eb26d605ee2155bfe265e8af4a78cc",
+    "h41_plan": "39e740b65fbe65541aa42f55b0e231469c49dda7e04d9e22e04eae3ac9ce441b",
+    "h43_probe": "69b6e632b5d6b01ecaf9c7f625eeb8e4ad5bcd1f8d1e2ec6b946efb62dd40974",
+    "h47_roster": "ac9b7cbf8d4ac22d0526017eff5b20ac659f9d0d3db3c41721c7a463a77d7a6e"
+  },
+  "audited_inputs": {
+    "h40_feasibility_context": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-FEAS-001/integrity_audit/H004V106_panel_coverage_extension_feasibility_20261116T215857Z.json",
+    "h41_plan": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PLAN-001/integrity_audit/H004V106_panel_acquisition_plan_20261116T085222Z.json",
+    "h43_probe": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PROBE-001/integrity_audit/H004V106_panel_archive_probe_20261116T142247Z.json",
+    "h47_roster": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-NARROW-001/integrity_audit/panel_coverage_eligibility_roster_20261118T191152Z.json"
+  },
+  "computed_utc": "2026-11-18T20:19:51Z",
+  "confirmatory_claim_allowed": false,
+  "excluded_assets": [
+    "alpha"
+  ],
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-QUEUE-001",
+  "exploratory_only": true,
+  "frozen_hashes_verified": {
+    "canonical_forward_block": {
+      "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+    },
+    "grid_v3_config": {
+      "actual": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "expected": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "match": true,
+      "path": "configs/dispersion_momentum_grid_v3.json"
+    },
+    "h10_fresh_block": {
+      "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json"
+    },
+    "universe_frontier": {
+      "actual": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "match": true,
+      "path": "research_state/universe_frontier.json"
+    }
+  },
+  "h47_roster_binding_ok": true,
+  "h47_roster_canonical_sha256": "171cd174d527ff34c9ba0162f2b38c7e673f7c5b210daa118d8acdb99c067579",
+  "h47_roster_canonical_sha256_expected": "171cd174d527ff34c9ba0162f2b38c7e673f7c5b210daa118d8acdb99c067579",
+  "hypothesis": "H48",
+  "included_assets": [
+    "alice",
+    "ankr",
+    "ape",
+    "api3",
+    "apt",
+    "ar",
+    "ark",
+    "arpa",
+    "astr"
+  ],
+  "join_ok": true,
+  "method": "Read-only queue over the committed H47 roster, H41 plan (920 entries), H43 probe (920 per_entry) and H40 study_months. For every H47-included asset, a required study month is absent when either required kind has no HTTP 200 probe record; assets with no absent required month form the unconditional acquisition wave A and assets with at least one absent required month form wave B (admissible only after a separately preregistered window trim). Per-study-month utility lists the included assets whose both kinds are verified served that month. No network, no downloads, no panels, no outcomes.",
+  "monthly_utility": [
+    {
+      "month": "2023-01",
+      "n_all_included": 7,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": []
+    },
+    {
+      "month": "2023-02",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-03",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-04",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-05",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-06",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-07",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-08",
+      "n_all_included": 8,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-09",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-10",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-11",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2023-12",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-01",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-02",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-03",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-04",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-05",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-06",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-07",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-08",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-09",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-10",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-11",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2024-12",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-01",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-02",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-03",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-04",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-05",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-06",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-07",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-08",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-09",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-10",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-11",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2025-12",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-01",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-02",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-03",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-04",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-05",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-06",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-07",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-08",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-09",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    },
+    {
+      "month": "2026-10",
+      "n_all_included": 9,
+      "n_wave_a": 7,
+      "wave_a_assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "wave_b_assets": [
+        "ark",
+        "astr"
+      ]
+    }
+  ],
+  "n_excluded_assets": 1,
+  "n_included_assets": 9,
+  "n_study_months": 46,
+  "non_claims": [
+    "No network access, no HEAD probe, no content downloaded.",
+    "No panel constructed; no returns/spreads/states/p-values/costs/inference computed.",
+    "Missing archive files are never fabricated; they remain absent.",
+    "Does not re-probe the date-gated 2026-11 cutoff month.",
+    "Does not alter the confirmatory expanding-universe arm or any frozen DISP-001/002/003 artifact, config, ledger or forward block.",
+    "Cannot validate, replace or unlock H1/H6/H7/H10 or any confirmatory track."
+  ],
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-QUEUE-001/preregistrations/PANELCOV_QUEUE_001_v1.md",
+  "promotion_allowed": false,
+  "queue_canonical_sha256": "38c099db5c233222cc51f39348f06e933871337b807d4761512d2800ec2375c7",
+  "served_asset_months": 405,
+  "status": "EXPLORATORY_ONLY",
+  "total_planned_files_reconciled": 920,
+  "total_possible_asset_months": 414,
+  "verdict": "ACQUISITION_QUEUE_READY",
+  "verdict_rule": "QUEUE_JOIN_MISMATCH if the H47 roster canonical hash does not match the pinned value, the H47 join was not clean, or an included asset has no H41 plan entries; else QUEUE_NO_UNCONDITIONAL_WAVE if wave A is empty; else ACQUISITION_QUEUE_READY.",
+  "wave_file_counts": {
+    "excluded": {
+      "assets": [
+        "alpha"
+      ],
+      "n_assets": 1,
+      "planned_files": 92
+    },
+    "wave_a": {
+      "absent_files": 0,
+      "assets": [
+        "alice",
+        "ankr",
+        "ape",
+        "api3",
+        "apt",
+        "ar",
+        "arpa"
+      ],
+      "n_assets": 7,
+      "planned_files": 644,
+      "served_files": 644
+    },
+    "wave_b": {
+      "absent_files": 18,
+      "assets": [
+        "ark",
+        "astr"
+      ],
+      "n_assets": 2,
+      "planned_files": 184,
+      "served_files": 166
+    }
+  },
+  "waves": {
+    "alice": {
+      "absent_required_months": [],
+      "asset": "alice",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "ALICEUSDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "ankr": {
+      "absent_required_months": [],
+      "asset": "ankr",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "ANKRUSDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "ape": {
+      "absent_required_months": [],
+      "asset": "ape",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "APEUSDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "api3": {
+      "absent_required_months": [],
+      "asset": "api3",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "API3USDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "apt": {
+      "absent_required_months": [],
+      "asset": "apt",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "APTUSDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "ar": {
+      "absent_required_months": [],
+      "asset": "ar",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "ARUSDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "ark": {
+      "absent_required_months": [
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08"
+      ],
+      "asset": "ark",
+      "n_absent_planned_files": 16,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 76,
+      "symbol": "ARKUSDT",
+      "wave": "WAVE_B_REQUIRES_WINDOW_TRIM"
+    },
+    "arpa": {
+      "absent_required_months": [],
+      "asset": "arpa",
+      "n_absent_planned_files": 0,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 92,
+      "symbol": "ARPAUSDT",
+      "wave": "WAVE_A_UNCONDITIONAL"
+    },
+    "astr": {
+      "absent_required_months": [
+        "2023-01"
+      ],
+      "asset": "astr",
+      "n_absent_planned_files": 2,
+      "n_planned_files": 92,
+      "n_required_months": 46,
+      "n_served_planned_files": 90,
+      "symbol": "ASTRUSDT",
+      "wave": "WAVE_B_REQUIRES_WINDOW_TRIM"
+    }
+  }
+}

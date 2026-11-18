@@ -167,7 +167,15 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # option (b): per-asset inclusion decisions from the H43 served windows
         # (9 included / ALPHA excluded), so the committed roster artifact
         # references an allocated registry hypothesis.
-        self.assertEqual(registry["next_sequence_number"], 47)
+        # H48 was added for the panel-coverage acquisition queue
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELCOV-QUEUE-001,
+        # EXPLORATORY_ONLY, source_coverage_acquisition_queue) turning the H47
+        # roster into a bounded wave A / wave B acquisition queue with a
+        # per-study-month utility map (7 wave-A assets / 644 files, ARK+ASTR
+        # wave B with 18 absent files, ALPHA excluded, 920 files reconciled), so
+        # the committed queue artifact references an allocated registry
+        # hypothesis.
+        self.assertEqual(registry["next_sequence_number"], 48)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

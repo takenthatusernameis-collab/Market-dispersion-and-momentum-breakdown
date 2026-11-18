@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-18T19:17:16Z",
+  "recorded_utc": "2026-11-18T20:25:23Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1174,
-  "tests_ok": 1174,
+  "tests_run": 1184,
+  "tests_ok": 1184,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1174/1174/0",
-  "input_fingerprint": "67f6c473f8856777ae73c61d415f4716f9a2a96c7b601f10d97f88ecbc7f628a",
+  "claim": "1184/1184/0",
+  "input_fingerprint": "76e111258d85e225081331fe91b6b39b0ee266fec3a410ad917480e8013878e6",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -211,6 +211,10 @@
       "sha256": "47337e3c6c29289b322d40841c143f32a4e7ec56bd6474d1ff897c0faebdf4d2"
     },
     {
+      "path": "scripts/panel_coverage_acquisition_queue.py",
+      "sha256": "d165a6ee3d7a504fe8197fd11c1db1ccfb9f11d37d48ad7698e8ffe18da573fd"
+    },
+    {
       "path": "scripts/panel_coverage_eligibility_roster.py",
       "sha256": "6be7a571e6f5f8290c4ca7f3a57f40f463e7d5973cfc08d73995c3babfbe9a48"
     },
@@ -364,7 +368,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "c3d648dffccd879742490e5a9f7252b2c8bca7f63709502a869d34b6a30f3463"
+      "sha256": "3fea7359406eb89826fae776f345ed6487f94572c100b6b0394b1f736e716cfb"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -643,6 +647,10 @@
       "sha256": "441d0e9ff7f58193caf904468b2a1ab8af7f871cdc083c34bcbcf78126bbf6b5"
     },
     {
+      "path": "tests/test_panel_coverage_acquisition_queue.py",
+      "sha256": "1b2b346f1ec939e87b24a05c0969f94687a6ce6273e9a4cca98eeb072bfef61b"
+    },
+    {
       "path": "tests/test_panel_coverage_boundaries.py",
       "sha256": "742f0ee2cefaddfe3b696ef794a4023ef81d5a1b3519281d1d6643b9c1bdc38b"
     },
@@ -763,5 +771,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 188
+  "input_file_count": 190
 }
