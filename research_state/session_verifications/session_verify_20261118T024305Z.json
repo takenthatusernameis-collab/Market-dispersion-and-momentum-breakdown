@@ -1,0 +1,61 @@
+{
+  "session_timestamp": "2026-11-18T02:43:05Z",
+  "head_at_verification": "e486fe0f8e99ca4e78ca7c6a10a9d2f3b891678a",
+  "compileall_exit": 0,
+  "test_suite": {
+    "command": "python3 -m unittest discover -s tests",
+    "total": 1144,
+    "passed": 1136,
+    "skipped": 8,
+    "failed": 0,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "h10_fresh_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+  "h10_fresh_summary": {
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false,
+    "evaluated_utc": "2026-11-02T15:18:56Z"
+  },
+  "grid_sha256": "d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd",
+  "grid_summary": {
+    "expected_cells": 216,
+    "cells_ok": 216,
+    "cells_blocked": 0,
+    "cells_failed": 0,
+    "holm_rejected_count": 0,
+    "evaluated_utc": "2026-10-24T10:46:30Z"
+  },
+  "probe_census": {
+    "total_real_probes": 397,
+    "probe_month_2026_10": 270,
+    "probe_month_2026_10_published": 49,
+    "probe_month_2026_11": 127,
+    "probe_month_2026_11_published": 0,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frontier_state": {
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "last_updated_utc": "2026-11-06T12:27:02Z",
+    "catalog_exhausted": true,
+    "expanding_universe_target_met": true
+  },
+  "registry_state": {
+    "next_sequence_number": 45,
+    "hypotheses_complete": "H1..H45"
+  },
+  "h10_gate": {
+    "status": "immature",
+    "date_gate": "2026-11-30",
+    "today": "2026-11-18",
+    "before_gate": true
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "durable_artifacts_unchanged": true,
+  "dispersion_001_002_unchanged": true,
+  "notes": "Installed requirements on bare runner before suite. Corrected prior handoff entry (02:33:39Z) that lacked on-disk session verification record and left title at 02:28:15Z. No frozen artifact/config/input/frontier/registry/sealed-holdout modified."
+}
