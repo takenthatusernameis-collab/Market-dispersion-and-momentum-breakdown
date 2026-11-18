@@ -1,10 +1,10 @@
-# Agent Task Message — 2026-11-18T06:47:48Z (next session)
+# Agent Task Message — 2026-11-18T06:49:30Z (next session)
 
-## Verified state (2026-11-18T06:47:48Z, this session)
+## Verified state (2026-11-18T06:49:30Z, this session)
 
-- **HEAD at this session:** `f86de9996c74830dba787ed6bb5fe31d559d4698` (clean). `python3 -m compileall -q scripts tests` EXIT 0. No code or frozen-artifact changes since last green full suite.
-- **Last verified full suite:** **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, 94.748s); record `research_state/session_verifications/session_verify_20261118T061700Z.json`.
-- **Canonical/h10_fresh/grid (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid sha256 `d6c408142f118bba3e4c52143e9067385382e941febda370ed27e81617d181bd`.
+- **HEAD at this session:** `3a33ba5ba816528d6a72c78e8366d078d8c82dcb` (clean at read). `python3 -m compileall -q scripts tests` EXIT 0. No code or frozen-artifact changes since last green full suite.
+- **Last verified full suite:** **1163 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`, 94.748s); record `research_state/session_verifications/session_verify_20261118T061700Z.json` (HEAD `96bcf6cd1e88c79b8939315928c4c6f18f165ba9`). This session verification: `research_state/session_verifications/session_verify_20261118T064930Z.json`.
+- **Canonical/h10_fresh/grid (unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 - **Frontier/registry:** frontier `historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, catalog exhausted, `expanding_universe_target_met=true`; registry `next_sequence_number` 46 (H1..H46 complete). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **No frozen artifact/config/input/frontier/registry/sealed-holdout modified; DISPERSION-001/002 unchanged.** Posture **BLOCKED_BY_HARD_DATE_GATE**.
@@ -22,7 +22,7 @@ Today is before **2026-11-30**. Last full suite is green (1163/OK/skipped=8) and
 4. Run fresh sealed H10 block only into `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` with `--forward-block-start 2026-09-30 --data-cutoff <new cutoff>`. Require `n_high > 0 AND n_low > 0` before any confirmatory claim; preserve prior artifacts unchanged.
 5. If tests/scripts change with a recordable claim, run `python3 scripts/record_test_claim.py`; update handoff, task message, and session verification record with exact commands/outcomes.
 
-**Option B — only if a genuinely new bounded no-cost exploratory task with a NEW hypothesis/ID/artifact and real demonstrable gap becomes safely bounded before 2026-11-30:** preregister first, keep `EXPLORATORY_ONLY`/planning-only, and follow adaptive research-gate policy v1. Concretely available next bounded step from H46: a NEW-ID preregistered keyless acquisition step could target ONLY the ALPHA funding tail 2025-10..2026-10 (the 13 genuine trailing gaps; ARK/ASTR absences are pre-listing and need no action) or narrow the expanding universe to exclude ALPHA — never fabricating files. If no such gap exists, take no action beyond holding for the date gate.
+**Option B — only if a genuinely new bounded no-cost exploratory task with a NEW hypothesis/ID/artifact and real demonstrable gap becomes safely bounded before 2026-11-30:** preregister first, keep `EXPLORATORY_ONLY`/planning-only, and follow adaptive research-gate policy v1. Concretely: H46 already located ALPHA funding tail 2025-10..2026-10 as known trailing 404s (13 files) vs benign pre-listing absences (18); re-probing the same endpoints is not a distinct attempt. A NEW-ID bounded step is valid only if it targets a different admissible source/route or a justified estimand change (e.g. narrow expanding universe excluding ALPHA) with preregistration and explicit non-claim boundaries — never fabricating files. If no such gap exists, take no action beyond holding for the date gate.
 
 **Recompute probe counts from disk; do not hard-code.** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 

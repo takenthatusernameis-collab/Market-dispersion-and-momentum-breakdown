@@ -1,0 +1,28 @@
+{
+  "session": "2026-11-18T06:49:30Z",
+  "head_at_verification": "3a33ba5ba816528d6a72c78e8366d078d8c82dcb",
+  "prior_head_at_last_full_suite": "96bcf6cd1e88c79b8939315928c4c6f18f165ba9",
+  "prior_task_completed": "read durable handoff/task (2026-11-18T06:47:48Z, HEAD 3a33ba5b) and completed it; re-verified invariants from disk at HEAD 3a33ba5b",
+  "working_tree_clean_at_read": true,
+  "commands": {
+    "compileall": "python3 -m compileall -q scripts tests -> EXIT 0",
+    "canonical_hash": "sha256sum artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json == 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_hash": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f (block_sealed=true, n_formations=1, n_high=0, n_low=0, n_mid=1, confirmatory_claim_allowed=false, evaluated_utc=2026-11-02T15:18:56Z)",
+    "frontier_hash": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e (historical_rank_coverage_state=NOT_PROVEN_COMPLETE, last_updated_utc=2026-11-06T12:27:02Z, expanding_universe_target_met=true, rank_frontier_exhausted=false)",
+    "grid_config_hash": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176 (configs/dispersion_momentum_grid_v3.json)",
+    "probe_census_disk": "397 real cutoff_probe_*.json: 270 probe_month=2026-10 (49 target_published=true), 127 probe_month=2026-11 (0 target_published=true); newest by filename cutoff_probe_20261113T091257Z.json",
+    "registry": "next_sequence_number 46, H1..H46 complete"
+  },
+  "last_verified_full_suite": {
+    "record": "research_state/session_verifications/session_verify_20261118T061700Z.json",
+    "head": "96bcf6cd1e88c79b8939315928c4c6f18f165ba9",
+    "result": "Ran 1163 tests in 94.748s, OK (skipped=8), EXIT 0",
+    "note": "No code or frozen-artifact changes since; durable-state checkpoint commits only after that HEAD."
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "date_gate": "2026-11-30",
+  "frozen_artifacts_unchanged": true,
+  "no_new_bounded_no_cost_gap": true,
+  "bounded_gap_audit": "H1..H46 complete. H46 classifies 31 absent plan/probe entries as 18 BEFORE_FIRST_SERVED (benign pre-listing) + 13 AFTER_LAST_SERVED (ALPHA funding 2025-10..2026-10, known 404s). Re-probing same endpoints is not a distinct attempt per adaptive gate policy v1 §2; narrowing expanding universe would change estimand without new admissible evidence. No other bounded no-cost exploratory gap identified before 2026-11-30.",
+  "next_action": "hold for date gate 2026-11-30; at/after the gate execute Option A. Option B only if a genuinely new bounded no-cost exploratory task with NEW hypothesis/ID/artifact emerges before 2026-11-30. If none, take no action beyond holding."
+}
