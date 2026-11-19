@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-19T12:09:03Z (next session)
+# Agent Task Message — 2026-11-19T12:19:11Z (next session)
 
 ## Initial task for next agent
 
@@ -12,7 +12,7 @@ Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read
 
 - **HEAD at write:** working tree clean (`git status --short` empty); no frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
 - **compileall + suite:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **1291 tests, OK, skipped=8, EXIT=0**. State re-verified from disk only; no changes made.
-- **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091252Z.json`); 398 probe files total including 1 `daily_fundingRate_probe_*.json` that is not part of the 397 cutoff-probe census. Date gate respected — no `probe_month=2026-11` re-probe.
+- **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`); 398 probe files total including 1 `daily_fundingRate_probe_*.json` that is not part of the 397 cutoff-probe census. Date gate respected — no `probe_month=2026-11` re-probe.
 - **Canonical/h10_fresh/grid/frontier (byte-unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`); grid config (configs/dispersion_momentum_grid_v3.json) `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier (research_state/universe_frontier.json) sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`).
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 53 (H1..H53 present). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 
@@ -36,7 +36,7 @@ Bare runner may lack `numpy`/`pandas`. Run `python3 -m pip install --disable-pip
 
 - Handoff top entry `## Session summary — <ts> (this session)` matching title timestamp; older entries `## Previous session — <ts>` unique and strictly descending.
 - Do not hard-code the probe census; always recompute it from disk.
-- Recompute probe counts from disk rather than trusting these quotes: 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091252Z.json`; 398 probe files total include 1 distinct `daily_fundingRate_probe_*.json` that is not part of the 397 cutoff-probe census.
+- Recompute probe counts from disk rather than trusting these quotes: 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`; 398 probe files total include 1 distinct `daily_fundingRate_probe_*.json` that is not part of the 397 cutoff-probe census.
 - Keep literal `probe_month=2026-11` present whenever `2026-11` appears.
 - Do not alter frontier, existing registry entries, frozen artifacts/configs/inputs, or the sealed holdout. Registering a new hypothesis (append-only, `next_sequence_number` bump, `tests/test_continuous_research_contract.py` pin bump) is allowed only under Option B.
 
