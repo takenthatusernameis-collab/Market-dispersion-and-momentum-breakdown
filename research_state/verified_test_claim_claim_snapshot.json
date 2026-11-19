@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-19T05:33:45Z",
+  "recorded_utc": "2026-11-19T06:34:34Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1264,
-  "tests_ok": 1264,
+  "tests_run": 1291,
+  "tests_ok": 1291,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1264/1264/0",
-  "input_fingerprint": "b1535fc48b23da4dd08076bcc299f888341f94a530baa120b2b35d5e2e00190d",
+  "claim": "1291/1291/0",
+  "input_fingerprint": "1b4e4527bba986e9d62c04a4097a0d3312a1d702c84a629a099e658ad686dd3e",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -235,6 +235,10 @@
       "sha256": "679529442b4c49e61d5bdbde93d8c66a0f3b7650a1a05879ba6330877d9d3a82"
     },
     {
+      "path": "scripts/panel_wave_b_normalization.py",
+      "sha256": "f938edbacf0ece25f1f339b5bfee81625e90400c2b2ac219ee71aa99c40e3563"
+    },
+    {
       "path": "scripts/panel_wave_b_window_trim.py",
       "sha256": "dd90d5fbbba4408f23e3bae39d2da3190337b5331d376da5ff70c4518c242784"
     },
@@ -384,7 +388,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "ece923e197f8094591c573a03084d620225fd5d8d9a49118076dd90cce65ef6e"
+      "sha256": "4eb5790070a5a33537921c270153710a5427ebc19dbe81fc34fed849bcad1967"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -691,6 +695,10 @@
       "sha256": "b9092570630b55f7513fa0e9b74078672c59b18c06ad35ec70ef02f87982cb41"
     },
     {
+      "path": "tests/test_panel_wave_b_normalization.py",
+      "sha256": "196fa73c53bacfd3d033e21f0f8ea7cbe489db3146c3cbdd01156315924de8d0"
+    },
+    {
       "path": "tests/test_panel_wave_b_window_trim.py",
       "sha256": "afb0980a4de33277e6a2822f87dc13bde531b6e90e7993046348e62a39a79fda"
     },
@@ -803,5 +811,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 198
+  "input_file_count": 200
 }

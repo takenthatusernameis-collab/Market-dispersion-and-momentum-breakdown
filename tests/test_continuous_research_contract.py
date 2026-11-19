@@ -203,7 +203,17 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # fetched with per-file sha256 and zipfile/csv content-integrity
         # evidence; wave A, ALPHA and the 18 dropped pre-listing months never
         # fetched; no panel, no outcomes, confirmatory H10 gate unchanged.
-        self.assertEqual(registry["next_sequence_number"], 52)
+        # H53 was added for the wave-B (ARK/ASTR) extension panel normalization
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001,
+        # EXPLORATORY_ONLY, source_coverage_panel_normalization) re-hashing the
+        # H52 cache archives to their recorded sha256 and re-validating content
+        # (one csv member, documented header, >=1 data row, monotone integer
+        # timestamps), then writing exactly 4 DISP-003-schema panel CSVs (ARKUSDT
+        # klines 1139 rows + funding 5546, ASTRUSDT klines 1356 + funding 4070;
+        # 12111 rows total) covering exactly the 38 ARK and 45 ASTR admissible
+        # months, 0 out-of-window rows, 0 duplicate timestamps, exact row
+        # accounting; no outcomes, no confirmatory claim, H10 gate unchanged.
+        self.assertEqual(registry["next_sequence_number"], 53)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
