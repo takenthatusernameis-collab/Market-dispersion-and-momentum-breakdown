@@ -1,21 +1,21 @@
-# Agent Task Message — 2026-11-19T06:47:38Z (next session)
+# Agent Task Message — 2026-11-19T08:49:01Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T06:47:38Z`) and this message, then complete the standing task:
+Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T08:49:01Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
-2. **No genuinely new bounded no-cost gap remains before the gate.** H51-a (extension-panel normalization plan) is complete and committed: registry H51, `scripts/panel_normalization_plan.py`, `tests/test_panel_normalization_plan.py` (12 tests), artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-PLAN-001/integrity_audit/panel_normalization_plan_20261118T231800Z.json` (file sha256 `dc8e100682cf3eab147787973536dd0de1517c740e5075a7c3f3db43796b9768`), verdict `PLAN_RECORDED`, 9 extension assets, 810 planned panel files, `confirmatory_claim_allowed=false`, `exploratory_only=true`. H51-b (wave-B acquisition of the H50-trimmed 166 files) has only a preregistration stub (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEB-001/preregistrations/PANELACQ_WAVEB_001_v1.md`); it is optional, not required for the confirmatory gate, and unstarted (no script, test, integrity audit, or registry entry). If — and only if — a genuinely NEW-ID bounded no-cost step appears before the gate, preregister it under the next ID (H52) as `EXPLORATORY_ONLY` per adaptive research-gate policy v1, keep it read-only/planning-only unless it is a real free-data acquisition, and do not present it as outcomes or evidence of an edge. If none appears, hold and leave the state clean.
-3. **Do not re-do** H39–H51, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files or re-derive the H50 trim and present them as new evidence. A repeated verification-only session is a loop and is not progress.
+2. **No genuinely new bounded no-cost gap remains before the gate.** H51-a, H52 (PANELACQ-WAVEB-001) and H53 (PANELNORM-WAVEB-001) complete and committed. H51-b optional/unstarted. If — and only if — a genuinely NEW-ID bounded no-cost step appears before the gate, preregister it under the next ID as `EXPLORATORY_ONLY` per adaptive research-gate policy v1. If none appears, hold and leave the state clean.
+3. **Do not re-do** H39–H53, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files or re-derive the H50 trim and present them as new evidence. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-19T06:47:38Z, this session)
+## Verified state (2026-11-19T08:49:01Z, this session)
 
 - **HEAD at write:** working tree clean (`git status --short` empty). No frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`); 398 probe files total including 1 `daily_fundingRate_probe_*.json` that is not part of the 397 cutoff-probe census. Date gate respected — no `probe_month=2026-11` re-probe.
 - **Canonical/h10_fresh/grid/frontier (byte-unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`); grid config (configs/dispersion_momentum_grid_v3.json) `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier (research_state/universe_frontier.json) sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`).
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 51 (H1..H51 present). H10 fresh sealed block immature and date-gated to **2026-11-30**.
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Exploratory chain H40→H50 complete plus H51-a recorded; both acquisition waves adjudicated (wave A acquired+verified, wave B trimmed to 166 servable files), ALPHA excluded.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Exploratory chain H40→H53 complete; both acquisition waves adjudicated (wave A acquired+verified, wave B trimmed to 166 servable files), ALPHA excluded.
 
 ## Option A — at/after 2026-11-30 (primary, date-gated)
 
@@ -27,7 +27,7 @@ Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read
 
 ## Option B — only if a genuinely new bounded no-cost exploratory task with a NEW hypothesis/ID/artifact appears before 2026-11-30
 
-Preregister first, keep `EXPLORATORY_ONLY`, and follow adaptive research-gate policy v1. **Already consumed:** H40 (feasibility), H41 (plan), H42 (rank-breadth repro), H43 (probe), H46 (reconciliation), H47 (roster), H48 (acquisition queue), H49 (wave-A acquisition), H50 (wave-B window trim), H51 (extension-panel normalization plan). Re-probing the known ALPHA funding tail 2025-10..2026-10 is not a distinct attempt per policy v1 §2 unless it targets a different admissible source or route. Do not fabricate files and do not present a workflow pass as economic evidence.
+Preregister first, keep `EXPLORATORY_ONLY`, and follow adaptive research-gate policy v1. **Already consumed:** H40 (feasibility), H41 (plan), H42 (rank-breadth repro), H43 (probe), H46 (reconciliation), H47 (roster), H48 (acquisition queue), H49 (wave-A acquisition), H50 (wave-B window trim), H51 (extension-panel normalization plan), H52 (wave-B acquisition), H53 (wave-B normalization). Re-probing the known ALPHA funding tail 2025-10..2026-10 is not a distinct attempt per policy v1 §2 unless it targets a different admissible source or route. Do not fabricate files and do not present a workflow pass as economic evidence.
 
 ## Fresh-runner prerequisite
 
