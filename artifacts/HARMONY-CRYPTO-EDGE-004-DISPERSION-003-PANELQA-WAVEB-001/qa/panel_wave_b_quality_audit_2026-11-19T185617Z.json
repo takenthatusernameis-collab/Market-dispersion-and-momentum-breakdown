@@ -1,0 +1,217 @@
+{
+  "audit_id": "H004V106_PANELQA_WAVEB_001",
+  "audited_input_sha256": {
+    "h53_audit_file": "fc95dfd7ea4fb2c036ac273d89750ac8c7c3331d0ea6100786ab4c7b6735587f"
+  },
+  "computed_utc": "2026-11-19T18:56:17Z",
+  "confirmatory_claim_allowed": false,
+  "cross_panel": {
+    "ark_only_days": 0,
+    "astr_only_days": 217,
+    "n_days_both_assets": 1139,
+    "n_days_single_asset": 217
+  },
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001",
+  "frozen_hashes_verified": {
+    "all_match": true,
+    "details": {
+      "canonical_forward_block": {
+        "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "match": true
+      },
+      "grid_v3_config": {
+        "actual": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+        "expected": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+        "match": true
+      },
+      "h10_fresh_block": {
+        "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "match": true
+      },
+      "universe_frontier": {
+        "actual": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        "match": true
+      }
+    }
+  },
+  "hypothesis": "H54",
+  "method": "Read-only usability audit of the 4 committed H53 wave-B panels: sha256 and row-count reconciliation against H53, calendar-day completeness and gap runs, OHLC plausibility, duplicate and monotonicity checks, zero-volume days, funding cadence and end-of-panel staleness. No repair, no interpolation, no network.",
+  "network_io": "none",
+  "non_claims": [
+    "A panel quality audit is not market evidence and not an economic result.",
+    "No returns, spreads, dispersion states, momentum signals, p-values, costs or inference computed.",
+    "No candidate promoted; no confirmatory claim; H10 gate unchanged and date-gated to 2026-11-30.",
+    "Wave A (7 assets, 644 files) is out of scope: its raw bytes are absent in this checkout.",
+    "Issues are reported with counts and offending dates; nothing is repaired, interpolated or dropped.",
+    "Does not alter any frozen DISP-001/002/003 artifact, config, ledger, panel or forward block, and does not unlock H1/H6/H7/H10.",
+    "A green test suite proves only what the tests cover."
+  ],
+  "panels": [
+    {
+      "asset": "ark",
+      "header": [
+        "open_time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "close_time",
+        "quote_volume",
+        "count",
+        "taker_buy_volume",
+        "taker_buy_quote_volume",
+        "ignore"
+      ],
+      "issues": [],
+      "kind": "klines",
+      "metrics": {
+        "completeness_ratio": 1.0,
+        "days_stale": 0,
+        "expected_days": 1139,
+        "first_ts_utc": "2023-09-19T00:00:00Z",
+        "last_ts_utc": "2026-10-31T00:00:00Z",
+        "max_gap_run_days": 0,
+        "missing_days": [],
+        "n_duplicate_timestamps": 0,
+        "n_missing_days": 0,
+        "n_negative_volume": 0,
+        "n_nonpositive_price": 0,
+        "n_observed_days": 1139,
+        "n_ohlc_inconsistent": 0,
+        "n_rows": 1139,
+        "n_zero_volume_days": 0,
+        "timestamps_monotone": true
+      },
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels/binance_klines_ARKUSDT.csv",
+      "row_count_matches_h53": true,
+      "sha256_matches_h53": true,
+      "symbol": "ARKUSDT"
+    },
+    {
+      "asset": "ark",
+      "header": [
+        "symbol",
+        "calc_time",
+        "funding_interval_hours",
+        "last_funding_rate"
+      ],
+      "issues": [],
+      "kind": "funding",
+      "metrics": {
+        "calc_time_monotone": true,
+        "days_stale": 0,
+        "first_ts_utc": "2023-09-19T16:00:00Z",
+        "funding_interval_hours_histogram": {
+          "1.0": 356,
+          "4.0": 3639,
+          "8.0": 1551
+        },
+        "interval_values_allowed": true,
+        "last_ts_utc": "2026-10-31T20:00:00Z",
+        "n_abs_rate_gt_0_1": 0,
+        "n_duplicate_calc_time": 0,
+        "n_nonfinite_rate": 0,
+        "n_rows": 5546,
+        "n_zero_rate": 0,
+        "rows_per_day": 4.86918349429324
+      },
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels/binance_funding_ARKUSDT.csv",
+      "row_count_matches_h53": true,
+      "sha256_matches_h53": true,
+      "symbol": "ARKUSDT"
+    },
+    {
+      "asset": "astr",
+      "header": [
+        "open_time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "close_time",
+        "quote_volume",
+        "count",
+        "taker_buy_volume",
+        "taker_buy_quote_volume",
+        "ignore"
+      ],
+      "issues": [],
+      "kind": "klines",
+      "metrics": {
+        "completeness_ratio": 1.0,
+        "days_stale": 0,
+        "expected_days": 1356,
+        "first_ts_utc": "2023-02-14T00:00:00Z",
+        "last_ts_utc": "2026-10-31T00:00:00Z",
+        "max_gap_run_days": 0,
+        "missing_days": [],
+        "n_duplicate_timestamps": 0,
+        "n_missing_days": 0,
+        "n_negative_volume": 0,
+        "n_nonpositive_price": 0,
+        "n_observed_days": 1356,
+        "n_ohlc_inconsistent": 0,
+        "n_rows": 1356,
+        "n_zero_volume_days": 0,
+        "timestamps_monotone": true
+      },
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels/binance_klines_ASTRUSDT.csv",
+      "row_count_matches_h53": true,
+      "sha256_matches_h53": true,
+      "symbol": "ASTRUSDT"
+    },
+    {
+      "asset": "astr",
+      "header": [
+        "symbol",
+        "calc_time",
+        "funding_interval_hours",
+        "last_funding_rate"
+      ],
+      "issues": [],
+      "kind": "funding",
+      "metrics": {
+        "calc_time_monotone": true,
+        "days_stale": 0,
+        "first_ts_utc": "2023-02-13T08:00:00Z",
+        "funding_interval_hours_histogram": {
+          "8.0": 4070
+        },
+        "interval_values_allowed": true,
+        "last_ts_utc": "2026-10-31T16:00:00Z",
+        "n_abs_rate_gt_0_1": 0,
+        "n_duplicate_calc_time": 0,
+        "n_nonfinite_rate": 0,
+        "n_rows": 4070,
+        "n_zero_rate": 0,
+        "rows_per_day": 2.9992630803242446
+      },
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels/binance_funding_ASTRUSDT.csv",
+      "row_count_matches_h53": true,
+      "sha256_matches_h53": true,
+      "symbol": "ASTRUSDT"
+    }
+  ],
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001/preregistrations/PANELQA_WAVEB_001_v1.md",
+  "promotion_allowed": false,
+  "scope_problems": [],
+  "status": "EXPLORATORY_ONLY",
+  "thresholds": {
+    "allowed_funding_intervals_hours": [
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "max_allowed_staleness_days": 3,
+    "min_klines_completeness": 0.98,
+    "panel_end_utc": "2026-10-31"
+  },
+  "verdict": "PANELQA_WAVEB_COMPLETE",
+  "verdict_rule": "SCOPE_MISMATCH on any missing panel, H53 sha256 or row-count mismatch, or panel count != 4; ISSUES_FOUND on any predeclared panel issue (completeness < 0.98, nonpositive price, OHLC inconsistency, negative volume, duplicate/non-monotone timestamp, unexpected funding interval, nonfinite rate, staleness > 3 days); COMPLETE only when all four panels are clean."
+}

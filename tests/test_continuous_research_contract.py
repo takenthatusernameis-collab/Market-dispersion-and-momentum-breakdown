@@ -213,7 +213,19 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # 12111 rows total) covering exactly the 38 ARK and 45 ASTR admissible
         # months, 0 out-of-window rows, 0 duplicate timestamps, exact row
         # accounting; no outcomes, no confirmatory claim, H10 gate unchanged.
-        self.assertEqual(registry["next_sequence_number"], 53)
+        # H54 was added for the wave-B (ARK/ASTR) extension panel usability and
+        # coverage audit (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001,
+        # EXPLORATORY_ONLY, source_coverage_panel_quality): read-only QA of the 4
+        # committed H53 panels (sha256 and row-count reconciliation against H53,
+        # calendar-day completeness and gap runs, OHLC plausibility, duplicate
+        # and monotone timestamps, zero-volume days, funding interval cadence,
+        # end-of-panel staleness) with a predeclared verdict; verdict
+        # PANELQA_WAVEB_COMPLETE (ARK klines 1,139/1,139 days, ASTR klines
+        # 1,356/1,356 days, 0 missing days, 0 OHLC issues, 0 duplicate
+        # timestamps, 0 days stale; funding cadence ARK {1h:356, 4h:3639,
+        # 8h:1551}, ASTR {8h:4070}); no panel rewritten, no outcomes, no
+        # confirmatory claim, H10 gate unchanged.
+        self.assertEqual(registry["next_sequence_number"], 54)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

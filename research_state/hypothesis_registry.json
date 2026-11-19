@@ -553,10 +553,22 @@
       "statement": "A bounded, no-cost, no-network normalization of exactly the 166 H52-acquired wave-B monthly klines+funding archives (ARK 38 admissible months x 2 kinds, ASTR 45 x 2) into four committed DISP-003-schema panel CSVs, with per-file sha256 reconciliation against H52, strict content re-validation, source-month UTC window accounting, exact row accounting and no interpolation or backfill. No outcomes are computed.",
       "status": "EXPLORATORY_ONLY",
       "title": "Wave-B (ARK/ASTR) extension panel normalization (166 raw archives -> 4 DISP-003-schema panels)"
+    },
+    {
+      "audit_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001/qa/panel_wave_b_quality_audit_2026-11-19T185617Z.json",
+      "evidence_note": "H004V106_PANELQA_WAVEB_001, EXPLORATORY_ONLY/source_coverage_panel_quality. Preregistered before any metric was computed (preregistrations/PANELQA_WAVEB_001_v1.md, Created 2026-11-19T18:55:00Z). Script scripts/panel_wave_b_quality_audit.py (stdlib-only, import-safe pure helpers for calendar-gap profiling, klines/funding QA metrics, issue classification and verdict; no network I/O; writes only the audit file with --execute); test tests/test_panel_wave_b_quality_audit.py (26 tests: 20 hermetic fixtures + 6 skip-guarded committed-artifact integration). Result PANELQA_WAVEB_COMPLETE, no issues: all 4 panels re-hash to the H53 sha256 with matching row counts (ARKUSDT klines 1,139 / funding 5,546; ASTRUSDT klines 1,356 / funding 4,070). Klines continuity is exact: ARK 2023-09-19..2026-10-31 1,139/1,139 calendar days, ASTR 2023-02-14..2026-10-31 1,356/1,356, completeness 1.0 each, 0 missing days, 0 gap runs, 0 nonpositive prices, 0 OHLC inconsistencies, 0 negative-volume and 0 zero-volume days, 0 duplicate or non-monotone timestamps, 0 days stale. Funding: 0 duplicate calc_time, 0 nonfinite rates, 0 |rate|>0.1, cadence ARK {1h:356, 4h:3639, 8h:1551} and ASTR {8h:4070}, all within {1,2,4,8}. Cross-panel: 1,139 shared calendar days, 217 ASTR-only days, 0 ARK-only days (pre-listing span only). No returns/spreads/states/p-values/costs/inference, no promotion, no sealed holdout opened, no re-probe of the date-gated 2026-11 cutoff month. Wave A (7 assets, 644 files) remains out of scope because its raw bytes are absent in this checkout. Does not validate/replace/unlock H1/H6/H7/H10; the H10 confirmatory gate remains 2026-11-30.",
+      "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001",
+      "id": "H54",
+      "label": "source_coverage_panel_quality",
+      "next_test": "Wave-B panels pass the predeclared usability bar, so a future bounded exploratory mechanism diagnostic on ARK/ASTR is feasible without data repair; wave-A raw bytes (644 files) are still absent and would need a new-ID bounded re-acquisition. No confirmatory action is available before the date gate: the H10 fresh sealed block matures on/after 2026-11-30 (cutoff probe for probe_month=2026-11, free-data refresh, full suite, hash check, then the fresh sealed H10 block requiring n_high > 0 AND n_low > 0).",
+      "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001/preregistrations/PANELQA_WAVEB_001_v1.md",
+      "statement": "A bounded, read-only, no-network usability audit of the four committed H53 wave-B DISP-003-schema panels: sha256 and row-count reconciliation against H53, calendar-day completeness and gap-run structure, OHLC plausibility, duplicate/monotone timestamps, zero-volume days, funding interval cadence and end-of-panel staleness, with a predeclared verdict rule. No outcomes are computed.",
+      "status": "EXPLORATORY_ONLY",
+      "title": "Wave-B (ARK/ASTR) extension panel usability and coverage audit (4 committed panels)"
     }
   ],
-  "last_updated_utc": "2026-11-19T05:50:00Z",
-  "next_sequence_number": 53,
+  "last_updated_utc": "2026-11-19T18:57:00Z",
+  "next_sequence_number": 54,
   "program_id": "HARMONY-CRYPTO-EDGE-004",
   "program_status": "ACTIVE",
   "registry_reconciliation_20261025T19Z": "Added H8 (DISP-003-STATEAUDIT-001) recording the executed state-representativeness audit result: the canonical H004V106 +0.617 estimate is CLUSTER_DOMINATED by the 2025-10 calendar-month cluster. H7 received an in-line evidence_note_addendum describing the same audit. H1 remains immutable and unchanged in substance; H2..H6 unchanged; no frozen experiment result was altered. The canonical forward block, grid ledger, summaries, DISPERSION-001/002 and the defective archive are byte-unchanged. New artifact: integrity_audit/H004V106_state_representativeness_audit_20261025.json; new script: scripts/state_representativeness_audit.py; new test: tests/test_state_representativeness_audit.py.",
@@ -636,6 +648,7 @@
       "H53"
     ]
   },
+  "registry_reconciliation_20261119T1857Z": "Added H54 (DISP-003-PANELQA-WAVEB-001) recording the executed wave-B panel usability/coverage audit on the four H53-normalized ARK/ASTR panels: PRESERVES H53 panels byte-identical (no rewrite, no repair), no frozen DISP-001/002/003 artifact, config, ledger, forward block or frontier modified, and the H10 confirmatory gate unchanged and still date-gated to 2026-11-30. New artifact: artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELQA-WAVEB-001/qa/panel_wave_b_quality_audit_2026-11-19T185617Z.json; new script scripts/panel_wave_b_quality_audit.py; new test tests/test_panel_wave_b_quality_audit.py. H1..H53 unchanged in substance.",
   "schema_version": "1.0",
   "selection_rule": "No candidate becomes supported because it is the best among losing alternatives. Freeze a mechanism, endpoint, grid and decision criteria first; test a selected candidate only on a new sealed future block."
 }
