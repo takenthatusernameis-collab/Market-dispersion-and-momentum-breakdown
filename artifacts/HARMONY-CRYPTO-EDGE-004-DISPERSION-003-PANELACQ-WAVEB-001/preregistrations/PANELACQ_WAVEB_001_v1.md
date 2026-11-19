@@ -1,7 +1,7 @@
 # Wave-B (ARK/ASTR) Panel Archive Acquisition — bounded, keyless, no-outcome source coverage
 
 **Experiment ID:** HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEB-001
-**Hypothesis ID:** H51 (allocated from the registry in this session)
+**Hypothesis ID:** H52 (re-allocated from the originally reserved H51 slot; see change log)
 **Status:** PREREGISTERED (before any fetch or computation)
 **Created:** 2026-11-18T22:25:05Z
 **Type:** EXPLORATORY_ONLY — source-coverage acquisition (raw archive bytes + per-file integrity evidence; no panel, no outcomes)
@@ -84,3 +84,4 @@ No threshold, ordering or label depends on any price, return, dispersion state o
 ## 9. Change log
 
 - v1 (2026-11-18T22:25:05Z): initial preregistration. Consumes the H50 trim decision unchanged; no outcome-informed choice; acquisition scope fixed at the 166 trimmed files before any byte is fetched.
+- v2 (2026-11-19T02:36:09Z): **hypothesis re-allocation before any computation.** The original preregistration reserved H51 for this acquisition, but H51 was subsequently allocated to the extension-panel normalization plan (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-PLAN-001, preregistered 2026-11-18T23:12:00Z, computed and committed in the following session). This preregistration is re-allocated to **H52** so that each completed artifact references a distinct registry hypothesis and the registry's `next_sequence_number` ordering is preserved. No computation, fetch, or outcome was performed under H51 for this study; the scope, controls, verdicts and expected result in this document are unchanged.

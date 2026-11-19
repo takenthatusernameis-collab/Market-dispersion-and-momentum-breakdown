@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Wave-B panel archive acquisition (DISP-003-PANELACQ-WAVEB-001, H51).
+"""Wave-B panel archive acquisition (DISP-003-PANELACQ-WAVEB-001, H52).
 
 Bounded, keyless, free-public source-coverage **acquisition** of exactly the
 H50-trimmed wave-B set: the H41-planned monthly ``(symbol, kind, month)``
@@ -14,6 +14,11 @@ trimmed wave-B bytes and records their content integrity. It is
 EXPLORATORY_ONLY source-coverage work: no panel construction, no
 returns/spreads/states/p-values/costs/inference, no promotion, and it does not
 touch the date-gated ``2026-11`` cutoff month.
+
+Hypothesis ID note: this preregistration was originally drafted as H51 and
+re-allocated to H52 before any computation, because H51 was taken by the
+extension-panel normalization plan (PANELNORM-PLAN-001). See the change log in
+the preregistration.
 
 Hard properties:
   * Only URLs that appear verbatim in the pinned H41 plan are ever fetched.
@@ -135,7 +140,7 @@ H50_TRIM_CANONICAL_SHA256 = (
 
 EXPERIMENT_ID = EXP
 AUDIT_ID = "H004V106_PANELACQ_WAVEB_001"
-HYPOTHESIS = "H51"
+HYPOTHESIS = "H52"
 
 KINDS = ("klines", "funding")
 # Pre-declared expected wave-B scope (H50).
