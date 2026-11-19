@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-18T22:17:40Z",
+  "recorded_utc": "2026-11-19T00:31:32Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1224,
-  "tests_ok": 1224,
+  "tests_run": 1236,
+  "tests_ok": 1236,
   "tests_failures": 0,
-  "tests_skipped": 8,
-  "claim": "1224/1224/0",
-  "input_fingerprint": "e46985e39c8678f368314e91e52f634b78c498632b226c4ec6173fa1a8700c5a",
+  "tests_skipped": 15,
+  "claim": "1236/1236/0",
+  "input_fingerprint": "7979622d1222b1aa3c2ffcfe318f1e94930d5e011a5cb351c716a856c7f04c20",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -223,8 +223,16 @@
       "sha256": "43cb73a9712245c0b63207785bdfdd3413497ec7a91b47c4f3133e54fa325416"
     },
     {
+      "path": "scripts/panel_normalization_plan.py",
+      "sha256": "3031668bab8c5f713b550178fb7babaa45b89394e5c02de4491b9702f0e425f5"
+    },
+    {
       "path": "scripts/panel_wave_a_acquisition.py",
       "sha256": "5cb5ce8ab1589aea02aaaaf5cc65233a926404064639deec53f767e83a0cf969"
+    },
+    {
+      "path": "scripts/panel_wave_b_acquisition.py",
+      "sha256": "3ed85a6255032bca7503b9988c7e09cc0ca2ac60e55a92153b27f47621a634df"
     },
     {
       "path": "scripts/panel_wave_b_window_trim.py",
@@ -376,7 +384,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "b7f847a7ac68cc2c5efa8ca55219282e1cfcc08e5c6375d5a65bb58df9addd35"
+      "sha256": "c139515a915fc5fb46c508690db710d52094eb6afe28e356070ac1478e51595b"
     },
     {
       "path": "tests/test_cutoff_probe.py",
@@ -671,6 +679,10 @@
       "sha256": "b47d80ce7c00640a46fab7e92c4b4f2163f04f02930b47a70e9a19d4efac0095"
     },
     {
+      "path": "tests/test_panel_normalization_plan.py",
+      "sha256": "ac73618acd599959e5ecea40c91f8816b93f3c8ddced1b4ec4e72cb4b2092870"
+    },
+    {
       "path": "tests/test_panel_wave_a_acquisition.py",
       "sha256": "2e9f46535965e667fbd4d3d6b02a98693c2cadcc68d5e0a0e8549bbef7049b82"
     },
@@ -787,5 +799,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 194
+  "input_file_count": 197
 }
