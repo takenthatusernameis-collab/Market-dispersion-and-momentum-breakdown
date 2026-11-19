@@ -1,14 +1,14 @@
-# Agent Task Message — 2026-11-19T09:04:36Z (next session)
+# Agent Task Message — 2026-11-19T09:05:01Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T08:49:01Z`) and this message, then complete the standing task:
+Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T09:05:01Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
 2. **No genuinely new bounded no-cost gap remains before the gate.** H51-a, H52 (PANELACQ-WAVEB-001) and H53 (PANELNORM-WAVEB-001) complete and committed. H51-b optional/unstarted. If — and only if — a genuinely NEW-ID bounded no-cost step appears before the gate, preregister it under the next ID as `EXPLORATORY_ONLY` per adaptive research-gate policy v1. If none appears, hold and leave the state clean.
 3. **Do not re-do** H39–H53, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files or re-derive the H50 trim and present them as new evidence. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-19T09:03:17Z, this session)
+## Verified state (2026-11-19T09:05:01Z, this session)
 
 - **HEAD at write:** working tree clean (`git status --short` empty). No frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
