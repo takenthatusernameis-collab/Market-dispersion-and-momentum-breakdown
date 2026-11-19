@@ -1,20 +1,20 @@
-# Agent Task Message — 2026-11-19T22:25:20Z (next session)
+# Agent Task Message — 2026-11-19T22:56:55Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T22:25:20Z`) and this message, then complete the standing task:
+Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T22:56:55Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
 2. **H54 is now complete** (`PANELQA-WAVEB-001`, `EXPLORATORY_ONLY`, verdict `PANELQA_WAVEB_COMPLETE`): the four H53 ARK/ASTR panels reconcile to their recorded sha256 with exact klines continuity (ARK 1,139/1,139 days, ASTR 1,356/1,356), no OHLC/duplicate/staleness issues, and funding cadence ARK `{1h:356, 4h:3639, 8h:1551}` / ASTR `{8h:4070}`. Do not re-run or re-present H54.
 3. **If — and only if — a genuinely NEW-ID bounded no-cost step appears before the gate, preregister it first as `EXPLORATORY_ONLY`** per adaptive research-gate policy v1. The one avenue still genuinely open is a bounded mechanism diagnostic on the now-QA-clean ARK/ASTR wave-B panels (new ID; must declare the narrower 2-asset/9-asset universe explicitly, use point-in-time months only, compute no confirmatory claim and not touch the frozen H10 track). It must not reuse the inspected canonical forward block as fresh confirmation. If no such step is justified, hold and leave the state clean.
 
-## Verified state (2026-11-19T22:25:20Z, this session)
+## Verified state (2026-11-19T22:56:55Z, this session)
 
 - **compileall + suite:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **1317 tests, OK, skipped=8, EXIT=0**.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`); 399 probe files total (`*probe*.json`) including `daily_fundingRate_probe_20261101T132013Z.json` and `H004V106_panel_archive_probe_20261116T142247Z.json` outside the 397 cutoff-probe census. Date gate respected — no `probe_month=2026-11` re-probe.
 - **Canonical/h10_fresh/grid/frontier (byte-unchanged):** canonical forward block sha256 `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`); grid config (configs/dispersion_momentum_grid_v3.json) `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier (research_state/universe_frontier.json) sha256 `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (`historical_rank_coverage_state=NOT_PROVEN_COMPLETE`, `last_updated_utc=2026-11-06T12:27:02Z`, `expanding_universe_target_met=true`, `rank_frontier_exhausted=false`).
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 54 (H1..H54 present). H10 fresh sealed block immature and date-gated to **2026-11-30**.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261119T190200Z.json`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261119T225655Z.json`.
 
 ## Option A — at/after 2026-11-30 (primary, date-gated)
 
