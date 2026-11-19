@@ -1,14 +1,14 @@
-# Agent Task Message — 2026-11-19T04:15:39Z (next session)
+# Agent Task Message — 2026-11-19T04:40:00Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T04:15:39Z`) and this message, then complete the standing task:
+Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-19T04:40:00Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
 2. **No genuinely new bounded no-cost gap remains before the gate.** H51-a (extension-panel normalization plan) is complete and committed: registry H51, `scripts/panel_normalization_plan.py`, `tests/test_panel_normalization_plan.py` (12 tests), artifact `artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-PLAN-001/integrity_audit/panel_normalization_plan_20261118T231800Z.json` (file sha256 `dc8e100682cf3eab147787973536dd0de1517c740e5075a7c3f3db43796b9768`), verdict `PLAN_RECORDED`, 9 extension assets, 810 planned panel files, `confirmatory_claim_allowed=false`, `exploratory_only=true`. H51-b (wave-B acquisition of the H50-trimmed 166 files) has only a preregistration stub (`artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEB-001/preregistrations/PANELACQ_WAVEB_001_v1.md`); it is optional, not required for the confirmatory gate, and unstarted (no script, test, integrity audit, or registry entry). If — and only if — a genuinely NEW-ID bounded no-cost step appears before the gate, preregister it under the next ID (H52) as `EXPLORATORY_ONLY` per adaptive research-gate policy v1, keep it read-only/planning-only unless it is a real free-data acquisition, and do not present it as outcomes or evidence of an edge. If none appears, hold and leave the state clean.
 3. **Do not re-do** H39–H51, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files or re-derive the H50 trim and present them as new evidence. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-19T04:15:39Z, this session)
+## Verified state (2026-11-19T04:40:00Z, this session)
 
 - **HEAD at write:** working tree has only `research_state/run_manifest.json` and `research_state/verified_test_claim_claim_snapshot.json` modified from test claim recording; all H51-a artifacts and durable-state updates committed (registry H51, contract pin 51, manifest H51 entry and session record, claim snapshot refreshed, session verification recorded). No frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
 - **Full suite green:** **1264 tests, OK, skipped=8, EXIT=0** (`python3 -m unittest discover -s tests`), claim re-recorded **1264/1264/0** by `python3 scripts/record_test_claim.py` (snapshot `research_state/verified_test_claim_claim_snapshot.json`, input fingerprint prefix `b1535fc48b23da4d...`, 198 input files). `python3 -m compileall -q scripts tests` EXIT 0.
