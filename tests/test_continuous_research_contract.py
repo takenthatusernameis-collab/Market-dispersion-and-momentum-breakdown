@@ -196,7 +196,14 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # months from H47/H50 served windows, point-in-time formation alignment,
         # no backfill, strict DISP-003 schema, per-file sha256 provenance; no
         # panel bytes, no outcomes, confirmatory H10 gate unchanged.
-        self.assertEqual(registry["next_sequence_number"], 51)
+        # H52 was added for the wave-B (ARK/ASTR) panel archive acquisition
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-WAVEB-001,
+        # EXPLORATORY_ONLY, source_coverage_acquisition) executing the H50 trim:
+        # 166/166 trimmed monthly klines+funding archives (ARK 76, ASTR 90)
+        # fetched with per-file sha256 and zipfile/csv content-integrity
+        # evidence; wave A, ALPHA and the 18 dropped pre-listing months never
+        # fetched; no panel, no outcomes, confirmatory H10 gate unchanged.
+        self.assertEqual(registry["next_sequence_number"], 52)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])

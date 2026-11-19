@@ -2,28 +2,23 @@
 """Wave-B panel archive acquisition (DISP-003-PANELACQ-WAVEB-001, H52).
 
 Bounded, keyless, free-public source-coverage **acquisition** of exactly the
-H50-trimmed wave-B set: the H41-planned monthly ``(symbol, kind, month)``
-archives for ARK and ASTR restricted to each asset's H50 admissible study
-months. ARK 38 months x 2 kinds = 76 files; ASTR 45 months x 2 kinds = 90
-files; 166 files total. Nothing else is fetched.
+H50-trimmed wave-B queue: every H41-planned monthly ``(symbol, kind, month)``
+archive for ARK and ASTR inside each asset's H50 ``admissible_study_months`` —
+ARK 38 months x 2 kinds = 76 files, ASTR 45 months x 2 kinds = 90 files, 166
+files total. Nothing else is fetched.
 
-This is the natural successor to H50: H47 decided *which assets are
-admissible*, H48 *what a bounded acquisition may fetch*, H49 fetched wave A,
-H50 declared the wave-B served windows, and this study fetches exactly those
-trimmed wave-B bytes and records their content integrity. It is
+This is the natural successor to H50: H49 acquired wave A, H50 *decided* the
+admissible wave-B window (166 servable files, 18 pre-listing placeholders
+dropped, ``all_dropped_before_first_served=true``), and this study fetches
+exactly those 166 bytes and records their content integrity. It is
 EXPLORATORY_ONLY source-coverage work: no panel construction, no
 returns/spreads/states/p-values/costs/inference, no promotion, and it does not
 touch the date-gated ``2026-11`` cutoff month.
 
-Hypothesis ID note: this preregistration was originally drafted as H51 and
-re-allocated to H52 before any computation, because H51 was taken by the
-extension-panel normalization plan (PANELNORM-PLAN-001). See the change log in
-the preregistration.
-
 Hard properties:
   * Only URLs that appear verbatim in the pinned H41 plan are ever fetched.
-  * Wave A (ALICE..ARPA), ALPHA and the 18 H50-dropped pre-listing months
-    (ARK 2023-01..2023-08, ASTR 2023-01) are never fetched.
+  * Only months inside an asset's H50 admissible window are ever fetched; the
+    18 dropped pre-listing months and every wave-A / ALPHA asset are excluded.
   * Missing files stay missing and are reported; nothing is fabricated.
   * Frozen artifacts are read-only and hash-verified before/after.
   * Network and filesystem writes happen only under ``--execute``.
@@ -133,7 +128,9 @@ H47_ROSTER_CANONICAL_SHA256 = (
 H48_QUEUE_CANONICAL_SHA256 = (
     "38c099db5c233222cc51f39348f06e933871337b807d4761512d2800ec2375c7"
 )
-H50_TRIM_SHA256 = "5aed05f1615a3cc2983c6e1be86ef9f35306aed7cfab86aea9f1d8fab9f61e66"
+H50_TRIM_FILE_SHA256 = (
+    "5aed05f1615a3cc2983c6e1be86ef9f35306aed7cfab86aea9f1d8fab9f61e66"
+)
 H50_TRIM_CANONICAL_SHA256 = (
     "b43f71bf239254152288b8eaf89a7748680117c7ecc10a16564c4a9b6a115a5d"
 )
@@ -143,10 +140,10 @@ AUDIT_ID = "H004V106_PANELACQ_WAVEB_001"
 HYPOTHESIS = "H52"
 
 KINDS = ("klines", "funding")
-# Pre-declared expected wave-B scope (H50).
+# Pre-declared expected wave-B scope (H50 trim, unchanged).
 EXPECTED_WAVE_B_ASSETS = ("ark", "astr")
 EXPECTED_WAVE_B_FILES = 166
-EXPECTED_WAVE_B_FILES_PER_ASSET = {"ark": 76, "astr": 90}
+EXPECTED_FILES_PER_ASSET = {"ark": 76, "astr": 90}
 FORBIDDEN_ASSETS = ("alice", "ankr", "ape", "api3", "apt", "ar", "arpa", "alpha")
 
 # Documented free public archive base (keyless).
@@ -191,37 +188,48 @@ def probe_status_map(probe_entries):
     return status
 
 
-def select_wave_b_entries(
-    plan_entries,
-    probe_entries,
-    admissible_months_by_asset,
-    dropped_months_by_asset=None,
-    kinds=KINDS,
-):
+def admissible_months_by_asset(trim_per_asset):
+    """{asset: [admissible months]} from the H50 trim decision (read, not derived)."""
+    out = {}
+    for asset, row in (trim_per_asset or {}).items():
+        months = [m for m in (row.get("admissible_study_months") or []) if m]
+        out[asset] = list(dict.fromkeys(months))
+    return out
+
+
+def dropped_months_by_asset(trim_per_asset):
+    """{asset: [dropped months]} from the H50 trim decision."""
+    out = {}
+    for asset, row in (trim_per_asset or {}).items():
+        months = [m for m in (row.get("dropped_required_months") or []) if m]
+        out[asset] = list(dict.fromkeys(months))
+    return out
+
+
+def select_wave_b_entries(plan_entries, probe_entries, admissible, kinds=KINDS):
     """Pure selection of the expected wave-B acquisition entries.
 
-    An entry is selected only when its asset is one of the wave-B assets, its
-    month is in that asset's H50 ``admissible_study_months``, its kind is
-    required, its H41 plan row carries an archive_url, and the H43 probe
-    recorded HTTP 200 for that exact (symbol, kind, month). Any month listed in
-    the H50 ``dropped_required_months`` is removed unconditionally, so a
-    pre-listing placeholder can never leak into the acquisition list.
+    An entry is selected only when its asset has an H50 admissible month list,
+    its month is in **that asset's** admissible list, its kind is required, its
+    H41 plan row carries an archive_url, and the H43 probe recorded HTTP 200 for
+    that exact (symbol, kind, month). Nothing else is selected, so a wave-A,
+    ALPHA or dropped pre-listing month can never leak into the acquisition list.
     """
-    admissible = {a: {m for m in months if m} for a, months in admissible_months_by_asset.items()}
-    dropped = {
-        a: {m for m in months if m} for a, months in (dropped_months_by_asset or {}).items()
-    }
     status = probe_status_map(probe_entries)
+    allowed = {
+        a: set(m for m in months if m)
+        for a, months in (admissible or {}).items()
+        if a not in FORBIDDEN_ASSETS
+    }
     selected = []
     for e in plan_entries:
         asset = e.get("asset")
         kind = e.get("kind")
         month = e.get("month")
-        if asset in FORBIDDEN_ASSETS or asset not in admissible:
+        if asset in FORBIDDEN_ASSETS:
             continue
-        if month not in admissible[asset] or month in dropped.get(asset, set()):
-            continue
-        if kind not in kinds:
+        months = allowed.get(asset)
+        if not months or month not in months or kind not in kinds:
             continue
         url = e.get("archive_url")
         if not url:
@@ -458,62 +466,66 @@ def build_plan():
     feas = _load_json(H40_FEAS)
 
     study_months = sorted(m for m in (feas.get("study_months") or []) if m)
-    trim_assets = tuple(sorted((trim.get("per_asset") or {}).keys()))
-    admissible = {
-        a: list(v.get("admissible_study_months") or [])
-        for a, v in (trim.get("per_asset") or {}).items()
+    admissible = admissible_months_by_asset(trim.get("per_asset"))
+    dropped = dropped_months_by_asset(trim.get("per_asset"))
+    h50_scope = trim.get("expected_scope") or {}
+    trimmed = trim.get("wave_b_trimmed") or {}
+
+    entries = select_wave_b_entries(plan["plan_entries"], probe["per_entry"], admissible)
+
+    per_asset_counts = {
+        a: sum(1 for e in entries if e["asset"] == a) for a in EXPECTED_WAVE_B_ASSETS
     }
-    dropped = {
-        a: list(v.get("dropped_required_months") or [])
-        for a, v in (trim.get("per_asset") or {}).items()
-    }
-
-    entries = select_wave_b_entries(plan["plan_entries"], probe["per_entry"], admissible, dropped)
-
-    per_asset_counts = {}
-    for e in entries:
-        per_asset_counts[e["asset"]] = per_asset_counts.get(e["asset"], 0) + 1
-
-    selected_months_by_asset = {}
-    for e in entries:
-        selected_months_by_asset.setdefault(e["asset"], set()).add(e["month"])
-
-    dropped_month_selected = sorted(
-        [
-            [a, m]
-            for a, months in dropped.items()
-            for m in months
-            if m in selected_months_by_asset.get(a, set())
-        ]
+    selected_months = {a: {e["month"] for e in entries if e["asset"] == a} for a in admissible}
+    dropped_leak = sorted(
+        (a, m) for a, months in dropped.items() for m in months if m in selected_months.get(a, set())
     )
+    outside_admissible = sorted(
+        (e["asset"], e["month"])
+        for e in entries
+        if e["month"] not in set(admissible.get(e["asset"], []))
+    )
+    outside_study = sorted({e["month"] for e in entries} - set(study_months))
+    h50_trim_sha_ok = _file_sha256(H50_TRIM) == H50_TRIM_FILE_SHA256
 
     scope_checks = {
+        "h50_trim_file_sha256_ok": h50_trim_sha_ok,
+        "h50_trim_canonical_sha256_ok": trim.get("trim_canonical_sha256")
+        == H50_TRIM_CANONICAL_SHA256,
+        "h50_trim_verdict_recorded": trim.get("trim_verdict") == "TRIM_DECISION_RECORDED",
+        "h50_trim_scope_is_166_servable": (
+            h50_scope.get("wave_b_trimmed_planned_files") == EXPECTED_WAVE_B_FILES
+            and (trimmed.get("planned_files") == EXPECTED_WAVE_B_FILES)
+            and (trimmed.get("servable_files") == EXPECTED_WAVE_B_FILES)
+            and (trimmed.get("absent_files") == 0)
+        ),
+        "h50_trimmed_asset_set_matches_expected": tuple(trimmed.get("assets") or [])
+        == EXPECTED_WAVE_B_ASSETS,
+        "selected_asset_set_matches_expected": tuple(sorted({e["asset"] for e in entries}))
+        == EXPECTED_WAVE_B_ASSETS,
+        "selected_file_count_matches_expected": len(entries) == EXPECTED_WAVE_B_FILES,
+        "per_asset_counts_match_expected": per_asset_counts == EXPECTED_FILES_PER_ASSET,
+        "h50_admissible_month_counts_match_trim": {
+            a: len(m) for a, m in admissible.items()
+        }
+        == {a: EXPECTED_FILES_PER_ASSET[a] // len(KINDS) for a in EXPECTED_WAVE_B_ASSETS},
+        "selected_months_equal_h50_admissible_months": all(
+            selected_months.get(a, set()) == set(admissible.get(a, []))
+            for a in EXPECTED_WAVE_B_ASSETS
+        ),
+        "no_dropped_prelisting_month_selected": not dropped_leak,
+        "no_month_outside_admissible_window": not outside_admissible,
+        "no_month_outside_h40_study_window": not outside_study,
+        "no_forbidden_asset_selected": not any(e["asset"] in FORBIDDEN_ASSETS for e in entries),
+        "all_urls_on_documented_archive_base": all(
+            e["archive_url"].startswith(BINANCE_DATA_BASE + "/data/futures/um/") for e in entries
+        ),
         "h41_plan_sha256_ok": _file_sha256(H41_PLAN) == H41_PLAN_SHA256,
         "h43_probe_sha256_ok": _file_sha256(H43_PROBE) == H43_PROBE_SHA256,
         "h47_roster_canonical_sha256_ok": roster.get("roster_canonical_sha256")
         == H47_ROSTER_CANONICAL_SHA256,
         "h48_queue_canonical_sha256_ok": queue.get("queue_canonical_sha256")
         == H48_QUEUE_CANONICAL_SHA256,
-        "h50_artifact_sha256_ok": _file_sha256(H50_TRIM) == H50_TRIM_SHA256,
-        "h50_trim_canonical_sha256_ok": trim.get("trim_canonical_sha256")
-        == H50_TRIM_CANONICAL_SHA256,
-        "h50_verdict_ok": trim.get("trim_verdict") == "TRIM_DECISION_RECORDED",
-        "wave_b_asset_set_matches_expected": trim_assets == tuple(EXPECTED_WAVE_B_ASSETS),
-        "selected_asset_set_matches_expected": tuple(sorted(per_asset_counts))
-        == tuple(EXPECTED_WAVE_B_ASSETS),
-        "selected_file_count_matches_expected": len(entries) == EXPECTED_WAVE_B_FILES,
-        "per_asset_file_counts_match_expected": per_asset_counts
-        == EXPECTED_WAVE_B_FILES_PER_ASSET,
-        "no_forbidden_asset_selected": not any(e["asset"] in FORBIDDEN_ASSETS for e in entries),
-        "no_dropped_month_selected": not dropped_month_selected,
-        "all_selected_months_admissible": all(
-            m in set(admissible.get(a, [])) for a, months in selected_months_by_asset.items()
-            for m in months
-        ),
-        "all_selected_months_in_study_window": all(e["month"] in set(study_months) for e in entries),
-        "all_urls_on_documented_archive_base": all(
-            e["archive_url"].startswith(BINANCE_DATA_BASE + "/data/futures/um/") for e in entries
-        ),
     }
     scope_ok = all(scope_checks.values())
     return {
@@ -521,16 +533,16 @@ def build_plan():
         "scope_checks": scope_checks,
         "scope_ok": scope_ok,
         "study_months": study_months,
-        "trim_assets": list(trim_assets),
-        "admissible_months_by_asset": {a: sorted(v) for a, v in admissible.items()},
-        "dropped_months_by_asset": {a: sorted(v) for a, v in dropped.items()},
+        "admissible_months": admissible,
+        "dropped_months": dropped,
         "per_asset_counts": per_asset_counts,
-        "dropped_month_selected": dropped_month_selected,
+        "dropped_leak": [list(x) for x in dropped_leak],
         "h41_plan_sha256": _file_sha256(H41_PLAN),
         "h43_probe_sha256": _file_sha256(H43_PROBE),
         "h47_roster_canonical_sha256": roster.get("roster_canonical_sha256"),
         "h48_queue_canonical_sha256": queue.get("queue_canonical_sha256"),
         "h50_trim_canonical_sha256": trim.get("trim_canonical_sha256"),
+        "h50_trim_file_sha256": None if not h50_trim_sha_ok else H50_TRIM_FILE_SHA256,
     }
 
 
@@ -559,13 +571,13 @@ def build_audit(records=None, cache_dir=DEFAULT_CACHE_DIR, fetched_utc=None):
         "fetched_utc": fetched_utc,
         "preregistration": PREREG.relative_to(ROOT).as_posix(),
         "method": (
-            "Bounded keyless GET of exactly the H50-trimmed wave-B set: H41-planned "
-            "monthly klines+funding archives for ARK (38 admissible study months, 76 "
-            "files) and ASTR (45 months, 90 files), 166 files total. Each response is "
-            "hashed and its content checked with stdlib zipfile/csv (single csv member, "
-            "documented header, non-empty, monotone timestamps). Wave A, ALPHA and the "
-            "18 H50-dropped pre-listing months are never fetched and no month outside "
-            "an H50 admissible window is fetched. No panel, no outcomes."
+            "Bounded keyless GET of exactly the H50-trimmed wave-B queue: "
+            "H41-planned monthly klines+funding archives for ARK (38 admissible "
+            "months, 76 files) and ASTR (45 admissible months, 90 files), 166 "
+            "files total. Each response is hashed and its content checked with "
+            "stdlib zipfile/csv (single csv member, documented header, non-empty, "
+            "monotone timestamps). The 18 dropped pre-listing months, wave A "
+            "(7 assets) and ALPHA are never fetched. No panel, no outcomes."
         ),
         "source_base": BINANCE_DATA_BASE,
         "audited_inputs": {
@@ -573,13 +585,13 @@ def build_audit(records=None, cache_dir=DEFAULT_CACHE_DIR, fetched_utc=None):
             "h43_probe": H43_PROBE.relative_to(ROOT).as_posix(),
             "h47_roster": H47_ROSTER.relative_to(ROOT).as_posix(),
             "h48_queue": H48_QUEUE.relative_to(ROOT).as_posix(),
-            "h50_window_trim": H50_TRIM.relative_to(ROOT).as_posix(),
+            "h50_wave_b_trim": H50_TRIM.relative_to(ROOT).as_posix(),
             "h40_feasibility_context": H40_FEAS.relative_to(ROOT).as_posix(),
         },
         "audited_input_sha256": {
             "h41_plan": plan["h41_plan_sha256"],
             "h43_probe": plan["h43_probe_sha256"],
-            "h50_window_trim": _file_sha256(H50_TRIM),
+            "h50_wave_b_trim": plan["h50_trim_file_sha256"],
         },
         "h47_roster_canonical_sha256": plan["h47_roster_canonical_sha256"],
         "h48_queue_canonical_sha256": plan["h48_queue_canonical_sha256"],
@@ -589,33 +601,30 @@ def build_audit(records=None, cache_dir=DEFAULT_CACHE_DIR, fetched_utc=None):
         "scope_declaration": {
             "expected_wave_b_assets": list(EXPECTED_WAVE_B_ASSETS),
             "expected_files": EXPECTED_WAVE_B_FILES,
-            "expected_files_per_asset": dict(EXPECTED_WAVE_B_FILES_PER_ASSET),
+            "expected_files_per_asset": dict(EXPECTED_FILES_PER_ASSET),
             "kinds": list(KINDS),
+            "admissible_months_by_asset": {
+                a: plan["admissible_months"].get(a, []) for a in EXPECTED_WAVE_B_ASSETS
+            },
+            "dropped_months_by_asset": {
+                a: plan["dropped_months"].get(a, []) for a in EXPECTED_WAVE_B_ASSETS
+            },
+            "n_admissible_months_total": sum(
+                len(plan["admissible_months"].get(a, [])) for a in EXPECTED_WAVE_B_ASSETS
+            ),
             "n_study_months": len(plan["study_months"]),
-            "admissible_months_by_asset": plan["admissible_months_by_asset"],
-            "dropped_months_by_asset": plan["dropped_months_by_asset"],
-            "excluded_wave_a_assets_not_acquired": [
-                "alice",
-                "ankr",
-                "ape",
-                "api3",
-                "apt",
-                "ar",
-                "arpa",
-            ],
+            "excluded_wave_a_assets": ["alice", "ankr", "ape", "api3", "apt", "ar", "arpa"],
             "excluded_wave_a_files_not_acquired": 644,
             "excluded_alpha_files_not_acquired": 92,
-            "excluded_dropped_wave_b_files_not_acquired": 18,
+            "excluded_dropped_prelisting_files_not_acquired": 18,
         },
         "reconciliation": recon,
         "verdict": verdict,
         "verdict_rule": (
-            "WAVEB_SCOPE_MISMATCH if a pinned input digest fails, the derived wave-B "
-            "asset set is not {ark,astr}, the trimmed month set differs from the H50 "
-            "admissible months, the count is not 166 (ark 76 / astr 90), or any "
-            "selected file falls outside an admissible window or into a dropped month; "
-            "WAVEB_ACQUISITION_INCOMPLETE if any expected file lacks HTTP 200, a "
-            "sha256, or content_ok; else WAVEB_ACQUISITION_COMPLETE."
+            "WAVEB_SCOPE_MISMATCH if the derived wave-B set differs from the pinned "
+            "H50 166-file scope (ARK 76 / ASTR 90) or a pinned input digest fails; "
+            "WAVEB_ACQUISITION_INCOMPLETE if any expected file lacks HTTP 200, "
+            "a sha256, or content_ok; else WAVEB_ACQUISITION_COMPLETE."
         ),
         "frozen_hashes_verified": frozen,
         "all_frozen_hashes_match": all(v["match"] for v in frozen.values()),
@@ -630,8 +639,8 @@ def build_audit(records=None, cache_dir=DEFAULT_CACHE_DIR, fetched_utc=None):
             "inference computed.",
             "No candidate promoted; no confirmatory or economic claim.",
             "Missing archive files are never fabricated; they remain absent.",
-            "Wave A archives are not re-fetched; ALPHA and the 18 H50-dropped "
-            "pre-listing months remain unacquired by declared decision.",
+            "Wave A (7 assets, 644 files), ALPHA and the 18 dropped pre-listing "
+            "months are not acquired; those remain governed by their own decisions.",
             "Does not re-probe the date-gated 2026-11 cutoff month.",
             "Does not alter any frozen DISP-001/002/003 artifact, config, ledger "
             "or forward block, and does not unlock H1/H6/H7/H10.",
@@ -642,7 +651,7 @@ def build_audit(records=None, cache_dir=DEFAULT_CACHE_DIR, fetched_utc=None):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
-        description="Wave-B panel archive acquisition (H51, exploratory only)."
+        description="Wave-B panel archive acquisition (H52, exploratory only)."
     )
     parser.add_argument(
         "--execute",
@@ -665,8 +674,8 @@ def main(argv=None):
                     "mode": "plan_only",
                     "scope_ok": plan["scope_ok"],
                     "n_expected_files": len(plan["entries"]),
-                    "per_asset_counts": plan["per_asset_counts"],
                     "wave_b_assets": sorted({e["asset"] for e in plan["entries"]}),
+                    "per_asset_counts": plan["per_asset_counts"],
                     "scope_checks": plan["scope_checks"],
                 },
                 sort_keys=True,
@@ -676,8 +685,7 @@ def main(argv=None):
 
     audit = build_audit(None, cache_dir=args.cache_dir)
     out_path = Path(args.out) if args.out else (
-        AUDIT_DIR
-        / f"panel_wave_b_acquisition_{audit['computed_utc'].replace('-', '').replace(':', '')}.json"
+        AUDIT_DIR / f"panel_wave_b_acquisition_{audit['computed_utc'].replace('-', '').replace(':', '')}.json"
     )
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(audit, indent=2, sort_keys=True) + "\n")

@@ -41,3 +41,9 @@ artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-F1GRID-002/grid_checkpoints/cel
 # sha256/content-integrity audit, never the binary zips; the cache is
 # re-acquirable from data.binance.vision and would otherwise bloat checkpoints.
 data/panel_archive_wave_a/
+
+# Raw free-public archive bytes fetched by the H52 wave-B acquisition
+# (DISP-003-PANELACQ-WAVEB-001, 166 trimmed ARK/ASTR files). Same policy as
+# wave A: the repository tracks the committed sha256/content-integrity audit,
+# never the binary zips, which are re-acquirable from data.binance.vision.
+data/panel_archive_wave_b/
