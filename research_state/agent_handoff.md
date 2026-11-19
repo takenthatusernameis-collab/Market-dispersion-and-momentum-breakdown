@@ -1,6 +1,14 @@
-# Agent Handoff — 2026-11-19T13:53:51Z (current session)
+# Agent Handoff — 2026-11-19T14:01:13Z (current session)
 
-## Session summary — 2026-11-19T13:53:51Z (this session)
+## Session summary — 2026-11-19T14:01:13Z (this session)
+
+- **Prior task executed:** read durable handoff and task message; standing task hold confirmatory H10 track for hard date gate 2026-11-30 (today 2026-11-19 precedes gate). No genuinely new bounded no-cost gap before gate; H51-a, H52, H53 complete and committed. State re-verified from disk: compileall EXIT 0; suite 1291 tests, OK, skipped=8, EXIT=0. Probe census 397 (270 probe_month=2026-10/49 published, 127 probe_month=2026-11/0 published; newest cutoff_probe_20261113T091257Z.json); 398 probe files total. All four frozen hashes byte-unchanged. No code/frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
+
+- **Posture:** BLOCKED_BY_HARD_DATE_GATE for confirmatory H10 track. Hold for 2026-11-30.
+
+- **Next action:** hold for date gate 2026-11-30 then execute Option A. Before gate, only a genuinely NEW-ID bounded no-cost step authorized; if none, hold and leave state clean.
+
+## Previous session — 2026-11-19T13:53:51Z
 
 - **Prior task executed:** read durable handoff and task message; standing task hold confirmatory H10 track for hard date gate 2026-11-30 (today 2026-11-19 precedes gate). No genuinely new bounded no-cost gap before gate; H51-a, H52, H53 complete and committed. State re-verified from disk: compileall EXIT 0; suite 1291 tests, OK, skipped=8, EXIT=0. Probe census 397 (270 probe_month=2026-10/49 published, 127 probe_month=2026-11/0 published; newest cutoff_probe_20261113T091257Z.json); 398 probe files total. All four frozen hashes byte-unchanged. No code/frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged. Repaired durable-state drift: handoff now quotes newest session verification record session_verify_20261119T132052Z.json.
 - **Posture:** BLOCKED_BY_HARD_DATE_GATE for confirmatory H10 track. Hold for 2026-11-30.
@@ -177,13 +185,3 @@
 ## Previous session — 2026-11-19T01:39:00Z
 
 - **Prior task executed:** read durable handoff (`## Session summary — 2026-11-19T01:27:48Z`, H51-a complete) and this task message. Standing task remains the hard date gate 2026-11-30; today 2026-11-19 precedes the gate. No genuinely new bounded no-cost gap was identified before the gate; H51-a is complete and committed, H51-b is optional/unstarted. State re-verified from disk only.
-- **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0; full suite `python3 -m unittest discover -s tests`: **1236 tests, OK, skipped=8, EXIT=0**; claim re-recorded **1236/1236/0** via `python3 scripts/record_test_claim.py` (snapshot `research_state/verified_test_claim_claim_snapshot.json`, input fingerprint prefix `7979622d1222b1aa...`, 197 input files). No code, frozen artifact, config, input, frontier or sealed-holdout modified; DISPERSION-001/002 unchanged.
-- **Handoff repair:** fixed duplicate `(this session)` markers and `(current session)` marker on historical entry; durable-state guards now pass.
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
-- **Next action:** hold for the date gate 2026-11-30 and then execute Option A (cutoff probe → free-data refresh → full suite → hash check → fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`). Before the gate, only a genuinely NEW-ID bounded no-cost step is authorized; H51-a is done and H51-b is optional/unstarted, so if no new genuine gap emerges, hold and leave the state clean. Do not re-probe `probe_month=2026-11`, do not re-run completed hypotheses, do not re-present H49/H50/H51 results as new evidence, and do not add another verification-only checkpoint.
-
-## Previous session — 2026-11-19T01:27:48Z
-
-- **Prior task executed:** read durable handoff (`## Session summary — 2026-11-19T01:22:00Z`, H51-a complete) and this task message. Standing task remains the hard date gate 2026-11-30; today 2026-11-19 precedes the gate. No genuinely new bounded no-cost gap was identified before the gate; H51-a is complete and committed, H51-b is optional/unstarted. State re-verified from disk only.
-- **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0; full suite `python3 -m unittest discover -s tests`: **1236 tests, OK, skipped=8, EXIT=0**. No code, frozen artifact, config, input, frontier or sealed-holdout modified; DISPERSION-001/002 unchanged.
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
