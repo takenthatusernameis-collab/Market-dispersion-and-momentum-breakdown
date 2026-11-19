@@ -1,0 +1,53 @@
+{
+  "session_timestamp_utc": "2026-11-19T04:15:39Z",
+  "session_type": "hold_for_date_gate",
+  "date_gate_target_utc": "2026-11-30T00:00:00Z",
+  "verification": {
+    "compileall_exit_code": 0,
+    "git_status_clean_before": false,
+    "git_status_changes": [
+      "research_state/run_manifest.json",
+      "research_state/verified_test_claim_claim_snapshot.json"
+    ],
+    "full_suite": {
+      "tests_run": 1264,
+      "tests_passed": 1264,
+      "tests_failed": 0,
+      "tests_skipped": 8,
+      "exit_code": 0,
+      "duration_seconds": 93.44
+    },
+    "test_claim_recorded": true,
+    "test_claim": "1264/1264/0",
+    "test_claim_fingerprint": "b1535fc48b23da4d...",
+    "input_files_count": 198
+  },
+  "canonical_artifacts_verified_unchanged": {
+    "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_config_v3_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "universe_frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_census_recomputed": {
+    "cutoff_probe_total": 397,
+    "probe_month_2026_10_count": 270,
+    "probe_month_2026_10_published": 49,
+    "probe_month_2026_11_count": 127,
+    "probe_month_2026_11_published": 0,
+    "newest_cutoff_probe": "cutoff_probe_20261113T091257Z.json",
+    "daily_fundingRate_probe_total": 1,
+    "probe_files_total_including_daily": 398,
+    "date_gate_respected_no_reprobe": true
+  },
+  "hypothesis_registry": {
+    "next_sequence_number": 51,
+    "h1_through_h51_present": true,
+    "h10_date_gate_unchanged": "2026-11-30"
+  },
+  "h51_status": {
+    "h51_a_panelnorm_plan": "complete_and_committed",
+    "h51_b_wave_b_acquisition": "optional_unstarted_preregistration_stub_only"
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "next_action": "hold for the date gate 2026-11-30 and then execute Option A (cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into forward_block_h10_fresh/, requiring n_high > 0 AND n_low > 0). Before the gate, only a genuinely NEW-ID bounded no-cost step is authorized; H51-a is done and H51-b is optional/unstarted, so if no new genuine gap emerges, hold and leave the state clean. Do not re-probe probe_month=2026-11, do not re-run completed hypotheses, do not re-present H49/H50/H51 results as new evidence, and do not add another verification-only checkpoint."
+}
