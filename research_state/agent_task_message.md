@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-19T08:59:46Z (next session)
+# Agent Task Message — 2026-11-19T09:03:17Z (next session)
 
 ## Initial task for next agent
 
@@ -8,7 +8,7 @@ Today is 2026-11-19, which is **before** the hard date gate **2026-11-30**. Read
 2. **No genuinely new bounded no-cost gap remains before the gate.** H51-a, H52 (PANELACQ-WAVEB-001) and H53 (PANELNORM-WAVEB-001) complete and committed. H51-b optional/unstarted. If — and only if — a genuinely NEW-ID bounded no-cost step appears before the gate, preregister it under the next ID as `EXPLORATORY_ONLY` per adaptive research-gate policy v1. If none appears, hold and leave the state clean.
 3. **Do not re-do** H39–H53, the F1GRID/F1COV/F1SENS/F1STAB audits, the forward-block audits, or the cutoff probes. Do not re-download the H49 wave-A files or re-derive the H50 trim and present them as new evidence. A repeated verification-only session is a loop and is not progress.
 
-## Verified state (2026-11-19T08:59:46Z, this session)
+## Verified state (2026-11-19T09:03:17Z, this session)
 
 - **HEAD at write:** working tree clean (`git status --short` empty). No frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged.
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
