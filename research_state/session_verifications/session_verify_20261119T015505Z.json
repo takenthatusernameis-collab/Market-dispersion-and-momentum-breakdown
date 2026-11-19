@@ -1,0 +1,77 @@
+{
+  "action": "hold_for_hard_date_gate_2026-11-30_reverified_state_from_disk",
+  "outcome": "HOLD_FOR_DATE_GATE_2026-11-30_STATE_CLEAN_1236_of_1236_tests_green_h51_a_complete_and_committed_h51_b_optional_unstarted_no_frozen_artifact_or_input_modified",
+  "session_id": "session_verify_20261119T015505Z",
+  "timestamp_utc": "2026-11-19T01:55:05Z",
+  "verification": {
+    "checks": {
+      "canonical_forward_block_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "compileall_scripts_tests": {
+        "command": "python3 -m compileall -q scripts tests",
+        "exit_code": 0
+      },
+      "frontier_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "frontier_state": {
+        "expanding_universe_target_met": true,
+        "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+        "last_updated_utc": "2026-11-06T12:27:02Z",
+        "rank_frontier_exhausted": false
+      },
+      "frozen_artifacts_modified": false,
+      "full_test_suite": {
+        "command": "python3 -m unittest discover -s tests",
+        "exit_code": 0,
+        "ran": 1236,
+        "result": "OK",
+        "skipped": 8
+      },
+      "grid_config_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "h10_fresh_forward_block_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "h10_fresh_state": {
+        "block_sealed": true,
+        "confirmatory_claim_allowed": false,
+        "evaluated_utc": "2026-11-02T15:18:56Z",
+        "n_formations": 1,
+        "n_high": 0,
+        "n_low": 0,
+        "n_mid": 1
+      },
+      "h51_artifact_sha256": "dc8e100682cf3eab147787973536dd0de1517c740e5075a7c3f3db43796b9768",
+      "h51_verdict": "PLAN_RECORDED",
+      "h51_result": {
+        "all_frozen_hashes_match": true,
+        "all_input_hashes_match": true,
+        "confirmatory_claim_allowed": false,
+        "exploratory_only": true,
+        "extension_assets": 9,
+        "total_planned_files": 810,
+        "wave_a_planned_files": 644,
+        "wave_b_planned_files": 166
+      },
+      "network_scope": "none: read-only over committed evidence; no fetch, no probe, no credentials",
+      "note": "October 2026 Binance archive is published per research_state/run_manifest.json latest_archive_probe (real probe 2026-11-05T10:38:51Z, target_published=true), but H10 fresh-block maturity needs formations after 2026-09-29 with >=31 in-block formations (first structurally classifiable at the 2026-11-30 vintage per H12 feasibility projection), so the hard date gate 2026-11-30 still governs. No probe_month=2026-11 re-probe before the gate.",
+      "probe_census": {
+        "newest_probe": "cutoff_probe_20261113T091257Z.json",
+        "note": "recomputed from disk this session; no probe_month=2026-11 re-probe performed (date gate respected)",
+        "other_probe_files": 1,
+        "probe_month_2026_10": {
+          "count": 270,
+          "published": 49
+        },
+        "probe_month_2026_11": {
+          "count": 127,
+          "published": 0
+        },
+        "total_real_cutoff_probes": 397
+      },
+      "record_test_claim_command": "python3 scripts/record_test_claim.py (not re-run; claim snapshot already 1236/1236/0 for this input set, fingerprint prefix 7979622d1222b1aa..., 197 input files)",
+      "sealed_holdout_opened": false,
+      "verified_test_claim": "1236/1236/0",
+      "verified_test_claim_fingerprint_prefix": "7979622d1222b1aa"
+    },
+    "registry": {
+      "h51_added": true,
+      "next_sequence_number": 51
+    }
+  }
+}
