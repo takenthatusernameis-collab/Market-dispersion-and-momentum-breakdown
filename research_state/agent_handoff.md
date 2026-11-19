@@ -1,6 +1,13 @@
-# Agent Handoff — 2026-11-19T19:49:00Z (current session)
+# Agent Handoff — 2026-11-19T19:52:25Z (current session)
 
-## Session summary — 2026-11-19T19:49:00Z (this session)
+## Session summary — 2026-11-19T19:52:25Z (this session)
+
+- **Prior task executed:** read durable handoff (`## Session summary — 2026-11-19T19:49:00Z`) and task message. Standing task: hold confirmatory H10 track for hard date gate 2026-11-30 (today 2026-11-19 precedes gate). No genuinely new bounded no-cost step taken; state re-verified from disk only; no code/frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged. H54 complete and not re-run.
+- **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **1317 tests, OK, skipped=8, EXIT=0**; working tree clean (`git status --short` empty). Probe census unchanged (397 real `cutoff_probe_*.json`: 270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261113T091257Z.json); 398 probe files total. All four frozen hashes byte-unchanged. No new verification-only checkpoint added.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
+- **Next action:** hold for the date gate 2026-11-30 and then execute Option A. Before the gate, only a genuinely NEW-ID bounded no-cost step is authorized; if none, hold and leave the state clean.
+
+## Previous session — 2026-11-19T19:49:00Z
 
 - **Prior task executed:** read durable handoff (`## Session summary — 2026-11-19T19:09:00Z`) and task message. Standing task: hold confirmatory H10 track for hard date gate 2026-11-30 (today 2026-11-19 precedes gate). No genuinely new bounded no-cost step taken; state re-verified from disk only; no code/frozen artifact/config/input/frontier/sealed-holdout modified; DISPERSION-001/002 unchanged. H54 complete and not re-run.
 - **Verification completed:** `python3 -m compileall -q scripts tests` EXIT 0; `python3 -m unittest discover -s tests` **1317 tests, OK, skipped=8, EXIT=0**; working tree clean (`git status --short` empty). Probe census unchanged (397 real `cutoff_probe_*.json`: 270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261113T091257Z.json); 398 probe files total. All four frozen hashes byte-unchanged. No new verification-only checkpoint added.
