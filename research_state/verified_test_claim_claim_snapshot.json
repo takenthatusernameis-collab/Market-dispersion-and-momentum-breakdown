@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-19T00:31:32Z",
+  "recorded_utc": "2026-11-19T01:23:52Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 1236,
   "tests_ok": 1236,
   "tests_failures": 0,
-  "tests_skipped": 15,
+  "tests_skipped": 8,
   "claim": "1236/1236/0",
   "input_fingerprint": "7979622d1222b1aa3c2ffcfe318f1e94930d5e011a5cb351c716a856c7f04c20",
   "input_files": [
