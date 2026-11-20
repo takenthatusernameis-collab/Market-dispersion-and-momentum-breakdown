@@ -1,0 +1,1476 @@
+{
+ "audit_id": "H004V106_BREADTH_ARITY_001",
+ "computed_utc": "2026-11-20T02:34:29Z",
+ "confirmatory_claim_allowed": false,
+ "decision": {
+  "binding_requirement": "acquire >=20 concurrently priced, point-in-time eligible assets in a fresh period (wave A and later waves); no further wave-B asset adds identification",
+  "confirmatory_track_impact": "none; H10 fresh sealed block remains date-gated to 2026-11-30",
+  "narrow_two_asset_mechanism_test": "CLOSED_BY_CONSTRUCTION",
+  "why": "the registered rule needs breadth>=20 and, at breadth 2, the dispersion statistic is an exact deterministic function of the momentum spread, so a 2-asset sample cannot identify a dispersion-conditioning mechanism"
+ },
+ "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-BREADTH-ARITY-001",
+ "frozen_hashes_verified": {
+  "all_match": true,
+  "details": {
+   "canonical_forward_block": {
+    "actual_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "expected_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "match": true,
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+   },
+   "grid_v3_config": {
+    "actual_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "expected_sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "match": true,
+    "path": "configs/dispersion_momentum_grid_v3.json"
+   },
+   "h10_fresh_block": {
+    "actual_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "expected_sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "match": true,
+    "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json"
+   },
+   "universe_frontier": {
+    "actual_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "expected_sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "match": true,
+    "path": "research_state/universe_frontier.json"
+   }
+  }
+ },
+ "hypothesis": "H55",
+ "inputs": {
+  "horizon_days": 30,
+  "legacy_panel_count": 28,
+  "legacy_panels_modified": false,
+  "legacy_symbols": [
+   "ADAUSDT",
+   "ALGOUSDT",
+   "ATOMUSDT",
+   "AVAXUSDT",
+   "BCHUSDT",
+   "BNBUSDT",
+   "BTCUSDT",
+   "DASHUSDT",
+   "DOGEUSDT",
+   "DOTUSDT",
+   "EOSUSDT",
+   "ETCUSDT",
+   "ETHUSDT",
+   "FILUSDT",
+   "IOSTUSDT",
+   "LINKUSDT",
+   "LTCUSDT",
+   "MATICUSDT",
+   "NEOUSDT",
+   "QTUMUSDT",
+   "RUNEUSDT",
+   "SOLUSDT",
+   "TRXUSDT",
+   "UNIUSDT",
+   "VETUSDT",
+   "XLMUSDT",
+   "XRPUSDT",
+   "ZECUSDT"
+  ],
+  "lookback_days": 30,
+  "panel_end_utc": "2026-10-31",
+  "waveb_panels": [
+   "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels/binance_klines_ARKUSDT.csv",
+   "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels/binance_klines_ASTRUSDT.csv"
+  ]
+ },
+ "label": "feasibility_identification_diagnostic",
+ "m1_arity": {
+  "implied_requirement": "a fresh forward block must carry at least 20 concurrently eligible assets for the registered long/short decile tails to be non-empty",
+  "min_breadth_outer_deciles": 20,
+  "required_tail_size": 2,
+  "rule": "trailing_window_outer_deciles with k = n // 10, k >= 2",
+  "table": [
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 1,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 2,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 3,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 4,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 5,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 6,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 7,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 8,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 0,
+    "n_assets": 9,
+    "short_leg_size": 0,
+    "tail_size_k": 0
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 10,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 11,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 12,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 13,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 14,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 15,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 16,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 17,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 18,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": false,
+    "long_leg_size": 1,
+    "n_assets": 19,
+    "short_leg_size": 1,
+    "tail_size_k": 1
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 20,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 21,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 22,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 23,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 24,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 25,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 26,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 27,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 28,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 2,
+    "n_assets": 29,
+    "short_leg_size": 2,
+    "tail_size_k": 2
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 30,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 31,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 32,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 33,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 34,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 35,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 36,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 37,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 38,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 3,
+    "n_assets": 39,
+    "short_leg_size": 3,
+    "tail_size_k": 3
+   },
+   {
+    "both_tails_nonempty": true,
+    "long_leg_size": 4,
+    "n_assets": 40,
+    "short_leg_size": 4,
+    "tail_size_k": 4
+   }
+  ]
+ },
+ "m2_identity": {
+  "assets": [
+   "ARKUSDT",
+   "ASTRUSDT"
+  ],
+  "formations": [
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.8794961139631057,
+    "dispersion_pop_std_ddof0": 0.43974805698155284,
+    "formation_date": "2023-10-31",
+    "identity_holds": true,
+    "m_ark": 0.9357868506804667,
+    "m_astr": 0.05629073671736107,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.1703937118265879,
+    "dispersion_pop_std_ddof0": 0.08519685591329396,
+    "formation_date": "2023-11-30",
+    "identity_holds": true,
+    "m_ark": 0.059411822952768034,
+    "m_astr": 0.22980553477935595,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 1.1211352745348564,
+    "dispersion_pop_std_ddof0": 0.5605676372674282,
+    "formation_date": "2023-12-31",
+    "identity_holds": true,
+    "m_ark": -0.1378893537889352,
+    "m_astr": 0.9832459207459212,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.3503138449068157,
+    "dispersion_pop_std_ddof0": 0.17515692245340786,
+    "formation_date": "2024-01-31",
+    "identity_holds": true,
+    "m_ark": -0.09641787963249704,
+    "m_astr": 0.2538959652743187,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.07004965687750819,
+    "dispersion_pop_std_ddof0": 0.035024828438754096,
+    "formation_date": "2024-02-29",
+    "identity_holds": true,
+    "m_ark": -0.052123552123552574,
+    "m_astr": -0.12217320900106077,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.26428669905578284,
+    "dispersion_pop_std_ddof0": 0.13214334952789142,
+    "formation_date": "2024-03-31",
+    "identity_holds": true,
+    "m_ark": 0.11579481970543481,
+    "m_astr": -0.14849187935034802,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.0010663864345475949,
+    "dispersion_pop_std_ddof0": 0.0005331932172737974,
+    "formation_date": "2024-04-30",
+    "identity_holds": true,
+    "m_ark": -0.3370050068274919,
+    "m_astr": -0.3359386203929443,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.16255230248507546,
+    "dispersion_pop_std_ddof0": 0.08127615124253773,
+    "formation_date": "2024-05-31",
+    "identity_holds": true,
+    "m_ark": 0.07619302232321878,
+    "m_astr": -0.08635928016185668,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.2597387169614225,
+    "dispersion_pop_std_ddof0": 0.12986935848071124,
+    "formation_date": "2024-06-30",
+    "identity_holds": true,
+    "m_ark": -0.4623028195255253,
+    "m_astr": -0.20256410256410284,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.04963698628804558,
+    "dispersion_pop_std_ddof0": 0.02481849314402279,
+    "formation_date": "2024-07-31",
+    "identity_holds": true,
+    "m_ark": -0.1164545025931163,
+    "m_astr": -0.06681751630507071,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.07094145928533602,
+    "dispersion_pop_std_ddof0": 0.03547072964266801,
+    "formation_date": "2024-08-31",
+    "identity_holds": true,
+    "m_ark": -0.17742825607064017,
+    "m_astr": -0.10648679678530415,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.4326136200648871,
+    "dispersion_pop_std_ddof0": 0.21630681003244356,
+    "formation_date": "2024-09-30",
+    "identity_holds": true,
+    "m_ark": 0.514592418651459,
+    "m_astr": 0.08197879858657187,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.28345748851569785,
+    "dispersion_pop_std_ddof0": 0.14172874425784893,
+    "formation_date": "2024-10-31",
+    "identity_holds": true,
+    "m_ark": 0.140712945590995,
+    "m_astr": -0.14274454292470284,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.06528995812746285,
+    "dispersion_pop_std_ddof0": 0.03264497906373143,
+    "formation_date": "2024-11-30",
+    "identity_holds": true,
+    "m_ark": 0.504728618421052,
+    "m_astr": 0.5700185765485148,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.011045603408783466,
+    "dispersion_pop_std_ddof0": 0.005522801704391733,
+    "formation_date": "2024-12-31",
+    "identity_holds": true,
+    "m_ark": -0.2970391595033429,
+    "m_astr": -0.28599355609455945,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.1634324414561178,
+    "dispersion_pop_std_ddof0": 0.0817162207280589,
+    "formation_date": "2025-01-31",
+    "identity_holds": true,
+    "m_ark": -0.011343633874437375,
+    "m_astr": -0.17477607533055517,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.02500231111769502,
+    "dispersion_pop_std_ddof0": 0.01250115555884751,
+    "formation_date": "2025-02-28",
+    "identity_holds": true,
+    "m_ark": -0.1950190801365731,
+    "m_astr": -0.22002139125426812,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.017548063508008083,
+    "dispersion_pop_std_ddof0": 0.008774031754004041,
+    "formation_date": "2025-03-31",
+    "identity_holds": true,
+    "m_ark": -0.23907584128578574,
+    "m_astr": -0.22152777777777766,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.4490980539761241,
+    "dispersion_pop_std_ddof0": 0.22454902698806206,
+    "formation_date": "2025-04-30",
+    "identity_holds": true,
+    "m_ark": 0.4415841584158413,
+    "m_astr": -0.007513895560282813,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.03135496030936413,
+    "dispersion_pop_std_ddof0": 0.015677480154682066,
+    "formation_date": "2025-05-31",
+    "identity_holds": true,
+    "m_ark": -0.14961547424842747,
+    "m_astr": -0.11826051393906334,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.08661082584956126,
+    "dispersion_pop_std_ddof0": 0.04330541292478063,
+    "formation_date": "2025-06-30",
+    "identity_holds": true,
+    "m_ark": -0.024938339271032728,
+    "m_astr": -0.11154916512059398,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.18005308133065023,
+    "dispersion_pop_std_ddof0": 0.09002654066532512,
+    "formation_date": "2025-07-31",
+    "identity_holds": true,
+    "m_ark": 0.2563503649635046,
+    "m_astr": 0.07629728363285437,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.012948912110788635,
+    "dispersion_pop_std_ddof0": 0.0064744560553943176,
+    "formation_date": "2025-08-31",
+    "identity_holds": true,
+    "m_ark": 0.020941176470587575,
+    "m_astr": 0.03389008858137621,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.07575030252589166,
+    "dispersion_pop_std_ddof0": 0.03787515126294583,
+    "formation_date": "2025-09-30",
+    "identity_holds": true,
+    "m_ark": -0.023738188522701265,
+    "m_astr": -0.09948849104859292,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.028228170906319128,
+    "dispersion_pop_std_ddof0": 0.014114085453159564,
+    "formation_date": "2025-10-31",
+    "identity_holds": true,
+    "m_ark": -0.29114213778896825,
+    "m_astr": -0.2629139668826491,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.1511230485352656,
+    "dispersion_pop_std_ddof0": 0.0755615242676328,
+    "formation_date": "2025-11-30",
+    "identity_holds": true,
+    "m_ark": -0.040684533419437785,
+    "m_astr": -0.19180758195470338,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.17680613723770688,
+    "dispersion_pop_std_ddof0": 0.08840306861885344,
+    "formation_date": "2025-12-31",
+    "identity_holds": true,
+    "m_ark": -0.0666425208257877,
+    "m_astr": -0.24344865806349458,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.012843867150978405,
+    "dispersion_pop_std_ddof0": 0.006421933575489203,
+    "formation_date": "2026-01-31",
+    "identity_holds": true,
+    "m_ark": -0.1766029246344205,
+    "m_astr": -0.18944679178539892,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.019106364377173835,
+    "dispersion_pop_std_ddof0": 0.009553182188586917,
+    "formation_date": "2026-02-28",
+    "identity_holds": true,
+    "m_ark": -0.2425514057910202,
+    "m_astr": -0.261657770168194,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.1395750697597471,
+    "dispersion_pop_std_ddof0": 0.06978753487987355,
+    "formation_date": "2026-03-31",
+    "identity_holds": true,
+    "m_ark": -0.07305936073059338,
+    "m_astr": 0.06651570902915371,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.001230873416794287,
+    "dispersion_pop_std_ddof0": 0.0006154367083971435,
+    "formation_date": "2026-04-30",
+    "identity_holds": true,
+    "m_ark": 0.06896551724137989,
+    "m_astr": 0.07019639065817418,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.02312925562483481,
+    "dispersion_pop_std_ddof0": 0.011564627812417405,
+    "formation_date": "2026-05-31",
+    "identity_holds": true,
+    "m_ark": -0.09269988412514552,
+    "m_astr": -0.0695706285003107,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.024193383065913676,
+    "dispersion_pop_std_ddof0": 0.012096691532956838,
+    "formation_date": "2026-06-30",
+    "identity_holds": true,
+    "m_ark": -0.33014048531289875,
+    "m_astr": -0.3543338683788124,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.08855274041936212,
+    "dispersion_pop_std_ddof0": 0.04427637020968106,
+    "formation_date": "2026-07-31",
+    "identity_holds": true,
+    "m_ark": -0.11571025399811896,
+    "m_astr": -0.027157513578756842,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.03487069077034244,
+    "dispersion_pop_std_ddof0": 0.01743534538517122,
+    "formation_date": "2026-08-31",
+    "identity_holds": true,
+    "m_ark": 0.18878101402373204,
+    "m_astr": 0.1539103232533896,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.7655927165927054,
+    "dispersion_pop_std_ddof0": 0.3827963582963527,
+    "formation_date": "2026-09-30",
+    "identity_holds": true,
+    "m_ark": 1.0880217785843929,
+    "m_astr": 0.3224290619916874,
+    "ratio_dispersion_over_abs_spread": 0.5
+   },
+   {
+    "abs_deviation_from_half_abs_spread": 0.0,
+    "abs_momentum_spread": 0.044721995570578654,
+    "dispersion_pop_std_ddof0": 0.022360997785289327,
+    "formation_date": "2026-10-31",
+    "identity_holds": true,
+    "m_ark": -0.2582608695652172,
+    "m_astr": -0.21353887399463856,
+    "ratio_dispersion_over_abs_spread": 0.5
+   }
+  ],
+  "identity": "population std of two momentum values == |m1 - m2| / 2",
+  "identity_holds_all_formations": true,
+  "max_abs_deviation": 0.0,
+  "n_formations": 37,
+  "ratio_max": 0.5,
+  "ratio_min": 0.5,
+  "sign_invariance": "the dispersion statistic is unchanged when the two assets are swapped; the signed spread changes sign, so a dispersion-only state cannot select a long leg or a short leg in a 2-asset cross-section"
+ },
+ "m3_breadth_inventory": {
+  "legacy_latest_observed_month": "2024-12",
+  "max_breadth": 30,
+  "months_waveb_only": [
+   "2025-01",
+   "2025-02",
+   "2025-03",
+   "2025-04",
+   "2025-05",
+   "2025-06",
+   "2025-07",
+   "2025-08",
+   "2025-09",
+   "2025-10",
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "months_with_breadth_ge_20": [
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12"
+  ],
+  "n_months": 46,
+  "n_months_waveb_only": 22,
+  "n_months_with_breadth_ge_20": 24,
+  "rows": [
+   {
+    "breadth_ge_20": true,
+    "month": "2023-01",
+    "n_assets": 28,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 0,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-02",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-03",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-04",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-05",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-06",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-07",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-08",
+    "n_assets": 29,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 1,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-09",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-10",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-11",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2023-12",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-01",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-02",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-03",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-04",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-05",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-06",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-07",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-08",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-09",
+    "n_assets": 30,
+    "n_legacy_assets": 28,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-10",
+    "n_assets": 29,
+    "n_legacy_assets": 27,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-11",
+    "n_assets": 29,
+    "n_legacy_assets": 27,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": true,
+    "month": "2024-12",
+    "n_assets": 29,
+    "n_legacy_assets": 27,
+    "n_waveb_assets": 2,
+    "waveb_only": false
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-01",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-02",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-03",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-04",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-05",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-06",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-07",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-08",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-09",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-10",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-11",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2025-12",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-01",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-02",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-03",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-04",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-05",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-06",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-07",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-08",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-09",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   },
+   {
+    "breadth_ge_20": false,
+    "month": "2026-10",
+    "n_assets": 2,
+    "n_legacy_assets": 0,
+    "n_waveb_assets": 2,
+    "waveb_only": true
+   }
+  ],
+  "waveb_only_breadth_below_20_in_every_month": true,
+  "window": [
+   "2023-01-01",
+   "2026-10-31"
+  ]
+ },
+ "m4_narrow_sample": {
+  "min_maturity_required": 30,
+  "n_candidate_formations": 37,
+  "n_forward_matured": 36,
+  "n_lookback_complete": 37,
+  "overlap_window": [
+   "2023-09-19",
+   "2026-10-31"
+  ],
+  "rows": [
+   {
+    "formation_date": "2023-10-31",
+    "forward_end_date": "2023-11-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2023-11-30",
+    "forward_end_date": "2023-12-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2023-12-31",
+    "forward_end_date": "2024-01-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-01-31",
+    "forward_end_date": "2024-03-01",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-02-29",
+    "forward_end_date": "2024-03-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-03-31",
+    "forward_end_date": "2024-04-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-04-30",
+    "forward_end_date": "2024-05-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-05-31",
+    "forward_end_date": "2024-06-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-06-30",
+    "forward_end_date": "2024-07-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-07-31",
+    "forward_end_date": "2024-08-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-08-31",
+    "forward_end_date": "2024-09-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-09-30",
+    "forward_end_date": "2024-10-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-10-31",
+    "forward_end_date": "2024-11-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-11-30",
+    "forward_end_date": "2024-12-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2024-12-31",
+    "forward_end_date": "2025-01-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-01-31",
+    "forward_end_date": "2025-03-02",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-02-28",
+    "forward_end_date": "2025-03-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-03-31",
+    "forward_end_date": "2025-04-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-04-30",
+    "forward_end_date": "2025-05-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-05-31",
+    "forward_end_date": "2025-06-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-06-30",
+    "forward_end_date": "2025-07-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-07-31",
+    "forward_end_date": "2025-08-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-08-31",
+    "forward_end_date": "2025-09-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-09-30",
+    "forward_end_date": "2025-10-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-10-31",
+    "forward_end_date": "2025-11-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-11-30",
+    "forward_end_date": "2025-12-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2025-12-31",
+    "forward_end_date": "2026-01-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-01-31",
+    "forward_end_date": "2026-03-02",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-02-28",
+    "forward_end_date": "2026-03-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-03-31",
+    "forward_end_date": "2026-04-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-04-30",
+    "forward_end_date": "2026-05-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-05-31",
+    "forward_end_date": "2026-06-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-06-30",
+    "forward_end_date": "2026-07-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-07-31",
+    "forward_end_date": "2026-08-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-08-31",
+    "forward_end_date": "2026-09-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-09-30",
+    "forward_end_date": "2026-10-30",
+    "forward_matured": true,
+    "lookback_complete": true
+   },
+   {
+    "formation_date": "2026-10-31",
+    "forward_end_date": null,
+    "forward_matured": false,
+    "lookback_complete": true
+   }
+  ]
+ },
+ "network_io": "none",
+ "non_claims": [
+  "Not market evidence and not an economic result.",
+  "No forward return, realized spread, dispersion-state outcome, cost, funding PnL, p-value or interval computed.",
+  "Dispersion is a feature-side statistic used only to demonstrate an algebraic identity.",
+  "No candidate promoted; confirmatory_claim_allowed=false.",
+  "Frozen DISP-001/002/003 artifacts, configs, ledgers, panels, forward blocks and frontier unchanged.",
+  "Does not unlock H1/H6/H7/H10; legacy panels are already-inspected development data.",
+  "A green test suite proves only what the tests cover."
+ ],
+ "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-BREADTH-ARITY-001/preregistrations/BREADTH_ARITY_001_v1.md",
+ "preregistration_created_utc": "2026-11-20T02:33:35Z",
+ "status": "EXPLORATORY_ONLY",
+ "verdict": "BREADTH_ARITY_UNEXPECTED",
+ "verdict_checks": [
+  {
+   "condition": "M1 min_breadth_outer_deciles == 20",
+   "held": true,
+   "observed": 20
+  },
+  {
+   "condition": "M2 max_abs_deviation <= 1e-12",
+   "held": true,
+   "observed": 0.0
+  },
+  {
+   "condition": "M2 n_formations >= 30",
+   "held": true,
+   "observed": 37
+  },
+  {
+   "condition": "M3 wave-B-only breadth < 20 in every wave-B-only month",
+   "held": true,
+   "observed": true
+  },
+  {
+   "condition": "M4 n_forward_matured < 30",
+   "held": false,
+   "observed": 36
+  },
+  {
+   "condition": "breadth>=20 months exist and are legacy months",
+   "held": true,
+   "observed": {
+    "legacy_latest_month": "2024-12",
+    "n_months_breadth_ge_20": 24
+   }
+  }
+ ],
+ "verdict_interpretation": "All structural conditions held exactly (M1 arity=20, M2 identity deviation=0, M3 wave-B-only breadth<20). Only the predeclared M4 sample-size expectation failed: the overlap carries 36 matured monthly formations, not fewer than 30. The narrow 2-asset route is therefore closed by arity and by algebraic non-identifiability, not by insufficient sample size; the preregistered expectation about maturity was wrong and is reported as-is.",
+ "verdict_reasons": [
+  "wave-B or narrow-maturity condition not met"
+ ]
+}

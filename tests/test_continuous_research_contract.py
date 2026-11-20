@@ -225,7 +225,18 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # timestamps, 0 days stale; funding cadence ARK {1h:356, 4h:3639,
         # 8h:1551}, ASTR {8h:4070}); no panel rewritten, no outcomes, no
         # confirmatory claim, H10 gate unchanged.
-        self.assertEqual(registry["next_sequence_number"], 54)
+        # H55 was added for the breadth/arity and 2-asset identification
+        # diagnostic (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-BREADTH-ARITY-001,
+        # EXPLORATORY_ONLY, feasibility_identification_diagnostic): read-only,
+        # no-network measurement of the breadth the registered outer-decile
+        # rule needs (20 assets), the exact 2-asset identity
+        # dispersion = |m1-m2|/2 (ratio 0.5 on all 37 ARK/ASTR formations), the
+        # committed per-month breadth inventory (breadth>=20 only in 24 legacy
+        # months ending 2024-12; 22 wave-B-only months at breadth 2) and the
+        # attainable narrow-test sample (37 formations, 36 matured); no forward
+        # outcome, no cost, no inference, no confirmatory claim, H10 gate
+        # unchanged and still date-gated to 2026-11-30.
+        self.assertEqual(registry["next_sequence_number"], 55)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
