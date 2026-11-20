@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-20T23:27:48Z (next session)
+# Agent Task Message — 2026-11-20T23:29:54Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-20, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-20T23:27:48Z`) and this message, then complete the standing task:
+Today is 2026-11-20, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-20T23:29:54Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date.
 2. **H54/H55/H56 are complete** (`EXPLORATORY_ONLY`). Do not re-run or re-present them.
@@ -10,7 +10,7 @@ Today is 2026-11-20, which is **before** the hard date gate **2026-11-30**. Read
 4. **No durable-state change is required beyond refreshing this handoff/task-message pair.** The verified-test-claim snapshot remains at `latest_verified_test_claim=1386/1386/0` with four expected failures (2 pre-existing: manifest narrative vs registry sequence number; test snapshot vs inventory drift; 2 handoff-structure: session heading format; block_sealed expectation drift in audit tests) plus probe-evidence quotes kept in sync with `research_state/cutoff_probe/`. Do not allocate further hypotheses (registry allocation is Option B only).
 5. **At/after 2026-11-30, execute Option A:** cutoff probe → free-data refresh → full suite → hash check → fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-20T23:27:48Z, this session)
+## Verified state (2026-11-20T23:29:54Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
