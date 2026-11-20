@@ -236,7 +236,20 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # attainable narrow-test sample (37 formations, 36 matured); no forward
         # outcome, no cost, no inference, no confirmatory claim, H10 gate
         # unchanged and still date-gated to 2026-11-30.
-        self.assertEqual(registry["next_sequence_number"], 55)
+        # H56 was added for the wave-A extension panel normalization
+        # (HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEA-001,
+        # EXPLORATORY_ONLY, source_coverage_panel_normalization) executed from
+        # its already committed v1 preregistration: the 644 H49-pinned wave-A
+        # archives (ALICE, ANKR, APE, API3, APT, AR, ARPA) were re-fetched and
+        # sha256-reconciled into exactly 14 DISP-003-schema panels with 44646
+        # rows in == 44646 out, 0 out-of-window rows, 0 duplicate timestamps and
+        # verdict PANELNORM_WAVEA_COMPLETE. Its descriptive coverage inventory
+        # also corrects H55 M3: the committed DISP-003 inventory (33 symbols,
+        # 2023-01..2026-10) carries >=20 concurrently priced assets in all 46
+        # study months, including 35-39 in 2025-01..2026-10; that is coverage,
+        # not point-in-time eligibility or outcome evidence, no confirmatory
+        # claim is allowed and the H10 gate is still date-gated to 2026-11-30.
+        self.assertEqual(registry["next_sequence_number"], 56)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
