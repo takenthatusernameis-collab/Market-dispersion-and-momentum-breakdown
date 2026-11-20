@@ -1,0 +1,17 @@
+{
+  "candidates_processed": [
+    {
+      "asset": "AA",
+      "metrics": {
+        "CapMrktEstUSD": {
+          "raw_path": "/home/runner/work/Market-dispersion-and-momentum-breakdown/Market-dispersion-and-momentum-breakdown/fix_candidate_validation_timestamps_w39qw_w6/does_not_exist.json",
+          "status": "ok",
+          "time_first": "2026-10-01T00:00:00Z",
+          "time_last": "2026-10-05T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "timestamp_boundary_correction_utc": "2026-10-30T14:35:00Z: time_first/time_last recomputed from the raw payloads after sorting by time ascending (the CoinMetrics timeseries endpoint paginates descending). Raw files untouched."
+}
