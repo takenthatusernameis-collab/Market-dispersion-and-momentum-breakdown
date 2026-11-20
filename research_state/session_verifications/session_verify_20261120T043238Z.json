@@ -1,0 +1,43 @@
+{
+  "session": "2026-11-20T04:32:38Z",
+  "task": "Read durable handoff + task message; hold confirmatory H10 track for hard date gate 2026-11-30; verify state from disk; update handoff and task message.",
+  "date_utc": "2026-11-20T04:32:38Z",
+  "date_gate_utc": "2026-11-30",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "verification": {
+    "compileall": {"command": "python3 -m compileall -q scripts tests", "exit": 0},
+    "unittest": {"command": "python3 -m unittest discover -s tests", "ran": 1345, "skipped": 8, "failures": 2, "exit": 1},
+    "git_status": {"command": "git status --short", "output": "", "clean": true},
+    "frozen_hashes": {
+      "canonical_forward_block": {"path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json", "sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390", "unchanged": true},
+      "h10_fresh_forward_block": {"path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json", "sha256": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f", "unchanged": true, "block_sealed": true, "n_formations": 1, "n_high": 0, "n_low": 0, "n_mid": 1, "confirmatory_claim_allowed": false, "evaluated_utc": "2026-11-02T15:18:56Z"},
+      "grid_config": {"path": "configs/dispersion_momentum_grid_v3.json", "sha256": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176", "unchanged": true},
+      "frontier": {"path": "research_state/universe_frontier.json", "sha256": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e", "unchanged": true}
+    },
+    "probe_census": {
+      "real_cutoff_probe_files": 397,
+      "by_month": {"2026-10": 270, "2026-11": 127},
+      "published_by_month": {"2026-10": {"true": 49, "false": 221}, "2026-11": {"true": 0, "false": 127}},
+      "newest_by_filename": "cutoff_probe_20261113T091257Z.json",
+      "newest_probe_month": "2026-10",
+      "newest_published": true,
+      "total_probe_files_all": 399,
+      "non_cutoff_probe_files": ["artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELACQ-PROBE-001/integrity_audit/H004V106_panel_archive_probe_20261116T142247Z.json", "research_state/probe_logs/daily_fundingRate_probe_20261101T132013Z.json"],
+      "date_gate_respected": true,
+      "note": "No probe_month=2026-11 re-probe performed this session."
+    },
+    "registry": {"path": "research_state/hypothesis_registry.json", "next_sequence_number": 55, "n_hypotheses": 55, "ids_present": ["H1", "H55"], "H54_complete": true, "H55_complete": true, "H10_immature_and_date_gated": true},
+    "newest_verification_record_on_disk_before_this": "session_verify_20261120T013049Z.json"
+  },
+  "changes_made": {
+    "code": false,
+    "frozen_artifacts": false,
+    "configs": false,
+    "inputs": false,
+    "frontier": false,
+    "sealed_holdout": false,
+    "dispersion_001_002": false,
+    "only_new_file": "research_state/session_verifications/session_verify_20261120T043238Z.json"
+  },
+  "next_action": "Hold for date gate 2026-11-30; then execute Option A (cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into forward_block_h10_fresh/, requiring n_high > 0 AND n_low > 0). Before the gate, only a genuinely NEW-ID bounded no-cost step is authorized (Option B); if none, hold and leave the state clean."
+}
