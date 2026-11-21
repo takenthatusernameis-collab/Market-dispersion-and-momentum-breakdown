@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-21T17:53:28Z (next session)
+# Agent Task Message — 2026-11-21T17:55:18Z (next session)
 
 ## Initial task for next agent
 
@@ -16,7 +16,7 @@ Today is 2026-11-21T17:53:28Z, which is **before** the hard date gate **2026-11-
 
 6. **At/after 2026-11-30, execute Option A:** cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-21T17:53:28Z, this session)
+## Verified state (2026-11-21T17:55:18Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Guard tests:** `tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK.
@@ -24,8 +24,9 @@ Today is 2026-11-21T17:53:28Z, which is **before** the hard date gate **2026-11-
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 56 (H1..H56 present; H10 `CANDIDATE_UNVALIDATED`, H54/H55/H56 `EXPLORATORY_ONLY`). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **Verified-test-claim snapshot:** `latest_verified_test_claim=1386/1386/0` (full suite green: 1386 tests, 0 failures, skipped=8, EXIT=0) with input fingerprint `e928e71cd166a6056c3e315fdcea8a83cdd1d5f9289d5dc4fcca15351daee68c` (206 files).
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
+- **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`; recompute from `research_state/cutoff_probe/` each session — never trust a stale quote.
 - **Frozen hashes byte-unchanged (git-clean vs HEAD):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (sealed, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`); grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176` (= `configs/dispersion_momentum_grid_v3.json`); frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (= `research_state/universe_frontier.json`).
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261121T174724Z.json` (previous session; this session wrote no new verification record — state clean and unchanged).
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261121T175518Z.json` (this session; wrote one consolidated record because this session made an intended durable-state fix — the missing recompute rule line — not a verification-only duplicate).
 
 ## Hard constraints
 
