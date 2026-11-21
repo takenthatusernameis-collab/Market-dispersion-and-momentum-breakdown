@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-21T09:09:31Z (next session)
+# Agent Task Message — 2026-11-21T09:20:56Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-21, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T09:09:31Z`) and this message, then complete the standing task:
+Today is 2026-11-21, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T09:20:56Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) and cannot be matured before that date. Per the frontier `next_action`, November 2026 (cutoff 2026-11-30) is the FIRST vintage that structurally could classify high/low at ~31 formations, so the wait is correct and the only path for the registered H10 config.
 
@@ -14,10 +14,10 @@ Today is 2026-11-21, which is **before** the hard date gate **2026-11-30**. Read
 
 5. **At/after 2026-11-30, execute Option A:** cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-21T09:09:31Z, this session)
+## Verified state (2026-11-21T09:20:56Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
-- **Guard tests:** `tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK (after this refresh synced the handoff title/header/newest entry to `2026-11-21T09:09:31Z`).
+- **Guard tests:** `tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK (after this refresh synced the handoff title/header/newest entry to `2026-11-21T09:20:56Z`).
 - **Git:** working tree clean at HEAD `ed6c8e7a` on `main` except intended durable-state refreshes (handoff, task message, new session verification record; uncommitted). All four frozen hashes byte-unchanged vs HEAD.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 56 (H1..H56 present; H10 `CANDIDATE_UNVALIDATED`, H54/H55/H56 `EXPLORATORY_ONLY`). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **Full suite:** `python3 -m unittest discover -s tests` **1386 tests, 0 failures, skipped=8, EXIT=0**. Verified-test-claim snapshot `latest_verified_test_claim=1386/1386/0` with input fingerprint `e928e71cd166a6056c3e315fdcea8a83cdd1d5f9289d5dc4fcca15351daee68c` (206 files).
