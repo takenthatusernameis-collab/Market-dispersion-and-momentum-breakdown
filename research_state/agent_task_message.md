@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-21T20:00:18Z (next session)
+# Agent Task Message — 2026-11-21T20:01:12Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-21T20:00:18Z, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T20:00:18Z`) and this message, then complete the standing task:
+Today is 2026-11-21T20:01:12Z, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T20:01:12Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and **do not add another verification-only checkpoint.** The H10 fresh sealed block is immature (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) and cannot be matured before that date. Per the frontier `next_action`, November 2026 (cutoff 2026-11-30) is the FIRST vintage that structurally could classify high/low at ~31 formations, so the wait is correct and the only path for the registered H10 config.
 
@@ -16,15 +16,15 @@ Today is 2026-11-21T20:00:18Z, which is **before** the hard date gate **2026-11-
 
 6. **At/after 2026-11-30, execute Option A:** cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-21T20:00:18Z, this session)
+## Verified state (2026-11-21T20:01:12Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Guard tests:** `python3 -m unittest tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK.
 - **Git:** working tree clean at HEAD `23b5deccc7eda306d0e8765080e10fa82dec242c` on `main` except intended durable-state refreshes (this handoff and task message; uncommitted). All four frozen hashes byte-unchanged vs recorded values.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 56 (H1..H56 present; H10 `CANDIDATE_UNVALIDATED`, H54/H55/H56 `EXPLORATORY_ONLY`). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **Verified-test-claim snapshot:** `latest_verified_test_claim=1386/1386/0` (full suite green: 1386 tests, 0 failures, skipped=8, EXIT=0) with input fingerprint `e928e71cd166a6056c3e315fdcea8a83cdd1d5f9289d5dc4fcca15351daee68c` (206 files).
-- **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
-- **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
+- **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261104T054446Z.json`.
+- **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261104T054446Z.json`.
 - **Frozen hashes byte-unchanged (git-clean vs recorded):** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f` (sealed, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`); grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176` (= `configs/dispersion_momentum_grid_v3.json`); frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` (= `research_state/universe_frontier.json`).
 - **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261121T175518Z.json` (no new record this session — state clean; remains newest on disk).
 
