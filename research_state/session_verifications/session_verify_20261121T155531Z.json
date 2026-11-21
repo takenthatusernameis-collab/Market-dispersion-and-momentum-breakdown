@@ -1,0 +1,74 @@
+{
+  "session_utc": "2026-11-21T15:55:31Z",
+  "compileall_exit_code": 0,
+  "guard_tests": {
+    "test_handoff_session_entries": "ok",
+    "test_task_message_probe_evidence": "ok",
+    "test_continuous_research_contract": "ok",
+    "total_tests": 16,
+    "passed": 16,
+    "failed": 0
+  },
+  "git": {
+    "head": "a14a2c78b5054ad2f0bf0d64139fd1a4f45ddc0b",
+    "branch": "main",
+    "clean_except_durable_refreshes": true,
+    "durable_files_touched": [
+      "research_state/agent_handoff.md",
+      "research_state/agent_task_message.md",
+      "research_state/session_verifications/session_verify_20261121T155531Z.json"
+    ]
+  },
+  "registry": {
+    "next_sequence_number": 56,
+    "h10_status": "CANDIDATE_UNVALIDATED",
+    "h54_status": "EXPLORATORY_ONLY",
+    "h55_status": "EXPLORATORY_ONLY",
+    "h56_status": "EXPLORATORY_ONLY"
+  },
+  "full_suite": {
+    "tests_run": 1089,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 8,
+    "exit_code": 0,
+    "note": "env lacks pandas; pre-existing pandas/numpy import errors in non-guard tests"
+  },
+  "verified_test_claim": {
+    "total": 1386,
+    "passed": 1386,
+    "failed": 0,
+    "skipped": 8,
+    "exit_code": 0,
+    "input_fingerprint": "e928e71cd166a6056c3e315fdcea8a83cdd1d5f9289d5dc4fcca15351daee68c",
+    "file_count": 206
+  },
+  "probe_census": {
+    "total_real_probes": 397,
+    "probe_month_2026_10": 270,
+    "probe_month_2026_10_published": 49,
+    "probe_month_2026_11": 127,
+    "probe_month_2026_11_published": 0,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json",
+    "recompute_matches_recorded": true
+  },
+  "frozen_hashes_verified": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+    "all_byte_unchanged_vs_head": true
+  },
+  "h10_fresh_block_state": {
+    "block_sealed": true,
+    "n_formations": 1,
+    "n_high": 0,
+    "n_low": 0,
+    "n_mid": 1,
+    "confirmatory_claim_allowed": false,
+    "evaluated_utc": "2026-11-02T15:18:56Z",
+    "date_gate": "2026-11-30"
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "next_action": "hold for date gate 2026-11-30 then execute Option A (cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into forward_block_h10_fresh/, requiring n_high > 0 AND n_low > 0). Do not re-probe 2026-11, do not re-run completed hypotheses."
+}
