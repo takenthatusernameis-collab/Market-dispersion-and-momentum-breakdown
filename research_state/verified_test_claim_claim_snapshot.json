@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-20T07:04:36Z",
+  "recorded_utc": "2026-11-21T00:07:23Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 1386,
   "tests_ok": 1386,
   "tests_failures": 0,
-  "tests_skipped": 16,
+  "tests_skipped": 8,
   "claim": "1386/1386/0",
-  "input_fingerprint": "44619a7d40fecd5737420d5e06b70231bed382f49a37f72562115371fe0b4d27",
+  "input_fingerprint": "e928e71cd166a6056c3e315fdcea8a83cdd1d5f9289d5dc4fcca15351daee68c",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -400,7 +400,7 @@
     },
     {
       "path": "tests/test_continuous_research_contract.py",
-      "sha256": "0a086611b3862b1d915088e21e7943cd703ec6cadfcef42b986446ab15c3b643"
+      "sha256": "8a985e1f320a6eb3cd35f797b71e1fdaf72ea69419fc5627f5627ba82dba0ba7"
     },
     {
       "path": "tests/test_cutoff_probe.py",
