@@ -1,12 +1,12 @@
-# Agent Task Message — 2026-11-21T18:48:34Z (next session)
+# Agent Task Message — 2026-11-21T18:49:17Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-21T18:48:34Z, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T18:48:34Z`) and this message, then complete the standing task:
+Today is 2026-11-21T18:49:17Z, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T18:49:17Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and **do not add another verification-only checkpoint.** The H10 fresh sealed block is immature (`block_sealed=true`, `n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`, `evaluated_utc=2026-11-02T15:18:56Z`) and cannot be matured before that date. Per the frontier `next_action`, November 2026 (cutoff 2026-11-30) is the FIRST vintage that structurally could classify high/low at ~31 formations, so the wait is correct and the only path for the registered H10 config.
 
-2. **Loop-hygiene instruction (important).** Before writing any durable-state change, ask: is this a genuinely NEW bounded no-cost action, or just another verification checkpoint? If the latter, hold and leave state clean — do NOT spawn another `session_verify_*.json` or handoff duplicate. State is currently clean and unchanged (working tree clean at HEAD `3c7dc83232b84b2ace2f4b75adbeb0c521ab7909`; newest verification record `research_state/session_verifications/session_verify_20261121T175518Z.json` remains newest on disk — this session wrote none). No further verification-only checkpoint is warranted until the 2026-11-30 gate opens or a genuinely new bounded no-cost step appears.
+2. **Loop-hygiene instruction (important).** Before writing any durable-state change, ask: is this a genuinely NEW bounded no-cost action, or just another verification checkpoint? If the latter, hold and leave state clean — do NOT spawn another `session_verify_*.json` or handoff duplicate. State is currently clean and unchanged (working tree clean at HEAD `734f1db546bbed795e591d3a66b24a72952fcb6f`; newest verification record `research_state/session_verifications/session_verify_20261121T175518Z.json` remains newest on disk — this session wrote none). No further verification-only checkpoint is warranted until the 2026-11-30 gate opens or a genuinely new bounded no-cost step appears.
 
 3. **H54/H55/H56 are complete** (`EXPLORATORY_ONLY`). Do not re-run or re-present them. **H55 (`BREADTH-ARITY-001`) already CLOSED the 2-asset ARK/ASTR mechanism route by construction** — min_breadth_outer_deciles=20 (empty tails below 20 assets), the 2-asset dispersion statistic is sign-invariant (cannot pick a long/short leg), and the wave-B-only months carry breadth 2. Do not re-attempt a 2-asset diagnostic.
 
@@ -16,11 +16,11 @@ Today is 2026-11-21T18:48:34Z, which is **before** the hard date gate **2026-11-
 
 6. **At/after 2026-11-30, execute Option A:** cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-21T18:48:34Z, this session)
+## Verified state (2026-11-21T18:49:17Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Guard tests:** `tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK.
-- **Git:** working tree clean at HEAD `3c7dc83232b84b2ace2f4b75adbeb0c521ab7909` on `main` except intended durable-state refreshes (this handoff and task message; uncommitted). All four frozen hashes byte-unchanged vs HEAD.
+- **Git:** working tree clean at HEAD `734f1db546bbed795e591d3a66b24a72952fcb6f` on `main` except intended durable-state refreshes (this handoff and task message; uncommitted). All four frozen hashes byte-unchanged vs HEAD.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 56 (H1..H56 present; H10 `CANDIDATE_UNVALIDATED`, H54/H55/H56 `EXPLORATORY_ONLY`). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **Verified-test-claim snapshot:** `latest_verified_test_claim=1386/1386/0` (full suite green: 1386 tests, 0 failures, skipped=8, EXIT=0) with input fingerprint `e928e71cd166a6056c3e315fdcea8a83cdd1d5f9289d5dc4fcca15351daee68c` (206 files).
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
