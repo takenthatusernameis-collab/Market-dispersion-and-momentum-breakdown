@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-21T05:47:29Z (next session)
+# Agent Task Message — 2026-11-21T05:49:39Z (next session)
 
 ## Initial task for next agent
 
-Today is 2026-11-21, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T05:47:29Z`) and this message, then complete the standing task:
+Today is 2026-11-21, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-21T05:49:39Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do not re-run completed hypotheses, do not re-probe `probe_month=2026-11` before the gate, and do not add another verification-only checkpoint. The H10 fresh sealed block is immature (`n_formations=1`, `n_high=0`, `n_low=0`, `n_mid=1`, `confirmatory_claim_allowed=false`) and cannot be matured before that date. Per the frontier `next_action`, November 2026 (cutoff 2026-11-30) is the FIRST vintage that structurally could classify high/low at ~31 formations, so the wait is correct and the only path for the registered H10 config.
 
@@ -14,7 +14,7 @@ Today is 2026-11-21, which is **before** the hard date gate **2026-11-30**. Read
 
 5. **At/after 2026-11-30, execute Option A:** cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-21T05:47:29Z, this session)
+## Verified state (2026-11-21T05:49:39Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Guard tests:** `tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK.
