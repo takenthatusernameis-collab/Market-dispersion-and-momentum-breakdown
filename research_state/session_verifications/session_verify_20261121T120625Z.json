@@ -1,0 +1,8 @@
+{
+  "session_timestamp_utc": "2026-11-21T12:06:25Z",
+  "role": "durable_state_refresh",
+  "git_head": "1827574c",
+  "compileall": "EXIT 0",
+  "guard_tests": "16/16 OK",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE"
+}
