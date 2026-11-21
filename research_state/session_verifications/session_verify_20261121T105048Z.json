@@ -1,0 +1,1 @@
+{"session_utc":"2026-11-21T10:50:48Z","role":"durable_state_refresh","git_head":"71de25df6f710166bfd4ad8db709e319eaef0328","tests":"1089 ran (env lacks pandas; guard tests 16/16 OK)","probe_census":"397 total (2026-10: 270/49, 2026-11: 127/0); newest cutoff_probe_20261113T091257Z.json","posture":"BLOCKED_BY_HARD_DATE_GATE","next":"hold for 2026-11-30 then Option A"}
