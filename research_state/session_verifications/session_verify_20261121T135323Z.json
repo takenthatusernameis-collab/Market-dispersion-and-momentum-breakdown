@@ -1,0 +1,30 @@
+{
+  "session_utc": "20261121T135323Z",
+  "git_head": "30fd794fbe5465eed0e1031100aaeeba37ab48ec",
+  "compileall_ok": true,
+  "guard_tests_ok": true,
+  "probe_census": {
+    "total": 397,
+    "probe_month_2026-10": {
+      "total": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "total": 127,
+      "published": 0
+    },
+    "newest": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "registry_next_sequence_number": 56,
+  "h10_status": "CANDIDATE_UNVALIDATED",
+  "h54_h55_h56_status": "EXPLORATORY_ONLY",
+  "input_fingerprint": "3d54d3d9f76eb97adcc4768d638f29042f5dc7c2de905e03ba8c3baeedc27089",
+  "test_file_count": 118,
+  "working_tree_clean": true
+}
