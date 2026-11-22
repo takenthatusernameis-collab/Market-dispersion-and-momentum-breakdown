@@ -1,5 +1,15 @@
-# Agent Handoff — 2026-11-22T23:22:29Z (current session)
+# Agent Handoff — 2026-11-22T23:43:46Z (current session)
 
+## Session summary — 2026-11-22T23:43:46Z (this session)
+
+- **Prior task executed:** held the confirmatory H10 track for the hard date gate 2026-11-30 (current date 2026-11-22 < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57).
+- **Value-add this session:** state verification + dependency install verification — `python3 -m pip install -r requirements.txt` OK (numpy/pandas installed); `python3 -m compileall -q scripts tests` OK; durable-state guards `tests.test_handoff_session_entries` + `tests.test_task_message_probe_evidence` + `tests.test_continuous_research_contract` + `tests.test_state_consistency` -> 38/38 OK; full suite `python3 -m unittest discover -s tests` -> **1448 run, 1448 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (after requirements install); probe census matches disk (397 real / 270 Oct 49 pub / 127 Nov 0 pub / newest `cutoff_probe_20261113T091257Z.json`); all five frozen hashes verified byte-unchanged. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched.
+- **Probe census (disk, verified):** 397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json` (2026-10, published, gate UNBLOCKED). November 2026 probe recorded separately as BLOCKED and never promoted.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
+- **Next action:** At/after 2026-11-30 execute Option A (see `agent_task_message.md`). Do NOT relax 30-day maturity, `MIN_ASSETS_DECILES=20`, the trailing-decile state rule or the `alpha_k = 0.05/(k*(k+1))` per-look rule.
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T232229Z.json`.
+
+## Previous session — 2026-11-22T23:22:29Z
 ## Session summary — 2026-11-22T23:22:29Z (this session)
 
 - **Prior task executed:** held the confirmatory H10 track for the hard date gate 2026-11-30 (current date 2026-11-22 < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57).
