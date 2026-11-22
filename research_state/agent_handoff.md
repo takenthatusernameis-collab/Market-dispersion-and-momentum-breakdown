@@ -1,6 +1,17 @@
-# Agent Handoff — 2026-11-22T15:25:20Z (current session)
+# Agent Handoff — 2026-11-22T15:37:23Z (current session)
 
-## Session summary — 2026-11-22T15:25:20Z (this session)
+## Session summary — 2026-11-22T15:37:23Z (this session)
+
+- **Prior task executed:** held confirmatory H10 track for hard date gate 2026-11-30 (current date 2026-11-22 < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57). Re-verified clean green state instead of a bare hold memo.
+- **Value-add this session:** state verification only — recomputed probe census from disk (matches recorded 397 real / 270 Oct 49 pub / 127 Nov 0 pub / newest `cutoff_probe_20261113T091257Z.json`), `python3 -m compileall -q scripts tests` OK, full suite `python3 -m unittest discover -s tests` -> **1432 run, 1432 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (unchanged), `h10_maturity_timeline_audit.audit_h10_maturity_timeline()` read-only PASS 42/42, all five frozen hashes byte-unchanged. Wrote session verification record `research_state/session_verifications/session_verify_20261122T153723Z.json`. No unblocked bounded task remained before the gate, so no new test/script/artifact was added.
+- **Verification actions this session:** compileall OK; full suite 1432/1432/0 EXIT=0; recomputed probe census matches disk exactly; frozen hashes verified byte-unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
+- **Frozen artifacts verified byte-unchanged:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
+- **Probe census (disk, verified):** 397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json` (2026-10, published, gate UNBLOCKED). H10 cutoff gate decided by the latest PUBLISHED-month record (Oct 2026 → UNBLOCKED); the Nov 2026 probe is recorded separately as BLOCKED and is never promoted to the H10 gate decision.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
+- **Next action:** At/after 2026-11-30 execute Option A (see `agent_task_message.md`). Expect the fresh block to still be IMMATURE at the 2026-11-30 cutoff (M1 impossible; earliest M1 = 2026-12-01, earliest M2 = 2026-12-09). Do NOT relax 30-day maturity, `MIN_ASSETS_DECILES=20`, the trailing-decile state rule or the `alpha_k = 0.05/(k*(k+1))` per-look rule.
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T153723Z.json`.
+
+## Previous session — 2026-11-22T15:25:20Z
 
 - **Prior task executed:** held confirmatory H10 track for hard date gate 2026-11-30 (current date 2026-11-22 < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57). Re-verified clean green state instead of a bare hold memo.
 - **Value-add this session:** state verification only — recomputed probe census from disk (matches recorded 397 real / 270 Oct 49 pub / 127 Nov 0 pub / newest `cutoff_probe_20261113T091257Z.json`), `python3 -m compileall -q scripts tests` OK, full suite `python3 -m unittest discover -s tests` -> **1432 run, 1432 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (unchanged), `h10_maturity_timeline_audit.audit_h10_maturity_timeline()` read-only PASS 42/42, all five frozen hashes byte-unchanged. Wrote session verification record `research_state/session_verifications/session_verify_20261122T152520Z.json`. No unblocked bounded task remained before the gate, so no new test/script/artifact was added.
@@ -93,7 +104,7 @@
 
 ## Previous session — 2026-11-22T11:31:52Z
 
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261105T205749Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`). `python3 -m compileall -q scripts tests` OK. No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry `next_sequence_number` stays 57). Full test suite unavailable here (environment lacks pandas/numpy); green state recorded 1418 run, 0 failures, 8 skipped.
+- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`, h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`, grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`, frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`). `python3 -m compileall -q scripts tests` OK. No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry `next_sequence_number` stays 57). Full test suite unavailable here (environment lacks pandas/numpy); green state recorded 1418/0/8.
 - **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
 - **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
 - **Next action:** At/after 2026-11-30 execute Option A.
@@ -235,114 +246,3 @@
 - **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T083619Z.json`.
 
 ## Previous session — 2026-11-22T08:31:00Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Wrote new session verification record `session_verify_20261122T083100Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T083100Z.json`.
-
-## Previous session — 2026-11-22T07:56:11Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Wrote new session verification record `session_verify_20261122T075611Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T075611Z.json`.
-
-## Previous session — 2026-11-22T07:47:20Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Wrote new session verification record `session_verify_20261122T074720Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T074720Z.json`.
-
-## Previous session — 2026-11-22T07:41:14Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Wrote new session verification record `session_verify_20261122T074114Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T074114Z.json`.
-
-## Previous session — 2026-11-22T07:34:55Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Wrote new session verification record `session_verify_20261122T073455Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T073455Z.json`.
-
-## Previous session — 2026-11-22T07:30:27Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe before 2026-11-30, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Wrote new session verification record `session_verify_20261122T073027Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T073027Z.json`.
-
-## Previous session — 2026-11-22T06:54:48Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Fixed corrupted session verification JSON (trailing EOF) and duplicate handoff entries. Newest session verification record on disk `research_state/session_verifications/session_verify_20261122T065448Z.json`.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T065448Z.json`.
-
-## Previous session — 2026-11-22T06:45:46Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57). Repaired durable-state structure: demoted the duplicate `(this session)` entries and the duplicated `06:28:37` timestamp so the handoff has exactly one newest `(this session)` entry; fixed the dangling session-verify pointer in `agent_task_message.md` by writing a current session verification record.
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T064546Z.json`.
-
-## Previous session — 2026-11-22T06:32:53Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57).
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-
-## Previous session — 2026-11-22T06:28:37Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held. Recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. All four frozen artifact hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`). No code changes, no re-probe, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57).
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0). Newest session verification record on disk `research_state/session_verifications/session_verify_20261122T062837Z.json`.
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-
-## Previous session — 2026-11-22T05:45:00Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Found missing durable-state item: `agent_task_message.md` carried no "Recompute probe counts from disk" rule line, and `tests/test_task_message_probe_evidence.py::test_recompute_rule_line_matches_disk_census` was failing (1 failure, 1418 ran). Added the recompute rule line quoting the disk census (397 real / 270 Oct 49 pub / 127 Nov 0 pub / newest `cutoff_probe_20261113T091257Z.json`), matching `research_state/cutoff_probe/` exactly. No code changes, no re-probe, no re-run of completed hypotheses, no new hypothesis allocated (registry next_sequence_number stays 57).
-- **Verification:** `python3 -m compileall -q scripts tests` OK; `python3 -m unittest discover -s tests` -> 1418 run, 0 failures, 8 skipped, OK (EXIT=0). Frozen hashes byte-unchanged (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid config `1ff4c1f2...`, frontier `9ba08f3f...`).
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A.
-
-## Previous session — 2026-11-22T05:42:29Z
-
-- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. State clean (no code changes). Current date 2026-11-22 < gate 2026-11-30; held.
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-- **Gate-vs-probe distinction:** the H10 cutoff gate is decided by the latest published-month record (October 2026 archive published → H10 gate UNBLOCKED); the November 2026 probe (`probe_month=2026-11`, target not yet published) is recorded separately as BLOCKED and is never promoted to the H10 gate decision. Do NOT re-probe before 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A. Newest session verification record on disk `research_state/session_verifications/session_verify_20261121T175518Z.json`.
-
-## Previous session — 2026-11-22T05:41:53Z
-
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-
-## Previous session — 2026-11-22T04:48:35Z
-
-- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for confirmatory H10 track. Hold for 2026-11-30.
-
-(End of file)
