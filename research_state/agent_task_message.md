@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-22T03:41:15Z (next session)
+# Agent Task Message — 2026-11-22T03:47:57Z (next session)
 
 ## Initial task for next agent
 
-Today is **2026-11-22T03:41:15Z**, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-22T03:41:15Z`) and this message, then complete the standing task:
+Today is **2026-11-22T03:47:57Z**, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-22T03:47:57Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do NOT re-run completed hypotheses (H54/H55/H56 are `EXPLORATORY_ONLY`, complete), do NOT re-probe `probe_month=2026-11` before the gate, and **do NOT add another verification-only checkpoint.** The H10 fresh sealed block is immature and cannot mature before that date.
 
@@ -18,11 +18,11 @@ Today is **2026-11-22T03:41:15Z**, which is **before** the hard date gate **2026
 
 7. **At/after 2026-11-30, execute Option A:** cutoff probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`, only when cutoff >= 2026-11-29) -> free-data refresh (`python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>`) -> full suite (`python3 -m unittest discover -s tests`) -> hash check (H004V106 unchanged vs `git show HEAD:`) -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-22T03:41:15Z, this session)
+## Verified state (2026-11-22T03:47:57Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Guard tests:** `python3 -m unittest tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK.
-- **Git:** working tree clean at HEAD `75b26a51` on `main`. The prior session's handoff/task-message refresh landed as checkpoint commit `75b26a51 chore(kilo): checkpoint agent session` (diff vs `c3270f02` touched only `agent_handoff.md` and `agent_task_message.md`; no research-state change). This handoff/task-message refresh is left uncommitted per the no-commit rule (user-directed refresh). All four frozen hashes byte-unchanged vs recorded values.
+- **Git:** working tree clean at HEAD `0500f764` on `main`. The prior session's handoff/task-message refresh landed as checkpoint commit `0500f764 chore(kilo): checkpoint agent session` (diff vs `75b26a51` touched only `agent_handoff.md` and `agent_task_message.md`; no research-state change). This handoff/task-message refresh is left uncommitted per the no-commit rule (user-directed refresh). All four frozen hashes byte-unchanged vs recorded values.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 56 (H1..H56 present; H10 `CANDIDATE_UNVALIDATED`, H54/H55/H56 `EXPLORATORY_ONLY`). H10 fresh sealed block immature and date-gated to **2026-11-30**.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`. (The only other `.json` in `research_state/cutoff_probe/` is `daily_fundingRate_probe_20261101T132013Z.json`, which is not a cutoff probe and is not counted.)
 - **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
