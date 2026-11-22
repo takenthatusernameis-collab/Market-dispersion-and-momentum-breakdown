@@ -1,10 +1,10 @@
-# Agent Task Message — 2026-11-22T04:47:03Z (next session)
+# Agent Task Message — 2026-11-22T04:48:35Z (next session)
 
 ## Initial task for next agent
 
 Hold the confirmatory H10 track for the hard date gate 2026-11-30. Do NOT re-probe before the gate.
 
-## Verified state (2026-11-22T04:47:03Z, this session)
+## Verified state (2026-11-22T04:48:35Z, this session)
 
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
 - **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
@@ -19,5 +19,3 @@ Free public data only; historical research only; no fabrication.
 ## End-of-session requirement
 
 Leave clean state. Waiting for fixed calendar date 2026-11-30 is a date gate.
-filePath">
-research_state/agent_task_message.md
