@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-22T15:19:53Z (next session)
+# Agent Task Message — 2026-11-22T15:25:20Z (next session)
 
 ## Initial task for next agent
 
@@ -12,16 +12,16 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35, extended 2026-11-22T15:19:53Z): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. The full milestone calendar, derived from the committed artifacts and pinned by `tests/test_h10_confirm_gate_earliest_calendar_committed.py`, is: **M1** (first mature look, n_high>0 AND n_low>0) needs >=32 in-block formations → earliest cutoff ≈ **2026-12-01**; **M2** (magnitude estimable, n_high>=5 AND n_low>=5) needs >=40 in-block formations (necessary-condition hard lower bound) → earliest cutoff ≈ **2026-12-09** (decile-based order-of-magnitude estimate 80 in-block → ~2027-01-18, i.e. realistically later); **M3** (confirmatory claim) is gated on M2 plus the 0.05 economic threshold and Holm at alpha_k → earliest cutoff >= **2026-12-09**. Therefore the 2026-11-30 gate yields NO confirmatory-eligible look; M1 is the earliest possible look and it consumes the first alpha-spend slot (k=1, alpha_k=0.025), not a confirmation. Record this; do not relax maturity. These calendar dates are necessary-condition lower bounds assuming daily merged-index cadence and shift later with any archive gap. Both the M1 layer (`tests/test_h10_maturity_timeline_audit_committed.py`) and the M2/M3 calendar layer (`tests/test_h10_confirm_gate_earliest_calendar_committed.py`) fail loudly if a future data refresh or hash change stales the feasibility chain.
 
-## Verified state (2026-11-22T15:19:53Z, this session)
+## Verified state (2026-11-22T15:25:20Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1432 run, 1432 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**. The bare runner ships without numpy/pandas, so run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite (numpy 2.5.5 / pandas 3.1.1). `tests.test_state_consistency` and `tests.test_handoff_session_entries` and `tests.test_verified_test_claim_guard` OK. `tests.test_task_message_probe_evidence` OK (probe evidence line matches disk).
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json` (2026-10, published, gate UNBLOCKED).
 - **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`. Recompute from `research_state/cutoff_probe/` before trusting any quoted census; the published field is `target_published`.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (H1–H57 registered; no new hypothesis allocated this session).
-- **Frozen hashes:** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` — all verified byte-unchanged vs disk at 2026-11-22T15:19:53Z.
+- **Frozen hashes:** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` — all verified byte-unchanged vs disk at 2026-11-22T15:25:20Z.
 - **Option A CLI verified present:** `probe_cutoff_gate.py --probe-month`; `eval_forward_block.py --forward-block-start / --data-cutoff / --output-dir / --look-number`.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T151953Z.json`.
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T152520Z.json`.
 - **run_manifest:** `latest_verified_test_claim` = `1432/1432/0`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`; `data_refresh_required: true` but not actionable until November 2026 data publishes (nothing new to fetch); do not re-probe before 2026-11-30.
 
 ## Hard constraints
