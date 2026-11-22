@@ -1,0 +1,35 @@
+{
+  "session_utc": "20261122T085138Z",
+  "test_suite": {
+    "run": 1418,
+    "failures": 0,
+    "skipped": 8,
+    "exit_code": 0
+  },
+  "probe_census": {
+    "total_probes": 397,
+    "probe_month_2026_10": {
+      "total": 270,
+      "published": 49
+    },
+    "probe_month_2026_11": {
+      "total": 127,
+      "published": 0
+    },
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "registry_next_sequence_number": 57,
+  "date_gate": {
+    "current_date": "2026-11-22",
+    "hard_gate": "2026-11-30",
+    "status": "BEFORE_GATE"
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "action_taken": "Verification only; no re-probe; no code changes; no new hypothesis allocated"
+}
