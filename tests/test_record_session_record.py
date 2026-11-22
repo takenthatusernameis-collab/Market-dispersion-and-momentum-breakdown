@@ -11,8 +11,12 @@ records from older conventions) and are NOT asserted here -- only the records
 this script writes are held to the contract, so the guard is hermetic and
 cannot fail the build over pre-existing drift.
 
-No market data, no network. The manifest is snapshotted in setUp and restored
-in tearDown so the guard tests are hermetic.
+No market data, no network. The record_session_record module's MANIFEST path is
+redirected at a per-test temporary COPY of the real manifest in setUp, so the
+committed research_state/run_manifest.json is opened read-only (once, to seed
+the copy) and is never written. This removes the shared-mutable-file class of
+bug entirely; see HermeticManifestTests for why a snapshot/restore of the real
+file was not sufficient.
 """
 import importlib.util
 import json
@@ -29,22 +33,38 @@ rsm = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(rsm)
 
 MANIFEST = ROOT / "research_state" / "run_manifest.json"
-BACKUP = ROOT / "research_state" / "_tmp_manifest_backup.json"
 
 
 def _read_manifest():
-    return json.loads(MANIFEST.read_text(encoding="utf-8"))
+    # Reads the module's ACTIVE manifest path (a per-test temp copy under the
+    # hermetic harness), never a hard-coded real path.
+    return json.loads(rsm.MANIFEST.read_text(encoding="utf-8"))
 
 
 def _write_manifest(m):
-    MANIFEST.write_text(
+    rsm.MANIFEST.write_text(
         json.dumps(m, indent=2, sort_keys=False, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
 
 
 class HermeticManifestTests(unittest.TestCase):
-    """Snapshot/restore harness so guard tests never leave the manifest dirty."""
+    """Fully hermetic harness: the record_session_record module's MANIFEST path
+    is redirected at a per-test temporary COPY of the real manifest, so the
+    committed research_state/run_manifest.json is never written.
+
+    The earlier implementation snapshotted the real manifest to a sibling
+    ``_tmp_manifest_backup.json`` in setUp and copied it back in tearDown. That
+    left the real durable-state file writable by the test and, under the full
+    suite, the restore was not reliable: checkpoint commits ee98b1d1, bddb0c7,
+    56490d93 and e27c4080 captured committed ``session_record_rsm_*`` fixtures
+    (timestamp 2026-01-01) inside run_manifest.json, and a polluted manifest
+    makes tests/test_state_timestamp_not_stale.py and
+    tests/test_state_consistency.py::test_session_record_latest_points_at_the_most_recent_record
+    fail on the next run. Redirecting the module constant (the same pattern
+    tests/test_append_manifest_entry.py uses) removes the shared-mutable-file
+    class of bug: the real file is opened read-only, once, to seed the copy.
+    """
 
     def _run_main_with_file(self, payload):
         import tempfile
@@ -57,14 +77,19 @@ class HermeticManifestTests(unittest.TestCase):
             Path(path).unlink(missing_ok=True)
 
     def setUp(self):
-        if BACKUP.exists():
-            BACKUP.unlink()
-        shutil.copy2(MANIFEST, BACKUP)
+        import tempfile
+        self._tmpdir = tempfile.mkdtemp(prefix="rsm_test_")
+        self._tmp_manifest = Path(self._tmpdir) / "run_manifest.json"
+        # Seed the temp copy from the real manifest (read-only access).
+        self._tmp_manifest.write_text(
+            MANIFEST.read_text(encoding="utf-8"), encoding="utf-8"
+        )
+        self._orig_manifest = rsm.MANIFEST
+        rsm.MANIFEST = self._tmp_manifest
 
     def tearDown(self):
-        if BACKUP.exists():
-            shutil.copy2(BACKUP, MANIFEST)
-            BACKUP.unlink()
+        rsm.MANIFEST = self._orig_manifest
+        shutil.rmtree(self._tmpdir, ignore_errors=True)
 
 
 class RequiredFieldsTests(HermeticManifestTests):
@@ -165,6 +190,20 @@ class ScriptWrittenRecordContractTests(HermeticManifestTests):
         self.assertIsInstance(m.get(latest), dict, f"{latest} is not a dict")
         for f in rsm.REQUIRED:
             self.assertIn(f, m[latest], f"{latest} missing {f}")
+
+    def test_real_manifest_is_never_written(self):
+        # Tripwire: running any record append must leave the committed
+        # research_state/run_manifest.json byte-identical. If the hermetic
+        # redirection above is ever removed, this fails loudly instead of
+        # silently re-polluting durable state (the recurring class of bug this
+        # test file's history records).
+        before = MANIFEST.read_bytes()
+        self._run_main_with_file(self._payload("session_rsm_contract_003"))
+        after = MANIFEST.read_bytes()
+        self.assertEqual(
+            before, after,
+            "record_session_record wrote the real research_state/run_manifest.json",
+        )
 
 
 if __name__ == "__main__":
