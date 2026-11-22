@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-22T12:19:02Z (next session)
+# Agent Task Message — 2026-11-22T12:32:26Z (next session)
 
 ## Initial task for next agent
 
@@ -12,17 +12,16 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions and the first mature look (M1, n_high>0 AND n_low>0) needs >=32 formations — earliest cutoff ≈ 2026-12-01. So even after the 2026-11-30 date gate the fresh block may still be immature. Record this; do not relax maturity.
 
-## Verified state (2026-11-22T12:19:02Z, this session)
+## Verified state (2026-11-22T12:32:26Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
-- **Test suite:** full `python3 -m unittest discover -s tests` -> **1418 run, 1418 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (recorded 2026-11-22T12:25:33Z). The bare runner ships without numpy/pandas, so run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite (numpy 2.5.5 / pandas 3.1.1). `tests.test_state_consistency` 22/22 OK.
+- **Test suite:** full `python3 -m unittest discover -s tests` -> **1418 run, 1418 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (recorded 2026-11-22T12:32:26Z). The bare runner ships without numpy/pandas, so run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite (numpy 2.5.5 / pandas 3.1.1). `tests.test_state_consistency` 22/22 OK.
 - **Probe evidence (disk):** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`.
-- **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`. Recompute from `research_state/cutoff_probe/` before trusting any quoted census; the published field is `target_published`; this line mirrors disk exactly at 2026-11-22T12:19:02Z.
+- **Recompute probe counts from disk:** 397 real `cutoff_probe_*.json` (270 `probe_month=2026-10` / 49 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261113T091257Z.json`. Recompute from `research_state/cutoff_probe/` before trusting any quoted census; the published field is `target_published`; this line mirrors disk exactly at 2026-11-22T12:32:26Z.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (H1–H57 registered; H57 = point-in-time eligibility audit, POINT_IN_TIME_ELIGIBLE).
-- **Frozen hashes:** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` — all verified byte-unchanged vs disk at 2026-11-22T12:19:02Z.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T121902Z.json`.
+- **Frozen hashes:** canonical forward block `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` — all verified byte-unchanged vs disk at 2026-11-22T12:32:26Z.
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T123226Z.json`.
 - **run_manifest:** `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`; all `next_required_actions` DONE except `test_frozen_anchor_on_new_forward_block` (pending fresh sealed block after 2026-09-29). `data_refresh_required: true` but not actionable until November 2026 data publishes (nothing new to fetch); do not re-probe before 2026-11-30.
-- **Durable-state repair this session:** the previous task message/handoff quoted a stale newest probe (`cutoff_probe_20261105T205749Z.json`); corrected to `cutoff_probe_20261113T091257Z.json`, which was the cause of the two failing `tests/test_task_message_probe_evidence.py` census tests. Both now pass.
 
 ## Hard constraints
 
