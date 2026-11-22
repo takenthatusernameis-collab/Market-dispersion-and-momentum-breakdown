@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-22T13:34:27Z",
+  "last_updated_utc": "2026-11-22T14:29:50Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "1424/1424/0",
+  "latest_verified_test_claim": "1432/1432/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -3331,4 +3331,33 @@
   "what_was_not_changed": "No frozen artifact, panel, grid ledger, grid_summary, hypothesis conclusion, decision rule, cost model, preregistration or outcome field changed apart from the new test file, the refreshed verified_test_claim snapshot, this manifest entry and the two durable-state files rewritten below. Canonical forward_block/, forward_block_h10_fresh/, grid_result_ledger, grid v3 config, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. Registry next_sequence_number stays 57 (no new hypothesis allocated). No re-probe before 2026-11-30, no re-run of completed hypotheses, no relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or alpha_k = 0.05/(k*(k+1)).",
   "posture": "BLOCKED_BY_HARD_DATE_GATE for the confirmatory H10 track; hold for 2026-11-30.",
   "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md)."
-}}
+},
+  "h10_confirm_gate_earliest_calendar_committed_20261122T1428Z": {
+    "session_utc": "2026-11-22T14:28:03Z",
+    "prior_task": "Hold confirmatory H10 track for hard date gate 2026-11-30 (current date 2026-11-22 < gate). Do not write a bare hold memo; add real value.",
+    "action": "Added a committed-disk pin for the missing calendar layer of the H10 maturity timeline (scripts/h10_maturity_timeline_audit.py, H35): the calendar earliest-possible cutoffs for M2 (magnitude estimable) and M3 (confirmatory), which the audit expresses only as in-block formation counts.",
+    "finding": "The prior session's committed pin covered M1 (2026-12-01) and the November-2026 impossibility, but no artifact or test converted the audit's M2/M3 in-block formation counts (hard lower bound 40, decile estimate 80) into calendar cutoffs. A next agent reading 'earliest M1 = 2026-12-01' could misread the 2026-11-30 gate as confirmation-ready. Derived from the real committed artifacts via the audit module's own helpers: M2 (n_high>=5 AND n_low>=5) cannot occur before 2026-12-09 (necessary-condition hard lower bound; decile-based estimate ~2027-01-18), and M3 (confirmatory) is gated on M2, so no confirmatory-eligible look exists at the 2026-11-30 gate.",
+    "change": "New tests/test_h10_confirm_gate_earliest_calendar_committed.py (8 tests, stdlib only, CWD-independent): pins current IMMATURE geometry (2026-10-31, gap-adjusted offset 30), M1 earliest 2026-12-01, M2 hard-lower-bound earliest 2026-12-09 (additional 39, hard 40), M2 decile estimate ~2027-01-18 (additional 79, est 80), M3 gated on M2 and not earlier, the necessary-condition/shift-later-with-gap labelling, a red-team proving the calendar conversion responds to the feasibility constants (horizon=14 -> 2026-11-23; min_prior=40 -> 2026-12-19) rather than being hardcoded, and cross-checks of the five frozen hashes against independent literals.",
+    "verified": "python3 -m compileall -q scripts tests OK. python3 -m unittest discover -s tests -> 1432 run, 1432 OK, 0 failures, 0 errors, 8 skipped, EXIT=0 (was 1424; +8). New file alone 8/8 OK. scripts/record_test_claim.py re-run refreshed the snapshot fingerprint and manifest latest_verified_test_claim 1424/1424/0 -> 1432/1432/0; tests/test_verified_test_claim_guard OK. Re-ran h10_maturity_timeline_audit.audit_h10_maturity_timeline() read-only against current disk: PASS 42/42.",
+    "frozen_artifacts_unchanged": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "probe_census_disk": {
+      "total_real_probes": 397,
+      "probe_month_2026_10": 270,
+      "probe_month_2026_10_published": 49,
+      "probe_month_2026_11": 127,
+      "probe_month_2026_11_published": 0,
+      "newest_probe": "cutoff_probe_20261113T091257Z.json",
+      "newest_probe_month": "2026-10",
+      "newest_cutoff_gate": "UNBLOCKED"
+    },
+    "what_was_not_changed": "No frozen artifact, panel, grid ledger, grid_summary, hypothesis conclusion, decision rule, cost model, preregistration or outcome field changed apart from the new test file, the refreshed verified_test_claim snapshot, this manifest entry and the durable-state handoff/task-message/session-record files. Canonical forward_block/, forward_block_h10_fresh/, grid_result_ledger, grid v3 config, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. Registry next_sequence_number stays 57 (no new hypothesis allocated). No re-probe before 2026-11-30, no re-run of completed hypotheses, no relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or alpha_k = 0.05/(k*(k+1)).",
+    "posture": "BLOCKED_BY_HARD_DATE_GATE for the confirmatory H10 track; hold for 2026-11-30.",
+    "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md); expect the fresh block to still be IMMATURE (M1 impossible; earliest M1 2026-12-01, earliest M2 2026-12-09)."
+  }
+}
