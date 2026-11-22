@@ -1,0 +1,44 @@
+{
+  "session_id": "session_verify_20261122T105940Z",
+  "session_timestamp": "20261122T105940Z",
+  "date_gate": "2026-11-30",
+  "current_date": "2026-11-22",
+  "gate_status": "BLOCKED_BY_HARD_DATE_GATE",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {
+      "count": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "probe_census": {
+    "total_files": 397,
+    "probe_month_2026-10": {
+      "total": 270,
+      "published": 49
+    },
+    "probe_month_2026-11": {
+      "total": 127,
+      "published": 0
+    },
+    "newest_probe_file": "research_state/cutoff_probe/cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "registry_next_sequence_number": 57,
+  "test_suite": "1418 run, 0 failures, 8 skipped, OK",
+  "compile_check": "OK",
+  "exploratory_track": "H1-H57 registered and complete (H57 = point-in-time eligibility audit, POINT_IN_TIME_ELIGIBLE; rank provenance NOT_PROVEN_COMPLETE). H10 fresh block still immature (n_high=0, n_low=0) and date-gated to 2026-11-30.",
+  "action_taken": "hold_confirmatory_h10_track_and_record_verified_state",
+  "loop_break_guidance": "Before 2026-11-30 do not add another verification-only checkpoint. Complete the bounded no-cost EXPLORATORY_ONLY successor named in H48 next_test: the ARK/ASTR window-trim decision (read-only over committed H47 roster / H41 plan / H43 probe, no network), preregistered under a new H49 ID; and/or the wave-A 644-file acquisition under its own new ID. Preserve the H10 confirmatory track and the 2026-11-30 date gate.",
+  "next_action": "At/after 2026-11-30 execute Option A"
+}
