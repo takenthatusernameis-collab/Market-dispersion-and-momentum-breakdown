@@ -1,8 +1,8 @@
-# Agent Task Message — 2026-11-22T00:56:30Z (next session)
+# Agent Task Message — 2026-11-22T01:39:57Z (next session)
 
 ## Initial task for next agent
 
-Today is **2026-11-22T00:56:30Z**, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-22T00:56:30Z`) and this message, then complete the standing task:
+Today is **2026-11-22T01:39:57Z**, which is **before** the hard date gate **2026-11-30**. Read the durable handoff (`research_state/agent_handoff.md`, newest `## Session summary — 2026-11-22T01:39:57Z`) and this message, then complete the standing task:
 
 1. **Hold the confirmatory H10 track for the date gate.** Waiting for the fixed calendar date 2026-11-30 is a date gate, not a request for a new experiment ID. Do NOT re-run completed hypotheses (H54/H55/H56 are `EXPLORATORY_ONLY`, complete), do NOT re-probe `probe_month=2026-11` before the gate, and **do NOT add another verification-only checkpoint.** The H10 fresh sealed block is immature and cannot mature before that date.
 
@@ -18,7 +18,7 @@ Today is **2026-11-22T00:56:30Z**, which is **before** the hard date gate **2026
 
 7. **At/after 2026-11-30, execute Option A:** cutoff probe (`python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`, only when cutoff >= 2026-11-29) -> free-data refresh (`python3 scripts/refresh_free_data.py --price-end <month-end> --cap-end <month-end>`) -> full suite (`python3 -m unittest discover -s tests`) -> hash check (H004V106 unchanged vs `git show HEAD:`) -> fresh sealed H10 block into `forward_block_h10_fresh/`, requiring `n_high > 0 AND n_low > 0`.
 
-## Verified state (2026-11-22T00:56:30Z, this session)
+## Verified state (2026-11-22T01:39:57Z, this session)
 
 - **compileall:** `python3 -m compileall -q scripts tests` EXIT 0.
 - **Guard tests:** `python3 -m unittest tests.test_handoff_session_entries tests.test_task_message_probe_evidence tests.test_continuous_research_contract` (16 tests) EXIT 0 OK.
