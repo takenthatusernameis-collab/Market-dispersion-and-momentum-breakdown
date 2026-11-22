@@ -1,6 +1,15 @@
-# Agent Handoff — 2026-11-22T12:32:26Z (current session)
+# Agent Handoff — 2026-11-22T12:38:37Z (current session)
 
-## Session summary — 2026-11-22T12:32:26Z (this session)
+## Session summary — 2026-11-22T12:38:37Z (this session)
+
+- **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held — no re-probe before 2026-11-30, no Option A execution, no re-run of completed hypotheses, no new hypothesis allocated (registry `next_sequence_number` stays 57).
+- **Verification actions this session:** recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. Ran `python3 -m compileall -q scripts tests` OK. Frozen artifact hashes byte-unchanged (canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`).
+- **Probe census (disk, verified):** 397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`.
+- **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
+- **Next action:** At/after 2026-11-30 execute Option A (see `agent_task_message.md`). Do NOT relax 30-day maturity, `MIN_ASSETS_DECILES=20`, the trailing-decile state rule or the `alpha_k = 0.05/(k*(k+1))` per-look rule.
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261122T123226Z.json`.
+
+## Previous session — 2026-11-22T12:32:26Z
 
 - **Prior task executed:** hold confirmatory H10 track for hard date gate 2026-11-30. Current date 2026-11-22 < gate 2026-11-30; held — no re-probe before 2026-11-30, no Option A execution, no re-run of completed hypotheses, no new hypothesis allocated (registry `next_sequence_number` stays 57).
 - **Verification actions this session:** recomputed probe census from disk (397 real `cutoff_probe_*.json`; 270 `probe_month=2026-10` / 49 `target_published`, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261113T091257Z.json`) — matches recorded census exactly. Ran `python3 -m compileall -q scripts tests` OK. Ran full test suite `python3 -m unittest discover -s tests` -> **1418 run, 1418 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (recorded 2026-11-22T12:32:26Z). Verified all four frozen artifact hashes byte-unchanged: canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e`.
