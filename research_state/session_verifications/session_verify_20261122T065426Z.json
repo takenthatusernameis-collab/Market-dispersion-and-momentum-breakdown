@@ -40,4 +40,3 @@
   "posture": "BLOCKED_BY_HARD_DATE_GATE for confirmatory H10 track. Hold for 2026-11-30.",
   "next_action": "At/after 2026-11-30 execute Option A: cutoff probe -> free-data refresh -> full suite -> hash check -> fresh sealed H10 block into forward_block_h10_fresh/, requiring n_high > 0 AND n_low > 0. Do not re-probe 2026-11 before the gate; do not re-run completed hypotheses; do not add verification-only checkpoints before the gate."
 }
-EOF
