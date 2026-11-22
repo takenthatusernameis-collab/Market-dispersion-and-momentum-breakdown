@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-11-22T16:33:23Z",
+  "compileall": "OK",
+  "tests": "1443 run, 1443 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "probe_census": "397 real cutoff_probe_*.json; 270 probe_month=2026-10 / 49 target_published; 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261113T091257Z.json (2026-10, published, gate UNBLOCKED)",
+  "frozen_hashes_verified": true,
+  "value_add": "verification only; no unblocked bounded task before gate"
+}
