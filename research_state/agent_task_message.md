@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-22T12:39:05Z (next session)
+# Agent Task Message — 2026-11-22T13:19:23Z (next session)
 
 ## Initial task for next agent
 
@@ -12,7 +12,7 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions and the first mature look (M1, n_high>0 AND n_low>0) needs >=32 formations — earliest cutoff ≈ 2026-12-01. So even after the 2026-11-30 date gate the fresh block may still be immature. Record this; do not relax maturity.
 
-## Verified state (2026-11-22T12:32:26Z, this session)
+## Verified state (2026-11-22T13:19:23Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1418 run, 1418 OK, 0 failures, 0 errors, 8 skipped, EXIT=0** (recorded 2026-11-22T12:32:26Z). The bare runner ships without numpy/pandas, so run `python3 -m pip install --disable-pip-version-check --no-input -r requirements.txt` before the suite (numpy 2.5.5 / pandas 3.1.1). `tests.test_state_consistency` 22/22 OK.
