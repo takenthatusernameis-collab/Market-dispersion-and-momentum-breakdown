@@ -1,10 +1,10 @@
-# Agent Task Message — 2026-11-22T21:33:45Z (next session)
+# Agent Task Message — 2026-11-22T21:43:22Z (next session)
 
 ## Initial task for next agent
 
 Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-22, before the gate. Do NOT re-probe November 2026 before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
 
-State carried in: compileall OK, full suite 1443/1443/0, all five frozen hashes byte-unchanged vs disk, probe census matches disk (397 real; newest `cutoff_probe_20261113T091257Z.json`; October 2026 published record -> H10 cutoff gate UNBLOCKED; November 2026 0/127 published, recorded BLOCKED as a probe, never promoted). This session added state verification only; no test/script/artifact change. No unblocked bounded task remains before the gate.
+State carried in: compileall OK, full suite 1443/1443/0, all five frozen hashes byte-unchanged vs disk, probe census matches disk (397 real; newest `cutoff_probe_20261113T091257Z.json`; October 2026 published record -> H10 cutoff gate UNBLOCKED; November 2026 0/127 published, recorded BLOCKED as a probe, never promoted). This session added state verification only (`research_state/session_verifications/session_verify_20261122T214322Z.json`); no test/script/artifact change. No unblocked bounded task remains before the gate.
 
 Gate vs probe: the H10 cutoff gate is decided by the latest PUBLISHED-month record. The October 2026 archive is published (`target_published=true`, gate UNBLOCKED per the real record `research_state/cutoff_probe/cutoff_probe_20261113T091257Z.json`), so the H10 cutoff gate is UNBLOCKED. The November 2026 probe (`probe_month=2026-11`, target not yet published, 0 of 127 November records published) is recorded separately as BLOCKED and is NEVER promoted into the H10 gate decision. Do not re-probe November 2026 before 2026-11-30.
 
@@ -14,7 +14,7 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. The full milestone calendar, derived from the committed artifacts and pinned by `tests/test_h10_confirm_gate_earliest_calendar_committed.py` plus the independent recompute `tests/test_h10_maturity_independent_recompute.py`, is: **M1** (first mature look, n_high>0 AND n_low>0) needs >=32 in-block formations -> earliest cutoff ~ **2026-12-01**; **M2** (magnitude estimable, n_high>=5 AND n_low>=5) needs >=40 in-block formations (necessary-condition hard lower bound) -> earliest cutoff ~ **2026-12-09** (decile-based order-of-magnitude estimate 80 in-block -> ~2027-01-18, i.e. realistically later); **M3** (confirmatory claim) is gated on M2 plus the 0.05 economic threshold and Holm at alpha_k -> earliest cutoff >= **2026-12-09**. Therefore the 2026-11-30 gate yields NO confirmatory-eligible look; M1 is the earliest possible look and it consumes the first alpha-spend slot (k=1, alpha_k=0.025), not a confirmation. These calendar dates are necessary-condition lower bounds assuming daily merged-index cadence and shift later with any archive gap.
 
-## Verified state (2026-11-22T21:33:45Z, this session)
+## Verified state (2026-11-22T21:43:22Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1443 run, 1443 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
