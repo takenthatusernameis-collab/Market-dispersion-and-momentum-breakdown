@@ -1,0 +1,27 @@
+{
+  "session_timestamp": "2026-11-22T21:22:29Z",
+  "compile_check": "OK",
+  "test_suite": "1443 run, 1443 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+  "probe_census": {
+    "total_real": 397,
+    "probe_month_2026_10": 270,
+    "published_2026_10": 49,
+    "probe_month_2026_11": 127,
+    "published_2026_11": 0,
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "all_hashes_verified_byte_unchanged": true,
+  "registry_next_sequence_number": 57,
+  "run_manifest_latest_verified_test_claim": "1443/1443/0",
+  "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+  "data_refresh_required": true,
+  "value_add": "State verification only — compileall OK; full suite 1443/1443/0; frozen hashes byte-unchanged; probe census matches disk (397 real; newest cutoff_probe_20261113T091257Z.json). No unblocked bounded task remains before the 2026-11-30 gate.",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE"
+}
