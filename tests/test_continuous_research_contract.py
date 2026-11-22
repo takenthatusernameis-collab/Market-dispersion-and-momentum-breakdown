@@ -249,7 +249,7 @@ class ContinuousResearchContractTests(unittest.TestCase):
         # study months, including 35-39 in 2025-01..2026-10; that is coverage,
         # not point-in-time eligibility or outcome evidence, no confirmatory
         # claim is allowed and the H10 gate is still date-gated to 2026-11-30.
-        self.assertEqual(registry["next_sequence_number"], 56)
+        self.assertEqual(registry["next_sequence_number"], 57)
 
         h1 = next(h for h in registry["hypotheses"] if h["id"] == "H1")
         self.assertTrue(h1["immutable"])
