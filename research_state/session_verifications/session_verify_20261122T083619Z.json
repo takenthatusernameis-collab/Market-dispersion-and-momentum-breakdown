@@ -1,0 +1,30 @@
+{
+  "session_utc": "2026-11-22T08:36:19Z",
+  "verify_items": {
+    "compileall": "OK",
+    "unittest_discover": "1418 run, 0 failures, 8 skipped, OK (EXIT=0)",
+    "probe_census_disk": {
+      "total_real_probes": 397,
+      "probe_month_2026_10": 270,
+      "probe_month_2026_10_published": 49,
+      "probe_month_2026_11": 127,
+      "probe_month_2026_11_published": 0,
+      "newest_probe": "cutoff_probe_20261113T091257Z.json"
+    },
+    "frozen_hashes_verified": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh_forward_block": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "hypothesis_registry_next_sequence_number": 57,
+    "no_code_changes": true,
+    "no_reprobe_before_2026_11_30": true,
+    "no_rerun_completed_hypotheses": true,
+    "no_new_hypothesis_allocated": true
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "gate_date": "2026-11-30",
+  "current_date": "2026-11-22",
+  "next_action": "At/after 2026-11-30 execute Option A"
+}
