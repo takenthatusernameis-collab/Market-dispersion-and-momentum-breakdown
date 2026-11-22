@@ -1,0 +1,2511 @@
+{
+  "all_frozen_hashes_match": true,
+  "audit_id": "H004V106_POINTINTIME_ELIG_001",
+  "computed_utc": "2026-11-22T04:55:46Z",
+  "confirmatory_claim_allowed": false,
+  "decision": {
+    "condition_all_assets_resolve_to_cap": {
+      "pass": true,
+      "unresolved": []
+    },
+    "condition_min_asof_breadth_ge_min": {
+      "min_asof": 29.0,
+      "pass": true
+    },
+    "condition_min_strict_breadth_ge_min": {
+      "min_strict": 29.0,
+      "pass": true
+    },
+    "condition_no_snapshot_signature": {
+      "pass": true,
+      "snapshot_like": []
+    },
+    "label": "POINT_IN_TIME_ELIGIBLE",
+    "min_breadth_required": 20
+  },
+  "decision_rule": {
+    "asof_staleness_days": 7,
+    "min_breadth": 20,
+    "statement": "POINT_IN_TIME_ELIGIBLE iff every klines symbol resolves to a cap source AND no cap series carries a snapshot signature (>=2 distinct dates and >1 distinct value) AND min per-month strict breadth >= 20 AND min per-month as-of(7d) breadth >= 20."
+  },
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003-POINTINTIME-ELIG-001",
+  "exploratory_only": true,
+  "frozen_hashes_verified": {
+    "canonical_forward_block": {
+      "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+    },
+    "grid_v3_config": {
+      "actual": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "expected": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "match": true,
+      "path": "configs/dispersion_momentum_grid_v3.json"
+    },
+    "h10_fresh_block": {
+      "actual": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "match": true,
+      "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json"
+    },
+    "universe_frontier": {
+      "actual": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "match": true,
+      "path": "research_state/universe_frontier.json"
+    }
+  },
+  "hypothesis": "H57",
+  "interpretation": "The committed DISP-003 panel inventory resolves to date-stamped point-in-time cap observations for every symbol, none carries a snapshot signature, and the strict same-day breadth stays above the arity requirement of 20 in every fresh-window month. The fresh-window breadth is therefore point-in-time cap-eligible. It is still a coverage/eligibility fact over a fixed panel inventory, not a proven point-in-time rank universe: rank provenance remains NOT_PROVEN_COMPLETE and today's ranks are never backfilled.",
+  "inventory": {
+    "assets_without_cap": [],
+    "n_symbols": 41,
+    "panel_dirs": {
+      "committed_disp003": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/data/panels",
+      "wave_a": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEA-001/panels",
+      "wave_b": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-PANELNORM-WAVEB-001/panels"
+    },
+    "partial_klines_assets": [
+      "1INCHUSDT",
+      "AAVEUSDT",
+      "ACHUSDT",
+      "AGLDUSDT",
+      "EOSUSDT",
+      "MATICUSDT"
+    ],
+    "per_asset": [
+      {
+        "asset": "1inch",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 1,
+        "n_klines": 761,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "1INCHUSDT"
+      },
+      {
+        "asset": "aave",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 1,
+        "n_klines": 761,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "asset": "ach",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-05-28",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-02-22",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "n_cap_distinct_dates": 1244,
+        "n_cap_distinct_values": 1244,
+        "n_cap_observations": 1244,
+        "n_fresh_months_covered": 1,
+        "n_klines": 709,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ACHUSDT"
+      },
+      {
+        "asset": "ada",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ADAUSDT"
+      },
+      {
+        "asset": "agld",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-07-29",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 1,
+        "n_klines": 552,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "AGLDUSDT"
+      },
+      {
+        "asset": "algo",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ALGOUSDT"
+      },
+      {
+        "asset": "alice",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ALICEUSDT"
+      },
+      {
+        "asset": "ankr",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ANKRUSDT"
+      },
+      {
+        "asset": "ape",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "APEUSDT"
+      },
+      {
+        "asset": "api3",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "API3USDT"
+      },
+      {
+        "asset": "apt",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "APTUSDT"
+      },
+      {
+        "asset": "ark",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-09-19",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1139,
+        "panel_group": "wave_b",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ARKUSDT"
+      },
+      {
+        "asset": "arpa",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ARPAUSDT"
+      },
+      {
+        "asset": "ar",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1400,
+        "panel_group": "wave_a",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ARUSDT"
+      },
+      {
+        "asset": "astr",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-10-23",
+        "cap_source": "raw_coinmetrics_candidate",
+        "klines_first": "2023-02-14",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1392,
+        "n_cap_distinct_values": 1392,
+        "n_cap_observations": 1392,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1356,
+        "panel_group": "wave_b",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ASTRUSDT"
+      },
+      {
+        "asset": "atom",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ATOMUSDT"
+      },
+      {
+        "asset": "avax",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "AVAXUSDT"
+      },
+      {
+        "asset": "bch",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "BCHUSDT"
+      },
+      {
+        "asset": "bnb",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "BNBUSDT"
+      },
+      {
+        "asset": "btc",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "BTCUSDT"
+      },
+      {
+        "asset": "dash",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "DASHUSDT"
+      },
+      {
+        "asset": "doge",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "DOGEUSDT"
+      },
+      {
+        "asset": "dot",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "DOTUSDT"
+      },
+      {
+        "asset": "eos",
+        "cap_first": "2023-01-01",
+        "cap_last": "2025-12-30",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2025-05-21",
+        "klines_missing_fresh_months": [
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09",
+          "2026-10"
+        ],
+        "n_cap_distinct_dates": 1094,
+        "n_cap_distinct_values": 1094,
+        "n_cap_observations": 1094,
+        "n_fresh_months_covered": 5,
+        "n_klines": 872,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "EOSUSDT"
+      },
+      {
+        "asset": "etc",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ETCUSDT"
+      },
+      {
+        "asset": "eth",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ETHUSDT"
+      },
+      {
+        "asset": "fil",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "FILUSDT"
+      },
+      {
+        "asset": "iost",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "IOSTUSDT"
+      },
+      {
+        "asset": "link",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "LINKUSDT"
+      },
+      {
+        "asset": "ltc",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "LTCUSDT"
+      },
+      {
+        "asset": "matic",
+        "cap_first": "2023-01-01",
+        "cap_last": "2025-08-28",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2024-09-11",
+        "klines_missing_fresh_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12",
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06",
+          "2026-07",
+          "2026-08",
+          "2026-09",
+          "2026-10"
+        ],
+        "n_cap_distinct_dates": 971,
+        "n_cap_distinct_values": 971,
+        "n_cap_observations": 971,
+        "n_fresh_months_covered": 0,
+        "n_klines": 620,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "MATICUSDT"
+      },
+      {
+        "asset": "neo",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "NEOUSDT"
+      },
+      {
+        "asset": "qtum",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "QTUMUSDT"
+      },
+      {
+        "asset": "rune",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "RUNEUSDT"
+      },
+      {
+        "asset": "sol",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "SOLUSDT"
+      },
+      {
+        "asset": "trx",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "asset": "uni",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "UNIUSDT"
+      },
+      {
+        "asset": "vet",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "VETUSDT"
+      },
+      {
+        "asset": "xlm",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "XLMUSDT"
+      },
+      {
+        "asset": "xrp",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "XRPUSDT"
+      },
+      {
+        "asset": "zec",
+        "cap_first": "2023-01-01",
+        "cap_last": "2026-11-03",
+        "cap_source": "legacy_marketcap_panel",
+        "klines_first": "2023-01-01",
+        "klines_last": "2026-10-31",
+        "klines_missing_fresh_months": [],
+        "n_cap_distinct_dates": 1403,
+        "n_cap_distinct_values": 1403,
+        "n_cap_observations": 1403,
+        "n_fresh_months_covered": 22,
+        "n_klines": 1399,
+        "panel_group": "committed_disp003",
+        "snapshot_reason": "ok",
+        "snapshot_signature": false,
+        "symbol": "ZECUSDT"
+      }
+    ],
+    "snapshot_like_assets": []
+  },
+  "label": "POINT_IN_TIME_ELIGIBLE",
+  "note": "EXPLORATORY_ONLY descriptive measurement on committed development inputs. No returns, spreads, dispersion states, p-values, costs or inference computed. Does not validate, replace or unlock any confirmatory track (H1/H6/H7/H10) and is not independent confirmation. H10 remains date-gated to 2026-11-30.",
+  "per_month": [
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-01",
+      "month_end": "2025-01-31",
+      "n_asof": 36,
+      "n_strict": 36,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "EOSUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-02",
+      "month_end": "2025-02-28",
+      "n_asof": 36,
+      "n_strict": 36,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "EOSUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-03",
+      "month_end": "2025-03-31",
+      "n_asof": 36,
+      "n_strict": 36,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "EOSUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-04",
+      "month_end": "2025-04-30",
+      "n_asof": 36,
+      "n_strict": 36,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "EOSUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-05",
+      "month_end": "2025-05-31",
+      "n_asof": 36,
+      "n_strict": 36,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "EOSUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-06",
+      "month_end": "2025-06-30",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-07",
+      "month_end": "2025-07-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-08",
+      "month_end": "2025-08-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-09",
+      "month_end": "2025-09-30",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-10",
+      "month_end": "2025-10-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-11",
+      "month_end": "2025-11-30",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2025-12",
+      "month_end": "2025-12-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-01",
+      "month_end": "2026-01-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-02",
+      "month_end": "2026-02-28",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-03",
+      "month_end": "2026-03-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-04",
+      "month_end": "2026-04-30",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-05",
+      "month_end": "2026-05-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-06",
+      "month_end": "2026-06-30",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-07",
+      "month_end": "2026-07-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-08",
+      "month_end": "2026-08-31",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "nokline",
+          "symbol": "1INCHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AAVEUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "AGLDUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-09",
+      "month_end": "2026-09-30",
+      "n_asof": 35,
+      "n_strict": 35,
+      "strict_assets": [
+        "ADAUSDT",
+        "ALGOUSDT",
+        "ALICEUSDT",
+        "ANKRUSDT",
+        "APEUSDT",
+        "API3USDT",
+        "APTUSDT",
+        "ARKUSDT",
+        "ARPAUSDT",
+        "ARUSDT",
+        "ASTRUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    },
+    {
+      "missing": [
+        {
+          "reason": "cap_end=2026-05-28",
+          "symbol": "ACHUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "ALICEUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "ANKRUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "APEUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "API3USDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "APTUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "ARKUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "ARPAUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "ARUSDT"
+        },
+        {
+          "reason": "cap_end=2026-10-23",
+          "symbol": "ASTRUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "EOSUSDT"
+        },
+        {
+          "reason": "nokline",
+          "symbol": "MATICUSDT"
+        }
+      ],
+      "month": "2026-10",
+      "month_end": "2026-10-31",
+      "n_asof": 29,
+      "n_strict": 29,
+      "strict_assets": [
+        "1INCHUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AGLDUSDT",
+        "ALGOUSDT",
+        "ATOMUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "BTCUSDT",
+        "DASHUSDT",
+        "DOGEUSDT",
+        "DOTUSDT",
+        "ETCUSDT",
+        "ETHUSDT",
+        "FILUSDT",
+        "IOSTUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "NEOUSDT",
+        "QTUMUSDT",
+        "RUNEUSDT",
+        "SOLUSDT",
+        "TRXUSDT",
+        "UNIUSDT",
+        "VETUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "ZECUSDT"
+      ]
+    }
+  ],
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003-POINTINTIME-ELIG-001/preregistrations/POINTINTIME_ELIG_001_v1.md",
+  "promotion_allowed": false,
+  "question": "Is the >=20 fresh-window concurrent breadth over the committed DISP-003 klines panels backed by point-in-time (historical, date-stamped, never snapshot-backfilled) cap observations, and is that inventory a proven point-in-time market-cap rank universe?",
+  "rank_provenance": {
+    "complete": false,
+    "frontier_historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "label": "NOT_PROVEN_COMPLETE",
+    "last_verified_historical_rank": null,
+    "reason": "A rank requires the full eligible population on each date; the committed panel inventory is a fixed coverage set, not a proven point-in-time rank universe. universe_frontier.json records historical_rank_coverage_state=NOT_PROVEN_COMPLETE and last_verified_historical_rank=null. Today's ranks are never backfilled as historical ranks."
+  },
+  "status": "EXPLORATORY_ONLY",
+  "summary": {
+    "asof_breadth_stats": {
+      "max": 36.0,
+      "mean": 34.95454545454545,
+      "min": 29.0,
+      "n": 22,
+      "p50": 35.0
+    },
+    "asof_staleness_days": 7,
+    "min_breadth_required": 20,
+    "n_months": 22,
+    "n_months_asof_ge_min": 22,
+    "n_months_strict_ge_min": 22,
+    "strict_breadth_stats": {
+      "max": 36.0,
+      "mean": 34.95454545454545,
+      "min": 29.0,
+      "n": 22,
+      "p50": 35.0
+    }
+  },
+  "window": {
+    "formation_day": "last calendar day of each month (UTC)",
+    "month_first": "2025-01",
+    "month_last": "2026-10",
+    "n_months": 22
+  }
+}
