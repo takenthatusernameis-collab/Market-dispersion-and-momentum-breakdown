@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-23T09:01:16Z (next session)
+# Agent Task Message — 2026-11-23T09:09:56Z (next session)
 
 ## Initial task for next agent
 
@@ -20,7 +20,7 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-23T09:01:16Z, this session)
+## Verified state (2026-11-23T09:09:56Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
@@ -31,8 +31,8 @@ Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds 
 - **Recompute probe counts from disk:** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`. Re-derive this every session via `tests/test_task_message_probe_evidence.py`; do not trust a quoted census that has not been recomputed from `research_state/cutoff_probe/`.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (no new hypothesis allocated).
 - **Frozen hashes:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` - all verified byte-unchanged vs disk AND vs `git show HEAD:`.
-- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T090116Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T090116Z.json`.
+- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T090956Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T090956Z.json`.
 
 ## Hard constraints
 
