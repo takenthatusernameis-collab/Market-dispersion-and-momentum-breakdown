@@ -1,4 +1,4 @@
-## Agent Task Message — 2026-11-23T18:09:51Z (next session)
+## Agent Task Message — 2026-11-23T18:18:05Z (next session)
 
 ## Initial task for next agent
 
@@ -20,7 +20,7 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-23T18:09:51Z, this session)
+## Verified state (2026-11-23T18:18:05Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
