@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-23T17:02:09Z (next session)
+# Agent Task Message — 2026-11-23T17:08:34Z (next session)
 
 ## Initial task for next agent
 
@@ -33,7 +33,7 @@ Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds 
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (no new hypothesis allocated).
 - **Frozen hashes:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` - all verified byte-unchanged vs disk AND vs `git show HEAD:`.
 - **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T170209Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T170209Z.json`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T170834Z.json`.
 
 ## Hard constraints
 
