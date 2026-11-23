@@ -1,0 +1,58 @@
+{
+  "session_id": "session_verify_20261123T110921Z",
+  "timestamp_utc": "20261123T110921Z",
+  "compile_check": "OK",
+  "test_suite": {
+    "run": 1451,
+    "ok": 1451,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 8,
+    "exit": 0
+  },
+  "durable_state_guards": {
+    "tests_run": 39,
+    "tests_ok": 39,
+    "failures": 0
+  },
+  "independent_recomputation_audit": {
+    "status": "PASS",
+    "checks_passed": 19,
+    "checks_total": 19
+  },
+  "maturity_timeline_audit": {
+    "status": "PASS",
+    "checks_passed": 42,
+    "checks_total": 42,
+    "label": "EXPLORATORY_ONLY",
+    "block_sealed": false
+  },
+  "probe_census": {
+    "total_real": 398,
+    "probe_month_2026_10": {
+      "total": 271,
+      "published": 50
+    },
+    "probe_month_2026_11": {
+      "total": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  },
+  "registry_next_sequence_number": 57,
+  "frozen_hashes_verified": true,
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "run_manifest_snapshot": {
+    "latest_verified_test_claim": "1451/1451/0",
+    "session_record_latest": "session_record_verify_20261123T105308Z",
+    "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY"
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md). Expect the fresh block to still be IMMATURE at the 2026-11-30 cutoff (M1 earliest ~2026-12-01, M2 earliest ~2026-12-09). Do NOT relax 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the alpha_k = 0.05/(k*(k+1)) per-look rule."
+}
