@@ -253,23 +253,43 @@ def audit_forward_block_independent_recomputation() -> dict[str, Any]:
     }
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Read-only reproducibility cross-check of the H004V106 "
+                    "forward-block independent-recomputation addendum."
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=None,
+        help="Directory for the timestamped audit JSON. Defaults to a fresh "
+             "temporary directory so the committed integrity_audit/ directory "
+             "is never mutated by a diagnostic run (its file count is pinned "
+             "at 27 by frozen-reference guards).",
+    )
+    args = parser.parse_args(argv)
+
     audit_result = audit_forward_block_independent_recomputation()
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.output_dir) if args.output_dir else _dt.datetime.now(
+        _dt.timezone.utc
+    ).strftime("/tmp/fb_recompute_audit_%Y%m%dT%H%M%SZ")
+    out_dir.mkdir(parents=True, exist_ok=True)
     ts = _dt.datetime.now(_dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    out_path = OUT_DIR / f"H004V106_forward_block_independent_recomputation_{ts}.json"
+    out_path = out_dir / f"H004V106_forward_block_independent_recomputation_{ts}.json"
     with out_path.open("w") as f:
         json.dump(audit_result, f, indent=2, sort_keys=True)
         f.write("\n")
+    print(f"Wrote audit: {out_path}")
 
     print(f"Verdict: {audit_result['verdict']}")
     print(f"Checks: {audit_result['checks_passed']}/{audit_result['checks_total']} passed")
     for check in audit_result["checks"]:
         if not check["passed"]:
-            print(f"  FAIL: {check['check']} "
+            print(f"  FAIL: {check['check']}"
                   f"(expected={check.get('expected')}, actual={check.get('actual')}, "
-                  f"abs_diff={check.get('abs_diff', 'N/A')}, tol={check.get('tolerance', 'N/A')})")
+                  f"abs_diff={check.get('abs_diff', 'N/A')}, tol={check.get('tolerance', 'N/A')}")
 
     return 0 if audit_result["verdict"] == "PASS" else 1
 

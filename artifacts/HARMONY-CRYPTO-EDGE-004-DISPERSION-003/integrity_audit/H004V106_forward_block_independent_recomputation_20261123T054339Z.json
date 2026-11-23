@@ -1,0 +1,207 @@
+{
+  "addendum_audited": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/integrity_audit/forward_block_independent_recomputation_20261028.json",
+  "audit_id": "H004V106_FORWARD_BLOCK_INDEPENDENT_RECOMPUTATION_AUDIT",
+  "audited_artifact": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json",
+  "canonical_sha256": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+  "checks": [
+    {
+      "actual": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "check": "canonical_block_sha256",
+      "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "passed": true
+    },
+    {
+      "actual": "H004V106",
+      "check": "anchor_id",
+      "expected": "H004V106",
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "block_sealed",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": "2026-09-30T00:00:00Z",
+      "check": "data_cutoff_utc",
+      "expected": "2026-09-30T00:00:00Z",
+      "passed": true
+    },
+    {
+      "actual": "2026-08-31",
+      "check": "date_last",
+      "expected": "2026-08-31",
+      "passed": true
+    },
+    {
+      "actual": 608,
+      "check": "n_formations_exact",
+      "expected": 608,
+      "passed": true
+    },
+    {
+      "actual": {
+        "high": 61,
+        "low": 90,
+        "mid": 457
+      },
+      "check": "state_counts_exact",
+      "expected": {
+        "high": 61,
+        "low": 90,
+        "mid": 457
+      },
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "all_spread_net_finite",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": true,
+      "check": "all_spread_gross_finite",
+      "expected": true,
+      "passed": true
+    },
+    {
+      "actual": false,
+      "check": "any_non_finite",
+      "expected": false,
+      "passed": true
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": 0.09962482788703449,
+      "check": "spread_net_mean",
+      "expected": 0.09962482788703449,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": -0.010610790611408072,
+      "check": "spread_net_median",
+      "expected": -0.010610790611408072,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": 0.10062482788703449,
+      "check": "spread_gross_mean",
+      "expected": 0.10062482788703449,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": -0.009610790611408071,
+      "check": "spread_gross_median",
+      "expected": -0.009610790611408071,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "abs_diff": 1.1102230246251565e-16,
+      "actual": 0.5399613009588848,
+      "check": "high_net_mean",
+      "expected": 0.539961300958885,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": -0.07656109443410872,
+      "check": "low_net_mean",
+      "expected": -0.07656109443410872,
+      "passed": true,
+      "tolerance": 1e-09
+    },
+    {
+      "abs_diff": 1.1102230246251565e-16,
+      "actual": 0.6165223953929936,
+      "check": "high_low_diff_net",
+      "expected": 0.6165223953929937,
+      "passed": true,
+      "tolerance": 1e-12
+    },
+    {
+      "abs_diff": 0.0,
+      "actual": 0.6165223953929936,
+      "check": "high_low_diff_gross",
+      "expected": 0.6165223953929936,
+      "passed": true,
+      "tolerance": 1e-12
+    },
+    {
+      "abs_diff": 1.1102230246251565e-16,
+      "actual": 0.6165223953929936,
+      "check": "ref_high_low_diff_net_1x",
+      "expected": 0.6165223953929935,
+      "passed": true,
+      "tolerance": 1e-12
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 19,
+  "checks_total": 19,
+  "experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-003",
+  "frozen_artifacts_modified": [],
+  "generated_utc": "2026-11-23T05:43:39.254338+00:00",
+  "hypothesis_id": "H37",
+  "interpretation": "Independently recomputed every metric recorded by the addendum forward_block_independent_recomputation_20261028.json from the sealed canonical forward block's formations array (608 formations, cutoff 2026-09-30, last formation 2026-08-31). n_formations and state_counts match exactly; all means match within 1e-9; the two high-low differences match within 1e-12. No market data re-fetched, no sealed holdout opened, no frozen artifact modified. This is a consistency-only reproducibility cross-check on already-inspected development evidence; it does not validate, replace or unlock any confirmatory track.",
+  "note": "EXPLORATORY_ONLY/consistency_only: reproducibility audit of an existing addendum against its source block. Does not validate, replace or unlock H1/H6/H7/H10/H11; does not change the frozen H10 preregistration or the 2026-11-30 data-availability gate.",
+  "preregistration": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/preregistrations/H004V106_FORWARD_BLOCK_INDEPENDENT_RECOMPUTATION_AUDIT_v1.md",
+  "recomputed": {
+    "finite_checks": {
+      "all_spread_gross_finite": true,
+      "all_spread_net_finite": true,
+      "any_non_finite": false
+    },
+    "metrics": {
+      "high_low_diff_gross": 0.6165223953929936,
+      "high_low_diff_net": 0.6165223953929936,
+      "high_net_mean": 0.5399613009588848,
+      "low_net_mean": -0.07656109443410872,
+      "spread_gross_mean": 0.10062482788703449,
+      "spread_gross_median": -0.009610790611408071,
+      "spread_net_mean": 0.09962482788703449,
+      "spread_net_median": -0.010610790611408072
+    },
+    "n_formations": 608,
+    "state_counts": {
+      "high": 61,
+      "low": 90,
+      "mid": 457
+    }
+  },
+  "recorded_addendum": {
+    "metrics": {
+      "high_low_diff_gross": 0.6165223953929936,
+      "high_low_diff_net": 0.6165223953929937,
+      "high_net_mean": 0.539961300958885,
+      "low_net_mean": -0.07656109443410872,
+      "spread_gross_mean": 0.10062482788703449,
+      "spread_gross_median": -0.009610790611408071,
+      "spread_net_mean": 0.09962482788703449,
+      "spread_net_median": -0.010610790611408072
+    },
+    "n_formations": 608,
+    "reference_values": {
+      "high_low_diff_net_1x": 0.6165223953929935,
+      "spread_net_mean": 0.0996,
+      "spread_net_median": -0.0106
+    },
+    "state_counts": {
+      "high": 61,
+      "low": 90,
+      "mid": 457
+    }
+  },
+  "script": "scripts/forward_block_independent_recomputation_audit.py",
+  "status": "EXPLORATORY_ONLY",
+  "verdict": "PASS"
+}

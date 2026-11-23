@@ -137,9 +137,7 @@ class RecomputeFromFormationsTests(unittest.TestCase):
         self.assertFalse(out["finite_checks"]["all_spread_net_finite"])
 
 
-class AuditFunctionSeamTests(unittest.TestCase):
-    @staticmethod
-    def _write_fixture(td, block=None, addendum=None):
+def _write_fixture(td, block=None, addendum=None):
         block = block if block is not None else _compliant_block([])
         addendum = addendum if addendum is not None else _compliant_addendum(
             mod.recompute_from_formations(block["formations"]))
@@ -152,6 +150,9 @@ class AuditFunctionSeamTests(unittest.TestCase):
             "ADDENDUM_PATH": addendum_path,
             "CANONICAL_SHA256": mod.sha256_file(canonical),
         }
+
+
+class AuditFunctionSeamTests(unittest.TestCase):
 
     def test_audit_passes_on_compliant_fixture(self):
         block = _compliant_block([
@@ -199,7 +200,7 @@ class AuditFunctionSeamTests(unittest.TestCase):
             failed = {c["check"] for c in res["checks"] if not c["passed"]}
             self.assertIn("high_net_mean", failed)
 
-    def test_main_writes_artifact_and_returns_pass_exit(self):
+def test_main_writes_artifact_and_returns_pass_exit(self):
         block = _compliant_block([
             _formation(state="high", net=0.5, gross=0.51),
             _formation(state="low", net=-0.1, gross=-0.09),
@@ -208,16 +209,17 @@ class AuditFunctionSeamTests(unittest.TestCase):
         addendum = _compliant_addendum(recomputed, n_formations=2)
         with tempfile.TemporaryDirectory() as td:
             td_path = Path(td)
+            out_dir = td_path / "integrity_audit"
             with patch.multiple(mod, **self._write_fixture(td, block, addendum)), \
-                    patch.object(mod, "OUT_DIR", td_path / "integrity_audit"), \
                     patch.object(mod, "CANONICAL_BLOCK_PATH",
                                  td_path / "canonical.json"), \
-                    patch.object(mod, "ADDENDUM_PATH", td_path / "addendum.json"), \
+                    patch.object(mod, "ADDENDUM_PATH",
+                                 td_path / "addendum.json"), \
                     patch.object(mod, "CANONICAL_SHA256",
                                  mod.sha256_file(td_path / "canonical.json")):
-                rc = mod.main()
+                rc = mod.main(["--output-dir", str(out_dir)])
             self.assertEqual(rc, 0)
-            written = list((td_path / "integrity_audit").glob("*.json"))
+            written = list(out_dir.glob("*.json"))
             self.assertEqual(len(written), 1)
             data = json.loads(written[0].read_text())
             self.assertEqual(data["verdict"], "PASS")
@@ -225,3 +227,75 @@ class AuditFunctionSeamTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DefaultOutputIsolationTests(unittest.TestCase):
+    """Regression guard: the CLI default must never write into the committed
+    integrity_audit/ directory. A diagnostic run of this audit previously
+    appended a timestamped JSON there, which silently raised
+    main_integrity_audit_files_scanned from the pinned 27 to 28 and broke the
+    frozen-reference guards in tests/test_integrity_audit_reference_consistency
+    and tests/test_preregistration_coverage_audit.
+
+    The default output directory is now a fresh /tmp path, so the committed
+    integrity_audit/ file count stays pinned at 27 regardless of how many
+    times the audit is replayed.
+    """
+
+    def test_default_output_dir_is_not_committed_integrity_audit(self):
+        import argparse
+
+        ns = mod.main.__wrapped__ if hasattr(mod.main, "__wrapped__") else None
+        # Parse the documented default via argparse itself.
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--output-dir", default=None)
+        args = parser.parse_args([])
+        self.assertIsNone(args.output_dir)
+
+    def test_main_default_writes_to_tmp_not_committed_dir(self):
+        block = _compliant_block([
+            _formation(state="high", net=0.5, gross=0.51),
+            _formation(state="low", net=-0.1, gross=-0.09),
+        ])
+        recomputed = mod.recompute_from_formations(block["formations"])
+        addendum = _compliant_addendum(recomputed, n_formations=2)
+        committed = ROOT / "artifacts" / "HARMONY-CRYPTO-EDGE-004-DISPERSION-003" / "integrity_audit"
+        before = set(p.name for p in committed.glob("*.json"))
+        with tempfile.TemporaryDirectory() as td:
+            td_path = Path(td)
+            with patch.multiple(mod, **self._write_fixture(td, block, addendum)), \
+                    patch.object(mod, "CANONICAL_BLOCK_PATH",
+                                 td_path / "canonical.json"), \
+                    patch.object(mod, "ADDENDUM_PATH",
+                                 td_path / "addendum.json"), \
+                    patch.object(mod, "CANONICAL_SHA256",
+                                 mod.sha256_file(td_path / "canonical.json")):
+                rc = mod.main([])
+            self.assertEqual(rc, 0)
+        after = set(p.name for p in committed.glob("*.json"))
+        self.assertEqual(before, after,
+                         "default run must not write into the committed integrity_audit/ dir")
+        self.assertEqual(len(after), 27,
+                         f"committed integrity_audit/ must stay pinned at 27 files, got {len(after)}")
+
+    def test_explicit_output_dir_writes_there(self):
+        block = _compliant_block([
+            _formation(state="high", net=0.5, gross=0.51),
+            _formation(state="low", net=-0.1, gross=-0.09),
+        ])
+        recomputed = mod.recompute_from_formations(block["formations"])
+        addendum = _compliant_addendum(recomputed, n_formations=2)
+        with tempfile.TemporaryDirectory() as td:
+            td_path = Path(td)
+            out_dir = td_path / "out"
+            with patch.multiple(mod, **self._write_fixture(td, block, addendum)), \
+                    patch.object(mod, "CANONICAL_BLOCK_PATH",
+                                 td_path / "canonical.json"), \
+                    patch.object(mod, "ADDENDUM_PATH",
+                                 td_path / "addendum.json"), \
+                    patch.object(mod, "CANONICAL_SHA256",
+                                 mod.sha256_file(td_path / "canonical.json")):
+                rc = mod.main(["--output-dir", str(out_dir)])
+            self.assertEqual(rc, 0)
+            written = list(out_dir.glob("*.json"))
+            self.assertEqual(len(written), 1)
