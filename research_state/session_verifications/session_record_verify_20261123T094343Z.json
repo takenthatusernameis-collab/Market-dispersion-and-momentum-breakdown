@@ -1,0 +1,24 @@
+{
+  "session_id": "session_verify_20261123T094343Z",
+  "timestamp_utc": "2026-11-23T09:43:43Z",
+  "action": "hold_confirmatory_h10_track",
+  "outcome": "green_state_verified",
+  "verification": {
+    "compile_check": "OK",
+    "test_suite": "1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+    "durable_state_guards": "39/39 OK",
+    "independent_recomputation_audit": "PASS 19/19",
+    "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False)",
+    "probe_evidence": {
+      "total_real": 398,
+      "probe_month_2026_10_total": 271,
+      "probe_month_2026_10_published": 50,
+      "probe_month_2026_11_total": 127,
+      "probe_month_2026_11_published": 0,
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    },
+    "registry_next_sequence_number": 57,
+    "frozen_hashes_verified": true,
+    "git_working_tree": "clean"
+  }
+}
