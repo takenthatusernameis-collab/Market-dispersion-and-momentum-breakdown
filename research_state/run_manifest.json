@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-23T00:49:18Z",
+  "last_updated_utc": "2026-11-23T01:49:37Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261123T004918Z",
+  "session_record_latest": "session_record_verify_20261123T014937Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3184,7 +3184,8 @@
     "session_record_verify_20261119T190200Z",
     "session_record_verify_20261122T221346Z",
     "session_record_verify_20261122T232229Z",
-    "session_record_verify_20261123T004918Z"
+    "session_record_verify_20261123T004918Z",
+    "session_record_verify_20261123T014937Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -3490,5 +3491,54 @@
     "value_add": "Repaired the RED durable-state handoff structure left by the 2026-11-22T23:43:46Z session, which had demoted 2026-11-22T23:22:29Z but left a duplicate '## Session summary -- 2026-11-22T23:22:29Z (this session)' heading, so one session was listed twice with two '(this session)' entries; tests.test_handoff_session_entries failed 3/3 and the full suite was RED (1448 run, 3 failures) despite that session reporting 1448/1448 OK. Fix: wrote this session summary at the top, demoted 23:43:46Z to a plain Previous session block, collapsed the duplicate 23:22:29Z heading to one Previous session entry, quoted this session verification record. No hypothesis, conclusion, grid, decision rule, cost model, panel or frozen artifact touched.",
     "posture": "BLOCKED_BY_HARD_DATE_GATE",
     "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md): probe probe_month=2026-11; if target_published, refresh free public data, full suite, hash check, then fresh sealed H10 block into forward_block_h10_fresh/ requiring n_high>0 AND n_low>0; expect still IMMATURE at 2026-11-30 cutoff (M1 earliest ~2026-12-01). Do NOT relax 30-day maturity, MIN_ASSETS_DECILES=20, trailing-decile state rule or alpha_k=0.05/(k*(k+1))."
+  },
+  "session_record_verify_20261123T014937Z": {
+    "session_id": "session_verify_20261123T014937Z",
+    "timestamp_utc": "2026-11-23T01:49:37Z",
+    "action": "read_prior_handoff_completed_prior_task_held_H10_confirmatory_track_date_gated_to_2026-11-30_no_reprobe_no_option_A_no_new_hypothesis_allocated_recomputed_probe_census_reverified_five_frozen_hashes_vs_disk_and_HEAD_replayed_read_only_H10_maturity_timeline_audit_42_of_42_PASS_ran_full_suite_green_wrote_session_verify_record",
+    "outcome": "H10_confirmatory_track_HELD_date_gated_to_2026-11-30_no_reprobe_no_option_A_no_new_hypothesis_allocated_next_sequence_number_57_compileall_OK_full_suite_1448_run_1448_OK_0_failures_8_skipped_EXIT_0_durable_state_guards_38_of_38_OK_all_5_frozen_hashes_byte_unchanged_vs_disk_and_HEAD_probe_census_397_real_270_oct_49_pub_127_nov_0_pub_newest_cutoff_probe_20261113T091257Z_json_matches_disk_maturity_timeline_audit_42_of_42_PASS_frozen_artifacts_modified_none_no_unblocked_bounded_task_remains_before_gate",
+    "verification": {
+      "checks": {
+        "compileall_scripts_tests": {
+          "command": "python3 -m compileall -q scripts tests",
+          "exit_code": 0
+        },
+        "full_test_suite": {
+          "command": "python3 -m unittest discover -s tests",
+          "result": "1448 run, 1448 OK, 0 failures, 0 errors, 8 skipped, EXIT=0"
+        },
+        "durable_state_guards": {
+          "tests": "test_state_consistency + test_handoff_session_entries + test_task_message_probe_evidence + test_continuous_research_contract",
+          "result": "38/38 OK"
+        },
+        "maturity_timeline_audit": {
+          "command": "python3 scripts/h10_maturity_timeline_audit.py",
+          "verdict": "PASS",
+          "checks_passed": "42/42",
+          "read_only": true,
+          "frozen_artifacts_modified": []
+        },
+        "frozen_hashes_byte_unchanged": {
+          "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+          "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+          "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+          "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+          "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+        },
+        "all_hashes_verified_against_git_head": true,
+        "probe_census": {
+          "total_real_probes": 397,
+          "probe_month_2026-10": {
+            "count": 270,
+            "published": 49
+          },
+          "probe_month_2026-11": {
+            "count": 127,
+            "published": 0
+          },
+          "newest_probe": "cutoff_probe_20261113T091257Z.json"
+        }
+      }
+    }
   }
 }
