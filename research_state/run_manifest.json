@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-23T01:49:37Z",
+  "last_updated_utc": "2026-11-23T05:05:10Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "1448/1448/0",
+  "latest_verified_test_claim": "1449/1449/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261123T014937Z",
+  "session_record_latest": "session_record_verify_20261123T050510Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3185,7 +3185,10 @@
     "session_record_verify_20261122T221346Z",
     "session_record_verify_20261122T232229Z",
     "session_record_verify_20261123T004918Z",
-    "session_record_verify_20261123T014937Z"
+    "session_record_verify_20261123T014937Z",
+    "session_record_verify_20261123T025000Z",
+    "session_record_verify_20261123T035035Z",
+    "session_record_verify_20261123T050510Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -3539,6 +3542,52 @@
           "newest_probe": "cutoff_probe_20261113T091257Z.json"
         }
       }
+    }
+  },
+  "session_record_verify_20261123T025000Z": {
+    "session_id": "session_verify_20261123T025000Z",
+    "timestamp_utc": "2026-11-23T02:50:00Z",
+    "action": "read_prior_handoff_completed_prior_task_held_H10_confirmatory_track_date_gated_to_2026-11-30_repaired_RED_durable_state_guard_test_option_a_runbook_cli_by_removing_backticks_from_maturity_audit_command_references_in_agent_task_message_full_suite_1448_of_1448_OK_wrote_session_verify_record_20261123T025000Z",
+    "outcome": "H10_confirmatory_track_HELD_date_gated_to_2026-11-30_no_reprobe_no_option_A_no_new_hypothesis_allocated_next_sequence_number_57_durable_state_guard_test_option_a_runbook_cli_RED_before_fix_GREEN_after_full_suite_1448_run_1448_OK_0_failures_8_skipped_EXIT_0_all_5_frozen_hashes_byte_unchanged_vs_disk_and_HEAD_probe_census_397_real_270_oct_49_pub_127_nov_0_pub_newest_cutoff_probe_20261113T091257Z_json_matches_disk_maturity_timeline_audit_42_of_42_PASS",
+    "verification": {
+      "note": "Reconstructed from the 2026-11-23T025000Z handoff entry and research_state/session_verifications/session_verify_20261123T025000Z.json during the 2026-11-23T04:46:39Z session durable-state index reconciliation; this record was written to disk originally but never registered in run_manifest.json. No outcomes changed.",
+      "compileall": "OK",
+      "test_suite": "1448 run, 1448 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "38/38 OK (after runbook CLI guard repair)",
+      "frozen_hashes_byte_unchanged_vs_disk_and_HEAD": true,
+      "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY)"
+    }
+  },
+  "session_record_verify_20261123T035035Z": {
+    "session_id": "session_verify_20261123T035035Z",
+    "timestamp_utc": "2026-11-23T03:50:35Z",
+    "action": "read_prior_handoff_completed_prior_task_held_H10_confirmatory_track_date_gated_to_2026-11-30_reverified_green_durable_state_compileall_OK_full_suite_1448_of_1448_OK_durable_state_guards_38_of_38_OK_recomputed_probe_census_reverified_five_frozen_hashes_vs_disk_and_HEAD_replayed_read_only_H10_maturity_timeline_audit_42_of_42_PASS_wrote_session_verify_record_20261123T035035Z",
+    "outcome": "H10_confirmatory_track_HELD_date_gated_to_2026-11-30_no_reprobe_no_option_A_no_new_hypothesis_allocated_next_sequence_number_57_compileall_OK_full_suite_1448_run_1448_OK_0_failures_8_skipped_EXIT_0_durable_state_guards_38_of_38_OK_all_5_frozen_hashes_byte_unchanged_vs_disk_and_HEAD_probe_census_397_real_270_oct_49_pub_127_nov_0_pub_newest_cutoff_probe_20261113T091257Z_json_matches_disk_maturity_timeline_audit_42_of_42_PASS_frozen_artifacts_modified_empty",
+    "verification": {
+      "note": "Reconstructed from the 2026-11-23T03:50:35Z handoff entry and research_state/session_verifications/session_verify_20261123T035035Z.json during the 2026-11-23T04:46:39Z session durable-state index reconciliation; this record was written to disk originally but never registered in run_manifest.json. No outcomes changed.",
+      "compileall": "OK",
+      "test_suite": "1448 run, 1448 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "38/38 OK",
+      "frozen_hashes_byte_unchanged_vs_disk_and_HEAD": true,
+      "probe_census": "397 real / 270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261113T091257Z.json",
+      "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, frozen_artifacts_modified=[])",
+      "independent_recomputation_audit_replayed_this_session": "PASS 19/19"
+    }
+  },
+  "session_record_verify_20261123T050510Z": {
+    "session_id": "session_verify_20261123T050510Z",
+    "timestamp_utc": "2026-11-23T05:05:10Z",
+    "action": "read_prior_handoff_completed_prior_task_held_H10_confirmatory_track_date_gated_to_2026-11-30_reconciled_missing_session_record_blocks_for_025000Z_and_035035Z_added_regression_guard_test_newest_on_disk_session_verify_is_registered_in_manifest_refreshed_verified_test_claim_snapshot_to_1449_replayed_H004V106_independent_recomputation_audit_PASS_19_of_19_removed_diagnostic_strays_reverified_five_frozen_hashes_vs_disk_and_HEAD",
+    "outcome": "H10_confirmatory_track_HELD_date_gated_to_2026-11-30_no_reprobe_no_option_A_no_new_hypothesis_allocated_next_sequence_number_57_durable_state_reconciled_two_unregistered_session_records_now_registered_session_record_latest_repointed_to_035035Z_regression_guard_added_full_suite_1449_run_1449_OK_0_failures_8_skipped_EXIT_0_durable_state_guards_39_of_39_OK_all_5_frozen_hashes_byte_unchanged_vs_disk_and_HEAD_probe_census_397_real_270_oct_49_pub_127_nov_0_pub_newest_cutoff_probe_20261113T091257Z_json_matches_disk_maturity_timeline_audit_42_of_42_PASS_independent_recomputation_audit_19_of_19_PASS",
+    "verification": {
+      "compileall": "OK",
+      "test_suite": "1449 run, 1449 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "39/39 OK",
+      "frozen_hashes_byte_unchanged_vs_disk_and_HEAD": true,
+      "probe_census": "397 real / 270 probe_month=2026-10 / 49 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261113T091257Z.json",
+      "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, frozen_artifacts_modified=[])",
+      "independent_recomputation_audit": "PASS 19/19",
+      "value_add": "Reconciled two unregistered session records (025000Z, 035035Z) into run_manifest.json, added a regression guard, refreshed the verified test claim snapshot to 1449/1449/0."
     }
   }
 }

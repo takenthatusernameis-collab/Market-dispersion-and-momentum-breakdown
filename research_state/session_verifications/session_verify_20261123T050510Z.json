@@ -1,0 +1,43 @@
+{
+  "session_id": "session_verify_20261123T050510Z",
+  "session_timestamp": "2026-11-23T05:05:10Z",
+  "compile_check": "OK",
+  "test_suite": "python3 -m unittest discover -s tests -> 1449 run, 1449 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+  "durable_state_guards": "test_state_consistency + test_handoff_session_entries + test_task_message_probe_evidence + test_continuous_research_contract -> 39/39 OK",
+  "maturity_timeline_audit": {
+    "command": "python3 scripts/h10_maturity_timeline_audit.py",
+    "verdict": "PASS",
+    "checks_passed": "42/42",
+    "read_only": true,
+    "frozen_artifacts_modified": [],
+    "note": "Reconfirms the H10 fresh sealed block is still IMMATURE at the 2026-11-30 cutoff. EXPLORATORY_ONLY; does not unlock or replace the confirmatory track."
+  },
+  "independent_recomputation_audit": {
+    "command": "python3 scripts/forward_block_independent_recomputation_audit.py",
+    "verdict": "PASS",
+    "checks_passed": "19/19",
+    "note": "Replayed the H004V106 independent recomputation against the on-disk canonical block; all 19 checks pass. Diagnostic strays written to integrity_audit/ were removed to keep main_audits_scanned=27."
+  },
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "all_hashes_verified_byte_unchanged": true,
+  "all_hashes_verified_against_git_head": true,
+  "registry_next_sequence_number": 57,
+  "no_new_hypothesis_allocated": true,
+  "run_manifest_latest_verified_test_claim": "1449/1449/0",
+  "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+  "value_add": "Durable-state index reconciliation (not churn): found that sessions 2026-11-23T025000Z and 2026-11-23T035035Z each wrote a session_verify_*.json file to disk but were never registered as session_record_* blocks in run_manifest.json, so session_record_latest still pointed at the older 01:49:37Z block and the durable task message quoted a session_record_latest that disagreed with the manifest. Registered both missing records via scripts/record_session_record.py and repointed session_record_latest to 035035Z. Added a regression guard (test_newest_on_disk_session_verify_is_registered_in_manifest) that requires the newest on-disk session_verify file to be registered, catching this drift class without flagging the intentionally-unregistered older history. Refreshed the verified test claim snapshot (1448->1449) via scripts/record_test_claim.py. Replayed the H004V106 independent recomputation audit (PASS 19/19) and removed the two diagnostic stray audit files it wrote so main_audits_scanned stayed 27. All five frozen hashes byte-unchanged vs disk AND git show HEAD. Full suite 1449/1449/0, 8 skipped, EXIT=0. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched.",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md). Expect the fresh block to still be IMMATURE at the 2026-11-30 cutoff (M1 earliest ~2026-12-01, M2 earliest ~2026-12-09). Do NOT relax 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or alpha_k=0.05/(k*(k+1))."
+}

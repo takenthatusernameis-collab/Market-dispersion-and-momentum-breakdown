@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-22T23:41:58Z",
+  "recorded_utc": "2026-11-23T05:03:13Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1448,
-  "tests_ok": 1448,
+  "tests_run": 1449,
+  "tests_ok": 1449,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1448/1448/0",
-  "input_fingerprint": "b615bf502f29adf95e80a8902a72ecf74d289269749a213deb31d514c7b9678b",
+  "claim": "1449/1449/0",
+  "input_fingerprint": "100301118e8e503da9292b04f47df2160d157805a067681a0f7ebb92bd82ac41",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -832,7 +832,7 @@
     },
     {
       "path": "tests/test_state_consistency.py",
-      "sha256": "8aee202ca8e71c563e45df71ecaa32b9bbfa42d3d11f964943fd1b11210cfeb7"
+      "sha256": "0ff4d7b5a8d1f406acfa0a9ff9a232b6fe6aede17bdbffcf215d9ad0f97a61ee"
     },
     {
       "path": "tests/test_state_representativeness_audit.py",

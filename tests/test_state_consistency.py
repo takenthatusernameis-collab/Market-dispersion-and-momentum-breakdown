@@ -736,6 +736,44 @@ class ResearchStateConsistencyTests(unittest.TestCase):
         }
         self.assertEqual(_dangling_session_record_entries(clean), [])
 
+    def test_newest_on_disk_session_verify_is_registered_in_manifest(self):
+        """The newest session_verify_*.json on disk must be registered as a
+        session_record_* block in run_manifest.json.
+
+        The manifest deliberately curates a subset of session records: hundreds
+        of older ``session_verify_*.json`` files predate the registration
+        convention and are intentionally not registered, so a blanket "every
+        file must be registered" rule would be a false positive. What must
+        never happen is the drift that occurred on 2026-11-23: the two most
+        recent sessions (2026-11-23T025000Z and 2026-11-23T035035Z) each wrote
+        a ``session_verify_*.json`` file to disk but never registered it, so
+        ``session_record_latest`` kept naming the older 01:49:37Z block and a
+        reader of the manifest alone concluded the newer sessions never
+        happened.
+
+        This guard requires only that the *most recent* on-disk verification
+        file map to a real manifest block, the same transform
+        ``scripts/record_session_record.py`` applies
+        (``session_verify_<ts>`` -> ``session_record_verify_<ts>``). It catches
+        exactly the "latest session wrote a record but did not register it"
+        drift without flagging the intentionally-unregistered history.
+
+        Note: a genuinely newer session that writes a verification file is
+        expected to register it (via record_session_record.py) before ending;
+        if this guard fires, register the newest file rather than deleting it.
+        """
+        manifest = _load(STATE / "run_manifest.json")
+        verify_dir = STATE / "session_verifications"
+        on_disk = sorted(verify_dir.glob("session_verify_*.json"))
+        self.assertGreater(len(on_disk), 0, "no session_verify files on disk")
+        newest = on_disk[-1]
+        key = "session_record_" + newest.stem[len("session_"):]
+        self.assertIn(
+            key, manifest,
+            f"newest session_verify file {newest.name} has no manifest "
+            f"{key} block; register it via scripts/record_session_record.py",
+        )
+
     def test_orphan_h10_variant_dirs_are_never_promotable(self):
             """The two git-tracked orphan H10 variant dirs must never be mistaken for
             the frozen H10 fresh block.
