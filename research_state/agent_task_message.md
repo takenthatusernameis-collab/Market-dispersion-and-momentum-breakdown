@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-23T16:22:07Z (next session)
+# Agent Task Message — 2026-11-23T16:52:47Z (next session)
 
 ## Initial task for next agent
 
@@ -14,26 +14,26 @@ IMPORTANT for this session's guard: if you write a new `research_state/session_v
 
 IMPORTANT probe-census guard: the disk probe census changes whenever ANY new `cutoff_probe_*.json` lands (including a re-run of the October gate probe). If you add or observe a new probe file, recompute the census from `research_state/cutoff_probe/` and update BOTH the probe-evidence bullet and the recompute-rule bullet in the Verified-state section below, AND the newest session_verify record's `probe_evidence` block, before claiming green — otherwise `tests.test_task_message_probe_evidence` and `tests.test_state_consistency.test_latest_session_probe_evidence_matches_disk` go RED.
 
-IMPORTANT runbook-CLI guard: `tests/test_option_a_runbook_cli.py` re-parses every backticked `python3 scripts/<x>.py ...` span in this file and requires `<x>.py` to expose argparse flags and every quoted `--flag` to be registered. Only backtick the two Option A commands below. Do NOT backtick `python3 scripts/h10_maturity_timeline_audit.py`, `python3 scripts/forward_block_independent_recomputation_audit.py`, `python3 scripts/record_session_record.py` or `python3 scripts/record_test_claim.py` (they have no `add_argument` flags and would fail that guard).
+IMPORTANT runbook-CLI guard: tests/test_option_a_runbook_cli.py re-parses every backticked python3 scripts/... span in this file and requires the script to expose argparse flags and every quoted --flag to be registered. Only backtick the two Option A commands below. Do NOT backtick python3 scripts/h10_maturity_timeline_audit.py, python3 scripts/forward_block_independent_recomputation_audit.py, python3 scripts/record_session_record.py or python3 scripts/record_test_claim.py (they have no add_argument flags and would fail that guard).
 
 At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py --probe-month 2026-11`; if `target_published=true`, refresh free public data only (Coin Metrics Community API + Binance Public Data Archive), run `python3 -m compileall -q scripts tests` and the full suite `python3 -m unittest discover -s tests` (install `requirements.txt` first if needed), verify the five frozen hashes byte-unchanged, then run a fresh sealed H10 block via `python3 scripts/eval_forward_block.py --forward-block-start 2026-09-30 --data-cutoff <new cutoff> --output-dir artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/` (never `forward_block/`), requiring `n_high > 0 AND n_low > 0` before any confirmatory claim; if immature, record the blocker and do NOT relax 30-day maturity, the trailing-decile state rule, `MIN_ASSETS_DECILES=20`, or the per-look `alpha_k = 0.05/(k*(k+1))` rule.
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-23T16:22:07Z, this session)
+## Verified state (2026-11-23T16:52:47Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
 - **Durable-state guards:** `tests/test_handoff_session_entries.py` + `tests/test_task_message_probe_evidence.py` + `tests/test_continuous_research_contract.py` + `tests/test_state_consistency.py` -> 39/39 OK.
 - **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to /tmp; `main_audits_scanned`=27).
-- **Maturity timeline audit:** python3 scripts/h10_maturity_timeline_audit.py -> PASS 42/42, read-only, EXPLORATORY_ONLY (`block_sealed=False` expected for immature H10).
+- **Maturity timeline audit:** python3 scripts/h10_maturity_timeline_audit.py -> PASS 42/42, read-only, EXPLORATORY_ONLY (block_sealed=False expected for immature H10).
 - **Frontier integrity re-audit:** python3 stdlib set-algebra -> PASS (research_state/FRONTIER_INTEGRITY_REAUDIT_20261123T162126Z.json, DISP-003-FRONTIER-INTEGRITY-002), zero drift vs the 2026-11-12 audit; 220 verified + 6127 blocked = 6347 walked, 0 newly discovered, catalog exhausted.
 - **Probe evidence (disk):** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`.
 - **Recompute probe counts from disk:** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`. Re-derive this every session via `tests/test_task_message_probe_evidence.py`; do not trust a quoted census that has not been recomputed from `research_state/cutoff_probe/`.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (no new hypothesis allocated).
 - **Frozen hashes:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` - all verified byte-unchanged vs disk AND vs `git show HEAD:`.
-- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T162207Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T162207Z.json`.
+- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T165247Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T165247Z.json`.
 
 ## Hard constraints
 
