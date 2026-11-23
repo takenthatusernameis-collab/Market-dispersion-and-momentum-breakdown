@@ -272,9 +272,9 @@ def main(argv: list[str] | None = None) -> int:
 
     audit_result = audit_forward_block_independent_recomputation()
 
-    out_dir = Path(args.output_dir) if args.output_dir else _dt.datetime.now(
+    out_dir = Path(args.output_dir) if args.output_dir else Path(_dt.datetime.now(
         _dt.timezone.utc
-    ).strftime("/tmp/fb_recompute_audit_%Y%m%dT%H%M%SZ")
+    ).strftime("/tmp/fb_recompute_audit_%Y%m%dT%H%M%SZ"))
     out_dir.mkdir(parents=True, exist_ok=True)
     ts = _dt.datetime.now(_dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     out_path = out_dir / f"H004V106_forward_block_independent_recomputation_{ts}.json"

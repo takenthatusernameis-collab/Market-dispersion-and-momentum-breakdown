@@ -163,7 +163,7 @@ class AuditFunctionSeamTests(unittest.TestCase):
         recomputed = mod.recompute_from_formations(block["formations"])
         addendum = _compliant_addendum(recomputed, n_formations=3)
         with tempfile.TemporaryDirectory() as td:
-            with patch.multiple(mod, **self._write_fixture(td, block, addendum)):
+            with patch.multiple(mod, **_write_fixture(td, block, addendum)):
                 res = mod.audit_forward_block_independent_recomputation()
             self.assertEqual(res["verdict"], "PASS")
             self.assertEqual(res["checks_failed"], 0)
@@ -179,7 +179,7 @@ class AuditFunctionSeamTests(unittest.TestCase):
         addendum = _compliant_addendum(recomputed, n_formations=2)
         addendum["state_counts"] = {"high": 2, "mid": 0, "low": 0}
         with tempfile.TemporaryDirectory() as td:
-            with patch.multiple(mod, **self._write_fixture(td, block, addendum)):
+            with patch.multiple(mod, **_write_fixture(td, block, addendum)):
                 res = mod.audit_forward_block_independent_recomputation()
             self.assertEqual(res["verdict"], "FAIL")
             failed = {c["check"] for c in res["checks"] if not c["passed"]}
@@ -194,7 +194,7 @@ class AuditFunctionSeamTests(unittest.TestCase):
         addendum = _compliant_addendum(recomputed, n_formations=2)
         addendum["metrics"]["high_net_mean"] = 999.0
         with tempfile.TemporaryDirectory() as td:
-            with patch.multiple(mod, **self._write_fixture(td, block, addendum)):
+            with patch.multiple(mod, **_write_fixture(td, block, addendum)):
                 res = mod.audit_forward_block_independent_recomputation()
             self.assertEqual(res["verdict"], "FAIL")
             failed = {c["check"] for c in res["checks"] if not c["passed"]}
@@ -210,7 +210,7 @@ def test_main_writes_artifact_and_returns_pass_exit(self):
         with tempfile.TemporaryDirectory() as td:
             td_path = Path(td)
             out_dir = td_path / "integrity_audit"
-            with patch.multiple(mod, **self._write_fixture(td, block, addendum)), \
+            with patch.multiple(mod, **_write_fixture(td, block, addendum)), \
                     patch.object(mod, "CANONICAL_BLOCK_PATH",
                                  td_path / "canonical.json"), \
                     patch.object(mod, "ADDENDUM_PATH",
@@ -263,7 +263,7 @@ class DefaultOutputIsolationTests(unittest.TestCase):
         before = set(p.name for p in committed.glob("*.json"))
         with tempfile.TemporaryDirectory() as td:
             td_path = Path(td)
-            with patch.multiple(mod, **self._write_fixture(td, block, addendum)), \
+            with patch.multiple(mod, **_write_fixture(td, block, addendum)), \
                     patch.object(mod, "CANONICAL_BLOCK_PATH",
                                  td_path / "canonical.json"), \
                     patch.object(mod, "ADDENDUM_PATH",
@@ -288,7 +288,7 @@ class DefaultOutputIsolationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             td_path = Path(td)
             out_dir = td_path / "out"
-            with patch.multiple(mod, **self._write_fixture(td, block, addendum)), \
+            with patch.multiple(mod, **_write_fixture(td, block, addendum)), \
                     patch.object(mod, "CANONICAL_BLOCK_PATH",
                                  td_path / "canonical.json"), \
                     patch.object(mod, "ADDENDUM_PATH",

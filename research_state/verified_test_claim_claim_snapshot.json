@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-23T05:03:13Z",
+  "recorded_utc": "2026-11-23T05:55:39Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1449,
-  "tests_ok": 1449,
+  "tests_run": 1451,
+  "tests_ok": 1451,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1449/1449/0",
-  "input_fingerprint": "100301118e8e503da9292b04f47df2160d157805a067681a0f7ebb92bd82ac41",
+  "claim": "1451/1451/0",
+  "input_fingerprint": "27a7b1cf4626addaaf9042c02d8a02a70a7e17dbeb8c8a3f2e89a397b7f2a550",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -136,7 +136,7 @@
     },
     {
       "path": "scripts/forward_block_independent_recomputation_audit.py",
-      "sha256": "480b8096714fd9fdd93229f6cfe16d9aab5d07e33c9b5e58acd7e9f9d3f1b64b"
+      "sha256": "ef69d77481d2ec1ca2170cd9967bc6f9b7b177e0bbef6f78f93a9d9378b0b894"
     },
     {
       "path": "scripts/forward_block_internal_self_consistency_audit.py",
@@ -532,7 +532,7 @@
     },
     {
       "path": "tests/test_forward_block_independent_recomputation_audit_seams.py",
-      "sha256": "275cb0c20766aea85895b8aff6c4fe0ff8a37434b127c203ce441df22fa37a3c"
+      "sha256": "a2410757a5f22b488295e08df807c6d33e130dfd4c9f6badcaedfc1f1c8b344a"
     },
     {
       "path": "tests/test_forward_block_integrity.py",
