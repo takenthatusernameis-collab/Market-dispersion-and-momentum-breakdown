@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-23T06:35:32Z",
+  "last_updated_utc": "2026-11-23T07:48:54Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261123T063532Z",
+  "session_record_latest": "session_record_verify_20261123T074327Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3191,7 +3191,8 @@
     "session_record_verify_20261123T050510Z",
     "session_record_verify_20261123T055546Z",
     "session_record_verify_20261123T061021Z",
-    "session_record_verify_20261123T063532Z"
+    "session_record_verify_20261123T063532Z",
+    "session_record_verify_20261123T074327Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -3746,6 +3747,58 @@
     "run_manifest_latest_verified_test_claim": "1451/1451/0",
     "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
     "value_add": "State verification + handoff/manifest sync (not churn): confirmed green durable state; compile_check OK; full_suite 1451/1451/0; durable_state_guards 39/39 OK; maturity_timeline_audit PASS 42/42 (block_sealed=False is expected for immature H10 fresh block); independent_recomputation_audit PASS 19/19; frozen hashes byte-unchanged vs disk AND git show HEAD; probe census recomputed from disk and matches; registered missing session_record_verify_20261123T061021Z in manifest; updated agent_handoff.md and agent_task_message.md with newest session verification record. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched.",
+    "posture": "BLOCKED_BY_HARD_DATE_GATE",
+    "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md). Expect the fresh block to still be IMMATURE at the 2026-11-30 cutoff (M1 earliest ~2026-12-01, M2 earliest ~2026-12-09). Do NOT relax 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or alpha_k=0.05/(k*(k+1))."
+  },
+  "session_record_verify_20261123T074327Z": {
+    "session_id": "session_verify_20261123T074327Z",
+    "timestamp_utc": "2026-11-23T07:43:27Z",
+    "action": "state_repair_probe_census_drift",
+    "outcome": "green",
+    "verification": "compile_check OK; full_suite 1451/1451/0; durable_state_guards 39/39; maturity_timeline_audit PASS 42/42 (block_sealed=False expected for immature H10); independent_recomputation_audit PASS 19/19; frozen_hashes_verified; probe_census_recomputed_and_repaired",
+    "compile_check": "OK",
+    "test_suite": "python3 -m unittest discover -s tests -> 1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+    "durable_state_guards": "test_state_consistency + test_handoff_session_entries + test_task_message_probe_evidence + test_continuous_research_contract -> 39/39 OK",
+    "maturity_timeline_audit": {
+      "command": "python3 scripts/h10_maturity_timeline_audit.py",
+      "verdict": "PASS",
+      "checks_passed": "42/42",
+      "read_only": true,
+      "frozen_artifacts_modified": [],
+      "note": "Reconfirms the H10 fresh sealed block is still IMMATURE at the 2026-11-30 cutoff. EXPLORATORY_ONLY; does not unlock or replace the confirmatory track."
+    },
+    "independent_recomputation_audit": {
+      "command": "python3 scripts/forward_block_independent_recomputation_audit.py",
+      "verdict": "PASS",
+      "checks_passed": "19/19",
+      "note": "Replayed the H004V106 independent recomputation against the on-disk canonical block; all 19 checks pass. Default output writes to /tmp, keeping main_audits_scanned=27."
+    },
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    },
+    "frozen_hashes": {
+      "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "all_hashes_verified_byte_unchanged": true,
+    "all_hashes_verified_against_git_head": true,
+    "registry_next_sequence_number": 57,
+    "no_new_hypothesis_allocated": true,
+    "run_manifest_latest_verified_test_claim": "1451/1451/0",
+    "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+    "value_add": "Durable-state repair (not churn): the prior 06:35:32Z session quoted a 397/270/49 probe census and reported the full suite green, but a legitimate October 2026 cutoff probe (cutoff_probe_20261123T071225Z.json, written 2026-11-23T07:12:25Z, all Binance endpoints HTTP 200, cutoff_gate=UNBLOCKED) landed after that session, shifting the disk census to 398/271/50 and leaving the full suite RED with 3 failures in tests.test_task_message_probe_evidence (test_probe_evidence_line_matches_disk_census, test_recompute_rule_line_matches_disk_census) and tests.test_state_consistency (test_latest_session_probe_evidence_matches_disk). Recomputed the census from research_state/cutoff_probe/ with the exact test logic, updated the probe-evidence line and the recompute rule line in agent_task_message.md, wrote this session verification record with the corrected census, and refreshed agent_handoff.md. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched.",
     "posture": "BLOCKED_BY_HARD_DATE_GATE",
     "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md). Expect the fresh block to still be IMMATURE at the 2026-11-30 cutoff (M1 earliest ~2026-12-01, M2 earliest ~2026-12-09). Do NOT relax 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or alpha_k=0.05/(k*(k+1))."
   }
