@@ -1,4 +1,4 @@
-# Agent Task Message — 2026-11-23T16:52:47Z (next session)
+# Agent Task Message — 2026-11-23T17:02:09Z (next session)
 
 ## Initial task for next agent
 
@@ -8,7 +8,7 @@ State carried in: compileall OK; full suite `python3 -m unittest discover -s tes
 
 Gate vs probe: the H10 cutoff gate is decided by the latest PUBLISHED-month record. The October 2026 archive is published (`target_published=true`, gate UNBLOCKED per `research_state/cutoff_probe/cutoff_probe_20261123T071225Z.json`), so the H10 cutoff gate is UNBLOCKED. The November 2026 probe (`probe_month=2026-11`, target not yet published, 0 of 127 November records published) is recorded separately as BLOCKED and is NEVER promoted into the H10 gate decision. Do not re-probe November 2026 before 2026-11-30.
 
-If, before 2026-11-30, you find another unblocked task, prefer a bounded no-cost action that produces a verifiable artifact/test/audit and leaves clean green state. Do NOT write a bare "hold" memo as the only output. Add real value (state-consistency repair, source-coverage, tests, red-team) or explicitly record that no unblocked task remains (this session recorded exactly that, backed by the frontier re-audit above). Do NOT re-consolidate the handoff again unless it has re-accumulated duplicate hold entries: check with `python3 -m unittest tests.test_handoff_session_entries` and only consolidate if a real degeneration has reappeared (this session consolidated 25 near-identical hold entries down to 4). When you do edit the handoff, re-run that guard AND the full suite before claiming green — a prior session reported green while leaving this exact guard RED.
+If, before 2026-11-30, you find another unblocked task, prefer a bounded no-cost action that produces a verifiable artifact/test/audit and leaves clean green state. Do NOT write a bare "hold" memo as the only output. Add real value (state-consistency repair, source-coverage, tests, red-team) or explicitly record that no unblocked task remains (the current pre-gate state records exactly that, backed by the frontier re-audit above). Do NOT re-consolidate the handoff again unless it has re-accumulated duplicate hold entries: check with `python3 -m unittest tests.test_handoff_session_entries` and only consolidate if a real degeneration has reappeared (a prior session consolidated 25 near-identical hold entries down to 4). When you do edit the handoff, re-run that guard AND the full suite before claiming green — a prior session reported green while leaving this exact guard RED.
 
 IMPORTANT for this session's guard: if you write a new `research_state/session_verifications/session_verify_<ts>.json` file, you MUST also register a matching `session_record_*` block in `research_state/run_manifest.json` (via python3 scripts/record_session_record.py <record.json>) before ending, or `tests/test_state_consistency.py::test_newest_on_disk_session_verify_is_registered_in_manifest` will fail. After adding/removing tests, re-run python3 scripts/record_test_claim.py to refresh the snapshot (fingerprint + count).
 
@@ -20,20 +20,20 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-23T16:52:47Z, this session)
+## Verified state (2026-11-23T17:02:09Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
 - **Durable-state guards:** `tests/test_handoff_session_entries.py` + `tests/test_task_message_probe_evidence.py` + `tests/test_continuous_research_contract.py` + `tests/test_state_consistency.py` -> 39/39 OK.
-- **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to /tmp; `main_audits_scanned`=27).
+- **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to /tmp).
 - **Maturity timeline audit:** python3 scripts/h10_maturity_timeline_audit.py -> PASS 42/42, read-only, EXPLORATORY_ONLY (block_sealed=False expected for immature H10).
 - **Frontier integrity re-audit:** python3 stdlib set-algebra -> PASS (research_state/FRONTIER_INTEGRITY_REAUDIT_20261123T162126Z.json, DISP-003-FRONTIER-INTEGRITY-002), zero drift vs the 2026-11-12 audit; 220 verified + 6127 blocked = 6347 walked, 0 newly discovered, catalog exhausted.
 - **Probe evidence (disk):** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`.
 - **Recompute probe counts from disk:** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`. Re-derive this every session via `tests/test_task_message_probe_evidence.py`; do not trust a quoted census that has not been recomputed from `research_state/cutoff_probe/`.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (no new hypothesis allocated).
 - **Frozen hashes:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` - all verified byte-unchanged vs disk AND vs `git show HEAD:`.
-- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T165247Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T165247Z.json`.
+- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261123T170209Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261123T170209Z.json`.
 
 ## Hard constraints
 
@@ -42,5 +42,3 @@ Free public data only; historical research only; no fabrication. Preserve DISPER
 ## End-of-session requirement
 
 Leave clean state. Waiting for fixed calendar date 2026-11-30 is a date gate.
-
-(End of file - total 44 lines)
