@@ -1,0 +1,39 @@
+{
+  "audit_id": "DISP-003-FRONTIER-INTEGRITY-002",
+  "audit_type": "READ_ONLY_EVIDENCE_AUDIT",
+  "timestamp_utc": "20261123T162126Z",
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "schema_version": 1.0,
+  "scope": "Re-verification of research_state/universe_frontier.json candidate-set internal consistency and catalog-exhaustion premise (no file modified).",
+  "method": "python3 stdlib json load; set algebra on candidates_verified / candidates_blocked / catalog_discovery.{verified_excluded,blocked_excluded,legacy_excluded}; compared as sets. Compared every check against the prior audit DISP-003-FRONTIER-INTEGRITY-001 (20261112T151341Z) to detect drift.",
+  "checks": {
+    "blocked_count": 6127,
+    "catalog_blocked_set_equals_frontier_blocked": true,
+    "catalog_discovery_status": "ok",
+    "catalog_entries_walked": 6347,
+    "catalog_verified_set_equals_frontier_verified": true,
+    "duplicate_blocked": 0,
+    "duplicate_verified": 0,
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "legacy_excluded_count": 32,
+    "legacy_overlap_with_blocked": 0,
+    "legacy_subset_of_verified": true,
+    "newly_discovered": 0,
+    "overlap_verified_and_blocked": 0,
+    "rank_frontier_exhausted": false,
+    "sum_matches_catalog_entries_walked": true,
+    "verified_count": 220,
+    "verified_plus_blocked": 6347
+  },
+  "drift_vs_prior_20261112_audit": {},
+  "defects_found": [],
+  "frozen_artifacts_untouched": true,
+  "notes": [
+    "220 verified + 6127 blocked = 6347 catalog entries walked; no duplicates, no verified/blocked overlap.",
+    "Legacy 32 is a subset of the 220 verified; catalog discovery is exhausted at cursor 6347 with 0 newly discovered.",
+    "No drift vs the 2026-11-12 integrity audit; the frontier has not changed (last_updated_utc 2026-11-06).",
+    "Confirms the hold premise: with the free CoinMetrics catalog exhausted and no new listings, there is no unblocked discovery/expansion task before a new data vintage.",
+    "Read-only: no change to universe_frontier.json or any frozen artifact."
+  ],
+  "verdict": "PASS"
+}
