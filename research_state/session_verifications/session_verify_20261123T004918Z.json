@@ -1,0 +1,30 @@
+{
+  "session_id": "session_verify_20261123T004918Z",
+  "session_timestamp": "2026-11-23T00:49:18Z",
+  "compile_check": "OK",
+  "test_suite": "python3 -m unittest discover -s tests -> 1448 run, 1448 OK, 0 failures, 0 errors, 8 skipped, EXIT=0 (AFTER handoff repair; BEFORE repair the suite was RED: 1448 run, 3 failures, all in tests.test_handoff_session_entries)",
+  "durable_state_guards": "test_state_consistency + test_handoff_session_entries + test_task_message_probe_evidence + test_continuous_research_contract -> 38/38 OK (after repair; 3 of these were the RED failures before repair)",
+  "probe_evidence": {
+    "total_real_probes": 397,
+    "probe_month_2026-10": {"count": 270, "published": 49},
+    "probe_month_2026-11": {"count": 127, "published": 0},
+    "newest_probe": "cutoff_probe_20261113T091257Z.json"
+  },
+  "frozen_hashes": {
+    "canonical_forward_block": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "universe_frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "all_hashes_verified_byte_unchanged": true,
+  "all_hashes_verified_against_git_head": true,
+  "registry_next_sequence_number": 57,
+  "no_new_hypothesis_allocated": true,
+  "run_manifest_latest_verified_test_claim": "1448/1448/0",
+  "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+  "data_refresh_required": true,
+  "value_add": "Repaired a RED durable-state handoff structure left by the 2026-11-22T23:43:46Z session. That session's handoff edit demoted 2026-11-22T23:22:29Z by prepending '## Previous session -- 2026-11-22T23:22:29Z' but left the old '## Session summary -- 2026-11-22T23:22:29Z (this session)' heading in place, so the handoff listed one session twice and carried two '(this session)' entries. tests.test_handoff_session_entries then failed 3/3 (test_exactly_one_this_session_entry, test_only_the_newest_entry_is_marked_this_session, test_session_timestamps_are_unique) and the full suite was RED (1448 run, 3 failures). The 23:43:46Z session had reported 1448/1448 OK, which was inaccurate. Fix: wrote this session's summary at the top with title 2026-11-23T00:49:18Z, demoted 2026-11-22T23:43:46Z to a plain 'Previous session' block, collapsed the duplicated 2026-11-22T23:22:29Z heading to a single 'Previous session' entry, and quoted this session's verification record. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; all five frozen hashes re-verified byte-unchanged vs disk AND vs git show HEAD.",
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "next_action": "At/after 2026-11-30 execute Option A (see agent_task_message.md): probe probe_month=2026-11; if target_published=true, refresh free public data, re-run compileall + full suite + five-hash check, then run a fresh sealed H10 block into forward_block_h10_fresh/ requiring n_high>0 AND n_low>0; expect the block to still be IMMATURE at the 2026-11-30 cutoff (M1 earliest ~2026-12-01, M2 earliest ~2026-12-09). Do NOT relax 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or alpha_k=0.05/(k*(k+1))."
+}
