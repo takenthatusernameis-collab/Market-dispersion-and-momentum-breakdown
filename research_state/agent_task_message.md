@@ -33,7 +33,7 @@ Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds 
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (no new hypothesis allocated).
 - **Frozen hashes:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` - all verified byte-unchanged vs disk and vs `git show HEAD:`.
 - **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261124T223233Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261124T223233Z.json`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261124T223430Z.json`.
 
 ## Hard constraints
 
