@@ -1,8 +1,8 @@
-## Agent Task Message — 2026-11-24T16:35:06Z (next session)
+## Agent Task Message — 2026-11-24T21:14:07Z (next session)
 
 ## Initial task for next agent
 
-Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-24 (UTC 2026-11-24T16:35:06Z), before the gate. Do NOT re-probe November 2026 before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
+Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-24 (UTC 2026-11-24T21:14:07Z), before the gate. Do NOT re-probe November 2026 before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
 
 State carried in: compileall OK; full suite `python3 -m unittest discover -s tests` -> **1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards `tests.test_handoff_session_entries` + `tests.test_task_message_probe_evidence` + `tests.test_continuous_research_contract` + `tests.test_state_consistency` -> 39/39 OK; all five frozen hashes byte-unchanged vs disk and vs `git show HEAD:`; probe census matches disk (398 real; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`; October 2026 published record -> H10 cutoff gate UNBLOCKED; November 2026 recorded BLOCKED as a probe, never promoted). Registry `next_sequence_number` = 57 (no new hypothesis allocated). Read-only H10 maturity-timeline audit -> PASS 42/42 (python3 scripts/h10_maturity_timeline_audit.py), reconfirming no confirmatory-eligible look at the 2026-11-30 cutoff (`block_sealed=False` expected for immature H10). Independent recomputation audit python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19. Read-only frontier integrity re-audit -> PASS (research_state/FRONTIER_INTEGRITY_REAUDIT_20261123T162126Z.json, DISP-003-FRONTIER-INTEGRITY-002, zero drift vs the 2026-11-12 audit): catalog exhausted (220 verified + 6127 blocked = 6347 walked, 0 newly discovered), so no unblocked discovery/expansion task exists before a new data vintage.
 
@@ -20,20 +20,20 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-24T16:35:06Z, this session)
+## Verified state (2026-11-24T21:14:07Z, this session)
 
 - **Compile check:** `python3 -m compileall -q scripts tests` OK.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
 - **Durable-state guards:** `tests/test_handoff_session_entries.py` + `tests/test_task_message_probe_evidence.py` + `tests/test_continuous_research_contract.py` + `tests/test_state_consistency.py` -> 39/39 OK.
-- **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to /tmp, audit `/tmp/fb_recompute_audit_20261124T163308Z/`).
+- **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to /tmp, audit `/tmp/fb_recompute_audit_20261124T211407Z/`).
 - **Maturity timeline audit:** python3 scripts/h10_maturity_timeline_audit.py -> PASS 42/42, read-only, EXPLORATORY_ONLY (block_sealed=False expected for immature H10).
 - **Frontier integrity re-audit:** python3 stdlib set-algebra -> PASS (research_state/FRONTIER_INTEGRITY_REAUDIT_20261123T162126Z.json, DISP-003-FRONTIER-INTEGRITY-002), zero drift vs the 2026-11-12 audit; 220 verified + 6127 blocked = 6347 walked, 0 newly discovered, catalog exhausted.
 - **Probe evidence (disk):** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`.
 - **Recompute probe counts from disk:** 398 real `cutoff_probe_*.json` (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`. Re-derive this every session via `tests/test_task_message_probe_evidence.py`; do not trust a quoted census that has not been recomputed from `research_state/cutoff_probe/`.
 - **Registry:** `research_state/hypothesis_registry.json` `next_sequence_number` 57 (no new hypothesis allocated).
 - **Frozen hashes:** canonical `7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390`; h10_fresh `324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f`; grid_result_ledger `0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c`; grid v3 config `64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4`; frontier `9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e` - all verified byte-unchanged vs disk and vs `git show HEAD:`.
-- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261124T163506Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
-- **Newest session verification record:** `research_state/session_verifications/session_verify_20261124T163506Z.json`.
+- **run_manifest:** `latest_verified_test_claim` = `1451/1451/0`; `session_record_latest` = `session_record_verify_20261124T211407Z`; `next_experiment_status` = `H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY`.
+- **Newest session verification record:** `research_state/session_verifications/session_verify_20261124T211407Z.json`.
 
 ## Hard constraints
 
