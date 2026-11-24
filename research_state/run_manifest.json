@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "20261124T213940Z",
+  "last_updated_utc": "20261124T214543Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261124T213940Z",
+  "session_record_latest": "session_record_verify_20261124T214543Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3270,7 +3270,8 @@
     "session_record_verify_20261124T163506Z",
     "session_record_verify_20261124T211407Z",
     "session_record_verify_20261124T213203Z",
-    "session_record_verify_20261124T213940Z"
+    "session_record_verify_20261124T213940Z",
+    "session_record_verify_20261124T214543Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -7870,6 +7871,62 @@
       "Probe census recomputed from disk = 398 real cutoff_probe_*.json (271 probe_month=2026-10 / 50 published, 127 probe_month=2026-11 / 0 published); newest by name is cutoff_probe_20261123T071225Z.json (2026-10, published, gate UNBLOCKED). The directory also holds one non-cutoff file (daily_fundingRate_probe_20261101T132013Z.json) that is correctly excluded from the cutoff-probe census. November 2026 probe recorded separately as BLOCKED and never promoted into the H10 gate decision. The newest probe file is byte-unchanged vs git show HEAD:.",
       "Frozen hashes byte-unchanged vs disk AND vs git show HEAD:: canonical 7234fc4e...5390; h10_fresh 324ab1e6...df18f; grid_result_ledger 0184f2d3...ce04c; grid v3 config 64364226...b6d4 (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_config_manifest.json); frontier 9ba08f3f...f4e.",
       "Wrote and registered research_state/session_verifications/session_verify_20261124T213940Z.json via scripts/record_session_record.py (session_record_latest -> session_record_verify_20261124T213940Z).",
+      "No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched. This is a pre-gate verification only; it does not promote or unlock the confirmatory H10 track."
+    ]
+  },
+  "session_record_verify_20261124T214543Z": {
+    "session_id": "session_verify_20261124T214543Z",
+    "timestamp_utc": "20261124T214543Z",
+    "action": "held_confirmatory_H10_track_pre_gate_independent_reverification_green_state",
+    "outcome": "suite_green_1451_1451_0_durable_guards_39_39_maturity_42_42_recompute_19_19_probes_398_hashes_unchanged_session_record_registered",
+    "verification": {
+      "compile_check": "OK",
+      "test_suite": "1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "39/39 OK (tests.test_handoff_session_entries + tests.test_task_message_probe_evidence + tests.test_continuous_research_contract + tests.test_state_consistency)",
+      "maturity_timeline_audit": "PASS 42/42, read-only, EXPLORATORY_ONLY, block_sealed=False expected for immature H10",
+      "independent_recomputation_audit": "PASS 19/19 (default /tmp output, audit /tmp/fb_recompute_audit_20261124T215057Z/)",
+      "frozen_hashes": {
+        "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+        "grid_v3_config": "64364226ecaca6cb84db95ac43880d25d56b58599253ee0a7aafee25fad0b6d4",
+        "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+      },
+      "gate": {
+        "before_gate": true,
+        "current_utc": "2026-11-24T21:45:43Z",
+        "hard_date_gate": "2026-11-30",
+        "option_a_executed": false,
+        "reprobe_2026_11_performed": false
+      },
+      "registry": {
+        "next_sequence_number": 57
+      },
+      "probe_evidence": {
+        "newest_probe": "cutoff_probe_20261123T071225Z.json",
+        "probe_month_2026-10": {
+          "count": 271,
+          "published": 50
+        },
+        "probe_month_2026-11": {
+          "count": 127,
+          "published": 0
+        },
+        "total_real_probes": 398
+      }
+    },
+    "run_manifest": {
+      "latest_verified_test_claim": "1451/1451/0",
+      "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+      "session_record_latest": "session_record_verify_20261124T214543Z"
+    },
+    "newest_session_verification_record": "research_state/session_verifications/session_verify_20261124T214543Z.json",
+    "notes": [
+      "Prior task executed: held the confirmatory H10 track for the hard date gate 2026-11-30 (current UTC 2026-11-24T21:45:43Z < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses beyond the suite, did NOT allocate a new hypothesis (registry next_sequence_number stays 57).",
+      "Value-add this session (bounded pre-gate re-verification, not churn): independently re-ran the full no-cost state checks and recorded them as a new durable session-verification artifact. python3 -m compileall -q scripts tests OK; full suite python3 -m unittest discover -s tests -> 1451 run, 1451 OK, 0 failures, 0 errors, 8 skipped, EXIT=0; durable-state guards tests.test_handoff_session_entries + tests.test_task_message_probe_evidence + tests.test_continuous_research_contract + tests.test_state_consistency -> 39/39 OK; maturity audit python3 scripts/h10_maturity_timeline_audit.py -> PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10); independent recomputation audit python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default /tmp output, audit /tmp/fb_recompute_audit_20261124T215057Z/).",
+      "Probe census recomputed from disk = 398 real cutoff_probe_*.json (271 probe_month=2026-10 / 50 published, 127 probe_month=2026-11 / 0 published); newest by name is cutoff_probe_20261123T071225Z.json (2026-10, published, gate UNBLOCKED). The directory also holds one non-cutoff file (daily_fundingRate_probe_20261101T132013Z.json) that is correctly excluded from the cutoff-probe census. November 2026 probe recorded separately as BLOCKED and never promoted into the H10 gate decision. The newest probe file is byte-unchanged vs git show HEAD:.",
+      "Frozen hashes byte-unchanged vs disk AND vs git show HEAD:: canonical 7234fc4e...5390; h10_fresh 324ab1e6...df18f; grid_result_ledger 0184f2d3...ce04c; grid v3 config 64364226...b6d4 (artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_config_manifest.json); frontier 9ba08f3f...f4e.",
+      "Wrote and registered research_state/session_verifications/session_verify_20261124T214543Z.json via scripts/record_session_record.py (session_record_latest -> session_record_verify_20261124T214543Z).",
       "No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched. This is a pre-gate verification only; it does not promote or unlock the confirmatory H10 track."
     ]
   }
