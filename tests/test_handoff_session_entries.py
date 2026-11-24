@@ -49,6 +49,31 @@ def _entries():
     return out
 
 
+def _entry_bodies():
+    """Return [(timestamp, body_text)] for every session entry, in file order.
+
+    The body is the text from a heading line up to (not including) the next
+    session heading or EOF. This exposes semantic degeneration the structural
+    checks above cannot see: a handoff that repeats the same hold under a fresh
+    timestamp every session has unique, strictly-ordered headings, so every
+    uniqueness/order check passes while the file becomes an unreadable wall of
+    near-identical blocks that buries the newest signal.
+    """
+    entries = []
+    current = None
+    for line in HANDOFF.read_text(encoding="utf-8").splitlines():
+        match = ENTRY_RE.match(line)
+        if match:
+            if current is not None:
+                entries.append(current)
+            current = [match.group(2), []]
+        elif current is not None:
+            current[1].append(line)
+    if current is not None:
+        entries.append(current)
+    return [(ts, "\n".join(body)) for ts, body in entries]
+
+
 class HandoffSessionEntryStructureTests(unittest.TestCase):
     def test_handoff_has_session_entries(self):
         self.assertGreater(len(_entries()), 1, "handoff carries no session entries")
