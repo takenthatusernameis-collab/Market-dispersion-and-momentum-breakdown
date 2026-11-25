@@ -1,8 +1,8 @@
-## Agent Task Message — 2026-11-25T18:41:30Z (next session)
+## Agent Task Message — 2026-11-25T19:22:50Z (next session)
 
 ## Initial task for next agent
 
-Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-25 (UTC 2026-11-25T18:41:30Z), before the gate. Do NOT re-probe the November 2026 probe (`probe_month=2026-11`) before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
+Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-25 (UTC 2026-11-25T19:22:50Z), before the gate. Do NOT re-probe the November 2026 probe (`probe_month=2026-11`) before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
 
 Remote checkpoint persistence: this session confirmed `git fetch origin` then `HEAD == origin/main == 2eeb8537ca5520b753f2adbd36034e0a805c2077` (0 ahead / 0 behind, clean tree). All local commits preserved; no history rewritten. Persistence CONFIRMED durable on the tracked branch. Note: this session's durable-state updates (the new session_verify record, the manifest repoint via python3 scripts/record_session_record.py, the test claim refresh via python3 scripts/record_test_claim.py, this handoff and this task message) are uncommitted working-tree changes — commit and push them when convenient to make the state remote-durable; do not re-push unless new local-ahead commits appear.
 
@@ -26,7 +26,7 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-25T18:41:30Z, this session)
+## Verified state (2026-11-25T19:22:50Z, this session)
 
 - **Remote persistence (durability follow-through):** `git fetch origin` then `HEAD == origin/main == 2eeb8537ca5520b753f2adbd36034e0a805c2077`; 0 ahead / 0 behind; clean tree; no unpushed commits. All local commits preserved; no history rewritten. Persistence CONFIRMED durable on the tracked branch (this session's durable-state updates are uncommitted working-tree changes).
 - **Verification state:** `python3 -m compileall -q scripts tests` OK re-confirmed this session; no source/test changes; newest on-disk verification record is `session_verify_20261125T184130Z.json` (written and registered this session).
