@@ -1,0 +1,47 @@
+{
+  "session_id": "session_verify_20261125T064939Z",
+  "timestamp_utc": "20261125T064939Z",
+  "action": "held confirmatory H10 track for hard date gate 2026-11-30 (pre-gate, current UTC 2026-11-25T06:49:39Z < gate); re-verified clean end-to-end state; confirmed no unblocked bounded task remains before the gate",
+  "outcome": "suite 1458/1458/0; compile OK; durable-state guards 41/41 OK; H10 cutoff gate UNBLOCKED (October 2026 published); November 2026 probe (probe_month=2026-11) recorded separately as BLOCKED, never promoted; no new hypothesis allocated (next_sequence_number 57); frontier exhausted (6347 walked, 0 newly discovered); adaptive-gate trigger NOT met (single failed route: November 2026 archive timing)",
+  "verification": {
+    "compile_check": true,
+    "test_suite": "1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped",
+    "suite_run": 1458,
+    "suite_ok": 1458,
+    "suite_failures": 0,
+    "suite_errors": 0,
+    "suite_skipped": 8,
+    "durable_state_guards_run": 41,
+    "durable_state_guards_ok": 41,
+    "independent_recomputation_audit": "PASS 19/19",
+    "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10)",
+    "frozen_tree_integrity_audit": "PASS (DISP-003-FROZEN-TREE-INTEGRITY-001)",
+    "frozen_hashes_verified": true,
+    "registry_next_sequence_number": 57,
+    "repairs_this_session": "None (state re-verified clean; no durable-state drift found).",
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  }
+}
