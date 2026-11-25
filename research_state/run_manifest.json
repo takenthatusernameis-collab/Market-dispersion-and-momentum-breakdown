@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "2026-11-25T04:36:49Z",
+  "last_updated_utc": "2026-11-25T04:46:51Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261125T042816Z",
+  "session_record_latest": "session_record_verify_20261125T044651Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3287,7 +3287,8 @@
     "session_record_verify_20261125T022452Z",
     "session_record_verify_20261125T023405Z",
     "session_record_verify_20261125T040924Z",
-    "session_record_verify_20261125T042816Z"
+    "session_record_verify_20261125T042816Z",
+    "session_record_verify_20261125T044651Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -8770,6 +8771,34 @@
       },
       "registry_next_sequence_number": 57,
       "suite_count": "1458/1458/0"
+    }
+  },
+  "session_record_verify_20261125T044651Z": {
+    "session_id": "session_verify_20261125T044651Z",
+    "timestamp_utc": "2026-11-25T04:46:51Z",
+    "action": "held confirmatory H10 track for hard date gate 2026-11-30; updated handoff with probe_month=2026-11 label to satisfy test guard",
+    "outcome": "suite 1458/1458/0; compile OK; durable-state guards 41/41 OK; H10 gate UNBLOCKED (October 2026 published); November 2026 probe (probe_month=2026-11) recorded separately as BLOCKED, never promoted",
+    "verification": {
+      "compile_check": true,
+      "suite_run": 1458,
+      "suite_ok": 1458,
+      "suite_failures": 0,
+      "suite_errors": 0,
+      "suite_skipped": 8,
+      "durable_state_guards_run": 41,
+      "durable_state_guards_ok": 41,
+      "independent_recomputation_audit": "PASS 19/19",
+      "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY)",
+      "frozen_tree_integrity_audit": "PASS (DISP-003-FROZEN-TREE-INTEGRITY-001)",
+      "probe_evidence": {
+        "total_real": 398,
+        "probe_month_2026_10": 271,
+        "published_2026_10": 50,
+        "probe_month_2026_11": 127,
+        "published_2026_11": 0,
+        "newest": "cutoff_probe_20261123T071225Z.json"
+      },
+      "frozen_hashes_verified": true
     }
   }
 }
