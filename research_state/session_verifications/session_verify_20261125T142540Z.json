@@ -1,0 +1,45 @@
+{
+  "session_id": "session_verify_20261125T142540Z",
+  "timestamp_utc": "20261125T142540Z",
+  "action": "held confirmatory H10 track for hard date gate 2026-11-30 (pre-gate, current UTC 2026-11-25T14:25:40Z < gate); did NOT re-probe probe_month=2026-11; did NOT execute Option A; did not re-run completed hypotheses beyond the suite; did not allocate a new hypothesis (registry next_sequence_number stays 57); installed missing runtime deps (numpy/pandas) per requirements.txt environment guard before the suite run; consolidated the re-formed wall of hold entries in agent_handoff.md (3 older holds merged into one parser-invisible consolidated block); registered this session's verification record via python3 scripts/record_session_record.py; manifest session_record_latest and last_updated_utc now name session_record_verify_20261125T142540Z. Confirmed no frozen drift: HEAD == origin/main == 057a835db8b63175f71e4d5bd9adc0c2f63c5a09, 0 ahead / 0 behind, no unpushed commits (working tree carries only this session's uncommitted durable-state updates; no source/test/artifact/frozen changes). Recomputed probe census from research_state/cutoff_probe/ (398 real; 271 probe_month=2026-10 / 50 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261123T071225Z.json) matches disk. No source/test changes, suite size unchanged at 1458.",
+  "outcome": "compile OK; full suite python3 -m unittest discover -s tests -> 1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped, EXIT=0 (durable-state guards included in suite pass); durable-state guards tests.test_handoff_session_entries + tests.test_task_message_probe_evidence + tests.test_continuous_research_contract + tests.test_state_consistency -> 41/41 OK; working tree clean of source changes apart from uncommitted research_state durable-state updates; HEAD == origin/main == 057a835db8b63175f71e4d5bd9adc0c2f63c5a09; frozen hashes byte-unchanged vs disk (canonical 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390; h10_fresh 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f; grid_result_ledger 0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c; grid v3 config 1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176; frontier 9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e); H10 cutoff gate UNBLOCKED (October 2026 published); November 2026 probe recorded separately as BLOCKED, never promoted into the H10 gate; frontier exhausted per the 2026-11-25 -003 re-audit (220 verified + 6127 blocked = 6347 walked, 0 newly discovered), so no unblocked discovery/expansion task exists before a new data vintage; whole-tree frozen-artifact integrity audit unchanged (zero tracked/untracked drift under artifacts/ and configs/).",
+  "verification": {
+    "compile_check": true,
+    "test_suite": "1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped",
+    "suite_run": 1458,
+    "suite_ok": 1458,
+    "suite_failures": 0,
+    "suite_errors": 0,
+    "suite_skipped": 8,
+    "durable_state_guards_run": 41,
+    "durable_state_guards_ok": 41,
+    "frozen_hashes_verified": true,
+    "registry_next_sequence_number": 57,
+    "remote_sync": "HEAD == origin/main == 057a835db8b63175f71e4d5bd9adc0c2f63c5a09; 0 ahead / 0 behind; no unpushed commits; persistence durable (this session's durable-state updates are uncommitted working-tree changes; no source/test/artifact/frozen changes)",
+    "repairs_this_session": "Consolidated agent_handoff.md wall of hold entries: demoted 2026-11-25T09:43:45Z entry to Previous session and merged the 09:30:17Z, 09:20:14Z and 08:38:16Z holds into one consolidated Previous-session block so the hold-entry count stays within the test_handoff_does_not_degenerate_into_a_wall_of_hold_entries bound (<=3); no other durable-state changes.",
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  }
+}
