@@ -1,8 +1,10 @@
-## Agent Task Message — 2026-11-25T07:26:05Z (next session)
+## Agent Task Message — 2026-11-25T07:45:17Z (next session)
 
 ## Initial task for next agent
 
-Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-25 (UTC 2026-11-25T07:26:05Z), before the gate. Do NOT re-probe the November 2026 probe (`probe_month=2026-11`) before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
+Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-25 (UTC 2026-11-25T07:45:17Z), before the gate. Do NOT re-probe the November 2026 probe (`probe_month=2026-11`) before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
+
+Remote checkpoint persistence: this session recovered the failed push from the prior worker session (session 36). Commit `90f2aa9a` (chore(kilo): checkpoint agent session) was pushed to `origin/main` and `git fetch origin` confirmed `origin/main` == `90f2aa9a` == local HEAD. All local commits preserved; no history rewritten. Persistence CONFIRMED. Do not re-push unless new local-ahead commits appear.
 
 State carried in: compileall OK; full suite `python3 -m unittest discover -s tests` -> **1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards `tests.test_handoff_session_entries` + `tests.test_task_message_probe_evidence` + `tests.test_continuous_research_contract` + `tests.test_state_consistency` -> 41/41 OK; all five frozen hashes byte-unchanged vs disk AND vs git blob (canonical `7234fc4e…5390`; h10_fresh `324ab1e6…df18f`; grid_result_ledger `0184f2d3…ce04c`; grid v3 config `1ff4c1f2…02176`; frontier `9ba08f3f…f4e`); probe census matches disk (398 real; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`; October 2026 published record -> H10 cutoff gate UNBLOCKED; November 2026 recorded BLOCKED as a probe, never promoted). Registry `next_sequence_number` = 57 (no new hypothesis allocated). Read-only H10 maturity-timeline audit -> PASS 42/42 (EXPLORATORY_ONLY, `block_sealed=False` expected for immature H10). Independent recomputation audit -> PASS 19/19. Whole-tree frozen-artifact integrity audit -> PASS (research_state/FROZEN_TREE_INTEGRITY_AUDIT_20261125T023321Z.json, DISP-003-FROZEN-TREE-INTEGRITY-001): aggregate git tree ids for DISPERSION-001/002/003 + configs (~7,300 files), zero tracked/untracked drift under artifacts/ and configs/, five pins match disk AND git blob. Frontier catalog exhausted per the 2026-11-25 -003 re-audit (220 verified + 6127 blocked = 6347 walked, 0 newly discovered), so no unblocked discovery/expansion task exists before a new data vintage.
 
@@ -24,9 +26,10 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-25T07:26:05Z, this session)
+## Verified state (2026-11-25T07:45:17Z, this session)
 
-- **Compile check:** `python3 -m compileall -q scripts tests` OK.
+- **Remote persistence (recovery):** commit `90f2aa9a` pushed to `origin/main`; `git fetch origin` confirmed `origin/main` == `90f2aa9a` == local HEAD. All local commits preserved; no history rewritten. Persistence CONFIRMED.
+- **Verification state:** unchanged from the 2026-11-25T07:26:05Z verified session (no source/test changes this session); `python3 -m compileall -q scripts tests` OK re-confirmed; newest on-disk verification record remains `session_verify_20261125T072605Z.json`.
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
 - **Durable-state guards:** `tests.test_handoff_session_entries.py` + `tests.test_task_message_probe_evidence.py` + `tests.test_continuous_research_contract.py` + `tests.test_state_consistency.py` -> 41/41 OK.
 - **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to /tmp).
