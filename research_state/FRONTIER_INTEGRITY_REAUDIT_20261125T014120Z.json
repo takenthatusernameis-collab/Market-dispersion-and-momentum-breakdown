@@ -1,0 +1,50 @@
+{
+  "audit_id": "DISP-003-FRONTIER-INTEGRITY-003",
+  "audit_type": "READ_ONLY_EVIDENCE_AUDIT",
+  "timestamp_utc": "20261125T014120Z",
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "schema_version": 1.0,
+  "scope": "Independent re-verification of research_state/universe_frontier.json candidate-set internal consistency, catalog-exhaustion premise, and H10 gate-vs-probe promotion invariant (no file modified).",
+  "method": "python3 stdlib json load; set algebra on candidates_verified / candidates_blocked / catalog_discovery.{verified_excluded,blocked_excluded,legacy_excluded}; compared as sets. Cross-checked latest_archive_probe (October published -> UNBLOCKED) against latest_november_2026_probe (target_published false -> BLOCKED, never promoted). Compared shared keys against the prior audit DISP-003-FRONTIER-INTEGRITY-002 (20261123T162126Z) to detect drift; keys added by this audit (the gate-promotion checks) are new coverage, not drift.",
+  "checks": {
+    "verified_count": 220,
+    "blocked_count": 6127,
+    "verified_plus_blocked": 6347,
+    "catalog_entries_walked": 6347,
+    "sum_matches_catalog_entries_walked": true,
+    "duplicate_verified": 0,
+    "duplicate_blocked": 0,
+    "overlap_verified_and_blocked": 0,
+    "catalog_verified_set_equals_frontier_verified": true,
+    "catalog_blocked_set_equals_frontier_blocked": true,
+    "legacy_subset_of_verified": true,
+    "legacy_overlap_with_blocked": 0,
+    "legacy_excluded_count": 32,
+    "newly_discovered": 0,
+    "rank_frontier_exhausted": false,
+    "historical_rank_coverage_state": "NOT_PROVEN_COMPLETE",
+    "catalog_discovery_status": "ok",
+    "h10_cutoff_gate": "UNBLOCKED",
+    "november_probe_target_published": false,
+    "november_probe_cutoff_gate": "BLOCKED",
+    "november_probe_not_promoted": true
+  },
+  "drift_vs_prior_20261123_audit": {},
+  "new_checks_added_vs_prior": [
+    "h10_cutoff_gate",
+    "november_probe_cutoff_gate",
+    "november_probe_not_promoted",
+    "november_probe_target_published"
+  ],
+  "defects_found": [],
+  "frozen_artifacts_untouched": true,
+  "notes": [
+    "220 verified + 6127 blocked = 6347 catalog entries walked; no duplicates, no verified/blocked overlap.",
+    "Legacy 32 is a subset of the 220 verified; catalog discovery is exhausted at cursor 6347 with 0 newly discovered.",
+    "No real drift vs the 2026-11-23 integrity re-audit (-002) on shared keys; the frontier has not changed (last_updated_utc 2026-11-06).",
+    "H10 cutoff gate is UNBLOCKED (October 2026 archive published); the November 2026 probe (target_published=False, cutoff_gate=BLOCKED) is recorded BLOCKED and never promoted into the gate decision.",
+    "Confirms the hold premise: with the free CoinMetrics catalog exhausted and no new listings, there is no unblocked discovery/expansion task before a new data vintage; the only remaining confirmatory dependency is the 2026-11-30 hard date gate.",
+    "Read-only: no change to universe_frontier.json or any frozen artifact."
+  ],
+  "verdict": "PASS"
+}
