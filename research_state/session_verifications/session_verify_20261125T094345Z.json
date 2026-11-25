@@ -1,0 +1,45 @@
+{
+  "session_id": "session_verify_20261125T094345Z",
+  "timestamp_utc": "20261125T094345Z",
+  "action": "held confirmatory H10 track for hard date gate 2026-11-30 (pre-gate, current UTC 2026-11-25T09:30:17Z < gate); re-verified clean end-to-end state at HEAD 3bb5ee95 (origin/main == 3bb5ee95, 0 ahead / 0 behind, no unpushed commits); no new hypothesis allocated (next_sequence_number stays 57); no source/test/artifact/frozen changes (commit 3bb5ee95 modified only research_state narrative files); probe_month=2026-11 NOT re-probed (before 2026-11-30); adaptive-gate trigger NOT met (single failed route: November 2026 archive timing)",
+  "outcome": "compile OK; full suite 1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped, EXIT=0 (durable-state guards included in suite pass); working tree clean; HEAD == origin/main == 3bb5ee95; frozen hashes byte-unchanged vs disk (commit 3bb5ee95 changed no artifact/config file; carry-forward from prior verification at HEAD ad0a4bd2: canonical 7234fc4e\u20265390; h10_fresh 324ab1e6\u2026df18f; grid_result_ledger 0184f2d3\u2026ce04c; grid v3 config 1ff4c1f2\u202602176; frontier 9ba08f3f\u2026f4e); H10 cutoff gate UNBLOCKED (October 2026 published); November 2026 probe recorded separately as BLOCKED, never promoted; frontier exhausted (6347 walked, 0 newly discovered); remote persistence durable; newest session verification record remains session_verify_20261125T084746Z.json (registered); this session's record registered below",
+  "verification": {
+    "compile_check": true,
+    "test_suite": "1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped",
+    "suite_run": 1458,
+    "suite_ok": 1458,
+    "suite_failures": 0,
+    "suite_errors": 0,
+    "suite_skipped": 8,
+    "durable_state_guards_run": 41,
+    "durable_state_guards_ok": 41,
+    "frozen_hashes_verified": true,
+    "registry_next_sequence_number": 57,
+    "remote_sync": "HEAD == origin/main == 3bb5ee95; 0 ahead / 0 behind; no unpushed commits; persistence durable",
+    "repairs_this_session": "None (state re-verified clean; no durable-state drift found; no source/test/frozen changes; suite size unchanged at 1458; commit 3bb5ee95 modified only research_state narrative files.)",
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    }
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  }
+}
