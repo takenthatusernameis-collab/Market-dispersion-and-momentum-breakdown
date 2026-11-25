@@ -1,0 +1,43 @@
+{
+  "session_id": "session_verify_20261125T145041Z",
+  "timestamp_utc": "20261125T145041Z",
+  "action": "pre_gate_verification_hold",
+  "outcome": "green_state_verified",
+  "verification": {
+    "suite_count": {
+      "run": 1458,
+      "ok": 1458,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 8
+    },
+    "durable_state_guards": {
+      "passed": 41,
+      "total": 41
+    },
+    "frozen_hash_checks": {
+      "canonical": true,
+      "h10_fresh": true,
+      "grid_result_ledger": true,
+      "grid_v3_config": true,
+      "frontier": true
+    },
+    "probe_evidence": {
+      "total": 399,
+      "october_2026": {
+        "total": 271,
+        "published": 50
+      },
+      "november_2026": {
+        "total": 127,
+        "published": 0
+      },
+      "newest_file": "daily_fundingRate_probe_20261101T132013Z.json"
+    },
+    "registry_next_sequence_number": 57,
+    "independent_recomputation_audit": "PASS 19/19",
+    "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10)",
+    "frozen_tree_integrity_audit": "PASS",
+    "git_status": "HEAD == origin/main == 057a835db8b63175f71e4d5bd9adc0c2f63c5a09 (0 ahead / 0 behind)"
+  }
+}
