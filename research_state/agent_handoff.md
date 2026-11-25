@@ -1,11 +1,11 @@
-# Agent Handoff — 2026-11-25T00:55:17Z (current session)
-## Session summary — 2026-11-25T00:55:17Z (this session)
+# Agent Handoff — 2026-11-25T01:10:36Z (current session)
+## Session summary — 2026-11-25T01:10:36Z (this session)
 
-- **Prior task executed:** held the confirmatory H10 track for the hard date gate 2026-11-30 (current UTC 2026-11-25T00:55:17Z < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses beyond the suite, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57).
-- **Value-add this session:** re-verified full green state end-to-end. Full suite `python3 -m unittest discover -s tests` -> **1453 run, 1453 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 41/41 OK; five frozen hashes byte-unchanged vs disk; probe census 398 real (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published). No unblocked task remains before the 2026-11-30 gate.
+- **Prior task executed:** held the confirmatory H10 track for the hard date gate 2026-11-30 (current UTC 2026-11-25T01:10:36Z < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses beyond the suite, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57).
+- **Value-add this session:** re-verified full green state end-to-end. Full suite `python3 -m unittest discover -s tests` -> **1453 run, 1453 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 41/41 OK; maturity audit `python3 scripts/h10_maturity_timeline_audit.py` -> PASS 42/42 (EXPLORATORY_ONLY, `block_sealed=False` expected for immature H10); independent recomputation audit `python3 scripts/forward_block_independent_recomputation_audit.py` -> PASS 19/19; five frozen hashes byte-unchanged vs disk; probe census 398 real (271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published), newest `cutoff_probe_20261123T071225Z.json`. Frontier integrity re-audit confirms catalog exhausted (220 verified + 6127 blocked = 6347 walked, 0 newly discovered). No unblocked task remains before the 2026-11-30 gate.
 - **Posture:** **BLOCKED_BY_HARD_DATE_GATE** for the confirmatory H10 track. Hold for 2026-11-30.
-- **Next action:** At/after 2026-11-30 execute Option A (see `agent_task_message.md`). Do NOT relax 30-day maturity, `MIN_ASSETS_DECILES=20`, the trailing-decile state rule or the `alpha_k = 0.05/(k*(k+1))` per-look rule.
-- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261125T003430Z.json`.
+- **Next action:** At/after 2026-11-30 execute Option A (see `agent_task_message.md`). Expect the fresh block to still be IMMATURE at the 2026-11-30 cutoff (M1 earliest ~2026-12-01, M2 earliest ~2026-12-09). Do NOT relax 30-day maturity, `MIN_ASSETS_DECILES=20`, the trailing-decile state rule or the `alpha_k = 0.05/(k*(k+1))` per-look rule.
+- **Newest session verification record on disk:** `research_state/session_verifications/session_verify_20261125T011036Z.json`.
 
 ## Previous session — 2026-11-25T00:41:09Z
 
