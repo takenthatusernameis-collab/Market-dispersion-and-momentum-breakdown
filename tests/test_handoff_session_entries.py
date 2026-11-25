@@ -24,6 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "research_state"
 HANDOFF = STATE / "agent_handoff.md"
+TASK_MESSAGE = STATE / "agent_task_message.md"
 
 TITLE_RE = re.compile(r"^# Agent Handoff — (\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z) \(current session\)$")
 ENTRY_RE = re.compile(
@@ -32,6 +33,8 @@ ENTRY_RE = re.compile(
     r"( \(this session\))?$"
 )
 VERIFY_RE = re.compile(r"session_verify_\d{8}T\d{6}Z\.json")
+# A verified-suite claim of the form "N run, N OK" (run count must equal ok count).
+CLAIM_RE = re.compile(r"(\d+) run, (\d+) OK")
 
 
 def _entries():
@@ -72,6 +75,30 @@ def _entry_bodies():
     if current is not None:
         entries.append(current)
     return [(ts, "\n".join(body)) for ts, body in entries]
+
+
+def _quoted_run_counts(text):
+    """Return the run count of every well-formed ``N run, N OK`` claim on a
+    verification-claim line in text.
+
+    Only lines that carry the actual verified-suite claim (``full suite`` /
+    ``Test suite``) are scanned, so a narrative that quotes an OLD wrong value
+    elsewhere (e.g. "the prior handoff quoted ``1451 run, 1451 OK``") cannot
+    masquerade as the current claim -- the same scoping the
+    ``next_sequence_number`` narrative guard uses for ``next_required_actions``.
+    A malformed ``N run, M OK`` (run != ok) is not a well-formed claim and is
+    ignored.
+    """
+    counts = []
+    for line in text.splitlines():
+        lowered = line.lower()
+        if "full suite" not in lowered and "test suite" not in lowered:
+            continue
+        for match in CLAIM_RE.finditer(line):
+            run, ok = int(match.group(1)), int(match.group(2))
+            if run == ok:
+                counts.append(run)
+    return counts
 
 
 class HandoffSessionEntryStructureTests(unittest.TestCase):
@@ -163,6 +190,43 @@ class HandoffSessionEntryStructureTests(unittest.TestCase):
             "BLOCKED_BY_HARD_DATE_GATE hold entries; consolidate older holds "
             "(the durable audit trail is in research_state/session_verifications/ "
             "and run_manifest.json)",
+        )
+
+    def test_handoff_and_task_message_quote_the_same_suite_count(self):
+        """The handoff's newest session entry and the task message must quote the
+        same verified-suite count.
+
+        The durable handoff and the agent task message are the two narratives the
+        next agent reads to learn the current suite size, and both quote an
+        ``N run, N OK`` verified-test claim by hand. A 2026-11-25 session left the
+        handoff at ``1451 run, 1451 OK`` while the task message and the manifest's
+        ``latest_verified_test_claim`` read 1452, so the two narratives disagreed
+        on the suite size and every structural guard still passed. The manifest
+        claim is suite-derived (written by ``scripts/record_test_claim.py`` after
+        the suite runs) and cannot be pinned here without deadlocking that
+        script's refresh, so this gate pins the two hand-edited narratives to each
+        other instead. A future session that changes the suite size must update
+        both durable narratives in the same commit, which is the intended
+        discipline.
+        """
+        bodies = _entry_bodies()
+        self.assertGreater(len(bodies), 0, "handoff carries no session entries")
+        newest_body = bodies[0][1]
+        handoff_counts = _quoted_run_counts(newest_body)
+        task_counts = _quoted_run_counts(TASK_MESSAGE.read_text(encoding="utf-8"))
+        self.assertTrue(
+            handoff_counts,
+            "handoff newest session entry quotes no 'N run, N OK' claim",
+        )
+        self.assertTrue(
+            task_counts,
+            "task message quotes no 'N run, N OK' claim",
+        )
+        self.assertEqual(
+            set(handoff_counts), set(task_counts),
+            f"handoff newest entry quotes suite counts "
+            f"{sorted(set(handoff_counts))} but task message quotes "
+            f"{sorted(set(task_counts))}; both durable narratives must agree",
         )
 
 
