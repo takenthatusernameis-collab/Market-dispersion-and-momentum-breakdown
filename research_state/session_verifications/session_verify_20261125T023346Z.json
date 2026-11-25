@@ -1,0 +1,53 @@
+{
+  "durable_state_guards": "41/41 OK",
+  "frozen_hashes": {
+    "all_match": {
+      "canonical": true,
+      "frontier": true,
+      "grid_result_ledger": true,
+      "grid_v3_config": true,
+      "h10_fresh": true
+    },
+    "disk": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+    },
+    "git_blob": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f"
+    }
+  },
+  "frozen_tree_integrity_audit": "PASS (research_state/FROZEN_TREE_INTEGRITY_AUDIT_20261125T023321Z.json, DISP-003-FROZEN-TREE-INTEGRITY-001)",
+  "independent_recomputation_audit": "PASS 19/19",
+  "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10)",
+  "probe_evidence": {
+    "by_month": {
+      "2026-10": {
+        "published": 50,
+        "total": 271
+      },
+      "2026-11": {
+        "published": 0,
+        "total": 127
+      }
+    },
+    "newest_probe": "research_state/cutoff_probe/cutoff_probe_20261123T071225Z.json",
+    "recompute_rule": "Re-derive every session from research_state/cutoff_probe/ via tests/test_task_message_probe_evidence.py",
+    "total_probes": 398
+  },
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "registry_next_sequence_number": 57,
+  "run_manifest": {
+    "latest_verified_test_claim": "1458/1458/0",
+    "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+    "session_record_latest": "session_record_verify_20261125T023321Z"
+  },
+  "session_timestamp_utc": "20261125T023346Z",
+  "suite_count": "1458/1458/0"
+}
