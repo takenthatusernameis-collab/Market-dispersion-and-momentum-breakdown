@@ -139,6 +139,32 @@ class HandoffSessionEntryStructureTests(unittest.TestCase):
             f"handoff does not quote the newest session verification record {newest}",
         )
 
+    def test_handoff_does_not_degenerate_into_a_wall_of_hold_entries(self):
+        """Semantic degeneration guard.
+
+        A handoff that repeats the same ``BLOCKED_BY_HARD_DATE_GATE`` hold under
+        a fresh timestamp every session has unique, strictly-ordered headings, so
+        every structural check above still passes while the file becomes an
+        unreadable wall of near-identical blocks that buries the newest signal.
+        The 2026-11-24 handoff had grown to ~30 such entries (393 lines).
+
+        Bound the number of hold entries so a future session must consolidate
+        older holds instead of appending another near-identical block. The full
+        per-session audit trail is preserved in
+        ``research_state/session_verifications/`` and indexed by
+        ``research_state/run_manifest.json`` (``session_records``), so
+        consolidation loses no evidence.
+        """
+        bodies = _entry_bodies()
+        hold = [ts for ts, body in bodies if "BLOCKED_BY_HARD_DATE_GATE" in body]
+        self.assertLessEqual(
+            len(hold), 3,
+            f"handoff carries {len(hold)} near-identical "
+            "BLOCKED_BY_HARD_DATE_GATE hold entries; consolidate older holds "
+            "(the durable audit trail is in research_state/session_verifications/ "
+            "and run_manifest.json)",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

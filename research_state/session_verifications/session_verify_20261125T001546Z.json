@@ -1,0 +1,57 @@
+{
+  "session_id": "session_verify_20261125T001546Z",
+  "timestamp_utc": "20261125T001546Z",
+  "action": "repaired_red_verified_test_claim_fingerprint_consolidated_degenerated_handoff_and_wired_degeneration_guard",
+  "outcome": "fingerprint_repaired_suite_green_1452_1452_0_durable_guards_40_40_maturity_42_42_recompute_19_19_probes_398_hashes_unchanged_session_record_registered",
+  "verification": {
+    "compile_check": "OK",
+    "test_suite": "1452 run, 1452 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+    "durable_state_guards": "40/40 OK (tests.test_handoff_session_entries + tests.test_task_message_probe_evidence + tests.test_continuous_research_contract + tests.test_state_consistency; 39 prior + new test_handoff_does_not_degenerate_into_a_wall_of_hold_entries)",
+    "maturity_timeline_audit": "PASS 42/42, read-only, EXPLORATORY_ONLY, block_sealed=False expected for immature H10",
+    "independent_recomputation_audit": "PASS 19/19 (default /tmp output)",
+    "frozen_hashes": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "gate": {
+      "before_gate": true,
+      "current_utc": "2026-11-25T00:15:46Z",
+      "hard_date_gate": "2026-11-30",
+      "option_a_executed": false,
+      "reprobe_2026_11_performed": false
+    },
+    "registry": {
+      "next_sequence_number": 57
+    },
+    "probe_evidence": {
+      "newest_probe": "cutoff_probe_20261123T071225Z.json",
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "total_real_probes": 398
+    }
+  },
+  "run_manifest": {
+    "latest_verified_test_claim": "1452/1452/0",
+    "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY",
+    "session_record_latest": "session_record_verify_20261125T001546Z"
+  },
+  "newest_session_verification_record": "research_state/session_verifications/session_verify_20261125T001546Z.json",
+  "notes": [
+    "Prior task executed: held the confirmatory H10 track for the hard date gate 2026-11-30 (current UTC 2026-11-25T00:15:46Z < gate). Did NOT re-probe November 2026, did NOT execute Option A, did NOT re-run completed hypotheses beyond the suite, did NOT allocate a new hypothesis (registry next_sequence_number stays 57).",
+    "Durable-state repair (value-add, not churn): on arrival the full suite was RED (1 failure) at tests.test_verified_test_claim_guard.TestVerifiedTestClaimGuard.test_snapshot_fingerprint_matches_inventory. Commit f89ddac0 added the _entry_bodies() helper to tests/test_handoff_session_entries.py but never refreshed the verified-test-claim snapshot, so the snapshot fingerprint no longer matched the on-disk .py inventory. Repaired with python3 scripts/record_test_claim.py (refreshes fingerprint before running the suite, breaking the stale-snapshot deadlock).",
+    "Anti-degeneration consolidation (value-add, not churn): the handoff had degenerated into a 393-line wall of ~30 near-identical BLOCKED_BY_HARD_DATE_GATE hold entries (unique, strictly-ordered headings, so every structural guard passed while the newest signal was buried). Consolidated to the current entry + the immediately preceding session and wired the previously-unused _entry_bodies() helper into test_handoff_does_not_degenerate_into_a_wall_of_hold_entries. Full audit trail preserved in research_state/session_verifications/ and run_manifest.json (session_records).",
+    "Verification: python3 -m compileall -q scripts tests OK; full suite python3 -m unittest discover -s tests -> 1452 run, 1452 OK, 0 failures, 0 errors, 8 skipped, EXIT=0; durable-state guards -> 40/40 OK; maturity audit python3 scripts/h10_maturity_timeline_audit.py -> PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10); independent recomputation audit python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19.",
+    "Probe census recomputed from disk = 398 real cutoff_probe_*.json (271 probe_month=2026-10 / 50 published, 127 probe_month=2026-11 / 0 published); newest by name is cutoff_probe_20261123T071225Z.json (2026-10, published, gate UNBLOCKED). November 2026 probe recorded separately as BLOCKED and never promoted into the H10 gate decision.",
+    "Frozen hashes byte-unchanged vs disk: canonical 7234fc4e...5390; h10_fresh 324ab1e6...df18f; grid_result_ledger 0184f2d3...ce04c; grid v3 config 1ff4c1f2...02176 (configs/dispersion_momentum_grid_v3.json); frontier 9ba08f3f...f4e (research_state/universe_frontier.json).",
+    "No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched. This is a pre-gate verification only; it does not promote or unlock the confirmatory H10 track."
+  ]
+}
