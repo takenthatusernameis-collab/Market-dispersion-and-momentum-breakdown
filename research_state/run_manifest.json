@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "20261126T050648Z",
+  "last_updated_utc": "20261126T052843Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261126T050648Z",
+  "session_record_latest": "session_record_verify_20261126T052843Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3327,7 +3327,8 @@
     "session_record_verify_20261126T031618Z",
     "session_record_verify_20261126T032803Z",
     "session_record_verify_20261126T042217Z",
-    "session_record_verify_20261126T050648Z"
+    "session_record_verify_20261126T050648Z",
+    "session_record_verify_20261126T052843Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -10948,5 +10949,44 @@
       "gate_date": "2026-11-30",
       "notes": "Pre-gate hold session; no unblocked bounded task exists before 2026-11-30; green state re-verified; fresh independent recomputation, maturity timeline, and frozen-tree integrity audits all PASS."
     }
+  },
+  "session_record_verify_20261126T052843Z": {
+    "session_id": "session_verify_20261126T052843Z",
+    "timestamp_utc": "20261126T052843Z",
+    "action": "PRE_GATE_VERIFICATION_HOLD",
+    "outcome": "GREEN_STATE_CONFIRMED",
+    "verification": {
+      "compileall_ok": true,
+      "test_suite": "1458 run, 1458 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "41/41 OK (test_handoff_session_entries + test_task_message_probe_evidence + test_continuous_research_contract + test_state_consistency)",
+      "frozen_hashes": {
+        "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+        "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+        "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+      },
+      "independent_recomputation_audit": "PASS 19/19",
+      "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10)",
+      "frozen_tree_integrity_audit": "PASS (zero drift, five pins match disk AND git blob)",
+      "probe_evidence": {
+        "total_real": 398,
+        "october_2026": {
+          "total": 271,
+          "published": 50
+        },
+        "november_2026": {
+          "total": 127,
+          "published": 0
+        },
+        "newest_file": "cutoff_probe_20261123T071225Z.json",
+        "newest_probe_utc": "2026-11-23T07:12:25Z"
+      },
+      "registry_next_sequence_number": 57
+    },
+    "posture": "BLOCKED_BY_HARD_DATE_GATE",
+    "gate_date": "2026-11-30",
+    "session_verify_file": "research_state/session_verifications/session_verify_20261126T052843Z.json",
+    "notes": "Pre-gate hold session; no unblocked bounded task exists before 2026-11-30; green state re-verified."
   }
 }
