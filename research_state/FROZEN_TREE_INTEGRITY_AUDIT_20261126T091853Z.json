@@ -1,0 +1,77 @@
+{
+  "audit_id": "DISP-003-FROZEN-TREE-INTEGRITY-001",
+  "audit_type": "READ_ONLY_FROZEN_RECORD_AUDIT",
+  "checks": {
+    "frozen_tree_ids": {
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001": "e3eef4e88a13a0004789bfe80ffcc47d58475cfe",
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002": "8cc8570abca43b66013b102a4118aad7d3f03f6e",
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003": "16136e26329aa1a56b0301d820ec6892630a063e",
+      "configs": "c233181e5dd2ee7ae774a441dd49ca7bf935bd6f"
+    },
+    "pinned_files": {
+      "canonical": {
+        "disk": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "disk_matches": true,
+        "expected": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "git_blob": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+        "git_blob_matches": true,
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block/forward_block_evaluation.json"
+      },
+      "frontier": {
+        "disk": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        "disk_matches": true,
+        "expected": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        "git_blob": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e",
+        "git_blob_matches": true,
+        "path": "research_state/universe_frontier.json"
+      },
+      "grid_result_ledger": {
+        "disk": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+        "disk_matches": true,
+        "expected": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+        "git_blob": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+        "git_blob_matches": true,
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/grid_result_ledger.json"
+      },
+      "grid_v3_config": {
+        "disk": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+        "disk_matches": true,
+        "expected": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+        "git_blob": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+        "git_blob_matches": true,
+        "path": "configs/dispersion_momentum_grid_v3.json"
+      },
+      "h10_fresh": {
+        "disk": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "disk_matches": true,
+        "expected": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "git_blob": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+        "git_blob_matches": true,
+        "path": "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003/forward_block_h10_fresh/forward_block_evaluation.json"
+      }
+    },
+    "tracked_diff_empty": true,
+    "tracked_diff_files": [],
+    "tracked_file_counts": {
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-001": 3333,
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-002": 75,
+      "artifacts/HARMONY-CRYPTO-EDGE-004-DISPERSION-003": 3882,
+      "configs": 4
+    },
+    "untracked_empty": true,
+    "untracked_files": []
+  },
+  "failures": [],
+  "frozen_artifacts_untouched": true,
+  "method": "git rev-parse HEAD:<dir> for aggregate content-hashed tree ids; git diff --name-only HEAD / git ls-files --others for cleanliness; sha256 of on-disk bytes and of git show HEAD:<path> for the five pins; git ls-files counts per directory.",
+  "notes": [
+    "Aggregate git tree ids cover every committed byte under each frozen directory (~7,300 files), a strictly stronger guarantee than the five single-file pins alone.",
+    "DISPERSION-001/002 configs, inputs, artifacts and findings are byte-unchanged: their aggregate tree ids are recorded above and the working tree has zero tracked/untracked drift under artifacts/ and configs/.",
+    "Read-only: no frozen artifact, config, grid, frontier, panel or decision rule was modified; only this dated audit artifact is written."
+  ],
+  "program_id": "HARMONY-CRYPTO-EDGE-004",
+  "schema_version": 1.0,
+  "scope": "Whole-tree frozen-artifact integrity: aggregate git tree ids for DISPERSION-001/002/003 + configs, working-tree cleanliness, and five pinned file hashes vs disk AND git blob. No file modified.",
+  "timestamp_utc": "20261126T091853Z",
+  "verdict": "PASS"
+}
