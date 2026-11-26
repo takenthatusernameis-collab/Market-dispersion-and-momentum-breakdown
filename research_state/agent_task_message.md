@@ -1,8 +1,8 @@
-## Agent Task Message — 2026-11-26T10:38:11Z (next session)
+## Agent Task Message — 2026-11-26T15:01:12Z (next session)
 
 ## Initial task for next agent
 
-Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-26 (UTC 2026-11-26T10:38:11Z), before the gate. Do NOT re-probe the November 2026 probe (`probe_month=2026-11`) before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
+Hold the confirmatory H10 track for the hard date gate 2026-11-30. Today is 2026-11-26 (UTC 2026-11-26T15:01:12Z), before the gate. Do NOT re-probe the November 2026 probe (`probe_month=2026-11`) before 2026-11-30 and do NOT execute Option A until the gate is reached (on/after 2026-11-30).
 
 Remote checkpoint persistence: this session started from a clean working tree at the harness checkpoint. This session's durable-state updates (the new `session_verify_20261126T103811Z.json`, the new guard `tests/test_task_message_next_task_concrete.py`, the manifest repoint via python3 scripts/record_session_record.py and record_test_claim.py, this handoff and this task message) are left uncommitted for the next checkpoint; commit and push them when convenient to make the state remote-durable; do not re-push unless new local-ahead commits appear.
 
@@ -12,7 +12,7 @@ This session's value-add (NOT a bare hold): added a contract-grounded regression
 
 Gate vs probe: the H10 cutoff gate is decided by the latest PUBLISHED-month record. The October 2026 archive is published (`target_published=true`, gate UNBLOCKED per `research_state/cutoff_probe/cutoff_probe_20261105T103851Z.json`), so the H10 cutoff gate is UNBLOCKED. The November 2026 probe (`probe_month=2026-11`, target not yet published, 0 of 127 November records published) is recorded separately as BLOCKED and is NEVER promoted into the H10 gate decision. Do not re-probe November 2026 before 2026-11-30.
 
-If, before 2026-11-30, you find another unblocked task, prefer a bounded no-cost action that produces a verifiable artifact/test/audit and leaves clean green state. Do NOT write a bare "hold" memo as the only output. Add real value (state-consistency repair, source-coverage, tests, red-team) or explicitly record that no unblocked task remains (the current pre-gate state records exactly that, backed by the frontier re-audit and the whole-tree integrity audit above). Do NOT re-consolidate the handoff again unless it has re-accumulated duplicate hold entries: check with `python3 -m unittest tests.test_handoff_session_entries` and only consolidate if a real degeneration has reappeared (the `test_handoff_does_not_degenerate_into_a_wall_of_hold_entries` guard fails the suite if the wall re-forms; it currently counts 2 hold entries, below the ceiling of 3, so the next session that adds a hold still has room). When you do edit the handoff, re-run that guard AND the full suite before claiming green.
+If, before 2026-11-30, you find another unblocked task, prefer a bounded no-cost action that produces a verifiable artifact/test/audit and leaves clean green state. Do NOT write a bare "hold" memo as the only output. Add real value (state-consistency repair, source-coverage, tests, red-team) or explicitly record that no unblocked task remains (the current pre-gate state records exactly that, backed by the frontier re-audit and the whole-tree integrity audit above). Do NOT re-consolidate the handoff again unless it has re-accumulated duplicate hold entries: check with `python3 -m unittest tests.test_handoff_session_entries` and only consolidate if a real degeneration has reappeared (the `test_handoff_does_not_degenerate_into_a_wall_of_hold_entries` guard fails the suite if the wall re-forms; it currently counts 3 hold entries, at the ceiling of 3, so the next session that adds a hold would exceed the ceiling and must consolidate older holds or find a bounded unblocked non-hold task before the gate). When you do edit the handoff, re-run that guard AND the full suite before claiming green.
 
 IMPORTANT for this session's guard: if you write a new `research_state/session_verifications/session_verify_<ts>.json` file, you MUST also register a matching `session_record_*` block in `research_state/run_manifest.json` (via python3 scripts/record_session_record.py <record.json>) before ending, or `tests/test_state_consistency.py::test_newest_on_disk_session_verify_is_registered_in_manifest` will fail. After adding/removing tests, re-run python3 scripts/record_test_claim.py to refresh the snapshot (fingerprint + count).
 
@@ -26,10 +26,10 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-26T10:38:11Z, this session)
+## Verified state (2026-11-26T15:01:12Z, this session)
 
 - **Remote persistence:** this session started from a clean working tree at the harness checkpoint; this session's durable-state updates are left uncommitted for the next checkpoint; no history rewritten.
-- **Verification state:** `python3 -m compileall -q scripts tests` OK re-confirmed this session; newest on-disk verification record is `session_verify_20261126T103811Z.json` (written and registered this session).
+- **Verification state:** `python3 -m compileall -q scripts tests` OK re-confirmed this session; newest on-disk verification record is `session_verify_20261126T103811Z.json` (written and registered previous session, 2026-11-26T10:38:11Z; repo state unchanged since).
 - **Test suite:** full `python3 -m unittest discover -s tests` -> **1476 run, 1476 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**.
 - **Durable-state guards:** `tests.test_handoff_session_entries.py` + `tests.test_task_message_probe_evidence.py` + `tests.test_continuous_research_contract.py` + `tests.test_state_consistency.py` -> 41/41 OK.
 - **Independent recomputation audit:** python3 scripts/forward_block_independent_recomputation_audit.py -> PASS 19/19 (default output to a temp dir).
