@@ -1,0 +1,16 @@
+{
+  "session_id": "session_verify_20261126T102433Z",
+  "timestamp_utc": "20261126T102433Z",
+  "action": "pre_gate_hold_with_full_verification",
+  "outcome": "BLOCKED_BY_HARD_DATE_GATE",
+  "verification": {
+    "compileall_ok": true,
+    "suite": "1472 run, 1472 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+    "durable_state_guards": "41/41 OK",
+    "frozen_hashes_byte_unchanged": true,
+    "probe_census_unchanged": true
+  },
+  "session_utc": "20261126T102433Z",
+  "suite_count": "1472/1472/0",
+  "compileall_ok": true
+}
