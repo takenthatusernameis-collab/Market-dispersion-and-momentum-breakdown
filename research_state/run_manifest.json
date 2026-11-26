@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "20261126T080600Z",
+  "last_updated_utc": "2026-11-26T08:30:08Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "1469/1469/0",
+  "latest_verified_test_claim": "1472/1472/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261126T080600Z",
+  "session_record_latest": "session_record_verify_20261126T082639Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -3335,7 +3335,8 @@
     "session_record_verify_20261126T071029Z",
     "session_record_verify_20261126T072056Z",
     "session_record_verify_20261126T073107Z",
-    "session_record_verify_20261126T080600Z"
+    "session_record_verify_20261126T080600Z",
+    "session_record_verify_20261126T082639Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -11259,5 +11260,44 @@
     "posture": "BLOCKED_BY_HARD_DATE_GATE",
     "gate_date": "2026-11-30",
     "notes": "Pre-gate hold session. Green-state re-verification only. No source/test changes, no new probe, no Option A, no new hypothesis (next_sequence_number stays 57)."
+  },
+  "session_record_verify_20261126T082639Z": {
+    "session_id": "session_verify_20261126T082639Z",
+    "timestamp_utc": "20261126T082639Z",
+    "action": "pre_gate_hold_with_state_consistency_guard_addition",
+    "outcome": "BLOCKED_BY_HARD_DATE_GATE",
+    "verification": {
+      "compileall_ok": true,
+      "suite": "1472 run, 1472 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "41/41 OK",
+      "frozen_hashes_byte_unchanged": true,
+      "probe_census_unchanged": true
+    },
+    "session_utc": "20261126T082639Z",
+    "suite_count": "1472/1472/0",
+    "compileall_ok": true,
+    "durable_state_guards_ok": true,
+    "frozen_hashes": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    },
+    "posture": "BLOCKED_BY_HARD_DATE_GATE",
+    "gate_date": "2026-11-30",
+    "notes": "Pre-gate hold session with a real value-add (not a bare hold): added tests/test_probe_canonical_block_fields_pinned.py (3 tests) pinning the structured canonical_forward_block copies (sha256, n_formations, high_low_diff_net_1x, data_cutoff_utc, last_allowed_formation_date, block_sealed) inside all four frontier/manifest probe summaries (latest_archive_probe and latest_november_2026_probe) against the frozen canonical block resolved from its committed git blob, with a synthetic-drift red-team. Closes a single-source-of-truth gap: previously only the frontier archive sha256 was pinned and no numeric structured field in any summary was checked against the frozen block. Suite 1469 -> 1472 (+3). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched. No new probe, no Option A, no new hypothesis (next_sequence_number stays 57)."
   }
 }
