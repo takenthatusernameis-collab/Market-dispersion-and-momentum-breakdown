@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-26T20:17:32Z",
+  "recorded_utc": "2026-11-26T20:35:54Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1495,
-  "tests_ok": 1495,
+  "tests_run": 1499,
+  "tests_ok": 1499,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1495/1495/0",
-  "input_fingerprint": "fd7f0582a504fb1fb4b3f15fe8d317415e0b223170741abfd38b5e058e19e1e0",
+  "claim": "1499/1499/0",
+  "input_fingerprint": "ea01e0c4b2bb3818f5b6498c2dee7684d9c8c3a8f2695b15b6190b924e0fb78b",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -871,6 +871,10 @@
       "sha256": "8fdda1c528ae42de32c336d8900cc4823aa81a1b41f54e9eeea519f5e268ad95"
     },
     {
+      "path": "tests/test_task_message_guard_count.py",
+      "sha256": "40f9121e1a8e8b51a142f3b2a97dcd8287e6e5e92d6493cebc2e87534f571df6"
+    },
+    {
       "path": "tests/test_task_message_next_sequence_number.py",
       "sha256": "b63b90285cb4ec0fa15a1ed6de9abc2dc93a319efa121af71843e6afb9f8adc3"
     },
@@ -891,5 +895,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 220
+  "input_file_count": 221
 }
