@@ -151,6 +151,61 @@ class ProbeGateLogicTests(unittest.TestCase):
         self.assertEqual(out["cutoff_gate"], "UNBLOCKED")
 
 
+class MonthlyPublishedRequiresBothEndpointsTests(unittest.TestCase):
+    """``monthly_published`` must require BOTH monthly endpoints to be HTTP 200.
+
+    ``refresh_free_data.py`` consumes the monthly klines AND the monthly
+    fundingRate zip for a month, so a month is usable only when both are
+    published. The gate tests above exercise ``main()`` with both endpoints 200
+    or both 404, so the partial-publication branch -- one monthly endpoint 200
+    while the other is still 404 -- was never pinned. That branch is the real
+    case (the two archives can publish on different days) and the exact hazard
+    the function guards against: a weakened "any monthly endpoint 200" rule
+    would return True on a half-published month and let ``main()`` print a false
+    UNBLOCKED. Pin every combination directly against ``monthly_published``.
+    """
+
+    def _results(self, klines_status, funding_status):
+        return [
+            {"url": probe.monthly_kline_url("BTCUSDT", "2026-10"), "status": klines_status, "bytes": 0, "error": None},
+            {"url": probe.monthly_funding_url("BTCUSDT", "2026-10"), "status": funding_status, "bytes": 0, "error": None},
+        ]
+
+    def test_both_monthly_endpoints_200_is_published(self):
+        self.assertTrue(
+            probe.monthly_published(self._results(200, 200), "BTCUSDT", "2026-10")
+        )
+
+    def test_both_monthly_endpoints_404_is_not_published(self):
+        self.assertFalse(
+            probe.monthly_published(self._results(404, 404), "BTCUSDT", "2026-10")
+        )
+
+    def test_klines_200_funding_404_is_not_published(self):
+        # Klines published but funding not yet: NOT a complete month.
+        self.assertFalse(
+            probe.monthly_published(self._results(200, 404), "BTCUSDT", "2026-10")
+        )
+
+    def test_klines_404_funding_200_is_not_published(self):
+        # Funding published but klines not yet: NOT a complete month.
+        self.assertFalse(
+            probe.monthly_published(self._results(404, 200), "BTCUSDT", "2026-10")
+        )
+
+    def test_missing_endpoints_are_not_published(self):
+        self.assertFalse(probe.monthly_published([], "BTCUSDT", "2026-10"))
+
+    def test_daily_200_does_not_count_as_published(self):
+        # Daily klines can 200 for a partial set of days while the monthly
+        # archives (the ones the pipeline consumes) are still 404.
+        results = self._results(404, 404) + [
+            {"url": probe.daily_kline_url("BTCUSDT", "2026-10", 30), "status": 200, "bytes": 1, "error": None},
+            {"url": probe.daily_kline_url("BTCUSDT", "2026-10", 31), "status": 200, "bytes": 1, "error": None},
+        ]
+        self.assertFalse(probe.monthly_published(results, "BTCUSDT", "2026-10"))
+
+
 class ProbeRecordShapeTests(unittest.TestCase):
     def test_record_has_required_fields(self):
         rec = {
