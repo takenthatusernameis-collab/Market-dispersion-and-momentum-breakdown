@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-26T16:26:02Z",
+  "recorded_utc": "2026-11-26T17:21:44Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1482,
-  "tests_ok": 1482,
+  "tests_run": 1486,
+  "tests_ok": 1486,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1482/1482/0",
-  "input_fingerprint": "591a235ec3b681a2570e7eaa8de86ff84685aee7ce470a7e109810dffc49ab0a",
+  "claim": "1486/1486/0",
+  "input_fingerprint": "22a0c1b8be7f91c5014f5f9bafb7c4db3ab7a6bf5ae349e2f26d42b16ece7149",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -412,7 +412,7 @@
     },
     {
       "path": "tests/test_cutoff_probe.py",
-      "sha256": "cdbc1064b97045aab7c53014f27b27d468f2dedc9060224d8ee5f3a8e198ef77"
+      "sha256": "1da8ba309ddb7320bc53b7d8a3f2bafe3ba9bdc1c2a24bd7c9d48f9647e47e14"
     },
     {
       "path": "tests/test_data_pipeline.py",
@@ -628,7 +628,7 @@
     },
     {
       "path": "tests/test_h10_gate_vs_november_probe.py",
-      "sha256": "7ce15118a040488d5973e61d8527f8d9cb00b92f68c96667442045683c6687d7"
+      "sha256": "64551d3491704b5bc37a37a1245a16d4b2702b41971c1dba3a6334dffe05d046"
     },
     {
       "path": "tests/test_h10_maturity_independent_recompute.py",

@@ -68,7 +68,7 @@ class H10GateIsDecidedByPublishedMonthTests(unittest.TestCase):
             self.assertTrue(r["gate_met_by_month_end"])
             self.assertTrue(r["archive_alive"])
 
-    def test_h10_gate_date_required_is_october_2029(self):
+    def test_h10_gate_date_required_is_2026_10_29(self):
         self.assertEqual(H10_GATE_DATE_REQUIRED, "2026-10-29")
 
     def test_latest_published_record_unblocks_h10(self):

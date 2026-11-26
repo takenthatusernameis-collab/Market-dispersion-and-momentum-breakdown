@@ -72,7 +72,7 @@ class ProbeUrlConstructionTests(unittest.TestCase):
         self.assertTrue(probe.ARCHIVE.startswith("https://"))
         self.assertIn("data.binance.vision", probe.ARCHIVE)
 
-    def test_gate_date_is_october_2029(self):
+    def test_gate_date_is_2026_10_29(self):
         self.assertEqual(probe.GATE_DATE, "2026-10-29")
 
     def test_control_month_is_september(self):
@@ -204,6 +204,83 @@ class MonthlyPublishedRequiresBothEndpointsTests(unittest.TestCase):
             {"url": probe.daily_kline_url("BTCUSDT", "2026-10", 31), "status": 200, "bytes": 1, "error": None},
         ]
         self.assertFalse(probe.monthly_published(results, "BTCUSDT", "2026-10"))
+
+
+class MainGateMetByMonthEndDerivationTests(unittest.TestCase):
+    """``main()`` must derive ``gate_met_by_month_end`` from the target-month
+    string, not from publication status or archive liveness.
+
+    The gate has a STRUCTURAL date requirement -- the cutoff month-end must be
+    on/after ``GATE_DATE`` (2026-10-29) -- that is independent of whether the
+    archive is published and alive. ``main()`` computes it as
+    ``target >= "2026-10"``. The ``ProbeGateLogicTests`` above exercise a local
+    ``_gate`` helper that takes ``gate_met`` as an explicit argument, so they
+    never verify that ``main()`` actually derives that flag from the
+    ``--probe-month`` value. A regression that hardcoded
+    ``gate_met_by_month_end = True`` (or flipped the comparison to ``>`` or
+    ``==``) would leave every existing test green while letting a pre-gate month
+    print UNBLOCKED. Pin the derivation through the real ``main()`` entry point
+    for a pre-gate month, the gate month itself, and a strictly later month.
+    """
+
+    def _monthly_results(self, ym, published):
+        k_status = 200 if published else 404
+        f_status = 200 if published else 404
+        return [
+            {"url": probe.monthly_kline_url("BTCUSDT", ym), "status": k_status, "bytes": 0, "error": None},
+            {"url": probe.monthly_funding_url("BTCUSDT", ym), "status": f_status, "bytes": 0, "error": None},
+        ]
+
+    def _run_main(self, ym, published):
+        """Drive ``main()`` with ``probe_month`` mocked (target first, then the
+        control month) and ``Path`` writes suppressed, returning
+        ``(returncode, printed_summary_dict)``. Mirrors the mocking pattern the
+        existing ``main()`` tests use so no record is written to disk."""
+        with mock.patch.object(probe, "probe_month") as pm:
+            pm.side_effect = (
+                self._monthly_results(ym, published),  # target month
+                _control_results(),                    # control month (alive)
+            )
+            with mock.patch.object(Path, "mkdir"), \
+                 mock.patch.object(Path, "write_text"), \
+                 mock.patch.object(sys, "argv", ["probe", "--probe-month", ym]):
+                buf = io.StringIO()
+                with mock.patch.object(sys, "stdout", buf):
+                    rc = probe.main()
+        return rc, json.loads(buf.getvalue())
+
+    def test_pre_gate_month_is_not_gate_met_even_if_published(self):
+        # 2026-09 ends 2026-09-30, before the required 2026-10-29 cutoff: the
+        # structural date requirement fails, so the gate stays BLOCKED even when
+        # the month is published and the archive is alive.
+        rc, out = self._run_main("2026-09", published=True)
+        self.assertFalse(out["gate_met_by_month_end"])
+        self.assertEqual(out["cutoff_gate"], "BLOCKED")
+        self.assertNotEqual(rc, 0)
+
+    def test_gate_month_is_gate_met_when_published(self):
+        # 2026-10 ends 2026-10-31, on/after the 2026-10-29 cutoff.
+        rc, out = self._run_main("2026-10", published=True)
+        self.assertTrue(out["gate_met_by_month_end"])
+        self.assertEqual(out["cutoff_gate"], "UNBLOCKED")
+        self.assertEqual(rc, 0)
+
+    def test_strictly_later_month_is_gate_met(self):
+        # A month after the gate month also satisfies the structural requirement
+        # (>=, not ==): 2027-01 ends well after 2026-10-29.
+        rc, out = self._run_main("2027-01", published=True)
+        self.assertTrue(out["gate_met_by_month_end"])
+        self.assertEqual(out["cutoff_gate"], "UNBLOCKED")
+        self.assertEqual(rc, 0)
+
+    def test_pre_gate_month_blocked_despite_published_and_alive(self):
+        # The structural date gate is decisive on its own: published + alive is
+        # not sufficient for a pre-gate month.
+        _rc, out = self._run_main("2026-09", published=True)
+        self.assertTrue(out["target_published"])
+        self.assertTrue(out["archive_alive"])
+        self.assertFalse(out["gate_met_by_month_end"])
+        self.assertEqual(out["cutoff_gate"], "BLOCKED")
 
 
 class ProbeRecordShapeTests(unittest.TestCase):
