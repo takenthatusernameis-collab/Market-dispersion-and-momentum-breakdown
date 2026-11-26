@@ -1,6 +1,6 @@
 {
   "session_id": "session_verify_20261126T092500Z",
-  "timestamp_utc": "2026-11-26T09:25:00Z",
+  "timestamp_utc": "20261126T092500Z",
   "action": "pre_gate_hold_with_fresh_audit_rerun",
   "outcome": "BLOCKED_BY_HARD_DATE_GATE",
   "verification": {
@@ -13,7 +13,7 @@
     "maturity_timeline_audit": "PASS 42/42 (read-only, EXPLORATORY_ONLY)",
     "frozen_tree_integrity_audit": "PASS (five pins match disk AND git blob)"
   },
-  "session_utc": "20261126T091850Z",
+  "session_utc": "20261126T092500Z",
   "suite_count": "1472/1472/0",
   "compileall_ok": true
 }

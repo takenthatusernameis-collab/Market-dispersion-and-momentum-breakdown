@@ -1,0 +1,20 @@
+{
+  "session_id": "session_verify_20261126T093408Z",
+  "timestamp_utc": "20261126T093408Z",
+  "action": "pre_gate_hold_with_timestamp_format_fix",
+  "outcome": "BLOCKED_BY_HARD_DATE_GATE",
+  "verification": {
+    "compileall_ok": true,
+    "suite": "1472 run, 1472 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+    "durable_state_guards": "41/41 OK",
+    "frozen_hashes_byte_unchanged": true,
+    "probe_census_unchanged": true,
+    "independent_recomputation_audit": "PASS 19/19 (read-only, output to /tmp)",
+    "maturity_timeline_audit": "PASS 42/42 (read-only, EXPLORATORY_ONLY)",
+    "frozen_tree_integrity_audit": "PASS (five pins match disk AND git blob)",
+    "timestamp_format_fix": "Fixed ISO vs compact format mismatch in session_record_verify_20261126T092500Z that caused test_session_record_latest_points_at_the_most_recent_record to fail"
+  },
+  "session_utc": "20261126T093408Z",
+  "suite_count": "1472/1472/0",
+  "compileall_ok": true
+}
