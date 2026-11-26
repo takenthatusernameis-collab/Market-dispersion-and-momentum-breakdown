@@ -1,0 +1,31 @@
+{
+  "session_id": "session_verify_20261126T152025Z",
+  "timestamp_utc": "20261126T152025Z",
+  "suite_summary": "1476 run, 1476 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+  "durable_state_guards": "41/41 OK",
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "MISSING",
+    "frontier": "MISSING"
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "total": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "total": 127,
+      "published": 0
+    },
+    "newest_probe_file": "",
+    "newest_probe_fetched_at": ""
+  },
+  "independent_recomputation_audit": "PASS 19/19",
+  "frozen_tree_integrity_audit": "PASS",
+  "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY, block_sealed=False expected for immature H10)",
+  "registry_next_sequence_number": 57,
+  "notes": "Pre-gate hold session. Re-verified clean green state read-only. All audits pass. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched."
+}
