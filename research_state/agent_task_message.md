@@ -1,4 +1,4 @@
-## Agent Task Message — 2026-11-26T06:21:03Z (next session)
+## Agent Task Message — 2026-11-26T06:27:08Z (next session)
 
 ## Initial task for next agent
 
@@ -26,7 +26,7 @@ At/after 2026-11-30, execute Option A: run `python3 scripts/probe_cutoff_gate.py
 
 Feasibility note (H12/H35): at a 2026-11-30 cutoff the fresh-block window holds only ~31 in-block formations (~1 classifiable), while the trailing-decile state rule needs >=30 prior in-block dispersions. M1 earliest ~2026-12-01; M2 earliest ~2026-12-09; M3 gated on M2 plus threshold/Holm. The 2026-11-30 gate yields NO confirmatory-eligible look.
 
-## Verified state (2026-11-26T06:13:31Z, this session)
+## Verified state (2026-11-26T06:27:08Z, this session)
 
 - **Remote persistence:** this session started from a clean working tree at the harness checkpoint; this session's durable-state updates are left uncommitted for the next checkpoint; no history rewritten.
 - **Verification state:** `python3 -m compileall -q scripts tests` OK re-confirmed this session; one new test file added (`tests/test_next_experiment_status_consistency.py`); newest on-disk verification record is `session_verify_20261126T061331Z.json` (written and registered this session).
