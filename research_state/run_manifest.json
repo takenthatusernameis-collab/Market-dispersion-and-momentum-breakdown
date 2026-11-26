@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "20261126T172340Z",
+  "last_updated_utc": "20261126T181326Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261126T172340Z",
+  "session_record_latest": "session_record_verify_20261126T181326Z",
   "session_record_verify_20261114T165020Z": {
     "action": "Added hermetic unit tests for scripts/build_universe.py and scripts/discover_candidates.py (bounded, no-cost, genuinely new gap from prior task message).",
     "artifacts_changed": [
@@ -11845,5 +11845,41 @@
     },
     "registry_next_sequence_number": 57,
     "notes": "Pre-gate hold session (today 2026-11-26 < hard date gate 2026-11-30; confirmatory H10 track remains BLOCKED_BY_HARD_DATE_GATE). Did NOT re-probe November 2026, did NOT execute Option A, did NOT allocate a new hypothesis (next_sequence_number stays 57). Value-add (not a bare hold): closed a real test-coverage gap in scripts/probe_cutoff_gate.py -- main() derives gate_met_by_month_end as target >= '2026-10' (the structural date requirement of the cutoff gate, independent of publication/liveness), but the existing ProbeGateLogicTests only exercised a local _gate helper with gate_met passed in, so a regression hardcoding that flag True would have left the suite green while letting a pre-gate month print UNBLOCKED; the new MainGateMetByMonthEndDerivationTests drives the real main() for 2026-09 (pre-gate -> BLOCKED), 2026-10 (gate month -> UNBLOCKED) and 2027-01 (later -> UNBLOCKED). Also corrected two misleading test names that said october_2029 while asserting 2026-10-29. Regenerated the verified-test-claim snapshot (now 1486/1486/0, 218 input files) via its single writer. Re-verified clean green state read-only: compileall OK; full suite 1486 run / 1486 OK; durable-state guards 41/41; five frozen hashes byte-unchanged vs disk AND git blob; independent recomputation audit PASS 19/19; frozen tree integrity audit PASS; maturity timeline audit PASS 42/42 (EXPLORATORY_ONLY, deterministic, no artifact diff); probe census unchanged 398 real probes. Wall-of-holds consolidated (older holds merged) so the handoff stays within its ceiling of 3 after adding this session's hold entry. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched."
+  },
+  "session_record_verify_20261126T181326Z": {
+    "session_id": "session_verify_20261126T181326Z",
+    "timestamp_utc": "20261126T181326Z",
+    "action": "completed pending durable-state artifact updates from the 2026-11-26T17:23:40Z hold session: registered session_verify_20261126T181326Z.json + matching run_manifest session record, consolidated the 17:23:40Z and 17:03:28Z hold blocks into one Previous session block under 17:23:40Z, kept the 16:29:01Z consolidated block, rewrote agent_handoff.md (title -> 2026-11-26T18:13:26Z) and agent_task_message.md for the next agent; no new economic evidence, no re-probe of probe_month=2026-11, no Option A execution, no new hypothesis allocated (registry next_sequence_number stays 57)",
+    "outcome": "durable_state_artifact_updates_complete_hold_for_date_gate",
+    "verification": {
+      "suite": "1486 run, 1486 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+      "durable_state_guards": "41/41 OK",
+      "frozen_hashes_byte_unchanged_vs_disk_and_git_blob": true,
+      "independent_recomputation_audit": "PASS 19/19",
+      "frozen_tree_integrity_audit": "PASS",
+      "maturity_timeline_audit": "PASS 42/42 (EXPLORATORY_ONLY)",
+      "probe_census_unchanged": true
+    },
+    "frozen_hashes": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    },
+    "registry_next_sequence_number": 57,
+    "notes": "Pre-gate hold session (today 2026-11-26 < hard date gate 2026-11-30; confirmatory H10 track remains BLOCKED_BY_HARD_DATE_GATE). Did NOT re-probe November 2026, did NOT execute Option A, did NOT allocate a new hypothesis (next_sequence_number stays 57). No new economic evidence this session; completed pending durable-state artifact updates (session_verify registration, manifest latest/last_updated, handoff hold consolidation, task message rewrite). Wall-of-holds held at ceiling of 3: consolidated 17:23:40Z + 17:03:28Z into one block under 17:23:40Z, kept 16:29:01Z block, added this session as the newest hold entry. No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched."
   }
 }
