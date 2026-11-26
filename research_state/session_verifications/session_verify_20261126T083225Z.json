@@ -1,0 +1,42 @@
+{
+  "session_id": "session_verify_20261126T083225Z",
+  "timestamp_utc": "20261126T083225Z",
+  "action": "pre_gate_hold_with_handoff_consolidation_and_fresh_independent_recomputation",
+  "outcome": "BLOCKED_BY_HARD_DATE_GATE",
+  "verification": {
+    "compileall_ok": true,
+    "suite": "1472 run, 1472 OK, 0 failures, 0 errors, 8 skipped, EXIT=0",
+    "durable_state_guards": "41/41 OK",
+    "frozen_hashes_byte_unchanged": true,
+    "probe_census_unchanged": true,
+    "independent_recomputation_audit": "PASS 19/19 (read-only, output to /tmp)",
+    "maturity_timeline_audit": "PASS 42/42 (read-only, EXPLORATORY_ONLY)",
+    "frozen_tree_integrity_audit": "PASS (five pins match disk AND git blob)"
+  },
+  "session_utc": "20261126T083225Z",
+  "suite_count": "1472/1472/0",
+  "compileall_ok": true,
+  "durable_state_guards_ok": true,
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  },
+  "posture": "BLOCKED_BY_HARD_DATE_GATE",
+  "gate_date": "2026-11-30",
+  "notes": "Pre-gate hold session with a real value-add (not a bare hold): consolidated the degenerate handoff. The handoff had re-accumulated a wall of near-identical BLOCKED_BY_HARD_DATE_GATE hold entries (at the 3-entry structural ceiling, with duplicated '# Agent Handoff' titles and mixed '(previous session)'/'(prior current session)' heading formats the structural guard does not even recognize) into a clean newest-first narrative of the newest three sessions plus one consolidated earlier-sessions block; the full per-session audit trail remains in research_state/session_verifications/ and run_manifest.json session_records. Also re-ran, read-only, the independent recomputation audit (PASS 19/19, independently reproducing the canonical H004V106 high_low_diff_net_1x from the sealed inputs), the H10 maturity timeline audit (PASS 42/42, EXPLORATORY_ONLY, block_sealed=False expected for immature H10) and the whole-tree frozen-artifact integrity audit (PASS, five pins match disk AND git blob). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched. No new probe, no Option A, no new hypothesis (next_sequence_number stays 57). No unblocked bounded task remains before the gate (frontier catalog exhausted per the 2026-11-25 -003 re-audit: 220 verified + 6127 blocked = 6347 walked, 0 newly discovered)."
+}
