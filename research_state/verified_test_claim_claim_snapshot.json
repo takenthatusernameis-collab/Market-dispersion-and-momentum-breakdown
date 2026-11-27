@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-27T10:55:44Z",
+  "recorded_utc": "2026-11-27T15:37:12Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1565,
-  "tests_ok": 1565,
+  "tests_run": 1570,
+  "tests_ok": 1570,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1565/1565/0",
-  "input_fingerprint": "3a901bb4a63b062d50b7366d35102d1d1ffa65f4264269904118c2720abd7bb5",
+  "claim": "1570/1570/0",
+  "input_fingerprint": "9b1d1c35fb534931716d032b06b158da65ee7a69cd0761171f4f0bfc74a44cf3",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -571,6 +571,10 @@
       "sha256": "ddcb8cc23aeba7ca9feb069679b6c60402d9f8d612d0d9c990d6e2c23894461f"
     },
     {
+      "path": "tests/test_forward_block_overlap_aware_audit_committed.py",
+      "sha256": "d61de95f957559b375458bcf36b3d683d0d941087839b8e6834cba066a285bf1"
+    },
+    {
       "path": "tests/test_forward_block_overlap_aware_interval.py",
       "sha256": "4b7b00547787ef2a1a755d927bdef23d2b9f8d0f11eb911a250d0913edc3fe3e"
     },
@@ -935,5 +939,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 231
+  "input_file_count": 232
 }
