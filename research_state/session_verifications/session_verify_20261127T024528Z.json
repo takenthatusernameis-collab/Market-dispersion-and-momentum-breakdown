@@ -1,0 +1,47 @@
+{
+  "session_id": "session_verify_20261127T024528Z",
+  "timestamp_utc": "20261127T024528Z",
+  "action": "held confirmatory H10 track for hard date gate 2026-11-30 (pre-gate, current UTC 2026-11-27T02:45:28Z < gate); did NOT re-probe probe_month=2026-11; did NOT execute Option A; did not re-run completed hypotheses beyond the suite; did not allocate a new hypothesis (registry next_sequence_number stays 57); did NOT append a fourth hold entry (ceiling 3 already reached by 2026-11-27T02:08:15Z, 01:02:10Z, 00:47:57Z); bounded no-cost value-add instead: regenerated the verified test claim snapshot via scripts/record_test_claim.py after the stale snapshot fingerprint failed tests/test_verified_test_claim_guard.py::test_snapshot_fingerprint_matches_inventory on the uncommitted test file tests/test_h10_fresh_block_prereg_compliance_audit_committed.py (7 tests, added previously but never folded into the snapshot); the refresh repaired the manifest's latest_verified_test_claim to 1536/1536/0 with 226 suite-input files",
+  "outcome": "compile OK; full suite python3 -m unittest discover -s tests -> 1536 run, 1536 OK, 0 failures, 0 errors, 8 skipped, EXIT=0 (durable-state guards included in suite pass); tests/test_handoff_session_entries 9/9 OK (no hold-entry degeneration; ceiling 3 not exceeded); durable-state guards 89/89 OK; working tree clean apart from regenerated research_state/verified_test_claim_claim_snapshot.json and research_state/run_manifest.json (latest_verified_test_claim 1529/1529/0 -> 1536/1536/0); frozen hashes byte-unchanged vs disk and git blob (canonical 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390; h10_fresh 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f; grid_result_ledger 0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c; grid v3 config 1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176; frontier 9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e); H10 cutoff gate UNBLOCKED (October 2026 published); November 2026 probe recorded separately as BLOCKED, never promoted into the H10 gate; frontier exhausted per the 2026-11-25 -003 re-audit (220 verified + 6127 blocked = 6347 walked, 0 newly discovered), so no unblocked discovery/expansion task exists before a new data vintage",
+  "verification": {
+    "compile_check": true,
+    "test_suite": "1536 run, 1536 OK, 0 failures, 0 errors, 8 skipped",
+    "suite_run": 1536,
+    "suite_ok": 1536,
+    "suite_failures": 0,
+    "suite_errors": 0,
+    "suite_skipped": 8,
+    "handoff_session_entries": "9/9 OK",
+    "durable_state_guards_ok": 89,
+    "frozen_hashes_verified": true,
+    "probe_census": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_by_name": "cutoff_probe_20261123T071225Z.json",
+      "newest_probe_month": "2026-10",
+      "newest_published": true
+    },
+    "registry": {
+      "next_sequence_number": 57
+    },
+    "frozen_hashes": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "run_manifest": {
+      "latest_verified_test_claim": "1536/1536/0",
+      "session_record_latest": "session_record_verify_20261127T024528Z",
+      "next_experiment_status": "H10_EVALUATED_NULL_DIFF_IMMATURE_AWAITING_NOVEMBER_2026_MATURITY"
+    }
+  }
+}
