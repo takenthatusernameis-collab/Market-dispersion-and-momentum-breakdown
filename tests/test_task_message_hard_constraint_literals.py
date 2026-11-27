@@ -52,9 +52,11 @@ MATURITY_SRC_PATH = ROOT / "scripts" / "h10_maturity_timeline_audit.py"
 MIN_ASSETS_RE = re.compile(r"MIN_ASSETS_DECILES\s*=\s*(\d+)")
 # ``30-day maturity`` -- the leading integer is the forward horizon in days.
 HORIZON_MATURITY_RE = re.compile(r"(\d+)-day\s+maturity", re.I)
-# ``alpha_k = 0.05/(k*(k+1))`` -- capture through the closing paren; whitespace
-# is stripped before comparison so the compact and spaced forms agree.
-ALPHA_RULE_RE = re.compile(r"alpha_k\s*=\s*0\.05\s*/\s*\(\s*k\s*\*\s*\(\s*k\s*\+\s*1\s*\)\s*\)")
+# ``alpha_k = <n>/(k*(k+1))`` -- capture the coefficient so any literal (0.05,
+# 0.10, ...) is parsed faithfully; drift is then caught at the comparison step,
+# not by silently returning None. Whitespace is stripped before comparison so the
+# compact and spaced forms agree.
+ALPHA_RULE_RE = re.compile(r"alpha_k\s*=\s*(\d+(?:\.\d+)?)\s*/\s*\(\s*k\s*\*\s*\(\s*k\s*\+\s*1\s*\)\s*\)")
 # The trailing-decile state rule is named in prose; the source owns the canonical
 # value ``trailing_window_outer_deciles``.
 STATE_RULE_PHRASE = "trailing-decile state rule"
