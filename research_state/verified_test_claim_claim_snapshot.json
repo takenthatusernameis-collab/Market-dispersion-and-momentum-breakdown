@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-27T00:50:34Z",
+  "recorded_utc": "2026-11-27T01:01:58Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1512,
-  "tests_ok": 1512,
+  "tests_run": 1519,
+  "tests_ok": 1519,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1512/1512/0",
-  "input_fingerprint": "ad30af0e69f98e326a2bf9209b92bf8f380af76e2d393b7c4e8ee6b0c69f50c6",
+  "claim": "1519/1519/0",
+  "input_fingerprint": "531d8d04f6c72e5d3e941b9796a0e60e2ff394c5aa9e0cd372955d2fe756c4d2",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -575,6 +575,10 @@
       "sha256": "64ff1d6dac6c6d881cedd990b8f70774fa20d58a8ab78302f68d268cb74d4e85"
     },
     {
+      "path": "tests/test_frozen_tree_integrity_audit_committed.py",
+      "sha256": "9863d9d60ec4a42cd28b74d41563e4714ff0777d7a973cdbc9e1f32e1f573e4f"
+    },
+    {
       "path": "tests/test_frozen_tree_integrity_audit_seams.py",
       "sha256": "5bb3ac705be4b0236d7e1c9545821f52385da972a8654b07ec856c9aaba52fb2"
     },
@@ -903,5 +907,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 223
+  "input_file_count": 224
 }
