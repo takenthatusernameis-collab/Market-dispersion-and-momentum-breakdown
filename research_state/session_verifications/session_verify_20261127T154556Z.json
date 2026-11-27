@@ -1,0 +1,41 @@
+{
+  "session_id": "session_verify_20261127T154556Z",
+  "timestamp_utc": "20261127T154556Z",
+  "suite_tests_run": 1575,
+  "suite_tests_ok": 1575,
+  "suite_failures": 0,
+  "suite_errors": 0,
+  "suite_skipped": 8,
+  "suite_exit_code": 0,
+  "guard_tests_run": 89,
+  "guard_tests_ok": 89,
+  "guard_failures": 0,
+  "guard_errors": 0,
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  },
+  "compileall_ok": true,
+  "durable_state_guards": "89/89",
+  "next_sequence_number": 57,
+  "gate_date": "2026-11-30",
+  "frontier_exhaustion_claim": "220 verified + 6127 blocked = 6347 walked, 0 newly discovered",
+  "posture": "CONSOLIDATED_HOLD",
+  "value_add": "held the confirmatory H10 track for the hard date gate 2026-11-30 with a bounded no-cost value-add instead of a bare hold, and repaired an inherited durable-state drift. The prior session (session_verify_20261127T153800Z.json) committed its session record and refreshed the verified-test-claim snapshot to 1570 but never updated the handoff/task message, so the handoff still quoted session_verify_20261127T105750Z.json while the newest record on disk was 153800Z; test_handoff_quotes_the_newest_session_verification_record was the sole suite failure (1570 run, 1 failure). Value-add: added tests/test_pointintime_eligibility_audit_committed.py (5 tests), a committed-disk verdict pin for scripts/pointintime_eligibility_audit.py (H57). This closes a single-source-of-truth gap: the committed point-in-time eligibility audit artifact H004V106_pointintime_eligibility_2026-11-22T04-55-46Z.json was previously backed only by a static internal-self-consistency integration block (CommittedAuditIntegrationTests in test_pointintime_eligibility_audit.py) plus synthetic seam tests, neither of which re-derives the committed verdict from the REAL committed cap panels and klines inventory. The new guard re-runs the SAME read-only pipeline (build_audit) against the committed inputs (no file is written) and pins the committed artifact's load-bearing fields (label POINT_IN_TIME_ELIGIBLE, status EXPLORATORY_ONLY, window 2025-01..2026-10 n_months 22, n_symbols 41, empty assets_without_cap/snapshot_like, partial_klines list, strict/asof breadth min 29.0 over 22 months, rank_provenance NOT_PROVEN_COMPLETE, decision label, all_frozen_hashes_match) to that fresh recomputation; only computed_utc is allowed to differ. A synthetic-drift self-test proves the pin is a real constraint: a flipped committed label must not equal a fresh run, and emptying the legacy cap input must move recomputed fields (label -> POINT_IN_TIME_LIMITED, assets_without_cap non-empty, strict breadth min -> 0.0). Regenerated the verified-test-claim snapshot via scripts/record_test_claim.py (1570 -> 1575/1575/0, 8 skipped, 233 suite-input files). Did NOT re-probe probe_month=2026-11, did NOT execute Option A, did NOT allocate a new hypothesis (registry next_sequence_number stays 57), did NOT append a hold entry (ceiling 3). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.",
+  "next_action": "at/after 2026-11-30 execute Option A (see agent_task_message.md). Hold entries remain 3 (ceiling reached); run `python3 -m unittest tests.test_handoff_session_entries` next session and consolidate only if it reports degeneration. The durable audit trail is in research_state/session_verifications/ and run_manifest.json (newest record session_verify_20261127T154556Z.json)."
+}
