@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-27T01:01:58Z",
+  "recorded_utc": "2026-11-27T02:15:59Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1519,
-  "tests_ok": 1519,
+  "tests_run": 1529,
+  "tests_ok": 1529,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1519/1519/0",
-  "input_fingerprint": "531d8d04f6c72e5d3e941b9796a0e60e2ff394c5aa9e0cd372955d2fe756c4d2",
+  "claim": "1529/1529/0",
+  "input_fingerprint": "4086f73d4394f48bda42c528f5edd9d7cded9ad796274684b19cb4f4a97edc4d",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -445,6 +445,10 @@
     {
       "path": "tests/test_eval_forward_block_seams.py",
       "sha256": "f0eacd27729d85c22bf49d78726988e5e621bd1cfe6472bbb376ac2b20bd28d6"
+    },
+    {
+      "path": "tests/test_expanding_universe_eligibility_audit_committed.py",
+      "sha256": "11835cf6752e0960eacfd61fa60a5bd8039434416a53d87e357c34fcae626e98"
     },
     {
       "path": "tests/test_expanding_universe_eligibility_audit_seams.py",
@@ -907,5 +911,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 224
+  "input_file_count": 225
 }
