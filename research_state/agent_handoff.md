@@ -1,6 +1,6 @@
-# Agent Handoff — 2026-11-27T02:45:28Z (current session)
+# Agent Handoff — 2026-11-27T03:14:14Z (current session)
 
-## Session summary — 2026-11-27T02:45:28Z (this session)
+## Session summary — 2026-11-27T03:14:14Z (this session)
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-27T02:45:28Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a fourth hold entry (ceiling 3 already reached by 2026-11-27T02:08:15Z, 01:02:10Z, 00:47:57Z).
 - **Value-add this session (NOT a bare hold):** regenerated the verified test claim snapshot via `scripts/record_test_claim.py` after `tests/test_verified_test_claim_guard.py::test_snapshot_fingerprint_matches_inventory` failed on the stale snapshot (it did not include `tests/test_h10_fresh_block_prereg_compliance_audit_committed.py`, 7 tests, added previously but never folded into the snapshot). The refresh repaired `run_manifest.json:latest_verified_test_claim` from `1529/1529/0` to `1536/1536/0` with 226 suite-input files, making the full suite green again. This is a single-source-of-truth repair: the manifest's hand-quoted claim now matches the actual on-disk test inventory and the machine-readable snapshot. Registered `session_verify_20261127T024528Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261127T024528Z`).
