@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-26T23:53:13Z",
+  "recorded_utc": "2026-11-27T00:24:55Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
   "tests_run": 1507,
@@ -8,7 +8,7 @@
   "tests_failures": 0,
   "tests_skipped": 8,
   "claim": "1507/1507/0",
-  "input_fingerprint": "6c098f459ec8632b1cb685a78b5a8121c6ca83a8c055aab84657dc8b57fc6d49",
+  "input_fingerprint": "a281215d07e06ddbecdc3e0c0cb46e0245ae00d58602370f92f587dc86138762",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -700,7 +700,7 @@
     },
     {
       "path": "tests/test_option_a_runbook_cli.py",
-      "sha256": "c277b825a3c3b58e81d1e12778cef900c7a8cf8bbb02c018666bcaac5b7bf3f6"
+      "sha256": "2831029f6f113f147f5a9c617338f2acac4e1ecdf22b4ae6ba573aef0307a59e"
     },
     {
       "path": "tests/test_panel_acquisition_plan.py",

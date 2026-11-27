@@ -45,6 +45,11 @@ ARGPARSE_RE = re.compile(r"add_argument\(\s*['\"](--[a-z0-9-]+)['\"]")
 CANONICAL_DIR = "forward_block/"
 FRESH_DIR = "forward_block_h10_fresh/"
 
+# The Option A gate-day runbook consists of the two CLI commands quoted in the
+# task message. Other ``python3 scripts/...`` spans (e.g. documentation of a
+# no-arg audit that was already run) are not runbook commands and take no flags.
+OPTION_A_SCRIPTS = {"scripts/probe_cutoff_gate.py", "scripts/eval_forward_block.py"}
+
 
 def _runbook_spans():
     """Return [(script_relpath, span_text)] for every `python3 scripts/...` span."""
@@ -84,10 +89,13 @@ class OptionARunbookCliGuardTests(unittest.TestCase):
         self.assertGreater(len(spans), 0, "no `python3 scripts/...` runbook span found")
         for rel, span in spans:
             registered = _registered_flags(rel)
-            self.assertGreater(
-                len(registered), 0,
-                f"could not parse any add_argument flags from {rel}",
-            )
+            if rel in OPTION_A_SCRIPTS:
+                # CLI runbook commands must register at least one flag; a no-arg
+                # documentation span (e.g. the maturity-timeline audit) is exempt.
+                self.assertGreater(
+                    len(registered), 0,
+                    f"could not parse any add_argument flags from {rel}",
+                )
             for flag in _flag_tokens(span):
                 with self.subTest(script=rel, flag=flag):
                     self.assertIn(
