@@ -233,7 +233,7 @@ class CommittedF1CoverageStabilityAuditVerdictTests(unittest.TestCase):
             # The script's _latest_f1sens_artifact() will raise FileNotFoundError
             # which propagates as a failed audit; we just verify the audit logic
             # responds to input changes.
-            drifted = mod.main(return_artifact=True)
+            drifted = mod.audit()
         except FileNotFoundError:
             # Expected: the script fails when source is missing
             pass
