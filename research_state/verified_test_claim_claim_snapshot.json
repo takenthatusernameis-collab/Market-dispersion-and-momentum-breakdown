@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-28T04:27:57Z",
+  "recorded_utc": "2026-11-28T04:53:26Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1621,
-  "tests_ok": 1621,
+  "tests_run": 1626,
+  "tests_ok": 1626,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1621/1621/0",
-  "input_fingerprint": "d2b7e1658806d072830499759e3c2fd9d24cffa8ce16e42fb55f109c47ba8dcc",
+  "claim": "1626/1626/0",
+  "input_fingerprint": "274cc9961e6f47ea83e16d93c648035ff1da2d93e887b8ae86696b7ca8a99753",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -433,6 +433,10 @@
     {
       "path": "tests/test_dispersion_regime_conditioning.py",
       "sha256": "80e8d602cd345ba159e4d9028605c43bf0489bbae354142f10d5e2c477725012"
+    },
+    {
+      "path": "tests/test_dispersion_regime_conditioning_committed.py",
+      "sha256": "d627779555de59527b814bcde69f1e4bb1f647ed4244227be9f5858bacc72d29"
     },
     {
       "path": "tests/test_dispersion_regime_conditioning_seams.py",
@@ -979,5 +983,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 242
+  "input_file_count": 243
 }
