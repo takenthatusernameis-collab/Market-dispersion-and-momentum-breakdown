@@ -1,0 +1,44 @@
+{
+  "session_id": "session_verify_20261128T141120Z",
+  "timestamp_utc": "20261128T141120Z",
+  "suite_tests_run": 1666,
+  "suite_tests_ok": 1666,
+  "suite_failures": 0,
+  "suite_errors": 0,
+  "suite_skipped": 8,
+  "suite_exit_code": 0,
+  "guard_tests_run": 89,
+  "guard_tests_ok": 89,
+  "guard_failures": 0,
+  "guard_errors": 0,
+  "frozen_hashes": {
+    "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+    "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+    "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+    "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+    "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+  },
+  "probe_evidence": {
+    "total_real_probes": 398,
+    "probe_month_2026-10": {
+      "count": 271,
+      "published": 50
+    },
+    "probe_month_2026-11": {
+      "count": 127,
+      "published": 0
+    },
+    "newest_probe": "cutoff_probe_20261123T071225Z.json"
+  },
+  "compileall_ok": true,
+  "durable_state_guards": "89/89",
+  "next_sequence_number": 57,
+  "gate_date": "2026-11-30",
+  "frontier_exhaustion_claim": "220 verified + 6127 blocked = 6347 walked, 0 newly discovered",
+  "posture": "CONSOLIDATED_HOLD",
+  "value_add": "held the confirmatory H10 track for the hard date gate 2026-11-30 with a bounded no-cost value-add instead of a bare hold: added tests/test_dispersion_rolling_window_committed.py (5 tests), a committed-disk verdict pin for scripts/dispersion_rolling_window.py (DISP-003-REGIME-002). This closes a single-source-of-truth gap: the committed rolling dispersion-window robustness artifact H004V106_rolling_dispersion_window_20261028.json was previously backed only by pure-seam tests (test_dispersion_rolling_window.py exercises assign_states/window_label/window_metrics on synthetic fixtures) that never re-derived the committed verdict from the REAL committed canonical block. The new guard re-runs the SAME read-only pipeline (mod.main over the committed canonical block, with OUT_DIR/OUT_PATH redirected to a temp dir so the committed artifact is never written) and pins the committed artifact's load-bearing fields (status EXPLORATORY_ONLY, overall_label ROLLING_FRAGILE, baseline n_formations 608 / n_high 61 / n_low 90 / n_mid 457, anchor_reproduction_check W=365 match, every per-window W/n_high/n_low/high_low_diff_net_1x/delta_fraction_vs_full/label for W in {30,90,180,270,365}) to that fresh recomputation (only computed_utc may differ, and the whole artifact is byte-identical with that one field excluded). Pins the canonical block sha256 to an independent literal (7234fc4e...), and proves the pins are real constraints via synthetic-drift self-tests (a flipped overall_label or a perturbed per-window diff must not equal a fresh run; a block whose high-state spread is perturbed must be REJECTED by the W=365 anchor reproduction gate with a nonzero exit, proving the pipeline genuinely reads and validates the real block). Regenerated the verified-test-claim snapshot via scripts/record_test_claim.py (1661 -> 1666/1666/0, 8 skipped, 249 suite-input files); registered session_verify_20261128T141120Z.json + matching run_manifest.json session record (session_record_latest -> session_record_verify_20261128T141120Z). Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry next_sequence_number stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.",
+  "next_action": "at/after 2026-11-30 execute Option A (see agent_task_message.md). Run `python3 -m unittest tests.test_handoff_session_entries` next session and consolidate only if it reports degeneration. The durable audit trail is in research_state/session_verifications/ and run_manifest.json (newest record session_verify_20261128T141120Z.json).",
+  "action": "hold_confirmatory_H10_pre_gate",
+  "outcome": "green_suite_reverified_no_drift_plus_committed_rolling_window_pin",
+  "verification": "compileall_ok; suite_1666_ok_0_fail_0_err_8_skip; guards_89_89; five_hashes_byte_unchanged_vs_disk_and_git; probe_census_398_271_50_127_0; newest_cutoff_probe_20261123T071225Z; test_handoff_session_entries_9_9_ok; new_committed_pin_5_5_ok; no_november_reprobe; no_option_a; no_new_hypothesis; no_hold_entry_appended"
+}
