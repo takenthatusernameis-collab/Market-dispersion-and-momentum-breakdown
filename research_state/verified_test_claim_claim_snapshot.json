@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-28T04:53:26Z",
+  "recorded_utc": "2026-11-28T05:50:07Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1626,
-  "tests_ok": 1626,
+  "tests_run": 1639,
+  "tests_ok": 1639,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1626/1626/0",
-  "input_fingerprint": "274cc9961e6f47ea83e16d93c648035ff1da2d93e887b8ae86696b7ca8a99753",
+  "claim": "1639/1639/0",
+  "input_fingerprint": "bc8d0b9baf5ce0ea9ee34d023ad2b1c4fae2ce3d016a0e893f20969563b49e35",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -871,8 +871,16 @@
       "sha256": "f0219fb178fbe5236358e55f568d9d0e7a36bc8f30c0420b64a39c3b067ee83c"
     },
     {
+      "path": "tests/test_rank_breadth_feasibility_audit_committed.py",
+      "sha256": "12d675ce534f910e0c90a2904975ce398146079f70d20bd13c5710a3f6ba0268"
+    },
+    {
       "path": "tests/test_rank_breadth_reproducibility_audit.py",
       "sha256": "9080d22b721040c3b644dfacb3a2e0020f0a8345b0df616583ef48dbaa1d1ada"
+    },
+    {
+      "path": "tests/test_rank_breadth_reproducibility_audit_committed.py",
+      "sha256": "f6ea6fd316faeaf3b79c6e43350b36c08cc3d81b68a05a8b36ffe65692bf35bf"
     },
     {
       "path": "tests/test_record_session_record.py",
@@ -983,5 +991,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 243
+  "input_file_count": 245
 }

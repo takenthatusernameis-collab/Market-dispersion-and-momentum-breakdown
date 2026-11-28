@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "20261128T045339Z",
+  "last_updated_utc": "20261128T055604Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -190,7 +190,7 @@
     "record": "research_state/cutoff_probe/cutoff_probe_20261107T091152Z.json",
     "target_published": false
   },
-  "latest_verified_test_claim": "1626/1626/0",
+  "latest_verified_test_claim": "1639/1639/0",
   "latest_verified_test_claim_snapshot": "research_state/verified_test_claim_claim_snapshot.json",
   "live_or_paper_trading_allowed": false,
   "manifest_latest_archive_probe_key_repair_20261103T0911Z": {
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261128T045339Z",
+  "session_record_latest": "session_record_verify_20261128T055604Z",
   "session_record_verify_20261127T205520Z": {
     "session_id": "session_verify_20261127T205520Z",
     "timestamp_utc": "2026-11-27T20:55:20Z",
@@ -3409,7 +3409,8 @@
     "session_record_verify_20261128T024908Z",
     "session_record_verify_20261128T025659Z",
     "session_record_verify_20261128T042806Z",
-    "session_record_verify_20261128T045339Z"
+    "session_record_verify_20261128T045339Z",
+    "session_record_verify_20261128T055604Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -13895,6 +13896,50 @@
     "frontier_exhaustion_claim": "220 verified + 6127 blocked = 6347 walked, 0 newly discovered",
     "posture": "CONSOLIDATED_HOLD",
     "value_add": "Added tests/test_dispersion_regime_conditioning_committed.py (5 tests): a committed-disk verdict pin that re-derives the regime-conditioning audit verdict from the real committed canonical forward block and proves sensitivity via a synthetic-drift self-test. Closes a single-source-of-truth gap for DISP-003-REGIME-001.",
+    "next_action": "at/after 2026-11-30 execute Option A (see agent_task_message.md). Handoff carries 0 hard-date-gate marker-bearing hold entries; run python3 -m unittest tests.test_handoff_session_entries next session and consolidate only if it reports degeneration."
+  },
+  "session_record_verify_20261128T055604Z": {
+    "session_id": "session_verify_20261128T055604Z",
+    "timestamp_utc": "20261128T055604Z",
+    "action": "hold_h10_pre_gate_add_committed_rank_breadth_verdict_pins",
+    "outcome": "Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T05:56:04Z is before the gate). Did NOT re-probe probe_month=2026-11, did NOT execute Option A, did NOT allocate a new hypothesis (registry next_sequence_number stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3). Value-add (NOT a bare hold): added tests/test_rank_breadth_feasibility_audit_committed.py (6 tests) and tests/test_rank_breadth_reproducibility_audit_committed.py (7 tests), committed-disk verdict pins for scripts/rank_breadth_feasibility_audit.py (H39, DISP-003-RANKBREADTH-FEAS-001) and scripts/rank_breadth_reproducibility_audit.py (H42, DISP-003-RANKBREADTH-REPRO-001). These close single-source-of-truth gaps: the committed rank-breadth feasibility artifact H004V106_rank_breadth_feasibility_2026-11-16T06-57-08Z.json and reproducibility artifact H004V106_rank_breadth_reproducibility_2026-11-16T131413Z.json were previously backed only by static internal-consistency checks that never re-derived the verdicts from the REAL committed inputs with independent sha256 literals and synthetic-drift self-tests. The new guards re-run the SAME read-only pipelines (mod.main() over the committed inputs; output redirected to a temp path under ROOT) and pin the committed artifacts' load-bearing fields (universe_size 220, legacy_arm_size 32, candidate_arm_size 188, median N 211, RANK_BREADTH_MEASURABLE label, band fractions, H39 comparison all_match, raw series integrity clean, per-asset rank stats) to fresh recomputation (only computed_utc may differ), pin the artifact sha256s to independent literals (d13108da... and d4efeb61...), and prove the pins are real constraints via synthetic-drift self-tests (flipped label/universe_size/median N/integrity totals must not equal fresh runs). Regenerated the verified-test-claim snapshot via scripts/record_test_claim.py (1626 -> 1639/1639/0, 8 skipped, 245 suite-input files). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged. Registered session_verify_20261128T055604Z.json + matching run_manifest session record.",
+    "verification": "compileall OK; full suite python3 -m unittest discover -s tests -> 1639 run, 1639 OK, 0 failures, 0 errors, 8 skipped, EXIT=0; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk; probe census matches disk (398 real cutoff_probe_*.json; 271 probe_month=2026-10 / 50 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261123T071225Z.json). No frozen artifact touched.",
+    "suite_tests_run": 1639,
+    "suite_tests_ok": 1639,
+    "suite_failures": 0,
+    "suite_errors": 0,
+    "suite_skipped": 8,
+    "suite_exit_code": 0,
+    "guard_tests_run": 89,
+    "guard_tests_ok": 89,
+    "guard_failures": 0,
+    "guard_errors": 0,
+    "frozen_hashes": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    },
+    "compileall_ok": true,
+    "durable_state_guards": "89/89",
+    "next_sequence_number": 57,
+    "gate_date": "2026-11-30",
+    "frontier_exhaustion_claim": "220 verified + 6127 blocked = 6347 walked, 0 newly discovered",
+    "posture": "CONSOLIDATED_HOLD",
+    "value_add": "Added tests/test_rank_breadth_feasibility_audit_committed.py (6 tests) and tests/test_rank_breadth_reproducibility_audit_committed.py (7 tests): committed-disk verdict pins that re-derive the rank-breadth feasibility (H39) and reproducibility (H42) audit verdicts from the real committed inputs, pin artifact sha256s to independent literals, and prove sensitivity via synthetic-drift self-tests. Close single-source-of-truth gaps for DISP-003-RANKBREADTH-FEAS-001 and DISP-003-RANKBREADTH-REPRO-001.",
     "next_action": "at/after 2026-11-30 execute Option A (see agent_task_message.md). Handoff carries 0 hard-date-gate marker-bearing hold entries; run python3 -m unittest tests.test_handoff_session_entries next session and consolidate only if it reports degeneration."
   }
 }
