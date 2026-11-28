@@ -1,6 +1,16 @@
-# Agent Handoff — 2026-11-28T14:18:26Z (current session)
+# Agent Handoff — 2026-11-28T15:10:20Z (current session)
 
-## Session summary — 2026-11-28T14:18:26Z (this session)
+## Session summary — 2026-11-28T15:10:20Z (this session)
+
+- **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T15:10:20Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry.
+- **Value-add this session (NOT a bare hold):** added `tests/test_forward_block_placebo_red_team_committed.py` (4 tests), a committed-disk verdict pin for `scripts/forward_block_placebo_red_team.py` (DISP-003-FORWARD-BLOCK-PLACEBO-001). Closes a single-source-of-truth gap: the pre-existing static `tests/test_forward_block_placebo_red_team.py` checks the committed placebo artifact field-by-field against the sealed block and exercises the pure seams, but never pinned the committed artifact to an INDEPENDENT sha256 literal and had no synthetic-drift self-tests proving those field assertions are real constraints. The new guard pins the committed artifact sha256 to an independent literal (`fa07100c...`), pins the frozen canonical block sha256 to an independent literal (`7234fc4e...`), and pins every load-bearing field (audit_id, status EXPLORATORY_ONLY, label PLACEBO_SENSITIVE, seed 20261028, n_draws 10000, alpha 0.05, block summary H004V106/608/61/90/457/2025-01-01/2026-08-31/0.6165223953929935, per-family null mean / empirical p 9.999e-05 / CI / inside-CI False / p-below-alpha True, self-consistency flags, decision-rule and conclusion substrings) to independent literals; proves the pins are real constraints via seven synthetic-drift self-tests (flipped label / perturbed p / dropped family / mutated block count / flipped inside-CI flag / flipped self-consistency flag / stripped conclusion qualifier must each violate a pin). The slow N=10000 x 3 permutation recomputation is intentionally NOT re-run here (it is covered, gated behind `RUN_SLOW_PLACEBO=1`, by the static suite's `test_script_is_reproducible_and_read_only`); this module is a fast deterministic committed-bytes pin. Regenerated the verified-test-claim snapshot via `scripts/record_test_claim.py` (now 1670/1670/0, 8 skipped, 250 suite-input files; the snapshot gained the four new committed-pin tests). Registered `session_verify_20261128T151020Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T151020Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
+- **Posture:** CONSOLIDATED_HOLD for the confirmatory H10 track. Hold for 2026-11-30.
+- **Verification:** compileall OK; full suite 1670 run, 1670 OK, 0 failures, 0 errors, 8 skipped, EXIT=0; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk AND git blob. No frozen artifact touched.
+- **Next action:** at/after 2026-11-30 execute Option A (see `agent_task_message.md`). Handoff carries 0 hard-date-gate marker-bearing hold entries; this session added NO new hold entry; run `python3 -m unittest tests.test_handoff_session_entries` next session and consolidate only if it reports degeneration. The durable audit trail is in `research_state/session_verifications/` and `run_manifest.json` (newest record `session_verify_20261128T151020Z.json`).
+
+# Agent Handoff — 2026-11-28T14:18:26Z (previous session)
+
+## Previous session — 2026-11-28T14:18:26Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T14:18:26Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry.
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK (EXIT=0); full suite `python3 -m unittest discover -s tests` -> **1666 run, 1666 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk AND git blob (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid_result_ledger `0184f2d3...`, grid v3 config `1ff4c1f2...`, frontier `9ba08f3f...`); probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261128T141826Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T141826Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -10,7 +20,7 @@
 
 # Agent Handoff — 2026-11-28T14:11:20Z (previous session)
 
-## Session summary — 2026-11-28T14:11:20Z (previous session)
+## Previous session — 2026-11-28T14:11:20Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T14:11:20Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry.
 - **Value-add this session (NOT a bare hold):** added `tests/test_dispersion_rolling_window_committed.py` (5 tests), a committed-disk verdict pin for `scripts/dispersion_rolling_window.py` (DISP-003-REGIME-002). Closes a single-source-of-truth gap: the committed artifact `H004V106_rolling_dispersion_window_20261028.json` was previously backed only by pure-seam tests on synthetic fixtures, never re-derived from the REAL committed canonical block. The new guard re-runs the SAME read-only pipeline (`mod.main` over the committed canonical block with OUT_DIR/OUT_PATH redirected to a temp dir; committed artifact never written) and pins the committed verdict (status EXPLORATORY_ONLY, overall_label ROLLING_FRAGILE, baseline 608/61/90/457, W=365 anchor reproduction match, every per-window W/n_high/n_low/diff/delta_frac/label for W in {30,90,180,270,365}) to fresh recomputation (whole artifact byte-identical except `computed_utc`); pins the canonical sha256 to an independent literal (`7234fc4e...`); proves the pins are real via synthetic-drift self-tests (flipped label / perturbed per-window diff must differ; a spread-perturbed block must be REJECTED by the W=365 reproduction gate). Regenerated the verified-test-claim snapshot via `scripts/record_test_claim.py` (249 suite-input files). Registered `session_verify_20261128T141120Z.json` as `run_manifest.json:session_record_latest -> session_record_verify_20261128T141120Z`. No frozen artifact touched.
@@ -41,7 +51,7 @@
 
 # Agent Handoff — 2026-11-28T09:39:51Z (previous session)
 
-## Session summary — 2026-11-28T09:39:51Z (previous session)
+## Previous session — 2026-11-28T09:39:51Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T09:39:51Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK (EXIT=0); full suite `python3 -m unittest discover -s tests` -> **1661 run, 1661 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk AND git blob (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid_result_ledger `0184f2d3...`, grid v3 config `1ff4c1f2...`, frontier `9ba08f3f...`); probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Refreshed the verified-test-claim snapshot via `scripts/record_test_claim.py` (claim 1661/1661/0, 248 suite-input files). Ran `python3 -m unittest tests.test_handoff_session_entries` -> **9/9 OK**, no degeneration, so no consolidation was needed. Registered `session_verify_20261128T093951Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T093951Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -133,7 +143,7 @@
 
 # Agent Handoff — 2026-11-28T02:49:08Z (previous session)
 
-## Session summary — 2026-11-28T02:49:08Z (previous session)
+## Previous session — 2026-11-28T02:49:08Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T02:49:08Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1616 run, 1616 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261128T024908Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T024908Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -143,7 +153,7 @@
 
 # Agent Handoff — 2026-11-28T02:38:57Z (previous session)
 
-## Session summary — 2026-11-28T02:38:57Z (previous session)
+## Previous session — 2026-11-28T02:38:57Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T02:38:57Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1616 run, 1616 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261128T023857Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T023857Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -153,7 +163,7 @@
 
 ## Agent Handoff — 2026-11-28T02:13:25Z (previous session)
 
-## Session summary — 2026-11-28T02:13:25Z (previous session)
+## Previous session — 2026-11-28T02:13:25Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T02:13:25Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3).
 - **Inherited drift repaired:** the durable narratives had drifted from disk — `agent_handoff.md` and `agent_task_message.md` still quoted `session_verify_20261128T015019Z.json` and suite `1609 run, 1609 OK` while `run_manifest.json` (`last_updated_utc 20261128T015934Z`, `latest_verified_test_claim 1616/1616/0`) and disk's newest record `session_verify_20261128T015934Z.json` (suite `1616 run, 1616 OK`) were ahead. `test_handoff_quotes_the_newest_session_verification_record` was the sole suite failure. This session realigned both narratives to the newest on-disk record and registered `session_verify_20261128T021325Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T021325Z`).
@@ -174,7 +184,7 @@
 
 # Agent Handoff — 2026-11-28T01:32:36Z (previous session)
 
-## Session summary — 2026-11-28T01:32:36Z (previous session)
+## Previous session — 2026-11-28T01:32:36Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T01:32:36Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3).
 - **Value-add this session (NOT a bare hold):** verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1609 run, 1609 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk (canonical `7234fc4e...`, h10_fresh `324ab1e6...`, grid_result_ledger `0184f2d3...`, grid v3 config `1ff4c1f2...`, frontier `9ba08f3f...`); probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261128T013236Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261128T013236Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -221,7 +231,7 @@
 
 # Agent Handoff — 2026-11-27T20:55:20Z (previous session)
 
-## Session summary — 2026-11-27T20:55:20Z (previous session)
+## Previous session — 2026-11-27T20:55:20Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-27T20:55:20Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; the `tests.test_handoff_session_entries` guard ceiling is <=3).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1595 run, 1595 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; `tests.test_handoff_session_entries` 9/9 OK; durable-state guards 89/89; five frozen hashes byte-unchanged vs disk AND git blob; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261127T205520Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261127T205520Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -252,7 +262,7 @@
 
 # Agent Handoff — 2026-11-27T18:59:32Z (previous session)
 
-## Session summary — 2026-11-27T18:59:32Z (previous session)
+## Previous session — 2026-11-27T18:59:32Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-27T18:59:32Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (ceiling 3 already reached).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1590 run, 1590 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; `tests.test_handoff_session_entries` 9/9 OK; durable-state guards 89/89; five frozen hashes byte-unchanged vs disk AND git blob; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261127T185932Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261127T185932Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -262,7 +272,7 @@
 
 # Agent Handoff — 2026-11-27T18:48:33Z (previous session)
 
-## Session summary — 2026-11-27T18:48:33Z (previous session)
+## Previous session — 2026-11-27T18:48:33Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-27T18:48:33Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (ceiling 3 already reached).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1590 run, 1590 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; `tests.test_handoff_session_entries` 9/9 OK; durable-state guards 89/89; five frozen hashes byte-unchanged vs disk AND git blob; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261127T184833Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261127T184833Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -272,7 +282,7 @@
 
 # Agent Handoff — 2026-11-27T18:18:04Z (previous session)
 
-## Session summary — 2026-11-27T18:18:04Z (previous session)
+## Previous session — 2026-11-27T18:18:04Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-27T18:18:04Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (ceiling 3 already reached).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1590 run, 1590 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; `tests.test_handoff_session_entries` 9/9 OK; durable-state guards 89/89; five frozen hashes byte-unchanged vs disk AND git blob; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261127T181804Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261127T181804Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -282,7 +292,7 @@
 
 # Agent Handoff — 2026-11-27T17:58:10Z (previous session)
 
-## Session summary — 2026-11-27T17:58:10Z (previous session)
+## Previous session — 2026-11-27T17:58:10Z
 
 - **Prior task executed:** read the durable handoff/task and completed it. The prior task was to hold the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-27T17:58:10Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe `probe_month=2026-11`, did NOT execute Option A, did NOT allocate a new hypothesis (registry `next_sequence_number` stays 57), did NOT append a hold entry (ceiling 3 already reached).
 - **Value-add this session (NOT a bare hold):** re-verified clean green state read-only — `python3 -m compileall -q scripts tests` OK; full suite `python3 -m unittest discover -s tests` -> **1590 run, 1590 OK, 0 failures, 0 errors, 8 skipped, EXIT=0**; `tests.test_handoff_session_entries` 9/9 OK; durable-state guards 89/89; five frozen hashes byte-unchanged vs disk AND git blob; probe census matches disk (398 real `cutoff_probe_*.json`; 271 `probe_month=2026-10` / 50 published, 127 `probe_month=2026-11` / 0 published; newest `cutoff_probe_20261123T071225Z.json`). Registered `session_verify_20261127T175810Z.json` + matching `run_manifest.json` session record (`session_record_latest` -> `session_record_verify_20261127T175810Z`). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged.
@@ -292,4 +302,4 @@
 
 # Agent Handoff — 2026-11-27T17:57:10Z (previous session)
 
-## Session summary — 2026-11-27T17:57:10Z (previous session)
+## Previous session — 2026-11-27T17:57:10Z
