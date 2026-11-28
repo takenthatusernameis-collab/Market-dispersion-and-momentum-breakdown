@@ -153,7 +153,7 @@
     "what_was_not_changed": "No audit artifact, script, test, frozen panel, grid ledger, hypothesis conclusion, decision rule, cost model, preregistration or handoff narrative changed apart from research_state/hypothesis_registry.json (H12 + next_sequence_number), research_state/run_manifest.json (this entry, next_required_actions line 8, last_updated_utc) and the two durable-state files rewritten below. The canonical forward_block/, forward_block_h10_fresh/, grid ledger, grid_summary, DISPERSION-001/002, the defective archive and all panel CSVs are byte-unchanged. H10 remains CANDIDATE_UNVALIDATED / EXPLORATORY_ONLY / EVALUATED_NULL_DIFF_IMMATURE (n_formations=1, n_high=0, n_low=0, overlap_aware_uncertainty IMMATURE). No relaxation of 30-day maturity, MIN_ASSETS_DECILES=20, the trailing-decile state rule or the sealed-holdout rule."
   },
   "last_completed_experiment_id": "HARMONY-CRYPTO-EDGE-004-DISPERSION-002",
-  "last_updated_utc": "20261128T080312Z",
+  "last_updated_utc": "20261128T091155Z",
   "latest_archive_probe": {
     "canonical_forward_block": {
       "block_sealed": true,
@@ -1179,7 +1179,7 @@
     "timestamp_utc": "2026-11-17T08:26:31Z",
     "verification": "python3 -m compileall -q scripts tests EXIT 0; python3 -m unittest discover -s tests -> Ran 1144 tests, OK, skipped=2, EXIT=0; python3 scripts/record_test_claim.py -> claim 1144/1144/0, fingerprint eafa81346d0ce690..., 184 files; python3 -m unittest tests.test_task_message_probe_evidence tests.test_handoff_session_entries tests.test_state_consistency -> Ran 32 tests, OK"
   },
-  "session_record_latest": "session_record_verify_20261128T080312Z",
+  "session_record_latest": "session_record_verify_20261128T091155Z",
   "session_record_verify_20261127T205520Z": {
     "session_id": "session_verify_20261127T205520Z",
     "timestamp_utc": "2026-11-27T20:55:20Z",
@@ -3413,7 +3413,8 @@
     "session_record_verify_20261128T055604Z",
     "session_record_verify_20261128T072114Z",
     "session_record_verify_20261128T074033Z",
-    "session_record_verify_20261128T080312Z"
+    "session_record_verify_20261128T080312Z",
+    "session_record_verify_20261128T091155Z"
   ],
   "session_reverification_20261108T2122Z": {
     "adaptive_gate_trigger": "NOT met. This pass performed only read-only verification and durable-state refresh (no new failed route to the H10 gate). The H10 gate has failed on exactly one route (November 2026 Binance monthly archive publication timing); that is not three materially distinct failed routes spanning two source families, so the exploratory track is NOT started.",
@@ -14119,6 +14120,50 @@
     "frontier_exhaustion_claim": "220 verified + 6127 blocked = 6347 walked, 0 newly discovered",
     "posture": "CONSOLIDATED_HOLD",
     "value_add": "Added tests/test_preregistration_coverage_audit_committed.py (8 tests): a committed-disk verdict pin for scripts/audit_preregistration_coverage.py, closing a single-source-of-truth gap. The pre-existing tests/test_preregistration_coverage_audit.py re-derives audit() behaviour and checks the on-disk output equals a fresh run, but never pinned a SPECIFIC committed research_state/preregistration_coverage_audit.json artifact to an independent sha256 literal and had no synthetic-drift or input-perturbation self-tests. The new guard re-runs the SAME read-only pipeline (mod.audit(); writes nothing) over the committed integrity-audit and preregistration inputs, and pins the committed artifact's load-bearing fields (audit_id PREREGISTRATION_COVERAGE_AUDIT_20261103, pass True, audits_scanned 32, main_audits_scanned 27, f1_audit_files_scanned 5, 23 preregistrations_on_disk, empty audits_missing_prereq and preregistrations_uncovered_by_any_audit, 32 rows all resolving to existing prereqs, 5 frozen F1 rows) to fresh recomputation. audit() is deterministic and carries no wall-clock field, so the WHOLE artifact must be byte-for-byte reproduced (nothing normalised). Pins the artifact sha256 to an independent literal (ace0e8a8...), and proves the pins are real constraints via synthetic-drift self-tests (flipped pass / audits_scanned+1 / truncated prereq list / dropped row must not equal fresh runs) and an input-perturbation self-test (opting out of the F1 frozen-record scan moves audits_scanned 32 -> 27). Regenerated the verified-test-claim snapshot via scripts/record_test_claim.py (1653 -> 1661/1661/0, 8 skipped, 248 suite-input files). No frozen artifact touched.",
+    "next_action": "at/after 2026-11-30 execute Option A (see agent_task_message.md). Handoff carries 0 hard-date-gate marker-bearing hold entries; run python3 -m unittest tests.test_handoff_session_entries next session and consolidate only if it reports degeneration."
+  },
+  "session_record_verify_20261128T091155Z": {
+    "session_id": "session_verify_20261128T091155Z",
+    "timestamp_utc": "20261128T091155Z",
+    "action": "hold_h10_pre_gate_consolidate_handoff",
+    "outcome": "Held the confirmatory H10 track for the hard date gate 2026-11-30 (pre-gate; today 2026-11-28T09:11:55Z is before the gate) with a bounded no-cost value-add rather than a bare hold. Did NOT re-probe probe_month=2026-11, did NOT execute Option A, did NOT allocate a new hypothesis (registry next_sequence_number stays 57), did NOT append a hold entry (handoff carries 0 hard-date-gate marker-bearing holds; guard ceiling <=3). Value-add (NOT a bare hold): consolidated duplicate '(this session)' entries in agent_handoff.md (repaired inherited drift), re-verified clean green state read-only (compileall OK, full suite 1661 run 1661 OK 0 failures 0 errors 8 skipped EXIT=0, durable-state guards 89/89 OK, five frozen hashes byte-unchanged vs disk and git blob, probe census 398 real / 271 Oct 50 pub / 127 Nov 0 pub, newest cutoff_probe_20261123T071225Z.json matches disk). No frozen artifact, config, grid, frontier, panel, DISPERSION-001/002 record, hypothesis conclusion or decision rule touched; old experiment artifacts unchanged. Registered session_verify_20261128T091155Z.json + matching run_manifest.json session record (session_record_latest -> session_record_verify_20261128T091155Z).",
+    "verification": "compileall OK; full suite python3 -m unittest discover -s tests -> 1661 run, 1661 OK, 0 failures, 0 errors, 8 skipped, EXIT=0; durable-state guards 89/89 OK; five frozen hashes byte-unchanged vs disk and git blob (canonical 7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390; h10_fresh 324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f; grid_result_ledger 0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c; grid_v3_config 1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176; frontier 9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e); probe census matches disk (398 real cutoff_probe_*.json; 271 probe_month=2026-10 / 50 published, 127 probe_month=2026-11 / 0 published; newest cutoff_probe_20261123T071225Z.json). No frozen artifact touched.",
+    "suite_tests_run": 1661,
+    "suite_tests_ok": 1661,
+    "suite_failures": 0,
+    "suite_errors": 0,
+    "suite_skipped": 8,
+    "suite_exit_code": 0,
+    "guard_tests_run": 89,
+    "guard_tests_ok": 89,
+    "guard_failures": 0,
+    "guard_errors": 0,
+    "frozen_hashes": {
+      "canonical": "7234fc4e23b8dd07e0a2f5b1af111d4d5eaff14b93991d10737239c42f815390",
+      "h10_fresh": "324ab1e6dbcf8069b1f747c3e289bc60737df36cefdc806f3779a1c73e5df18f",
+      "grid_result_ledger": "0184f2d3e5d63dc6fb23a45f0ddfb226a195324d153615588c6c1363a74ce04c",
+      "grid_v3_config": "1ff4c1f20958e57b30dd4054a43c1fa0dd86faa4aa3bcd10191158b066302176",
+      "frontier": "9ba08f3f7718815dae95b92e7b3011cdb16f3bac2ceddba6b7ec914744ba4f4e"
+    },
+    "probe_evidence": {
+      "total_real_probes": 398,
+      "probe_month_2026-10": {
+        "count": 271,
+        "published": 50
+      },
+      "probe_month_2026-11": {
+        "count": 127,
+        "published": 0
+      },
+      "newest_probe": "cutoff_probe_20261123T071225Z.json"
+    },
+    "compileall_ok": true,
+    "durable_state_guards": "89/89",
+    "next_sequence_number": 57,
+    "gate_date": "2026-11-30",
+    "frontier_exhaustion_claim": "220 verified + 6127 blocked = 6347 walked, 0 newly discovered",
+    "posture": "CONSOLIDATED_HOLD",
+    "value_add": "Consolidated duplicate '(this session)' entries in agent_handoff.md (repaired inherited drift from two same-session blocks). Re-verified clean green state read-only with all durable-state guards passing. No new tests or artifacts added; this session's value-add is narrative repair and verification consolidation.",
     "next_action": "at/after 2026-11-30 execute Option A (see agent_task_message.md). Handoff carries 0 hard-date-gate marker-bearing hold entries; run python3 -m unittest tests.test_handoff_session_entries next session and consolidate only if it reports degeneration."
   }
 }
