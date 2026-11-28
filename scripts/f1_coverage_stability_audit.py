@@ -33,7 +33,6 @@ import argparse
 import hashlib
 import json
 import statistics
-import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -287,11 +286,8 @@ def fidelity_check(arm_a: dict, arm_b: dict) -> dict:
     }
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--out", default=None, help="artifact path (default: integrity_audit/)")
-    args = ap.parse_args()
-
+def audit() -> dict:
+    """Core audit logic; returns the artifact dict without writing to disk."""
     started = now_utc()
 
     # Read-only snapshots before computing.
@@ -426,6 +422,16 @@ def main() -> int:
         ],
     }
 
+    return artifact
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out", default=None, help="artifact path (default: integrity_audit/)")
+    args = parser.parse_args(argv)
+
+    artifact = audit()
+
     AUDIT_DIR.mkdir(parents=True, exist_ok=True)
     if args.out:
         out_path = Path(args.out)
@@ -433,22 +439,23 @@ def main() -> int:
         out_path = AUDIT_DIR / f"f1_coverage_stability_audit_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.json"
     out_path.write_text(json.dumps(artifact, indent=2, sort_keys=True) + "\n")
 
-    print(f"[f1stab] verdict={verdict} fidelity_pass={fid['pass']} label={label}")
-    print(f"[f1stab] arm_a baseline={arm_a['baseline_high_low_diff_net_1x']} "
-          f"cluster={arm_a['leave_one_month_out']['cluster_dominated']} "
-          f"temporal={arm_a['temporal_split']['temporal_instability']}")
-    print(f"[f1stab] arm_b baseline={arm_b['baseline_high_low_diff_net_1x']} "
-          f"max_abs_month={arm_b['leave_one_month_out']['max_abs_month']} "
-          f"max_abs_frac={arm_b['leave_one_month_out']['max_abs_delta_frac']} "
-          f"temporal={arm_b['temporal_split']['temporal_instability']}")
-    print(f"[f1stab] frozen_unchanged={frozen_unchanged} panels_unchanged={panels_unchanged} "
-          f"panels_match_f1sens={panels_match_f1sens} source_unchanged={source_hash_before == source_hash_after}")
+    print(f"[f1stab] verdict={artifact['verdict']} fidelity_pass={artifact['fidelity_check']['pass']} label={artifact['comparison']['label']}")
+    print(f"[f1stab] arm_a baseline={artifact['arm_a_committed']['baseline_high_low_diff_net_1x']} "
+          f"cluster={artifact['arm_a_committed']['leave_one_month_out']['cluster_dominated']} "
+          f"temporal={artifact['arm_a_committed']['temporal_split']['temporal_instability']}")
+    print(f"[f1stab] arm_b baseline={artifact['arm_b_repaired']['baseline_high_low_diff_net_1x']} "
+          f"max_abs_month={artifact['arm_b_repaired']['leave_one_month_out']['max_abs_month']} "
+          f"max_abs_frac={artifact['arm_b_repaired']['leave_one_month_out']['max_abs_delta_frac']} "
+          f"temporal={artifact['arm_b_repaired']['temporal_split']['temporal_instability']}")
+    ro = artifact["read_only_checks"]
+    print(f"[f1stab] frozen_unchanged={ro['old_panels_byte_unchanged']} panels_unchanged={ro['old_panels_byte_unchanged']} "
+          f"panels_match_f1sens={ro['old_panels_match_f1sens_recorded_hashes']} source_unchanged={ro['f1sens_source_byte_unchanged']}")
     try:
         shown = out_path.relative_to(ROOT)
     except ValueError:
         shown = out_path
     print(f"[f1stab] output -> {shown}")
-    return 0 if verdict == "PASS" else 1
+    return 0 if artifact["verdict"] == "PASS" else 1
 
 
 if __name__ == "__main__":
