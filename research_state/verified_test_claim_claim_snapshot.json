@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "recorded_utc": "2026-11-28T17:37:13Z",
+  "recorded_utc": "2026-11-28T17:46:49Z",
   "suite_command": "python3 -m unittest discover -s tests",
   "suite_exit": 0,
-  "tests_run": 1670,
-  "tests_ok": 1670,
+  "tests_run": 1675,
+  "tests_ok": 1675,
   "tests_failures": 0,
   "tests_skipped": 8,
-  "claim": "1670/1670/0",
-  "input_fingerprint": "e1d755b484991412fbd9733f61685928c19f0de814415747f133d1d2e926e7e3",
+  "claim": "1675/1675/0",
+  "input_fingerprint": "8d40e370608138cb30c7ee79db64ab90063a9514dab5d861c0a5691ded5d8aa2",
   "input_files": [
     {
       "path": "scripts/add_missing_binance_provenance_series.py",
@@ -473,6 +473,10 @@
     {
       "path": "tests/test_f1_coverage_outcome_sensitivity.py",
       "sha256": "bffe54e11b2e2a8d5cc757d27bca8814b94d0e62918c53f322b8a5548dc76c24"
+    },
+    {
+      "path": "tests/test_f1_coverage_outcome_sensitivity_committed.py",
+      "sha256": "1035af0ff37d4947f07467a4e1c1ac9a605c3c3153f1042b08695dead277f209"
     },
     {
       "path": "tests/test_f1_coverage_stability_audit.py",
@@ -1011,5 +1015,5 @@
       "sha256": "bca7e315931a0e2e4d86f4b77656938eccbebff155c8a236ea13d81242d06ce9"
     }
   ],
-  "input_file_count": 250
+  "input_file_count": 251
 }
